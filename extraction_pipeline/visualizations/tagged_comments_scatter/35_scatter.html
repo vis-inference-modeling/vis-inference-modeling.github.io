@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.1.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-723550beb57540e4f5fbdd9d18cf9da9"}, "mark": {"type": "circle", "size": 60}, "encoding": {"color": {"field": "cluster", "title": "Cluster", "type": "nominal"}, "tooltip": [{"field": "presence_tag", "title": "Presence Tag", "type": "nominal"}, {"field": "cluster", "title": "Cluster", "type": "nominal"}, {"field": "presence", "title": "Presence", "type": "nominal"}, {"field": "comment_index", "title": "Comment Index", "type": "nominal"}, {"field": "article_id", "title": "Article ID", "type": "nominal"}], "x": {"field": "x", "title": "UMAP 1", "type": "quantitative"}, "y": {"field": "y", "title": "UMAP 2", "type": "quantitative"}}, "height": 500, "title": "Presence Tags UMAP Scatter - 35", "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json", "datasets": {"data-723550beb57540e4f5fbdd9d18cf9da9": [{"article_id": "35", "comment_index": 1, "presence_tag": "The first thing that I notice is an ascending trend from the lower states upward.", "presence": "present", "x": 13.564611434936523, "y": 3.6128978729248047, "cluster": "noise"}, {"article_id": "35", "comment_index": 1, "presence_tag": "There seems to be a belt in the western states.", "presence": "present", "x": 14.114997863769531, "y": 3.7720489501953125, "cluster": "noise"}, {"article_id": "35", "comment_index": 1, "presence_tag": "This belt seems out of place.", "presence": "not_present", "x": 14.544977188110352, "y": 3.281252384185791, "cluster": "noise"}, {"article_id": "35", "comment_index": 1, "presence_tag": "The graph changes over time.", "presence": "not_present", "x": 15.177682876586914, "y": 3.408175468444824, "cluster": "noise"}, {"article_id": "35", "comment_index": 1, "presence_tag": "The change in the graph seems to start with the warming of the weather.", "presence": "not_present", "x": 15.580163955688477, "y": 3.8836631774902344, "cluster": "1"}, {"article_id": "35", "comment_index": 1, "presence_tag": "The warming of the weather seems to start in the lower warmer states.", "presence": "not_present", "x": 13.925904273986816, "y": 3.0810863971710205, "cluster": "1"}, {"article_id": "35", "comment_index": 2, "presence_tag": "I am Ronan.", "presence": "not_present", "x": 13.38143539428711, "y": 5.614086151123047, "cluster": "noise"}, {"article_id": "35", "comment_index": 2, "presence_tag": "I am a high school junior.", "presence": "not_present", "x": 13.195042610168457, "y": 4.705136299133301, "cluster": "noise"}, {"article_id": "35", "comment_index": 2, "presence_tag": "I live in NYC.", "presence": "not_present", "x": 12.8355131149292, "y": 4.967321395874023, "cluster": "noise"}, {"article_id": "35", "comment_index": 2, "presence_tag": "I notice a map.", "presence": "present", "x": 13.728536605834961, "y": 5.969686508178711, "cluster": "noise"}, {"article_id": "35", "comment_index": 2, "presence_tag": "The map shows climate.", "presence": "not_present", "x": 15.391480445861816, "y": 4.846539497375488, "cluster": "noise"}, {"article_id": "35", "comment_index": 2, "presence_tag": "The map shows leaves.", "presence": "present", "x": 15.87625503540039, "y": 5.221023082733154, "cluster": "0"}, {"article_id": "35", "comment_index": 2, "presence_tag": "On the map, the amount of leaves increases.", "presence": "not_present", "x": 15.881718635559082, "y": 5.852973461151123, "cluster": "0"}, {"article_id": "35", "comment_index": 2, "presence_tag": "After April, the amount of leaves decreases.", "presence": "not_present", "x": 15.303672790527344, "y": 5.708977222442627, "cluster": "0"}, {"article_id": "35", "comment_index": 2, "presence_tag": "I wonder whether an elevation can cause leaves to appear early in January.", "presence": "not_present", "x": 14.677180290222168, "y": 6.160263538360596, "cluster": "0"}, {"article_id": "35", "comment_index": 2, "presence_tag": "In most states, leaves appear more often in April than in January.", "presence": "present", "x": 15.20129108428955, "y": 6.259244918823242, "cluster": "0"}, {"article_id": "35", "comment_index": 2, "presence_tag": "I wonder whether a whole area can get leaves before other states.", "presence": "not_present", "x": 14.32301139831543, "y": 5.613856315612793, "cluster": "noise"}, {"article_id": "35", "comment_index": 2, "presence_tag": "I guess that the climate becomes higher in spring.", "presence": "not_present", "x": 15.077796936035156, "y": 4.275456428527832, "cluster": "1"}, {"article_id": "35", "comment_index": 2, "presence_tag": "I guess that the elevation becomes higher in spring.", "presence": "not_present", "x": 14.706324577331543, "y": 3.959890604019165, "cluster": "0"}, {"article_id": "35", "comment_index": 2, "presence_tag": "I guess that a state collects leaves in spring.", "presence": "not_present", "x": 14.53050422668457, "y": 5.040470123291016, "cluster": "1"}, {"article_id": "35", "comment_index": 2, "presence_tag": "I guess that a state collects sunlight in spring.", "presence": "not_present", "x": 14.416504859924316, "y": 4.471229076385498, "cluster": "1"}, {"article_id": "35", "comment_index": 2, "presence_tag": "I guess that the terrain of a state relates to this collection.", "presence": "not_present", "x": 13.86540412902832, "y": 4.674877166748047, "cluster": "noise"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

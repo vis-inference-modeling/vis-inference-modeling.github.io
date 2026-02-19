@@ -1,0 +1,39 @@
+{
+  "article_id": "35",
+  "comment_index": 29,
+  "image_path": "../data/images/35.png",
+  "numbered_ace_sentences": [
+    "1. The temperature in some states may affect when leaves appear in these states.",
+    "2. In some states, leaves may appear sooner.",
+    "3. In some other states, leaves may appear later.",
+    "4. Some states are in the southeast.",
+    "5. Some states are in the northwest.",
+    "6. Leaves in the southeast states appear earlier than leaves in the northwest states."
+  ],
+  "presence_tags": {
+    "1. 1. The temperature in some states may affect when leaves appear in these states.": {
+      "presence": "not_present",
+      "task_type": "not_applicable"
+    },
+    "2. 2. In some states, leaves may appear sooner.": {
+      "presence": "present",
+      "task_type": "value_identification"
+    },
+    "3. 3. In some other states, leaves may appear later.": {
+      "presence": "present",
+      "task_type": "value_identification"
+    },
+    "4. 4. Some states are in the southeast.": {
+      "presence": "present",
+      "task_type": "value_identification"
+    },
+    "5. 5. Some states are in the northwest.": {
+      "presence": "present",
+      "task_type": "value_identification"
+    },
+    "6. 6. Leaves in the southeast states appear earlier than leaves in the northwest states.": {
+      "presence": "present",
+      "task_type": "arithmetic_computation"
+    }
+  }
+}

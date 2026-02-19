@@ -1,0 +1,49 @@
+{
+  "article_id": "181",
+  "comment_index": 124,
+  "image_path": "../data/images/181.png",
+  "numbered_ace_sentences": [
+    "1. China has more clean power than the United States.",
+    "2. China has more fossil power than the United States.",
+    "3. In 2020, India had more coal power than the United States.",
+    "4. India has little gas power.",
+    "5. I wonder why India has little gas power.",
+    "6. I wonder why coal power in the United States declined in 2020.",
+    "7. This comment is about the change in electricity generation of clean power and fossil power around the world.",
+    "8. The headline is: The World's Electricity: Clean or Dirty?"
+  ],
+  "presence_tags": {
+    "1. 1. China has more clean power than the United States.": {
+      "presence": "present",
+      "task_type": "arithmetic_computation"
+    },
+    "2. 2. China has more fossil power than the United States.": {
+      "presence": "present",
+      "task_type": "arithmetic_computation"
+    },
+    "3. 3. In 2020, India had more coal power than the United States.": {
+      "presence": "not_present",
+      "task_type": "not_applicable"
+    },
+    "4. 4. India has little gas power.": {
+      "presence": "present",
+      "task_type": "value_identification"
+    },
+    "5. 5. I wonder why India has little gas power.": {
+      "presence": "not_present",
+      "task_type": "not_applicable"
+    },
+    "6. 6. I wonder why coal power in the United States declined in 2020.": {
+      "presence": "not_present",
+      "task_type": "not_applicable"
+    },
+    "7. 7. This comment is about the change in electricity generation of clean power and fossil power around the world.": {
+      "presence": "present",
+      "task_type": "statistical_inference"
+    },
+    "8. 8. The headline is: The World's Electricity: Clean or Dirty?": {
+      "presence": "not_present",
+      "task_type": "not_applicable"
+    }
+  }
+}
