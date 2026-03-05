@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 94</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -113,7 +137,7 @@ Energy sources have a huge impact on me and my surrounding community. It is high
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "In this graph, I notice an overall increase in world electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "I consider all sources of electricity in this graph.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "I differentiate between clean sources and fossil fuels.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 3, "sentence": "Clean sources seem to be more prevalent than fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "This prevalence is a positive consequence.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 5, "sentence": "I notice that electricity generation in the United States increases gradually.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "I notice that electricity generation in China increases rapidly.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "The slope for China is steeper than the slope for the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "I wonder why electricity generation in China has increased faster than electricity generation in the United States.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 9, "sentence": "China is a massive center of economic growth.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "China is a massive center of industrial growth.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "The United States is a massive center of economic growth.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "The United States is a massive center of industrial growth.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "The change in electricity generation in China is more drastic than the change in electricity generation in the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "Energy sources have a huge impact on me.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 15, "sentence": "Energy sources have a huge impact on my surrounding community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 16, "sentence": "It is important that we steer away from fossil fuels as an energy source.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "Fossil fuels are detrimental to the environment.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "Fossil fuels are detrimental to the world that we live in.", "category": "Background knowledge", "color": "#d62728"}, {"id": 19, "sentence": "It is important that we create more sources of clean energy.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 20, "sentence": "The electricity generation in the United States increases at a slower rate than the electricity generation in China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 21, "sentence": "This slower increase is good for my community.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 22, "sentence": "This slower increase is bad for my community.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 23, "sentence": "It is good because less fossil fuels are used.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 24, "sentence": "It is bad because less clean energy is used.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 25, "sentence": "The title of this graph is \"Fueling the Future - World Electricity Generation from 2000 to 2020\".", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "In this graph, I notice an overall increase in world electricity generation.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "I consider all sources of electricity in this graph.", "cluster_label": "I consider all sources of electricity in this graph.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "I differentiate between clean sources and fossil fuels.", "cluster_label": "S4: The graph divides energy sources into clean sources and fossil sources.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 3, "sentence": "Clean sources seem to be more prevalent than fossil fuels.", "cluster_label": "S9: Clean electricity produces more electricity than fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "This prevalence is a positive consequence.", "cluster_label": "S42: The prevalence is a positive consequence.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 5, "sentence": "I notice that electricity generation in the United States increases gradually.", "cluster_label": "S105: Electricity generation in the United States increases gradually.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "I notice that electricity generation in China increases rapidly.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "The slope for China is steeper than the slope for the United States.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "I wonder why electricity generation in China has increased faster than electricity generation in the United States.", "cluster_label": "S8: The author wonders why electricity generation in China has increased rapidly and why China differs from the United States or India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 9, "sentence": "China is a massive center of economic growth.", "cluster_label": "S19: China is highly industrialized and has strong economic or industrial growth and high energy consumption.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "China is a massive center of industrial growth.", "cluster_label": "S19: China is highly industrialized and has strong economic or industrial growth and high energy consumption.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "The United States is a massive center of economic growth.", "cluster_label": "S20: The United States has economic or industrial growth and development and produces much energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "The United States is a massive center of industrial growth.", "cluster_label": "S20: The United States has economic or industrial growth and development and produces much energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "The change in electricity generation in China is more drastic than the change in electricity generation in the United States.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "Energy sources have a huge impact on me.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 15, "sentence": "Energy sources have a huge impact on my surrounding community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 16, "sentence": "It is important that we steer away from fossil fuels as an energy source.", "cluster_label": "S52: People should steer away from fossil fuels and hope that fossil fuel use decreases.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "Fossil fuels are detrimental to the environment.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "Fossil fuels are detrimental to the world that we live in.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 19, "sentence": "It is important that we create more sources of clean energy.", "cluster_label": "S51: People should create more clean energy and shift toward cleaner energy worldwide.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 20, "sentence": "The electricity generation in the United States increases at a slower rate than the electricity generation in China.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 21, "sentence": "This slower increase is good for my community.", "cluster_label": "S43: The slower increase is good or bad for my community.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 22, "sentence": "This slower increase is bad for my community.", "cluster_label": "S43: The slower increase is good or bad for my community.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 23, "sentence": "It is good because less fossil fuels are used.", "cluster_label": "S25: It is good because less fossil fuels are used, and it is bad because less clean energy is used.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 24, "sentence": "It is bad because less clean energy is used.", "cluster_label": "S25: It is good because less fossil fuels are used, and it is bad because less clean energy is used.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 25, "sentence": "The title of this graph is \"Fueling the Future - World Electricity Generation from 2000 to 2020\".", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 1, "target": 2}, {"source": 2, "target": 3}, {"source": 3, "target": 4}, {"source": 5, "target": 7}, {"source": 6, "target": 7}, {"source": 7, "target": 8}, {"source": 5, "target": 13}, {"source": 6, "target": 13}, {"source": 17, "target": 16}, {"source": 17, "target": 18}, {"source": 16, "target": 19}, {"source": 17, "target": 19}, {"source": 5, "target": 20}, {"source": 6, "target": 20}, {"source": 15, "target": 21}, {"source": 20, "target": 21}, {"source": 15, "target": 22}, {"source": 20, "target": 22}, {"source": 21, "target": 23}, {"source": 16, "target": 23}, {"source": 22, "target": 24}, {"source": 19, "target": 24}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Encoding interpretation", "color": "#2ca02c"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -142,9 +166,14 @@ Energy sources have a huge impact on me and my surrounding community. It is high
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -228,21 +257,30 @@ Energy sources have a huge impact on me and my surrounding community. It is high
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -360,6 +398,20 @@ Energy sources have a huge impact on me and my surrounding community. It is high
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 77</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -114,7 +138,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "At present, fossil fuels make up the majority of electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "At present, clean sources make up less electricity generation than fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "In the past 2 decades, electricity usage has increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "In the past 2 decades, electricity generation from unclean sources has increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "In the past 2 decades, electricity generation from clean sources has remained the same.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "I wonder how much more expensive it is to produce electricity from clean sources than from fossil fuels.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 6, "sentence": "I wonder how much the switch from fossil-fuel electricity to clean electricity would cost.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 7, "sentence": "This situation relates to me and my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 8, "sentence": "Pollution from fossil fuels slowly ruins the quality of air in my community.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 9, "sentence": "If the quality of air in my community is ruined, then the quality of life for me and my peers will be ruined.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 10, "sentence": "This situation shows how much electricity is used globally.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 11, "sentence": "This situation shows how fast global electricity usage has grown in the past 2 decades.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 12, "sentence": "In surrounding towns, the production of energy is important.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 13, "sentence": "Many power plants in surrounding towns produce energy from fossil fuels.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 14, "sentence": "The use of fossil fuels progresses the irreversible damage of global warming.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "The headline is: Although ancient, fossil fuels remain relevant.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "At present, fossil fuels make up the majority of electricity generation.", "cluster_label": "S8: Fossil fuels are the majority or dominant source of world electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "At present, clean sources make up less electricity generation than fossil fuels.", "cluster_label": "S110: There are more gigawatt-hours of fossil electricity than clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "In the past 2 decades, electricity usage has increased.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "In the past 2 decades, electricity generation from unclean sources has increased.", "cluster_label": "In the past 2 decades, electricity generation from unclean sources has increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "In the past 2 decades, electricity generation from clean sources has remained the same.", "cluster_label": "In the past 2 decades, electricity generation from clean sources has remained the same.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "I wonder how much more expensive it is to produce electricity from clean sources than from fossil fuels.", "cluster_label": "S33: The author wonders about affordability and costs of clean electricity versus fossil-fuel electricity and the cost of switching.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 6, "sentence": "I wonder how much the switch from fossil-fuel electricity to clean electricity would cost.", "cluster_label": "S33: The author wonders about affordability and costs of clean electricity versus fossil-fuel electricity and the cost of switching.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 7, "sentence": "This situation relates to me and my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 8, "sentence": "Pollution from fossil fuels slowly ruins the quality of air in my community.", "cluster_label": "S10: Fossil-fuel use causes air pollution and emissions, while renewable energy reduces pollution and improves health and climate outcomes.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 9, "sentence": "If the quality of air in my community is ruined, then the quality of life for me and my peers will be ruined.", "cluster_label": "S14: If air quality or quality of life declines, then community well-being will worsen.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 10, "sentence": "This situation shows how much electricity is used globally.", "cluster_label": "S12: The commenter makes a generic statement about trends, interest, or analysis helping understanding.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 11, "sentence": "This situation shows how fast global electricity usage has grown in the past 2 decades.", "cluster_label": "S12: The commenter makes a generic statement about trends, interest, or analysis helping understanding.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 12, "sentence": "In surrounding towns, the production of energy is important.", "cluster_label": "S23: In surrounding towns, energy production is important and many power plants use fossil fuels.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 13, "sentence": "Many power plants in surrounding towns produce energy from fossil fuels.", "cluster_label": "S23: In surrounding towns, energy production is important and many power plants use fossil fuels.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 14, "sentence": "The use of fossil fuels progresses the irreversible damage of global warming.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "The headline is: Although ancient, fossil fuels remain relevant.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 2, "target": 3}, {"source": 2, "target": 4}, {"source": 0, "target": 5}, {"source": 1, "target": 5}, {"source": 0, "target": 6}, {"source": 1, "target": 6}, {"source": 5, "target": 6}, {"source": 0, "target": 7}, {"source": 1, "target": 7}, {"source": 3, "target": 7}, {"source": 4, "target": 7}, {"source": 7, "target": 8}, {"source": 0, "target": 8}, {"source": 8, "target": 9}, {"source": 2, "target": 10}, {"source": 2, "target": 11}, {"source": 10, "target": 11}, {"source": 12, "target": 13}, {"source": 0, "target": 13}, {"source": 0, "target": 14}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -143,9 +167,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -229,21 +258,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -361,6 +399,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

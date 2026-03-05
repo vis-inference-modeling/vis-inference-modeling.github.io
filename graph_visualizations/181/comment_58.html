@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 58</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -111,7 +135,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "Four graphs are presented to us.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "The graphs show exports of electricity generation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "The graphs show imports of electricity generation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 3, "sentence": "I notice differences between exports and imports in the graphs.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "In each graph, nuclear energy is at the top.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "In each graph, coal is at the least amount.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "I wonder if these countries partner up.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 7, "sentence": "If these countries partner up, then exports and imports might double.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 8, "sentence": "If these countries partner up, then exports and imports might decrease.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 9, "sentence": "It might be harder to produce electricity for two countries.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 10, "sentence": "It might be harder to keep electricity generation stable for two countries.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 11, "sentence": "I live in the United States.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 12, "sentence": "The United States has 330 million people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "The United States makes only enough electricity for its people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "The environment is harmed by creating oils.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "The headline is: Differences in Countries' Electricity.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "Four graphs are presented to us.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "The graphs show exports of electricity generation.", "cluster_label": "S21: The commenter describes imports or exports of electricity generation being shown in the graphs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "The graphs show imports of electricity generation.", "cluster_label": "S21: The commenter describes imports or exports of electricity generation being shown in the graphs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 3, "sentence": "I notice differences between exports and imports in the graphs.", "cluster_label": "S138: I notice differences between exports and imports in the graphs.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "In each graph, nuclear energy is at the top.", "cluster_label": "S190: The rate of nuclear energy has always been high and has reached a peak.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "In each graph, coal is at the least amount.", "cluster_label": "S230: Coal is the least prominent energy source in the graph.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "I wonder if these countries partner up.", "cluster_label": "S54: The author wonders if these countries partner up.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 7, "sentence": "If these countries partner up, then exports and imports might double.", "cluster_label": "S31: If countries partner up, then trade and electricity production may change and may become harder to manage.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 8, "sentence": "If these countries partner up, then exports and imports might decrease.", "cluster_label": "S31: If countries partner up, then trade and electricity production may change and may become harder to manage.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 9, "sentence": "It might be harder to produce electricity for two countries.", "cluster_label": "S31: If countries partner up, then trade and electricity production may change and may become harder to manage.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 10, "sentence": "It might be harder to keep electricity generation stable for two countries.", "cluster_label": "S31: If countries partner up, then trade and electricity production may change and may become harder to manage.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 11, "sentence": "I live in the United States.", "cluster_label": "S2: I state where I live or describe my community membership.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 12, "sentence": "The United States has 330 million people.", "cluster_label": "S22: The United States has about 330 million people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "The United States makes only enough electricity for its people.", "cluster_label": "S49: Some statements describe the United States making only enough electricity for its people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "The environment is harmed by creating oils.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "The headline is: Differences in Countries' Electricity.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 1, "target": 3}, {"source": 2, "target": 3}, {"source": 0, "target": 4}, {"source": 0, "target": 5}, {"source": 0, "target": 6}, {"source": 6, "target": 7}, {"source": 1, "target": 7}, {"source": 2, "target": 7}, {"source": 6, "target": 8}, {"source": 1, "target": 8}, {"source": 2, "target": 8}, {"source": 10, "target": 8}, {"source": 11, "target": 8}, {"source": 6, "target": 9}, {"source": 6, "target": 10}, {"source": 9, "target": 10}, {"source": 11, "target": 12}, {"source": 11, "target": 13}, {"source": 12, "target": 13}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -140,9 +164,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -226,21 +255,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -358,6 +396,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

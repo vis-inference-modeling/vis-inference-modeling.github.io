@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 152</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -118,7 +142,7 @@ World Super-Powers in more ways then one, How China and United States get there 
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "I notice something.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "The supply of non-clean energy in the United States is generally dropping.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "The power generation in China seems to have a similar trend.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "The power generation in India seems to have a similar trend.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "I wonder something.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 5, "sentence": "I wonder how this graph correlates with the passing of economic laws.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 6, "sentence": "Solar tax credits are economic laws.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "Wind tax credits are economic laws.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "This graph helps to inform me.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 9, "sentence": "This graph helps to inform my community.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 10, "sentence": "This graph informs us about the source of the power that we use.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 11, "sentence": "This graph informs us whether this power is sustainable for future generations.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 12, "sentence": "The headline is: World super-powers in more ways than one: How China and the United States get their energy.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "I notice something.", "cluster_label": "S5: The commenter makes generic meta statements about noticing, wondering, or estimation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "The supply of non-clean energy in the United States is generally dropping.", "cluster_label": "S29: United States fossil-fuel usage decreases over time, especially coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "The power generation in China seems to have a similar trend.", "cluster_label": "S59: One trend is rising or steady or slowly rising.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "The power generation in India seems to have a similar trend.", "cluster_label": "S109: Power generation in China and India seems to have a similar trend.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "I wonder something.", "cluster_label": "S5: The commenter makes generic meta statements about noticing, wondering, or estimation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 5, "sentence": "I wonder how this graph correlates with the passing of economic laws.", "cluster_label": "S6: The author wonders about relationships between electricity generation and economic or political factors such as economic openness, laws, economy, technology, or political stability.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 6, "sentence": "Solar tax credits are economic laws.", "cluster_label": "S33: Tax credits and laws exist to support renewable energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "Wind tax credits are economic laws.", "cluster_label": "S33: Tax credits and laws exist to support renewable energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "This graph helps to inform me.", "cluster_label": "S5: The commenter makes generic meta statements about noticing, wondering, or estimation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 9, "sentence": "This graph helps to inform my community.", "cluster_label": "S8: The commenter says that the graph provides insight or context about personal or community energy consumption.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 10, "sentence": "This graph informs us about the source of the power that we use.", "cluster_label": "S16: The commenter says that the graph informs about power sources or sustainability for future generations.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 11, "sentence": "This graph informs us whether this power is sustainable for future generations.", "cluster_label": "S16: The commenter says that the graph informs about power sources or sustainability for future generations.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 12, "sentence": "The headline is: World super-powers in more ways than one: How China and the United States get their energy.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 1, "target": 0}, {"source": 2, "target": 0}, {"source": 3, "target": 0}, {"source": 1, "target": 2}, {"source": 1, "target": 3}, {"source": 5, "target": 4}, {"source": 8, "target": 5}, {"source": 6, "target": 5}, {"source": 7, "target": 5}, {"source": 10, "target": 8}, {"source": 11, "target": 8}, {"source": 10, "target": 9}, {"source": 11, "target": 9}, {"source": 1, "target": 10}, {"source": 2, "target": 10}, {"source": 3, "target": 10}, {"source": 10, "target": 11}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -147,9 +171,14 @@ World Super-Powers in more ways then one, How China and United States get there 
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -233,21 +262,30 @@ World Super-Powers in more ways then one, How China and United States get there 
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -365,6 +403,20 @@ World Super-Powers in more ways then one, How China and United States get there 
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

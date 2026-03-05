@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 127</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -118,7 +142,7 @@ This shows the popularity of different types of electricities in the world and w
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "Coal is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 1, "sentence": "Gasoline is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "The usage of coal has increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "The usage of gasoline has increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Many companies work against harmful fuel usage.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Some activists support a transition to clean energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "I wonder how the use of fossil fuels has increased.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 7, "sentence": "The graph shows the popularity of different types of electricity in the world.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 8, "sentence": "The graph shows trends in electricity types in the world.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 9, "sentence": "The abuse of fossil fuels may continue.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 10, "sentence": "If the abuse of fossil fuels continues, we will be without resources.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 11, "sentence": "If the abuse of fossil fuels continues, we will be unprepared.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 12, "sentence": "The headline is: Fossil Fuel Use Trumps Clean Fuels.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "Coal is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 1, "sentence": "Gasoline is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "The usage of coal has increased.", "cluster_label": "S4: Fossil-fuel electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "The usage of gasoline has increased.", "cluster_label": "S62: Gasoline usage has increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Many companies work against harmful fuel usage.", "cluster_label": "S134: Some statements describe environmentalists and campaigners and activists and businesses working to reduce fossil fuel use and support clean energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Some activists support a transition to clean energy.", "cluster_label": "S134: Some statements describe environmentalists and campaigners and activists and businesses working to reduce fossil fuel use and support clean energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "I wonder how the use of fossil fuels has increased.", "cluster_label": "S18: The author wonders about increases in fossil-fuel use and why gas and coal have increased or are preferred.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 7, "sentence": "The graph shows the popularity of different types of electricity in the world.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 8, "sentence": "The graph shows trends in electricity types in the world.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 9, "sentence": "The abuse of fossil fuels may continue.", "cluster_label": "S56: The abuse of fossil fuels may continue.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 10, "sentence": "If the abuse of fossil fuels continues, we will be without resources.", "cluster_label": "S10: Fossil fuels or other energy resources may run out, causing scarcity and limits on electricity generation.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 11, "sentence": "If the abuse of fossil fuels continues, we will be unprepared.", "cluster_label": "S38: If the abuse of fossil fuels continues, we will be unprepared.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 12, "sentence": "The headline is: Fossil Fuel Use Trumps Clean Fuels.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 2}, {"source": 1, "target": 3}, {"source": 2, "target": 4}, {"source": 3, "target": 4}, {"source": 2, "target": 5}, {"source": 3, "target": 5}, {"source": 2, "target": 6}, {"source": 3, "target": 6}, {"source": 7, "target": 8}, {"source": 2, "target": 9}, {"source": 3, "target": 9}, {"source": 9, "target": 10}, {"source": 9, "target": 11}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -147,9 +171,14 @@ This shows the popularity of different types of electricities in the world and w
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -233,21 +262,30 @@ This shows the popularity of different types of electricities in the world and w
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -365,6 +403,20 @@ This shows the popularity of different types of electricities in the world and w
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

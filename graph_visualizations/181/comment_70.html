@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 70</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -114,7 +138,7 @@ For a title of the graphs, you could use
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "There are four graphs.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "The biggest thing stands out to me from the four graphs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "The biggest thing is the increasing usage of coal power in China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "In recent years, there has been a large global push towards clean energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "This global push is a response to severe climate change.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 5, "sentence": "These global trends do not appear in China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "The total coal usage in China is more than the total energy usage in the US.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "China has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "This fact makes sense from a population standpoint.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 9, "sentence": "I compare the graphs from this perspective.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 10, "sentence": "I wonder why the total energy usage in India is low compared to China and the US.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "The population of India is about the same as the population of China.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "The population of China is much larger than the population of the US.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "These graphs make me wonder about the effectiveness of global initiatives.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "Some large nations do not meet regulations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "These regulations are designed to help clean the planet.", "category": "Background knowledge", "color": "#d62728"}, {"id": 16, "sentence": "Understanding how our nation produces energy helps contextualize issues regarding our energy grid.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 17, "sentence": "Our nation produces energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "We rely on this energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 19, "sentence": "Some ideas propose severely reducing one form of energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 20, "sentence": "Some ideas propose severely reducing another form of energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "These ideas need to be backed by knowledge about current reliance on that energy.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 22, "sentence": "Some people make decisions without knowledge of the implications.", "category": "Background knowledge", "color": "#d62728"}, {"id": 23, "sentence": "If a person makes decisions without knowledge of the implications then the person will make ignorant decisions.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 24, "sentence": "If a person makes decisions without knowledge of the implications then the person will make damaging decisions.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 25, "sentence": "A possible title of the graphs is \"What Powers the People?\".", "category": "Meta / paratext", "color": "#17becf"}, {"id": 26, "sentence": "A possible title of the graphs is \"Energy Production Across the Years\".", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "There are four graphs.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "The biggest thing stands out to me from the four graphs.", "cluster_label": "S5: The commenter makes generic meta statements about noticing, wondering, or estimation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "The biggest thing is the increasing usage of coal power in China.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "In recent years, there has been a large global push towards clean energy.", "cluster_label": "S6: The world is moving toward renewable or clean energy and governments and policies can promote or accelerate this transition.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "This global push is a response to severe climate change.", "cluster_label": "S35: Climate change causes threats and extreme weather, and it can motivate reductions in fossil-fuel use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 5, "sentence": "These global trends do not appear in China.", "cluster_label": "These global trends do not appear in China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "The total coal usage in China is more than the total energy usage in the US.", "cluster_label": "S239: In China, coal usage is more than total energy usage in the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "China has a large population.", "cluster_label": "S9: China has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "This fact makes sense from a population standpoint.", "cluster_label": "S3: Population growth, electrification, and urbanization or industrialization can explain higher electricity generation or energy demand.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 9, "sentence": "I compare the graphs from this perspective.", "cluster_label": "S25: The commenter describes comparing graphs or comparing countries.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 10, "sentence": "I wonder why the total energy usage in India is low compared to China and the US.", "cluster_label": "S45: The author wonders why China uses much more energy or power than India and why the United States uses more power than India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "The population of India is about the same as the population of China.", "cluster_label": "S7: India and China have about the same population and both have more than 1 billion people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "The population of China is much larger than the population of the US.", "cluster_label": "S137: Some statements describe India and China and the United States having different populations and India having about 1.4 billion people and China having about 1.4 billion people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "These graphs make me wonder about the effectiveness of global initiatives.", "cluster_label": "S20: The author wonders whether environmental movements or global initiatives affect the increase of clean energy.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "Some large nations do not meet regulations.", "cluster_label": "S82: Some statements describe regulations designed to help clean the planet and some nations not meeting regulations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "These regulations are designed to help clean the planet.", "cluster_label": "S82: Some statements describe regulations designed to help clean the planet and some nations not meeting regulations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 16, "sentence": "Understanding how our nation produces energy helps contextualize issues regarding our energy grid.", "cluster_label": "S29: Understanding energy production and reliance helps people discuss energy infrastructure and contextualize grid issues.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 17, "sentence": "Our nation produces energy.", "cluster_label": "S105: Some statements describe the United States producing energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "We rely on this energy.", "cluster_label": "S135: Some statements describe India and China and the United States having electricity needs and this need existing globally.", "category": "Background knowledge", "color": "#d62728"}, {"id": 19, "sentence": "Some ideas propose severely reducing one form of energy.", "cluster_label": "S83: Some statements describe ideas proposing severely reducing forms of energy and people making decisions without knowledge of implications.", "category": "Background knowledge", "color": "#d62728"}, {"id": 20, "sentence": "Some ideas propose severely reducing another form of energy.", "cluster_label": "S83: Some statements describe ideas proposing severely reducing forms of energy and people making decisions without knowledge of implications.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "These ideas need to be backed by knowledge about current reliance on that energy.", "cluster_label": "S5: People should be informed and educated about electricity and energy information.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 22, "sentence": "Some people make decisions without knowledge of the implications.", "cluster_label": "S83: Some statements describe ideas proposing severely reducing forms of energy and people making decisions without knowledge of implications.", "category": "Background knowledge", "color": "#d62728"}, {"id": 23, "sentence": "If a person makes decisions without knowledge of the implications then the person will make ignorant decisions.", "cluster_label": "S36: If a person makes decisions without knowledge of the implications, then the person will make ignorant or damaging decisions.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 24, "sentence": "If a person makes decisions without knowledge of the implications then the person will make damaging decisions.", "cluster_label": "S36: If a person makes decisions without knowledge of the implications, then the person will make ignorant or damaging decisions.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 25, "sentence": "A possible title of the graphs is \"What Powers the People?\".", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 26, "sentence": "A possible title of the graphs is \"Energy Production Across the Years\".", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 1, "target": 2}, {"source": 0, "target": 2}, {"source": 3, "target": 4}, {"source": 3, "target": 5}, {"source": 2, "target": 5}, {"source": 2, "target": 6}, {"source": 6, "target": 8}, {"source": 7, "target": 8}, {"source": 8, "target": 9}, {"source": 0, "target": 9}, {"source": 0, "target": 10}, {"source": 7, "target": 11}, {"source": 7, "target": 12}, {"source": 0, "target": 13}, {"source": 3, "target": 13}, {"source": 5, "target": 13}, {"source": 13, "target": 14}, {"source": 14, "target": 15}, {"source": 17, "target": 16}, {"source": 17, "target": 18}, {"source": 18, "target": 19}, {"source": 18, "target": 20}, {"source": 18, "target": 21}, {"source": 19, "target": 21}, {"source": 20, "target": 21}, {"source": 21, "target": 22}, {"source": 22, "target": 23}, {"source": 22, "target": 24}, {"source": 0, "target": 25}, {"source": 0, "target": 26}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -143,9 +167,14 @@ For a title of the graphs, you could use
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -229,21 +258,30 @@ For a title of the graphs, you could use
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -361,6 +399,20 @@ For a title of the graphs, you could use
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

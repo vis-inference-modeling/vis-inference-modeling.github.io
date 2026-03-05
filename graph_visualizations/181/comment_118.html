@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 118</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -112,7 +136,7 @@ wonder - why china&#x27;s is skyrocketing over US and India and if its a good or
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "I notice three trends.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "One trend is rising.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "One trend is steady.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "One trend is slowly rising.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "I wonder why China's value is skyrocketing.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 5, "sentence": "China's value is higher than the value of the US.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "China's value is higher than the value of India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "I wonder if this situation is good.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "I wonder if this situation is bad.", "category": "Information need / curiosity", "color": "#bcbd22"}];
+  const nodes = [{"id": 0, "sentence": "I notice three trends.", "cluster_label": "S12: The commenter notices three trends.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "One trend is rising.", "cluster_label": "S59: One trend is rising or steady or slowly rising.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "One trend is steady.", "cluster_label": "S59: One trend is rising or steady or slowly rising.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "One trend is slowly rising.", "cluster_label": "S59: One trend is rising or steady or slowly rising.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "I wonder why China's value is skyrocketing.", "cluster_label": "S8: The author wonders why electricity generation in China has increased rapidly and why China differs from the United States or India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 5, "sentence": "China's value is higher than the value of the US.", "cluster_label": "S19: China has higher total electricity generation than the United States and India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "China's value is higher than the value of India.", "cluster_label": "S212: China produces more electricity than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "I wonder if this situation is good.", "cluster_label": "S67: The author wonders whether the situation is good or bad.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "I wonder if this situation is bad.", "cluster_label": "S67: The author wonders whether the situation is good or bad.", "category": "Information need / curiosity", "color": "#bcbd22"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 0, "target": 3}, {"source": 1, "target": 4}, {"source": 3, "target": 4}, {"source": 5, "target": 7}, {"source": 6, "target": 7}, {"source": 5, "target": 8}, {"source": 6, "target": 8}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Information need / curiosity", "color": "#bcbd22"}];
 
@@ -141,9 +165,14 @@ wonder - why china&#x27;s is skyrocketing over US and India and if its a good or
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -227,21 +256,30 @@ wonder - why china&#x27;s is skyrocketing over US and India and if its a good or
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -359,6 +397,20 @@ wonder - why china&#x27;s is skyrocketing over US and India and if its a good or
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

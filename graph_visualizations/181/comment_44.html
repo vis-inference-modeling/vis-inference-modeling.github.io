@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 44</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -113,7 +137,7 @@ The energy you produce, is what you feel!</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "This graph shows energy production by country and by energy source.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "China produces the most energy in general.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "China produces the most coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Coal is not a clean energy source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "The United States produces an equal amount of each energy source.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "The United States has started to have a decline in coal production.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "I wonder if China will stop producing so much coal.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 7, "sentence": "Producing much coal is extremely bad for the planet.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 8, "sentence": "I wonder why China produces so much coal.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 9, "sentence": "India produces little energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "I wonder why India produces little energy.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "I wonder if the economic state of China affects the energy production of China.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "I wonder if the economic state of India affects the energy production of India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 13, "sentence": "I live in a town.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 14, "sentence": "My town makes a big effort to reduce fossil-fuel production.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 15, "sentence": "This topic relates to me and my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 16, "sentence": "The headline is: The energy you produce is what you feel!", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "This graph shows energy production by country and by energy source.", "cluster_label": "S34: The commenter says that the graph shows energy production by country and by energy source.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "China produces the most energy in general.", "cluster_label": "S225: The graphs show that China produces a very large amount of energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "China produces the most coal.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Coal is not a clean energy source.", "cluster_label": "S47: Some statements describe coal as leading or not clean and fossil-fuel electricity having negative side effects.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "The United States produces an equal amount of each energy source.", "cluster_label": "S116: The United States produces an equal amount of each energy source.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "The United States has started to have a decline in coal production.", "cluster_label": "S69: Coal production in the United States decreased by more than half since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "I wonder if China will stop producing so much coal.", "cluster_label": "S28: People wonder whether China will stop producing so much coal.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 7, "sentence": "Producing much coal is extremely bad for the planet.", "cluster_label": "S49: Coal is the worst energy source for the environment and producing much coal is extremely bad.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 8, "sentence": "I wonder why China produces so much coal.", "cluster_label": "S17: The author wonders why China produces so much coal or relies heavily on coal and why India relies on coal.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 9, "sentence": "India produces little energy.", "cluster_label": "S23: India electricity generation is lower than China and lower than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "I wonder why India produces little energy.", "cluster_label": "I wonder why India produces little energy.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "I wonder if the economic state of China affects the energy production of China.", "cluster_label": "S6: The author wonders about relationships between electricity generation and economic or political factors such as economic openness, laws, economy, technology, or political stability.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "I wonder if the economic state of India affects the energy production of India.", "cluster_label": "S6: The author wonders about relationships between electricity generation and economic or political factors such as economic openness, laws, economy, technology, or political stability.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 13, "sentence": "I live in a town.", "cluster_label": "S2: I state where I live or describe my community membership.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 14, "sentence": "My town makes a big effort to reduce fossil-fuel production.", "cluster_label": "S16: My town or community makes efforts or passes laws to reduce fossil fuels and preserve the environment.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 15, "sentence": "This topic relates to me and my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 16, "sentence": "The headline is: The energy you produce is what you feel!", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 1, "target": 2}, {"source": 0, "target": 4}, {"source": 0, "target": 5}, {"source": 4, "target": 5}, {"source": 2, "target": 6}, {"source": 2, "target": 7}, {"source": 3, "target": 7}, {"source": 2, "target": 8}, {"source": 0, "target": 9}, {"source": 9, "target": 10}, {"source": 1, "target": 11}, {"source": 2, "target": 11}, {"source": 9, "target": 12}, {"source": 13, "target": 14}, {"source": 0, "target": 15}, {"source": 13, "target": 15}, {"source": 14, "target": 15}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -142,9 +166,14 @@ The energy you produce, is what you feel!</div>
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -228,21 +257,30 @@ The energy you produce, is what you feel!</div>
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -360,6 +398,20 @@ The energy you produce, is what you feel!</div>
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

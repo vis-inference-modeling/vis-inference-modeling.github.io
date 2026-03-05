@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 16</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -114,7 +138,7 @@ Headline: RISE AND SHINE, WORLD</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "The electricity generation in the world has steadily increased during the last 25 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The clean energy generation in the world has increased during the last 25 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "China produces more energy than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "India produces less energy than China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "India produces less energy than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "I wonder why India produces much less energy than China.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 6, "sentence": "China has a vast population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "India has a vast population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "Maybe China is more urbanized than India.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 9, "sentence": "Maybe China is more industrialized than India.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 10, "sentence": "The United States has a smaller population than China.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "The United States has a smaller population than India.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "The United States produces much energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "I live on Earth.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 14, "sentence": "A climate crisis exists.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "It is relieving that much clean energy is produced.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "This data gives me comfort.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "People work together.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "People find new ways to mobilize society.", "category": "Background knowledge", "color": "#d62728"}, {"id": 19, "sentence": "People want to mobilize society in a safe way.", "category": "Background knowledge", "color": "#d62728"}, {"id": 20, "sentence": "People want to mobilize society in a clean way.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "The headline is: RISE AND SHINE, WORLD.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "The electricity generation in the world has steadily increased during the last 25 years.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The clean energy generation in the world has increased during the last 25 years.", "cluster_label": "S3: Clean electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "China produces more energy than the United States.", "cluster_label": "S19: China has higher total electricity generation than the United States and India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "India produces less energy than China.", "cluster_label": "S212: China produces more electricity than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "India produces less energy than the United States.", "cluster_label": "N20: India produces less energy than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "I wonder why India produces much less energy than China.", "cluster_label": "S45: The author wonders why China uses much more energy or power than India and why the United States uses more power than India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 6, "sentence": "China has a vast population.", "cluster_label": "S9: China has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "India has a vast population.", "cluster_label": "S8: India has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "Maybe China is more urbanized than India.", "cluster_label": "S3: Population growth, electrification, and urbanization or industrialization can explain higher electricity generation or energy demand.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 9, "sentence": "Maybe China is more industrialized than India.", "cluster_label": "S3: Population growth, electrification, and urbanization or industrialization can explain higher electricity generation or energy demand.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 10, "sentence": "The United States has a smaller population than China.", "cluster_label": "S10: The population of the United States is smaller than the population of China or India.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "The United States has a smaller population than India.", "cluster_label": "S11: India has a greater population than the United States.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "The United States produces much energy.", "cluster_label": "S187: The U.S. uses more power than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "I live on Earth.", "cluster_label": "S2: I state where I live or describe my community membership.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 14, "sentence": "A climate crisis exists.", "cluster_label": "S28: Climate change is an increasing or pressing issue and a common topic of conversation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "It is relieving that much clean energy is produced.", "cluster_label": "S1: Clean energy is better for the Earth than fossil fuels and increasing clean energy is good.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "This data gives me comfort.", "cluster_label": "S24: This decrease is comforting for the upcoming years.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "People work together.", "cluster_label": "S41: Some statements describe activism and social mobilization around clean and safe society.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "People find new ways to mobilize society.", "cluster_label": "S41: Some statements describe activism and social mobilization around clean and safe society.", "category": "Background knowledge", "color": "#d62728"}, {"id": 19, "sentence": "People want to mobilize society in a safe way.", "cluster_label": "S41: Some statements describe activism and social mobilization around clean and safe society.", "category": "Background knowledge", "color": "#d62728"}, {"id": 20, "sentence": "People want to mobilize society in a clean way.", "cluster_label": "S41: Some statements describe activism and social mobilization around clean and safe society.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "The headline is: RISE AND SHINE, WORLD.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 3, "target": 5}, {"source": 5, "target": 8}, {"source": 5, "target": 9}, {"source": 6, "target": 10}, {"source": 7, "target": 11}, {"source": 1, "target": 15}, {"source": 14, "target": 15}, {"source": 1, "target": 16}, {"source": 15, "target": 16}, {"source": 17, "target": 18}, {"source": 18, "target": 19}, {"source": 18, "target": 20}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -143,9 +167,14 @@ Headline: RISE AND SHINE, WORLD</div>
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -229,21 +258,30 @@ Headline: RISE AND SHINE, WORLD</div>
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -361,6 +399,20 @@ Headline: RISE AND SHINE, WORLD</div>
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

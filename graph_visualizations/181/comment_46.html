@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 46</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -117,7 +141,7 @@ Title: New World of Clean electricity</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "I notice that China has the greatest rate of change.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "I notice that the US stays more constant.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "All the countries use more clean energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "I wonder why all the countries use more clean energy.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 4, "sentence": "I wonder if the economy affects the type of electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 5, "sentence": "This relates to me and my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 6, "sentence": "My community is part of the US.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 7, "sentence": "The US does not increase its electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "The US still uses non-clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The title is: New World of Clean electricity.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "I notice that China has the greatest rate of change.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "I notice that the US stays more constant.", "cluster_label": "S22: United States electricity generation is relatively stable or stagnant over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "All the countries use more clean energy.", "cluster_label": "S99: Clean power has increased in all countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "I wonder why all the countries use more clean energy.", "cluster_label": "S47: The author wonders why world electricity generation has become increasingly clean and why all countries use more clean energy.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 4, "sentence": "I wonder if the economy affects the type of electricity.", "cluster_label": "S6: The author wonders about relationships between electricity generation and economic or political factors such as economic openness, laws, economy, technology, or political stability.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 5, "sentence": "This relates to me and my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 6, "sentence": "My community is part of the US.", "cluster_label": "S42: My community is part of the US.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 7, "sentence": "The US does not increase its electricity.", "cluster_label": "S84: The increase of energy usage in the United States is low.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "The US still uses non-clean electricity.", "cluster_label": "S200: The electricity generation in the world has increased and fossil fuels dominate most sources of world electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The title is: New World of Clean electricity.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 2, "target": 3}, {"source": 3, "target": 4}, {"source": 1, "target": 5}, {"source": 2, "target": 5}, {"source": 6, "target": 5}, {"source": 1, "target": 7}, {"source": 6, "target": 8}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -146,9 +170,14 @@ Title: New World of Clean electricity</div>
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -232,21 +261,30 @@ Title: New World of Clean electricity</div>
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -364,6 +402,20 @@ Title: New World of Clean electricity</div>
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

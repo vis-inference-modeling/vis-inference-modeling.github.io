@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 19</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -114,7 +138,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "Fossil fuels have been widely used for a long time.", "category": "Background knowledge", "color": "#d62728"}, {"id": 1, "sentence": "Coal is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "Gas is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 3, "sentence": "The amount of clean electric power generation has increased in recent years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "This increase gradually reduces the amount of fossil fuels that are used for electricity generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 5, "sentence": "This increase gradually causes more people to use clean electricity generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 6, "sentence": "I want to learn why people moved toward using clean electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 7, "sentence": "I want to learn how people moved toward using clean electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "I ask whether components of clean electricity are more widely available than materials of fossil-fuel electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 9, "sentence": "I ask whether components of clean electricity are easier to find than materials of fossil-fuel electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "This topic relates to my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 11, "sentence": "Everything in my community uses electricity.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 12, "sentence": "We must take care of our community.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 13, "sentence": "We must fill our community with clean supplies.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 14, "sentence": "We must have a healthy non-toxic environment in our community.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 15, "sentence": "We should leave toxic electricity behind.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "We should improve by using clean electricity.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}];
+  const nodes = [{"id": 0, "sentence": "Fossil fuels have been widely used for a long time.", "cluster_label": "S16: Fossil fuels are widely used and are the main source of energy in the world.", "category": "Background knowledge", "color": "#d62728"}, {"id": 1, "sentence": "Coal is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "Gas is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 3, "sentence": "The amount of clean electric power generation has increased in recent years.", "cluster_label": "S47: Clean electricity rises more in recent years and clean energy consumption increases substantially in recent years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "This increase gradually reduces the amount of fossil fuels that are used for electricity generation.", "cluster_label": "S40: In the past twenty years, the world has made advancements in becoming more eco-friendly.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 5, "sentence": "This increase gradually causes more people to use clean electricity generation.", "cluster_label": "S40: In the past twenty years, the world has made advancements in becoming more eco-friendly.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 6, "sentence": "I want to learn why people moved toward using clean electricity.", "cluster_label": "S59: The author wonders what motivates or could lead the world to use more clean power than fossil fuels to generate electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 7, "sentence": "I want to learn how people moved toward using clean electricity.", "cluster_label": "S59: The author wonders what motivates or could lead the world to use more clean power than fossil fuels to generate electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "I ask whether components of clean electricity are more widely available than materials of fossil-fuel electricity.", "cluster_label": "S59: The author wonders what motivates or could lead the world to use more clean power than fossil fuels to generate electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 9, "sentence": "I ask whether components of clean electricity are easier to find than materials of fossil-fuel electricity.", "cluster_label": "S59: The author wonders what motivates or could lead the world to use more clean power than fossil fuels to generate electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "This topic relates to my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 11, "sentence": "Everything in my community uses electricity.", "cluster_label": "S3: My community or I use electricity or energy every day and depend on it.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 12, "sentence": "We must take care of our community.", "cluster_label": "S14: Communities should be healthy, non-toxic, and safe, and people should take care of the planet.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 13, "sentence": "We must fill our community with clean supplies.", "cluster_label": "S65: We must fill our community with clean supplies.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 14, "sentence": "We must have a healthy non-toxic environment in our community.", "cluster_label": "S14: Communities should be healthy, non-toxic, and safe, and people should take care of the planet.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 15, "sentence": "We should leave toxic electricity behind.", "cluster_label": "S52: People should steer away from fossil fuels and hope that fossil fuel use decreases.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "We should improve by using clean electricity.", "cluster_label": "S53: The community should continue switching to clean energy production and use clean electricity.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}];
   const links = [{"source": 3, "target": 4}, {"source": 0, "target": 4}, {"source": 3, "target": 5}, {"source": 5, "target": 6}, {"source": 5, "target": 7}, {"source": 6, "target": 8}, {"source": 7, "target": 8}, {"source": 6, "target": 9}, {"source": 7, "target": 9}, {"source": 6, "target": 10}, {"source": 7, "target": 10}, {"source": 10, "target": 11}, {"source": 10, "target": 12}, {"source": 12, "target": 13}, {"source": 10, "target": 13}, {"source": 12, "target": 14}, {"source": 10, "target": 14}, {"source": 14, "target": 15}, {"source": 4, "target": 15}, {"source": 5, "target": 16}, {"source": 14, "target": 16}, {"source": 15, "target": 16}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}];
 
@@ -143,9 +167,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -229,21 +258,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -361,6 +399,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

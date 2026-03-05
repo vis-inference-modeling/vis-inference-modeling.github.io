@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 14</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -118,7 +142,7 @@ Energy Evolution: Transitioning from Fossil Fuels to Clean Sources</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "Since 2000, the total electricity production has increased for all types of electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Clean energy produces the most electricity among the forms of electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Nuclear electricity is the largest clean-energy source.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Hydroelectric electricity is the second-largest clean-energy source.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Among fossil fuels, oil produces much electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "Among fossil fuels, gas produces much electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Oil and gas produce less electricity than nuclear electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Oil and gas produce less electricity than hydroelectric electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "I wonder how the total electricity generated for each form of generation depends on the energy production of each country.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 9, "sentence": "China increases its electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "China emphasizes fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "China will probably continue to increase its electricity generation.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 12, "sentence": "The USA has remained rather constant in total electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "In the USA, fossil-fuel electricity generation shows a downtrend.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "I ask whether the downtrend exists because the USA sources fossil fuels from other countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 15, "sentence": "I live in the USA.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 16, "sentence": "The graph about electricity generation in the USA is interesting to me.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 17, "sentence": "In the USA, gas has become a main source of electric power.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "In the USA, coal has become a main source of electric power.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "In the USA, solar power contributes only a small amount to total electricity production.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 20, "sentence": "Nowadays, people make a huge deal about solar power.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "The headline is: Energy Evolution: Transitioning from Fossil Fuels to Clean Sources.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "Since 2000, the total electricity production has increased for all types of electricity generation.", "cluster_label": "S7: All sources or categories of electricity generation increase over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Clean energy produces the most electricity among the forms of electricity generation.", "cluster_label": "S9: Clean electricity produces more electricity than fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Nuclear electricity is the largest clean-energy source.", "cluster_label": "S190: The rate of nuclear energy has always been high and has reached a peak.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Hydroelectric electricity is the second-largest clean-energy source.", "cluster_label": "Hydroelectric electricity is the second-largest clean-energy source.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Among fossil fuels, oil produces much electricity.", "cluster_label": "Among fossil fuels, oil produces much electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "Among fossil fuels, gas produces much electricity.", "cluster_label": "S79: Among fossil fuels, oil and gas produce much electricity, but less than nuclear and hydro.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Oil and gas produce less electricity than nuclear electricity.", "cluster_label": "S79: Among fossil fuels, oil and gas produce much electricity, but less than nuclear and hydro.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Oil and gas produce less electricity than hydroelectric electricity.", "cluster_label": "S44: Wind and solar are used less than nuclear and hydro, and wind and solar are among the least used sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "I wonder how the total electricity generated for each form of generation depends on the energy production of each country.", "cluster_label": "S26: The author wonders about how total electricity by generation type depends on country production and whether U.S. downtrends relate to sourcing fossil fuels from other countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 9, "sentence": "China increases its electricity generation.", "cluster_label": "China increases its electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "China emphasizes fossil fuels.", "cluster_label": "S27: China clean electricity and fossil electricity both increase, and China relies heavily on fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "China will probably continue to increase its electricity generation.", "cluster_label": "S20: Energy usage and electricity generation may change by country, and some countries may continue increasing generation.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 12, "sentence": "The USA has remained rather constant in total electricity generation.", "cluster_label": "S22: United States electricity generation is relatively stable or stagnant over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "In the USA, fossil-fuel electricity generation shows a downtrend.", "cluster_label": "S29: United States fossil-fuel usage decreases over time, especially coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "I ask whether the downtrend exists because the USA sources fossil fuels from other countries.", "cluster_label": "S26: The author wonders about how total electricity by generation type depends on country production and whether U.S. downtrends relate to sourcing fossil fuels from other countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 15, "sentence": "I live in the USA.", "cluster_label": "S2: I state where I live or describe my community membership.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 16, "sentence": "The graph about electricity generation in the USA is interesting to me.", "cluster_label": "S12: The commenter makes a generic statement about trends, interest, or analysis helping understanding.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 17, "sentence": "In the USA, gas has become a main source of electric power.", "cluster_label": "S80: In the United States, gas and coal have become main sources of electric power, and solar contributes only a small amount.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "In the USA, coal has become a main source of electric power.", "cluster_label": "S80: In the United States, gas and coal have become main sources of electric power, and solar contributes only a small amount.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "In the USA, solar power contributes only a small amount to total electricity production.", "cluster_label": "S80: In the United States, gas and coal have become main sources of electric power, and solar contributes only a small amount.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 20, "sentence": "Nowadays, people make a huge deal about solar power.", "cluster_label": "S5: Wind power and solar power are clean or renewable energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "The headline is: Energy Evolution: Transitioning from Fossil Fuels to Clean Sources.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 1, "target": 2}, {"source": 1, "target": 3}, {"source": 2, "target": 3}, {"source": 2, "target": 6}, {"source": 4, "target": 6}, {"source": 5, "target": 6}, {"source": 3, "target": 7}, {"source": 4, "target": 7}, {"source": 5, "target": 7}, {"source": 0, "target": 8}, {"source": 1, "target": 8}, {"source": 9, "target": 10}, {"source": 9, "target": 11}, {"source": 12, "target": 13}, {"source": 13, "target": 14}, {"source": 15, "target": 16}, {"source": 12, "target": 16}, {"source": 12, "target": 17}, {"source": 12, "target": 18}, {"source": 12, "target": 19}, {"source": 19, "target": 20}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -147,9 +171,14 @@ Energy Evolution: Transitioning from Fossil Fuels to Clean Sources</div>
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -233,21 +262,30 @@ Energy Evolution: Transitioning from Fossil Fuels to Clean Sources</div>
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -365,6 +403,20 @@ Energy Evolution: Transitioning from Fossil Fuels to Clean Sources</div>
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

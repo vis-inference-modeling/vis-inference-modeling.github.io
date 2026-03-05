@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 65</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -117,7 +141,7 @@ The next graph will be released by Friday, April 12, with live-moderation in two
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "This is Wednesday's live moderation of \"What\u2019s Going On in This Graph?\".", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "Today's graphs display the sources of electricity globally.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "Today's graphs display the sources of electricity by country.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 3, "sentence": "China is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "The U.S. is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "India is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "The graphs include China.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 7, "sentence": "The graphs include the U.S..", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 8, "sentence": "The graphs include India.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 9, "sentence": "Today is a day.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 10, "sentence": "From 9 am E.T. today to 2 pm E.T. today, you can share responses online.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 11, "sentence": "The release lists four questions.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 12, "sentence": "You can respond to the four questions.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 13, "sentence": "A notice can include a claim.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 14, "sentence": "If a notice includes a claim then the notice must include evidence.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 15, "sentence": "The evidence must support the claim.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 16, "sentence": "By Friday morning, we will reveal a free link.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 17, "sentence": "The free link will point to the online article.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 18, "sentence": "The online article included these graphs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 19, "sentence": "By Friday morning, we will give shout outs for some catchy headlines.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 20, "sentence": "You can get a link to your response.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 21, "sentence": "You can share the link with your teacher.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 22, "sentence": "You can share the link with your classmates.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 23, "sentence": "You can click the response box below your response.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 24, "sentence": "You can click \"Email me when my comment is published\".", "category": "Meta / paratext", "color": "#17becf"}, {"id": 25, "sentence": "The next graph will be released by Friday, April 12.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 26, "sentence": "Live-moderation will happen two weeks later on Wednesday, April 17.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 27, "sentence": "The topic is shrinkflation.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "This is Wednesday's live moderation of \"What\u2019s Going On in This Graph?\".", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "Today's graphs display the sources of electricity globally.", "cluster_label": "S22: The commenter describes the graphs as depicting energy use and electricity use for specific countries or worldwide averages.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "Today's graphs display the sources of electricity by country.", "cluster_label": "S22: The commenter describes the graphs as depicting energy use and electricity use for specific countries or worldwide averages.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 3, "sentence": "China is a country.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "The U.S. is a country.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "India is a country.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "The graphs include China.", "cluster_label": "S2: The graph(s) show three countries (China, India, and the United States).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 7, "sentence": "The graphs include the U.S..", "cluster_label": "S2: The graph(s) show three countries (China, India, and the United States).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 8, "sentence": "The graphs include India.", "cluster_label": "S2: The graph(s) show three countries (China, India, and the United States).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 9, "sentence": "Today is a day.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 10, "sentence": "From 9 am E.T. today to 2 pm E.T. today, you can share responses online.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 11, "sentence": "The release lists four questions.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 12, "sentence": "You can respond to the four questions.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 13, "sentence": "A notice can include a claim.", "cluster_label": "S6: The release or commenter provides guidance about headlines or about supporting claims with evidence.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 14, "sentence": "If a notice includes a claim then the notice must include evidence.", "cluster_label": "S6: The release or commenter provides guidance about headlines or about supporting claims with evidence.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 15, "sentence": "The evidence must support the claim.", "cluster_label": "S6: The release or commenter provides guidance about headlines or about supporting claims with evidence.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 16, "sentence": "By Friday morning, we will reveal a free link.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 17, "sentence": "The free link will point to the online article.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 18, "sentence": "The online article included these graphs.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 19, "sentence": "By Friday morning, we will give shout outs for some catchy headlines.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 20, "sentence": "You can get a link to your response.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 21, "sentence": "You can share the link with your teacher.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 22, "sentence": "You can share the link with your classmates.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 23, "sentence": "You can click the response box below your response.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 24, "sentence": "You can click \"Email me when my comment is published\".", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 25, "sentence": "The next graph will be released by Friday, April 12.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 26, "sentence": "Live-moderation will happen two weeks later on Wednesday, April 17.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 27, "sentence": "The topic is shrinkflation.", "cluster_label": "S13: The commenter states that the topic is shrinkflation.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 3, "target": 6}, {"source": 4, "target": 7}, {"source": 5, "target": 8}, {"source": 9, "target": 10}, {"source": 0, "target": 10}, {"source": 11, "target": 12}, {"source": 10, "target": 12}, {"source": 13, "target": 14}, {"source": 14, "target": 15}, {"source": 16, "target": 17}, {"source": 1, "target": 18}, {"source": 2, "target": 18}, {"source": 17, "target": 18}, {"source": 16, "target": 19}, {"source": 12, "target": 20}, {"source": 20, "target": 21}, {"source": 20, "target": 22}, {"source": 12, "target": 23}, {"source": 23, "target": 24}, {"source": 25, "target": 26}, {"source": 25, "target": 27}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -146,9 +170,14 @@ The next graph will be released by Friday, April 12, with live-moderation in two
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -232,21 +261,30 @@ The next graph will be released by Friday, April 12, with live-moderation in two
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -364,6 +402,20 @@ The next graph will be released by Friday, April 12, with live-moderation in two
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

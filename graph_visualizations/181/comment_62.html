@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 62</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -113,7 +137,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "This graph shows the electrical energy resources of the world.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "This graph shows an estimate of how much the world used from 2000 to 2022.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "The resources include nuclear energy.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 3, "sentence": "The resources include gas.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 4, "sentence": "The resources include coal.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 5, "sentence": "The resources include wind energy.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 6, "sentence": "The resources include solar energy.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 7, "sentence": "The resources include oil.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 8, "sentence": "The resources include hydroelectric power.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 9, "sentence": "The resources include other resources.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 10, "sentence": "A second graph shows how much of these resources various countries use.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 11, "sentence": "Overall, the use of these resources increased steadily in the world.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "The use of nuclear power increased strongly.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "In 2000, the world used about 15 million gigawatt hours of nuclear power.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "In 2020, the world used more than 25 million gigawatt hours of nuclear power.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "China has the biggest increase among the shown countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 16, "sentence": "In China, the use of nuclear power increased by more than 8 million gigawatt hours in 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 17, "sentence": "India has the slowest increase among the shown countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "America has remained rather stagnant since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "I wonder why America has not had a drastic increase in the use of resources.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 20, "sentence": "China has had a drastic increase in the use of resources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 21, "sentence": "I wonder if the use of oil will increase noticeably.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 22, "sentence": "The Willow Project is being pursued.", "category": "Background knowledge", "color": "#d62728"}, {"id": 23, "sentence": "This topic relates to my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 24, "sentence": "All people are affected by different uses of electrical power.", "category": "Background knowledge", "color": "#d62728"}, {"id": 25, "sentence": "Clean power has pros for communities.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 26, "sentence": "Clean power has cons for communities.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 27, "sentence": "Fossil fuels have pros for communities.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 28, "sentence": "Fossil fuels have cons for communities.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 29, "sentence": "Clean power is better for the environment than fossil fuels.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 30, "sentence": "Clean power can be less efficient than fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 31, "sentence": "Clean power can be more cost-effective than fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 32, "sentence": "Not every community can use cleaner energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 33, "sentence": "The headline is: What Lights Up The World? Our Energy Sources Since the 2000s.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "This graph shows the electrical energy resources of the world.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "This graph shows an estimate of how much the world used from 2000 to 2022.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "The resources include nuclear energy.", "cluster_label": "S5: The graph includes specific energy resources (coal, gas, oil, nuclear, wind, solar, hydroelectric, and other).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 3, "sentence": "The resources include gas.", "cluster_label": "S5: The graph includes specific energy resources (coal, gas, oil, nuclear, wind, solar, hydroelectric, and other).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 4, "sentence": "The resources include coal.", "cluster_label": "S5: The graph includes specific energy resources (coal, gas, oil, nuclear, wind, solar, hydroelectric, and other).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 5, "sentence": "The resources include wind energy.", "cluster_label": "S5: The graph includes specific energy resources (coal, gas, oil, nuclear, wind, solar, hydroelectric, and other).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 6, "sentence": "The resources include solar energy.", "cluster_label": "S5: The graph includes specific energy resources (coal, gas, oil, nuclear, wind, solar, hydroelectric, and other).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 7, "sentence": "The resources include oil.", "cluster_label": "S5: The graph includes specific energy resources (coal, gas, oil, nuclear, wind, solar, hydroelectric, and other).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 8, "sentence": "The resources include hydroelectric power.", "cluster_label": "S5: The graph includes specific energy resources (coal, gas, oil, nuclear, wind, solar, hydroelectric, and other).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 9, "sentence": "The resources include other resources.", "cluster_label": "S5: The graph includes specific energy resources (coal, gas, oil, nuclear, wind, solar, hydroelectric, and other).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 10, "sentence": "A second graph shows how much of these resources various countries use.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 11, "sentence": "Overall, the use of these resources increased steadily in the world.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "The use of nuclear power increased strongly.", "cluster_label": "S14: Nuclear energy generates the most electricity overall.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "In 2000, the world used about 15 million gigawatt hours of nuclear power.", "cluster_label": "S14: Nuclear energy generates the most electricity overall.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "In 2020, the world used more than 25 million gigawatt hours of nuclear power.", "cluster_label": "S118: In 2020, nuclear energy reached more than 25 million gigawatt hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "China has the biggest increase among the shown countries.", "cluster_label": "China has the biggest increase among the shown countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 16, "sentence": "In China, the use of nuclear power increased by more than 8 million gigawatt hours in 20 years.", "cluster_label": "S14: Nuclear energy generates the most electricity overall.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 17, "sentence": "India has the slowest increase among the shown countries.", "cluster_label": "S24: India electricity generation increases slowly or steadily over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "America has remained rather stagnant since 2000.", "cluster_label": "S22: United States electricity generation is relatively stable or stagnant over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "I wonder why America has not had a drastic increase in the use of resources.", "cluster_label": "S7: The author wonders why electricity generation in the United States has plateaued or stayed flat and whether similar plateaus occur in other Western developed countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 20, "sentence": "China has had a drastic increase in the use of resources.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 21, "sentence": "I wonder if the use of oil will increase noticeably.", "cluster_label": "S34: People wonder whether oil use will increase noticeably.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 22, "sentence": "The Willow Project is being pursued.", "cluster_label": "S75: Some statements describe the Willow Project being pursued.", "category": "Background knowledge", "color": "#d62728"}, {"id": 23, "sentence": "This topic relates to my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 24, "sentence": "All people are affected by different uses of electrical power.", "cluster_label": "S36: The way that electricity is produced affects people and communities.", "category": "Background knowledge", "color": "#d62728"}, {"id": 25, "sentence": "Clean power has pros for communities.", "cluster_label": "S38: Clean power and fossil fuels have pros and cons for communities.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 26, "sentence": "Clean power has cons for communities.", "cluster_label": "S38: Clean power and fossil fuels have pros and cons for communities.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 27, "sentence": "Fossil fuels have pros for communities.", "cluster_label": "S38: Clean power and fossil fuels have pros and cons for communities.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 28, "sentence": "Fossil fuels have cons for communities.", "cluster_label": "S38: Clean power and fossil fuels have pros and cons for communities.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 29, "sentence": "Clean power is better for the environment than fossil fuels.", "cluster_label": "S1: Clean energy is better for the Earth than fossil fuels and increasing clean energy is good.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 30, "sentence": "Clean power can be less efficient than fossil fuels.", "cluster_label": "S32: Clean energy can be expensive or not feasible for every community and can differ in efficiency or cost-effectiveness.", "category": "Background knowledge", "color": "#d62728"}, {"id": 31, "sentence": "Clean power can be more cost-effective than fossil fuels.", "cluster_label": "S32: Clean energy can be expensive or not feasible for every community and can differ in efficiency or cost-effectiveness.", "category": "Background knowledge", "color": "#d62728"}, {"id": 32, "sentence": "Not every community can use cleaner energy sources.", "cluster_label": "S32: Clean energy can be expensive or not feasible for every community and can differ in efficiency or cost-effectiveness.", "category": "Background knowledge", "color": "#d62728"}, {"id": 33, "sentence": "The headline is: What Lights Up The World? Our Energy Sources Since the 2000s.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 0, "target": 3}, {"source": 0, "target": 4}, {"source": 0, "target": 5}, {"source": 0, "target": 6}, {"source": 0, "target": 7}, {"source": 0, "target": 8}, {"source": 0, "target": 9}, {"source": 0, "target": 10}, {"source": 2, "target": 10}, {"source": 3, "target": 10}, {"source": 4, "target": 10}, {"source": 5, "target": 10}, {"source": 6, "target": 10}, {"source": 7, "target": 10}, {"source": 8, "target": 10}, {"source": 9, "target": 10}, {"source": 1, "target": 11}, {"source": 2, "target": 11}, {"source": 3, "target": 11}, {"source": 4, "target": 11}, {"source": 5, "target": 11}, {"source": 6, "target": 11}, {"source": 7, "target": 11}, {"source": 8, "target": 11}, {"source": 9, "target": 11}, {"source": 2, "target": 12}, {"source": 1, "target": 12}, {"source": 12, "target": 13}, {"source": 12, "target": 14}, {"source": 10, "target": 15}, {"source": 12, "target": 16}, {"source": 15, "target": 16}, {"source": 10, "target": 17}, {"source": 10, "target": 18}, {"source": 18, "target": 19}, {"source": 10, "target": 20}, {"source": 15, "target": 20}, {"source": 7, "target": 21}, {"source": 21, "target": 22}, {"source": 22, "target": 23}, {"source": 11, "target": 24}, {"source": 24, "target": 25}, {"source": 24, "target": 26}, {"source": 24, "target": 27}, {"source": 24, "target": 28}, {"source": 25, "target": 29}, {"source": 27, "target": 29}, {"source": 25, "target": 30}, {"source": 27, "target": 30}, {"source": 25, "target": 31}, {"source": 27, "target": 31}, {"source": 25, "target": 32}, {"source": 26, "target": 32}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -142,9 +166,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -228,21 +257,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -360,6 +398,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

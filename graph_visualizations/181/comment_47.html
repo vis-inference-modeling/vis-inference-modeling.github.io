@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 47</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -117,7 +141,7 @@ This relates to my community because we use a lot of gas.
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "I notice the graph.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "In 2020, nuclear electricity increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "In 2020, hydroelectric electricity increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "In the graph, coal takes up a big chunk at the bottom.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "In the graph, gas takes up a big chunk at the bottom.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "I wonder if we are making a new change.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 6, "sentence": "I wonder if we are switching to more electric electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 7, "sentence": "I wonder if we are switching from gas and coal.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "This relates to my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 9, "sentence": "My community uses a lot of gas.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 10, "sentence": "The headline is: Is clean energy taking over?", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "I notice the graph.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "In 2020, nuclear electricity increased.", "cluster_label": "S15: Nuclear electricity and hydroelectric electricity increase in 2020.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "In 2020, hydroelectric electricity increased.", "cluster_label": "S15: Nuclear electricity and hydroelectric electricity increase in 2020.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "In the graph, coal takes up a big chunk at the bottom.", "cluster_label": "S12: Coal is the largest source of global electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "In the graph, gas takes up a big chunk at the bottom.", "cluster_label": "In the graph, gas takes up a big chunk at the bottom.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "I wonder if we are making a new change.", "cluster_label": "S3: The author wonders whether there is a shift away from gas or coal toward more electricity or electrification.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 6, "sentence": "I wonder if we are switching to more electric electricity.", "cluster_label": "S3: The author wonders whether there is a shift away from gas or coal toward more electricity or electrification.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 7, "sentence": "I wonder if we are switching from gas and coal.", "cluster_label": "S3: The author wonders whether there is a shift away from gas or coal toward more electricity or electrification.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "This relates to my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 9, "sentence": "My community uses a lot of gas.", "cluster_label": "S4: My community or I use a lot of gas or fossil fuels, and this has impacts.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 10, "sentence": "The headline is: Is clean energy taking over?", "cluster_label": "The headline is: Is clean energy taking over?", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 0, "target": 3}, {"source": 0, "target": 4}, {"source": 1, "target": 5}, {"source": 2, "target": 5}, {"source": 3, "target": 5}, {"source": 4, "target": 5}, {"source": 5, "target": 6}, {"source": 1, "target": 6}, {"source": 2, "target": 6}, {"source": 5, "target": 7}, {"source": 3, "target": 7}, {"source": 4, "target": 7}, {"source": 5, "target": 8}, {"source": 6, "target": 8}, {"source": 7, "target": 8}, {"source": 8, "target": 9}, {"source": 5, "target": 10}, {"source": 6, "target": 10}, {"source": 7, "target": 10}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -146,9 +170,14 @@ This relates to my community because we use a lot of gas.
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -232,21 +261,30 @@ This relates to my community because we use a lot of gas.
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -364,6 +402,20 @@ This relates to my community because we use a lot of gas.
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

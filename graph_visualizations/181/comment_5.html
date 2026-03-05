@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 5</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -111,7 +135,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "I noticed a graph.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "The graph has a y-axis.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 2, "sentence": "The y-axis is measured in gigawatt hours.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 3, "sentence": "The graph has an x-axis.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 4, "sentence": "The x-axis is labeled in years.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 5, "sentence": "The graph has tiered color blocks.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 6, "sentence": "Each tiered color block symbolizes a different fuel for electricity generation.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 7, "sentence": "The yellow-orange blocks represent a cleaner fuel alternative.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 8, "sentence": "The black-gray blocks represent fossil-fuel-based electricity options.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 9, "sentence": "I wonder how much a gigawatt is.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "I wonder what the best comparison for a gigawatt is.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "I want to comprehend the size of a gigawatt better.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "I wonder what some differences between clean electricity and fossil-based electricity are.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 13, "sentence": "This data affects the community around me.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 14, "sentence": "Fossil fuels contribute to climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "It is important to see how much electricity generation is based on fossil fuels.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "It is important to see how much electricity generation is based on cleaner fuel options.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "The headline is: Global Use and Differences in the Electricity Generation.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "I noticed a graph.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "The graph has a y-axis.", "cluster_label": "S9: The graph has axes and uses stacked, tiered color blocks with different colors for different energy types.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 2, "sentence": "The y-axis is measured in gigawatt hours.", "cluster_label": "S8: The y-axis is measured in gigawatt hours and the graph uses gigawatt hours as a unit.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 3, "sentence": "The graph has an x-axis.", "cluster_label": "S9: The graph has axes and uses stacked, tiered color blocks with different colors for different energy types.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 4, "sentence": "The x-axis is labeled in years.", "cluster_label": "S9: The x-axis is labeled in years.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 5, "sentence": "The graph has tiered color blocks.", "cluster_label": "S9: The graph has axes and uses stacked, tiered color blocks with different colors for different energy types.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 6, "sentence": "Each tiered color block symbolizes a different fuel for electricity generation.", "cluster_label": "S3: The graph specifies the energy source for electricity generation and uses stacked layers to encode sources.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 7, "sentence": "The yellow-orange blocks represent a cleaner fuel alternative.", "cluster_label": "S14: Yellow-orange blocks represent a cleaner fuel alternative and black-gray blocks represent fossil-fuel-based electricity options.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 8, "sentence": "The black-gray blocks represent fossil-fuel-based electricity options.", "cluster_label": "S14: Yellow-orange blocks represent a cleaner fuel alternative and black-gray blocks represent fossil-fuel-based electricity options.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 9, "sentence": "I wonder how much a gigawatt is.", "cluster_label": "S12: The author wonders what the color scale means and how colors are assigned to energy types.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "I wonder what the best comparison for a gigawatt is.", "cluster_label": "S12: The author wonders what the color scale means and how colors are assigned to energy types.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "I want to comprehend the size of a gigawatt better.", "cluster_label": "S12: The author wonders what the color scale means and how colors are assigned to energy types.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "I wonder what some differences between clean electricity and fossil-based electricity are.", "cluster_label": "S12_new: The author wonders what differences between clean electricity and fossil-based electricity are.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 13, "sentence": "This data affects the community around me.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 14, "sentence": "Fossil fuels contribute to climate change.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "It is important to see how much electricity generation is based on fossil fuels.", "cluster_label": "S5: People should be informed and educated about electricity and energy information.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "It is important to see how much electricity generation is based on cleaner fuel options.", "cluster_label": "S5: People should be informed and educated about electricity and energy information.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "The headline is: Global Use and Differences in the Electricity Generation.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 1, "target": 2}, {"source": 0, "target": 3}, {"source": 3, "target": 4}, {"source": 0, "target": 5}, {"source": 5, "target": 6}, {"source": 5, "target": 7}, {"source": 6, "target": 7}, {"source": 5, "target": 8}, {"source": 6, "target": 8}, {"source": 2, "target": 9}, {"source": 9, "target": 10}, {"source": 9, "target": 11}, {"source": 10, "target": 11}, {"source": 7, "target": 12}, {"source": 8, "target": 12}, {"source": 0, "target": 13}, {"source": 8, "target": 15}, {"source": 14, "target": 15}, {"source": 7, "target": 16}, {"source": 14, "target": 16}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Encoding interpretation", "color": "#2ca02c"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -140,9 +164,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -226,21 +255,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -358,6 +396,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

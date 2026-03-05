@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 21</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -118,7 +142,7 @@ How do China, the U.S., and India generate their electricity?</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "The graphs show a rise in electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The rise in electricity generation correlates positively with the years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "The increase in electricity generation is not uniform across all nations.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "China, India, and the United States are nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "Between 2000 and 2020 China increased electricity generation every year.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "Between 2000 and 2020 China increased electricity generation at a high linear pace.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Between 2000 and 2020 the United States increased electricity generation only slightly.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "China uses coal as the main source of electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "India uses coal as the main source of electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The United States uses coal as the main source of electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "Over time the United States has used less coal for electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "Over time China has used more coal for electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "Over time India has used more coal for electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "I wonder how the United States has maintained steady electricity generation despite economic growth.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "I wonder how the United States has maintained steady electricity generation despite population growth.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 15, "sentence": "China has a greater population than the United States.", "category": "Background knowledge", "color": "#d62728"}, {"id": 16, "sentence": "The difference in electricity generation between China and the United States is huge.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 17, "sentence": "This difference is confusing.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 18, "sentence": "This situation raises a question about environmental laws and regulations in other nations.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 19, "sentence": "I ask whether environmental laws and regulations are in force in nations other than the United States.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 20, "sentence": "This topic relates to my town.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 21, "sentence": "Switching to renewable energy offers many advantages.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 22, "sentence": "Switching to renewable energy can lower air pollution.", "category": "Background knowledge", "color": "#d62728"}, {"id": 23, "sentence": "Switching to renewable energy can enhance general health for many people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 24, "sentence": "I ask how China generates its electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 25, "sentence": "I ask how the United States generates its electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 26, "sentence": "I ask how India generates its electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}];
+  const nodes = [{"id": 0, "sentence": "The graphs show a rise in electricity generation.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The rise in electricity generation correlates positively with the years.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "The increase in electricity generation is not uniform across all nations.", "cluster_label": "N25: The three countries have very different graphs.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "China, India, and the United States are nations.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "Between 2000 and 2020 China increased electricity generation every year.", "cluster_label": "Between 2000 and 2020 China increased electricity generation every year.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "Between 2000 and 2020 China increased electricity generation at a high linear pace.", "cluster_label": "S109: Power generation in China and India seems to have a similar trend.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Between 2000 and 2020 the United States increased electricity generation only slightly.", "cluster_label": "S22: United States electricity generation is relatively stable or stagnant over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "China uses coal as the main source of electricity generation.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "India uses coal as the main source of electricity generation.", "cluster_label": "S34: India relies mostly on fossil fuels and has little clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The United States uses coal as the main source of electricity generation.", "cluster_label": "N4: Coal contributes much to the electricity generation between 2000 and 2022.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "Over time the United States has used less coal for electricity generation.", "cluster_label": "S69: Coal production in the United States decreased by more than half since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "Over time China has used more coal for electricity generation.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "Over time India has used more coal for electricity generation.", "cluster_label": "S35: Coal use decreases in the United States but increases in China and India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "I wonder how the United States has maintained steady electricity generation despite economic growth.", "cluster_label": "S7: The author wonders why electricity generation in the United States has plateaued or stayed flat and whether similar plateaus occur in other Western developed countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "I wonder how the United States has maintained steady electricity generation despite population growth.", "cluster_label": "S7: The author wonders why electricity generation in the United States has plateaued or stayed flat and whether similar plateaus occur in other Western developed countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 15, "sentence": "China has a greater population than the United States.", "cluster_label": "S10: The population of the United States is smaller than the population of China or India.", "category": "Background knowledge", "color": "#d62728"}, {"id": 16, "sentence": "The difference in electricity generation between China and the United States is huge.", "cluster_label": "S19: China has higher total electricity generation than the United States and India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 17, "sentence": "This difference is confusing.", "cluster_label": "S7: The graphs or differences are confusing, puzzling, or raise questions.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 18, "sentence": "This situation raises a question about environmental laws and regulations in other nations.", "cluster_label": "S19: The author wonders whether countries outside the United States have environmental laws or regulations.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 19, "sentence": "I ask whether environmental laws and regulations are in force in nations other than the United States.", "cluster_label": "S19: The author wonders whether countries outside the United States have environmental laws or regulations.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 20, "sentence": "This topic relates to my town.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 21, "sentence": "Switching to renewable energy offers many advantages.", "cluster_label": "S1: Clean energy is better for the Earth than fossil fuels and increasing clean energy is good.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 22, "sentence": "Switching to renewable energy can lower air pollution.", "cluster_label": "S3: Clean or renewable energy is good for the environment and can reduce air pollution and improve health.", "category": "Background knowledge", "color": "#d62728"}, {"id": 23, "sentence": "Switching to renewable energy can enhance general health for many people.", "cluster_label": "S3: Clean or renewable energy is good for the environment and can reduce air pollution and improve health.", "category": "Background knowledge", "color": "#d62728"}, {"id": 24, "sentence": "I ask how China generates its electricity.", "cluster_label": "S2: The author wonders why China and the United States generate more electricity than India and how China and India supply electricity to their populations.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 25, "sentence": "I ask how the United States generates its electricity.", "cluster_label": "S2: The author wonders why China and the United States generate more electricity than India and how China and India supply electricity to their populations.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 26, "sentence": "I ask how India generates its electricity.", "cluster_label": "S2: The author wonders why China and the United States generate more electricity than India and how China and India supply electricity to their populations.", "category": "Information need / curiosity", "color": "#bcbd22"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 2, "target": 4}, {"source": 3, "target": 4}, {"source": 4, "target": 5}, {"source": 2, "target": 6}, {"source": 3, "target": 6}, {"source": 3, "target": 7}, {"source": 3, "target": 8}, {"source": 3, "target": 9}, {"source": 9, "target": 10}, {"source": 7, "target": 11}, {"source": 8, "target": 12}, {"source": 6, "target": 13}, {"source": 6, "target": 14}, {"source": 3, "target": 15}, {"source": 4, "target": 16}, {"source": 6, "target": 16}, {"source": 16, "target": 17}, {"source": 17, "target": 18}, {"source": 18, "target": 19}, {"source": 18, "target": 20}, {"source": 18, "target": 21}, {"source": 21, "target": 22}, {"source": 21, "target": 23}, {"source": 22, "target": 23}, {"source": 7, "target": 24}, {"source": 11, "target": 24}, {"source": 9, "target": 25}, {"source": 10, "target": 25}, {"source": 8, "target": 26}, {"source": 12, "target": 26}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}];
 
@@ -147,9 +171,14 @@ How do China, the U.S., and India generate their electricity?</div>
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -233,21 +262,30 @@ How do China, the U.S., and India generate their electricity?</div>
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -365,6 +403,20 @@ How do China, the U.S., and India generate their electricity?</div>
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

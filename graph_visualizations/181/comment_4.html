@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 4</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -117,7 +141,7 @@ Good Ole’ Coal: It’s Electric!</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "Electricity generation has increased over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The use of clean energy sources in the world has grown during the last 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "The use of fossil fuels has been consistently higher than the use of clean energy sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Coal is a popular energy source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "Gas is a popular energy source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Wind power has experienced much growth recently.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Solar power has experienced much growth recently.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "New ways to generate electricity have proliferated.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 8, "sentence": "The use of gas has steadily increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The use of coal has steadily increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "I wonder why the use of gas and coal has steadily increased.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "The accessibility of resources may explain the increase.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 12, "sentence": "The global population has grown.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "I wonder how much global population growth affects how electricity is generated.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "Statistics about electricity generation vary from country to country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "I wonder how greatly these statistics vary from country to country.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 16, "sentence": "I canvassed for a local democratic campaign.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 17, "sentence": "During the canvassing, I noticed a fact.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 18, "sentence": "The fact is that clean energy was a very important issue.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 19, "sentence": "Everyone is impacted by the negative effects of climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 20, "sentence": "The expenditure of fossil fuels contributes to global warming.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "It has been proven that the expenditure of fossil fuels greatly contributes to global warming.", "category": "Background knowledge", "color": "#d62728"}, {"id": 22, "sentence": "The headline is: Good Ole' Coal: It is electric!", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "Electricity generation has increased over time.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The use of clean energy sources in the world has grown during the last 20 years.", "cluster_label": "S3: Clean electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "The use of fossil fuels has been consistently higher than the use of clean energy sources.", "cluster_label": "The use of fossil fuels has been consistently higher than the use of clean energy sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Coal is a popular energy source.", "cluster_label": "S123: Some statements describe coal and gas being popular energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "Gas is a popular energy source.", "cluster_label": "S123: Some statements describe coal and gas being popular energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Wind power has experienced much growth recently.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Solar power has experienced much growth recently.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "New ways to generate electricity have proliferated.", "cluster_label": "S2: Technological advancement and integration into life can increase electricity use and drive energy trends.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 8, "sentence": "The use of gas has steadily increased.", "cluster_label": "S4: Fossil-fuel electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The use of coal has steadily increased.", "cluster_label": "S4: Fossil-fuel electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "I wonder why the use of gas and coal has steadily increased.", "cluster_label": "S18: The author wonders about increases in fossil-fuel use and why gas and coal have increased or are preferred.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "The accessibility of resources may explain the increase.", "cluster_label": "S5: Energy generation or consumption patterns are influenced by resource accessibility or capacity limits.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 12, "sentence": "The global population has grown.", "cluster_label": "S15: Population has increased over the years.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "I wonder how much global population growth affects how electricity is generated.", "cluster_label": "S36: The author wonders about population growth or overpopulation and how population affects electricity generation and fossil-fuel production.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "Statistics about electricity generation vary from country to country.", "cluster_label": "S64: Some statements describe statistics about electricity generation varying from country to country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "I wonder how greatly these statistics vary from country to country.", "cluster_label": "S40: The author wonders about variability in electricity source mix across countries or regions and what other countries' graphs look like.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 16, "sentence": "I canvassed for a local democratic campaign.", "cluster_label": "S31: I canvassed for a local democratic campaign and noticed that clean energy was an important issue.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 17, "sentence": "During the canvassing, I noticed a fact.", "cluster_label": "S31: I canvassed for a local democratic campaign and noticed that clean energy was an important issue.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 18, "sentence": "The fact is that clean energy was a very important issue.", "cluster_label": "S31: I canvassed for a local democratic campaign and noticed that clean energy was an important issue.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 19, "sentence": "Everyone is impacted by the negative effects of climate change.", "cluster_label": "S28: Climate change is an increasing or pressing issue and a common topic of conversation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 20, "sentence": "The expenditure of fossil fuels contributes to global warming.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "It has been proven that the expenditure of fossil fuels greatly contributes to global warming.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 22, "sentence": "The headline is: Good Ole' Coal: It is electric!", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 1, "target": 2}, {"source": 1, "target": 5}, {"source": 1, "target": 6}, {"source": 5, "target": 7}, {"source": 6, "target": 7}, {"source": 4, "target": 8}, {"source": 3, "target": 9}, {"source": 8, "target": 10}, {"source": 9, "target": 10}, {"source": 10, "target": 11}, {"source": 0, "target": 13}, {"source": 12, "target": 13}, {"source": 14, "target": 15}, {"source": 16, "target": 17}, {"source": 17, "target": 18}, {"source": 2, "target": 20}, {"source": 19, "target": 20}, {"source": 20, "target": 21}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -146,9 +170,14 @@ Good Ole’ Coal: It’s Electric!</div>
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -232,21 +261,30 @@ Good Ole’ Coal: It’s Electric!</div>
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -364,6 +402,20 @@ Good Ole’ Coal: It’s Electric!</div>
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

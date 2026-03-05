@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 61</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -114,7 +138,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "I noticed an overall upward trend in the graph.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "I noticed a notable spike in energy usage that began in 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Coal has essentially stagnated over the past 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Gas has essentially stagnated over the past 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Oil has essentially stagnated over the past 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "Most of the energy growth comes from renewable energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "China produces more electricity than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "The US produces more electricity than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "China and India have about the same population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 9, "sentence": "The US and India have about the same population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "It is surprising to me that China produces more electricity than India.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 11, "sentence": "It is surprising to me that the US produces more electricity than India.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 12, "sentence": "I ask how China provides electricity to more than 1 billion people.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 13, "sentence": "I ask how the US provides electricity to more than 1 billion people.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "This worries me.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 15, "sentence": "This worries my neighborhood.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "It is anticipated that pollution from fossil fuels will decline.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 17, "sentence": "The globe switches to more renewable energy sources.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 18, "sentence": "The globe switches to more clean energy sources.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 19, "sentence": "If pollution from fossil fuels declines, the environment will benefit.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 20, "sentence": "If pollution from fossil fuels declines, all living things will benefit.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 21, "sentence": "The headline is: Energizing the Future: Re-purposing Our Energy.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "I noticed an overall upward trend in the graph.", "cluster_label": "I noticed an overall upward trend in the graph.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "I noticed a notable spike in energy usage that began in 2000.", "cluster_label": "S103: Energy consumption has increased significantly since 2000 and most of the energy growth comes from renewable or clean energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Coal has essentially stagnated over the past 20 years.", "cluster_label": "S18: Coal, gas, and oil stagnate or stay relatively stable over the last 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Gas has essentially stagnated over the past 20 years.", "cluster_label": "S18: Coal, gas, and oil stagnate or stay relatively stable over the last 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Oil has essentially stagnated over the past 20 years.", "cluster_label": "S17: Oil and other sources are steady or flat over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "Most of the energy growth comes from renewable energy.", "cluster_label": "S103: Energy consumption has increased significantly since 2000 and most of the energy growth comes from renewable or clean energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "China produces more electricity than India.", "cluster_label": "S212: China produces more electricity than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "The US produces more electricity than India.", "cluster_label": "S187: The U.S. uses more power than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "China and India have about the same population.", "cluster_label": "S7: India and China have about the same population and both have more than 1 billion people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 9, "sentence": "The US and India have about the same population.", "cluster_label": "S78: Some statements describe the population of the US and India being about the same.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "It is surprising to me that China produces more electricity than India.", "cluster_label": "S58: These trends about India, China, and the U.S. were expected in specific ways.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 11, "sentence": "It is surprising to me that the US produces more electricity than India.", "cluster_label": "S6: The graphs or facts are surprising or shocking, especially about low India energy use and low US increase.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 12, "sentence": "I ask how China provides electricity to more than 1 billion people.", "cluster_label": "S2: The author wonders why China and the United States generate more electricity than India and how China and India supply electricity to their populations.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 13, "sentence": "I ask how the US provides electricity to more than 1 billion people.", "cluster_label": "S2: The author wonders why China and the United States generate more electricity than India and how China and India supply electricity to their populations.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "This worries me.", "cluster_label": "S9: The situation or facts are concerning or worrying.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 15, "sentence": "This worries my neighborhood.", "cluster_label": "S9: The situation or facts are concerning or worrying.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "It is anticipated that pollution from fossil fuels will decline.", "cluster_label": "S48: Pollution from fossil fuels is expected to decline, and if it declines then the environment and living things will benefit.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 17, "sentence": "The globe switches to more renewable energy sources.", "cluster_label": "S3: If the world or a community shifts to clean or renewable energy, then pollution will decrease and the environment will benefit.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 18, "sentence": "The globe switches to more clean energy sources.", "cluster_label": "S3: If the world or a community shifts to clean or renewable energy, then pollution will decrease and the environment will benefit.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 19, "sentence": "If pollution from fossil fuels declines, the environment will benefit.", "cluster_label": "S48: Pollution from fossil fuels is expected to decline, and if it declines then the environment and living things will benefit.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 20, "sentence": "If pollution from fossil fuels declines, all living things will benefit.", "cluster_label": "S48: Pollution from fossil fuels is expected to decline, and if it declines then the environment and living things will benefit.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 21, "sentence": "The headline is: Energizing the Future: Re-purposing Our Energy.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 5}, {"source": 2, "target": 5}, {"source": 3, "target": 5}, {"source": 4, "target": 5}, {"source": 6, "target": 10}, {"source": 8, "target": 10}, {"source": 7, "target": 11}, {"source": 9, "target": 11}, {"source": 6, "target": 12}, {"source": 8, "target": 12}, {"source": 7, "target": 13}, {"source": 10, "target": 14}, {"source": 11, "target": 14}, {"source": 12, "target": 14}, {"source": 13, "target": 14}, {"source": 14, "target": 15}, {"source": 17, "target": 16}, {"source": 18, "target": 16}, {"source": 16, "target": 19}, {"source": 16, "target": 20}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -143,9 +167,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -229,21 +258,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -361,6 +399,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

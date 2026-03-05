@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 26</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -111,7 +135,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "There are four graphs.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "I notice that the graph of China is high compared to the graph of India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "I notice that the graph of China is high compared to the graph of the U.S.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "I recognize that the graph of India is low.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "India has a high population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "The low graph of India surprises me.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 6, "sentence": "I notice that the graph of the U.S. is level.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "The level graph of the U.S. surprises me.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 8, "sentence": "The population of the U.S. is not as high as the population of India.", "category": "Background knowledge", "color": "#d62728"}, {"id": 9, "sentence": "The population of the U.S. is not as high as the population of China.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "We use many of these products.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "I wonder why the graph of India is so low.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "Many people live in India.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "I wonder why China uses much more than India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "India has a high population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "The headline is:", "category": "Meta / paratext", "color": "#17becf"}, {"id": 16, "sentence": "The Big Three: Clean and Fossil Fuel.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "There are four graphs.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "I notice that the graph of China is high compared to the graph of India.", "cluster_label": "S168: China uses more energy than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "I notice that the graph of China is high compared to the graph of the U.S.", "cluster_label": "S19: China has higher total electricity generation than the United States and India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "I recognize that the graph of India is low.", "cluster_label": "S23: India electricity generation is lower than China and lower than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "India has a high population.", "cluster_label": "S8: India has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "The low graph of India surprises me.", "cluster_label": "S6: The graphs or facts are surprising or shocking, especially about low India energy use and low US increase.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 6, "sentence": "I notice that the graph of the U.S. is level.", "cluster_label": "S22: United States electricity generation is relatively stable or stagnant over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "The level graph of the U.S. surprises me.", "cluster_label": "S6: The graphs or facts are surprising or shocking, especially about low India energy use and low US increase.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 8, "sentence": "The population of the U.S. is not as high as the population of India.", "cluster_label": "S11: India has a greater population than the United States.", "category": "Background knowledge", "color": "#d62728"}, {"id": 9, "sentence": "The population of the U.S. is not as high as the population of China.", "cluster_label": "S10: The population of the United States is smaller than the population of China or India.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "We use many of these products.", "cluster_label": "S65: Some statements describe India and China and the United States using most of the things on the chart and this relating to the U.S..", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "I wonder why the graph of India is so low.", "cluster_label": "S64: The author wonders why India generates less electricity than the United States.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "Many people live in India.", "cluster_label": "S8: India has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "I wonder why China uses much more than India.", "cluster_label": "S45: The author wonders why China uses much more energy or power than India and why the United States uses more power than India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "India has a high population.", "cluster_label": "S8: India has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "The headline is:", "cluster_label": "The headline is:", "category": "Meta / paratext", "color": "#17becf"}, {"id": 16, "sentence": "The Big Three: Clean and Fossil Fuel.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 0, "target": 3}, {"source": 3, "target": 5}, {"source": 4, "target": 5}, {"source": 0, "target": 6}, {"source": 6, "target": 7}, {"source": 8, "target": 7}, {"source": 4, "target": 8}, {"source": 3, "target": 11}, {"source": 5, "target": 11}, {"source": 4, "target": 12}, {"source": 1, "target": 13}, {"source": 15, "target": 16}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -140,9 +164,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -226,21 +255,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -358,6 +396,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 17</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -114,7 +138,7 @@ This affects my community because it shows the amount of bad electricity that is
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "A graph shows world electricity over time.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "World electricity increased over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Fossil-fuel electricity in the world increased over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "A graph shows electricity in the United States over time.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 4, "sentence": "Electricity in the United States remained relatively the same over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "A graph shows electricity in India.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 6, "sentence": "Electricity in India is predominantly fossil-fuel electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "India has little clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "A graph shows electricity in China over time.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 9, "sentence": "China had the largest spike over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "I wonder what causes India to produce only fossil-fuel electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "I wonder which countries contribute the most fossil-fuel electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "This situation affects my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 13, "sentence": "This situation shows the amount of bad electricity that is contributed to the world.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 14, "sentence": "Bad electricity affects global warming.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "We should create more clean energy.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}];
+  const nodes = [{"id": 0, "sentence": "A graph shows world electricity over time.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "World electricity increased over time.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Fossil-fuel electricity in the world increased over time.", "cluster_label": "S4: Fossil-fuel electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "A graph shows electricity in the United States over time.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 4, "sentence": "Electricity in the United States remained relatively the same over time.", "cluster_label": "S22: United States electricity generation is relatively stable or stagnant over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "A graph shows electricity in India.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 6, "sentence": "Electricity in India is predominantly fossil-fuel electricity.", "cluster_label": "S34: India relies mostly on fossil fuels and has little clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "India has little clean electricity.", "cluster_label": "S34: India relies mostly on fossil fuels and has little clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "A graph shows electricity in China over time.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 9, "sentence": "China had the largest spike over time.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "I wonder what causes India to produce only fossil-fuel electricity.", "cluster_label": "S17_new: The author wonders what causes India to produce only fossil-fuel electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "I wonder which countries contribute the most fossil-fuel electricity.", "cluster_label": "S31: The author wonders which countries contribute most to clean energy or fossil-fuel electricity and how the United States compares to other countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "This situation affects my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 13, "sentence": "This situation shows the amount of bad electricity that is contributed to the world.", "cluster_label": "S2: Fossil fuels and coal are harmful and their dominance is concerning.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 14, "sentence": "Bad electricity affects global warming.", "cluster_label": "Bad electricity affects global warming.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "We should create more clean energy.", "cluster_label": "S51: People should create more clean energy and shift toward cleaner energy worldwide.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 1, "target": 2}, {"source": 3, "target": 4}, {"source": 5, "target": 6}, {"source": 5, "target": 7}, {"source": 6, "target": 7}, {"source": 8, "target": 9}, {"source": 6, "target": 10}, {"source": 7, "target": 10}, {"source": 2, "target": 11}, {"source": 6, "target": 11}, {"source": 9, "target": 11}, {"source": 2, "target": 12}, {"source": 2, "target": 13}, {"source": 13, "target": 14}, {"source": 14, "target": 15}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -143,9 +167,14 @@ This affects my community because it shows the amount of bad electricity that is
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -229,21 +258,30 @@ This affects my community because it shows the amount of bad electricity that is
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -361,6 +399,20 @@ This affects my community because it shows the amount of bad electricity that is
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

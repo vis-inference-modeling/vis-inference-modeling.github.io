@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 88</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -114,7 +138,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "The electricity generation in the world has increased over the years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Fossil fuels surpassed 15 million gigawatt hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Renewable power sources increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Renewable power sources surpassed 25 million gigawatt hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "China is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "The U.S. is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "India is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "China and the U.S. and India differ in the amount of electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "The U.S. decreases its use of fossil fuels slowly.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The U.S. increases its use of renewable power sources slightly.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "China uses the most clean energy among China and the U.S. and India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "China also uses a large amount of fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "India uses the least clean power among China and the U.S. and India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "India uses less than 2 million gigawatt hours of clean power.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "India uses less than 2 million gigawatt hours of fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "The economy plays a role in electricity generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 16, "sentence": "China is largely populated.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "India is largely populated.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "India has low electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "India's electricity generation contrasts with the electricity generation in China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 20, "sentence": "India's electricity generation contrasts with the electricity generation in the U.S.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 21, "sentence": "The electricity generation increased greatly in 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 22, "sentence": "The data may differ in the future.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 23, "sentence": "We may maintain the use of clean power as the largest power source.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 24, "sentence": "I am a member of a community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 25, "sentence": "My community contributes to the electricity generation in the world.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 26, "sentence": "My community uses resources.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 27, "sentence": "If my community uses fossil fuels then negative impacts occur.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 28, "sentence": "If my community uses clean energy then positive impacts occur.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 29, "sentence": "The headline is: Our World's Powerhouse: Clean Energy and Fossil fuels!", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "The electricity generation in the world has increased over the years.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Fossil fuels surpassed 15 million gigawatt hours.", "cluster_label": "S127: Fossil fuels surpassed 15 million gigawatt hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Renewable power sources increased.", "cluster_label": "S126: The electricity generation in the world increased greatly in 20 years and renewable power sources surpassed 25 million gigawatt hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Renewable power sources surpassed 25 million gigawatt hours.", "cluster_label": "S126: The electricity generation in the world increased greatly in 20 years and renewable power sources surpassed 25 million gigawatt hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "China is a country.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "The U.S. is a country.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "India is a country.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "China and the U.S. and India differ in the amount of electricity generation.", "cluster_label": "N25: The three countries have very different graphs.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "The U.S. decreases its use of fossil fuels slowly.", "cluster_label": "S29: United States fossil-fuel usage decreases over time, especially coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The U.S. increases its use of renewable power sources slightly.", "cluster_label": "S128: The U.S. decreases its use of fossil fuels slowly and increases its use of renewable power sources slightly.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "China uses the most clean energy among China and the U.S. and India.", "cluster_label": "S36: China uses the most clean energy among the three countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "China also uses a large amount of fossil fuels.", "cluster_label": "S27: China clean electricity and fossil electricity both increase, and China relies heavily on fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "India uses the least clean power among China and the U.S. and India.", "cluster_label": "S129: India uses the least clean power among China and the U.S. and India and India uses less than 2 million gigawatt hours of clean power and fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "India uses less than 2 million gigawatt hours of clean power.", "cluster_label": "S129: India uses the least clean power among China and the U.S. and India and India uses less than 2 million gigawatt hours of clean power and fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "India uses less than 2 million gigawatt hours of fossil fuels.", "cluster_label": "S129: India uses the least clean power among China and the U.S. and India and India uses less than 2 million gigawatt hours of clean power and fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "The economy plays a role in electricity generation.", "cluster_label": "S26: The economy plays a role in electricity generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 16, "sentence": "China is largely populated.", "cluster_label": "S9: China has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "India is largely populated.", "cluster_label": "S8: India has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "India has low electricity generation.", "cluster_label": "S23: India electricity generation is lower than China and lower than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "India's electricity generation contrasts with the electricity generation in China.", "cluster_label": "S109: Power generation in China and India seems to have a similar trend.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 20, "sentence": "India's electricity generation contrasts with the electricity generation in the U.S.", "cluster_label": "S187: The U.S. uses more power than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 21, "sentence": "The electricity generation increased greatly in 20 years.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 22, "sentence": "The data may differ in the future.", "cluster_label": "S7: People wonder or predict how the graph, data, or trends will change in the future.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 23, "sentence": "We may maintain the use of clean power as the largest power source.", "cluster_label": "S5: Clean or renewable energy will increase or scale up in the future and may become the dominant electricity source.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 24, "sentence": "I am a member of a community.", "cluster_label": "S39: I am a member of a community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 25, "sentence": "My community contributes to the electricity generation in the world.", "cluster_label": "S20: My community generates electricity or contributes to global electricity generation and uses resources.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 26, "sentence": "My community uses resources.", "cluster_label": "S20: My community generates electricity or contributes to global electricity generation and uses resources.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 27, "sentence": "If my community uses fossil fuels then negative impacts occur.", "cluster_label": "S44: If my community uses fossil fuels then negative impacts occur, and if my community uses clean energy then positive impacts occur.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 28, "sentence": "If my community uses clean energy then positive impacts occur.", "cluster_label": "S44: If my community uses fossil fuels then negative impacts occur, and if my community uses clean energy then positive impacts occur.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 29, "sentence": "The headline is: Our World's Powerhouse: Clean Energy and Fossil fuels!", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 2, "target": 3}, {"source": 4, "target": 7}, {"source": 5, "target": 7}, {"source": 6, "target": 7}, {"source": 5, "target": 8}, {"source": 5, "target": 9}, {"source": 4, "target": 10}, {"source": 5, "target": 10}, {"source": 6, "target": 10}, {"source": 4, "target": 11}, {"source": 4, "target": 12}, {"source": 5, "target": 12}, {"source": 6, "target": 12}, {"source": 12, "target": 13}, {"source": 6, "target": 13}, {"source": 6, "target": 14}, {"source": 4, "target": 16}, {"source": 6, "target": 17}, {"source": 6, "target": 18}, {"source": 4, "target": 19}, {"source": 6, "target": 19}, {"source": 18, "target": 19}, {"source": 5, "target": 20}, {"source": 6, "target": 20}, {"source": 18, "target": 20}, {"source": 0, "target": 21}, {"source": 0, "target": 22}, {"source": 1, "target": 22}, {"source": 2, "target": 22}, {"source": 3, "target": 22}, {"source": 7, "target": 22}, {"source": 8, "target": 22}, {"source": 9, "target": 22}, {"source": 10, "target": 22}, {"source": 11, "target": 22}, {"source": 12, "target": 22}, {"source": 13, "target": 22}, {"source": 14, "target": 22}, {"source": 21, "target": 22}, {"source": 2, "target": 23}, {"source": 22, "target": 23}, {"source": 0, "target": 25}, {"source": 24, "target": 25}, {"source": 24, "target": 26}, {"source": 26, "target": 27}, {"source": 26, "target": 28}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -143,9 +167,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -229,21 +258,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -361,6 +399,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

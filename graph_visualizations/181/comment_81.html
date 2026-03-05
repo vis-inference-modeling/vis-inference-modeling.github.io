@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 81</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -117,7 +141,7 @@ Change of type and amount of energy</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "India is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 1, "sentence": "The United States is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "China is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 3, "sentence": "India's energy consumption was the lowest in all years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "The United States' energy consumption was the largest until around 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "China passed the United States around 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Clean power has increased in all countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Wind energy has become more popular recently.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Solar energy has become more popular recently.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The population of the United States has become larger.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "The energy consumption of the United States has remained about the same.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "I wonder why the energy consumption of the United States has remained about the same.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "This graph allows me to see the energy that I am likely consuming.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 13, "sentence": "It is difficult to know exactly where a person's energy is coming from.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "This graph gives some context of the energy consumption of the United States.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 15, "sentence": "This graph gives some context of my own energy consumption.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "India is a country.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 1, "sentence": "The United States is a country.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "China is a country.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 3, "sentence": "India's energy consumption was the lowest in all years.", "cluster_label": "S23: India electricity generation is lower than China and lower than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "The United States' energy consumption was the largest until around 2010.", "cluster_label": "The United States' energy consumption was the largest until around 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "China passed the United States around 2010.", "cluster_label": "S21: China surpasses the United States in electricity generation around 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Clean power has increased in all countries.", "cluster_label": "S99: Clean power has increased in all countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Wind energy has become more popular recently.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Solar energy has become more popular recently.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The population of the United States has become larger.", "cluster_label": "S21: The population of the United States has increased.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "The energy consumption of the United States has remained about the same.", "cluster_label": "S238: In the United States, the energy consumption has remained about the same.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "I wonder why the energy consumption of the United States has remained about the same.", "cluster_label": "S7: The author wonders why electricity generation in the United States has plateaued or stayed flat and whether similar plateaus occur in other Western developed countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "This graph allows me to see the energy that I am likely consuming.", "cluster_label": "S8: The commenter says that the graph provides insight or context about personal or community energy consumption.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 13, "sentence": "It is difficult to know exactly where a person's energy is coming from.", "cluster_label": "S38: It is difficult to know exactly where a person's energy comes from.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "This graph gives some context of the energy consumption of the United States.", "cluster_label": "S23: The commenter says that the graph gives context about energy consumption of the United States.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 15, "sentence": "This graph gives some context of my own energy consumption.", "cluster_label": "S8: The commenter says that the graph provides insight or context about personal or community energy consumption.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 3}, {"source": 1, "target": 4}, {"source": 2, "target": 5}, {"source": 4, "target": 5}, {"source": 0, "target": 6}, {"source": 1, "target": 6}, {"source": 2, "target": 6}, {"source": 6, "target": 7}, {"source": 6, "target": 8}, {"source": 1, "target": 9}, {"source": 1, "target": 10}, {"source": 10, "target": 11}, {"source": 9, "target": 11}, {"source": 10, "target": 14}, {"source": 12, "target": 15}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -146,9 +170,14 @@ Change of type and amount of energy</div>
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -232,21 +261,30 @@ Change of type and amount of energy</div>
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -364,6 +402,20 @@ Change of type and amount of energy</div>
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

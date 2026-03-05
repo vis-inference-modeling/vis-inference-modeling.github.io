@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 151</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -111,7 +135,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "China is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 1, "sentence": "The United States is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "India is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 3, "sentence": "China appears to use the most clean energy among China and the United States and India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "China mainly uses fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "The United States mainly uses fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "India mainly uses fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "I wonder what a breaking point will be.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "A breaking point can cause more places to switch to clean energy.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 9, "sentence": "Some places try to switch to only clean energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "The cost of clean energy can be expensive.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "This situation impacts my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 12, "sentence": "The United States may start to run out of fossil fuels.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 13, "sentence": "The United States may be unable to purchase fossil fuels from other countries.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 14, "sentence": "If the United States starts to run out of fossil fuels, people may struggle to afford using clean energy all the time.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 15, "sentence": "If the United States is unable to purchase fossil fuels from other countries, people may struggle to afford using clean energy all the time.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 16, "sentence": "The headline is: The future towards clean energy.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "China is a country.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 1, "sentence": "The United States is a country.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "India is a country.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 3, "sentence": "China appears to use the most clean energy among China and the United States and India.", "cluster_label": "S36: China uses the most clean energy among the three countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "China mainly uses fossil fuels.", "cluster_label": "S27: China clean electricity and fossil electricity both increase, and China relies heavily on fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "The United States mainly uses fossil fuels.", "cluster_label": "S57: United States non-renewable energy use stayed consistent over the past 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "India mainly uses fossil fuels.", "cluster_label": "S34: India relies mostly on fossil fuels and has little clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "I wonder what a breaking point will be.", "cluster_label": "S30: The author wonders whether the trend toward cleaner energy sources will continue or change in the near future and what a breaking point will be.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "A breaking point can cause more places to switch to clean energy.", "cluster_label": "S20: A breaking point or the ability to sustain clean power sources can determine whether places switch to clean energy.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 9, "sentence": "Some places try to switch to only clean energy.", "cluster_label": "S6: The world is moving toward renewable or clean energy and governments and policies can promote or accelerate this transition.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "The cost of clean energy can be expensive.", "cluster_label": "S32: Clean energy can be expensive or not feasible for every community and can differ in efficiency or cost-effectiveness.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "This situation impacts my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 12, "sentence": "The United States may start to run out of fossil fuels.", "cluster_label": "S11: If the United States runs out of fossil fuels or cannot buy them, then people may struggle to afford clean energy.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 13, "sentence": "The United States may be unable to purchase fossil fuels from other countries.", "cluster_label": "S11: If the United States runs out of fossil fuels or cannot buy them, then people may struggle to afford clean energy.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 14, "sentence": "If the United States starts to run out of fossil fuels, people may struggle to afford using clean energy all the time.", "cluster_label": "S11: If the United States runs out of fossil fuels or cannot buy them, then people may struggle to afford clean energy.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 15, "sentence": "If the United States is unable to purchase fossil fuels from other countries, people may struggle to afford using clean energy all the time.", "cluster_label": "S11: If the United States runs out of fossil fuels or cannot buy them, then people may struggle to afford clean energy.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 16, "sentence": "The headline is: The future towards clean energy.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 3}, {"source": 1, "target": 3}, {"source": 2, "target": 3}, {"source": 0, "target": 4}, {"source": 1, "target": 5}, {"source": 2, "target": 6}, {"source": 4, "target": 7}, {"source": 5, "target": 7}, {"source": 6, "target": 7}, {"source": 7, "target": 8}, {"source": 8, "target": 9}, {"source": 10, "target": 11}, {"source": 5, "target": 12}, {"source": 5, "target": 13}, {"source": 10, "target": 14}, {"source": 12, "target": 14}, {"source": 10, "target": 15}, {"source": 13, "target": 15}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -140,9 +164,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -226,21 +255,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -358,6 +396,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

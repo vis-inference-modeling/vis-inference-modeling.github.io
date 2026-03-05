@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 41</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -113,7 +137,7 @@ Title: Gasolina</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "There are 2 graphs.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "The first graph displays world electricity from 2000 to 2020.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "The first graph has a clean category.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 3, "sentence": "The clean category includes nuclear energy.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 4, "sentence": "The clean category includes hydroelectric energy.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 5, "sentence": "The clean category includes other clean energy.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 6, "sentence": "The clean category includes wind energy.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 7, "sentence": "The clean category includes solar energy.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 8, "sentence": "The first graph has a fossil category.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 9, "sentence": "The fossil category includes oil.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 10, "sentence": "The fossil category includes gas.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 11, "sentence": "The fossil category includes coal.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 12, "sentence": "In recent years, the use of cleaner energy increased a lot.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "In recent years, the use of fossil fuels increased a lot.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "Some environmentalists care about the environment.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "I wonder how these environmentalists feel about the increased use of fossil fuels.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 16, "sentence": "Fossil fuels cause emissions.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "I wonder how these emissions affect the environment.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 18, "sentence": "I ask whether using clean energy helps.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 19, "sentence": "The second graph depicts total electricity generation from 2000 to 2020.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 20, "sentence": "The second graph depicts total electricity generation for China.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 21, "sentence": "The second graph depicts total electricity generation for the U.S.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 22, "sentence": "The second graph depicts total electricity generation for India.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 23, "sentence": "China produces the most coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 24, "sentence": "India produces the least coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 25, "sentence": "I wonder why China produces more fossil fuels than the U.S.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 26, "sentence": "I wonder why China produces more fossil fuels than India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 27, "sentence": "I wonder how this affects the environment.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 28, "sentence": "I wonder how this affects pollution.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 29, "sentence": "China has a population of about 1.4 billion people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 30, "sentence": "India has a population of about 1.4 billion people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 31, "sentence": "I wonder whether population affects the mass production of fossil fuels in China.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 32, "sentence": "I wonder whether population affects the mass production of fossil fuels in India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 33, "sentence": "If two countries have the same population then one might expect that the two countries produce the same amount of fuel.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 34, "sentence": "This relates to me and my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 35, "sentence": "My dad owns an electric car.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 36, "sentence": "An electric car is environmentally friendly.", "category": "Background knowledge", "color": "#d62728"}, {"id": 37, "sentence": "I have become more aware of fuel costs.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 38, "sentence": "I have become more aware of gas costs.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 39, "sentence": "I think that fuel costs affect the world around me.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 40, "sentence": "I think that gas costs affect the world around me.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 41, "sentence": "The title is Gasolina.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "There are 2 graphs.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "The first graph displays world electricity from 2000 to 2020.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "The first graph has a clean category.", "cluster_label": "S4: The graph includes clean energy sources and fossil fuels, with clean and fossil categories.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 3, "sentence": "The clean category includes nuclear energy.", "cluster_label": "S5: The clean category includes nuclear energy and hydroelectric energy and wind energy and solar energy and other clean energy.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 4, "sentence": "The clean category includes hydroelectric energy.", "cluster_label": "S5: The clean category includes nuclear energy and hydroelectric energy and wind energy and solar energy and other clean energy.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 5, "sentence": "The clean category includes other clean energy.", "cluster_label": "S5: The clean category includes nuclear energy and hydroelectric energy and wind energy and solar energy and other clean energy.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 6, "sentence": "The clean category includes wind energy.", "cluster_label": "S5: The clean category includes nuclear energy and hydroelectric energy and wind energy and solar energy and other clean energy.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 7, "sentence": "The clean category includes solar energy.", "cluster_label": "S5: The clean category includes nuclear energy and hydroelectric energy and wind energy and solar energy and other clean energy.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 8, "sentence": "The first graph has a fossil category.", "cluster_label": "S4: The graph includes clean energy sources and fossil fuels, with clean and fossil categories.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 9, "sentence": "The fossil category includes oil.", "cluster_label": "S6: The fossil category includes oil and gas and coal.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 10, "sentence": "The fossil category includes gas.", "cluster_label": "S6: The fossil category includes oil and gas and coal.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 11, "sentence": "The fossil category includes coal.", "cluster_label": "S6: The fossil category includes oil and gas and coal.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 12, "sentence": "In recent years, the use of cleaner energy increased a lot.", "cluster_label": "S47: Clean electricity rises more in recent years and clean energy consumption increases substantially in recent years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "In recent years, the use of fossil fuels increased a lot.", "cluster_label": "In recent years, the use of fossil fuels increased a lot.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "Some environmentalists care about the environment.", "cluster_label": "S134: Some statements describe environmentalists and campaigners and activists and businesses working to reduce fossil fuel use and support clean energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "I wonder how these environmentalists feel about the increased use of fossil fuels.", "cluster_label": "S48: The author wonders how environmentalists feel about increased fossil-fuel use.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 16, "sentence": "Fossil fuels cause emissions.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "I wonder how these emissions affect the environment.", "cluster_label": "S37: The author wonders about environmental impacts of fossil-fuel energy and clean energy, including emissions, pollution, atmosphere, and ecosystems.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 18, "sentence": "I ask whether using clean energy helps.", "cluster_label": "S11_new_2: The author wonders whether using clean energy helps.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 19, "sentence": "The second graph depicts total electricity generation from 2000 to 2020.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 20, "sentence": "The second graph depicts total electricity generation for China.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 21, "sentence": "The second graph depicts total electricity generation for the U.S.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 22, "sentence": "The second graph depicts total electricity generation for India.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 23, "sentence": "China produces the most coal.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 24, "sentence": "India produces the least coal.", "cluster_label": "S73: Energy production in India is mostly coal production.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 25, "sentence": "I wonder why China produces more fossil fuels than the U.S.", "cluster_label": "S38: The author wonders why China produces more fossil fuels than the United States or India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 26, "sentence": "I wonder why China produces more fossil fuels than India.", "cluster_label": "S38: The author wonders why China produces more fossil fuels than the United States or India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 27, "sentence": "I wonder how this affects the environment.", "cluster_label": "S37: The author wonders about environmental impacts of fossil-fuel energy and clean energy, including emissions, pollution, atmosphere, and ecosystems.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 28, "sentence": "I wonder how this affects pollution.", "cluster_label": "S37: The author wonders about environmental impacts of fossil-fuel energy and clean energy, including emissions, pollution, atmosphere, and ecosystems.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 29, "sentence": "China has a population of about 1.4 billion people.", "cluster_label": "S93: Some statements describe India having about 1.4 billion people and more than 1 billion people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 30, "sentence": "India has a population of about 1.4 billion people.", "cluster_label": "S93: Some statements describe India having about 1.4 billion people and more than 1 billion people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 31, "sentence": "I wonder whether population affects the mass production of fossil fuels in China.", "cluster_label": "S36: The author wonders about population growth or overpopulation and how population affects electricity generation and fossil-fuel production.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 32, "sentence": "I wonder whether population affects the mass production of fossil fuels in India.", "cluster_label": "S36: The author wonders about population growth or overpopulation and how population affects electricity generation and fossil-fuel production.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 33, "sentence": "If two countries have the same population then one might expect that the two countries produce the same amount of fuel.", "cluster_label": "S30: If two countries have the same population, then one might expect that they produce the same amount of fuel.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 34, "sentence": "This relates to me and my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 35, "sentence": "My dad owns an electric car.", "cluster_label": "S45: My dad owns an electric car.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 36, "sentence": "An electric car is environmentally friendly.", "cluster_label": "S34: Electric cars such as Tesla exist and are environmentally friendly and are bought by middle-class people, and gas prices are rising.", "category": "Background knowledge", "color": "#d62728"}, {"id": 37, "sentence": "I have become more aware of fuel costs.", "cluster_label": "S46: I have become more aware of fuel costs.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 38, "sentence": "I have become more aware of gas costs.", "cluster_label": "S46: I have become more aware of fuel costs.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 39, "sentence": "I think that fuel costs affect the world around me.", "cluster_label": "S6: Energy prices and costs influence energy choices and affect people and communities.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 40, "sentence": "I think that gas costs affect the world around me.", "cluster_label": "S6: Energy prices and costs influence energy choices and affect people and communities.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 41, "sentence": "The title is Gasolina.", "cluster_label": "S38: The title is Gasolina.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 1, "target": 2}, {"source": 2, "target": 3}, {"source": 2, "target": 4}, {"source": 2, "target": 5}, {"source": 2, "target": 6}, {"source": 2, "target": 7}, {"source": 1, "target": 8}, {"source": 8, "target": 9}, {"source": 8, "target": 10}, {"source": 8, "target": 11}, {"source": 1, "target": 12}, {"source": 2, "target": 12}, {"source": 1, "target": 13}, {"source": 8, "target": 13}, {"source": 13, "target": 15}, {"source": 14, "target": 15}, {"source": 8, "target": 16}, {"source": 14, "target": 17}, {"source": 16, "target": 17}, {"source": 12, "target": 18}, {"source": 0, "target": 19}, {"source": 19, "target": 20}, {"source": 19, "target": 21}, {"source": 19, "target": 22}, {"source": 20, "target": 23}, {"source": 22, "target": 24}, {"source": 20, "target": 25}, {"source": 21, "target": 25}, {"source": 23, "target": 25}, {"source": 20, "target": 26}, {"source": 22, "target": 26}, {"source": 23, "target": 26}, {"source": 24, "target": 26}, {"source": 16, "target": 27}, {"source": 25, "target": 27}, {"source": 26, "target": 27}, {"source": 16, "target": 28}, {"source": 25, "target": 28}, {"source": 26, "target": 28}, {"source": 23, "target": 31}, {"source": 29, "target": 31}, {"source": 24, "target": 32}, {"source": 30, "target": 32}, {"source": 18, "target": 34}, {"source": 27, "target": 34}, {"source": 28, "target": 34}, {"source": 34, "target": 35}, {"source": 35, "target": 36}, {"source": 34, "target": 37}, {"source": 37, "target": 38}, {"source": 37, "target": 39}, {"source": 38, "target": 40}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Encoding interpretation", "color": "#2ca02c"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -142,9 +166,14 @@ Title: Gasolina</div>
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -228,21 +257,30 @@ Title: Gasolina</div>
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -360,6 +398,20 @@ Title: Gasolina</div>
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

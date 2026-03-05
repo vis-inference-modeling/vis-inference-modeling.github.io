@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 92</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -118,7 +142,7 @@ I would call this graph, &quot;The Rise of Renewables: Wind and Solar Power Surg
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "The graph shows the world electricity generation from 2000 to 2020.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "The graph shows the world electricity generation just beyond 2020.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "The graph divides energy sources into clean sources and fossil sources.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 3, "sentence": "Coal is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "Gas is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Oil is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "Other fossil fuels are fossil sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "Nuclear energy is a clean source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "Hydroelectric energy is a clean source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 9, "sentence": "Wind energy is a clean source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "Solar energy is a clean source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "The graph shows a decline in coal use over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "The graph shows a relatively steady electricity generation from gas over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "The graph shows an increase in electricity generation from wind energy over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "The graph shows an increase in electricity generation from solar energy over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "I am curious about the cause of the decline in coal use.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 16, "sentence": "I am curious about the cause of the increase in wind energy generation.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 17, "sentence": "I am curious about the cause of the increase in solar energy generation.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 18, "sentence": "Technological advancements could cause the decline in coal use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 19, "sentence": "Economic factors could cause the decline in coal use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 20, "sentence": "Policy changes could cause the decline in coal use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 21, "sentence": "Technological advancements could cause the increase in wind energy generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 22, "sentence": "Economic factors could cause the increase in wind energy generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 23, "sentence": "Policy changes could cause the increase in wind energy generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 24, "sentence": "Technological advancements could cause the increase in solar energy generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 25, "sentence": "Economic factors could cause the increase in solar energy generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 26, "sentence": "Policy changes could cause the increase in solar energy generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 27, "sentence": "This trend reflects a global shift toward sustainable energy sources.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 28, "sentence": "This global shift could influence local energy policies.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 29, "sentence": "This global shift could influence local energy infrastructure.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 30, "sentence": "Our community experiences changes in energy costs.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 31, "sentence": "PGE is an energy provider.", "category": "Background knowledge", "color": "#d62728"}, {"id": 32, "sentence": "The costs of PGE keep increasing.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 33, "sentence": "An increase in renewable energy could affect energy costs in our community.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 34, "sentence": "Energy costs in our community may reflect an increase in renewable energy.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 35, "sentence": "The US is relatively stagnant for clean energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 36, "sentence": "China is not relatively stagnant for clean energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 37, "sentence": "The US is more stagnant for clean energy than China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 38, "sentence": "The title of the graph is \"The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix\".", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "The graph shows the world electricity generation from 2000 to 2020.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "The graph shows the world electricity generation just beyond 2020.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "The graph divides energy sources into clean sources and fossil sources.", "cluster_label": "S4: The graph divides energy sources into clean sources and fossil sources.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 3, "sentence": "Coal is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "Gas is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Oil is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "Other fossil fuels are fossil sources.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "Nuclear energy is a clean source.", "cluster_label": "S126: Some statements describe nuclear energy as a clean source and as safe and reliable.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "Hydroelectric energy is a clean source.", "cluster_label": "S4: Nuclear power and hydroelectric power are clean sources that do not produce air pollution and have low carbon emissions.", "category": "Background knowledge", "color": "#d62728"}, {"id": 9, "sentence": "Wind energy is a clean source.", "cluster_label": "S5: Wind power and solar power are clean or renewable energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "Solar energy is a clean source.", "cluster_label": "S5: Wind power and solar power are clean or renewable energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "The graph shows a decline in coal use over time.", "cluster_label": "S69: Coal production in the United States decreased by more than half since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "The graph shows a relatively steady electricity generation from gas over time.", "cluster_label": "S160: In the United States, the use of gas is relatively steady over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "The graph shows an increase in electricity generation from wind energy over time.", "cluster_label": "S114: Wind power increases and solar power increases.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "The graph shows an increase in electricity generation from solar energy over time.", "cluster_label": "S114: Wind power increases and solar power increases.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "I am curious about the cause of the decline in coal use.", "cluster_label": "S16: The author wonders about changes in coal use, including declines in the United States and dips around 2020.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 16, "sentence": "I am curious about the cause of the increase in wind energy generation.", "cluster_label": "S66: The author wonders why wind and solar generation increased and why coal declined.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 17, "sentence": "I am curious about the cause of the increase in solar energy generation.", "cluster_label": "S66: The author wonders why wind and solar generation increased and why coal declined.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 18, "sentence": "Technological advancements could cause the decline in coal use.", "cluster_label": "S9: Coal and other fossil fuels remain dominant or rise to meet demand, and various factors can explain coal trends.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 19, "sentence": "Economic factors could cause the decline in coal use.", "cluster_label": "S9: Coal and other fossil fuels remain dominant or rise to meet demand, and various factors can explain coal trends.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 20, "sentence": "Policy changes could cause the decline in coal use.", "cluster_label": "S9: Coal and other fossil fuels remain dominant or rise to meet demand, and various factors can explain coal trends.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 21, "sentence": "Technological advancements could cause the increase in wind energy generation.", "cluster_label": "S33: Economic factors, policy changes, or technological advancements could cause increases in wind or solar energy generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 22, "sentence": "Economic factors could cause the increase in wind energy generation.", "cluster_label": "S33: Economic factors, policy changes, or technological advancements could cause increases in wind or solar energy generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 23, "sentence": "Policy changes could cause the increase in wind energy generation.", "cluster_label": "S7: Policy, legislation, environmental movements, and awareness can drive a shift toward cleaner energy and reduce fossil-fuel use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 24, "sentence": "Technological advancements could cause the increase in solar energy generation.", "cluster_label": "S33: Economic factors, policy changes, or technological advancements could cause increases in wind or solar energy generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 25, "sentence": "Economic factors could cause the increase in solar energy generation.", "cluster_label": "S33: Economic factors, policy changes, or technological advancements could cause increases in wind or solar energy generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 26, "sentence": "Policy changes could cause the increase in solar energy generation.", "cluster_label": "S33: Economic factors, policy changes, or technological advancements could cause increases in wind or solar energy generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 27, "sentence": "This trend reflects a global shift toward sustainable energy sources.", "cluster_label": "S40: In the past twenty years, the world has made advancements in becoming more eco-friendly.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 28, "sentence": "This global shift could influence local energy policies.", "cluster_label": "S17: Clean energy shifts can affect the economy, costs, and fossil-dependent communities, and can influence local policy and infrastructure.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 29, "sentence": "This global shift could influence local energy infrastructure.", "cluster_label": "S17: Clean energy shifts can affect the economy, costs, and fossil-dependent communities, and can influence local policy and infrastructure.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 30, "sentence": "Our community experiences changes in energy costs.", "cluster_label": "S9: My community experiences increasing energy costs such as rising PGE costs.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 31, "sentence": "PGE is an energy provider.", "cluster_label": "S56: Some statements describe PGE as an energy provider.", "category": "Background knowledge", "color": "#d62728"}, {"id": 32, "sentence": "The costs of PGE keep increasing.", "cluster_label": "S9: My community experiences increasing energy costs such as rising PGE costs.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 33, "sentence": "An increase in renewable energy could affect energy costs in our community.", "cluster_label": "S17: Clean energy shifts can affect the economy, costs, and fossil-dependent communities, and can influence local policy and infrastructure.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 34, "sentence": "Energy costs in our community may reflect an increase in renewable energy.", "cluster_label": "S6: Energy prices and costs influence energy choices and affect people and communities.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 35, "sentence": "The US is relatively stagnant for clean energy.", "cluster_label": "S30: United States clean electricity is steady or increases only slightly over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 36, "sentence": "China is not relatively stagnant for clean energy.", "cluster_label": "S30: United States clean electricity is steady or increases only slightly over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 37, "sentence": "The US is more stagnant for clean energy than China.", "cluster_label": "S30: United States clean electricity is steady or increases only slightly over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 38, "sentence": "The title of the graph is \"The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix\".", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 2, "target": 3}, {"source": 2, "target": 4}, {"source": 2, "target": 5}, {"source": 2, "target": 6}, {"source": 2, "target": 7}, {"source": 2, "target": 8}, {"source": 2, "target": 9}, {"source": 2, "target": 10}, {"source": 0, "target": 11}, {"source": 3, "target": 11}, {"source": 0, "target": 12}, {"source": 4, "target": 12}, {"source": 0, "target": 13}, {"source": 9, "target": 13}, {"source": 0, "target": 14}, {"source": 10, "target": 14}, {"source": 11, "target": 15}, {"source": 13, "target": 16}, {"source": 14, "target": 17}, {"source": 15, "target": 18}, {"source": 15, "target": 19}, {"source": 15, "target": 20}, {"source": 16, "target": 21}, {"source": 16, "target": 22}, {"source": 16, "target": 23}, {"source": 17, "target": 24}, {"source": 17, "target": 25}, {"source": 17, "target": 26}, {"source": 11, "target": 27}, {"source": 13, "target": 27}, {"source": 14, "target": 27}, {"source": 27, "target": 28}, {"source": 27, "target": 29}, {"source": 31, "target": 32}, {"source": 30, "target": 32}, {"source": 27, "target": 33}, {"source": 30, "target": 33}, {"source": 30, "target": 34}, {"source": 33, "target": 34}, {"source": 35, "target": 37}, {"source": 36, "target": 37}, {"source": 0, "target": 38}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Encoding interpretation", "color": "#2ca02c"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -147,9 +171,14 @@ I would call this graph, &quot;The Rise of Renewables: Wind and Solar Power Surg
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -233,21 +262,30 @@ I would call this graph, &quot;The Rise of Renewables: Wind and Solar Power Surg
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -365,6 +403,20 @@ I would call this graph, &quot;The Rise of Renewables: Wind and Solar Power Surg
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 68</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -113,7 +137,7 @@ Title: How the US has Moved Away from Coal Energy.</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "The graphs show that China produces a very large amount of energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "China uses more energy in the coal industry than the US uses in all industries combined.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "The graphs show that the proportion of nuclear energy is steady over the years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Nuclear power has had many recent developments.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "These developments make nuclear power less dangerous for the environment.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "These developments are not reflected in the usage of nuclear power.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 6, "sentence": "Clean energy is an issue.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 7, "sentence": "I wonder whether connotations about an energy type affect the usage of this energy type on large scales.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "The graphs show that wind energy and solar energy are the least clean clean energy.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 9, "sentence": "Clean energy has three main types.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "Wind energy and solar energy are the only clean energy type that has increased a lot over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "Nuclear plants require large amounts of space.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "Nuclear plants require large amounts of infrastructure to construct and maintain.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "Hydroelectric plants require large amounts of space.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "Hydroelectric plants require large amounts of infrastructure to construct and maintain.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "This requirement could explain the steady usage of nuclear energy and hydroelectric energy.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 16, "sentence": "It is important to be informed about this information.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "Energy discussions are prevalent.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "Hearing debates is an incomplete way to develop a strategy for future energy.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 19, "sentence": "Making conclusions from debates is an incomplete way to develop a strategy for future energy.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 20, "sentence": "If a person sees how much each country relies on each form of energy then the person is better equipped to talk about changes of energy infrastructures.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 21, "sentence": "Such changes could improve the world in the future.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 22, "sentence": "The title is: How the US has moved away from coal energy.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "The graphs show that China produces a very large amount of energy.", "cluster_label": "S225: The graphs show that China produces a very large amount of energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "China uses more energy in the coal industry than the US uses in all industries combined.", "cluster_label": "S239: In China, coal usage is more than total energy usage in the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "The graphs show that the proportion of nuclear energy is steady over the years.", "cluster_label": "S87: The worldwide nuclear electricity generation has barely changed since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Nuclear power has had many recent developments.", "cluster_label": "S31: Nuclear power has recent developments and nuclear and hydroelectric plants require large space and infrastructure.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "These developments make nuclear power less dangerous for the environment.", "cluster_label": "S31: Nuclear power has recent developments and nuclear and hydroelectric plants require large space and infrastructure.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "These developments are not reflected in the usage of nuclear power.", "cluster_label": "S18: Nuclear power trends and lack of nuclear capacity relate to fossil-fuel trends and the energy landscape.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 6, "sentence": "Clean energy is an issue.", "cluster_label": "S57: Clean energy is an issue.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 7, "sentence": "I wonder whether connotations about an energy type affect the usage of this energy type on large scales.", "cluster_label": "S46_new_2: The author wonders whether connotations about an energy type affect the usage of this energy type on large scales.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "The graphs show that wind energy and solar energy are the least clean clean energy.", "cluster_label": "S25: The graphs show that wind energy and solar energy are the least clean clean energy.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 9, "sentence": "Clean energy has three main types.", "cluster_label": "S128: Some statements describe clean energy having three main types.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "Wind energy and solar energy are the only clean energy type that has increased a lot over time.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "Nuclear plants require large amounts of space.", "cluster_label": "S31: Nuclear power has recent developments and nuclear and hydroelectric plants require large space and infrastructure.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "Nuclear plants require large amounts of infrastructure to construct and maintain.", "cluster_label": "S31: Nuclear power has recent developments and nuclear and hydroelectric plants require large space and infrastructure.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "Hydroelectric plants require large amounts of space.", "cluster_label": "S31: Nuclear power has recent developments and nuclear and hydroelectric plants require large space and infrastructure.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "Hydroelectric plants require large amounts of infrastructure to construct and maintain.", "cluster_label": "S31: Nuclear power has recent developments and nuclear and hydroelectric plants require large space and infrastructure.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "This requirement could explain the steady usage of nuclear energy and hydroelectric energy.", "cluster_label": "S18: Nuclear power trends and lack of nuclear capacity relate to fossil-fuel trends and the energy landscape.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 16, "sentence": "It is important to be informed about this information.", "cluster_label": "S5: People should be informed and educated about electricity and energy information.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "Energy discussions are prevalent.", "cluster_label": "S29: Environmental interest and environmental movements are growing and discussions about energy are prevalent.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "Hearing debates is an incomplete way to develop a strategy for future energy.", "cluster_label": "S26: Debates are an incomplete basis for developing a future energy strategy.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 19, "sentence": "Making conclusions from debates is an incomplete way to develop a strategy for future energy.", "cluster_label": "S26: Debates are an incomplete basis for developing a future energy strategy.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 20, "sentence": "If a person sees how much each country relies on each form of energy then the person is better equipped to talk about changes of energy infrastructures.", "cluster_label": "S29: Understanding energy production and reliance helps people discuss energy infrastructure and contextualize grid issues.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 21, "sentence": "Such changes could improve the world in the future.", "cluster_label": "S41: Improvements are still possible and such changes could improve the world in the future.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 22, "sentence": "The title is: How the US has moved away from coal energy.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 3, "target": 4}, {"source": 2, "target": 5}, {"source": 3, "target": 5}, {"source": 4, "target": 5}, {"source": 6, "target": 7}, {"source": 6, "target": 8}, {"source": 6, "target": 9}, {"source": 8, "target": 10}, {"source": 9, "target": 10}, {"source": 2, "target": 15}, {"source": 11, "target": 15}, {"source": 12, "target": 15}, {"source": 13, "target": 15}, {"source": 14, "target": 15}, {"source": 0, "target": 16}, {"source": 2, "target": 16}, {"source": 8, "target": 16}, {"source": 10, "target": 16}, {"source": 15, "target": 16}, {"source": 17, "target": 18}, {"source": 17, "target": 19}, {"source": 16, "target": 20}, {"source": 18, "target": 20}, {"source": 19, "target": 20}, {"source": 20, "target": 21}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -142,9 +166,14 @@ Title: How the US has Moved Away from Coal Energy.</div>
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -228,21 +257,30 @@ Title: How the US has Moved Away from Coal Energy.</div>
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -360,6 +398,20 @@ Title: How the US has Moved Away from Coal Energy.</div>
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

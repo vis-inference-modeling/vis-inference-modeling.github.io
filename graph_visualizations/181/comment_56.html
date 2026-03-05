@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 56</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -111,7 +135,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "Four graphs are shown.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "The graphs depict energy use and electricity use in China.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "The graphs depict energy use and electricity use in the United States.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 3, "sentence": "The graphs depict energy use and electricity use in India.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 4, "sentence": "The graphs depict the worldwide average of energy use and electricity use.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 5, "sentence": "Most energy use comes from fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Fossil fuels are extremely harmful to the environment.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 7, "sentence": "India has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "India uses little energy compared to China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "India uses little energy compared to the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "I wonder why India uses little energy compared to China and the United States.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "India continues to use mainly fossil fuels for energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "China uses more renewable resources as time goes on.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "The United States uses more renewable resources as time goes on.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "Among China and the United States and India, the United States seems to be the only country that cuts back on unsustainable resources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "Gas is an unsustainable resource.", "category": "Background knowledge", "color": "#d62728"}, {"id": 16, "sentence": "Oil is an unsustainable resource.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "The United States cuts back on gas.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "The United States cuts back on oil.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "The harm of fossil fuels to the environment is widely known.", "category": "Background knowledge", "color": "#d62728"}, {"id": 20, "sentence": "Some other countries continue to use much fossil fuels for their energy system.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "I wonder why some other countries continue to use much fossil fuels for their energy system.", "category": "Information need / curiosity", "color": "#bcbd22"}];
+  const nodes = [{"id": 0, "sentence": "Four graphs are shown.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "The graphs depict energy use and electricity use in China.", "cluster_label": "S22: The commenter describes the graphs as depicting energy use and electricity use for specific countries or worldwide averages.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "The graphs depict energy use and electricity use in the United States.", "cluster_label": "S22: The commenter describes the graphs as depicting energy use and electricity use for specific countries or worldwide averages.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 3, "sentence": "The graphs depict energy use and electricity use in India.", "cluster_label": "S22: The commenter describes the graphs as depicting energy use and electricity use for specific countries or worldwide averages.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 4, "sentence": "The graphs depict the worldwide average of energy use and electricity use.", "cluster_label": "S22: The commenter describes the graphs as depicting energy use and electricity use for specific countries or worldwide averages.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 5, "sentence": "Most energy use comes from fossil fuels.", "cluster_label": "S8: Fossil fuels are the majority or dominant source of world electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Fossil fuels are extremely harmful to the environment.", "cluster_label": "S2: Fossil fuels and coal are harmful and their dominance is concerning.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 7, "sentence": "India has a large population.", "cluster_label": "S8: India has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "India uses little energy compared to China.", "cluster_label": "S25: India uses much less energy than China and much less energy than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "India uses little energy compared to the United States.", "cluster_label": "S23: India electricity generation is lower than China and lower than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "I wonder why India uses little energy compared to China and the United States.", "cluster_label": "S64: The author wonders why India generates less electricity than the United States.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "India continues to use mainly fossil fuels for energy.", "cluster_label": "S34: India relies mostly on fossil fuels and has little clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "China uses more renewable resources as time goes on.", "cluster_label": "S169: China uses more renewable resources as time goes on and the United States uses more renewable resources as time goes on.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "The United States uses more renewable resources as time goes on.", "cluster_label": "S169: China uses more renewable resources as time goes on and the United States uses more renewable resources as time goes on.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "Among China and the United States and India, the United States seems to be the only country that cuts back on unsustainable resources.", "cluster_label": "S170: Among China and the United States and India, the United States seems to be the only country that cuts back on unsustainable resources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "Gas is an unsustainable resource.", "cluster_label": "S95: Some statements describe fossil fuels as unrenewable or unsustainable resources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 16, "sentence": "Oil is an unsustainable resource.", "cluster_label": "S95: Some statements describe fossil fuels as unrenewable or unsustainable resources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "The United States cuts back on gas.", "cluster_label": "S160: In the United States, the use of gas is relatively steady over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "The United States cuts back on oil.", "cluster_label": "S170: Among China and the United States and India, the United States seems to be the only country that cuts back on unsustainable resources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "The harm of fossil fuels to the environment is widely known.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 20, "sentence": "Some other countries continue to use much fossil fuels for their energy system.", "cluster_label": "S16: Fossil fuels are widely used and are the main source of energy in the world.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "I wonder why some other countries continue to use much fossil fuels for their energy system.", "cluster_label": "S15: The author wonders why some countries use more fossil fuels despite access to cleaner resources and why fossil fuels remain a main energy source.", "category": "Information need / curiosity", "color": "#bcbd22"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 0, "target": 3}, {"source": 0, "target": 4}, {"source": 4, "target": 5}, {"source": 5, "target": 6}, {"source": 1, "target": 8}, {"source": 3, "target": 8}, {"source": 2, "target": 9}, {"source": 3, "target": 9}, {"source": 8, "target": 10}, {"source": 9, "target": 10}, {"source": 7, "target": 10}, {"source": 3, "target": 11}, {"source": 5, "target": 11}, {"source": 1, "target": 12}, {"source": 2, "target": 13}, {"source": 11, "target": 14}, {"source": 12, "target": 14}, {"source": 13, "target": 14}, {"source": 2, "target": 17}, {"source": 15, "target": 17}, {"source": 14, "target": 17}, {"source": 2, "target": 18}, {"source": 16, "target": 18}, {"source": 14, "target": 18}, {"source": 6, "target": 19}, {"source": 5, "target": 20}, {"source": 19, "target": 20}, {"source": 20, "target": 21}, {"source": 19, "target": 21}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -140,9 +164,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -226,21 +255,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -358,6 +396,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

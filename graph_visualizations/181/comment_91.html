@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 91</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -117,7 +141,7 @@ How Is the Global Electricity Supply Changing?</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "I compare the US and India with China.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "China has increased power generation more than the US.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "China has increased power generation more than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Globally, the production of energy has increased consistently.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Since 2010, wind power has grown in importance.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "Since 2010, solar power has grown in importance.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "The use of fossil fuels has increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Many businesses fight to reduce the use of fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "Many campaigners push for a switch to renewable energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 9, "sentence": "I find it hard to understand why the use of fossil fuels has increased.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "This situation raises awareness in my community about the source of our electricity.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 11, "sentence": "This situation raises awareness in me about the source of our electricity.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 12, "sentence": "This situation may encourage lobbying for a greater emphasis on the generation of clean energy.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 13, "sentence": "The headline is: How is the global electricity supply changing?", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "I compare the US and India with China.", "cluster_label": "S25: The commenter describes comparing graphs or comparing countries.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "China has increased power generation more than the US.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "China has increased power generation more than India.", "cluster_label": "S52: China electricity generation increased by a large factor since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Globally, the production of energy has increased consistently.", "cluster_label": "Globally, the production of energy has increased consistently.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Since 2010, wind power has grown in importance.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "Since 2010, solar power has grown in importance.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "The use of fossil fuels has increased.", "cluster_label": "S4: Fossil-fuel electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Many businesses fight to reduce the use of fossil fuels.", "cluster_label": "S134: Some statements describe environmentalists and campaigners and activists and businesses working to reduce fossil fuel use and support clean energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "Many campaigners push for a switch to renewable energy.", "cluster_label": "S134: Some statements describe environmentalists and campaigners and activists and businesses working to reduce fossil fuel use and support clean energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 9, "sentence": "I find it hard to understand why the use of fossil fuels has increased.", "cluster_label": "S18: The author wonders about increases in fossil-fuel use and why gas and coal have increased or are preferred.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "This situation raises awareness in my community about the source of our electricity.", "cluster_label": "S14: Local observations and awareness about energy sources can influence individual actions, advocacy, and understanding of personal energy use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 11, "sentence": "This situation raises awareness in me about the source of our electricity.", "cluster_label": "S14: Local observations and awareness about energy sources can influence individual actions, advocacy, and understanding of personal energy use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 12, "sentence": "This situation may encourage lobbying for a greater emphasis on the generation of clean energy.", "cluster_label": "S37: This situation may encourage lobbying for a greater emphasis on the generation of clean energy.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 13, "sentence": "The headline is: How is the global electricity supply changing?", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 1, "target": 0}, {"source": 2, "target": 0}, {"source": 3, "target": 4}, {"source": 3, "target": 5}, {"source": 3, "target": 6}, {"source": 6, "target": 7}, {"source": 4, "target": 8}, {"source": 5, "target": 8}, {"source": 6, "target": 8}, {"source": 6, "target": 9}, {"source": 6, "target": 10}, {"source": 6, "target": 11}, {"source": 10, "target": 12}, {"source": 11, "target": 12}, {"source": 8, "target": 12}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -146,9 +170,14 @@ How Is the Global Electricity Supply Changing?</div>
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -232,21 +261,30 @@ How Is the Global Electricity Supply Changing?</div>
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -364,6 +402,20 @@ How Is the Global Electricity Supply Changing?</div>
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 140</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -111,7 +135,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "A positive correlation exists among all energy sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Clean energy consumption has increased substantially in recent years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Fossil fuel consumption lags behind clean energy consumption.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "China's electricity generation shows a significant upward trend.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "China's electricity generation indicates rapid growth.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "The electricity generation of the U.S. appears to plateau.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "India's electricity generation is comparatively lower than China's electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "India's electricity generation is comparatively lower than the electricity generation of the U.S..", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "India may rely on fossil fuels.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 9, "sentence": "Some factors drive the rapid growth of clean energy consumption globally.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 10, "sentence": "The author asks what specific factors drive the rapid growth of clean energy consumption globally.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 11, "sentence": "Policy interventions can accelerate the transition to renewable energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "Technological advancements can accelerate the transition to renewable energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "India is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "The author asks how policy interventions and technological advancements might accelerate the transition to renewable energy in India.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 15, "sentence": "These trends have long-term implications for global energy security.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 16, "sentence": "These trends have long-term implications for environmental sustainability.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 17, "sentence": "These trends have long-term implications for climate change mitigation efforts.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 18, "sentence": "The author asks what the long-term implications of these trends are.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 19, "sentence": "These global energy trends impact the author.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 20, "sentence": "These global energy trends impact the community of the author.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 21, "sentence": "These global energy trends influence energy prices.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 22, "sentence": "These global energy trends influence environmental quality.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 23, "sentence": "These global energy trends influence efforts to mitigate climate change.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 24, "sentence": "The community of the author can embrace renewable energy sources locally.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 25, "sentence": "If the community of the author embraces renewable energy sources locally then job creation can increase.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 26, "sentence": "If the community of the author embraces renewable energy sources locally then pollution can be reduced.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 27, "sentence": "If the community of the author embraces renewable energy sources locally then resilience to energy supply disruptions can increase.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 28, "sentence": "These effects contribute to a more sustainable future.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 29, "sentence": "Understanding global energy dynamics helps to inform local energy policies.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 30, "sentence": "Understanding global energy dynamics encourages individual actions.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 31, "sentence": "These individual actions support cleaner energy initiatives.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 32, "sentence": "The headline is: Power Dynamics: Global Energy Shift Towards Renewables, Challenges Fossil Fuel Reliance.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "A positive correlation exists among all energy sources.", "cluster_label": "S81: A positive correlation exists among all energy sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Clean energy consumption has increased substantially in recent years.", "cluster_label": "S47: Clean electricity rises more in recent years and clean energy consumption increases substantially in recent years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Fossil fuel consumption lags behind clean energy consumption.", "cluster_label": "S9: Clean electricity produces more electricity than fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "China's electricity generation shows a significant upward trend.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "China's electricity generation indicates rapid growth.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "The electricity generation of the U.S. appears to plateau.", "cluster_label": "S22: United States electricity generation is relatively stable or stagnant over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "India's electricity generation is comparatively lower than China's electricity generation.", "cluster_label": "S212: China produces more electricity than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "India's electricity generation is comparatively lower than the electricity generation of the U.S..", "cluster_label": "S187: The U.S. uses more power than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "India may rely on fossil fuels.", "cluster_label": "S28: China and India have great demand for energy, and India may rely on fossil fuels.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 9, "sentence": "Some factors drive the rapid growth of clean energy consumption globally.", "cluster_label": "S40: In the past twenty years, the world has made advancements in becoming more eco-friendly.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 10, "sentence": "The author asks what specific factors drive the rapid growth of clean energy consumption globally.", "cluster_label": "S11: The author asks questions about policy, technology, drivers, or implications related to the trends.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 11, "sentence": "Policy interventions can accelerate the transition to renewable energy.", "cluster_label": "S6: The world is moving toward renewable or clean energy and governments and policies can promote or accelerate this transition.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "Technological advancements can accelerate the transition to renewable energy.", "cluster_label": "S6: The world is moving toward renewable or clean energy and governments and policies can promote or accelerate this transition.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "India is a country.", "cluster_label": "India is a country.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "The author asks how policy interventions and technological advancements might accelerate the transition to renewable energy in India.", "cluster_label": "S11: The author asks questions about policy, technology, drivers, or implications related to the trends.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 15, "sentence": "These trends have long-term implications for global energy security.", "cluster_label": "S15: Global energy trends have long-term implications for sustainability, energy security, climate mitigation, prices, and environmental quality, and can inform policy.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 16, "sentence": "These trends have long-term implications for environmental sustainability.", "cluster_label": "S15: Global energy trends have long-term implications for sustainability, energy security, climate mitigation, prices, and environmental quality, and can inform policy.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 17, "sentence": "These trends have long-term implications for climate change mitigation efforts.", "cluster_label": "S15: Global energy trends have long-term implications for sustainability, energy security, climate mitigation, prices, and environmental quality, and can inform policy.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 18, "sentence": "The author asks what the long-term implications of these trends are.", "cluster_label": "S11: The author asks questions about policy, technology, drivers, or implications related to the trends.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 19, "sentence": "These global energy trends impact the author.", "cluster_label": "S30: These global energy trends impact the author and the community of the author.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 20, "sentence": "These global energy trends impact the community of the author.", "cluster_label": "S30: These global energy trends impact the author and the community of the author.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 21, "sentence": "These global energy trends influence energy prices.", "cluster_label": "S15: Global energy trends have long-term implications for sustainability, energy security, climate mitigation, prices, and environmental quality, and can inform policy.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 22, "sentence": "These global energy trends influence environmental quality.", "cluster_label": "S15: Global energy trends have long-term implications for sustainability, energy security, climate mitigation, prices, and environmental quality, and can inform policy.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 23, "sentence": "These global energy trends influence efforts to mitigate climate change.", "cluster_label": "S15: Global energy trends have long-term implications for sustainability, energy security, climate mitigation, prices, and environmental quality, and can inform policy.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 24, "sentence": "The community of the author can embrace renewable energy sources locally.", "cluster_label": "S52: The community of the author can embrace renewable energy sources locally.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 25, "sentence": "If the community of the author embraces renewable energy sources locally then job creation can increase.", "cluster_label": "S4: If a community adopts clean energy or solar panels, then the community will benefit (for example via jobs, resilience, health, or safety).", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 26, "sentence": "If the community of the author embraces renewable energy sources locally then pollution can be reduced.", "cluster_label": "S3: If the world or a community shifts to clean or renewable energy, then pollution will decrease and the environment will benefit.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 27, "sentence": "If the community of the author embraces renewable energy sources locally then resilience to energy supply disruptions can increase.", "cluster_label": "S4: If a community adopts clean energy or solar panels, then the community will benefit (for example via jobs, resilience, health, or safety).", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 28, "sentence": "These effects contribute to a more sustainable future.", "cluster_label": "These effects contribute to a more sustainable future.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 29, "sentence": "Understanding global energy dynamics helps to inform local energy policies.", "cluster_label": "S15: Global energy trends have long-term implications for sustainability, energy security, climate mitigation, prices, and environmental quality, and can inform policy.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 30, "sentence": "Understanding global energy dynamics encourages individual actions.", "cluster_label": "S15: Global energy trends have long-term implications for sustainability, energy security, climate mitigation, prices, and environmental quality, and can inform policy.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 31, "sentence": "These individual actions support cleaner energy initiatives.", "cluster_label": "S14: Local observations and awareness about energy sources can influence individual actions, advocacy, and understanding of personal energy use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 32, "sentence": "The headline is: Power Dynamics: Global Energy Shift Towards Renewables, Challenges Fossil Fuel Reliance.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 1, "target": 2}, {"source": 3, "target": 4}, {"source": 3, "target": 6}, {"source": 5, "target": 7}, {"source": 6, "target": 8}, {"source": 7, "target": 8}, {"source": 1, "target": 9}, {"source": 9, "target": 10}, {"source": 11, "target": 14}, {"source": 12, "target": 14}, {"source": 13, "target": 14}, {"source": 1, "target": 15}, {"source": 2, "target": 15}, {"source": 3, "target": 15}, {"source": 5, "target": 15}, {"source": 6, "target": 15}, {"source": 7, "target": 15}, {"source": 8, "target": 15}, {"source": 1, "target": 16}, {"source": 2, "target": 16}, {"source": 3, "target": 16}, {"source": 5, "target": 16}, {"source": 6, "target": 16}, {"source": 7, "target": 16}, {"source": 8, "target": 16}, {"source": 1, "target": 17}, {"source": 2, "target": 17}, {"source": 3, "target": 17}, {"source": 5, "target": 17}, {"source": 6, "target": 17}, {"source": 7, "target": 17}, {"source": 8, "target": 17}, {"source": 15, "target": 18}, {"source": 16, "target": 18}, {"source": 17, "target": 18}, {"source": 1, "target": 19}, {"source": 2, "target": 19}, {"source": 3, "target": 19}, {"source": 5, "target": 19}, {"source": 6, "target": 19}, {"source": 7, "target": 19}, {"source": 8, "target": 19}, {"source": 19, "target": 20}, {"source": 1, "target": 21}, {"source": 2, "target": 21}, {"source": 3, "target": 21}, {"source": 5, "target": 21}, {"source": 6, "target": 21}, {"source": 7, "target": 21}, {"source": 8, "target": 21}, {"source": 1, "target": 22}, {"source": 2, "target": 22}, {"source": 3, "target": 22}, {"source": 5, "target": 22}, {"source": 6, "target": 22}, {"source": 7, "target": 22}, {"source": 8, "target": 22}, {"source": 1, "target": 23}, {"source": 2, "target": 23}, {"source": 3, "target": 23}, {"source": 5, "target": 23}, {"source": 6, "target": 23}, {"source": 7, "target": 23}, {"source": 8, "target": 23}, {"source": 20, "target": 24}, {"source": 30, "target": 24}, {"source": 24, "target": 25}, {"source": 24, "target": 26}, {"source": 24, "target": 27}, {"source": 15, "target": 27}, {"source": 25, "target": 28}, {"source": 26, "target": 28}, {"source": 27, "target": 28}, {"source": 1, "target": 29}, {"source": 2, "target": 29}, {"source": 3, "target": 29}, {"source": 5, "target": 29}, {"source": 6, "target": 29}, {"source": 7, "target": 29}, {"source": 8, "target": 29}, {"source": 1, "target": 30}, {"source": 2, "target": 30}, {"source": 3, "target": 30}, {"source": 5, "target": 30}, {"source": 6, "target": 30}, {"source": 7, "target": 30}, {"source": 8, "target": 30}, {"source": 30, "target": 31}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -140,9 +164,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -226,21 +255,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -358,6 +396,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

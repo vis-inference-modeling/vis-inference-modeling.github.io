@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 40</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -111,7 +135,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "These graphs are intriguing to me.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 1, "sentence": "Recently, I have been learning a lot about wind energy and solar energy.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 2, "sentence": "The first graph shows a huge amount of energy consumption across the globe.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Energy consumption seems to be on a rapidly rising trend.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "The first graph does not show data up to 2024.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 5, "sentence": "I think that the trend will continue upward after the last year in the graph.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 6, "sentence": "India has a low energy consumption in the graph.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "India has a huge number of people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "I was shocked about the low energy consumption of India.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 9, "sentence": "India is more populated than the US.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "India uses significantly less energy than the US.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "China is similar in population to India.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "China uses much more energy than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "I was surprised that nuclear energy is clean energy.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 14, "sentence": "I often hear negative things about nuclear energy.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 15, "sentence": "Clean energy is good and helpful.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "I am surprised that nuclear energy is associated with clean energy.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "The title is: Energy Consumption: Where does your country fall?", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "These graphs are intriguing to me.", "cluster_label": "S8: The graphs or topic are intriguing, interesting, or capture attention.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 1, "sentence": "Recently, I have been learning a lot about wind energy and solar energy.", "cluster_label": "S15: I have been learning about wind energy and solar energy.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 2, "sentence": "The first graph shows a huge amount of energy consumption across the globe.", "cluster_label": "The first graph shows a huge amount of energy consumption across the globe.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Energy consumption seems to be on a rapidly rising trend.", "cluster_label": "S103: Energy consumption has increased significantly since 2000 and most of the energy growth comes from renewable or clean energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "The first graph does not show data up to 2024.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 5, "sentence": "I think that the trend will continue upward after the last year in the graph.", "cluster_label": "S7: People wonder or predict how the graph, data, or trends will change in the future.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 6, "sentence": "India has a low energy consumption in the graph.", "cluster_label": "S23: India electricity generation is lower than China and lower than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "India has a huge number of people.", "cluster_label": "S8: India has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "I was shocked about the low energy consumption of India.", "cluster_label": "S6: The graphs or facts are surprising or shocking, especially about low India energy use and low US increase.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 9, "sentence": "India is more populated than the US.", "cluster_label": "S11: India has a greater population than the United States.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "India uses significantly less energy than the US.", "cluster_label": "S25: India uses much less energy than China and much less energy than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "China is similar in population to India.", "cluster_label": "S7: India and China have about the same population and both have more than 1 billion people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "China uses much more energy than India.", "cluster_label": "S25: India uses much less energy than China and much less energy than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "I was surprised that nuclear energy is clean energy.", "cluster_label": "S15: Nuclear and hydroelectric energy are clean, and nuclear power is a good solution.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 14, "sentence": "I often hear negative things about nuclear energy.", "cluster_label": "S14: My community or area has issues or questions about nuclear energy or a nuclear power plant reaching end of life.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 15, "sentence": "Clean energy is good and helpful.", "cluster_label": "S1: Clean energy is better for the Earth than fossil fuels and increasing clean energy is good.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "I am surprised that nuclear energy is associated with clean energy.", "cluster_label": "S70: It is surprising that nuclear energy is associated with clean energy.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "The title is: Energy Consumption: Where does your country fall?", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 2, "target": 3}, {"source": 2, "target": 4}, {"source": 3, "target": 5}, {"source": 4, "target": 5}, {"source": 2, "target": 6}, {"source": 6, "target": 8}, {"source": 7, "target": 8}, {"source": 7, "target": 9}, {"source": 6, "target": 10}, {"source": 7, "target": 11}, {"source": 6, "target": 12}, {"source": 11, "target": 12}, {"source": 13, "target": 16}, {"source": 14, "target": 16}, {"source": 15, "target": 16}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -140,9 +164,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -226,21 +255,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -358,6 +396,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 110</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -117,7 +141,7 @@ Headline: Changing Global Sources of Energy</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "I notice that all sources of electricity generation increase globally.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "A world electricity generation graph depicts this increase.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "Currently, clean methods and fossil-fuel methods are utilized at similar rates for global energy production.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "I wonder which countries contribute most to the use of clean energy sources.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 4, "sentence": "A breakdown of China shows that China relies mostly on fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "A breakdown of the United States shows that the United States relies mostly on fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "A breakdown of India shows that India relies mostly on fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "I wonder what the color scale means.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "The color scale differentiates different groups.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 9, "sentence": "I wonder whether coal is the worst fossil fuel.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "Coal is at the bottom of the fossil-fuel category.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 11, "sentence": "Coal is the darkest in the fossil-fuel category.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 12, "sentence": "I wonder whether nuclear energy is the cleanest source.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 13, "sentence": "Nuclear energy is at the top of the clean category.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 14, "sentence": "Nuclear energy is the lightest in the clean category.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 15, "sentence": "This information is impactful.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "This information makes my community aware of where my community gets power from.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 17, "sentence": "This information makes me aware of where I get power from.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 18, "sentence": "This awareness can incentivize advocacy for more focus on clean energy production.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 19, "sentence": "The headline is: Changing Global Sources of Energy.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "I notice that all sources of electricity generation increase globally.", "cluster_label": "S7: All sources or categories of electricity generation increase over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "A world electricity generation graph depicts this increase.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "Currently, clean methods and fossil-fuel methods are utilized at similar rates for global energy production.", "cluster_label": "S124: Currently, clean methods and fossil-fuel methods are utilized at similar rates for global energy production.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "I wonder which countries contribute most to the use of clean energy sources.", "cluster_label": "S31: The author wonders which countries contribute most to clean energy or fossil-fuel electricity and how the United States compares to other countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 4, "sentence": "A breakdown of China shows that China relies mostly on fossil fuels.", "cluster_label": "S27: China clean electricity and fossil electricity both increase, and China relies heavily on fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "A breakdown of the United States shows that the United States relies mostly on fossil fuels.", "cluster_label": "S57: United States non-renewable energy use stayed consistent over the past 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "A breakdown of India shows that India relies mostly on fossil fuels.", "cluster_label": "S34: India relies mostly on fossil fuels and has little clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "I wonder what the color scale means.", "cluster_label": "S12: The author wonders what the color scale means and how colors are assigned to energy types.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "The color scale differentiates different groups.", "cluster_label": "S12: The color scale differentiates different groups.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 9, "sentence": "I wonder whether coal is the worst fossil fuel.", "cluster_label": "S47: The author wonders why world electricity generation has become increasingly clean and why all countries use more clean energy.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "Coal is at the bottom of the fossil-fuel category.", "cluster_label": "S6: Coal and gas occupy a large part at the bottom of the graph, and coal is at the bottom of the fossil-fuel category.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 11, "sentence": "Coal is the darkest in the fossil-fuel category.", "cluster_label": "S7: Coal is the darkest color in the fossil-fuel category.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 12, "sentence": "I wonder whether nuclear energy is the cleanest source.", "cluster_label": "S47: The author wonders why world electricity generation has become increasingly clean and why all countries use more clean energy.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 13, "sentence": "Nuclear energy is at the top of the clean category.", "cluster_label": "S8: Nuclear energy is at the top of the clean category and is the lightest color in the clean category.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 14, "sentence": "Nuclear energy is the lightest in the clean category.", "cluster_label": "S8: Nuclear energy is at the top of the clean category and is the lightest color in the clean category.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 15, "sentence": "This information is impactful.", "cluster_label": "S10: The topic or information is impactful or important.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "This information makes my community aware of where my community gets power from.", "cluster_label": "S10: This information makes me or my community more aware of electricity usage or where power comes from.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 17, "sentence": "This information makes me aware of where I get power from.", "cluster_label": "S10: This information makes me or my community more aware of electricity usage or where power comes from.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 18, "sentence": "This awareness can incentivize advocacy for more focus on clean energy production.", "cluster_label": "S14: Local observations and awareness about energy sources can influence individual actions, advocacy, and understanding of personal energy use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 19, "sentence": "The headline is: Changing Global Sources of Energy.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 1, "target": 2}, {"source": 2, "target": 3}, {"source": 1, "target": 4}, {"source": 2, "target": 4}, {"source": 1, "target": 5}, {"source": 2, "target": 5}, {"source": 1, "target": 6}, {"source": 2, "target": 6}, {"source": 1, "target": 7}, {"source": 7, "target": 8}, {"source": 4, "target": 9}, {"source": 5, "target": 9}, {"source": 6, "target": 9}, {"source": 8, "target": 9}, {"source": 8, "target": 10}, {"source": 9, "target": 10}, {"source": 8, "target": 11}, {"source": 9, "target": 11}, {"source": 2, "target": 12}, {"source": 8, "target": 12}, {"source": 8, "target": 13}, {"source": 12, "target": 13}, {"source": 8, "target": 14}, {"source": 12, "target": 14}, {"source": 1, "target": 15}, {"source": 2, "target": 15}, {"source": 4, "target": 15}, {"source": 5, "target": 15}, {"source": 6, "target": 15}, {"source": 10, "target": 15}, {"source": 11, "target": 15}, {"source": 13, "target": 15}, {"source": 14, "target": 15}, {"source": 15, "target": 16}, {"source": 15, "target": 17}, {"source": 16, "target": 18}, {"source": 17, "target": 18}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Encoding interpretation", "color": "#2ca02c"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -146,9 +170,14 @@ Headline: Changing Global Sources of Energy</div>
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -232,21 +261,30 @@ Headline: Changing Global Sources of Energy</div>
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -364,6 +402,20 @@ Headline: Changing Global Sources of Energy</div>
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

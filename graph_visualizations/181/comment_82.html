@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 82</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -120,7 +144,7 @@ Headline: &quot;Coal still king as renewables rise in powering the world&quot;</
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "Coal has been the largest source of global electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Coal has declined slightly since 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Gas has increased steadily since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Wind energy has increased steadily since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Solar energy has increased steadily since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "Other renewable energy has increased steadily since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Nuclear energy has stayed relatively flat over the 20-year period.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Hydro energy has stayed relatively flat over the 20-year period.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Coal is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 9, "sentence": "Gas is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "Oil is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "Fossil fuels make up the vast majority of electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "Clean sources make up a minority of electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "I wonder how much the total amount of global electricity generation has changed over this period.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "The graph shows shares of electricity generation.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 15, "sentence": "The graph does not show absolute amounts of electricity generation.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 16, "sentence": "I wonder what explains the slight dip in coal around 2020.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 17, "sentence": "The pandemic happened around 2020.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "The pandemic may have reduced energy demand.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 19, "sentence": "I wonder how much variability exists between countries in the electricity source mix.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 20, "sentence": "I wonder how much variability exists between regions in the electricity source mix.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 21, "sentence": "I wonder how these trends are projected to change in the coming decades.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 22, "sentence": "Renewable energy may scale up further in the coming decades.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 23, "sentence": "The dominant share of fossil fuels has major impacts on climate change.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 24, "sentence": "The dominant share of fossil fuels has major impacts on air pollution.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 25, "sentence": "Climate change affects the whole world.", "category": "Background knowledge", "color": "#d62728"}, {"id": 26, "sentence": "Air pollution affects the whole world.", "category": "Background knowledge", "color": "#d62728"}, {"id": 27, "sentence": "More renewable energy means cleaner air.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 28, "sentence": "More renewable energy means reduced emissions.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 29, "sentence": "More renewable energy may cause economic disruption in fossil-dependent communities.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 30, "sentence": "These trends point to a need to massively scale up clean energy investment.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 31, "sentence": "These trends point to a need to massively scale up clean energy infrastructure.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 32, "sentence": "This need exists in my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 33, "sentence": "This need exists globally.", "category": "Background knowledge", "color": "#d62728"}, {"id": 34, "sentence": "The headline is: \"Coal still king as renewables rise in powering the world\".", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "Coal has been the largest source of global electricity generation.", "cluster_label": "S12: Coal is the largest source of global electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Coal has declined slightly since 2010.", "cluster_label": "S69: Coal production in the United States decreased by more than half since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Gas has increased steadily since 2000.", "cluster_label": "S4: Fossil-fuel electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Wind energy has increased steadily since 2000.", "cluster_label": "S114: Wind power increases and solar power increases.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Solar energy has increased steadily since 2000.", "cluster_label": "S114: Wind power increases and solar power increases.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "Other renewable energy has increased steadily since 2000.", "cluster_label": "S101: Other renewable energy has increased steadily since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Nuclear energy has stayed relatively flat over the 20-year period.", "cluster_label": "S87: The worldwide nuclear electricity generation has barely changed since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Hydro energy has stayed relatively flat over the 20-year period.", "cluster_label": "S87: The worldwide nuclear electricity generation has barely changed since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Coal is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 9, "sentence": "Gas is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "Oil is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "Fossil fuels make up the vast majority of electricity generation.", "cluster_label": "S200: The electricity generation in the world has increased and fossil fuels dominate most sources of world electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "Clean sources make up a minority of electricity generation.", "cluster_label": "S110: There are more gigawatt-hours of fossil electricity than clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "I wonder how much the total amount of global electricity generation has changed over this period.", "cluster_label": "S57: The author wonders how much the total amount of global electricity generation has changed over this period.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "The graph shows shares of electricity generation.", "cluster_label": "S2: The graph shows shares or percentages of electricity generation rather than absolute amounts.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 15, "sentence": "The graph does not show absolute amounts of electricity generation.", "cluster_label": "S2: The graph shows shares or percentages of electricity generation rather than absolute amounts.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 16, "sentence": "I wonder what explains the slight dip in coal around 2020.", "cluster_label": "S16: The author wonders about changes in coal use, including declines in the United States and dips around 2020.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 17, "sentence": "The pandemic happened around 2020.", "cluster_label": "S26: Major crises around 2008 and the COVID-19 pandemic caused economic hardship or slumps.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "The pandemic may have reduced energy demand.", "cluster_label": "S1: Economic recessions or the COVID-19 pandemic may cause dips or decreases in energy demand or usage.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 19, "sentence": "I wonder how much variability exists between countries in the electricity source mix.", "cluster_label": "S40: The author wonders about variability in electricity source mix across countries or regions and what other countries' graphs look like.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 20, "sentence": "I wonder how much variability exists between regions in the electricity source mix.", "cluster_label": "S40: The author wonders about variability in electricity source mix across countries or regions and what other countries' graphs look like.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 21, "sentence": "I wonder how these trends are projected to change in the coming decades.", "cluster_label": "S57: The author wonders how much the total amount of global electricity generation has changed over this period.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 22, "sentence": "Renewable energy may scale up further in the coming decades.", "cluster_label": "S5: Clean or renewable energy will increase or scale up in the future and may become the dominant electricity source.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 23, "sentence": "The dominant share of fossil fuels has major impacts on climate change.", "cluster_label": "S10: Fossil-fuel use causes air pollution and emissions, while renewable energy reduces pollution and improves health and climate outcomes.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 24, "sentence": "The dominant share of fossil fuels has major impacts on air pollution.", "cluster_label": "S10: Fossil-fuel use causes air pollution and emissions, while renewable energy reduces pollution and improves health and climate outcomes.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 25, "sentence": "Climate change affects the whole world.", "cluster_label": "S28: Climate change is an increasing or pressing issue and a common topic of conversation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 26, "sentence": "Air pollution affects the whole world.", "cluster_label": "S103: Some statements describe air pollution affecting the whole world.", "category": "Background knowledge", "color": "#d62728"}, {"id": 27, "sentence": "More renewable energy means cleaner air.", "cluster_label": "S10: Fossil-fuel use causes air pollution and emissions, while renewable energy reduces pollution and improves health and climate outcomes.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 28, "sentence": "More renewable energy means reduced emissions.", "cluster_label": "S10: Fossil-fuel use causes air pollution and emissions, while renewable energy reduces pollution and improves health and climate outcomes.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 29, "sentence": "More renewable energy may cause economic disruption in fossil-dependent communities.", "cluster_label": "S17: Clean energy shifts can affect the economy, costs, and fossil-dependent communities, and can influence local policy and infrastructure.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 30, "sentence": "These trends point to a need to massively scale up clean energy investment.", "cluster_label": "S51: People should create more clean energy and shift toward cleaner energy worldwide.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 31, "sentence": "These trends point to a need to massively scale up clean energy infrastructure.", "cluster_label": "S51: People should create more clean energy and shift toward cleaner energy worldwide.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 32, "sentence": "This need exists in my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 33, "sentence": "This need exists globally.", "cluster_label": "S55: Some statements describe the whole world requiring the electricity generations shown in the graph and this need existing globally.", "category": "Background knowledge", "color": "#d62728"}, {"id": 34, "sentence": "The headline is: \"Coal still king as renewables rise in powering the world\".", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 11}, {"source": 2, "target": 11}, {"source": 8, "target": 11}, {"source": 9, "target": 11}, {"source": 10, "target": 11}, {"source": 3, "target": 12}, {"source": 4, "target": 12}, {"source": 5, "target": 12}, {"source": 6, "target": 12}, {"source": 7, "target": 12}, {"source": 11, "target": 12}, {"source": 14, "target": 13}, {"source": 15, "target": 13}, {"source": 14, "target": 15}, {"source": 1, "target": 16}, {"source": 17, "target": 18}, {"source": 14, "target": 19}, {"source": 14, "target": 20}, {"source": 1, "target": 21}, {"source": 2, "target": 21}, {"source": 3, "target": 21}, {"source": 4, "target": 21}, {"source": 5, "target": 21}, {"source": 6, "target": 21}, {"source": 7, "target": 21}, {"source": 11, "target": 21}, {"source": 12, "target": 21}, {"source": 21, "target": 22}, {"source": 3, "target": 22}, {"source": 4, "target": 22}, {"source": 5, "target": 22}, {"source": 11, "target": 23}, {"source": 11, "target": 24}, {"source": 23, "target": 25}, {"source": 24, "target": 26}, {"source": 24, "target": 27}, {"source": 23, "target": 28}, {"source": 22, "target": 29}, {"source": 11, "target": 29}, {"source": 11, "target": 30}, {"source": 12, "target": 30}, {"source": 22, "target": 30}, {"source": 23, "target": 30}, {"source": 24, "target": 30}, {"source": 11, "target": 31}, {"source": 12, "target": 31}, {"source": 22, "target": 31}, {"source": 23, "target": 31}, {"source": 24, "target": 31}, {"source": 30, "target": 32}, {"source": 31, "target": 32}, {"source": 30, "target": 33}, {"source": 31, "target": 33}, {"source": 25, "target": 33}, {"source": 26, "target": 33}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Encoding interpretation", "color": "#2ca02c"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -149,9 +173,14 @@ Headline: &quot;Coal still king as renewables rise in powering the world&quot;</
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -235,21 +264,30 @@ Headline: &quot;Coal still king as renewables rise in powering the world&quot;</
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -367,6 +405,20 @@ Headline: &quot;Coal still king as renewables rise in powering the world&quot;</
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

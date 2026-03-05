@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 38</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -111,7 +135,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "Coal generates the most gigawatt-hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Coal is the worst energy source for the environment.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 2, "sentence": "Oil generates the least gigawatt-hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "China uses much electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "China uses much coal electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "The electricity use in China increases.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "America uses electricity.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "The electricity use in America stays steady.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Wind energy is used less than nuclear energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "Solar energy is used less than nuclear energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "Oil is used less than nuclear energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "Other energy sources are used less than nuclear energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "Wind energy is used less than hydroelectric energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "Solar energy is used less than hydroelectric energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "Oil is used less than hydroelectric energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "Other energy sources are used less than hydroelectric energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 16, "sentence": "The graph shows how clean energy is used around the world.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 17, "sentence": "The graph shows how fossil-fuel energy is used around the world.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 18, "sentence": "The graph shows how many gigawatt-hours each energy type generates.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 19, "sentence": "This situation affects my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 20, "sentence": "My community wants more clean electricity generation.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 21, "sentence": "My community wants less fossil-fuel electricity generation.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 22, "sentence": "Clean electricity is better for the environment than fossil-fuel electricity.", "category": "Background knowledge", "color": "#d62728"}, {"id": 23, "sentence": "My community wants fewer gigawatt-hours from coal.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 24, "sentence": "The headline is: The World's electricity generation: The results will really SHOCK you.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "Coal generates the most gigawatt-hours.", "cluster_label": "S12: Coal is the largest source of global electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Coal is the worst energy source for the environment.", "cluster_label": "S49: Coal is the worst energy source for the environment and producing much coal is extremely bad.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 2, "sentence": "Oil generates the least gigawatt-hours.", "cluster_label": "S13: Oil is the smallest or least-used electricity generation source.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "China uses much electricity.", "cluster_label": "N22: China produces much energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "China uses much coal electricity.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "The electricity use in China increases.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "America uses electricity.", "cluster_label": "S14: Electricity is required for technology and everyday life and energy use is high and increasing.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "The electricity use in America stays steady.", "cluster_label": "S51: United States electricity consumption is relatively stable.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Wind energy is used less than nuclear energy.", "cluster_label": "S44: Wind and solar are used less than nuclear and hydro, and wind and solar are among the least used sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "Solar energy is used less than nuclear energy.", "cluster_label": "S44: Wind and solar are used less than nuclear and hydro, and wind and solar are among the least used sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "Oil is used less than nuclear energy.", "cluster_label": "S79: Among fossil fuels, oil and gas produce much electricity, but less than nuclear and hydro.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "Other energy sources are used less than nuclear energy.", "cluster_label": "S44: Wind and solar are used less than nuclear and hydro, and wind and solar are among the least used sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "Wind energy is used less than hydroelectric energy.", "cluster_label": "S44: Wind and solar are used less than nuclear and hydro, and wind and solar are among the least used sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "Solar energy is used less than hydroelectric energy.", "cluster_label": "S44: Wind and solar are used less than nuclear and hydro, and wind and solar are among the least used sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "Oil is used less than hydroelectric energy.", "cluster_label": "S44: Wind and solar are used less than nuclear and hydro, and wind and solar are among the least used sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "Other energy sources are used less than hydroelectric energy.", "cluster_label": "S44: Wind and solar are used less than nuclear and hydro, and wind and solar are among the least used sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 16, "sentence": "The graph shows how clean energy is used around the world.", "cluster_label": "S37: The graph shows how clean energy is used around the world.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 17, "sentence": "The graph shows how fossil-fuel energy is used around the world.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 18, "sentence": "The graph shows how many gigawatt-hours each energy type generates.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 19, "sentence": "This situation affects my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 20, "sentence": "My community wants more clean electricity generation.", "cluster_label": "S36: My community should use more clean energy.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 21, "sentence": "My community wants less fossil-fuel electricity generation.", "cluster_label": "S45: The community wants fewer gigawatt-hours from coal.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 22, "sentence": "Clean electricity is better for the environment than fossil-fuel electricity.", "cluster_label": "S3: Clean or renewable energy is good for the environment and can reduce air pollution and improve health.", "category": "Background knowledge", "color": "#d62728"}, {"id": 23, "sentence": "My community wants fewer gigawatt-hours from coal.", "cluster_label": "S45: The community wants fewer gigawatt-hours from coal.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 24, "sentence": "The headline is: The World's electricity generation: The results will really SHOCK you.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 18, "target": 0}, {"source": 22, "target": 1}, {"source": 18, "target": 2}, {"source": 3, "target": 4}, {"source": 17, "target": 4}, {"source": 3, "target": 5}, {"source": 17, "target": 5}, {"source": 6, "target": 7}, {"source": 17, "target": 7}, {"source": 16, "target": 8}, {"source": 16, "target": 9}, {"source": 17, "target": 10}, {"source": 16, "target": 11}, {"source": 16, "target": 12}, {"source": 16, "target": 13}, {"source": 17, "target": 14}, {"source": 16, "target": 15}, {"source": 0, "target": 19}, {"source": 1, "target": 19}, {"source": 4, "target": 19}, {"source": 5, "target": 19}, {"source": 7, "target": 19}, {"source": 22, "target": 19}, {"source": 19, "target": 20}, {"source": 22, "target": 20}, {"source": 19, "target": 21}, {"source": 22, "target": 21}, {"source": 0, "target": 23}, {"source": 19, "target": 23}, {"source": 21, "target": 23}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -140,9 +164,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -226,21 +255,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -358,6 +396,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 63</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -111,7 +135,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "The graph depicts the proportion of different energy sources that people use.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "Coal is an energy source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "Gas is an energy source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 3, "sentence": "Coal and gas are used most.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Coal is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Gas is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "Nuclear energy is used far less than coal and gas.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Hydroelectric energy is used far less than coal and gas.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Wind energy is used far less than coal and gas.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "Solar energy is used far less than coal and gas.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "Climate change is a prevalent topic of conversation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "Environmental health is a prevalent topic of conversation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "Unclean energy sources are still the majority of energy sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "It was expected that fossil fuels would be used more than clean energy sources.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 14, "sentence": "It is surprising that fossil fuels still dominate as the main energy sources.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 15, "sentence": "Interest in the environment has increased.", "category": "Background knowledge", "color": "#d62728"}, {"id": 16, "sentence": "If interest in the environment increases, then the amount of energy from clean sources should rise over the years.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 17, "sentence": "This situation relates to every community.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "The health of the planet is important for preserving the health of people.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 19, "sentence": "We need to care for our environment.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 20, "sentence": "The environment is our only home.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 21, "sentence": "I hope that the use of fossil fuels decreases.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 22, "sentence": "A possible title is \"Clean v Fossil; Who's in Charge?\"", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "The graph depicts the proportion of different energy sources that people use.", "cluster_label": "S36: The commenter says that the graph depicts the proportion of different energy sources that people use.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "Coal is an energy source.", "cluster_label": "S136: Some statements describe gas and coal as energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "Gas is an energy source.", "cluster_label": "S136: Some statements describe gas and coal as energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 3, "sentence": "Coal and gas are used most.", "cluster_label": "S10: Coal and gas are the largest or main energy sources globally.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Coal is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Gas is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "Nuclear energy is used far less than coal and gas.", "cluster_label": "S140: Nuclear, hydroelectric, wind, and solar are used far less than coal and gas.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Hydroelectric energy is used far less than coal and gas.", "cluster_label": "S44: Wind and solar are used less than nuclear and hydro, and wind and solar are among the least used sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Wind energy is used far less than coal and gas.", "cluster_label": "S44: Wind and solar are used less than nuclear and hydro, and wind and solar are among the least used sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "Solar energy is used far less than coal and gas.", "cluster_label": "S44: Wind and solar are used less than nuclear and hydro, and wind and solar are among the least used sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "Climate change is a prevalent topic of conversation.", "cluster_label": "S28: Climate change is an increasing or pressing issue and a common topic of conversation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "Environmental health is a prevalent topic of conversation.", "cluster_label": "S29: Environmental interest and environmental movements are growing and discussions about energy are prevalent.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "Unclean energy sources are still the majority of energy sources.", "cluster_label": "S8: Fossil fuels are the majority or dominant source of world electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "It was expected that fossil fuels would be used more than clean energy sources.", "cluster_label": "S39: It was expected that fossil fuels would be used more than clean energy sources.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 14, "sentence": "It is surprising that fossil fuels still dominate as the main energy sources.", "cluster_label": "S67: It is surprising that fossil fuels still dominate as the main energy sources.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 15, "sentence": "Interest in the environment has increased.", "cluster_label": "S29: Environmental interest and environmental movements are growing and discussions about energy are prevalent.", "category": "Background knowledge", "color": "#d62728"}, {"id": 16, "sentence": "If interest in the environment increases, then the amount of energy from clean sources should rise over the years.", "cluster_label": "S26: If awareness or interest in the environment increases, then clean or renewable energy generation will rise and its effects will be detectable.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 17, "sentence": "This situation relates to every community.", "cluster_label": "S36: The way that electricity is produced affects people and communities.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "The health of the planet is important for preserving the health of people.", "cluster_label": "S14: Communities should be healthy, non-toxic, and safe, and people should take care of the planet.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 19, "sentence": "We need to care for our environment.", "cluster_label": "S14: Communities should be healthy, non-toxic, and safe, and people should take care of the planet.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 20, "sentence": "The environment is our only home.", "cluster_label": "S14: Communities should be healthy, non-toxic, and safe, and people should take care of the planet.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 21, "sentence": "I hope that the use of fossil fuels decreases.", "cluster_label": "S52: People should steer away from fossil fuels and hope that fossil fuel use decreases.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 22, "sentence": "A possible title is \"Clean v Fossil; Who's in Charge?\"", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 3}, {"source": 1, "target": 3}, {"source": 2, "target": 3}, {"source": 1, "target": 4}, {"source": 2, "target": 5}, {"source": 0, "target": 6}, {"source": 3, "target": 6}, {"source": 0, "target": 7}, {"source": 3, "target": 7}, {"source": 0, "target": 8}, {"source": 3, "target": 8}, {"source": 0, "target": 9}, {"source": 3, "target": 9}, {"source": 3, "target": 12}, {"source": 4, "target": 12}, {"source": 5, "target": 12}, {"source": 4, "target": 13}, {"source": 5, "target": 13}, {"source": 12, "target": 14}, {"source": 13, "target": 14}, {"source": 10, "target": 15}, {"source": 11, "target": 15}, {"source": 15, "target": 16}, {"source": 12, "target": 17}, {"source": 14, "target": 17}, {"source": 15, "target": 17}, {"source": 18, "target": 19}, {"source": 20, "target": 19}, {"source": 21, "target": 19}, {"source": 12, "target": 21}, {"source": 14, "target": 21}, {"source": 19, "target": 21}, {"source": 12, "target": 22}, {"source": 14, "target": 22}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -140,9 +164,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -226,21 +255,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -358,6 +396,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

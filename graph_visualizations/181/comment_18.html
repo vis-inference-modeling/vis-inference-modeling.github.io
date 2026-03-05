@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 18</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -112,7 +136,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "The graph shows the electricity generation in the world from 2000 to 2022.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 1, "sentence": "The graph specifies the energy source of this electricity generation.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 2, "sentence": "The graph specifies whether an energy source is clean or fossil.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 3, "sentence": "There are more gigawatt-hours of fossil electricity than clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Gas is a fossil energy source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Oil is a fossil energy source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "Coal is a fossil energy source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "Global warming is a crisis.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 8, "sentence": "Fossil fuels contribute to global warming.", "category": "Background knowledge", "color": "#d62728"}, {"id": 9, "sentence": "People emit fossil fuels into the air in order to generate electricity.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "Clean energy has increased since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "Wind electricity has increased significantly since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "Solar electricity has increased significantly since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "Climate change has become a more real issue in the past few years.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "Climate change has become a more pressing issue in the past few years.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "There is a bigger push to use renewable energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 16, "sentence": "Putting solar panels on a roof is a use of renewable energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "Some specific graphs show electricity generation in China.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 18, "sentence": "Some specific graphs show electricity generation in India.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 19, "sentence": "Some specific graphs show electricity generation in the U.S.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 20, "sentence": "China uses significantly more electricity than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 21, "sentence": "China and India have the same population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 22, "sentence": "China generates most of its electricity through coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 23, "sentence": "China is highly industrialized.", "category": "Background knowledge", "color": "#d62728"}, {"id": 24, "sentence": "China needs many factories.", "category": "Background knowledge", "color": "#d62728"}, {"id": 25, "sentence": "China has bad air quality.", "category": "Background knowledge", "color": "#d62728"}, {"id": 26, "sentence": "China has pollution.", "category": "Background knowledge", "color": "#d62728"}, {"id": 27, "sentence": "The bad air quality in China relates to the electricity generation from coal in China.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 28, "sentence": "The graph of the U.S. concerns me.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 29, "sentence": "The population of the U.S. is much less than the population of India.", "category": "Background knowledge", "color": "#d62728"}, {"id": 30, "sentence": "The U.S. uses more electricity than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 31, "sentence": "I wonder what other innovations people will develop.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 32, "sentence": "I wonder what other innovations will limit fossil electricity generation.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 33, "sentence": "The headline is: The Future is Clean!", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "The graph shows the electricity generation in the world from 2000 to 2022.", "cluster_label": "S1: The graph shows world electricity generation over time.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 1, "sentence": "The graph specifies the energy source of this electricity generation.", "cluster_label": "S3: The graph specifies the energy source for electricity generation and uses stacked layers to encode sources.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 2, "sentence": "The graph specifies whether an energy source is clean or fossil.", "cluster_label": "S4: The graph divides energy sources into clean sources and fossil sources.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 3, "sentence": "There are more gigawatt-hours of fossil electricity than clean electricity.", "cluster_label": "S110: There are more gigawatt-hours of fossil electricity than clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Gas is a fossil energy source.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Oil is a fossil energy source.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "Coal is a fossil energy source.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "Global warming is a crisis.", "cluster_label": "S2: Fossil fuels and coal are harmful and their dominance is concerning.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 8, "sentence": "Fossil fuels contribute to global warming.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 9, "sentence": "People emit fossil fuels into the air in order to generate electricity.", "cluster_label": "S100: Some statements describe some electricity being produced by consuming fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "Clean energy has increased since 2000.", "cluster_label": "S3: Clean electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "Wind electricity has increased significantly since 2000.", "cluster_label": "S114: Wind power increases and solar power increases.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "Solar electricity has increased significantly since 2000.", "cluster_label": "S114: Wind power increases and solar power increases.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "Climate change has become a more real issue in the past few years.", "cluster_label": "S28: Climate change is an increasing or pressing issue and a common topic of conversation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "Climate change has become a more pressing issue in the past few years.", "cluster_label": "S28: Climate change is an increasing or pressing issue and a common topic of conversation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "There is a bigger push to use renewable energy.", "cluster_label": "S6: The world is moving toward renewable or clean energy and governments and policies can promote or accelerate this transition.", "category": "Background knowledge", "color": "#d62728"}, {"id": 16, "sentence": "Putting solar panels on a roof is a use of renewable energy.", "cluster_label": "S35: A neighborhood can have many houses and houses can install roof solar panels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "Some specific graphs show electricity generation in China.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 18, "sentence": "Some specific graphs show electricity generation in India.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 19, "sentence": "Some specific graphs show electricity generation in the U.S.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 20, "sentence": "China uses significantly more electricity than India.", "cluster_label": "S25: India uses much less energy than China and much less energy than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 21, "sentence": "China and India have the same population.", "cluster_label": "S7: India and China have about the same population and both have more than 1 billion people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 22, "sentence": "China generates most of its electricity through coal.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 23, "sentence": "China is highly industrialized.", "cluster_label": "S19: China is highly industrialized and has strong economic or industrial growth and high energy consumption.", "category": "Background knowledge", "color": "#d62728"}, {"id": 24, "sentence": "China needs many factories.", "cluster_label": "China needs many factories.", "category": "Background knowledge", "color": "#d62728"}, {"id": 25, "sentence": "China has bad air quality.", "cluster_label": "S18: China leads the world in pollution and has bad air quality.", "category": "Background knowledge", "color": "#d62728"}, {"id": 26, "sentence": "China has pollution.", "cluster_label": "S9: China has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 27, "sentence": "The bad air quality in China relates to the electricity generation from coal in China.", "cluster_label": "S10: Fossil-fuel use causes air pollution and emissions, while renewable energy reduces pollution and improves health and climate outcomes.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 28, "sentence": "The graph of the U.S. concerns me.", "cluster_label": "S9: The situation or facts are concerning or worrying.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 29, "sentence": "The population of the U.S. is much less than the population of India.", "cluster_label": "S11: India has a greater population than the United States.", "category": "Background knowledge", "color": "#d62728"}, {"id": 30, "sentence": "The U.S. uses more electricity than India.", "cluster_label": "S187: The U.S. uses more power than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 31, "sentence": "I wonder what other innovations people will develop.", "cluster_label": "S60: The author wonders about innovations that people will develop, including innovations that limit fossil electricity generation.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 32, "sentence": "I wonder what other innovations will limit fossil electricity generation.", "cluster_label": "S60: The author wonders about innovations that people will develop, including innovations that limit fossil electricity generation.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 33, "sentence": "The headline is: The Future is Clean!", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 1, "target": 2}, {"source": 0, "target": 3}, {"source": 2, "target": 3}, {"source": 2, "target": 4}, {"source": 2, "target": 5}, {"source": 2, "target": 6}, {"source": 7, "target": 8}, {"source": 3, "target": 9}, {"source": 8, "target": 9}, {"source": 0, "target": 10}, {"source": 2, "target": 10}, {"source": 10, "target": 11}, {"source": 10, "target": 12}, {"source": 7, "target": 13}, {"source": 8, "target": 13}, {"source": 13, "target": 14}, {"source": 14, "target": 15}, {"source": 15, "target": 16}, {"source": 0, "target": 17}, {"source": 0, "target": 18}, {"source": 0, "target": 19}, {"source": 17, "target": 20}, {"source": 18, "target": 20}, {"source": 20, "target": 21}, {"source": 17, "target": 22}, {"source": 6, "target": 22}, {"source": 23, "target": 24}, {"source": 27, "target": 25}, {"source": 22, "target": 27}, {"source": 26, "target": 27}, {"source": 19, "target": 28}, {"source": 18, "target": 30}, {"source": 19, "target": 30}, {"source": 29, "target": 30}, {"source": 15, "target": 31}, {"source": 3, "target": 32}, {"source": 8, "target": 32}, {"source": 31, "target": 32}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Encoding interpretation", "color": "#2ca02c"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -141,9 +165,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -227,21 +256,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -359,6 +397,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

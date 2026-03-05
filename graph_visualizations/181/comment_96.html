@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 96</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -112,7 +136,7 @@ I am curious as to why the US is less reliant on coal, if it has something to do
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "Clean electricity sources include nuclear energy and wind energy and solar energy and hydroelectric energy.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 1, "sentence": "Worldwide, the output of electricity from clean electricity sources has increased over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Worldwide, the output of electricity from fossil fuels has increased over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "The increase in the output of electricity from clean electricity sources is greater than the increase in the output of electricity from fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "The graphs show electricity generation for individual countries.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 5, "sentence": "In the United States, the output of electricity from clean electricity sources has increased only slightly over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "In the United States, coal usage has decreased in electricity generation over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "In the United States, coal is the only source that has decreased in electricity generation over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "I am curious why the United States is less reliant on coal.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 9, "sentence": "The cost of mining coal may be a reason.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 10, "sentence": "The United States may prioritize investment in clean electricity sources.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 11, "sentence": "If the United States spends more on clean electricity sources, then policymakers are becoming more conscious of the need to protect the environment.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 12, "sentence": "If policymakers protect the environment, then the planet can be habitable for the next generation.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 13, "sentence": "The title of this graph is: Electricity Generation for our Next Generation.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "Clean electricity sources include nuclear energy and wind energy and solar energy and hydroelectric energy.", "cluster_label": "S5: The clean category includes nuclear energy and hydroelectric energy and wind energy and solar energy and other clean energy.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 1, "sentence": "Worldwide, the output of electricity from clean electricity sources has increased over time.", "cluster_label": "S3: Clean electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Worldwide, the output of electricity from fossil fuels has increased over time.", "cluster_label": "S4: Fossil-fuel electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "The increase in the output of electricity from clean electricity sources is greater than the increase in the output of electricity from fossil fuels.", "cluster_label": "S5: Clean electricity increases faster than fossil-fuel electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "The graphs show electricity generation for individual countries.", "cluster_label": "S3: The graph(s) show electricity generation or energy generation/production (including global and country-level views).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 5, "sentence": "In the United States, the output of electricity from clean electricity sources has increased only slightly over time.", "cluster_label": "S30: United States clean electricity is steady or increases only slightly over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "In the United States, coal usage has decreased in electricity generation over time.", "cluster_label": "S69: Coal production in the United States decreased by more than half since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "In the United States, coal is the only source that has decreased in electricity generation over time.", "cluster_label": "S236: In the United States, coal is the only source that has decreased significantly in electricity generation over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "I am curious why the United States is less reliant on coal.", "cluster_label": "S16: The author wonders about changes in coal use, including declines in the United States and dips around 2020.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 9, "sentence": "The cost of mining coal may be a reason.", "cluster_label": "S9: Coal and other fossil fuels remain dominant or rise to meet demand, and various factors can explain coal trends.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 10, "sentence": "The United States may prioritize investment in clean electricity sources.", "cluster_label": "S12: The United States appears to be moving toward cleaner power and investing in clean electricity sources.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 11, "sentence": "If the United States spends more on clean electricity sources, then policymakers are becoming more conscious of the need to protect the environment.", "cluster_label": "S7: Policy, legislation, environmental movements, and awareness can drive a shift toward cleaner energy and reduce fossil-fuel use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 12, "sentence": "If policymakers protect the environment, then the planet can be habitable for the next generation.", "cluster_label": "S42: If we do not care for our planet more, then the world will become dirtier and unhealthy.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 13, "sentence": "The title of this graph is: Electricity Generation for our Next Generation.", "cluster_label": "The title of this graph is: Electricity Generation for our Next Generation.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 1, "target": 3}, {"source": 2, "target": 3}, {"source": 0, "target": 5}, {"source": 4, "target": 5}, {"source": 4, "target": 6}, {"source": 6, "target": 7}, {"source": 4, "target": 7}, {"source": 6, "target": 8}, {"source": 8, "target": 9}, {"source": 8, "target": 10}, {"source": 5, "target": 10}, {"source": 10, "target": 11}, {"source": 11, "target": 12}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Encoding interpretation", "color": "#2ca02c"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -141,9 +165,14 @@ I am curious as to why the US is less reliant on coal, if it has something to do
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -227,21 +256,30 @@ I am curious as to why the US is less reliant on coal, if it has something to do
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -359,6 +397,20 @@ I am curious as to why the US is less reliant on coal, if it has something to do
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

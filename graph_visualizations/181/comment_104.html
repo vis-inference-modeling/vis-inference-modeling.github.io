@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 104</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -133,7 +157,7 @@ Catchy Headline:
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "The production of electricity in the world has continuously increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The consumption of resources has increased.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "Clean electricity sources can produce more electricity than fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Fossil fuels are more popular than clean electricity sources in consumption.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Coal is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Coal is the most consumed energy source.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Coal generates the least amount of electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Wind energy began to receive more traction around 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Solar energy began to receive more traction around 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "Wind energy produces a significant amount of electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "Solar energy produces a significant amount of electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "China consumes fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "India consumes fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "The fossil fuel consumption in the United States began to decrease around 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "I wonder why China continues to consume fossil fuels.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 15, "sentence": "I wonder why India continues to consume fossil fuels.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 16, "sentence": "India has a smaller population than the United States.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "India produces less electricity than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "India consumes fewer resources than the United States.", "category": "Background knowledge", "color": "#d62728"}, {"id": 19, "sentence": "The production of clean electricity in the United States has a steady trend.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 20, "sentence": "The production of electricity from fossil fuels in the United States has decreased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 21, "sentence": "This information is relevant to me and my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 22, "sentence": "Renewable energy sources can generate more electricity.", "category": "Background knowledge", "color": "#d62728"}, {"id": 23, "sentence": "Fossil fuels cause pollution.", "category": "Background knowledge", "color": "#d62728"}, {"id": 24, "sentence": "I wonder how much I contribute to the consumption of fossil fuels.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 25, "sentence": "I wonder how my community can avoid the consumption of fossil fuels.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 26, "sentence": "I wonder how I can avoid the consumption of fossil fuels.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 27, "sentence": "The headline is: Clean Energy: More Power, Less Consumption - But why?", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "The production of electricity in the world has continuously increased.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The consumption of resources has increased.", "cluster_label": "S92: Some statements describe the consumption of resources increasing.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "Clean electricity sources can produce more electricity than fossil fuels.", "cluster_label": "S9: Clean electricity produces more electricity than fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Fossil fuels are more popular than clean electricity sources in consumption.", "cluster_label": "S110: There are more gigawatt-hours of fossil electricity than clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Coal is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Coal is the most consumed energy source.", "cluster_label": "S12: Coal is the largest source of global electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Coal generates the least amount of electricity.", "cluster_label": "Coal generates the least amount of electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Wind energy began to receive more traction around 2010.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Solar energy began to receive more traction around 2010.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "Wind energy produces a significant amount of electricity.", "cluster_label": "S203: The use of wind energy and solar energy is similar to the use of nuclear energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "Solar energy produces a significant amount of electricity.", "cluster_label": "N3: Solar energy produces a significant amount of electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "China consumes fossil fuels.", "cluster_label": "S27: China clean electricity and fossil electricity both increase, and China relies heavily on fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "India consumes fossil fuels.", "cluster_label": "S34: India relies mostly on fossil fuels and has little clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "The fossil fuel consumption in the United States began to decrease around 2010.", "cluster_label": "S29: United States fossil-fuel usage decreases over time, especially coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "I wonder why China continues to consume fossil fuels.", "cluster_label": "S5: The author wonders why China and India continue to consume fossil fuels and how individuals or communities can reduce their fossil-fuel contribution.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 15, "sentence": "I wonder why India continues to consume fossil fuels.", "cluster_label": "S5: The author wonders why China and India continue to consume fossil fuels and how individuals or communities can reduce their fossil-fuel contribution.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 16, "sentence": "India has a smaller population than the United States.", "cluster_label": "S131: Some statements describe India having a smaller population than the United States.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "India produces less electricity than the United States.", "cluster_label": "S23: India electricity generation is lower than China and lower than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "India consumes fewer resources than the United States.", "cluster_label": "S79: Some statements describe India consuming fewer resources than the United States.", "category": "Background knowledge", "color": "#d62728"}, {"id": 19, "sentence": "The production of clean electricity in the United States has a steady trend.", "cluster_label": "S30: United States clean electricity is steady or increases only slightly over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 20, "sentence": "The production of electricity from fossil fuels in the United States has decreased.", "cluster_label": "S29: United States fossil-fuel usage decreases over time, especially coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 21, "sentence": "This information is relevant to me and my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 22, "sentence": "Renewable energy sources can generate more electricity.", "cluster_label": "S80: Some statements describe renewable energy sources being able to generate more electricity.", "category": "Background knowledge", "color": "#d62728"}, {"id": 23, "sentence": "Fossil fuels cause pollution.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 24, "sentence": "I wonder how much I contribute to the consumption of fossil fuels.", "cluster_label": "S5: The author wonders why China and India continue to consume fossil fuels and how individuals or communities can reduce their fossil-fuel contribution.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 25, "sentence": "I wonder how my community can avoid the consumption of fossil fuels.", "cluster_label": "S5: The author wonders why China and India continue to consume fossil fuels and how individuals or communities can reduce their fossil-fuel contribution.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 26, "sentence": "I wonder how I can avoid the consumption of fossil fuels.", "cluster_label": "S5: The author wonders why China and India continue to consume fossil fuels and how individuals or communities can reduce their fossil-fuel contribution.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 27, "sentence": "The headline is: Clean Energy: More Power, Less Consumption - But why?", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 4, "target": 5}, {"source": 3, "target": 5}, {"source": 4, "target": 6}, {"source": 7, "target": 9}, {"source": 8, "target": 10}, {"source": 3, "target": 11}, {"source": 3, "target": 12}, {"source": 11, "target": 14}, {"source": 12, "target": 15}, {"source": 16, "target": 17}, {"source": 16, "target": 18}, {"source": 13, "target": 20}, {"source": 13, "target": 21}, {"source": 19, "target": 21}, {"source": 20, "target": 21}, {"source": 24, "target": 21}, {"source": 2, "target": 22}, {"source": 3, "target": 23}, {"source": 3, "target": 24}, {"source": 23, "target": 24}, {"source": 21, "target": 25}, {"source": 23, "target": 25}, {"source": 24, "target": 26}, {"source": 23, "target": 26}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -162,9 +186,14 @@ Catchy Headline:
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -248,21 +277,30 @@ Catchy Headline:
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -380,6 +418,20 @@ Catchy Headline:
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

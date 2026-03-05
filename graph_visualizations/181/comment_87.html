@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 87</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -111,7 +135,7 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "The graph is about world electricity generation.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "World electricity generation increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Fossil fuels dominate most sources of world electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Hydroelectric energy is a clean energy source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "Other clean energy is a clean energy source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Nuclear energy is a clean energy source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "Wind energy is a clean energy source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "Solar energy is a clean energy source.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "Hydroelectric energy and other clean energy together are the greatest clean energy source.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "Coal is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "Gas is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "Oil is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "Other fossil fuels are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "Coal is the greatest fossil fuel source.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "Clean energy increased faster than fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "Clean energy takes a bigger share of total world electricity generation as time passes.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 16, "sentence": "China follows the trend of a greater share of clean energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 17, "sentence": "The United States changes at a slower rate than China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "India changes at a slower rate than China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "I wonder how the increase in clean energy will affect the totals of countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 20, "sentence": "The rise of clean energy can cause people to reflect on electricity use in communities.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 21, "sentence": "The rise of clean energy can cause people to reflect on where electricity comes from.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 22, "sentence": "I hope that there are more talks about sustainability.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 23, "sentence": "Fossil fuels are unrenewable energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 24, "sentence": "The headline could be: Our Energy Sources are Electrifying the World - 2000 to 2022.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "The graph is about world electricity generation.", "cluster_label": "S3: The graph(s) show electricity generation or energy generation/production (including global and country-level views).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "World electricity generation increased.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Fossil fuels dominate most sources of world electricity generation.", "cluster_label": "S8: Fossil fuels are the majority or dominant source of world electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Hydroelectric energy is a clean energy source.", "cluster_label": "S4: Nuclear power and hydroelectric power are clean sources that do not produce air pollution and have low carbon emissions.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "Other clean energy is a clean energy source.", "cluster_label": "S85: Some statements describe India and China and the United States and PGE and clean sources and fossil sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Nuclear energy is a clean energy source.", "cluster_label": "S126: Some statements describe nuclear energy as a clean source and as safe and reliable.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "Wind energy is a clean energy source.", "cluster_label": "S5: Wind power and solar power are clean or renewable energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "Solar energy is a clean energy source.", "cluster_label": "S5: Wind power and solar power are clean or renewable energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "Hydroelectric energy and other clean energy together are the greatest clean energy source.", "cluster_label": "S201: Hydroelectric energy and other clean energy together are the greatest clean energy source.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "Coal is a fossil fuel.", "cluster_label": "Coal is a fossil fuel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "Gas is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "Oil is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "Other fossil fuels are fossil fuels.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "Coal is the greatest fossil fuel source.", "cluster_label": "Coal is the greatest fossil fuel source.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "Clean energy increased faster than fossil fuels.", "cluster_label": "S5: Clean electricity increases faster than fossil-fuel electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "Clean energy takes a bigger share of total world electricity generation as time passes.", "cluster_label": "S39: Clean energy takes a larger share of world electricity generation over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 16, "sentence": "China follows the trend of a greater share of clean energy.", "cluster_label": "S39: Clean energy takes a larger share of world electricity generation over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 17, "sentence": "The United States changes at a slower rate than China.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "India changes at a slower rate than China.", "cluster_label": "India changes at a slower rate than China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "I wonder how the increase in clean energy will affect the totals of countries.", "cluster_label": "S55: The author wonders why the increase in clean energy will affect country totals.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 20, "sentence": "The rise of clean energy can cause people to reflect on electricity use in communities.", "cluster_label": "S14: Local observations and awareness about energy sources can influence individual actions, advocacy, and understanding of personal energy use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 21, "sentence": "The rise of clean energy can cause people to reflect on where electricity comes from.", "cluster_label": "S14: Local observations and awareness about energy sources can influence individual actions, advocacy, and understanding of personal energy use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 22, "sentence": "I hope that there are more talks about sustainability.", "cluster_label": "S29: Awareness can be raised.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 23, "sentence": "Fossil fuels are unrenewable energy sources.", "cluster_label": "S95: Some statements describe fossil fuels as unrenewable or unsustainable resources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 24, "sentence": "The headline could be: Our Energy Sources are Electrifying the World - 2000 to 2022.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 3, "target": 8}, {"source": 4, "target": 8}, {"source": 2, "target": 13}, {"source": 9, "target": 13}, {"source": 2, "target": 14}, {"source": 14, "target": 15}, {"source": 0, "target": 15}, {"source": 15, "target": 16}, {"source": 16, "target": 17}, {"source": 16, "target": 18}, {"source": 15, "target": 19}, {"source": 16, "target": 19}, {"source": 17, "target": 19}, {"source": 18, "target": 19}, {"source": 15, "target": 20}, {"source": 15, "target": 21}, {"source": 20, "target": 22}, {"source": 21, "target": 22}, {"source": 2, "target": 23}, {"source": 0, "target": 24}, {"source": 1, "target": 24}, {"source": 2, "target": 24}, {"source": 15, "target": 24}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -140,9 +164,14 @@
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -226,21 +255,30 @@
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -358,6 +396,20 @@
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

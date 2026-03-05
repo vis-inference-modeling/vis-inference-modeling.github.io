@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 89</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -112,7 +136,7 @@ As the graph depicts energy usage from 2000 to 2020, I am able to observe if me 
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "I noticed that the energy usage of the United States was about twice the energy usage of China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The population of the United States is less than one quarter of the population of China.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "Therefore, the average energy usage per person in the United States is greater than the average energy usage per person in China.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 3, "sentence": "The average energy usage per person in the United States is greater than the average energy usage per person in India.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 4, "sentence": "I noticed a change in the types of energy that the United States used over the years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "The graph depicts energy usage from 2000 to 2020.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 6, "sentence": "From 2000 to 2020, the use of coal in the United States decreased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "From 2000 to 2020, the use of wind energy in the United States increased slightly.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "From 2000 to 2020, the use of solar energy in the United States increased slightly.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "From 2000 to 2020, the use of oil in the United States increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "The increase in wind energy is good.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 11, "sentence": "The increase in solar energy is good.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 12, "sentence": "The decrease in coal energy is good.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 13, "sentence": "I wonder whether the increase in oil offsets these changes.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "I can compare my family energy usage with the graph.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 15, "sentence": "In the last 20 years, many families in my neighborhood added solar panels to their roofs.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 16, "sentence": "My family added solar panels to our roof.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 17, "sentence": "Around 2010, solar power started to increase.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "Around 2010, wind power started to increase.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "The increase in solar panels in my neighborhood correlates with the increase in solar power and wind power around 2010.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 20, "sentence": "I am glad about this change.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 21, "sentence": "My town is a suburban town.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 22, "sentence": "In my town, driving is almost essential to go to places.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 23, "sentence": "Therefore, an increase in oil use makes sense.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 24, "sentence": "These graphs should encourage people to reduce oil use.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 25, "sentence": "If a person needs to go somewhere close then walking can be a feasible means of travel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 26, "sentence": "If a person needs to go somewhere close then biking can be a feasible means of travel.", "category": "Background knowledge", "color": "#d62728"}, {"id": 27, "sentence": "If walking is feasible then the person should consider walking instead of driving.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 28, "sentence": "If biking is feasible then the person should consider biking instead of driving.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 29, "sentence": "My title is \"3 largest countries in the world, and how they consume energy\".", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "I noticed that the energy usage of the United States was about twice the energy usage of China.", "cluster_label": "I noticed that the energy usage of the United States was about twice the energy usage of China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The population of the United States is less than one quarter of the population of China.", "cluster_label": "S10: The population of the United States is smaller than the population of China or India.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "Therefore, the average energy usage per person in the United States is greater than the average energy usage per person in China.", "cluster_label": "S13: Per-capita energy usage in the United States is higher than in China or India, and this difference changed over time.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 3, "sentence": "The average energy usage per person in the United States is greater than the average energy usage per person in India.", "cluster_label": "S13: Per-capita energy usage in the United States is higher than in China or India, and this difference changed over time.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 4, "sentence": "I noticed a change in the types of energy that the United States used over the years.", "cluster_label": "S128: The U.S. decreases its use of fossil fuels slowly and increases its use of renewable power sources slightly.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "The graph depicts energy usage from 2000 to 2020.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 6, "sentence": "From 2000 to 2020, the use of coal in the United States decreased.", "cluster_label": "S242: In the United States, coal use decreased and the use of oil increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "From 2000 to 2020, the use of wind energy in the United States increased slightly.", "cluster_label": "S176: The electricity generation from wind power and solar power increased slightly in the United States from 2000 to 2020.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "From 2000 to 2020, the use of solar energy in the United States increased slightly.", "cluster_label": "S251: In the United States, solar energy increased slightly from 2000 to 2020.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "From 2000 to 2020, the use of oil in the United States increased.", "cluster_label": "S70: Oil production in the United States increased since 2000 and oil and gas production stayed fairly steady in total.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "The increase in wind energy is good.", "cluster_label": "S50: It is good that coal use decreases and it is good that wind and solar increase in the United States.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 11, "sentence": "The increase in solar energy is good.", "cluster_label": "S50: It is good that coal use decreases and it is good that wind and solar increase in the United States.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 12, "sentence": "The decrease in coal energy is good.", "cluster_label": "S50: It is good that coal use decreases and it is good that wind and solar increase in the United States.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 13, "sentence": "I wonder whether the increase in oil offsets these changes.", "cluster_label": "S56: The author wonders whether increased oil usage offsets changes toward cleaner energy.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "I can compare my family energy usage with the graph.", "cluster_label": "S37: I can compare my family energy usage with the graph.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 15, "sentence": "In the last 20 years, many families in my neighborhood added solar panels to their roofs.", "cluster_label": "S5: People in my community or my household install or consider installing solar panels or convert to solar power.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 16, "sentence": "My family added solar panels to our roof.", "cluster_label": "S5: People in my community or my household install or consider installing solar panels or convert to solar power.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 17, "sentence": "Around 2010, solar power started to increase.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "Around 2010, wind power started to increase.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "The increase in solar panels in my neighborhood correlates with the increase in solar power and wind power around 2010.", "cluster_label": "S21: Specific observations in the graph reflect changes in solar, wind, or oil usage, including local correlations.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 20, "sentence": "I am glad about this change.", "cluster_label": "S48: I am glad about this change.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 21, "sentence": "My town is a suburban town.", "cluster_label": "S26: I describe suburban living where driving or a car is essential.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 22, "sentence": "In my town, driving is almost essential to go to places.", "cluster_label": "S26: I describe suburban living where driving or a car is essential.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 23, "sentence": "Therefore, an increase in oil use makes sense.", "cluster_label": "S27: The necessity for a car increases the use of oil, so an increase in oil use makes sense.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 24, "sentence": "These graphs should encourage people to reduce oil use.", "cluster_label": "S52: People should steer away from fossil fuels and hope that fossil fuel use decreases.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 25, "sentence": "If a person needs to go somewhere close then walking can be a feasible means of travel.", "cluster_label": "S50: Some statements describe walking or biking or public transit limiting oil use.", "category": "Background knowledge", "color": "#d62728"}, {"id": 26, "sentence": "If a person needs to go somewhere close then biking can be a feasible means of travel.", "cluster_label": "S50: Some statements describe walking or biking or public transit limiting oil use.", "category": "Background knowledge", "color": "#d62728"}, {"id": 27, "sentence": "If walking is feasible then the person should consider walking instead of driving.", "cluster_label": "S30: People should consider walking or biking instead of driving when feasible.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 28, "sentence": "If biking is feasible then the person should consider biking instead of driving.", "cluster_label": "S30: People should consider walking or biking instead of driving when feasible.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 29, "sentence": "My title is \"3 largest countries in the world, and how they consume energy\".", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 2}, {"source": 1, "target": 2}, {"source": 2, "target": 3}, {"source": 4, "target": 5}, {"source": 5, "target": 6}, {"source": 5, "target": 7}, {"source": 5, "target": 8}, {"source": 5, "target": 9}, {"source": 7, "target": 10}, {"source": 8, "target": 11}, {"source": 6, "target": 12}, {"source": 6, "target": 13}, {"source": 7, "target": 13}, {"source": 8, "target": 13}, {"source": 9, "target": 13}, {"source": 5, "target": 14}, {"source": 15, "target": 16}, {"source": 5, "target": 17}, {"source": 5, "target": 18}, {"source": 15, "target": 19}, {"source": 17, "target": 19}, {"source": 18, "target": 19}, {"source": 4, "target": 20}, {"source": 6, "target": 20}, {"source": 7, "target": 20}, {"source": 8, "target": 20}, {"source": 9, "target": 20}, {"source": 21, "target": 22}, {"source": 9, "target": 23}, {"source": 22, "target": 23}, {"source": 5, "target": 24}, {"source": 9, "target": 24}, {"source": 25, "target": 27}, {"source": 26, "target": 28}, {"source": 0, "target": 29}, {"source": 1, "target": 29}, {"source": 2, "target": 29}, {"source": 3, "target": 29}, {"source": 5, "target": 29}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -141,9 +165,14 @@ As the graph depicts energy usage from 2000 to 2020, I am able to observe if me 
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -227,21 +256,30 @@ As the graph depicts energy usage from 2000 to 2020, I am able to observe if me 
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -359,6 +397,20 @@ As the graph depicts energy usage from 2000 to 2020, I am able to observe if me 
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

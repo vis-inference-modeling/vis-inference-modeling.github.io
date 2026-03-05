@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 69</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -114,7 +138,7 @@ Title: “A Decade of the World’s Energy: Is Clean Power the Future?”</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "The graphs use a stacked area chart to visualize the data.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "A stacked area chart makes it difficult to determine the actual size of a section.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "Each section is built on top of another section.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 3, "sentence": "A stacked area chart makes it difficult to see trends in a specific section.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 4, "sentence": "The baseline of each section is different.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 5, "sentence": "The layers below affect the baseline of a section.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 6, "sentence": "Clean energy sources have increased in the last 22 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Wind energy has increased strongly in recent years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Solar energy has increased strongly in recent years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "I wonder how the U.S. has stayed fairly consistent in energy production.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "In the twenty-first century, electricity has become more integral to daily life.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "I wonder why China has increased energy production so much.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "Climate change continues.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "Natural fossil fuels will run out.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "Sustainable energy sources are important.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 15, "sentence": "Better energy consumption practices are important.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "The community should strive to keep energy use steady.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "The community should strive to decrease energy use.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 18, "sentence": "The community should continue to switch to clean energy production.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 19, "sentence": "If the community switches to clean energy production, the prosperity of the planet will increase.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 20, "sentence": "If the community switches to clean energy production, the longevity of the planet will increase.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 21, "sentence": "If the community switches to clean energy production, the community will help its own future.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 22, "sentence": "The title is: A Decade of the World's Energy: Is Clean Power the Future?", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "The graphs use a stacked area chart to visualize the data.", "cluster_label": "S7: The commenter notes that the graphs use a stacked area chart and that it can be difficult to read.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "A stacked area chart makes it difficult to determine the actual size of a section.", "cluster_label": "S7: The commenter notes that the graphs use a stacked area chart and that it can be difficult to read.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "Each section is built on top of another section.", "cluster_label": "S10: The stacked sections are built on top of each other and have different baselines, and their widths are noticeable.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 3, "sentence": "A stacked area chart makes it difficult to see trends in a specific section.", "cluster_label": "S7: The commenter notes that the graphs use a stacked area chart and that it can be difficult to read.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 4, "sentence": "The baseline of each section is different.", "cluster_label": "S10: The stacked sections are built on top of each other and have different baselines, and their widths are noticeable.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 5, "sentence": "The layers below affect the baseline of a section.", "cluster_label": "S3: The graph specifies the energy source for electricity generation and uses stacked layers to encode sources.", "category": "Encoding interpretation", "color": "#2ca02c"}, {"id": 6, "sentence": "Clean energy sources have increased in the last 22 years.", "cluster_label": "S3: Clean electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Wind energy has increased strongly in recent years.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Solar energy has increased strongly in recent years.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "I wonder how the U.S. has stayed fairly consistent in energy production.", "cluster_label": "S7: The author wonders why electricity generation in the United States has plateaued or stayed flat and whether similar plateaus occur in other Western developed countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "In the twenty-first century, electricity has become more integral to daily life.", "cluster_label": "S14: Electricity is required for technology and everyday life and energy use is high and increasing.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "I wonder why China has increased energy production so much.", "cluster_label": "S8: The author wonders why electricity generation in China has increased rapidly and why China differs from the United States or India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "Climate change continues.", "cluster_label": "S28: Climate change is an increasing or pressing issue and a common topic of conversation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "Natural fossil fuels will run out.", "cluster_label": "S40: Fossil fuels will run out.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "Sustainable energy sources are important.", "cluster_label": "S63: Sustainable energy sources are important.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 15, "sentence": "Better energy consumption practices are important.", "cluster_label": "S4: Reducing energy use and preserving energy are important and help the Earth.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "The community should strive to keep energy use steady.", "cluster_label": "S54: The community should strive to keep energy use steady.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "The community should strive to decrease energy use.", "cluster_label": "S4: Reducing energy use and preserving energy are important and help the Earth.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 18, "sentence": "The community should continue to switch to clean energy production.", "cluster_label": "S53: The community should continue switching to clean energy production and use clean electricity.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 19, "sentence": "If the community switches to clean energy production, the prosperity of the planet will increase.", "cluster_label": "S47: If the community switches to clean energy production, then the planet's prosperity and longevity will increase.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 20, "sentence": "If the community switches to clean energy production, the longevity of the planet will increase.", "cluster_label": "S47: If the community switches to clean energy production, then the planet's prosperity and longevity will increase.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 21, "sentence": "If the community switches to clean energy production, the community will help its own future.", "cluster_label": "S51: The community can switch to clean energy production and this will help the community's future.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 22, "sentence": "The title is: A Decade of the World's Energy: Is Clean Power the Future?", "cluster_label": "The title is: A Decade of the World's Energy: Is Clean Power the Future?", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 3, "target": 1}, {"source": 0, "target": 2}, {"source": 0, "target": 3}, {"source": 4, "target": 3}, {"source": 6, "target": 3}, {"source": 0, "target": 4}, {"source": 2, "target": 4}, {"source": 2, "target": 5}, {"source": 4, "target": 5}, {"source": 6, "target": 7}, {"source": 6, "target": 8}, {"source": 10, "target": 11}, {"source": 12, "target": 14}, {"source": 13, "target": 14}, {"source": 12, "target": 15}, {"source": 13, "target": 15}, {"source": 10, "target": 15}, {"source": 15, "target": 16}, {"source": 15, "target": 17}, {"source": 6, "target": 18}, {"source": 14, "target": 18}, {"source": 18, "target": 19}, {"source": 18, "target": 20}, {"source": 18, "target": 21}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Encoding interpretation", "color": "#2ca02c"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -143,9 +167,14 @@ Title: “A Decade of the World’s Energy: Is Clean Power the Future?”</div>
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -229,21 +258,30 @@ Title: “A Decade of the World’s Energy: Is Clean Power the Future?”</div>
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -361,6 +399,20 @@ Title: “A Decade of the World’s Energy: Is Clean Power the Future?”</div>
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

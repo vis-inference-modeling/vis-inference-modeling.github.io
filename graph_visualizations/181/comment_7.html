@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 7</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -117,7 +141,7 @@ A Whole New Era of Eco-Friendly Power</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "The production of electric power has risen over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Coal is a main source of emissions.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "Emissions may harm the environment.", "category": "Background knowledge", "color": "#d62728"}, {"id": 3, "sentence": "Clean generators are becoming more common.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "China generates twice as much electric power as the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "China generates more than five times as much electric power as India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Many people are addicted to non-sustainable lifestyles.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "The fossil fuel business is primarily concerned with gaining power and profit.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 8, "sentence": "Electric utilities are primarily concerned with gaining power and profit.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 9, "sentence": "The government is frightened to take the necessary steps.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 10, "sentence": "The necessary steps regulate the use of fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "I wonder how we can rescue life on this planet.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "Everything in my community runs on electric power.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 13, "sentence": "My community needs electric power.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 14, "sentence": "We need to maintain a healthy atmosphere.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 15, "sentence": "We need to maintain a non-toxic atmosphere.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "We need to stock clean supplies.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "The headline is: A Whole New Era of Eco-Friendly Power.", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "The production of electric power has risen over time.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Coal is a main source of emissions.", "cluster_label": "S124: Some statements describe coal as harmful and as a main source of emissions and greenhouse emissions being harmful.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "Emissions may harm the environment.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 3, "sentence": "Clean generators are becoming more common.", "cluster_label": "S47: Clean electricity rises more in recent years and clean energy consumption increases substantially in recent years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "China generates twice as much electric power as the United States.", "cluster_label": "S19: China has higher total electricity generation than the United States and India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "China generates more than five times as much electric power as India.", "cluster_label": "S52: China electricity generation increased by a large factor since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Many people are addicted to non-sustainable lifestyles.", "cluster_label": "S74: Some statements describe people being addicted to non-sustainable lifestyles.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "The fossil fuel business is primarily concerned with gaining power and profit.", "cluster_label": "S13: The fossil fuel industry and electric utilities focus on wealth and power, and the government is afraid to act.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 8, "sentence": "Electric utilities are primarily concerned with gaining power and profit.", "cluster_label": "S13: The fossil fuel industry and electric utilities focus on wealth and power, and the government is afraid to act.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 9, "sentence": "The government is frightened to take the necessary steps.", "cluster_label": "S13: The fossil fuel industry and electric utilities focus on wealth and power, and the government is afraid to act.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 10, "sentence": "The necessary steps regulate the use of fossil fuels.", "cluster_label": "S82: Some statements describe regulations designed to help clean the planet and some nations not meeting regulations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "I wonder how we can rescue life on this planet.", "cluster_label": "S67_new: The author wonders how we can rescue life on this planet.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "Everything in my community runs on electric power.", "cluster_label": "S3: My community or I use electricity or energy every day and depend on it.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 13, "sentence": "My community needs electric power.", "cluster_label": "S3: My community or I use electricity or energy every day and depend on it.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 14, "sentence": "We need to maintain a healthy atmosphere.", "cluster_label": "S14: Communities should be healthy, non-toxic, and safe, and people should take care of the planet.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 15, "sentence": "We need to maintain a non-toxic atmosphere.", "cluster_label": "S14: Communities should be healthy, non-toxic, and safe, and people should take care of the planet.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "We need to stock clean supplies.", "cluster_label": "S65: We must fill our community with clean supplies.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 17, "sentence": "The headline is: A Whole New Era of Eco-Friendly Power.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 1, "target": 2}, {"source": 10, "target": 9}, {"source": 1, "target": 10}, {"source": 2, "target": 11}, {"source": 6, "target": 11}, {"source": 9, "target": 11}, {"source": 10, "target": 11}, {"source": 12, "target": 13}, {"source": 2, "target": 14}, {"source": 2, "target": 15}, {"source": 14, "target": 16}, {"source": 15, "target": 16}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -146,9 +170,14 @@ A Whole New Era of Eco-Friendly Power</div>
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -232,21 +261,30 @@ A Whole New Era of Eco-Friendly Power</div>
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -364,6 +402,20 @@ A Whole New Era of Eco-Friendly Power</div>
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {

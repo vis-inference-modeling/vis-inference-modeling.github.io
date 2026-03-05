@@ -29,6 +29,26 @@
     font-size: 12px;
     color: #888;
   }
+  #header .label-toggle {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  #header .label-toggle button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  #header .label-toggle button:hover {
+    background: #f0f0f0;
+  }
+  #header .label-toggle button.active {
+    background: #1f77b4;
+    color: #fff;
+    border-color: #1f77b4;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -99,6 +119,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 54</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="label-toggle">
+    <button type="button" id="btn-ace" class="active">ACE sentence</button>
+    <button type="button" id="btn-cluster">cluster_id + statement</button>
+  </div>
 </div>
 <div id="graph-container">
   <svg id="graph"></svg>
@@ -114,7 +138,7 @@ New Global Data on how Electricity is Generated- How will it affect our kids in 
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
-  const nodes = [{"id": 0, "sentence": "The generation of electricity increases over the years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The world changes over the years.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "More clean energy is used over the years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Less fossil fuel is used over the years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "There are three smaller graphs.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 5, "sentence": "Each smaller graph contains a different amount of energy use.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "India has the least energy use.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "China has the most energy use.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "The energy that is used changes over the years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "I wonder why the used energy changes over the years.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "I wonder how we can lessen energy consumption.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "If we lessen energy consumption, then the statistics will decrease.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 12, "sentence": "There are three last graphs.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 13, "sentence": "I wonder how we can achieve the rates in the three last graphs.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "I wonder how the rates in the three last graphs came to be.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 15, "sentence": "An analysis of these rates can help to understand electricity generation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 16, "sentence": "This topic relates to me.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 17, "sentence": "This topic relates to my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 18, "sentence": "My community generates electricity.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 19, "sentence": "Generating electricity consumes energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 20, "sentence": "Energy should be used.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 21, "sentence": "Fossil fuels can be harmful.", "category": "Background knowledge", "color": "#d62728"}, {"id": 22, "sentence": "To reduce fossil fuel use, some intervention is needed.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 23, "sentence": "My community may not reduce energy consumption.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 24, "sentence": "If my community does not reduce energy consumption, then the world will not change for the better.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 25, "sentence": "Clean energy is better than fossil fuels.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 26, "sentence": "Reducing energy use supports the Earth.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 27, "sentence": "Replacing energy sources supports the Earth less than reducing energy use.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 28, "sentence": "Reducing energy use is a start.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 29, "sentence": "Improvements are still possible.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 30, "sentence": "The headline is: New Global Data on how Electricity is Generated- How will it affect our kids in the future?", "category": "Meta / paratext", "color": "#17becf"}];
+  const nodes = [{"id": 0, "sentence": "The generation of electricity increases over the years.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The world changes over the years.", "cluster_label": "S39: Some statements describe general world change and development increasing.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "More clean energy is used over the years.", "cluster_label": "S3: Clean electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Less fossil fuel is used over the years.", "cluster_label": "S29: United States fossil-fuel usage decreases over time, especially coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "There are three smaller graphs.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 5, "sentence": "Each smaller graph contains a different amount of energy use.", "cluster_label": "N25: The three countries have very different graphs.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "India has the least energy use.", "cluster_label": "S25: India uses much less energy than China and much less energy than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "China has the most energy use.", "cluster_label": "S25: India uses much less energy than China and much less energy than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "The energy that is used changes over the years.", "cluster_label": "S162: The energy that is used changes over the years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "I wonder why the used energy changes over the years.", "cluster_label": "S53: The author wonders why used energy changes over the years and how the rates in the last graphs came to be or could be achieved.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "I wonder how we can lessen energy consumption.", "cluster_label": "S11_new: The author wonders what can be done to reduce energy consumption or fossil-fuel and gas use and to make a change.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "If we lessen energy consumption, then the statistics will decrease.", "cluster_label": "S13: If energy consumption is reduced, then the statistics will decrease and the world may improve; if it is not reduced, then the world will not change for the better.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 12, "sentence": "There are three last graphs.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 13, "sentence": "I wonder how we can achieve the rates in the three last graphs.", "cluster_label": "S53: The author wonders why used energy changes over the years and how the rates in the last graphs came to be or could be achieved.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "I wonder how the rates in the three last graphs came to be.", "cluster_label": "S53: The author wonders why used energy changes over the years and how the rates in the last graphs came to be or could be achieved.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 15, "sentence": "An analysis of these rates can help to understand electricity generation.", "cluster_label": "S12: The commenter makes a generic statement about trends, interest, or analysis helping understanding.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 16, "sentence": "This topic relates to me.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 17, "sentence": "This topic relates to my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 18, "sentence": "My community generates electricity.", "cluster_label": "S20: My community generates electricity or contributes to global electricity generation and uses resources.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 19, "sentence": "Generating electricity consumes energy.", "cluster_label": "S99: Some statements describe electricity generation consuming energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 20, "sentence": "Energy should be used.", "cluster_label": "S23: Energy should be used.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 21, "sentence": "Fossil fuels can be harmful.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 22, "sentence": "To reduce fossil fuel use, some intervention is needed.", "cluster_label": "S7: Policy, legislation, environmental movements, and awareness can drive a shift toward cleaner energy and reduce fossil-fuel use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 23, "sentence": "My community may not reduce energy consumption.", "cluster_label": "S13: If energy consumption is reduced, then the statistics will decrease and the world may improve; if it is not reduced, then the world will not change for the better.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 24, "sentence": "If my community does not reduce energy consumption, then the world will not change for the better.", "cluster_label": "S13: If energy consumption is reduced, then the statistics will decrease and the world may improve; if it is not reduced, then the world will not change for the better.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 25, "sentence": "Clean energy is better than fossil fuels.", "cluster_label": "S1: Clean energy is better for the Earth than fossil fuels and increasing clean energy is good.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 26, "sentence": "Reducing energy use supports the Earth.", "cluster_label": "S4: Reducing energy use and preserving energy are important and help the Earth.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 27, "sentence": "Replacing energy sources supports the Earth less than reducing energy use.", "cluster_label": "S4: Reducing energy use and preserving energy are important and help the Earth.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 28, "sentence": "Reducing energy use is a start.", "cluster_label": "S4: Reducing energy use and preserving energy are important and help the Earth.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 29, "sentence": "Improvements are still possible.", "cluster_label": "S41: Improvements are still possible and such changes could improve the world in the future.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 30, "sentence": "The headline is: New Global Data on how Electricity is Generated- How will it affect our kids in the future?", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 4, "target": 5}, {"source": 4, "target": 6}, {"source": 5, "target": 6}, {"source": 4, "target": 7}, {"source": 5, "target": 7}, {"source": 8, "target": 9}, {"source": 10, "target": 11}, {"source": 12, "target": 13}, {"source": 12, "target": 14}, {"source": 0, "target": 15}, {"source": 12, "target": 15}, {"source": 0, "target": 16}, {"source": 18, "target": 17}, {"source": 18, "target": 19}, {"source": 19, "target": 20}, {"source": 21, "target": 22}, {"source": 18, "target": 23}, {"source": 10, "target": 23}, {"source": 1, "target": 24}, {"source": 23, "target": 24}, {"source": 21, "target": 25}, {"source": 10, "target": 26}, {"source": 26, "target": 27}, {"source": 26, "target": 28}, {"source": 28, "target": 29}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
 
@@ -143,9 +167,14 @@ New Global Data on how Electricity is Generated- How will it affect our kids in 
 
   nodes.forEach(n => {
     const lines = wrapText(n.sentence);
+    const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    n.nodeH = Math.max(h1, h2);
     n.lines = lines;
+    n.clusterLines = clusterLines;
+    n.showCluster = false;
   });
 
   const commentBarH = document.getElementById("comment-bar").offsetHeight;
@@ -229,21 +258,30 @@ New Global Data on how Electricity is Generated- How will it affect our kids in 
     .attr("stroke-width", 2)
     .attr("stroke-opacity", 0.7);
 
-  const textSel = nodeGroup.each(function(d) {
-    const group = d3.select(this);
-    const t = group.append("text")
-      .attr("x", d.nodeW / 2)
-      .attr("text-anchor", "middle")
-      .attr("font-size", "11px")
-      .attr("fill", "#222")
-      .attr("pointer-events", "none");
-    const startY = PAD_Y + LINE_H * 0.8;
-    d.lines.forEach((line, i) => {
-      t.append("tspan")
+  function setNodeLabel(group, d) {
+    const lines = d.showCluster ? d.clusterLines : d.lines;
+    let t = group.select("text");
+    if (t.empty()) {
+      t = group.append("text")
         .attr("x", d.nodeW / 2)
-        .attr("y", startY + i * LINE_H)
-        .text(line);
-    });
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#222")
+        .attr("pointer-events", "none");
+    }
+    const startY = PAD_Y + LINE_H * 0.8;
+    const tspans = t.selectAll("tspan").data(lines);
+    tspans.exit().remove();
+    tspans.enter().append("tspan")
+      .attr("text-anchor", "middle")
+      .merge(tspans)
+      .attr("x", d.nodeW / 2)
+      .attr("y", (line, i) => startY + i * LINE_H)
+      .text(line => line);
+  }
+
+  nodeGroup.each(function(d) {
+    setNodeLabel(d3.select(this), d);
   });
 
   const tooltip = d3.select("#tooltip");
@@ -361,6 +399,20 @@ New Global Data on how Electricity is Generated- How will it affect our kids in 
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
+
+  // Label toggle: ACE sentence vs cluster_id + cluster_statement
+  document.getElementById("btn-ace").onclick = function() {
+    nodes.forEach(n => n.showCluster = false);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-ace").classList.add("active");
+    document.getElementById("btn-cluster").classList.remove("active");
+  };
+  document.getElementById("btn-cluster").onclick = function() {
+    nodes.forEach(n => n.showCluster = true);
+    nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    document.getElementById("btn-cluster").classList.add("active");
+    document.getElementById("btn-ace").classList.remove("active");
+  };
 
   // Fit to view (dagre positions are known immediately)
   ;(function() {
