@@ -1,0 +1,911 @@
+{
+  "article_id": "181",
+  "nodes": [
+    {
+      "id": "node_1",
+      "label": "1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)"
+    },
+    {
+      "id": "node_2",
+      "label": "2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)"
+    },
+    {
+      "id": "node_3",
+      "label": "3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)"
+    },
+    {
+      "id": "node_4",
+      "label": "4: Climate change, global warming, pollution, environmental and health harms from fossil fuels"
+    },
+    {
+      "id": "node_5",
+      "label": "5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals"
+    },
+    {
+      "id": "node_6",
+      "label": "6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)"
+    },
+    {
+      "id": "node_7",
+      "label": "7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence"
+    },
+    {
+      "id": "node_8",
+      "label": "8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)"
+    },
+    {
+      "id": "node_9",
+      "label": "9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)"
+    },
+    {
+      "id": "node_10",
+      "label": "10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)"
+    },
+    {
+      "id": "node_11",
+      "label": "11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)"
+    },
+    {
+      "id": "node_12",
+      "label": "12: Headlines/titles proposed by commenters (including blank headline placeholders)"
+    },
+    {
+      "id": "node_13",
+      "label": "13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)"
+    },
+    {
+      "id": "node_14",
+      "label": "14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)"
+    },
+    {
+      "id": "node_15",
+      "label": "15: Solar panels/rooftop solar cost and household savings questions (scenario planning)"
+    },
+    {
+      "id": "node_16",
+      "label": "16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)"
+    }
+  ],
+  "edges": [
+    {
+      "source": "node_1",
+      "target": "node_2",
+      "relationship": "precedes",
+      "weight": 0.8239122033119202,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_3",
+      "relationship": "precedes",
+      "weight": 0.6816748380661011,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_4",
+      "relationship": "precedes",
+      "weight": 0.7206811308860779,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_5",
+      "relationship": "precedes",
+      "weight": 0.836103618144989,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_6",
+      "relationship": "precedes",
+      "weight": 0.9415915608406067,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_7",
+      "relationship": "precedes",
+      "weight": 0.86606365442276,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_8",
+      "relationship": "precedes",
+      "weight": 0.6837232112884521,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_9",
+      "relationship": "precedes",
+      "weight": 0.6071176528930664,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_10",
+      "relationship": "precedes",
+      "weight": 0.878574550151825,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_11",
+      "relationship": "precedes",
+      "weight": 0.8280811309814453,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_12",
+      "relationship": "precedes",
+      "weight": 0.7795160412788391,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '12: Headlines/titles proposed by commenters (including blank headline placeholders)'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.3231228291988373,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_14",
+      "relationship": "precedes",
+      "weight": 0.12415427714586258,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.3053368330001831,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    },
+    {
+      "source": "node_1",
+      "target": "node_16",
+      "relationship": "precedes",
+      "weight": 0.936833918094635,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '1: Global electricity generation trends and fuel mix (overall patterns, increases, relative shares)' and '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)'."
+    },
+    {
+      "source": "node_2",
+      "target": "node_6",
+      "relationship": "precedes",
+      "weight": 0.801114559173584,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)' and '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)'."
+    },
+    {
+      "source": "node_2",
+      "target": "node_11",
+      "relationship": "precedes",
+      "weight": 0.6611161231994629,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)' and '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)'."
+    },
+    {
+      "source": "node_2",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.27909913659095764,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_2",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.3156791031360626,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    },
+    {
+      "source": "node_3",
+      "target": "node_2",
+      "relationship": "precedes",
+      "weight": 0.5817879438400269,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)' and '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)'."
+    },
+    {
+      "source": "node_3",
+      "target": "node_6",
+      "relationship": "precedes",
+      "weight": 0.6814491152763367,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)' and '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)'."
+    },
+    {
+      "source": "node_3",
+      "target": "node_7",
+      "relationship": "precedes",
+      "weight": 0.641799807548523,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)' and '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence'."
+    },
+    {
+      "source": "node_3",
+      "target": "node_8",
+      "relationship": "precedes",
+      "weight": 0.49979034066200256,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)' and '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)'."
+    },
+    {
+      "source": "node_3",
+      "target": "node_9",
+      "relationship": "precedes",
+      "weight": 0.5224609375,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)' and '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)'."
+    },
+    {
+      "source": "node_3",
+      "target": "node_10",
+      "relationship": "precedes",
+      "weight": 0.626935601234436,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)' and '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)'."
+    },
+    {
+      "source": "node_3",
+      "target": "node_11",
+      "relationship": "precedes",
+      "weight": 0.6649823784828186,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)' and '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)'."
+    },
+    {
+      "source": "node_3",
+      "target": "node_12",
+      "relationship": "precedes",
+      "weight": 0.6492517590522766,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)' and '12: Headlines/titles proposed by commenters (including blank headline placeholders)'."
+    },
+    {
+      "source": "node_3",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.3788599371910095,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_3",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.31974735856056213,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    },
+    {
+      "source": "node_3",
+      "target": "node_16",
+      "relationship": "precedes",
+      "weight": 0.6664125919342041,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)' and '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_2",
+      "relationship": "precedes",
+      "weight": 0.5696635246276855,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_3",
+      "relationship": "precedes",
+      "weight": 0.5515929460525513,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_5",
+      "relationship": "precedes",
+      "weight": 0.8338441252708435,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_6",
+      "relationship": "precedes",
+      "weight": 0.7947583794593811,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_7",
+      "relationship": "precedes",
+      "weight": 0.7813050746917725,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_8",
+      "relationship": "precedes",
+      "weight": 0.4585823118686676,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_9",
+      "relationship": "precedes",
+      "weight": 0.6318461298942566,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_10",
+      "relationship": "precedes",
+      "weight": 0.6820674538612366,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_11",
+      "relationship": "precedes",
+      "weight": 0.7946133017539978,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_12",
+      "relationship": "precedes",
+      "weight": 0.6740185022354126,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '12: Headlines/titles proposed by commenters (including blank headline placeholders)'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.2817828357219696,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_14",
+      "relationship": "precedes",
+      "weight": 0.1731482595205307,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.2416907101869583,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    },
+    {
+      "source": "node_4",
+      "target": "node_16",
+      "relationship": "precedes",
+      "weight": 0.7965815663337708,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '4: Climate change, global warming, pollution, environmental and health harms from fossil fuels' and '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)'."
+    },
+    {
+      "source": "node_5",
+      "target": "node_2",
+      "relationship": "precedes",
+      "weight": 0.6538541913032532,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals' and '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)'."
+    },
+    {
+      "source": "node_5",
+      "target": "node_3",
+      "relationship": "precedes",
+      "weight": 0.6221551895141602,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals' and '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)'."
+    },
+    {
+      "source": "node_5",
+      "target": "node_6",
+      "relationship": "precedes",
+      "weight": 0.9220557808876038,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals' and '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)'."
+    },
+    {
+      "source": "node_5",
+      "target": "node_7",
+      "relationship": "precedes",
+      "weight": 0.848842442035675,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals' and '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence'."
+    },
+    {
+      "source": "node_5",
+      "target": "node_8",
+      "relationship": "precedes",
+      "weight": 0.5841224789619446,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals' and '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)'."
+    },
+    {
+      "source": "node_5",
+      "target": "node_9",
+      "relationship": "precedes",
+      "weight": 0.748532772064209,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals' and '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)'."
+    },
+    {
+      "source": "node_5",
+      "target": "node_10",
+      "relationship": "precedes",
+      "weight": 0.7844737768173218,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals' and '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)'."
+    },
+    {
+      "source": "node_5",
+      "target": "node_11",
+      "relationship": "precedes",
+      "weight": 0.8922677636146545,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals' and '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)'."
+    },
+    {
+      "source": "node_5",
+      "target": "node_12",
+      "relationship": "precedes",
+      "weight": 0.8309202194213867,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals' and '12: Headlines/titles proposed by commenters (including blank headline placeholders)'."
+    },
+    {
+      "source": "node_5",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.41600924730300903,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_5",
+      "target": "node_14",
+      "relationship": "precedes",
+      "weight": 0.2635882496833801,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals' and '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)'."
+    },
+    {
+      "source": "node_5",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.366483598947525,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    },
+    {
+      "source": "node_5",
+      "target": "node_16",
+      "relationship": "precedes",
+      "weight": 0.9064867496490479,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '5: Calls for transition to clean/renewable energy; solutions, advocacy, policy, regulation, future goals' and '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)'."
+    },
+    {
+      "source": "node_6",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.421688050031662,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_6",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.3457740545272827,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    },
+    {
+      "source": "node_7",
+      "target": "node_2",
+      "relationship": "precedes",
+      "weight": 0.7571219801902771,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence' and '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)'."
+    },
+    {
+      "source": "node_7",
+      "target": "node_6",
+      "relationship": "precedes",
+      "weight": 0.8881941437721252,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence' and '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)'."
+    },
+    {
+      "source": "node_7",
+      "target": "node_8",
+      "relationship": "precedes",
+      "weight": 0.619295597076416,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence' and '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)'."
+    },
+    {
+      "source": "node_7",
+      "target": "node_9",
+      "relationship": "precedes",
+      "weight": 0.6708609461784363,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence' and '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)'."
+    },
+    {
+      "source": "node_7",
+      "target": "node_10",
+      "relationship": "precedes",
+      "weight": 0.7978804707527161,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence' and '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)'."
+    },
+    {
+      "source": "node_7",
+      "target": "node_11",
+      "relationship": "precedes",
+      "weight": 0.854651689529419,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence' and '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)'."
+    },
+    {
+      "source": "node_7",
+      "target": "node_12",
+      "relationship": "precedes",
+      "weight": 0.7549561262130737,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence' and '12: Headlines/titles proposed by commenters (including blank headline placeholders)'."
+    },
+    {
+      "source": "node_7",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.3425454795360565,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_7",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.35698404908180237,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    },
+    {
+      "source": "node_7",
+      "target": "node_16",
+      "relationship": "precedes",
+      "weight": 0.9257675409317017,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence' and '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)'."
+    },
+    {
+      "source": "node_8",
+      "target": "node_2",
+      "relationship": "precedes",
+      "weight": 0.6393467783927917,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)' and '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)'."
+    },
+    {
+      "source": "node_8",
+      "target": "node_6",
+      "relationship": "precedes",
+      "weight": 0.7244367003440857,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)' and '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)'."
+    },
+    {
+      "source": "node_8",
+      "target": "node_11",
+      "relationship": "precedes",
+      "weight": 0.5338208079338074,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)' and '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)'."
+    },
+    {
+      "source": "node_8",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.5725986361503601,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_8",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.36206960678100586,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    },
+    {
+      "source": "node_9",
+      "target": "node_2",
+      "relationship": "precedes",
+      "weight": 0.5222858786582947,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)' and '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)'."
+    },
+    {
+      "source": "node_9",
+      "target": "node_6",
+      "relationship": "precedes",
+      "weight": 0.7271863222122192,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)' and '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)'."
+    },
+    {
+      "source": "node_9",
+      "target": "node_8",
+      "relationship": "precedes",
+      "weight": 0.5602359771728516,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)' and '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)'."
+    },
+    {
+      "source": "node_9",
+      "target": "node_10",
+      "relationship": "precedes",
+      "weight": 0.6533488631248474,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)' and '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)'."
+    },
+    {
+      "source": "node_9",
+      "target": "node_11",
+      "relationship": "precedes",
+      "weight": 0.6946823000907898,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)' and '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)'."
+    },
+    {
+      "source": "node_9",
+      "target": "node_12",
+      "relationship": "precedes",
+      "weight": 0.6622426509857178,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)' and '12: Headlines/titles proposed by commenters (including blank headline placeholders)'."
+    },
+    {
+      "source": "node_9",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.5007129311561584,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_9",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.4047228693962097,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    },
+    {
+      "source": "node_9",
+      "target": "node_16",
+      "relationship": "precedes",
+      "weight": 0.7417023181915283,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)' and '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)'."
+    },
+    {
+      "source": "node_10",
+      "target": "node_2",
+      "relationship": "precedes",
+      "weight": 0.7337555885314941,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)' and '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)'."
+    },
+    {
+      "source": "node_10",
+      "target": "node_6",
+      "relationship": "precedes",
+      "weight": 0.8475037813186646,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)' and '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)'."
+    },
+    {
+      "source": "node_10",
+      "target": "node_8",
+      "relationship": "precedes",
+      "weight": 0.6031055450439453,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)' and '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)'."
+    },
+    {
+      "source": "node_10",
+      "target": "node_11",
+      "relationship": "precedes",
+      "weight": 0.8008919358253479,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)' and '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)'."
+    },
+    {
+      "source": "node_10",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.3404175341129303,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_10",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.3706396222114563,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    },
+    {
+      "source": "node_11",
+      "target": "node_6",
+      "relationship": "precedes",
+      "weight": 0.8717349767684937,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)' and '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)'."
+    },
+    {
+      "source": "node_11",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.349128395318985,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_11",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.3091478943824768,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    },
+    {
+      "source": "node_12",
+      "target": "node_2",
+      "relationship": "precedes",
+      "weight": 0.633586049079895,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '12: Headlines/titles proposed by commenters (including blank headline placeholders)' and '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)'."
+    },
+    {
+      "source": "node_12",
+      "target": "node_6",
+      "relationship": "precedes",
+      "weight": 0.8503869771957397,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '12: Headlines/titles proposed by commenters (including blank headline placeholders)' and '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)'."
+    },
+    {
+      "source": "node_12",
+      "target": "node_8",
+      "relationship": "precedes",
+      "weight": 0.6527507305145264,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '12: Headlines/titles proposed by commenters (including blank headline placeholders)' and '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)'."
+    },
+    {
+      "source": "node_12",
+      "target": "node_10",
+      "relationship": "precedes",
+      "weight": 0.7288037538528442,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '12: Headlines/titles proposed by commenters (including blank headline placeholders)' and '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)'."
+    },
+    {
+      "source": "node_12",
+      "target": "node_11",
+      "relationship": "precedes",
+      "weight": 0.7779353260993958,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '12: Headlines/titles proposed by commenters (including blank headline placeholders)' and '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)'."
+    },
+    {
+      "source": "node_12",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.6250422596931458,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '12: Headlines/titles proposed by commenters (including blank headline placeholders)' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_12",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.37373459339141846,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '12: Headlines/titles proposed by commenters (including blank headline placeholders)' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    },
+    {
+      "source": "node_12",
+      "target": "node_16",
+      "relationship": "precedes",
+      "weight": 0.8417522311210632,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '12: Headlines/titles proposed by commenters (including blank headline placeholders)' and '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)'."
+    },
+    {
+      "source": "node_14",
+      "target": "node_2",
+      "relationship": "precedes",
+      "weight": 0.05922757461667061,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)' and '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)'."
+    },
+    {
+      "source": "node_14",
+      "target": "node_3",
+      "relationship": "precedes",
+      "weight": 0.1891888678073883,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)' and '3: Economic shocks and dips in electricity generation (2008 crisis, COVID/pandemic; recession-demand link)'."
+    },
+    {
+      "source": "node_14",
+      "target": "node_6",
+      "relationship": "precedes",
+      "weight": 0.2064935564994812,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)' and '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)'."
+    },
+    {
+      "source": "node_14",
+      "target": "node_7",
+      "relationship": "precedes",
+      "weight": 0.19784878194332123,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)' and '7: Questions about why fossil fuels remain dominant; affordability, accessibility, resource availability, industry influence'."
+    },
+    {
+      "source": "node_14",
+      "target": "node_8",
+      "relationship": "precedes",
+      "weight": 0.1959603726863861,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)' and '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)'."
+    },
+    {
+      "source": "node_14",
+      "target": "node_9",
+      "relationship": "precedes",
+      "weight": 0.407848060131073,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)' and '9: Local/community and personal relevance (impacts, lived experience, place-based notes, solar panels, factories, energy costs, EVs)'."
+    },
+    {
+      "source": "node_14",
+      "target": "node_10",
+      "relationship": "precedes",
+      "weight": 0.17641811072826385,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)' and '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)'."
+    },
+    {
+      "source": "node_14",
+      "target": "node_11",
+      "relationship": "precedes",
+      "weight": 0.222401425242424,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)' and '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)'."
+    },
+    {
+      "source": "node_14",
+      "target": "node_12",
+      "relationship": "precedes",
+      "weight": 0.34642767906188965,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)' and '12: Headlines/titles proposed by commenters (including blank headline placeholders)'."
+    },
+    {
+      "source": "node_14",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.5102148056030273,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_14",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.1267268806695938,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    },
+    {
+      "source": "node_14",
+      "target": "node_16",
+      "relationship": "precedes",
+      "weight": 0.21583732962608337,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '14: Personal introductions, greetings, and autobiographical asides (names, hello, junior high memory, sign-offs)' and '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)'."
+    },
+    {
+      "source": "node_15",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.28498417139053345,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_16",
+      "target": "node_2",
+      "relationship": "precedes",
+      "weight": 0.844688355922699,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)' and '2: Country comparisons and differences (China vs US vs India; population, development, per-capita, why differences)'."
+    },
+    {
+      "source": "node_16",
+      "target": "node_6",
+      "relationship": "precedes",
+      "weight": 0.9716753959655762,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)' and '6: Nuclear power advocacy and debate (easy fix, zero carbon, lack of capacity, environmentalists oppose, safety/reliability)'."
+    },
+    {
+      "source": "node_16",
+      "target": "node_8",
+      "relationship": "precedes",
+      "weight": 0.7338144183158875,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)' and '8: Graph reading, structure, units, methodology, and data interpretation questions (GWh, gigawatt, stacked area, sampling, calculations)'."
+    },
+    {
+      "source": "node_16",
+      "target": "node_10",
+      "relationship": "precedes",
+      "weight": 0.8456320762634277,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)' and '10: Energy demand growth drivers (population growth, electrification, technology integration, overpopulation/resource limits)'."
+    },
+    {
+      "source": "node_16",
+      "target": "node_11",
+      "relationship": "precedes",
+      "weight": 0.8819692134857178,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)' and '11: Social/political critique and responsibility narratives (profit motives, addiction to lifestyle, government fear, existential framing)'."
+    },
+    {
+      "source": "node_16",
+      "target": "node_13",
+      "relationship": "precedes",
+      "weight": 0.4279119372367859,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)' and '13: Meta moderation, instructions, shout-outs, and article logistics (NYT moderation posts, deadlines, reveal, next graph)'."
+    },
+    {
+      "source": "node_16",
+      "target": "node_15",
+      "relationship": "precedes",
+      "weight": 0.3674594461917877,
+      "description": "Preceding statement (source) to following statement (target); cosine similarity between aggregated SBERT embeddings for '16: Miscellaneous/unclear or affective reactions not fitting other themes (sad estimate, 'crazy' gigawatts, generic intrigue)' and '15: Solar panels/rooftop solar cost and household savings questions (scenario planning)'."
+    }
+  ]
+}

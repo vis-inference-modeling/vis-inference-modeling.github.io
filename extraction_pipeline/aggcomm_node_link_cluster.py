@@ -122,7 +122,7 @@ def _wrap_label(text: str, max_line_len: int = 35) -> str:
 
 
 def draw_and_save_graph(
-    G: nx.Graph,
+    G: nx.DiGraph,
     save_path: Path,
     node_label_max_len: int = 40,
     figsize: Tuple[float, float] = (14, 12),
@@ -131,7 +131,8 @@ def draw_and_save_graph(
     layout: str = "spring",
 ) -> None:
     """
-    Draw the node-link diagram with edge width proportional to weight (cosine similarity).
+    Draw the directed node-link diagram with edge width proportional to weight.
+    Arrows point from earlier statements (in corpus order) to later ones.
 
     Saves to save_path.
     """
@@ -170,7 +171,8 @@ def draw_and_save_graph(
 
     fig, ax = plt.subplots(figsize=figsize)
 
-    # Draw edges with thickness and opacity by weight (cosine similarity → opacity 0 to 1)
+    # Draw order: edges (arrows) first, then labels, then nodes (nodes on top).
+    # Only draw edges where source precedes target (earlier → later); graph is built that way.
     for (u, v), w in zip(G.edges(), weights):
         nx.draw_networkx_edges(
             G,
@@ -180,14 +182,15 @@ def draw_and_save_graph(
             alpha=alpha_from_weight(w),
             edge_color="lightblue",
             ax=ax,
+            arrows=True,
+            arrowstyle="-|>",
+            arrowsize=12,
+            connectionstyle="arc3,rad=0.1",
         )
 
-    # Node labels: full text, wrapped, drawn on top of each node
     labels = {n: _wrap_label(str(n), max_line_len=node_label_max_len) for n in G.nodes()}
     label_offset = 0.08
     pos_labels = {n: (xy[0], xy[1] + label_offset) for n, xy in pos.items()}
-
-    nx.draw_networkx_nodes(G, pos, node_color="lightsteelblue", node_size=900, ax=ax)
     nx.draw_networkx_labels(
         G,
         pos_labels,
@@ -197,29 +200,121 @@ def draw_and_save_graph(
         verticalalignment="bottom",
         horizontalalignment="center",
     )
+
+    nx.draw_networkx_nodes(
+        G,
+        pos,
+        node_color="lightsteelblue",
+        node_size=900,
+        alpha=0.4,
+        ax=ax,
+    )
     ax.axis("off")
     plt.tight_layout()
     fig.savefig(save_path, bbox_inches="tight", dpi=150)
     plt.close(fig)
 
 
-def build_category_graph(category_embeddings: Dict[str, np.ndarray]) -> nx.Graph:
+def _min_sentence_index_for_category(cat: Dict[str, Any]) -> int:
     """
-    Build a graph where nodes are category labels and edge weights = cosine similarity.
+    Earliest sentence index for this category (for temporal ordering).
+    Uses member_sentences[].sentence_index or member_sentence_indices.
+    Returns a large sentinel if no indices found.
     """
-    G = nx.Graph()
+    members = cat.get("member_sentences") or []
+    indices: List[int] = []
+    for m in members:
+        idx = m.get("sentence_index")
+        if idx is not None:
+            indices.append(int(idx))
+    if not indices:
+        indices = list(cat.get("member_sentence_indices") or [])
+    return min(indices) if indices else 999999
+
+
+def build_category_graph(
+    category_embeddings: Dict[str, np.ndarray],
+    category_min_index: Dict[str, int] | None = None,
+) -> nx.DiGraph:
+    """
+    Build a directed graph: nodes = category labels, edge weight = cosine similarity.
+    Edges go from the category that appears earlier (smaller min sentence index)
+    to the category that appears later (larger min sentence index).
+    """
+    G = nx.DiGraph()
     labels = list(category_embeddings.keys())
     for label in labels:
         G.add_node(label)
+    min_index = category_min_index or {}
     for i in range(len(labels)):
         for j in range(i + 1, len(labels)):
             a, b = labels[i], labels[j]
             va = category_embeddings.get(a)
             vb = category_embeddings.get(b)
-            if va is not None and vb is not None:
-                sim = cosine_similarity(va, vb)
+            if va is None or vb is None:
+                continue
+            sim = cosine_similarity(va, vb)
+            idx_a = min_index.get(a, 999999)
+            idx_b = min_index.get(b, 999999)
+            # Edge from earlier statement (smaller index) to later (larger index)
+            if idx_a <= idx_b:
                 G.add_edge(a, b, weight=sim)
+            else:
+                G.add_edge(b, a, weight=sim)
     return G
+
+
+def graph_to_causal_style_json(G: nx.DiGraph, article_id: str) -> Dict[str, Any]:
+    """
+    Convert a NetworkX directed graph into a JSON object similar to the causal_graph schema.
+
+    Nodes become:
+      {"id": "node_1", "label": "<category label>"}
+
+    Edges are directed: source = category that appears earlier (preceding statement),
+    target = category that appears later (following statement).
+      {
+        "source": "node_1",
+        "target": "node_2",
+        "relationship": "precedes",
+        "weight": <cosine similarity>,
+        "description": "Preceding statement (source) to following statement (target); ..."
+      }
+    """
+    # Stable node ids: node_1, node_2, ... in the order NetworkX stores nodes.
+    node_ids: Dict[Any, str] = {}
+    nodes: List[Dict[str, Any]] = []
+    for idx, label in enumerate(G.nodes(), start=1):
+        node_id = f"node_{idx}"
+        node_ids[label] = node_id
+        nodes.append(
+            {
+                "id": node_id,
+                "label": str(label),
+            }
+        )
+
+    edges: List[Dict[str, Any]] = []
+    for u, v, data in G.edges(data=True):
+        weight = float(data.get("weight", 0.0))
+        edges.append(
+            {
+                "source": node_ids.get(u, str(u)),
+                "target": node_ids.get(v, str(v)),
+                "relationship": "precedes",
+                "weight": weight,
+                "description": (
+                    "Preceding statement (source) to following statement (target); "
+                    f"cosine similarity between aggregated SBERT embeddings for '{u}' and '{v}'."
+                ),
+            }
+        )
+
+    return {
+        "article_id": article_id,
+        "nodes": nodes,
+        "edges": edges,
+    }
 
 
 def process_clusters_file(
@@ -244,7 +339,7 @@ def process_clusters_file(
         graph_dir = output_base / article_id / "category_graphs"
         graph_dir.mkdir(parents=True, exist_ok=True)
         out_path = graph_dir / "aggregated_categories.png"
-        empty_graph = nx.Graph()
+        empty_graph = nx.DiGraph()
         draw_and_save_graph(empty_graph, out_path)
         print(f"Saved empty category graph for article {article_id} at {out_path}")
         return
@@ -264,8 +359,9 @@ def process_clusters_file(
     cache, _ = get_or_compute_embeddings(unique_sentences, model, cache)
     save_embeddings_cache(embeddings_dir, article_key, cache)
 
-    # Aggregate embeddings per category: mean over member sentences.
+    # Aggregate embeddings per category and earliest sentence index for direction.
     category_embeddings: Dict[str, np.ndarray] = {}
+    category_min_index: Dict[str, int] = {}
     for cat in categories:
         cat_id = cat.get("category_id")
         name = str(cat.get("name") or f"Category {cat_id}").strip()
@@ -285,14 +381,26 @@ def process_clusters_file(
         stacked = np.stack(vecs, axis=0)
         mean_vec = stacked.mean(axis=0)
         category_embeddings[label] = mean_vec
+        category_min_index[label] = _min_sentence_index_for_category(cat)
 
-    # Build and save the graph.
-    G = build_category_graph(category_embeddings)
+    # Build directed graph (edges from earlier to later statements).
+    G = build_category_graph(category_embeddings, category_min_index)
     graph_dir = output_base / article_id / "category_graphs"
     graph_dir.mkdir(parents=True, exist_ok=True)
+
+    # Save PNG visualization.
     out_path = graph_dir / "aggregated_categories.png"
     draw_and_save_graph(G, out_path)
     print(f"Saved aggregated category graph for article {article_id} at {out_path}")
+
+    # Also save a JSON representation similar to causal_graph_example.json's causal_graph.
+    json_graph = graph_to_causal_style_json(G, article_id)
+    json_path = graph_dir / "aggregated_categories.json"
+    with json_path.open("w", encoding="utf-8") as f:
+        json.dump(json_graph, f, ensure_ascii=False, indent=2)
+    print(
+        f"Saved aggregated category graph JSON for article {article_id} at {json_path}"
+    )
 
 
 def main() -> None:

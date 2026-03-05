@@ -146,6 +146,7 @@ def draw_and_save_graph(
     max_edge_width: float = 4.0,
     layout: str = "spring",
     node_present: Dict[str, bool] | None = None,
+    node_alpha: float = 0.4,
 ) -> None:
     """
     Draw the node-link diagram with edge width proportional to weight (cosine similarity).
@@ -210,7 +211,14 @@ def draw_and_save_graph(
     # Offset label position above the node (node_size 800 ~ radius ~17 in points; use small axis offset)
     label_offset = 0.08
     pos_labels = {n: (xy[0], xy[1] + label_offset) for n, xy in pos.items()}
-    nx.draw_networkx_nodes(G, pos, node_color=node_colors, node_size=800, ax=ax)
+    nx.draw_networkx_nodes(
+        G,
+        pos,
+        node_color=node_colors,
+        node_size=800,
+        alpha=node_alpha,
+        ax=ax,
+    )
     nx.draw_networkx_labels(
         G, pos_labels, labels=labels, font_size=7, ax=ax,
         verticalalignment="bottom", horizontalalignment="center",

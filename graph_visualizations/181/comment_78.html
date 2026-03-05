@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ACE Dependency Graph — article 181, comment 78</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #fafafa;
+    color: #222;
+    overflow: hidden;
+  }
+  #header {
+    padding: 12px 20px 8px;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  #header h1 {
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  #header .hint {
+    font-size: 12px;
+    color: #888;
+  }
+  #graph-container {
+    position: relative;
+    width: 100vw;
+  }
+  svg { display: block; }
+  .node-label {
+    font-size: 11px;
+    line-height: 1.35;
+    color: #222;
+    padding: 6px 8px;
+    overflow: hidden;
+    word-wrap: break-word;
+    cursor: grab;
+    user-select: none;
+  }
+  #legend {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: rgba(255,255,255,0.93);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 12px;
+    line-height: 1.7;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+    z-index: 50;
+  }
+  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .item { display: flex; align-items: center; gap: 7px; }
+  #legend .swatch {
+    width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
+    border: 1px solid rgba(0,0,0,0.15);
+  }
+  #comment-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: #fffde7;
+    border-top: 1px solid #e0d88a;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-style: italic;
+    color: #555;
+    max-height: 100px;
+    overflow-y: auto;
+    line-height: 1.5;
+  }
+  #tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: rgba(30,30,30,0.92);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 1.45;
+    max-width: 360px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    z-index: 100;
+  }
+  #tooltip .cat { color: #aaa; font-size: 11px; margin-top: 3px; }
+</style>
+</head>
+<body>
+<div id="header">
+  <h1>ACE Dependency Graph — article 181, comment 78</h1>
+  <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+</div>
+<div id="graph-container">
+  <svg id="graph"></svg>
+  <div id="legend"></div>
+  <div id="tooltip"></div>
+</div>
+<div id="comment-bar">The first thing that I notice is that there is an increase in world electricity generated between 200 and 2022. I also see that the clean sources of energy have reliably produced more energy than the fossil fuel sources of energy. Not only that, but the clean sources seemed to have had a gain of over 10 million gigawatt hours, compared to fossil that has at most had 7 to 8 million gigawatt hours gain. From the second figure, we can see that Chinas total electricity has dramatically increased, where the amount generated has gone from about 1 million gigawatt hours to about 5.5 million for fossil and 7 to 8 million for clean. This is significantly higher than the other two countries shown: the United States and India. Over the last 20 years, clean fuel has seemed to stay fairly steady in the US, whereas fossil fuel has seemed to decrease. This makes me wonder how population affects the need of fossil fuels compared to clean power. We know that the population of China is significantly larger than the US, so would this be the reason why China&#x27;s electricity generation has increased so much? If so, why has the US electricity generation increased so little? This relates to my community because we are the new generation. Clean energy is the future and it is our job and duty to take care of the planet. A catchy headline may be &quot;Are Fossil Fuels a Thing of the Past? – Clean vs Fossil Energy Production from 2000 to 2022&quot;</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
+<script>
+(function() {
+  const nodes = [{"id": 0, "sentence": "I notice an increase in world electricity generation between 2000 and 2022.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Clean energy sources produced more electricity than fossil-fuel energy sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Clean energy sources had a gain of more than 10 million gigawatt-hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Fossil-fuel energy sources had a gain of at most 8 million gigawatt-hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "The second figure shows that the total electricity generation of China increased dramatically.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "In China, fossil-fuel electricity generation increased from about 1 million gigawatt-hours to about 5.5 million gigawatt-hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "In China, clean electricity generation increased to about 7 million gigawatt-hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "In China, clean electricity generation increased to about 8 million gigawatt-hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "The electricity generation of China is higher than the electricity generation of the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The electricity generation of China is higher than the electricity generation of India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "During the last 20 years, clean electricity generation in the United States stayed fairly steady.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "During the last 20 years, fossil-fuel electricity generation in the United States decreased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "I wonder how population affects the need for fossil-fuel electricity compared to clean electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 13, "sentence": "China has a larger population than the United States.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "I ask whether the larger population of China is a reason for the increase in electricity generation in China.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 15, "sentence": "I ask why the electricity generation in the United States increased only a little.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 16, "sentence": "This topic relates to my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 17, "sentence": "My community is a new generation.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 18, "sentence": "Clean energy is the future.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 19, "sentence": "It is our job to take care of the planet.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 20, "sentence": "It is our duty to take care of the planet.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 21, "sentence": "The headline is: Are fossil fuels a thing of the past - clean vs fossil energy production from 2000 to 2022.", "category": "Meta / paratext", "color": "#17becf"}];
+  const links = [{"source": 1, "target": 2}, {"source": 1, "target": 3}, {"source": 4, "target": 5}, {"source": 4, "target": 6}, {"source": 4, "target": 7}, {"source": 4, "target": 8}, {"source": 4, "target": 9}, {"source": 5, "target": 12}, {"source": 6, "target": 12}, {"source": 7, "target": 12}, {"source": 10, "target": 12}, {"source": 11, "target": 12}, {"source": 4, "target": 14}, {"source": 13, "target": 14}, {"source": 10, "target": 15}, {"source": 11, "target": 15}, {"source": 19, "target": 16}, {"source": 20, "target": 16}, {"source": 21, "target": 16}, {"source": 16, "target": 17}, {"source": 1, "target": 18}, {"source": 18, "target": 19}, {"source": 19, "target": 20}];
+  const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
+
+  const NODE_W = 180;
+  const PAD_X = 8, PAD_Y = 6;
+  const LINE_H = 14;
+  const CHAR_W = 6.2;
+  const CHARS_PER_LINE = Math.floor((NODE_W - PAD_X * 2) / CHAR_W);
+
+  function wrapText(text) {
+    const words = text.split(/\s+/);
+    const lines = [];
+    let cur = "";
+    words.forEach(w => {
+      const test = cur ? cur + " " + w : w;
+      if (test.length > CHARS_PER_LINE && cur) {
+        lines.push(cur);
+        cur = w;
+      } else {
+        cur = test;
+      }
+    });
+    if (cur) lines.push(cur);
+    return lines;
+  }
+
+  nodes.forEach(n => {
+    const lines = wrapText(n.sentence);
+    n.nodeW = NODE_W;
+    n.nodeH = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    n.lines = lines;
+  });
+
+  const commentBarH = document.getElementById("comment-bar").offsetHeight;
+  const headerH = document.getElementById("header").offsetHeight;
+  const width = window.innerWidth;
+  const height = window.innerHeight - headerH - commentBarH;
+
+  const container = document.getElementById("graph-container");
+  container.style.height = height + "px";
+
+  const svg = d3.select("#graph")
+    .attr("width", width)
+    .attr("height", height);
+
+  const g = svg.append("g");
+
+  const zoom = d3.zoom()
+    .scaleExtent([0.05, 6])
+    .on("zoom", (event) => g.attr("transform", event.transform));
+  svg.call(zoom);
+
+  const defs = svg.append("defs");
+
+  function addMarker(id, color) {
+    defs.append("marker")
+      .attr("id", id)
+      .attr("viewBox", "0 -5 10 10")
+      .attr("refX", 10)
+      .attr("refY", 0)
+      .attr("markerWidth", 8)
+      .attr("markerHeight", 8)
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M0,-4L10,0L0,4")
+      .attr("fill", color);
+  }
+  addMarker("arrow", "#6a9fd8");
+  addMarker("arrow-dim", "#ddd");
+  addMarker("arrow-hl", "#1a5ea0");
+
+  // Dagre hierarchical layout
+  const nodeById = new Map(nodes.map(n => [n.id, n]));
+  const gDagre = new dagre.graphlib.Graph();
+  gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
+  gDagre.setDefaultEdgeLabel(() => ({}));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  links.forEach(l => gDagre.setEdge(l.source, l.target));
+  dagre.layout(gDagre);
+  nodes.forEach(n => {
+    const pos = gDagre.node(n.id);
+    n.x = pos.x - n.nodeW / 2;
+    n.y = pos.y - n.nodeH / 2;
+  });
+  links.forEach(l => {
+    if (typeof l.source !== "object") l.source = nodeById.get(l.source);
+    if (typeof l.target !== "object") l.target = nodeById.get(l.target);
+  });
+
+  const linkSel = g.append("g")
+    .selectAll("line")
+    .data(links)
+    .join("line")
+    .attr("stroke", "#6a9fd8")
+    .attr("stroke-width", 2)
+    .attr("stroke-opacity", 0.55)
+    .attr("marker-end", "url(#arrow)");
+
+  const nodeGroup = g.append("g")
+    .selectAll("g")
+    .data(nodes)
+    .join("g")
+    .attr("cursor", "grab");
+
+  const rectSel = nodeGroup.append("rect")
+    .attr("width", d => d.nodeW)
+    .attr("height", d => d.nodeH)
+    .attr("rx", 6).attr("ry", 6)
+    .attr("fill", d => d.color)
+    .attr("fill-opacity", 0.22)
+    .attr("stroke", d => d.color)
+    .attr("stroke-width", 2)
+    .attr("stroke-opacity", 0.7);
+
+  const textSel = nodeGroup.each(function(d) {
+    const group = d3.select(this);
+    const t = group.append("text")
+      .attr("x", d.nodeW / 2)
+      .attr("text-anchor", "middle")
+      .attr("font-size", "11px")
+      .attr("fill", "#222")
+      .attr("pointer-events", "none");
+    const startY = PAD_Y + LINE_H * 0.8;
+    d.lines.forEach((line, i) => {
+      t.append("tspan")
+        .attr("x", d.nodeW / 2)
+        .attr("y", startY + i * LINE_H)
+        .text(line);
+    });
+  });
+
+  const tooltip = d3.select("#tooltip");
+
+  const adjacency = new Map();
+  nodes.forEach(n => adjacency.set(n.id, new Set()));
+  links.forEach(l => {
+    const s = (typeof l.source === "object") ? l.source.id : l.source;
+    const t = (typeof l.target === "object") ? l.target.id : l.target;
+    adjacency.get(s).add(t);
+    adjacency.get(t).add(s);
+  });
+
+  function isConnected(a, b) {
+    return a === b || adjacency.get(a).has(b);
+  }
+
+  function rectEdgePoint(cx, cy, w, h, tx, ty) {
+    const dx = tx - cx, dy = ty - cy;
+    if (dx === 0 && dy === 0) return [cx, cy];
+    const hw = w / 2, hh = h / 2;
+    const absDx = Math.abs(dx), absDy = Math.abs(dy);
+    let scale;
+    if (absDx / hw > absDy / hh) {
+      scale = hw / absDx;
+    } else {
+      scale = hh / absDy;
+    }
+    return [cx + dx * scale, cy + dy * scale];
+  }
+
+  nodeGroup
+    .on("mouseenter", function(event, d) {
+      rectSel
+        .attr("fill-opacity", o => isConnected(d.id, o.id) ? 0.35 : 0.06)
+        .attr("stroke-opacity", o => isConnected(d.id, o.id) ? 1 : 0.1);
+      nodeGroup.selectAll("text")
+        .attr("fill-opacity", function() {
+          const o = d3.select(this.parentNode).datum();
+          return isConnected(d.id, o.id) ? 1 : 0.12;
+        });
+      linkSel
+        .attr("stroke-opacity", l => {
+          const s = (typeof l.source === "object") ? l.source.id : l.source;
+          const t = (typeof l.target === "object") ? l.target.id : l.target;
+          return (s === d.id || t === d.id) ? 0.85 : 0.06;
+        })
+        .attr("stroke", l => {
+          const s = (typeof l.source === "object") ? l.source.id : l.source;
+          const t = (typeof l.target === "object") ? l.target.id : l.target;
+          return (s === d.id || t === d.id) ? "#1a5ea0" : "#ddd";
+        })
+        .attr("stroke-width", l => {
+          const s = (typeof l.source === "object") ? l.source.id : l.source;
+          const t = (typeof l.target === "object") ? l.target.id : l.target;
+          return (s === d.id || t === d.id) ? 3 : 1;
+        })
+        .attr("marker-end", l => {
+          const s = (typeof l.source === "object") ? l.source.id : l.source;
+          const t = (typeof l.target === "object") ? l.target.id : l.target;
+          return (s === d.id || t === d.id) ? "url(#arrow-hl)" : "url(#arrow-dim)";
+        });
+
+      tooltip
+        .style("opacity", 1)
+        .html("<strong>" + d.id + ":</strong> " + d.sentence + "<div class='cat'>" + d.category + "</div>");
+    })
+    .on("mousemove", function(event) {
+      const [mx, my] = d3.pointer(event, container);
+      tooltip
+        .style("left", (mx + 18) + "px")
+        .style("top", (my - 10) + "px");
+    })
+    .on("mouseleave", function() {
+      rectSel.attr("fill-opacity", 0.22).attr("stroke-opacity", 0.7);
+      nodeGroup.selectAll("text").attr("fill-opacity", 1);
+      linkSel
+        .attr("stroke", "#6a9fd8")
+        .attr("stroke-opacity", 0.55)
+        .attr("stroke-width", 2)
+        .attr("marker-end", "url(#arrow)");
+      tooltip.style("opacity", 0);
+    });
+
+  function updatePositions() {
+    nodeGroup.attr("transform", d => "translate(" + d.x + "," + d.y + ")");
+    linkSel.each(function(d) {
+      const sx = d.source.x + d.source.nodeW / 2;
+      const sy = d.source.y + d.source.nodeH / 2;
+      const tx = d.target.x + d.target.nodeW / 2;
+      const ty = d.target.y + d.target.nodeH / 2;
+      const [x1, y1] = rectEdgePoint(sx, sy, d.source.nodeW, d.source.nodeH, tx, ty);
+      const [x2, y2] = rectEdgePoint(tx, ty, d.target.nodeW, d.target.nodeH, sx, sy);
+      d3.select(this)
+        .attr("x1", x1).attr("y1", y1)
+        .attr("x2", x2).attr("y2", y2);
+    });
+  }
+
+  const drag = d3.drag()
+    .on("drag", (event, d) => {
+      d.x = event.x;
+      d.y = event.y;
+      updatePositions();
+    });
+  nodeGroup.call(drag);
+
+  updatePositions();
+
+  // Legend
+  const leg = d3.select("#legend");
+  leg.append("div").attr("class", "title").text("Category");
+  legendItems.forEach(item => {
+    const row = leg.append("div").attr("class", "item");
+    row.append("div").attr("class", "swatch").style("background", item.color);
+    row.append("span").text(item.category);
+  });
+
+  // Fit to view (dagre positions are known immediately)
+  ;(function() {
+    const pad = 80;
+    let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+    nodes.forEach(n => {
+      if (n.x < x0) x0 = n.x;
+      if (n.y < y0) y0 = n.y;
+      const nr = n.x + n.nodeW;
+      const nb = n.y + n.nodeH;
+      if (nr > x1) x1 = nr;
+      if (nb > y1) y1 = nb;
+    });
+    const bw = x1 - x0 + pad * 2;
+    const bh = y1 - y0 + pad * 2;
+    const scale = Math.min(width / bw, height / bh, 1.5);
+    const cx = (x0 + x1) / 2;
+    const cy = (y0 + y1) / 2;
+    const tx = width / 2 - scale * cx;
+    const ty = height / 2 - scale * cy;
+    svg.transition().duration(600).call(
+      zoom.transform,
+      d3.zoomIdentity.translate(tx, ty).scale(scale)
+    );
+  })();
+})();
+</script>
+</body>
+</html>

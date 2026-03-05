@@ -1,0 +1,118 @@
+{
+  "paragraph": "The rate of wind energy and solar energy has increased since 2000. However, fossil fuels occupy more than half of energy materials. This situation is a problem. The governments of various countries promote renewable energy. When I was a junior high school student, I had an opportunity. At that time, I thought about a solution to improve this situation. The electric power generation in the world decreased around 2008. The electric power generation in the world also decreased around 2021. The Lehman Shock happened in 2008. The coronavirus spread in 2021. The Lehman Shock caused an economic slump. The spread of coronavirus caused an economic slump. An economic slump reduces the demand for electric power generation. The demand for electric power generation decreased. The decrease in electric power generation relates to these events. The rate of fossil fuels may remain steady. If the rate of fossil fuels remains steady then global warming will worsen. If the rate of fossil fuels remains steady then air pollution will worsen. Akita has a precious natural environment. I live in Akita. If global warming worsens then the natural environment in Akita could be negatively affected. Akita cedars grow in Akita. If global warming worsens then the growth of Akita cedars may deteriorate. The headline is: What is the solution to increase the rate of clean energy?",
+  "causal_graph": {
+    "article_id": "example_akita_energy",
+    "nodes": [
+      {
+        "id": "renewable_energy_rate",
+        "label": "Rate of renewable energy"
+      },
+      {
+        "id": "fossil_fuel_share",
+        "label": "Share of fossil fuels in energy mix"
+      },
+      {
+        "id": "gov_renewable_promotion",
+        "label": "Government promotion of renewable energy"
+      },
+      {
+        "id": "lehman_shock",
+        "label": "Lehman Shock in 2008"
+      },
+      {
+        "id": "coronavirus_spread",
+        "label": "Coronavirus spread in 2021"
+      },
+      {
+        "id": "economic_slump",
+        "label": "Economic slump"
+      },
+      {
+        "id": "demand_for_electric_power",
+        "label": "Demand for electric power generation"
+      },
+      {
+        "id": "electric_power_generation",
+        "label": "Electric power generation"
+      },
+      {
+        "id": "global_warming",
+        "label": "Global warming"
+      },
+      {
+        "id": "air_pollution",
+        "label": "Air pollution"
+      },
+      {
+        "id": "natural_environment_akita",
+        "label": "Natural environment in Akita"
+      },
+      {
+        "id": "akita_cedar_growth",
+        "label": "Growth of Akita cedars"
+      }
+    ],
+    "edges": [
+      {
+        "source": "lehman_shock",
+        "target": "economic_slump",
+        "relationship": "causes",
+        "description": "The Lehman Shock caused an economic slump."
+      },
+      {
+        "source": "coronavirus_spread",
+        "target": "economic_slump",
+        "relationship": "causes",
+        "description": "The spread of coronavirus caused an economic slump."
+      },
+      {
+        "source": "economic_slump",
+        "target": "demand_for_electric_power",
+        "relationship": "reduces",
+        "description": "An economic slump reduces the demand for electric power generation."
+      },
+      {
+        "source": "demand_for_electric_power",
+        "target": "electric_power_generation",
+        "relationship": "determines",
+        "description": "Lower demand leads to decreased electric power generation."
+      },
+      {
+        "source": "fossil_fuel_share",
+        "target": "global_warming",
+        "relationship": "worsens",
+        "description": "If the rate of fossil fuels remains steady then global warming will worsen."
+      },
+      {
+        "source": "fossil_fuel_share",
+        "target": "air_pollution",
+        "relationship": "worsens",
+        "description": "If the rate of fossil fuels remains steady then air pollution will worsen."
+      },
+      {
+        "source": "global_warming",
+        "target": "natural_environment_akita",
+        "relationship": "negatively_affects",
+        "description": "If global warming worsens, the natural environment in Akita could be negatively affected."
+      },
+      {
+        "source": "global_warming",
+        "target": "akita_cedar_growth",
+        "relationship": "deteriorates",
+        "description": "If global warming worsens, the growth of Akita cedars may deteriorate."
+      },
+      {
+        "source": "gov_renewable_promotion",
+        "target": "renewable_energy_rate",
+        "relationship": "increases",
+        "description": "Government promotion of renewable energy increases the rate of renewable energy."
+      },
+      {
+        "source": "renewable_energy_rate",
+        "target": "fossil_fuel_share",
+        "relationship": "reduces",
+        "description": "Increasing renewable energy can reduce the share of fossil fuels."
+      }
+    ]
+  }
+}
