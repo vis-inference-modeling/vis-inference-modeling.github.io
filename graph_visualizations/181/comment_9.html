@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 9</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -147,6 +186,8 @@ Our title for the graph is “Ember’s Evaluation of the Evolution of Electrici
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 9;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "We evaluated a graph.", "cluster_label": "S2: The commenter describes looking at or examining the graph or its sub-graphs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "The graph is titled \"World electricity generation\".", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "Ember published the graph.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 3, "sentence": "The graph is from 2022.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 4, "sentence": "The graph displays the types of energy used in the world.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 5, "sentence": "The graph displays the amounts of energy used in the world.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 6, "sentence": "The graph covers the period from 2000 to the 2020s.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 7, "sentence": "There are separate graphs.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 8, "sentence": "One separate graph documents the energy usage of the United States.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 9, "sentence": "One separate graph documents the energy usage of China.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 10, "sentence": "One separate graph documents the energy usage of India.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 11, "sentence": "These separate graphs cover the period from 2000 to the 2020s.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 12, "sentence": "The overall energy usage worldwide increases over time.", "cluster_label": "S103: Energy consumption has increased significantly since 2000 and most of the energy growth comes from renewable or clean energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "Nuclear energy is the most prominent energy source in the graph.", "cluster_label": "S14: Nuclear energy generates the most electricity overall.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "Coal is the least prominent energy source in the graph.", "cluster_label": "S230: Coal is the least prominent energy source in the graph.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "Worldwide energy usage decreased around 2008.", "cluster_label": "S2: World electricity generation has dips around 2008 and around 2019-2021.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 16, "sentence": "Worldwide energy usage decreased around 2020.", "cluster_label": "S2: World electricity generation has dips around 2008 and around 2019-2021.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 17, "sentence": "The housing crisis happened in 2008.", "cluster_label": "S26: Major crises around 2008 and the COVID-19 pandemic caused economic hardship or slumps.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "The coronavirus pandemic happened around 2020.", "cluster_label": "S26: Major crises around 2008 and the COVID-19 pandemic caused economic hardship or slumps.", "category": "Background knowledge", "color": "#d62728"}, {"id": 19, "sentence": "The housing crisis caused economic hardship.", "cluster_label": "S26: Major crises around 2008 and the COVID-19 pandemic caused economic hardship or slumps.", "category": "Background knowledge", "color": "#d62728"}, {"id": 20, "sentence": "The coronavirus pandemic caused economic hardship.", "cluster_label": "S26: Major crises around 2008 and the COVID-19 pandemic caused economic hardship or slumps.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "The decreases in worldwide energy usage probably correspond to these economic hardships.", "cluster_label": "S1: Economic recessions or the COVID-19 pandemic may cause dips or decreases in energy demand or usage.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 22, "sentence": "We wonder what the data looked like before 2000.", "cluster_label": "S57: The author wonders how much the total amount of global electricity generation has changed over this period.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 23, "sentence": "Clean energy seems to be a relatively new phenomenon.", "cluster_label": "S38: Clean energy seems to be a relatively new phenomenon.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 24, "sentence": "We wonder why the energy usage of India is low compared to the energy usage of the United States.", "cluster_label": "S64: The author wonders why India generates less electricity than the United States.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 25, "sentence": "We wonder why the energy usage of India is low compared to the energy usage of China.", "cluster_label": "S45: The author wonders why China uses much more energy or power than India and why the United States uses more power than India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 26, "sentence": "This topic is important.", "cluster_label": "S10: The topic or information is impactful or important.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 27, "sentence": "We use energy every day.", "cluster_label": "S14: Electricity is required for technology and everyday life and energy use is high and increasing.", "category": "Background knowledge", "color": "#d62728"}, {"id": 28, "sentence": "It is useful to know the main types of energy that are used.", "cluster_label": "S5: People should be informed and educated about electricity and energy information.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 29, "sentence": "The graph gives more insight into how different countries operate.", "cluster_label": "S17: The commenter describes separate country graphs or specific country electricity-generation graphs being included.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 30, "sentence": "Our title for the graph is \"Ember's Evaluation of the Evolution of Electricity\".", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 0, "target": 3}, {"source": 0, "target": 4}, {"source": 1, "target": 4}, {"source": 0, "target": 5}, {"source": 1, "target": 5}, {"source": 0, "target": 6}, {"source": 1, "target": 6}, {"source": 0, "target": 7}, {"source": 1, "target": 7}, {"source": 7, "target": 8}, {"source": 7, "target": 9}, {"source": 7, "target": 10}, {"source": 7, "target": 11}, {"source": 6, "target": 11}, {"source": 5, "target": 12}, {"source": 6, "target": 12}, {"source": 4, "target": 13}, {"source": 4, "target": 14}, {"source": 5, "target": 15}, {"source": 6, "target": 15}, {"source": 5, "target": 16}, {"source": 6, "target": 16}, {"source": 17, "target": 19}, {"source": 18, "target": 20}, {"source": 15, "target": 21}, {"source": 16, "target": 21}, {"source": 19, "target": 21}, {"source": 20, "target": 21}, {"source": 6, "target": 22}, {"source": 4, "target": 23}, {"source": 6, "target": 23}, {"source": 8, "target": 24}, {"source": 10, "target": 24}, {"source": 9, "target": 25}, {"source": 10, "target": 25}, {"source": 0, "target": 26}, {"source": 26, "target": 28}, {"source": 27, "target": 28}, {"source": 4, "target": 28}, {"source": 7, "target": 29}, {"source": 8, "target": 29}, {"source": 9, "target": 29}, {"source": 10, "target": 29}, {"source": 0, "target": 30}, {"source": 2, "target": 30}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -178,9 +219,16 @@ Our title for the graph is “Ember’s Evaluation of the Evolution of Electrici
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -229,7 +277,7 @@ Our title for the graph is “Ember’s Evaluation of the Evolution of Electrici
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -400,25 +448,64 @@ Our title for the graph is “Ember’s Evaluation of the Evolution of Electrici
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 73</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -141,6 +180,8 @@ A title could be &quot;Electricity generation of 2000s: A path toward cleaner en
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 73;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "I noticed a general upward trend in electricity generation.", "cluster_label": "S2: World electricity generation has dips around 2008 and around 2019-2021.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "China has the greatest rate of change in electricity generation.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "The US stays somewhat constant in electricity generation.", "cluster_label": "S22: United States electricity generation is relatively stable or stagnant over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "In all countries, cleaner energy is dominant.", "cluster_label": "S9: Clean electricity produces more electricity than fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "I wonder why the US has not seen a significant shift in electricity generation.", "cluster_label": "S7: The author wonders why electricity generation in the United States has plateaued or stayed flat and whether similar plateaus occur in other Western developed countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 5, "sentence": "I wonder why China has seen a significant upward shift in electricity generation.", "cluster_label": "S8: The author wonders why electricity generation in China has increased rapidly and why China differs from the United States or India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 6, "sentence": "I wonder why the US is the only country that has seen a decrease in coal electricity production.", "cluster_label": "S7_new: The author wonders why the US is the only country that has seen a decrease in coal electricity production.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 7, "sentence": "I wonder what the graphs of other countries look like.", "cluster_label": "S40: The author wonders about variability in electricity source mix across countries or regions and what other countries' graphs look like.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "This relates to me and my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 9, "sentence": "The US is on a trend to eliminate non-clean electricity generation.", "cluster_label": "S5: Clean or renewable energy will increase or scale up in the future and may become the dominant electricity source.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 10, "sentence": "When I am older, the US will probably phase out non-clean electricity generation.", "cluster_label": "S5: Clean or renewable energy will increase or scale up in the future and may become the dominant electricity source.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 11, "sentence": "I wonder if the constant trend indicates that the US economy is not growing as fast.", "cluster_label": "S26: The economy plays a role in electricity generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 12, "sentence": "A title could be \"Electricity generation of 2000s: A path toward cleaner energy\".", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 2, "target": 4}, {"source": 1, "target": 5}, {"source": 2, "target": 6}, {"source": 3, "target": 6}, {"source": 0, "target": 7}, {"source": 1, "target": 7}, {"source": 2, "target": 7}, {"source": 2, "target": 8}, {"source": 3, "target": 8}, {"source": 3, "target": 9}, {"source": 9, "target": 10}, {"source": 2, "target": 11}, {"source": 0, "target": 12}, {"source": 3, "target": 12}, {"source": 9, "target": 12}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -172,9 +213,16 @@ A title could be &quot;Electricity generation of 2000s: A path toward cleaner en
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -223,7 +271,7 @@ A title could be &quot;Electricity generation of 2000s: A path toward cleaner en
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -394,25 +442,64 @@ A title could be &quot;Electricity generation of 2000s: A path toward cleaner en
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

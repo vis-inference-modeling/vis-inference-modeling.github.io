@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 136</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -145,6 +184,8 @@ India does not produce very much energy at all compared to the other countries a
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 136;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "The graphs show total energy generation by country.", "cluster_label": "S3: The graph(s) show electricity generation or energy generation/production (including global and country-level views).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "The text says that the graphs exclude imports and exports.", "cluster_label": "S20: The release or text states that the graphs exclude imports and exports.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "Therefore the graphs probably do not represent energy usage by that country.", "cluster_label": "S11: Graphs of energy generation may not equal energy usage or consumption because of net imports or exports.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 3, "sentence": "Some countries are net importers of energy.", "cluster_label": "S25: A nation can be a net importer or a net exporter of energy and this depends on consumption versus generation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "If a country is a net importer of energy then the total energy consumption of the country is higher than the total energy generation of the country.", "cluster_label": "S25: A nation can be a net importer or a net exporter of energy and this depends on consumption versus generation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "Some countries are net exporters of energy.", "cluster_label": "S25: A nation can be a net importer or a net exporter of energy and this depends on consumption versus generation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "If a country is a net exporter of energy then the total energy consumption of the country is lower than the total energy generation of the country.", "cluster_label": "S25: A nation can be a net importer or a net exporter of energy and this depends on consumption versus generation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "The graphs show trends in energy production.", "cluster_label": "S3: The graph(s) show electricity generation or energy generation/production (including global and country-level views).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 8, "sentence": "Overall energy production has nearly doubled in 22 years.", "cluster_label": "S205: The electricity generation in the world almost doubled from about 15 million gigawatt-hours to about 30 million gigawatt-hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "Coal and gas make up the largest part of the market.", "cluster_label": "S10: Coal and gas are the largest or main energy sources globally.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "Wind production is increasing at the fastest rate.", "cluster_label": "S2: World electricity generation has dips around 2008 and around 2019-2021.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "Solar production is increasing at the fastest rate.", "cluster_label": "S2: World electricity generation has dips around 2008 and around 2019-2021.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "Nuclear production has slightly reduced.", "cluster_label": "S72: Overall energy production in the United States stayed fairly steady over 22 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "Other energy production has slightly reduced.", "cluster_label": "S104: Hydroelectric energy is not underrepresented in the graph.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "Hydro production has slightly increased.", "cluster_label": "S101: Other renewable energy has increased steadily since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "There is a dip in energy production around 2008.", "cluster_label": "S2: World electricity generation has dips around 2008 and around 2019-2021.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 16, "sentence": "There is a dip in energy production around 2019.", "cluster_label": "S2: World electricity generation has dips around 2008 and around 2019-2021.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 17, "sentence": "The dip around 2008 is less pronounced in coal production.", "cluster_label": "S67: Coal production dips around 2008 and 2019 are less pronounced.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "The dip around 2019 is less pronounced in coal production.", "cluster_label": "S67: Coal production dips around 2008 and 2019 are less pronounced.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "I do not know what caused these dips.", "cluster_label": "S25: The author wonders what caused dips or fluctuations in electricity generation, including world-level fluctuations.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 20, "sentence": "The Global Financial Crisis happened around 2008.", "cluster_label": "S26: Major crises around 2008 and the COVID-19 pandemic caused economic hardship or slumps.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "COVID-19 happened around 2019.", "cluster_label": "S26: Major crises around 2008 and the COVID-19 pandemic caused economic hardship or slumps.", "category": "Background knowledge", "color": "#d62728"}, {"id": 22, "sentence": "These events may have caused the dips.", "cluster_label": "S1: Economic recessions or the COVID-19 pandemic may cause dips or decreases in energy demand or usage.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 23, "sentence": "China produces the most coal.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 24, "sentence": "Coal production in China has increased around 4 times since 2000.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 25, "sentence": "China looks to be the biggest coal producer in the world.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 26, "sentence": "The United States is a country.", "cluster_label": "S13: China and India and the United States are countries or nations.", "category": "Background knowledge", "color": "#d62728"}, {"id": 27, "sentence": "Coal production in the United States has decreased by more than half since 2000.", "cluster_label": "S69: Coal production in the United States decreased by more than half since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 28, "sentence": "Oil production in the United States has increased since 2000.", "cluster_label": "S70: Oil production in the United States increased since 2000 and oil and gas production stayed fairly steady in total.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 29, "sentence": "Oil production and gas production in the United States have stayed fairly steady in total.", "cluster_label": "S70: Oil production in the United States increased since 2000 and oil and gas production stayed fairly steady in total.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 30, "sentence": "Oil production and gas production in the United States make up more than half of overall energy production in the United States.", "cluster_label": "S71: Oil and gas production in the United States make up more than half of overall energy production in the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 31, "sentence": "Overall energy production in the United States has stayed fairly steady over 22 years.", "cluster_label": "S72: Overall energy production in the United States stayed fairly steady over 22 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 32, "sentence": "India produces much less energy than the other countries.", "cluster_label": "S23: India electricity generation is lower than China and lower than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 33, "sentence": "Energy production in India is mostly coal production.", "cluster_label": "Energy production in India is mostly coal production.", "category": "Visual data extraction", "color": "#ff7f0e"}];
   const links = [{"source": 0, "target": 2}, {"source": 1, "target": 2}, {"source": 4, "target": 2}, {"source": 6, "target": 2}, {"source": 3, "target": 4}, {"source": 5, "target": 6}, {"source": 0, "target": 7}, {"source": 7, "target": 8}, {"source": 7, "target": 9}, {"source": 7, "target": 10}, {"source": 7, "target": 11}, {"source": 7, "target": 12}, {"source": 7, "target": 13}, {"source": 7, "target": 14}, {"source": 7, "target": 15}, {"source": 7, "target": 16}, {"source": 15, "target": 17}, {"source": 9, "target": 17}, {"source": 16, "target": 18}, {"source": 9, "target": 18}, {"source": 15, "target": 19}, {"source": 16, "target": 19}, {"source": 15, "target": 22}, {"source": 16, "target": 22}, {"source": 20, "target": 22}, {"source": 21, "target": 22}, {"source": 7, "target": 23}, {"source": 9, "target": 23}, {"source": 23, "target": 24}, {"source": 23, "target": 25}, {"source": 24, "target": 25}, {"source": 26, "target": 27}, {"source": 7, "target": 27}, {"source": 26, "target": 28}, {"source": 7, "target": 28}, {"source": 26, "target": 29}, {"source": 28, "target": 29}, {"source": 26, "target": 30}, {"source": 29, "target": 30}, {"source": 31, "target": 30}, {"source": 26, "target": 31}, {"source": 7, "target": 31}, {"source": 7, "target": 32}, {"source": 32, "target": 33}, {"source": 9, "target": 33}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -176,9 +217,16 @@ India does not produce very much energy at all compared to the other countries a
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -227,7 +275,7 @@ India does not produce very much energy at all compared to the other countries a
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -398,25 +446,64 @@ India does not produce very much energy at all compared to the other countries a
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

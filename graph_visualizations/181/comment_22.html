@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 22</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -141,6 +180,8 @@ Signing off – Sharon Hessney from Boston, who wonders if we can generate and t
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 22;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "Many students responded.", "cluster_label": "S31: The commenter says that many students responded or that the moderator enjoyed moderating.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "I thank all students who responded.", "cluster_label": "S9: The author thanks participants or commenters, or a person greets or signs off.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "We received some catchy headlines.", "cluster_label": "S28: The commenter says that the release or Reveal includes summaries, questions, Stat Nuggets, or shout-outs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 3, "sentence": "Isabelle is a student of California Polytechnic State University in San Luis Obispo.", "cluster_label": "S10: A person is identified with a location or school affiliation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 4, "sentence": "Isabelle wrote the headline \"The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix\".", "cluster_label": "Isabelle wrote the headline \"The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix\".", "category": "Meta / paratext", "color": "#17becf"}, {"id": 5, "sentence": "Esmeralda is a student of Perth Amboy High School in New Jersey.", "cluster_label": "S10: A person is identified with a location or school affiliation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 6, "sentence": "Esmeralda wrote the headline \"Our World's Powerhouse: Clean Energy and Fossil Fuels\".", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 7, "sentence": "Melina is a student of Marble Hill High School for International Studies in the Bronx in New York.", "cluster_label": "S10: A person is identified with a location or school affiliation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 8, "sentence": "Melina wrote the headline \"The World's Electricity: Clean or Dirty?\".", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 9, "sentence": "Emma is a student from California.", "cluster_label": "S10: A person is identified with a location or school affiliation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 10, "sentence": "Emma wrote the headline \"Power Dynamics: Global Energy Shift Towards Renewables, Challenges Fossil Fuel Reliance\".", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 11, "sentence": "Jackson is a student from California.", "cluster_label": "S10: A person is identified with a location or school affiliation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 12, "sentence": "Jackson wrote the headline \"Fueling the Future: Cleaning Up Our Energy\".", "cluster_label": "Jackson wrote the headline \"Fueling the Future: Cleaning Up Our Energy\".", "category": "Meta / paratext", "color": "#17becf"}, {"id": 13, "sentence": "Curtis is a student from California.", "cluster_label": "S10: A person is identified with a location or school affiliation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 14, "sentence": "Curtis wrote the headline \"Powering Progress: The Rise of Renewable Energy\".", "cluster_label": "Curtis wrote the headline \"Powering Progress: The Rise of Renewable Energy\".", "category": "Meta / paratext", "color": "#17becf"}, {"id": 15, "sentence": "You must return on Friday.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 16, "sentence": "On Friday, we will reveal a free link to the article.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 17, "sentence": "The article includes this graph.", "cluster_label": "S30: The commenter says that the article includes this graph.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 18, "sentence": "The Reveal includes a summary of the topic.", "cluster_label": "S28: The commenter says that the release or Reveal includes summaries, questions, Stat Nuggets, or shout-outs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 19, "sentence": "The Reveal includes additional questions.", "cluster_label": "S28: The commenter says that the release or Reveal includes summaries, questions, Stat Nuggets, or shout-outs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 20, "sentence": "The Reveal includes shout-outs for some of the best headlines for the graph.", "cluster_label": "S28: The commenter says that the release or Reveal includes summaries, questions, Stat Nuggets, or shout-outs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 21, "sentence": "The Reveal includes Stat Nuggets.", "cluster_label": "S28: The commenter says that the release or Reveal includes summaries, questions, Stat Nuggets, or shout-outs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 22, "sentence": "Stat Nuggets are definitions of words.", "cluster_label": "S28: The commenter says that the release or Reveal includes summaries, questions, Stat Nuggets, or shout-outs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 23, "sentence": "These words relate to the graph.", "cluster_label": "S14: The commenter states that the topic is energy and power or that the graph is about electricity.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 24, "sentence": "The Reveal tells where you can find these words in the graph.", "cluster_label": "S28: The commenter says that the release or Reveal includes summaries, questions, Stat Nuggets, or shout-outs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 25, "sentence": "We will release the next graph by Friday, April 12.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 26, "sentence": "We will live-moderate the next graph on Wednesday, April 17.", "cluster_label": "S4: The author or release provides meta instructions, reminders, or event logistics for participation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 27, "sentence": "The topic is shrinkflation.", "cluster_label": "S13: The commenter states that the topic is shrinkflation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 28, "sentence": "Sharon Hessney signs off.", "cluster_label": "S9: The author thanks participants or commenters, or a person greets or signs off.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 29, "sentence": "Sharon Hessney is from Boston.", "cluster_label": "S10: A person is identified with a location or school affiliation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 30, "sentence": "Sharon Hessney wonders if we can generate enough electricity for all electrical items that we have now.", "cluster_label": "S19: Electricity generation and transmission capacity may or may not be sufficient for future demand.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 31, "sentence": "Sharon Hessney wonders if we can transmit enough electricity for all electrical items that we have now.", "cluster_label": "S19: Electricity generation and transmission capacity may or may not be sufficient for future demand.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 32, "sentence": "Rebecca Nichols signs off.", "cluster_label": "S9: The author thanks participants or commenters, or a person greets or signs off.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 33, "sentence": "Rebecca Nichols is from Anchorage.", "cluster_label": "S10: A person is identified with a location or school affiliation.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 34, "sentence": "Rebecca Nichols enjoyed her first time moderating.", "cluster_label": "S31: The commenter says that many students responded or that the moderator enjoyed moderating.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 2, "target": 4}, {"source": 3, "target": 4}, {"source": 2, "target": 6}, {"source": 5, "target": 6}, {"source": 2, "target": 8}, {"source": 7, "target": 8}, {"source": 2, "target": 10}, {"source": 9, "target": 10}, {"source": 2, "target": 12}, {"source": 11, "target": 12}, {"source": 2, "target": 14}, {"source": 13, "target": 14}, {"source": 15, "target": 16}, {"source": 16, "target": 17}, {"source": 16, "target": 18}, {"source": 16, "target": 19}, {"source": 2, "target": 20}, {"source": 16, "target": 20}, {"source": 17, "target": 20}, {"source": 16, "target": 21}, {"source": 21, "target": 22}, {"source": 17, "target": 23}, {"source": 22, "target": 23}, {"source": 16, "target": 24}, {"source": 22, "target": 24}, {"source": 23, "target": 24}, {"source": 25, "target": 26}, {"source": 28, "target": 29}, {"source": 28, "target": 30}, {"source": 28, "target": 31}, {"source": 32, "target": 33}, {"source": 32, "target": 34}];
   const legendItems = [{"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -172,9 +213,16 @@ Signing off – Sharon Hessney from Boston, who wonders if we can generate and t
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -223,7 +271,7 @@ Signing off – Sharon Hessney from Boston, who wonders if we can generate and t
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -394,25 +442,64 @@ Signing off – Sharon Hessney from Boston, who wonders if we can generate and t
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

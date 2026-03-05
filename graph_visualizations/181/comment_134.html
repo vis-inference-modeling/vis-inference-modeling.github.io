@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 134</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -135,6 +174,8 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 134;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "In recent years, many countries have increased wind electricity generation.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "In recent years, many countries have increased solar electricity generation.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "The USA leveled out its coal use.", "cluster_label": "S69: Coal production in the United States decreased by more than half since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "The USA decreased its coal use.", "cluster_label": "S69: Coal production in the United States decreased by more than half since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "China significantly increased its coal use.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "I wonder why wind electricity generation has not drastically increased in the last couple of years.", "cluster_label": "S66: The author wonders why wind and solar generation increased and why coal declined.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 6, "sentence": "I wonder why solar electricity generation has not drastically increased in the last couple of years.", "cluster_label": "S66: The author wonders why wind and solar generation increased and why coal declined.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 7, "sentence": "People often say that solar energy is good.", "cluster_label": "S5: Wind power and solar power are clean or renewable energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "People often say that wind power is good.", "cluster_label": "S5: Wind power and solar power are clean or renewable energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 9, "sentence": "I expected that wind electricity generation would have drastically increased in many places by now.", "cluster_label": "S22: People expected wind and solar electricity generation to have increased drastically by now.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 10, "sentence": "I expected that solar electricity generation would have drastically increased in many places by now.", "cluster_label": "S22: People expected wind and solar electricity generation to have increased drastically by now.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 11, "sentence": "I wonder if some countries are not developed.", "cluster_label": "S41: The author wonders whether some countries are not developed or not financially able.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "I wonder if some countries are not financially able.", "cluster_label": "S41: The author wonders whether some countries are not developed or not financially able.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 13, "sentence": "This situation applies to my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 14, "sentence": "In my community, several areas have many wind turbines.", "cluster_label": "S6: My community has or is near renewable energy infrastructure such as wind farms or wind turbines.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 15, "sentence": "In my community, people try to convert to more solar power.", "cluster_label": "S5: People in my community or my household install or consider installing solar panels or convert to solar power.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 16, "sentence": "The headline is: Wind to coal, for our energy, what is our main goal?", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 5}, {"source": 9, "target": 5}, {"source": 1, "target": 6}, {"source": 10, "target": 6}, {"source": 8, "target": 9}, {"source": 7, "target": 10}, {"source": 5, "target": 11}, {"source": 6, "target": 11}, {"source": 5, "target": 12}, {"source": 6, "target": 12}, {"source": 11, "target": 13}, {"source": 12, "target": 13}, {"source": 13, "target": 14}, {"source": 13, "target": 15}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -166,9 +207,16 @@
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -217,7 +265,7 @@
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -388,25 +436,64 @@
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

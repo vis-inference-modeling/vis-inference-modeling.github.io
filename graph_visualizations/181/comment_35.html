@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 35</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -137,6 +176,8 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 35;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "I looked at the world graph.", "cluster_label": "S2: The commenter describes looking at or examining the graph or its sub-graphs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "I noticed that fossil fuels remained the source that generated the most electricity from 2000 to 2020.", "cluster_label": "S153: In 2024, fossil fuels are still the most used resource for electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "The electricity generation from gas increased slightly from 2000 to 2020.", "cluster_label": "S41: Gas and coal generation increase slightly from 2000 to 2020.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "The electricity generation from coal increased slightly from 2000 to 2020.", "cluster_label": "S41: Gas and coal generation increase slightly from 2000 to 2020.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "The electricity generation from nuclear energy remained generally the same from 2000 to 2020.", "cluster_label": "S87: The worldwide nuclear electricity generation has barely changed since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "The electricity generation from nuclear energy was about 2 million gigawatt hours.", "cluster_label": "S253: In the world, nuclear electricity generation was about 2 million gigawatt hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "The electricity generation from hydroelectric sources remained generally the same from 2000 to 2020.", "cluster_label": "S87: The worldwide nuclear electricity generation has barely changed since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "The electricity generation from hydroelectric sources was about 5 million gigawatt hours.", "cluster_label": "The electricity generation from hydroelectric sources was about 5 million gigawatt hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "The electricity generation from oil remained generally the same from 2000 to 2020.", "cluster_label": "S17: Oil and other sources are steady or flat over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The electricity generation from oil was about 1 million gigawatt hours.", "cluster_label": "The electricity generation from oil was about 1 million gigawatt hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "The electricity generation from other sources remained generally the same from 2000 to 2020.", "cluster_label": "S17: Oil and other sources are steady or flat over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "The electricity generation from other sources was about 1 million gigawatt hours.", "cluster_label": "S101: Other renewable energy has increased steadily since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "The electricity generation from wind energy increased greatly from 2000 to 2020.", "cluster_label": "S114: Wind power increases and solar power increases.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "The electricity generation from solar energy increased greatly from 2000 to 2020.", "cluster_label": "S114: Wind power increases and solar power increases.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "From 2000 to 2010, wind energy was barely used to produce electricity.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "From 2000 to 2010, solar energy was barely used to produce electricity.", "cluster_label": "S6: Wind energy and solar energy increase strongly, especially after about 2010.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 16, "sentence": "From 2000 to 2020, the electricity generation from wind energy and solar energy rose steadily.", "cluster_label": "S114: Wind power increases and solar power increases.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 17, "sentence": "In 2020, the electricity generation from wind energy and solar energy was about 4 million gigawatt hours.", "cluster_label": "S235: The worldwide wind generation and solar generation increased from about 0 GWh to about 3 million GWh since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "I looked at the country totals graphs.", "cluster_label": "S2: The commenter describes looking at or examining the graph or its sub-graphs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 19, "sentence": "In China, the use of coal increased.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 20, "sentence": "In India, the use of coal increased.", "cluster_label": "S35: Coal use decreases in the United States but increases in China and India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 21, "sentence": "In the United States, the use of coal decreased.", "cluster_label": "S69: Coal production in the United States decreased by more than half since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 22, "sentence": "Some countries have climate change goals.", "cluster_label": "S102: Some statements describe the United States and China and India having climate change goals.", "category": "Background knowledge", "color": "#d62728"}, {"id": 23, "sentence": "I wonder how the data will change when countries come closer to their climate change goals.", "cluster_label": "S7: People wonder or predict how the graph, data, or trends will change in the future.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 24, "sentence": "I wonder whether the electricity generation from clean energy will increase more than the electricity generation from fossil fuels.", "cluster_label": "S7: People wonder or predict how the graph, data, or trends will change in the future.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 25, "sentence": "I wonder what the data was before 2000.", "cluster_label": "S57: The author wonders how much the total amount of global electricity generation has changed over this period.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 26, "sentence": "The electricity generation in the United States was more steady from 2000 to 2020 than the electricity generation in China and India.", "cluster_label": "S216: United States electricity generation is more steady than China and India from 2000 to 2020.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 27, "sentence": "I wonder why the electricity generation in the United States was more steady from 2000 to 2020 than the electricity generation in China and India.", "cluster_label": "S12_new_2: The author wonders why the electricity generation in the United States was more steady from 2000 to 2020 than the electricity generation in China and India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 28, "sentence": "This relates to my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 29, "sentence": "The United States generates electricity.", "cluster_label": "S37: The United States generates electricity with clean power or with fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 30, "sentence": "The United States generates electricity with clean power or with fossil fuels.", "cluster_label": "S37: The United States generates electricity with clean power or with fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 31, "sentence": "If the United States generates electricity with clean power, then the economy will be impacted.", "cluster_label": "S17: Clean energy shifts can affect the economy, costs, and fossil-dependent communities, and can influence local policy and infrastructure.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 32, "sentence": "If the United States generates electricity with fossil fuels, then the economy will be impacted.", "cluster_label": "S17: Clean energy shifts can affect the economy, costs, and fossil-dependent communities, and can influence local policy and infrastructure.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 33, "sentence": "The economy affects economic development.", "cluster_label": "S63: Some statements describe the economy affecting economic development.", "category": "Background knowledge", "color": "#d62728"}, {"id": 34, "sentence": "The headline is: Shocking News: Coal Remains as the Top Producer of Energy in the World.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 0, "target": 3}, {"source": 0, "target": 4}, {"source": 4, "target": 5}, {"source": 0, "target": 6}, {"source": 6, "target": 7}, {"source": 0, "target": 8}, {"source": 8, "target": 9}, {"source": 0, "target": 10}, {"source": 10, "target": 11}, {"source": 0, "target": 12}, {"source": 0, "target": 13}, {"source": 12, "target": 14}, {"source": 13, "target": 15}, {"source": 12, "target": 16}, {"source": 13, "target": 16}, {"source": 16, "target": 17}, {"source": 18, "target": 19}, {"source": 18, "target": 20}, {"source": 18, "target": 21}, {"source": 22, "target": 23}, {"source": 18, "target": 23}, {"source": 0, "target": 23}, {"source": 1, "target": 24}, {"source": 16, "target": 24}, {"source": 0, "target": 25}, {"source": 18, "target": 26}, {"source": 26, "target": 27}, {"source": 21, "target": 28}, {"source": 26, "target": 28}, {"source": 29, "target": 30}, {"source": 30, "target": 31}, {"source": 30, "target": 32}, {"source": 1, "target": 34}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -168,9 +209,16 @@
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -219,7 +267,7 @@
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -390,25 +438,64 @@
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

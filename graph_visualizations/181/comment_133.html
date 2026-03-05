@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 133</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -141,6 +180,8 @@ Since living in California I have seen a shift in energy consumption just in my 
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 133;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "I noticed that the electricity generation in the world has increased significantly in the last 20 years.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The electricity generation in the world almost doubled from about 15 million gigawatt-hours to about 30 million gigawatt-hours.", "cluster_label": "S126: The electricity generation in the world increased greatly in 20 years and renewable power sources surpassed 25 million gigawatt hours.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "The graph shows that the world still relies heavily on fossil fuels for more than half of its electricity generation.", "cluster_label": "S8: Fossil fuels are the majority or dominant source of world electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Coal is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 4, "sentence": "Gas is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 5, "sentence": "The usage of coal rose slightly.", "cluster_label": "S4: Fossil-fuel electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "The usage of gas rose slightly.", "cluster_label": "S4: Fossil-fuel electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Clean energy usage increased.", "cluster_label": "S3: Clean electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Wind power accounts for a higher proportion of electricity generation.", "cluster_label": "Wind power accounts for a higher proportion of electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "Solar power accounts for a higher proportion of electricity generation.", "cluster_label": "Solar power accounts for a higher proportion of electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "Other graphs show the composition of electricity generation in various countries.", "cluster_label": "S3: The graph(s) show electricity generation or energy generation/production (including global and country-level views).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 11, "sentence": "The composition of electricity generation is diverse in these countries.", "cluster_label": "S64: The composition of electricity generation is diverse in these countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "The population of the US is relatively small compared to the population of China.", "cluster_label": "S10: The population of the United States is smaller than the population of China or India.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "The population of the US is relatively small compared to the population of India.", "cluster_label": "S11: India has a greater population than the United States.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "The amount of electricity generated by India is much lower than the amount of electricity generated by the US.", "cluster_label": "S23: India electricity generation is lower than China and lower than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "The graphs raise many questions.", "cluster_label": "S7: The graphs or differences are confusing, puzzling, or raise questions.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "One question is about the reason for fluctuations in world electricity generation.", "cluster_label": "S25: The author wonders what caused dips or fluctuations in electricity generation, including world-level fluctuations.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 17, "sentence": "World electricity generation has dips in some years.", "cluster_label": "S2: World electricity generation has dips around 2008 and around 2019-2021.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "World electricity generation had a dip in 2019.", "cluster_label": "S2: World electricity generation has dips around 2008 and around 2019-2021.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "World electricity generation had a dip in 2008.", "cluster_label": "S2: World electricity generation has dips around 2008 and around 2019-2021.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 20, "sentence": "I wonder if the decline in 2019 was due to the COVID-19 pandemic.", "cluster_label": "S1: Economic recessions or the COVID-19 pandemic may cause dips or decreases in energy demand or usage.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 21, "sentence": "I wonder if the dip in 2008 related to an economic recession.", "cluster_label": "S1: Economic recessions or the COVID-19 pandemic may cause dips or decreases in energy demand or usage.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 22, "sentence": "I live in California.", "cluster_label": "S2: I state where I live or describe my community membership.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 23, "sentence": "I have seen a shift in energy consumption in my hometown.", "cluster_label": "S17: I observed shifts in my hometown energy system such as decommissioning oil rigs and developing battery storage.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 24, "sentence": "In the last few years, some people made decisions to decommission oil rigs off the coast.", "cluster_label": "S17: I observed shifts in my hometown energy system such as decommissioning oil rigs and developing battery storage.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 25, "sentence": "In the last few years, some people developed new battery storage systems.", "cluster_label": "S17: I observed shifts in my hometown energy system such as decommissioning oil rigs and developing battery storage.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 26, "sentence": "These battery storage systems work towards being emission-free.", "cluster_label": "S88: Some statements describe battery storage systems working toward being emission-free.", "category": "Background knowledge", "color": "#d62728"}, {"id": 27, "sentence": "Overall, the graphs show how electricity generation has changed over the years.", "cluster_label": "S12: The commenter makes a generic statement about trends, interest, or analysis helping understanding.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 28, "sentence": "A catchy name could be \"The Megawatt Movement\".", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 2, "target": 3}, {"source": 2, "target": 4}, {"source": 3, "target": 5}, {"source": 4, "target": 6}, {"source": 7, "target": 8}, {"source": 7, "target": 9}, {"source": 10, "target": 11}, {"source": 10, "target": 12}, {"source": 10, "target": 13}, {"source": 10, "target": 14}, {"source": 0, "target": 15}, {"source": 2, "target": 15}, {"source": 10, "target": 15}, {"source": 15, "target": 16}, {"source": 16, "target": 17}, {"source": 17, "target": 18}, {"source": 17, "target": 19}, {"source": 18, "target": 20}, {"source": 19, "target": 21}, {"source": 22, "target": 23}, {"source": 23, "target": 24}, {"source": 23, "target": 25}, {"source": 25, "target": 26}, {"source": 0, "target": 27}, {"source": 2, "target": 27}, {"source": 7, "target": 27}, {"source": 10, "target": 27}, {"source": 17, "target": 27}, {"source": 27, "target": 28}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -172,9 +213,16 @@ Since living in California I have seen a shift in energy consumption just in my 
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -223,7 +271,7 @@ Since living in California I have seen a shift in energy consumption just in my 
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -394,25 +442,64 @@ Since living in California I have seen a shift in energy consumption just in my 
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

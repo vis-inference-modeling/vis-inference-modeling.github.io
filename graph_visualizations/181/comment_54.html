@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 54</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -138,6 +177,8 @@ New Global Data on how Electricity is Generated- How will it affect our kids in 
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 54;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "The generation of electricity increases over the years.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The world changes over the years.", "cluster_label": "S39: Some statements describe general world change and development increasing.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "More clean energy is used over the years.", "cluster_label": "S3: Clean electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Less fossil fuel is used over the years.", "cluster_label": "S29: United States fossil-fuel usage decreases over time, especially coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "There are three smaller graphs.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 5, "sentence": "Each smaller graph contains a different amount of energy use.", "cluster_label": "N25: The three countries have very different graphs.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "India has the least energy use.", "cluster_label": "S25: India uses much less energy than China and much less energy than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "China has the most energy use.", "cluster_label": "S25: India uses much less energy than China and much less energy than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "The energy that is used changes over the years.", "cluster_label": "S162: The energy that is used changes over the years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "I wonder why the used energy changes over the years.", "cluster_label": "S53: The author wonders why used energy changes over the years and how the rates in the last graphs came to be or could be achieved.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "I wonder how we can lessen energy consumption.", "cluster_label": "S11_new: The author wonders what can be done to reduce energy consumption or fossil-fuel and gas use and to make a change.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "If we lessen energy consumption, then the statistics will decrease.", "cluster_label": "S13: If energy consumption is reduced, then the statistics will decrease and the world may improve; if it is not reduced, then the world will not change for the better.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 12, "sentence": "There are three last graphs.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 13, "sentence": "I wonder how we can achieve the rates in the three last graphs.", "cluster_label": "S53: The author wonders why used energy changes over the years and how the rates in the last graphs came to be or could be achieved.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "I wonder how the rates in the three last graphs came to be.", "cluster_label": "S53: The author wonders why used energy changes over the years and how the rates in the last graphs came to be or could be achieved.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 15, "sentence": "An analysis of these rates can help to understand electricity generation.", "cluster_label": "S12: The commenter makes a generic statement about trends, interest, or analysis helping understanding.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 16, "sentence": "This topic relates to me.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 17, "sentence": "This topic relates to my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 18, "sentence": "My community generates electricity.", "cluster_label": "S20: My community generates electricity or contributes to global electricity generation and uses resources.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 19, "sentence": "Generating electricity consumes energy.", "cluster_label": "S99: Some statements describe electricity generation consuming energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 20, "sentence": "Energy should be used.", "cluster_label": "S23: Energy should be used.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 21, "sentence": "Fossil fuels can be harmful.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 22, "sentence": "To reduce fossil fuel use, some intervention is needed.", "cluster_label": "S7: Policy, legislation, environmental movements, and awareness can drive a shift toward cleaner energy and reduce fossil-fuel use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 23, "sentence": "My community may not reduce energy consumption.", "cluster_label": "S13: If energy consumption is reduced, then the statistics will decrease and the world may improve; if it is not reduced, then the world will not change for the better.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 24, "sentence": "If my community does not reduce energy consumption, then the world will not change for the better.", "cluster_label": "S13: If energy consumption is reduced, then the statistics will decrease and the world may improve; if it is not reduced, then the world will not change for the better.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 25, "sentence": "Clean energy is better than fossil fuels.", "cluster_label": "S1: Clean energy is better for the Earth than fossil fuels and increasing clean energy is good.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 26, "sentence": "Reducing energy use supports the Earth.", "cluster_label": "S4: Reducing energy use and preserving energy are important and help the Earth.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 27, "sentence": "Replacing energy sources supports the Earth less than reducing energy use.", "cluster_label": "S4: Reducing energy use and preserving energy are important and help the Earth.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 28, "sentence": "Reducing energy use is a start.", "cluster_label": "S4: Reducing energy use and preserving energy are important and help the Earth.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 29, "sentence": "Improvements are still possible.", "cluster_label": "S41: Improvements are still possible and such changes could improve the world in the future.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 30, "sentence": "The headline is: New Global Data on how Electricity is Generated- How will it affect our kids in the future?", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 4, "target": 5}, {"source": 4, "target": 6}, {"source": 5, "target": 6}, {"source": 4, "target": 7}, {"source": 5, "target": 7}, {"source": 8, "target": 9}, {"source": 10, "target": 11}, {"source": 12, "target": 13}, {"source": 12, "target": 14}, {"source": 0, "target": 15}, {"source": 12, "target": 15}, {"source": 0, "target": 16}, {"source": 18, "target": 17}, {"source": 18, "target": 19}, {"source": 19, "target": 20}, {"source": 21, "target": 22}, {"source": 18, "target": 23}, {"source": 10, "target": 23}, {"source": 1, "target": 24}, {"source": 23, "target": 24}, {"source": 21, "target": 25}, {"source": 10, "target": 26}, {"source": 26, "target": 27}, {"source": 26, "target": 28}, {"source": 28, "target": 29}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -169,9 +210,16 @@ New Global Data on how Electricity is Generated- How will it affect our kids in 
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -220,7 +268,7 @@ New Global Data on how Electricity is Generated- How will it affect our kids in 
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -391,25 +439,64 @@ New Global Data on how Electricity is Generated- How will it affect our kids in 
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 33</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -137,6 +176,8 @@ Catchy headline: Watt a Way to Save the Environment</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 33;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "Oil produced the fewest gigawatt-hours.", "cluster_label": "S13: Oil is the smallest or least-used electricity generation source.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Coal produced the most gigawatt-hours.", "cluster_label": "S12: Coal is the largest source of global electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Coal is the least environmentally friendly energy source.", "cluster_label": "S47: Some statements describe coal as leading or not clean and fossil-fuel electricity having negative side effects.", "category": "Background knowledge", "color": "#d62728"}, {"id": 3, "sentence": "Since 2000, the amount of electricity generated worldwide has increased.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Since 2000, the use of clean energy increased from 5 million gigawatt-hours to 15 million gigawatt-hours.", "cluster_label": "S47: Clean electricity rises more in recent years and clean energy consumption increases substantially in recent years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "China consumes a significant amount of electricity in the world.", "cluster_label": "N22: China produces much energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Most electricity in China comes from coal.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "The electricity consumption in China is still growing.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "The electricity consumption in the US has been relatively stable.", "cluster_label": "S238: In the United States, the energy consumption has remained about the same.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "I wonder why the US and China have different overall energy usage.", "cluster_label": "S10: The author wonders about differences in energy sources or energy profiles between countries (China, India, and the United States).", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "I wonder why the electricity production in the US stayed steady during the last 20 years.", "cluster_label": "S7: The author wonders why electricity generation in the United States has plateaued or stayed flat and whether similar plateaus occur in other Western developed countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "I wonder why the electricity production in China increased quickly during the last 20 years.", "cluster_label": "S8: The author wonders why electricity generation in China has increased rapidly and why China differs from the United States or India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 12, "sentence": "I wonder how much more expensive it is to produce electricity from clean sources than from fossil fuels.", "cluster_label": "S33: The author wonders about affordability and costs of clean electricity versus fossil-fuel electricity and the cost of switching.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 13, "sentence": "This situation affects my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 14, "sentence": "It would be better for everyone if we use clean energy sources instead of fossil fuels.", "cluster_label": "S1: Clean energy is better for the Earth than fossil fuels and increasing clean energy is good.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 15, "sentence": "Clean energy sources are more sustainable than a coal-based electricity system.", "cluster_label": "S116: Some statements describe clean energy sources being more sustainable and lasting longer than coal-based electricity.", "category": "Background knowledge", "color": "#d62728"}, {"id": 16, "sentence": "Clean energy sources are more efficient than a coal-based electricity system.", "cluster_label": "S32: Clean energy can be expensive or not feasible for every community and can differ in efficiency or cost-effectiveness.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "Clean energy sources generate more electricity than a coal-based electricity system.", "cluster_label": "S80: Some statements describe renewable energy sources being able to generate more electricity.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "Clean energy sources generate electricity for a longer time than a coal-based electricity system.", "cluster_label": "S116: Some statements describe clean energy sources being more sustainable and lasting longer than coal-based electricity.", "category": "Background knowledge", "color": "#d62728"}, {"id": 19, "sentence": "The headline is: Watt a Way to Save the Environment.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 1, "target": 2}, {"source": 3, "target": 4}, {"source": 3, "target": 5}, {"source": 5, "target": 6}, {"source": 1, "target": 6}, {"source": 5, "target": 7}, {"source": 7, "target": 9}, {"source": 8, "target": 9}, {"source": 8, "target": 10}, {"source": 7, "target": 11}, {"source": 4, "target": 12}, {"source": 1, "target": 12}, {"source": 2, "target": 13}, {"source": 6, "target": 13}, {"source": 2, "target": 14}, {"source": 4, "target": 14}, {"source": 14, "target": 15}, {"source": 14, "target": 16}, {"source": 14, "target": 17}, {"source": 14, "target": 18}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -168,9 +209,16 @@ Catchy headline: Watt a Way to Save the Environment</div>
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -219,7 +267,7 @@ Catchy headline: Watt a Way to Save the Environment</div>
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -390,25 +438,64 @@ Catchy headline: Watt a Way to Save the Environment</div>
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

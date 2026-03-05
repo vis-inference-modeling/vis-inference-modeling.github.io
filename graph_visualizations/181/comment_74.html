@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 74</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -135,6 +174,8 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 74;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "Switching fully to clean energy is crucial.", "cluster_label": "S51: People should create more clean energy and shift toward cleaner energy worldwide.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 1, "sentence": "Switching fully to clean energy can mitigate environmental damage.", "cluster_label": "S10: Fossil-fuel use causes air pollution and emissions, while renewable energy reduces pollution and improves health and climate outcomes.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 2, "sentence": "The graph is named \"World Electricity Generation\".", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 3, "sentence": "The graph shows energy trends over more than 20 years.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 4, "sentence": "The graph covers the years from 2000 to 2022.", "cluster_label": "S3: The graph(s) are described by name, title, publisher, time span, or what they depict.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 5, "sentence": "The graph reveals a global reliance on coal and gas.", "cluster_label": "S10: Coal and gas are the largest or main energy sources globally.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Coal and gas are non-renewable energy sources.", "cluster_label": "S95: Some statements describe fossil fuels as unrenewable or unsustainable resources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 7, "sentence": "Renewable energy technology has advanced.", "cluster_label": "S48: Some statements describe renewable energy technology advancing and new technology existing.", "category": "Background knowledge", "color": "#d62728"}, {"id": 8, "sentence": "Despite these advances, non-renewable energy sources dominate globally.", "cluster_label": "S9: Coal and other fossil fuels remain dominant or rise to meet demand, and various factors can explain coal trends.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 9, "sentence": "The US shifts from coal to natural gas.", "cluster_label": "S236: In the United States, coal is the only source that has decreased significantly in electricity generation over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "Natural gas is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "America has a role in clean energy innovation.", "cluster_label": "S69: Some statements describe the United States having a role in clean energy innovation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "This shift is ironic.", "cluster_label": "S40: This shift is ironic.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 13, "sentence": "This data prompts questions.", "cluster_label": "S65: The author expresses general curiosity without a specific question.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 14, "sentence": "The fossil fuel industry may influence this imbalance.", "cluster_label": "S9: Coal and other fossil fuels remain dominant or rise to meet demand, and various factors can explain coal trends.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 15, "sentence": "This imbalance maintains a high use of fossil fuels.", "cluster_label": "S9: Coal and other fossil fuels remain dominant or rise to meet demand, and various factors can explain coal trends.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 16, "sentence": "The environmental costs of fossil fuels are known.", "cluster_label": "S2: Fossil fuels and emissions harm the environment and contribute to global warming or climate change.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "I hope that these statistics influence my local policymakers.", "cluster_label": "S27: Local policymakers should be influenced by the statistics and make better, more environmentally conscious decisions.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 18, "sentence": "I have local policymakers.", "cluster_label": "S22: I have local policymakers.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 19, "sentence": "I hope that my local policymakers make better decisions.", "cluster_label": "S27: Local policymakers should be influenced by the statistics and make better, more environmentally conscious decisions.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 20, "sentence": "I hope that my local policymakers make more environmentally conscious decisions.", "cluster_label": "S27: Local policymakers should be influenced by the statistics and make better, more environmentally conscious decisions.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 21, "sentence": "These decisions concern the continued use of fossil fuels.", "cluster_label": "These decisions concern the continued use of fossil fuels.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 22, "sentence": "The headline is: \"Capturing the Disproportionality Between Renewable and Fossil Fuel Energy Sources - 2000 to 2022\".", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 1, "target": 0}, {"source": 17, "target": 0}, {"source": 17, "target": 1}, {"source": 2, "target": 3}, {"source": 2, "target": 4}, {"source": 2, "target": 5}, {"source": 3, "target": 5}, {"source": 4, "target": 5}, {"source": 5, "target": 6}, {"source": 7, "target": 8}, {"source": 6, "target": 8}, {"source": 5, "target": 9}, {"source": 9, "target": 10}, {"source": 9, "target": 12}, {"source": 11, "target": 12}, {"source": 8, "target": 12}, {"source": 2, "target": 13}, {"source": 5, "target": 13}, {"source": 8, "target": 13}, {"source": 13, "target": 14}, {"source": 8, "target": 14}, {"source": 14, "target": 15}, {"source": 8, "target": 15}, {"source": 15, "target": 16}, {"source": 2, "target": 17}, {"source": 5, "target": 17}, {"source": 8, "target": 17}, {"source": 19, "target": 17}, {"source": 18, "target": 19}, {"source": 19, "target": 20}, {"source": 16, "target": 20}, {"source": 19, "target": 21}, {"source": 15, "target": 21}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -166,9 +207,16 @@
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -217,7 +265,7 @@
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -388,25 +436,64 @@
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

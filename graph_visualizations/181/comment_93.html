@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 93</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -141,6 +180,8 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 93;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "I immediately noticed an overall upward trend in the graph.", "cluster_label": "S2: World electricity generation has dips around 2008 and around 2019-2021.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "From 2000 onwards, the amount of energy used has expanded a lot.", "cluster_label": "S103: Energy consumption has increased significantly since 2000 and most of the energy growth comes from renewable or clean energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Most of this expansion results from clean energy.", "cluster_label": "S40: In the past twenty years, the world has made advancements in becoming more eco-friendly.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 3, "sentence": "Coal has somewhat stagnated during these 20 years.", "cluster_label": "S18: Coal, gas, and oil stagnate or stay relatively stable over the last 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Gas has somewhat stagnated during these 20 years.", "cluster_label": "S18: Coal, gas, and oil stagnate or stay relatively stable over the last 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "Oil has somewhat stagnated during these 20 years.", "cluster_label": "S17: Oil and other sources are steady or flat over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "The graph uses different colors for different types of energy.", "cluster_label": "S9: The graph has axes and uses stacked, tiered color blocks with different colors for different energy types.", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 7, "sentence": "I ask what metrics or units are used to assign a color to an energy type.", "cluster_label": "S12: The author wonders what the color scale means and how colors are assigned to energy types.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "I ask if a different color relates to how clean the energy is.", "cluster_label": "S12: The author wonders what the color scale means and how colors are assigned to energy types.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 9, "sentence": "I ask if a different color relates to how fossil the energy is.", "cluster_label": "S12: The author wonders what the color scale means and how colors are assigned to energy types.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "I currently live in SLO.", "cluster_label": "S2: I state where I live or describe my community membership.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 11, "sentence": "I primarily grew up in a town.", "cluster_label": "S28: I grew up in a town that uses hydroelectric energy.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 12, "sentence": "That town uses hydroelectric energy.", "cluster_label": "S28: I grew up in a town that uses hydroelectric energy.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 13, "sentence": "The amount of energy that hydroelectric energy can produce can be substantial.", "cluster_label": "S45: Hydroelectric energy can produce a substantial amount of energy.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "Hydroelectric energy is not underrepresented in the graph.", "cluster_label": "S146: Hydroelectric power makes up the majority of the clean energy of China and nuclear power makes up the majority of the clean energy of the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "It is interesting that hydroelectric energy takes a small portion of the graph.", "cluster_label": "S8: The graphs or topic are intriguing, interesting, or capture attention.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "The headline is: ZAP! Energy Production by Energy Type: 2000 to 2020 (gigawatt hours).", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 1, "target": 2}, {"source": 1, "target": 3}, {"source": 1, "target": 4}, {"source": 1, "target": 5}, {"source": 6, "target": 7}, {"source": 6, "target": 8}, {"source": 6, "target": 9}, {"source": 11, "target": 12}, {"source": 12, "target": 13}, {"source": 6, "target": 14}, {"source": 6, "target": 15}, {"source": 14, "target": 15}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -172,9 +213,16 @@
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -223,7 +271,7 @@
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -394,25 +442,64 @@
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

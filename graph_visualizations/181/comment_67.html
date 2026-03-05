@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 67</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -138,6 +177,8 @@ Two titles I suggest would be &quot;Electricity Production Stabilizes in the U.S
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 67;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "I notice the graph.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "Coal contributes much to the electricity generation between 2000 and 2022.", "cluster_label": "S67: Coal production dips around 2008 and 2019 are less pronounced.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Gas contributes much to the electricity generation between 2000 and 2022.", "cluster_label": "N5: Gas contributes much to the electricity generation between 2000 and 2022.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "I notice the graph of China.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 4, "sentence": "The electricity production of China has increased between 2000 and 2022.", "cluster_label": "The electricity production of China has increased between 2000 and 2022.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "The use of coal in China has increased between 2000 and 2022.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "The use of gas in China has increased between 2000 and 2022.", "cluster_label": "N13: The use of gas has steadily increased.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "I notice the graph of the United States.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 8, "sentence": "The electricity production of the United States has slightly increased between 2000 and 2022.", "cluster_label": "S105: Electricity generation in the United States increases gradually.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The use of coal in the United States has significantly decreased between 2000 and 2022.", "cluster_label": "S69: Coal production in the United States decreased by more than half since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "I notice the graph of India.", "cluster_label": "S1: The visualization contains multiple graphs or charts (a set of graphs).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 11, "sentence": "The electricity production of India has increased between 2000 and 2022.", "cluster_label": "The electricity production of India has increased between 2000 and 2022.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 12, "sentence": "India relies overwhelmingly on coal for electricity production.", "cluster_label": "S34: India relies mostly on fossil fuels and has little clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "India produces less than a quarter of the electricity that China produces.", "cluster_label": "India produces less than a quarter of the electricity that China produces.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "India has a population.", "cluster_label": "S52: Some statements describe China and India having populations and China having a population and India having a population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "China has a population.", "cluster_label": "S52: Some statements describe China and India having populations and China having a population and India having a population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 16, "sentence": "The population of India is similar to the population of China.", "cluster_label": "S7: India and China have about the same population and both have more than 1 billion people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "I wonder about the clean energy of China.", "cluster_label": "S32_new: The author wonders about the clean energy of China or the United States.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 18, "sentence": "Hydroelectric power makes up the majority of the clean energy of China.", "cluster_label": "S146: Hydroelectric power makes up the majority of the clean energy of China and nuclear power makes up the majority of the clean energy of the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "I wonder about the clean energy of the United States.", "cluster_label": "S32_new: The author wonders about the clean energy of China or the United States.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 20, "sentence": "Nuclear power makes up the majority of the clean energy of the United States.", "cluster_label": "S146: Hydroelectric power makes up the majority of the clean energy of China and nuclear power makes up the majority of the clean energy of the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 21, "sentence": "I wonder about a cause of this difference.", "cluster_label": "S65: The author expresses general curiosity without a specific question.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 22, "sentence": "The countries have philosophies about hydroelectric power.", "cluster_label": "S53: Some statements describe societies and geographies of China and the United States and India and differences among them.", "category": "Background knowledge", "color": "#d62728"}, {"id": 23, "sentence": "The countries have philosophies about nuclear power.", "cluster_label": "S53: Some statements describe societies and geographies of China and the United States and India and differences among them.", "category": "Background knowledge", "color": "#d62728"}, {"id": 24, "sentence": "The difference may be due to these philosophies.", "cluster_label": "S19: Differences between countries may be due to philosophies or geography.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 25, "sentence": "China has a geography.", "cluster_label": "S53: Some statements describe societies and geographies of China and the United States and India and differences among them.", "category": "Background knowledge", "color": "#d62728"}, {"id": 26, "sentence": "The United States has a geography.", "cluster_label": "S53: Some statements describe societies and geographies of China and the United States and India and differences among them.", "category": "Background knowledge", "color": "#d62728"}, {"id": 27, "sentence": "The difference may be due to the different geography of the countries.", "cluster_label": "S19: Differences between countries may be due to philosophies or geography.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 28, "sentence": "There is a trend.", "cluster_label": "S12: The commenter makes a generic statement about trends, interest, or analysis helping understanding.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 29, "sentence": "The trend is a trend of emitting less carbon emissions.", "cluster_label": "S54: Some statements describe a trend of emitting less carbon emissions.", "category": "Background knowledge", "color": "#d62728"}, {"id": 30, "sentence": "This trend relates to our community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 31, "sentence": "A decrease in carbon emissions could slow down the effects of climate change.", "cluster_label": "S10: Fossil-fuel use causes air pollution and emissions, while renewable energy reduces pollution and improves health and climate outcomes.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 32, "sentence": "The world produces more electricity.", "cluster_label": "S1: World electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 33, "sentence": "The United States has seen a reduction in the use of coal.", "cluster_label": "S69: Coal production in the United States decreased by more than half since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 34, "sentence": "China has seen an increase in clean energy production.", "cluster_label": "S49: China clean electricity increases strongly since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 35, "sentence": "I suggest a title.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 36, "sentence": "The title is \"Electricity Production Stabilizes in the U.S.\".", "cluster_label": "The title is \"Electricity Production Stabilizes in the U.S.\".", "category": "Meta / paratext", "color": "#17becf"}, {"id": 37, "sentence": "I suggest a title.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 38, "sentence": "The title is \"Electricity Production on the Rise Around the Globe.\".", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 0, "target": 3}, {"source": 3, "target": 4}, {"source": 3, "target": 5}, {"source": 3, "target": 6}, {"source": 0, "target": 7}, {"source": 7, "target": 8}, {"source": 7, "target": 9}, {"source": 0, "target": 10}, {"source": 10, "target": 11}, {"source": 10, "target": 12}, {"source": 4, "target": 13}, {"source": 11, "target": 13}, {"source": 14, "target": 16}, {"source": 15, "target": 16}, {"source": 3, "target": 17}, {"source": 17, "target": 18}, {"source": 7, "target": 19}, {"source": 19, "target": 20}, {"source": 18, "target": 21}, {"source": 20, "target": 21}, {"source": 21, "target": 22}, {"source": 21, "target": 23}, {"source": 18, "target": 24}, {"source": 20, "target": 24}, {"source": 22, "target": 24}, {"source": 23, "target": 24}, {"source": 21, "target": 25}, {"source": 21, "target": 26}, {"source": 18, "target": 27}, {"source": 20, "target": 27}, {"source": 25, "target": 27}, {"source": 26, "target": 27}, {"source": 28, "target": 29}, {"source": 29, "target": 30}, {"source": 29, "target": 31}, {"source": 0, "target": 32}, {"source": 9, "target": 33}, {"source": 18, "target": 34}, {"source": 8, "target": 35}, {"source": 35, "target": 36}, {"source": 8, "target": 36}, {"source": 4, "target": 37}, {"source": 11, "target": 37}, {"source": 32, "target": 37}, {"source": 37, "target": 38}, {"source": 4, "target": 38}, {"source": 11, "target": 38}, {"source": 32, "target": 38}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -169,9 +210,16 @@ Two titles I suggest would be &quot;Electricity Production Stabilizes in the U.S
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -220,7 +268,7 @@ Two titles I suggest would be &quot;Electricity Production Stabilizes in the U.S
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -391,25 +439,64 @@ Two titles I suggest would be &quot;Electricity Production Stabilizes in the U.S
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 57</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -135,6 +174,8 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 57;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "I notice that every category increases rapidly over the years.", "cluster_label": "I notice that every category increases rapidly over the years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "The clean category seems to outweigh the fossil category.", "cluster_label": "S9: Clean electricity produces more electricity than fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "In other graphs, China has a significantly larger increase than the United States.", "cluster_label": "S247: In China, fossil-fuel electricity generation is larger than clean electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "In other graphs, China has a significantly larger increase than India.", "cluster_label": "In other graphs, China has a significantly larger increase than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "India has a significantly low increase.", "cluster_label": "S24: India electricity generation increases slowly or steadily over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "I wonder what countries can do to use only clean power.", "cluster_label": "S11_new: The author wonders what can be done to reduce energy consumption or fossil-fuel and gas use and to make a change.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 6, "sentence": "In the long run, using only clean power would be a goal.", "cluster_label": "In the long run, using only clean power would be a goal.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 7, "sentence": "Using only clean power is better for our planet.", "cluster_label": "S1: Clean energy is better for the Earth than fossil fuels and increasing clean energy is good.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 8, "sentence": "I wonder what it would take to reach this goal.", "cluster_label": "S57_new: The author wonders how much further total electricity generated can rise in the future.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 9, "sentence": "China has large amounts of fossil electricity.", "cluster_label": "S27: China clean electricity and fossil electricity both increase, and China relies heavily on fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "I think that this situation relates to money.", "cluster_label": "S6: Energy prices and costs influence energy choices and affect people and communities.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 11, "sentence": "In China, some people are very wealthy.", "cluster_label": "S76: Some statements describe China being granted large amounts of electricity and wealth inequality.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "Some wealthy people misuse money.", "cluster_label": "S76: Some statements describe China being granted large amounts of electricity and wealth inequality.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "China is granted large amounts of electricity.", "cluster_label": "S76: Some statements describe China being granted large amounts of electricity and wealth inequality.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "However, China still uses many unclean sources.", "cluster_label": "S27: China clean electricity and fossil electricity both increase, and China relies heavily on fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "This situation is similar to some people in the world today.", "cluster_label": "S32: This situation is similar to some people in the world today.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 16, "sentence": "Some people have a lot of money.", "cluster_label": "S76: Some statements describe China being granted large amounts of electricity and wealth inequality.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "Some people choose not to spend money on anything useful.", "cluster_label": "S76: Some statements describe China being granted large amounts of electricity and wealth inequality.", "category": "Background knowledge", "color": "#d62728"}, {"id": 18, "sentence": "Some people choose not to spend money to help other people.", "cluster_label": "S76: Some statements describe China being granted large amounts of electricity and wealth inequality.", "category": "Background knowledge", "color": "#d62728"}, {"id": 19, "sentence": "The headline is: The unfair and uneven spread of resources around our world.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 3, "target": 4}, {"source": 7, "target": 5}, {"source": 5, "target": 6}, {"source": 6, "target": 8}, {"source": 9, "target": 10}, {"source": 14, "target": 10}, {"source": 10, "target": 11}, {"source": 11, "target": 12}, {"source": 13, "target": 14}, {"source": 10, "target": 15}, {"source": 12, "target": 15}, {"source": 14, "target": 15}, {"source": 15, "target": 16}, {"source": 16, "target": 17}, {"source": 16, "target": 18}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -166,9 +207,16 @@
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -217,7 +265,7 @@
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -388,25 +436,64 @@
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

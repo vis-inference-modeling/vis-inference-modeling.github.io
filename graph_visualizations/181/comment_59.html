@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 59</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -136,6 +175,8 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 59;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "These graphs show the global use of clean fuels and fossil fuels.", "cluster_label": "S19: The commenter says that the graphs show clean fuels and fossil fuels globally or nationally.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "These graphs also show the national use of clean fuels and fossil fuels.", "cluster_label": "S19: The commenter says that the graphs show clean fuels and fossil fuels globally or nationally.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 2, "sentence": "In the global graph, the use of clean energy increases sharply.", "cluster_label": "S3: Clean electricity generation increases over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "This increase is probably due to growing environmental awareness.", "cluster_label": "S7: Policy, legislation, environmental movements, and awareness can drive a shift toward cleaner energy and reduce fossil-fuel use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 4, "sentence": "This increase is probably due to research.", "cluster_label": "S33: Economic factors, policy changes, or technological advancements could cause increases in wind or solar energy generation.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 5, "sentence": "The graph depicts the energy use of China.", "cluster_label": "S22: The commenter describes the graphs as depicting energy use and electricity use for specific countries or worldwide averages.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 6, "sentence": "In China, the use of clean fuel increases.", "cluster_label": "S49: China clean electricity increases strongly since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "In China, the use of fossil fuels also increases.", "cluster_label": "In China, the use of fossil fuels also increases.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "In China, the increase of fossil fuels is much larger than the increase of clean fuel.", "cluster_label": "S92: In China, fossil-fuel electricity generation increased from about 1 million GWh to about 5.5 million GWh.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "In China, coal is a fossil fuel.", "cluster_label": "S1: Coal and gas and oil are fossil fuels.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "In China, the use of coal increases.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "The graph depicts the energy use of the United States.", "cluster_label": "S22: The commenter describes the graphs as depicting energy use and electricity use for specific countries or worldwide averages.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 12, "sentence": "In the United States, the use of fossil fuels decreases significantly.", "cluster_label": "S29: United States fossil-fuel usage decreases over time, especially coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "The graph depicts the energy use of India.", "cluster_label": "S22: The commenter describes the graphs as depicting energy use and electricity use for specific countries or worldwide averages.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 14, "sentence": "India uses very little energy.", "cluster_label": "S23: India electricity generation is lower than China and lower than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 15, "sentence": "India is an extremely large country.", "cluster_label": "S8: India has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 16, "sentence": "India has a large population.", "cluster_label": "S8: India has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "I wonder why India uses very little energy.", "cluster_label": "S45: The author wonders why China uses much more energy or power than India and why the United States uses more power than India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 18, "sentence": "This topic relates to me and my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 19, "sentence": "If we do not care for our planet more, the world will be dirtier.", "cluster_label": "S42: If we do not care for our planet more, then the world will become dirtier and unhealthy.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 20, "sentence": "If we do not care for our planet more, the world will be unhealthy.", "cluster_label": "S42: If we do not care for our planet more, then the world will become dirtier and unhealthy.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 21, "sentence": "Future generations will live in the world.", "cluster_label": "S73: Some statements describe future generations living in the world and we being a new generation.", "category": "Background knowledge", "color": "#d62728"}, {"id": 22, "sentence": "I hope that government leaders everywhere understand the impact of using detrimental fossil fuels.", "cluster_label": "S62: Government leaders should understand the impact of using detrimental fossil fuels.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 23, "sentence": "I hope that government leaders everywhere understand the benefit of using cleaner energy sources.", "cluster_label": "S51: People should create more clean energy and shift toward cleaner energy worldwide.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 24, "sentence": "The headline is: Reaching a Cleaner Future: Energy Sources Around the World.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 2, "target": 3}, {"source": 2, "target": 4}, {"source": 1, "target": 5}, {"source": 5, "target": 6}, {"source": 5, "target": 7}, {"source": 6, "target": 8}, {"source": 7, "target": 8}, {"source": 5, "target": 9}, {"source": 5, "target": 10}, {"source": 9, "target": 10}, {"source": 1, "target": 11}, {"source": 11, "target": 12}, {"source": 1, "target": 13}, {"source": 13, "target": 14}, {"source": 15, "target": 16}, {"source": 14, "target": 17}, {"source": 15, "target": 17}, {"source": 16, "target": 17}, {"source": 0, "target": 18}, {"source": 1, "target": 18}, {"source": 18, "target": 19}, {"source": 18, "target": 20}, {"source": 18, "target": 22}, {"source": 19, "target": 22}, {"source": 20, "target": 22}, {"source": 18, "target": 23}, {"source": 19, "target": 23}, {"source": 20, "target": 23}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -167,9 +208,16 @@
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -218,7 +266,7 @@
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -389,25 +437,64 @@
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

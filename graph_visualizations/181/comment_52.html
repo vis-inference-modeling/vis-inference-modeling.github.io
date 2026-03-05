@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 52</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -135,6 +174,8 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 52;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "The graph presents three countries.", "cluster_label": "S2: The graph(s) show three countries (China, India, and the United States).", "category": "Visual feature detection", "color": "#1f77b4"}, {"id": 1, "sentence": "These three countries are the three most populated countries in the world.", "cluster_label": "S57: Some statements describe the United States and China and India as very populated and as the most populated countries.", "category": "Background knowledge", "color": "#d62728"}, {"id": 2, "sentence": "China produces much energy.", "cluster_label": "S225: The graphs show that China produces a very large amount of energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "The U.S. produces much energy.", "cluster_label": "S187: The U.S. uses more power than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "China has a great demand for energy.", "cluster_label": "S28: China and India have great demand for energy, and India may rely on fossil fuels.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 5, "sentence": "India has a great demand for energy.", "cluster_label": "S28: China and India have great demand for energy, and India may rely on fossil fuels.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 6, "sentence": "China relies heavily on energy that is produced by coal.", "cluster_label": "S68: China produces the most coal and coal production in China increased around 4 times since 2000.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "India relies heavily on energy that is produced by coal.", "cluster_label": "S34: India relies mostly on fossil fuels and has little clean electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "The U.S. relies primarily on energy that is produced by oil.", "cluster_label": "S121: The U.S. relies primarily on energy that is produced by oil and nuclear power.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "The U.S. relies primarily on energy that is produced by nuclear power.", "cluster_label": "S121: The U.S. relies primarily on energy that is produced by oil and nuclear power.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "I wonder why China and India rely heavily on coal.", "cluster_label": "S17: The author wonders why China produces so much coal or relies heavily on coal and why India relies on coal.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "I presume that coal is cheap.", "cluster_label": "S22: Coal affordability or cheapness may explain coal use in China.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 12, "sentence": "If coal is cheap then coal is affordable.", "cluster_label": "S22: Coal affordability or cheapness may explain coal use in China.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 13, "sentence": "China has a large population.", "cluster_label": "S9: China has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 14, "sentence": "India has a large population.", "cluster_label": "S8: India has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 15, "sentence": "I presume that coal is affordable for China.", "cluster_label": "S22: Coal affordability or cheapness may explain coal use in China.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 16, "sentence": "I presume that coal is affordable for India.", "cluster_label": "S59: Some statements describe coal being affordable for India.", "category": "Background knowledge", "color": "#d62728"}, {"id": 17, "sentence": "I wonder why the U.S. does not use nuclear power almost fully.", "cluster_label": "S52: The author wonders why the United States does not use nuclear power almost fully or build more nuclear plants or power plants.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 18, "sentence": "I wonder why the U.S. does not build more nuclear plants around the country.", "cluster_label": "S52: The author wonders why the United States does not use nuclear power almost fully or build more nuclear plants or power plants.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 19, "sentence": "The U.S. is currently the largest energy producer.", "cluster_label": "The U.S. is currently the largest energy producer.", "category": "Background knowledge", "color": "#d62728"}, {"id": 20, "sentence": "The U.S. is currently the cleanest energy producer.", "cluster_label": "S62: Some statements describe the United States being the cleanest energy producer.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "China has begun the construction of 22 power plants.", "cluster_label": "S60: Some statements describe China beginning construction of 22 power plants.", "category": "Background knowledge", "color": "#d62728"}, {"id": 22, "sentence": "I wonder why the U.S. does not construct more power plants.", "cluster_label": "S52: The author wonders why the United States does not use nuclear power almost fully or build more nuclear plants or power plants.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 23, "sentence": "The overall cost of living is increasing everywhere.", "cluster_label": "S61: Some statements describe cost of living increasing everywhere.", "category": "Background knowledge", "color": "#d62728"}, {"id": 24, "sentence": "If the U.S. constructs more nuclear power plants then the U.S. can provide cheaper electricity.", "cluster_label": "S18: If nuclear power plants are built or shut down, then electricity prices may change and electricity may become cheaper.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 25, "sentence": "I think that it would be more beneficial for the U.S. to construct more nuclear power plants.", "cluster_label": "S15: Nuclear and hydroelectric energy are clean, and nuclear power is a good solution.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 0, "target": 3}, {"source": 2, "target": 4}, {"source": 0, "target": 5}, {"source": 2, "target": 6}, {"source": 0, "target": 7}, {"source": 3, "target": 8}, {"source": 3, "target": 9}, {"source": 6, "target": 10}, {"source": 7, "target": 10}, {"source": 10, "target": 11}, {"source": 11, "target": 12}, {"source": 1, "target": 13}, {"source": 1, "target": 14}, {"source": 12, "target": 15}, {"source": 13, "target": 15}, {"source": 12, "target": 16}, {"source": 14, "target": 16}, {"source": 9, "target": 17}, {"source": 17, "target": 18}, {"source": 3, "target": 19}, {"source": 3, "target": 20}, {"source": 18, "target": 22}, {"source": 21, "target": 22}, {"source": 18, "target": 24}, {"source": 23, "target": 25}, {"source": 24, "target": 25}];
   const legendItems = [{"category": "Visual feature detection", "color": "#1f77b4"}, {"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}];
@@ -166,9 +207,16 @@
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -217,7 +265,7 @@
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -388,25 +436,64 @@
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

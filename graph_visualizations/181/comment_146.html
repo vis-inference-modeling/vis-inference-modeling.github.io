@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 146</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -135,6 +174,8 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 146;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "Different countries have different relationships between the year and the amount of generated electricity.", "cluster_label": "N25: The three countries have very different graphs.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "China exhibits a strong linear growth in generated electricity between 2000 and 2020.", "cluster_label": "S109: Power generation in China and India seems to have a similar trend.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "India exhibits a more gradual growth in generated electricity between 2000 and 2020.", "cluster_label": "India exhibits a more gradual growth in generated electricity between 2000 and 2020.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "The United States exhibits a relatively stable amount of generated electricity between 2000 and 2020.", "cluster_label": "S216: United States electricity generation is more steady than China and India from 2000 to 2020.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Overall, all countries seem to use more clean sources than fossil sources for generating electricity.", "cluster_label": "S9: Clean electricity produces more electricity than fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "Nuclear energy is a clean source.", "cluster_label": "S126: Some statements describe nuclear energy as a clean source and as safe and reliable.", "category": "Background knowledge", "color": "#d62728"}, {"id": 6, "sentence": "This situation makes me wonder whether the world is getting cleaner.", "cluster_label": "S28: The author wonders whether the world is getting cleaner and whether countries are moving away from fossil fuels for electricity generation.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 7, "sentence": "This situation also makes me wonder whether these countries are slowly moving away from fossil fuels for generating electricity.", "cluster_label": "S28: The author wonders whether the world is getting cleaner and whether countries are moving away from fossil fuels for electricity generation.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 8, "sentence": "This situation is relevant to me and my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 9, "sentence": "Nuclear energy does not produce air pollution.", "cluster_label": "S4: Nuclear power and hydroelectric power are clean sources that do not produce air pollution and have low carbon emissions.", "category": "Background knowledge", "color": "#d62728"}, {"id": 10, "sentence": "Hydroelectric energy does not produce air pollution.", "cluster_label": "S4: Nuclear power and hydroelectric power are clean sources that do not produce air pollution and have low carbon emissions.", "category": "Background knowledge", "color": "#d62728"}, {"id": 11, "sentence": "Some fossil fuels produce air pollution.", "cluster_label": "S129: Some statements describe some fossil fuels producing air pollution.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "Some fossil fuels are notorious for producing air pollution.", "cluster_label": "S129: Some statements describe some fossil fuels producing air pollution.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "My community and I want to live safer lives.", "cluster_label": "S14: Communities should be healthy, non-toxic, and safe, and people should take care of the planet.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 14, "sentence": "My community and I want to live healthier lives.", "cluster_label": "S14: Communities should be healthy, non-toxic, and safe, and people should take care of the planet.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 15, "sentence": "These issues are things to consider.", "cluster_label": "S10: The topic or information is impactful or important.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 16, "sentence": "The headline is: The Race Between Clean Energy and Fossil Fuels Continues.", "cluster_label": "The headline is: The Race Between Clean Energy and Fossil Fuels Continues.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 0, "target": 3}, {"source": 0, "target": 4}, {"source": 1, "target": 4}, {"source": 2, "target": 4}, {"source": 3, "target": 4}, {"source": 4, "target": 5}, {"source": 4, "target": 6}, {"source": 4, "target": 7}, {"source": 4, "target": 8}, {"source": 13, "target": 8}, {"source": 14, "target": 8}, {"source": 5, "target": 9}, {"source": 11, "target": 12}, {"source": 6, "target": 15}, {"source": 7, "target": 15}, {"source": 8, "target": 15}, {"source": 9, "target": 15}, {"source": 10, "target": 15}, {"source": 11, "target": 15}, {"source": 12, "target": 15}, {"source": 13, "target": 15}, {"source": 14, "target": 15}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -166,9 +207,16 @@
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -217,7 +265,7 @@
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -388,25 +436,64 @@
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 14</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -142,6 +181,8 @@ Energy Evolution: Transitioning from Fossil Fuels to Clean Sources</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 14;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "Since 2000, the total electricity production has increased for all types of electricity generation.", "cluster_label": "S7: All sources or categories of electricity generation increase over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "Clean energy produces the most electricity among the forms of electricity generation.", "cluster_label": "S9: Clean electricity produces more electricity than fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Nuclear electricity is the largest clean-energy source.", "cluster_label": "S190: The rate of nuclear energy has always been high and has reached a peak.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "Hydroelectric electricity is the second-largest clean-energy source.", "cluster_label": "Hydroelectric electricity is the second-largest clean-energy source.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "Among fossil fuels, oil produces much electricity.", "cluster_label": "Among fossil fuels, oil produces much electricity.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "Among fossil fuels, gas produces much electricity.", "cluster_label": "S79: Among fossil fuels, oil and gas produce much electricity, but less than nuclear and hydro.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Oil and gas produce less electricity than nuclear electricity.", "cluster_label": "S79: Among fossil fuels, oil and gas produce much electricity, but less than nuclear and hydro.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Oil and gas produce less electricity than hydroelectric electricity.", "cluster_label": "S44: Wind and solar are used less than nuclear and hydro, and wind and solar are among the least used sources.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "I wonder how the total electricity generated for each form of generation depends on the energy production of each country.", "cluster_label": "S26: The author wonders about how total electricity by generation type depends on country production and whether U.S. downtrends relate to sourcing fossil fuels from other countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 9, "sentence": "China increases its electricity generation.", "cluster_label": "China increases its electricity generation.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 10, "sentence": "China emphasizes fossil fuels.", "cluster_label": "S27: China clean electricity and fossil electricity both increase, and China relies heavily on fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 11, "sentence": "China will probably continue to increase its electricity generation.", "cluster_label": "S20: Energy usage and electricity generation may change by country, and some countries may continue increasing generation.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 12, "sentence": "The USA has remained rather constant in total electricity generation.", "cluster_label": "S22: United States electricity generation is relatively stable or stagnant over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 13, "sentence": "In the USA, fossil-fuel electricity generation shows a downtrend.", "cluster_label": "S29: United States fossil-fuel usage decreases over time, especially coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 14, "sentence": "I ask whether the downtrend exists because the USA sources fossil fuels from other countries.", "cluster_label": "S26: The author wonders about how total electricity by generation type depends on country production and whether U.S. downtrends relate to sourcing fossil fuels from other countries.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 15, "sentence": "I live in the USA.", "cluster_label": "S2: I state where I live or describe my community membership.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 16, "sentence": "The graph about electricity generation in the USA is interesting to me.", "cluster_label": "S12: The commenter makes a generic statement about trends, interest, or analysis helping understanding.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 17, "sentence": "In the USA, gas has become a main source of electric power.", "cluster_label": "S80: In the United States, gas and coal have become main sources of electric power, and solar contributes only a small amount.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 18, "sentence": "In the USA, coal has become a main source of electric power.", "cluster_label": "S80: In the United States, gas and coal have become main sources of electric power, and solar contributes only a small amount.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "In the USA, solar power contributes only a small amount to total electricity production.", "cluster_label": "S80: In the United States, gas and coal have become main sources of electric power, and solar contributes only a small amount.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 20, "sentence": "Nowadays, people make a huge deal about solar power.", "cluster_label": "S5: Wind power and solar power are clean or renewable energy sources.", "category": "Background knowledge", "color": "#d62728"}, {"id": 21, "sentence": "The headline is: Energy Evolution: Transitioning from Fossil Fuels to Clean Sources.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 1, "target": 2}, {"source": 1, "target": 3}, {"source": 2, "target": 3}, {"source": 2, "target": 6}, {"source": 4, "target": 6}, {"source": 5, "target": 6}, {"source": 3, "target": 7}, {"source": 4, "target": 7}, {"source": 5, "target": 7}, {"source": 0, "target": 8}, {"source": 1, "target": 8}, {"source": 9, "target": 10}, {"source": 9, "target": 11}, {"source": 12, "target": 13}, {"source": 13, "target": 14}, {"source": 15, "target": 16}, {"source": 12, "target": 16}, {"source": 12, "target": 17}, {"source": 12, "target": 18}, {"source": 12, "target": 19}, {"source": 19, "target": 20}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -173,9 +214,16 @@ Energy Evolution: Transitioning from Fossil Fuels to Clean Sources</div>
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -224,7 +272,7 @@ Energy Evolution: Transitioning from Fossil Fuels to Clean Sources</div>
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -395,25 +443,64 @@ Energy Evolution: Transitioning from Fossil Fuels to Clean Sources</div>
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 84</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -138,6 +177,8 @@ Country Power and Energy!</div>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 84;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "I noticed a general increasing trend in the graph.", "cluster_label": "S2: World electricity generation has dips around 2008 and around 2019-2021.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 1, "sentence": "I noticed a significant increase in energy consumption starting in 2000.", "cluster_label": "S103: Energy consumption has increased significantly since 2000 and most of the energy growth comes from renewable or clean energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "China has the steepest growth in electricity generation over time.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "India has less steep growth in electricity generation than China.", "cluster_label": "India has less steep growth in electricity generation than China.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "The US has less steep growth in electricity generation than China.", "cluster_label": "S20: China electricity generation increases rapidly and is the steepest among the countries.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 5, "sentence": "In general, most of this energy growth comes from clean energy.", "cluster_label": "S103: Energy consumption has increased significantly since 2000 and most of the energy growth comes from renewable or clean energy.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "Coal has essentially stagnated over the past 20 years.", "cluster_label": "S18: Coal, gas, and oil stagnate or stay relatively stable over the last 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "Gas has essentially stagnated over the past 20 years.", "cluster_label": "S18: Coal, gas, and oil stagnate or stay relatively stable over the last 20 years.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "Oil has essentially stagnated over the past 20 years.", "cluster_label": "S17: Oil and other sources are steady or flat over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "I wonder what factors caused China to have a big increase in electricity generation compared to the US and India.", "cluster_label": "S8: The author wonders why electricity generation in China has increased rapidly and why China differs from the United States or India.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "I use a lot of electricity.", "cluster_label": "S36: I use a lot of electricity.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 11, "sentence": "I use a lot of gas.", "cluster_label": "S4: My community or I use a lot of gas or fossil fuels, and this has impacts.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 12, "sentence": "This topic relates to me because I use a lot of electricity and gas.", "cluster_label": "S4: My community or I use a lot of gas or fossil fuels, and this has impacts.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 13, "sentence": "Awareness can be raised.", "cluster_label": "S29: Awareness can be raised.", "category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"id": 14, "sentence": "If awareness is raised, it is detectable how renewable energy sources can generate more electricity.", "cluster_label": "S26: If awareness or interest in the environment increases, then clean or renewable energy generation will rise and its effects will be detectable.", "category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"id": 15, "sentence": "The headline is: Country Power and Energy!", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 2, "target": 3}, {"source": 2, "target": 4}, {"source": 0, "target": 5}, {"source": 1, "target": 5}, {"source": 0, "target": 6}, {"source": 0, "target": 7}, {"source": 0, "target": 8}, {"source": 2, "target": 9}, {"source": 3, "target": 9}, {"source": 4, "target": 9}, {"source": 10, "target": 12}, {"source": 11, "target": 12}, {"source": 13, "target": 14}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Predictive / counterfactual inference", "color": "#e377c2"}, {"category": "Evaluative / affective judgment", "color": "#7f7f7f"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -169,9 +210,16 @@ Country Power and Energy!</div>
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -220,7 +268,7 @@ Country Power and Energy!</div>
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -391,25 +439,64 @@ Country Power and Energy!</div>
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };

@@ -49,6 +49,22 @@
     color: #fff;
     border-color: #1f77b4;
   }
+  #header .comment-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  #header .comment-selector label {
+    color: #555;
+  }
+  #header .comment-selector select {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    background: #fff;
+  }
   #graph-container {
     position: relative;
     width: 100vw;
@@ -79,7 +95,26 @@
     overflow-y: auto;
     z-index: 50;
   }
-  #legend .title { font-weight: 600; margin-bottom: 4px; }
+  #legend .title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    user-select: none;
+  }
+  #legend .title .chevron {
+    font-size: 10px;
+    transition: transform 0.2s;
+  }
+  #legend.collapsed .title .chevron {
+    transform: rotate(-90deg);
+  }
+  #legend.collapsed .legend-body {
+    display: none;
+  }
   #legend .item { display: flex; align-items: center; gap: 7px; }
   #legend .swatch {
     width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0;
@@ -119,6 +154,10 @@
 <div id="header">
   <h1>ACE Dependency Graph — article 181, comment 107</h1>
   <span class="hint">Hover a node to highlight its edges. Drag nodes to rearrange. Scroll to zoom.</span>
+  <div class="comment-selector">
+    <label for="comment-select">Comment:</label>
+    <select id="comment-select"></select>
+  </div>
   <div class="label-toggle">
     <button type="button" id="btn-ace" class="active">ACE sentence</button>
     <button type="button" id="btn-cluster">cluster_id + statement</button>
@@ -135,6 +174,8 @@
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script>
 (function() {
+  const currentCommentIndex = 107;
+  const maxCommentIndex = 153;
   const nodes = [{"id": 0, "sentence": "I examined the World\u2019s Electricity Generation Graph.", "cluster_label": "S2: The commenter describes looking at or examining the graph or its sub-graphs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 1, "sentence": "I noticed that clean sources produce more power in the world than fossil fuels.", "cluster_label": "S9: Clean electricity produces more electricity than fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 2, "sentence": "Nuclear sources produce the most power overall.", "cluster_label": "S14: Nuclear energy generates the most electricity overall.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 3, "sentence": "As the years increase, the electricity generation increases for all sources.", "cluster_label": "S7: All sources or categories of electricity generation increase over time.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 4, "sentence": "I examined the smaller graphs.", "cluster_label": "S2: The commenter describes looking at or examining the graph or its sub-graphs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 5, "sentence": "China uses much more electricity than the United States.", "cluster_label": "S168: China uses more energy than India.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 6, "sentence": "China uses much more electricity than India.", "cluster_label": "S25: India uses much less energy than China and much less energy than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 7, "sentence": "India produces the least electricity among China, the United States, and India.", "cluster_label": "S23: India electricity generation is lower than China and lower than the United States.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 8, "sentence": "India uses the least clean energy sources to produce electricity among China, the United States, and India.", "cluster_label": "S129: India uses the least clean power among China and the U.S. and India and India uses less than 2 million gigawatt hours of clean power and fossil fuels.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 9, "sentence": "I wonder if a reason exists.", "cluster_label": "S65: The author expresses general curiosity without a specific question.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 10, "sentence": "I wonder why India produces the least electricity.", "cluster_label": "S64: The author wonders why India generates less electricity than the United States.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 11, "sentence": "India is a very large country.", "cluster_label": "S8: India has a large population.", "category": "Background knowledge", "color": "#d62728"}, {"id": 12, "sentence": "India has more than one billion people.", "cluster_label": "S7: India and China have about the same population and both have more than 1 billion people.", "category": "Background knowledge", "color": "#d62728"}, {"id": 13, "sentence": "I assume that India should produce much electricity.", "cluster_label": "S4: India may have relatively low electricity generation or low fossil-fuel or clean-energy use given its population, possibly due to limited access or limited resources.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 14, "sentence": "This situation affects me and my community.", "cluster_label": "S1: The topic or situation relates to me and/or my community.", "category": "Personal/episodic retrieval", "color": "#9467bd"}, {"id": 15, "sentence": "I wonder how much electricity I use daily.", "cluster_label": "S32: The author wonders about personal electricity use and what energy sources produce their electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 16, "sentence": "I wonder what kind of energy sources produce my electricity.", "cluster_label": "S32: The author wonders about personal electricity use and what energy sources produce their electricity.", "category": "Information need / curiosity", "color": "#bcbd22"}, {"id": 17, "sentence": "I observed the graph of the United States.", "cluster_label": "S2: The commenter describes looking at or examining the graph or its sub-graphs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 18, "sentence": "As the years increase, the fossil fuel usage in the United States decreases.", "cluster_label": "S29: United States fossil-fuel usage decreases over time, especially coal.", "category": "Visual data extraction", "color": "#ff7f0e"}, {"id": 19, "sentence": "Because of this observation, my electricity is more likely to be powered by clean energy sources.", "cluster_label": "S14: Local observations and awareness about energy sources can influence individual actions, advocacy, and understanding of personal energy use.", "category": "Explanatory inference", "color": "#8c564b"}, {"id": 20, "sentence": "I looked at the main graph.", "cluster_label": "S2: The commenter describes looking at or examining the graph or its sub-graphs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 21, "sentence": "I looked at the sub-graphs of other countries.", "cluster_label": "S2: The commenter describes looking at or examining the graph or its sub-graphs.", "category": "Meta / paratext", "color": "#17becf"}, {"id": 22, "sentence": "The headline is: How Different Powers Charge the World.", "cluster_label": "S1: A headline or title is proposed or stated for the graph.", "category": "Meta / paratext", "color": "#17becf"}];
   const links = [{"source": 0, "target": 1}, {"source": 0, "target": 2}, {"source": 0, "target": 3}, {"source": 0, "target": 4}, {"source": 4, "target": 5}, {"source": 4, "target": 6}, {"source": 4, "target": 7}, {"source": 4, "target": 8}, {"source": 7, "target": 9}, {"source": 7, "target": 10}, {"source": 11, "target": 13}, {"source": 12, "target": 13}, {"source": 1, "target": 14}, {"source": 14, "target": 15}, {"source": 14, "target": 16}, {"source": 4, "target": 17}, {"source": 17, "target": 18}, {"source": 18, "target": 19}, {"source": 0, "target": 20}, {"source": 4, "target": 21}];
   const legendItems = [{"category": "Visual data extraction", "color": "#ff7f0e"}, {"category": "Background knowledge", "color": "#d62728"}, {"category": "Personal/episodic retrieval", "color": "#9467bd"}, {"category": "Explanatory inference", "color": "#8c564b"}, {"category": "Information need / curiosity", "color": "#bcbd22"}, {"category": "Meta / paratext", "color": "#17becf"}];
@@ -166,9 +207,16 @@
     const lines = wrapText(n.sentence);
     const clusterLines = wrapText(n.cluster_label);
     n.nodeW = NODE_W;
-    const h1 = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
-    const h2 = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
-    n.nodeH = Math.max(h1, h2);
+    const hAce = Math.max(30, lines.length * LINE_H + PAD_Y * 2);
+    const hCluster = Math.max(30, clusterLines.length * LINE_H + PAD_Y * 2);
+    // Store separate heights for ACE vs cluster labels so each mode
+    // can use its own minimal height instead of the max of both.
+    n.hAce = hAce;
+    n.hCluster = hCluster;
+    // Default to ACE sentence mode.
+    n.nodeH = hAce;
+    // Layout height used by dagre (max of both modes) so overall layout is stable.
+    n.layoutH = Math.max(hAce, hCluster);
     n.lines = lines;
     n.clusterLines = clusterLines;
     n.showCluster = false;
@@ -217,7 +265,7 @@
   const gDagre = new dagre.graphlib.Graph();
   gDagre.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50, marginx: 20, marginy: 20 });
   gDagre.setDefaultEdgeLabel(() => ({}));
-  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.nodeH }));
+  nodes.forEach(n => gDagre.setNode(n.id, { width: n.nodeW, height: n.layoutH }));
   links.forEach(l => gDagre.setEdge(l.source, l.target));
   dagre.layout(gDagre);
   nodes.forEach(n => {
@@ -388,25 +436,64 @@
 
   updatePositions();
 
+  // Comment dropdown: select between comment_1.html ... comment_<built-in function max>
+  const commentSelect = document.getElementById("comment-select");
+  if (commentSelect && maxCommentIndex && maxCommentIndex > 0) {
+    for (let i = 1; i <= maxCommentIndex; i++) {
+      const opt = document.createElement("option");
+      opt.value = String(i);
+      opt.textContent = String(i);
+      if (i === currentCommentIndex) {
+        opt.selected = true;
+      }
+      commentSelect.appendChild(opt);
+    }
+
+    commentSelect.addEventListener("change", (event) => {
+      const selected = parseInt(event.target.value, 10);
+      if (!selected || selected === currentCommentIndex) return;
+      const parts = window.location.pathname.split("/");
+      parts[parts.length - 1] = `comment_${selected}.html`;
+      const newPath = parts.join("/");
+      window.location.pathname = newPath;
+    });
+  }
+
   // Legend
   const leg = d3.select("#legend");
-  leg.append("div").attr("class", "title").text("Category");
+  const titleDiv = leg.append("div").attr("class", "title");
+  titleDiv.append("span").text("Category");
+  titleDiv.append("span").attr("class", "chevron").text("▼");
+  titleDiv.on("click", () => {
+    leg.classed("collapsed", !leg.classed("collapsed"));
+  });
+  const legendBody = leg.append("div").attr("class", "legend-body");
   legendItems.forEach(item => {
-    const row = leg.append("div").attr("class", "item");
+    const row = legendBody.append("div").attr("class", "item");
     row.append("div").attr("class", "swatch").style("background", item.color);
     row.append("span").text(item.category);
   });
 
   // Label toggle: ACE sentence vs cluster_id + cluster_statement
   document.getElementById("btn-ace").onclick = function() {
-    nodes.forEach(n => n.showCluster = false);
+    nodes.forEach(n => {
+      n.showCluster = false;
+      n.nodeH = n.hAce;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-ace").classList.add("active");
     document.getElementById("btn-cluster").classList.remove("active");
   };
   document.getElementById("btn-cluster").onclick = function() {
-    nodes.forEach(n => n.showCluster = true);
+    nodes.forEach(n => {
+      n.showCluster = true;
+      n.nodeH = n.hCluster;
+    });
+    rectSel.attr("height", d => d.nodeH);
     nodeGroup.each(function(d) { setNodeLabel(d3.select(this), d); });
+    updatePositions();
     document.getElementById("btn-cluster").classList.add("active");
     document.getElementById("btn-ace").classList.remove("active");
   };
