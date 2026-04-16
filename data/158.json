@@ -1,5 +1,8 @@
 {
   "article_id": "158",
+  "graph_type": "BUBBLE MAP",
+  "graph_type_2": "TILEGRAM",
+  "topic": "EDUCATION AND CULTURE",
   "image_description": "1. **Chart type**:  \n   Tile cartogram / sized-square chart. Each state is shown as a square, with square area representing population size and color/outline indicating policy category.\n\n2. **Layout techniques**:  \n   - **Cartogram-like spatial layout**: squares are arranged approximately by U.S. state geography  \n   - **Size encoding**: square area varies by number of women of reproductive age  \n   - **Color/outline grouping**: fill and border style distinguish abortion/sex-education policy categories  \n   - No faceting, stacking, or small multiples\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| State | Categorical/nominal | Approximate spatial position; text label on each square |\n| Number of women of reproductive age | Quantitative | Square area/size |\n| Policy category (abstinence stressed / abortion restricted or banned / abortion largely available) | Categorical/nominal | Fill color and border style of squares |\n\nVisible category encodings:\n- **Orange fill**: abortion is heavily restricted or banned, or likely will be soon  \n- **Light gray fill**: abortion is largely available  \n- **White fill with dark outline**: abstinence is required to be stressed in sex education",
   "comments": [
     {

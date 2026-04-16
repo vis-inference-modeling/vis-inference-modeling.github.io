@@ -1,5 +1,8 @@
 {
   "article_id": "6",
+  "graph_type": "STACKED BAR",
+  "graph_type_2": "",
+  "topic": "DEMOGRAPHICS AND MIGRATION",
   "image_description": "## 1. Chart type\n- **Horizontal percentile range / interval bar chart** (one horizontal bar per major, showing earnings distribution from the 10th to 90th percentile, with internal percentile breakpoints).\n\n## 2. Layout techniques\n- **Single-panel chart** with **horizontal small-multiple-like rows** for each college major.\n- No faceting.\n- Not stacked by category in the usual additive sense; instead, each row is a **segmented interval bar** split at percentile boundaries (10th, 25th, median, 75th, 90th).\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| College major / field of study (e.g., Education, Economics, Chemical Engineering) | Categorical / nominal | Position on y-axis; text labels for rows |\n| Projected career earnings | Quantitative | Position on x-axis; horizontal length/extent of bars |\n| Percentile level (10th, 25th, Median, 75th, 90th) | Ordinal | Segment boundaries within each horizontal bar; top annotations/labels |\n| Earnings range between percentiles | Quantitative | Width of each bar segment between percentile cut points |\n| Segment category by percentile band | Ordinal | Color/lightness differences across bar segments |",
   "comments": [
     {

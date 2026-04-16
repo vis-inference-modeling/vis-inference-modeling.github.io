@@ -1,5 +1,8 @@
 {
   "article_id": "27",
+  "graph_type": "CONNECTED DOT",
+  "graph_type_2": "",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "1. **Chart type**: Arrow/range chart showing change between two time points for each industry on a common horizontal scale.\n\n2. **Layout techniques**:  \n- Uses **small multiples / sectioned layout**: a main panel for “various industries” and a separate lower panel for “Technology companies since 2012.”  \n- Each row is a separate category (industry).  \n- No stacking or faceting by grid panels beyond the two sectioned groups.\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Industry | Categorical/nominal | Position on y-axis (rows), text labels |\n| Combined market share of the two largest companies (%) | Quantitative | Position on x-axis |\n| Time point (Early 2000s / Now; 2012 / Now in technology section) | Temporal | Arrow start and end positions along x-axis, endpoint annotations |\n| Direction of change (increase vs decrease) | Ordinal / derived | Arrow direction (rightward vs leftward), color (red vs gray) |\n| Industry group/section (“various industries” vs “Technology companies since 2012”) | Categorical/nominal | Separate panel/section layout with section heading |",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "10",
+  "graph_type": "AREA",
+  "graph_type_2": "DENSITY",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1) Chart type\n- **Beeswarm / dot plot** (a one-dimensional scatter of dots along a horizontal quantitative axis).\n\n## 2) Layout techniques\n- Uses **beeswarm-style jitter/packing** to avoid overlap of dots.\n- No faceting, no stacking, and no small multiples.\n- Dots are arranged along a single horizontal scale, with a separate clustered annotation for **“More than +100%”** at the far right.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Change in butterfly abundance, 2000–20 | Quantitative | Position on x-axis |\n| Species | Categorical/nominal | One dot per species (individual mark identity) |\n| Statistical significance of species trend | Categorical/nominal (binary, as shown) | Outline/stroke around dots (“Outlined species’ trends were statistically significant”) |\n| Direction/magnitude grouping of change (negative to positive) | Quantitative | Color/hue of dots (orange for declines, beige near zero, green for increases) |\n| More than +100% change | Quantitative threshold/category as displayed | Separate right-side clustered placement with label |\n\nNotes:\n- The y-position does **not** appear to encode a data variable; it is used for collision avoidance / packing only.\n- The title indicates the time span **2000–20**, but time is presented as context in the title rather than encoded on an axis.",
   "comments": [
     {

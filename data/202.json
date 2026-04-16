@@ -1,5 +1,8 @@
 {
   "article_id": "202",
+  "graph_type": "TREE",
+  "graph_type_2": "STACKED BAR",
+  "topic": "POLITICS AND POLICY",
   "image_description": "## 1) Chart type\n- **Top:** Horizontal **stacked bar chart** showing cost components of an imported sneaker.\n- **Bottom:** **Treemap** showing number/share of shoes imported in 2023 by country.\n\n## 2) Layout techniques\n- The visualization combines **two different chart panels** stacked vertically.\n- **Top panel:** uses **stacking** within a single horizontal bar.\n- **Bottom panel:** uses **area-based subdivision** (treemap / rectangular tiling), not faceting.\n- No small multiples or repeated facets are visible.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Cost component category (Materials and labor, Manufacturer margin, Shipping and logistics, Tariff) | Categorical/nominal | Segment position within stacked bar, segment length/width, color/hue, text labels |\n| Import cost total ($26) | Quantitative | Text annotation/label |\n| Country (China, Vietnam, Indonesia, Other) | Categorical/nominal | Treemap rectangle grouping, text labels, color/hue |\n| Share/number of shoes imported in 2023 (shown as percentages: 59%, 23%, 6%, 11%) | Quantitative | Rectangle area in treemap, percentage labels |\n| Year (2023) | Temporal | Title/annotation |",
   "comments": [
     {

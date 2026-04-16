@@ -1,5 +1,8 @@
 {
   "article_id": "172",
+  "graph_type": "BAR",
+  "graph_type_2": "",
+  "topic": "POLITICS AND POLICY",
   "image_description": "## 1. Chart type\n- **Horizontal interval bar chart / timeline**\n- Each row shows a technology category with a horizontal bar spanning from invention/patenting to first major federal regulation.\n\n## 2. Layout techniques\n- **Single-panel layout**\n- **No faceting or small multiples**\n- **No stacking**\n- Categories are arranged as separate horizontal rows, forming a timeline-style comparison.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Technology / invention category (e.g., Railroads, Telephones, Electricity, etc.) | Categorical/nominal | Position on y-axis; text labels on left |\n| Time / year | Temporal | Position on x-axis |\n| Duration between invention/patenting and first major federal regulation (years) | Quantitative | Length of horizontal bar; numeric text labels at bar ends |\n| Bar start time (invention/patenting year) | Temporal | Left endpoint of horizontal bar on x-axis |\n| Bar end time (first major federal regulation year) | Temporal | Right endpoint of horizontal bar on x-axis |\n\n### Notes\n- All bars use the **same color**, so color does **not** encode a separate variable.\n- The numeric annotations (e.g., 30, 40, 70, “About 60 years”) are direct labels for the duration variable.",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "87",
+  "graph_type": "BUBBLE",
+  "graph_type_2": "FACETED BUBBLE",
+  "topic": "HEALTH AND WELLNESS",
   "image_description": "1. **Chart type**  \n   - **Packed bubble chart / circle packing diagram**\n\n2. **Layout techniques**  \n   - Uses **hierarchical grouping / enclosure**: many small circles are packed into larger clusters by occupation group.\n   - Uses **size encoding** for magnitude (bubble area/diameter).\n   - Uses **color** to distinguish categories/groups.\n   - Not faceted, not stacked, and not a small-multiples layout.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Occupation group / job family (e.g., Education, Health care, Sales, Transportation) | Categorical/nominal | Grouped spatial enclosure/cluster; text labels; color/hue of circles |\n| Specific occupation (e.g., Registered nurses, Cashiers, Office clerks) | Categorical/nominal | Individual circles; text labels |\n| Number of workers / employment count (e.g., 3 million, 1.4 million) | Quantitative | Bubble size (area); numeric text labels |\n| Color category (gold vs gray groups) | Categorical/nominal | Color/hue |\n\nNotes:\n- There are **no visible axes**, so no x- or y-position variable is explicitly encoded as a measured data field.\n- The spatial arrangement appears to support packing/grouping rather than encode a separate quantitative variable.",
   "comments": [
     {

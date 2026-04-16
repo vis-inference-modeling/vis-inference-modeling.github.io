@@ -1,5 +1,8 @@
 {
   "article_id": "66",
+  "graph_type": "AREA",
+  "graph_type_2": "",
+  "topic": "POLITICS AND POLICY",
   "image_description": "## 1) Chart type\nA **faceted stacked area chart** (small multiples), with six panels showing time series under different intervention durations.\n\n## 2) Layout techniques\n- **Faceting / small multiples**: 6 panels arranged in a 2×3 grid.\n- **Stacking**: Three colored area series are stacked within each panel.\n- **Annotation band**: Each panel includes a vertical shaded band marking the intervention period, with a “Today” label.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Date / time (Jan., April, July, Oct.) | Temporal | Position on x-axis |\n| Count / magnitude (0, 10.0M, 20.0M, etc.) | Quantitative | Position on y-axis; area height |\n| Health outcome category: Infected / Hospitalized / Deceased | Categorical / nominal | Color/hue; stacked area layers |\n| Intervention duration (7, 14, 21, 28, 35, 42 days of interventions) | Ordinal / categorical | Faceting into separate panels; panel titles |\n| Intervention period | Temporal interval | Vertical shaded band |\n| “Today” marker | Temporal reference | Text label near x-position within shaded band |\n\nNotes: The legend confirms the three outcome categories: **Infected**, **Hospitalized**, and **Deceased**.",
   "comments": [
     {

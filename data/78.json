@@ -1,5 +1,8 @@
 {
   "article_id": "78",
+  "graph_type": "",
+  "graph_type_2": "MAP",
+  "topic": "POLITICS AND POLICY",
   "image_description": "**1. Chart type**  \nFaceted **small-multiple area/line charts** (one mini chart per state), with a solid line/filled area for observed values and a dashed line for projected values.\n\n**2. Layout techniques**  \n- **Faceting / small multiples** by **state**  \n- No stacking  \n- Each facet uses the same axes/scales for comparison  \n- Color is used to distinguish state status categories (orange vs. gray)\n\n**3. Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| State | Categorical/nominal | Faceting into separate small panels; state name as panel label |\n| Date | Temporal | Position on x-axis within each panel; vertical reference/end-date markers shown in example panel |\n| Share of uncounted addresses | Quantitative | Position on y-axis; filled area height; line position |\n| Projection status (observed vs. projected) | Categorical/nominal | Line style (solid vs. dashed); shaded/forecast continuation visually separated |\n| On-track status / state grouping | Categorical/nominal | Color/hue of series and fill (orange vs. gray) |\n| Example projected Sept. 30 value for Georgia (“4%”) | Quantitative | Text annotation and highlighted point marker |",
   "comments": [
     {

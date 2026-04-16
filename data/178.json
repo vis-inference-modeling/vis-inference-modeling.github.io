@@ -1,5 +1,8 @@
 {
   "article_id": "178",
+  "graph_type": "LINE",
+  "graph_type_2": "BAR",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "## 1) Chart type\n- **Top:** Multi-series **line chart**\n- **Bottom:** **Horizontal bar chart**\n\n## 2) Layout techniques\n- The visualization is a **two-panel vertical layout**.\n- **Top panel:** multiple lines overlaid in a single plot (not faceted, not stacked).\n- **Bottom panel:** a single horizontal bar chart (not faceted, not stacked).\n- Color is used to highlight selected food categories across both panels.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year | Temporal | Position on x-axis (top line chart) |\n| Pounds per person | Quantitative | Position on y-axis (top line chart) |\n| Food category (Chicken, Beef, Pork, Cheese, Yogurt) | Categorical/nominal | Separate line series; color/hue; end labels (top chart) |\n| Food category (Beef, Almonds, Cheese, Pork, Chicken, Eggs, Lentils, Beans, Green peas) | Categorical/nominal | Position on y-axis as bar categories; text labels (bottom chart) |\n| Gallons of water per pound | Quantitative | Bar length / position on x-axis (bottom bar chart) |\n| Highlighted category status | Categorical/nominal | Color/hue (orange for Chicken, yellow for Cheese, muted gray for others in top; corresponding highlights in bottom) |",
   "comments": [
     {

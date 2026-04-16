@@ -1,5 +1,8 @@
 {
   "article_id": "168",
+  "graph_type": "SANKEY",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1. Chart type\n- **Alluvial / Sankey-style flow chart** showing how total water consumption is divided into categories and subcategories.\n\n## 2. Layout techniques\n- Uses **flow bands** whose **width represents quantity/share**.\n- Shows **hierarchical splitting** from a total into major categories, then into subcategories.\n- No faceting or small multiples.\n- Not stacked in the usual bar/area-chart sense; instead it uses **branching flows**.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Total water consumed (“1.9 trillion gallons of water”) | Quantitative | Overall total indicated by title text; implied by full combined flow area |\n| Major water-use category (Livestock, Other crops, Everything else) | Categorical/nominal | Separate flow branches/segments; text labels |\n| Subcategory within major category (Cotton, Wheat, Corn grain, Barley, Other crops, Thermoelectric power, Commercial and industrial, Residential) | Categorical/nominal | Nested flow branches; text labels |\n| Share of total water use (percent values such as 56%, 24%, 21%, 12%, 7%, etc.) | Quantitative | Flow width/area; percentage labels |\n| Water volume in gallons (e.g., 1,064 billion gallons; 448 billion gallons; 387 billion gallons) | Quantitative | Text labels for major categories |\n| Hierarchical relationship / grouping (subcategory belonging to a major category) | Ordinal/structural grouping | Branching/nesting of flows from parent category |",
   "comments": [
     {

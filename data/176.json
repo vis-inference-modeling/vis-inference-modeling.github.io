@@ -1,5 +1,8 @@
 {
   "article_id": "176",
+  "graph_type": "FACETED BAR",
+  "graph_type_2": "",
+  "topic": "EDUCATION AND CULTURE",
   "image_description": "1. **Chart type**  \n   Grouped horizontal bar chart (progress-bar style bars).\n\n2. **Layout techniques**  \n   - Uses **small multiples / column grouping** by surname outcome category: “Took spouse’s name,” “Kept name,” and “Hyphenated.”\n   - Within each column, bars are arranged by **race/ethnicity group**.\n   - Not stacked; each bar is shown separately against a common background track.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Bride surname outcome (“Took spouse’s name”, “Kept name”, “Hyphenated”) | Categorical/nominal | Column grouping / panel heading |\n| Race/ethnicity (“White”, “Black”, “Hispanic”) | Categorical/nominal | Row position; text labels at left |\n| Percentage | Quantitative | Bar length (horizontal extent); numeric labels inside/next to bars |\n\nIf useful, I can also convert this into a JSON schema for chart-understanding tasks.",
   "comments": [
     {

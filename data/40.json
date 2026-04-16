@@ -1,5 +1,8 @@
 {
   "article_id": "40",
+  "graph_type": "",
+  "graph_type_2": "MAP",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1. Chart type\n- **Annotated geographic forecast map / path map**\n- It overlays a **storm track line**, **uncertainty circles**, and a **cone of uncertainty** on a map.\n\n## 2. Layout techniques\n- **No faceting or small multiples**\n- **Layered overlay** on a single map:\n  - multiple forecast paths drawn together\n  - circles placed along the forecast track\n  - a shaded cone formed by connecting the circles\n  - annotation callouts with numbered labels\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Geographic location (longitude/latitude) | Quantitative / spatial | Position on map |\n| Storm forecast path (N.H.C. path) | Ordered spatial sequence | Black line path across map |\n| Forecast points along path | Ordered spatial sequence | Pink points positioned on map |\n| Forecast uncertainty | Quantitative | Circle size/area (larger circles) |\n| Forecast lead time / progression along path | Ordinal / temporal sequence | Order of points/circles along the path from south to north |\n| Different organizations’ forecasts | Categorical/nominal | Multiple dashed gray path lines |\n| Cone of uncertainty extent | Quantitative / spatial region | Light shaded cone area |\n| Broader storm impact area / weather extent | Quantitative / spatial region | Larger semi-transparent pink shaded area |\n| Annotation step number (1–6) | Ordinal | Numbered black callout markers |\n| Place names / region names | Categorical/nominal | Text labels on map |",
   "comments": [
     {

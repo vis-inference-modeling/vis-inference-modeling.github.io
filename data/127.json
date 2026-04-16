@@ -1,5 +1,8 @@
 {
   "article_id": "127",
+  "graph_type": "STACKED BAR",
+  "graph_type_2": "BUBBLE MAP",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1) Chart type\n- **Composite visualization**:\n  - **Top:** stacked vertical **bar chart** by year\n  - **Bottom:** **proportional symbol map** (bubble map) of the U.S.\n\n## 2) Layout techniques\n- Uses a **two-panel vertical layout**.\n- **Top panel:** bars are **stacked** by record type (Cold vs Heat).\n- **Bottom panel:** no faceting; symbols are plotted on a geographic map, with **color** and **size** encoding additional variables.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year | Temporal | Position on x-axis (top bar chart) |\n| Percentage of U.S. weather stations that broke all-time temperature records | Quantitative | Position on y-axis / bar height (top chart) |\n| Record type (Cold, Heat) | Categorical/nominal | Color/hue (blue vs orange); stacked bar segments (top chart); point color on map |\n| Geographic location of weather stations (U.S. position) | Quantitative / spatial | Position on map (bottom panel) |\n| Amount by which all-time record was broken (°F) | Quantitative | Bubble size/area on map |\n| Event annotation text (“June heat wave”, “February cold snap”) | Categorical/nominal text annotation | Label text on map |",
   "comments": [
     {

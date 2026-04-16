@@ -1,5 +1,8 @@
 {
   "article_id": "125",
+  "graph_type": "HEATMAP",
+  "graph_type_2": "",
+  "topic": "SPORTS",
   "image_description": "## 1) Chart type\n- **Faceted contour/region plot (small multiples)** showing ranking outcomes across a 2D parameter space.\n- Each panel is a filled rectangular plot with curved boundary lines separating regions labeled by rank (e.g., 1st, 2nd, 3rd, etc.).\n\n## 2) Layout techniques\n- **Small multiples / faceting by country**: one panel per country.\n- No stacking.\n- Uses **filled regions** and **contour-like boundaries** within each panel to partition combinations of two quantitative variables.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Country | Categorical/nominal | Faceting into separate panels; country name/flag as label |\n| Gold medal count | Quantitative | Numeric label near top of each panel (gold-colored circle) |\n| Silver medal count | Quantitative | Numeric label near top of each panel (gray circle) |\n| Bronze medal count | Quantitative | Numeric label near top of each panel (bronze-colored circle) |\n| Gold-to-silver relative value | Quantitative | Position on y-axis |\n| Silver-to-bronze relative value | Quantitative | Position on x-axis |\n| Rank / placing | Ordinal | Filled region color and in-region text labels (e.g., 1st, 2nd, 3rd); also subtitle range under country name |\n| Axis reference annotations about medal valuation | Quantitative context / label | Axis tick labels and callout annotations |",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "151",
+  "graph_type": "LINE",
+  "graph_type_2": "STEP",
+  "topic": "SPORTS",
   "image_description": "1. **Chart type**  \n   Multi-series **line chart** (spaghetti plot) showing cumulative career points by age for many players.\n\n2. **Layout techniques**  \n   - **Overlaid multiple lines** in a single panel  \n   - No faceting or small multiples  \n   - No stacking  \n   - Select players are **highlighted by color and direct labels**, while others are shown in lighter gray\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Age | Quantitative | Position on x-axis |\n| Career points | Quantitative | Position on y-axis |\n| Player | Categorical/nominal | Separate line per player; direct text labels for selected players |\n| Current player status | Categorical/nominal (binary, as shown) | Color/hue (blue for current players, gray for others) |\n| Highlighted/annotated player names (e.g., LeBron James, Kareem Abdul-Jabbar, etc.) | Categorical/nominal | Direct label text near line endpoints |\n| Final point value/year for selected players (e.g., “38,390 (2023)”) | Quantitative + temporal | Text annotation near highlighted endpoints |",
   "comments": [
     {

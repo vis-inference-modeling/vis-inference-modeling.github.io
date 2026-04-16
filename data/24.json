@@ -1,5 +1,8 @@
 {
   "article_id": "24",
+  "graph_type": "CHOROPLETH MAP",
+  "graph_type_2": "",
+  "topic": "HEALTH AND WELLNESS",
   "image_description": "## 1) Chart type\n- **Top:** Pictogram / icon-based ranked grid of teams, with repeated sandwich icons representing quantity.\n- **Bottom:** **Scatter plot**.\n\n## 2) Layout techniques\n- **Top:** Uses a **small-multiples/grid layout** of team panels. No stacking in the chart sense; quantity is shown by repeated icons within each panel.\n- **Bottom:** Single-panel scatter plot with points positioned by two quantitative axes. No faceting or stacking.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| NFL team (abbreviation/logo) | Categorical/nominal | Small-multiple panel identity; team logo/image; text label |\n| Weekly Uncrustables consumed | Quantitative | Text value in each team panel; repeated sandwich icons/area/count in top panel; x-axis position in scatter plot |\n| NFL standings (win-loss-tie percentage) | Quantitative | y-axis position in scatter plot |\n| Sandwich unit key (“= 10”) | Quantitative scale annotation | Legend/key using one sandwich icon plus label |",
   "comments": [
     {

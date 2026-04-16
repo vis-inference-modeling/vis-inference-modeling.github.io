@@ -1,5 +1,8 @@
 {
   "article_id": "91",
+  "graph_type": "STACKED BAR",
+  "graph_type_2": "FACETED BAR",
+  "topic": "SPORTS",
   "image_description": "1. **Chart type**: Horizontal bar chart comparison (progress-style bars) for two measures per league.\n\n2. **Layout techniques**:  \n- Uses **small multiples / faceting by league**: each sports league appears in its own panel.  \n- Within each panel, there are **two separate horizontal bars** (not stacked): one for players of color and one for head coaches/managers of color.  \n- **Color** distinguishes the two measures.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Sports league (e.g., NFL, WNBA, NBA, MLB, MLS) | Categorical/nominal | Faceting/small-multiple panel titles |\n| Year | Temporal | Text label within each league panel |\n| Percentage of players of color | Quantitative | Horizontal bar length/position; numeric label inside bar; darker red color |\n| Percentage of head coaches of color (or managers for MLB) | Quantitative | Horizontal bar length/position; numeric label on/near bar; lighter pink color |\n| Group type (“Players of color” vs “Head coaches of color”) | Categorical/nominal | Color/hue via legend and corresponding bar colors |",
   "comments": [
     {

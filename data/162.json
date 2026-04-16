@@ -1,5 +1,8 @@
 {
   "article_id": "162",
+  "graph_type": "BUBBLE",
+  "graph_type_2": "BUBBLE MAP",
+  "topic": "DEMOGRAPHICS AND MIGRATION",
   "image_description": "## 1) Chart type\n- **Proportional symbol (bubble) world map**, shown as **three map panels** for different years.\n\n## 2) Layout techniques\n- Uses **small multiples / faceting by year**: panels for **1990**, **2023**, and **2050**.\n- Each panel is a **world map** with circles placed geographically.\n- No stacking is used.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year (1990, 2023, 2050) | Temporal | **Faceting / panel title** |\n| Geographic location (country position) | Categorical/nominal (geographic) | **Position on map** |\n| Population magnitude (or country total represented by bubble size) | Quantitative | **Circle area/size** |\n| Age structure / population age composition (younger → working age → older) | Ordinal | **Color/hue** of circles |\n| Country name | Categorical/nominal | **Text label** |\n\n### Visible legend information\n- The color legend indicates an **ordered age-composition scale** from **younger populations** to **working age** to **older populations**.",
   "comments": [
     {

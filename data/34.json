@@ -1,5 +1,8 @@
 {
   "article_id": "34",
+  "graph_type": "SCATTER",
+  "graph_type_2": "",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "## 1) Chart type\n- **Labeled scatter plot** (2D scatter plot with many points and selected text labels).\n\n## 2) Layout techniques\n- **No faceting or small multiples**: all data appear in a single panel.\n- **No stacking**.\n- Uses **crossed reference lines** at the center to divide the plot into four conceptual quadrants.\n- Uses **color gradient/hue** to encode a variable ranging from “Less automatable” to “More automatable.”\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Job / occupation name | Categorical/nominal | Text label attached to points |\n| Communication & critical thinking emphasis ↔ Physical work emphasis | Quantitative | Position on x-axis |\n| Operating machines & processes emphasis ↔ Clerical & service work emphasis | Quantitative | Position on y-axis |\n| Automatability | Ordinal or quantitative | Color/hue (green to purple scale), explained by legend |\n\n### Visible non-data interface/annotation elements\n- Search box (“Find a job ...”)\n- Legend for automatability\n- Axis-direction annotations describing the meaning of the four directions/quadrants",
   "comments": [
     {

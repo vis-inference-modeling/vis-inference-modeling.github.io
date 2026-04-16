@@ -1,5 +1,8 @@
 {
   "article_id": "92",
+  "graph_type": "CHOROPLETH MAP",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1. Chart type\nTwo **choropleth maps** of the United States.\n\n## 2. Layout techniques\n- **Vertical small multiples / faceting**: two separate U.S. maps stacked vertically.\n- No stacking within a chart.\n- Each map uses **state polygons** filled by color to encode a quantitative value.\n- State abbreviations are shown as **text labels**.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| U.S. state | Categorical/nominal | Geographic region/position (state polygons on map), text label |\n| Air pollution deaths per 10,000 residents | Quantitative | Color/hue intensity on the top choropleth map |\n| Deaths due to air pollution from out of state | Quantitative | Color/hue on the bottom choropleth map (blue–orange diverging scale) |\n| In-state vs. out-of-state contribution direction | Categorical/ordinal (binary direction around midpoint) | Color side of diverging scale in bottom map (blue = more in-state, orange = more out-of-state, as labeled) |",
   "comments": [
     {

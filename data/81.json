@@ -1,5 +1,8 @@
 {
   "article_id": "81",
+  "graph_type": "SCATTER",
+  "graph_type_2": "",
+  "topic": "POLITICS AND POLICY",
   "image_description": "## 1. Chart type\n- **Annotated scatter/segment plot with arrows and a trend line**\n- It shows many diagonal line segments/arrows positioned over time, plus a single fitted **trend line**.\n\n## 2. Layout techniques\n- **Single-panel chart** (no faceting or small multiples)\n- Uses **overlaid line segments/arrows** for individual observations\n- Uses **color highlighting** to emphasize selected leaders versus many muted background cases\n- Includes **text annotations/labels** for selected individuals\n- Includes a **trend line** across the full panel\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year / date leaders took office | Temporal | Position on x-axis |\n| Age at taking office | Quantitative | Position on y-axis |\n| Individual leader (e.g., Truman, Reagan, Merkel, Trump, Biden) | Categorical/nominal | Text label attached to selected line segments/arrows |\n| Leader/observation identity | Categorical/nominal | Separate line segment/arrow mark for each observation |\n| Highlight/group status (selected vs background; also different highlight colors) | Categorical/nominal | Color/hue (red, blue, gray/light gray) |\n| Overall time trend in age | Quantitative summary over time | Black trend line |",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "201",
+  "graph_type": "CONNECTED DOT",
+  "graph_type_2": "",
+  "topic": "HEALTH AND WELLNESS",
   "image_description": "## 1) Chart type\n- **Arrow / dumbbell-style change chart** (a ranked slope-style comparison), showing change in vaccination rates between two time points for each state and the U.S. average.\n\n## 2) Layout techniques\n- **Single-panel chart**\n- **No faceting or small multiples**\n- Uses **paired positions connected by horizontal arrows** to show change from **prepandemic** to **2023–2024**\n- States are **vertically listed/ranked**\n- Includes a **highlighted vertical band** marking the 2023–2024 to prepandemic reference region\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Jurisdiction (state / U.S. avg.) | Categorical/nominal | Vertical position (row), text label |\n| Vaccination rate (%) | Quantitative | Horizontal position on x-axis; arrow endpoints |\n| Time period (Prepandemic vs. 2023–2024) | Temporal | Arrow direction/endpoints; top reference labels/markers |\n| Change direction (increase vs. decrease) | Categorical/nominal | Arrow direction (left/right) and color hue (green vs. brown) |",
   "comments": [
     {

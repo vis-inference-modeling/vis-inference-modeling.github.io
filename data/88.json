@@ -1,5 +1,8 @@
 {
   "article_id": "88",
+  "graph_type": "",
+  "graph_type_2": "",
+  "topic": "POLITICS AND POLICY",
   "image_description": "1. **Chart type**:  \n   - A **flow / alluvial-style line chart** showing how U.S. states move across partisan margin positions over multiple election years.\n\n2. **Layout techniques**:  \n   - **Single-panel layout** (not faceted).\n   - Uses **flowing lines** to connect the same state across years.\n   - States are arranged by **horizontal position within each election year**.\n   - **Color** separates Democratic-leaning vs Republican-leaning positions, with a neutral center for ties.\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Election year | Temporal | Position on y-axis (rows: 2004, 2008, 2012, 2016, 2020) |\n| State | Categorical/nominal | Individual flow line identity; text labels at selected positions |\n| Partisan margin / partisan lean | Quantitative | Position on x-axis relative to center (“Tie”), with labeled reference points such as +10, +20, +30, +40 Dem./Rep. |\n| Party direction (Democratic vs Republican side) | Categorical/nominal | Color/hue (blue for Democratic side, red for Republican side) |\n| Winning candidate by year | Categorical/nominal | Text labels next to each year on the left (e.g., George W. Bush, Barack Obama, Donald J. Trump, Joseph R. Biden Jr.) |",
   "comments": [
     {

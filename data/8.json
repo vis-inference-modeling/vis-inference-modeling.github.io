@@ -1,5 +1,8 @@
 {
   "article_id": "8",
+  "graph_type": "SCATTER",
+  "graph_type_2": "",
+  "topic": "POLITICS AND POLICY",
   "image_description": "1. **Chart type**  \n   - Two **scatter plots**: **Graph A** and **Graph B**.\n\n2. **Layout techniques**  \n   - Uses **vertical faceting / stacked panels** (two separate scatter plots arranged one above the other).\n   - No stacking of marks within a chart.\n   - Points are annotated with **text labels** for selected countries.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Country | Categorical/nominal | Individual point identity; text labels for selected points |\n| Number of guns | Quantitative | **Graph A:** x-axis position |\n| Number of mass shooters | Quantitative | **Graph A:** y-axis position |\n| Guns per 100 people | Quantitative | **Graph B:** x-axis position |\n| Mass shooters per 100 million people | Quantitative | **Graph B:** y-axis position |\n| Graph panel (A vs. B) | Categorical/nominal | Faceting into two vertically stacked panels with titles “Graph A” and “Graph B” |\n\nNotes visible in the image:\n- All points use the same color, so color does not encode a variable.\n- Marker size and shape appear constant, so they do not encode data variables.",
   "comments": [
     {

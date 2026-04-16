@@ -1,5 +1,8 @@
 {
   "article_id": "9",
+  "graph_type": "CHOROPLETH MAP",
+  "graph_type_2": "",
+  "topic": "EDUCATION AND CULTURE",
   "image_description": "## 1) Chart type\n- **Faceted choropleth maps** of the United States.\n\n## 2) Layout techniques\n- Uses **small multiples / faceting**: four separate U.S. maps arranged in a **2×2 grid**.\n- No stacking.\n- Each facet shows the same geography with a different artist title.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Artist / facet title (Rihanna, Drake, Taylor Swift, Luke Bryan) | Categorical/nominal | **Faceting** into separate maps; **text title/label** above each panel |\n| U.S. geographic region / county-like area | Categorical/nominal (geographic unit) | **Map position/shape** of polygons |\n| Popularity (less popular → more popular) | Quantitative / ordinal (shown as ordered intensity) | **Color hue/lightness** from light pink to dark purple; also shown in **legend** |\n| State boundaries | Categorical/nominal (geographic reference) | **Boundary lines** over the map |\n\nIf needed, I can also convert this into a JSON-style schema.",
   "comments": [
     {

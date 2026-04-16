@@ -1,5 +1,8 @@
 {
   "article_id": "18",
+  "graph_type": "UNIT",
+  "graph_type_2": "PICTOGRAM",
+  "topic": "POLITICS AND POLICY",
   "image_description": "## 1) Chart type\nA **faceted pictogram / icon array chart** (small-multiple waffle-style display), using person-shaped state icons.\n\n## 2) Layout techniques\n- **Faceting / small multiples** by voter profile:\n  - The No-ID Voter\n  - The Working-Parent Voter\n  - The Procrastinating Voter\n  - The Eager Student Voter\n  - The Convicted-Felon Voter\n- Within each facet, the display is split into **two grouped panels**:\n  - **Could Not Vote**\n  - **Could Vote**\n- No stacking in the usual bar/area sense; icons are arranged in compact grids/groups.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Voter profile / voter type (e.g., No-ID, Working-Parent, Procrastinating, Eager Student, Convicted-Felon) | Categorical/nominal | Faceting; panel title |\n| Voting ability status (“Could Not Vote” vs “Could Vote”) | Categorical/nominal | Grouped sub-panel position within each facet; text label |\n| Number of states | Quantitative | Large numeric label above each group; also implied by count of icons |\n| State | Categorical/nominal | Individual icon/mark; state abbreviation label on each icon |\n| State House majority party (Republican vs Democratic) | Categorical/nominal | Color/hue of icon (red vs blue) |",
   "comments": [
     {

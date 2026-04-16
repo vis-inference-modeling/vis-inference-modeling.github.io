@@ -1,5 +1,8 @@
 {
   "article_id": "68",
+  "graph_type": "BAR",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1) Chart type\n- **Top:** Diverging vertical **bar chart** (time series bars around a zero baseline).\n- **Bottom:** **Choropleth-style world map** / gridded heat map of temperature anomaly.\n\n## 2) Layout techniques\n- **Two-panel vertical layout**: a bar chart above a world map.\n- No faceting or small multiples.\n- No stacking.\n- Uses **color divergence** (blue to orange/red) to distinguish cooler vs. warmer values.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year | Temporal | Position on x-axis in the top bar chart; text label for 2019 |\n| Global average temperature difference relative to the middle of the 20th century | Quantitative | Position/length of bars from zero baseline in the top chart; bar color (blue for negative, orange for positive) |\n| Geographic location (world grid / latitude-longitude region) | Spatial | Position on the map |\n| Temperature difference in 2019 relative to the middle of the 20th century | Quantitative | Color/hue on the map (blue to red scale) |\n| No data status | Categorical/nominal | White fill in the map legend / map cells |",
   "comments": [
     {

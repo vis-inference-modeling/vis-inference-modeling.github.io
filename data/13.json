@@ -1,5 +1,8 @@
 {
   "article_id": "13",
+  "graph_type": "BAR",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1. Chart type\nA **composite visualization** with:\n- a **dot plot / stacked dot chart** on top\n- a **vertical bar chart** on the bottom\n\n## 2. Layout techniques\n- **Two vertically stacked panels** showing different measures over time.\n- The **top panel** uses **stacking of dots** within each year to show counts.\n- The **bottom panel** uses **bars by year** and **color highlighting** for selected disasters.\n- No faceting or small multiples are used.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year (top chart) | Temporal | Position on x-axis |\n| Number of hurricanes making landfall in the continental United States | Quantitative | Stacked dots / vertical count of dots per year |\n| Year (bottom chart) | Temporal | Position on x-axis |\n| Total cost of major natural disasters (for disasters causing more than $1 billion in losses) | Quantitative | Bar height / position on y-axis |\n| Selected disaster/event name (e.g., Hurricane Katrina, Hurricane Harvey, Hurricane Maria, Hurricane Irma, California wildfires) | Categorical/nominal | Text labels/annotations |\n| Highlighted disaster bars vs. other years | Categorical/nominal | Color/hue (dark red for highlighted events, light pink for others) |",
   "comments": [
     {

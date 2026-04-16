@@ -1,5 +1,8 @@
 {
   "article_id": "54",
+  "graph_type": "CHOROPLETH MAP",
+  "graph_type_2": "BAR",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "1. **Chart type**  \n- A **composite visualization** combining:\n  - a **thematic habitat map** of North America,\n  - a **horizontal bar chart** showing percent change since 1970 by breeding habitat,\n  - a **multi-series line chart** showing cumulative net loss over time.\n\n2. **Layout techniques**  \n- **Multiple coordinated views**: map on the left, summary bar chart at top right, time-series line chart at bottom right.\n- No faceting or small multiples.\n- The line chart uses **multiple colored lines** (not stacked).\n- The map uses **color-filled regions** to show habitat categories.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Breeding habitat | Categorical/nominal | Color/hue on map regions; color/hue of bars; color/hue of lines; text labels |\n| Geographic region / habitat area location | Spatial | Position on map |\n| Bird population change since 1970 (%) | Quantitative | Horizontal position / bar length in the bar chart |\n| Year (1970, ’80, ’90, 2000, ’10) | Temporal | Position on x-axis in the line chart |\n| Net loss of birds (millions) | Quantitative | Position on y-axis in the line chart |\n| Country/continent basemap (North America) | Spatial/reference | Background map outlines |",
   "comments": [
     {

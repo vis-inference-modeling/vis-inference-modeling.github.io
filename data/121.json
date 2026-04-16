@@ -1,5 +1,8 @@
 {
   "article_id": "121",
+  "graph_type": "CHOROPLETH MAP",
+  "graph_type_2": "",
+  "topic": "DEMOGRAPHICS AND MIGRATION",
   "image_description": "## 1) Chart type\n**Faceted choropleth map / small-multiple thematic maps** of the United States.\n\n## 2) Layout techniques\n- **Faceting / small multiples**: one U.S. map per Asian ethnic group.\n- **No stacking**.\n- Each panel uses the **same geographic base map** and highlights areas meeting a threshold.\n- A shared legend indicates the highlighted regions represent places where the group is **at least 0.5% of total population**.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Asian group (e.g., Chinese, Indian, Filipino, Vietnamese, etc.) | Categorical/nominal | **Faceting** (separate map panel), **panel title text** |\n| Geographic area within the U.S. (county/area location) | Spatial/geographic | **Position on map** |\n| Whether the group makes up at least 0.5% of the local population | Quantitative threshold shown as binary condition | **Color/fill** of map areas (teal = meets threshold; unfilled/light = does not) |\n| Total population of each group (e.g., 4.1 million, 771,000) | Quantitative | **Text label** beneath each panel title |\n\nVisible group categories in the facets: **Chinese, Indian, Filipino, Vietnamese, Korean, Japanese, Pakistani, Hmong, Cambodian, Thai, Laotian, Bangladeshi, Taiwanese, Burmese, Nepalese, Indonesian**.",
   "comments": [
     {

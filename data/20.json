@@ -1,5 +1,8 @@
 {
   "article_id": "20",
+  "graph_type": "DIRECTED GRAPH",
+  "graph_type_2": "",
+  "topic": "DEMOGRAPHICS AND MIGRATION",
   "image_description": "1. **Chart type**  \n   - A **flow map / geographic network map** over a map of the United States, showing curved routes between cities.\n\n2. **Layout techniques**  \n   - Uses a **geographic base map** for spatial positioning.\n   - Uses **overlaid curved connection lines** between city nodes.\n   - No faceting, stacking, or small multiples are used.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| City / airport location | Categorical/nominal | Position on map (geographic coordinates), point marks, text labels |\n| Route connection between cities | Categorical/nominal (pair/relationship) | Curved line connecting two city locations |\n| Air travel demand / route magnitude | Quantitative | Line width (thicker routes indicate greater demand) |\n| Route direction / endpoint role (Origin → Destination) | Categorical/nominal | Color gradient along line from red/pink at origin to blue/teal at destination, as shown in legend |\n\nVisible labels include city names such as Seattle, San Francisco, Los Angeles, Denver, Dallas, Atlanta, Washington, Boston, Orlando, Miami, etc.",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "37",
+  "graph_type": "SCATTER",
+  "graph_type_2": "",
+  "topic": "SPORTS",
   "image_description": "1. **Chart type**: Scatter plot.\n\n2. **Layout techniques**:  \n- Single-panel chart  \n- No faceting or small multiples  \n- Uses reference lines (vertical and horizontal averages) to divide the plot into quadrants  \n- No stacking\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Average yearly salary during contract | Quantitative | Position on x-axis |\n| Average yearly WAR during contract | Quantitative | Position on y-axis |\n| Player name / contract label | Categorical/nominal | Text label next to points |\n| Above/below average salary threshold | Quantitative-derived grouping | Vertical dashed reference line / shaded right-side region |\n| Above/below average WAR threshold | Quantitative-derived grouping | Horizontal dashed reference line / shaded lower region |\n\nNotes:\n- All points use the same color and shape, so color does not appear to encode a separate data variable.\n- The shaded lower-right quadrant visually emphasizes contracts with above-average salary and below-average WAR.",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "159",
+  "graph_type": "LINE",
+  "graph_type_2": "",
+  "topic": "SPORTS",
   "image_description": "1. **Chart type**  \n   - **Line chart** (time series), with the final segment highlighted in a different color and endpoint annotations.\n\n2. **Layout techniques**  \n   - **Single-panel chart**\n   - No faceting or small multiples\n   - No stacking\n   - Uses **highlighting** via color for the most recent segment/endpoints\n   - Uses **direct labels/annotations** for 2022 and 2023 values\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year | Temporal | Position on x-axis; text labels for highlighted points (2022, 2023) |\n| Average game duration | Quantitative | Position on y-axis; connected line; direct value labels for highlighted points (“3:08”, “2:39”) |\n| Highlight status (recent segment vs rest) | Categorical/nominal | Color/hue of line and points (orange vs gray) |",
   "comments": [
     {

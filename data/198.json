@@ -1,5 +1,8 @@
 {
   "article_id": "198",
+  "graph_type": "TILE GRID MAP",
+  "graph_type_2": "MAP",
+  "topic": "POLITICS AND POLICY",
   "image_description": "1. **Chart type**:  \n   Tile-based categorical chart (state-by-state grid of small legislature icons).\n\n2. **Layout techniques**:  \n   - **Small multiples / repeated glyphs**: one small icon per state  \n   - **Custom spatial arrangement**: states are arranged in a compact grid-like layout, not on axes  \n   - **Within-glyph partitioning**: each state icon is split into two halves for upper vs. lower chamber  \n   - **Additional mark overlay**: an underline indicates trifecta states\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| State | Categorical/nominal | Separate repeated glyphs and text labels |\n| Upper chamber partisan control | Categorical/nominal | Left half of each state tile; color/hue |\n| Lower chamber partisan control | Categorical/nominal | Right half of each state tile; color/hue |\n| Control category (Dem., Rep., Split control) | Categorical/nominal | Color/hue of chamber halves |\n| Flip status | Categorical/nominal | Saturated highlight color on chamber half |\n| Trifecta state | Categorical/nominal (binary) | Black underline beneath the state tile |\n\nNotes visible in the chart:\n- The legend indicates chamber position: **left = upper chamber**, **right = lower chamber**.\n- Nebraska is marked with an asterisk and footnote noting it has a single chamber.",
   "comments": [
     {

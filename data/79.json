@@ -1,5 +1,8 @@
 {
   "article_id": "79",
+  "graph_type": "FACETED BAR",
+  "graph_type_2": "",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "## 1. Chart type\n- **Diverging horizontal bar chart** with two side-by-side panels.\n\n## 2. Layout techniques\n- Uses **two aligned panels / small multiples**:\n  - **Previous year**\n  - **Previous month**\n- Each panel shows **horizontal bars diverging from a central zero line**.\n- Categories are shared across rows, so the two panels are **aligned by retail category**.\n- No stacking or faceting beyond the two-panel comparison.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Retail category / retail sales sector (e.g., Nonstore retailers, Clothing, Total retail sales) | Categorical/nominal | Row position / y-axis labels |\n| Change from previous year (%) | Quantitative | Horizontal position and bar length in the **Previous year** panel; text labels |\n| Change from previous month (%) | Quantitative | Horizontal position and bar length in the **Previous month** panel; text labels |\n| Comparison period (Previous year vs Previous month) | Categorical/nominal | Panel headers / small-multiple columns |\n| Direction of change (positive vs negative) | Categorical/nominal (derived) | Bar direction relative to zero line (right vs left) |",
   "comments": [
     {

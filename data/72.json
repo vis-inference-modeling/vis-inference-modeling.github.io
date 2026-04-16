@@ -1,5 +1,8 @@
 {
   "article_id": "72",
+  "graph_type": "",
+  "graph_type_2": "",
+  "topic": "",
   "image_description": "## 1) Chart type\nA **faceted range/bar chart** (small multiples) showing **daily high–low temperature ranges** for multiple cities across a 10-day period, with actual vs forecast values distinguished by color.\n\n## 2) Layout techniques\n- **Small multiples / faceting** by **city**: each city has its own mini-panel.\n- Within each panel, temperatures are shown as **vertical range bars** for each day.\n- **Color/lightness** distinguishes **actual** vs **forecast** and also highlights the **normal range** in the background.\n- No stacking is used.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| City | Categorical/nominal | Faceting into separate small-multiple panels; panel title |\n| Date / Day | Temporal | Position along x-axis within each panel; day-of-week labels (T, W, T, F, S, S, M, T, W, T) |\n| Daily high temperature | Quantitative | Upper endpoint / top of vertical temperature range bar on y-axis |\n| Daily low temperature | Quantitative | Lower endpoint / bottom of vertical temperature range bar on y-axis |\n| Temperature (degrees) | Quantitative | Position on y-axis; axis labels such as 20°, 40°, 60°, 80° |\n| Actual vs Forecast status | Categorical/nominal | Color/lightness of range bars (darker for actual, medium gray for forecast) |\n| Normal temperature range | Quantitative | Light gray background vertical range band behind each day’s bar |\n| Record high / record low range | Quantitative | Very light gray outer vertical range band shown in legend/explanation |",
   "comments": [
     {

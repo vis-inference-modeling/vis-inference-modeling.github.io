@@ -1,5 +1,8 @@
 {
   "article_id": "75",
+  "graph_type": "BUBBLE MAP",
+  "graph_type_2": "",
+  "topic": "HEALTH AND WELLNESS",
   "image_description": "## 1. Chart type\n- **Top:** Proportional symbol map / **bubble map** of U.S. counties.\n- **Bottom:** **Choropleth map** of U.S. counties.\n\n## 2. Layout techniques\n- The visualization uses **two vertically stacked map panels** (small multiples by metric).\n- No faceting by category within each panel.\n- No stacking of marks.\n- Top panel overlays **circles on a geographic basemap**; bottom panel fills **county polygons** by color.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| County geographic location | Spatial/geographic | Position on map (latitude/longitude) |\n| Total number of Covid cases by county in 2020 | Quantitative | Circle size/area in the top map |\n| Per capita Covid cases by county in 2020 (share of population with a reported case) | Quantitative | Color/hue of county areas in the bottom map |\n| County | Categorical/nominal (geographic unit) | Individual map marks/regions (one circle or one county polygon per county) |\n| State names / selected place names | Categorical/nominal | Text labels on the map |\n| No cases reported | Categorical/nominal | Light gray fill in the choropleth legend/map |",
   "comments": [
     {

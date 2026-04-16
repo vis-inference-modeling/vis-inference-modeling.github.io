@@ -1,5 +1,8 @@
 {
   "article_id": "128",
+  "graph_type": "BUBBLE",
+  "graph_type_2": "BEESWARM",
+  "topic": "DEMOGRAPHICS AND MIGRATION",
   "image_description": "## 1) Chart type\n- **Top:** **Faceted packed-dot / bubble comparison chart** (each country-period shown as a separate dot-filled circle; dots represent counts).\n- **Bottom:** **Proportional symbol map** (dot-filled circles placed on a geographic map).\n\n## 2) Layout techniques\n- **Top section:** Uses **small multiples / faceting** by country and time period. No stacking.\n- **Bottom section:** Uses a **map layout** with **proportional symbols** positioned geographically by destination country.\n- **Color highlighting:** Ukraine-related values are highlighted in **magenta**, while comparison cases/background symbols are **gray**.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Country / place name | Categorical/nominal | Facet title/label (top); map label (bottom); geographic location on map (bottom) |\n| Time period / year range | Temporal | Text label under country names in top facets |\n| Number of refugees / one-year increase in refugees | Quantitative | Size/area of packed-dot circle; number of dots; numeric text label |\n| Individual people count unit (“each dot represents 1,000 people”) | Quantitative | Dot repetition/count within circles |\n| Ukraine vs. other countries / highlighted status | Categorical/nominal | Color/hue (magenta for Ukraine-related circles, gray for others) |\n| Geographic location | Spatial | Position on map (bottom panel) |",
   "comments": [
     {

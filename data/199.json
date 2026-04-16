@@ -1,5 +1,8 @@
 {
   "article_id": "199",
+  "graph_type": "FACETED BAR",
+  "graph_type_2": "",
+  "topic": "SPORTS",
   "image_description": "## 1. Chart type\n- **Two-panel horizontal bar chart** (ranked bar charts).\n- Left panel: major sports.\n- Right panel: “nonrevenue” sports.\n\n## 2. Layout techniques\n- **Side-by-side panels / small multiples** by sport group (“major sports” vs. “nonrevenue” sports).\n- Within each panel, bars are **not stacked**.\n- Bars are **sorted/ranked** by earnings.\n- A few bars in the right panel are **highlighted with color** and accompanied by an **annotation arrow/text**.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Sport | Categorical/nominal | Position on y-axis; text labels next to bars |\n| Average earnings | Quantitative | Bar length / position on x-axis |\n| Sport group (major sports vs. “nonrevenue” sports) | Categorical/nominal | Faceting into left and right panels; panel titles |\n| Highlighted sports status | Categorical/nominal | Color/hue of bars (red vs. light gray/white) |\n\nNotes:\n- The highlighted bars correspond to specific sports visible in the right panel, but the visualization encodes this primarily through **color**, not a separate legend.\n- The annotation text and arrow are explanatory callouts, not additional plotted data variables.",
   "comments": [
     {

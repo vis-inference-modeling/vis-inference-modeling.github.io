@@ -1,5 +1,8 @@
 {
   "article_id": "101",
+  "graph_type": "UNIT",
+  "graph_type_2": "WAFFLE",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "1. **Chart type**  \n   - **Pictogram / icon array chart** shown as four side-by-side panels.\n\n2. **Layout techniques**  \n   - Uses **small multiples / faceting**: four separate panels for different scenarios/time points.\n   - Within each panel, repeated **vehicle icons** are arranged in a grid.\n   - Color is used to distinguish categories (green vs. gray), but the icons are **not stacked**.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Scenario / time point (“Vehicles on the road today”, “Projected on the road in 2035”, “Projected on the road in 2050”, “In 2050, if all new sales are electric by 2035”) | Temporal / categorical | **Faceting** into four panels; **panel title/label** |\n| Vehicle count / share represented | Quantitative | **Number of repeated car icons** in each panel |\n| Vehicle powertrain type (electric vs. non-electric/gasoline) | Categorical/nominal | **Color/hue** of icons (green vs. gray) |\n\nNotes:\n- The chart does **not** use axes.\n- The grid position of icons appears primarily for arrangement, not to encode an additional variable visibly.",
   "comments": [
     {

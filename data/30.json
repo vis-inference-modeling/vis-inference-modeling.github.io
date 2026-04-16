@@ -1,5 +1,8 @@
 {
   "article_id": "30",
+  "graph_type": "STACKED BAR",
+  "graph_type_2": "",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "## 1) Chart type\n- **Faceted timeline / career timeline chart** with **stacked interval blocks** for each person.\n\n## 2) Layout techniques\n- Uses **small multiples / faceting by candidate**: four vertical panels, one per candidate.\n- Within each panel, career periods are shown as **stacked contiguous rectangles** along a shared vertical time/age scale.\n- Uses **color coding** to distinguish career-category types.\n- Panels are also grouped under **party headers** (Republican ticket, Democratic ticket).\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Candidate | Categorical/nominal | Faceting into separate vertical panels; name label at top |\n| Party ticket | Categorical/nominal | Group header labels spanning panels |\n| Age | Quantitative | Position on vertical axis (y-axis) with tick labels |\n| Career moment / role | Categorical/nominal | Text labels inside blocks |\n| Start year / event year | Temporal | Implied by vertical placement of block start and year labels in text |\n| Duration / time span of role | Quantitative/temporal | Height/length of rectangular blocks |\n| Career category (College, Military, Private sector, Public service or politics, Federal government, Candidate for federal office) | Categorical/nominal | Color/hue of blocks |\n| Birth year / birthplace | Temporal + categorical/nominal | Subtitle text beneath candidate name |",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "82",
+  "graph_type": "STACKED AREA",
+  "graph_type_2": "",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "## 1) Chart type\n- **Alluvial / flow-style area chart** with **variable-width bands** over time.\n- It also functions like a **stacked area chart** within the tan “unemployed” region, showing subcategories.\n\n## 2) Layout techniques\n- **Stacking**: The tan “Total unemployed” area is subdivided into stacked subgroups (“Temporarily laid off,” “Other,” “Permanently laid off”).\n- **Side-by-side grouped areas**: A separate purple area (“Not in labor force but want a job”) is shown adjacent to the tan unemployed area.\n- **Temporal layout**: Values are shown across a vertical time axis from **Jan.** to **April** to **Sept.**\n- **Direct labeling**: Categories are labeled inside the shapes rather than using a legend.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Time (Jan., April, Sept.) | Temporal | Position on vertical axis |\n| Number of people / count (millions) | Quantitative | Width/area of each band; numeric labels at right |\n| Labor force status group (“Total unemployed”, “Not in labor force but want a job”) | Categorical/nominal | Separate colored regions; direct text labels |\n| Unemployed subgroup (“Temporarily laid off”, “Other”, “Permanently laid off”) | Categorical/nominal | Stacked subdivisions within tan area; internal boundaries; direct text labels |\n| Millions labels (12 million, 32 million, 19 million) | Quantitative | Text annotation |",
   "comments": [
     {

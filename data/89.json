@@ -1,5 +1,8 @@
 {
   "article_id": "89",
+  "graph_type": "BAR",
+  "graph_type_2": "",
+  "topic": "HEALTH AND WELLNESS",
   "image_description": "1. **Chart type**: Diverging horizontal bar chart.\n\n2. **Layout techniques**:  \n- Uses a **single panel** (no faceting or small multiples).  \n- Bars **diverge from a central zero line** to show direction of the gap.  \n- Not stacked.  \n- Text labels are placed directly on or near bars.\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Cause of death | Categorical/nominal | One horizontal bar per category; direct text labels on bars |\n| Mortality rate gap between Black and white people (deaths per 100k) | Quantitative | Bar length and horizontal position relative to the zero line (x-axis) |\n| Direction of disparity (higher Black death rate vs higher white death rate) | Categorical/nominal | Side of zero on the x-axis (right vs left), reinforced by annotations |\n| Rank / relative prominence of cause (e.g., “Second-largest cause,” “Seventh-largest cause”) | Ordinal | Text annotations with leader lines |\n| Overall death rate for selected causes (e.g., “149 per 100k”, “21 per 100k”) | Quantitative | Text annotations with leader lines |\n| Population group comparison (Black vs white) | Categorical/nominal | Referenced in title and axis annotations; encoded through signed direction of bars rather than separate marks |\n| Year (2018) | Temporal | Text note/caption only |",
   "comments": [
     {

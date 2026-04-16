@@ -1,5 +1,8 @@
 {
   "article_id": "116",
+  "graph_type": "TREEMAP",
+  "graph_type_2": "STACKED BAR",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "1. **Chart type**  \n   - **Treemap** (main graphic) showing countries as rectangles sized by historical CO₂ emissions share.  \n   - **Stacked bar charts** (bottom) comparing shares of historical CO₂ emissions and population.\n\n2. **Layout techniques**  \n   - The main view uses **two side-by-side treemaps / grouped treemap sections**: **Rich countries** and **All others**.  \n   - Within each section, rectangles are **nested/packed** and **sized by value**.  \n   - **Color** distinguishes the groups.  \n   - The bottom uses **horizontal stacked bars** for summary comparison, including a small separate segment for **International transport**.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Country / territory name | Categorical/nominal | Text label inside treemap rectangles |\n| Group (Rich countries / All others / International transport) | Categorical/nominal | Section placement, color/hue, bar segment grouping, labels |\n| Historical CO₂ emissions share (%) by country/territory | Quantitative | Area of treemap rectangles; numeric text labels |\n| Summary measure type (Historical CO₂ emissions vs Population) | Categorical/nominal | Separate stacked bar rows; row labels |\n| Share of total within summary bars (%) | Quantitative | Length of stacked bar segments; numeric text labels |\n| Country count statement (“23 rich, developed countries”, “More than 150 countries”) | Quantitative | Headline text annotations |",
   "comments": [
     {

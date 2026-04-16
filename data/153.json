@@ -1,5 +1,8 @@
 {
   "article_id": "153",
+  "graph_type": "BUBBLE MAP",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1. Chart type\n- **Proportional symbol map / bubble map** over a **geographic base map** of the United States.\n\n## 2. Layout techniques\n- Uses a **single map panel** (no faceting or small multiples).\n- Uses **symbol sizing**: circles are scaled by magnitude.\n- Includes **layering/overlay**:\n  - rail lines as thin gray line features\n  - county/state geography as the base map\n  - orange circles on top for derailment counts\n  - a highlighted region (Ohio and Pennsylvania area) with labels\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| County location (geographic position) | Spatial/geographic | Position on map (longitude/latitude) of circles |\n| Number of derailed train cars by county | Quantitative | Circle size/area |\n| Rail line | Spatial/geographic | Gray line paths on map |\n| State / region highlight (e.g., OHIO, PA) | Categorical/nominal | Highlighted filled area and text labels |\n| Year range: 1975 to 2022 | Temporal | Shown in title as the time span of the aggregated data |",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "142",
+  "graph_type": "UNIT",
+  "graph_type_2": "WAFFLE",
+  "topic": "POLITICS AND POLICY",
   "image_description": "1. **Chart type**:  \n   Pictogram / unit chart (icon array) with grouped colored rectangles representing voters.\n\n2. **Layout techniques**:  \n   - Uses **small multiple grouped panels by state** (Wyoming, North Dakota, Connecticut, Alabama, Michigan, California).  \n   - Within each state panel, units are **grouped by race/ethnicity category** and distinguished by **color**.  \n   - The panels are arranged as **comparative examples** connected by text (“has similar representation as” / “or”), not by axes.  \n   - No stacking on a common axis; units are laid out in compact grids.\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| State | Categorical/nominal | Grouping into separate labeled panels; text labels |\n| Number of voters / voter count | Quantitative | Number of repeated rectangular unit marks in each state panel; also stated in text labels (“1 voter”, “6 voters”, etc.) |\n| Race/ethnicity (White, Black, Asian, Hispanic, Other) | Categorical/nominal | Color/hue of unit marks; category labels above groups |\n| Senate representation equivalence | Categorical/relational text | Text annotations connecting state examples (“has similar representation as”, “or”) |",
   "comments": [
     {

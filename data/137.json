@@ -1,5 +1,8 @@
 {
   "article_id": "137",
+  "graph_type": "STACKED AREA",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "1. **Chart type**  \n   - Main chart: **stacked area chart** over time  \n   - Inset: **choropleth-style regional map** with highlighted areas\n\n2. **Layout techniques**  \n   - The main visualization uses **stacking**: colored bands represent ranges of soil moisture percentile, stacked to fill **100% of land** vertically.\n   - There is **no faceting** or small multiples in the main chart.\n   - A **map inset** on the right provides geographic context for the highlighted recent period.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year / time period | Temporal | Position on x-axis |\n| Percent of land | Quantitative | Position on y-axis / total stacked height |\n| Soil moisture percentile category | Ordinal | Color/hue of stacked bands |\n| Megadrought period annotation (e.g., 1572–1600, Current megadrought) | Temporal | Text labels and bracket annotations above chart |\n| Region / state (Calif., Nev., Utah, Ariz., Colo., N.M.) | Categorical/nominal | Position in inset map and text labels |\n| Areas marked “Driest since 1520” (2000–2021) | Categorical/nominal | Orange highlight color on inset map |",
   "comments": [
     {

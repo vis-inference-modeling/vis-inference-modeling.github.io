@@ -1,5 +1,8 @@
 {
   "article_id": "167",
+  "graph_type": "BUBBLE",
+  "graph_type_2": "",
+  "topic": "DEMOGRAPHICS AND MIGRATION",
   "image_description": "## 1) Chart type\n- **Scatter plot** with a **fitted trend line**\n- Includes one large overall scatter plot and a row of **small-multiple scatter plots** for specific crime categories\n\n## 2) Layout techniques\n- **Small multiples / faceting**: five smaller scatter plots labeled **Assaults, Robberies, Murders, Burglaries, Larcenies**\n- **Reference lines**: vertical and horizontal zero lines\n- **Trend lines**: one in the main panel and one in each small panel\n- No stacking\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Change in undocumented immigrants (per 100,000 people) | Quantitative | Position on x-axis |\n| Change in violent crimes (per 100,000 people) | Quantitative | Position on y-axis in the main scatter plot |\n| Crime category (Assaults, Robberies, Murders, Burglaries, Larcenies) | Categorical/nominal | Faceting / small-multiple panel titles |\n| Change in crime rate for each faceted category (per 100,000 people) | Quantitative | Position on y-axis within each small-multiple panel |\n| Metropolitan area (180 metro areas) | Categorical/nominal | Individual points/marks (one dot per metro area) |\n\nNotes:\n- Point color appears uniform and does **not** encode a separate variable.\n- The trend lines and zero lines are analytical/reference elements, not additional data variables.",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "115",
+  "graph_type": "STACKED BAR",
+  "graph_type_2": "FLOW",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "1. **Chart type**:  \n   Side-by-side **stacked vertical bar chart** (timeline-style comparison of transit times).\n\n2. **Layout techniques**:  \n   - Uses **stacking** within each vertical bar to show component durations.\n   - Uses a **side-by-side comparison** of two bars: “Typically 59 days” vs. “Currently 87 days.”\n   - Includes **annotation callouts** and **icons** to explain delays and transportation modes.\n   - No faceting or small multiples beyond the two compared bars.\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Scenario (“Typically” vs. “Currently”) | Categorical/nominal | Separate side-by-side bars; top labels |\n| Total transit time (days) | Quantitative | Overall bar height; top text labels (“59 days”, “87 days”) |\n| Transit stage duration (days for each segment) | Quantitative | Height of stacked bar segments; numeric labels inside segments |\n| Transit stage / shipment milestone (e.g., cargo ready to depart Indonesia, arrival in Vancouver, arrival in Ferndale, arrival in Orlando) | Categorical/nominal | Vertical position of orange milestone dots; text labels/callouts |\n| Transportation mode | Categorical/nominal | Icons (factory/ship/rail/truck) placed alongside the bar; associated segment position |\n| Delay explanation / cause | Categorical/nominal (textual annotation) | Annotation text connected by dotted leader lines |\n| Sequence/order of shipment journey | Ordinal | Vertical ordering from top to bottom along the bars |",
   "comments": [
     {

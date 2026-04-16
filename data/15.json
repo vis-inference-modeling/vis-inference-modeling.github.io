@@ -1,5 +1,8 @@
 {
   "article_id": "15",
+  "graph_type": "LINE",
+  "graph_type_2": "",
+  "topic": "POLITICS AND POLICY",
   "image_description": "1. **Chart type**  \n   Multi-series **line chart**.\n\n2. **Layout techniques**  \n   - Multiple lines plotted in a **single panel**  \n   - Uses **color** to distinguish categories (justice nomination party)  \n   - Includes **direct labels** at line endpoints for individual justices  \n   - No faceting or small multiples  \n   - One highlighted line (Kennedy) shown with thicker/yellow emphasis\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year | Temporal | Position on x-axis |\n| Martin-Quinn score | Quantitative | Position on y-axis |\n| Justice (e.g., Thomas, Alito, Gorsuch, Roberts, Kennedy, Breyer, Kagan, Ginsburg, Sotomayor) | Categorical/nominal | Separate line identity; direct text labels at line ends |\n| Nominated by party (Republican / Democrat) | Categorical/nominal | Line color/hue (red vs blue) |\n| Kennedy highlight/emphasis | Categorical/nominal (annotation/emphasis) | Distinct line color/thickness (yellow/orange highlight) |\n\nVisible annotations such as “More Conservative,” “More Liberal,” and “Median justice” are textual reference labels, not additional plotted data variables.",
   "comments": [
     {

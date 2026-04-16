@@ -1,5 +1,8 @@
 {
   "article_id": "216",
+  "graph_type": "UNIT",
+  "graph_type_2": "WAFFLE",
+  "topic": "EDUCATION AND CULTURE",
   "image_description": "## 1) Chart type\n- **Ranked grid / heatmap-style tile chart** showing the **top 10 programs by year**.\n- Each cell is a colored tile representing the broadcast occupying a given **rank** in a given **year**.\n\n## 2) Layout techniques\n- Uses a **matrix/grid layout**:\n  - **Columns** = years\n  - **Rows** = ranks (1–10)\n- Uses **color encoding** to distinguish broadcast categories/programs.\n- No faceting, stacking, or small multiples.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year | Temporal | Position on x-axis (columns), column labels |\n| Rank | Ordinal | Position on y-axis (rows labeled 1–10) |\n| Broadcast / Program name | Categorical/nominal | Color/hue of tiles (legend categories: Macy’s Parade, Academy Awards, “60 Minutes,” “NCIS,” Other) |\n\n## Visible legend categories\n- Macy’s Parade\n- Academy Awards\n- “60 Minutes”\n- “NCIS”\n- Other",
   "comments": [
     {

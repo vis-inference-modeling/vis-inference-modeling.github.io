@@ -1,5 +1,8 @@
 {
   "article_id": "14",
+  "graph_type": "TREE",
+  "graph_type_2": "",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "1. **Chart type**: Treemap (area chart of nested rectangles/squares sized by value).\n\n2. **Layout techniques**:  \n- Uses **space-filling tiling** (treemap layout).  \n- No faceting, no axes, no stacking in the usual bar/area-chart sense.  \n- Each company is shown as a separate rectangle, with **area encoding** the value.\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Company name | Categorical/nominal | Text label inside each rectangle |\n| Stock market value / market capitalization (in billions of dollars) | Quantitative | Area/size of each rectangle; also shown as text label |\n| Company category/identity distinction | Categorical/nominal | Color/hue of rectangles (different colors distinguish companies) |\n\nVisible note/title text also indicates:\n- The large “$1,000,000,000,000” is a headline/reference value, shown as **text annotation**, not a plotted axis variable.\n- The note says squares are sized according to each company’s stock market value on **August 2**, but date is presented as contextual annotation rather than an encoded plotted variable.",
   "comments": [
     {

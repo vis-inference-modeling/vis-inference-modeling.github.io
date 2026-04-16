@@ -1,5 +1,8 @@
 {
   "article_id": "29",
+  "graph_type": "BUBBLE",
+  "graph_type_2": "STACKED BAR",
+  "topic": "POLITICS AND POLICY",
   "image_description": "## 1) Chart type\n- **Packed bubble chart (circle packing)** as the main graphic.\n- **Supplementary horizontal bar chart** at the bottom for grouped totals.\n\n## 2) Layout techniques\n- Uses **circle packing / bubble layout** to place countries as circles of different sizes.\n- Uses **color grouping** to distinguish highlighted countries/groups from others.\n- Includes a **horizontal comparison bar section** below the bubbles.\n- No faceting or small multiples.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Country | Categorical/nominal | Circle label text; individual circles in packed bubble layout |\n| Military spending | Quantitative | Circle area/size; numeric labels inside circles; bar length in bottom chart |\n| Group/category (United States / Next 7 countries / Rest of the world / other highlighted countries vs gray others) | Categorical/nominal | Color/hue; separate bars in bottom chart; text labels |\n| Proposed increase | Quantitative | Dashed outline around U.S. circle; annotation text “+$54 billion” |\n\n### Visible labeled values/countries\n- United States\n- Britain\n- France\n- Saudi Arabia\n- India\n- China\n- Russia\n- Japan\n\nThese are shown as labeled circles, while many other countries appear as unlabeled gray circles.",
   "comments": [
     {

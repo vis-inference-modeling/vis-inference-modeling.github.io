@@ -1,5 +1,8 @@
 {
   "article_id": "181",
+  "graph_type": "STACKED AREA",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "1. **Chart type**  \n   - **Stacked area chart** for world electricity generation over time.\n   - **Faceted stacked area charts (small multiples)** for country totals (China, United States, India).\n\n2. **Layout techniques**  \n   - **Stacking**: Electricity generation sources are stacked to show total generation and composition.\n   - **Faceting / small multiples**: Separate country panels for China, United States, and India.\n   - **Color grouping**: Clean sources use yellow/orange hues; fossil sources use blue/gray hues.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year | Temporal | Position on x-axis |\n| Electricity generation | Quantitative | Position on y-axis; stacked area height |\n| Energy source / generation type (Nuclear, Hydroelectric and other, Wind and solar, Oil and other, Gas, Coal) | Categorical/nominal | Color/hue; stacked area segments; text labels |\n| Power category (Clean, Fossil) | Categorical/nominal | Color grouping in legend/header |\n| Country (China, United States, India) | Categorical/nominal | Faceting into separate panels; panel titles |",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "184",
+  "graph_type": "DENSITY",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1. Chart type\n- **Faceted distribution / density-style area chart** (filled histogram-like distribution curves).\n- Two panels compare temperature distributions for **1951–1980** and **2013–2023**.\n\n## 2. Layout techniques\n- **Faceting / small multiples**: two vertically stacked panels, one for each time period.\n- **Overlay**: in the lower panel, the earlier **1951–1980 base-period** distribution appears again as a light hatched reference behind the newer distribution.\n- **Color segmentation**: the distribution is divided into labeled temperature categories (extremely cold, cold, normal, hot, extremely hot) using different colors.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Summer temperature category / anomaly class (Extremely cold, Cold, Normal, Hot, Extremely hot) | Ordinal | Position along x-axis; color/hue of filled area; text labels along bottom |\n| Frequency / relative occurrence | Quantitative | Position on y-axis; height of filled distribution area |\n| Time period (1951–1980, 2013–2023) | Temporal | Faceting into two vertical panels; large panel labels |\n| Base-period reference (1951–1980) | Temporal | Overlaid light gray hatched distribution in both panels; annotation label |",
   "comments": [
     {

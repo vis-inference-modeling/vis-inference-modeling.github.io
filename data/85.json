@@ -1,5 +1,8 @@
 {
   "article_id": "85",
+  "graph_type": "SCATTER",
+  "graph_type_2": "DOT",
+  "topic": "HEALTH AND WELLNESS",
   "image_description": "## 1) Chart type\nA set of **strip plots / dot plots** (one-dimensional scatter plots), shown as **four vertically stacked panels**.\n\n## 2) Layout techniques\n- **Small multiples / faceting by topic**: four separate horizontal panels, each for a different metric.\n- **No stacking**.\n- Within each panel, countries are shown as dots positioned along a single horizontal quantitative axis.\n- A highlighted dot color is used to emphasize the **U.S.** relative to other countries.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Cellphone service cost in 2019 | Quantitative | Position on x-axis in the first panel |\n| Annual hours worked in 2018 | Quantitative | Position on x-axis in the second panel |\n| Health expenditures in 2017, share of G.D.P. | Quantitative | Position on x-axis in the third panel |\n| Annual minimum wage in 2018 | Quantitative | Position on x-axis in the fourth panel |\n| Country | Categorical/nominal | Individual dots; text labels for selected countries |\n| Panel topic / metric | Categorical/nominal | Faceting into four separate panels with titles |\n| U.S. highlight status | Categorical/nominal | Color/hue (purple for U.S., gray for others) |",
   "comments": [
     {

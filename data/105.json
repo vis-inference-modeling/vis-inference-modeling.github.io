@@ -1,5 +1,8 @@
 {
   "article_id": "105",
+  "graph_type": "",
+  "graph_type_2": "",
+  "topic": "",
   "image_description": "## 1) Chart type\n- **Two side-by-side thematic point maps** of the contiguous United States.\n- Each map overlays many small geographic marks on a basemap, colored by energy type.\n\n## 2) Layout techniques\n- **Small multiples / side-by-side comparison**: one map for **“Wind and Solar Footprint Today”** and one for **“Wind and Solar Needed by 2050.”**\n- **Layering/overlay**: colored point/area marks are drawn on top of a geographic basemap with city/state labels.\n- No stacking is visible.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Geographic location (U.S. position) | Spatial / geographic | Position on map (x-y geographic coordinates) |\n| Energy type: Wind vs Solar | Categorical/nominal | Color/hue (blue for wind, orange for solar) |\n| Scenario / time frame: Today vs Needed by 2050 | Categorical/nominal (temporal comparison in labels) | Faceting / separate side-by-side map panels; title text |\n| City names / place names | Categorical/nominal | Text labels on map |\n| Basemap geography (state outlines/coastline/terrain) | Spatial / geographic | Background map outlines and shading |\n\nNotes:\n- The titles explicitly indicate the two comparison conditions: **Today** and **Needed by 2050**.\n- No explicit quantitative axis or legend is visible.",
   "comments": [
     {

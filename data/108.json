@@ -1,5 +1,8 @@
 {
   "article_id": "108",
+  "graph_type": "LINE",
+  "graph_type_2": "",
+  "topic": "HEALTH AND WELLNESS",
   "image_description": "1. **Chart type**  \n   - Two-panel **line chart** (time-series line charts).\n\n2. **Layout techniques**  \n   - **Faceting / small multiples**: two side-by-side panels comparing:\n     - **Ten most vaccinated states**\n     - **Ten least vaccinated states**\n   - Each panel contains **two colored lines** for age groups.\n   - A **shaded vertical band** marks a recent period labeled “REPORTING DELAYS POSSIBLE.”\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Date | Temporal | Position on x-axis |\n| New daily hospital admissions per 100,000 people | Quantitative | Position on y-axis |\n| Age group (Adults, Under 18) | Categorical/nominal | Color/hue of line; end labels |\n| State group / vaccination category (Ten most vaccinated states, Ten least vaccinated states) | Categorical/nominal | Faceting into left and right panels; panel titles |\n| Reporting-delay period | Temporal interval | Shaded vertical band/background region with text label |",
   "comments": [
     {

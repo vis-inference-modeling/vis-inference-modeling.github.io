@@ -1,5 +1,8 @@
 {
   "article_id": "210",
+  "graph_type": "SPAGHETTI",
+  "graph_type_2": "",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "1. **Chart type**: Multi-series line chart.\n\n2. **Layout techniques**:  \n- Overlaid lines for many yearly series in a single panel  \n- One series (2025) is highlighted in red, while the others are muted gray  \n- No faceting, stacking, or small multiples\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Date within first half of year (Jan.–June) | Temporal | Position on x-axis |\n| Percentage change in U.S. dollar index | Quantitative | Position on y-axis |\n| Year | Temporal / ordinal sequence | Separate line series; color emphasis (2025 in red, other years in gray) |\n| 2025 annotation value (“2025 -10.7%”) | Quantitative + label | Text label attached to highlighted line endpoint |\n| Endpoint marker for highlighted series | Quantitative (final value at end date) | Point marker on the red line’s last observation |",
   "comments": [
     {

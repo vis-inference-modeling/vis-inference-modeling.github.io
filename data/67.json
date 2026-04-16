@@ -1,5 +1,8 @@
 {
   "article_id": "67",
+  "graph_type": "BUBBLE",
+  "graph_type_2": "",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "## 1. Chart type\n- **Bubble chart / scatter plot**\n- Bubbles are plotted along a horizontal percentage scale and sized by industry sales.\n\n## 2. Layout techniques\n- **Single-panel chart** (no faceting or small multiples)\n- **Color grouping** separates categories into two groups (orange vs. teal)\n- **Bubble size encoding** is used to show magnitude\n- Points appear **jittered vertically** for separation; the vertical position does not show a labeled quantitative axis\n- No stacking\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Change in spending from 2019 | Quantitative | Position on x-axis (percentage from negative to positive) |\n| Industry sales | Quantitative | Bubble area/size |\n| Industry / merchant category | Categorical/nominal | Text labels attached to selected bubbles |\n| Spending direction/group | Categorical/nominal | Color/hue (orange for less spending side, teal for more spending side) |\n\nIf useful, I can also provide a plain-language summary of the main visual pattern.",
   "comments": [
     {

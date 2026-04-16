@@ -1,5 +1,8 @@
 {
   "article_id": "42",
+  "graph_type": "CHOROPLETH MAP",
+  "graph_type_2": "",
+  "topic": "DEMOGRAPHICS AND MIGRATION",
   "image_description": "## 1) Chart type\n- **Choropleth map** of U.S. counties (with Alaska and Hawaii insets), showing change in working-age population.\n\n## 2) Layout techniques\n- **Geographic layout** using county boundaries.\n- **No faceting or small multiples**.\n- Uses **color shading** (diverging scale) across counties rather than stacking.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| U.S. county / geographic area | Categorical/nominal (geographic unit) | Spatial position and county polygon boundaries on the map |\n| Change in working-age (25 to 54 years old) population from 2007 to 2017 | Quantitative | Color/hue lightness on counties using a diverging scale (purple to orange) |\n| Year range: 2007 to 2017 | Temporal | Shown in the title/description, not directly encoded spatially |\n| Age group: 25 to 54 years old | Ordinal / age-range category | Shown in the title/description, not directly encoded visually |\n| State boundaries | Categorical/nominal (geographic grouping) | Boundary lines overlaid on the map |\n| Legend percentage values (-10%, 0%, +10%) | Quantitative | Legend labels mapping color scale to values |",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "111",
+  "graph_type": "UNIT",
+  "graph_type_2": "",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "1. **Chart type**  \n   - A **faceted heatmap / tiled time-series chart** with one row per product category and one tile per time period, colored by percent change from 12 months prior.\n\n2. **Layout techniques**  \n   - **Faceting / small multiples by category**: each product category appears in its own horizontal row.\n   - **Grid of repeated tiles over time**: tiles are arranged sequentially across years.\n   - **Color encoding** shows magnitude and direction of change (blue to red diverging scale).\n   - No stacking is used.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Time (months across 2019–2021) | Temporal | Position on x-axis |\n| Product category (Televisions; Gasoline (all types); Used cars and trucks; Eyeglasses and eye care; Chicken; Sports equipment; Home furniture) | Categorical/nominal | Faceting by row / position on y-axis |\n| Change from 12 months prior (%) | Quantitative | Color/hue of tiles (diverging blue–red scale) |\n| Year (2019, 2020, 2021) | Temporal | Group labels/section labels above the x-axis |",
   "comments": [
     {

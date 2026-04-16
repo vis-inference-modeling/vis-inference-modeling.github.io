@@ -1,5 +1,8 @@
 {
   "article_id": "120",
+  "graph_type": "BUBBLE MAP",
+  "graph_type_2": "MAP",
+  "topic": "DEMOGRAPHICS AND MIGRATION",
   "image_description": "## 1) Chart type\n- **Thematic geographic map** of the United States with **arrow glyphs** plotted by county.\n\n## 2) Layout techniques\n- Uses a **map-based spatial layout** (counties positioned by geographic location).\n- No faceting or small multiples.\n- Not stacked.\n- Repeated **glyphs (arrows)** encode county-level values across the map.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| County | Categorical/nominal | One arrow per county; geographic position on the map |\n| Geographic location | Spatial | Position on the U.S. map |\n| Direction of change in population share | Categorical/nominal | Arrow direction/orientation (up-right vs up-left as shown in legend) |\n| Magnitude of percentage-point change in share | Quantitative | Arrow length/size |\n| Population group whose share increased (white vs people of color) | Categorical/nominal | Arrow color/hue (red for white, teal for people of color) |\n| State name/abbreviation | Categorical/nominal | Text labels |\n| City name | Categorical/nominal | Text labels |\n\nNotes visible in the graphic indicate arrows represent **percentage-point change in share** and that counties with changes below one percentage point are not shown.",
   "comments": [
     {

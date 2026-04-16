@@ -1,5 +1,8 @@
 {
   "article_id": "110",
+  "graph_type": "STACKED PIE",
+  "graph_type_2": "",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "## 1. Chart type\n- **Nested donut chart / sunburst chart** (multi-level radial partition chart)\n\n## 2. Layout techniques\n- Uses **hierarchical nesting** with **concentric rings**:\n  - **Inner ring**: major food groups\n  - **Outer ring**: subcategories within each food group\n- Segments are **partitioned by angle/arc length** to represent values.\n- Uses **color** to group outer-ring segments with their corresponding inner-ring category.\n- No faceting or small multiples.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Food group (e.g., Protein, Dairy, Grains, Fruit, Vegetables, Other) | Categorical/nominal | Inner-ring segment identity; color/hue; text label |\n| Food subcategory (e.g., Meat, Poultry, Whole fruit, Dark green vegetables, etc.) | Categorical/nominal | Outer-ring segment identity; text label |\n| Weekly cost in dollars for each group/subcategory | Quantitative | Arc length/angle of segments; dollar-value labels |\n| Hierarchical relationship (group → subcategory) | Ordinal/structured hierarchical categorical | Concentric ring level and containment within parent segment |\n| Total weekly food plan cost ($193) | Quantitative | Center label/text |",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "55",
+  "graph_type": "CHOROPLETH MAP",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1) Chart type\n- **Composite visualization** consisting of:\n  - a **categorical scatter/dot plot** at the top\n  - a **choropleth world map** at the bottom\n\n## 2) Layout techniques\n- **Vertical multi-panel layout**: dot plot above, map below.\n- The top chart uses **grouping by categorical y-axis levels** (water stress categories), not faceting.\n- No stacking or small multiples are used.\n- The map uses a **continuous geographic layout** with color shading and point/text annotations for selected cities.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Urban population (millions) | Quantitative | Position on x-axis in the top dot plot |\n| Water stress level | Ordinal | Position on y-axis in the top dot plot; color/hue in both top plot and map legend |\n| Urban area / city name | Categorical/nominal | Individual dots in top plot; text labels and point locations for selected cities on the map |\n| Geographic location | Spatial | Position on the world map |\n| Area-level water stress | Ordinal | Color/hue of regions on the choropleth map |\n| Data availability (“No data”) | Categorical/nominal | Gray fill on the map / legend swatch |\n\n### Notes\n- Selected cities are additionally emphasized with **outlined markers** and **labels**.\n- Country/place names on the map are shown as **text labels**, but they function as annotations rather than a separate encoded data series.",
   "comments": [
     {

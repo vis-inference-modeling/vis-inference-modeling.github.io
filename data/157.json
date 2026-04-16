@@ -1,5 +1,8 @@
 {
   "article_id": "157",
+  "graph_type": "TREE DIAGRAM",
+  "graph_type_2": "",
+  "topic": "SPORTS",
   "image_description": "1. **Chart type**  \n   - Tournament bracket diagram for NCAA basketball, shown separately for **Women’s Bracket** and **Men’s Bracket**.\n\n2. **Layout techniques**  \n   - **Side-by-side panels**: two large bracket panels, one for women and one for men.  \n   - **Bracket/tree layout**: teams progress through rounds via connected lines.  \n   - **Regional subdivision** within each bracket (e.g., Greenville, Seattle, South, East, Midwest, West).  \n   - Not stacked; not a standard faceted statistical chart, though the two main panels function like a simple split by tournament.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Tournament division (Women’s / Men’s) | Categorical/nominal | Separate side-by-side panel; title text |\n| Round | Ordinal | Horizontal position across the bracket; round headers at top |\n| Region | Categorical/nominal | Spatial grouping within each bracket; region labels on edges |\n| Team name | Categorical/nominal | Text labels next to bracket positions |\n| Seed number | Ordinal | Numeric text preceding team names |\n| Team record (wins-losses) | Quantitative | Parenthetical text in first-round team labels |\n| Game score / points | Quantitative | Numeric text placed beside teams in each matchup |\n| Advancement / winner progression | Categorical/nominal (outcome status) | Connecting bracket lines leading to the next round |\n| Champion | Categorical/nominal | Center-most final label/box in each bracket |",
   "comments": [
     {

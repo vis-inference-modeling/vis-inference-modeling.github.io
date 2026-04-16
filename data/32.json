@@ -1,5 +1,8 @@
 {
   "article_id": "32",
+  "graph_type": "",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "1. **Chart type**:  \n   A **faceted rank-region heatmap / partition-style chart** showing possible Olympic medal-count ranks under different medal-weighting schemes.\n\n2. **Layout techniques**:  \n   - **Small multiples / faceting by country**: each panel represents one country.\n   - Within each panel, the space is **partitioned into colored regions** corresponding to possible rank outcomes.\n   - **Color** encodes rank level on a continuous scale (from 1st to 25th or lower).\n   - Some panels include **text labels** inside regions and **small circular markers** near the title indicating medal counts.\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Country | Categorical/nominal | Faceting into separate panels; panel title/label |\n| Relative value of silver vs. bronze medals | Quantitative | Position on x-axis |\n| Relative value of gold vs. silver medals | Quantitative | Position on y-axis |\n| Possible rank in medal count | Ordinal | Color/hue of regions; text labels inside regions |\n| Gold medal count | Quantitative | Numeric label in small colored circle near panel title |\n| Silver medal count | Quantitative | Numeric label in small gray circle near panel title |\n| Bronze medal count | Quantitative | Numeric label in small bronze-colored circle near panel title |\n\nVisible annotations/axis notes clarify the weighting dimensions (e.g., “All medals valued equally,” “Only care about gold medals,” “Gold worth 20x silver,” “Silver worth 20x bronze”), but these are explanatory labels rather than additional data variables.",
   "comments": [
     {

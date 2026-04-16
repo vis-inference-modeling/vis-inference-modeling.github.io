@@ -1,5 +1,8 @@
 {
   "article_id": "149",
+  "graph_type": "BAR",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1) Chart type\n- **Vertical bar chart / anomaly bar chart** centered on a zero baseline.\n- Bars extend **below zero** for negative anomalies and **above zero** for positive anomalies.\n\n## 2) Layout techniques\n- **Single-panel chart** (no faceting or small multiples).\n- Uses a **zero baseline** to separate negative vs. positive values.\n- Uses **color by sign/value range**: blue tones for negative anomalies, orange tones for positive anomalies, with a darker orange highlight for the most recent years.\n- Includes **reference labels/guide lines** at selected anomaly levels (e.g., +0.25°C, +0.50°C, +0.75°C, −0.25°C).\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year | Temporal | Position on x-axis |\n| Global average temperature anomaly (compared with mid-20th century) | Quantitative | Bar height / position on y-axis relative to zero baseline |\n| Sign / magnitude grouping of anomaly (negative vs positive, recent highlighted positive period) | Categorical/ordinal (as visually grouped) | Color/hue of bars (blue vs orange, darker orange highlight) |\n| 2022 value annotation (+0.89°C) | Quantitative | Text label annotation |\n| 2022 | Temporal | Text label annotation at the latest bar |",
   "comments": [
     {

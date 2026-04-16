@@ -1,5 +1,8 @@
 {
   "article_id": "104",
+  "graph_type": "TREEMAP",
+  "graph_type_2": "",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "1. **Chart type**: Circular hierarchical **treemap / Voronoi treemap**.\n\n2. **Layout techniques**:\n- **Hierarchical nesting**: Large regions contain smaller subregions.\n- **Partitioned by category**: The circle is split into two top-level groups.\n- **Area encoding**: Region size represents amount.\n- **Color grouping**: Two colors distinguish the two top-level plans.\n- No axes, no faceting, no stacking.\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Plan (Infrastructure plan, Families plan) | Categorical/nominal | Color/hue; top-level grouped region within the circle; legend |\n| Major spending category (e.g., Transportation, Buildings and Utilities, In-Home Care, Jobs and Innovation, Tax Credits, Child and Family Support, Education, I.R.S.) | Categorical/nominal | Nested region/grouping; text label |\n| Program / line item within category (e.g., Roads and bridges, Affordable housing, Child care, Pell grants, etc.) | Categorical/nominal | Individual polygon region; text label |\n| Amount ($ billions / trillions) | Quantitative | Area/size of regions; numeric text labels inside regions; totals in legend |\n\nVisible note:\n- Units are stated as **amounts on the chart in billions**, while top-level legend totals are shown in **trillions**.",
   "comments": [
     {

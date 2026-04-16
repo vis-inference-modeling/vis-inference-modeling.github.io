@@ -1,5 +1,8 @@
 {
   "article_id": "161",
+  "graph_type": "SPAGHETTI",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "1. **Chart type**: Multi-series line chart.\n\n2. **Layout techniques**:  \n- Overlaid lines for many years on the same axes  \n- No faceting or small multiples  \n- No stacking  \n- Color highlighting used to emphasize 2023 (orange) and 2022 (darker gray) against other years (light gray)\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Day/date within year | Temporal | Position on x-axis |\n| Global surface air temperature | Quantitative | Position on y-axis |\n| Year | Temporal / categorical series identifier | Separate line per year; color/lightness distinguishes highlighted years vs other years |\n| Specific annotated date (“July 17, 2023”) | Temporal | Text label and point marker on the highlighted 2023 line |\n| Highlight status / series emphasis (2023, 2022, 1979–2021) | Categorical | Color/hue and line darkness; direct text labels |",
   "comments": [
     {

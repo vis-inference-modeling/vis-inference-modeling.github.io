@@ -1,5 +1,8 @@
 {
   "article_id": "117",
+  "graph_type": "UNIT",
+  "graph_type_2": "",
+  "topic": "POLITICS AND POLICY",
   "image_description": "1. **Chart type**:  \n   Diagrammatic grid / unit chart (waffle-style voter grid) with example district partitions.\n\n2. **Layout techniques**:  \n   - Uses **small multiples**: one main 5×5 voter grid at the top and three example districting layouts below.  \n   - Uses **grouping/partition overlays**: shaded outlines/regions indicate districts.  \n   - Uses **color encoding** to distinguish party affiliation.  \n   - Not a standard faceted statistical chart with axes; no stacking.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Party affiliation (Blue party / Red party) | Categorical/nominal | Color/hue of voter dots (blue vs red); colored numeric labels |\n| Individual voter / voter unit | Categorical/nominal (entity) | Repeated unit marks arranged in a 5×5 grid |\n| Grid position / location in state grid | Ordinal/spatial arrangement | Position in rows and columns |\n| District membership | Categorical/nominal | Grouping by shaded district regions/outlined areas in the example panels |\n| Blue count per example | Quantitative | Numeric label in blue box above each panel/example |\n| Red count per example | Quantitative | Numeric label in red box above each panel/example |",
   "comments": [
     {

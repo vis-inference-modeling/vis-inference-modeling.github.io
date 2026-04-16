@@ -1,5 +1,8 @@
 {
   "article_id": "196",
+  "graph_type": "CONNECTED DOT",
+  "graph_type_2": "",
+  "topic": "HEALTH AND WELLNESS",
   "image_description": "## 1) Chart type\n- **Horizontal dumbbell / arrow range chart** comparing two time points per activity category.\n\n## 2) Layout techniques\n- Uses **one row per activity** (categorical grouping on the y-axis).\n- No faceting or small multiples.\n- Not stacked.\n- Each row shows a **start point and end point connected by a horizontal arrow**, indicating change from **2003** to **2022**.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Activity category (e.g., Leisure, Eating and drinking, Religion and spirituality, Education, Sports and exercise, Work) | Categorical/nominal | Position on y-axis; text labels |\n| Share of time spent at home on activity | Quantitative | Position on x-axis |\n| Year (2003 vs 2022) | Temporal | Endpoint role within each arrowed segment; labeled start/end markers |\n| 2003 value | Quantitative | X-position of open circle marker |\n| 2022 value | Quantitative | X-position of arrowhead endpoint |\n\nNotes:\n- The blue line/arrow connects the two yearly values for each activity, visually encoding **change over time**.",
   "comments": [
     {

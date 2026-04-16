@@ -1,5 +1,8 @@
 {
   "article_id": "5",
+  "graph_type": "LINE",
+  "graph_type_2": "STEP",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "## 1) Chart type\n- **Two-panel line chart**\n  - **Graph A:** multi-series **step line chart** showing **net change in retail jobs**\n  - **Graph B:** multi-series **line chart** showing **percentage change in retail jobs**\n\n## 2) Layout techniques\n- Uses **vertical faceting / stacked panels**: Graph A and Graph B are separate panels for two different measures.\n- Within each panel, there are **multiple overlaid series**.\n- No bar stacking; not a small-multiples grid.\n- Uses **direct labeling** of selected lines and de-emphasized background lines for “other retail sectors.”\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year (’02–’16) | Temporal | Position on x-axis |\n| Net change in retail jobs | Quantitative | Position on y-axis in **Graph A** |\n| Percentage change in retail jobs | Quantitative | Position on y-axis in **Graph B** |\n| Retail sector / industry category (e.g., E-commerce, Department stores, Warehouse clubs and other, Total retail industry, 25 other retail sectors) | Categorical/nominal | Line color/hue, line identity, direct text labels |\n| Zero baseline | Quantitative reference value | Horizontal reference line at y = 0 |",
   "comments": [
     {

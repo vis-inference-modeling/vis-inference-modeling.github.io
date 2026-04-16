@@ -1,5 +1,8 @@
 {
   "article_id": "112",
+  "graph_type": "TILE GRID MAP",
+  "graph_type_2": "cartogram",
+  "topic": "POLITICS AND POLICY",
   "image_description": "## 1. Chart type\n- **Tile-based cartogram / grid map** of U.S. states.\n- Each small square represents **one House seat**.\n\n## 2. Layout techniques\n- Uses a **geographic-like grid/cartogram layout** where each state is shown as a cluster of equal-sized tiles.\n- **No faceting** or small multiples.\n- Not stacked in the chart-type sense; instead, tiles are **grouped by state**.\n- Uses **color coding** to distinguish seat change categories.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| State | Categorical/nominal | Grouped tile cluster position in the U.S.-like layout; state text labels |\n| Number of House seats | Quantitative | Count of equal-sized tiles (area via repeated unit squares) within each state |\n| Seat change status (gaining / losing / no change) | Categorical/nominal | Color/hue of tiles (green, yellow, light gray) |\n| Net seat change value (e.g., +1, -1, +2) | Quantitative | Text labels placed on selected states |",
   "comments": [
     {

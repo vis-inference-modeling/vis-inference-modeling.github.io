@@ -1,5 +1,8 @@
 {
   "article_id": "64",
+  "graph_type": "",
+  "graph_type_2": "",
+  "topic": "HEALTH AND WELLNESS",
   "image_description": "## 1) Chart type\n- **Node-link tree / branching transmission diagram** comparing two transmission scenarios.\n\n## 2) Layout techniques\n- **Two vertically stacked panels** (top and bottom) showing a comparison:\n  - **Top:** transmission without limiting social contacts\n  - **Bottom:** transmission with limiting social contacts\n- Uses a **hierarchical tree layout** with branching links.\n- Not a standard axis-based chart; **no faceting grid**, but effectively a **two-panel comparative layout**.\n- Uses **fading/de-emphasis** and an **“X” annotation** in the lower panel to indicate interrupted transmission.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Transmission scenario (without vs. with limiting social contacts) | Categorical/nominal | Vertical panel position (top vs. bottom), subtitle/context |\n| Individual/person (node in chain) | Categorical/nominal | Circle marks and person icons |\n| Transmission link / infection path | Categorical/nominal | Connecting line segments between nodes |\n| Generation / step in transmission chain | Ordinal | Hierarchical position in the tree (top-to-bottom levels) |\n| Branching extent / number of downstream infections | Quantitative | Number of child nodes and overall spread/width of the tree |\n| Interrupted/avoided infection | Categorical/nominal | Black “X” mark and red label “Infection avoided”; faded nodes/links to the right |",
   "comments": [
     {

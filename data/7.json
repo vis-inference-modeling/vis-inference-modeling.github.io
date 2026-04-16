@@ -1,5 +1,8 @@
 {
   "article_id": "7",
+  "graph_type": "BUBBLE",
+  "graph_type_2": "",
+  "topic": "EDUCATION AND CULTURE",
   "image_description": "1. **Chart type**: Annotated scientific simulation diagram / cross-sectional field visualization using colored bands rather than a standard statistical chart.\n\n2. **Layout techniques**:  \n- No faceting or small multiples in the main figure.  \n- Layered/overlaid colored regions radiate from the central rocket, showing multiple wave/cone boundaries.  \n- Includes a small inset timeline-like graphic at bottom right for launch noise vs. triple boom timing.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Position relative to booster (space around rocket) | Spatial/continuous | 2D position in the diagram |\n| Pressure level (high vs. low) | Quantitative (diverging magnitude/sign) | Color/hue: red = high pressure, blue = low pressure |\n| Boom/wave feature type (Leading edge boom, Pressure change, Trailing edge boom) | Categorical/nominal | Text labels with numbered callouts pointing to specific bands |\n| Booster component (fins, landing legs, engines, Falcon 9 first stage booster) | Categorical/nominal | Direct text labels attached to parts of the rocket illustration |\n| Time since launch (in inset) | Temporal | Position on x-axis in the inset |\n| Sound amplitude / noise intensity (in inset waveform) | Quantitative | Vertical extent/height of waveform in the inset |\n| Event labels in inset (Launch noise, Triple boom, Liftoff) | Categorical/nominal | Text annotations on the inset |\n\nNotes: The main image does not show explicit axes; the pressure field is encoded as a simulated colored spatial pattern around the rocket.",
   "comments": [
     {

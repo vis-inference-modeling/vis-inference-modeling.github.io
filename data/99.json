@@ -1,5 +1,8 @@
 {
   "article_id": "99",
+  "graph_type": "CHOROPLETH MAP",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1) Chart type\n- **Thematic choropleth map** of the contiguous United States, shown in **two panels**.\n\n## 2) Layout techniques\n- **Small multiples / faceting by time period/scenario**: one map for **1971–2000 (Historical)** and one for **2011–2040 (Projected)**.\n- No stacking.\n- Uses a **shared color legend** for plant hardiness zones / average winter low ranges.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Geographic location (U.S. regions/states) | Spatial | Position on map |\n| Plant hardiness zone | Ordinal | Color/hue fill on map; text labels (“Zone 3” … “10”); legend categories |\n| Average winter low temperature range | Quantitative (binned into ranges) | Color/hue via legend categories |\n| Time period / scenario (1971–2000 Historical vs 2011–2040 Projected) | Temporal / categorical | Faceting into two separate map panels; panel titles/subtitles |\n| State boundaries | Categorical/geographic reference | Boundary lines |",
   "comments": [
     {

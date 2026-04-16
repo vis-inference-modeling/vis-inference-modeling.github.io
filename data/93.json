@@ -1,5 +1,8 @@
 {
   "article_id": "93",
+  "graph_type": "FACETED BAR",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1) Chart type\nFaceted vertical bar chart (small-multiple time-series bar charts), with one panel per city.\n\n## 2) Layout techniques\n- **Faceting / small multiples** by **city**\n- **Unequal panel sizes**: some cities (notably New Delhi) are shown in larger panels\n- **Color encoding** applied to bars to indicate pollution level / air quality category\n- **No stacking** visible\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Date / day (Nov ’18 to Nov ’19) | Temporal | Position on x-axis within each panel |\n| PM2.5 concentration (µg/m³) | Quantitative | Bar height / position on y-axis |\n| Air quality level / EPA AQI category (Good, Unhealthy, Hazardous, Extreme) | Ordinal | Color/hue of bars |\n| City | Categorical/nominal | Faceting into separate panels; panel labels |\n| PM2.5 concentration scale reference | Quantitative | Legend scale and y-axis annotations/gridlines |\n\nNotes visible in the chart:\n- Title indicates the subject is **daily average air pollution around the world**\n- The legend explicitly links color to **PM2.5 concentration** and **E.P.A. Air Quality Index** categories.",
   "comments": [
     {

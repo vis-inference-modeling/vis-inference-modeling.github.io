@@ -1,5 +1,8 @@
 {
   "article_id": "130",
+  "graph_type": "CHOROPLETH MAP",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "1. **Chart type**:  \n   The visualization is a **thematic geographic map** (choropleth/raster-style map overlay) of the contiguous United States.\n\n2. **Layout techniques**:  \n   - Uses a **single map panel** (no faceting or small multiples).\n   - Uses **layered geographic overlays**:\n     - a continuous color field for biodiversity concentration\n     - a green overlay for protected areas\n   - State boundaries and state labels are added as reference layers.\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Geographic location (U.S. map position) | Spatial | Position on map (x/y geographic coordinates) |\n| Concentrations of imperiled biodiversity | Quantitative | Color/hue intensity on map (light cream to dark pink/purple) |\n| Areas permanently protected for biodiversity | Categorical/nominal (binary presence/absence) | Green color overlay/fill |\n| State name/abbreviation | Categorical/nominal | Text labels placed on map |\n| State boundaries | Categorical/nominal geographic features | Boundary lines/outlines |",
   "comments": [
     {

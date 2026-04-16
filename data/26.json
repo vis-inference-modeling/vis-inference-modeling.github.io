@@ -1,5 +1,8 @@
 {
   "article_id": "26",
+  "graph_type": "BAR",
+  "graph_type_2": "",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1. Chart type\n- **Diverging vertical bar chart** (time-series bar chart), showing yearly temperature differences relative to a baseline.\n\n## 2. Layout techniques\n- **Single-panel chart**\n- **No faceting or small multiples**\n- **No stacking**\n- Uses a **diverging layout around a zero baseline**, with bars extending above and below the reference line.\n- Uses **color hue** to reinforce direction/magnitude (warmer vs. cooler).\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year | Temporal | Position on x-axis |\n| Difference between average winter temperature and 20th century average (°F) | Quantitative | Position on y-axis / bar height relative to zero baseline |\n| Warmer vs. cooler anomaly direction/magnitude | Quantitative (signed) | Color/hue of bars (pink/red for warmer, purple/blue for cooler) |\n| 20th century average (baseline) | Quantitative reference | Horizontal zero line and annotation label |",
   "comments": [
     {

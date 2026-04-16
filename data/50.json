@@ -1,5 +1,8 @@
 {
   "article_id": "50",
+  "graph_type": "STACKED AREA",
+  "graph_type_2": "LINE",
+  "topic": "CLIMATE AND ENVIRONMENT",
   "image_description": "## 1) Chart type\n- **Left panel:** Multi-series **line chart**\n- **Right panel:** **Stacked area chart**\n\n## 2) Layout techniques\n- The visualization uses **two side-by-side panels**.\n- The **left panel** compares major greenhouse gas source sectors with multiple lines, with **transportation highlighted by color** and others muted.\n- The **right panel** provides a **breakdown of transportation emissions** using **stacking** in an area chart.\n- This is a **drill-down / decomposition layout**, not a faceted grid or small multiples.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year (1990–2017) | Temporal | Position on x-axis (both panels) |\n| Greenhouse gas emissions (billion metric tons / metric tons) | Quantitative | Position on y-axis (left panel); stacked area height / y-extent (right panel) |\n| Source sector (e.g., Electricity, Transportation, Industry, Agriculture, others) | Categorical/nominal | Separate lines; color/hue emphasis; direct text labels (left panel) |\n| Transportation subcategory (e.g., Passenger Vehicles, Trucks, Trains/planes/ships/other) | Categorical/nominal | Stacked areas; color/hue; direct text labels (right panel) |",
   "comments": [
     {

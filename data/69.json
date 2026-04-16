@@ -1,5 +1,8 @@
 {
   "article_id": "69",
+  "graph_type": "STACKED AREA",
+  "graph_type_2": "",
+  "topic": "DEMOGRAPHICS AND MIGRATION",
   "image_description": "## 1) Chart type\n- **Top:** Stacked area chart (time series) showing foreign-born share of the population by region of origin.\n- **Bottom:** County-level **choropleth map** of the United States.\n\n## 2) Layout techniques\n- The figure uses a **two-panel vertical layout**:\n  - **Top panel:** stacked areas over time.\n  - **Bottom panel:** geographic choropleth.\n- The top chart uses **stacking** by region of origin.\n- No faceting or small multiples are used.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Year / time | Temporal | Position on x-axis (top chart) |\n| Foreign-born share of population | Quantitative | Position on y-axis and stacked area height (top chart) |\n| Region of origin (Europe, Asia, Latin America, Other) | Categorical/nominal | Color/fill of stacked areas; right-side labels |\n| Total foreign-born share | Quantitative | Top boundary/line of stacked area; text annotation at 2017 |\n| U.S. county | Categorical/nominal (geographic unit) | Geographic position and county polygons on map |\n| Percentage change in foreign-born share of the population by county, 1990–2017 | Quantitative | Color/lightness of county fill on choropleth; legend |\n| Policy event annotations (1921 quotas, 1965 policy change) | Temporal / textual annotation | Text labels and leader lines positioned at specific years in the top chart |",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "12",
+  "graph_type": "DIRECTED GRAPH",
+  "graph_type_2": "RADIAL",
+  "topic": "DEMOGRAPHICS AND MIGRATION",
   "image_description": "## 1. Chart type\n- **Flow map / migration chord-style map** over a world map.\n- It shows **directed flows** between regions using curved arrows, plus **self-loops** for within-continent migration.\n\n## 2. Layout techniques\n- **Geographic layout**: regions are positioned on a world map.\n- **Flow links**: curved arrows connect origin and destination regions.\n- **Variable-width links**: arrow thickness appears to encode migration volume.\n- **Self-loop circles**: large circular arrows around regions indicate migration within the same continent.\n- No faceting or small multiples.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Continent / Region (e.g., North America, Latin America, Europe, Asia, Africa, Oceania) | Categorical/nominal | Geographic position on map; text labels |\n| Migration flow volume (in millions) | Quantitative | Arrow/flow thickness; numeric labels on flows and loops |\n| Origin region | Categorical/nominal | Start point of curved arrow on map |\n| Destination region | Categorical/nominal | End point / arrowhead location on map |\n| Within-continent migration | Categorical/nominal relationship | Circular self-loop arrows around each region |\n| Year (2017) | Temporal | Title text (“Migration in 2017”) |",
   "comments": [
     {

@@ -1,5 +1,8 @@
 {
   "article_id": "36",
+  "graph_type": "RADAR",
+  "graph_type_2": "",
+  "topic": "EDUCATION AND CULTURE",
   "image_description": "## 1. Chart type\n- **Faceted small-multiple line/trajectory chart** with stylized closed-loop paths in each panel.\n- Each panel shows one highlighted loop plus several thinner background loops.\n\n## 2. Layout techniques\n- **Small multiples / faceting**: 8 separate panels arranged in a grid.\n- **Color encoding** across panels: panel highlight colors follow a magenta-to-blue scale tied to the “Hits are different” → “Hits are similar” legend.\n- No visible stacking.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Song title | Categorical/nominal | Text label above each panel |\n| Artist | Categorical/nominal | Text label above each panel |\n| Year | Temporal | Large text label inside each panel |\n| Similarity / difference of hits | Ordinal (shown as a continuum) | Color/hue of highlighted loop; legend gradient from magenta to blue |\n| Individual song/example | Categorical/nominal | Faceting into separate panels |\n| Path/trajectory shape values | Quantitative | 2D position forming the loop/path within each panel |\n| Reference/background trajectories | Quantitative | Thin line paths in the background within each panel |\n| Top marker position | Quantitative | Position of black square and short vertical line near top of each loop |",
   "comments": [
     {

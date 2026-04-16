@@ -1,5 +1,8 @@
 {
   "article_id": "45",
+  "graph_type": "FACETED BAR",
+  "graph_type_2": "",
+  "topic": "HEALTH AND WELLNESS",
   "image_description": "1. **Chart type**: Grouped horizontal bar chart (table-like bar display).\n\n2. **Layout techniques**:  \n- The visualization is divided into three side-by-side sections: **ENTREES**, **SIDES**, and **DESSERTS**.  \n- Within each section, there are two horizontal bars per year: one for **portion size (grams)** and one for **calorie count**.  \n- This is a **small-multiples / grouped panel layout** by food category, not stacking.\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Food category (Entrees, Sides, Desserts) | Categorical/nominal | Panel/section grouping (small multiples) |\n| Year (1986, 1991, 2016) | Temporal | Row position / y-axis-like listing |\n| Portion size (grams) | Quantitative | Horizontal bar length; numeric label inside/near bar |\n| Calorie count | Quantitative | Horizontal bar length; numeric label inside/near bar |\n\nNotes:\n- The labels **“portion size (grams)”** and **“calorie count”** act as measure headers within each panel.\n- A single neutral gray color is used for bars and does not appear to encode an additional variable.",
   "comments": [
     {

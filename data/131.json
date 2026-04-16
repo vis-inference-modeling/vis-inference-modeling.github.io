@@ -1,5 +1,8 @@
 {
   "article_id": "131",
+  "graph_type": "TREEMAP",
+  "graph_type_2": "",
+  "topic": "BUSINESS AND ECONOMY",
   "image_description": "1. **Chart type**: Treemap\n\n2. **Layout techniques**:\n- The visualization uses **grouped treemaps / nested treemaps**.\n- Large top-level rectangles represent major categories: **Individuals and families**, **Businesses**, **State and local aid**, **Health care**, and **Other**.\n- Within each category, smaller rectangles are **nested** to show subcategories.\n- Rectangle **area** encodes the dollar amount.\n- Color distinguishes the top-level category groups.\n\n3. **Data variables**:\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Top-level spending category (e.g., Individuals and families, Businesses, State and local aid, Health care, Other) | Categorical/nominal | Grouping/nesting, color/hue, text label |\n| Program / spending item within category (e.g., Stimulus checks, Unemployment benefits, Paycheck Protection Program, etc.) | Categorical/nominal | Nested rectangle, text label |\n| Dollar amount / funding size (billions or trillions) | Quantitative | Rectangle area/size, text label |\n| Category total (e.g., $1.8 trillion, $1.7 trillion) | Quantitative | Text label in category heading |\n\nNo axes, temporal variables, or ordinal scales are visible.",
   "comments": [
     {

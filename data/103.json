@@ -1,5 +1,8 @@
 {
   "article_id": "103",
+  "graph_type": "CONNECTED DOT",
+  "graph_type_2": "",
+  "topic": "HEALTH AND WELLNESS",
   "image_description": "## 1. Chart type\n- **Connected dot plot / dumbbell chart** by state, comparing two rates per state.\n\n## 2. Layout techniques\n- Uses **two side-by-side columns** of state rows to fit many categories.\n- Each row is a **paired-point comparison** connected by a light horizontal line.\n- No faceting in the strict sense, no stacking, and no small multiples.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| State | Categorical/nominal | Row position; text label at left of each row |\n| Case rate in entire state | Quantitative | Horizontal position of gray dot; numeric label near gray dot |\n| Case rate in state prisons | Quantitative | Horizontal position of orange dot; numeric label near orange dot |\n| Gap / ratio between prison and state rates (e.g., “9.0x”) | Quantitative | Text label centered on connecting line |\n| Comparison category (entire state vs. state prisons) | Categorical/nominal | Color/hue (gray vs. orange); column headers above dots |",
   "comments": [
     {

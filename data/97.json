@@ -1,5 +1,8 @@
 {
   "article_id": "97",
+  "graph_type": "BUBBLE MAP",
+  "graph_type_2": "RADAR",
+  "topic": "HEALTH AND WELLNESS",
   "image_description": "1. **Chart type**  \n   A **grid of radar/spider charts** (one small radar chart per state).\n\n2. **Layout techniques**  \n   - Uses **small multiples**: each state is shown in its own mini radar chart.  \n   - No stacking.  \n   - States are arranged in a **geographic-style grid layout** approximating U.S. state positions.  \n   - Color is used to show an additional variable across the small multiples.\n\n3. **Data variables**\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| State | Categorical/nominal | Small-multiple panel; text label inside each radar chart |\n| Barrier category (Historic undervaccination, Socioeconomic barriers, Low health care resources, Poor health care access, Irregular medical care) | Categorical/nominal | Angular position / axis around each radar chart; axis labels shown in the example chart |\n| Level/value for each barrier category | Quantitative | Radial distance from center; connected polygon shape/area in each radar chart |\n| Overall level of concern | Ordinal or quantitative | Color/hue of the radar polygon/outline (green/teal = lower, purple/pink = higher, per legend) |",
   "comments": [
     {

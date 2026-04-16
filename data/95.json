@@ -1,5 +1,8 @@
 {
   "article_id": "95",
+  "graph_type": "FACETED AREA",
+  "graph_type_2": "",
+  "topic": "HEALTH AND WELLNESS",
   "image_description": "## 1. Chart type\nA **faceted multi-panel line/area chart**. Each panel shows time-series lines for immunity levels, with a shaded horizontal band indicating the herd-immunity range.\n\n## 2. Layout techniques\n- **Faceting / small multiples**: 4 panels (Graph A–D), each representing a different scenario.\n- **Layering**: Multiple lines, shaded area/band, annotations, and labels are overlaid within each panel.\n- **No stacking**: The lines are not stacked.\n\n## 3. Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Time (months, Dec.–Dec.) | Temporal | Position on x-axis |\n| Percent of population immune | Quantitative | Position on y-axis |\n| Immunity type / series (e.g., Total immunity, Vaccine immunity) | Categorical/nominal | Color/hue and separate line series |\n| Herd immunity range / threshold level | Quantitative | Horizontal shaded band position on y-axis |\n| Scenario (Graph A, B, C, D) | Categorical/nominal | Faceting into separate panels |\n| Threshold reached month (e.g., May, June, July, October, November) | Temporal | Text annotation/label at specific x-position with marker |\n| Death estimate (e.g., 90,000; 100,000; 170,000; 200,000) | Quantitative | Text annotation in panel header/body |\n| Scenario description (e.g., current pace, supply increase, ease up in spring, more contagious variant) | Categorical/nominal | Panel title/subtitle/header text |",
   "comments": [
     {

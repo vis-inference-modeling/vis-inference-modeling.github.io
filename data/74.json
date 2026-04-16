@@ -1,5 +1,8 @@
 {
   "article_id": "74",
+  "graph_type": "",
+  "graph_type_2": "",
+  "topic": "",
   "image_description": "## 1) Chart type\n- **Left panel:** Grouped **horizontal bar chart**\n- **Right panel:** Multi-series **line chart**\n\n## 2) Layout techniques\n- The figure uses **two side-by-side panels**.\n- **Left panel:** Bars are **grouped by age category**; race/ethnicity is distinguished by **color**. It is **not stacked**.\n- **Right panel:** Multiple lines are overlaid in a single plot; groups are distinguished by **color** and **direct labels** at the line ends.\n- No faceting or small multiples are used within either panel.\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Age group (18 to 39, 40 to 64, Ages 65 and older) | Ordinal | Grouping/position on y-axis in left panel |\n| Cumulative U.S. Covid death rates | Quantitative | Bar length / position on x-axis in left panel |\n| Race/ethnicity group (Native, Hispanic, Black, White, Asian, All) | Categorical/nominal | Color/hue in both panels; direct text labels on bars/line ends |\n| Year (2019, 2020, 2021) | Temporal | Position on x-axis in right panel |\n| U.S. life expectancy | Quantitative | Position on y-axis in right panel |\n| Selected value annotations (e.g., 71.8, 65.2) | Quantitative | Text labels near points in right panel |",
   "comments": [
     {

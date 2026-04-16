@@ -1,5 +1,8 @@
 {
   "article_id": "65",
+  "graph_type": "LINE",
+  "graph_type_2": "",
+  "topic": "POLITICS AND POLICY",
   "image_description": "## 1) Chart type\n- **Multi-series line chart**\n- Includes a **main overview line chart** and a **smaller inset/detail line chart**\n\n## 2) Layout techniques\n- **No faceting or stacking**\n- Uses **multiple overlaid lines** in the main panel\n- Uses an **inset / secondary panel** to highlight selected agencies\n- **Color** distinguishes highlighted series from background series; direct end labels appear in the inset\n\n## 3) Data variables\n\n| Data Variable | Type of Variable | Visual Encoding |\n|---|---|---|\n| Time (years, ~2011–2020) | Temporal | Position on x-axis |\n| Bus ridership change (%) | Quantitative | Position on y-axis; line trajectory relative to 0% baseline |\n| Transit agency | Categorical/nominal | Separate line series; color/hue (highlighted vs muted in main chart; distinct colors in inset); direct text labels at line ends in inset |\n| Highlighted agency subset (Miami, Minneapolis, Atlanta, Portland) | Categorical/nominal | Inclusion in inset/detail panel; distinct line colors and end labels |",
   "comments": [
     {
