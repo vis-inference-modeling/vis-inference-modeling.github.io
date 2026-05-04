@@ -8,6 +8,10 @@
     <link rel="stylesheet" crossorigin href="/assets/index-OMvgh8co.css">
   </head>
   <body>
+    <script>
+      var redirect = new URLSearchParams(window.location.search).get('redirect');
+      if (redirect) window.history.replaceState(null, '', decodeURIComponent(redirect));
+    </script>
     <div id="root"></div>
   </body>
 </html>
