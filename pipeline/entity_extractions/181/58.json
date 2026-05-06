@@ -1,0 +1,123 @@
+{
+  "article_id": "181",
+  "comment_index": 58,
+  "raw_comment": "In these four graphs presented to us I notice the differences in exports and imports of Electricity generation. Notice how each Nuclear energy is at the top of each graph and coal is at the least amount. I wonder if these countries partnered up, would the exports and imports double to produce for both countries, or would it decrease due to the fact of it being harder to produce and keep stable for two countries. Well I live in the United States so this tells me were only making enough in my country just to get by for 330 million people, this also tells me our environment is being harmed in the process of creating these oils. My headline would be: Differences in Countries' Electricity.",
+  "entities": [
+    {
+      "surface": "Electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 88,
+      "end": 110,
+      "id": "e0"
+    },
+    {
+      "surface": "Nuclear energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nuclear",
+      "var": "energy_source",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 128,
+      "end": 142,
+      "id": "e1"
+    },
+    {
+      "surface": "coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 175,
+      "end": 179,
+      "id": "e2"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 435,
+      "end": 448,
+      "id": "e3"
+    },
+    {
+      "surface": "oils",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "oil_and_other",
+      "var": "energy_source",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 627,
+      "end": 631,
+      "id": "e4"
+    },
+    {
+      "surface": "Differences in Countries' Electricity",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 655,
+      "end": 692,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "four graphs",
+      "reason": "Chart element reference, but no chart-specific reference list is available and it is not clear whether to tag as CHART_ELEMENT or leave as generic mention."
+    },
+    {
+      "surface": "exports and imports",
+      "reason": "Could refer to chart content or a data variable, but no matching reference list is available in this request."
+    },
+    {
+      "surface": "these countries",
+      "reason": "Potential LOCATION/Country reference, but the specific countries are not named."
+    },
+    {
+      "surface": "330 million people",
+      "reason": "Could be a population reference, but population is not in the available reference list."
+    },
+    {
+      "surface": "our environment",
+      "reason": "Generic phrase; may refer to an EVENT or broader context, but not enough specificity to tag confidently."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "In these four graphs presented to us I notice the differences in exports and imports of Electricity generation. Notice how each Nuclear energy is at the top of each graph and coal is at the least amount. I wonder if these countries partnered up, would the exports and imports double to produce for both countries, or would it decrease due to the fact of it being harder to produce and keep stable for two countries. Well I live in the United States so this tells me were only making enough in my country just to get by for 330 million people, this also tells me our environment is being harmed in the process of creating these oils."
+    },
+    {
+      "section": "headline",
+      "label": "My headline would be",
+      "text": "Differences in Countries' Electricity."
+    }
+  ],
+  "tagged_text": "In these four graphs presented to us I notice the differences in exports and imports of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">Electricity generation</entity>. Notice how each <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">Nuclear energy</entity> is at the top of each graph and <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> is at the least amount. I wonder if these countries partnered up, would the exports and imports double to produce for both countries, or would it decrease due to the fact of it being harder to produce and keep stable for two countries. Well I live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" speaker_context=\"true\">United States</entity> so this tells me were only making enough in my country just to get by for 330 million people, this also tells me our environment is being harmed in the process of creating these <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\">oils</entity>. My headline would be: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Differences in Countries' Electricity</entity>."
+}

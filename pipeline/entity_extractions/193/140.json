@@ -1,0 +1,164 @@
+{
+  "article_id": "193",
+  "comment_index": 140,
+  "raw_comment": "I noticed that most of the United States was abnormally dry. I also notice that there is not an obvious pattern in the drought levels across the country.\nI wonder what led to the end of October being exceptionally dry. I also wonder if global warming is a main factor in this observation.\nThis relates to my community because I live in the United States and drought levels affect where I live and the people around me. The drought could cause lessened quality of living and a need for lifestyle changes.\nHeadline: “October Brings Drought to the United States”",
+  "entities": [
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 27,
+      "end": 40,
+      "id": "e0"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 340,
+      "end": 353,
+      "id": "e1"
+    },
+    {
+      "surface": "October",
+      "type": "TIME_REFERENCE",
+      "canonical": "october",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 515,
+      "end": 522,
+      "id": "e2"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 545,
+      "end": 558,
+      "id": "e3"
+    },
+    {
+      "surface": "exceptionally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "global warming",
+      "type": "EVENT",
+      "canonical": "global_warming",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "October Brings Drought to the United States",
+      "type": "EVENT",
+      "canonical": "october_brings_drought_to_the_united_states",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "abnormally dry",
+      "reason": "Likely a drought severity level, but no exact canonical level provided in the dictionary for this article."
+    },
+    {
+      "surface": "country",
+      "reason": "Could refer to the United States, but the surface form is generic and not explicitly tied to a canonical country level here."
+    },
+    {
+      "surface": "drought levels",
+      "reason": "Could refer to drought severity generally, but no exact canonical entity beyond specific severity levels."
+    },
+    {
+      "surface": "lessened quality of living",
+      "reason": "Abstract consequence phrase not in the dictionary."
+    },
+    {
+      "surface": "lifestyle changes",
+      "reason": "Abstract consequence phrase not in the dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that most of the United States was abnormally dry. I also notice that there is not an obvious pattern in the drought levels across the country.\nI wonder what led to the end of October being exceptionally dry. I also wonder if global warming is a main factor in this observation.\nThis relates to my community because I live in the United States and drought levels affect where I live and the people around me. The drought could cause lessened quality of living and a need for lifestyle changes."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "“October Brings Drought to the United States”"
+    }
+  ],
+  "tagged_text": "I noticed that most of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> was abnormally dry. I also notice that there is not an obvious pattern in the drought levels across the country.\nI wonder what led to the end of <entity type=\"TIME_REFERENCE\" canonical=\"october\">October</entity> being <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" modality=\"questioned\">exceptionally dry</entity>. I also wonder if <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"questioned\">global warming</entity> is a main factor in this observation.\nThis relates to my community because I live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" speaker_context=\"true\">United States</entity> and drought levels affect where I live and the <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\">people</entity> around me. The drought could cause lessened quality of living and a need for lifestyle changes.\nHeadline: “<entity type=\"EVENT\" canonical=\"october_brings_drought_to_the_united_states\" section=\"headline\">October Brings Drought to the United States</entity>”"
+}

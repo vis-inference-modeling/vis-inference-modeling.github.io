@@ -1,0 +1,168 @@
+{
+  "article_id": "193",
+  "comment_index": 61,
+  "raw_comment": "The first thing I notice when looking at the graph is how almost every single part of the country has some sort of drought going on. While there are areas that remain uncolored, which I am assuming there is no drought occurring in those places, most are the very least abnormally dry. I also notice that there are very certain sections that have an extreme or exceptional drought happening that are scattered in different areas of the country, it is not in one particular area. \nI wonder how this graph would compare to a graph of last year's droughts. I also wonder if the areas experiencing droughts are also facing high rates of forest fires as well. Finally, I wonder if this has a large impact on farming.\nThis relates to my community because in NJ, where I reside, there was a large period of time we went without water and in a drought. While we have gotten snow and rain in the recent months, NJ remains in drought warning. Not only this, but these droughts are a direct result of climate change which effects every individual in the world. \nHeadline: The United States of Droughts",
+  "entities": [
+    {
+      "surface": "NJ",
+      "type": "LOCATION",
+      "canonical": "new_jersey",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 751,
+      "end": 753,
+      "id": "e0"
+    },
+    {
+      "surface": "NJ",
+      "type": "LOCATION",
+      "canonical": "new_jersey",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 901,
+      "end": 903,
+      "id": "e1"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 915,
+      "end": 922,
+      "id": "e2"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 957,
+      "end": 964,
+      "id": "e3"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 989,
+      "end": 1003,
+      "id": "e4"
+    },
+    {
+      "surface": "world",
+      "type": "LOCATION",
+      "canonical": "world",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1042,
+      "end": 1047,
+      "id": "e5"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "snow",
+      "type": "EVENT",
+      "canonical": "snow",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "recent months",
+      "type": "TIME_REFERENCE",
+      "canonical": "recent_months",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "the country",
+      "reason": "Could refer to the U.S. or country in general; no explicit country name is given in the body."
+    },
+    {
+      "surface": "abnormally dry",
+      "reason": "Likely a drought severity level, but the provided normalized dictionary does not include a matching canonical for this exact surface form."
+    },
+    {
+      "surface": "extreme or exceptional drought",
+      "reason": "Could be two separate severity levels or a combined phrase; exact mapping is uncertain without splitting guidance for this phrasing."
+    },
+    {
+      "surface": "forest fires",
+      "reason": "Could map to EVENT forest_fires, but the comment says 'high rates of forest fires' without clear direct reference to the chart's drought severity categories."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "The first thing I notice when looking at the graph is how almost every single part of the country has some sort of drought going on. While there are areas that remain uncolored, which I am assuming there is no drought occurring in those places, most are the very least abnormally dry. I also notice that there are very certain sections that have an extreme or exceptional drought happening that are scattered in different areas of the country, it is not in one particular area. \nI wonder how this graph would compare to a graph of last year's droughts. I also wonder if the areas experiencing droughts are also facing high rates of forest fires as well. Finally, I wonder if this has a large impact on farming.\nThis relates to my community because in NJ, where I reside, there was a large period of time we went without water and in a drought. While we have gotten snow and rain in the recent months, NJ remains in drought warning. Not only this, but these droughts are a direct result of climate change which effects every individual in the world."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "The United States of Droughts"
+    }
+  ],
+  "tagged_text": "The first thing I notice when looking at the graph is how almost every single part of the country has some sort of drought going on. While there are areas that remain uncolored, which I am assuming there is no drought occurring in those places, most are the very least abnormally dry. I also notice that there are very certain sections that have an extreme or exceptional drought happening that are scattered in different areas of the country, it is not in one particular area. \nI wonder how this graph would compare to a graph of last year's droughts. I also wonder if the areas experiencing droughts are also facing high rates of forest fires as well. Finally, I wonder if this has a large impact on farming.\nThis relates to my community because in <entity type=\"LOCATION\" canonical=\"new_jersey\" speaker_context=\"true\">NJ</entity>, where I reside, there was a large period of time we went without <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity> and in a <entity type=\"EVENT\" canonical=\"drought\">drought</entity>. While we have gotten <entity type=\"EVENT\" canonical=\"snow\">snow</entity> and <entity type=\"EVENT\" canonical=\"rain\">rain</entity> in the <entity type=\"TIME_REFERENCE\" canonical=\"recent_months\">recent months</entity>, <entity type=\"LOCATION\" canonical=\"new_jersey\">NJ</entity> remains in drought warning. Not only this, but these droughts are a direct result of <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> which effects every individual in the <entity type=\"LOCATION\" canonical=\"world\">world</entity>. \nHeadline: The United States of Droughts"
+}

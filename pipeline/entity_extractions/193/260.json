@@ -1,0 +1,46 @@
+{
+  "article_id": "193",
+  "comment_index": 260,
+  "raw_comment": "I noticed in some areas with plains or deserts that there is just moderate or abnormally dry droughts. I would expect those areas to be more severe rather than areas with dense forestation.",
+  "entities": [
+    {
+      "surface": "moderate",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "moderate",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 66,
+      "end": 74,
+      "id": "e0"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "plains",
+      "reason": "Geographic/landform reference not present in the normalized dictionary."
+    },
+    {
+      "surface": "deserts",
+      "reason": "Could be a location/landform reference, but no exact canonical match is available."
+    },
+    {
+      "surface": "abnormally dry droughts",
+      "reason": "Likely refers to a drought severity level, but the exact canonical mapping is uncertain because the phrase combines a level with a generic noun."
+    },
+    {
+      "surface": "dense forestation",
+      "reason": "Could relate to vegetation/environment, but no exact canonical match is provided."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed in some areas with plains or deserts that there is just moderate or abnormally dry droughts. I would expect those areas to be more severe rather than areas with dense forestation."
+    }
+  ],
+  "tagged_text": "I noticed in some areas with plains or deserts that there is just moderate or abnormally dry droughts. I would expect those areas to be more severe rather than areas with dense forestation."
+}

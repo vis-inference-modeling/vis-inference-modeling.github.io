@@ -1,0 +1,116 @@
+{
+  "article_id": "193",
+  "comment_index": 8,
+  "raw_comment": "What stands out to me is how few areas are completely free from drought. For instance, Florida is the only state where most of the land isn’t affected. I’m curious about what’s causing this drought and whether it’s occurring beyond the U.S. Even though I live in Florida, I’ve noticed some effects, like lower humidity. I feel this particularly during my workouts, where I’ve been sweating much less compared to just two weeks ago. A possible title for this could be \"United Drought of America\".",
+  "entities": [
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 64,
+      "end": 71,
+      "id": "e0"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 190,
+      "end": 197,
+      "id": "e1"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 263,
+      "end": 270,
+      "id": "e2"
+    },
+    {
+      "surface": "two weeks ago",
+      "type": "TIME_REFERENCE",
+      "canonical": "two_months",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 417,
+      "end": 430,
+      "id": "e3"
+    },
+    {
+      "surface": "United Drought of America",
+      "type": "EVENT",
+      "canonical": "united_drought_of_america",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 468,
+      "end": 493,
+      "id": "e4"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "lower humidity",
+      "reason": "Likely an environmental effect, but no exact canonical entity is provided."
+    },
+    {
+      "surface": "my workouts",
+      "reason": "Speaker-specific activity reference, not a taggable entity in the schema."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What stands out to me is how few areas are completely free from drought. For instance, Florida is the only state where most of the land isn’t affected. I’m curious about what’s causing this drought and whether it’s occurring beyond the U.S. Even though I live in Florida, I’ve noticed some effects, like lower humidity. I feel this particularly during my workouts, where I’ve been sweating much less compared to just two weeks ago. A possible title for this could be \"United Drought of America.\""
+    }
+  ],
+  "tagged_text": "What stands out to me is how few areas are completely free from <entity type=\"EVENT\" canonical=\"drought\">drought</entity>. For instance, <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> is the only state where most of the land isn’t affected. I’m curious about what’s causing this <entity type=\"EVENT\" canonical=\"drought\" modality=\"questioned\">drought</entity> and whether it’s occurring beyond the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> Even though I live in <entity type=\"LOCATION\" canonical=\"florida\" speaker_context=\"true\">Florida</entity>, I’ve noticed some effects, like lower humidity. I feel this particularly during my workouts, where I’ve been sweating much less compared to just <entity type=\"TIME_REFERENCE\" canonical=\"two_months\">two weeks ago</entity>. A possible title for this could be \"<entity type=\"EVENT\" canonical=\"united_drought_of_america\" section=\"headline\">United Drought of America</entity>.\""
+}

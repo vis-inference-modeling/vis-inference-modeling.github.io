@@ -1,0 +1,51 @@
+{
+  "article_id": "193",
+  "comment_index": 80,
+  "raw_comment": "Title: Lower 48 is a little thirsty\n\nwhy is Florida not droughtfull.",
+  "entities": [
+    {
+      "surface": "Lower 48",
+      "type": "LOCATION",
+      "canonical": "lower_48",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 7,
+      "end": 15,
+      "id": "e0"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 44,
+      "end": 51,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "droughtfull",
+      "reason": "Nonstandard wording for drought; no exact canonical match."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "headline",
+      "label": "Title",
+      "text": "Lower 48 is a little thirsty"
+    },
+    {
+      "section": "body",
+      "text": "why is Florida not droughtfull."
+    }
+  ],
+  "tagged_text": "Title: <entity type=\"LOCATION\" canonical=\"lower_48\" section=\"headline\">Lower 48</entity> is a little thirsty\n\nwhy is <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\">Florida</entity> not droughtfull."
+}

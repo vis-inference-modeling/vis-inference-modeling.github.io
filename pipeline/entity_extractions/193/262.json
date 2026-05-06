@@ -1,0 +1,107 @@
+{
+  "article_id": "193",
+  "comment_index": 262,
+  "raw_comment": "How do drought conditions correlate to temperature and increase or decrease frequency of brush and forest fires?\n\nWhat is the historical context of drought conditions?\n\nHow much do drought conditions cause drawdowns in water supplies?",
+  "entities": [
+    {
+      "surface": "drought conditions",
+      "type": "EVENT",
+      "canonical": "drought_conditions",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 7,
+      "end": 25,
+      "id": "e0"
+    },
+    {
+      "surface": "drought conditions",
+      "type": "EVENT",
+      "canonical": "drought_conditions",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 148,
+      "end": 166,
+      "id": "e1"
+    },
+    {
+      "surface": "drought conditions",
+      "type": "EVENT",
+      "canonical": "drought_conditions",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 181,
+      "end": 199,
+      "id": "e2"
+    },
+    {
+      "surface": "water supplies",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_supplies",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 219,
+      "end": 233,
+      "id": "e3"
+    },
+    {
+      "surface": "temperature",
+      "type": "DATA_VAR",
+      "canonical": "temperature",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "forest fires",
+      "type": "EVENT",
+      "canonical": "forest_fires",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "brush",
+      "reason": "Likely refers to brush fires, but the exact phrase is incomplete/ambiguous in the comment."
+    },
+    {
+      "surface": "historical context",
+      "reason": "Time-related but not a specific time reference; could be a general temporal framing rather than a concrete date/range."
+    },
+    {
+      "surface": "drawdowns",
+      "reason": "Could be a process/action related to water levels, but not a standalone entity in the reference list."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "How do drought conditions correlate to temperature and increase or decrease frequency of brush and forest fires?\n\nWhat is the historical context of drought conditions?\n\nHow much do drought conditions cause drawdowns in water supplies?"
+    }
+  ],
+  "tagged_text": "How do <entity type=\"EVENT\" canonical=\"drought_conditions\" modality=\"questioned\">drought conditions</entity> correlate to <entity type=\"DATA_VAR\" canonical=\"temperature\" modality=\"questioned\">temperature</entity> and increase or decrease frequency of brush and <entity type=\"EVENT\" canonical=\"forest_fires\" modality=\"questioned\">forest fires</entity>?\n\nWhat is the historical context of <entity type=\"EVENT\" canonical=\"drought_conditions\" modality=\"questioned\">drought conditions</entity>?\n\nHow much do <entity type=\"EVENT\" canonical=\"drought_conditions\" modality=\"questioned\">drought conditions</entity> cause drawdowns in <entity type=\"OTHER_ENTITY\" canonical=\"water_supplies\" subtype=\"other\" modality=\"questioned\">water supplies</entity>?"
+}

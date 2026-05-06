@@ -1,0 +1,183 @@
+{
+  "article_id": "193",
+  "comment_index": 23,
+  "raw_comment": "1. The graph shows the drought distribution in the US. I notice that the middle area of the United States is approximately more extreme than others. In addition, I see that most of the area has drought and lack of water. \n2. I wonder why the middle part has more drought than California because California has lots of wildfires but is at the stage of abnormally dry, it's not extreme.\n3. This relates to my community because it gives a sense that the United States lacks water.\n\nThe Urgency of Water in America",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 7,
+      "end": 12,
+      "id": "e0"
+    },
+    {
+      "surface": "US",
+      "type": "LOCATION",
+      "canonical": "us",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 51,
+      "end": 53,
+      "id": "e1"
+    },
+    {
+      "surface": "United States",
+      "type": "LOCATION",
+      "canonical": "united_states",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 92,
+      "end": 105,
+      "id": "e2"
+    },
+    {
+      "surface": "United States",
+      "type": "LOCATION",
+      "canonical": "united_states",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 451,
+      "end": 464,
+      "id": "e3"
+    },
+    {
+      "surface": "The Urgency of Water in America",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 479,
+      "end": 510,
+      "id": "e4"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "California",
+      "type": "LOCATION",
+      "canonical": "california",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "California",
+      "type": "LOCATION",
+      "canonical": "california",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "wildfires",
+      "type": "EVENT",
+      "canonical": "wildfires",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "EVENT",
+      "canonical": "abnormally_dry",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "lack of water",
+      "reason": "Could refer to drought/water scarcity, but no exact canonical match in the provided dictionary."
+    },
+    {
+      "surface": "my community",
+      "reason": "Speaker-linked community reference, but no exact canonical location/entity match is provided in the article dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "The graph shows the drought distribution in the US. I notice that the middle area of the United States is approximately more extreme than others. In addition, I see that most of the area has drought and lack of water. "
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder why the middle part has more drought than California because California has lots of wildfires but is at the stage of abnormally dry, it's not extreme."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "This relates to my community because it gives a sense that the United States lacks water."
+    },
+    {
+      "section": "headline",
+      "label": "The Urgency of Water in America",
+      "text": "The Urgency of Water in America"
+    }
+  ],
+  "tagged_text": "1. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> shows the drought distribution in the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">US</entity>. I notice that the middle area of the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">United States</entity> is approximately more extreme than others. In addition, I see that most of the area has <entity type=\"EVENT\" canonical=\"drought\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">drought</entity> and lack of water. \n2. I wonder why the middle part has more drought than <entity type=\"LOCATION\" canonical=\"california\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">California</entity> because California has lots of <entity type=\"EVENT\" canonical=\"wildfires\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">wildfires</entity> but is at the stage of <entity type=\"EVENT\" canonical=\"abnormally_dry\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">abnormally dry</entity>, it's not extreme.\n3. This relates to my community because it gives a sense that the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">United States</entity> lacks water.\n\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">The Urgency of Water in America</entity>"
+}

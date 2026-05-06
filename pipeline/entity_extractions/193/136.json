@@ -1,0 +1,109 @@
+{
+  "article_id": "193",
+  "comment_index": 136,
+  "raw_comment": "• What do you notice?\nI notice that states in the West have a lot more extreme and severe droughts than the East. \n• What do you wonder?\nI wonder what causes the droughts to get so extreme\n• How does this relate to you and your community?\nThis relates to me and my community because if a drought happens we could analyze this data and previous droughts to be more prepared than other states. \n• What’s going on in this graph? Create a catchy headline that captures the graph’s main idea\nDodging Droughts",
+  "entities": [
+    {
+      "surface": "West",
+      "type": "LOCATION",
+      "canonical": "west",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 50,
+      "end": 54,
+      "id": "e0"
+    },
+    {
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 71,
+      "end": 78,
+      "id": "e1"
+    },
+    {
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 181,
+      "end": 188,
+      "id": "e2"
+    },
+    {
+      "surface": "Dodging Droughts",
+      "type": "EVENT",
+      "canonical": "dodging_droughts",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 487,
+      "end": 503,
+      "id": "e3"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "East",
+      "type": "LOCATION",
+      "canonical": "east",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "states",
+      "reason": "Generic plural location reference without a specific canonical location."
+    },
+    {
+      "surface": "previous droughts",
+      "reason": "Could be an EVENT reference, but the phrase is generic and not a listed canonical form."
+    },
+    {
+      "surface": "other states",
+      "reason": "Generic location reference without a specific canonical location."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "• What do you notice?\nI notice that states in the West have a lot more extreme and severe droughts than the East. \n• What do you wonder?\nI wonder what causes the droughts to get so extreme\n• How does this relate to you and your community?\nThis relates to me and my community because if a drought happens we could analyze this data and previous droughts to be more prepared than other states. \n• What’s going on in this graph? Create a catchy headline that captures the graph’s main idea\nDodging Droughts"
+    }
+  ],
+  "tagged_text": "• What do you notice?\nI notice that states in the <entity type=\"LOCATION\" canonical=\"west\">West</entity> have a lot more <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\">extreme</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity> droughts than the <entity type=\"LOCATION\" canonical=\"east\">East</entity>. \n• What do you wonder?\nI wonder what causes the droughts to get so <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" modality=\"questioned\">extreme</entity>\n• How does this relate to you and your community?\nThis relates to me and my community because if a drought happens we could analyze this data and previous droughts to be more prepared than other states. \n• What’s going on in this graph? Create a catchy headline that captures the graph’s main idea\n<entity type=\"EVENT\" canonical=\"dodging_droughts\" section=\"headline\">Dodging Droughts</entity>"
+}

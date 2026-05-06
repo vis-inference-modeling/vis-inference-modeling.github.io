@@ -1,0 +1,90 @@
+{
+  "article_id": "193",
+  "comment_index": 239,
+  "raw_comment": "I notice that alaska does not have any droughts\n\nI wonder why most of america is abnormally dry\n\nthis relates to me because I reside in america\n\ndry dry america.. goodbye!",
+  "entities": [
+    {
+      "surface": "alaska",
+      "type": "LOCATION",
+      "canonical": "alaska",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 14,
+      "end": 20,
+      "id": "e0"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 39,
+      "end": 47,
+      "id": "e1"
+    },
+    {
+      "surface": "america",
+      "type": "LOCATION",
+      "canonical": "america",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 70,
+      "end": 77,
+      "id": "e2"
+    },
+    {
+      "surface": "america",
+      "type": "LOCATION",
+      "canonical": "america",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 136,
+      "end": 143,
+      "id": "e3"
+    },
+    {
+      "surface": "America",
+      "type": "LOCATION",
+      "canonical": "america",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 153,
+      "end": 160,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "abnormally dry",
+      "reason": "Could indicate drought conditions, but no confirmed canonical entity matches this exact phrase."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that alaska does not have any droughts\n\nI wonder why most of america is abnormally dry\n\nthis relates to me because I reside in america"
+    },
+    {
+      "section": "headline",
+      "label": "dry dry america.. goodbye!",
+      "text": "dry dry America.. goodbye!"
+    }
+  ],
+  "tagged_text": "I notice that <entity type=\"LOCATION\" canonical=\"alaska\" section=\"body\">alaska</entity> does not have any <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity>\n\nI wonder why most of <entity type=\"LOCATION\" canonical=\"america\" section=\"body\">america</entity> is abnormally dry\n\nthis relates to me because I reside in <entity type=\"LOCATION\" canonical=\"america\" section=\"body\" speaker_context=\"true\">america</entity>\n\ndry dry <entity type=\"LOCATION\" canonical=\"america\" section=\"headline\">America</entity>.. goodbye!"
+}

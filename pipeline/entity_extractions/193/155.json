@@ -1,0 +1,230 @@
+{
+  "article_id": "193",
+  "comment_index": 155,
+  "raw_comment": "1. I notice that though not all palces in the United States are in extreme drought, a massive part of the United States are abnormally dry. \n2. I wonder half of New York, Colorado and all of Florida are not experiencing drought.\n3. This relates to my community because I know that myself and others in my community use a lot of water on a daily usage. This can affect droughts to happen. Also, if droughts happen, it affects everyone in the community. \n4. \"Everyone should to help the US end this drought.\"",
+  "entities": [
+    {
+      "surface": "United States",
+      "type": "LOCATION",
+      "canonical": "united_states",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 46,
+      "end": 59,
+      "id": "e0"
+    },
+    {
+      "surface": "United States",
+      "type": "LOCATION",
+      "canonical": "united_states",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 106,
+      "end": 119,
+      "id": "e1"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 124,
+      "end": 138,
+      "id": "e2"
+    },
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 161,
+      "end": 169,
+      "id": "e3"
+    },
+    {
+      "surface": "Colorado",
+      "type": "LOCATION",
+      "canonical": "colorado",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 171,
+      "end": 179,
+      "id": "e4"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 191,
+      "end": 198,
+      "id": "e5"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 248,
+      "end": 260,
+      "id": "e6"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 302,
+      "end": 314,
+      "id": "e7"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 328,
+      "end": 333,
+      "id": "e8"
+    },
+    {
+      "surface": "everyone",
+      "type": "OTHER_ENTITY",
+      "canonical": "everyone",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 425,
+      "end": 433,
+      "id": "e9"
+    },
+    {
+      "surface": "Everyone should to help the US end this drought.",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 457,
+      "end": 505,
+      "id": "e10"
+    },
+    {
+      "surface": "extreme drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "me",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker",
+      "subtype": "person",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "myself",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker",
+      "subtype": "person",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "not experiencing drought",
+      "reason": "Negated drought status; no exact level or entity canonical beyond the location itself."
+    },
+    {
+      "surface": "daily usage",
+      "reason": "Likely refers to water use, but not a stable entity in the dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I notice that though not all palces in the United States are in extreme drought, a massive part of the United States are abnormally dry."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder half of New York, Colorado and all of Florida are not experiencing drought."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "This relates to me and my community because I know that myself and others in my community use a lot of water on a daily usage. This can affect droughts to happen. Also, if droughts happen, it affects everyone in the community."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "\"Everyone should to help the US end this drought.\""
+    }
+  ],
+  "tagged_text": "1. I notice that though not all palces in the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"numbered_point\" label=\"1\">United States</entity> are in <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"numbered_point\" label=\"1\">extreme drought</entity>, a massive part of the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"numbered_point\" label=\"1\">United States</entity> are <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\" section=\"numbered_point\" label=\"1\">abnormally dry</entity>. \n2. I wonder half of <entity type=\"LOCATION\" canonical=\"new_york\" section=\"numbered_point\" label=\"2\">New York</entity>, <entity type=\"LOCATION\" canonical=\"colorado\" section=\"numbered_point\" label=\"2\">Colorado</entity> and all of <entity type=\"LOCATION\" canonical=\"florida\" section=\"numbered_point\" label=\"2\">Florida</entity> are not experiencing drought.\n3. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"numbered_point\" label=\"3\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"numbered_point\" label=\"3\" speaker_context=\"true\">my community</entity> because I know that <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"numbered_point\" label=\"3\" speaker_context=\"true\">myself</entity> and others in <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"numbered_point\" label=\"3\" speaker_context=\"true\">my community</entity> use a lot of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" section=\"numbered_point\" label=\"3\">water</entity> on a daily usage. This can affect droughts to happen. Also, if droughts happen, it affects <entity type=\"OTHER_ENTITY\" canonical=\"everyone\" subtype=\"other\" section=\"numbered_point\" label=\"3\">everyone</entity> in the community. \n4. \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"numbered_point\" label=\"4\">Everyone should to help the US end this drought.</entity>\""
+}

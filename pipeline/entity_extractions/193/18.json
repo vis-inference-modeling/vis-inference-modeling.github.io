@@ -1,0 +1,141 @@
+{
+  "article_id": "193",
+  "comment_index": 18,
+  "raw_comment": "The drought map shows that the Midwest and central states are facing the worst conditions, with Texas experiencing \"exceptional drought.\" This is likely because landlocked states don’t have access to oceans like coastal areas which helps prevent droughts. The map also makes me wonder if droughts are becoming worse over time due to global warming, as these patterns seem to align with rising temperatures. Droughts affect farming, which can lead to food shortages, higher prices, and economic problems. Even in Florida, where drought isn’t a problem, we feel the effects because environmental issues impact everyone. Headline: U.S. Drought Patterns: A Growing Climate Concern",
+  "entities": [
+    {
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 31,
+      "end": 38,
+      "id": "e0"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 96,
+      "end": 101,
+      "id": "e1"
+    },
+    {
+      "surface": "exceptional",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 116,
+      "end": 127,
+      "id": "e2"
+    },
+    {
+      "surface": "global warming",
+      "type": "EVENT",
+      "canonical": "global_warming",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 333,
+      "end": 347,
+      "id": "e3"
+    },
+    {
+      "surface": "farming",
+      "type": "OTHER_ENTITY",
+      "canonical": "farming",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 423,
+      "end": 430,
+      "id": "e4"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 512,
+      "end": 519,
+      "id": "e5"
+    },
+    {
+      "surface": "environmental issues",
+      "type": "OTHER_ENTITY",
+      "canonical": "environmental_issues",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 580,
+      "end": 600,
+      "id": "e6"
+    },
+    {
+      "surface": "U.S. Drought Patterns: A Growing Climate Concern",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 628,
+      "end": 676,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "central states",
+      "reason": "Could refer to a region, but no exact canonical region match is provided in the article dictionary."
+    },
+    {
+      "surface": "coastal areas",
+      "reason": "Likely a location/region reference, but no exact canonical match is provided in the article dictionary."
+    },
+    {
+      "surface": "rising temperatures",
+      "reason": "Could be a time-independent environmental condition or an event-like concept, but no exact canonical match is provided."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "The drought map shows that the Midwest and central states are facing the worst conditions, with Texas experiencing \"exceptional drought.\" This is likely because landlocked states don’t have access to oceans like coastal areas which helps prevent droughts. The map also makes me wonder if droughts are becoming worse over time due to global warming, as these patterns seem to align with rising temperatures. Droughts affect farming, which can lead to food shortages, higher prices, and economic problems. Even in Florida, where drought isn’t a problem, we feel the effects because environmental issues impact everyone."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "U.S. Drought Patterns: A Growing Climate Concern"
+    }
+  ],
+  "tagged_text": "The drought map shows that the <entity type=\"LOCATION\" canonical=\"midwest\" section=\"body\">Midwest</entity> and central states are facing the worst conditions, with <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\">Texas</entity> experiencing \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\">exceptional</entity> drought.\" This is likely because landlocked states don’t have access to oceans like coastal areas which helps prevent droughts. The map also makes me wonder if droughts are becoming worse over time due to <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\" modality=\"questioned\">global warming</entity>, as these patterns seem to align with rising temperatures. Droughts affect <entity type=\"OTHER_ENTITY\" canonical=\"farming\" subtype=\"other\" section=\"body\">farming</entity>, which can lead to food shortages, higher prices, and economic problems. Even in <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\">Florida</entity>, where drought isn’t a problem, we feel the effects because <entity type=\"OTHER_ENTITY\" canonical=\"environmental_issues\" subtype=\"other\" section=\"body\">environmental issues</entity> impact everyone. Headline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">U.S. Drought Patterns: A Growing Climate Concern</entity>"
+}

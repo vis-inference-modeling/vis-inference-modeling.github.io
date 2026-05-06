@@ -1,0 +1,103 @@
+{
+  "article_id": "181",
+  "comment_index": 119,
+  "raw_comment": "1. I notice that the US non-renewable energy use has said pretty consistent over the past 20 years. \n2. I wonder why India's so low on all energy? \n3.Related to my community, more use of clean energy. Headline: 4. Where is our electricity coming from?",
+  "entities": [
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 21,
+      "end": 23,
+      "id": "e0"
+    },
+    {
+      "surface": "past 20 years",
+      "type": "TIME_REFERENCE",
+      "canonical": "past_20_years",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 85,
+      "end": 98,
+      "id": "e1"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 117,
+      "end": 122,
+      "id": "e2"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 139,
+      "end": 145,
+      "id": "e3"
+    },
+    {
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 187,
+      "end": 199,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "non-renewable energy",
+      "reason": "Likely refers to fossil/non-renewable power, but the exact surface is not in the confirmed dictionary and mapping is somewhat indirect."
+    },
+    {
+      "surface": "Where is our electricity coming from?",
+      "reason": "Looks like a headline/title, but it is not in the confirmed headline dictionary and may be novel."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I notice that the US non-renewable energy use has said pretty consistent over the past 20 years."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder why India's so low on all energy?"
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "Related to my community, more use of clean energy. Headline: 4. Where is our electricity coming from?"
+    }
+  ],
+  "tagged_text": "1. I notice that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> non-renewable energy use has said pretty consistent over the <entity type=\"TIME_REFERENCE\" canonical=\"past_20_years\">past 20 years</entity>. \n2. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>'s so low on all <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity>? \n3. Related to my community, more use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>. Headline: 4. Where is our electricity coming from?"
+}

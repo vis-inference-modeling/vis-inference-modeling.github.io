@@ -1,0 +1,155 @@
+{
+  "article_id": "193",
+  "comment_index": 68,
+  "raw_comment": "One thing I immediately took notice of the first time I looked over this graphic was the stark and surprising difference between the heat/droughts in arizona in comparison to states such as oklahoma and ohio. This observation led me to question why arizona, often nick-named the “convection oven of the United States” does not have more intense droughts? Could it have something to do with the fact that it is geographically closer to the coast? I can relate this back to my community because florida happens to be a state that is surrounded by ocean, as such it could be used as a good comparison point for potential issues that come with global warming and it could yield especially fascinating results as it is one of the only states that is almost entirely shielded from the effects of droughts yet still heavily affected by climate change. Moreover, if I were to give this graphic a headline, it would probably be “The Strike of Droughts, A study of Climate.”",
+  "entities": [
+    {
+      "surface": "arizona",
+      "type": "LOCATION",
+      "canonical": "arizona",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 150,
+      "end": 157,
+      "id": "e0"
+    },
+    {
+      "surface": "arizona",
+      "type": "LOCATION",
+      "canonical": "arizona",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 249,
+      "end": 256,
+      "id": "e1"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 303,
+      "end": 316,
+      "id": "e2"
+    },
+    {
+      "surface": "coast",
+      "type": "LOCATION",
+      "canonical": "the_coast",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 439,
+      "end": 444,
+      "id": "e3"
+    },
+    {
+      "surface": "florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 493,
+      "end": 500,
+      "id": "e4"
+    },
+    {
+      "surface": "ocean",
+      "type": "LOCATION",
+      "canonical": "ocean",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 545,
+      "end": 550,
+      "id": "e5"
+    },
+    {
+      "surface": "global warming",
+      "type": "EVENT",
+      "canonical": "global_warming",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 640,
+      "end": 654,
+      "id": "e6"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 829,
+      "end": 843,
+      "id": "e7"
+    },
+    {
+      "surface": "oklahoma",
+      "type": "LOCATION",
+      "canonical": "oklahoma",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "ohio",
+      "type": "LOCATION",
+      "canonical": "ohio",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "heat/droughts",
+      "reason": "Combined phrase with slash; likely refers to droughts and heat, but exact entity boundaries are unclear."
+    },
+    {
+      "surface": "The Strike of Droughts, A study of Climate",
+      "reason": "Headline-like title, but no exact canonical match in the provided dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "One thing I immediately took notice of the first time I looked over this graphic was the stark and surprising difference between the heat/droughts in arizona in comparison to states such as oklahoma and ohio. This observation led me to question why arizona, often nick-named the “convection oven of the United States” does not have more intense droughts? Could it have something to do with the fact that it is geographically closer to the coast? I can relate this back to my community because florida happens to be a state that is surrounded by ocean, as such it could be used as a good comparison point for potential issues that come with global warming and it could yield especially fascinating results as it is one of the only states that is almost entirely shielded from the effects of droughts yet still heavily affected by climate change. Moreover, if I were to give this graphic a headline, it would probably be “The Strike of Droughts, A study of Climate.”"
+    }
+  ],
+  "tagged_text": "One thing I immediately took notice of the first time I looked over this graphic was the stark and surprising difference between the heat/droughts in <entity type=\"LOCATION\" canonical=\"arizona\">arizona</entity> in comparison to states such as <entity type=\"LOCATION\" canonical=\"oklahoma\">oklahoma</entity> and <entity type=\"LOCATION\" canonical=\"ohio\">ohio</entity>. This observation led me to question why <entity type=\"LOCATION\" canonical=\"arizona\">arizona</entity>, often nick-named the “convection oven of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>” does not have more intense droughts? Could it have something to do with the fact that it is geographically closer to the <entity type=\"LOCATION\" canonical=\"the_coast\">coast</entity>? I can relate this back to my community because <entity type=\"LOCATION\" canonical=\"florida\" speaker_context=\"true\">florida</entity> happens to be a state that is surrounded by <entity type=\"LOCATION\" canonical=\"ocean\">ocean</entity>, as such it could be used as a good comparison point for potential issues that come with <entity type=\"EVENT\" canonical=\"global_warming\">global warming</entity> and it could yield especially fascinating results as it is one of the only states that is almost entirely shielded from the effects of droughts yet still heavily affected by <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity>. Moreover, if I were to give this graphic a headline, it would probably be “The Strike of Droughts, A study of Climate.”"
+}

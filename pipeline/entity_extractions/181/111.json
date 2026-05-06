@@ -1,0 +1,156 @@
+{
+  "article_id": "181",
+  "comment_index": 111,
+  "raw_comment": "Notice: India uses a lot less energy than China and US.\nWonder: What are some reasons for the differences in energy sources between India, China, and the US?\nRelate: relates to me and my community because we use energy everyday. \nHeadline: Energy Sources",
+  "entities": [
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 8,
+      "end": 13,
+      "id": "e0"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 132,
+      "end": 137,
+      "id": "e1"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 212,
+      "end": 218,
+      "id": "e2"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 240,
+      "end": 246,
+      "id": "e3"
+    },
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "energy sources",
+      "type": "DATA_VAR",
+      "canonical": "energy_source",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "me and my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_neighbors",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "Energy Sources",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_sources",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Notice: India uses a lot less energy than China and US.\nWonder: What are some reasons for the differences in energy sources between India, China, and the US?\nRelate: relates to me and my community because we use energy everyday. "
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Energy Sources"
+    }
+  ],
+  "tagged_text": "Notice: <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> uses a lot less <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>.\nWonder: What are some reasons for the differences in <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy sources</entity> between <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>, and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>?\nRelate: relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_neighbors\" subtype=\"other\" speaker_context=\"true\">me and my community</entity> because we use <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> everyday. \nHeadline: <entity type=\"OTHER_ENTITY\" canonical=\"energy_sources\" section=\"headline\">Energy Sources</entity>"
+}

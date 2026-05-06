@@ -1,0 +1,144 @@
+{
+  "article_id": "193",
+  "comment_index": 50,
+  "raw_comment": "I noticed that as one goes to the center of America, the drought seems to become more severe. However, there are some place that don't seem to follow this general pattern such as a small region in the left part of Texas. This makes me wonder what potential factors are playing into this drought. It doesn't seem like population plays a factor otherwise densely populated areas such as New York would be under an extreme drought. I wonder if distance from a the coast has a small factor to play in the drought as areas more inland tend to experience more drought in this case. While I haven't seen much of an effect of the drought, this likely impacts the community as a whole by increasing the cost of using water appliances as well as increase the cost of drinking water. A catchy headline for this would be \"US Drought! See if you're effected.\"",
+  "entities": [
+    {
+      "surface": "America",
+      "type": "LOCATION",
+      "canonical": "america",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 44,
+      "end": 51,
+      "id": "e0"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 214,
+      "end": 219,
+      "id": "e1"
+    },
+    {
+      "surface": "population",
+      "type": "OTHER_ENTITY",
+      "canonical": "population",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 317,
+      "end": 327,
+      "id": "e2"
+    },
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 385,
+      "end": 393,
+      "id": "e3"
+    },
+    {
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 412,
+      "end": 419,
+      "id": "e4"
+    },
+    {
+      "surface": "coast",
+      "type": "LOCATION",
+      "canonical": "coast",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 461,
+      "end": 466,
+      "id": "e5"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 810,
+      "end": 812,
+      "id": "e6"
+    },
+    {
+      "surface": "Drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 813,
+      "end": 820,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "center of America",
+      "reason": "Region-like phrase, but no exact canonical regional match is confirmed beyond the country reference."
+    },
+    {
+      "surface": "drought",
+      "reason": "Repeated generic event mention; could be tagged multiple times, but the comment uses it broadly without a distinct canonical beyond the general event."
+    },
+    {
+      "surface": "water appliances",
+      "reason": "Object/infrastructure phrase not present in the canonical dictionary."
+    },
+    {
+      "surface": "drinking water",
+      "reason": "Could relate to water, but no exact canonical match is confirmed for this phrase."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that as one goes to the center of America, the drought seems to become more severe. However, there are some place that don't seem to follow this general pattern such as a small region in the left part of Texas. This makes me wonder what potential factors are playing into this drought. It doesn't seem like population plays a factor otherwise densely populated areas such as New York would be under an extreme drought. I wonder if distance from a the coast has a small factor to play in the drought as areas more inland tend to experience more drought in this case. While I haven't seen much of an effect of the drought, this likely impacts the community as a whole by increasing the cost of using water appliances as well as increase the cost of drinking water."
+    },
+    {
+      "section": "headline",
+      "label": "US Drought! See if you're effected.",
+      "text": "US Drought! See if you're effected."
+    }
+  ],
+  "tagged_text": "I noticed that as one goes to the center of <entity type=\"LOCATION\" canonical=\"america\" section=\"body\">America</entity>, the drought seems to become more severe. However, there are some place that don't seem to follow this general pattern such as a small region in the left part of <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\">Texas</entity>. This makes me wonder what potential factors are playing into this drought. It doesn't seem like <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\" section=\"body\">population</entity> plays a factor otherwise densely populated areas such as <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">New York</entity> would be under an <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"body\">extreme</entity> drought. I wonder if distance from a the <entity type=\"LOCATION\" canonical=\"coast\" section=\"body\">coast</entity> has a small factor to play in the drought as areas more inland tend to experience more drought in this case. While I haven't seen much of an effect of the drought, this likely impacts the community as a whole by increasing the cost of using water appliances as well as increase the cost of drinking water. A catchy headline for this would be \"US Drought! See if you're effected.\""
+}

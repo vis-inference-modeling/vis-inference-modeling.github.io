@@ -1,0 +1,123 @@
+{
+  "article_id": "181",
+  "comment_index": 23,
+  "raw_comment": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\nI noticed that all forms of energy have increased over the years, some being more dramatic than others.\n2. What do you wonder?\nWhy is it that nuclear generation has the steepest increase I use?\n3. What impact does this have on you and your community?\nThis impacts all the electricity generation being used for all things that need electricity.\n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\nWhy does the World need more energy on the daily?",
+  "entities": [
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 131,
+      "end": 137,
+      "id": "e0"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 571,
+      "end": 577,
+      "id": "e1"
+    },
+    {
+      "surface": "years",
+      "type": "TIME_REFERENCE",
+      "canonical": "years",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e2"
+    },
+    {
+      "surface": "nuclear generation",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nuclear",
+      "var": "energy_source",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e3"
+    },
+    {
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "World",
+      "type": "LOCATION",
+      "canonical": "world",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\nI noticed that all forms of energy have increased over the years, some being more dramatic than others."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "What do you wonder?\nWhy is it that nuclear generation has the steepest increase I use?"
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "What impact does this have on you and your community?\nThis impacts all the electricity generation being used for all things that need electricity."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "What's going on in this graph? Write a catchy headline that captures the graph's main idea.\nWhy does the World need more energy on the daily?"
+    }
+  ],
+  "tagged_text": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\nI noticed that all forms of <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy</entity> have increased over the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity>, some being more dramatic than others.\n2. What do you wonder?\nWhy is it that <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\" modality=\"questioned\">nuclear generation</entity> has the steepest increase I use?\n3. What impact does this have on you and your community?\nThis impacts all the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> being used for all things that need <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>.\n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\nWhy does the <entity type=\"LOCATION\" canonical=\"world\">World</entity> need more <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy</entity> on the daily?"
+}

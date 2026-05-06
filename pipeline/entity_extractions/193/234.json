@@ -1,0 +1,134 @@
+{
+  "article_id": "193",
+  "comment_index": 234,
+  "raw_comment": "We notice that droughts are in central United States. We also notice that the coastlines have the least amount of droughts. \n\nWe wonder what is causing these and if the dryness has been increasing or decreasing?\n\nThis relates to us in Colorado because it is dry and we have a lot of mountains so we get a lot of droughts. \n\n\"Parched Nation: America's Drought Struggle Intensifies\"",
+  "entities": [
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 15,
+      "end": 23,
+      "id": "e0"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 114,
+      "end": 122,
+      "id": "e1"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 312,
+      "end": 320,
+      "id": "e2"
+    },
+    {
+      "surface": "Parched Nation: America's Drought Struggle Intensifies",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "subtype": "other",
+      "occurrence_index": 0,
+      "start": 325,
+      "end": 379,
+      "id": "e3"
+    },
+    {
+      "surface": "central United States",
+      "type": "LOCATION",
+      "canonical": "central_united_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "coastlines",
+      "type": "LOCATION",
+      "canonical": "coastlines",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "Colorado",
+      "type": "LOCATION",
+      "canonical": "colorado",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "mountains",
+      "type": "LOCATION",
+      "canonical": "mountain",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "dryness",
+      "reason": "Could refer to drought conditions, but not explicitly one of the confirmed canonical entities in this article."
+    },
+    {
+      "surface": "these",
+      "reason": "Anaphoric reference to prior drought locations; not taggable without explicit co-reference."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "We notice that droughts are in central United States. We also notice that the coastlines have the least amount of droughts. \n\nWe wonder what is causing these and if the dryness has been increasing or decreasing?\n\nThis relates to us in Colorado because it is dry and we have a lot of mountains so we get a lot of droughts."
+    },
+    {
+      "section": "headline",
+      "label": "Parched Nation: America's Drought Struggle Intensifies",
+      "text": "\"Parched Nation: America's Drought Struggle Intensifies\""
+    }
+  ],
+  "tagged_text": "We notice that <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> are in <entity type=\"LOCATION\" canonical=\"central_united_states\" section=\"body\">central United States</entity>. We also notice that the <entity type=\"LOCATION\" canonical=\"coastlines\" section=\"body\">coastlines</entity> have the least amount of droughts. \n\nWe wonder what is causing these and if the dryness has been increasing or decreasing?\n\nThis relates to us in <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\" speaker_context=\"true\">Colorado</entity> because it is dry and we have a lot of <entity type=\"LOCATION\" canonical=\"mountain\" section=\"body\">mountains</entity> so we get a lot of droughts. \n\n\"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Parched Nation: America's Drought Struggle Intensifies</entity>\""
+}

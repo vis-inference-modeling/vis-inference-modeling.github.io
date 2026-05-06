@@ -1,0 +1,174 @@
+{
+  "article_id": "193",
+  "comment_index": 223,
+  "raw_comment": "1. I notice that the darker the color, the more extreme the drought is. I also noticed that the most severe and extreme droughts happened to be mostly in the Central US. You can also see there are spots in the US that have faced zero droughts or issues. \n2. I wonder why there are some parts of the US that didn't go through any droughts or climate issues at all during that week of October. Why are there specific parts that faced these droughts more severely than others? Why couldn't the droughts be more evened out all around the country, is it because of the geography and climate change?\n3. My state, New Jersey, was receiving no rain for weeks. We haven't received the proper amount of rain for months actually. Meaning it makes sense for NJ to be in the orange in the graph. We have received warnings to conserve as much water as we can in many little ways at home. \n4. Climate Change Continues to Punish: U.S. Droughts Scatter and Persist",
+  "entities": [
+    {
+      "surface": "Central US",
+      "type": "LOCATION",
+      "canonical": "central_us",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 158,
+      "end": 168,
+      "id": "e0"
+    },
+    {
+      "surface": "US",
+      "type": "LOCATION",
+      "canonical": "us",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 166,
+      "end": 168,
+      "id": "e1"
+    },
+    {
+      "surface": "US",
+      "type": "LOCATION",
+      "canonical": "us",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 210,
+      "end": 212,
+      "id": "e2"
+    },
+    {
+      "surface": "week of October",
+      "type": "TIME_REFERENCE",
+      "canonical": "october",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 375,
+      "end": 390,
+      "id": "e3"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 534,
+      "end": 541,
+      "id": "e4"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 578,
+      "end": 592,
+      "id": "e5"
+    },
+    {
+      "surface": "New Jersey",
+      "type": "LOCATION",
+      "canonical": "new_jersey",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 607,
+      "end": 617,
+      "id": "e6"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 636,
+      "end": 640,
+      "id": "e7"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 693,
+      "end": 697,
+      "id": "e8"
+    },
+    {
+      "surface": "NJ",
+      "type": "LOCATION",
+      "canonical": "new_jersey",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 746,
+      "end": 748,
+      "id": "e9"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 829,
+      "end": 834,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I notice that the darker the color, the more extreme the drought is. I also noticed that the most severe and extreme droughts happened to be mostly in the Central US. You can also see there are spots in the US that have faced zero droughts or issues."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder why there are some parts of the US that didn't go through any droughts or climate issues at all during that week of October. Why are there specific parts that faced these droughts more severely than others? Why couldn't the droughts be more evened out all around the country, is it because of the geography and climate change?"
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "My state, New Jersey, was receiving no rain for weeks. We haven't received the proper amount of rain for months actually. Meaning it makes sense for NJ to be in the orange in the graph. We have received warnings to conserve as much water as we can in many little ways at home."
+    },
+    {
+      "section": "headline",
+      "label": "Climate Change Continues to Punish",
+      "text": "U.S. Droughts Scatter and Persist"
+    }
+  ],
+  "tagged_text": "1. I notice that the darker the color, the more extreme the drought is. I also noticed that the most severe and extreme droughts happened to be mostly in the <entity type=\"LOCATION\" canonical=\"central_us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Central US</entity>. You can also see there are spots in the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">US</entity> that have faced zero droughts or issues. \n2. I wonder why there are some parts of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">US</entity> that didn't go through any droughts or climate issues at all during that <entity type=\"TIME_REFERENCE\" canonical=\"october\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">week of October</entity>. Why are there specific parts that faced these droughts more severely than others? Why couldn't the droughts be more evened out all around the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">country</entity>, is it because of the geography and <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">climate change</entity>?\n3. My state, <entity type=\"new_jersey\" canonical=\"new_jersey\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">New Jersey</entity>, was receiving no <entity type=\"EVENT\" canonical=\"rain\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">rain</entity> for weeks. We haven't received the proper amount of <entity type=\"EVENT\" canonical=\"rain\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">rain</entity> for months actually. Meaning it makes sense for <entity type=\"LOCATION\" canonical=\"new_jersey\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">NJ</entity> to be in the orange in the graph. We have received warnings to conserve as much <entity type=\"OTHER_ENTITY\" canonical=\"water\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">water</entity> as we can in many little ways at home. \n4. Climate Change Continues to Punish: U.S. Droughts Scatter and Persist"
+}

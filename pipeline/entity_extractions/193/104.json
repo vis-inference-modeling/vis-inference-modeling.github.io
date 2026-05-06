@@ -1,0 +1,129 @@
+{
+  "article_id": "193",
+  "comment_index": 104,
+  "raw_comment": "1. I noticed that everywhere in New York has a drought. \n2. I wonder what causes the places in New York to be more prone to droughts. \n3. This relates to me and my community because the increase in droughts affects my food supply or water. \n4. Climate change and its effects.",
+  "entities": [
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 32,
+      "end": 40,
+      "id": "e0"
+    },
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 95,
+      "end": 103,
+      "id": "e1"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 124,
+      "end": 132,
+      "id": "e2"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 198,
+      "end": 206,
+      "id": "e3"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 233,
+      "end": 238,
+      "id": "e4"
+    },
+    {
+      "surface": "Climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 244,
+      "end": 258,
+      "id": "e5"
+    },
+    {
+      "surface": "me and my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "food supply",
+      "reason": "Entity-like phrase but not in the provided dictionary; could be relevant to impacts."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I noticed that everywhere in New York has a drought."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder what causes the places in New York to be more prone to droughts."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "This relates to me and my community because the increase in droughts affects my food supply or water."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "Climate change and its effects."
+    }
+  ],
+  "tagged_text": "1. I noticed that everywhere in <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> has a drought. \n2. I wonder what causes the places in <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> to be more prone to <entity type=\"EVENT\" canonical=\"droughts\">droughts</entity>. \n3. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">me and my community</entity> because the increase in <entity type=\"EVENT\" canonical=\"droughts\">droughts</entity> affects my food supply or <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" speaker_context=\"true\">water</entity>. \n4. <entity type=\"EVENT\" canonical=\"climate_change\" section=\"headline\">Climate change</entity> and its effects."
+}

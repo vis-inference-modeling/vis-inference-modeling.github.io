@@ -1,0 +1,76 @@
+{
+  "article_id": "193",
+  "comment_index": 241,
+  "raw_comment": "I notice that locations with higher elevations have lower humidity levels. This is likely due to their distance from the ocean.  However, there are higher drought levels than anticipated in a few places along the East Coast.\n\nI wonder why areas like New York and Delaware are recorded to have less humidity when they are almost directly on the water.\n\nI live in a mountainous region, and we are regularly in droughts so it's surprising to see that we aren't at the dryest level when we regularly have a large lack of humidity.\n\nTitle: Hawaii: the not so Tropical Punch.",
+  "entities": [
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 250,
+      "end": 258,
+      "id": "e0"
+    },
+    {
+      "surface": "Delaware",
+      "type": "LOCATION",
+      "canonical": "delaware",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 263,
+      "end": 271,
+      "id": "e1"
+    },
+    {
+      "surface": "Hawaii",
+      "type": "LOCATION",
+      "canonical": "hawaii",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 535,
+      "end": 541,
+      "id": "e2"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "higher elevations",
+      "reason": "Could be a geographic descriptor but no matching canonical location/variable level in the provided dictionary."
+    },
+    {
+      "surface": "the ocean",
+      "reason": "Likely a location-like reference, but not in the dictionary and unclear whether to tag as LOCATION or leave generic."
+    },
+    {
+      "surface": "East Coast",
+      "reason": "Matches a known location-like concept in general, but the provided dictionary does not include this exact canonical for this article."
+    },
+    {
+      "surface": "mountainous region",
+      "reason": "Generic location description without a confirmed canonical match."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that locations with higher elevations have lower humidity levels. This is likely due to their distance from the ocean.  However, there are higher drought levels than anticipated in a few places along the East Coast.\n\nI wonder why areas like New York and Delaware are recorded to have less humidity when they are almost directly on the water.\n\nI live in a mountainous region, and we are regularly in droughts so it's surprising to see that we aren't at the dryest level when we regularly have a large lack of humidity."
+    },
+    {
+      "section": "headline",
+      "label": "Title",
+      "text": "Hawaii: the not so Tropical Punch."
+    }
+  ],
+  "tagged_text": "I notice that locations with higher elevations have lower humidity levels. This is likely due to their distance from the ocean.  However, there are higher drought levels than anticipated in a few places along the East Coast.\n\nI wonder why areas like <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">New York</entity> and <entity type=\"LOCATION\" canonical=\"delaware\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Delaware</entity> are recorded to have less humidity when they are almost directly on the water.\n\nI live in a mountainous region, and we are regularly in droughts so it's surprising to see that we aren't at the dryest level when we regularly have a large lack of humidity.\n\nTitle: <entity type=\"LOCATION\" canonical=\"hawaii\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Hawaii</entity>: the not so Tropical Punch."
+}

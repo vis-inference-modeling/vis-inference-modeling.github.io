@@ -1,0 +1,142 @@
+{
+  "article_id": "183",
+  "comment_index": 68,
+  "raw_comment": "The first thing I notice is how the highest percentage of people reaching out to a parent is still less than 75% at best. It's young women over text who get the closest to 75%. I imagine that this is still a bit less than many people would hope. Another thing I notice is how the smallest gap appears with visiting in person. I suppose that visiting in person has less to do with gender and more to do with location. I wonder how they find the time to visit in person at least a few times a week, since even if you live relatively close, it can be hard to find the time to do so. And if someone did live that close, I wonder why they wouldn't just live with their parents to begin with. \nThis relates to me and my community as I'm a young college student living a few hours drive away from home. I'm more likely to text than to call, but I still often times call about once a week. \nI would name this graph \"Young Women More Likely to Call Mom than Men\", or \"Most Kids Prefer Texting their Parents, Not Calling\".",
+  "entities": [
+    {
+      "surface": "75%",
+      "type": "TIME_REFERENCE",
+      "canonical": "75_percent",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 109,
+      "end": 112,
+      "id": "e0"
+    },
+    {
+      "surface": "75%",
+      "type": "TIME_REFERENCE",
+      "canonical": "75_percent",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 172,
+      "end": 175,
+      "id": "e1"
+    },
+    {
+      "surface": "visiting in person",
+      "type": "OTHER_ENTITY",
+      "canonical": "visiting_in_person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 306,
+      "end": 324,
+      "id": "e2"
+    },
+    {
+      "surface": "visiting in person",
+      "type": "OTHER_ENTITY",
+      "canonical": "visiting_in_person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 341,
+      "end": 359,
+      "id": "e3"
+    },
+    {
+      "surface": "location",
+      "type": "OTHER_ENTITY",
+      "canonical": "location",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 407,
+      "end": 415,
+      "id": "e4"
+    },
+    {
+      "surface": "visit",
+      "type": "OTHER_ENTITY",
+      "canonical": "visit",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 452,
+      "end": 457,
+      "id": "e5"
+    },
+    {
+      "surface": "home",
+      "type": "LOCATION",
+      "canonical": "home",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 790,
+      "end": 794,
+      "id": "e6"
+    },
+    {
+      "surface": "Young Women More Likely to Call Mom than Men",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 908,
+      "end": 952,
+      "id": "e7"
+    },
+    {
+      "surface": "Most Kids",
+      "type": "OTHER_ENTITY",
+      "canonical": "kids",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 959,
+      "end": 968,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "The first thing I notice is how the highest percentage of people reaching out to a parent is still less than 75% at best. It's young women over text who get the closest to 75%. I imagine that this is still a bit less than many people would hope. Another thing I notice is how the smallest gap appears with visiting in person. I suppose that visiting in person has less to do with gender and more to do with location. I wonder how they find the time to visit in person at least a few times a week, since even if you live relatively close, it can be hard to find the time to do so. And if someone did live that close, I wonder why they wouldn't just live with their parents to begin with. \nThis relates to me and my community as I'm a young college student living a few hours drive away from home. I'm more likely to text than to call, but I still often times call about once a week. \nI would name this graph \"Young Women More Likely to Call Mom than Men\", or \"Most Kids Prefer Texting their Parents, Not Calling\"."
+    },
+    {
+      "section": "headline",
+      "label": "Young Women More Likely to Call Mom than Men",
+      "text": "Young Women More Likely to Call Mom than Men"
+    },
+    {
+      "section": "headline",
+      "label": "Most Kids Prefer Texting their Parents, Not Calling",
+      "text": "Most Kids Prefer Texting their Parents, Not Calling"
+    }
+  ],
+  "tagged_text": "The first thing I notice is how the highest percentage of people reaching out to a parent is still less than <entity type=\"TIME_REFERENCE\" canonical=\"75_percent\">75%</entity> at best. It's young women over text who get the closest to <entity type=\"TIME_REFERENCE\" canonical=\"75_percent\">75%</entity>. I imagine that this is still a bit less than many people would hope. Another thing I notice is how the smallest gap appears with <entity type=\"OTHER_ENTITY\" canonical=\"visiting_in_person\">visiting in person</entity>. I suppose that <entity type=\"OTHER_ENTITY\" canonical=\"visiting_in_person\">visiting in person</entity> has less to do with gender and more to do with <entity type=\"OTHER_ENTITY\" canonical=\"location\">location</entity>. I wonder how they find the time to <entity type=\"OTHER_ENTITY\" canonical=\"visit\">visit</entity> in person at least a few times a week, since even if you live relatively close, it can be hard to find the time to do so. And if someone did live that close, I wonder why they wouldn't just live with their parents to begin with. \nThis relates to me and my community as I'm a young college student living a few hours drive away from <entity type=\"LOCATION\" canonical=\"home\">home</entity>. I'm more likely to text than to call, but I still often times call about once a week. \nI would name this graph \"<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Young Women More Likely to Call Mom than Men</entity>\", or \"<entity type=\"OTHER_ENTITY\" canonical=\"kids\">Most Kids</entity> Prefer Texting their Parents, Not Calling\"."
+}

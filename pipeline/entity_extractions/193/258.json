@@ -1,0 +1,111 @@
+{
+  "article_id": "193",
+  "comment_index": 258,
+  "raw_comment": "I live in Ohio, and I can see that the southeastern part of our state is in a severe drought. This is unusual since we traditionally get plenty of rain. I also see that the upper Great Lakes are also quite dry. Does this map show the effects of climate change?  Is the drought in many places related to a lack of snow from the previous year?",
+  "entities": [
+    {
+      "surface": "Ohio",
+      "type": "LOCATION",
+      "canonical": "ohio",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 10,
+      "end": 14,
+      "id": "e0"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 78,
+      "end": 84,
+      "id": "e1"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 147,
+      "end": 151,
+      "id": "e2"
+    },
+    {
+      "surface": "Great Lakes",
+      "type": "LOCATION",
+      "canonical": "great_lakes",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 179,
+      "end": 190,
+      "id": "e3"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 245,
+      "end": 259,
+      "id": "e4"
+    },
+    {
+      "surface": "snow",
+      "type": "EVENT",
+      "canonical": "snow",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 313,
+      "end": 317,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "southeastern part of our state",
+      "reason": "Geographic reference tied to the speaker's state, but the exact state/region is not specified in the surface text."
+    },
+    {
+      "surface": "drought",
+      "reason": "Generic event mention; could be tagged as EVENT, but the comment already uses severity and context without a clear exact canonical surface."
+    },
+    {
+      "surface": "upper Great Lakes",
+      "reason": "Could be a location variant of Great Lakes, but the modifier 'upper' makes the mapping slightly uncertain."
+    },
+    {
+      "surface": "previous year",
+      "reason": "Temporal reference is implied, but no exact year is given."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I live in Ohio, and I can see that the southeastern part of our state is in a severe drought. This is unusual since we traditionally get plenty of rain. I also see that the upper Great Lakes are also quite dry. Does this map show the effects of climate change?  Is the drought in many places related to a lack of snow from the previous year?"
+    }
+  ],
+  "tagged_text": "I live in <entity type=\"LOCATION\" canonical=\"ohio\" speaker_context=\"true\">Ohio</entity>, and I can see that the southeastern part of our state is in a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity> drought. This is unusual since we traditionally get plenty of <entity type=\"EVENT\" canonical=\"rain\">rain</entity>. I also see that the upper <entity type=\"LOCATION\" canonical=\"great_lakes\">Great Lakes</entity> are also quite dry. Does this map show the effects of <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity>?  Is the drought in many places related to a lack of <entity type=\"EVENT\" canonical=\"snow\">snow</entity> from the previous year?"
+}

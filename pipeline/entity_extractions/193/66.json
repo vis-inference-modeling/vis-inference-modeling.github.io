@@ -1,0 +1,77 @@
+{
+  "article_id": "193",
+  "comment_index": 66,
+  "raw_comment": "•\tI noticed that most states don’t seem to be dealing with extreme droughts. Only a few areas on the map are marked in red, showing they’re in really bad shape. It made me wonder why these specific places are struggling while others aren’t.\n\t•\tI’m curious about what causes droughts to hit certain areas harder. There doesn’t seem to be a clear pattern on the map, which makes me think there must be specific conditions—like climate, geography, or how people use water—that lead to these severe droughts.\n\t•\tThis feels relevant to me because I live near a large body of water. Even though New Jersey, which is close to New York, has had droughts before, it’s not something I usually worry about. But seeing how unpredictable droughts can be makes me realize it could affect my community too. If a drought hit here, we’d have to deal with things like water restrictions, which would definitely be a big change.\n\t•\tHow Severe Are Droughts Across the U.S., and Could Your State Be Next?",
+  "entities": [
+    {
+      "surface": "New Jersey",
+      "type": "LOCATION",
+      "canonical": "new_jersey",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 589,
+      "end": 599,
+      "id": "e0"
+    },
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 619,
+      "end": 627,
+      "id": "e1"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 948,
+      "end": 952,
+      "id": "e2"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "extreme droughts",
+      "reason": "Likely a drought severity level, but no exact canonical is provided in the normalized dictionary."
+    },
+    {
+      "surface": "red",
+      "reason": "Could refer to a map color encoding or chart element, but no chart-element canonical for colors is provided."
+    },
+    {
+      "surface": "large body of water",
+      "reason": "Could map to a water-related location/entity, but no exact canonical match is available."
+    },
+    {
+      "surface": "water restrictions",
+      "reason": "Could be an OTHER_ENTITY or event-like consequence, but no matching canonical is provided."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "•\tI noticed that most states don’t seem to be dealing with extreme droughts. Only a few areas on the map are marked in red, showing they’re in really bad shape. It made me wonder why these specific places are struggling while others aren’t.\n\t•\tI’m curious about what causes droughts to hit certain areas harder. There doesn’t seem to be a clear pattern on the map, which makes me think there must be specific conditions—like climate, geography, or how people use water—that lead to these severe droughts.\n\t•\tThis feels relevant to me because I live near a large body of water. Even though New Jersey, which is close to New York, has had droughts before, it’s not something I usually worry about. But seeing how unpredictable droughts can be makes me realize it could affect my community too. If a drought hit here, we’d have to deal with things like water restrictions, which would definitely be a big change."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "How Severe Are Droughts Across the U.S., and Could Your State Be Next?"
+    }
+  ],
+  "tagged_text": "•\tI noticed that most states don’t seem to be dealing with extreme droughts. Only a few areas on the map are marked in red, showing they’re in really bad shape. It made me wonder why these specific places are struggling while others aren’t.\n\t•\tI’m curious about what causes droughts to hit certain areas harder. There doesn’t seem to be a clear pattern on the map, which makes me think there must be specific conditions—like climate, geography, or how people use water—that lead to these severe droughts.\n\t•\tThis feels relevant to me because I live near a large body of water. Even though <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>, which is close to <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity>, has had droughts before, it’s not something I usually worry about. But seeing how unpredictable droughts can be makes me realize it could affect my community too. If a drought hit here, we’d have to deal with things like water restrictions, which would definitely be a big change.\n\t•\tHow Severe Are Droughts Across the U.S., and Could Your State Be Next?"
+}

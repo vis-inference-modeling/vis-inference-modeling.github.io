@@ -1,0 +1,85 @@
+{
+  "article_id": "193",
+  "comment_index": 22,
+  "raw_comment": "The first thing I noticed is that the extremely drought area is pretty much in the center area of the US. Moreover, that actually makes a lot of sense. The more closer the place is to the ocean the more unlikely it's going to be dry. But because of the Rocky Mountain, the humid air is not very likely to go through that, and that leads to a severe drought in the middle of the US. If the weather in a certain area is cold, then it's less unlikely to have a drought in that area. I also noticed that there is a large drought area in the west south side of the state of Texas, and that's because Texas is moderately away from the ocean and it has extremely hot weather. What I wonder is how to solve all those drought? It's very important because most of the agricultural industry in US comes from the middle of the it. We can also depend on rivers and canals to avoid extreme drought.",
+  "entities": [
+    {
+      "surface": "US",
+      "type": "LOCATION",
+      "canonical": "us",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 102,
+      "end": 104,
+      "id": "e0"
+    },
+    {
+      "surface": "US",
+      "type": "LOCATION",
+      "canonical": "us",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 378,
+      "end": 380,
+      "id": "e1"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 569,
+      "end": 574,
+      "id": "e2"
+    },
+    {
+      "surface": "Rocky Mountain",
+      "type": "LOCATION",
+      "canonical": "rocky_mountains",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e3"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "extremely drought area",
+      "reason": "Likely refers to drought severity, but the phrasing is ungrammatical and not a clean match to a canonical level."
+    },
+    {
+      "surface": "ocean",
+      "reason": "Geographic feature mentioned generically; no specific canonical location/feature match provided beyond broad water bodies."
+    },
+    {
+      "surface": "humid air",
+      "reason": "Entity-like environmental factor, but not covered by the schema."
+    },
+    {
+      "surface": "rivers and canals",
+      "reason": "Could be LOCATION-like water features, but the dictionary only includes rivers generally and canals are not listed."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "The first thing I noticed is that the extremely drought area is pretty much in the center area of the US. Moreover, that actually makes a lot of sense. The more closer the place is to the ocean the more unlikely it's going to be dry. But because of the Rocky Mountain, the humid air is not very likely to go through that, and that leads to a severe drought in the middle of the US. If the weather in a certain area is cold, then it's less unlikely to have a drought in that area. I also noticed that there is a large drought area in the west south side of the state of Texas, and that's because Texas is moderately away from the ocean and it has extremely hot weather. What I wonder is how to solve all those drought? It's very important because most of the agricultural industry in US comes from the middle of the it. We can also depend on rivers and canals to avoid extreme drought."
+    }
+  ],
+  "tagged_text": "The first thing I noticed is that the extremely drought area is pretty much in the center area of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">US</entity>. Moreover, that actually makes a lot of sense. The more closer the place is to the ocean the more unlikely it's going to be dry. But because of the <entity type=\"LOCATION\" canonical=\"rocky_mountains\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Rocky Mountain</entity>, the humid air is not very likely to go through that, and that leads to a severe drought in the middle of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">US</entity>. If the weather in a certain area is cold, then it's less unlikely to have a drought in that area. I also noticed that there is a large drought area in the west south side of the state of <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Texas</entity>, and that's because Texas is moderately away from the ocean and it has extremely hot weather. What I wonder is how to solve all those drought? It's very important because most of the agricultural industry in <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">US</entity> comes from the middle of the it. We can also depend on rivers and canals to avoid extreme drought."
+}

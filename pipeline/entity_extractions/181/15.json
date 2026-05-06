@@ -1,0 +1,106 @@
+{
+  "article_id": "181",
+  "comment_index": 15,
+  "raw_comment": "I notice that there has been a lot of growth over time especially with the fossil fuels.\nI wonder why India produces less energy than China \nThis relates to me because as climate change takes place we are setting up future generations for failure by leaving them a world full of habitat loss and endangered species.\nMy headline is “It’s getting hot in here: what energy sources are worse ting climate change?”",
+  "entities": [
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 75,
+      "end": 87,
+      "id": "e0"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 102,
+      "end": 107,
+      "id": "e1"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 122,
+      "end": 128,
+      "id": "e2"
+    },
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 134,
+      "end": 139,
+      "id": "e3"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 171,
+      "end": 185,
+      "id": "e4"
+    },
+    {
+      "surface": "My headline is “It’s getting hot in here: what energy sources are worse ting climate change?”",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 316,
+      "end": 409,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "world",
+      "reason": "Could be a rhetorical/global reference or a LOCATION-level mention; not clearly tied to the visualization."
+    },
+    {
+      "surface": "habitat loss and endangered species",
+      "reason": "Entity-like environmental impacts, but no confirmed canonical mapping in the provided dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that there has been a lot of growth over time especially with the fossil fuels.\nI wonder why India produces less energy than China \nThis relates to me because as climate change takes place we are setting up future generations for failure by leaving them a world full of habitat loss and endangered species.\nMy headline is “It’s getting hot in here: what energy sources are worse ting climate change?”"
+    }
+  ],
+  "tagged_text": "I notice that there has been a lot of growth over time especially with the <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>.\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> produces less <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">energy</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China</entity> \nThis relates to me because as <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> takes place we are setting up future generations for failure by leaving them a world full of habitat loss and endangered species.\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">My headline is “It’s getting hot in here: what energy sources are worse ting climate change?”</entity>"
+}

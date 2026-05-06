@@ -1,0 +1,138 @@
+{
+  "article_id": "193",
+  "comment_index": 73,
+  "raw_comment": "- I noticed that California and the regions around it has an abnormal amount of drought. \n- I wonder what will happen to the world if all of United States faced exceptional drought. I wonder how people would survive and what these circumstances will lead too.\n- This relates to me and my community because it shows the results of our actions towards the environment. \n- The severity of droughts across the United States",
+  "entities": [
+    {
+      "surface": "California",
+      "type": "LOCATION",
+      "canonical": "california",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 17,
+      "end": 27,
+      "id": "e0"
+    },
+    {
+      "surface": "world",
+      "type": "WORLD",
+      "canonical": "world",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 125,
+      "end": 130,
+      "id": "e1"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 141,
+      "end": 154,
+      "id": "e2"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 406,
+      "end": 419,
+      "id": "e3"
+    },
+    {
+      "surface": "exceptional",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "me and my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "environment",
+      "type": "OTHER_ENTITY",
+      "canonical": "environment",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "regions around it",
+      "reason": "Location-like phrase, but no clear canonical match in the provided dictionary."
+    },
+    {
+      "surface": "drought",
+      "reason": "General drought mention without a confirmed canonical EVENT/level mapping in the article dictionary."
+    },
+    {
+      "surface": "droughts",
+      "reason": "General drought mention without a confirmed canonical EVENT/level mapping in the article dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "- I noticed that California and the regions around it has an abnormal amount of drought. \n- I wonder what will happen to the world if all of United States faced exceptional drought. I wonder how people would survive and what these circumstances will lead too.\n- This relates to me and my community because it shows the results of our actions towards the environment. \n- The severity of droughts across the United States"
+    }
+  ],
+  "tagged_text": "- I noticed that <entity type=\"LOCATION\" canonical=\"california\" section=\"body\">California</entity> and the regions around it has an abnormal amount of drought. \n- I wonder what will happen to the <entity type=\"WORLD\" canonical=\"world\" section=\"body\" modality=\"questioned\">world</entity> if all of <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity> faced <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\">exceptional</entity> drought. I wonder how <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"body\" modality=\"questioned\">people</entity> would survive and what these circumstances will lead too.\n- This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">me and my community</entity> because it shows the results of our actions towards the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"body\">environment</entity>. \n- The severity of droughts across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity>"
+}

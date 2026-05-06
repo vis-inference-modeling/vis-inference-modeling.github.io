@@ -1,0 +1,136 @@
+{
+  "article_id": "183",
+  "comment_index": 60,
+  "raw_comment": "Welcome to Wednesday's live moderation of “What’s Going On in This Graph?”  Today’s graph displays how frequently young adults communicate with their parents.  Note that the data does not include young adults who do not communicate with their parents.\n\nFrom 9 am – 2 pm E.T. today, share with us your responses online for the four questions.  If your notice includes a claim, please back it up with evidence that supports your claim.  By Friday morning, we’ll reveal the free link to the online article that included this graph, shout outs for some of the catchiest headlines and more.  \n\nYou can get a link to your response to share with your teacher and classmates by clicking the response box below your response “Email me when my comment is published.”  \n\nThere is one more graph this school year, which will be released by Friday, May 3.  The topic – HOTTER summers.",
+  "entities": [
+    {
+      "surface": "What’s Going On in This Graph?",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 43,
+      "end": 73,
+      "id": "e0"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 84,
+      "end": 89,
+      "id": "e1"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 522,
+      "end": 527,
+      "id": "e2"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 778,
+      "end": 783,
+      "id": "e3"
+    },
+    {
+      "surface": "Friday, May 3",
+      "type": "TIME_REFERENCE",
+      "canonical": "friday_may_3",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 828,
+      "end": 841,
+      "id": "e4"
+    },
+    {
+      "surface": "HOTTER summers",
+      "type": "EVENT",
+      "canonical": "hotter_summers",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 856,
+      "end": 870,
+      "id": "e5"
+    },
+    {
+      "surface": "9 am – 2 pm E.T. today",
+      "type": "TIME_REFERENCE",
+      "canonical": "9_am_2_pm_et_today",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "Friday morning",
+      "type": "TIME_REFERENCE",
+      "canonical": "friday_morning",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "young adults",
+      "reason": "Demographic group mentioned in the moderation text, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "parents",
+      "reason": "Generic reference in moderation text; not tagged to avoid over-tagging without a specific canonical mapping."
+    },
+    {
+      "surface": "online article",
+      "reason": "Could be an article entity, but no canonical ID was provided."
+    },
+    {
+      "surface": "teacher and classmates",
+      "reason": "Audience reference, not an entity in the provided dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Welcome to Wednesday's live moderation of “What’s Going On in This Graph?”  Today’s graph displays how frequently young adults communicate with their parents.  Note that the data does not include young adults who do not communicate with their parents.\n\nFrom 9 am – 2 pm E.T. today, share with us your responses online for the four questions.  If your notice includes a claim, please back it up with evidence that supports your claim.  By Friday morning, we’ll reveal the free link to the online article that included this graph, shout outs for some of the catchiest headlines and more.  \n\nYou can get a link to your response to share with your teacher and classmates by clicking the response box below your response “Email me when my comment is published.”  \n\nThere is one more graph this school year, which will be released by Friday, May 3.  The topic – HOTTER summers."
+    }
+  ],
+  "tagged_text": "Welcome to Wednesday's live moderation of “<entity type=\"CHART_ELEMENT\" canonical=\"headline\">What’s Going On in This Graph?</entity>”  Today’s <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> displays how frequently young adults communicate with their parents.  Note that the data does not include young adults who do not communicate with their parents.\n\nFrom <entity type=\"TIME_REFERENCE\" canonical=\"9_am_2_pm_et_today\">9 am – 2 pm E.T. today</entity>, share with us your responses online for the four questions.  If your notice includes a claim, please back it up with evidence that supports your claim.  By <entity type=\"TIME_REFERENCE\" canonical=\"friday_morning\">Friday morning</entity>, we’ll reveal the free link to the online article that included this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, shout outs for some of the catchiest headlines and more.  \n\nYou can get a link to your response to share with your teacher and classmates by clicking the response box below your response “Email me when my comment is published.”  \n\nThere is one more <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> this school year, which will be released by <entity type=\"TIME_REFERENCE\" canonical=\"friday_may_3\">Friday, May 3</entity>.  The topic – <entity type=\"EVENT\" canonical=\"hotter_summers\">HOTTER summers</entity>."
+}

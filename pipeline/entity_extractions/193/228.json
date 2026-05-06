@@ -1,0 +1,141 @@
+{
+  "article_id": "193",
+  "comment_index": 228,
+  "raw_comment": "We noticed that a lot of coastal states have fewer droughts, and the deep interior states like North Dakota, New Mexico, Texas, and Oklahoma have the most extreme drought. Northern states are also, contrary to expectations, experiencing significant drought.\n\nWe wonder how the widespread drought impacts agriculture.\n\nThe graph relates to us because the fire danger meter in Wisconsin has been at maximum for a really long time (around a year).\n\nFor our catchy headline, we came up with:\n\"Hey hey, ho ho, where did all the water go?\"",
+  "entities": [
+    {
+      "surface": "coastal states",
+      "type": "LOCATION",
+      "canonical": "coastal_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 25,
+      "end": 39,
+      "id": "e0"
+    },
+    {
+      "surface": "North Dakota",
+      "type": "LOCATION",
+      "canonical": "north_dakota",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 95,
+      "end": 107,
+      "id": "e1"
+    },
+    {
+      "surface": "New Mexico",
+      "type": "LOCATION",
+      "canonical": "new_mexico",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 109,
+      "end": 119,
+      "id": "e2"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 121,
+      "end": 126,
+      "id": "e3"
+    },
+    {
+      "surface": "Oklahoma",
+      "type": "LOCATION",
+      "canonical": "oklahoma",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 132,
+      "end": 140,
+      "id": "e4"
+    },
+    {
+      "surface": "Northern states",
+      "type": "LOCATION",
+      "canonical": "northern_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 172,
+      "end": 187,
+      "id": "e5"
+    },
+    {
+      "surface": "agriculture",
+      "type": "OTHER_ENTITY",
+      "canonical": "agriculture",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 304,
+      "end": 315,
+      "id": "e6"
+    },
+    {
+      "surface": "Wisconsin",
+      "type": "LOCATION",
+      "canonical": "wisconsin",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 375,
+      "end": 384,
+      "id": "e7"
+    },
+    {
+      "surface": "around a year",
+      "type": "TIME_REFERENCE",
+      "canonical": "this_year",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 429,
+      "end": 442,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "deep interior states",
+      "reason": "Descriptive geographic phrase without an exact canonical match; could refer to inland areas or central states."
+    },
+    {
+      "surface": "widespread drought",
+      "reason": "Could map to a drought EVENT, but no exact canonical provided in the article dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "We noticed that a lot of coastal states have fewer droughts, and the deep interior states like North Dakota, New Mexico, Texas, and Oklahoma have the most extreme drought. Northern states are also, contrary to expectations, experiencing significant drought.\n\nWe wonder how the widespread drought impacts agriculture.\n\nThe graph relates to us because the fire danger meter in Wisconsin has been at maximum for a really long time (around a year).\n\nFor our catchy headline, we came up with:\n\"Hey hey, ho ho, where did all the water go?\""
+    }
+  ],
+  "tagged_text": "We noticed that a lot of <entity type=\"LOCATION\" canonical=\"coastal_states\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">coastal states</entity> have fewer droughts, and the deep interior states like <entity type=\"LOCATION\" canonical=\"north_dakota\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">North Dakota</entity>, <entity type=\"LOCATION\" canonical=\"new_mexico\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">New Mexico</entity>, <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Texas</entity>, and <entity type=\"LOCATION\" canonical=\"oklahoma\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Oklahoma</entity> have the most extreme drought. <entity type=\"LOCATION\" canonical=\"northern_states\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Northern states</entity> are also, contrary to expectations, experiencing significant drought.\n\nWe wonder how the widespread drought impacts <entity type=\"OTHER_ENTITY\" canonical=\"agriculture\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">agriculture</entity>.\n\nThe graph relates to us because the fire danger meter in <entity type=\"LOCATION\" canonical=\"wisconsin\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">Wisconsin</entity> has been at maximum for a really long time (<entity type=\"TIME_REFERENCE\" canonical=\"this_year\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">around a year</entity>).\n\nFor our catchy headline, we came up with:\n\"Hey hey, ho ho, where did all the water go?\""
+}

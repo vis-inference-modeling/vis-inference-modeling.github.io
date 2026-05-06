@@ -1,0 +1,95 @@
+{
+  "article_id": "181",
+  "comment_index": 144,
+  "raw_comment": "I am very surprised that the US has such a low energy usage increase. I would expect the energy to rise drastically through 2000-2024. I was also surprised how low India's energy usage was.",
+  "entities": [
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 29,
+      "end": 31,
+      "id": "e0"
+    },
+    {
+      "surface": "energy usage",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 47,
+      "end": 59,
+      "id": "e1"
+    },
+    {
+      "surface": "energy usage",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 172,
+      "end": 184,
+      "id": "e2"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e3"
+    },
+    {
+      "surface": "2000-2024",
+      "type": "TIME_REFERENCE",
+      "canonical": "2000_2024",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "India's",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I am very surprised that the US has such a low energy usage increase. I would expect the energy to rise drastically through 2000-2024. I was also surprised how low India's energy usage was."
+    }
+  ],
+  "tagged_text": "I am very surprised that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> has such a low <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy usage</entity> increase. I would expect the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> to rise drastically through <entity type=\"TIME_REFERENCE\" canonical=\"2000_2024\">2000-2024</entity>. I was also surprised how low <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India's</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy usage</entity> was."
+}

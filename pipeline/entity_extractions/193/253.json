@@ -1,0 +1,58 @@
+{
+  "article_id": "193",
+  "comment_index": 253,
+  "raw_comment": "I notice that the drought seems to be most extreme in the central time zone area. I wonder what is causing this drought and why is there so little precipitation. In my community we cannot have outdoor fires as it is a risk to start a bush fire. Drought causes fire concerns in many counties.",
+  "entities": [
+    {
+      "surface": "precipitation",
+      "type": "DATA_VAR",
+      "canonical": "precipitation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 147,
+      "end": 160,
+      "id": "e0"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "speaker_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 165,
+      "end": 177,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "central time zone area",
+      "reason": "Looks like a location/region reference, but no exact canonical match is available."
+    },
+    {
+      "surface": "outdoor fires",
+      "reason": "Could refer to EVENT 'fires', but the phrase is generic and not clearly a named event/entity."
+    },
+    {
+      "surface": "bush fire",
+      "reason": "Could map to EVENT 'fires' or 'wildfires', but the wording is not exact and is ambiguous."
+    },
+    {
+      "surface": "many counties",
+      "reason": "Plural geographic reference not present in the normalized dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that the drought seems to be most extreme in the central time zone area. I wonder what is causing this drought and why is there so little precipitation. In my community we cannot have outdoor fires as it is a risk to start a bush fire. Drought causes fire concerns in many counties."
+    }
+  ],
+  "tagged_text": "I notice that the drought seems to be most extreme in the central time zone area. I wonder what is causing this drought and why is there so little <entity type=\"DATA_VAR\" canonical=\"precipitation\">precipitation</entity>. In <entity type=\"LOCATION\" canonical=\"speaker_community\" speaker_context=\"true\">my community</entity> we cannot have outdoor fires as it is a risk to start a bush fire. Drought causes fire concerns in many counties."
+}

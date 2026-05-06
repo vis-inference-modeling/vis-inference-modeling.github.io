@@ -1,0 +1,121 @@
+{
+  "article_id": "181",
+  "comment_index": 115,
+  "raw_comment": "1. I noticed that energy was being compared . I also noticed china, America and India were being compared. \n2. I wondered what a gigawatt is. I wondered what a think take is. \n3. Energy is used at an alarming rate\n4. READ THIS  READ THIS READ THIS",
+  "entities": [
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 18,
+      "end": 24,
+      "id": "e0"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 179,
+      "end": 185,
+      "id": "e1"
+    },
+    {
+      "surface": "china",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e2"
+    },
+    {
+      "surface": "America",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e3"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "gigawatt",
+      "type": "UNIT",
+      "canonical": "gigawatt",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "think take",
+      "reason": "Likely a typo or malformed phrase; unclear whether it refers to a chart element, concept, or something else."
+    },
+    {
+      "surface": "READ THIS",
+      "reason": "Looks like emphatic filler rather than a meaningful entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I noticed that energy was being compared . I also noticed china, America and India were being compared."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wondered what a gigawatt is. I wondered what a think take is."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "Energy is used at an alarming rate"
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "READ THIS  READ THIS READ THIS"
+    }
+  ],
+  "tagged_text": "1. I noticed that <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> was being compared . I also noticed <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">china</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">America</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> were being compared. \n2. I wondered what a <entity type=\"UNIT\" canonical=\"gigawatt\">gigawatt</entity> is. I wondered what a think take is. \n3. <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">Energy</entity> is used at an alarming rate\n4. READ THIS  READ THIS READ THIS"
+}

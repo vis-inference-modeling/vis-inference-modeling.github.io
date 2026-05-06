@@ -1,0 +1,181 @@
+{
+  "article_id": "181",
+  "comment_index": 11,
+  "raw_comment": "1. I notice that generation of electricity has increased in all modes over time. I also noticed that china produces more electricity than the United States and India combined.\n\n2. I wonder what can be done to reduce the use of gas and fossil fuels, and how might that decline appear on this graph.\n\n3. This has a tremendous impact of me and my community as fossil fuels, and our consumption of them threaten to destroy human life as we know it through climate change.\n\n4. Coal in our stockings: trends in electricity generation",
+  "entities": [
+    {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 31,
+      "end": 42,
+      "id": "e0"
+    },
+    {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 121,
+      "end": 132,
+      "id": "e1"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 142,
+      "end": 155,
+      "id": "e2"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 160,
+      "end": 165,
+      "id": "e3"
+    },
+    {
+      "surface": "gas",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "gas",
+      "var": "energy_source",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 227,
+      "end": 230,
+      "id": "e4"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 235,
+      "end": 247,
+      "id": "e5"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 357,
+      "end": 369,
+      "id": "e6"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 452,
+      "end": 466,
+      "id": "e7"
+    },
+    {
+      "surface": "Coal in our stockings: trends in electricity generation",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 472,
+      "end": 527,
+      "id": "e8"
+    },
+    {
+      "surface": "china",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I notice that generation of electricity has increased in all modes over time. I also noticed that china produces more electricity than the United States and India combined."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder what can be done to reduce the use of gas and fossil fuels, and how might that decline appear on this graph."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "This has a tremendous impact of me and my community as fossil fuels, and our consumption of them threaten to destroy human life as we know it through climate change."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "Coal in our stockings: trends in electricity generation"
+    }
+  ],
+  "tagged_text": "1. I notice that generation of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> has increased in all modes over time. I also noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">china</entity> produces more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> combined.\n\n2. I wonder what can be done to reduce the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" modality=\"questioned\">gas</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuels</entity>, and how might that decline appear on this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" modality=\"questioned\">graph</entity>.\n\n3. This has a tremendous impact of me and my community as <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>, and our consumption of them threaten to destroy human life as we know it through <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity>.\n\n4. <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Coal in our stockings: trends in electricity generation</entity>"
+}

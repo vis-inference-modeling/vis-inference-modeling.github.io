@@ -1,0 +1,55 @@
+{
+  "article_id": "193",
+  "comment_index": 85,
+  "raw_comment": "Catchy Headline: Where Does The Rain Fall? Droughts Are Everywhere!\n\nI wonder why states towards the west aren't as affected?",
+  "entities": [
+    {
+      "surface": "Where Does The Rain Fall? Droughts Are Everywhere!",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 17,
+      "end": 67,
+      "id": "e0"
+    },
+    {
+      "surface": "states towards the west",
+      "type": "LOCATION",
+      "canonical": "west",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 82,
+      "end": 105,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "Droughts Are Everywhere",
+      "reason": "Could be a headline slogan/title fragment rather than a standalone entity."
+    },
+    {
+      "surface": "droughts",
+      "reason": "General event mention; not mapped to a specific normalized event level in the article dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "headline",
+      "label": "Catchy Headline",
+      "text": "Where Does The Rain Fall? Droughts Are Everywhere!"
+    },
+    {
+      "section": "body",
+      "text": "I wonder why states towards the west aren't as affected?"
+    }
+  ],
+  "tagged_text": "Catchy Headline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Where Does The Rain Fall? Droughts Are Everywhere!</entity>\n\nI wonder why <entity type=\"LOCATION\" canonical=\"west\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">states towards the west</entity> aren't as affected?"
+}

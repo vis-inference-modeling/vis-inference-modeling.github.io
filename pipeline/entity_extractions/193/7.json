@@ -1,0 +1,162 @@
+{
+  "article_id": "193",
+  "comment_index": 7,
+  "raw_comment": "I notice that there is a high amount of drought throughout North America, especially in the midwest, but it is prevalent throughout the United States. I would like to know why this is the case and how we can fix this problem. Although this hasn't affected Florida, this is an issue throughout our country and could harm the environment around us as there is a lack of water in certain ecosystems. I would caption this Widespread drought happening across America; what can we do to help end this drought?",
+  "entities": [
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 40,
+      "end": 47,
+      "id": "e0"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 429,
+      "end": 436,
+      "id": "e1"
+    },
+    {
+      "surface": "North America",
+      "type": "LOCATION",
+      "canonical": "north_america",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e2"
+    },
+    {
+      "surface": "midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e3"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "our country",
+      "type": "LOCATION",
+      "canonical": "my_country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "environment",
+      "type": "OTHER_ENTITY",
+      "canonical": "environment",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "ecosystems",
+      "type": "OTHER_ENTITY",
+      "canonical": "ecosystems",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "Widespread drought happening across America; what can we do to help end this drought?",
+      "type": "EVENT",
+      "canonical": "widespread_drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that there is a high amount of drought throughout North America, especially in the midwest, but it is prevalent throughout the United States. I would like to know why this is the case and how we can fix this problem. Although this hasn't affected Florida, this is an issue throughout our country and could harm the environment around us as there is a lack of water in certain ecosystems. I would caption this Widespread drought happening across America; what can we do to help end this drought?"
+    }
+  ],
+  "tagged_text": "I notice that there is a high amount of <entity type=\"EVENT\" canonical=\"drought\">drought</entity> throughout <entity type=\"LOCATION\" canonical=\"north_america\">North America</entity>, especially in the <entity type=\"LOCATION\" canonical=\"midwest\">midwest</entity>, but it is prevalent throughout the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. I would like to know why this is the case and how we can fix this problem. Although this hasn't affected <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity>, this is an issue throughout <entity type=\"LOCATION\" canonical=\"my_country\">our country</entity> and could harm the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity> around us as there is a lack of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity> in certain <entity type=\"OTHER_ENTITY\" canonical=\"ecosystems\" subtype=\"other\">ecosystems</entity>. I would caption this <entity type=\"EVENT\" canonical=\"widespread_drought\" section=\"headline\">Widespread drought happening across America; what can we do to help end this drought?</entity>"
+}

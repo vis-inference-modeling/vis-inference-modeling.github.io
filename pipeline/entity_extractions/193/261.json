@@ -1,0 +1,89 @@
+{
+  "article_id": "193",
+  "comment_index": 261,
+  "raw_comment": "I notice there are severe to exception drought conditions in areas that are not typically affected so greatly by drought.",
+  "entities": [
+    {
+      "surface": "severe",
+      "type": "OTHER_ENTITY",
+      "canonical": "severe",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 19,
+      "end": 25,
+      "id": "e0"
+    },
+    {
+      "surface": "exception",
+      "type": "OTHER_ENTITY",
+      "canonical": "drought_exceptional",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 29,
+      "end": 38,
+      "id": "e1"
+    },
+    {
+      "surface": "drought conditions",
+      "type": "EVENT",
+      "canonical": "drought_conditions",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 39,
+      "end": 57,
+      "id": "e2"
+    },
+    {
+      "surface": "areas",
+      "type": "LOCATION",
+      "canonical": "areas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 61,
+      "end": 66,
+      "id": "e3"
+    },
+    {
+      "surface": "drought conditions",
+      "type": "EVENT",
+      "canonical": "drought_conditions",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "severe to exception drought conditions",
+      "reason": "Phrase is awkward/possibly erroneous; could refer to a drought severity range, but exact entity boundaries are unclear."
+    },
+    {
+      "surface": "areas that are not typically affected so greatly by drought",
+      "reason": "Generic location-like phrase without a specific place; could be a broad regional reference."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice there are severe to exception drought conditions in areas that are not typically affected so greatly by drought."
+    }
+  ],
+  "tagged_text": "I notice there are severe to exception drought conditions in areas that are not typically affected so greatly by drought."
+}

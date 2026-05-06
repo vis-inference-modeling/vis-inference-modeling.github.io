@@ -1,0 +1,124 @@
+{
+  "article_id": "193",
+  "comment_index": 211,
+  "raw_comment": "I notice that many of the severe droughts are towards the middle of the US.\n\nI wonder how come the middle part of the US is experiencing severe droughts and how the people within those areas are dealing with this.\n\nThis relates to me because I have a family member in Texas so I would like to see how they are going through this.\n\nA catchy headline or title would be ''Severe Drought Conditions in the US.''",
+  "entities": [
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "us",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 72,
+      "end": 74,
+      "id": "e0"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "us",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 118,
+      "end": 120,
+      "id": "e1"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "us",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 402,
+      "end": 404,
+      "id": "e2"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "us",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e3"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "people",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "areas",
+      "type": "LOCATION",
+      "canonical": "areas",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "Severe Drought Conditions in the US",
+      "type": "EVENT",
+      "canonical": "severe_drought_conditions_in_the_us",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that many of the severe droughts are towards the middle of the US.\n\nI wonder how come the middle part of the US is experiencing severe droughts and how the people within those areas are dealing with this.\n\nThis relates to me because I have a family member in Texas so I would like to see how they are going through this.\n\nA catchy headline or title would be ''Severe Drought Conditions in the US.''"
+    }
+  ],
+  "tagged_text": "I notice that many of the severe droughts are towards the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"us\" var=\"country\">US</entity>.\n\nI wonder how come the middle part of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"us\" var=\"country\" modality=\"questioned\">US</entity> is experiencing severe droughts and how the <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"people\" modality=\"questioned\">people</entity> within those <entity type=\"LOCATION\" canonical=\"areas\" modality=\"questioned\">areas</entity> are dealing with this.\n\nThis relates to me because I have a family member in <entity type=\"LOCATION\" canonical=\"texas\" speaker_context=\"true\">Texas</entity> so I would like to see how they are going through this.\n\nA catchy headline or title would be ''<entity type=\"EVENT\" canonical=\"severe_drought_conditions_in_the_us\" section=\"headline\">Severe Drought Conditions in the US</entity>.''"
+}

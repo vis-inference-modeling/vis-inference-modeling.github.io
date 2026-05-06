@@ -1,0 +1,139 @@
+{
+  "article_id": "181",
+  "comment_index": 120,
+  "raw_comment": "1. I noticed that China is significantly higher in both categories compared to the US and India. I Also notice that as the years go by, the categories increase in all three countries. I wonder what the graph will look like in 20 years. These categories have a deep impact on my life and it is important I stay informed as laws continue to be passed. \n\nHeadline: Clean Power vs. Fossil Fuels",
+  "entities": [
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 18,
+      "end": 23,
+      "id": "e0"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 83,
+      "end": 85,
+      "id": "e1"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 90,
+      "end": 95,
+      "id": "e2"
+    },
+    {
+      "surface": "years",
+      "type": "TIME_REFERENCE",
+      "canonical": "years",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 123,
+      "end": 128,
+      "id": "e3"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 202,
+      "end": 207,
+      "id": "e4"
+    },
+    {
+      "surface": "20 years",
+      "type": "TIME_REFERENCE",
+      "canonical": "20_years",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 226,
+      "end": 234,
+      "id": "e5"
+    },
+    {
+      "surface": "Clean Power",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 362,
+      "end": 373,
+      "id": "e6"
+    },
+    {
+      "surface": "Fossil Fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 378,
+      "end": 390,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "both categories",
+      "reason": "Refers to unnamed chart categories; not enough context to identify them confidently."
+    },
+    {
+      "surface": "all three countries",
+      "reason": "Generic reference to the compared countries; not a standalone entity beyond the already tagged country mentions."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I noticed that China is significantly higher in both categories compared to the US and India. I Also notice that as the years go by, the categories increase in all three countries. I wonder what the graph will look like in 20 years. These categories have a deep impact on my life and it is important I stay informed as laws continue to be passed."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Clean Power vs. Fossil Fuels"
+    }
+  ],
+  "tagged_text": "1. I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> is significantly higher in both categories compared to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>. I Also notice that as the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity> go by, the categories increase in all three countries. I wonder what the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> will look like in <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20 years</entity>. These categories have a deep impact on my life and it is important I stay informed as laws continue to be passed. \n\nHeadline: <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">Clean Power</entity> vs. <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"headline\">Fossil Fuels</entity>"
+}

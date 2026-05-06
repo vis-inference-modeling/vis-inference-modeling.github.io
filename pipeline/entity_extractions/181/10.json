@@ -1,0 +1,63 @@
+{
+  "article_id": "181",
+  "comment_index": 10,
+  "raw_comment": "If a neighborhood of 100 or 1,000 houses installed roof solar panels, what would the installation price for those homes be? Energy $ savings for average household?  For 5-10 regions of the  country.\nThanks.",
+  "entities": [
+    {
+      "surface": "neighborhood",
+      "type": "LOCATION",
+      "canonical": "my_neighborhood",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 5,
+      "end": 17,
+      "id": "e0"
+    },
+    {
+      "surface": "Energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 124,
+      "end": 130,
+      "id": "e1"
+    },
+    {
+      "surface": "5-10",
+      "type": "TIME_REFERENCE",
+      "canonical": "5_10_years",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 169,
+      "end": 173,
+      "id": "e2"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "roof solar panels",
+      "reason": "Could be tagged as OTHER_ENTITY or energy-source-related phrase, but no exact canonical level is provided in the article-specific dictionary."
+    },
+    {
+      "surface": "country",
+      "reason": "Generic reference to a country/region; unclear whether it refers to the Country data variable or a specific location."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "If a neighborhood of 100 or 1,000 houses installed roof solar panels, what would the installation price for those homes be? Energy $ savings for average household?  For 5-10 regions of the  country.\nThanks."
+    }
+  ],
+  "tagged_text": "If a <entity type=\"LOCATION\" canonical=\"my_neighborhood\">neighborhood</entity> of 100 or 1,000 houses installed roof solar panels, what would the installation price for those homes be? <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">Energy</entity> $ savings for average household?  For <entity type=\"TIME_REFERENCE\" canonical=\"5_10_years\">5-10</entity> regions of the  country.\nThanks."
+}

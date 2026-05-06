@@ -1,0 +1,155 @@
+{
+  "article_id": "193",
+  "comment_index": 187,
+  "raw_comment": "I noticed that the middle of the country experiences more droughts than the coast’s.\n\nI wonder why theres grey spots right next to exceptional droughts in West Virginia and North Dakota.\n\nIt relates to my community by impacting our environment and our living conditions. Droughts also negatively impacts food sources and farms which can damage the economy and our health.\n\nDry Spell: Graph Highlights Increasing Droughts Across America\"",
+  "entities": [
+    {
+      "surface": "middle of the country",
+      "type": "LOCATION",
+      "canonical": "middle_of_the_country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 19,
+      "end": 40,
+      "id": "e0"
+    },
+    {
+      "surface": "coast’s",
+      "type": "LOCATION",
+      "canonical": "the_coast",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 76,
+      "end": 83,
+      "id": "e1"
+    },
+    {
+      "surface": "exceptional droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 131,
+      "end": 151,
+      "id": "e2"
+    },
+    {
+      "surface": "West Virginia",
+      "type": "LOCATION",
+      "canonical": "west_virginia",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 155,
+      "end": 168,
+      "id": "e3"
+    },
+    {
+      "surface": "North Dakota",
+      "type": "LOCATION",
+      "canonical": "north_dakota",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 173,
+      "end": 185,
+      "id": "e4"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 202,
+      "end": 214,
+      "id": "e5"
+    },
+    {
+      "surface": "environment",
+      "type": "OTHER_ENTITY",
+      "canonical": "environment",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "subtype": "other",
+      "occurrence_index": 0,
+      "start": 232,
+      "end": 243,
+      "id": "e6"
+    },
+    {
+      "surface": "food sources",
+      "type": "OTHER_ENTITY",
+      "canonical": "food_production",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "subtype": "other",
+      "occurrence_index": 0,
+      "start": 304,
+      "end": 316,
+      "id": "e7"
+    },
+    {
+      "surface": "farms",
+      "type": "OTHER_ENTITY",
+      "canonical": "agriculture",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "subtype": "other",
+      "occurrence_index": 0,
+      "start": 321,
+      "end": 326,
+      "id": "e8"
+    },
+    {
+      "surface": "Dry Spell: Graph Highlights Increasing Droughts Across America",
+      "type": "OTHER_ENTITY",
+      "canonical": "dry_spell_graph_highlights_increasing_droughts_across_america",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "subtype": "other",
+      "occurrence_index": 0,
+      "start": 373,
+      "end": 435,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that the middle of the country experiences more droughts than the coast’s.\n\nI wonder why theres grey spots right next to exceptional droughts in West Virginia and North Dakota.\n\nIt relates to my community by impacting our environment and our living conditions. Droughts also negatively impacts food sources and farms which can damage the economy and our health.\n\nDry Spell: Graph Highlights Increasing Droughts Across America\""
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Dry Spell: Graph Highlights Increasing Droughts Across America"
+    }
+  ],
+  "tagged_text": "I noticed that the <entity type=\"LOCATION\" canonical=\"middle_of_the_country\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">middle of the country</entity> experiences more droughts than the <entity type=\"LOCATION\" canonical=\"the_coast\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">coast’s</entity>.\n\nI wonder why theres grey spots right next to <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">exceptional droughts</entity> in <entity type=\"LOCATION\" canonical=\"west_virginia\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">West Virginia</entity> and <entity type=\"LOCATION\" canonical=\"north_dakota\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">North Dakota</entity>.\n\nIt relates to <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity> by impacting our <entity type=\"OTHER_ENTITY\" canonical=\"environment\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\" subtype=\"other\">environment</entity> and our living conditions. Droughts also negatively impacts <entity type=\"OTHER_ENTITY\" canonical=\"food_production\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\" subtype=\"other\">food sources</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"agriculture\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\" subtype=\"other\">farms</entity> which can damage the economy and our health.\n\n<entity type=\"headline_title\" canonical=\"dry_spell_graph_highlights_increasing_droughts_across_america\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Dry Spell: Graph Highlights Increasing Droughts Across America</entity>"
+}

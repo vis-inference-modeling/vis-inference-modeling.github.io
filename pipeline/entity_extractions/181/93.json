@@ -1,0 +1,277 @@
+{
+  "article_id": "181",
+  "comment_index": 93,
+  "raw_comment": "1. Immediately, I noticed the overall upwards trend of the graph, and how from 2000 onwards, there has been a huge expansion of the amount of energy used. However, the majority of this expansion of energy is resulting from clean energy, as coal, gas, and oil, have somewhat stagnated throughout these 20 years.\n \n2. What metrics or units are being used to \"color\" the different types of energy - does a different color relate to how \"clean\" the energy is or how \"fossil-ly\" the energy is?\n\n3. Although I currently live in SLO, I primarily grew up in a town that uses hydroelectric energy. I know that the amount of energy that can be produced by hydroelectric energy is substantial, and although it is not underrepresented, it is interesting to see such a small portion of the graph taken up by hydroelectric energy.\n\n4. ZAP! Energy Production by Energy Type:  2000 to 2020 (gigawatt hours)",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 59,
+      "end": 64,
+      "id": "e0"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 777,
+      "end": 782,
+      "id": "e1"
+    },
+    {
+      "surface": "2000",
+      "type": "TIME_REFERENCE",
+      "canonical": "2000",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 861,
+      "end": 865,
+      "id": "e2"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e3"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "gas",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "gas",
+      "var": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "oil",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "oil_and_other",
+      "var": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "20 years",
+      "type": "TIME_REFERENCE",
+      "canonical": "20_years",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "units",
+      "type": "UNIT",
+      "canonical": "units",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "SLO",
+      "type": "LOCATION",
+      "canonical": "slo",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "town",
+      "type": "LOCATION",
+      "canonical": "my_town",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    },
+    {
+      "surface": "hydroelectric energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "hydroelectric energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "hydroelectric energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "ZAP! Energy Production by Energy Type:  2000 to 2020 (gigawatt hours)",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e17"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "color",
+      "reason": "Likely refers to a chart element/color encoding, but no exact chart-element canonical is provided for this usage."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "Immediately, I noticed the overall upwards trend of the graph, and how from 2000 onwards, there has been a huge expansion of the amount of energy used. However, the majority of this expansion of energy is resulting from clean energy, as coal, gas, and oil, have somewhat stagnated throughout these 20 years."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "What metrics or units are being used to \"color\" the different types of energy - does a different color relate to how \"clean\" the energy is or how \"fossil-ly\" the energy is?"
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "Although I currently live in SLO, I primarily grew up in a town that uses hydroelectric energy. I know that the amount of energy that can be produced by hydroelectric energy is substantial, and although it is not underrepresented, it is interesting to see such a small portion of the graph taken up by hydroelectric energy."
+    },
+    {
+      "section": "headline",
+      "label": "4",
+      "text": "ZAP! Energy Production by Energy Type:  2000 to 2020 (gigawatt hours)"
+    }
+  ],
+  "tagged_text": "1. Immediately, I noticed the overall upwards trend of the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, and how from <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity> onwards, there has been a huge expansion of the amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> used. However, the majority of this expansion of energy is resulting from <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>, as <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\">oil</entity>, have somewhat stagnated throughout these <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20 years</entity>.\n \n2. What metrics or <entity type=\"UNIT\" canonical=\"units\">units</entity> are being used to \"color\" the different types of energy - does a different color relate to how \"clean\" the energy is or how \"fossil-ly\" the energy is?\n\n3. Although I currently live in <entity type=\"LOCATION\" canonical=\"slo\">SLO</entity>, I primarily grew up in a <entity type=\"LOCATION\" canonical=\"my_town\">town</entity> that uses <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">hydroelectric energy</entity>. I know that the amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> that can be produced by <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">hydroelectric energy</entity> is substantial, and although it is not underrepresented, it is interesting to see such a small portion of the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> taken up by <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">hydroelectric energy</entity>.\n\n4. <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">ZAP! Energy Production by Energy Type:  2000 to 2020 (gigawatt hours)</entity>"
+}

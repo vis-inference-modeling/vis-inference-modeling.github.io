@@ -1,0 +1,173 @@
+{
+  "article_id": "181",
+  "comment_index": 86,
+  "raw_comment": "1. I noticed China has a greater total electrical generation than the U.S. and India. I also noticed that clean, renewable power tends to be used over fossil fuels.\n\n2. I wonder how this graph was created and what sampling method was used to receive the answers to support this data. \n\n3. We use power for everything in our everyday lives, we should know where it is coming from, and how much it costs. \n\n4. Energy & Power",
+  "entities": [
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 13,
+      "end": 18,
+      "id": "e0"
+    },
+    {
+      "surface": "generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 50,
+      "end": 60,
+      "id": "e1"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 70,
+      "end": 74,
+      "id": "e2"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 79,
+      "end": 84,
+      "id": "e3"
+    },
+    {
+      "surface": "clean",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 106,
+      "end": 111,
+      "id": "e4"
+    },
+    {
+      "surface": "renewable power",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "renewable_energy",
+      "var": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 113,
+      "end": 128,
+      "id": "e5"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 151,
+      "end": 163,
+      "id": "e6"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 187,
+      "end": 192,
+      "id": "e7"
+    },
+    {
+      "surface": "power",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "power",
+      "var": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 296,
+      "end": 301,
+      "id": "e8"
+    },
+    {
+      "surface": "Energy & Power",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_power",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 408,
+      "end": 422,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "sampling method",
+      "reason": "Methodological concept, not an entity in the provided schema."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I noticed China has a greater total electrical generation than the U.S. and India. I also noticed that clean, renewable power tends to be used over fossil fuels."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder how this graph was created and what sampling method was used to receive the answers to support this data."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "We use power for everything in our everyday lives, we should know where it is coming from, and how much it costs."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "Energy & Power"
+    }
+  ],
+  "tagged_text": "1. I noticed <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> has a greater total electrical <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">generation</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">U.S.</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India</entity>. I also noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\" section=\"body\">renewable power</entity> tends to be used over <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity>.\n\n2. I wonder how this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> was created and what sampling method was used to receive the answers to support this data. \n\n3. We use <entity type=\"DATA_VAR_LEVEL\" canonical=\"power\" var=\"energy_source\" section=\"body\">power</entity> for everything in our everyday lives, we should know where it is coming from, and how much it costs. \n\n4. Energy & Power"
+}

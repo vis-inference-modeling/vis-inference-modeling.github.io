@@ -1,0 +1,55 @@
+{
+  "article_id": "193",
+  "comment_index": 78,
+  "raw_comment": "Title: Wheres My Water?\n\nI noticed that the states closer to the middle of the U.S. have more droughts then the sides of the U.S., I wonder why that is?",
+  "entities": [
+    {
+      "surface": "U.S.",
+      "type": "LOCATION",
+      "canonical": "us",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 79,
+      "end": 83,
+      "id": "e0"
+    },
+    {
+      "surface": "U.S.",
+      "type": "LOCATION",
+      "canonical": "us",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 125,
+      "end": 129,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "states closer to the middle of the U.S.",
+      "reason": "Could map to a regional location, but no exact canonical region is confirmed from the text alone."
+    },
+    {
+      "surface": "droughts",
+      "reason": "General drought mention without a confirmed canonical EVENT/level mapping in the article dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "headline",
+      "label": "Title",
+      "text": "Wheres My Water?"
+    },
+    {
+      "section": "body",
+      "text": "I noticed that the states closer to the middle of the U.S. have more droughts then the sides of the U.S., I wonder why that is?"
+    }
+  ],
+  "tagged_text": "Title: Wheres My Water?\n\nI noticed that the states closer to the middle of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\">U.S.</entity> have more droughts then the sides of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\">U.S.</entity>, I wonder why that is?"
+}

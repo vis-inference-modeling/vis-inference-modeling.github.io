@@ -1,0 +1,159 @@
+{
+  "article_id": "181",
+  "comment_index": 112,
+  "raw_comment": "I notice India and and the United States power usage has not increased nearly as much as China's has. At one point it even decreased a little bit.\nI wonder why Indias main power source is coal? \nThis relates to my community because my community is close to wind power and oil/gas producers. \nCatchy headline: \"Populations Powers\"",
+  "entities": [
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 9,
+      "end": 14,
+      "id": "e0"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 27,
+      "end": 40,
+      "id": "e1"
+    },
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 89,
+      "end": 94,
+      "id": "e2"
+    },
+    {
+      "surface": "Indias",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 160,
+      "end": 166,
+      "id": "e3"
+    },
+    {
+      "surface": "coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 188,
+      "end": 192,
+      "id": "e4"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 211,
+      "end": 223,
+      "id": "e5"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 232,
+      "end": 244,
+      "id": "e6"
+    },
+    {
+      "surface": "wind power",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wind_and_solar",
+      "var": "energy_source",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 257,
+      "end": 267,
+      "id": "e7"
+    },
+    {
+      "surface": "oil/gas",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "oil_and_other",
+      "var": "energy_source",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 272,
+      "end": 279,
+      "id": "e8"
+    },
+    {
+      "surface": "Populations Powers",
+      "type": "OTHER_ENTITY",
+      "canonical": "populations_powers",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 310,
+      "end": 328,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice India and and the United States power usage has not increased nearly as much as China's has. At one point it even decreased a little bit.\nI wonder why Indias main power source is coal? \nThis relates to my community because my community is close to wind power and oil/gas producers. "
+    },
+    {
+      "section": "headline",
+      "label": "Catchy headline",
+      "text": "\"Populations Powers\""
+    }
+  ],
+  "tagged_text": "I notice <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> and and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> power usage has not increased nearly as much as <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>'s has. At one point it even decreased a little bit.\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">Indias</entity> main power source is <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" modality=\"questioned\">coal</entity>? \nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because my community is close to <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind power</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\">oil/gas</entity> producers. \nCatchy headline: \"<entity type=\"OTHER_ENTITY\" canonical=\"populations_powers\" section=\"headline\">Populations Powers</entity>\""
+}

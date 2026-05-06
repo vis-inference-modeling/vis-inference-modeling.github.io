@@ -1,0 +1,212 @@
+{
+  "article_id": "193",
+  "comment_index": 26,
+  "raw_comment": "1. The graph shows a widespread drought across the U.S., with large areas in the West, Midwest, and South experiencing extreme drought conditions\n2. I wonder what factors have been contributing to this widespread drought that keeps most part of Florida outside of the drought.\n3. Droughts can affect water availability, agricultural production, and the nation's overall economy. In my community, this could lead to water restrictions because of the disruptions in national water supply networks and increased food prices, impacting our daily lives.\n4. \"From Dry to Drier: America's Growing Drought Crisis Unfolds!\"",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 7,
+      "end": 12,
+      "id": "e0"
+    },
+    {
+      "surface": "U.S.",
+      "type": "LOCATION",
+      "canonical": "united_states",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 51,
+      "end": 55,
+      "id": "e1"
+    },
+    {
+      "surface": "West",
+      "type": "LOCATION",
+      "canonical": "west",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 81,
+      "end": 85,
+      "id": "e2"
+    },
+    {
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 87,
+      "end": 94,
+      "id": "e3"
+    },
+    {
+      "surface": "South",
+      "type": "LOCATION",
+      "canonical": "south",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 100,
+      "end": 105,
+      "id": "e4"
+    },
+    {
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 119,
+      "end": 126,
+      "id": "e5"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 245,
+      "end": 252,
+      "id": "e6"
+    },
+    {
+      "surface": "Droughts",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 280,
+      "end": 288,
+      "id": "e7"
+    },
+    {
+      "surface": "economy",
+      "type": "OTHER_ENTITY",
+      "canonical": "economy",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 370,
+      "end": 377,
+      "id": "e8"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 382,
+      "end": 394,
+      "id": "e9"
+    },
+    {
+      "surface": "water restrictions",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_restrictions",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 415,
+      "end": 433,
+      "id": "e10"
+    },
+    {
+      "surface": "From Dry to Drier: America's Growing Drought Crisis Unfolds!",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 553,
+      "end": 613,
+      "id": "e11"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "water availability",
+      "reason": "Could be related to water_sources or water supply, but no exact canonical match is provided."
+    },
+    {
+      "surface": "agricultural production",
+      "reason": "Entity-like phrase, but not listed as a canonical entity."
+    },
+    {
+      "surface": "nation's overall",
+      "reason": "Possessive national reference is incomplete and not a clean entity."
+    },
+    {
+      "surface": "national water supply networks",
+      "reason": "Could relate to water_supply, but the phrase is broader than the listed canonical surface."
+    },
+    {
+      "surface": "increased food prices",
+      "reason": "Impact phrase not listed as a canonical entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "The graph shows a widespread drought across the U.S., with large areas in the West, Midwest, and South experiencing extreme drought conditions"
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder what factors have been contributing to this widespread drought that keeps most part of Florida outside of the drought."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "Droughts can affect water availability, agricultural production, and the nation's overall economy. In my community, this could lead to water restrictions because of the disruptions in national water supply networks and increased food prices, impacting our daily lives."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "\"From Dry to Drier: America's Growing Drought Crisis Unfolds!\""
+    }
+  ],
+  "tagged_text": "1. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> shows a widespread drought across the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">U.S.</entity>, with large areas in the <entity type=\"LOCATION\" canonical=\"west\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">West</entity>, <entity type=\"LOCATION\" canonical=\"midwest\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Midwest</entity>, and <entity type=\"LOCATION\" canonical=\"south\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">South</entity> experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">extreme</entity> drought conditions\n2. I wonder what factors have been contributing to this widespread drought that keeps most part of <entity type=\"LOCATION\" canonical=\"florida\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Florida</entity> outside of the drought.\n3. <entity type=\"EVENT\" canonical=\"drought\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Droughts</entity> can affect water availability, agricultural production, and the nation's overall <entity type=\"OTHER_ENTITY\" canonical=\"economy\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">economy</entity>. In <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity>, this could lead to <entity type=\"OTHER_ENTITY\" canonical=\"water_restrictions\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">water restrictions</entity> because of the disruptions in national water supply networks and increased food prices, impacting our daily lives.\n4. \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">From Dry to Drier: America's Growing Drought Crisis Unfolds!</entity>\""
+}

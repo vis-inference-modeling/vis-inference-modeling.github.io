@@ -1,0 +1,181 @@
+{
+  "article_id": "193",
+  "comment_index": 138,
+  "raw_comment": "Headline: \"Droughts Spread Coast to Coast Across the U.S.\"\n\nThe graph depicts a map of the United States and the droughts across the country. The darker an area is, the more severe the drought is. One thing I noticed is that in Western Texas, in nearby towns such as Presidio and Van Hom, the area is a very dark red. This indicates that the drought there is very severe. Also, I noticed the most severe droughts are located in areas where there are lots of plains, like the Great Plains, such as Oklahoma, Montana, and Wyoming. One thing I wonder about is how we can deal with droughts and if there is any way to reduce the serious effects of them. This map relates to me and my community because I live in New Jersey, and the map shows the dryness in my state and the area I live in. While the dryness is more severe in South Jersey, it is still abnormally dry in North Jersey, making the whole state dry and miserable.",
+  "entities": [
+    {
+      "surface": "Droughts Spread Coast to Coast Across the U.S.",
+      "type": "EVENT",
+      "canonical": "droughts_spread_coast_to_coast_across_the_us",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 11,
+      "end": 57,
+      "id": "e0"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 64,
+      "end": 69,
+      "id": "e1"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 91,
+      "end": 104,
+      "id": "e2"
+    },
+    {
+      "surface": "Western Texas",
+      "type": "LOCATION",
+      "canonical": "west_texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 228,
+      "end": 241,
+      "id": "e3"
+    },
+    {
+      "surface": "Presidio",
+      "type": "LOCATION",
+      "canonical": "presidio_texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 267,
+      "end": 275,
+      "id": "e4"
+    },
+    {
+      "surface": "Van Hom",
+      "type": "LOCATION",
+      "canonical": "van_horn_texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 280,
+      "end": 287,
+      "id": "e5"
+    },
+    {
+      "surface": "Great Plains",
+      "type": "LOCATION",
+      "canonical": "great_plains",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 475,
+      "end": 487,
+      "id": "e6"
+    },
+    {
+      "surface": "Oklahoma",
+      "type": "LOCATION",
+      "canonical": "oklahoma",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 497,
+      "end": 505,
+      "id": "e7"
+    },
+    {
+      "surface": "Montana",
+      "type": "LOCATION",
+      "canonical": "montana",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 507,
+      "end": 514,
+      "id": "e8"
+    },
+    {
+      "surface": "Wyoming",
+      "type": "LOCATION",
+      "canonical": "wyoming",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 520,
+      "end": 527,
+      "id": "e9"
+    },
+    {
+      "surface": "New Jersey",
+      "type": "LOCATION",
+      "canonical": "new_jersey",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 708,
+      "end": 718,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "droughts across the country",
+      "reason": "Could be an EVENT phrase, but it is generic and overlaps with the headline theme rather than a specific canonical form."
+    },
+    {
+      "surface": "dark red",
+      "reason": "Chart color description; not a listed chart element or entity."
+    },
+    {
+      "surface": "South Jersey",
+      "reason": "Not present in the provided location dictionary."
+    },
+    {
+      "surface": "North Jersey",
+      "reason": "Not present in the provided location dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "\"Droughts Spread Coast to Coast Across the U.S.\""
+    },
+    {
+      "section": "body",
+      "text": "The graph depicts a map of the United States and the droughts across the country. The darker an area is, the more severe the drought is. One thing I noticed is that in Western Texas, in nearby towns such as Presidio and Van Hom, the area is a very dark red. This indicates that the drought there is very severe. Also, I noticed the most severe droughts are located in areas where there are lots of plains, like the Great Plains, such as Oklahoma, Montana, and Wyoming. One thing I wonder about is how we can deal with droughts and if there is any way to reduce the serious effects of them. This map relates to me and my community because I live in New Jersey, and the map shows the dryness in my state and the area I live in. While the dryness is more severe in South Jersey, it is still abnormally dry in North Jersey, making the whole state dry and miserable."
+    }
+  ],
+  "tagged_text": "Headline: \"<entity type=\"EVENT\" canonical=\"droughts_spread_coast_to_coast_across_the_us\" section=\"headline\">Droughts Spread Coast to Coast Across the U.S.</entity>\"\n\nThe <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> depicts a map of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> and the droughts across the country. The darker an area is, the more severe the drought is. One thing I noticed is that in <entity type=\"LOCATION\" canonical=\"west_texas\">Western Texas</entity>, in nearby towns such as <entity type=\"LOCATION\" canonical=\"presidio_texas\">Presidio</entity> and <entity type=\"LOCATION\" canonical=\"van_horn_texas\">Van Hom</entity>, the area is a very dark red. This indicates that the drought there is very severe. Also, I noticed the most severe droughts are located in areas where there are lots of plains, like the <entity type=\"LOCATION\" canonical=\"great_plains\">Great Plains</entity>, such as <entity type=\"LOCATION\" canonical=\"oklahoma\">Oklahoma</entity>, <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, and <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>. One thing I wonder about is how we can deal with droughts and if there is any way to reduce the serious effects of them. This map relates to me and my community because I live in <entity type=\"LOCATION\" canonical=\"new_jersey\" speaker_context=\"true\">New Jersey</entity>, and the map shows the dryness in my state and the area I live in. While the dryness is more severe in South Jersey, it is still abnormally dry in North Jersey, making the whole state dry and miserable."
+}

@@ -1,0 +1,183 @@
+{
+  "article_id": "181",
+  "comment_index": 127,
+  "raw_comment": "1. What do you notice? \nI notice that there has been an increase in coal usage as well as gasoline, which both fall under fossil fuels. \n2. What do you wonder?\nI wonder how there has been an increase in fossil fuel use, when there is a lot of companies working against harmful fuel usage and activists in support of transitioning to clean energy. \n3. What impact does this have on you and your community?\nThis shows the popularity of different types of electricities in the world and what the trends show. If our abuse of fossil fuels continue, we will be without resources and unprepared. \n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\n\"Fossil Fuel Use Trumps Clean Fuels\"",
+  "entities": [
+    {
+      "surface": "coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 68,
+      "end": 72,
+      "id": "e0"
+    },
+    {
+      "surface": "gasoline",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "oil_and_other",
+      "var": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 90,
+      "end": 98,
+      "id": "e1"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 122,
+      "end": 134,
+      "id": "e2"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 522,
+      "end": 534,
+      "id": "e3"
+    },
+    {
+      "surface": "fossil fuel",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 687,
+      "end": 698,
+      "id": "e4"
+    },
+    {
+      "surface": "companies",
+      "type": "OTHER_ENTITY",
+      "canonical": "company",
+      "subtype": "organization",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "activists",
+      "type": "OTHER_ENTITY",
+      "canonical": "activists",
+      "subtype": "organization",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "world",
+      "type": "LOCATION",
+      "canonical": "world",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "hypothetical",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "Fossil Fuel Use Trumps Clean Fuels",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "What do you notice? \nI notice that there has been an increase in coal usage as well as gasoline, which both fall under fossil fuels."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "What do you wonder?\nI wonder how there has been an increase in fossil fuel use, when there is a lot of companies working against harmful fuel usage and activists in support of transitioning to clean energy."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "What impact does this have on you and your community?\nThis shows the popularity of different types of electricities in the world and what the trends show. If our abuse of fossil fuels continue, we will be without resources and unprepared."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "What's going on in this graph? Write a catchy headline that captures the graph's main idea.\n\"Fossil Fuel Use Trumps Clean Fuels\""
+    }
+  ],
+  "tagged_text": "1. What do you notice? \nI notice that there has been an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"numbered_point\">coal</entity> usage as well as <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\" section=\"numbered_point\">gasoline</entity>, which both fall under <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\">fossil fuels</entity>. \n2. What do you wonder?\nI wonder how there has been an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\" modality=\"questioned\">fossil fuel</entity> use, when there is a lot of <entity type=\"OTHER_ENTITY\" canonical=\"company\" subtype=\"organization\" section=\"numbered_point\" modality=\"questioned\">companies</entity> working against harmful fuel usage and <entity type=\"OTHER_ENTITY\" canonical=\"activists\" subtype=\"organization\" section=\"numbered_point\" modality=\"questioned\">activists</entity> in support of transitioning to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"numbered_point\" modality=\"questioned\">clean energy</entity>. \n3. What impact does this have on you and your community?\nThis shows the popularity of different types of electricities in the <entity type=\"LOCATION\" canonical=\"world\" section=\"numbered_point\">world</entity> and what the trends show. If our abuse of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\" modality=\"hypothetical\">fossil fuels</entity> continue, we will be without resources and unprepared. \n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\n\"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Fossil Fuel Use Trumps Clean Fuels</entity>\""
+}

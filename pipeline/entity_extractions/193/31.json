@@ -1,0 +1,170 @@
+{
+  "article_id": "193",
+  "comment_index": 31,
+  "raw_comment": "What do you notice?\n\nThe first thing I noticed was how widespread drought is across the U.S. It's affecting nearly every region, with varying severity. It's concerning to see some coastal areas experiencing drought.\n\nWhat do you wonder?\n\nI wonder what is causing drought in so many areas and how it's affecting local communities. I’m also curious about what actions we can take as individuals and communities to help solve this problem.\n\nHow does this relate to you and your community?\n\nThis relates to my community because drought can affect water, food prices, and the economy. Even if we're not hit the hardest, we might still feel the impact. I also have family living in and friends going to schools in states where the droughts are exceptionally bad.\n\nCreate a catchy headline that captures the graph’s main idea.\n\nAmerica’s Dry Spell: Drought Widespread Across the Country",
+  "entities": [
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 88,
+      "end": 92,
+      "id": "e0"
+    },
+    {
+      "surface": "region",
+      "type": "LOCATION",
+      "canonical": "regions",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 121,
+      "end": 127,
+      "id": "e1"
+    },
+    {
+      "surface": "coastal areas",
+      "type": "LOCATION",
+      "canonical": "coastal_areas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 180,
+      "end": 193,
+      "id": "e2"
+    },
+    {
+      "surface": "areas",
+      "type": "LOCATION",
+      "canonical": "areas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 188,
+      "end": 193,
+      "id": "e3"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 543,
+      "end": 548,
+      "id": "e4"
+    },
+    {
+      "surface": "food prices",
+      "type": "OTHER_ENTITY",
+      "canonical": "food_prices",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 550,
+      "end": 561,
+      "id": "e5"
+    },
+    {
+      "surface": "economy",
+      "type": "OTHER_ENTITY",
+      "canonical": "economy",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 571,
+      "end": 578,
+      "id": "e6"
+    },
+    {
+      "surface": "family",
+      "type": "OTHER_ENTITY",
+      "canonical": "family",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 659,
+      "end": 665,
+      "id": "e7"
+    },
+    {
+      "surface": "friends",
+      "type": "OTHER_ENTITY",
+      "canonical": "friends",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 680,
+      "end": 687,
+      "id": "e8"
+    },
+    {
+      "surface": "states",
+      "type": "LOCATION",
+      "canonical": "states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 708,
+      "end": 714,
+      "id": "e9"
+    },
+    {
+      "surface": "America’s Dry Spell: Drought Widespread Across the Country",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 821,
+      "end": 879,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "drought",
+      "reason": "Could be tagged as EVENT (drought) or as a general phenomenon; no chart-specific reference list was provided, but the comment clearly centers on drought."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice?\n\nThe first thing I noticed was how widespread drought is across the U.S. It's affecting nearly every region, with varying severity. It's concerning to see some coastal areas experiencing drought.\n\nWhat do you wonder?\n\nI wonder what is causing drought in so many areas and how it's affecting local communities. I’m also curious about what actions we can take as individuals and communities to help solve this problem.\n\nHow does this relate to you and your community?\n\nThis relates to my community because drought can affect water, food prices, and the economy. Even if we're not hit the hardest, we might still feel the impact. I also have family living in and friends going to schools in states where the droughts are exceptionally bad.\n\nCreate a catchy headline that captures the graph’s main idea.\n\nAmerica’s Dry Spell: Drought Widespread Across the Country"
+    }
+  ],
+  "tagged_text": "What do you notice?\n\nThe first thing I noticed was how widespread drought is across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity>. It's affecting nearly every <entity type=\"LOCATION\" canonical=\"regions\">region</entity>, with varying severity. It's concerning to see some <entity type=\"LOCATION\" canonical=\"coastal_areas\">coastal areas</entity> experiencing drought.\n\nWhat do you wonder?\n\nI wonder what is causing drought in so many <entity type=\"LOCATION\" canonical=\"areas\">areas</entity> and how it's affecting local communities. I’m also curious about what actions we can take as individuals and communities to help solve this problem.\n\nHow does this relate to you and your community?\n\nThis relates to my community because drought can affect <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" speaker_context=\"true\">water</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"food_prices\" subtype=\"other\">food prices</entity>, and the <entity type=\"OTHER_ENTITY\" canonical=\"economy\" subtype=\"other\">economy</entity>. Even if we're not hit the hardest, we might still feel the impact. I also have <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" speaker_context=\"true\">family</entity> living in and <entity type=\"OTHER_ENTITY\" canonical=\"friends\" subtype=\"person\">friends</entity> going to schools in <entity type=\"LOCATION\" canonical=\"states\">states</entity> where the droughts are exceptionally bad.\n\nCreate a catchy headline that captures the graph’s main idea.\n\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">America’s Dry Spell: Drought Widespread Across the Country</entity>"
+}

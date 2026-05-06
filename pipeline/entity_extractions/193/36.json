@@ -1,0 +1,92 @@
+{
+  "article_id": "193",
+  "comment_index": 36,
+  "raw_comment": "1. The first thing I noticed when I saw this graph was how widespread the issue of drought is throughout our nation. The issue is not limited to one or a few regions. While it is a more prevalent concern to some than others, given the range of severity, it is a nationwide issue actively impacting nearly all of us. I also noticed that the most severe and exceptional cases are within landlocked states, which makes a lot of sense, given the coasts are usually less susceptible to drought. The fact that even coasts are in drought is concerning.\n2. I wonder if there is anything that we, as individuals, can do to help minimize this nationwide threat. I have to assume that a lot of this has to do with climate change, so I wonder how much of this issue is due in part to human activity.\n3. This feels personal to me because I have family in the Midwest and am also applying to a number of colleges there. While I love this area, it seems to be the region where the most severe cases of drought occur. With drought comes a number of threats, such as wildfires, that endanger my family and make the area a higher risk to live in.  \n4. America is Drying Out: A Coast-to-Coast Glance at Drought in the United States",
+  "entities": [
+    {
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 846,
+      "end": 853,
+      "id": "e0"
+    },
+    {
+      "surface": "wildfires",
+      "type": "EVENT",
+      "canonical": "wildfires",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1050,
+      "end": 1059,
+      "id": "e1"
+    },
+    {
+      "surface": "America is Drying Out: A Coast-to-Coast Glance at Drought in the United States",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1134,
+      "end": 1212,
+      "id": "e2"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "drought",
+      "reason": "General event reference appears multiple times; could be tagged as EVENT 'drought', but the prompt emphasizes using the provided normalized dictionary and unresolved mentions freely."
+    },
+    {
+      "surface": "landlocked states",
+      "reason": "Could be a LOCATION-like regional reference, but no exact canonical match is provided."
+    },
+    {
+      "surface": "coasts",
+      "reason": "Could be LOCATION plural, but the exact canonical in the dictionary is 'coastal areas' or 'coasts' only in broader sense; context is generic."
+    },
+    {
+      "surface": "climate change",
+      "reason": "Could be EVENT climate_change, but it is mentioned as a possible cause rather than a direct observation."
+    },
+    {
+      "surface": "human activity",
+      "reason": "Entity-like causal factor, but no canonical match is provided."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "The first thing I noticed when I saw this graph was how widespread the issue of drought is throughout our nation. The issue is not limited to one or a few regions. While it is a more prevalent concern to some than others, given the range of severity, it is a nationwide issue actively impacting nearly all of us. I also noticed that the most severe and exceptional cases are within landlocked states, which makes a lot of sense, given the coasts are usually less susceptible to drought. The fact that even coasts are in drought is concerning."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder if there is anything that we, as individuals, can do to help minimize this nationwide threat. I have to assume that a lot of this has to do with climate change, so I wonder how much of this issue is due in part to human activity."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "This feels personal to me because I have family in the Midwest and am also applying to a number of colleges there. While I love this area, it seems to be the region where the most severe cases of drought occur. With drought comes a number of threats, such as wildfires, that endanger my family and make the area a higher risk to live in."
+    },
+    {
+      "section": "headline",
+      "label": "headline",
+      "text": "America is Drying Out: A Coast-to-Coast Glance at Drought in the United States"
+    }
+  ],
+  "tagged_text": "1. The first thing I noticed when I saw this graph was how widespread the issue of drought is throughout our nation. The issue is not limited to one or a few regions. While it is a more prevalent concern to some than others, given the range of severity, it is a nationwide issue actively impacting nearly all of us. I also noticed that the most severe and exceptional cases are within landlocked states, which makes a lot of sense, given the coasts are usually less susceptible to drought. The fact that even coasts are in drought is concerning.\n2. I wonder if there is anything that we, as individuals, can do to help minimize this nationwide threat. I have to assume that a lot of this has to do with climate change, so I wonder how much of this issue is due in part to human activity.\n3. This feels personal to me because I have family in the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> and am also applying to a number of colleges there. While I love this area, it seems to be the region where the most severe cases of drought occur. With drought comes a number of threats, such as <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity>, that endanger my family and make the area a higher risk to live in.  \n4. <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">America is Drying Out: A Coast-to-Coast Glance at Drought in the United States</entity>"
+}

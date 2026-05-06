@@ -1,0 +1,191 @@
+{
+  "article_id": "193",
+  "comment_index": 51,
+  "raw_comment": "Looking at the graph, I noticed that the central U.S. states have the worst droughts. These areas might be more affected because of their rough terrain and extreme weather. I wonder if global warming and climate change are making these droughts worse. This is important to me and my community because it shows how climate change is impacting us all. A good headline for this graph could be \"Drought in Your State.\"",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 15,
+      "end": 20,
+      "id": "e0"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 375,
+      "end": 380,
+      "id": "e1"
+    },
+    {
+      "surface": "Drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 391,
+      "end": 398,
+      "id": "e2"
+    },
+    {
+      "surface": "central U.S. states",
+      "type": "LOCATION",
+      "canonical": "central_us",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e3"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "areas",
+      "type": "LOCATION",
+      "canonical": "central_us",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "weather",
+      "type": "EVENT",
+      "canonical": "weather",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "global warming",
+      "type": "EVENT",
+      "canonical": "global_warming",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "me",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "rough terrain",
+      "reason": "Could be a location/geographical feature, but no confirmed canonical entity in the provided dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Looking at the graph, I noticed that the central U.S. states have the worst droughts. These areas might be more affected because of their rough terrain and extreme weather. I wonder if global warming and climate change are making these droughts worse. This is important to me and my community because it shows how climate change is impacting us all. A good headline for this graph could be \"Drought in Your State.\""
+    }
+  ],
+  "tagged_text": "Looking at the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I noticed that the <entity type=\"LOCATION\" canonical=\"central_us\" section=\"body\">central U.S. states</entity> have the worst <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity>. These <entity type=\"LOCATION\" canonical=\"central_us\" section=\"body\">areas</entity> might be more affected because of their rough terrain and extreme <entity type=\"EVENT\" canonical=\"weather\" section=\"body\">weather</entity>. I wonder if <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\" modality=\"questioned\">global warming</entity> and <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\">climate change</entity> are making these <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\" modality=\"questioned\">droughts</entity> worse. This is important to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\" section=\"body\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\" section=\"body\">my community</entity> because it shows how <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">climate change</entity> is impacting us all. A good headline for this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> could be \"<entity type=\"EVENT\" canonical=\"drought\" section=\"body\">Drought</entity> in Your State.\""
+}

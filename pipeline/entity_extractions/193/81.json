@@ -1,0 +1,55 @@
+{
+  "article_id": "193",
+  "comment_index": 81,
+  "raw_comment": "Wonder: I wonder if droughts will get worse in the future?\n\n\n\nHeadline: Droughts In The US: How Can We Stop It?",
+  "entities": [
+    {
+      "surface": "future",
+      "type": "TIME_REFERENCE",
+      "canonical": "future",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 51,
+      "end": 57,
+      "id": "e0"
+    },
+    {
+      "surface": "Droughts In The US: How Can We Stop It?",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 72,
+      "end": 111,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "droughts",
+      "reason": "Could be tagged as EVENT, but the normalized dictionary does not provide a direct drought level/entity for this article beyond general event references; left unresolved to avoid overcommitting."
+    },
+    {
+      "surface": "US",
+      "reason": "Could map to a country/location entity, but the article-specific dictionary does not include a country level for United States in this context; unresolved per instruction."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Wonder: I wonder if droughts will get worse in the future?"
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Droughts In The US: How Can We Stop It?"
+    }
+  ],
+  "tagged_text": "Wonder: I wonder if droughts will get worse in the <entity type=\"TIME_REFERENCE\" canonical=\"future\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">future</entity>?\n\n\n\nHeadline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Droughts In The US: How Can We Stop It?</entity>"
+}

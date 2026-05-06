@@ -1,0 +1,102 @@
+{
+  "article_id": "181",
+  "comment_index": 138,
+  "raw_comment": "The US is using about 2x the energy per person as China and about 8x as India. It reflects the populations living in those countries with a standard of living similar to the US.  Green sources are increasing in all 3.  Coal is a substantial proportion of energy production.",
+  "entities": [
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 4,
+      "end": 6,
+      "id": "e0"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 174,
+      "end": 176,
+      "id": "e1"
+    },
+    {
+      "surface": "Coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 219,
+      "end": 223,
+      "id": "e2"
+    },
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e3"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "energy per person",
+      "reason": "Could imply a per-capita measure, but no canonical variable or unit is provided."
+    },
+    {
+      "surface": "populations",
+      "reason": "Generic plural noun; not clearly a specific entity beyond the country references."
+    },
+    {
+      "surface": "Green sources",
+      "reason": "Likely refers to clean/renewable energy, but the phrase is not explicit enough to map confidently."
+    },
+    {
+      "surface": "energy production",
+      "reason": "Could map to electricity_generation, but the comment uses it generically and without a clear chart-specific context."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "The US is using about 2x the energy per person as China and about 8x as India. It reflects the populations living in those countries with a standard of living similar to the US.  Green sources are increasing in all 3.  Coal is a substantial proportion of energy production."
+    }
+  ],
+  "tagged_text": "The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is using about 2x the energy per person as <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and about 8x as <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>. It reflects the populations living in those countries with a standard of living similar to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>.  Green sources are increasing in all 3.  <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">Coal</entity> is a substantial proportion of energy production."
+}

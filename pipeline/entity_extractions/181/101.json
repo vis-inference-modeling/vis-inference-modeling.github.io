@@ -1,0 +1,111 @@
+{
+  "article_id": "181",
+  "comment_index": 101,
+  "raw_comment": "The production of electricity continues to increase globally. Clean electricity is used more frequently than fossil fuels which is better for Earth. When looking at the three smaller scales, America's has pretty much stayed constant, as well as, India's. China on the other hand has been showing exponential growth.",
+  "entities": [
+    {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 18,
+      "end": 29,
+      "id": "e0"
+    },
+    {
+      "surface": "Clean electricity",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 62,
+      "end": 79,
+      "id": "e1"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 109,
+      "end": 121,
+      "id": "e2"
+    },
+    {
+      "surface": "Earth",
+      "type": "LOCATION",
+      "canonical": "earth",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 142,
+      "end": 147,
+      "id": "e3"
+    },
+    {
+      "surface": "America's",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 191,
+      "end": 200,
+      "id": "e4"
+    },
+    {
+      "surface": "India's",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 246,
+      "end": 253,
+      "id": "e5"
+    },
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 255,
+      "end": 260,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "The production of electricity continues to increase globally. Clean electricity is used more frequently than fossil fuels which is better for Earth. When looking at the three smaller scales, America's has pretty much stayed constant, as well as, India's. China on the other hand has been showing exponential growth."
+    }
+  ],
+  "tagged_text": "The production of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> continues to increase globally. <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">Clean electricity</entity> is used more frequently than <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> which is better for <entity type=\"LOCATION\" canonical=\"earth\">Earth</entity>. When looking at the three smaller scales, <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" speaker_context=\"true\">America's</entity> has pretty much stayed constant, as well as, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India's</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> on the other hand has been showing exponential growth."
+}

@@ -1,0 +1,122 @@
+{
+  "article_id": "193",
+  "comment_index": 33,
+  "raw_comment": "1: America is facing the problem of lacking water\n2: I wonder to know the cause of the phenomenon and how can individuals like us to solve this problem\n3. This will have an effect on my friends, some of them living in the area where is severe drought.\n4: America is thirsty: Half of America lack of water",
+  "entities": [
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 44,
+      "end": 49,
+      "id": "e0"
+    },
+    {
+      "surface": "phenomenon",
+      "type": "OTHER_ENTITY",
+      "canonical": "phenomenon",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 87,
+      "end": 97,
+      "id": "e1"
+    },
+    {
+      "surface": "friends",
+      "type": "OTHER_ENTITY",
+      "canonical": "friends",
+      "subtype": "person",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 186,
+      "end": 193,
+      "id": "e2"
+    },
+    {
+      "surface": "area",
+      "type": "LOCATION",
+      "canonical": "area",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 222,
+      "end": 226,
+      "id": "e3"
+    },
+    {
+      "surface": "severe drought",
+      "type": "EVENT",
+      "canonical": "severe_drought",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 236,
+      "end": 250,
+      "id": "e4"
+    },
+    {
+      "surface": "America is thirsty: Half of America lack of water",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 255,
+      "end": 304,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "America",
+      "reason": "Could map to LOCATION america, but the normalized dictionary also treats it as a country-level reference; context is rhetorical and not clearly geographic."
+    },
+    {
+      "surface": "lacking water",
+      "reason": "Could refer to water scarcity or water shortage, but no exact canonical phrase is provided in the normalized dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "America is facing the problem of lacking water"
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder to know the cause of the phenomenon and how can individuals like us to solve this problem"
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "This will have an effect on my friends, some of them living in the area where is severe drought."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "America is thirsty: Half of America lack of water"
+    }
+  ],
+  "tagged_text": "1: America is facing the problem of lacking water\n2: I wonder to know the cause of the phenomenon and how can individuals like us to solve this problem\n3. This will have an effect on my friends, some of them living in the area where is severe drought.\n4: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">America is thirsty: Half of America lack of water</entity>"
+}

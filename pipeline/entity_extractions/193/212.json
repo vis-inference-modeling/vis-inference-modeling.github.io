@@ -1,0 +1,168 @@
+{
+  "article_id": "193",
+  "comment_index": 212,
+  "raw_comment": "What do you notice?\nI noticed there are many more droughts near the Rocky Mountain and the middle of the U.S. I also noticed that the places with less water experienced way more droughts than the places with more water like around the coast. \n\nWhat do you wonder?\nI wonder why the dryer regions experience more droughts when they are in the center of the U.S. I also wonder if this graph really is a good representation of droughts throughout the U.S. or if it is just a time that weather was different and the graph isn’t accurate. \n\nHow does this relate to you and your community?\nThis relates to me because we are surrounded by lakes and droughts could really affect our lifestyle, including the ways we eat and our produce being grown. \n\nHeadline:\n“Analyzing drought severity across the U.S.”",
+  "entities": [
+    {
+      "surface": "Rocky Mountain",
+      "type": "LOCATION",
+      "canonical": "rocky_mountains",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 68,
+      "end": 82,
+      "id": "e0"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "us",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 105,
+      "end": 109,
+      "id": "e1"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "us",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 355,
+      "end": 359,
+      "id": "e2"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "us",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 447,
+      "end": 451,
+      "id": "e3"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "us",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": 791,
+      "end": 795,
+      "id": "e4"
+    },
+    {
+      "surface": "coast",
+      "type": "LOCATION",
+      "canonical": "coasts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "time",
+      "type": "TIME_REFERENCE",
+      "canonical": "time",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "weather",
+      "type": "EVENT",
+      "canonical": "weather",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "lakes",
+      "type": "LOCATION",
+      "canonical": "lakes",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "us",
+      "var": "country",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice?\nI noticed there are many more droughts near the Rocky Mountain and the middle of the U.S. I also noticed that the places with less water experienced way more droughts than the places with more water like around the coast. \n\nWhat do you wonder?\nI wonder why the dryer regions experience more droughts when they are in the center of the U.S. I also wonder if this graph really is a good representation of droughts throughout the U.S. or if it is just a time that weather was different and the graph isn’t accurate. \n\nHow does this relate to you and your community?\nThis relates to me because we are surrounded by lakes and droughts could really affect our lifestyle, including the ways we eat and our produce being grown."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "“Analyzing drought severity across the U.S.”"
+    }
+  ],
+  "tagged_text": "What do you notice?\nI noticed there are many more droughts near the <entity type=\"LOCATION\" canonical=\"rocky_mountains\" modality=\"asserted\">Rocky Mountain</entity> and the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"us\" var=\"country\">U.S.</entity>. I also noticed that the places with less water experienced way more droughts than the places with more water like around the <entity type=\"LOCATION\" canonical=\"coasts\" modality=\"asserted\">coast</entity>. \n\nWhat do you wonder?\nI wonder why the dryer regions experience more droughts when they are in the center of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"us\" var=\"country\" modality=\"questioned\">U.S.</entity>. I also wonder if this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" modality=\"questioned\">graph</entity> really is a good representation of droughts throughout the <entity type=\"DATA_VAR_LEVEL\" canonical=\"us\" var=\"country\" modality=\"questioned\">U.S.</entity> or if it is just a <entity type=\"TIME_REFERENCE\" canonical=\"time\" modality=\"questioned\">time</entity> that <entity type=\"EVENT\" canonical=\"weather\" modality=\"questioned\">weather</entity> was different and the graph isn’t accurate. \n\nHow does this relate to you and your community?\nThis relates to me because we are surrounded by <entity type=\"LOCATION\" canonical=\"lakes\" speaker_context=\"true\">lakes</entity> and droughts could really affect our lifestyle, including the ways we eat and our produce being grown. \n\nHeadline:\n“Analyzing drought severity across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"us\" var=\"country\" section=\"headline\">U.S.</entity>.”"
+}

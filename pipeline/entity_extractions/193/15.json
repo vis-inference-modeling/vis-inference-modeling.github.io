@@ -1,0 +1,125 @@
+{
+  "article_id": "193",
+  "comment_index": 15,
+  "raw_comment": "What stands out to me is the exceptionally low number of areas with out any form of drought. For example, Florida is the only state where the majority of land is not experiencing any form of drought. I wonder what is causing this drought and if it is being experienced outside of the states? Even though I live in Florida, I have felt some of this drought as I have felt the humidity lower. I feel this especially on my runs where I am sweating significantly less than only around 2 weeks ago. A title for this could be drought sweeps the entire nation",
+  "entities": [
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 84,
+      "end": 91,
+      "id": "e0"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 191,
+      "end": 198,
+      "id": "e1"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 230,
+      "end": 237,
+      "id": "e2"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": 348,
+      "end": 355,
+      "id": "e3"
+    },
+    {
+      "surface": "2 weeks ago",
+      "type": "TIME_REFERENCE",
+      "canonical": "two_months",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 481,
+      "end": 492,
+      "id": "e4"
+    },
+    {
+      "surface": "drought sweeps the entire nation",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 520,
+      "end": 552,
+      "id": "e5"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What stands out to me is the exceptionally low number of areas with out any form of drought. For example, Florida is the only state where the majority of land is not experiencing any form of drought. I wonder what is causing this drought and if it is being experienced outside of the states? Even though I live in Florida, I have felt some of this drought as I have felt the humidity lower. I feel this especially on my runs where I am sweating significantly less than only around 2 weeks ago."
+    },
+    {
+      "section": "headline",
+      "label": "A title for this could be",
+      "text": "drought sweeps the entire nation"
+    }
+  ],
+  "tagged_text": "What stands out to me is the exceptionally low number of areas with out any form of <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity>. For example, <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\">Florida</entity> is the only state where the majority of land is not experiencing any form of drought. I wonder what is causing this <entity type=\"EVENT\" canonical=\"drought\" section=\"body\" modality=\"questioned\">drought</entity> and if it is being experienced outside of the states? Even though I live in <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\" speaker_context=\"true\">Florida</entity>, I have felt some of this <entity type=\"EVENT\" canonical=\"drought\" section=\"body\" speaker_context=\"true\">drought</entity> as I have felt the humidity lower. I feel this especially on my runs where I am sweating significantly less than only around <entity type=\"TIME_REFERENCE\" canonical=\"two_months\" section=\"body\">2 weeks ago</entity>. A title for this could be <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">drought sweeps the entire nation</entity>"
+}

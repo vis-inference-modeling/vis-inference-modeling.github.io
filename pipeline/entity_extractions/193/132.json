@@ -1,0 +1,174 @@
+{
+  "article_id": "193",
+  "comment_index": 132,
+  "raw_comment": "I noticed that Tri state area  have become moderate which is enough to cause fires like what happened in Jersey/Manhattan/Long Island. \n\nDROUGHTS CONQUER AMERICA \nI wonder if climate change is a factor to the increasing droughts in America. \n\nThis relates to me as I live in Long Island because we just faced a drought from September-November, which is why the air smelled like a campfire as this was one of the longest droughts we have had in a long time.",
+  "entities": [
+    {
+      "surface": "moderate",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "moderate",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 43,
+      "end": 51,
+      "id": "e0"
+    },
+    {
+      "surface": "fires",
+      "type": "EVENT",
+      "canonical": "fires",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 77,
+      "end": 82,
+      "id": "e1"
+    },
+    {
+      "surface": "DROUGHTS CONQUER AMERICA",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 137,
+      "end": 161,
+      "id": "e2"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 175,
+      "end": 189,
+      "id": "e3"
+    },
+    {
+      "surface": "America",
+      "type": "LOCATION",
+      "canonical": "america",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 232,
+      "end": 239,
+      "id": "e4"
+    },
+    {
+      "surface": "Long Island",
+      "type": "LOCATION",
+      "canonical": "long_island",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 275,
+      "end": 286,
+      "id": "e5"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 311,
+      "end": 318,
+      "id": "e6"
+    },
+    {
+      "surface": "September-November",
+      "type": "TIME_REFERENCE",
+      "canonical": "september_november",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 324,
+      "end": 342,
+      "id": "e7"
+    },
+    {
+      "surface": "air",
+      "type": "OTHER_ENTITY",
+      "canonical": "air",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 361,
+      "end": 364,
+      "id": "e8"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 420,
+      "end": 428,
+      "id": "e9"
+    },
+    {
+      "surface": "Long Island",
+      "type": "LOCATION",
+      "canonical": "long_island",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "Tri state area",
+      "reason": "Likely a geographic region, but not present in the provided location dictionary."
+    },
+    {
+      "surface": "Jersey/Manhattan/Long Island",
+      "reason": "Composite mention with multiple locations; could be split into separate locations, but the surface form is not cleanly segmented."
+    },
+    {
+      "surface": "campfire",
+      "reason": "Could be a metaphorical smell description or an implied fire event; not clearly an entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that Tri state area  have become moderate which is enough to cause fires like what happened in Jersey/Manhattan/Long Island. \n\nDROUGHTS CONQUER AMERICA \nI wonder if climate change is a factor to the increasing droughts in America. \n\nThis relates to me as I live in Long Island because we just faced a drought from September-November, which is why the air smelled like a campfire as this was one of the longest droughts we have had in a long time."
+    }
+  ],
+  "tagged_text": "I noticed that Tri state area  have become <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderate</entity> which is enough to cause <entity type=\"EVENT\" canonical=\"fires\">fires</entity> like what happened in Jersey/Manhattan/Long Island. \n\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\">DROUGHTS CONQUER AMERICA</entity> \nI wonder if <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity> is a factor to the increasing droughts in <entity type=\"LOCATION\" canonical=\"america\">America</entity>. \n\nThis relates to me as I live in <entity type=\"LOCATION\" canonical=\"long_island\" speaker_context=\"true\">Long Island</entity> because we just faced a <entity type=\"EVENT\" canonical=\"drought\">drought</entity> from <entity type=\"TIME_REFERENCE\" canonical=\"september_november\">September-November</entity>, which is why the <entity type=\"OTHER_ENTITY\" canonical=\"air\" subtype=\"other\">air</entity> smelled like a campfire as this was one of the longest <entity type=\"EVENT\" canonical=\"droughts\">droughts</entity> we have had in a long time."
+}

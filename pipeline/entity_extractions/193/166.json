@@ -1,0 +1,206 @@
+{
+  "article_id": "193",
+  "comment_index": 166,
+  "raw_comment": "The graph shows that the majority of the central states experience the worst degree of droughts. I wonder why nearly half of Colorado does not experience drought, especially because it is a central state. I live in Long Island, New York, which according to the graph is severe. This can affect the water quality around the island further impacting fishing and swimming in lakes and other large bodies of water. A catchy headline for the graph could be \"Drought crisis in central United States\".",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 4,
+      "end": 9,
+      "id": "e0"
+    },
+    {
+      "surface": "central states",
+      "type": "LOCATION",
+      "canonical": "central_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 41,
+      "end": 55,
+      "id": "e1"
+    },
+    {
+      "surface": "Colorado",
+      "type": "LOCATION",
+      "canonical": "colorado",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 125,
+      "end": 133,
+      "id": "e2"
+    },
+    {
+      "surface": "central state",
+      "type": "LOCATION",
+      "canonical": "central_states",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 190,
+      "end": 203,
+      "id": "e3"
+    },
+    {
+      "surface": "Long Island",
+      "type": "LOCATION",
+      "canonical": "long_island",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 215,
+      "end": 226,
+      "id": "e4"
+    },
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 228,
+      "end": 236,
+      "id": "e5"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 270,
+      "end": 276,
+      "id": "e6"
+    },
+    {
+      "surface": "water quality",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_quality",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 298,
+      "end": 311,
+      "id": "e7"
+    },
+    {
+      "surface": "island",
+      "type": "LOCATION",
+      "canonical": "island",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 323,
+      "end": 329,
+      "id": "e8"
+    },
+    {
+      "surface": "fishing",
+      "type": "OTHER_ENTITY",
+      "canonical": "fishing",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 348,
+      "end": 355,
+      "id": "e9"
+    },
+    {
+      "surface": "swimming",
+      "type": "OTHER_ENTITY",
+      "canonical": "swimming",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 360,
+      "end": 368,
+      "id": "e10"
+    },
+    {
+      "surface": "lakes",
+      "type": "LOCATION",
+      "canonical": "lakes",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 372,
+      "end": 377,
+      "id": "e11"
+    },
+    {
+      "surface": "large bodies of water",
+      "type": "LOCATION",
+      "canonical": "large_bodies_of_water",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 388,
+      "end": 409,
+      "id": "e12"
+    },
+    {
+      "surface": "Drought crisis in central United States",
+      "type": "EVENT",
+      "canonical": "drought_crisis_in_central_united_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 453,
+      "end": 492,
+      "id": "e13"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "droughts",
+      "reason": "Generic plural event mention repeated several times; tagged only where clearly tied to severity or headline, but some instances may be redundant."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "The graph shows that the majority of the central states experience the worst degree of droughts. I wonder why nearly half of Colorado does not experience drought, especially because it is a central state. I live in Long Island, New York, which according to the graph is severe. This can affect the water quality around the island further impacting fishing and swimming in lakes and other large bodies of water. A catchy headline for the graph could be \"Drought crisis in central United States.\""
+    }
+  ],
+  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows that the majority of the <entity type=\"LOCATION\" canonical=\"central_states\">central states</entity> experience the worst degree of droughts. I wonder why nearly half of <entity type=\"LOCATION\" canonical=\"colorado\">Colorado</entity> does not experience drought, especially because it is a <entity type=\"LOCATION\" canonical=\"central_states\">central state</entity>. I live in <entity type=\"LOCATION\" canonical=\"long_island\">Long Island</entity>, <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity>, which according to the graph is <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity>. This can affect the <entity type=\"OTHER_ENTITY\" canonical=\"water_quality\" subtype=\"other\">water quality</entity> around the <entity type=\"LOCATION\" canonical=\"island\">island</entity> further impacting <entity type=\"OTHER_ENTITY\" canonical=\"fishing\" subtype=\"other\">fishing</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"swimming\" subtype=\"other\">swimming</entity> in <entity type=\"LOCATION\" canonical=\"lakes\">lakes</entity> and other <entity type=\"LOCATION\" canonical=\"large_bodies_of_water\">large bodies of water</entity>. A catchy headline for the graph could be \"<entity type=\"EVENT\" canonical=\"drought_crisis_in_central_united_states\">Drought crisis in central United States</entity>.\""
+}

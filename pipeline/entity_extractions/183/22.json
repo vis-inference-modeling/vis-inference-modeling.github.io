@@ -1,0 +1,62 @@
+{
+  "article_id": "183",
+  "comment_index": 22,
+  "raw_comment": "This graph shows the percentage of young people who keep in contact with there parents on a pretty consistent basis. This graph shows that young women stay in more contact than young men with there parents.",
+  "entities": [
+    {
+      "surface": "This graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 0,
+      "end": 10,
+      "id": "e0"
+    },
+    {
+      "surface": "This graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 117,
+      "end": 127,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "percentage",
+      "reason": "Could be UNIT percent/percentages, but the comment uses it generically and no chart-specific schema is available."
+    },
+    {
+      "surface": "young people",
+      "reason": "Could be OTHER_ENTITY, but no confirmed canonical for this article beyond the provided dictionary and the comment is generic."
+    },
+    {
+      "surface": "young women",
+      "reason": "Could be OTHER_ENTITY, but no confirmed canonical mapping requested for this article."
+    },
+    {
+      "surface": "young men",
+      "reason": "Could be OTHER_ENTITY, but no confirmed canonical mapping requested for this article."
+    },
+    {
+      "surface": "their parents",
+      "reason": "Generic reference; could be OTHER_ENTITY, but not confidently canonicalized here."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "This graph shows the percentage of young people who keep in contact with there parents on a pretty consistent basis. This graph shows that young women stay in more contact than young men with there parents."
+    }
+  ],
+  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"graph\">This graph</entity> shows the percentage of young people who keep in contact with there parents on a pretty consistent basis. <entity type=\"CHART_ELEMENT\" canonical=\"graph\">This graph</entity> shows that young women stay in more contact than young men with there parents."
+}

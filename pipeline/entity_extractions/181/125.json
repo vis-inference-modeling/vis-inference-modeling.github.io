@@ -1,0 +1,130 @@
+{
+  "article_id": "181",
+  "comment_index": 125,
+  "raw_comment": "I notice that China  rely heavily on fossil fuels while also using the most clean energy.\n\nI wonder why India usage of fossil fuels and clean energy are so low despite having a large population? Does this mean the access of electricity is limited?\n\nHeadline: Race to Fuel",
+  "entities": [
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 37,
+      "end": 49,
+      "id": "e0"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 119,
+      "end": 131,
+      "id": "e1"
+    },
+    {
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 136,
+      "end": 148,
+      "id": "e2"
+    },
+    {
+      "surface": "population",
+      "type": "DATA_VAR",
+      "canonical": "population",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 183,
+      "end": 193,
+      "id": "e3"
+    },
+    {
+      "surface": "Race to Fuel",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 259,
+      "end": 271,
+      "id": "e4"
+    },
+    {
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that China  rely heavily on fossil fuels while also using the most clean energy.\n\nI wonder why India usage of fossil fuels and clean energy are so low despite having a large population? Does this mean the access of electricity is limited?"
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Race to Fuel"
+    }
+  ],
+  "tagged_text": "I notice that China  rely heavily on <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> while also using the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity>.\n\nI wonder why India usage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\" modality=\"questioned\">fossil fuels</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\" modality=\"questioned\">clean energy</entity> are so low despite having a large <entity type=\"DATA_VAR\" canonical=\"population\" section=\"body\" modality=\"questioned\">population</entity>? Does this mean the access of electricity is limited?\n\nHeadline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Race to Fuel</entity>"
+}

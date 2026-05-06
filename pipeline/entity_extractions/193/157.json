@@ -1,0 +1,199 @@
+{
+  "article_id": "193",
+  "comment_index": 157,
+  "raw_comment": "I notice that most of the US is covered with areas of drought. The graph shows the central states yet not really Colorado experiencing drought. Which I found pretty interesting because it is a central state. Montana and Ohio have an extremely high drought number, being in the center of the US means less access to water income and water cycles to produce rain surplus. This can negatively affect humans, animals and breathing.",
+  "entities": [
+    {
+      "surface": "US",
+      "type": "LOCATION",
+      "canonical": "us",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 26,
+      "end": 28,
+      "id": "e0"
+    },
+    {
+      "surface": "US",
+      "type": "LOCATION",
+      "canonical": "us",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 291,
+      "end": 293,
+      "id": "e1"
+    },
+    {
+      "surface": "water income",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_income",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 315,
+      "end": 327,
+      "id": "e2"
+    },
+    {
+      "surface": "water cycles",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_cycles",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 332,
+      "end": 344,
+      "id": "e3"
+    },
+    {
+      "surface": "rain surplus",
+      "type": "OTHER_ENTITY",
+      "canonical": "rain_surplus",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 356,
+      "end": 368,
+      "id": "e4"
+    },
+    {
+      "surface": "humans",
+      "type": "OTHER_ENTITY",
+      "canonical": "humans",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 397,
+      "end": 403,
+      "id": "e5"
+    },
+    {
+      "surface": "animals",
+      "type": "OTHER_ENTITY",
+      "canonical": "animals",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 405,
+      "end": 412,
+      "id": "e6"
+    },
+    {
+      "surface": "breathing",
+      "type": "OTHER_ENTITY",
+      "canonical": "breathing",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 417,
+      "end": 426,
+      "id": "e7"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "central states",
+      "type": "LOCATION",
+      "canonical": "central_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "Colorado",
+      "type": "LOCATION",
+      "canonical": "colorado",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "Montana",
+      "type": "LOCATION",
+      "canonical": "montana",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "Ohio",
+      "type": "LOCATION",
+      "canonical": "ohio",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "areas of drought",
+      "reason": "Generic descriptive phrase; not a stable entity."
+    },
+    {
+      "surface": "center of the US",
+      "reason": "Location phrase but no exact canonical match beyond broader region references."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that most of the US is covered with areas of drought. The graph shows the central states yet not really Colorado experiencing drought. Which I found pretty interesting because it is a central state. Montana and Ohio have an extremely high drought number, being in the center of the US means less access to water income and water cycles to produce rain surplus. This can negatively affect humans, animals and breathing."
+    }
+  ],
+  "tagged_text": "I notice that most of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\">US</entity> is covered with areas of drought. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> shows the <entity type=\"LOCATION\" canonical=\"central_states\" section=\"body\">central states</entity> yet not really <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\">Colorado</entity> experiencing drought. Which I found pretty interesting because it is a central state. <entity type=\"LOCATION\" canonical=\"montana\" section=\"body\">Montana</entity> and <entity type=\"LOCATION\" canonical=\"ohio\" section=\"body\">Ohio</entity> have an extremely high drought number, being in the center of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\">US</entity> means less access to <entity type=\"OTHER_ENTITY\" canonical=\"water_income\" subtype=\"other\" section=\"body\">water income</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"water_cycles\" subtype=\"other\" section=\"body\">water cycles</entity> to produce <entity type=\"OTHER_ENTITY\" canonical=\"rain_surplus\" subtype=\"other\" section=\"body\">rain surplus</entity>. This can negatively affect <entity type=\"OTHER_ENTITY\" canonical=\"humans\" subtype=\"other\" section=\"body\">humans</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"animals\" subtype=\"other\" section=\"body\">animals</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"breathing\" subtype=\"other\" section=\"body\">breathing</entity>."
+}

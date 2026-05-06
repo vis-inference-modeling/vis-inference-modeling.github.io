@@ -1,0 +1,95 @@
+{
+  "article_id": "193",
+  "comment_index": 182,
+  "raw_comment": "I noticed that most of America is in drought, with some parts being white and Alaska and Florida not being affected as much like the others states.\nWhy these drought happen, and if there's anything we could do help stop extreme to exception drought from happening as much.\nWell it's affecting everyone,\nDrought in America",
+  "entities": [
+    {
+      "surface": "America",
+      "type": "LOCATION",
+      "canonical": "america",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 23,
+      "end": 30,
+      "id": "e0"
+    },
+    {
+      "surface": "Alaska",
+      "type": "LOCATION",
+      "canonical": "alaska",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 78,
+      "end": 84,
+      "id": "e1"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 89,
+      "end": 96,
+      "id": "e2"
+    },
+    {
+      "surface": "extreme to exception drought",
+      "type": "EVENT",
+      "canonical": "extreme_drought",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 220,
+      "end": 248,
+      "id": "e3"
+    },
+    {
+      "surface": "Drought in America",
+      "type": "OTHER_ENTITY",
+      "canonical": "drought_in_america",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "subtype": "other",
+      "occurrence_index": 0,
+      "start": 303,
+      "end": 321,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "the others states",
+      "reason": "Likely refers to other states, but the phrasing is ungrammatical and not a clear canonical match."
+    },
+    {
+      "surface": "everyone",
+      "reason": "Generic human reference; could be tagged as OTHER_ENTITY but is not specific enough."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that most of America is in drought, with some parts being white and Alaska and Florida not being affected as much like the others states.\nWhy these drought happen, and if there's anything we could do help stop extreme to exception drought from happening as much.\nWell it's affecting everyone,"
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Drought in America"
+    }
+  ],
+  "tagged_text": "I noticed that most of <entity type=\"LOCATION\" canonical=\"america\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">America</entity> is in drought, with some parts being white and <entity type=\"LOCATION\" canonical=\"alaska\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Alaska</entity> and <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Florida</entity> not being affected as much like the others states.\nWhy these drought happen, and if there's anything we could do help stop <entity type=\"EVENT\" canonical=\"extreme_drought\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">extreme to exception drought</entity> from happening as much.\nWell it's affecting everyone,\n<entity type=\"headline_title\" canonical=\"drought_in_america\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Drought in America</entity>"
+}

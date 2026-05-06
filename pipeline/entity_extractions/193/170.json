@@ -1,0 +1,105 @@
+{
+  "article_id": "193",
+  "comment_index": 170,
+  "raw_comment": "What do you notice? I noticed that there is a nationwide drought however there are places where the precipitation and drought is higher.\nWhat do you wonder? I wonder what has caused there to be such a severe drought. \nHow does this relate to you and your community? This relates to me and my community because there has been a drought in my area. \nHeadline: Nationwide droughts, See what that means for you.",
+  "entities": [
+    {
+      "surface": "precipitation",
+      "type": "DATA_VAR",
+      "canonical": "precipitation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 100,
+      "end": 113,
+      "id": "e0"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 201,
+      "end": 207,
+      "id": "e1"
+    },
+    {
+      "surface": "me",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 282,
+      "end": 284,
+      "id": "e2"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 289,
+      "end": 301,
+      "id": "e3"
+    },
+    {
+      "surface": "my area",
+      "type": "LOCATION",
+      "canonical": "my_area",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 338,
+      "end": 345,
+      "id": "e4"
+    },
+    {
+      "surface": "Nationwide droughts",
+      "type": "EVENT",
+      "canonical": "nationwide_droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 358,
+      "end": 377,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "nationwide drought",
+      "reason": "Could be an event/title-like phrase, but no exact canonical match beyond the plural headline form."
+    },
+    {
+      "surface": "drought",
+      "reason": "Generic repeated event mention; context suggests drought severity but not a specific canonical level."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice? I noticed that there is a nationwide drought however there are places where the precipitation and drought is higher.\nWhat do you wonder? I wonder what has caused there to be such a severe drought. \nHow does this relate to you and your community? This relates to me and my community because there has been a drought in my area. \nHeadline: Nationwide droughts, See what that means for you."
+    }
+  ],
+  "tagged_text": "What do you notice? I noticed that there is a nationwide drought however there are places where the <entity type=\"DATA_VAR\" canonical=\"precipitation\">precipitation</entity> and drought is higher.\nWhat do you wonder? I wonder what has caused there to be such a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity> drought. \nHow does this relate to you and your community? This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because there has been a drought in <entity type=\"LOCATION\" canonical=\"my_area\">my area</entity>. \nHeadline: <entity type=\"EVENT\" canonical=\"nationwide_droughts\">Nationwide droughts</entity>, See what that means for you."
+}

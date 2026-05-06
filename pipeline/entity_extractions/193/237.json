@@ -1,0 +1,121 @@
+{
+  "article_id": "193",
+  "comment_index": 237,
+  "raw_comment": "Notice: Colorado isnt as dry compared to other states as we thought.\n\nWonder: Why is hawaii pretty severely dry? Why is West Virginia and Ohio in a bad drought?\n\nRelate: It's good to know if you live in a dry scene or a drought\n\nHeadline: Droughts seen across the US",
+  "entities": [
+    {
+      "surface": "Colorado",
+      "type": "LOCATION",
+      "canonical": "colorado",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 8,
+      "end": 16,
+      "id": "e0"
+    },
+    {
+      "surface": "hawaii",
+      "type": "LOCATION",
+      "canonical": "hawaii",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 85,
+      "end": 91,
+      "id": "e1"
+    },
+    {
+      "surface": "West Virginia",
+      "type": "LOCATION",
+      "canonical": "west_virginia",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 120,
+      "end": 133,
+      "id": "e2"
+    },
+    {
+      "surface": "Ohio",
+      "type": "LOCATION",
+      "canonical": "ohio",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 138,
+      "end": 142,
+      "id": "e3"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 152,
+      "end": 159,
+      "id": "e4"
+    },
+    {
+      "surface": "Droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 239,
+      "end": 247,
+      "id": "e5"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 264,
+      "end": 266,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "other states",
+      "reason": "Generic location-like phrase without a specific canonical mapping."
+    },
+    {
+      "surface": "dry scene",
+      "reason": "Non-standard phrasing for drought conditions; not a confirmed entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Notice: Colorado isnt as dry compared to other states as we thought.\n\nWonder: Why is hawaii pretty severely dry? Why is West Virginia and Ohio in a bad drought?\n\nRelate: It's good to know if you live in a dry scene or a drought"
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Droughts seen across the US"
+    }
+  ],
+  "tagged_text": "Notice: <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\">Colorado</entity> isnt as dry compared to other states as we thought.\n\nWonder: Why is <entity type=\"LOCATION\" canonical=\"hawaii\" section=\"body\">hawaii</entity> pretty severely dry? Why is <entity type=\"LOCATION\" canonical=\"west_virginia\" section=\"body\">West Virginia</entity> and <entity type=\"LOCATION\" canonical=\"ohio\" section=\"body\">Ohio</entity> in a bad <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity>?\n\nRelate: It's good to know if you live in a dry scene or a drought\n\nHeadline: <entity type=\"EVENT\" canonical=\"droughts\" section=\"headline\">Droughts</entity> seen across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">US</entity>"
+}

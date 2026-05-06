@@ -1,0 +1,112 @@
+{
+  "article_id": "193",
+  "comment_index": 181,
+  "raw_comment": "-I noticed that the droughts, pictured on the map, are generally focused in the middle of the United States. \n-How does this differ by year, as well as what the map of the broader world looks like? Additionally, how come the New England area has such varied areas of drought?\n-As for the relation to my community, the map shows that there is not much of a drought in my area. \n-“Drought Across The States: Increasing Effect on Americans”",
+  "entities": [
+    {
+      "surface": "United States",
+      "type": "LOCATION",
+      "canonical": "middle_of_the_country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 94,
+      "end": 107,
+      "id": "e0"
+    },
+    {
+      "surface": "year",
+      "type": "TIME_REFERENCE",
+      "canonical": "year",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 135,
+      "end": 139,
+      "id": "e1"
+    },
+    {
+      "surface": "world",
+      "type": "LOCATION",
+      "canonical": "world",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 180,
+      "end": 185,
+      "id": "e2"
+    },
+    {
+      "surface": "New England area",
+      "type": "LOCATION",
+      "canonical": "new_england",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 225,
+      "end": 241,
+      "id": "e3"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 300,
+      "end": 312,
+      "id": "e4"
+    },
+    {
+      "surface": "my area",
+      "type": "LOCATION",
+      "canonical": "my_area",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 367,
+      "end": 374,
+      "id": "e5"
+    },
+    {
+      "surface": "Drought Across The States: Increasing Effect on Americans",
+      "type": "OTHER_ENTITY",
+      "canonical": "drought_across_the_states_increasing_effect_on_americans",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "subtype": "other",
+      "occurrence_index": 0,
+      "start": 379,
+      "end": 436,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "-I noticed that the droughts, pictured on the map, are generally focused in the middle of the United States. \n-How does this differ by year, as well as what the map of the broader world looks like? Additionally, how come the New England area has such varied areas of drought?\n-As for the relation to my community, the map shows that there is not much of a drought in my area. \n-“Drought Across The States: Increasing Effect on Americans”"
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Drought Across The States: Increasing Effect on Americans"
+    }
+  ],
+  "tagged_text": "-I noticed that the droughts, pictured on the map, are generally focused in the middle of the <entity type=\"LOCATION\" canonical=\"middle_of_the_country\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">United States</entity>. \n-How does this differ by <entity type=\"TIME_REFERENCE\" canonical=\"year\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">year</entity>, as well as what the map of the broader <entity type=\"LOCATION\" canonical=\"world\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">world</entity> looks like? Additionally, how come the <entity type=\"LOCATION\" canonical=\"new_england\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">New England area</entity> has such varied areas of drought?\n-As for the relation to <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity>, the map shows that there is not much of a drought in <entity type=\"LOCATION\" canonical=\"my_area\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my area</entity>. \n-“<entity type=\"headline_title\" canonical=\"drought_across_the_states_increasing_effect_on_americans\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Drought Across The States: Increasing Effect on Americans</entity>”"
+}

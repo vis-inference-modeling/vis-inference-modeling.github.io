@@ -1,0 +1,65 @@
+{
+  "article_id": "193",
+  "comment_index": 117,
+  "raw_comment": "I noticed all the droughts are happening in places with little water sources.\nI wonder how people are going to fix this massive problem.\nThere was previously I severe lack of rain a few weeks back, so this article can be important.",
+  "entities": [
+    {
+      "surface": "water sources",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_sources",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 63,
+      "end": 76,
+      "id": "e0"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 91,
+      "end": 97,
+      "id": "e1"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 175,
+      "end": 179,
+      "id": "e2"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "this massive problem",
+      "reason": "Generic problem reference; entity-like but no clear canonical match."
+    },
+    {
+      "surface": "a few weeks back",
+      "reason": "Time reference is implied but not in the confirmed time dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed all the droughts are happening in places with little water sources.\nI wonder how people are going to fix this massive problem.\nThere was previously I severe lack of rain a few weeks back, so this article can be important."
+    }
+  ],
+  "tagged_text": "I noticed all the droughts are happening in places with little <entity type=\"OTHER_ENTITY\" canonical=\"water_sources\" subtype=\"other\">water sources</entity>.\nI wonder how <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\">people</entity> are going to fix this massive problem.\nThere was previously I severe lack of <entity type=\"EVENT\" canonical=\"rain\">rain</entity> a few weeks back, so this article can be important."
+}

@@ -1,0 +1,55 @@
+{
+  "article_id": "193",
+  "comment_index": 83,
+  "raw_comment": "Wonder: I wonder where in Alaska was affected. \nTitle: The World is Getting Dry",
+  "entities": [
+    {
+      "surface": "Alaska",
+      "type": "LOCATION",
+      "canonical": "alaska",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 26,
+      "end": 32,
+      "id": "e0"
+    },
+    {
+      "surface": "The World is Getting Dry",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 55,
+      "end": 79,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "where in Alaska",
+      "reason": "The phrase indicates an unspecified sub-location within Alaska, but no more specific location is given."
+    },
+    {
+      "surface": "The World",
+      "reason": "Could be a rhetorical/global reference or a title element; treated as part of the headline title rather than a standalone LOCATION."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Wonder: I wonder where in Alaska was affected."
+    },
+    {
+      "section": "headline",
+      "label": "Title",
+      "text": "The World is Getting Dry"
+    }
+  ],
+  "tagged_text": "Wonder: I wonder where in <entity type=\"LOCATION\" canonical=\"alaska\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Alaska</entity> was affected. \nTitle: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">The World is Getting Dry</entity>"
+}

@@ -1,0 +1,114 @@
+{
+  "article_id": "183",
+  "comment_index": 54,
+  "raw_comment": "In this graph, it is measuring the percentage of people ages 18-34 that don’t live with a parent who say they reach out to a parent at least once a day or a few times a week and is comparing the percentages of young men versus young women and the methods in which they communicate with their parents. I noticed that, in general, young women had a higher percentage of reaching out to parents than young men did. I also noticed that, for both women and men, the most popular means of communication was by sending texts and the least popular means of communication was visiting in person. I wonder if this is because sending texts requires much less time and effort compared to visiting in person so it is easier for young adults to quickly send a text amidst their busy daily schedules. I also noticed that there was the lowest difference in percentage between men and women for visiting in person and wonder why this is the case compared to the disparity between genders being relatively higher for phone/video-chat and sending texts. This relates to my community because I know some people in college who don’t live with their parents right now and it is often difficult for them to find time to contact their families but try to text or call them as much as they can. My headline for this graph would be: “Connecting Back Home - Is Contacting Parents a Priority?”.",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 8,
+      "end": 13,
+      "id": "e0"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 1291,
+      "end": 1296,
+      "id": "e1"
+    },
+    {
+      "surface": "Connecting Back Home - Is Contacting Parents a Priority?",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1308,
+      "end": 1364,
+      "id": "e2"
+    },
+    {
+      "surface": "18-34",
+      "type": "TIME_REFERENCE",
+      "canonical": "18_34",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e3"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "college",
+      "type": "OTHER_ENTITY",
+      "canonical": "college",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "young men",
+      "reason": "Likely a demographic group from the graph, but no chart-specific reference list is available for this article and no confirmed canonical ID was provided for this level."
+    },
+    {
+      "surface": "young women",
+      "reason": "Likely a demographic group from the graph, but no chart-specific reference list is available for this article and no confirmed canonical ID was provided for this level."
+    },
+    {
+      "surface": "sending texts",
+      "reason": "Communication mode mentioned in the comment, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "visiting in person",
+      "reason": "Communication mode mentioned in the comment, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "phone/video-chat",
+      "reason": "Communication mode mentioned in the comment, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "In this graph, it is measuring the percentage of people ages 18-34 that don’t live with a parent who say they reach out to a parent at least once a day or a few times a week and is comparing the percentages of young men versus young women and the methods in which they communicate with their parents. I noticed that, in general, young women had a higher percentage of reaching out to parents than young men did. I also noticed that, for both women and men, the most popular means of communication was by sending texts and the least popular means of communication was visiting in person. I wonder if this is because sending texts requires much less time and effort compared to visiting in person so it is easier for young adults to quickly send a text amidst their busy daily schedules. I also noticed that there was the lowest difference in percentage between men and women for visiting in person and wonder why this is the case compared to the disparity between genders being relatively higher for phone/video-chat and sending texts. This relates to my community because I know some people in college who don’t live with their parents right now and it is often difficult for them to find time to contact their families but try to text or call them as much as they can. My headline for this graph would be: “Connecting Back Home - Is Contacting Parents a Priority?”"
+    }
+  ],
+  "tagged_text": "In this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, it is measuring the percentage of people ages <entity type=\"TIME_REFERENCE\" canonical=\"18_34\">18-34</entity> that don’t live with a parent who say they reach out to a parent at least once a day or a few times a week and is comparing the percentages of young men versus young women and the methods in which they communicate with their parents. I noticed that, in general, young women had a higher percentage of reaching out to parents than young men did. I also noticed that, for both women and men, the most popular means of communication was by sending texts and the least popular means of communication was visiting in person. I wonder if this is because sending texts requires much less time and effort compared to visiting in person so it is easier for young adults to quickly send a text amidst their busy daily schedules. I also noticed that there was the lowest difference in percentage between men and women for visiting in person and wonder why this is the case compared to the disparity between genders being relatively higher for phone/video-chat and sending texts. This relates to my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because I know some people in <entity type=\"OTHER_ENTITY\" canonical=\"college\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">college</entity> who don’t live with their parents right now and it is often difficult for them to find time to contact their families but try to text or call them as much as they can. My headline for this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> would be: “<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Connecting Back Home - Is Contacting Parents a Priority?</entity>”."
+}

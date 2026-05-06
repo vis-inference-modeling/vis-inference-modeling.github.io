@@ -1,0 +1,194 @@
+{
+  "article_id": "183",
+  "comment_index": 44,
+  "raw_comment": "Title: staying in the loop\nThis graph describes how much young men and women reach out to their parents. I notice how the title is \"how involved are parents in their young adult's lives,\" and the data does not relate to it. I wonder why not many more people send texts because they're so easy to send. I wonder why young women generally communicate with their families more. It relates to my community or life because I am going on to college next year and staying in contact with my family is very important to me.",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 32,
+      "end": 37,
+      "id": "e0"
+    },
+    {
+      "surface": "young men",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_men",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 57,
+      "end": 66,
+      "id": "e1"
+    },
+    {
+      "surface": "women",
+      "type": "OTHER_ENTITY",
+      "canonical": "women",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 71,
+      "end": 76,
+      "id": "e2"
+    },
+    {
+      "surface": "women",
+      "type": "OTHER_ENTITY",
+      "canonical": "women",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 321,
+      "end": 326,
+      "id": "e3"
+    },
+    {
+      "surface": "their families",
+      "type": "OTHER_ENTITY",
+      "canonical": "families",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 354,
+      "end": 368,
+      "id": "e4"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 389,
+      "end": 401,
+      "id": "e5"
+    },
+    {
+      "surface": "college",
+      "type": "OTHER_ENTITY",
+      "canonical": "college",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 435,
+      "end": 442,
+      "id": "e6"
+    },
+    {
+      "surface": "next year",
+      "type": "TIME_REFERENCE",
+      "canonical": "next_year",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 443,
+      "end": 452,
+      "id": "e7"
+    },
+    {
+      "surface": "my family",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_family",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 481,
+      "end": 490,
+      "id": "e8"
+    },
+    {
+      "surface": "their parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "texts",
+      "type": "OTHER_ENTITY",
+      "canonical": "texts",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "young women",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_women",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "how involved are parents in their young adult's lives",
+      "reason": "Appears to be a title quoted from the graph, but not an exact canonical headline in the provided dictionary."
+    },
+    {
+      "surface": "my community or life",
+      "reason": "Mixed reference; 'my community' is taggable, but 'life' is too generic to tag separately."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "headline",
+      "label": "Title",
+      "text": "staying in the loop"
+    },
+    {
+      "section": "body",
+      "text": "This graph describes how much young men and women reach out to their parents. I notice how the title is \"how involved are parents in their young adult's lives,\" and the data does not relate to it. I wonder why not many more people send texts because they're so easy to send. I wonder why young women generally communicate with their families more. It relates to my community or life because I am going on to college next year and staying in contact with my family is very important to me."
+    }
+  ],
+  "tagged_text": "Title: staying in the loop\nThis <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> describes how much young men and women reach out to their parents. I notice how the title is \"how involved are parents in their young adult's lives,\" and the data does not relate to it. I wonder why not many more people send texts because they're so easy to send. I wonder why young women generally communicate with their families more. It relates to my community or life because I am going on to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college</entity> <entity type=\"TIME_REFERENCE\" canonical=\"next_year\">next year</entity> and staying in contact with my family is very important to me."
+}

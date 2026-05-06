@@ -1,0 +1,159 @@
+{
+  "article_id": "193",
+  "comment_index": 220,
+  "raw_comment": "I Notice that droughts are more concentrated in the Middle and southern parts of the United States. In the south, there are the most extreme droughts in the United States. \n\nI wonder if the droughts will spread further to the east and west and how this will affect other States. \n\nThis affects me and my community because if the droughts worsen in Perth Amboy, this could impact the use of water, leading to restrictions on the use of water in houses. Perth Amboy could also face higher prices, which would affect many low-income families. \n\nHeadline: \"From Coast to Coast: Tracking Droughts Across the U.S.\"",
+  "entities": [
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 85,
+      "end": 98,
+      "id": "e0"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 157,
+      "end": 170,
+      "id": "e1"
+    },
+    {
+      "surface": "States",
+      "type": "LOCATION",
+      "canonical": "states",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 164,
+      "end": 170,
+      "id": "e2"
+    },
+    {
+      "surface": "Perth Amboy",
+      "type": "LOCATION",
+      "canonical": "perth_amboy",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 348,
+      "end": 359,
+      "id": "e3"
+    },
+    {
+      "surface": "Perth Amboy",
+      "type": "LOCATION",
+      "canonical": "perth_amboy",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 452,
+      "end": 463,
+      "id": "e4"
+    },
+    {
+      "surface": "families",
+      "type": "OTHER_ENTITY",
+      "canonical": "families",
+      "subtype": "other",
+      "section": "body",
+      "modality": "hypothetical",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 530,
+      "end": 538,
+      "id": "e5"
+    },
+    {
+      "surface": "From Coast to Coast: Tracking Droughts Across the U.S.",
+      "type": "EVENT",
+      "canonical": "from_coast_to_coast_tracking_droughts_across_the_us",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 553,
+      "end": 607,
+      "id": "e6"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "hypothetical",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "hypothetical",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "Middle",
+      "reason": "Could be a regional location, but the capitalization may simply indicate a generic middle area rather than a canonical region."
+    },
+    {
+      "surface": "south",
+      "reason": "Could refer to a region, but the exact canonical is uncertain in this context."
+    },
+    {
+      "surface": "east and west",
+      "reason": "Directional region reference without a clear single canonical match."
+    },
+    {
+      "surface": "low-income",
+      "reason": "Descriptive modifier, not an entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I Notice that droughts are more concentrated in the Middle and southern parts of the United States. In the south, there are the most extreme droughts in the United States. \n\nI wonder if the droughts will spread further to the east and west and how this will affect other States. \n\nThis affects me and my community because if the droughts worsen in Perth Amboy, this could impact the use of water, leading to restrictions on the use of water in houses. Perth Amboy could also face higher prices, which would affect many low-income families."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "\"From Coast to Coast: Tracking Droughts Across the U.S.\""
+    }
+  ],
+  "tagged_text": "I Notice that droughts are more concentrated in the Middle and southern parts of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. In the south, there are the most extreme droughts in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. \n\nI wonder if the droughts will spread further to the east and west and how this will affect other <entity type=\"LOCATION\" canonical=\"states\" modality=\"questioned\">States</entity>. \n\nThis affects me and my community because if the droughts worsen in <entity type=\"LOCATION\" canonical=\"perth_amboy\" speaker_context=\"true\">Perth Amboy</entity>, this could impact the use of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" modality=\"hypothetical\">water</entity>, leading to restrictions on the use of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" modality=\"hypothetical\">water</entity> in houses. <entity type=\"LOCATION\" canonical=\"perth_amboy\" speaker_context=\"true\">Perth Amboy</entity> could also face higher prices, which would affect many low-income <entity type=\"OTHER_ENTITY\" canonical=\"families\" subtype=\"other\" modality=\"hypothetical\">families</entity>. \n\nHeadline: \"<entity type=\"EVENT\" canonical=\"from_coast_to_coast_tracking_droughts_across_the_us\" section=\"headline\">From Coast to Coast: Tracking Droughts Across the U.S.</entity>\""
+}

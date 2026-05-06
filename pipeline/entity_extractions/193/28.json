@@ -1,0 +1,202 @@
+{
+  "article_id": "193",
+  "comment_index": 28,
+  "raw_comment": "1. Observations\nI noticed that the map is describing a widespread drought crisis throughout the United States. The map illustrates widespread drought conditions with varying levels of severity. States in the Midwest, Great Plains, and parts of the South, such as Texas, Kansas, and Nebraska, appear to be heavily affected.\nThe West Coast, particularly California, also shows significant drought severity.\n2. Questions \nI wonder what the main causes of these drought conditions are. Are they climate-related, agricultural, or due to other factors like water mismanagement? Are there any national or state-level plans in place to address and mitigate these widespread droughts?\n3. Relation to Community\nIf you live in a drought-affected region, this might influence water availability, agricultural practices, food availability and production and could risk all living species within the area. Even if you’re not directly affected, droughts can drive up food prices nationwide due to reduced agricultural output and increase energy costs in regions dependent on hydroelectric power.\n4. Catchy Headline\nCracks in the Heartland: America’s Drought Crisis Deepens",
+  "entities": [
+    {
+      "surface": "United States",
+      "type": "LOCATION",
+      "canonical": "united_states",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 96,
+      "end": 109,
+      "id": "e0"
+    },
+    {
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 208,
+      "end": 215,
+      "id": "e1"
+    },
+    {
+      "surface": "Great Plains",
+      "type": "LOCATION",
+      "canonical": "great_plains",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 217,
+      "end": 229,
+      "id": "e2"
+    },
+    {
+      "surface": "South",
+      "type": "LOCATION",
+      "canonical": "south",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 248,
+      "end": 253,
+      "id": "e3"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 263,
+      "end": 268,
+      "id": "e4"
+    },
+    {
+      "surface": "Kansas",
+      "type": "LOCATION",
+      "canonical": "kansas",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 270,
+      "end": 276,
+      "id": "e5"
+    },
+    {
+      "surface": "Nebraska",
+      "type": "LOCATION",
+      "canonical": "nebraska",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 282,
+      "end": 290,
+      "id": "e6"
+    },
+    {
+      "surface": "West Coast",
+      "type": "LOCATION",
+      "canonical": "west_coast",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 327,
+      "end": 337,
+      "id": "e7"
+    },
+    {
+      "surface": "California",
+      "type": "LOCATION",
+      "canonical": "california",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 352,
+      "end": 362,
+      "id": "e8"
+    },
+    {
+      "surface": "Cracks in the Heartland: America’s Drought Crisis Deepens",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1100,
+      "end": 1157,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "widespread drought conditions",
+      "reason": "Could map to drought EVENT, but the phrase is broader and not an exact canonical surface."
+    },
+    {
+      "surface": "climate-related",
+      "reason": "Could refer to climate change, but not explicit enough for a canonical tag."
+    },
+    {
+      "surface": "agricultural",
+      "reason": "Entity-like descriptor, but not a canonical entity."
+    },
+    {
+      "surface": "water mismanagement",
+      "reason": "Potential causal factor, but not listed in the dictionary."
+    },
+    {
+      "surface": "national or state-level plans",
+      "reason": "Policy reference without a canonical entity."
+    },
+    {
+      "surface": "water availability",
+      "reason": "Could relate to water_sources or water supply, but no exact canonical match is provided."
+    },
+    {
+      "surface": "agricultural practices",
+      "reason": "Entity-like phrase, but not listed in the canonical dictionary."
+    },
+    {
+      "surface": "food availability and production",
+      "reason": "Entity-like phrase, but not listed in the canonical dictionary."
+    },
+    {
+      "surface": "all living species",
+      "reason": "Could be animals/ecosystems, but too broad and not explicit."
+    },
+    {
+      "surface": "hydroelectric power",
+      "reason": "Could relate to hydroelectric_and_other, but the phrase is not an exact listed surface form."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "Observations\nI noticed that the map is describing a widespread drought crisis throughout the United States. The map illustrates widespread drought conditions with varying levels of severity. States in the Midwest, Great Plains, and parts of the South, such as Texas, Kansas, and Nebraska, appear to be heavily affected.\nThe West Coast, particularly California, also shows significant drought severity."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "Questions \nI wonder what the main causes of these drought conditions are. Are they climate-related, agricultural, or due to other factors like water mismanagement? Are there any national or state-level plans in place to address and mitigate these widespread droughts?"
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "Relation to Community\nIf you live in a drought-affected region, this might influence water availability, agricultural practices, food availability and production and could risk all living species within the area. Even if you’re not directly affected, droughts can drive up food prices nationwide due to reduced agricultural output and increase energy costs in regions dependent on hydroelectric power."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "Catchy Headline\nCracks in the Heartland: America’s Drought Crisis Deepens"
+    }
+  ],
+  "tagged_text": "1. Observations\nI noticed that the map is describing a widespread drought crisis throughout the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">United States</entity>. The map illustrates widespread drought conditions with varying levels of severity. States in the <entity type=\"LOCATION\" canonical=\"midwest\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Midwest</entity>, <entity type=\"LOCATION\" canonical=\"great_plains\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Great Plains</entity>, and parts of the <entity type=\"LOCATION\" canonical=\"south\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">South</entity>, such as <entity type=\"LOCATION\" canonical=\"texas\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"kansas\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Kansas</entity>, and <entity type=\"LOCATION\" canonical=\"nebraska\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Nebraska</entity>, appear to be heavily affected.\nThe <entity type=\"LOCATION\" canonical=\"west_coast\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">West Coast</entity>, particularly <entity type=\"LOCATION\" canonical=\"california\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">California</entity>, also shows significant drought severity.\n2. Questions \nI wonder what the main causes of these drought conditions are. Are they climate-related, agricultural, or due to other factors like water mismanagement? Are there any national or state-level plans in place to address and mitigate these widespread droughts?\n3. Relation to Community\nIf you live in a drought-affected region, this might influence water availability, agricultural practices, food availability and production and could risk all living species within the area. Even if you’re not directly affected, droughts can drive up food prices nationwide due to reduced agricultural output and increase energy costs in regions dependent on hydroelectric power.\n4. Catchy Headline\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Cracks in the Heartland: America’s Drought Crisis Deepens</entity>"
+}

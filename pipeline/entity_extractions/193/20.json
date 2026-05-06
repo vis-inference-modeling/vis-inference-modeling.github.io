@@ -1,0 +1,125 @@
+{
+  "article_id": "193",
+  "comment_index": 20,
+  "raw_comment": "I notice that the areas with the largest drought are those that are in more of the midwest or landlocked states, in comparison that those that are on the ocean being abnormally dry or not dry at all. This sparks curiosities regarding what weather effects made this occur, other than how this graph would look when comparing it to that of past years where California had wildfires. Are droughts worsening? By how much? This can be related to my life and community since global warming is an issue that influences us all, and despite Florida not having droughts, other states being impacted by this can affect us in unthought of  ways such as food supply or minimizing job opportunities. Overall the graph can be summarized by the following headline: Weather: How dry is really dry? A study on drought patterns in the US for October of 2024.",
+  "entities": [
+    {
+      "surface": "midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 83,
+      "end": 90,
+      "id": "e0"
+    },
+    {
+      "surface": "past years",
+      "type": "TIME_REFERENCE",
+      "canonical": "past_years",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 338,
+      "end": 348,
+      "id": "e1"
+    },
+    {
+      "surface": "California",
+      "type": "LOCATION",
+      "canonical": "california",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 355,
+      "end": 365,
+      "id": "e2"
+    },
+    {
+      "surface": "wildfires",
+      "type": "EVENT",
+      "canonical": "wildfires",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 370,
+      "end": 379,
+      "id": "e3"
+    },
+    {
+      "surface": "global warming",
+      "type": "EVENT",
+      "canonical": "global_warming",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 469,
+      "end": 483,
+      "id": "e4"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 532,
+      "end": 539,
+      "id": "e5"
+    },
+    {
+      "surface": "Weather: How dry is really dry? A study on drought patterns in the US for October of 2024.",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 749,
+      "end": 839,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "landlocked states",
+      "reason": "Region-like phrase with no exact canonical match in the article dictionary."
+    },
+    {
+      "surface": "the ocean",
+      "reason": "Could be a location reference, but no exact canonical match is provided and it may be generic."
+    },
+    {
+      "surface": "abnormally dry",
+      "reason": "Could correspond to a drought severity level, but no exact canonical match is provided."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that the areas with the largest drought are those that are in more of the midwest or landlocked states, in comparison that those that are on the ocean being abnormally dry or not dry at all. This sparks curiosities regarding what weather effects made this occur, other than how this graph would look when comparing it to that of past years where California had wildfires. Are droughts worsening? By how much? This can be related to my life and community since global warming is an issue that influences us all, and despite Florida not having droughts, other states being impacted by this can affect us in unthought of  ways such as food supply or minimizing job opportunities. Overall the graph can be summarized by the following headline: Weather: How dry is really dry? A study on drought patterns in the US for October of 2024."
+    },
+    {
+      "section": "headline",
+      "label": "following headline",
+      "text": "Weather: How dry is really dry? A study on drought patterns in the US for October of 2024."
+    }
+  ],
+  "tagged_text": "I notice that the areas with the largest drought are those that are in more of the <entity type=\"LOCATION\" canonical=\"midwest\" section=\"body\">midwest</entity> or landlocked states, in comparison that those that are on the ocean being abnormally dry or not dry at all. This sparks curiosities regarding what weather effects made this occur, other than how this graph would look when comparing it to that of <entity type=\"TIME_REFERENCE\" canonical=\"past_years\" section=\"body\">past years</entity> where <entity type=\"LOCATION\" canonical=\"california\" section=\"body\">California</entity> had <entity type=\"EVENT\" canonical=\"wildfires\" section=\"body\">wildfires</entity>. Are droughts worsening? By how much? This can be related to my life and community since <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\">global warming</entity> is an issue that influences us all, and despite <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\">Florida</entity> not having droughts, other states being impacted by this can affect us in unthought of  ways such as food supply or minimizing job opportunities. Overall the graph can be summarized by the following headline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Weather: How dry is really dry? A study on drought patterns in the US for October of 2024.</entity>"
+}

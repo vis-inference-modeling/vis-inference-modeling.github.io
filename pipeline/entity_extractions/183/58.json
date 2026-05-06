@@ -1,0 +1,117 @@
+{
+  "article_id": "183",
+  "comment_index": 58,
+  "raw_comment": "I notice that the largest percentage of young people (50-75%) reach out to their parents at least one a day or a few times a week while the smallest percentage visit in person (15-25%). I also notice that there is a relatively large disparity between young men and women's communication habits: women are 20% more likely to send texts or do video-chats than men.\n\nI wonder if more young people reach out via text and video-chat because they are less time-intensive. I also wonder how the data is divided based on age--- are Gen Z young people more likely to use technology to reach out? I am curious if women are more likely to reach out to their parents due to societal expectations and because they are expected to be the caregivers.\n\nThis relates to me and my community because I will not always live near my parents. Instead of seeing them at home, I will have to reach out in order to maintain in contact. The data also indicates a shift in communication methods. Technology is an increasingly important means to connect.\n\n\"Send a Wire: More Female than Male?\"",
+  "entities": [
+    {
+      "surface": "50-75%",
+      "type": "UNIT",
+      "canonical": "percent",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 54,
+      "end": 60,
+      "id": "e0"
+    },
+    {
+      "surface": "15-25%",
+      "type": "UNIT",
+      "canonical": "percent",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 177,
+      "end": 183,
+      "id": "e1"
+    },
+    {
+      "surface": "20%",
+      "type": "UNIT",
+      "canonical": "20_percent",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 305,
+      "end": 308,
+      "id": "e2"
+    },
+    {
+      "surface": "home",
+      "type": "LOCATION",
+      "canonical": "home",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 847,
+      "end": 851,
+      "id": "e3"
+    },
+    {
+      "surface": "Send a Wire: More Female than Male?",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1029,
+      "end": 1064,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "young people",
+      "reason": "Could be a demographic group, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "young men",
+      "reason": "Could be a demographic group, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "women",
+      "reason": "Could be a demographic group, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "men",
+      "reason": "Could be a demographic group, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "send texts",
+      "reason": "Communication mode mentioned in the comment, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "video-chats",
+      "reason": "Communication mode mentioned in the comment, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "text and video-chat",
+      "reason": "Communication mode mentioned in the comment, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "Gen Z",
+      "reason": "Age cohort mentioned, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "societal expectations",
+      "reason": "Abstract factor; no confirmed canonical ID provided."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that the largest percentage of young people (50-75%) reach out to their parents at least one a day or a few times a week while the smallest percentage visit in person (15-25%). I also notice that there is a relatively large disparity between young men and women's communication habits: women are 20% more likely to send texts or do video-chats than men.\n\nI wonder if more young people reach out via text and video-chat because they are less time-intensive. I also wonder how the data is divided based on age--- are Gen Z young people more likely to use technology to reach out? I am curious if women are more likely to reach out to their parents due to societal expectations and because they are expected to be the caregivers.\n\nThis relates to me and my community because I will not always live near my parents. Instead of seeing them at home, I will have to reach out in order to maintain in contact. The data also indicates a shift in communication methods. Technology is an increasingly important means to connect.\n\n\"Send a Wire: More Female than Male?\""
+    }
+  ],
+  "tagged_text": "I notice that the largest percentage of young people (<entity type=\"UNIT\" canonical=\"percent\">50-75%</entity>) reach out to their parents at least one a day or a few times a week while the smallest percentage visit in person (<entity type=\"UNIT\" canonical=\"percent\">15-25%</entity>). I also notice that there is a relatively large disparity between young men and women's communication habits: women are <entity type=\"UNIT\" canonical=\"20_percent\">20%</entity> more likely to send texts or do video-chats than men.\n\nI wonder if more young people reach out via text and video-chat because they are less time-intensive. I also wonder how the data is divided based on age--- are Gen Z young people more likely to use technology to reach out? I am curious if women are more likely to reach out to their parents due to societal expectations and because they are expected to be the caregivers.\n\nThis relates to me and my community because I will not always live near my parents. Instead of seeing them at home, I will have to reach out in order to maintain in contact. The data also indicates a shift in communication methods. Technology is an increasingly important means to connect.\n\n\"<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Send a Wire: More Female than Male?</entity>\""
+}

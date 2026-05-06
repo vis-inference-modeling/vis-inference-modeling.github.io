@@ -1,0 +1,141 @@
+{
+  "article_id": "193",
+  "comment_index": 213,
+  "raw_comment": "I notice that the areas in the Midwest are the most affected by droughts. I wonder if it may be a possibility that these areas are in the middle of the county and furthest away from the ocean which is why they are the most affected\n\nI wonder how the people and communities in the areas exceptionally affected by drought are coping with this and how they are getting access to water.\n\nHow does this relate to you and your community?\nthese droughts relate to my community because I live in New York where it is abnormally dry. We should bring attention to this fact in the community to spread awareness.\n\nCatch headline - \"A dry and drougthful December takes hold of the United states\"",
+  "entities": [
+    {
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 31,
+      "end": 38,
+      "id": "e0"
+    },
+    {
+      "surface": "county",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 152,
+      "end": 158,
+      "id": "e1"
+    },
+    {
+      "surface": "ocean",
+      "type": "LOCATION",
+      "canonical": "ocean",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 186,
+      "end": 191,
+      "id": "e2"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "people",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 250,
+      "end": 256,
+      "id": "e3"
+    },
+    {
+      "surface": "communities",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 261,
+      "end": 272,
+      "id": "e4"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 376,
+      "end": 381,
+      "id": "e5"
+    },
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 488,
+      "end": 496,
+      "id": "e6"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "EVENT",
+      "canonical": "abnormally_dry",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 509,
+      "end": 523,
+      "id": "e7"
+    },
+    {
+      "surface": "United states",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 669,
+      "end": 682,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that the areas in the Midwest are the most affected by droughts. I wonder if it may be a possibility that these areas are in the middle of the county and furthest away from the ocean which is why they are the most affected\n\nI wonder how the people and communities in the areas exceptionally affected by drought are coping with this and how they are getting access to water.\n\nHow does this relate to you and your community?\nthese droughts relate to my community because I live in New York where it is abnormally dry. We should bring attention to this fact in the community to spread awareness."
+    },
+    {
+      "section": "headline",
+      "label": "Catch headline",
+      "text": "\"A dry and drougthful December takes hold of the United states\""
+    }
+  ],
+  "tagged_text": "I notice that the areas in the <entity type=\"LOCATION\" canonical=\"midwest\" modality=\"asserted\">Midwest</entity> are the most affected by droughts. I wonder if it may be a possibility that these areas are in the middle of the <entity type=\"LOCATION\" canonical=\"country\" modality=\"questioned\">county</entity> and furthest away from the <entity type=\"LOCATION\" canonical=\"ocean\" modality=\"questioned\">ocean</entity> which is why they are the most affected\n\nI wonder how the <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"people\" modality=\"questioned\">people</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" modality=\"questioned\">communities</entity> in the areas exceptionally affected by drought are coping with this and how they are getting access to <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" modality=\"questioned\">water</entity>.\n\nHow does this relate to you and your community?\nthese droughts relate to my community because I live in <entity type=\"LOCATION\" canonical=\"new_york\" speaker_context=\"true\">New York</entity> where it is <entity type=\"EVENT\" canonical=\"abnormally_dry\" speaker_context=\"true\">abnormally dry</entity>. We should bring attention to this fact in the community to spread awareness.\n\nCatch headline - \"A dry and drougthful December takes hold of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">United states</entity>\""
+}

@@ -1,0 +1,74 @@
+{
+  "article_id": "183",
+  "comment_index": 57,
+  "raw_comment": "I notice that there is a large gap between the percentage of young women reaching out to their parents versus young men reaching out to their parents. I also notice that the smallest gap between men and women, is also the smallest percentage for contacting parents, which was visiting in person.\n\nI wonder what the age range is for the graph given, is it more college aged young adults, or young adults in their twenties. I also wonder why women are more inclined to reach out to their parents, is it because they are on their phones more? Do those who visit their parents live closer to home and are out of college?\n\nThis relates to me and my community because it shows that our generation should be reaching out to our parents more often and it is important to stay in contact with your parents and other family members. I have 2 brothers, one in college, and one who lives in New York City and my parents always get excited when they get to talk to them, showing how important it is to them.\n\n\"Stay connected!\"",
+  "entities": [
+    {
+      "surface": "New York City",
+      "type": "LOCATION",
+      "canonical": "new_york_city",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 879,
+      "end": 892,
+      "id": "e0"
+    },
+    {
+      "surface": "Stay connected!",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 997,
+      "end": 1012,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "young women",
+      "reason": "Likely a demographic group from the graph, but no chart-specific reference list is available for this article and no confirmed canonical ID was provided for this level."
+    },
+    {
+      "surface": "young men",
+      "reason": "Likely a demographic group from the graph, but no chart-specific reference list is available for this article and no confirmed canonical ID was provided for this level."
+    },
+    {
+      "surface": "men",
+      "reason": "Likely a demographic group from the graph, but no chart-specific reference list was provided for this level."
+    },
+    {
+      "surface": "women",
+      "reason": "Likely a demographic group from the graph, but no chart-specific reference list was provided for this level."
+    },
+    {
+      "surface": "college aged young adults",
+      "reason": "Could refer to an age group, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "young adults in their twenties",
+      "reason": "Could refer to an age group, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "phones",
+      "reason": "Could be a technology entity, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "college",
+      "reason": "Could be a location/setting, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that there is a large gap between the percentage of young women reaching out to their parents versus young men reaching out to their parents. I also notice that the smallest gap between men and women, is also the smallest percentage for contacting parents, which was visiting in person.\n\nI wonder what the age range is for the graph given, is it more college aged young adults, or young adults in their twenties. I also wonder why women are more inclined to reach out to their parents, is it because they are on their phones more? Do those who visit their parents live closer to home and are out of college?\n\nThis relates to me and my community because it shows that our generation should be reaching out to our parents more often and it is important to stay in contact with your parents and other family members. I have 2 brothers, one in college, and one who lives in New York City and my parents always get excited when they get to talk to them, showing how important it is to them.\n\n\"Stay connected!\""
+    }
+  ],
+  "tagged_text": "I notice that there is a large gap between the percentage of young women reaching out to their parents versus young men reaching out to their parents. I also notice that the smallest gap between men and women, is also the smallest percentage for contacting parents, which was visiting in person.\n\nI wonder what the age range is for the graph given, is it more college aged young adults, or young adults in their twenties. I also wonder why women are more inclined to reach out to their parents, is it because they are on their phones more? Do those who visit their parents live closer to home and are out of college?\n\nThis relates to me and my community because it shows that our generation should be reaching out to our parents more often and it is important to stay in contact with your parents and other family members. I have 2 brothers, one in college, and one who lives in <entity type=\"LOCATION\" canonical=\"new_york_city\">New York City</entity> and my parents always get excited when they get to talk to them, showing how important it is to them.\n\n\"<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Stay connected!</entity>\""
+}

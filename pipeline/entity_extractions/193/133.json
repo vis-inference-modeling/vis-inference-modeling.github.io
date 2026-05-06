@@ -1,0 +1,101 @@
+{
+  "article_id": "193",
+  "comment_index": 133,
+  "raw_comment": "Droughts in the atmosphere \nWhat do you notice?\nI notice that most states have abnormally dry land and water. \n• What do you wonder?\nI wonder how bad the environment is in exceptional drought states \n• How does this relate to you and your community?\nThis relates to me and my community because it shows NY where I live and it shows that I live I’m abnormally dry or moderate air conditions.",
+  "entities": [
+    {
+      "surface": "Droughts in the atmosphere",
+      "type": "EVENT",
+      "canonical": "droughts_in_the_atmosphere",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 0,
+      "end": 26,
+      "id": "e0"
+    },
+    {
+      "surface": "environment",
+      "type": "OTHER_ENTITY",
+      "canonical": "environment",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 154,
+      "end": 165,
+      "id": "e1"
+    },
+    {
+      "surface": "exceptional drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 172,
+      "end": 191,
+      "id": "e2"
+    },
+    {
+      "surface": "NY",
+      "type": "LOCATION",
+      "canonical": "ny",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 303,
+      "end": 305,
+      "id": "e3"
+    },
+    {
+      "surface": "moderate",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "moderate",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 366,
+      "end": 374,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "most states",
+      "reason": "Plural location reference without a specific canonical location in the dictionary."
+    },
+    {
+      "surface": "abnormally dry land and water",
+      "reason": "Could refer to drought severity or environmental conditions, but no exact canonical match beyond 'abnormally dry'."
+    },
+    {
+      "surface": "air conditions",
+      "reason": "Phrase is descriptive and not a listed entity; may refer to weather conditions."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Droughts in the atmosphere"
+    },
+    {
+      "section": "body",
+      "text": "What do you notice?\nI notice that most states have abnormally dry land and water. \n• What do you wonder?\nI wonder how bad the environment is in exceptional drought states \n• How does this relate to you and your community?\nThis relates to me and my community because it shows NY where I live and it shows that I live I’m abnormally dry or moderate air conditions."
+    }
+  ],
+  "tagged_text": "<entity type=\"EVENT\" canonical=\"droughts_in_the_atmosphere\" section=\"headline\">Droughts in the atmosphere</entity> \nWhat do you notice?\nI notice that most states have abnormally dry land and water. \n• What do you wonder?\nI wonder how bad the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" modality=\"questioned\">environment</entity> is in <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" modality=\"questioned\">exceptional drought</entity> states \n• How does this relate to you and your community?\nThis relates to me and my community because it shows <entity type=\"LOCATION\" canonical=\"ny\" speaker_context=\"true\">NY</entity> where I live and it shows that I live I’m abnormally dry or <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderate</entity> air conditions."
+}

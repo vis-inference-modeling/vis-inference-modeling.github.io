@@ -1,0 +1,127 @@
+{
+  "article_id": "183",
+  "comment_index": 36,
+  "raw_comment": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\nI noticed that in all three categories, young women reach out more than young men.\n2. What do you wonder?\nWhy is it that visits in person are in the least common form and why do young women usually reach out more?\n3. What impact does this have on you and your community?\nThis impacts all of the kids in my high school, and when I reach out to my parents\n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\nHow much do teenagers reach out to there parents for help?",
+  "entities": [
+    {
+      "surface": "young women",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_women",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 143,
+      "end": 154,
+      "id": "e0"
+    },
+    {
+      "surface": "young women",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_women",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 281,
+      "end": 292,
+      "id": "e1"
+    },
+    {
+      "surface": "high school",
+      "type": "OTHER_ENTITY",
+      "canonical": "high_school",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 409,
+      "end": 420,
+      "id": "e2"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 449,
+      "end": 456,
+      "id": "e3"
+    },
+    {
+      "surface": "teenagers",
+      "type": "OTHER_ENTITY",
+      "canonical": "teenagers",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 564,
+      "end": 573,
+      "id": "e4"
+    },
+    {
+      "surface": "young men",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_men",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "visits in person",
+      "type": "OTHER_ENTITY",
+      "canonical": "in_person_visit",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "there parents",
+      "reason": "Likely means 'their parents', but the surface form is misspelled and not explicitly in the dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\nI noticed that in all three categories, young women reach out more than young men."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "What do you wonder?\nWhy is it that visits in person are in the least common form and why do young women usually reach out more?"
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "What impact does this have on you and your community?\nThis impacts all of the kids in my high school, and when I reach out to my parents"
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "What's going on in this graph? Write a catchy headline that captures the graph's main idea.\nHow much do teenagers reach out to there parents for help?"
+    }
+  ],
+  "tagged_text": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\nI noticed that in all three categories, <entity type=\"OTHER_ENTITY\" canonical=\"young_women\">young women</entity> reach out more than <entity type=\"OTHER_ENTITY\" canonical=\"young_men\">young men</entity>.\n2. What do you wonder?\nWhy is it that <entity type=\"OTHER_ENTITY\" canonical=\"in_person_visit\">visits in person</entity> are in the least common form and why do <entity type=\"OTHER_ENTITY\" canonical=\"young_women\">young women</entity> usually reach out more?\n3. What impact does this have on you and your community?\nThis impacts all of the kids in my <entity type=\"OTHER_ENTITY\" canonical=\"high_school\">high school</entity>, and when I reach out to my <entity type=\"OTHER_ENTITY\" canonical=\"parents\">parents</entity>\n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\nHow much do <entity type=\"OTHER_ENTITY\" canonical=\"teenagers\">teenagers</entity> reach out to there parents for help?"
+}

@@ -1,0 +1,155 @@
+{
+  "article_id": "193",
+  "comment_index": 243,
+  "raw_comment": "I notice that the regions with extreme drought are near mountainous regions, like the rocky mountains and the Appalachian mountains.  Suggesting that the more mountainous or near mountainous the area is, results in more drought.\n\nI wonder why there are certain specific regions with extreme droughts, specifically near the south, northwest and mid-Atlantic region.  I also wonder if the areas of drought change location depending on the month of the year, as the image only shows the level of drought for the last week of October, 2024.\n\nThis relates to me and my community because we can all be affected by droughts.  Hence, being well versed in the location of droughts is beneficial. \n\n“Droughts from the North to the South, Droughts from the East to the West!”",
+  "entities": [
+    {
+      "surface": "rocky mountains",
+      "type": "LOCATION",
+      "canonical": "rocky_mountains",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 86,
+      "end": 101,
+      "id": "e0"
+    },
+    {
+      "surface": "Appalachian mountains",
+      "type": "LOCATION",
+      "canonical": "appalachian_mountains",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 110,
+      "end": 131,
+      "id": "e1"
+    },
+    {
+      "surface": "south",
+      "type": "LOCATION",
+      "canonical": "south",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 323,
+      "end": 328,
+      "id": "e2"
+    },
+    {
+      "surface": "northwest",
+      "type": "LOCATION",
+      "canonical": "northwest",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 330,
+      "end": 339,
+      "id": "e3"
+    },
+    {
+      "surface": "mid-Atlantic region",
+      "type": "LOCATION",
+      "canonical": "mid_atlantic_region",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 344,
+      "end": 363,
+      "id": "e4"
+    },
+    {
+      "surface": "month of the year",
+      "type": "TIME_REFERENCE",
+      "canonical": "month_of_year",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 437,
+      "end": 454,
+      "id": "e5"
+    },
+    {
+      "surface": "last week of October, 2024",
+      "type": "TIME_REFERENCE",
+      "canonical": "last_week_of_october_2024",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 509,
+      "end": 535,
+      "id": "e6"
+    },
+    {
+      "surface": "me and my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 554,
+      "end": 573,
+      "id": "e7"
+    },
+    {
+      "surface": "droughts from the North to the South, Droughts from the East to the West",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_slogan",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 690,
+      "end": 762,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "extreme drought",
+      "reason": "Could map to EVENT 'extreme_drought', but the comment uses it generically and the dictionary also includes drought severity levels; kept unresolved to avoid over-tagging."
+    },
+    {
+      "surface": "more mountainous or near mountainous",
+      "reason": "Geographic descriptor without a confirmed canonical location."
+    },
+    {
+      "surface": "areas of drought",
+      "reason": "Generic phrase; not a specific entity in the dictionary."
+    },
+    {
+      "surface": "location of droughts",
+      "reason": "Abstract phrase rather than a concrete entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that the regions with extreme drought are near mountainous regions, like the rocky mountains and the Appalachian mountains.  Suggesting that the more mountainous or near mountainous the area is, results in more drought.\n\nI wonder why there are certain specific regions with extreme droughts, specifically near the south, northwest and mid-Atlantic region.  I also wonder if the areas of drought change location depending on the month of the year, as the image only shows the level of drought for the last week of October, 2024.\n\nThis relates to me and my community because we can all be affected by droughts.  Hence, being well versed in the location of droughts is beneficial."
+    },
+    {
+      "section": "headline",
+      "text": "“Droughts from the North to the South, Droughts from the East to the West!”"
+    }
+  ],
+  "tagged_text": "I notice that the regions with extreme drought are near mountainous regions, like the rocky mountains and the Appalachian mountains.  Suggesting that the more mountainous or near mountainous the area is, results in more drought.\n\nI wonder why there are certain specific regions with extreme droughts, specifically near the south, northwest and mid-Atlantic region.  I also wonder if the areas of drought change location depending on the month of the year, as the image only shows the level of drought for the last week of October, 2024.\n\nThis relates to me and my community because we can all be affected by droughts.  Hence, being well versed in the location of droughts is beneficial. \n\n“Droughts from the North to the South, Droughts from the East to the West!”"
+}

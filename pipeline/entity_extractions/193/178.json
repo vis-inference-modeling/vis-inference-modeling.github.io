@@ -1,0 +1,178 @@
+{
+  "article_id": "193",
+  "comment_index": 178,
+  "raw_comment": "I noticed that the middle states of the U.S. such as Texas, Montana, and Wyoming are experiencing more extreme droughts that the east and west coast states like New York and California. I wonder if this has to do with those states not being so close to a large body of water, or due to the number of deserts located in those areas. This relates to my community and I because where I live, October was filled with no chance of rain for a while. This led to some growing concern for farmers and other people that are trying to maintain their crops and plants. I began to notice that the grass and became drier. A catchy headline would be A Drought Throughout: What US States Were Affected the Most by This Drought?",
+  "entities": [
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 40,
+      "end": 44,
+      "id": "e0"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 53,
+      "end": 58,
+      "id": "e1"
+    },
+    {
+      "surface": "Montana",
+      "type": "LOCATION",
+      "canonical": "montana",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 60,
+      "end": 67,
+      "id": "e2"
+    },
+    {
+      "surface": "Wyoming",
+      "type": "LOCATION",
+      "canonical": "wyoming",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 73,
+      "end": 80,
+      "id": "e3"
+    },
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 161,
+      "end": 169,
+      "id": "e4"
+    },
+    {
+      "surface": "California",
+      "type": "LOCATION",
+      "canonical": "california",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 174,
+      "end": 184,
+      "id": "e5"
+    },
+    {
+      "surface": "my community and I",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 348,
+      "end": 366,
+      "id": "e6"
+    },
+    {
+      "surface": "October",
+      "type": "TIME_REFERENCE",
+      "canonical": "october",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 389,
+      "end": 396,
+      "id": "e7"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 426,
+      "end": 430,
+      "id": "e8"
+    },
+    {
+      "surface": "farmers",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 481,
+      "end": 488,
+      "id": "e9"
+    },
+    {
+      "surface": "A Drought Throughout: What US States Were Affected the Most by This Drought?",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 636,
+      "end": 712,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "large body of water",
+      "reason": "Could be a location-like geographic feature, but no exact canonical entry provided."
+    },
+    {
+      "surface": "deserts",
+      "reason": "Geographic feature reference, but no exact canonical entry provided."
+    },
+    {
+      "surface": "grass",
+      "reason": "Could be flora-related OTHER_ENTITY, but not explicitly listed in the dictionary."
+    },
+    {
+      "surface": "crops and plants",
+      "reason": "Mixed agricultural/flora reference; could be split into OTHER_ENTITYs, but not clearly canonicalized here."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that the middle states of the U.S. such as Texas, Montana, and Wyoming are experiencing more extreme droughts that the east and west coast states like New York and California. I wonder if this has to do with those states not being so close to a large body of water, or due to the number of deserts located in those areas. This relates to my community and I because where I live, October was filled with no chance of rain for a while. This led to some growing concern for farmers and other people that are trying to maintain their crops and plants. I began to notice that the grass and became drier. A catchy headline would be A Drought Throughout: What US States Were Affected the Most by This Drought?"
+    }
+  ],
+  "tagged_text": "I noticed that the middle states of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> such as <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, and <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity> are experiencing more extreme droughts that the east and west coast states like <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> and <entity type=\"LOCATION\" canonical=\"california\">California</entity>. I wonder if this has to do with those states not being so close to a large body of water, or due to the number of deserts located in those areas. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my community and I</entity> because where I live, <entity type=\"TIME_REFERENCE\" canonical=\"october\">October</entity> was filled with no chance of <entity type=\"EVENT\" canonical=\"rain\">rain</entity> for a while. This led to some growing concern for <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\">farmers</entity> and other people that are trying to maintain their crops and plants. I began to notice that the grass and became drier. A catchy headline would be <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">A Drought Throughout: What US States Were Affected the Most by This Drought?</entity>"
+}

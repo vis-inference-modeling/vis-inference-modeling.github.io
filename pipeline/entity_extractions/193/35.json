@@ -1,0 +1,160 @@
+{
+  "article_id": "193",
+  "comment_index": 35,
+  "raw_comment": "1. I notice that a significant portion of the United States is experiencing some level of drought, with the most severe areas concentrated in parts of the Midwest, Southwest, and California. The map categorizes drought levels from “Abnormally Dry” to “Exceptional Drought,” and darker colors indicate more extreme drought conditions.\n\n\n2. I wonder what factors have contributed to the widespread drought conditions. Are these related to climate change, local water management issues, or natural weather patterns? Additionally, how are communities in the most affected areas coping with water shortages?\n\n\n3.This might relate to me and my community in terms of water availability, agricultural impacts, and local weather patterns. If I live in an affected area, this could influence water conservation measures, food prices, or even the appearance of natural landscapes around me.\n\n“America is Thirsty: Widespread Drought Strains Communities Nationwide”",
+  "entities": [
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 46,
+      "end": 59,
+      "id": "e0"
+    },
+    {
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 155,
+      "end": 162,
+      "id": "e1"
+    },
+    {
+      "surface": "Southwest",
+      "type": "LOCATION",
+      "canonical": "southwest_region",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 164,
+      "end": 173,
+      "id": "e2"
+    },
+    {
+      "surface": "California",
+      "type": "LOCATION",
+      "canonical": "california",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 179,
+      "end": 189,
+      "id": "e3"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 437,
+      "end": 451,
+      "id": "e4"
+    },
+    {
+      "surface": "water shortages",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_shortages",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 586,
+      "end": 601,
+      "id": "e5"
+    },
+    {
+      "surface": "water conservation measures",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_conservation_measures",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "hypothetical",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 782,
+      "end": 809,
+      "id": "e6"
+    },
+    {
+      "surface": "America is Thirsty: Widespread Drought Strains Communities Nationwide",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 882,
+      "end": 951,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "Abnormally Dry",
+      "reason": "Likely a drought severity level, but no exact canonical level is provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "Exceptional Drought",
+      "reason": "Likely a drought severity level, but no exact canonical level is provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "drought conditions",
+      "reason": "General drought reference; could be EVENT 'drought' but the exact phrase is not separately canonicalized."
+    },
+    {
+      "surface": "water availability",
+      "reason": "Could map to water-related scarcity, but no exact canonical exists in the normalized dictionary."
+    },
+    {
+      "surface": "agricultural impacts",
+      "reason": "Could map to agriculture, but the surface form is broader than the provided canonical."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I notice that a significant portion of the United States is experiencing some level of drought, with the most severe areas concentrated in parts of the Midwest, Southwest, and California. The map categorizes drought levels from “Abnormally Dry” to “Exceptional Drought,” and darker colors indicate more extreme drought conditions."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder what factors have contributed to the widespread drought conditions. Are these related to climate change, local water management issues, or natural weather patterns? Additionally, how are communities in the most affected areas coping with water shortages?"
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "This might relate to me and my community in terms of water availability, agricultural impacts, and local weather patterns. If I live in an affected area, this could influence water conservation measures, food prices, or even the appearance of natural landscapes around me."
+    },
+    {
+      "section": "headline",
+      "label": "headline",
+      "text": "America is Thirsty: Widespread Drought Strains Communities Nationwide"
+    }
+  ],
+  "tagged_text": "1. I notice that a significant portion of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> is experiencing some level of drought, with the most severe areas concentrated in parts of the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity>, <entity type=\"LOCATION\" canonical=\"southwest_region\">Southwest</entity>, and <entity type=\"LOCATION\" canonical=\"california\">California</entity>. The map categorizes drought levels from “Abnormally Dry” to “Exceptional Drought,” and darker colors indicate more extreme drought conditions.\n\n\n2. I wonder what factors have contributed to the widespread drought conditions. Are these related to <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity>, local water management issues, or natural weather patterns? Additionally, how are communities in the most affected areas coping with <entity type=\"OTHER_ENTITY\" canonical=\"water_shortages\" subtype=\"other\" modality=\"questioned\">water shortages</entity>?\n\n\n3.This might relate to me and my community in terms of water availability, agricultural impacts, and local weather patterns. If I live in an affected area, this could influence <entity type=\"OTHER_ENTITY\" canonical=\"water_conservation_measures\" subtype=\"other\" modality=\"hypothetical\">water conservation measures</entity>, food prices, or even the appearance of natural landscapes around me.\n\n“<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">America is Thirsty: Widespread Drought Strains Communities Nationwide</entity>”"
+}

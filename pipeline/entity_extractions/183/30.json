@@ -1,0 +1,122 @@
+{
+  "article_id": "183",
+  "comment_index": 30,
+  "raw_comment": "Hi im Pedro and this is me for a school project sharing my opinion (im 14)\nWhat do you notice? Honestly its expected i can't say i notice too much that blows my mind. my mother is wanting badly to move to florida and im not able to partly for past memories but also i need to stay with my grandparents and when they're gone im going to florida so i can be with my father figure and being 3000 miles away give or take makes it definitely expected that i wont be able to call or visit her 24/7 or even anywhere near that \nHow does this relate to you and your community? it shows that this might be part of the reason people either say they are or are diagnosed with depression because their parents are a huge part of life and you honestly should call them everyday and at least say you love them, life is fast don't let it catch up to you\nCreate a catchy headline that captures the graph’s main idea.\nThe Parental extinction is among us its starting with cutting communication.",
+  "entities": [
+    {
+      "surface": "14",
+      "type": "TIME_REFERENCE",
+      "canonical": "14",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 71,
+      "end": 73,
+      "id": "e0"
+    },
+    {
+      "surface": "florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 205,
+      "end": 212,
+      "id": "e1"
+    },
+    {
+      "surface": "florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 336,
+      "end": 343,
+      "id": "e2"
+    },
+    {
+      "surface": "3000 miles away",
+      "type": "TIME_REFERENCE",
+      "canonical": "3000_miles_away",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 388,
+      "end": 403,
+      "id": "e3"
+    },
+    {
+      "surface": "depression",
+      "type": "EVENT",
+      "canonical": "depression",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 664,
+      "end": 674,
+      "id": "e4"
+    },
+    {
+      "surface": "The Parental extinction",
+      "type": "EVENT",
+      "canonical": "parental_extinction",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 900,
+      "end": 923,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "Pedro",
+      "reason": "Likely a person name, but no canonical person entity is provided in the dictionary."
+    },
+    {
+      "surface": "my mother",
+      "reason": "Could be OTHER_ENTITY (family member), but no canonical mapping is provided for this article."
+    },
+    {
+      "surface": "my grandparents",
+      "reason": "Could be OTHER_ENTITY (family member), but no canonical mapping is provided for this article."
+    },
+    {
+      "surface": "father figure",
+      "reason": "Could be OTHER_ENTITY, but no canonical mapping is provided for this article."
+    },
+    {
+      "surface": "call",
+      "reason": "Could be OTHER_ENTITY (communication), but the surface is too generic to tag confidently."
+    },
+    {
+      "surface": "visit her",
+      "reason": "Could be an in-person visit entity, but the surface is too underspecified to map confidently."
+    },
+    {
+      "surface": "their parents",
+      "reason": "Generic reference; could be OTHER_ENTITY, but no confident canonical mapping is available."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Hi im Pedro and this is me for a school project sharing my opinion (im 14)\nWhat do you notice? Honestly its expected i can't say i notice too much that blows my mind. my mother is wanting badly to move to florida and im not able to partly for past memories but also i need to stay with my grandparents and when they're gone im going to florida so i can be with my father figure and being 3000 miles away give or take makes it definitely expected that i wont be able to call or visit her 24/7 or even anywhere near that \nHow does this relate to you and your community? it shows that this might be part of the reason people either say they are or are diagnosed with depression because their parents are a huge part of life and you honestly should call them everyday and at least say you love them, life is fast don't let it catch up to you\nCreate a catchy headline that captures the graph’s main idea.\nThe Parental extinction is among us its starting with cutting communication."
+    }
+  ],
+  "tagged_text": "Hi im Pedro and this is me for a school project sharing my opinion (im <entity type=\"TIME_REFERENCE\" canonical=\"14\">14</entity>)\nWhat do you notice? Honestly its expected i can't say i notice too much that blows my mind. my mother is wanting badly to move to <entity type=\"LOCATION\" canonical=\"florida\">florida</entity> and im not able to partly for past memories but also i need to stay with my grandparents and when they're gone im going to <entity type=\"LOCATION\" canonical=\"florida\">florida</entity> so i can be with my father figure and being <entity type=\"TIME_REFERENCE\" canonical=\"3000_miles_away\">3000 miles away</entity> give or take makes it definitely expected that i wont be able to call or visit her 24/7 or even anywhere near that \nHow does this relate to you and your community? it shows that this might be part of the reason people either say they are or are diagnosed with <entity type=\"EVENT\" canonical=\"depression\">depression</entity> because their parents are a huge part of life and you honestly should call them everyday and at least say you love them, life is fast don't let it catch up to you\nCreate a catchy headline that captures the graph’s main idea.\n<entity type=\"EVENT\" canonical=\"parental_extinction\" section=\"headline\">The Parental extinction</entity> is among us its starting with cutting communication."
+}

@@ -1,0 +1,126 @@
+{
+  "article_id": "193",
+  "comment_index": 60,
+  "raw_comment": "1. I noticed that mid south and north of America have high rate of droughts.\n2. Why is there higher rate in mid South and North of America and not around America.\n3. Since I’m living in New York, it could help me understand if my state is struggling with draught or not.\n4. Caught the drought USA",
+  "entities": [
+    {
+      "surface": "America",
+      "type": "LOCATION",
+      "canonical": "america",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 41,
+      "end": 48,
+      "id": "e0"
+    },
+    {
+      "surface": "America",
+      "type": "LOCATION",
+      "canonical": "america",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 131,
+      "end": 138,
+      "id": "e1"
+    },
+    {
+      "surface": "America",
+      "type": "LOCATION",
+      "canonical": "america",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 154,
+      "end": 161,
+      "id": "e2"
+    },
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 186,
+      "end": 194,
+      "id": "e3"
+    },
+    {
+      "surface": "my state",
+      "type": "LOCATION",
+      "canonical": "my_state",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 227,
+      "end": 235,
+      "id": "e4"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "mid south",
+      "reason": "Likely a regional location phrase, but no exact canonical match is confirmed."
+    },
+    {
+      "surface": "north",
+      "reason": "Could be a region reference, but ambiguous without a confirmed canonical match."
+    },
+    {
+      "surface": "draught",
+      "reason": "Likely a misspelling of 'drought', but not exact surface match."
+    },
+    {
+      "surface": "Caught the drought USA",
+      "reason": "Appears to be a headline/title, but the exact canonical mapping is uncertain."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I noticed that mid south and north of America have high rate of droughts."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "Why is there higher rate in mid South and North of America and not around America."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "Since I’m living in New York, it could help me understand if my state is struggling with draught or not."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "Caught the drought USA"
+    }
+  ],
+  "tagged_text": "1. I noticed that mid south and north of <entity type=\"LOCATION\" canonical=\"america\" section=\"numbered_point\">America</entity> have high rate of <entity type=\"EVENT\" canonical=\"droughts\" section=\"numbered_point\">droughts</entity>.\n2. Why is there higher rate in mid South and North of <entity type=\"LOCATION\" canonical=\"america\" section=\"numbered_point\">America</entity> and not around <entity type=\"LOCATION\" canonical=\"america\" section=\"numbered_point\">America</entity>.\n3. Since I’m living in <entity type=\"LOCATION\" canonical=\"new_york\" section=\"numbered_point\" speaker_context=\"true\">New York</entity>, it could help me understand if <entity type=\"LOCATION\" canonical=\"my_state\" section=\"numbered_point\" speaker_context=\"true\">my state</entity> is struggling with draught or not.\n4. Caught the drought USA"
+}

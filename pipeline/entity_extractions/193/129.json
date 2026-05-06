@@ -1,0 +1,117 @@
+{
+  "article_id": "193",
+  "comment_index": 129,
+  "raw_comment": "I notice that the graph has many different colors of widespread drought across the United States. I wonder why there is severe the least and abnormally dry is the most. This relate to me and community because of the weather is getting dry and colder in NY. A catchy headline of this graph is Weather Conditions in the US.",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 18,
+      "end": 23,
+      "id": "e0"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "droughts_across_the_united_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 64,
+      "end": 71,
+      "id": "e1"
+    },
+    {
+      "surface": "United States",
+      "type": "LOCATION",
+      "canonical": "united_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 83,
+      "end": 96,
+      "id": "e2"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 120,
+      "end": 126,
+      "id": "e3"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 141,
+      "end": 155,
+      "id": "e4"
+    },
+    {
+      "surface": "NY",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 253,
+      "end": 255,
+      "id": "e5"
+    },
+    {
+      "surface": "Weather Conditions in the US",
+      "type": "EVENT",
+      "canonical": "weather_conditions_in_the_us",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 292,
+      "end": 320,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "weather is getting dry and colder",
+      "reason": "Describes conditions but no exact canonical entity beyond drought severity."
+    },
+    {
+      "surface": "me and community",
+      "reason": "Speaker-context relation implied, but not explicitly phrased as a named entity in the raw comment."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that the graph has many different colors of widespread drought across the United States. I wonder why there is severe the least and abnormally dry is the most. This relate to me and community because of the weather is getting dry and colder in NY. A catchy headline of this graph is Weather Conditions in the US."
+    }
+  ],
+  "tagged_text": "I notice that the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> has many different colors of widespread <entity type=\"EVENT\" canonical=\"droughts_across_the_united_states\" section=\"body\">drought</entity> across the <entity type=\"LOCATION\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity>. I wonder why there is <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\" section=\"body\">severe</entity> the least and <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\" section=\"body\">abnormally dry</entity> is the most. This relate to me and community because of the weather is getting dry and colder in <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">NY</entity>. A catchy headline of this graph is <entity type=\"EVENT\" canonical=\"weather_conditions_in_the_us\" section=\"headline\">Weather Conditions in the US</entity>."
+}

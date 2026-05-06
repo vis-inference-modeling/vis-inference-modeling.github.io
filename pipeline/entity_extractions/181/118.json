@@ -1,0 +1,66 @@
+{
+  "article_id": "181",
+  "comment_index": 118,
+  "raw_comment": "notice - one is rising, one is steady, one is slowly rising.\nwonder - why china's is skyrocketing over US and India and if its a good or bad thing.",
+  "entities": [
+    {
+      "surface": "china's",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 74,
+      "end": 81,
+      "id": "e0"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 103,
+      "end": 105,
+      "id": "e1"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 110,
+      "end": 115,
+      "id": "e2"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "one is rising, one is steady, one is slowly rising",
+      "reason": "Refers to unnamed series in the chart; cannot map to a specific variable level without more context."
+    },
+    {
+      "surface": "good or bad thing",
+      "reason": "Evaluative phrase, not an entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "notice - one is rising, one is steady, one is slowly rising.\nwonder - why china's is skyrocketing over US and India and if its a good or bad thing."
+    }
+  ],
+  "tagged_text": "notice - one is rising, one is steady, one is slowly rising.\nwonder - why <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">china's</entity> is skyrocketing over <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> and if its a good or bad thing."
+}

@@ -1,0 +1,90 @@
+{
+  "article_id": "183",
+  "comment_index": 105,
+  "raw_comment": "I noticed that women were likelier to reach out to people than men. I wonder why this is. I feel I'm not on my phone as much as my peers.\nHeadline: Who's calling?",
+  "entities": [
+    {
+      "surface": "women",
+      "type": "OTHER_ENTITY",
+      "canonical": "women",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 15,
+      "end": 20,
+      "id": "e0"
+    },
+    {
+      "surface": "men",
+      "type": "OTHER_ENTITY",
+      "canonical": "men",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 17,
+      "end": 20,
+      "id": "e1"
+    },
+    {
+      "surface": "phone",
+      "type": "OTHER_ENTITY",
+      "canonical": "phone",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 111,
+      "end": 116,
+      "id": "e2"
+    },
+    {
+      "surface": "peers",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_peers",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 131,
+      "end": 136,
+      "id": "e3"
+    },
+    {
+      "surface": "Who's calling?",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 148,
+      "end": 162,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "people",
+      "reason": "Generic reference; could mean respondents or people in general, but no clear entity mapping is confirmed."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that women were likelier to reach out to people than men. I wonder why this is. I feel I'm not on my phone as much as my peers."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Who's calling?"
+    }
+  ],
+  "tagged_text": "I noticed that <entity type=\"OTHER_ENTITY\" canonical=\"women\" section=\"body\">women</entity> were likelier to reach out to people than <entity type=\"OTHER_ENTITY\" canonical=\"men\" section=\"body\">men</entity>. I wonder why this is. I feel I'm not on my <entity type=\"OTHER_ENTITY\" canonical=\"phone\" section=\"body\" speaker_context=\"true\">phone</entity> as much as my <entity type=\"OTHER_ENTITY\" canonical=\"my_peers\" section=\"body\" speaker_context=\"true\">peers</entity>.\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Who's calling?</entity>"
+}

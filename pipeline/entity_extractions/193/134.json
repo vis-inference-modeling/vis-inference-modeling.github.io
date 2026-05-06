@@ -1,0 +1,83 @@
+{
+  "article_id": "193",
+  "comment_index": 134,
+  "raw_comment": "What do you notice? That there isn’t any connection by the areas that are more affected \n• What do you wonder? Is this caused by global warming \n• How does this relate to you and your community? This affects our food crops and plants around us\n• What’s going on in this graph? Create a catchy headline that captures the graph’s main idea how droughts are affecting the us",
+  "entities": [
+    {
+      "surface": "global warming",
+      "type": "EVENT",
+      "canonical": "global_warming",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 129,
+      "end": 143,
+      "id": "e0"
+    },
+    {
+      "surface": "food crops",
+      "type": "OTHER_ENTITY",
+      "canonical": "food_production",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 212,
+      "end": 222,
+      "id": "e1"
+    },
+    {
+      "surface": "plants",
+      "type": "OTHER_ENTITY",
+      "canonical": "plants",
+      "subtype": "flora_fauna",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 227,
+      "end": 233,
+      "id": "e2"
+    },
+    {
+      "surface": "us",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "us",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 241,
+      "end": 243,
+      "id": "e3"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "areas that are more affected",
+      "reason": "Generic location-like phrase without a specific canonical location."
+    },
+    {
+      "surface": "this",
+      "reason": "Pronoun reference not resolved."
+    },
+    {
+      "surface": "graph",
+      "reason": "Chart element mention is plausible, but the prompt allows unresolved mentions freely and the comment is mostly instruction-like."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice? That there isn’t any connection by the areas that are more affected \n• What do you wonder? Is this caused by global warming \n• How does this relate to you and your community? This affects our food crops and plants around us\n• What’s going on in this graph? Create a catchy headline that captures the graph’s main idea how droughts are affecting the us"
+    }
+  ],
+  "tagged_text": "What do you notice? That there isn’t any connection by the areas that are more affected \n• What do you wonder? Is this caused by <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"questioned\">global warming</entity> \n• How does this relate to you and your community? This affects our <entity type=\"OTHER_ENTITY\" canonical=\"food_production\" subtype=\"other\">food crops</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"plants\" subtype=\"flora_fauna\">plants</entity> around us\n• What’s going on in this graph? Create a catchy headline that captures the graph’s main idea how droughts are affecting the <entity type=\"DATA_VAR_LEVEL\" canonical=\"us\" var=\"country\">us</entity>"
+}

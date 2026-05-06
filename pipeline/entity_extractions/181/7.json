@@ -1,0 +1,194 @@
+{
+  "article_id": "181",
+  "comment_index": 7,
+  "raw_comment": "I've seen that the production of power has been rising over time. In addition to coal being the main source of emissions that may harm the environment, clean generators are becoming more and more common. I could also see that China generates twice as much power as the United States and more than five times as much as India.\n\nI wonder how we can ever rescue life on this planet given that people are addicted to non-sustainable lifestyles, that the fossil fuel business and electric utilities are primarily concerned with gaining power and profit, and that the government is frightened to take the necessary steps to regulate the answer.\n\nThis is relevant to my community because everything runs on power, and we need to take care of it by maintaining a healthy, non-toxic atmosphere and stocking it with clean supplies.\n\nA Whole New Era of Eco-Friendly Power",
+  "entities": [
+    {
+      "surface": "coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 81,
+      "end": 85,
+      "id": "e0"
+    },
+    {
+      "surface": "environment",
+      "type": "OTHER_ENTITY",
+      "canonical": "environment",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 139,
+      "end": 150,
+      "id": "e1"
+    },
+    {
+      "surface": "clean generators",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 152,
+      "end": 168,
+      "id": "e2"
+    },
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 226,
+      "end": 231,
+      "id": "e3"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 269,
+      "end": 282,
+      "id": "e4"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 319,
+      "end": 324,
+      "id": "e5"
+    },
+    {
+      "surface": "planet",
+      "type": "LOCATION",
+      "canonical": "earth",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 372,
+      "end": 378,
+      "id": "e6"
+    },
+    {
+      "surface": "fossil fuel business",
+      "type": "OTHER_ENTITY",
+      "canonical": "fossil_fuel_business",
+      "subtype": "organization",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 450,
+      "end": 470,
+      "id": "e7"
+    },
+    {
+      "surface": "electric utilities",
+      "type": "OTHER_ENTITY",
+      "canonical": "electric_utilities",
+      "subtype": "organization",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 475,
+      "end": 493,
+      "id": "e8"
+    },
+    {
+      "surface": "government",
+      "type": "OTHER_ENTITY",
+      "canonical": "government",
+      "subtype": "organization",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 562,
+      "end": 572,
+      "id": "e9"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 660,
+      "end": 672,
+      "id": "e10"
+    },
+    {
+      "surface": "A Whole New Era of Eco-Friendly Power",
+      "type": "OTHER_ENTITY",
+      "canonical": "a_whole_new_era_of_eco_friendly_power",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 823,
+      "end": 860,
+      "id": "e11"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "non-sustainable lifestyles",
+      "reason": "Could map to fossil/clean terminology, but no exact canonical level in the provided dictionary."
+    },
+    {
+      "surface": "power",
+      "reason": "Generic usage; could refer to electricity_generation or be rhetorical. Not tagged to avoid overreach."
+    },
+    {
+      "surface": "clean supplies",
+      "reason": "Ambiguous generic phrase; not clearly a chart-related entity or a listed canonical level."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I've seen that the production of power has been rising over time. In addition to coal being the main source of emissions that may harm the environment, clean generators are becoming more and more common. I could also see that China generates twice as much power as the United States and more than five times as much as India.\n\nI wonder how we can ever rescue life on this planet given that people are addicted to non-sustainable lifestyles, that the fossil fuel business and electric utilities are primarily concerned with gaining power and profit, and that the government is frightened to take the necessary steps to regulate the answer.\n\nThis is relevant to my community because everything runs on power, and we need to take care of it by maintaining a healthy, non-toxic atmosphere and stocking it with clean supplies.\n\nA Whole New Era of Eco-Friendly Power"
+    }
+  ],
+  "tagged_text": "I've seen that the production of power has been rising over time. In addition to <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> being the main source of emissions that may harm the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean generators</entity> are becoming more and more common. I could also see that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> generates twice as much power as the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> and more than five times as much as <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>.\n\nI wonder how we can ever rescue life on this <entity type=\"LOCATION\" canonical=\"earth\">planet</entity> given that people are addicted to non-sustainable lifestyles, that the <entity type=\"OTHER_ENTITY\" canonical=\"fossil_fuel_business\" subtype=\"organization\">fossil fuel business</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"electric_utilities\" subtype=\"organization\">electric utilities</entity> are primarily concerned with gaining power and profit, and that the <entity type=\"OTHER_ENTITY\" canonical=\"government\" subtype=\"organization\">government</entity> is frightened to take the necessary steps to regulate the answer.\n\nThis is relevant to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because everything runs on power, and we need to take care of it by maintaining a healthy, non-toxic atmosphere and stocking it with clean supplies.\n\n<entity type=\"OTHER_ENTITY\" canonical=\"a_whole_new_era_of_eco_friendly_power\" subtype=\"other\">A Whole New Era of Eco-Friendly Power</entity>"
+}

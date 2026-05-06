@@ -1,0 +1,151 @@
+{
+  "article_id": "193",
+  "comment_index": 192,
+  "raw_comment": "What do you notice?\nI noticed all of America seems to be in dry condition except for Florida and Alaska which seems to be normal.\nWhat do you wonder?\nI wonder if there is one main problem that has caused everything to be dry. I wonder what has caused Florida and Alaska, two very different states, to not be dry.\nHow does this relate to you and your community?\nWill I notice that the majority of Michigan is at least moderately dry? I want to know how this is being measured as I live in Michigan and could be affected by this potential drought.\nCreate a catchy headline that captures the graph’s main idea.\nHey US, Why So Dry?",
+  "entities": [
+    {
+      "surface": "America",
+      "type": "OTHER_ENTITY",
+      "canonical": "america",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 37,
+      "end": 44,
+      "id": "e0"
+    },
+    {
+      "surface": "dry condition",
+      "type": "EVENT",
+      "canonical": "dry_conditions",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 60,
+      "end": 73,
+      "id": "e1"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 85,
+      "end": 92,
+      "id": "e2"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 251,
+      "end": 258,
+      "id": "e3"
+    },
+    {
+      "surface": "Alaska",
+      "type": "LOCATION",
+      "canonical": "alaska",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 263,
+      "end": 269,
+      "id": "e4"
+    },
+    {
+      "surface": "Michigan",
+      "type": "LOCATION",
+      "canonical": "michigan",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 396,
+      "end": 404,
+      "id": "e5"
+    },
+    {
+      "surface": "Michigan",
+      "type": "LOCATION",
+      "canonical": "michigan",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 488,
+      "end": 496,
+      "id": "e6"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 537,
+      "end": 544,
+      "id": "e7"
+    },
+    {
+      "surface": "Alaska",
+      "type": "LOCATION",
+      "canonical": "alaska",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "moderately dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "moderate",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "Hey US, Why So Dry?",
+      "reason": "Could be a headline/title, but no explicit headline marker is present in the raw comment. It also contains a country reference ('US') that may be part of the title rather than a standalone mention."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice?\nI noticed all of America seems to be in dry condition except for Florida and Alaska which seems to be normal.\nWhat do you wonder?\nI wonder if there is one main problem that has caused everything to be dry. I wonder what has caused Florida and Alaska, two very different states, to not be dry.\nHow does this relate to you and your community?\nWill I notice that the majority of Michigan is at least moderately dry? I want to know how this is being measured as I live in Michigan and could be affected by this potential drought.\nCreate a catchy headline that captures the graph’s main idea.\nHey US, Why So Dry?"
+    }
+  ],
+  "tagged_text": "What do you notice?\nI noticed all of <entity type=\"OTHER_ENTITY\" canonical=\"america\">America</entity> seems to be in <entity type=\"EVENT\" canonical=\"dry_conditions\">dry condition</entity> except for <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> and <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> which seems to be normal.\nWhat do you wonder?\nI wonder if there is one main problem that has caused everything to be dry. I wonder what has caused <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> and <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity>, two very different states, to not be dry.\nHow does this relate to you and your community?\nWill I notice that the majority of <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> is at least <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderately dry</entity>? I want to know how this is being measured as I live in <entity type=\"LOCATION\" canonical=\"michigan\" speaker_context=\"true\">Michigan</entity> and could be affected by this potential <entity type=\"EVENT\" canonical=\"drought\">drought</entity>.\nCreate a catchy headline that captures the graph’s main idea.\nHey US, Why So Dry?"
+}

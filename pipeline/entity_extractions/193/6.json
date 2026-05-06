@@ -1,0 +1,182 @@
+{
+  "article_id": "193",
+  "comment_index": 6,
+  "raw_comment": "The U.S. is facing widespread drought, especially in the Midwest, West, and Texas, where some areas have been hit very hard. I wonder how the drought impacts farmers, water supplies, and wildlife in the affected areas. I also wonder what steps are being taken to manage the situation and if the drought will get worse. It could mean stricter water usage rules, higher food prices, and possible environmental changes like drier landscapes. These challenges might affect daily life and how we plan for the future in our area.\n\nHeadline: A Nation's Thirst.",
+  "entities": [
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 4,
+      "end": 8,
+      "id": "e0"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 30,
+      "end": 37,
+      "id": "e1"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 142,
+      "end": 149,
+      "id": "e2"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 295,
+      "end": 302,
+      "id": "e3"
+    },
+    {
+      "surface": "water usage",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 342,
+      "end": 353,
+      "id": "e4"
+    },
+    {
+      "surface": "future",
+      "type": "TIME_REFERENCE",
+      "canonical": "future",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 504,
+      "end": 510,
+      "id": "e5"
+    },
+    {
+      "surface": "A Nation's Thirst.",
+      "type": "EVENT",
+      "canonical": "a_nations_thirst",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 535,
+      "end": 553,
+      "id": "e6"
+    },
+    {
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "West",
+      "type": "LOCATION",
+      "canonical": "west",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "water supplies",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_sources",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "farmers",
+      "reason": "Could be relevant to agriculture, but no exact canonical entity is provided."
+    },
+    {
+      "surface": "wildlife",
+      "reason": "Could map to animals, but the comment does not explicitly use the provided canonical term."
+    },
+    {
+      "surface": "drier landscapes",
+      "reason": "Descriptive phrase without a specific canonical match."
+    },
+    {
+      "surface": "our area",
+      "reason": "Speaker-specific location reference, but no precise location canonical is available."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "The U.S. is facing widespread drought, especially in the Midwest, West, and Texas, where some areas have been hit very hard. I wonder how the drought impacts farmers, water supplies, and wildlife in the affected areas. I also wonder what steps are being taken to manage the situation and if the drought will get worse. It could mean stricter water usage rules, higher food prices, and possible environmental changes like drier landscapes. These challenges might affect daily life and how we plan for the future in our area."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "A Nation's Thirst."
+    }
+  ],
+  "tagged_text": "The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> is facing widespread <entity type=\"EVENT\" canonical=\"drought\">drought</entity>, especially in the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity>, <entity type=\"LOCATION\" canonical=\"west\">West</entity>, and <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, where some areas have been hit very hard. I wonder how the <entity type=\"EVENT\" canonical=\"drought\" modality=\"questioned\">drought</entity> impacts farmers, <entity type=\"OTHER_ENTITY\" canonical=\"water_sources\" subtype=\"other\">water supplies</entity>, and wildlife in the affected areas. I also wonder what steps are being taken to manage the situation and if the <entity type=\"EVENT\" canonical=\"drought\" modality=\"questioned\">drought</entity> will get worse. It could mean stricter <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">water usage</entity> rules, higher food prices, and possible environmental changes like drier landscapes. These challenges might affect daily life and how we plan for the <entity type=\"TIME_REFERENCE\" canonical=\"future\">future</entity> in our area.\n\nHeadline: <entity type=\"EVENT\" canonical=\"a_nations_thirst\" section=\"headline\">A Nation's Thirst.</entity>"
+}

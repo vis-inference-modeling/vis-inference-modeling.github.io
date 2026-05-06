@@ -1,0 +1,68 @@
+{
+  "article_id": "193",
+  "comment_index": 82,
+  "raw_comment": "Wonder: I wonder why the only part of Alaska that is experiencing drought is in the Southeast?\n\nHeadline: \"Dry Horizon: The Emerging Threat of Widespread Drought.\"",
+  "entities": [
+    {
+      "surface": "Alaska",
+      "type": "LOCATION",
+      "canonical": "alaska",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 38,
+      "end": 44,
+      "id": "e0"
+    },
+    {
+      "surface": "Southeast",
+      "type": "LOCATION",
+      "canonical": "southeast",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 84,
+      "end": 93,
+      "id": "e1"
+    },
+    {
+      "surface": "Dry Horizon: The Emerging Threat of Widespread Drought.",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 107,
+      "end": 162,
+      "id": "e2"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "drought",
+      "reason": "General event mention; could map to EVENT:drought, but the prompt emphasizes using unresolved_mentions freely when uncertain and the comment is primarily about location-specific drought occurrence."
+    },
+    {
+      "surface": "widespread drought",
+      "reason": "Could map to EVENT:widespread_drought, but the surface appears only in the headline and may be part of a title rather than a direct comment entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Wonder: I wonder why the only part of Alaska that is experiencing drought is in the Southeast?"
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "\"Dry Horizon: The Emerging Threat of Widespread Drought.\""
+    }
+  ],
+  "tagged_text": "Wonder: I wonder why the only part of <entity type=\"LOCATION\" canonical=\"alaska\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Alaska</entity> that is experiencing drought is in the <entity type=\"LOCATION\" canonical=\"southeast\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Southeast</entity>?\n\nHeadline: \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Dry Horizon: The Emerging Threat of Widespread Drought.</entity>\""
+}

@@ -1,0 +1,75 @@
+{
+  "article_id": "193",
+  "comment_index": 65,
+  "raw_comment": "1. I notice that the is more drought near the middle of the country where there may be less water. There also many states that don't have extreme droughts and hare either abnormally dry or no dryness.\n2. I wonder why those very specific spots of land have exceptional droughts in the United States.\n3. This relates to me and my community because where I live there are moderate number of droughts even though I live next to the Atlantic Ocean so that can be concerning.\n4. The US is experiencing extreme droughts: What can we do to prevent this.",
+  "entities": [
+    {
+      "surface": "Atlantic Ocean",
+      "type": "LOCATION",
+      "canonical": "atlantic_ocean",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 428,
+      "end": 442,
+      "id": "e0"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 477,
+      "end": 479,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "middle of the country",
+      "reason": "Likely a location, but the exact canonical is not fully certain from the available list; could map to central_united_states or middle_of_the_country."
+    },
+    {
+      "surface": "water",
+      "reason": "Generic mention; could be relevant to the chart theme but not clearly an entity in this comment."
+    },
+    {
+      "surface": "abnormally dry",
+      "reason": "Likely a drought severity level, but no exact canonical is provided in the normalized dictionary."
+    },
+    {
+      "surface": "exceptional droughts",
+      "reason": "Could map to exceptional drought severity, but the comment uses plural and the available canonical is singular severity-level wording."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I notice that the is more drought near the middle of the country where there may be less water. There also many states that don't have extreme droughts and hare either abnormally dry or no dryness."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder why those very specific spots of land have exceptional droughts in the United States."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "This relates to me and my community because where I live there are moderate number of droughts even though I live next to the Atlantic Ocean so that can be concerning."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "The US is experiencing extreme droughts: What can we do to prevent this."
+    }
+  ],
+  "tagged_text": "1. I notice that the is more drought near the middle of the country where there may be less water. There also many states that don't have extreme droughts and hare either abnormally dry or no dryness.\n2. I wonder why those very specific spots of land have exceptional droughts in the United States.\n3. This relates to me and my community because where I live there are moderate number of droughts even though I live next to the <entity type=\"LOCATION\" canonical=\"atlantic_ocean\">Atlantic Ocean</entity> so that can be concerning.\n4. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is experiencing extreme droughts: What can we do to prevent this."
+}

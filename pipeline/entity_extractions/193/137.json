@@ -1,0 +1,84 @@
+{
+  "article_id": "193",
+  "comment_index": 137,
+  "raw_comment": "Our class is noticing that the middle of the Southwest seems less affected by the drought, and we thought that would be the most affected area.  Wondering is the population impacts the level of drought? In other words does the amount of water usage impact the level of drought? Are there more wildfires or forest fires causing the drought? Does being close to Canada impact the level of drought?",
+  "entities": [
+    {
+      "surface": "water usage",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 237,
+      "end": 248,
+      "id": "e0"
+    },
+    {
+      "surface": "wildfires",
+      "type": "EVENT",
+      "canonical": "wildfires",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 293,
+      "end": 302,
+      "id": "e1"
+    },
+    {
+      "surface": "forest fires",
+      "type": "EVENT",
+      "canonical": "forest_fires",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 306,
+      "end": 318,
+      "id": "e2"
+    },
+    {
+      "surface": "Canada",
+      "type": "LOCATION",
+      "canonical": "canada",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 360,
+      "end": 366,
+      "id": "e3"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "the middle of the Southwest",
+      "reason": "Geographic region phrase not directly present as a canonical location."
+    },
+    {
+      "surface": "population",
+      "reason": "Generic noun; not clearly an entity in the provided dictionary."
+    },
+    {
+      "surface": "the drought",
+      "reason": "Could be tagged as EVENT, but used generically without a specific canonical drought type."
+    },
+    {
+      "surface": "the most affected area",
+      "reason": "Generic location-like phrase without a specific canonical location."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Our class is noticing that the middle of the Southwest seems less affected by the drought, and we thought that would be the most affected area.  Wondering is the population impacts the level of drought? In other words does the amount of water usage impact the level of drought? Are there more wildfires or forest fires causing the drought? Does being close to Canada impact the level of drought?"
+    }
+  ],
+  "tagged_text": "Our class is noticing that the middle of the Southwest seems less affected by the drought, and we thought that would be the most affected area.  Wondering is the population impacts the level of drought? In other words does the amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" terminology_drift=\"true\">water usage</entity> impact the level of drought? Are there more <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity> or <entity type=\"EVENT\" canonical=\"forest_fires\">forest fires</entity> causing the drought? Does being close to <entity type=\"LOCATION\" canonical=\"canada\">Canada</entity> impact the level of drought?"
+}

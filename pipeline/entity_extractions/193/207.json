@@ -1,0 +1,207 @@
+{
+  "article_id": "193",
+  "comment_index": 207,
+  "raw_comment": "What I notice in this graph is that the Midwest areas of the U.S are the most affected by droughts, and near the coast there's less. This makes me wonder why the dryer places attract more water and if the graph is a specific time or in general because some graphs don't show correct statistics. This affects my community because we are on an island already surrounded by tons of water so any drought would severely affect us and our crops. \"The fight for water from coast to coast\"",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 22,
+      "end": 27,
+      "id": "e0"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 205,
+      "end": 210,
+      "id": "e1"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 379,
+      "end": 384,
+      "id": "e2"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 455,
+      "end": 460,
+      "id": "e3"
+    },
+    {
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "the U.S",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "the coast",
+      "type": "LOCATION",
+      "canonical": "the_coast",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "specific time",
+      "type": "TIME_REFERENCE",
+      "canonical": "time",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "an island",
+      "type": "LOCATION",
+      "canonical": "island",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "our crops",
+      "type": "OTHER_ENTITY",
+      "canonical": "crops",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "The fight for water from coast to coast",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "dryer places",
+      "reason": "Likely means drier places, but no exact canonical entity for this phrase."
+    },
+    {
+      "surface": "correct statistics",
+      "reason": "Chart-quality commentary, not an entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What I notice in this graph is that the Midwest areas of the U.S are the most affected by droughts, and near the coast there's less. This makes me wonder why the dryer places attract more water and if the graph is a specific time or in general because some graphs don't show correct statistics. This affects my community because we are on an island already surrounded by tons of water so any drought would severely affect us and our crops. \"The fight for water from coast to coast\""
+    }
+  ],
+  "tagged_text": "What I notice in this graph is that the Midwest areas of the U.S are the most affected by droughts, and near the coast there's less. This makes me wonder why the dryer places attract more water and if the graph is a specific time or in general because some graphs don't show correct statistics. This affects my community because we are on an island already surrounded by tons of water so any drought would severely affect us and our crops. \"The fight for water from coast to coast\""
+}

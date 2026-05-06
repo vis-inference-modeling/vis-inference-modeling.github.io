@@ -1,0 +1,121 @@
+{
+  "article_id": "193",
+  "comment_index": 120,
+  "raw_comment": "I noticed that near Wyoming there is a exceptional drought \nI wonder why New York and Utah are dry\nThis relates to my community because it shows if there’s is any droughts in different countries \nCatchy HeadLine: Droughts through out the US",
+  "entities": [
+    {
+      "surface": "Wyoming",
+      "type": "LOCATION",
+      "canonical": "wyoming",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 20,
+      "end": 27,
+      "id": "e0"
+    },
+    {
+      "surface": "exceptional drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 39,
+      "end": 58,
+      "id": "e1"
+    },
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 73,
+      "end": 81,
+      "id": "e2"
+    },
+    {
+      "surface": "Utah",
+      "type": "LOCATION",
+      "canonical": "utah",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 86,
+      "end": 90,
+      "id": "e3"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 115,
+      "end": 127,
+      "id": "e4"
+    },
+    {
+      "surface": "countries",
+      "type": "LOCATION",
+      "canonical": "countries",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 185,
+      "end": 194,
+      "id": "e5"
+    },
+    {
+      "surface": "Droughts through out the US",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 213,
+      "end": 240,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "dry",
+      "reason": "Could indicate drought severity, but the exact level is not specified and no confirmed canonical match is available."
+    },
+    {
+      "surface": "there’s is any droughts",
+      "reason": "Contains an implicit reference to drought presence; not a distinct entity surface worth tagging separately."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that near Wyoming there is a exceptional drought \nI wonder why New York and Utah are dry\nThis relates to my community because it shows if there’s is any droughts in different countries \nCatchy HeadLine: Droughts through out the US"
+    },
+    {
+      "section": "headline",
+      "label": "Catchy HeadLine",
+      "text": "Droughts through out the US"
+    }
+  ],
+  "tagged_text": "I noticed that near <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity> there is a <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional drought</entity> \nI wonder why <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> and <entity type=\"LOCATION\" canonical=\"utah\">Utah</entity> are dry\nThis relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because it shows if there’s is any droughts in different <entity type=\"LOCATION\" canonical=\"countries\">countries</entity> \nCatchy HeadLine: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Droughts through out the US</entity>"
+}

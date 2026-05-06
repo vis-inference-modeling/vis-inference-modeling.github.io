@@ -1,0 +1,107 @@
+{
+  "article_id": "193",
+  "comment_index": 257,
+  "raw_comment": "I notice that droughts are according to the map are in places where there aren't any rivers or lakes nearby and didn't get a lot of rain.\n\nI wonder why there isn't much rain this year as it always was.\n\nThis relates to my community because we are in Stage 3 drought.\n\n\"Droughtful times\"",
+  "entities": [
+    {
+      "surface": "rivers",
+      "type": "LOCATION",
+      "canonical": "rivers",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 85,
+      "end": 91,
+      "id": "e0"
+    },
+    {
+      "surface": "lakes",
+      "type": "LOCATION",
+      "canonical": "lakes",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 95,
+      "end": 100,
+      "id": "e1"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 132,
+      "end": 136,
+      "id": "e2"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 169,
+      "end": 173,
+      "id": "e3"
+    },
+    {
+      "surface": "year",
+      "type": "TIME_REFERENCE",
+      "canonical": "this_year",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 179,
+      "end": 183,
+      "id": "e4"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 219,
+      "end": 231,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "Stage 3 drought",
+      "reason": "Contains a drought severity/stage reference, but 'Stage 3' is not in the normalized dictionary."
+    },
+    {
+      "surface": "Droughtful times",
+      "reason": "Headline/title-like phrase with no exact canonical match."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that droughts are according to the map are in places where there aren't any rivers or lakes nearby and didn't get a lot of rain.\n\nI wonder why there isn't much rain this year as it always was.\n\nThis relates to my community because we are in Stage 3 drought."
+    },
+    {
+      "section": "headline",
+      "label": "Droughtful times",
+      "text": "Droughtful times"
+    }
+  ],
+  "tagged_text": "I notice that droughts are according to the map are in places where there aren't any <entity type=\"LOCATION\" canonical=\"rivers\">rivers</entity> or <entity type=\"LOCATION\" canonical=\"lakes\">lakes</entity> nearby and didn't get a lot of <entity type=\"EVENT\" canonical=\"rain\">rain</entity>.\n\nI wonder why there isn't much <entity type=\"EVENT\" canonical=\"rain\">rain</entity> this <entity type=\"TIME_REFERENCE\" canonical=\"this_year\">year</entity> as it always was.\n\nThis relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because we are in Stage 3 drought.\n\n\"Droughtful times\""
+}

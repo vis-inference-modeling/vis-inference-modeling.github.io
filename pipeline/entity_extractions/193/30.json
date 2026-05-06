@@ -1,0 +1,106 @@
+{
+  "article_id": "193",
+  "comment_index": 30,
+  "raw_comment": "Notices:\nVarying drought severity across the U.S.\nIntense drought in the West and Midwest.\n\nWonders:\nWhat's causing these conditions?\nHow are they affecting local areas?\n\nRelation to Community:\nPotential for water restrictions and ecological impacts outside of Florida as no drought is shown in Florida.\n\nHeadline: \"U.S. Drought Intensifies, Straining Resources\"",
+  "entities": [
+    {
+      "surface": "U.S.",
+      "type": "LOCATION",
+      "canonical": "united_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 45,
+      "end": 49,
+      "id": "e0"
+    },
+    {
+      "surface": "West",
+      "type": "LOCATION",
+      "canonical": "west",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 73,
+      "end": 77,
+      "id": "e1"
+    },
+    {
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 82,
+      "end": 89,
+      "id": "e2"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 261,
+      "end": 268,
+      "id": "e3"
+    },
+    {
+      "surface": "U.S. Drought Intensifies, Straining Resources",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 316,
+      "end": 361,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "drought severity",
+      "reason": "Abstract severity phrase; no exact canonical level or variable match."
+    },
+    {
+      "surface": "intense drought",
+      "reason": "Could imply severe drought severity, but not an exact listed surface form."
+    },
+    {
+      "surface": "water restrictions",
+      "reason": "Could be an impact entity, but not listed in the canonical dictionary."
+    },
+    {
+      "surface": "ecological impacts",
+      "reason": "Could relate to ecosystems/environment, but not an exact canonical entity."
+    },
+    {
+      "surface": "local areas",
+      "reason": "Generic location reference without a specific canonical match."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Notices:\nVarying drought severity across the U.S.\nIntense drought in the West and Midwest.\n\nWonders:\nWhat's causing these conditions?\nHow are these conditions affecting local areas?\n\nRelation to Community:\nPotential for water restrictions and ecological impacts outside of Florida as no drought is shown in Florida.\n\nHeadline: \"U.S. Drought Intensifies, Straining Resources\""
+    },
+    {
+      "section": "headline",
+      "label": "U.S. Drought Intensifies, Straining Resources",
+      "text": "U.S. Drought Intensifies, Straining Resources"
+    }
+  ],
+  "tagged_text": "Notices:\nVarying drought severity across the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">U.S.</entity>.\nIntense drought in the <entity type=\"LOCATION\" canonical=\"west\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">West</entity> and <entity type=\"LOCATION\" canonical=\"midwest\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Midwest</entity>.\n\nWonders:\nWhat's causing these conditions?\nHow are these conditions affecting local areas?\n\nRelation to Community:\nPotential for water restrictions and ecological impacts outside of <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Florida</entity> as no drought is shown in Florida.\n\nHeadline: \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">U.S. Drought Intensifies, Straining Resources</entity>\""
+}

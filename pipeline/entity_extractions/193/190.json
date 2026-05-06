@@ -1,0 +1,164 @@
+{
+  "article_id": "193",
+  "comment_index": 190,
+  "raw_comment": "I notice how we usually notice and hear about droughts in California and its surrounding states, however, at least this year. The drought severity is much worse in the central U.S. this year compared to normal.\n\nI wonder what causes droughts to be much worse in certain areas than others, and why specifically this year California does not have much more serious droughts than usual.\n\nI notice that Michigan is slightly darker indicating that the droughts in Michigan are worse than usual. There was a period late summer where we did not have rain for a very long time, which could be considered a drought. This is clearly reflected in the graph.\n\nHeadline: Droughts Don’t Die; they are happening where you might not expect them.",
+  "entities": [
+    {
+      "surface": "California",
+      "type": "LOCATION",
+      "canonical": "california",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 58,
+      "end": 68,
+      "id": "e0"
+    },
+    {
+      "surface": "central U.S.",
+      "type": "LOCATION",
+      "canonical": "central_us",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 168,
+      "end": 180,
+      "id": "e1"
+    },
+    {
+      "surface": "this year",
+      "type": "TIME_REFERENCE",
+      "canonical": "this_year",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 181,
+      "end": 190,
+      "id": "e2"
+    },
+    {
+      "surface": "California",
+      "type": "LOCATION",
+      "canonical": "california",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 320,
+      "end": 330,
+      "id": "e3"
+    },
+    {
+      "surface": "Michigan",
+      "type": "LOCATION",
+      "canonical": "michigan",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 399,
+      "end": 407,
+      "id": "e4"
+    },
+    {
+      "surface": "Michigan",
+      "type": "LOCATION",
+      "canonical": "michigan",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 459,
+      "end": 467,
+      "id": "e5"
+    },
+    {
+      "surface": "late summer",
+      "type": "TIME_REFERENCE",
+      "canonical": "summer",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 509,
+      "end": 520,
+      "id": "e6"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 543,
+      "end": 547,
+      "id": "e7"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 640,
+      "end": 645,
+      "id": "e8"
+    },
+    {
+      "surface": "Headline: Droughts Don’t Die; they are happening where you might not expect them.",
+      "type": "OTHER_ENTITY",
+      "canonical": "droughts_dont_die_they_are_happening_where_you_might_not_expect_them",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "subtype": "other",
+      "occurrence_index": 0,
+      "start": 648,
+      "end": 729,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "surrounding states",
+      "reason": "Plural location reference, but not specific enough to map to a single canonical location."
+    },
+    {
+      "surface": "normal",
+      "reason": "Comparative reference without a clear entity mapping."
+    },
+    {
+      "surface": "drought",
+      "reason": "Used generically in a descriptive clause; could be tagged as EVENT but the sentence already uses drought severity context."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice how we usually notice and hear about droughts in California and its surrounding states, however, at least this year. The drought severity is much worse in the central U.S. this year compared to normal.\n\nI wonder what causes droughts to be much worse in certain areas than others, and why specifically this year California does not have much more serious droughts than usual.\n\nI notice that Michigan is slightly darker indicating that the droughts in Michigan are worse than usual. There was a period late summer where we did not have rain for a very long time, which could be considered a drought. This is clearly reflected in the graph.\n\nHeadline: Droughts Don’t Die; they are happening where you might not expect them."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Droughts Don’t Die; they are happening where you might not expect them."
+    }
+  ],
+  "tagged_text": "I notice how we usually notice and hear about droughts in <entity type=\"LOCATION\" canonical=\"california\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">California</entity> and its surrounding states, however, at least this year. The drought severity is much worse in the <entity type=\"LOCATION\" canonical=\"central_us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">central U.S.</entity> <entity type=\"TIME_REFERENCE\" canonical=\"this_year\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">this year</entity> compared to normal.\n\nI wonder what causes droughts to be much worse in certain areas than others, and why specifically this year <entity type=\"LOCATION\" canonical=\"california\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">California</entity> does not have much more serious droughts than usual.\n\nI notice that <entity type=\"LOCATION\" canonical=\"michigan\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Michigan</entity> is slightly darker indicating that the droughts in <entity type=\"LOCATION\" canonical=\"michigan\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">Michigan</entity> are worse than usual. There was a period <entity type=\"TIME_REFERENCE\" canonical=\"summer\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">late summer</entity> where we did not have <entity type=\"EVENT\" canonical=\"rain\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">rain</entity> for a very long time, which could be considered a drought. This is clearly reflected in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity>.\n\n<entity type=\"headline_title\" canonical=\"droughts_dont_die_they_are_happening_where_you_might_not_expect_them\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Headline: Droughts Don’t Die; they are happening where you might not expect them.</entity>"
+}

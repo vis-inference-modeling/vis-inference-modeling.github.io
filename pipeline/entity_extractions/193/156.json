@@ -1,0 +1,206 @@
+{
+  "article_id": "193",
+  "comment_index": 156,
+  "raw_comment": "1. I noticed that most of Florida does not experience drought even though it typically has a very hot climate. I also observed that states such as Wyoming, North Dakota, South Dakota, and Montana experience high levels of drought, even though they are typically found to have cooler climates. Looking at the overall graph, I was surprised that most countries experience a certain level of drought.\n\n2. I wonder how severe each drought category is in each U.S. state and how often each state experiences the severity of drought displayed in the graph.\n\n3. I experience some degree of drought in my community, noticing signs such as wilted plants and dusty soil outside my house.\n\n4. Drought Intensity Varies Across the U.S.",
+  "entities": [
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 26,
+      "end": 33,
+      "id": "e0"
+    },
+    {
+      "surface": "Wyoming",
+      "type": "LOCATION",
+      "canonical": "wyoming",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 147,
+      "end": 154,
+      "id": "e1"
+    },
+    {
+      "surface": "North Dakota",
+      "type": "LOCATION",
+      "canonical": "north_dakota",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 156,
+      "end": 168,
+      "id": "e2"
+    },
+    {
+      "surface": "South Dakota",
+      "type": "LOCATION",
+      "canonical": "south_dakota",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 170,
+      "end": 182,
+      "id": "e3"
+    },
+    {
+      "surface": "Montana",
+      "type": "LOCATION",
+      "canonical": "montana",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 188,
+      "end": 195,
+      "id": "e4"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 316,
+      "end": 321,
+      "id": "e5"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 544,
+      "end": 549,
+      "id": "e6"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 594,
+      "end": 606,
+      "id": "e7"
+    },
+    {
+      "surface": "my house",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker",
+      "subtype": "person",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 668,
+      "end": 676,
+      "id": "e8"
+    },
+    {
+      "surface": "Drought Intensity Varies Across the U.S.",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 682,
+      "end": 722,
+      "id": "e9"
+    },
+    {
+      "surface": "countries",
+      "type": "LOCATION",
+      "canonical": "countries",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "U.S. state",
+      "type": "LOCATION",
+      "canonical": "us_state",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "very hot climate",
+      "reason": "Descriptive phrase, but not a normalized entity."
+    },
+    {
+      "surface": "cooler climates",
+      "reason": "Descriptive phrase, but not a normalized entity."
+    },
+    {
+      "surface": "wilted plants",
+      "reason": "Could be an environmental indicator, but no exact canonical match in the provided dictionary."
+    },
+    {
+      "surface": "dusty soil",
+      "reason": "Could be an environmental indicator, but no exact canonical match in the provided dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I noticed that most of Florida does not experience drought even though it typically has a very hot climate. I also observed that states such as Wyoming, North Dakota, South Dakota, and Montana experience high levels of drought, even though they are typically found to have cooler climates. Looking at the overall graph, I was surprised that most countries experience a certain level of drought."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder how severe each drought category is in each U.S. state and how often each state experiences the severity of drought displayed in the graph."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "I experience some degree of drought in my community, noticing signs such as wilted plants and dusty soil outside my house."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "Drought Intensity Varies Across the U.S."
+    }
+  ],
+  "tagged_text": "1. I noticed that most of <entity type=\"LOCATION\" canonical=\"florida\" section=\"numbered_point\" label=\"1\">Florida</entity> does not experience drought even though it typically has a very hot climate. I also observed that states such as <entity type=\"LOCATION\" canonical=\"wyoming\" section=\"numbered_point\" label=\"1\">Wyoming</entity>, <entity type=\"LOCATION\" canonical=\"north_dakota\" section=\"numbered_point\" label=\"1\">North Dakota</entity>, <entity type=\"LOCATION\" canonical=\"south_dakota\" section=\"numbered_point\" label=\"1\">South Dakota</entity>, and <entity type=\"LOCATION\" canonical=\"montana\" section=\"numbered_point\" label=\"1\">Montana</entity> experience high levels of drought, even though they are typically found to have cooler climates. Looking at the overall <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"numbered_point\" label=\"1\">graph</entity>, I was surprised that most <entity type=\"LOCATION\" canonical=\"countries\" section=\"numbered_point\" label=\"1\">countries</entity> experience a certain level of drought.\n\n2. I wonder how severe each drought category is in each <entity type=\"LOCATION\" canonical=\"us_state\" section=\"numbered_point\" label=\"2\">U.S. state</entity> and how often each state experiences the severity of drought displayed in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"numbered_point\" label=\"2\">graph</entity>.\n\n3. I experience some degree of drought in <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"numbered_point\" label=\"3\" speaker_context=\"true\">my community</entity>, noticing signs such as wilted plants and dusty soil outside <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"numbered_point\" label=\"3\" speaker_context=\"true\">my house</entity>.\n\n4. Drought Intensity Varies Across the U.S."
+}

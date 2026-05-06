@@ -1,0 +1,175 @@
+{
+  "article_id": "193",
+  "comment_index": 127,
+  "raw_comment": "1.I see that the coasts seem to have less droughts while the midland areas towards the more industrialized midland of the U.S. While intensity is more extreme in the midland around Oklahoma, other states aren't still doing great.\n2. I wonder what those large concentrations of drought have in common.\n3. I Have family in the Middle East that tend to experience droughts. \n4. Where did the rain go",
+  "entities": [
+    {
+      "surface": "coasts",
+      "type": "LOCATION",
+      "canonical": "coasts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 17,
+      "end": 23,
+      "id": "e0"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 42,
+      "end": 50,
+      "id": "e1"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 361,
+      "end": 369,
+      "id": "e2"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 389,
+      "end": 393,
+      "id": "e3"
+    },
+    {
+      "surface": "midland areas",
+      "type": "LOCATION",
+      "canonical": "midland_areas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "U.S.",
+      "type": "LOCATION",
+      "canonical": "us",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "Oklahoma",
+      "type": "LOCATION",
+      "canonical": "oklahoma",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "states",
+      "type": "LOCATION",
+      "canonical": "states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "large concentrations of drought",
+      "type": "EVENT",
+      "canonical": "large_concentrations_of_drought",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "family",
+      "type": "OTHER_ENTITY",
+      "canonical": "family",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "Middle East",
+      "type": "LOCATION",
+      "canonical": "middle_east",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I see that the coasts seem to have less droughts while the midland areas towards the more industrialized midland of the U.S. While intensity is more extreme in the midland around Oklahoma, other states aren't still doing great."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder what those large concentrations of drought have in common."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "I Have family in the Middle East that tend to experience droughts."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "Where did the rain go"
+    }
+  ],
+  "tagged_text": "1.I see that the <entity type=\"LOCATION\" canonical=\"coasts\" section=\"body\">coasts</entity> seem to have less <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> while the <entity type=\"LOCATION\" canonical=\"midland_areas\" section=\"body\">midland areas</entity> towards the more industrialized midland of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\">U.S.</entity> While intensity is more extreme in the midland around <entity type=\"LOCATION\" canonical=\"oklahoma\" section=\"body\">Oklahoma</entity>, other <entity type=\"LOCATION\" canonical=\"states\" section=\"body\">states</entity> aren't still doing great.\n2. I wonder what those <entity type=\"EVENT\" canonical=\"large_concentrations_of_drought\" section=\"body\">large concentrations of drought</entity> have in common.\n3. I Have <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" section=\"body\">family</entity> in the <entity type=\"LOCATION\" canonical=\"middle_east\" section=\"body\">Middle East</entity> that tend to experience <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity>. \n4. Where did the <entity type=\"EVENT\" canonical=\"rain\" section=\"headline\">rain</entity> go"
+}

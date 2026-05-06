@@ -1,0 +1,99 @@
+{
+  "article_id": "193",
+  "comment_index": 215,
+  "raw_comment": "What do you noice?\nI noticed that at first glance there's no particular pattern of the severe droughts of the United States. But, I did notice that there were more severe droughts in the flatter areas of the states (most often) after studying the graph for a few minutes.\nWhat do you wonder?\nI wondered why some southern states got severe droughts, whereas other southern states did not have much drought at all (I had guessed that the more southern states would have more droughts but there was no relevance). I also wonder why the coasts are less droughts?\nRelationship to community?\nThe relationship is that recently I have noticed more droughts and less precipitation in the summer months (at least) and fall but I have no idea why.\nName for Graph: The United States is getting drier than my parents texting!",
+  "entities": [
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 110,
+      "end": 123,
+      "id": "e0"
+    },
+    {
+      "surface": "coasts",
+      "type": "LOCATION",
+      "canonical": "coasts",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 533,
+      "end": 539,
+      "id": "e1"
+    },
+    {
+      "surface": "precipitation",
+      "type": "EVENT",
+      "canonical": "precipitation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 658,
+      "end": 671,
+      "id": "e2"
+    },
+    {
+      "surface": "summer months",
+      "type": "TIME_REFERENCE",
+      "canonical": "summer_months",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 679,
+      "end": 692,
+      "id": "e3"
+    },
+    {
+      "surface": "fall",
+      "type": "TIME_REFERENCE",
+      "canonical": "fall",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 708,
+      "end": 712,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "states",
+      "reason": "Could refer to U.S. states as a generic location, but no specific state-level canonical is clearly intended beyond the already tagged United States."
+    },
+    {
+      "surface": "southern states",
+      "reason": "Could map to a regional location, but the reference list does not provide a clear canonical for this exact phrase in this context."
+    },
+    {
+      "surface": "graph",
+      "reason": "Mentioned as a chart element, but not clearly necessary beyond the headline/body context and no explicit chart reference list was provided."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you noice?\nI noticed that at first glance there's no particular pattern of the severe droughts of the United States. But, I did notice that there were more severe droughts in the flatter areas of the states (most often) after studying the graph for a few minutes.\nWhat do you wonder?\nI wondered why some southern states got severe droughts, whereas other southern states did not have much drought at all (I had guessed that the more southern states would have more droughts but there was no relevance). I also wonder why the coasts are less droughts?\nRelationship to community?\nThe relationship is that recently I have noticed more droughts and less precipitation in the summer months (at least) and fall but I have no idea why."
+    },
+    {
+      "section": "headline",
+      "label": "Name for Graph",
+      "text": "The United States is getting drier than my parents texting!"
+    }
+  ],
+  "tagged_text": "What do you noice?\nI noticed that at first glance there's no particular pattern of the severe droughts of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. But, I did notice that there were more severe droughts in the flatter areas of the states (most often) after studying the graph for a few minutes.\nWhat do you wonder?\nI wondered why some southern states got severe droughts, whereas other southern states did not have much drought at all (I had guessed that the more southern states would have more droughts but there was no relevance). I also wonder why the <entity type=\"LOCATION\" canonical=\"coasts\" modality=\"questioned\">coasts</entity> are less droughts?\nRelationship to community?\nThe relationship is that recently I have noticed more droughts and less <entity type=\"EVENT\" canonical=\"precipitation\" modality=\"asserted\">precipitation</entity> in the <entity type=\"TIME_REFERENCE\" canonical=\"summer_months\" modality=\"asserted\">summer months</entity> (at least) and <entity type=\"TIME_REFERENCE\" canonical=\"fall\" modality=\"asserted\">fall</entity> but I have no idea why.\nName for Graph: The United States is getting drier than my parents texting!"
+}

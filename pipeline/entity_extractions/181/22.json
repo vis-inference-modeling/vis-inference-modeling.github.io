@@ -1,0 +1,110 @@
+{
+  "article_id": "181",
+  "comment_index": 22,
+  "raw_comment": "Thanks to all the students who responded.   Here are some of the catchy headlines that we received:  \"The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix\" by Isabelle of California Polytechnic State University, San Luis Obispo; “Our World's Powerhouse: Clean Energy and Fossil Fuels” by Esmeralda of Perth Amboy High School in N.J.; “The World's Electricity: Clean or Dirty?” by Melina of Marble Hill High School for International Studies in the Bronx, N.Y.; and three headlines from California:  \"Power Dynamics: Global Energy Shift Towards Renewables, Challenges Fossil Fuel Reliance\" by Emma ; \"Fueling the Future: Cleaning Up Our Energy\" by Jackson and \"Powering Progress: The Rise of Renewable Energy\" by Curtis.\n\nPlease return on Friday when we will reveal the free link to the article that includes this graph.  Also in the Reveal are a summary of the topic, additional questions, shout outs for some of the best headlines for the graph and Stat Nuggets -- definitions of words that relate to the graph and where you can find them in the graph.\n\nThe next graph will be released by Friday, April 12 and live-moderated on Wednesday, April 17.  The topic – shrinkflation!\n\nSigning off – Sharon Hessney from Boston, who wonders if we can generate and transmit enough electricity for all of the electrical items we have now, and Rebecca Nichols from Anchorage, who enjoyed her first time moderating!",
+  "entities": [
+    {
+      "surface": "Friday, April 12",
+      "type": "TIME_REFERENCE",
+      "canonical": "friday_april_12",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1120,
+      "end": 1136,
+      "id": "e0"
+    },
+    {
+      "surface": "Wednesday, April 17",
+      "type": "TIME_REFERENCE",
+      "canonical": "wednesday_april_17",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1159,
+      "end": 1178,
+      "id": "e1"
+    },
+    {
+      "surface": "shrinkflation",
+      "type": "EVENT",
+      "canonical": "shrinkflation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1193,
+      "end": 1206,
+      "id": "e2"
+    },
+    {
+      "surface": "Boston",
+      "type": "LOCATION",
+      "canonical": "boston",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1243,
+      "end": 1249,
+      "id": "e3"
+    },
+    {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1302,
+      "end": 1313,
+      "id": "e4"
+    },
+    {
+      "surface": "Anchorage",
+      "type": "LOCATION",
+      "canonical": "anchorage",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1384,
+      "end": 1393,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix",
+      "reason": "Headline/title entity from a student response; could be tagged as OTHER_ENTITY headline_title, but the prompt prioritizes comment text alone and this is embedded quoted text from multiple students."
+    },
+    {
+      "surface": "Our World's Powerhouse: Clean Energy and Fossil Fuels",
+      "reason": "Quoted headline/title; likely OTHER_ENTITY headline_title, but not necessary for the main extraction task."
+    },
+    {
+      "surface": "The World's Electricity: Clean or Dirty?",
+      "reason": "Quoted headline/title; likely OTHER_ENTITY headline_title, but not necessary for the main extraction task."
+    },
+    {
+      "surface": "Power Dynamics: Global Energy Shift Towards Renewables, Challenges Fossil Fuel Reliance",
+      "reason": "Quoted headline/title; likely OTHER_ENTITY headline_title, but not necessary for the main extraction task."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Thanks to all the students who responded.   Here are some of the catchy headlines that we received:  \"The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix\" by Isabelle of California Polytechnic State University, San Luis Obispo; “Our World's Powerhouse: Clean Energy and Fossil Fuels” by Esmeralda of Perth Amboy High School in N.J.; “The World's Electricity: Clean or Dirty?” by Melina of Marble Hill High School for International Studies in the Bronx, N.Y.; and three headlines from California:  \"Power Dynamics: Global Energy Shift Towards Renewables, Challenges Fossil Fuel Reliance\" by Emma ; \"Fueling the Future: Cleaning Up Our Energy\" by Jackson and \"Powering Progress: The Rise of Renewable Energy\" by Curtis.\n\nPlease return on Friday when we will reveal the free link to the article that includes this graph.  Also in the Reveal are a summary of the topic, additional questions, shout outs for some of the best headlines for the graph and Stat Nuggets -- definitions of words that relate to the graph and where you can find them in the graph.\n\nThe next graph will be released by Friday, April 12 and live-moderated on Wednesday, April 17.  The topic – shrinkflation!\n\nSigning off – Sharon Hessney from Boston, who wonders if we can generate and transmit enough electricity for all of the electrical items we have now, and Rebecca Nichols from Anchorage, who enjoyed her first time moderating!"
+    }
+  ],
+  "tagged_text": "Thanks to all the students who responded.   Here are some of the catchy headlines that we received:  \"The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix\" by Isabelle of California Polytechnic State University, San Luis Obispo; “Our World's Powerhouse: Clean Energy and Fossil Fuels” by Esmeralda of Perth Amboy High School in N.J.; “The World's Electricity: Clean or Dirty?” by Melina of Marble Hill High School for International Studies in the Bronx, N.Y.; and three headlines from California:  \"Power Dynamics: Global Energy Shift Towards Renewables, Challenges Fossil Fuel Reliance\" by Emma ; \"Fueling the Future: Cleaning Up Our Energy\" by Jackson and \"Powering Progress: The Rise of Renewable Energy\" by Curtis.\n\nPlease return on Friday when we will reveal the free link to the article that includes this graph.  Also in the Reveal are a summary of the topic, additional questions, shout outs for some of the best headlines for the graph and Stat Nuggets -- definitions of words that relate to the graph and where you can find them in the graph.\n\nThe next graph will be released by <entity type=\"TIME_REFERENCE\" canonical=\"friday_april_12\">Friday, April 12</entity> and live-moderated on <entity type=\"TIME_REFERENCE\" canonical=\"wednesday_april_17\">Wednesday, April 17</entity>.  The topic – <entity type=\"EVENT\" canonical=\"shrinkflation\">shrinkflation</entity>!\n\nSigning off – Sharon Hessney from <entity type=\"LOCATION\" canonical=\"boston\">Boston</entity>, who wonders if we can generate and transmit enough <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> for all of the electrical items we have now, and Rebecca Nichols from <entity type=\"LOCATION\" canonical=\"anchorage\">Anchorage</entity>, who enjoyed her first time moderating!"
+}

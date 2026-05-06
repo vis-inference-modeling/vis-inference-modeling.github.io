@@ -1,0 +1,111 @@
+{
+  "article_id": "193",
+  "comment_index": 63,
+  "raw_comment": "When looking at the graph, I noticed that the states in the middle of the United States have the greatest drought severity. I think that this issue is highly susceptible in these regions because of their rocky and mountainous terrain and very warm and cool climate.  I wonder if the recent increase in global warming and climate change causes these drought severities. This relates to me and my communities because it shows how our community and our whole nation are affected by climate change and global warming, which are caused by our actions. A headline for this graph could be \"The likeness of drought in your state.\"",
+  "entities": [
+    {
+      "surface": "the middle of the United States",
+      "type": "LOCATION",
+      "canonical": "central_united_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 56,
+      "end": 87,
+      "id": "e0"
+    },
+    {
+      "surface": "global warming",
+      "type": "EVENT",
+      "canonical": "global_warming",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 302,
+      "end": 316,
+      "id": "e1"
+    },
+    {
+      "surface": "global warming",
+      "type": "EVENT",
+      "canonical": "global_warming",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 498,
+      "end": 512,
+      "id": "e2"
+    },
+    {
+      "surface": "your state",
+      "type": "LOCATION",
+      "canonical": "your_state",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 610,
+      "end": 620,
+      "id": "e3"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "rocky and mountainous terrain",
+      "reason": "Could imply a geographic feature/location, but no exact canonical match for the combined phrase."
+    },
+    {
+      "surface": "very warm and cool climate",
+      "reason": "Describes climate conditions, but no exact canonical exists for this combined phrasing."
+    },
+    {
+      "surface": "drought severity",
+      "reason": "Likely refers to the chart's drought severity measure, but no matching data variable or level is provided in the normalized dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "When looking at the graph, I noticed that the states in the middle of the United States have the greatest drought severity. I think that this issue is highly susceptible in these regions because of their rocky and mountainous terrain and very warm and cool climate.  I wonder if the recent increase in global warming and climate change causes these drought severities. This relates to me and my communities because it shows how our community and our whole nation are affected by climate change and global warming, which are caused by our actions."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "The likeness of drought in your state."
+    }
+  ],
+  "tagged_text": "When looking at the graph, I noticed that the states in the middle of the United States have the greatest drought severity. I think that this issue is highly susceptible in these regions because of their rocky and mountainous terrain and very warm and cool climate.  I wonder if the recent increase in <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"questioned\">global warming</entity> and <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity> causes these drought severities. This relates to me and my communities because it shows how our community and our whole nation are affected by climate change and global warming, which are caused by our actions. A headline for this graph could be \"The likeness of drought in your state.\""
+}

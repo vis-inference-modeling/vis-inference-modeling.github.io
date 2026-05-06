@@ -1,0 +1,139 @@
+{
+  "article_id": "181",
+  "comment_index": 139,
+  "raw_comment": "I noticed that where ever the bigger country is the more fossil fuels that are being used, This is also where there are more clean power supplies as well. So why don't we just go all clean and get rid of the fossil fuels. I also noticed that China's amount of energy usage is on a straight incline where the US and India are a somewhat straight line.",
+  "entities": [
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 57,
+      "end": 69,
+      "id": "e0"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 208,
+      "end": 220,
+      "id": "e1"
+    },
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 242,
+      "end": 247,
+      "id": "e2"
+    },
+    {
+      "surface": "energy usage",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 260,
+      "end": 272,
+      "id": "e3"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 308,
+      "end": 310,
+      "id": "e4"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 315,
+      "end": 320,
+      "id": "e5"
+    },
+    {
+      "surface": "clean power",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "clean",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "bigger country",
+      "reason": "Generic comparative phrase; not a specific location or country level."
+    },
+    {
+      "surface": "straight incline",
+      "reason": "Describes trend shape rather than an entity."
+    },
+    {
+      "surface": "straight line",
+      "reason": "Describes trend shape rather than an entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that where ever the bigger country is the more fossil fuels that are being used, This is also where there are more clean power supplies as well. So why don't we just go all clean and get rid of the fossil fuels. I also noticed that China's amount of energy usage is on a straight incline where the US and India are a somewhat straight line."
+    }
+  ],
+  "tagged_text": "I noticed that where ever the bigger country is the more <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> that are being used, This is also where there are more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean power</entity> supplies as well. So why don't we just go all <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity> and get rid of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>. I also noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>'s amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy usage</entity> is on a straight incline where the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> are a somewhat straight line."
+}

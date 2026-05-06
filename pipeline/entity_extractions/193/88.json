@@ -1,0 +1,148 @@
+{
+  "article_id": "193",
+  "comment_index": 88,
+  "raw_comment": "1. I noticed that the region around Texas has a more severe drought than the other areas.\n\n2. I wonder why only Texas has the most severe drought and not Arizona.\n\n3. This relates to my community because it is the result of our actions over the periods of years of what we did to the planet.\n\n4. Droughts across the United States",
+  "entities": [
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 36,
+      "end": 41,
+      "id": "e0"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 112,
+      "end": 117,
+      "id": "e1"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 138,
+      "end": 145,
+      "id": "e2"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 296,
+      "end": 303,
+      "id": "e3"
+    },
+    {
+      "surface": "Arizona",
+      "type": "LOCATION",
+      "canonical": "arizona",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "periods of years",
+      "type": "TIME_REFERENCE",
+      "canonical": "periods_of_years",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "planet",
+      "type": "OTHER_ENTITY",
+      "canonical": "planet",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "Droughts across the United States",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "my community",
+      "reason": "Could be speaker-linked location/community, but no exact canonical match in the provided normalized dictionary for this article."
+    },
+    {
+      "surface": "other areas",
+      "reason": "Generic location reference without a specific canonical match."
+    },
+    {
+      "surface": "United States",
+      "reason": "Could map to a country/location entity, but no direct country canonical is provided in this article-specific dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I noticed that the region around Texas has a more severe drought than the other areas."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder why only Texas has the most severe drought and not Arizona."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "This relates to my community because it is the result of our actions over the periods of years of what we did to the planet."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "Droughts across the United States"
+    }
+  ],
+  "tagged_text": "1. I noticed that the region around <entity type=\"LOCATION\" canonical=\"texas\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Texas</entity> has a more severe <entity type=\"EVENT\" canonical=\"drought\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">drought</entity> than the other areas.\n\n2. I wonder why only <entity type=\"LOCATION\" canonical=\"texas\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Texas</entity> has the most severe <entity type=\"EVENT\" canonical=\"drought\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">drought</entity> and not <entity type=\"LOCATION\" canonical=\"arizona\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Arizona</entity>.\n\n3. This relates to my community because it is the result of our actions over the <entity type=\"TIME_REFERENCE\" canonical=\"periods_of_years\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">periods of years</entity> of what we did to the <entity type=\"OTHER_ENTITY\" canonical=\"planet\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">planet</entity>.\n\n4. <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Droughts across the United States</entity>"
+}

@@ -1,0 +1,37 @@
+{
+  "article_id": "193",
+  "comment_index": 2,
+  "raw_comment": "i notice there a mapp thats red and the article is very detailed",
+  "entities": [
+    {
+      "surface": "mapp",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 17,
+      "end": 21,
+      "id": "e0"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "red",
+      "reason": "Likely a chart color encoding, but no specific chart-element/color canonical is provided for this article."
+    },
+    {
+      "surface": "article",
+      "reason": "Generic reference to the article itself; not a taggable entity under the schema."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "i notice there a mapp thats red and the article is very detailed"
+    }
+  ],
+  "tagged_text": "i notice there a <entity type=\"CHART_ELEMENT\" canonical=\"map\">mapp</entity> thats red and the article is very detailed"
+}

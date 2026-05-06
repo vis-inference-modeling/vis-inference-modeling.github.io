@@ -1,0 +1,152 @@
+{
+  "article_id": "181",
+  "comment_index": 6,
+  "raw_comment": "I notice that the electricity has been increasing in clean energy. With China making more energy than the U.S, India makes less than both the U.S and China. \nI wonder what are the rising factors that are causing for Chinas increase and Indias decrease. \nThis relates because it still demonstrates that their is electricity that produces bad energy which affects the lives of people their bodies. \nWorld Countries And Their Energy Production",
+  "entities": [
+    {
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 53,
+      "end": 65,
+      "id": "e0"
+    },
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 72,
+      "end": 77,
+      "id": "e1"
+    },
+    {
+      "surface": "U.S",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 106,
+      "end": 109,
+      "id": "e2"
+    },
+    {
+      "surface": "U.S",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 142,
+      "end": 145,
+      "id": "e3"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 236,
+      "end": 241,
+      "id": "e4"
+    },
+    {
+      "surface": "World Countries And Their Energy Production",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 397,
+      "end": 440,
+      "id": "e5"
+    },
+    {
+      "surface": "Chinas",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "Indias",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "electricity",
+      "reason": "Could refer to the data variable electricity_generation, but the comment uses it generically and no chart-specific reference list is available."
+    },
+    {
+      "surface": "more energy",
+      "reason": "Could refer to electricity_generation, but this is an inferred variable mention rather than an explicit chart term."
+    },
+    {
+      "surface": "less",
+      "reason": "Comparative quantity without a clear canonical entity; likely refers to electricity_generation but is too implicit."
+    },
+    {
+      "surface": "rising factors",
+      "reason": "Non-specific causal phrase; not a named entity."
+    },
+    {
+      "surface": "bad energy",
+      "reason": "Could be a paraphrase of fossil/dirty energy, but no reference list is available to map confidently."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that the electricity has been increasing in clean energy. With China making more energy than the U.S, India makes less than both the U.S and China. \nI wonder what are the rising factors that are causing for Chinas increase and Indias decrease. \nThis relates because it still demonstrates that their is electricity that produces bad energy which affects the lives of people their bodies. "
+    },
+    {
+      "section": "headline",
+      "label": "headline",
+      "text": "World Countries And Their Energy Production"
+    }
+  ],
+  "tagged_text": "I notice that the electricity has been increasing in <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"asserted\">clean energy</entity>. With <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"asserted\">China</entity> making more energy than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"asserted\">U.S</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"asserted\">India</entity> makes less than both the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"asserted\">U.S</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"asserted\">China</entity>. \nI wonder what are the rising factors that are causing for <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">Chinas</entity> increase and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">Indias</entity> decrease. \nThis relates because it still demonstrates that their is electricity that produces bad energy which affects the lives of people their bodies. \n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">World Countries And Their Energy Production</entity>"
+}

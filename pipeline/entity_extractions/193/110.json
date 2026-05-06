@@ -1,0 +1,185 @@
+{
+  "article_id": "193",
+  "comment_index": 110,
+  "raw_comment": "This map of the United States displays the levels of drought present in each area of the country. I noticed that the levels of drought become more extreme near the middle of the country. This is because these regions are further from the ocean. I was surprised that the level of drought was not higher in the western region of the country because they usually experience severe fires. The severeness of droughts have increased in recent years due to global warming. I wonder what scientists have been doing to combat this issue. This relates to my community because the increase in droughts can affect the food supply and water quality. This would be catastrophic for my state. \nHeadline: Where is the rain!?",
+  "entities": [
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 16,
+      "end": 29,
+      "id": "e0"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 89,
+      "end": 96,
+      "id": "e1"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 178,
+      "end": 185,
+      "id": "e2"
+    },
+    {
+      "surface": "ocean",
+      "type": "LOCATION",
+      "canonical": "ocean",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 238,
+      "end": 243,
+      "id": "e3"
+    },
+    {
+      "surface": "fires",
+      "type": "EVENT",
+      "canonical": "fires",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 378,
+      "end": 383,
+      "id": "e4"
+    },
+    {
+      "surface": "global warming",
+      "type": "EVENT",
+      "canonical": "global_warming",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 450,
+      "end": 464,
+      "id": "e5"
+    },
+    {
+      "surface": "scientists",
+      "type": "OTHER_ENTITY",
+      "canonical": "scientists",
+      "subtype": "person",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 480,
+      "end": 490,
+      "id": "e6"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 545,
+      "end": 557,
+      "id": "e7"
+    },
+    {
+      "surface": "water quality",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_quality",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 622,
+      "end": 635,
+      "id": "e8"
+    },
+    {
+      "surface": "my state",
+      "type": "LOCATION",
+      "canonical": "my_state",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 668,
+      "end": 676,
+      "id": "e9"
+    },
+    {
+      "surface": "Where is the rain!?",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 689,
+      "end": 708,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "extreme",
+      "reason": "Could refer to drought severity, but used adjectivally without a standalone level entity."
+    },
+    {
+      "surface": "western region",
+      "reason": "Geographic region reference, but no exact canonical match in the provided dictionary."
+    },
+    {
+      "surface": "severeness of droughts",
+      "reason": "Paraphrase of drought severity; not an exact listed entity."
+    },
+    {
+      "surface": "food supply",
+      "reason": "Impact phrase not in the dictionary, though clearly relevant."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "This map of the United States displays the levels of drought present in each area of the country. I noticed that the levels of drought become more extreme near the middle of the country. This is because these regions are further from the ocean. I was surprised that the level of drought was not higher in the western region of the country because they usually experience severe fires. The severeness of droughts have increased in recent years due to global warming. I wonder what scientists have been doing to combat this issue. This relates to my community because the increase in droughts can affect the food supply and water quality. This would be catastrophic for my state."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Where is the rain!?"
+    }
+  ],
+  "tagged_text": "This map of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> displays the levels of drought present in each area of the <entity type=\"LOCATION\" canonical=\"country\">country</entity>. I noticed that the levels of drought become more extreme near the middle of the country. This is because these regions are further from the <entity type=\"LOCATION\" canonical=\"ocean\">ocean</entity>. I was surprised that the level of drought was not higher in the western region of the country because they usually experience severe <entity type=\"EVENT\" canonical=\"fires\">fires</entity>. The severeness of droughts have increased in recent years due to <entity type=\"EVENT\" canonical=\"global_warming\">global warming</entity>. I wonder what <entity type=\"OTHER_ENTITY\" canonical=\"scientists\" subtype=\"person\">scientists</entity> have been doing to combat this issue. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because the increase in droughts can affect the food supply and <entity type=\"OTHER_ENTITY\" canonical=\"water_quality\" subtype=\"other\">water quality</entity>. This would be catastrophic for <entity type=\"LOCATION\" canonical=\"my_state\" speaker_context=\"true\">my state</entity>. \nHeadline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Where is the rain!?</entity>"
+}

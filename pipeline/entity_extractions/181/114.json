@@ -1,0 +1,126 @@
+{
+  "article_id": "181",
+  "comment_index": 114,
+  "raw_comment": "Notice: The large margin between China and India.  \nWonder: Over what time period was ths data collected? How has it changed in 10, 20, 50 years? \nMy Community: This story make me more aware of my singular electricity usage and the impact it could have on a smaller scale. \nHeadline: \"United States win war aginst energy usage.\"",
+  "entities": [
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 33,
+      "end": 38,
+      "id": "e0"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 43,
+      "end": 48,
+      "id": "e1"
+    },
+    {
+      "surface": "time period",
+      "type": "TIME_REFERENCE",
+      "canonical": "time_period",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 70,
+      "end": 81,
+      "id": "e2"
+    },
+    {
+      "surface": "10",
+      "type": "TIME_REFERENCE",
+      "canonical": "10_years",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 128,
+      "end": 130,
+      "id": "e3"
+    },
+    {
+      "surface": "20",
+      "type": "TIME_REFERENCE",
+      "canonical": "20_years",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 132,
+      "end": 134,
+      "id": "e4"
+    },
+    {
+      "surface": "50",
+      "type": "TIME_REFERENCE",
+      "canonical": "50_years",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 136,
+      "end": 138,
+      "id": "e5"
+    },
+    {
+      "surface": "electricity usage",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 206,
+      "end": 223,
+      "id": "e6"
+    },
+    {
+      "surface": "United States win war aginst energy usage.",
+      "type": "OTHER_ENTITY",
+      "canonical": "world_super-powers_in_more_ways_then_one_how_china_and_united_states_get_there_energy",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 285,
+      "end": 327,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Notice: The large margin between China and India.  \nWonder: Over what time period was ths data collected? How has it changed in 10, 20, 50 years? \nMy Community: This story make me more aware of my singular electricity usage and the impact it could have on a smaller scale. "
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "\"United States win war aginst energy usage.\""
+    }
+  ],
+  "tagged_text": "Notice: The large margin between <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>.  \nWonder: Over what <entity type=\"TIME_REFERENCE\" canonical=\"time_period\">time period</entity> was ths data collected? How has it changed in <entity type=\"TIME_REFERENCE\" canonical=\"10_years\">10</entity>, <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20</entity>, <entity type=\"TIME_REFERENCE\" canonical=\"50_years\">50</entity> years? \nMy Community: This story make me more aware of my singular <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity usage</entity> and the impact it could have on a smaller scale. \nHeadline: \"<entity type=\"OTHER_ENTITY\" canonical=\"world_super-powers_in_more_ways_then_one_how_china_and_united_states_get_there_energy\" section=\"headline\">United States win war aginst energy usage.</entity>\""
+}

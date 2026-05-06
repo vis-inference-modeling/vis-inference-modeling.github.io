@@ -1,0 +1,179 @@
+{
+  "article_id": "193",
+  "comment_index": 12,
+  "raw_comment": "The map shows widespread drought across the U.S., with the worst conditions in central states like Texas and Kansas, marked in dark red for \"Exceptional\" drought. Parts of the West, like Arizona and California, also face severe drought. \n\nThis makes me wonder why the central and western areas are hit hardest. Is it due to climate change, overuse of resources, or natural weather patterns?\n\nIn my community, drought could mean higher food prices and water restrictions. Even if I’m not in an affected area, it might still impact me indirectly.\n\nHeadline: Droughts in the US",
+  "entities": [
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 25,
+      "end": 32,
+      "id": "e0"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 154,
+      "end": 161,
+      "id": "e1"
+    },
+    {
+      "surface": "West",
+      "type": "LOCATION",
+      "canonical": "west",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 176,
+      "end": 180,
+      "id": "e2"
+    },
+    {
+      "surface": "Arizona",
+      "type": "LOCATION",
+      "canonical": "arizona",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 187,
+      "end": 194,
+      "id": "e3"
+    },
+    {
+      "surface": "California",
+      "type": "LOCATION",
+      "canonical": "california",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 199,
+      "end": 209,
+      "id": "e4"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 324,
+      "end": 338,
+      "id": "e5"
+    },
+    {
+      "surface": "Droughts in the US",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 556,
+      "end": 574,
+      "id": "e6"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "central states",
+      "type": "LOCATION",
+      "canonical": "central_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "Kansas",
+      "type": "LOCATION",
+      "canonical": "kansas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "Exceptional",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "The map shows widespread drought across the U.S., with the worst conditions in central states like Texas and Kansas, marked in dark red for \"Exceptional\" drought. Parts of the West, like Arizona and California, also face severe drought. \n\nThis makes me wonder why the central and western areas are hit hardest. Is it due to climate change, overuse of resources, or natural weather patterns?\n\nIn my community, drought could mean higher food prices and water restrictions. Even if I’m not in an affected area, it might still impact me indirectly."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Droughts in the US"
+    }
+  ],
+  "tagged_text": "The map shows widespread <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">U.S.</entity>, with the worst conditions in <entity type=\"LOCATION\" canonical=\"central_states\" section=\"body\">central states</entity> like <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\">Texas</entity> and <entity type=\"LOCATION\" canonical=\"kansas\" section=\"body\">Kansas</entity>, marked in dark red for \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\">Exceptional</entity>\" drought. Parts of the <entity type=\"LOCATION\" canonical=\"west\" section=\"body\">West</entity>, like <entity type=\"LOCATION\" canonical=\"arizona\" section=\"body\">Arizona</entity> and <entity type=\"LOCATION\" canonical=\"california\" section=\"body\">California</entity>, also face severe drought. \n\nThis makes me wonder why the central and western areas are hit hardest. Is it due to <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\">climate change</entity>, overuse of resources, or natural weather patterns?\n\nIn my community, drought could mean higher food prices and water restrictions. Even if I’m not in an affected area, it might still impact me indirectly.\n\nHeadline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Droughts in the US</entity>"
+}

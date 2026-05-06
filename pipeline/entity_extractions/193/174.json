@@ -1,0 +1,172 @@
+{
+  "article_id": "193",
+  "comment_index": 174,
+  "raw_comment": "I noticed that a high percentage of the country had a dry year compared to past years. I also noticed that there are some areas where it was scorched for some reason. \nI wonder what made the difference this year that everything was so dry. I also wonder what that chart looked like 50 years ago. \nThis relates to my community because my community heavily relies on farming, and without rain the crops don’t grow to the standards that the farmers need them to.\n“Don’t doubt the drought, dryness starts to scorch the U.S.”",
+  "entities": [
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 40,
+      "end": 47,
+      "id": "e0"
+    },
+    {
+      "surface": "dry year",
+      "type": "TIME_REFERENCE",
+      "canonical": "dry_year",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 54,
+      "end": 62,
+      "id": "e1"
+    },
+    {
+      "surface": "past years",
+      "type": "TIME_REFERENCE",
+      "canonical": "previous_years",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 75,
+      "end": 85,
+      "id": "e2"
+    },
+    {
+      "surface": "this year",
+      "type": "TIME_REFERENCE",
+      "canonical": "this_year",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 202,
+      "end": 211,
+      "id": "e3"
+    },
+    {
+      "surface": "50 years ago",
+      "type": "TIME_REFERENCE",
+      "canonical": "50_years_ago",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 282,
+      "end": 294,
+      "id": "e4"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 313,
+      "end": 325,
+      "id": "e5"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 334,
+      "end": 346,
+      "id": "e6"
+    },
+    {
+      "surface": "farming",
+      "type": "OTHER_ENTITY",
+      "canonical": "farming",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 365,
+      "end": 372,
+      "id": "e7"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 386,
+      "end": 390,
+      "id": "e8"
+    },
+    {
+      "surface": "crops",
+      "type": "OTHER_ENTITY",
+      "canonical": "crops",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 395,
+      "end": 400,
+      "id": "e9"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 515,
+      "end": 519,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "scorched",
+      "reason": "Could refer to drought severity or dry conditions, but no exact canonical match in the provided dictionary."
+    },
+    {
+      "surface": "farmers",
+      "reason": "Could be OTHER_ENTITY (people/group), but not explicitly listed as a canonical entity here."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that a high percentage of the country had a dry year compared to past years. I also noticed that there are some areas where it was scorched for some reason. \nI wonder what made the difference this year that everything was so dry. I also wonder what that chart looked like 50 years ago. \nThis relates to my community because my community heavily relies on farming, and without rain the crops don’t grow to the standards that the farmers need them to.\n“Don’t doubt the drought, dryness starts to scorch the U.S.”"
+    }
+  ],
+  "tagged_text": "I noticed that a high percentage of the <entity type=\"LOCATION\" canonical=\"country\">country</entity> had a <entity type=\"TIME_REFERENCE\" canonical=\"dry_year\">dry year</entity> compared to <entity type=\"TIME_REFERENCE\" canonical=\"previous_years\">past years</entity>. I also noticed that there are some areas where it was scorched for some reason. \nI wonder what made the difference <entity type=\"TIME_REFERENCE\" canonical=\"this_year\">this year</entity> that everything was so dry. I also wonder what that chart looked like <entity type=\"TIME_REFERENCE\" canonical=\"50_years_ago\">50 years ago</entity>. \nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because my community heavily relies on <entity type=\"OTHER_ENTITY\" canonical=\"farming\" subtype=\"other\" speaker_context=\"true\">farming</entity>, and without <entity type=\"EVENT\" canonical=\"rain\">rain</entity> the <entity type=\"OTHER_ENTITY\" canonical=\"crops\" subtype=\"other\">crops</entity> don’t grow to the standards that the farmers need them to.\n“Don’t doubt the drought, dryness starts to scorch the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity>”"
+}

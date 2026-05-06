@@ -1,0 +1,33 @@
+{
+  "article_id": "181",
+  "comment_index": 2,
+  "raw_comment": "hello this is Andre Hamana i think that over 25 gigawatts is crazy.",
+  "entities": [
+    {
+      "surface": "25 gigawatts",
+      "type": "UNIT",
+      "canonical": "gigawatts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 45,
+      "end": 57,
+      "id": "e0"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "Andre Hamana",
+      "reason": "Likely a person name, but not needed for the requested schema unless treated as OTHER_ENTITY; kept unresolved to avoid over-tagging."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "hello this is Andre Hamana i think that over 25 gigawatts is crazy."
+    }
+  ],
+  "tagged_text": "hello this is Andre Hamana i think that over <entity type=\"UNIT\" canonical=\"gigawatts\">25 gigawatts</entity> is crazy."
+}

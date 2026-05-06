@@ -1,0 +1,99 @@
+{
+  "article_id": "193",
+  "comment_index": 188,
+  "raw_comment": "I notice that the drought levels are higher in the middle of the country. i also notice that most of the areas with droughts that we hear about are not as bad as other areas. I wonder if the droughts will be linked to an increase in fires in the future. this affects my community because we have a bad fire season already and droughts will only worsen it. \nName: American Drought: the parts you don't see",
+  "entities": [
+    {
+      "surface": "middle of the country",
+      "type": "LOCATION",
+      "canonical": "middle_of_the_country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 51,
+      "end": 72,
+      "id": "e0"
+    },
+    {
+      "surface": "fires",
+      "type": "EVENT",
+      "canonical": "fires",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 233,
+      "end": 238,
+      "id": "e1"
+    },
+    {
+      "surface": "future",
+      "type": "TIME_REFERENCE",
+      "canonical": "future",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 246,
+      "end": 252,
+      "id": "e2"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 267,
+      "end": 279,
+      "id": "e3"
+    },
+    {
+      "surface": "fire season",
+      "type": "EVENT",
+      "canonical": "fire_danger_warning",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 302,
+      "end": 313,
+      "id": "e4"
+    },
+    {
+      "surface": "Name: American Drought: the parts you don't see",
+      "type": "OTHER_ENTITY",
+      "canonical": "american_drought_the_parts_you_dont_see",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "subtype": "other",
+      "occurrence_index": 0,
+      "start": 357,
+      "end": 404,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that the drought levels are higher in the middle of the country. i also notice that most of the areas with droughts that we hear about are not as bad as other areas. I wonder if the droughts will be linked to an increase in fires in the future. this affects my community because we have a bad fire season already and droughts will only worsen it. \nName: American Drought: the parts you don't see"
+    },
+    {
+      "section": "headline",
+      "label": "Name",
+      "text": "American Drought: the parts you don't see"
+    }
+  ],
+  "tagged_text": "I notice that the drought levels are higher in the <entity type=\"LOCATION\" canonical=\"middle_of_the_country\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">middle of the country</entity>. i also notice that most of the areas with droughts that we hear about are not as bad as other areas. I wonder if the droughts will be linked to an increase in <entity type=\"EVENT\" canonical=\"fires\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">fires</entity> in the <entity type=\"TIME_REFERENCE\" canonical=\"future\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">future</entity>. this affects <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity> because we have a bad <entity type=\"EVENT\" canonical=\"fire_danger_warning\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">fire season</entity> already and droughts will only worsen it. \n<entity type=\"headline_title\" canonical=\"american_drought_the_parts_you_dont_see\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Name: American Drought: the parts you don't see</entity>"
+}

@@ -1,0 +1,52 @@
+{
+  "article_id": "193",
+  "comment_index": 79,
+  "raw_comment": "Wonder: Why do the mountains have less drought \nHeadline: Mountains are better",
+  "entities": [
+    {
+      "surface": "mountains",
+      "type": "LOCATION",
+      "canonical": "mountain",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 19,
+      "end": 28,
+      "id": "e0"
+    },
+    {
+      "surface": "Mountains are better",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 58,
+      "end": 78,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "drought",
+      "reason": "General drought mention without a confirmed canonical EVENT/level mapping in the article dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Wonder: Why do the mountains have less drought"
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Mountains are better"
+    }
+  ],
+  "tagged_text": "Wonder: Why do the <entity type=\"LOCATION\" canonical=\"mountain\" section=\"body\">mountains</entity> have less drought \nHeadline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Mountains are better</entity>"
+}

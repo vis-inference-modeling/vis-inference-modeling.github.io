@@ -1,0 +1,145 @@
+{
+  "article_id": "183",
+  "comment_index": 51,
+  "raw_comment": "This graph shows the percentage of young women vs young men who reach out to their parents throughout the week. I noticed in this graph the significantly more amount of women who sent texts, called, or visited in person. I also noticed that the most popular form of communication among both genders is texting. I wonder how far these people live from their parents, especially since the percentage of going home and visiting is so low. This relates to me and my community because my brother and his wife live in South Carolina, and my sister lives in Rhode Island,  while the rest of my family lives in New Jersey. We Facetime them at least 3 times a week to stay in touch. \nHeadline:\nDon't be a stranger!",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 5,
+      "end": 10,
+      "id": "e0"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 130,
+      "end": 135,
+      "id": "e1"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 462,
+      "end": 471,
+      "id": "e2"
+    },
+    {
+      "surface": "South Carolina",
+      "type": "LOCATION",
+      "canonical": "south_carolina",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 512,
+      "end": 526,
+      "id": "e3"
+    },
+    {
+      "surface": "Rhode Island",
+      "type": "LOCATION",
+      "canonical": "rhode_island",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 551,
+      "end": 563,
+      "id": "e4"
+    },
+    {
+      "surface": "New Jersey",
+      "type": "LOCATION",
+      "canonical": "new_jersey",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 603,
+      "end": 613,
+      "id": "e5"
+    },
+    {
+      "surface": "3 times a week",
+      "type": "TIME_REFERENCE",
+      "canonical": "3_times_a_week",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 641,
+      "end": 655,
+      "id": "e6"
+    },
+    {
+      "surface": "Headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 675,
+      "end": 683,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "young women",
+      "reason": "Likely a demographic group from the graph, but no chart-specific reference list is available for this article and no confirmed canonical ID was provided for this level."
+    },
+    {
+      "surface": "young men",
+      "reason": "Likely a demographic group from the graph, but no chart-specific reference list is available for this article and no confirmed canonical ID was provided for this level."
+    },
+    {
+      "surface": "texting",
+      "reason": "Could be an OTHER_ENTITY or chart-related communication mode, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "calling",
+      "reason": "Could be an OTHER_ENTITY or chart-related communication mode, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    },
+    {
+      "surface": "visited in person",
+      "reason": "Could be an OTHER_ENTITY or chart-related communication mode, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "This graph shows the percentage of young women vs young men who reach out to their parents throughout the week. I noticed in this graph the significantly more amount of women who sent texts, called, or visited in person. I also noticed that the most popular form of communication among both genders is texting. I wonder how far these people live from their parents, especially since the percentage of going home and visiting is so low. This relates to me and my community because my brother and his wife live in South Carolina, and my sister lives in Rhode Island,  while the rest of my family lives in New Jersey. We Facetime them at least 3 times a week to stay in touch."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Don't be a stranger!"
+    }
+  ],
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the percentage of young women vs young men who reach out to their parents throughout the week. I noticed in this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> the significantly more amount of women who sent texts, called, or visited in person. I also noticed that the most popular form of communication among both genders is texting. I wonder how far these people live from their parents, especially since the percentage of going home and visiting is so low. This relates to me and my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because my brother and his wife live in <entity type=\"LOCATION\" canonical=\"south_carolina\">South Carolina</entity>, and my sister lives in <entity type=\"LOCATION\" canonical=\"rhode_island\">Rhode Island</entity>,  while the rest of my family lives in <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>. We Facetime them at least <entity type=\"TIME_REFERENCE\" canonical=\"3_times_a_week\">3 times a week</entity> to stay in touch. \n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Headline</entity>:\nDon't be a stranger!"
+}

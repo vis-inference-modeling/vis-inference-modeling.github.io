@@ -1,0 +1,157 @@
+{
+  "article_id": "193",
+  "comment_index": 172,
+  "raw_comment": "I noticed that surprisingly, California did not have as much of an extreme drought area as I would have thought. I often heard about wildfires due to such dry conditions and expected more. I was also surprised to notice that there were dark colors (severe drought) in the northeast which I would not have expected. I also noticed that Texas has many different levels throughout the state depending on the area. \n\nI wonder what the cause of the drought in Ohio/West Virginia is because their weather is not super hot or dry usually, so it seems a little unusual for their climate to be so dry. \n\nThis relates to me and my community because even though the specific area of Michigan where we are located is a lightly colored section, there are other darker-colored parts of Michigan surrounding us. This might have an effect on growing crops like corn. I see many cornfields around my town and I know that a drought may affect them which could affect the prices of crops or supply.\n\nAmerica is drying up, watery going to do about it?",
+  "entities": [
+    {
+      "surface": "California",
+      "type": "LOCATION",
+      "canonical": "california",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 29,
+      "end": 39,
+      "id": "e0"
+    },
+    {
+      "surface": "wildfires",
+      "type": "EVENT",
+      "canonical": "wildfires",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 133,
+      "end": 142,
+      "id": "e1"
+    },
+    {
+      "surface": "northeast",
+      "type": "LOCATION",
+      "canonical": "northeast",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 272,
+      "end": 281,
+      "id": "e2"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 335,
+      "end": 340,
+      "id": "e3"
+    },
+    {
+      "surface": "Ohio/West Virginia",
+      "type": "LOCATION",
+      "canonical": "ohio_west_virginia",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 455,
+      "end": 473,
+      "id": "e4"
+    },
+    {
+      "surface": "me",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 611,
+      "end": 613,
+      "id": "e5"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 618,
+      "end": 630,
+      "id": "e6"
+    },
+    {
+      "surface": "Michigan",
+      "type": "LOCATION",
+      "canonical": "michigan",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 672,
+      "end": 680,
+      "id": "e7"
+    },
+    {
+      "surface": "Michigan",
+      "type": "LOCATION",
+      "canonical": "michigan",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 772,
+      "end": 780,
+      "id": "e8"
+    },
+    {
+      "surface": "America is drying up, watery going to do about it?",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 981,
+      "end": 1031,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "cornfields",
+      "reason": "Could be tagged as crops/agriculture-related OTHER_ENTITY, but not clearly in the provided dictionary and not a standard entity type."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that surprisingly, California did not have as much of an extreme drought area as I would have thought. I often heard about wildfires due to such dry conditions and expected more. I was also surprised to notice that there were dark colors (severe drought) in the northeast which I would not have expected. I also noticed that Texas has many different levels throughout the state depending on the area. \n\nI wonder what the cause of the drought in Ohio/West Virginia is because their weather is not super hot or dry usually, so it seems a little unusual for their climate to be so dry. \n\nThis relates to me and my community because even though the specific area of Michigan where we are located is a lightly colored section, there are other darker-colored parts of Michigan surrounding us. This might have an effect on growing crops like corn. I see many cornfields around my town and I know that a drought may affect them which could affect the prices of crops or supply."
+    },
+    {
+      "section": "headline",
+      "label": "America is drying up, watery going to do about it?",
+      "text": "America is drying up, watery going to do about it?"
+    }
+  ],
+  "tagged_text": "I noticed that surprisingly, <entity type=\"LOCATION\" canonical=\"california\">California</entity> did not have as much of an extreme drought area as I would have thought. I often heard about <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity> due to such dry conditions and expected more. I was also surprised to notice that there were dark colors (severe drought) in the <entity type=\"LOCATION\" canonical=\"northeast\">northeast</entity> which I would not have expected. I also noticed that <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> has many different levels throughout the state depending on the area. \n\nI wonder what the cause of the drought in <entity type=\"LOCATION\" canonical=\"ohio_west_virginia\">Ohio/West Virginia</entity> is because their weather is not super hot or dry usually, so it seems a little unusual for their climate to be so dry. \n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because even though the specific area of <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> where we are located is a lightly colored section, there are other darker-colored parts of <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> surrounding us. This might have an effect on growing crops like corn. I see many cornfields around my town and I know that a drought may affect them which could affect the prices of crops or supply.\n\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">America is drying up, watery going to do about it?</entity>"
+}

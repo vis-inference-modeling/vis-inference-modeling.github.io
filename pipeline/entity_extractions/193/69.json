@@ -1,0 +1,86 @@
+{
+  "article_id": "193",
+  "comment_index": 69,
+  "raw_comment": "I noticed in the United States map that the upper and lower parts of the country are experiencing more drought. \nI wonder why most coastal areas are experiencing less drought than the ones in Midwest states.\n This relates to my community because these droughts are warming the climate.\n Catchy Headline: Will the spread of droughts continue, or will it stop?",
+  "entities": [
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 17,
+      "end": 30,
+      "id": "e0"
+    },
+    {
+      "surface": "coastal areas",
+      "type": "LOCATION",
+      "canonical": "coastal_areas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 131,
+      "end": 144,
+      "id": "e1"
+    },
+    {
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 192,
+      "end": 199,
+      "id": "e2"
+    },
+    {
+      "surface": "climate",
+      "type": "EVENT",
+      "canonical": "climate",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 277,
+      "end": 284,
+      "id": "e3"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "upper and lower parts of the country",
+      "reason": "Likely a geographic description, but no exact canonical match is available."
+    },
+    {
+      "surface": "drought",
+      "reason": "General event mention; could be tagged as EVENT drought, but the comment uses it generically."
+    },
+    {
+      "surface": "spread of droughts",
+      "reason": "Could be an event phrase, but no exact canonical is provided."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed in the United States map that the upper and lower parts of the country are experiencing more drought. \nI wonder why most coastal areas are experiencing less drought than the ones in Midwest states.\n This relates to my community because these droughts are warming the climate."
+    },
+    {
+      "section": "headline",
+      "label": "Catchy Headline",
+      "text": "Will the spread of droughts continue, or will it stop?"
+    }
+  ],
+  "tagged_text": "I noticed in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> map that the upper and lower parts of the country are experiencing more drought. \nI wonder why most <entity type=\"LOCATION\" canonical=\"coastal_areas\">coastal areas</entity> are experiencing less drought than the ones in <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> states.\n This relates to my community because these droughts are warming the <entity type=\"EVENT\" canonical=\"climate\">climate</entity>.\n Catchy Headline: Will the spread of droughts continue, or will it stop?"
+}

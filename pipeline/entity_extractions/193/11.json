@@ -1,0 +1,107 @@
+{
+  "article_id": "193",
+  "comment_index": 11,
+  "raw_comment": "What do you notice? : Northwestern part of the United States are more impacted by the drought, as well as some of the south west regions. East is not that impacted.\n\nWhat do you wonder? : If there is anything that could lead to better the situation, and have less drought\n\nHow does this relate to you and your community? : It relates to me as it is in the country where I currently live, and I need to know what consequences it may lead too. \n\nCreate a catchy headline that captures the graph’s main idea. : What West prepares for us. Action needed.",
+  "entities": [
+    {
+      "surface": "Northwestern part of the United States",
+      "type": "LOCATION",
+      "canonical": "northwestern_united_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 22,
+      "end": 60,
+      "id": "e0"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 86,
+      "end": 93,
+      "id": "e1"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 264,
+      "end": 271,
+      "id": "e2"
+    },
+    {
+      "surface": "country where I currently live",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 356,
+      "end": 386,
+      "id": "e3"
+    },
+    {
+      "surface": "What West prepares for us. Action needed.",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 508,
+      "end": 549,
+      "id": "e4"
+    },
+    {
+      "surface": "south west regions",
+      "type": "LOCATION",
+      "canonical": "southwest_region",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "East",
+      "type": "LOCATION",
+      "canonical": "east_region",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice? : Northwestern part of the United States are more impacted by the drought, as well as some of the south west regions. East is not that impacted.\n\nWhat do you wonder? : If there is anything that could lead to better the situation, and have less drought\n\nHow does this relate to you and your community? : It relates to me as it is in the country where I currently live, and I need to know what consequences it may lead too. \n\nCreate a catchy headline that captures the graph’s main idea. : What West prepares for us. Action needed."
+    }
+  ],
+  "tagged_text": "What do you notice? : <entity type=\"LOCATION\" canonical=\"northwestern_united_states\" section=\"body\">Northwestern part of the United States</entity> are more impacted by the <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity>, as well as some of the <entity type=\"LOCATION\" canonical=\"southwest_region\" section=\"body\">south west regions</entity>. <entity type=\"LOCATION\" canonical=\"east_region\" section=\"body\">East</entity> is not that impacted.\n\nWhat do you wonder? : If there is anything that could lead to better the situation, and have less <entity type=\"EVENT\" canonical=\"drought\" section=\"body\" modality=\"hypothetical\">drought</entity>\n\nHow does this relate to you and your community? : It relates to me as it is in the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" speaker_context=\"true\">country where I currently live</entity>, and I need to know what consequences it may lead too. \n\nCreate a catchy headline that captures the graph’s main idea. : <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">What West prepares for us. Action needed.</entity>"
+}

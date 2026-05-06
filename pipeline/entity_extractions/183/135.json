@@ -1,0 +1,164 @@
+{
+  "article_id": "183",
+  "comment_index": 135,
+  "raw_comment": "The graph shows a sharp increase in the percentage of adults in the United States who say they get enough sleep (at least 7 hours per night) from 2010 to 2024. There's a notable decline in the percentage of adults who report getting less than 7 hours of sleep per night during the same period. I wonder what factors contributed to this increase in the percentage of adults getting enough sleep? This relates to my community because improved sleep habits among adults can have positive implications for overall health, productivity, and well-being. It might indicate a growing emphasis on self-care and wellness. \n\nCatchy headline:\n\"Sleep Revolution: More Americans Than Ever Finally Getting Enough Zzzs!\"",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 4,
+      "end": 9,
+      "id": "e0"
+    },
+    {
+      "surface": "percentage",
+      "type": "UNIT",
+      "canonical": "percent",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 40,
+      "end": 50,
+      "id": "e1"
+    },
+    {
+      "surface": "percentage",
+      "type": "UNIT",
+      "canonical": "percent",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 193,
+      "end": 203,
+      "id": "e2"
+    },
+    {
+      "surface": "percentage",
+      "type": "UNIT",
+      "canonical": "percent",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 352,
+      "end": 362,
+      "id": "e3"
+    },
+    {
+      "surface": "my",
+      "type": "speaker",
+      "canonical": "speaker",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 411,
+      "end": 413,
+      "id": "e4"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 414,
+      "end": 423,
+      "id": "e5"
+    },
+    {
+      "surface": "Catchy headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 614,
+      "end": 629,
+      "id": "e6"
+    },
+    {
+      "surface": "Sleep Revolution: More Americans Than Ever Finally Getting Enough Zzzs!",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 632,
+      "end": 703,
+      "id": "e7"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "2010",
+      "type": "TIME_REFERENCE",
+      "canonical": "2010",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "2024",
+      "type": "TIME_REFERENCE",
+      "canonical": "2024",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "The graph shows a sharp increase in the percentage of adults in the United States who say they get enough sleep (at least 7 hours per night) from 2010 to 2024. There's a notable decline in the percentage of adults who report getting less than 7 hours of sleep per night during the same period. I wonder what factors contributed to this increase in the percentage of adults getting enough sleep? This relates to my community because improved sleep habits among adults can have positive implications for overall health, productivity, and well-being. It might indicate a growing emphasis on self-care and wellness."
+    },
+    {
+      "section": "headline",
+      "label": "Catchy headline",
+      "text": "Sleep Revolution: More Americans Than Ever Finally Getting Enough Zzzs!"
+    }
+  ],
+  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> shows a sharp increase in the <entity type=\"UNIT\" canonical=\"percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">percentage</entity> of adults in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">United States</entity> who say they get enough sleep (at least 7 hours per night) from <entity type=\"TIME_REFERENCE\" canonical=\"2010\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">2010</entity> to <entity type=\"TIME_REFERENCE\" canonical=\"2024\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">2024</entity>. There's a notable decline in the <entity type=\"UNIT\" canonical=\"percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">percentage</entity> of adults who report getting less than 7 hours of sleep per night during the same period. I wonder what factors contributed to this increase in the <entity type=\"UNIT\" canonical=\"percent\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">percentage</entity> of adults getting enough sleep? This relates to <entity type=\"speaker\" canonical=\"speaker\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my</entity> <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">community</entity> because improved sleep habits among adults can have positive implications for overall health, productivity, and well-being. It might indicate a growing emphasis on self-care and wellness. \n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Catchy headline</entity>:\n\"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Sleep Revolution: More Americans Than Ever Finally Getting Enough Zzzs!</entity>\""
+}

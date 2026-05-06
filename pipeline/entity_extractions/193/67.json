@@ -1,0 +1,167 @@
+{
+  "article_id": "193",
+  "comment_index": 67,
+  "raw_comment": "In this graph, droughts around the country are being shown. The country is color coded to depict how bad the drought is and/or how dry it is. The I noticed how most of the country is at least yellow. Yellow is abnormally dry. It is concerning that this is the state of the majority of the country. I wonder how long it will be before the country is mainly severe. I wonder how can we make it so we get our country out of this drought. This impacts my community because where I live we are in a drought to the point we are not allowed to have fire pits and can smell the wildfires resulting from the droughts. A catchphrase to name this graph could be \"The USA Is Drying Up: How will we get out of this significant drought.\"",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 8,
+      "end": 13,
+      "id": "e0"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 35,
+      "end": 42,
+      "id": "e1"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 64,
+      "end": 71,
+      "id": "e2"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 172,
+      "end": 179,
+      "id": "e3"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": 289,
+      "end": 296,
+      "id": "e4"
+    },
+    {
+      "surface": "fire pits",
+      "type": "OTHER_ENTITY",
+      "canonical": "fire_pits",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 542,
+      "end": 551,
+      "id": "e5"
+    },
+    {
+      "surface": "wildfires",
+      "type": "EVENT",
+      "canonical": "wildfires",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 570,
+      "end": 579,
+      "id": "e6"
+    },
+    {
+      "surface": "USA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 656,
+      "end": 659,
+      "id": "e7"
+    },
+    {
+      "surface": "yellow",
+      "type": "OTHER_ENTITY",
+      "canonical": "yellow",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "yellow",
+      "type": "OTHER_ENTITY",
+      "canonical": "yellow",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "abnormally dry",
+      "reason": "Likely a drought severity level, but no exact canonical is provided in the normalized dictionary."
+    },
+    {
+      "surface": "severe",
+      "reason": "Could refer to drought severity, but the standalone adjective is ambiguous without a matching canonical."
+    },
+    {
+      "surface": "significant drought",
+      "reason": "Likely a drought severity/event phrase, but no exact canonical is provided."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "In this graph, droughts around the country are being shown. The country is color coded to depict how bad the drought is and/or how dry it is. The I noticed how most of the country is at least yellow. Yellow is abnormally dry. It is concerning that this is the state of the majority of the country. I wonder how long it will be before the country is mainly severe. I wonder how can we make it so we get our country out of this drought. This impacts my community because where I live we are in a drought to the point we are not allowed to have fire pits and can smell the wildfires resulting from the droughts."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "The USA Is Drying Up: How will we get out of this significant drought."
+    }
+  ],
+  "tagged_text": "In this graph, droughts around the country are being shown. The country is color coded to depict how bad the drought is and/or how dry it is. The I noticed how most of the country is at least yellow. Yellow is abnormally dry. It is concerning that this is the state of the majority of the country. I wonder how long it will be before the country is mainly severe. I wonder how can we make it so we get our country out of this drought. This impacts my community because where I live we are in a drought to the point we are not allowed to have fire pits and can smell the wildfires resulting from the droughts. A catchphrase to name this graph could be \"The USA Is Drying Up: How will we get out of this significant drought.\""
+}

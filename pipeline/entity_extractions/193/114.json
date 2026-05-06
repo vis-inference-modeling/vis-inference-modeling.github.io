@@ -1,0 +1,115 @@
+{
+  "article_id": "193",
+  "comment_index": 114,
+  "raw_comment": "I notice the map of the United States and the different levels of drought that are in each state. I wonder why the states surrounded by water are abnormally dry. This relates to me and my community because it affects New York is shown to be abnormally dry and that can affect us with shortage of water increased illness. A catchy headline could be \"SEVERE DROUGHT!!!\"",
+  "entities": [
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 24,
+      "end": 37,
+      "id": "e0"
+    },
+    {
+      "surface": "me and my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 178,
+      "end": 197,
+      "id": "e1"
+    },
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 217,
+      "end": 225,
+      "id": "e2"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 296,
+      "end": 301,
+      "id": "e3"
+    },
+    {
+      "surface": "increased illness",
+      "type": "OTHER_ENTITY",
+      "canonical": "increased_illness",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 302,
+      "end": 319,
+      "id": "e4"
+    },
+    {
+      "surface": "SEVERE DROUGHT!!!",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 349,
+      "end": 366,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "states surrounded by water",
+      "reason": "Could refer to a geographic category, but no exact canonical location level matches this phrasing."
+    },
+    {
+      "surface": "abnormally dry",
+      "reason": "Likely a drought severity level, but the normalized dictionary only confirms 'abnormal droughts' as an OTHER_ENTITY and not this exact phrase."
+    },
+    {
+      "surface": "shortage of water",
+      "reason": "Could map to water shortage/water scarcity, but the exact surface form is not confirmed in the provided dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice the map of the United States and the different levels of drought that are in each state. I wonder why the states surrounded by water are abnormally dry. This relates to me and my community because it affects New York is shown to be abnormally dry and that can affect us with shortage of water increased illness. A catchy headline could be \"SEVERE DROUGHT!!!\""
+    },
+    {
+      "section": "headline",
+      "label": "A catchy headline could be",
+      "text": "SEVERE DROUGHT!!!"
+    }
+  ],
+  "tagged_text": "I notice the map of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> and the different levels of drought that are in each state. I wonder why the states surrounded by water are abnormally dry. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">me and my community</entity> because it affects <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> is shown to be abnormally dry and that can affect us with shortage of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity> <entity type=\"OTHER_ENTITY\" canonical=\"increased_illness\" subtype=\"other\">increased illness</entity>. A catchy headline could be \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">SEVERE DROUGHT!!!</entity>\""
+}

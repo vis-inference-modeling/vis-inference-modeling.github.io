@@ -1,0 +1,54 @@
+{
+  "article_id": "193",
+  "comment_index": 248,
+  "raw_comment": "What do you notice?\nI noticed that Wyoming is one of the parts with the worst droughts \nWhat do you wonder?\nI wonder why part of Colorado doesn't have a lot of droughts compared to the other states\nHow does this relate to you and your community?\nThis related to my community because where you live obviously effects if you are harmed by a drought or not \nCreate a catchy headline that captures the graph’s main idea.\nIf in doubt remember that we are in a drought",
+  "entities": [
+    {
+      "surface": "Wyoming",
+      "type": "LOCATION",
+      "canonical": "wyoming",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 35,
+      "end": 42,
+      "id": "e0"
+    },
+    {
+      "surface": "Colorado",
+      "type": "LOCATION",
+      "canonical": "colorado",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 129,
+      "end": 137,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "my community",
+      "reason": "Speaker-context location phrase, but no exact canonical match in the provided dictionary for this article."
+    },
+    {
+      "surface": "graph",
+      "reason": "Chart element mentioned in instruction text, but not clearly part of the student's substantive response."
+    },
+    {
+      "surface": "we are in a drought",
+      "reason": "Could be an EVENT mention, but it appears as a slogan-like headline/instruction rather than a clear observation."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice?\nI noticed that Wyoming is one of the parts with the worst droughts \nWhat do you wonder?\nI wonder why part of Colorado doesn't have a lot of droughts compared to the other states\nHow does this relate to you and your community?\nThis related to my community because where you live obviously effects if you are harmed by a drought or not \nCreate a catchy headline that captures the graph’s main idea.\nIf in doubt remember that we are in a drought"
+    }
+  ],
+  "tagged_text": "What do you notice?\nI noticed that <entity type=\"LOCATION\" canonical=\"wyoming\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Wyoming</entity> is one of the parts with the worst droughts \nWhat do you wonder?\nI wonder why part of <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Colorado</entity> doesn't have a lot of droughts compared to the other states\nHow does this relate to you and your community?\nThis related to my community because where you live obviously effects if you are harmed by a drought or not \nCreate a catchy headline that captures the graph’s main idea.\nIf in doubt remember that we are in a drought"
+}

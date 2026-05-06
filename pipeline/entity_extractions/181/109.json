@@ -1,0 +1,184 @@
+{
+  "article_id": "181",
+  "comment_index": 109,
+  "raw_comment": "1) What do you notice? \nI noticed that clean electricity generation has a more significant increase than fossil generation. This is evident due to the nuclear, hydroelectric, and other, wind and solar increasing each by about a little over 10 million. \n2) What do you wonder?\nI wonder how this graph was created and what sampling method was used to receive the answers to support this data. \n3) How does this relate to you and your community?\nThe whole world requires all the generations evident in the graph and my community can receive a better understanding of the increase of these generations. This could help bring awareness of the fossil generations that may need to be lessened and communities can gather to help. \n4) What’s going on in this graph?\nElectricity Generations Increasing by Millions Each Year",
+  "entities": [
+    {
+      "surface": "clean electricity generation",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 39,
+      "end": 67,
+      "id": "e0"
+    },
+    {
+      "surface": "fossil generation",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 105,
+      "end": 122,
+      "id": "e1"
+    },
+    {
+      "surface": "nuclear",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nuclear",
+      "var": "energy_source",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 151,
+      "end": 158,
+      "id": "e2"
+    },
+    {
+      "surface": "hydroelectric, and other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 160,
+      "end": 184,
+      "id": "e3"
+    },
+    {
+      "surface": "wind and solar",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wind_and_solar",
+      "var": "energy_source",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 186,
+      "end": 200,
+      "id": "e4"
+    },
+    {
+      "surface": "10 million",
+      "type": "UNIT",
+      "canonical": "million_gigawatt_hours",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 240,
+      "end": 250,
+      "id": "e5"
+    },
+    {
+      "surface": "world",
+      "type": "LOCATION",
+      "canonical": "world",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 453,
+      "end": 458,
+      "id": "e6"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 513,
+      "end": 525,
+      "id": "e7"
+    },
+    {
+      "surface": "fossil generations",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 638,
+      "end": 656,
+      "id": "e8"
+    },
+    {
+      "surface": "Electricity Generations Increasing by Millions Each Year",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 757,
+      "end": 813,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "What do you notice?"
+    },
+    {
+      "section": "body",
+      "text": "I noticed that clean electricity generation has a more significant increase than fossil generation. This is evident due to the nuclear, hydroelectric, and other, wind and solar increasing each by about a little over 10 million."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "What do you wonder?"
+    },
+    {
+      "section": "body",
+      "text": "I wonder how this graph was created and what sampling method was used to receive the answers to support this data."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "How does this relate to you and your community?"
+    },
+    {
+      "section": "body",
+      "text": "The whole world requires all the generations evident in the graph and my community can receive a better understanding of the increase of these generations. This could help bring awareness of the fossil generations that may need to be lessened and communities can gather to help."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "What’s going on in this graph?"
+    },
+    {
+      "section": "headline",
+      "label": "What’s going on in this graph",
+      "text": "Electricity Generations Increasing by Millions Each Year"
+    }
+  ],
+  "tagged_text": "1) What do you notice? \nI noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean electricity generation</entity> has a more significant increase than <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil generation</entity>. This is evident due to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">hydroelectric, and other</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind and solar</entity> increasing each by about a little over <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">10 million</entity>. \n2) What do you wonder?\nI wonder how this graph was created and what sampling method was used to receive the answers to support this data. \n3) How does this relate to you and your community?\nThe whole <entity type=\"LOCATION\" canonical=\"world\">world</entity> requires all the generations evident in the graph and <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> can receive a better understanding of the increase of these generations. This could help bring awareness of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil generations</entity> that may need to be lessened and communities can gather to help. \n4) What’s going on in this graph?\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Electricity Generations Increasing by Millions Each Year</entity>"
+}

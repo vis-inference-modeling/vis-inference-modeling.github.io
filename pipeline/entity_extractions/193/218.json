@@ -1,0 +1,142 @@
+{
+  "article_id": "193",
+  "comment_index": 218,
+  "raw_comment": "What do you notice?\nI notice that most of the exceptional drought occurs near the middle parts of the United States. The abnormally dry areas were mostly near the eastern and western coasts. \n\nWhat do you wonder?\nI wonder if the droughts will stay the same or change. Why did specific places face more severe droughts? Does it have to do with climate change? Why are they having problems if they are right by tons of water?\n\nHow does this relate to you and your community?\nThis relates to me and my community because we can be updated about impacts of it with things such as fires in dry areas. It also affects our environment. \n\nCreate a catchy headline that captures the graph’s main idea.\nFrom Coast to Coast: Examining the Intensity of Droughts in the U.S.",
+  "entities": [
+    {
+      "surface": "exceptional drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 46,
+      "end": 65,
+      "id": "e0"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 102,
+      "end": 115,
+      "id": "e1"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "moderate",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 121,
+      "end": 135,
+      "id": "e2"
+    },
+    {
+      "surface": "coasts",
+      "type": "LOCATION",
+      "canonical": "coasts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 183,
+      "end": 189,
+      "id": "e3"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 343,
+      "end": 357,
+      "id": "e4"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 417,
+      "end": 422,
+      "id": "e5"
+    },
+    {
+      "surface": "fires",
+      "type": "EVENT",
+      "canonical": "fires",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 575,
+      "end": 580,
+      "id": "e6"
+    },
+    {
+      "surface": "environment",
+      "type": "OTHER_ENTITY",
+      "canonical": "environment",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 615,
+      "end": 626,
+      "id": "e7"
+    },
+    {
+      "surface": "From Coast to Coast: Examining the Intensity of Droughts in the U.S.",
+      "type": "EVENT",
+      "canonical": "from_coast_to_coast_examining_the_intensity_of_droughts_in_the_us",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 692,
+      "end": 760,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice?\nI notice that most of the exceptional drought occurs near the middle parts of the United States. The abnormally dry areas were mostly near the eastern and western coasts. \n\nWhat do you wonder?\nI wonder if the droughts will stay the same or change. Why did specific places face more severe droughts? Does it have to do with climate change? Why are they having problems if they are right by tons of water?\n\nHow does this relate to you and your community?\nThis relates to me and my community because we can be updated about impacts of it with things such as fires in dry areas. It also affects our environment."
+    },
+    {
+      "section": "headline",
+      "label": "Create a catchy headline that captures the graph’s main idea",
+      "text": "From Coast to Coast: Examining the Intensity of Droughts in the U.S."
+    }
+  ],
+  "tagged_text": "What do you notice?\nI notice that most of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional drought</entity> occurs near the middle parts of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">abnormally dry</entity> areas were mostly near the eastern and western <entity type=\"LOCATION\" canonical=\"coasts\" modality=\"asserted\">coasts</entity>. \n\nWhat do you wonder?\nI wonder if the droughts will stay the same or change. Why did specific places face more severe droughts? Does it have to do with <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity>? Why are they having problems if they are right by tons of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" modality=\"questioned\">water</entity>?\n\nHow does this relate to you and your community?\nThis relates to me and my community because we can be updated about impacts of it with things such as <entity type=\"EVENT\" canonical=\"fires\" modality=\"asserted\">fires</entity> in dry areas. It also affects our <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" modality=\"asserted\">environment</entity>. \n\nCreate a catchy headline that captures the graph’s main idea.\n<entity type=\"EVENT\" canonical=\"from_coast_to_coast_examining_the_intensity_of_droughts_in_the_us\" section=\"headline\">From Coast to Coast: Examining the Intensity of Droughts in the U.S.</entity>"
+}

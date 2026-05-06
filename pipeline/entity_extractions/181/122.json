@@ -1,0 +1,98 @@
+{
+  "article_id": "181",
+  "comment_index": 122,
+  "raw_comment": "1. I notice that China uses coal as their most used fossil fuel. They also use the most clean power. \nI wonder if this has anything to do with their high population. \nThis relates to my community because of the impacts of using these different energy sources have on my future.",
+  "entities": [
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 17,
+      "end": 22,
+      "id": "e0"
+    },
+    {
+      "surface": "coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 28,
+      "end": 32,
+      "id": "e1"
+    },
+    {
+      "surface": "fossil fuel",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 52,
+      "end": 63,
+      "id": "e2"
+    },
+    {
+      "surface": "clean power",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 88,
+      "end": 99,
+      "id": "e3"
+    },
+    {
+      "surface": "population",
+      "type": "DATA_VAR",
+      "canonical": "population",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 154,
+      "end": 164,
+      "id": "e4"
+    },
+    {
+      "surface": "energy sources",
+      "type": "DATA_VAR",
+      "canonical": "energy_source",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 244,
+      "end": 258,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I notice that China uses coal as their most used fossil fuel. They also use the most clean power. \nI wonder if this has anything to do with their high population. \nThis relates to my community because of the impacts of using these different energy sources have on my future."
+    }
+  ],
+  "tagged_text": "1. I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"numbered_point\">China</entity> uses <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"numbered_point\">coal</entity> as their most used <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\">fossil fuel</entity>. They also use the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"numbered_point\">clean power</entity>. \nI wonder if this has anything to do with their high <entity type=\"DATA_VAR\" canonical=\"population\" section=\"numbered_point\" modality=\"questioned\">population</entity>. \nThis relates to my community because of the impacts of using these different <entity type=\"DATA_VAR\" canonical=\"energy_source\" section=\"numbered_point\">energy sources</entity> have on my future."
+}

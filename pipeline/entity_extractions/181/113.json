@@ -1,0 +1,67 @@
+{
+  "article_id": "181",
+  "comment_index": 113,
+  "raw_comment": "I notice that the US is decreasing.\n\nI wonder how we can make a change.\n\nThis shows us the usage of fossil fuel in the US.\n\nCatchy Headline\nThe World is Changing Fast",
+  "entities": [
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 18,
+      "end": 20,
+      "id": "e0"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 119,
+      "end": 121,
+      "id": "e1"
+    },
+    {
+      "surface": "fossil fuel",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e2"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "The World is Changing Fast",
+      "reason": "Looks like a headline/title, but it is not in the confirmed headline dictionary and may be a novel title rather than a chart element or other entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that the US is decreasing.\n\nI wonder how we can make a change.\n\nThis shows us the usage of fossil fuel in the US."
+    },
+    {
+      "section": "headline",
+      "label": "Catchy Headline",
+      "text": "The World is Changing Fast"
+    }
+  ],
+  "tagged_text": "I notice that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is decreasing.\n\nI wonder how we can make a change.\n\nThis shows us the usage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuel</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>.\n\nCatchy Headline\nThe World is Changing Fast"
+}

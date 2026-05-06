@@ -1,0 +1,133 @@
+{
+  "article_id": "193",
+  "comment_index": 111,
+  "raw_comment": "I noticed that droughts are most prevalent in the western Midwest and near the Ohio-West Virginia area. I wonder why West Virginia and Ohio have such bad droughts, not the surrounding states. This relates to my community and me because it shows us if our region has a lot of droughts so that we may be aware of dangers such as wildfires. This map can also help us to determine if our region has gotten more droughts because of climate change. Headline: “Drought Dangers: Is Climate Change the Cause?”",
+  "entities": [
+    {
+      "surface": "western Midwest",
+      "type": "LOCATION",
+      "canonical": "western_midwest",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 50,
+      "end": 65,
+      "id": "e0"
+    },
+    {
+      "surface": "Ohio-West Virginia area",
+      "type": "LOCATION",
+      "canonical": "ohio_west_virginia_area",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 79,
+      "end": 102,
+      "id": "e1"
+    },
+    {
+      "surface": "West Virginia",
+      "type": "LOCATION",
+      "canonical": "west_virginia",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 84,
+      "end": 97,
+      "id": "e2"
+    },
+    {
+      "surface": "Ohio",
+      "type": "LOCATION",
+      "canonical": "ohio",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 135,
+      "end": 139,
+      "id": "e3"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 208,
+      "end": 220,
+      "id": "e4"
+    },
+    {
+      "surface": "me",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 225,
+      "end": 227,
+      "id": "e5"
+    },
+    {
+      "surface": "wildfires",
+      "type": "EVENT",
+      "canonical": "wildfires",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 327,
+      "end": 336,
+      "id": "e6"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 427,
+      "end": 441,
+      "id": "e7"
+    },
+    {
+      "surface": "Drought Dangers: Is Climate Change the Cause?",
+      "type": "OTHER_ENTITY",
+      "canonical": "headline_title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 454,
+      "end": 499,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that droughts are most prevalent in the western Midwest and near the Ohio-West Virginia area. I wonder why West Virginia and Ohio have such bad droughts, not the surrounding states. This relates to my community and me because it shows us if our region has a lot of droughts so that we may be aware of dangers such as wildfires. This map can also help us to determine if our region has gotten more droughts because of climate change. Headline: “Drought Dangers: Is Climate Change the Cause?”"
+    }
+  ],
+  "tagged_text": "I noticed that droughts are most prevalent in the <entity type=\"LOCATION\" canonical=\"western_midwest\">western Midwest</entity> and near the <entity type=\"LOCATION\" canonical=\"ohio_west_virginia_area\">Ohio-West Virginia area</entity>. I wonder why <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity> and <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> have such bad droughts, not the surrounding states. This relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> because it shows us if our region has a lot of droughts so that we may be aware of dangers such as <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity>. This map can also help us to determine if our region has gotten more droughts because of <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity>. Headline: “<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Drought Dangers: Is Climate Change the Cause?</entity>”"
+}

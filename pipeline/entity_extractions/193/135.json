@@ -1,0 +1,90 @@
+{
+  "article_id": "193",
+  "comment_index": 135,
+  "raw_comment": "• What do you notice?\nI notice a lot of drought in the south and north\n\n• What do you wonder?\nI wonder what causes droughts to be much worse in certain areas than others\n\n• How does this relate to you and your community?\nThis relates to my community because drought is severe on Long Island \n\n• catchy headline: Droughts drying the country",
+  "entities": [
+    {
+      "surface": "south",
+      "type": "LOCATION",
+      "canonical": "south",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 55,
+      "end": 60,
+      "id": "e0"
+    },
+    {
+      "surface": "north",
+      "type": "LOCATION",
+      "canonical": "north",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 65,
+      "end": 70,
+      "id": "e1"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 269,
+      "end": 275,
+      "id": "e2"
+    },
+    {
+      "surface": "Long Island",
+      "type": "LOCATION",
+      "canonical": "long_island",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 279,
+      "end": 290,
+      "id": "e3"
+    },
+    {
+      "surface": "Droughts drying the country",
+      "type": "EVENT",
+      "canonical": "droughts_drying_the_country",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 312,
+      "end": 339,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "certain areas",
+      "reason": "Generic region reference without a specific canonical location."
+    },
+    {
+      "surface": "droughts",
+      "reason": "Could be tagged as EVENT, but here it is used generically in a question about causes; kept unresolved to avoid over-tagging."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "• What do you notice?\nI notice a lot of drought in the south and north\n\n• What do you wonder?\nI wonder what causes droughts to be much worse in certain areas than others\n\n• How does this relate to you and your community?\nThis relates to my community because drought is severe on Long Island \n\n• catchy headline: Droughts drying the country"
+    }
+  ],
+  "tagged_text": "• What do you notice?\nI notice a lot of drought in the <entity type=\"LOCATION\" canonical=\"south\">south</entity> and <entity type=\"LOCATION\" canonical=\"north\">north</entity>\n\n• What do you wonder?\nI wonder what causes droughts to be much worse in certain areas than others\n\n• How does this relate to you and your community?\nThis relates to my community because drought is <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity> on <entity type=\"LOCATION\" canonical=\"long_island\" speaker_context=\"true\">Long Island</entity> \n\n• catchy headline: <entity type=\"EVENT\" canonical=\"droughts_drying_the_country\" section=\"headline\">Droughts drying the country</entity>"
+}

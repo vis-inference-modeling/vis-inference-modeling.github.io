@@ -1,0 +1,89 @@
+{
+  "article_id": "193",
+  "comment_index": 169,
+  "raw_comment": "What do you notice?\nI noticed that the US is mostly covered with some sort of drought whether its abnormally dry to an exceptional drought. \n\nWhat do you wonder?\nI wonder what is causing the droughts to occur in the US?\n\nHow does this relate to you and your community?\nThis relates to me and my community because if we have droughts it may lead to problems for me and others around me.\n\nCatchy headline: The Drought is Making The US Pout.",
+  "entities": [
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 39,
+      "end": 41,
+      "id": "e0"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 216,
+      "end": 218,
+      "id": "e1"
+    },
+    {
+      "surface": "me",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 285,
+      "end": 287,
+      "id": "e2"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 292,
+      "end": 304,
+      "id": "e3"
+    },
+    {
+      "surface": "The Drought is Making The US Pout",
+      "type": "EVENT",
+      "canonical": "the_drought_is_making_the_us_pout",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 404,
+      "end": 437,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "drought",
+      "reason": "Generic event mention repeated multiple times; not all instances were separately tagged to avoid over-fragmentation."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice?\nI noticed that the US is mostly covered with some sort of drought whether its abnormally dry to an exceptional drought. \n\nWhat do you wonder?\nI wonder what is causing the droughts to occur in the US?\n\nHow does this relate to you and your community?\nThis relates to me and my community because if we have droughts it may lead to problems for me and others around me.\n\nCatchy headline: The Drought is Making The US Pout."
+    }
+  ],
+  "tagged_text": "What do you notice?\nI noticed that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is mostly covered with some sort of drought whether its abnormally dry to an exceptional drought. \n\nWhat do you wonder?\nI wonder what is causing the droughts to occur in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>?\n\nHow does this relate to you and your community?\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because if we have droughts it may lead to problems for me and others around me.\n\nCatchy headline: <entity type=\"EVENT\" canonical=\"the_drought_is_making_the_us_pout\">The Drought is Making The US Pout</entity>."
+}

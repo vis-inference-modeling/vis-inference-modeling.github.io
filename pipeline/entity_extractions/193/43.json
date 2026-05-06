@@ -1,0 +1,183 @@
+{
+  "article_id": "193",
+  "comment_index": 43,
+  "raw_comment": "I notice the states with the least drought seem to be located closer to the ocean and states with a lot of drought are located closer to the center of the U.S.\nI wonder why some many states seem to be facing severe to exceptional drought. I also wonder how this will affect agriculture and food production in general. Additionally, I wonder is there any steps that can occurring. to prevent or fix the issue of how many droughts are occurring.\nThis relates to me and my community because it shows on the map that NY isn't facing any drought so that explains why this news hasn’t been discussed much.\nDrought In the U.S.A.",
+  "entities": [
+    {
+      "surface": "ocean",
+      "type": "LOCATION",
+      "canonical": "ocean",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 76,
+      "end": 81,
+      "id": "e0"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 155,
+      "end": 159,
+      "id": "e1"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 208,
+      "end": 214,
+      "id": "e2"
+    },
+    {
+      "surface": "exceptional",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 218,
+      "end": 229,
+      "id": "e3"
+    },
+    {
+      "surface": "agriculture",
+      "type": "OTHER_ENTITY",
+      "canonical": "agriculture",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 274,
+      "end": 285,
+      "id": "e4"
+    },
+    {
+      "surface": "food production",
+      "type": "OTHER_ENTITY",
+      "canonical": "food_production",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 290,
+      "end": 305,
+      "id": "e5"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 420,
+      "end": 428,
+      "id": "e6"
+    },
+    {
+      "surface": "me and my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 460,
+      "end": 479,
+      "id": "e7"
+    },
+    {
+      "surface": "NY",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 513,
+      "end": 515,
+      "id": "e8"
+    },
+    {
+      "surface": "Drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 600,
+      "end": 607,
+      "id": "e9"
+    },
+    {
+      "surface": "U.S.A.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 615,
+      "end": 621,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "states",
+      "reason": "Could refer to U.S. states generically; a plural location-like reference is present but not specific enough to map to a single canonical location."
+    },
+    {
+      "surface": "center of the U.S.",
+      "reason": "Location-like phrase referring to a region; no exact canonical regional match is confirmed beyond generic country reference."
+    },
+    {
+      "surface": "any steps",
+      "reason": "Could imply actions or interventions, but no entity-like canonical match is available."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice the states with the least drought seem to be located closer to the ocean and states with a lot of drought are located closer to the center of the U.S.\nI wonder why some many states seem to be facing severe to exceptional drought. I also wonder how this will affect agriculture and food production in general. Additionally, I wonder is there any steps that can occurring. to prevent or fix the issue of how many droughts are occurring.\nThis relates to me and my community because it shows on the map that NY isn't facing any drought so that explains why this news hasn’t been discussed much."
+    },
+    {
+      "section": "headline",
+      "label": "Drought In the U.S.A.",
+      "text": "Drought In the U.S.A."
+    }
+  ],
+  "tagged_text": "I notice the states with the least drought seem to be located closer to the <entity type=\"LOCATION\" canonical=\"ocean\" section=\"body\">ocean</entity> and states with a lot of drought are located closer to the center of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">U.S.</entity>\nI wonder why some many states seem to be facing <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\" section=\"body\">severe</entity> to <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\">exceptional</entity> drought. I also wonder how this will affect <entity type=\"OTHER_ENTITY\" canonical=\"agriculture\" subtype=\"other\" section=\"body\">agriculture</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"food_production\" subtype=\"other\" section=\"body\">food production</entity> in general. Additionally, I wonder is there any steps that can occurring. to prevent or fix the issue of how many <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> are occurring.\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">me and my community</entity> because it shows on the map that <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">NY</entity> isn't facing any drought so that explains why this news hasn’t been discussed much.\n<entity type=\"EVENT\" canonical=\"drought\" section=\"headline\">Drought</entity> In the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">U.S.A.</entity>."
+}

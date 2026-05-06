@@ -1,0 +1,152 @@
+{
+  "article_id": "193",
+  "comment_index": 46,
+  "raw_comment": "When looking at this graph I noticed that the states which are more landlocked are experiencing the greatest droughts. This does however have a few exceptions such as Colorado which still does have drought but less than other states. I wonder if there is any coloration between global warming and the increased droughts that America is experiencing as a whole due to the rising temperatures. This relates to me and my community because we recently experienced a drought that lasted two months. This led to fires in states such as New Jersey. A catchy title could be, \"The U.S. is going through a period of severe drought. What can we do to prevent this?\"",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 21,
+      "end": 26,
+      "id": "e0"
+    },
+    {
+      "surface": "Colorado",
+      "type": "LOCATION",
+      "canonical": "colorado",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 167,
+      "end": 175,
+      "id": "e1"
+    },
+    {
+      "surface": "global warming",
+      "type": "EVENT",
+      "canonical": "global_warming",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 278,
+      "end": 292,
+      "id": "e2"
+    },
+    {
+      "surface": "America",
+      "type": "LOCATION",
+      "canonical": "america",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 325,
+      "end": 332,
+      "id": "e3"
+    },
+    {
+      "surface": "me and my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 408,
+      "end": 427,
+      "id": "e4"
+    },
+    {
+      "surface": "two months",
+      "type": "TIME_REFERENCE",
+      "canonical": "two_months",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 482,
+      "end": 492,
+      "id": "e5"
+    },
+    {
+      "surface": "fires",
+      "type": "EVENT",
+      "canonical": "fires",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 506,
+      "end": 511,
+      "id": "e6"
+    },
+    {
+      "surface": "New Jersey",
+      "type": "LOCATION",
+      "canonical": "new_jersey",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 530,
+      "end": 540,
+      "id": "e7"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 572,
+      "end": 576,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "landlocked",
+      "reason": "Location-like descriptor but no exact canonical location match for the generic adjective alone."
+    },
+    {
+      "surface": "droughts",
+      "reason": "Generic repeated event mention; could be tagged as EVENT, but not separately resolved here due to broad usage."
+    },
+    {
+      "surface": "rising temperatures",
+      "reason": "Could map to temperature or climate-related event, but no exact canonical match is confirmed for this phrasing."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "When looking at this graph I noticed that the states which are more landlocked are experiencing the greatest droughts. This does however have a few exceptions such as Colorado which still does have drought but less than other states. I wonder if there is any coloration between global warming and the increased droughts that America is experiencing as a whole due to the rising temperatures. This relates to me and my community because we recently experienced a drought that lasted two months. This led to fires in states such as New Jersey."
+    },
+    {
+      "section": "headline",
+      "label": "The U.S. is going through a period of severe drought. What can we do to prevent this?",
+      "text": "The U.S. is going through a period of severe drought. What can we do to prevent this?"
+    }
+  ],
+  "tagged_text": "When looking at this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> I noticed that the states which are more landlocked are experiencing the greatest droughts. This does however have a few exceptions such as <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\">Colorado</entity> which still does have drought but less than other states. I wonder if there is any coloration between <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\" modality=\"questioned\">global warming</entity> and the increased droughts that <entity type=\"LOCATION\" canonical=\"america\" section=\"body\">America</entity> is experiencing as a whole due to the rising temperatures. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">me and my community</entity> because we recently experienced a drought that lasted <entity type=\"TIME_REFERENCE\" canonical=\"two_months\" section=\"body\">two months</entity>. This led to <entity type=\"EVENT\" canonical=\"fires\" section=\"body\">fires</entity> in states such as <entity type=\"LOCATION\" canonical=\"new_jersey\" section=\"body\">New Jersey</entity>. A catchy title could be, \"The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">U.S.</entity> is going through a period of severe drought. What can we do to prevent this?\""
+}

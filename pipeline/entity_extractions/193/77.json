@@ -1,0 +1,81 @@
+{
+  "article_id": "193",
+  "comment_index": 77,
+  "raw_comment": "Wonder: I wonder what makes Ohio and West Virginia so dry, despite being a very condensed area.\n\nHeadline: \"Droughts: America's Transition to a Desiccation Destination.\"",
+  "entities": [
+    {
+      "surface": "Ohio",
+      "type": "LOCATION",
+      "canonical": "ohio",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 28,
+      "end": 32,
+      "id": "e0"
+    },
+    {
+      "surface": "West Virginia",
+      "type": "LOCATION",
+      "canonical": "west_virginia",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 37,
+      "end": 50,
+      "id": "e1"
+    },
+    {
+      "surface": "Droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 108,
+      "end": 116,
+      "id": "e2"
+    },
+    {
+      "surface": "America",
+      "type": "LOCATION",
+      "canonical": "america",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 118,
+      "end": 125,
+      "id": "e3"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "condensed area",
+      "reason": "Describes density/compactness but no matching canonical entity in the dictionary."
+    },
+    {
+      "surface": "Desiccation Destination",
+      "reason": "Creative phrase implying dryness; not a confirmed canonical entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Wonder: I wonder what makes Ohio and West Virginia so dry, despite being a very condensed area."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "\"Droughts: America's Transition to a Desiccation Destination.\""
+    }
+  ],
+  "tagged_text": "Wonder: I wonder what makes <entity type=\"LOCATION\" canonical=\"ohio\" section=\"body\">Ohio</entity> and <entity type=\"LOCATION\" canonical=\"west_virginia\" section=\"body\">West Virginia</entity> so dry, despite being a very condensed area.\n\nHeadline: \"<entity type=\"EVENT\" canonical=\"droughts\" section=\"headline\">Droughts</entity>: <entity type=\"LOCATION\" canonical=\"america\" section=\"headline\">America</entity>'s Transition to a Desiccation Destination.\""
+}

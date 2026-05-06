@@ -1,0 +1,121 @@
+{
+  "article_id": "193",
+  "comment_index": 189,
+  "raw_comment": "I noticed that most of the droughts are located near the middle of the US. For the most part in the south and the north. Ohio has the moist extreme drought out of all states and has the largest area of common droughts. \n\nI wonder why these droughts occur and why they occur in these specific locations? Like droughts in upper michigan there is a lot of fresh water yet there are some droughts, I figured there would be more rain. I wonder if the droughts make people not want to live there, a lot of the areas have low populations. \n\nThis affects my community because it is my country around me experiencing droughts. \n\n“Drought levels around the US”",
+  "entities": [
+    {
+      "surface": "US",
+      "type": "LOCATION",
+      "canonical": "us",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 71,
+      "end": 73,
+      "id": "e0"
+    },
+    {
+      "surface": "Ohio",
+      "type": "LOCATION",
+      "canonical": "ohio",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 121,
+      "end": 125,
+      "id": "e1"
+    },
+    {
+      "surface": "michigan",
+      "type": "LOCATION",
+      "canonical": "michigan",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 326,
+      "end": 334,
+      "id": "e2"
+    },
+    {
+      "surface": "fresh water",
+      "type": "OTHER_ENTITY",
+      "canonical": "fresh_water",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "subtype": "other",
+      "occurrence_index": 0,
+      "start": 353,
+      "end": 364,
+      "id": "e3"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 424,
+      "end": 428,
+      "id": "e4"
+    },
+    {
+      "surface": "Drought levels around the US",
+      "type": "OTHER_ENTITY",
+      "canonical": "drought_levels_around_the_us",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "subtype": "other",
+      "occurrence_index": 0,
+      "start": 621,
+      "end": 649,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "the south",
+      "reason": "Regional reference without an exact canonical match in the provided dictionary."
+    },
+    {
+      "surface": "the north",
+      "reason": "Regional reference without an exact canonical match in the provided dictionary."
+    },
+    {
+      "surface": "extreme drought",
+      "reason": "Could map to a drought severity level, but the exact span is not clearly one of the provided canonical levels."
+    },
+    {
+      "surface": "common droughts",
+      "reason": "Not a clear canonical entity; may refer to a general drought category."
+    },
+    {
+      "surface": "my country around me",
+      "reason": "Likely a speaker-related location phrase, but the wording is not a clean match to any provided canonical location."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that most of the droughts are located near the middle of the US. For the most part in the south and the north. Ohio has the moist extreme drought out of all states and has the largest area of common droughts. \n\nI wonder why these droughts occur and why they occur in these specific locations? Like droughts in upper michigan there is a lot of fresh water yet there are some droughts, I figured there would be more rain. I wonder if the droughts make people not want to live there, a lot of the areas have low populations. \n\nThis affects my community because it is my country around me experiencing droughts. \n\n“Drought levels around the US”"
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Drought levels around the US"
+    }
+  ],
+  "tagged_text": "I noticed that most of the droughts are located near the middle of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">US</entity>. For the most part in the south and the north. <entity type=\"LOCATION\" canonical=\"ohio\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Ohio</entity> has the moist extreme drought out of all states and has the largest area of common droughts. \n\nI wonder why these droughts occur and why they occur in these specific locations? Like droughts in upper <entity type=\"LOCATION\" canonical=\"michigan\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">michigan</entity> there is a lot of <entity type=\"OTHER_ENTITY\" canonical=\"fresh_water\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\" subtype=\"other\">fresh water</entity> yet there are some droughts, I figured there would be more <entity type=\"EVENT\" canonical=\"rain\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">rain</entity>. I wonder if the droughts make people not want to live there, a lot of the areas have low populations. \n\nThis affects my community because it is my country around me experiencing droughts. \n\n“<entity type=\"headline_title\" canonical=\"drought_levels_around_the_us\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Drought levels around the US</entity>”"
+}

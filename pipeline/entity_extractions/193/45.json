@@ -1,0 +1,176 @@
+{
+  "article_id": "193",
+  "comment_index": 45,
+  "raw_comment": "Before looking at this graph I would assume areas that struggle with drought would be in the same geographical location such as being all land-locked states but to my surprise, I also noticed some coastal states struggle with drought. I wonder how coastal areas are experiencing drought despite their proximity to water. This relates to my community because live in a coastal area and was surprised to see that there is drought present in coastal areas which I had not previously noticed. In my AP Research class, I am studying marine abnormalities as a result of global warming and am curious to see if that is a leading cause of these droughts. A catchy headline for this graph would be, \"Where's my water?\"",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 23,
+      "end": 28,
+      "id": "e0"
+    },
+    {
+      "surface": "land-locked states",
+      "type": "LOCATION",
+      "canonical": "landlocked_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 138,
+      "end": 156,
+      "id": "e1"
+    },
+    {
+      "surface": "coastal states",
+      "type": "LOCATION",
+      "canonical": "coastal_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 197,
+      "end": 211,
+      "id": "e2"
+    },
+    {
+      "surface": "coastal areas",
+      "type": "LOCATION",
+      "canonical": "coastal_areas",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 248,
+      "end": 261,
+      "id": "e3"
+    },
+    {
+      "surface": "coastal areas",
+      "type": "LOCATION",
+      "canonical": "coastal_areas",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 439,
+      "end": 452,
+      "id": "e4"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 702,
+      "end": 707,
+      "id": "e5"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "coastal area",
+      "type": "LOCATION",
+      "canonical": "coastal_areas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "AP Research class",
+      "type": "OTHER_ENTITY",
+      "canonical": "ap_research_class",
+      "subtype": "organization",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "global warming",
+      "type": "EVENT",
+      "canonical": "global_warming",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "Where's my water?",
+      "type": "OTHER_ENTITY",
+      "canonical": "where_is_the_rain",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "marine abnormalities",
+      "reason": "Entity-like phrase but no confirmed canonical match in the provided dictionary."
+    },
+    {
+      "surface": "drought",
+      "reason": "Generic repeated mention in the body; could be tagged as EVENT, but the comment uses it broadly and repeatedly without a distinct canonical beyond the general event."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Before looking at this graph I would assume areas that struggle with drought would be in the same geographical location such as being all land-locked states but to my surprise, I also noticed some coastal states struggle with drought. I wonder how coastal areas are experiencing drought despite their proximity to water. This relates to my community because live in a coastal area and was surprised to see that there is drought present in coastal areas which I had not previously noticed. In my AP Research class, I am studying marine abnormalities as a result of global warming and am curious to see if that is a leading cause of these droughts. A catchy headline for this graph would be, \"Where's my water?\""
+    },
+    {
+      "section": "headline",
+      "label": "Where's my water?",
+      "text": "Where's my water?"
+    }
+  ],
+  "tagged_text": "Before looking at this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> I would assume areas that struggle with drought would be in the same geographical location such as being all <entity type=\"LOCATION\" canonical=\"landlocked_states\" section=\"body\">land-locked states</entity> but to my surprise, I also noticed some <entity type=\"LOCATION\" canonical=\"coastal_states\" section=\"body\">coastal states</entity> struggle with drought. I wonder how <entity type=\"LOCATION\" canonical=\"coastal_areas\" section=\"body\" modality=\"questioned\">coastal areas</entity> are experiencing drought despite their proximity to <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" section=\"body\">water</entity>. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my community</entity> because live in a <entity type=\"LOCATION\" canonical=\"coastal_areas\" section=\"body\" speaker_context=\"true\">coastal area</entity> and was surprised to see that there is drought present in <entity type=\"LOCATION\" canonical=\"coastal_areas\" section=\"body\">coastal areas</entity> which I had not previously noticed. In my <entity type=\"OTHER_ENTITY\" canonical=\"ap_research_class\" subtype=\"organization\" section=\"body\">AP Research class</entity>, I am studying marine abnormalities as a result of <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\">global warming</entity> and am curious to see if that is a leading cause of these droughts. A catchy headline for this graph would be, \"<entity type=\"OTHER_ENTITY\" canonical=\"where_is_the_rain\" subtype=\"other\" section=\"headline\">Where's my water?</entity>\""
+}

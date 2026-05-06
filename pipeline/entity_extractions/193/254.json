@@ -1,0 +1,96 @@
+{
+  "article_id": "193",
+  "comment_index": 254,
+  "raw_comment": "I noticed that the United States is going through a severe. drought. I wonder how much longer this drought will last and if it will eventually affect us in our everyday activities. This Drought relates to me and my community because were in the severe section of the graph so were experiencing it pretty rough.",
+  "entities": [
+    {
+      "surface": "United States",
+      "type": "LOCATION",
+      "canonical": "united_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 19,
+      "end": 32,
+      "id": "e0"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 52,
+      "end": 58,
+      "id": "e1"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 245,
+      "end": 251,
+      "id": "e2"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 267,
+      "end": 272,
+      "id": "e3"
+    },
+    {
+      "surface": "me and my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "drought",
+      "reason": "Likely an EVENT, but the comment uses it generically and the provided normalized dictionary does not include a single exact canonical for this surface in this context."
+    },
+    {
+      "surface": "us",
+      "reason": "Could refer to the speaker/community or the United States, but it is a pronoun and not explicitly resolved."
+    },
+    {
+      "surface": "everyday activities",
+      "reason": "Generic phrase; not clearly an entity from the dictionary."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that the United States is going through a severe. drought. I wonder how much longer this drought will last and if it will eventually affect us in our everyday activities. This Drought relates to me and my community because were in the severe section of the graph so were experiencing it pretty rough."
+    }
+  ],
+  "tagged_text": "I noticed that the <entity type=\"LOCATION\" canonical=\"united_states\">United States</entity> is going through a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity>. drought. I wonder how much longer this drought will last and if it will eventually affect us in our everyday activities. This Drought relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">me and my community</entity> because were in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity> section of the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> so were experiencing it pretty rough."
+}

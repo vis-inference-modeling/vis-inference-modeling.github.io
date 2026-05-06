@@ -1,0 +1,81 @@
+{
+  "article_id": "181",
+  "comment_index": 150,
+  "raw_comment": "I notice that the different countries have varying usage rates in regards to what energy sources they use. I wonder whether the trend toward cleaner energy sources will continue at this rate or whether there will be changes in the near future. This impacts my community since a change to cleaner power sources would benefit the environment. However, it depends whether we would be able to maintain it in a way that is sustainable. Otherwise we would struggle as a result. A catchy or fitting headline would be “The progress in Energy around the world”",
+  "entities": [
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 257,
+      "end": 269,
+      "id": "e0"
+    },
+    {
+      "surface": "environment",
+      "type": "OTHER_ENTITY",
+      "canonical": "environment",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 328,
+      "end": 339,
+      "id": "e1"
+    },
+    {
+      "surface": "Energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 527,
+      "end": 533,
+      "id": "e2"
+    },
+    {
+      "surface": "world",
+      "type": "LOCATION",
+      "canonical": "world",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 545,
+      "end": 550,
+      "id": "e3"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "different countries",
+      "reason": "Generic plural country reference; not specific enough to map to a single canonical level."
+    },
+    {
+      "surface": "cleaner energy sources",
+      "reason": "Likely refers to clean power, but not explicit enough to map confidently without over-normalizing."
+    },
+    {
+      "surface": "near future",
+      "reason": "Time reference is vague and not in the canonical list."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that the different countries have varying usage rates in regards to what energy sources they use. I wonder whether the trend toward cleaner energy sources will continue at this rate or whether there will be changes in the near future. This impacts my community since a change to cleaner power sources would benefit the environment. However, it depends whether we would be able to maintain it in a way that is sustainable. Otherwise we would struggle as a result. A catchy or fitting headline would be “The progress in Energy around the world”"
+    }
+  ],
+  "tagged_text": "I notice that the different countries have varying usage rates in regards to what energy sources they use. I wonder whether the trend toward cleaner energy sources will continue at this rate or whether there will be changes in the near future. This impacts <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> since a change to cleaner power sources would benefit the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity>. However, it depends whether we would be able to maintain it in a way that is sustainable. Otherwise we would struggle as a result. A catchy or fitting headline would be “The progress in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">Energy</entity> around the <entity type=\"LOCATION\" canonical=\"world\">world</entity>”"
+}

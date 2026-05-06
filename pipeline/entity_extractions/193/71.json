@@ -1,0 +1,47 @@
+{
+  "article_id": "193",
+  "comment_index": 71,
+  "raw_comment": "I wondered which country has the most droughts in 10 year",
+  "entities": [
+    {
+      "surface": "country",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "country",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 17,
+      "end": 24,
+      "id": "e0"
+    },
+    {
+      "surface": "10 year",
+      "type": "TIME_REFERENCE",
+      "canonical": "10_years",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 50,
+      "end": 57,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "droughts",
+      "reason": "Mentions a phenomenon not in the confirmed normalized dictionary for this article; could be tagged as EVENT if allowed, but no exact canonical provided here."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I wondered which country has the most droughts in 10 year"
+    }
+  ],
+  "tagged_text": "I wondered which <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\" modality=\"questioned\">country</entity> has the most droughts in <entity type=\"TIME_REFERENCE\" canonical=\"10_years\">10 year</entity>"
+}

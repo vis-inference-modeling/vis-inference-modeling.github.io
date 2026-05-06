@@ -1,0 +1,153 @@
+{
+  "article_id": "193",
+  "comment_index": 48,
+  "raw_comment": "Looking at this graph, one thing that I noticed is how most of the country have droughts especially in the middle. This makes me wonder if there would be more severe droughts in the future and how badly this could impact us and how we could avoid it. This relates to me and my community because I now have a better understanding of droughts and where they are occurring. A catchy headline that I think could capture this graph is \"The Dry States\".",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 16,
+      "end": 21,
+      "id": "e0"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 67,
+      "end": 74,
+      "id": "e1"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 80,
+      "end": 88,
+      "id": "e2"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 166,
+      "end": 174,
+      "id": "e3"
+    },
+    {
+      "surface": "droughts",
+      "type": "EVENT",
+      "canonical": "droughts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 332,
+      "end": 340,
+      "id": "e4"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "future",
+      "type": "TIME_REFERENCE",
+      "canonical": "future",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "us",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker",
+      "subtype": "person",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "me and my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_and_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "middle",
+      "reason": "Spatial reference but no exact canonical location match for the generic term alone."
+    },
+    {
+      "surface": "The Dry States",
+      "reason": "Could be a headline/title entity, but no confirmed canonical match in the provided dictionary."
+    },
+    {
+      "surface": "how we could avoid it",
+      "reason": "Refers to mitigation/action, but no entity-like canonical match is available."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Looking at this graph, one thing that I noticed is how most of the country have droughts especially in the middle. This makes me wonder if there would be more severe droughts in the future and how badly this could impact us and how we could avoid it. This relates to me and my community because I now have a better understanding of droughts and where they are occurring."
+    },
+    {
+      "section": "headline",
+      "label": "The Dry States",
+      "text": "The Dry States"
+    }
+  ],
+  "tagged_text": "Looking at this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity>, one thing that I noticed is how most of the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\">country</entity> have <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> especially in the middle. This makes me wonder if there would be more <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\" section=\"body\" modality=\"questioned\">severe</entity> <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\" modality=\"questioned\">droughts</entity> in the <entity type=\"TIME_REFERENCE\" canonical=\"future\" section=\"body\" modality=\"questioned\">future</entity> and how badly this could impact <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"body\" speaker_context=\"true\">us</entity> and how we could avoid it. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">me and my community</entity> because I now have a better understanding of <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> and where they are occurring. A catchy headline that I think could capture this graph is \"The Dry States\"."
+}

@@ -1,0 +1,214 @@
+{
+  "article_id": "193",
+  "comment_index": 124,
+  "raw_comment": "Climate change - Will you be affected by fires?\nI notice that most of the United Stares is experiencing a severe drought. I especially noticed how NY has been experiencing moderate drought but that was enough to start fires throughout the state. I wonder if there is any way to reverse this and if drought will continue to occur due to climate change. I also wonder if there will be any new laws placed to avoid the increasing amount of climate change. This affects my community and I because it can cause a danger for us as the drought increases.",
+  "entities": [
+    {
+      "surface": "Climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 0,
+      "end": 14,
+      "id": "e0"
+    },
+    {
+      "surface": "fires",
+      "type": "EVENT",
+      "canonical": "fires",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 41,
+      "end": 46,
+      "id": "e1"
+    },
+    {
+      "surface": "United Stares",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 74,
+      "end": 87,
+      "id": "e2"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 106,
+      "end": 112,
+      "id": "e3"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 113,
+      "end": 120,
+      "id": "e4"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 181,
+      "end": 188,
+      "id": "e5"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 298,
+      "end": 305,
+      "id": "e6"
+    },
+    {
+      "surface": "drought",
+      "type": "EVENT",
+      "canonical": "drought",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": 529,
+      "end": 536,
+      "id": "e7"
+    },
+    {
+      "surface": "NY",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "moderate",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "moderate",
+      "var": "drought_severity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "fires",
+      "type": "EVENT",
+      "canonical": "fires",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "United Stares",
+      "reason": "Likely typo for United States; mapped to united_states."
+    },
+    {
+      "surface": "the state",
+      "reason": "Could refer to New York state, but not explicit enough to tag separately."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "headline",
+      "label": "Climate change",
+      "text": "Climate change - Will you be affected by fires?"
+    },
+    {
+      "section": "body",
+      "text": "I notice that most of the United Stares is experiencing a severe drought. I especially noticed how NY has been experiencing moderate drought but that was enough to start fires throughout the state. I wonder if there is any way to reverse this and if drought will continue to occur due to climate change. I also wonder if there will be any new laws placed to avoid the increasing amount of climate change. This affects my community and I because it can cause a danger for us as the drought increases."
+    }
+  ],
+  "tagged_text": "<entity type=\"EVENT\" canonical=\"climate_change\" section=\"headline\">Climate change</entity> - Will you be affected by <entity type=\"EVENT\" canonical=\"fires\" section=\"headline\">fires</entity>?\nI notice that most of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United Stares</entity> is experiencing a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\" section=\"body\">severe</entity> <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity>. I especially noticed how <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">NY</entity> has been experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\" section=\"body\">moderate</entity> <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> but that was enough to start <entity type=\"EVENT\" canonical=\"fires\" section=\"body\">fires</entity> throughout the state. I wonder if there is any way to reverse this and if <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> will continue to occur due to <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">climate change</entity>. I also wonder if there will be any new laws placed to avoid the increasing amount of <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">climate change</entity>. This affects my <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" speaker_context=\"true\">community</entity> and I because it can cause a danger for us as the <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> increases."
+}
