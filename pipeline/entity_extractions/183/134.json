@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "young women",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -20,6 +21,7 @@
       "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -33,6 +35,7 @@
       "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -46,6 +49,7 @@
       "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -59,6 +63,7 @@
       "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -72,6 +77,7 @@
       "surface": "men",
       "type": "OTHER_ENTITY",
       "canonical": "men",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -82,35 +88,38 @@
       "id": "e5"
     },
     {
-      "surface": "women",
+      "surface": "men",
       "type": "OTHER_ENTITY",
-      "canonical": "women",
+      "canonical": "men",
+      "subtype": "other",
       "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e6"
     },
     {
       "surface": "men",
       "type": "OTHER_ENTITY",
       "canonical": "men",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "women",
+      "type": "OTHER_ENTITY",
+      "canonical": "women",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -121,9 +130,10 @@
       "id": "e8"
     },
     {
-      "surface": "men",
+      "surface": "women",
       "type": "OTHER_ENTITY",
-      "canonical": "men",
+      "canonical": "women",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -134,9 +144,24 @@
       "id": "e9"
     },
     {
+      "surface": "women",
+      "type": "OTHER_ENTITY",
+      "canonical": "women",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
       "surface": "me",
-      "type": "speaker",
+      "type": "OTHER_ENTITY",
       "canonical": "speaker",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -144,25 +169,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e11"
     },
     {
       "surface": "college",
       "type": "OTHER_ENTITY",
       "canonical": "college",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "text",
-      "type": "OTHER_ENTITY",
-      "canonical": "texting",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -173,9 +186,10 @@
       "id": "e12"
     },
     {
-      "surface": "call",
-      "type": "OTHER_ENTITY",
-      "canonical": "calling",
+      "surface": "text",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -184,14 +198,29 @@
       "start": null,
       "end": null,
       "id": "e13"
+    },
+    {
+      "surface": "call",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "I noticed that young women tend to reach out to their parents more than men. I wonder why women do it more than men and I think it is because they are more attached to their parents. This relates to me because one day I will move out and go to college and I will probably text or call my parents a lot. Why do women reach out to their parents more often than men?"
     }
   ],
-  "tagged_text": "I noticed that <entity type=\"OTHER_ENTITY\" canonical=\"young_women\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young women</entity> tend to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> more than <entity type=\"OTHER_ENTITY\" canonical=\"men\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">men</entity>. I wonder why <entity type=\"OTHER_ENTITY\" canonical=\"women\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">women</entity> do it more than <entity type=\"OTHER_ENTITY\" canonical=\"men\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">men</entity> and I think it is because they are more attached to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity>. This relates to <entity type=\"speaker\" canonical=\"speaker\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">me</entity> because one day I will move out and go to <entity type=\"OTHER_ENTITY\" canonical=\"college\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">college</entity> and I will probably <entity type=\"OTHER_ENTITY\" canonical=\"texting\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">text</entity> or <entity type=\"OTHER_ENTITY\" canonical=\"calling\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">call</entity> my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> a lot. Why do <entity type=\"OTHER_ENTITY\" canonical=\"women\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> more often than <entity type=\"OTHER_ENTITY\" canonical=\"men\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">men</entity>?"
+  "tagged_text": "I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> tend to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more than <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"other\">men</entity>. I wonder why <entity type=\"OTHER_ENTITY\" canonical=\"women\" subtype=\"other\">women</entity> do it more than <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"other\">men</entity> and I think it is because they are more attached to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> because one day I will move out and go to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college</entity> and I will probably <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">call</entity> my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> a lot. Why do <entity type=\"OTHER_ENTITY\" canonical=\"women\" subtype=\"other\">women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more often than <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"other\">men</entity>?"
 }

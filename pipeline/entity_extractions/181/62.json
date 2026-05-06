@@ -30,36 +30,66 @@
       "id": "e1"
     },
     {
-      "surface": "2000",
-      "type": "TIME_REFERENCE",
-      "canonical": "2000",
+      "surface": "resources",
+      "type": "OTHER_ENTITY",
+      "canonical": "resources",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 490,
-      "end": 494,
+      "start": 262,
+      "end": 271,
       "id": "e2"
     },
     {
-      "surface": "2000",
-      "type": "TIME_REFERENCE",
-      "canonical": "2000",
+      "surface": "resources",
+      "type": "OTHER_ENTITY",
+      "canonical": "resources",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 825,
-      "end": 829,
+      "start": 379,
+      "end": 388,
       "id": "e3"
+    },
+    {
+      "surface": "resources",
+      "type": "OTHER_ENTITY",
+      "canonical": "resources",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 783,
+      "end": 792,
+      "id": "e4"
+    },
+    {
+      "surface": "resources",
+      "type": "OTHER_ENTITY",
+      "canonical": "resources",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": 898,
+      "end": 907,
+      "id": "e5"
     },
     {
       "surface": "oil",
       "type": "DATA_VAR_LEVEL",
       "canonical": "oil_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -67,7 +97,7 @@
       "occurrence_index": 0,
       "start": 994,
       "end": 997,
-      "id": "e4"
+      "id": "e6"
     },
     {
       "surface": "world",
@@ -80,20 +110,20 @@
       "occurrence_index": 0,
       "start": 1436,
       "end": 1441,
-      "id": "e5"
+      "id": "e7"
     },
     {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "2000",
+      "type": "TIME_REFERENCE",
+      "canonical": "2000",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1447,
-      "end": 1453,
-      "id": "e6"
+      "start": 1472,
+      "end": 1476,
+      "id": "e8"
     },
     {
       "surface": "world’s",
@@ -102,11 +132,11 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e9"
     },
     {
       "surface": "electrical energy",
@@ -119,54 +149,26 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "2022",
-      "type": "TIME_REFERENCE",
-      "canonical": "2022",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "nuclear",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "nuclear",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e10"
     },
     {
-      "surface": "nuclear",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "nuclear",
-      "var": "energy_source",
+      "surface": "resources",
+      "type": "OTHER_ENTITY",
+      "canonical": "resources",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 4,
       "start": null,
       "end": null,
       "id": "e11"
     },
     {
-      "surface": "gas",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "gas",
-      "var": "energy_source",
+      "surface": "2000 to 2022",
+      "type": "TIME_REFERENCE",
+      "canonical": "2000_2022",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -177,10 +179,10 @@
       "id": "e12"
     },
     {
-      "surface": "coal",
+      "surface": "nuclear",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
+      "canonical": "nuclear",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -191,24 +193,24 @@
       "id": "e13"
     },
     {
-      "surface": "wind",
+      "surface": "nuclear",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "canonical": "nuclear",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e14"
     },
     {
-      "surface": "solar",
+      "surface": "gas",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "canonical": "gas",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -219,24 +221,24 @@
       "id": "e15"
     },
     {
-      "surface": "oil",
+      "surface": "coal",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "oil_and_other",
-      "var": "energy_source",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e16"
     },
     {
-      "surface": "hydroelectric",
+      "surface": "wind",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -247,10 +249,10 @@
       "id": "e17"
     },
     {
-      "surface": "countries",
+      "surface": "solar",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "country",
-      "var": "country",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -259,6 +261,60 @@
       "start": null,
       "end": null,
       "id": "e18"
+    },
+    {
+      "surface": "hydroelectric",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e21"
+    },
+    {
+      "surface": "countries",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e22"
     },
     {
       "surface": "electricity",
@@ -271,21 +327,34 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e23"
+    },
+    {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e24"
     },
     {
       "surface": "nuclear power",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e25"
     },
     {
       "surface": "15 million gigawatt hours",
@@ -298,7 +367,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e21"
+      "id": "e26"
+    },
+    {
+      "surface": "2000",
+      "type": "TIME_REFERENCE",
+      "canonical": "2000",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e27"
     },
     {
       "surface": "25 million gigawatt hours",
@@ -311,7 +393,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e28"
+    },
+    {
+      "surface": "2020",
+      "type": "TIME_REFERENCE",
+      "canonical": "2020",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e29"
     },
     {
       "surface": "China",
@@ -325,21 +420,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
-    },
-    {
-      "surface": "China",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e24"
+      "id": "e30"
     },
     {
       "surface": "8 million gigawatt hours",
@@ -352,7 +433,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e25"
+      "id": "e31"
     },
     {
       "surface": "20 years",
@@ -365,7 +446,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e26"
+      "id": "e32"
     },
     {
       "surface": "India",
@@ -379,12 +460,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e27"
+      "id": "e33"
     },
     {
       "surface": "America",
-      "type": "LOCATION",
-      "canonical": "america",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -392,12 +474,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e28"
+      "id": "e34"
     },
     {
       "surface": "America",
-      "type": "LOCATION",
-      "canonical": "america",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -405,13 +488,40 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e29"
+      "id": "e35"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e36"
+    },
+    {
+      "surface": "countries like China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e37"
     },
     {
       "surface": "oil",
       "type": "DATA_VAR_LEVEL",
       "canonical": "oil_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -419,7 +529,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e30"
+      "id": "e38"
     },
     {
       "surface": "Willow Project",
@@ -433,12 +543,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e31"
+      "id": "e39"
     },
     {
       "surface": "my community",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -446,21 +557,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e32"
+      "id": "e40"
     },
     {
-      "surface": "clean power",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "surface": "electrical power",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e33"
+      "id": "e41"
     },
     {
       "surface": "clean power",
@@ -470,11 +580,25 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e42"
+    },
+    {
+      "surface": "clean power",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e34"
+      "id": "e43"
     },
     {
       "surface": "fossil fuels",
@@ -484,11 +608,11 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e35"
+      "id": "e44"
     },
     {
       "surface": "environment",
@@ -502,27 +626,26 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e36"
+      "id": "e45"
     },
     {
       "surface": "energy sources",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e37"
+      "id": "e46"
     },
     {
       "surface": "What Lights Up The World? Our Energy Sources Since the 2000s",
-      "type": "OTHER_ENTITY",
-      "canonical": "what_lights_up_the_world_our_energy_sources_since_the_2000s",
-      "subtype": "other",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -530,7 +653,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e38"
+      "id": "e47"
     }
   ],
   "unresolved_mentions": [],
@@ -542,8 +665,8 @@
     {
       "section": "headline",
       "label": "What Lights Up The World? Our Energy Sources Since the 2000s",
-      "text": "“What Lights Up The World? Our Energy Sources Since the 2000s”"
+      "text": "What Lights Up The World? Our Energy Sources Since the 2000s"
     }
   ],
-  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> shows the <entity type=\"LOCATION\" canonical=\"world\" section=\"body\">world’s</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electrical energy</entity> resources and how much is estimated to have been used from <entity type=\"TIME_REFERENCE\" canonical=\"2000\" section=\"body\">2000</entity> to <entity type=\"TIME_REFERENCE\" canonical=\"2022\" section=\"body\">2022</entity>. Those resources being shown include <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\" section=\"body\">nuclear</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" section=\"body\">gas</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">coal</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\" section=\"body\">wind</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\" section=\"body\">solar</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\" section=\"body\">oil</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\" section=\"body\">hydroelectric</entity>, and others. The second <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> shows how much of those resources are being used in various <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\" section=\"body\">countries</entity>. Overall, the <entity type=\"LOCATION\" canonical=\"world\" section=\"body\">world</entity> has seen a steady increase in the use of the noted resources to power <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity>. Mostly so in <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\" section=\"body\">nuclear power</entity> which was used around <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\" section=\"body\">15 million gigawatt hours</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"2000\" section=\"body\">2000</entity> and jumped to surpassing <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\" section=\"body\">25 million gigawatt hours</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"2020\" section=\"body\">2020</entity>. Out of the country graphs, <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> is seen to have the biggest jump in use. Nuclear alone jumped over <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\" section=\"body\">8 million gigawatt hours</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"20_years\" section=\"body\">20 years</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India</entity> has the slowest incline while <entity type=\"LOCATION\" canonical=\"america\" section=\"body\">America</entity> has remained rather stagnant in the amount of resources and <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy</entity> being produced since <entity type=\"TIME_REFERENCE\" canonical=\"2000\" section=\"body\">2000</entity>. I wonder why <entity type=\"LOCATION\" canonical=\"america\" section=\"body\">America</entity> has not seen a drastic increase in the use of resources the way countries like <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> have. I wonder if there will be a noticeable increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\" section=\"body\">oil</entity> use with the <entity type=\"OTHER_ENTITY\" canonical=\"willow_project\" subtype=\"other\" section=\"body\">Willow Project</entity> being pursued. This relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\" section=\"body\">my community</entity> because we are all affected by the different uses of electrical power. Both <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean power</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> have their pros and cons for communities. For example, <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean power</entity> is better for the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"body\">environment</entity> but can be less efficient and more cost-effective. Not every community has the privilege of being able to use better, cleaner <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\" section=\"body\">energy sources</entity>. \n\n<entity type=\"OTHER_ENTITY\" canonical=\"what_lights_up_the_world_our_energy_sources_since_the_2000s\" subtype=\"other\" section=\"headline\">“What Lights Up The World? Our Energy Sources Since the 2000s”</entity>"
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the <entity type=\"LOCATION\" canonical=\"world\">world’s</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electrical energy</entity> <entity type=\"OTHER_ENTITY\" canonical=\"resources\" subtype=\"other\">resources</entity> and how much is estimated to have been used from <entity type=\"TIME_REFERENCE\" canonical=\"2000_2022\">2000 to 2022</entity>. Those <entity type=\"OTHER_ENTITY\" canonical=\"resources\" subtype=\"other\">resources</entity> being shown include <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">wind</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">solar</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\">oil</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\">hydroelectric</entity>, and others. The second <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows how much of those <entity type=\"OTHER_ENTITY\" canonical=\"resources\" subtype=\"other\">resources</entity> are being used in various <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">countries</entity>. Overall, the <entity type=\"LOCATION\" canonical=\"world\">world</entity> has seen a steady increase in the use of the noted <entity type=\"OTHER_ENTITY\" canonical=\"resources\" subtype=\"other\">resources</entity> to power <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>. Mostly so in <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear power</entity> which was used around <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">15 million gigawatt hours</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity> and jumped to surpassing <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">25 million gigawatt hours</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity>. Out of the country graphs, <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> is seen to have the biggest jump in use. Nuclear alone jumped over <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">8 million gigawatt hours</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20 years</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> has the slowest incline while <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">America</entity> has remained rather stagnant in the amount of <entity type=\"OTHER_ENTITY\" canonical=\"resources\" subtype=\"other\">resources</entity> and <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> being produced since <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity>. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">America</entity> has not seen a drastic increase in the use of <entity type=\"OTHER_ENTITY\" canonical=\"resources\" subtype=\"other\">resources</entity> the way <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">countries like China</entity> have. I wonder if there will be a noticeable increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\">oil</entity> use with the <entity type=\"OTHER_ENTITY\" canonical=\"willow_project\" subtype=\"other\">Willow Project</entity> being pursued. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because we are all affected by the different uses of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electrical power</entity>. Both <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean power</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> have their pros and cons for communities. For example, <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean power</entity> is better for the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity> but can be less efficient and more cost-effective. Not every community has the privilege of being able to use better, cleaner <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">energy sources</entity>. \n\n“<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"numbered_point\">What Lights Up The World? Our Energy Sources Since the 2000s</entity>”"
 }

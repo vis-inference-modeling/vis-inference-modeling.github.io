@@ -46,56 +46,57 @@
       "id": "e2"
     },
     {
-      "surface": "me and my community",
+      "surface": "me",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_neighbors",
-      "subtype": "other",
+      "canonical": "speaker_self",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 189,
-      "end": 208,
+      "end": 191,
       "id": "e3"
     },
     {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "energy_generation",
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "community",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
+      "speaker_context": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 243,
-      "end": 249,
+      "start": 196,
+      "end": 208,
       "id": "e4"
     },
     {
       "surface": "energy",
       "type": "DATA_VAR",
-      "canonical": "energy_generation",
+      "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 1,
-      "start": 310,
-      "end": 316,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 243,
+      "end": 249,
       "id": "e5"
     },
     {
       "surface": "Energy",
       "type": "DATA_VAR",
-      "canonical": "energy_generation",
+      "canonical": "electricity_generation",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 310,
+      "end": 316,
       "id": "e6"
     }
   ],
@@ -103,8 +104,21 @@
   "section_segments": [
     {
       "section": "body",
-      "text": "I noticed the totals in China are steadily increasing, the US is staying constant, and India is slowly increasing. \n\nI wonder why there is such a difference in the amount.\n\nThis relates to me and my community by making us think about how much energy we are using on a daily base.\n\n\"Which Country Uses the Most Energy?\""
+      "text": "I noticed that the totals in China are steadily increasing, the US is staying constant, and India is slowly increasing."
+    },
+    {
+      "section": "body",
+      "text": "I wonder why there is such a difference in the amount."
+    },
+    {
+      "section": "body",
+      "text": "This relates to me and my community by making us think about how much energy we are using on a daily base."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Which Country Uses the Most Energy?"
     }
   ],
-  "tagged_text": "I noticed the totals in <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> are steadily increasing, <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">the US</entity> is staying constant, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India</entity> is slowly increasing. \n\nI wonder why there is such a difference in the amount.\n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_neighbors\" subtype=\"other\" section=\"body\" speaker_context=\"true\">me and my community</entity> by making us think about how much <entity type=\"DATA_VAR\" canonical=\"energy_generation\" section=\"body\">energy</entity> we are using on a daily base.\n\n\"Which Country Uses the Most <entity type=\"DATA_VAR\" canonical=\"energy_generation\" section=\"headline\">Energy</entity>?\""
+  "tagged_text": "I noticed that the totals in <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> are steadily increasing, <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">the US</entity> is staying constant, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> is slowly increasing. \n\nI wonder why there is such a difference in the amount.\n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_self\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"community\" speaker_context=\"true\">my community</entity> by making us think about how much <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> we are using on a daily base.\n\n\"Which Country Uses the Most <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"headline\">Energy</entity>?\""
 }

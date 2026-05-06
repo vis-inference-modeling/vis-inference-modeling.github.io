@@ -85,6 +85,20 @@
       "id": "e5"
     },
     {
+      "surface": "laws",
+      "type": "OTHER_ENTITY",
+      "canonical": "laws",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 322,
+      "end": 326,
+      "id": "e6"
+    },
+    {
       "surface": "Clean Power",
       "type": "DATA_VAR_LEVEL",
       "canonical": "clean",
@@ -96,7 +110,7 @@
       "occurrence_index": 0,
       "start": 362,
       "end": 373,
-      "id": "e6"
+      "id": "e7"
     },
     {
       "surface": "Fossil Fuels",
@@ -110,17 +124,21 @@
       "occurrence_index": 0,
       "start": 378,
       "end": 390,
-      "id": "e7"
+      "id": "e8"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "both categories",
-      "reason": "Refers to unnamed chart categories; not enough context to identify them confidently."
+      "reason": "Refers to chart categories generically; not a specific entity mention."
     },
     {
       "surface": "all three countries",
-      "reason": "Generic reference to the compared countries; not a standalone entity beyond the already tagged country mentions."
+      "reason": "Generic collective reference; countries are not individually named here."
+    },
+    {
+      "surface": "my life",
+      "reason": "Personal context but not an entity."
     }
   ],
   "section_segments": [
@@ -135,5 +153,5 @@
       "text": "Clean Power vs. Fossil Fuels"
     }
   ],
-  "tagged_text": "1. I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> is significantly higher in both categories compared to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>. I Also notice that as the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity> go by, the categories increase in all three countries. I wonder what the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> will look like in <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20 years</entity>. These categories have a deep impact on my life and it is important I stay informed as laws continue to be passed. \n\nHeadline: <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">Clean Power</entity> vs. <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"headline\">Fossil Fuels</entity>"
+  "tagged_text": "1. I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> is significantly higher in both categories compared to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>. I Also notice that as the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity> go by, the categories increase in all three countries. I wonder what the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> will look like in <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20 years</entity>. These categories have a deep impact on my life and it is important I stay informed as <entity type=\"OTHER_ENTITY\" canonical=\"laws\" subtype=\"other\">laws</entity> continue to be passed. \n\nHeadline: <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">Clean Power</entity> vs. <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">Fossil Fuels</entity>"
 }

@@ -48,7 +48,7 @@
     {
       "surface": "energy",
       "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "canonical": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -61,7 +61,7 @@
     {
       "surface": "energy",
       "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "canonical": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -72,23 +72,9 @@
       "id": "e4"
     },
     {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 495,
-      "end": 507,
-      "id": "e5"
-    },
-    {
       "surface": "energy",
       "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "canonical": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -96,7 +82,7 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e5"
     },
     {
       "surface": "world",
@@ -109,13 +95,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e6"
     },
     {
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "wind and solar energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -126,10 +126,10 @@
       "id": "e8"
     },
     {
-      "surface": "wind and solar energy",
+      "surface": "nuclear",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "canonical": "nuclear",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -140,10 +140,10 @@
       "id": "e9"
     },
     {
-      "surface": "nuclear",
+      "surface": "hydroelectric energy",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "nuclear",
-      "var": "energy_source",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -154,51 +154,10 @@
       "id": "e10"
     },
     {
-      "surface": "hydroelectric energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "me and my community",
+      "surface": "community",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_neighbors",
-      "subtype": "other",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -206,20 +165,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
+      "id": "e11"
     },
     {
       "surface": "US",
@@ -233,7 +179,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e12"
     },
     {
       "surface": "environment",
@@ -247,12 +193,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e13"
     },
     {
-      "surface": "Energy",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "surface": "Energy Consumption: Fossil Fuels Continue to Lead The Way",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -260,21 +206,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "Fossil Fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
+      "id": "e14"
     }
   ],
   "unresolved_mentions": [],
@@ -289,5 +221,5 @@
       "text": "Energy Consumption: Fossil Fuels Continue to Lead The Way"
     }
   ],
-  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> are the main source of <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy</entity> in the <entity type=\"LOCATION\" canonical=\"world\">world</entity> with <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> leading. Also <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind and solar energy</entity> are used the least with <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">hydroelectric energy</entity> being used more.\n\nI wonder how <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuels</entity> are still the main source of <entity type=\"DATA_VAR\" canonical=\"energy_source\" modality=\"questioned\">energy</entity> especially since our <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuels</entity> are expected to run out in the near future.\n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_neighbors\" subtype=\"other\" speaker_context=\"true\">me and my community</entity> because debates of what <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy</entity> is safe and should be used by the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> to keep the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity> more healthy.\n\n<entity type=\"DATA_VAR\" canonical=\"energy_source\" section=\"headline\">Energy</entity> Consumption: <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"headline\">Fossil Fuels</entity> Continue to Lead The Way"
+  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> are the main source of <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\" section=\"body\">energy</entity> in the <entity type=\"LOCATION\" canonical=\"world\" section=\"body\">world</entity> with <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\">coal</entity> leading. Also <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" section=\"body\">wind and solar energy</entity> are used the least with <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\" section=\"body\">nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\" section=\"body\">hydroelectric energy</entity> being used more.\n\nI wonder how <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\" modality=\"questioned\">fossil fuels</entity> are still the main source of <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\" section=\"body\" modality=\"questioned\">energy</entity> especially since our <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\" modality=\"questioned\">fossil fuels</entity> are expected to run out in the near future.\n\nThis relates to me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" section=\"body\" speaker_context=\"true\">community</entity> because debates of what <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\" section=\"body\">energy</entity> is safe and should be used by the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">US</entity> to keep the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"body\">environment</entity> more healthy.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Energy Consumption: Fossil Fuels Continue to Lead The Way</entity>"
 }

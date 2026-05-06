@@ -17,30 +17,29 @@
       "id": "e0"
     },
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 1346,
-      "end": 1351,
-      "id": "e1"
-    },
-    {
-      "surface": "clean",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1377,
-      "end": 1382,
+      "start": 51,
+      "end": 73,
+      "id": "e1"
+    },
+    {
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 467,
+      "end": 489,
       "id": "e2"
     },
     {
@@ -51,9 +50,9 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "occurrence_index": 2,
+      "start": 655,
+      "end": 677,
       "id": "e3"
     },
     {
@@ -64,36 +63,24 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
+      "occurrence_index": 3,
+      "start": 866,
+      "end": 888,
       "id": "e4"
     },
     {
-      "surface": "electricity generation",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "clean",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
+      "occurrence_index": 0,
+      "start": 1247,
+      "end": 1252,
       "id": "e5"
-    },
-    {
-      "surface": "electricity generation",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": null,
-      "end": null,
-      "id": "e6"
     },
     {
       "surface": "clean",
@@ -105,91 +92,49 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
+      "start": 1377,
+      "end": 1382,
+      "id": "e6"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e7"
     },
     {
-      "surface": "clean",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "surface": "gigawatt hours",
+      "type": "UNIT",
+      "canonical": "gigawatt_hours",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e8"
     },
     {
-      "surface": "clean",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "surface": "gigawatt hours",
+      "type": "UNIT",
+      "canonical": "gigawatt_hours",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 3,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e9"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "gigawatt hours",
-      "type": "UNIT",
-      "canonical": "gigawatt_hours",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "gigawatt hours",
-      "type": "UNIT",
-      "canonical": "gigawatt_hours",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e13"
     },
     {
       "surface": "gigawatt hours",
@@ -202,7 +147,7 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e10"
     },
     {
       "surface": "gigawatt hours",
@@ -215,7 +160,7 @@
       "occurrence_index": 3,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e11"
     },
     {
       "surface": "years 2000-2020",
@@ -228,13 +173,26 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e12"
     },
     {
       "surface": "technology",
       "type": "OTHER_ENTITY",
-      "canonical": "technology",
-      "subtype": "technology",
+      "canonical": "technological_advancements",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    },
+    {
+      "surface": "energy source",
+      "type": "DATA_VAR",
+      "canonical": "energy_source_generation_type",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -242,25 +200,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e14"
     },
     {
-      "surface": "energy source",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "20 years",
+      "surface": "20",
       "type": "TIME_REFERENCE",
-      "canonical": "20_years",
+      "canonical": "20",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -268,13 +213,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e15"
     },
     {
-      "surface": "clean energy sources",
+      "surface": "nuclear",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "canonical": "nuclear",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -282,13 +227,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e16"
     },
     {
-      "surface": "clean energy sources",
+      "surface": "nuclear",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "canonical": "nuclear",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -296,21 +241,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e21"
-    },
-    {
-      "surface": "nuclear",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "nuclear",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e22"
+      "id": "e17"
     },
     {
       "surface": "25 million gigawatt hours",
@@ -323,7 +254,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
+      "id": "e18"
     },
     {
       "surface": "2020",
@@ -336,7 +267,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
+      "id": "e19"
     },
     {
       "surface": "2020",
@@ -349,13 +280,13 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e25"
+      "id": "e20"
     },
     {
       "surface": "wind and solar energy",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -363,27 +294,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e26"
-    },
-    {
-      "surface": "nuclear energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "nuclear",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e27"
+      "id": "e21"
     },
     {
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -391,7 +308,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e28"
+      "id": "e22"
     },
     {
       "surface": "8 million gigawatt hours",
@@ -404,7 +321,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e29"
+      "id": "e23"
     },
     {
       "surface": "year 2020",
@@ -417,26 +334,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e30"
+      "id": "e24"
     },
     {
-      "surface": "environmental risks",
-      "type": "EVENT",
-      "canonical": "environmental_health",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e31"
-    },
-    {
-      "surface": "my community",
+      "surface": "community",
       "type": "OTHER_ENTITY",
       "canonical": "my_community",
-      "subtype": "community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -444,10 +348,10 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e32"
+      "id": "e25"
     },
     {
-      "surface": "clean, renewable energy sources",
+      "surface": "clean, renewable energy",
       "type": "DATA_VAR_LEVEL",
       "canonical": "clean",
       "var": "power_category",
@@ -458,7 +362,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e33"
+      "id": "e26"
     },
     {
       "surface": "climate change",
@@ -471,13 +375,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e34"
+      "id": "e27"
     },
     {
-      "surface": "Clean Energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "surface": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -485,16 +388,15 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e35"
+      "id": "e28"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "In this graph, it is measuring the amount of world electricity generation from different types of clean and fossil fuels in gigawatt hours over the years 2000-2020. I noticed that for every type of fuel, there was a general increase in the amount of gigawatt hours of electricity generated over time. I wonder if this is due to advancements in technology for each type of energy source. Also, I noticed that for all 20 years, the clean energy sources had the highest electricity generation with nuclear being the highest reaching over 25 million gigawatt hours in 2020. Out of the clean energy sources, I noticed that wind and solar energy had the lowest electricity generation, and I wonder if this is because they are not as reliable sources as something like nuclear energy since they depend on the weather. Additionally, I noticed that coal had the lowest world electricity generation out of both fossil fuels and all types of fuels, approximating 8 million gigawatt hours around the year 2020. I wonder if it had such low gigawatt hours compared to other sources because it has become less and less popular over the years due to its harmful environmental risks. This relates to my community because I have noticed a greater implementation of clean, renewable energy sources as climate change has become a greater issue. My headline for this graph would be: “The Future of Clean Energy Awaits”.",
-      "label": ""
+      "text": "In this graph, it is measuring the amount of world electricity generation from different types of clean and fossil fuels in gigawatt hours over the years 2000-2020. I noticed that for every type of fuel, there was a general increase in the amount of gigawatt hours of electricity generated over time. I wonder if this is due to advancements in technology for each type of energy source. Also, I noticed that for all 20 years, the clean energy sources had the highest electricity generation with nuclear being the highest reaching over 25 million gigawatt hours in 2020. Out of the clean energy sources, I noticed that wind and solar energy had the lowest electricity generation, and I wonder if this is because they are not as reliable sources as something like nuclear energy since they depend on the weather. Additionally, I noticed that coal had the lowest world electricity generation out of both fossil fuels and all types of fuels, approximating 8 million gigawatt hours around the year 2020. I wonder if it had such low gigawatt hours compared to other sources because it has become less and less popular over the years due to its harmful environmental risks. This relates to my community because I have noticed a greater implementation of clean, renewable energy sources as climate change has become a greater issue. My headline for this graph would be: “The Future of Clean Energy Awaits”."
     }
   ],
-  "tagged_text": "In this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, it is measuring the amount of world <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> from different types of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> in <entity type=\"UNIT\" canonical=\"gigawatt_hours\">gigawatt hours</entity> over the <entity type=\"TIME_REFERENCE\" canonical=\"2000_2020\">years 2000-2020</entity>. I noticed that for every type of fuel, there was a general increase in the amount of gigawatt hours of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generated</entity> over time. I wonder if this is due to advancements in <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\">technology</entity> for each type of <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy source</entity>. Also, I noticed that for all <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20 years</entity>, the <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy sources</entity> had the highest <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> with <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear</entity> being the highest reaching over <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">25 million gigawatt hours</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity>. Out of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy sources</entity>, I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind and solar energy</entity> had the lowest <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity>, and I wonder if this is because they are not as reliable sources as something like <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear energy</entity> since they depend on the weather. Additionally, I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> had the lowest world <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> out of both <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> and all types of fuels, approximating <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">8 million gigawatt hours</entity> around the <entity type=\"TIME_REFERENCE\" canonical=\"2020\">year 2020</entity>. I wonder if it had such low <entity type=\"UNIT\" canonical=\"gigawatt_hours\">gigawatt hours</entity> compared to other sources because it has become less and less popular over the years due to its harmful <entity type=\"EVENT\" canonical=\"environmental_health\">environmental risks</entity>. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"community\" speaker_context=\"true\">my community</entity> because I have noticed a greater implementation of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean, renewable energy sources</entity> as <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> has become a greater issue. My headline for this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> would be: “The Future of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">Clean Energy</entity> Awaits”."
+  "tagged_text": "In this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, it is measuring the amount of world <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> from different types of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> in <entity type=\"UNIT\" canonical=\"gigawatt_hours\">gigawatt hours</entity> over the <entity type=\"TIME_REFERENCE\" canonical=\"2000_2020\">years 2000-2020</entity>. I noticed that for every type of fuel, there was a general increase in the amount of gigawatt hours of electricity generated over time. I wonder if this is due to advancements in <entity type=\"OTHER_ENTITY\" canonical=\"technological_advancements\" subtype=\"concept\">technology</entity> for each type of <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\">energy source</entity>. Also, I noticed that for all <entity type=\"TIME_REFERENCE\" canonical=\"20\">20</entity> years, the clean energy sources had the highest <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> with <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear</entity> being the highest reaching over <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">25 million gigawatt hours</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity>. Out of the clean energy sources, I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">wind and solar energy</entity> had the lowest <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity>, and I wonder if this is because they are not as reliable sources as something like <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear energy</entity> since they depend on the weather. Additionally, I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> had the lowest world <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> out of both fossil fuels and all types of fuels, approximating <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">8 million gigawatt hours</entity> around the <entity type=\"TIME_REFERENCE\" canonical=\"2020\">year 2020</entity>. I wonder if it had such low gigawatt hours compared to other sources because it has become less and less popular over the years due to its harmful environmental risks. This relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">community</entity> because I have noticed a greater implementation of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean, renewable energy</entity> sources as <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> has become a greater issue. My <entity type=\"CHART_ELEMENT\" canonical=\"headline\">headline</entity> for this graph would be: “The Future of Clean Energy Awaits”."
 }

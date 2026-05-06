@@ -4,23 +4,10 @@
   "raw_comment": "The first thing I notice about this graph is how much coal and gas contribute to the electricity generated between 2000 and 2022 overall. What I notice about China's graph in particular is that it's electricity production has been on the rise, along with its use of coal and gas. The United States' electricity production is the opposite; its electricity production slightly increased while its use of Coal has significantly decreased. India's electricity production, while on the rise, still relies overwhelmingly on coal, and produces less than a quarter of the electricity China produces, despite having similar populations. \nI wonder why China's use of hydroelectric makes up the majority of its clean energy, while nuclear makes up the majority of the United States' energy. I wonder if the difference is due to the country's philosophies regarding these two power sources, or if its due to the different geography of each country. \nThe increasing trend of emitting less carbon emissions relates to our community since a decrease in carbon emissions could slow down the effects of climate change. Although the world produces more electricity, the United States has seen a reduction in the use of coal, while China has seen an increase in clean energy production.\nTwo titles I suggest would be \"Electricity Production Stabilizes in the U.S.\", or \"Electricity Production on the Rise Around the Globe.\"",
   "entities": [
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 36,
-      "end": 41,
-      "id": "e0"
-    },
-    {
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -28,13 +15,13 @@
       "occurrence_index": 0,
       "start": 54,
       "end": 58,
-      "id": "e1"
+      "id": "e0"
     },
     {
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -42,13 +29,13 @@
       "occurrence_index": 1,
       "start": 266,
       "end": 270,
-      "id": "e2"
+      "id": "e1"
     },
     {
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -56,13 +43,13 @@
       "occurrence_index": 2,
       "start": 518,
       "end": 522,
-      "id": "e3"
+      "id": "e2"
     },
     {
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -70,53 +57,53 @@
       "occurrence_index": 3,
       "start": 1201,
       "end": 1205,
+      "id": "e3"
+    },
+    {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 1299,
+      "end": 1310,
       "id": "e4"
     },
     {
-      "surface": "electricity production",
+      "surface": "electricity",
       "type": "DATA_VAR",
       "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 1351,
+      "end": 1362,
+      "id": "e5"
+    },
+    {
+      "surface": "gas",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "gas",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1299,
-      "end": 1321,
-      "id": "e5"
-    },
-    {
-      "surface": "electricity production",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 1351,
-      "end": 1373,
+      "start": null,
+      "end": null,
       "id": "e6"
     },
     {
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
-    },
-    {
-      "surface": "gas",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -124,25 +111,38 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e7"
     },
     {
-      "surface": "electricity generated",
+      "surface": "electricity",
       "type": "DATA_VAR",
       "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
+      "terminology_drift": true,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 3,
       "start": null,
       "end": null,
       "id": "e9"
     },
     {
-      "surface": "2000",
+      "surface": "2000 and 2022",
       "type": "TIME_REFERENCE",
-      "canonical": "2000",
+      "canonical": "2000_2022",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -153,9 +153,10 @@
       "id": "e10"
     },
     {
-      "surface": "2022",
-      "type": "TIME_REFERENCE",
-      "canonical": "2022",
+      "surface": "China's",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -174,21 +175,20 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e12"
     },
     {
-      "surface": "China's",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
+      "surface": "electricity production",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
+      "terminology_drift": true,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e13"
@@ -200,11 +200,24 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
+      "terminology_drift": true,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e14"
+    },
+    {
+      "surface": "electricity production",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e15"
     },
     {
       "surface": "United States'",
@@ -218,40 +231,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "Coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e16"
     },
     {
-      "surface": "India's",
+      "surface": "United States'",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
+      "canonical": "united_states",
       "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e17"
     },
     {
-      "surface": "electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "Coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -262,9 +262,9 @@
       "id": "e18"
     },
     {
-      "surface": "China",
+      "surface": "India's",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
+      "canonical": "india",
       "var": "country",
       "section": "body",
       "modality": "asserted",
@@ -284,30 +284,30 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e20"
     },
     {
-      "surface": "hydroelectric",
+      "surface": "China",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
+      "canonical": "china",
+      "var": "country",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e21"
     },
     {
-      "surface": "clean energy",
+      "surface": "hydroelectric",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -325,17 +325,31 @@
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
+      "terminology_drift": true,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e23"
     },
     {
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e24"
+    },
+    {
       "surface": "nuclear",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -343,7 +357,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
+      "id": "e25"
     },
     {
       "surface": "energy",
@@ -357,13 +371,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e25"
+      "id": "e26"
     },
     {
-      "surface": "country's",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "country",
-      "var": "country",
+      "surface": "country's philosophies",
+      "type": "OTHER_ENTITY",
+      "canonical": "country_philosophies",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -371,27 +385,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e26"
-    },
-    {
-      "surface": "country's",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "country",
-      "var": "country",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
       "id": "e27"
     },
     {
-      "surface": "country",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "country",
-      "var": "country",
+      "surface": "power sources",
+      "type": "OTHER_ENTITY",
+      "canonical": "power",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -400,6 +400,59 @@
       "start": null,
       "end": null,
       "id": "e28"
+    },
+    {
+      "surface": "geography",
+      "type": "LOCATION",
+      "canonical": "geography",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e29"
+    },
+    {
+      "surface": "carbon emissions",
+      "type": "EVENT",
+      "canonical": "carbon_emissions",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e30"
+    },
+    {
+      "surface": "carbon emissions",
+      "type": "EVENT",
+      "canonical": "carbon_emissions",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e31"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e32"
     },
     {
       "surface": "climate change",
@@ -412,7 +465,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e29"
+      "id": "e33"
     },
     {
       "surface": "world",
@@ -425,21 +478,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e30"
-    },
-    {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e31"
+      "id": "e34"
     },
     {
       "surface": "clean energy",
@@ -449,17 +488,16 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e32"
+      "id": "e35"
     },
     {
       "surface": "Electricity Production Stabilizes in the U.S.",
-      "type": "OTHER_ENTITY",
-      "canonical": "electricity_production_stabilizes_in_the_u_s",
-      "subtype": "other",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -467,13 +505,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e33"
+      "id": "e36"
     },
     {
       "surface": "Electricity Production on the Rise Around the Globe.",
-      "type": "OTHER_ENTITY",
-      "canonical": "electricity_production_on_the_rise_around_the_globe",
-      "subtype": "other",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -481,7 +518,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e34"
+      "id": "e37"
     }
   ],
   "unresolved_mentions": [],
@@ -489,7 +526,17 @@
     {
       "section": "body",
       "text": "The first thing I notice about this graph is how much coal and gas contribute to the electricity generated between 2000 and 2022 overall. What I notice about China's graph in particular is that it's electricity production has been on the rise, along with its use of coal and gas. The United States' electricity production is the opposite; its electricity production slightly increased while its use of Coal has significantly decreased. India's electricity production, while on the rise, still relies overwhelmingly on coal, and produces less than a quarter of the electricity China produces, despite having similar populations. \nI wonder why China's use of hydroelectric makes up the majority of its clean energy, while nuclear makes up the majority of the United States' energy. I wonder if the difference is due to the country's philosophies regarding these two power sources, or if its due to the different geography of each country. \nThe increasing trend of emitting less carbon emissions relates to our community since a decrease in carbon emissions could slow down the effects of climate change. Although the world produces more electricity, the United States has seen a reduction in the use of coal, while China has seen an increase in clean energy production.\nTwo titles I suggest would be \"Electricity Production Stabilizes in the U.S.\", or \"Electricity Production on the Rise Around the Globe.\""
+    },
+    {
+      "section": "headline",
+      "label": "Electricity Production Stabilizes in the U.S.",
+      "text": "Electricity Production Stabilizes in the U.S."
+    },
+    {
+      "section": "headline",
+      "label": "Electricity Production on the Rise Around the Globe.",
+      "text": "Electricity Production on the Rise Around the Globe."
     }
   ],
-  "tagged_text": "The first thing I notice about this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> is how much <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" section=\"body\">gas</entity> contribute to the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity generated</entity> between <entity type=\"TIME_REFERENCE\" canonical=\"2000\" section=\"body\">2000</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"2022\" section=\"body\">2022</entity> overall. What I notice about <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China's</entity> graph in particular is that it's <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity production</entity> has been on the rise, along with its use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" section=\"body\">gas</entity>. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States'</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity production</entity> is the opposite; its <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity production</entity> slightly increased while its use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">Coal</entity> has significantly decreased. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India's</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity production</entity>, while on the rise, still relies overwhelmingly on <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">coal</entity>, and produces less than a quarter of the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> produces, despite having similar populations. \nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China's</entity> use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\" section=\"body\">hydroelectric</entity> makes up the majority of its <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity>, while <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\" section=\"body\">nuclear</entity> makes up the majority of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States'</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">energy</entity>. I wonder if the difference is due to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\" section=\"body\">country's</entity> philosophies regarding these two power sources, or if its due to the different geography of each <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\" section=\"body\">country</entity>. \nThe increasing trend of emitting less carbon emissions relates to our community since a decrease in carbon emissions could slow down the effects of <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">climate change</entity>. Although the <entity type=\"LOCATION\" canonical=\"world\" section=\"body\">world</entity> produces more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity>, the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity> has seen a reduction in the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">coal</entity>, while <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> has seen an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity> production.\nTwo titles I suggest would be \"<entity type=\"OTHER_ENTITY\" canonical=\"electricity_production_stabilizes_in_the_u_s\" subtype=\"other\" section=\"headline\">Electricity Production Stabilizes in the U.S.</entity>\", or \"<entity type=\"OTHER_ENTITY\" canonical=\"electricity_production_on_the_rise_around_the_globe\" subtype=\"other\" section=\"headline\">Electricity Production on the Rise Around the Globe.</entity>\""
+  "tagged_text": "The first thing I notice about this graph is how much <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity> contribute to the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> generated between <entity type=\"TIME_REFERENCE\" canonical=\"2000_2022\">2000 and 2022</entity> overall. What I notice about <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China's</entity> graph in particular is that it's <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity production</entity> has been on the rise, along with its use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity>. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States'</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity production</entity> is the opposite; its <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity production</entity> slightly increased while its use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">Coal</entity> has significantly decreased. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India's</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity production</entity>, while on the rise, still relies overwhelmingly on <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity>, and produces less than a quarter of the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> produces, despite having similar populations. \nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China's</entity> use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\">hydroelectric</entity> makes up the majority of its <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>, while <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear</entity> makes up the majority of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States'</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">energy</entity>. I wonder if the difference is due to the <entity type=\"OTHER_ENTITY\" canonical=\"country_philosophies\" subtype=\"other\">country's philosophies</entity> regarding these two <entity type=\"OTHER_ENTITY\" canonical=\"power\" subtype=\"other\">power sources</entity>, or if its due to the different <entity type=\"LOCATION\" canonical=\"geography\">geography</entity> of each <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">country</entity>. \nThe increasing trend of emitting less <entity type=\"EVENT\" canonical=\"carbon_emissions\">carbon emissions</entity> relates to our community since a decrease in <entity type=\"EVENT\" canonical=\"carbon_emissions\">carbon emissions</entity> could slow down the effects of <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity>. Although the <entity type=\"LOCATION\" canonical=\"world\">world</entity> produces more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>, the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> has seen a reduction in the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity>, while <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has seen an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> production.\nTwo titles I suggest would be \"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Electricity Production Stabilizes in the U.S.</entity>\", or \"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Electricity Production on the Rise Around the Globe.</entity>\""
 }

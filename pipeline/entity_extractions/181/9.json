@@ -43,6 +43,19 @@
       "id": "e2"
     },
     {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 1132,
+      "end": 1137,
+      "id": "e3"
+    },
+    {
       "surface": "Ember",
       "type": "OTHER_ENTITY",
       "canonical": "ember",
@@ -54,26 +67,12 @@
       "occurrence_index": 0,
       "start": 1142,
       "end": 1147,
-      "id": "e3"
-    },
-    {
-      "surface": "World electricity generation",
-      "type": "OTHER_ENTITY",
-      "canonical": "world_electricity_generation_graph",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e4"
     },
     {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "World electricity generation",
+      "type": "CHART_ELEMENT",
+      "canonical": "world_electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -84,9 +83,10 @@
       "id": "e5"
     },
     {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "Ember",
+      "type": "OTHER_ENTITY",
+      "canonical": "ember",
+      "subtype": "organization",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -103,8 +103,8 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
+      "terminology_drift": true,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e7"
@@ -116,11 +116,37 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
+      "terminology_drift": true,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e8"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e10"
     },
     {
       "surface": "world",
@@ -133,7 +159,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e11"
     },
     {
       "surface": "2000",
@@ -146,7 +172,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e12"
     },
     {
       "surface": "2000",
@@ -159,7 +185,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e13"
     },
     {
       "surface": "2020s",
@@ -172,43 +198,17 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e14"
     },
     {
       "surface": "graphs",
       "type": "CHART_ELEMENT",
-      "canonical": "graphs",
+      "canonical": "graph",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "energy usage",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "energy usage",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e15"
@@ -220,44 +220,42 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
+      "terminology_drift": true,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e16"
     },
     {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "energy usage",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
+      "terminology_drift": true,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e17"
     },
     {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "energy usage",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
+      "terminology_drift": true,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e18"
     },
     {
-      "surface": "China",
+      "surface": "United States",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
+      "canonical": "united_states",
       "var": "country",
       "section": "body",
       "modality": "asserted",
@@ -269,9 +267,9 @@
       "id": "e19"
     },
     {
-      "surface": "China",
+      "surface": "United States",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
+      "canonical": "united_states",
       "var": "country",
       "section": "body",
       "modality": "asserted",
@@ -283,9 +281,9 @@
       "id": "e20"
     },
     {
-      "surface": "India",
+      "surface": "China",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
+      "canonical": "china",
       "var": "country",
       "section": "body",
       "modality": "asserted",
@@ -297,9 +295,9 @@
       "id": "e21"
     },
     {
-      "surface": "India",
+      "surface": "China",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
+      "canonical": "china",
       "var": "country",
       "section": "body",
       "modality": "asserted",
@@ -311,9 +309,10 @@
       "id": "e22"
     },
     {
-      "surface": "time period",
-      "type": "TIME_REFERENCE",
-      "canonical": "time_period",
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -324,23 +323,23 @@
       "id": "e23"
     },
     {
-      "surface": "nuclear",
+      "surface": "India",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "nuclear",
-      "var": "energy_source",
+      "canonical": "india",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e24"
     },
     {
-      "surface": "energy source",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "surface": "time period",
+      "type": "TIME_REFERENCE",
+      "canonical": "time_over_time",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -351,23 +350,23 @@
       "id": "e25"
     },
     {
-      "surface": "energy source",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "surface": "nuclear",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nuclear",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e26"
     },
     {
-      "surface": "coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
+      "surface": "energy source",
+      "type": "DATA_VAR",
+      "canonical": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -376,6 +375,20 @@
       "start": null,
       "end": null,
       "id": "e27"
+    },
+    {
+      "surface": "coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e28"
     },
     {
       "surface": "2008",
@@ -388,7 +401,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e28"
+      "id": "e29"
     },
     {
       "surface": "2020",
@@ -401,7 +414,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e29"
+      "id": "e30"
     },
     {
       "surface": "2008 housing crisis",
@@ -414,7 +427,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e30"
+      "id": "e31"
     },
     {
       "surface": "coronavirus pandemic",
@@ -422,19 +435,6 @@
       "canonical": "coronavirus_pandemic",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e31"
-    },
-    {
-      "surface": "before 2000",
-      "type": "TIME_REFERENCE",
-      "canonical": "2000",
-      "section": "body",
-      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -462,7 +462,7 @@
       "canonical": "india",
       "var": "country",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -485,11 +485,10 @@
       "id": "e35"
     },
     {
-      "surface": "Ember’s Evaluation of the Evolution of Electricity.",
-      "type": "OTHER_ENTITY",
-      "canonical": "ember_s_evaluation_of_the_evolution_of_electricity",
-      "subtype": "other",
-      "section": "body",
+      "surface": "Ember’s",
+      "type": "CHART_ELEMENT",
+      "canonical": "ember",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -503,8 +502,13 @@
   "section_segments": [
     {
       "section": "body",
-      "text": "We evaluated a 2022 graph titled “World electricity generation” by Ember. We noticed that it displayed the types and amounts of energy used throughout the world as a whole from 2000 to the 2020s. There were also separate graphs that specifically documented the energy usage of the United States, China, and India over the same time period. We noted that the overall energy usage worldwide for all types is going up, and that nuclear is the most prominent energy source while coal is the least prominent energy source. We also noticed that there were “dips” in worldwide energy usage around 2008 and 2020, which probably correspond with the economic hardships caused by the 2008 housing crisis and the coronavirus pandemic. \n\n \n\nWe wonder what the data looked like before 2000, as “clean” energy seems to be a relatively new phenomenon. We also wonder why India’s energy usage is so low when compared to the United States and China.\n\n \n\nThis topic is important because we all use energy every day, and it is useful to know the main types of energy being used. It also gives more insight into how different countries operate.\n\n \n\nOur title for the graph is “Ember’s Evaluation of the Evolution of Electricity.”"
+      "text": "We evaluated a 2022 graph titled “World electricity generation” by Ember. We noticed that it displayed the types and amounts of energy used throughout the world as a whole from 2000 to the 2020s. There were also separate graphs that specifically documented the energy usage of the United States, China, and India over the same time period. We noted that the overall energy usage worldwide for all types is going up, and that nuclear is the most prominent energy source while coal is the least prominent. We also noticed that there were “dips” in worldwide energy usage around 2008 and 2020, which probably correspond with the economic hardships caused by the 2008 housing crisis and the coronavirus pandemic. \n\n \n\nWe wonder what the data looked like before 2000, as “clean” energy seems to be a relatively new phenomenon. We also wonder why India’s energy usage is so low when compared to the United States and China.\n\n \n\nThis topic is important because we all use energy every day, and it is useful to know the main types of energy being used. It also gives more insight into how different countries operate."
+    },
+    {
+      "section": "headline",
+      "label": "Our title for the graph",
+      "text": "Ember’s Evaluation of the Evolution of Electricity."
     }
   ],
-  "tagged_text": "We evaluated a <entity type=\"TIME_REFERENCE\" canonical=\"2022\">2022</entity> <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> titled “<entity type=\"OTHER_ENTITY\" canonical=\"world_electricity_generation_graph\" subtype=\"other\">World electricity generation</entity>” by <entity type=\"OTHER_ENTITY\" canonical=\"ember\" subtype=\"organization\">Ember</entity>. We noticed that it displayed the types and amounts of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> used throughout the <entity type=\"LOCATION\" canonical=\"world\">world</entity> as a whole from <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity> to the <entity type=\"TIME_REFERENCE\" canonical=\"2020s\">2020s</entity>. There were also separate <entity type=\"CHART_ELEMENT\" canonical=\"graphs\">graphs</entity> that specifically documented the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy usage</entity> of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> over the same <entity type=\"TIME_REFERENCE\" canonical=\"time_period\">time period</entity>. We noted that the overall <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy usage</entity> worldwide for all types is going up, and that <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear</entity> is the most prominent <entity type=\"DATA_VAR\">energy source</entity> while <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> is the least prominent <entity type=\"DATA_VAR\">energy source</entity>. We also noticed that there were “dips” in worldwide <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy usage</entity> around <entity type=\"TIME_REFERENCE\" canonical=\"2008\">2008</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity>, which probably correspond with the economic hardships caused by the <entity type=\"EVENT\" canonical=\"2008_housing_crisis\">2008 housing crisis</entity> and the <entity type=\"EVENT\" canonical=\"coronavirus_pandemic\">coronavirus pandemic</entity>. \n\n \n\nWe wonder what the data looked like before <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity>, as “<entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean</entity>” energy seems to be a relatively new phenomenon. We also wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India’s</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy usage</entity> is so low when compared to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>.\n\n \n\nThis topic is important because we all use <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> every day, and it is useful to know the main types of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> being used. It also gives more insight into how different <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\">countries</entity> operate.\n\n \n\nOur title for the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> is “<entity type=\"OTHER_ENTITY\" canonical=\"ember_s_evaluation_of_the_evolution_of_electricity\" subtype=\"other\">Ember’s Evaluation of the Evolution of Electricity.</entity>”"
+  "tagged_text": "We evaluated a <entity type=\"TIME_REFERENCE\" canonical=\"2022\">2022</entity> <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> titled “<entity type=\"CHART_ELEMENT\" canonical=\"world_electricity_generation\">World electricity generation</entity>” by <entity type=\"OTHER_ENTITY\" canonical=\"ember\" subtype=\"organization\">Ember</entity>. We noticed that it displayed the types and amounts of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> used throughout the <entity type=\"LOCATION\" canonical=\"world\">world</entity> as a whole from <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity> to the <entity type=\"TIME_REFERENCE\" canonical=\"2020s\">2020s</entity>. There were also separate <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graphs</entity> that specifically documented the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy usage</entity> of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> over the same <entity type=\"TIME_REFERENCE\" canonical=\"time_over_time\">time period</entity>. We noted that the overall <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy usage</entity> worldwide for all types is going up, and that <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear</entity> is the most prominent <entity type=\"DATA_VAR_LEVEL\" canonical=\"energy_source_generation_type\" var=\"energy_source_generation_type\">energy source</entity> while <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> is the least prominent. We also noticed that there were “dips” in worldwide <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy usage</entity> around <entity type=\"TIME_REFERENCE\" canonical=\"2008\">2008</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity>, which probably correspond with the economic hardships caused by the <entity type=\"EVENT\" canonical=\"2008_housing_crisis\">2008 housing crisis</entity> and the <entity type=\"EVENT\" canonical=\"coronavirus_pandemic\">coronavirus pandemic</entity>. \n\n \n\nWe wonder what the data looked like before <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity>, as “<entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean</entity>” energy seems to be a relatively new phenomenon. We also wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India’s</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy usage</entity> is so low when compared to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>.\n\n \n\nThis topic is important because we all use <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> every day, and it is useful to know the main types of <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\">energy</entity> being used. It also gives more insight into how different <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\">countries</entity> operate.\n\n \n\nOur title for the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> is “<entity type=\"CHART_ELEMENT\" canonical=\"ember\">Ember’s</entity> Evaluation of the Evolution of Electricity.”"
 }

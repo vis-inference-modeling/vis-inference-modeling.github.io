@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "Young women",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
+      "var": "gender_group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -20,6 +21,7 @@
       "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -31,8 +33,9 @@
     },
     {
       "surface": "young men",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_men",
+      "var": "gender_group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -44,8 +47,9 @@
     },
     {
       "surface": "young men",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_men",
+      "var": "gender_group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -56,87 +60,65 @@
       "id": "e3"
     },
     {
-      "surface": "independence",
-      "type": "OTHER_ENTITY",
-      "canonical": "independence",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 214,
-      "end": 226,
-      "id": "e4"
-    },
-    {
       "surface": "men",
       "type": "OTHER_ENTITY",
       "canonical": "men",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 230,
-      "end": 233,
-      "id": "e5"
-    },
-    {
-      "surface": "maturity",
-      "type": "OTHER_ENTITY",
-      "canonical": "maturity",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 250,
-      "end": 258,
-      "id": "e6"
-    },
-    {
-      "surface": "college",
-      "type": "OTHER_ENTITY",
-      "canonical": "college",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 189,
+      "end": 192,
+      "id": "e4"
+    },
+    {
+      "surface": "college",
+      "type": "LOCATION",
+      "canonical": "college",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 326,
       "end": 333,
-      "id": "e7"
+      "id": "e5"
     },
     {
-      "surface": "young adult life",
-      "type": "TIME_REFERENCE",
-      "canonical": "young_adult_life",
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 376,
-      "end": 392,
-      "id": "e8"
+      "start": 342,
+      "end": 348,
+      "id": "e6"
     },
     {
       "surface": "boys",
       "type": "OTHER_ENTITY",
       "canonical": "boys",
+      "subtype": "group",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 446,
       "end": 450,
-      "id": "e9"
+      "id": "e7"
     },
     {
       "surface": "young adults",
       "type": "OTHER_ENTITY",
       "canonical": "young_adults",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -144,33 +126,7 @@
       "occurrence_index": 0,
       "start": 477,
       "end": 489,
-      "id": "e10"
-    },
-    {
-      "surface": "attachment level",
-      "type": "OTHER_ENTITY",
-      "canonical": "attachment_level",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 500,
-      "end": 516,
-      "id": "e11"
-    },
-    {
-      "surface": "percents",
-      "type": "UNIT",
-      "canonical": "percent",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
+      "id": "e8"
     }
   ],
   "unresolved_mentions": [],
@@ -201,5 +157,5 @@
       "text": "young adults and their attachment level"
     }
   ],
-  "tagged_text": "1 I notice that out of the <entity type=\"OTHER_ENTITY\" canonical=\"young_women\">Young women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\">parents</entity> more than <entity type=\"OTHER_ENTITY\" canonical=\"young_men\">young men</entity>. This is proven through the <entity type=\"OTHER_ENTITY\" canonical=\"percents\">percents</entity> on the graph\n2 i wonder why <entity type=\"OTHER_ENTITY\" canonical=\"young_women\">young women</entity> reach out more than <entity type=\"OTHER_ENTITY\" canonical=\"young_men\">young men</entity>. Is there a sense of <entity type=\"OTHER_ENTITY\" canonical=\"independence\">independence</entity> in <entity type=\"OTHER_ENTITY\" canonical=\"men\">men</entity> or a feeling of <entity type=\"OTHER_ENTITY\" canonical=\"maturity\">maturity</entity>?\n3 This relates to my community because many people are leaving to <entity type=\"OTHER_ENTITY\" canonical=\"college\">college</entity> soon so people are progressing into their <entity type=\"TIME_REFERENCE\" canonical=\"young_adult_life\">young adult life</entity>. It is interesting to see what will happen.\n4 why do <entity type=\"OTHER_ENTITY\" canonical=\"boys\">boys</entity> not reach out as much? \n5 <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\">young adults</entity> and their <entity type=\"OTHER_ENTITY\" canonical=\"attachment_level\">attachment level</entity>"
+  "tagged_text": "1 I notice that out of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">Young women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>. This is proven through the percents on the graph\n2 i wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> reach out more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>. Is there a sense of independence in <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"group\">men</entity> or a feeling of maturity?\n3 This relates to my community because many people are leaving to <entity type=\"LOCATION\" canonical=\"college\" speaker_context=\"true\">college</entity> soon so <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\">people</entity> are progressing into their young adult life. It is interesting to see what will happen.\n4 why do <entity type=\"OTHER_ENTITY\" canonical=\"boys\" subtype=\"group\">boys</entity> not reach out as much? \n5 <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\" subtype=\"group\">young adults</entity> and their attachment level"
 }

@@ -18,17 +18,43 @@
       "id": "e0"
     },
     {
-      "surface": "20+ years",
-      "type": "TIME_REFERENCE",
-      "canonical": "20_plus_years",
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 108,
-      "end": 117,
+      "start": 48,
+      "end": 70,
       "id": "e1"
+    },
+    {
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 312,
+      "end": 334,
+      "id": "e2"
+    },
+    {
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 410,
+      "end": 432,
+      "id": "e3"
     },
     {
       "surface": "fossil fuels",
@@ -40,28 +66,15 @@
       "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 139,
-      "end": 151,
-      "id": "e2"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 1,
       "start": 701,
       "end": 713,
-      "id": "e3"
+      "id": "e4"
     },
     {
       "surface": "my community",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -69,21 +82,21 @@
       "occurrence_index": 0,
       "start": 810,
       "end": 822,
-      "id": "e4"
+      "id": "e5"
     },
     {
       "surface": "renewable energy",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 831,
       "end": 847,
-      "id": "e5"
+      "id": "e6"
     },
     {
       "surface": "air pollution",
@@ -96,13 +109,12 @@
       "occurrence_index": 0,
       "start": 856,
       "end": 869,
-      "id": "e6"
+      "id": "e7"
     },
     {
       "surface": "Fueling the Future: Cleaning Up Our Energy",
-      "type": "OTHER_ENTITY",
-      "canonical": "fueling_the_future_cleaning_up_our_energy",
-      "subtype": "other",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -110,13 +122,12 @@
       "occurrence_index": 0,
       "start": 913,
       "end": 955,
-      "id": "e7"
+      "id": "e8"
     },
     {
-      "surface": "renewable energy sources",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
+      "surface": "20+ years",
+      "type": "TIME_REFERENCE",
+      "canonical": "20_plus_years",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -124,7 +135,35 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e9"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "renewable energy sources",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
     },
     {
       "surface": "United States",
@@ -138,7 +177,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e12"
     },
     {
       "surface": "21st century",
@@ -151,12 +190,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e13"
+    },
+    {
+      "surface": "economic development",
+      "type": "OTHER_ENTITY",
+      "canonical": "economic_development",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
     },
     {
       "surface": "my community",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -164,21 +218,63 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e15"
     },
     {
       "surface": "renewable energy",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "campaigns",
+      "type": "OTHER_ENTITY",
+      "canonical": "campaigns",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e17"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e18"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e19"
     },
     {
       "surface": "U.S.",
@@ -192,45 +288,14 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
+      "id": "e20"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "world electricity generation",
-      "reason": "World reference is contextual and not clearly a standalone location mention."
-    },
-    {
-      "surface": "worldwide",
-      "reason": "Generic global scope reference; not a standalone location entity."
-    },
-    {
-      "surface": "these graphs",
-      "reason": "Generic chart reference."
-    },
-    {
-      "surface": "everyone in my community",
-      "reason": "Contains a tagged location phrase but also a generic pronoun-like collective reference."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "As expected with new technology all over, world electricity generation has steadily increased over the last 20+ years. With this increase, fossil fuels have of course increased as well, but at an encouragingly slower rate. Worldwide, renewable energy sources have have begun to take up a large proportion of the electricity generation. The country-specific plots show some interesting trends. I wonder why the electricity generation in the United States has been mostly flat for two decades, even after all of the 21st century economic development. In my community, I hear about renewable energy all the time through campaigns, and it is encouraging to see in these graphs that the rate of increasing fossil fuels has slowed down dramatically, especially in the U.S. This personally affects me and everyone in my community because renewable energy reduces air pollution, leading better overall health."
+      "text": "As expected with new technology all over, world electricity generation has steadily increased over the last 20+ years. With this increase, fossil fuels have of course increased as well, but at an encouragingly slower rate. Worldwide, renewable energy sources have have begun to take up a large proportion of the electricity generation. The country-specific plots show some interesting trends. I wonder why the electricity generation in the United States has been mostly flat for two decades, even after all of the 21st century economic development. In my community, I hear about renewable energy all the time through campaigns, and it is encouraging to see in these graphs that the rate of increasing fossil fuels has slowed down dramatically, especially in the U.S. This personally affects me and everyone in my community because renewable energy reduces air pollution, leading better overall health. Headline: \"Fueling the Future: Cleaning Up Our Energy\""
     },
     {
       "section": "headline",
@@ -238,5 +303,5 @@
       "text": "Fueling the Future: Cleaning Up Our Energy"
     }
   ],
-  "tagged_text": "As expected with new <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\">technology</entity> all over, world electricity generation has steadily increased over the last <entity type=\"TIME_REFERENCE\" canonical=\"20_plus_years\">20+ years</entity>. With this increase, <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> have of course increased as well, but at an encouragingly slower rate. Worldwide, <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\">renewable energy sources</entity> have have begun to take up a large proportion of the electricity generation. The country-specific plots show some interesting trends. I wonder why the electricity generation in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> has been mostly flat for two decades, even after all of the <entity type=\"TIME_REFERENCE\" canonical=\"21st_century\">21st century</entity> economic development. In <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity>, I hear about <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\">renewable energy</entity> all the time through campaigns, and it is encouraging to see in these graphs that the rate of increasing <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> has slowed down dramatically, especially in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> This personally affects <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\">me</entity> and everyone in my community because <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\">renewable energy</entity> reduces <entity type=\"EVENT\" canonical=\"air_pollution\">air pollution</entity>, leading better overall health. Headline: \"<entity type=\"OTHER_ENTITY\" canonical=\"fueling_the_future_cleaning_up_our_energy\" subtype=\"other\" section=\"headline\">Fueling the Future: Cleaning Up Our Energy</entity>\""
+  "tagged_text": "As expected with new <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\">technology</entity> all over, world <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> has steadily increased over the last <entity type=\"TIME_REFERENCE\" canonical=\"20_plus_years\">20+ years</entity>. With this increase, <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> have of course increased as well, but at an encouragingly slower rate. Worldwide, <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">renewable energy sources</entity> have have begun to take up a large proportion of the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity>. The country-specific plots show some interesting trends. I wonder why the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity generation</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> has been mostly flat for two decades, even after all of the <entity type=\"TIME_REFERENCE\" canonical=\"21st_century\">21st century</entity> <entity type=\"OTHER_ENTITY\" canonical=\"economic_development\" subtype=\"concept\">economic development</entity>. In <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity>, I hear about <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">renewable energy</entity> all the time through <entity type=\"OTHER_ENTITY\" canonical=\"campaigns\" subtype=\"group\">campaigns</entity>, and it is encouraging to see in these graphs that the rate of increasing <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> has slowed down dramatically, especially in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> This personally affects me and everyone in <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">renewable energy</entity> reduces <entity type=\"EVENT\" canonical=\"air_pollution\">air pollution</entity>, leading better overall health. Headline: \"<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Fueling the Future: Cleaning Up Our Energy</entity>\""
 }

@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,8 +19,9 @@
     },
     {
       "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -30,22 +32,38 @@
       "id": "e1"
     },
     {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 181,
-      "end": 188,
+      "start": 85,
+      "end": 88,
       "id": "e2"
     },
     {
+      "surface": "our community",
+      "type": "speaker",
+      "canonical": "speaker",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 121,
+      "end": 134,
+      "id": "e3"
+    },
+    {
       "surface": "girls",
-      "type": "OTHER_ENTITY",
-      "canonical": "girls",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -53,59 +71,15 @@
       "occurrence_index": 0,
       "start": 224,
       "end": 229,
-      "id": "e3"
-    },
-    {
-      "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e4"
-    },
-    {
-      "surface": "community",
-      "type": "LOCATION",
-      "canonical": "our_community",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e5"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "our_parents",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "everyone of us",
-      "reason": "Generic collective phrase; not a stable entity in the dictionary."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "I notice that women tend to reach out to their parents more then men. I wonder why women reach out more. This relates to our community because everyone of us has reached out to our parents and I have noticed personally that girls reach out more."
     }
   ],
-  "tagged_text": "I notice that <entity type=\"OTHER_ENTITY\" canonical=\"women\" section=\"body\">women</entity> tend to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" section=\"body\">parents</entity> more then <entity type=\"OTHER_ENTITY\" canonical=\"men\" section=\"body\">men</entity>. I wonder why <entity type=\"OTHER_ENTITY\" canonical=\"women\" section=\"body\">women</entity> reach out more. This relates to <entity type=\"LOCATION\" canonical=\"our_community\" section=\"body\" speaker_context=\"true\">our community</entity> because everyone of us has reached out to our <entity type=\"OTHER_ENTITY\" canonical=\"our_parents\" section=\"body\" speaker_context=\"true\">parents</entity> and I have noticed personally that <entity type=\"OTHER_ENTITY\" canonical=\"girls\" section=\"body\">girls</entity> reach out more."
+  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> tend to reach out to their parents more then <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> reach out more. This relates to <entity type=\"speaker\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">our community</entity> because everyone of us has reached out to our parents and I have noticed personally that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">girls</entity> reach out more."
 }

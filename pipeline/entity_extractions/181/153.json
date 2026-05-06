@@ -2,18 +2,28 @@
   "article_id": "181",
   "comment_index": 153,
   "raw_comment": "As an estimate, it's probably accurate and sadly will keep increasing",
-  "entities": [],
-  "unresolved_mentions": [
+  "entities": [
     {
       "surface": "estimate",
-      "reason": "Could refer to a chart value or a general statement, but no clear entity mapping from the comment alone."
+      "type": "OTHER_ENTITY",
+      "canonical": "estimate",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 6,
+      "end": 14,
+      "id": "e0"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "As an estimate, it's probably accurate and sadly will keep increasing"
     }
   ],
-  "tagged_text": "As an estimate, it's probably accurate and sadly will keep increasing"
+  "tagged_text": "As an <entity type=\"OTHER_ENTITY\" canonical=\"estimate\" subtype=\"concept\">estimate</entity>, it's probably accurate and sadly will keep increasing"
 }

@@ -4,74 +4,38 @@
   "raw_comment": "I notice that young women tend to reach out to their parents more than young men do. But a commonality both have is preferring to send text messages while visiting in person might be a last option. \n\nI wonder what factors were looked at to choose the population for this study. Factors such as how far people lived from their parents, how good their relationship is with their parents, their job situation, if they're fathers/mothers themselves, etc.\n\nThis relates to me and my community as my community is very family oriented. This means it is very common in my community for people to reach out to their parents whether its call, text, or in person. But as my senior class transitions to college , in person contact will become more limited as we will start using texting and phone calls to communicate instead. \n\nHas Technology Caused Communicating to Become Completely Digital?",
   "entities": [
     {
-      "surface": "young women",
+      "surface": "text messages",
       "type": "OTHER_ENTITY",
-      "canonical": "young_women",
+      "canonical": "text_messages",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 14,
-      "end": 25,
+      "start": 135,
+      "end": 148,
       "id": "e0"
     },
     {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "their_parents",
+      "surface": "visiting in person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 47,
-      "end": 60,
+      "start": 155,
+      "end": 173,
       "id": "e1"
     },
     {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "their_parents",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 320,
-      "end": 333,
-      "id": "e2"
-    },
-    {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "their_parents",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 371,
-      "end": 384,
-      "id": "e3"
-    },
-    {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "their_parents",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": 601,
-      "end": 614,
-      "id": "e4"
-    },
-    {
       "surface": "call",
-      "type": "OTHER_ENTITY",
-      "canonical": "call",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -79,12 +43,13 @@
       "occurrence_index": 0,
       "start": 627,
       "end": 631,
-      "id": "e5"
+      "id": "e2"
     },
     {
       "surface": "text",
-      "type": "OTHER_ENTITY",
-      "canonical": "text",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -92,168 +57,54 @@
       "occurrence_index": 0,
       "start": 633,
       "end": 637,
-      "id": "e6"
+      "id": "e3"
     },
     {
-      "surface": "in person",
+      "surface": "college",
       "type": "OTHER_ENTITY",
-      "canonical": "in_person",
+      "canonical": "college",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 642,
-      "end": 651,
-      "id": "e7"
-    },
-    {
-      "surface": "in person",
-      "type": "OTHER_ENTITY",
-      "canonical": "in_person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 701,
-      "end": 710,
-      "id": "e8"
-    },
-    {
-      "surface": "texting",
-      "type": "OTHER_ENTITY",
-      "canonical": "texting",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 767,
-      "end": 774,
-      "id": "e9"
-    },
-    {
-      "surface": "phone calls",
-      "type": "OTHER_ENTITY",
-      "canonical": "phone_calls",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 779,
-      "end": 790,
-      "id": "e10"
+      "start": 691,
+      "end": 698,
+      "id": "e4"
     },
     {
       "surface": "Has Technology Caused Communicating to Become Completely Digital?",
       "type": "CHART_ELEMENT",
-      "canonical": "has_technology_caused_communicating_to_become_completely_digital",
-      "section": "body",
+      "canonical": "communication_with_my_parents_through_a_screen",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 817,
       "end": 882,
-      "id": "e11"
-    },
-    {
-      "surface": "young men",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_men",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "send text messages",
-      "type": "OTHER_ENTITY",
-      "canonical": "send_text_messages",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
+      "id": "e5"
     },
     {
       "surface": "visiting in person",
-      "type": "OTHER_ENTITY",
-      "canonical": "visiting_in_person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
+      "terminology_drift": true,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e6"
     },
     {
-      "surface": "population",
+      "surface": "community",
       "type": "OTHER_ENTITY",
-      "canonical": "population",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "study",
-      "type": "OTHER_ENTITY",
-      "canonical": "study",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "job situation",
-      "type": "OTHER_ENTITY",
-      "canonical": "job_situation",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
-      "surface": "fathers/mothers",
-      "type": "OTHER_ENTITY",
-      "canonical": "fathers_mothers",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "my community",
-      "type": "LOCATION",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -261,12 +112,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e7"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
+      "surface": "community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -274,71 +126,41 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e20"
-    },
-    {
-      "surface": "family oriented",
-      "type": "OTHER_ENTITY",
-      "canonical": "family_oriented",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e21"
-    },
-    {
-      "surface": "my senior class",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_senior_class",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e22"
-    },
-    {
-      "surface": "college",
-      "type": "OTHER_ENTITY",
-      "canonical": "college",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e23"
+      "id": "e8"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "young women",
-      "reason": "Could be a chart category or general demographic mention; no chart-specific reference list is available."
+      "reason": "Likely young_women, but not explicitly tied to the chart's gender labels in the sentence."
     },
     {
       "surface": "young men",
-      "reason": "Could be a chart category or general demographic mention; no chart-specific reference list is available."
+      "reason": "Likely young_men, but not explicitly tied to the chart's gender labels in the sentence."
     },
     {
-      "surface": "their parents",
-      "reason": "Could refer to parents generally, but no exact canonical ID is confirmed."
+      "surface": "parents",
+      "reason": "Generic relational noun; not clearly one of the listed entities."
     },
     {
-      "surface": "fathers/mothers",
-      "reason": "Likely refers to parents, but the exact canonical mapping is uncertain."
+      "surface": "fathers/mothers themselves",
+      "reason": "Could refer to parenthood status, but no confirmed canonical entity in the list."
+    },
+    {
+      "surface": "senior class",
+      "reason": "Could imply an age/school group, but no confirmed canonical ID in the provided list."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice that young women tend to reach out to their parents more than young men do. But a commonality both have is preferring to send text messages while visiting in person might be a last option. \n\nI wonder what factors were looked at to choose the population for this study. Factors such as how far people lived from their parents, how good their relationship is with their parents, their job situation, if they're fathers/mothers themselves, etc.\n\nThis relates to me and my community as my community is very family oriented. This means it is very common in my community for people to reach out to their parents whether its call, text, or in person. But as my senior class transitions to college , in person contact will become more limited as we will start using texting and phone calls to communicate instead. \n\nHas Technology Caused Communicating to Become Completely Digital?"
+      "text": "I notice that young women tend to reach out to their parents more than young men do. But a commonality both have is preferring to send text messages while visiting in person might be a last option. \n\nI wonder what factors were looked at to choose the population for this study. Factors such as how far people lived from their parents, how good their relationship is with their parents, their job situation, if they're fathers/mothers themselves, etc.\n\nThis relates to me and my community as my community is very family oriented. This means it is very common in my community for people to reach out to their parents whether its call, text, or in person. But as my senior class transitions to college , in person contact will become more limited as we will start using texting and phone calls to communicate instead."
+    },
+    {
+      "section": "headline",
+      "label": "Has Technology Caused Communicating to Become Completely Digital?",
+      "text": "Has Technology Caused Communicating to Become Completely Digital?"
     }
   ],
-  "tagged_text": "I notice that young women tend to reach out to their parents more than young men do. But a commonality both have is preferring to send text messages while visiting in person might be a last option. \n\nI wonder what factors were looked at to choose the population for this study. Factors such as how far people lived from their parents, how good their relationship is with their parents, their job situation, if they're fathers/mothers themselves, etc.\n\nThis relates to me and my community as my community is very family oriented. This means it is very common in my community for people to reach out to their parents whether its call, text, or in person. But as my senior class transitions to college , in person contact will become more limited as we will start using texting and phone calls to communicate instead. \n\nHas Technology Caused Communicating to Become Completely Digital?"
+  "tagged_text": "I notice that young women tend to reach out to their parents more than young men do. But a commonality both have is preferring to send <entity type=\"OTHER_ENTITY\" canonical=\"text_messages\" subtype=\"other\">text messages</entity> while <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting in person</entity> might be a last option. \n\nI wonder what factors were looked at to choose the population for this study. Factors such as how far people lived from their parents, how good their relationship is with their parents, their job situation, if they're fathers/mothers themselves, etc.\n\nThis relates to me and my community as my community is very family oriented. This means it is very common in my community for people to reach out to their parents whether its call, text, or in person. But as my senior class transitions to college , in person contact will become more limited as we will start using texting and phone calls to communicate instead. \n\nHas Technology Caused Communicating to Become Completely Digital?"
 }

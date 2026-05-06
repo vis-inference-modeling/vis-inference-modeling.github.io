@@ -7,7 +7,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -35,7 +35,7 @@
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -48,62 +48,62 @@
     {
       "surface": "energy",
       "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "canonical": "electricity_generation",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 241,
       "end": 247,
       "id": "e3"
     },
     {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 269,
-      "end": 271,
-      "id": "e4"
-    },
-    {
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e5"
     },
     {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "surface": "nuclear",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nuclear",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e6"
     },
     {
-      "surface": "nuclear",
+      "surface": "hydroelectric",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "nuclear",
-      "var": "energy_source",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -112,20 +112,6 @@
       "start": null,
       "end": null,
       "id": "e7"
-    },
-    {
-      "surface": "hydroelectric electricity",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
     },
     {
       "surface": "years",
@@ -138,12 +124,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e8"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
+      "surface": "community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -151,13 +138,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "global sources",
-      "reason": "Likely refers to worldwide energy sources, but no exact canonical match is provided and the phrase is vague."
+      "surface": "our global sources",
+      "reason": "Ambiguous phrase; could refer to energy sources or a broader set of sources, but no clear canonical mapping."
     }
   ],
   "section_segments": [
@@ -182,5 +169,5 @@
       "text": "Are our global sources beginning to change?"
     }
   ],
-  "tagged_text": "1. I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity> are the largest types of <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">hydroelectric electricity</entity> are increasing during the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity>.\n2. I wonder why we prefer <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity>.\n\n3. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because we use lots of <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy</entity> no matter where it comes from.\n\n4. Are our global sources beginning to change?"
+  "tagged_text": "1. I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity> are the largest types of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\">hydroelectric</entity> electricity are increasing during the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity>.\n2. I wonder why we prefer <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity>.\n\n3. This relates to me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">community</entity> because we use lots of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> no matter where it comes from.\n\n4. Are our global sources beginning to change?"
 }

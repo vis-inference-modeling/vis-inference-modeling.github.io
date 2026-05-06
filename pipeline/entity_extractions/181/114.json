@@ -34,7 +34,7 @@
     {
       "surface": "time period",
       "type": "TIME_REFERENCE",
-      "canonical": "time_period",
+      "canonical": "time_over_time",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -47,7 +47,7 @@
     {
       "surface": "10",
       "type": "TIME_REFERENCE",
-      "canonical": "10_years",
+      "canonical": "10",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -60,7 +60,7 @@
     {
       "surface": "20",
       "type": "TIME_REFERENCE",
-      "canonical": "20_years",
+      "canonical": "20",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -73,7 +73,7 @@
     {
       "surface": "50",
       "type": "TIME_REFERENCE",
-      "canonical": "50_years",
+      "canonical": "50",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -84,37 +84,70 @@
       "id": "e5"
     },
     {
+      "surface": "my singular",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_self",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 194,
+      "end": 205,
+      "id": "e6"
+    },
+    {
       "surface": "electricity usage",
       "type": "DATA_VAR",
       "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 0,
       "start": 206,
       "end": 223,
-      "id": "e6"
+      "id": "e7"
     },
     {
-      "surface": "United States win war aginst energy usage.",
-      "type": "OTHER_ENTITY",
-      "canonical": "world_super-powers_in_more_ways_then_one_how_china_and_united_states_get_there_energy",
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 285,
-      "end": 327,
-      "id": "e7"
+      "end": 298,
+      "id": "e8"
+    },
+    {
+      "surface": "electricity usage",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e9"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "war aginst",
+      "reason": "Likely rhetorical wording or typo; not a clear entity."
+    }
+  ],
   "section_segments": [
     {
       "section": "body",
-      "text": "Notice: The large margin between China and India.  \nWonder: Over what time period was ths data collected? How has it changed in 10, 20, 50 years? \nMy Community: This story make me more aware of my singular electricity usage and the impact it could have on a smaller scale. "
+      "text": "Notice: The large margin between China and India.  \nWonder: Over what time period was ths data collected? How has it changed in 10, 20, 50 years? \nMy Community: This story make me more aware of my singular electricity usage and the impact it could have on a smaller scale."
     },
     {
       "section": "headline",
@@ -122,5 +155,5 @@
       "text": "\"United States win war aginst energy usage.\""
     }
   ],
-  "tagged_text": "Notice: The large margin between <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>.  \nWonder: Over what <entity type=\"TIME_REFERENCE\" canonical=\"time_period\">time period</entity> was ths data collected? How has it changed in <entity type=\"TIME_REFERENCE\" canonical=\"10_years\">10</entity>, <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20</entity>, <entity type=\"TIME_REFERENCE\" canonical=\"50_years\">50</entity> years? \nMy Community: This story make me more aware of my singular <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity usage</entity> and the impact it could have on a smaller scale. \nHeadline: \"<entity type=\"OTHER_ENTITY\" canonical=\"world_super-powers_in_more_ways_then_one_how_china_and_united_states_get_there_energy\" section=\"headline\">United States win war aginst energy usage.</entity>\""
+  "tagged_text": "Notice: The large margin between <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>.  \nWonder: Over what <entity type=\"TIME_REFERENCE\" canonical=\"time_over_time\">time period</entity> was ths data collected? How has it changed in <entity type=\"TIME_REFERENCE\" canonical=\"10\">10</entity>, <entity type=\"TIME_REFERENCE\" canonical=\"20\">20</entity>, <entity type=\"TIME_REFERENCE\" canonical=\"50\">50</entity> years? \nMy Community: This story make me more aware of <entity type=\"OTHER_ENTITY\" canonical=\"speaker_self\" subtype=\"person\" speaker_context=\"true\">my singular</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity usage</entity> and the impact it could have on a smaller scale. \nHeadline: \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> win war aginst <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy usage</entity>.\""
 }

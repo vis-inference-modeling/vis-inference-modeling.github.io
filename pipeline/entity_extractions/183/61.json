@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "young women",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -17,22 +18,38 @@
       "id": "e0"
     },
     {
-      "surface": "their families",
+      "surface": "families",
       "type": "OTHER_ENTITY",
-      "canonical": "families",
+      "canonical": "family",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 70,
+      "start": 76,
       "end": 84,
       "id": "e1"
     },
     {
-      "surface": "visit in person",
+      "surface": "young people",
       "type": "OTHER_ENTITY",
+      "canonical": "young_people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 133,
+      "end": 145,
+      "id": "e2"
+    },
+    {
+      "surface": "visit in person",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -40,12 +57,13 @@
       "occurrence_index": 0,
       "start": 146,
       "end": 161,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "text",
-      "type": "OTHER_ENTITY",
-      "canonical": "text",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -53,25 +71,13 @@
       "occurrence_index": 0,
       "start": 176,
       "end": 180,
-      "id": "e3"
-    },
-    {
-      "surface": "a couple of times a week",
-      "type": "TIME_REFERENCE",
-      "canonical": "a_few_times_a_week",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 181,
-      "end": 205,
       "id": "e4"
     },
     {
       "surface": "men",
       "type": "OTHER_ENTITY",
       "canonical": "men",
+      "subtype": "group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -82,15 +88,16 @@
       "id": "e5"
     },
     {
-      "surface": "their parents",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "their_parents",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 239,
+      "start": 245,
       "end": 252,
       "id": "e6"
     },
@@ -98,6 +105,7 @@
       "surface": "women",
       "type": "OTHER_ENTITY",
       "canonical": "women",
+      "subtype": "group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -108,38 +116,41 @@
       "id": "e7"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
+      "surface": "community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 290,
+      "start": 293,
       "end": 302,
       "id": "e8"
     },
     {
-      "surface": "20-year-old",
-      "type": "TIME_REFERENCE",
-      "canonical": "20_year_old",
+      "surface": "20-year-old sister",
+      "type": "OTHER_ENTITY",
+      "canonical": "20-year-old_sister",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 320,
-      "end": 331,
+      "end": 338,
       "id": "e9"
     },
     {
       "surface": "college",
       "type": "OTHER_ENTITY",
       "canonical": "college",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 342,
@@ -147,82 +158,87 @@
       "id": "e10"
     },
     {
-      "surface": "18-year-old",
-      "type": "TIME_REFERENCE",
-      "canonical": "18_year_old",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 357,
-      "end": 368,
-      "id": "e11"
-    },
-    {
       "surface": "college",
       "type": "OTHER_ENTITY",
       "canonical": "college",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 392,
+      "end": 399,
+      "id": "e11"
+    },
+    {
+      "surface": "call",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 392,
-      "end": 399,
+      "start": 433,
+      "end": 437,
       "id": "e12"
     },
     {
-      "surface": "my brother",
+      "surface": "family",
       "type": "OTHER_ENTITY",
-      "canonical": "brother",
+      "canonical": "family",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 413,
-      "end": 423,
+      "start": 441,
+      "end": 447,
       "id": "e13"
     },
     {
-      "surface": "my family",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "my_family",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 438,
-      "end": 447,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e14"
     },
     {
-      "surface": "my sister",
+      "surface": "18-year-old brother",
       "type": "OTHER_ENTITY",
-      "canonical": "sister",
+      "canonical": "18-year-old_brother",
+      "subtype": "person",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 459,
-      "end": 468,
+      "start": null,
+      "end": null,
       "id": "e15"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "Thanks for raising me... bye",
-      "reason": "Looks like a proposed headline/title, but no confirmed headline canonical ID in the provided dictionary matches this exact phrase."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice that young women are far more likely to keep in contact with their families on a regular basis. I also notice that not many young people visit in person and most only text a couple of times a week. I wonder why men do not talk to their parents as much as women. This can relate to my community because I have a 20-year-old sister in college and an 18-year-old brother about to go to college. I wonder if my brother will not call my family as much as my sister does. A catchy headline would be: \"Thanks for raising me... bye\""
+      "text": "I notice that young women are far more likely to keep in contact with their families on a regular basis. I also notice that not many young people visit in person and most only text a couple of times a week. I wonder why men do not talk to their parents as much as women. This can relate to my community because I have a 20-year-old sister in college and an 18-year-old brother about to go to college. I wonder if my brother will not call my family as much as my sister does."
+    },
+    {
+      "section": "headline",
+      "label": "A catchy headline would be",
+      "text": "\"Thanks for raising me... bye\""
     }
   ],
-  "tagged_text": "I notice that young women are far more likely to keep in contact with their families on a regular basis. I also notice that not many young people visit in person and most only text a couple of times a week. I wonder why men do not talk to their parents as much as women. This can relate to my community because I have a 20-year-old sister in college and an 18-year-old brother about to go to college. I wonder if my brother will not call my family as much as my sister does. A catchy headline would be: \"Thanks for raising me... bye\""
+  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> are far more likely to keep in contact with their <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\">families</entity> on a regular basis. I also notice that not many <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit in person</entity> and most only <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> a couple of times a week. I wonder why <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"group\" modality=\"questioned\">men</entity> do not talk to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" modality=\"questioned\">parents</entity> as much as <entity type=\"OTHER_ENTITY\" canonical=\"women\" subtype=\"group\" modality=\"questioned\">women</entity>. This can relate to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because I have a <entity type=\"OTHER_ENTITY\" canonical=\"20-year-old_sister\" subtype=\"person\" speaker_context=\"true\">20-year-old sister</entity> in <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college</entity> and an <entity type=\"OTHER_ENTITY\" canonical=\"18-year-old_brother\" subtype=\"person\" speaker_context=\"true\">18-year-old brother</entity> about to go to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college</entity>. I wonder if my brother will not <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" modality=\"questioned\">call</entity> my <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" speaker_context=\"true\">family</entity> as much as my sister does. A catchy headline would be: \"Thanks for raising me... bye\""
 }

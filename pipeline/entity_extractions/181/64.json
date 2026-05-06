@@ -4,7 +4,20 @@
   "raw_comment": "Just a reminder for headlines.  Feature the graph’s surprise to encourage viewers to read the article.  Include only what you see in the graph.  There’s already a lot in the graph to pique readers’ interests. Finally, short is good.",
   "entities": [
     {
-      "surface": "graph",
+      "surface": "headlines",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 20,
+      "end": 29,
+      "id": "e0"
+    },
+    {
+      "surface": "graph’s",
       "type": "CHART_ELEMENT",
       "canonical": "graph",
       "section": "body",
@@ -13,20 +26,7 @@
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 44,
-      "end": 49,
-      "id": "e0"
-    },
-    {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 137,
-      "end": 142,
+      "end": 51,
       "id": "e1"
     },
     {
@@ -37,18 +37,31 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 0,
+      "start": 137,
+      "end": 142,
+      "id": "e2"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
       "start": 174,
       "end": 179,
-      "id": "e2"
+      "id": "e3"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "Just a reminder for headlines.  Feature the graph’s surprise to encourage viewers to read the article.  Include only what you see in the graph.  There’s already a lot in the graph to pique readers’ interests. Finally, short is good."
+      "text": "Just a reminder for headlines. Feature the graph’s surprise to encourage viewers to read the article. Include only what you see in the graph. There’s already a lot in the graph to pique readers’ interests. Finally, short is good."
     }
   ],
-  "tagged_text": "Just a reminder for headlines.  Feature the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity>’s surprise to encourage viewers to read the article.  Include only what you see in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity>.  There’s already a lot in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> to pique readers’ interests. Finally, short is good."
+  "tagged_text": "Just a reminder for <entity type=\"CHART_ELEMENT\" canonical=\"headline\">headlines</entity>. Feature the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph’s</entity> surprise to encourage viewers to read the article. Include only what you see in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>. There’s already a lot in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> to pique readers’ interests. Finally, short is good."
 }

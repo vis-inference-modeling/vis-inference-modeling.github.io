@@ -7,7 +7,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,62 +18,34 @@
       "id": "e0"
     },
     {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 53,
-      "end": 58,
+      "start": 82,
+      "end": 88,
       "id": "e1"
     },
     {
-      "surface": "china",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 92,
-      "end": 97,
+      "occurrence_index": 1,
+      "start": 304,
+      "end": 310,
       "id": "e2"
     },
     {
-      "surface": "china",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 136,
-      "end": 141,
-      "id": "e3"
-    },
-    {
-      "surface": "china",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 186,
-      "end": 191,
-      "id": "e4"
-    },
-    {
       "surface": "fossil fuels",
       "type": "DATA_VAR_LEVEL",
       "canonical": "fossil",
@@ -81,25 +53,11 @@
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 206,
-      "end": 218,
-      "id": "e5"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 1,
       "start": 326,
       "end": 338,
-      "id": "e6"
+      "id": "e3"
     },
     {
       "surface": "Clean energy",
@@ -113,7 +71,35 @@
       "occurrence_index": 0,
       "start": 384,
       "end": 396,
-      "id": "e7"
+      "id": "e4"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "US",
@@ -127,25 +113,25 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e7"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "fuel",
-      "reason": "Generic term; could refer to fossil fuels or energy broadly, but not specific enough to tag confidently."
+      "reason": "Generic substance term; could refer to fossil fuels but is not explicit enough to tag separately."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice that china produces  the most coal but also India has the same amount of people as china but India produces way less fuel then china. I wonder if there is a specific reason why china produces more fossil fuels the the US and India. This can relate to my community by myself living in the US and people producing many fossil fuels. A Catchy headline for this graph would be: \"Clean energy is a need\"."
+      "text": "I notice that china produces  the most coal but also India has the same amount of people as china but India produces way less fuel then china. I wonder if there is a specific reason why china produces more fossil fuels the the US and India. This can relate to my community by myself living in the US and people producing many fossil fuels."
     },
     {
       "section": "headline",
       "label": "A Catchy headline for this graph would be",
-      "text": "Clean energy is a need"
+      "text": "\"Clean energy is a need\"."
     }
   ],
-  "tagged_text": "I notice that china produces  the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> but also India has the same amount of people as china but India produces way less fuel then china. I wonder if there is a specific reason why china produces more <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuels</entity> the the US and India. This can relate to my community by myself living in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" speaker_context=\"true\">US</entity> and people producing many <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>. A Catchy headline for this graph would be: \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">Clean energy</entity> is a need\"."
+  "tagged_text": "I notice that china produces  the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\">coal</entity> but also India has the same amount of <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\" section=\"body\">people</entity> as china but India produces way less fuel then china. I wonder if there is a specific reason why china produces more <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\" modality=\"questioned\">fossil fuels</entity> the the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" modality=\"questioned\">US</entity> and India. This can relate to my community by myself living in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" speaker_context=\"true\">US</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\" section=\"body\">people</entity> producing many <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity>. A Catchy headline for this graph would be: \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">Clean energy</entity> is a need\"."
 }

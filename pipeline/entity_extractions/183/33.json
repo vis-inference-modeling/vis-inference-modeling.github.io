@@ -33,6 +33,7 @@
       "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -46,6 +47,7 @@
       "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -59,6 +61,7 @@
       "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -72,6 +75,7 @@
       "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -83,8 +87,9 @@
     },
     {
       "surface": "young women",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -96,8 +101,9 @@
     },
     {
       "surface": "young women",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -108,14 +114,15 @@
       "id": "e7"
     },
     {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
+      "surface": "young women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 4,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e8"
@@ -124,11 +131,12 @@
       "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 5,
+      "occurrence_index": 4,
       "start": null,
       "end": null,
       "id": "e9"
@@ -137,19 +145,21 @@
       "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 6,
+      "occurrence_index": 5,
       "start": null,
       "end": null,
       "id": "e10"
     },
     {
-      "surface": "at least once a day",
-      "type": "TIME_REFERENCE",
-      "canonical": "at_least_once_a_week",
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -160,22 +170,23 @@
       "id": "e11"
     },
     {
-      "surface": "a few types a week",
-      "type": "TIME_REFERENCE",
-      "canonical": "a_few_times_a_week",
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e12"
     },
     {
-      "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
+      "surface": "communication",
+      "type": "DATA_VAR",
+      "canonical": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -186,9 +197,9 @@
       "id": "e13"
     },
     {
-      "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
+      "surface": "communication",
+      "type": "DATA_VAR",
+      "canonical": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -199,9 +210,10 @@
       "id": "e14"
     },
     {
-      "surface": "young people",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_people",
+      "surface": "sending text messages",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -212,9 +224,10 @@
       "id": "e15"
     },
     {
-      "surface": "young people",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_people",
+      "surface": "sending text messages",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -225,22 +238,24 @@
       "id": "e16"
     },
     {
-      "surface": "young people",
+      "surface": "50%",
       "type": "OTHER_ENTITY",
-      "canonical": "young_people",
+      "canonical": "50_percent",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e17"
     },
     {
-      "surface": "sending text messages",
-      "type": "OTHER_ENTITY",
-      "canonical": "sending_texts",
+      "surface": "young men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -251,22 +266,24 @@
       "id": "e18"
     },
     {
-      "surface": "sending text messages",
+      "surface": "75%",
       "type": "OTHER_ENTITY",
-      "canonical": "sending_texts",
+      "canonical": "75_percent",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e19"
     },
     {
-      "surface": "50%",
-      "type": "TIME_REFERENCE",
-      "canonical": "50_percent",
+      "surface": "text messages",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -277,9 +294,10 @@
       "id": "e20"
     },
     {
-      "surface": "young men",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_men",
+      "surface": "phone/video-chat",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -290,9 +308,10 @@
       "id": "e21"
     },
     {
-      "surface": "75%",
-      "type": "TIME_REFERENCE",
-      "canonical": "75_percent",
+      "surface": "visits in person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -303,11 +322,12 @@
       "id": "e22"
     },
     {
-      "surface": "text messages",
-      "type": "OTHER_ENTITY",
-      "canonical": "text_messages",
+      "surface": "sending text messages",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -316,9 +336,10 @@
       "id": "e23"
     },
     {
-      "surface": "phone/video-chat",
+      "surface": "young people",
       "type": "OTHER_ENTITY",
-      "canonical": "phone_video_chat",
+      "canonical": "young_people",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -329,22 +350,24 @@
       "id": "e24"
     },
     {
-      "surface": "visits in person",
+      "surface": "young people",
       "type": "OTHER_ENTITY",
-      "canonical": "in_person_visits",
+      "canonical": "young_people",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e25"
     },
     {
-      "surface": "young adults",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_adults",
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -355,45 +378,6 @@
       "id": "e26"
     },
     {
-      "surface": "young adults",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_adults",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e27"
-    },
-    {
-      "surface": "young adults",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_adults",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e28"
-    },
-    {
-      "surface": "young adults",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_adults",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": null,
-      "end": null,
-      "id": "e29"
-    },
-    {
       "surface": "18",
       "type": "TIME_REFERENCE",
       "canonical": "18",
@@ -404,7 +388,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e30"
+      "id": "e27"
     },
     {
       "surface": "18",
@@ -417,7 +401,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e31"
+      "id": "e28"
     },
     {
       "surface": "34",
@@ -430,12 +414,25 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e32"
+      "id": "e29"
     },
     {
       "surface": "college",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "college",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e30"
+    },
+    {
+      "surface": "communication",
+      "type": "DATA_VAR",
+      "canonical": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -443,12 +440,41 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e31"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e32"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e33"
     },
     {
-      "surface": "community",
-      "type": "LOCATION",
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -461,7 +487,7 @@
     {
       "surface": "The Importance of Text Messages–In Young Adults’ Contact With Their Parents",
       "type": "CHART_ELEMENT",
-      "canonical": "headline",
+      "canonical": "title",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -476,8 +502,13 @@
   "section_segments": [
     {
       "section": "body",
-      "text": "From the graph, I noticed that young women more frequently contact their parents at least once a day or a few types a week than men. Also, out of the forms of communication, most young people contact their parents through sending text messages at 50% for young men and 75% for young women. This is interesting because text messages could be considered a faster form of communication than phone/video-chat and visits in person. I wonder if more young people prefer sending text messages to their parents because it is fast and convenient. Why do the amount of young people that contact their parents often vary between men and women? I wonder if young adults closer to the age of 18 that were surveyed reached out to their parents more or less than young adults closer to the age of 34. How many young adults stated that they do not contact their parents and were screened out of the survey? This graph relates to me because I am 18 years old and when I move to college this year, I wonder what form of communication I will rely on the most to contact my parents. How will my age impact how frequently and what source I contact my parents? This also relates to my community as it can demonstrate the closeness of parent–child relationships and young adult’s dependence on their parents in adulthood. \n\n“The Importance of Text Messages–In Young Adults’ Contact With Their Parents”"
+      "text": "From the graph, I noticed that young women more frequently contact their parents at least once a day or a few types a week than men. Also, out of the forms of communication, most young people contact their parents through sending text messages at 50% for young men and 75% for young women. This is interesting because text messages could be considered a faster form of communication than phone/video-chat and visits in person. I wonder if more young people prefer sending text messages to their parents because it is fast and convenient. Why do the amount of young people that contact their parents often vary between men and women? I wonder if young adults closer to the age of 18 that were surveyed reached out to their parents more or less than young adults closer to the age of 34. How many young adults stated that they do not contact their parents and were screened out of the survey? This graph relates to me because I am 18 years old and when I move to college this year, I wonder what form of communication I will rely on the most to contact my parents. How will my age impact how frequently and what source I contact my parents? This also relates to my community as it can demonstrate the closeness of parent–child relationships and young adult’s dependence on their parents in adulthood. "
+    },
+    {
+      "section": "headline",
+      "label": "The Importance of Text Messages–In Young Adults’ Contact With Their Parents",
+      "text": "The Importance of Text Messages–In Young Adults’ Contact With Their Parents"
     }
   ],
-  "tagged_text": "From the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I noticed that <entity type=\"OTHER_ENTITY\" canonical=\"young_women\">young women</entity> more frequently contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\">parents</entity> <entity type=\"TIME_REFERENCE\" canonical=\"at_least_once_a_week\">at least once a day</entity> or a few types a week than <entity type=\"OTHER_ENTITY\" canonical=\"men\">men</entity>. Also, out of the forms of communication, most <entity type=\"OTHER_ENTITY\" canonical=\"young_people\">young people</entity> contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\">parents</entity> through <entity type=\"OTHER_ENTITY\" canonical=\"sending_texts\">sending text messages</entity> at <entity type=\"TIME_REFERENCE\" canonical=\"50_percent\">50%</entity> for <entity type=\"OTHER_ENTITY\" canonical=\"young_men\">young men</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"75_percent\">75%</entity> for <entity type=\"OTHER_ENTITY\" canonical=\"young_women\">young women</entity>. This is interesting because <entity type=\"OTHER_ENTITY\" canonical=\"text_messages\">text messages</entity> could be considered a faster form of communication than <entity type=\"OTHER_ENTITY\" canonical=\"phone_video_chat\">phone/video-chat</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"in_person_visits\">visits in person</entity>. I wonder if more <entity type=\"OTHER_ENTITY\" canonical=\"young_people\">young people</entity> prefer <entity type=\"OTHER_ENTITY\" canonical=\"sending_texts\">sending text messages</entity> to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\">parents</entity> because it is fast and convenient. Why do the amount of <entity type=\"OTHER_ENTITY\" canonical=\"young_people\">young people</entity> that contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\">parents</entity> often vary between <entity type=\"OTHER_ENTITY\" canonical=\"men\">men</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"women\">women</entity>? I wonder if <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\">young adults</entity> closer to the age of <entity type=\"TIME_REFERENCE\" canonical=\"18\">18</entity> that were surveyed reached out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\">parents</entity> more or less than <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\">young adults</entity> closer to the age of <entity type=\"TIME_REFERENCE\" canonical=\"34\">34</entity>. How many <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\">young adults</entity> stated that they do not contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\">parents</entity> and were screened out of the survey? This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> relates to me because I am <entity type=\"TIME_REFERENCE\" canonical=\"18\">18</entity> years old and when I move to <entity type=\"OTHER_ENTITY\" canonical=\"college\">college</entity> this year, I wonder what form of communication I will rely on the most to contact my <entity type=\"OTHER_ENTITY\" canonical=\"parents\">parents</entity>. How will my age impact how frequently and what source I contact my <entity type=\"OTHER_ENTITY\" canonical=\"parents\">parents</entity>? This also relates to my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> as it can demonstrate the closeness of parent–child relationships and young adult’s dependence on their parents in adulthood. \n\n“<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">The Importance of Text Messages–In Young Adults’ Contact With Their Parents</entity>”"
+  "tagged_text": "From the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> more frequently contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> at least once a day or a few types a week than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>. Also, out of the forms of <entity type=\"DATA_VAR\" canonical=\"communication_method\">communication</entity>, most young people contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">sending text messages</entity> at <entity type=\"OTHER_ENTITY\" canonical=\"50_percent\" subtype=\"other\">50%</entity> for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"75_percent\" subtype=\"other\">75%</entity> for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity>. This is interesting because <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text messages</entity> could be considered a faster form of communication than <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone/video-chat</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visits in person</entity>. I wonder if more young people prefer <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">sending text messages</entity> to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> because it is fast and convenient. Why do the amount of <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> that contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> often vary between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>? I wonder if young adults closer to the age of <entity type=\"TIME_REFERENCE\" canonical=\"18\">18</entity> that were surveyed reached out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more or less than young adults closer to the age of <entity type=\"TIME_REFERENCE\" canonical=\"34\">34</entity>. How many young adults stated that they do not contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> and were screened out of the survey? This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> relates to me because I am <entity type=\"TIME_REFERENCE\" canonical=\"18\">18 years old</entity> and when I move to <entity type=\"LOCATION\" canonical=\"college\" speaker_context=\"true\">college</entity> this year, I wonder what form of <entity type=\"DATA_VAR\" canonical=\"communication_method\">communication</entity> I will rely on the most to contact my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>. How will my age impact how frequently and what source I contact my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>? This also relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> as it can demonstrate the closeness of parent–child relationships and young adult’s dependence on their parents in adulthood. \n\n“<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">The Importance of Text Messages–In Young Adults’ Contact With Their Parents</entity>”"
 }

@@ -4,6 +4,118 @@
   "raw_comment": "I notice that there is a large gap between the percentage of young women reaching out to their parents versus young men reaching out to their parents. I also notice that the smallest gap between men and women, is also the smallest percentage for contacting parents, which was visiting in person.\n\nI wonder what the age range is for the graph given, is it more college aged young adults, or young adults in their twenties. I also wonder why women are more inclined to reach out to their parents, is it because they are on their phones more? Do those who visit their parents live closer to home and are out of college?\n\nThis relates to me and my community because it shows that our generation should be reaching out to our parents more often and it is important to stay in contact with your parents and other family members. I have 2 brothers, one in college, and one who lives in New York City and my parents always get excited when they get to talk to them, showing how important it is to them.\n\n\"Stay connected!\"",
   "entities": [
     {
+      "surface": "young women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 61,
+      "end": 72,
+      "id": "e0"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 95,
+      "end": 102,
+      "id": "e1"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 142,
+      "end": 149,
+      "id": "e2"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 257,
+      "end": 264,
+      "id": "e3"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": 486,
+      "end": 493,
+      "id": "e4"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 4,
+      "start": 565,
+      "end": 572,
+      "id": "e5"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 5,
+      "start": 721,
+      "end": 728,
+      "id": "e6"
+    },
+    {
+      "surface": "college",
+      "type": "OTHER_ENTITY",
+      "canonical": "college",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 849,
+      "end": 856,
+      "id": "e7"
+    },
+    {
       "surface": "New York City",
       "type": "LOCATION",
       "canonical": "new_york_city",
@@ -14,54 +126,198 @@
       "occurrence_index": 0,
       "start": 879,
       "end": 892,
-      "id": "e0"
+      "id": "e8"
     },
     {
-      "surface": "Stay connected!",
-      "type": "CHART_ELEMENT",
-      "canonical": "headline",
+      "surface": "young women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "young men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 997,
-      "end": 1012,
-      "id": "e1"
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "visiting in person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    },
+    {
+      "surface": "age range",
+      "type": "TIME_REFERENCE",
+      "canonical": "age_range",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "college aged",
+      "type": "OTHER_ENTITY",
+      "canonical": "college_aged_people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "phones",
+      "type": "OTHER_ENTITY",
+      "canonical": "phones",
+      "subtype": "technology",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "college",
+      "type": "OTHER_ENTITY",
+      "canonical": "college",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e17"
+    },
+    {
+      "surface": "me",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e18"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "brothers",
+      "type": "OTHER_ENTITY",
+      "canonical": "brother",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "family",
+      "type": "OTHER_ENTITY",
+      "canonical": "family",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e21"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "young women",
-      "reason": "Likely a demographic group from the graph, but no chart-specific reference list is available for this article and no confirmed canonical ID was provided for this level."
-    },
-    {
-      "surface": "young men",
-      "reason": "Likely a demographic group from the graph, but no chart-specific reference list is available for this article and no confirmed canonical ID was provided for this level."
-    },
-    {
-      "surface": "men",
-      "reason": "Likely a demographic group from the graph, but no chart-specific reference list was provided for this level."
-    },
-    {
-      "surface": "women",
-      "reason": "Likely a demographic group from the graph, but no chart-specific reference list was provided for this level."
-    },
-    {
-      "surface": "college aged young adults",
-      "reason": "Could refer to an age group, but no confirmed canonical ID was provided in the normalized dictionary for this article."
-    },
-    {
       "surface": "young adults in their twenties",
-      "reason": "Could refer to an age group, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+      "reason": "Age-group reference, but no exact canonical level provided in the reference list."
     },
     {
-      "surface": "phones",
-      "reason": "Could be a technology entity, but no confirmed canonical ID was provided in the normalized dictionary for this article."
-    },
-    {
-      "surface": "college",
-      "reason": "Could be a location/setting, but no confirmed canonical ID was provided in the normalized dictionary for this article."
+      "surface": "Stay connected!",
+      "reason": "Headline/slogan-like phrase with no clear entity mapping."
     }
   ],
   "section_segments": [
@@ -70,5 +326,5 @@
       "text": "I notice that there is a large gap between the percentage of young women reaching out to their parents versus young men reaching out to their parents. I also notice that the smallest gap between men and women, is also the smallest percentage for contacting parents, which was visiting in person.\n\nI wonder what the age range is for the graph given, is it more college aged young adults, or young adults in their twenties. I also wonder why women are more inclined to reach out to their parents, is it because they are on their phones more? Do those who visit their parents live closer to home and are out of college?\n\nThis relates to me and my community because it shows that our generation should be reaching out to our parents more often and it is important to stay in contact with your parents and other family members. I have 2 brothers, one in college, and one who lives in New York City and my parents always get excited when they get to talk to them, showing how important it is to them.\n\n\"Stay connected!\""
     }
   ],
-  "tagged_text": "I notice that there is a large gap between the percentage of young women reaching out to their parents versus young men reaching out to their parents. I also notice that the smallest gap between men and women, is also the smallest percentage for contacting parents, which was visiting in person.\n\nI wonder what the age range is for the graph given, is it more college aged young adults, or young adults in their twenties. I also wonder why women are more inclined to reach out to their parents, is it because they are on their phones more? Do those who visit their parents live closer to home and are out of college?\n\nThis relates to me and my community because it shows that our generation should be reaching out to our parents more often and it is important to stay in contact with your parents and other family members. I have 2 brothers, one in college, and one who lives in <entity type=\"LOCATION\" canonical=\"new_york_city\">New York City</entity> and my parents always get excited when they get to talk to them, showing how important it is to them.\n\n\"<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Stay connected!</entity>\""
+  "tagged_text": "I notice that there is a large gap between the percentage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> reaching out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> versus <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> reaching out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. I also notice that the smallest gap between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>, is also the smallest percentage for contacting <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>, which was <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting in person</entity>.\n\nI wonder what the <entity type=\"TIME_REFERENCE\" canonical=\"age_range\">age range</entity> is for the graph given, is it more <entity type=\"OTHER_ENTITY\" canonical=\"college_aged_people\" subtype=\"group\">college aged</entity> young adults, or young adults in their twenties. I also wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" modality=\"questioned\">women</entity> are more inclined to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" modality=\"questioned\">parents</entity>, is it because they are on their <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"technology\" modality=\"questioned\">phones</entity> more? Do those who visit their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" modality=\"questioned\">parents</entity> live closer to home and are out of <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" modality=\"questioned\">college</entity>?\n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because it shows that our generation should be reaching out to our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more often and it is important to stay in contact with your <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> and other <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\">family</entity> members. I have 2 <entity type=\"OTHER_ENTITY\" canonical=\"brother\" subtype=\"person\" speaker_context=\"true\">brothers</entity>, one in <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college</entity>, and one who lives in <entity type=\"LOCATION\" canonical=\"new_york_city\">New York City</entity> and my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> always get excited when they get to talk to them, showing how important it is to them.\n\n\"Stay connected!\""
 }

@@ -7,7 +7,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
       "surface": "gasoline",
       "type": "DATA_VAR_LEVEL",
       "canonical": "oil_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -39,25 +39,11 @@
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 122,
       "end": 134,
       "id": "e2"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 1,
-      "start": 522,
-      "end": 534,
-      "id": "e3"
     },
     {
       "surface": "fossil fuel",
@@ -67,39 +53,39 @@
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 687,
-      "end": 698,
-      "id": "e4"
+      "start": 203,
+      "end": 214,
+      "id": "e3"
     },
     {
       "surface": "companies",
       "type": "OTHER_ENTITY",
-      "canonical": "company",
+      "canonical": "companies",
       "subtype": "organization",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e5"
+      "start": 243,
+      "end": 252,
+      "id": "e4"
     },
     {
       "surface": "activists",
       "type": "OTHER_ENTITY",
       "canonical": "activists",
-      "subtype": "organization",
+      "subtype": "group",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
+      "start": 292,
+      "end": 301,
+      "id": "e5"
     },
     {
       "surface": "clean energy",
@@ -107,12 +93,25 @@
       "canonical": "clean",
       "var": "power_category",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 333,
+      "end": 345,
+      "id": "e6"
+    },
+    {
+      "surface": "electricities",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 453,
+      "end": 466,
       "id": "e7"
     },
     {
@@ -124,8 +123,8 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 474,
+      "end": 479,
       "id": "e8"
     },
     {
@@ -136,24 +135,38 @@
       "section": "numbered_point",
       "modality": "hypothetical",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 522,
+      "end": 534,
       "id": "e9"
     },
     {
-      "surface": "Fossil Fuel Use Trumps Clean Fuels",
+      "surface": "resources",
       "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "canonical": "resources",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "hypothetical",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 564,
+      "end": 573,
+      "id": "e10"
+    },
+    {
+      "surface": "Fossil Fuel Use Trumps Clean Fuels",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
+      "start": 687,
+      "end": 721,
+      "id": "e11"
     }
   ],
   "unresolved_mentions": [],
@@ -179,5 +192,5 @@
       "text": "What's going on in this graph? Write a catchy headline that captures the graph's main idea.\n\"Fossil Fuel Use Trumps Clean Fuels\""
     }
   ],
-  "tagged_text": "1. What do you notice? \nI notice that there has been an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"numbered_point\">coal</entity> usage as well as <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\" section=\"numbered_point\">gasoline</entity>, which both fall under <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\">fossil fuels</entity>. \n2. What do you wonder?\nI wonder how there has been an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\" modality=\"questioned\">fossil fuel</entity> use, when there is a lot of <entity type=\"OTHER_ENTITY\" canonical=\"company\" subtype=\"organization\" section=\"numbered_point\" modality=\"questioned\">companies</entity> working against harmful fuel usage and <entity type=\"OTHER_ENTITY\" canonical=\"activists\" subtype=\"organization\" section=\"numbered_point\" modality=\"questioned\">activists</entity> in support of transitioning to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"numbered_point\" modality=\"questioned\">clean energy</entity>. \n3. What impact does this have on you and your community?\nThis shows the popularity of different types of electricities in the <entity type=\"LOCATION\" canonical=\"world\" section=\"numbered_point\">world</entity> and what the trends show. If our abuse of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\" modality=\"hypothetical\">fossil fuels</entity> continue, we will be without resources and unprepared. \n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\n\"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Fossil Fuel Use Trumps Clean Fuels</entity>\""
+  "tagged_text": "1. What do you notice? \nI notice that there has been an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> usage as well as <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\">gasoline</entity>, which both fall under <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>. \n2. What do you wonder?\nI wonder how there has been an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuel</entity> use, when there is a lot of <entity type=\"OTHER_ENTITY\" canonical=\"companies\" subtype=\"organization\">companies</entity> working against harmful fuel usage and <entity type=\"OTHER_ENTITY\" canonical=\"activists\" subtype=\"group\">activists</entity> in support of transitioning to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>. \n3. What impact does this have on you and your community?\nThis shows the popularity of different types of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricities</entity> in the <entity type=\"LOCATION\" canonical=\"world\">world</entity> and what the trends show. If our abuse of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"hypothetical\">fossil fuels</entity> continue, we will be without <entity type=\"OTHER_ENTITY\" canonical=\"resources\" subtype=\"other\" modality=\"hypothetical\">resources</entity> and unprepared. \n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\n\"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Fossil Fuel Use Trumps Clean Fuels</entity>\""
 }

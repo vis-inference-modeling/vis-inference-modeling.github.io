@@ -4,19 +4,6 @@
   "raw_comment": "The first thing that popped out to me about these graphs was the sheer amount of energy generation produced by China. In just the coal industry, China uses more energy than the US uses in all industries combined. Another thing that interested me was the steady proportion of nuclear energy throughout the years. Nuclear power has gone through many recent developments making it extremely less dangerous for the environment, but those advancements aren't reflected in its usage. With issues such as clean energy, I wonder how strongly connotations surrounding certain types of energy effect their usage on large scales. Wind and solar energy appears to be the \"least\" clean form of clean energy according to the graphs, but among the three main types of clean energy, it is the only form that has seen a large increase in usage over time. Though it could also be due to the fact that nuclear and hydroelectric plants both require large amounts of space and infrastructure in order to construct and maintain. \nBeing informed about this information is very important because of the prevalence of energy discussions. Hearing debates and making conclusions from there is an incomplete way of developing a strategy for energy moving forward. By seeing how much each country relies on each form of energy, you are better equipped to talk about how those infrastructures could be changed to better the world going forward.\nTitle: How the US has Moved Away from Coal Energy.",
   "entities": [
     {
-      "surface": "graphs",
-      "type": "CHART_ELEMENT",
-      "canonical": "graphs",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 50,
-      "end": 56,
-      "id": "e0"
-    },
-    {
       "surface": "energy generation",
       "type": "DATA_VAR",
       "canonical": "electricity_generation",
@@ -27,7 +14,7 @@
       "occurrence_index": 0,
       "start": 81,
       "end": 98,
-      "id": "e1"
+      "id": "e0"
     },
     {
       "surface": "China",
@@ -41,7 +28,7 @@
       "occurrence_index": 0,
       "start": 111,
       "end": 116,
-      "id": "e2"
+      "id": "e1"
     },
     {
       "surface": "China",
@@ -55,21 +42,7 @@
       "occurrence_index": 1,
       "start": 145,
       "end": 150,
-      "id": "e3"
-    },
-    {
-      "surface": "coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1453,
-      "end": 1457,
-      "id": "e4"
+      "id": "e2"
     },
     {
       "surface": "energy",
@@ -80,23 +53,9 @@
       "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 1458,
-      "end": 1464,
-      "id": "e5"
-    },
-    {
-      "surface": "China",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e6"
+      "start": 161,
+      "end": 167,
+      "id": "e3"
     },
     {
       "surface": "energy",
@@ -107,9 +66,9 @@
       "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e7"
+      "start": 283,
+      "end": 289,
+      "id": "e4"
     },
     {
       "surface": "energy",
@@ -120,9 +79,22 @@
       "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e8"
+      "start": 504,
+      "end": 510,
+      "id": "e5"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 3,
+      "start": 576,
+      "end": 582,
+      "id": "e6"
     },
     {
       "surface": "US",
@@ -134,23 +106,23 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
+      "start": 1430,
+      "end": 1432,
+      "id": "e7"
     },
     {
       "surface": "nuclear energy",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e8"
     },
     {
       "surface": "years",
@@ -163,21 +135,21 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e9"
     },
     {
       "surface": "Nuclear power",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e10"
     },
     {
       "surface": "environment",
@@ -191,6 +163,34 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e13"
     },
     {
@@ -201,47 +201,47 @@
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
+      "terminology_drift": true,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e14"
     },
     {
-      "surface": "clean energy",
+      "surface": "Wind and solar energy",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
+      "terminology_drift": true,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e15"
     },
     {
-      "surface": "clean energy",
+      "surface": "nuclear",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "canonical": "nuclear",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e16"
     },
     {
-      "surface": "wind and solar energy",
+      "surface": "hydroelectric",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source_generation_type",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -250,38 +250,23 @@
       "id": "e17"
     },
     {
-      "surface": "hydroelectric",
+      "surface": "country",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
+      "canonical": "china",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e18"
     },
     {
-      "surface": "country",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "country",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
-    },
-    {
       "surface": "How the US has Moved Away from Coal Energy.",
-      "type": "OTHER_ENTITY",
-      "canonical": "how_the_us_has_moved_away_from_coal_energy",
-      "subtype": "other",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -289,7 +274,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e19"
     }
   ],
   "unresolved_mentions": [],
@@ -297,7 +282,12 @@
     {
       "section": "body",
       "text": "The first thing that popped out to me about these graphs was the sheer amount of energy generation produced by China. In just the coal industry, China uses more energy than the US uses in all industries combined. Another thing that interested me was the steady proportion of nuclear energy throughout the years. Nuclear power has gone through many recent developments making it extremely less dangerous for the environment, but those advancements aren't reflected in its usage. With issues such as clean energy, I wonder how strongly connotations surrounding certain types of energy effect their usage on large scales. Wind and solar energy appears to be the \"least\" clean form of clean energy according to the graphs, but among the three main types of clean energy, it is the only form that has seen a large increase in usage over time. Though it could also be due to the fact that nuclear and hydroelectric plants both require large amounts of space and infrastructure in order to construct and maintain. \nBeing informed about this information is very important because of the prevalence of energy discussions. Hearing debates and making conclusions from there is an incomplete way of developing a strategy for energy moving forward. By seeing how much each country relies on each form of energy, you are better equipped to talk about how those infrastructures could be changed to better the world going forward.\nTitle: How the US has Moved Away from Coal Energy."
+    },
+    {
+      "section": "headline",
+      "label": "How the US has Moved Away from Coal Energy.",
+      "text": "How the US has Moved Away from Coal Energy."
     }
   ],
-  "tagged_text": "The first thing that popped out to me about these <entity type=\"CHART_ELEMENT\" canonical=\"graphs\" section=\"body\">graphs</entity> was the sheer amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy generation</entity> produced by <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity>. In just the <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">coal</entity> industry, <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> uses more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">US</entity> uses in all industries combined. Another thing that interested me was the steady proportion of <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\" section=\"body\">nuclear energy</entity> throughout the <entity type=\"TIME_REFERENCE\" canonical=\"years\" section=\"body\">years</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\" section=\"body\">Nuclear power</entity> has gone through many recent developments making it extremely less dangerous for the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"body\">environment</entity>, but those advancements aren't reflected in its usage. With issues such as <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity>, I wonder how strongly connotations surrounding certain types of <entity type=\"DATA_VAR\" canonical=\"energy_source\" section=\"body\">energy</entity> effect their usage on large scales. <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\" section=\"body\">Wind and solar energy</entity> appears to be the \"least\" clean form of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity> according to the graphs, but among the three main types of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity>, it is the only form that has seen a large increase in usage over time. Though it could also be due to the fact that <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\" section=\"body\">nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\" section=\"body\">hydroelectric</entity> plants both require large amounts of space and infrastructure in order to construct and maintain. \nBeing informed about this information is very important because of the prevalence of <entity type=\"DATA_VAR\" canonical=\"energy_source\" section=\"body\">energy</entity> discussions. Hearing debates and making conclusions from there is an incomplete way of developing a strategy for <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy</entity> moving forward. By seeing how much each <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\" section=\"body\">country</entity> relies on each form of <entity type=\"DATA_VAR\" canonical=\"energy_source\" section=\"body\">energy</entity>, you are better equipped to talk about how those infrastructures could be changed to better the world going forward.\nTitle: <entity type=\"OTHER_ENTITY\" canonical=\"how_the_us_has_moved_away_from_coal_energy\" subtype=\"other\" section=\"headline\">How the US has Moved Away from Coal Energy.</entity>"
+  "tagged_text": "The first thing that popped out to me about these graphs was the sheer amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy generation</entity> produced by <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>. In just the coal industry, <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> uses more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> uses in all industries combined. Another thing that interested me was the steady proportion of <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear energy</entity> throughout the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">Nuclear power</entity> has gone through many recent developments making it extremely less dangerous for the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity>, but those advancements aren't reflected in its usage. With issues such as <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>, I wonder how strongly connotations surrounding certain types of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> effect their usage on large scales. <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">Wind and solar energy</entity> appears to be the \"least\" clean form of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> according to the graphs, but among the three main types of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>, it is the only form that has seen a large increase in usage over time. Though it could also be due to the fact that <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\">hydroelectric</entity> plants both require large amounts of space and infrastructure in order to construct and maintain. \nBeing informed about this information is very important because of the prevalence of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> discussions. Hearing debates and making conclusions from there is an incomplete way of developing a strategy for <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> moving forward. By seeing how much each <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">country</entity> relies on each form of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity>, you are better equipped to talk about how those infrastructures could be changed to better the world going forward.\nTitle: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">How the US has Moved Away from Coal Energy.</entity>"
 }

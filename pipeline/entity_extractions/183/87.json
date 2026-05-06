@@ -31,8 +31,9 @@
     },
     {
       "surface": "texting",
-      "type": "OTHER_ENTITY",
-      "canonical": "texting",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -43,9 +44,24 @@
       "id": "e2"
     },
     {
+      "surface": "calling",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 757,
+      "end": 764,
+      "id": "e3"
+    },
+    {
       "surface": "technology",
       "type": "OTHER_ENTITY",
       "canonical": "technology",
+      "subtype": "technology",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -53,90 +69,54 @@
       "occurrence_index": 0,
       "start": 824,
       "end": 834,
-      "id": "e3"
+      "id": "e4"
     },
     {
       "surface": "young adult woman",
       "type": "OTHER_ENTITY",
-      "canonical": "young_adult_woman",
+      "canonical": "young_adult",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 874,
       "end": 891,
-      "id": "e4"
-    },
-    {
-      "surface": "my parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 905,
-      "end": 915,
       "id": "e5"
     },
     {
-      "surface": "some of my peers",
+      "surface": "peers",
       "type": "OTHER_ENTITY",
       "canonical": "my_peers",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 939,
-      "end": 955,
-      "id": "e6"
-    },
-    {
-      "surface": "family connection",
-      "type": "OTHER_ENTITY",
-      "canonical": "family_connections_in_the_digital_age",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 966,
-      "end": 983,
-      "id": "e7"
-    },
-    {
-      "surface": "all genders",
-      "type": "OTHER_ENTITY",
-      "canonical": "all_genders",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1001,
-      "end": 1012,
-      "id": "e8"
+      "start": 950,
+      "end": 955,
+      "id": "e6"
     },
     {
       "surface": "Family Connections in the Digital Age",
       "type": "CHART_ELEMENT",
       "canonical": "family_connections_in_the_digital_age",
-      "section": "body",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 1039,
       "end": 1076,
-      "id": "e9"
+      "id": "e7"
     },
     {
-      "surface": "young adults",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_adults",
+      "surface": "young women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -144,12 +124,41 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "young women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "young women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
       "id": "e10"
     },
     {
-      "surface": "young adults",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_adults",
+      "surface": "texting",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -160,134 +169,18 @@
       "id": "e11"
     },
     {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "their_parents",
+      "surface": "calling",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e12"
-    },
-    {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "their_parents",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "their_parents",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "their_parents",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "young women",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_women",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "young women",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_women",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
-      "surface": "texting or calling",
-      "type": "OTHER_ENTITY",
-      "canonical": "texting_or_calling",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "young men",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_men",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "young men",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_men",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e20"
-    },
-    {
-      "surface": "texting",
-      "type": "OTHER_ENTITY",
-      "canonical": "texting",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e21"
     },
     {
       "surface": "25%",
@@ -300,7 +193,49 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e13"
+    },
+    {
+      "surface": "young men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "young men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "visit",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e16"
     },
     {
       "surface": "35-45",
@@ -313,12 +248,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
+      "id": "e17"
     },
     {
       "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -326,25 +262,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
-    },
-    {
-      "surface": "biological reason",
-      "type": "OTHER_ENTITY",
-      "canonical": "biological_reason",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e25"
+      "id": "e18"
     },
     {
       "surface": "technology",
       "type": "OTHER_ENTITY",
       "canonical": "technology",
+      "subtype": "technology",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -352,58 +276,37 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e26"
-    },
-    {
-      "surface": "our communication",
-      "type": "OTHER_ENTITY",
-      "canonical": "communication",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e27"
-    },
-    {
-      "surface": "texting and calling",
-      "type": "OTHER_ENTITY",
-      "canonical": "texting_and_calling",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e28"
+      "id": "e19"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "young women",
-      "reason": "Could be a chart category or general demographic mention; no chart-specific reference list is available."
+      "surface": "young adults",
+      "reason": "Population reference not explicitly listed as a canonical level."
     },
     {
-      "surface": "young men",
-      "reason": "Could be a chart category or general demographic mention; no chart-specific reference list is available."
+      "surface": "parents",
+      "reason": "Generic relational noun; not clearly one of the listed entities."
     },
     {
-      "surface": "women",
-      "reason": "General demographic mention; no confirmed canonical level in the article dictionary."
+      "surface": "biological reason",
+      "reason": "Abstract causal concept, but not a confirmed canonical entity."
     },
     {
-      "surface": "family connection",
-      "reason": "Likely refers to family-related communication, but the exact canonical entity is uncertain."
+      "surface": "my parents",
+      "reason": "Possessive relational phrase; could be speaker-context family reference, but no confirmed canonical ID in the provided list."
     }
   ],
   "section_segments": [
     {
       "section": "body",
       "text": "The graph displays the percentage of young adults who reach out to their parents. I noticed that young women reach out by texting or calling their parents almost 25% more than young men do. I also noticed that young women visit their parents in person slightly more than young men do. Overall, it appears that texting is the most common form of communication between young adults and their parents. I wonder how these percentages change when young adults move into the 35-45 age range. I also wonder why women tend to reach out to their parents more often and if there is a biological reason for it. \n\nI found this graph interesting because technology seems to impact our communication with parents. I wonder if we are more connected because of texting and calling, or less connected because we can live farther away due to technology. I found this interesting because as a young adult woman, I often see my parents more often compared to some of my peers. Overall, family connection is important for all genders so a good title could be \"Family Connections in the Digital Age\"."
+    },
+    {
+      "section": "headline",
+      "label": "a good title could be",
+      "text": "\"Family Connections in the Digital Age\""
     }
   ],
-  "tagged_text": "The graph displays the percentage of young adults who reach out to their parents. I noticed that young women reach out by texting or calling their parents almost 25% more than young men do. I also noticed that young women visit their parents in person slightly more than young men do. Overall, it appears that texting is the most common form of communication between young adults and their parents. I wonder how these percentages change when young adults move into the 35-45 age range. I also wonder why women tend to reach out to their parents more often and if there is a biological reason for it. \n\nI found this graph interesting because technology seems to impact our communication with parents. I wonder if we are more connected because of texting and calling, or less connected because we can live farther away due to technology. I found this interesting because as a young adult woman, I often see my parents more often compared to some of my peers. Overall, family connection is important for all genders so a good title could be \"Family Connections in the Digital Age\"."
+  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> displays the percentage of young adults who reach out to their parents. I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> reach out by <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calling</entity> their parents almost <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\">25%</entity> more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> do. I also noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit</entity> their parents in person slightly more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> do. Overall, it appears that <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> is the most common form of communication between young adults and their parents. I wonder how these percentages change when young adults move into the <entity type=\"TIME_REFERENCE\" canonical=\"35_45\">35-45</entity> age range. I also wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> tend to reach out to their parents more often and if there is a biological reason for it. \n\nI found this graph interesting because <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\">technology</entity> seems to impact our communication with parents. I wonder if we are more connected because of texting and calling, or less connected because we can live farther away due to technology. I found this interesting because as a <entity type=\"OTHER_ENTITY\" canonical=\"young_adult\" subtype=\"person\" speaker_context=\"true\">young adult woman</entity>, I often see my parents more often compared to some of my <entity type=\"OTHER_ENTITY\" canonical=\"my_peers\" subtype=\"group\" speaker_context=\"true\">peers</entity>. Overall, family connection is important for all genders so a good title could be \"<entity type=\"CHART_ELEMENT\" canonical=\"family_connections_in_the_digital_age\" section=\"headline\">Family Connections in the Digital Age</entity>\"."
 }

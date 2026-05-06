@@ -32,6 +32,19 @@
       "id": "e1"
     },
     {
+      "surface": "The World is Changing Fast",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 140,
+      "end": 166,
+      "id": "e2"
+    },
+    {
       "surface": "fossil fuel",
       "type": "DATA_VAR_LEVEL",
       "canonical": "fossil",
@@ -43,13 +56,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e2"
+      "id": "e3"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "The World is Changing Fast",
-      "reason": "Looks like a headline/title, but it is not in the confirmed headline dictionary and may be a novel title rather than a chart element or other entity."
+      "surface": "make a change",
+      "reason": "Vague abstract phrase; could imply policy or action but no clear entity referent."
     }
   ],
   "section_segments": [
@@ -63,5 +76,5 @@
       "text": "The World is Changing Fast"
     }
   ],
-  "tagged_text": "I notice that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is decreasing.\n\nI wonder how we can make a change.\n\nThis shows us the usage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuel</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>.\n\nCatchy Headline\nThe World is Changing Fast"
+  "tagged_text": "I notice that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is decreasing.\n\nI wonder how we can make a change.\n\nThis shows us the usage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuel</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>.\n\nCatchy Headline\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">The World is Changing Fast</entity>"
 }

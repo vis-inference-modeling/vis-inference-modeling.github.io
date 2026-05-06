@@ -30,17 +30,73 @@
       "id": "e1"
     },
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
+      "surface": "young women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 577,
+      "end": 588,
+      "id": "e2"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 628,
+      "end": 635,
+      "id": "e3"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 832,
+      "end": 839,
+      "id": "e4"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 2,
-      "start": 1019,
-      "end": 1024,
-      "id": "e2"
+      "start": 946,
+      "end": 953,
+      "id": "e5"
+    },
+    {
+      "surface": "gender",
+      "type": "DATA_VAR",
+      "canonical": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 965,
+      "end": 971,
+      "id": "e6"
     },
     {
       "surface": "y-axis",
@@ -53,65 +109,13 @@
       "occurrence_index": 0,
       "start": 1043,
       "end": 1049,
-      "id": "e3"
-    },
-    {
-      "surface": "percentages",
-      "type": "UNIT",
-      "canonical": "percentages",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1159,
-      "end": 1170,
-      "id": "e4"
-    },
-    {
-      "surface": "counts",
-      "type": "UNIT",
-      "canonical": "count",
-      "section": "body",
-      "modality": "hypothetical",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1213,
-      "end": 1219,
-      "id": "e5"
-    },
-    {
-      "surface": "means",
-      "type": "OTHER_ENTITY",
-      "canonical": "means",
-      "section": "body",
-      "modality": "hypothetical",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1223,
-      "end": 1228,
-      "id": "e6"
-    },
-    {
-      "surface": "ratios",
-      "type": "OTHER_ENTITY",
-      "canonical": "ratios",
-      "section": "body",
-      "modality": "hypothetical",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1232,
-      "end": 1238,
       "id": "e7"
     },
     {
       "surface": "What's the Go-To for Parents and Adult Kids to Stay Connected?",
       "type": "CHART_ELEMENT",
-      "canonical": "whats_the_go_to_for_parents_and_adult_kids_to_stay_connected",
-      "section": "body",
+      "canonical": "title",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -122,47 +126,37 @@
     },
     {
       "surface": "young women",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "young women",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "young men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e10"
     },
     {
       "surface": "young men",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_men",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "young men",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -170,38 +164,55 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e11"
     },
     {
-      "surface": "at least once a week",
-      "type": "TIME_REFERENCE",
-      "canonical": "at_least_once_a_week",
+      "surface": "text messaging",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "in-person visits",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e13"
     },
     {
-      "surface": "at least once a week",
-      "type": "TIME_REFERENCE",
-      "canonical": "at_least_once_a_week",
+      "surface": "50%",
+      "type": "OTHER_ENTITY",
+      "canonical": "50_percent",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e14"
     },
     {
-      "surface": "text messaging",
-      "type": "OTHER_ENTITY",
-      "canonical": "text_messaging",
+      "surface": "text",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -212,9 +223,10 @@
       "id": "e15"
     },
     {
-      "surface": "in-person visits",
-      "type": "OTHER_ENTITY",
-      "canonical": "in_person_visits",
+      "surface": "call",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -225,9 +237,10 @@
       "id": "e16"
     },
     {
-      "surface": "less than 50%",
-      "type": "TIME_REFERENCE",
-      "canonical": "50_percent",
+      "surface": "in person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -238,9 +251,9 @@
       "id": "e17"
     },
     {
-      "surface": "text",
-      "type": "OTHER_ENTITY",
-      "canonical": "text",
+      "surface": "title",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -251,12 +264,13 @@
       "id": "e18"
     },
     {
-      "surface": "call",
+      "surface": "community",
       "type": "OTHER_ENTITY",
-      "canonical": "call",
+      "canonical": "community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -264,9 +278,10 @@
       "id": "e19"
     },
     {
-      "surface": "in person",
+      "surface": "college students",
       "type": "OTHER_ENTITY",
-      "canonical": "in_person",
+      "canonical": "college_students",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -277,9 +292,10 @@
       "id": "e20"
     },
     {
-      "surface": "the question under the title of the graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "question_under_title",
+      "surface": "family",
+      "type": "OTHER_ENTITY",
+      "canonical": "family",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -288,139 +304,36 @@
       "start": null,
       "end": null,
       "id": "e21"
-    },
-    {
-      "surface": "their children's lives",
-      "type": "OTHER_ENTITY",
-      "canonical": "children_lives",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e22"
-    },
-    {
-      "surface": "female children's",
-      "type": "OTHER_ENTITY",
-      "canonical": "female",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e23"
-    },
-    {
-      "surface": "their male counterparts",
-      "type": "OTHER_ENTITY",
-      "canonical": "their_male_counterparts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e24"
-    },
-    {
-      "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e25"
-    },
-    {
-      "surface": "college students",
-      "type": "OTHER_ENTITY",
-      "canonical": "college_students",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e26"
-    },
-    {
-      "surface": "our parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "our_parents",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e27"
-    },
-    {
-      "surface": "everyday",
-      "type": "TIME_REFERENCE",
-      "canonical": "everyday",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e28"
-    },
-    {
-      "surface": "family dynamics",
-      "type": "OTHER_ENTITY",
-      "canonical": "family",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e29"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "young women",
-      "reason": "Could be a chart category or general demographic mention; no chart-specific reference list is available."
-    },
-    {
-      "surface": "young men",
-      "reason": "Could be a chart category or general demographic mention; no chart-specific reference list is available."
+      "surface": "children's lives",
+      "reason": "Generic relational phrase; not a distinct entity."
     },
     {
       "surface": "women",
-      "reason": "Ambiguous between the chart demographic and a general reference; tagged as OTHER_ENTITY due to lack of confirmed canonical level."
+      "reason": "Likely refers to young_women, but the surface is generic and not explicitly chart-specific."
     },
     {
-      "surface": "female children's",
-      "reason": "Likely refers to female children, but the exact canonical entity is unclear."
+      "surface": "their male counterparts",
+      "reason": "Likely refers to young men, but phrasing is indirect."
     },
     {
-      "surface": "family dynamics",
-      "reason": "Could map to a broader family-related entity, but no exact canonical ID is confirmed."
+      "surface": "counts or means or ratios",
+      "reason": "Statistical terms, not entities in the reference list."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "The graph shows that a higher percent of young women contact their parents at least once a week than young men do. Higher percentages of both genders seem to use text messaging the most and in-person visits the least. It surprised me that less than 50% of young men reach out to a parent at least once a week via text, call, or in person. The question under the title of the graph is \"How involved are parents in their children's lives?\". I wonder if higher percentages of women contact their parents more because parents are more involved in their female children's lives, if young women have stronger relationships with their parents than their male counterparts, or if women are simply better at communicating and staying in touch. This relates to our community because for most college students we are no longer living with our parents and seeing them everyday. Everyone has different family dynamics that affect how often they contact their parents, but maybe gender is a part of this too. What makes this  a good graph to it putting the y-axis label horizontally which makes the graph easier to read. Another aspect of the graph I like is how they used percentages to compare the data. Had the authors used counts or means or ratios, the viewer would have had to more interpretations of their own to figure out the story the graph is telling us. Catchy Headlines: \"What's the Go-To for Parents and Adult Kids to Stay Connected?\""
+      "text": "The graph shows that a higher percent of young women contact their parents at least once a week than young men do. Higher percentages of both genders seem to use text messaging the most and in-person visits the least. It surprised me that less than 50% of young men reach out to a parent at least once a week via text, call, or in person. The question under the title of the graph is \"How involved are parents in their children's lives?\". I wonder if higher percentages of women contact their parents more because parents are more involved in their female children's lives, if young women have stronger relationships with their parents than their male counterparts, or if women are simply better at communicating and staying in touch. This relates to our community because for most college students we are no longer living with our parents and seeing them everyday. Everyone has different family dynamics that affect how often they contact their parents, but maybe gender is a part of this too. What makes this  a good graph to it putting the y-axis label horizontally which makes the graph easier to read. Another aspect of the graph I like is how they used percentages to compare the data. Had the authors used counts or means or ratios, the viewer would have had to more interpretations of their own to figure out the story the graph is telling us."
+    },
+    {
+      "section": "headline",
+      "label": "Catchy Headlines",
+      "text": "\"What's the Go-To for Parents and Adult Kids to Stay Connected?\""
     }
   ],
-  "tagged_text": "The graph shows that a higher percent of young women contact their parents at least once a week than young men do. Higher percentages of both genders seem to use text messaging the most and in-person visits the least. It surprised me that less than 50% of young men reach out to a parent at least once a week via text, call, or in person. The question under the title of the graph is \"How involved are parents in their children's lives?\". I wonder if higher percentages of women contact their parents more because parents are more involved in their female children's lives, if young women have stronger relationships with their parents than their male counterparts, or if women are simply better at communicating and staying in touch. This relates to our community because for most college students we are no longer living with our parents and seeing them everyday. Everyone has different family dynamics that affect how often they contact their parents, but maybe gender is a part of this too. What makes this  a good graph to it putting the y-axis label horizontally which makes the graph easier to read. Another aspect of the graph I like is how they used percentages to compare the data. Had the authors used counts or means or ratios, the viewer would have had to more interpretations of their own to figure out the story the graph is telling us. Catchy Headlines: \"What's the Go-To for Parents and Adult Kids to Stay Connected?\""
+  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows that a higher percent of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> contact their parents at least once a week than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> do. Higher percentages of both genders seem to use <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text messaging</entity> the most and <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">in-person visits</entity> the least. It surprised me that less than <entity type=\"OTHER_ENTITY\" canonical=\"50_percent\" subtype=\"other\">50%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> reach out to a parent at least once a week via <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">call</entity>, or <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">in person</entity>. The question under the <entity type=\"CHART_ELEMENT\" canonical=\"title\">title</entity> of the graph is \"How involved are <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> in their children's lives?\". I wonder if higher percentages of women contact their parents more because <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> are more involved in their female children's lives, if young women have stronger relationships with their parents than their male counterparts, or if women are simply better at communicating and staying in touch. This relates to our <entity type=\"OTHER_ENTITY\" canonical=\"community\" subtype=\"group\">community</entity> because for most <entity type=\"OTHER_ENTITY\" canonical=\"college_students\" subtype=\"group\">college students</entity> we are no longer living with our parents and seeing them everyday. Everyone has different <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\">family</entity> dynamics that affect how often they contact their parents, but maybe <entity type=\"DATA_VAR\" canonical=\"gender_group\">gender</entity> is a part of this too. What makes this  a good graph to it putting the <entity type=\"CHART_ELEMENT\" canonical=\"y_axis\">y-axis</entity> label horizontally which makes the graph easier to read. Another aspect of the graph I like is how they used percentages to compare the data. Had the authors used counts or means or ratios, the viewer would have had to more interpretations of their own to figure out the story the graph is telling us. Catchy Headlines: \"What's the Go-To for Parents and Adult Kids to Stay Connected?\""
 }

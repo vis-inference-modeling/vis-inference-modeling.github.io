@@ -75,7 +75,7 @@
       "surface": "wind and solar power",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -106,11 +106,39 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 303,
       "end": 315,
       "id": "e7"
+    },
+    {
+      "surface": "businesses",
+      "type": "OTHER_ENTITY",
+      "canonical": "companies",
+      "subtype": "organization",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 339,
+      "end": 349,
+      "id": "e8"
+    },
+    {
+      "surface": "campaigners",
+      "type": "OTHER_ENTITY",
+      "canonical": "campaigners",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 396,
+      "end": 407,
+      "id": "e9"
     },
     {
       "surface": "renewable energy",
@@ -124,12 +152,13 @@
       "occurrence_index": 0,
       "start": 434,
       "end": 450,
-      "id": "e8"
+      "id": "e10"
     },
     {
       "surface": "my community",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -137,12 +166,12 @@
       "occurrence_index": 0,
       "start": 504,
       "end": 516,
-      "id": "e9"
+      "id": "e11"
     },
     {
       "surface": "myself",
       "type": "OTHER_ENTITY",
-      "canonical": "self",
+      "canonical": "speaker_self",
       "subtype": "person",
       "section": "body",
       "modality": "asserted",
@@ -151,20 +180,7 @@
       "occurrence_index": 0,
       "start": 521,
       "end": 527,
-      "id": "e10"
-    },
-    {
-      "surface": "electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 552,
-      "end": 563,
-      "id": "e11"
+      "id": "e12"
     },
     {
       "surface": "clean energy",
@@ -178,12 +194,12 @@
       "occurrence_index": 0,
       "start": 635,
       "end": 647,
-      "id": "e12"
+      "id": "e13"
     },
     {
       "surface": "How Is the Global Electricity Supply Changing?",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -191,13 +207,14 @@
       "occurrence_index": 0,
       "start": 650,
       "end": 696,
-      "id": "e13"
+      "id": "e14"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "Compared to the US and India, I've seen that China's rise in power generation has been far greater. Globally, there has been a consistent rise in the production of energy, with wind and solar power growing in importance since 2010. \n\nI find it hard to understand why there has been a rise in the use of fossil fuels when there are so many businesses fighting to reduce the use of these fuels and campaigners pushing for the switch to renewable energy.\n\nThis has an effect since it raises awareness among my community and myself about the source of our electricity and may encourage lobbying for a greater emphasis on the generation of clean energy."
     },
     {
@@ -206,5 +223,5 @@
       "text": "How Is the Global Electricity Supply Changing?"
     }
   ],
-  "tagged_text": "Compared to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>, I've seen that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China's</entity> rise in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">power generation</entity> has been far greater. Globally, there has been a consistent rise in the production of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity>, with <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind and solar power</entity> growing in importance <entity type=\"TIME_REFERENCE\" canonical=\"since_2010\">since 2010</entity>. \n\nI find it hard to understand why there has been a rise in the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> when there are so many businesses fighting to reduce the use of these fuels and campaigners pushing for the switch to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">renewable energy</entity>.\n\nThis has an effect since it raises awareness among <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"self\" subtype=\"person\" speaker_context=\"true\">myself</entity> about the source of our <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> and may encourage lobbying for a greater emphasis on the generation of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>.\n\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">How Is the Global Electricity Supply Changing?</entity>"
+  "tagged_text": "Compared to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>, I've seen that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China's</entity> rise in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">power generation</entity> has been far greater. Globally, there has been a consistent rise in the production of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity>, with <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">wind and solar power</entity> growing in importance <entity type=\"TIME_REFERENCE\" canonical=\"since_2010\">since 2010</entity>. \n\nI find it hard to understand why there has been a rise in the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> when there are so many <entity type=\"OTHER_ENTITY\" canonical=\"companies\" subtype=\"organization\">businesses</entity> fighting to reduce the use of these fuels and <entity type=\"OTHER_ENTITY\" canonical=\"campaigners\" subtype=\"group\">campaigners</entity> pushing for the switch to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">renewable energy</entity>.\n\nThis has an effect since it raises awareness among <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_self\" subtype=\"person\" speaker_context=\"true\">myself</entity> about the source of our electricity and may encourage lobbying for a greater emphasis on the generation of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">How Is the Global Electricity Supply Changing?</entity>"
 }

@@ -43,30 +43,17 @@
       "id": "e2"
     },
     {
-      "surface": "year",
-      "type": "DATA_VAR",
-      "canonical": "year",
+      "surface": "year 2000",
+      "type": "TIME_REFERENCE",
+      "canonical": "year_2000",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 58,
-      "end": 62,
-      "id": "e3"
-    },
-    {
-      "surface": "2000",
-      "type": "TIME_REFERENCE",
-      "canonical": "2000",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 63,
       "end": 67,
-      "id": "e4"
+      "id": "e3"
     },
     {
       "surface": "2020",
@@ -79,7 +66,7 @@
       "occurrence_index": 0,
       "start": 83,
       "end": 87,
-      "id": "e5"
+      "id": "e4"
     },
     {
       "surface": "clean",
@@ -93,7 +80,7 @@
       "occurrence_index": 0,
       "start": 114,
       "end": 119,
-      "id": "e6"
+      "id": "e5"
     },
     {
       "surface": "fossil",
@@ -107,13 +94,13 @@
       "occurrence_index": 0,
       "start": 126,
       "end": 132,
-      "id": "e7"
+      "id": "e6"
     },
     {
       "surface": "Coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -121,77 +108,175 @@
       "occurrence_index": 0,
       "start": 135,
       "end": 139,
-      "id": "e8"
-    },
-    {
-      "surface": "Coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 315,
-      "end": 319,
-      "id": "e9"
+      "id": "e7"
     },
     {
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 361,
-      "end": 364,
+      "start": 141,
+      "end": 144,
+      "id": "e8"
+    },
+    {
+      "surface": "oil and other fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "oil_and_other",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 146,
+      "end": 172,
+      "id": "e9"
+    },
+    {
+      "surface": "nuclear",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nuclear",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 199,
+      "end": 206,
       "id": "e10"
     },
     {
-      "surface": "wind and solar energy",
+      "surface": "hydroelectric and other",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 385,
-      "end": 406,
+      "start": 208,
+      "end": 231,
       "id": "e11"
     },
     {
       "surface": "wind and solar energy",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 509,
-      "end": 530,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 385,
+      "end": 406,
       "id": "e12"
     },
     {
-      "surface": "renewable energy",
+      "surface": "wind and solar energy",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 509,
+      "end": 530,
+      "id": "e13"
+    },
+    {
+      "surface": "technological advancements",
+      "type": "OTHER_ENTITY",
+      "canonical": "technological_advancements",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 544,
+      "end": 570,
+      "id": "e14"
+    },
+    {
+      "surface": "economic factors",
+      "type": "OTHER_ENTITY",
+      "canonical": "economic_factors",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 572,
+      "end": 588,
+      "id": "e15"
+    },
+    {
+      "surface": "policy changes",
+      "type": "OTHER_ENTITY",
+      "canonical": "policy_changes",
+      "subtype": "policy",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 593,
+      "end": 607,
+      "id": "e16"
+    },
+    {
+      "surface": "Our community",
+      "type": "OTHER_ENTITY",
+      "canonical": "our_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 756,
+      "end": 769,
+      "id": "e17"
+    },
+    {
+      "surface": "PGE",
+      "type": "OTHER_ENTITY",
+      "canonical": "pge",
+      "subtype": "organization",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 810,
+      "end": 813,
+      "id": "e18"
+    },
+    {
+      "surface": "renewable energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
       "start": 887,
       "end": 903,
-      "id": "e13"
+      "id": "e19"
     },
     {
       "surface": "US",
@@ -205,7 +290,7 @@
       "occurrence_index": 0,
       "start": 940,
       "end": 942,
-      "id": "e14"
+      "id": "e20"
     },
     {
       "surface": "china",
@@ -219,12 +304,12 @@
       "occurrence_index": 0,
       "start": 995,
       "end": 1000,
-      "id": "e15"
+      "id": "e21"
     },
     {
       "surface": "The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -232,104 +317,21 @@
       "occurrence_index": 0,
       "start": 1029,
       "end": 1112,
-      "id": "e16"
-    },
-    {
-      "surface": "gas",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "gas",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
-      "surface": "oil and other fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "oil_and_other",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "nuclear",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "nuclear",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "hydroelectric and other",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e20"
-    },
-    {
-      "surface": "coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e21"
-    },
-    {
-      "surface": "wind and solar energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e22"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "PGE",
-      "reason": "Looks like an organization/company mention, but it is not in the provided dictionary and the exact canonical is uncertain."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "The graph shows the world electricity generation from the year 2000 to just beyond 2020, with sources split into \"clean\" and \"fossil\". Coal, gas, oil and other fossil fuels are represented alongside nuclear, hydroelectric and other clean sources such as wind and solar energy. There's a visible trend showing a decline in coal use, a relatively steady production from gas, and an increase in wind and solar energy generation over time.\n\nI'm curious about what is behind the decline in coal usage and the increase in wind and solar energy. It could be technological advancements, economic factors, or policy changes. \n\n\nThis trend reflects a global shift towards more sustainable energy sources which could be influencing local energy policies and infrastructure. Our community is experiencing changes in energy costs(PGE keeps going up!),  so this may reflect,. or be shifted by an increase in renewable energy. It was interesting to see that the US is relatively stagnant for clean energy compared to china.\n\nI would call this graph, \"The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix\""
+      "label": "",
+      "text": "The graph shows the world electricity generation from the year 2000 to just beyond 2020, with sources split into \"clean\" and \"fossil\". Coal, gas, oil and other fossil fuels are represented alongside nuclear, hydroelectric and other clean sources such as wind and solar. There's a visible trend showing a decline in coal use, a relatively steady production from gas, and an increase in wind and solar energy generation over time.\n\nI'm curious about what is behind the decline in coal usage and the increase in wind and solar energy. It could be technological advancements, economic factors, or policy changes. \n\n\nThis trend reflects a global shift towards more sustainable energy sources which could be influencing local energy policies and infrastructure. Our community is experiencing changes in energy costs(PGE keeps going up!),  so this may reflect,. or be shifted by an increase in renewable energy. It was interesting to see that the US is relatively stagnant for clean energy compared to china."
+    },
+    {
+      "section": "headline",
+      "label": "The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix",
+      "text": "I would call this graph, \"The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix\""
     }
   ],
-  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the <entity type=\"LOCATION\" canonical=\"world\">world</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> from the <entity type=\"TIME_REFERENCE\" canonical=\"year\">year</entity> <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity> to just beyond <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity>, with sources split into \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity>\" and \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil</entity>\". <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">Coal</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\">oil and other fossil fuels</entity> are represented alongside <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">hydroelectric and other</entity> clean sources such as <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind and solar energy</entity>. There's a visible trend showing a decline in <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> use, a relatively steady production from <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity>, and an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind and solar energy</entity> generation over time.\n\nI'm curious about what is behind the decline in <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" modality=\"questioned\">coal</entity> usage and the increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\" modality=\"questioned\">wind and solar energy</entity>. It could be technological advancements, economic factors, or policy changes. \n\n\nThis trend reflects a global shift towards more sustainable energy sources which could be influencing local energy policies and infrastructure. Our community is experiencing changes in energy costs(PGE keeps going up!),  so this may reflect,. or be shifted by an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\">renewable energy</entity>. It was interesting to see that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is relatively stagnant for clean energy compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">china</entity>.\n\nI would call this graph, \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix</entity>\""
+  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the <entity type=\"LOCATION\" canonical=\"world\">world</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> from the <entity type=\"TIME_REFERENCE\" canonical=\"year_2000\">year 2000</entity> to just beyond <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity>, with sources split into \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity>\" and \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil</entity>\". <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">Coal</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\">oil and other fossil fuels</entity> are represented alongside <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\">hydroelectric and other</entity> clean sources such as <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">wind and solar energy</entity>. There's a visible trend showing a decline in coal use, a relatively steady production from gas, and an increase in wind and solar energy generation over time.\n\nI'm curious about what is behind the decline in coal usage and the increase in wind and solar energy. It could be <entity type=\"OTHER_ENTITY\" canonical=\"technological_advancements\" subtype=\"concept\">technological advancements</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"economic_factors\" subtype=\"concept\">economic factors</entity>, or <entity type=\"OTHER_ENTITY\" canonical=\"policy_changes\" subtype=\"policy\">policy changes</entity>. \n\n\nThis trend reflects a global shift towards more sustainable energy sources which could be influencing local energy policies and infrastructure. <entity type=\"OTHER_ENTITY\" canonical=\"our_community\" subtype=\"group\" speaker_context=\"true\">Our community</entity> is experiencing changes in energy costs(<entity type=\"OTHER_ENTITY\" canonical=\"pge\" subtype=\"organization\">PGE</entity> keeps going up!),  so this may reflect,. or be shifted by an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">renewable energy</entity>. It was interesting to see that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is relatively stagnant for clean energy compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">china</entity>.\n\nI would call this graph, \"The Rise of Renewables: Wind and Solar Power Surge Forward in the Global Energy Mix\""
 }

@@ -4,6 +4,19 @@
   "raw_comment": "I notice that every category is rapidly increasing over the years. The clean category also seems to be outweighing the fossil category. I also noticed in the other graphs that China has a significantly larger increase in the graph than the United states and India, which is significantly low. I wonder what they can do to end up with only clean power. I'm sure in the long run that would be the goal because it is so much better for our planet. I wonder what it would take to get there though because countries like China have such large amounts of fossil electricity. I think this can relate to money. Like in countries like China, some people have a lot of money and are very wealthy but misuse that money. China is granted large amounts of electricity but still uses a lot of unclean sources. This can be similar to people with a lot of money in our world today and choose not to spend it on anything useful or to help out other people. If I had to make a headline I would make it, “The unfair and uneven spread of resources around our world”.",
   "entities": [
     {
+      "surface": "years",
+      "type": "TIME_REFERENCE",
+      "canonical": "years",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 60,
+      "end": 65,
+      "id": "e0"
+    },
+    {
       "surface": "clean",
       "type": "DATA_VAR_LEVEL",
       "canonical": "clean",
@@ -15,7 +28,21 @@
       "occurrence_index": 0,
       "start": 71,
       "end": 76,
-      "id": "e0"
+      "id": "e1"
+    },
+    {
+      "surface": "clean",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 339,
+      "end": 344,
+      "id": "e2"
     },
     {
       "surface": "fossil",
@@ -27,36 +54,8 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 119,
-      "end": 125,
-      "id": "e1"
-    },
-    {
-      "surface": "China",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 176,
-      "end": 181,
-      "id": "e2"
-    },
-    {
-      "surface": "China",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 516,
-      "end": 521,
+      "start": 549,
+      "end": 555,
       "id": "e3"
     },
     {
@@ -68,7 +67,7 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 0,
       "start": 626,
       "end": 631,
       "id": "e4"
@@ -82,50 +81,80 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 3,
+      "occurrence_index": 1,
       "start": 709,
       "end": 714,
       "id": "e5"
     },
     {
-      "surface": "electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "money",
+      "type": "OTHER_ENTITY",
+      "canonical": "money",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 743,
-      "end": 754,
+      "start": 840,
+      "end": 845,
       "id": "e6"
     },
     {
-      "surface": "unclean sources",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 779,
-      "end": 794,
+      "start": 932,
+      "end": 938,
       "id": "e7"
     },
     {
-      "surface": "our world",
-      "type": "LOCATION",
-      "canonical": "world",
+      "surface": "resources",
+      "type": "OTHER_ENTITY",
+      "canonical": "resources",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 849,
-      "end": 858,
+      "start": 1018,
+      "end": 1027,
       "id": "e8"
+    },
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e10"
     },
     {
       "surface": "United states",
@@ -139,7 +168,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e11"
     },
     {
       "surface": "India",
@@ -153,7 +182,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e12"
     },
     {
       "surface": "clean power",
@@ -167,7 +196,48 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e13"
+    },
+    {
+      "surface": "planet",
+      "type": "LOCATION",
+      "canonical": "earth",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "countries like China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "countries like China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e16"
     },
     {
       "surface": "fossil electricity",
@@ -181,40 +251,70 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
-    }
-  ],
-  "unresolved_mentions": [
-    {
-      "surface": "every category",
-      "reason": "Could refer to multiple chart categories, but no chart-specific reference list is available to map it confidently."
-    },
-    {
-      "surface": "the other graphs",
-      "reason": "Chart element reference, but the exact visualization structure is unclear from the comment alone."
-    },
-    {
-      "surface": "the graph",
-      "reason": "Chart element reference, but no specific chart element canonical is available in the no-reference-list setting."
-    },
-    {
-      "surface": "our planet",
-      "reason": "Could be a rhetorical LOCATION-like reference to Earth, but not confident enough to tag as a location."
+      "id": "e17"
     },
     {
       "surface": "money",
-      "reason": "Generic abstract noun; may be thematically important but not an entity type in the schema."
+      "type": "OTHER_ENTITY",
+      "canonical": "money",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e18"
     },
     {
-      "surface": "resources",
-      "reason": "Generic abstract noun; likely thematic rather than a specific entity."
+      "surface": "money",
+      "type": "OTHER_ENTITY",
+      "canonical": "money",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e21"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "I notice that every category is rapidly increasing over the years. The clean category also seems to be outweighing the fossil category. I also noticed in the other graphs that China has a significantly larger increase in the graph than the United states and India, which is significantly low. I wonder what they can do to end up with only clean power. I'm sure in the long run that would be the goal because it is so much better for our planet. I wonder what it would take to get there though because countries like China have such large amounts of fossil electricity. I think this can relate to money. Like in countries like China, some people have a lot of money and are very wealthy but misuse that money. China is granted large amounts of electricity but still uses a lot of unclean sources. This can be similar to people with a lot of money in our world today and choose not to spend it on anything useful or to help out other people. If I had to make a headline I would make it, “The unfair and uneven spread of resources around our world”."
     }
   ],
-  "tagged_text": "I notice that every category is rapidly increasing over the years. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity> category also seems to be outweighing the <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil</entity> category. I also noticed in the other graphs that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has a significantly larger increase in the graph than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United states</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>, which is significantly low. I wonder what they can do to end up with only <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean power</entity>. I'm sure in the long run that would be the goal because it is so much better for our planet. I wonder what it would take to get there though because countries like <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> have such large amounts of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil electricity</entity>. I think this can relate to money. Like in countries like <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>, some people have a lot of money and are very wealthy but misuse that money. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> is granted large amounts of electricity but still uses a lot of unclean sources. This can be similar to people with a lot of money in our world today and choose not to spend it on anything useful or to help out other people. If I had to make a headline I would make it, “The unfair and uneven spread of resources around our world”."
+  "tagged_text": "I notice that every category is rapidly increasing over the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity>. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity> category also seems to be outweighing the <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil</entity> category. I also noticed in the other graphs that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has a significantly larger increase in the graph than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United states</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>, which is significantly low. I wonder what they can do to end up with only <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean power</entity>. I'm sure in the long run that would be the goal because it is so much better for our <entity type=\"LOCATION\" canonical=\"earth\">planet</entity>. I wonder what it would take to get there though because <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">countries like China</entity> have such large amounts of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil electricity</entity>. I think this can relate to <entity type=\"OTHER_ENTITY\" canonical=\"money\" subtype=\"other\">money</entity>. Like in <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">countries like China</entity>, some people have a lot of <entity type=\"OTHER_ENTITY\" canonical=\"money\" subtype=\"other\">money</entity> and are very wealthy but misuse that <entity type=\"OTHER_ENTITY\" canonical=\"money\" subtype=\"other\">money</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> is granted large amounts of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> but still uses a lot of unclean sources. This can be similar to <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\">people</entity> with a lot of <entity type=\"OTHER_ENTITY\" canonical=\"money\" subtype=\"other\">money</entity> in our <entity type=\"LOCATION\" canonical=\"world\">world</entity> today and choose not to spend it on anything useful or to help out other <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\">people</entity>. If I had to make a headline I would make it, “The unfair and uneven spread of <entity type=\"OTHER_ENTITY\" canonical=\"resources\" subtype=\"other\">resources</entity> around our <entity type=\"LOCATION\" canonical=\"world\">world</entity>”."
 }

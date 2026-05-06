@@ -4,22 +4,10 @@
   "raw_comment": "headline: stop texting and meet your parents more often.",
   "entities": [
     {
-      "surface": "headline",
-      "type": "CHART_ELEMENT",
-      "canonical": "headline",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 0,
-      "end": 8,
-      "id": "e0"
-    },
-    {
       "surface": "texting",
-      "type": "OTHER_ENTITY",
-      "canonical": "texting",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -27,15 +15,10 @@
       "occurrence_index": 0,
       "start": 15,
       "end": 22,
-      "id": "e1"
+      "id": "e0"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "your parents",
-      "reason": "Likely OTHER_ENTITY parents, but the comment is a generic imperative and co-reference tagging is not requested."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "headline",
@@ -43,5 +26,5 @@
       "text": "stop texting and meet your parents more often."
     }
   ],
-  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">headline</entity>: stop <entity type=\"OTHER_ENTITY\" canonical=\"texting\" subtype=\"technology\" section=\"headline\">texting</entity> and meet your parents more often."
+  "tagged_text": "headline: stop <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> and meet your parents more often."
 }

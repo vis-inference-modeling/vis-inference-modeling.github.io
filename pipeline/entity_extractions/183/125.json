@@ -7,6 +7,7 @@
       "surface": "people",
       "type": "OTHER_ENTITY",
       "canonical": "people",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -17,51 +18,41 @@
       "id": "e0"
     },
     {
-      "surface": "the phone",
-      "type": "OTHER_ENTITY",
-      "canonical": "phone",
+      "surface": "phone",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 46,
+      "start": 50,
       "end": 55,
       "id": "e1"
     },
     {
-      "surface": "face to face",
-      "type": "OTHER_ENTITY",
-      "canonical": "face_to_face_interaction",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 82,
-      "end": 94,
-      "id": "e2"
-    },
-    {
-      "surface": "their parents",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 100,
+      "start": 106,
       "end": 113,
-      "id": "e3"
+      "id": "e2"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "In general more people like to just talk over the phone than actually go and talk face to face with their parents."
     }
   ],
-  "tagged_text": "In general more people like to just talk over the phone than actually go and talk face to face with their parents."
+  "tagged_text": "In general more <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">people</entity> like to just talk over the <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">phone</entity> than actually go and talk face to face with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity>."
 }

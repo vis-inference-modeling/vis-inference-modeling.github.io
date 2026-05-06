@@ -46,7 +46,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -60,7 +60,7 @@
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -74,7 +74,7 @@
       "surface": "oil",
       "type": "DATA_VAR_LEVEL",
       "canonical": "oil_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -85,15 +85,15 @@
       "id": "e5"
     },
     {
-      "surface": "past 20 years",
+      "surface": "20 years",
       "type": "TIME_REFERENCE",
-      "canonical": "past_20_years",
+      "canonical": "20_years",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 182,
+      "start": 187,
       "end": 195,
       "id": "e6"
     },
@@ -113,12 +113,12 @@
     {
       "surface": "renewable energy",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 247,
       "end": 263,
@@ -179,15 +179,16 @@
       "id": "e12"
     },
     {
-      "surface": "neighborhood",
-      "type": "LOCATION",
+      "surface": "my neighborhood",
+      "type": "OTHER_ENTITY",
       "canonical": "my_neighborhood",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 517,
+      "start": 514,
       "end": 529,
       "id": "e13"
     },
@@ -232,32 +233,18 @@
       "id": "e16"
     },
     {
-      "surface": "renewable",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 632,
-      "end": 641,
-      "id": "e17"
-    },
-    {
-      "surface": "clean energy sources",
+      "surface": "renewable and clean energy sources",
       "type": "DATA_VAR_LEVEL",
       "canonical": "clean",
       "var": "power_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 646,
+      "start": 632,
       "end": 666,
-      "id": "e18"
+      "id": "e17"
     },
     {
       "surface": "environment",
@@ -271,21 +258,20 @@
       "occurrence_index": 0,
       "start": 693,
       "end": 704,
-      "id": "e19"
+      "id": "e18"
     },
     {
       "surface": "Energizing the Future: Re-purposing Our Energy",
-      "type": "OTHER_ENTITY",
-      "canonical": "energizing_the_future_repurposing_our_energy",
-      "subtype": "other",
-      "section": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 741,
       "end": 787,
-      "id": "e20"
+      "id": "e19"
     },
     {
       "surface": "India",
@@ -299,12 +285,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "countries",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e21"
     },
     {
       "surface": "population",
-      "type": "DATA_VAR",
+      "type": "OTHER_ENTITY",
       "canonical": "population",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -316,8 +317,9 @@
     },
     {
       "surface": "population",
-      "type": "DATA_VAR",
+      "type": "OTHER_ENTITY",
       "canonical": "population",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -326,19 +328,6 @@
       "start": null,
       "end": null,
       "id": "e23"
-    },
-    {
-      "surface": "billion",
-      "type": "TIME_REFERENCE",
-      "canonical": "1_billion",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e24"
     }
   ],
   "unresolved_mentions": [],
@@ -364,5 +353,5 @@
       "text": "Energizing the Future: Re-purposing Our Energy"
     }
   ],
-  "tagged_text": "1-I noticed the overall upward trend in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"numbered_point\">graph</entity> as well as the notable spike in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"numbered_point\">energy usage</entity> that began in <entity type=\"TIME_REFERENCE\" canonical=\"2000\" section=\"numbered_point\">2000</entity>. However, as <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"numbered_point\">coal</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" section=\"numbered_point\">gas</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\" section=\"numbered_point\">oil</entity> have essentially stagnated over the <entity type=\"TIME_REFERENCE\" canonical=\"past_20_years\" section=\"numbered_point\">past 20 years</entity>, the majority of this <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"numbered_point\">energy</entity> growth is coming from <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\" section=\"numbered_point\">renewable energy</entity>.\n2-It is surprising to me that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"numbered_point\">China</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"numbered_point\">US</entity> produce more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"numbered_point\">electricity</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"numbered_point\">India</entity> considering that both countries have about the same <entity type=\"DATA_VAR\" canonical=\"population\" section=\"numbered_point\">population</entity>. How do they provide over a <entity type=\"TIME_REFERENCE\" canonical=\"1_billion\" section=\"numbered_point\">billion</entity> people in their <entity type=\"DATA_VAR\" canonical=\"population\" section=\"numbered_point\">population</entity> with <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"numbered_point\">electricity</entity>?\n3-This worries me and my <entity type=\"LOCATION\" canonical=\"my_neighborhood\" speaker_context=\"true\" section=\"numbered_point\">neighborhood</entity> because it is anticipated that <entity type=\"EVENT\" canonical=\"pollution\" section=\"numbered_point\">pollution</entity> from <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\">fossil fuels</entity> will decline as the <entity type=\"LOCATION\" canonical=\"world\" section=\"numbered_point\">globe</entity> switches to more <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\" section=\"numbered_point\">renewable</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"numbered_point\">clean energy sources</entity>, which is helpful for the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"numbered_point\">environment</entity> and will help all living things. \n4-<entity type=\"OTHER_ENTITY\" canonical=\"energizing_the_future_repurposing_our_energy\" subtype=\"other\" section=\"headline\">Energizing the Future: Re-purposing Our Energy</entity>"
+  "tagged_text": "1-I noticed the overall upward trend in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> as well as the notable spike in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy usage</entity> that began in <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity>. However, as <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\">oil</entity> have essentially stagnated over the past <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20 years</entity>, the majority of this <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> growth is coming from <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">renewable energy</entity>.\n2-It is surprising to me that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> produce more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> considering that both <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">countries</entity> have about the same <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\">population</entity>. How do they provide over a billion people in their <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\">population</entity> with <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>?\n3-This worries me and <entity type=\"OTHER_ENTITY\" canonical=\"my_neighborhood\" subtype=\"other\" speaker_context=\"true\">my neighborhood</entity> because it is anticipated that <entity type=\"EVENT\" canonical=\"pollution\">pollution</entity> from <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> will decline as the <entity type=\"LOCATION\" canonical=\"world\">globe</entity> switches to more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">renewable and clean energy sources</entity>, which is helpful for the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity> and will help all living things. \n4-<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Energizing the Future: Re-purposing Our Energy</entity>"
 }

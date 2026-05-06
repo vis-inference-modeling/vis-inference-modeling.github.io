@@ -60,7 +60,7 @@
       "id": "e3"
     },
     {
-      "surface": "World",
+      "surface": "world",
       "type": "LOCATION",
       "canonical": "world",
       "section": "numbered_point",
@@ -68,36 +68,22 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 369,
-      "end": 374,
+      "start": 341,
+      "end": 346,
       "id": "e4"
     },
     {
-      "surface": "Electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 377,
-      "end": 388,
-      "id": "e5"
-    },
-    {
-      "surface": "Clean",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "surface": "The World's Electricity: Clean or Dirty?",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 390,
-      "end": 395,
-      "id": "e6"
+      "start": 365,
+      "end": 405,
+      "id": "e5"
     },
     {
       "surface": "fossils",
@@ -111,6 +97,20 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e7"
     },
     {
@@ -122,16 +122,28 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e8"
     },
     {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "2020",
+      "type": "TIME_REFERENCE",
+      "canonical": "2020",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "2020",
+      "type": "TIME_REFERENCE",
+      "canonical": "2020",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -139,26 +151,13 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
       "id": "e10"
     },
     {
-      "surface": "2020",
-      "type": "TIME_REFERENCE",
-      "canonical": "2020",
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -169,9 +168,10 @@
       "id": "e11"
     },
     {
-      "surface": "2020",
-      "type": "TIME_REFERENCE",
-      "canonical": "2020",
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -182,10 +182,10 @@
       "id": "e12"
     },
     {
-      "surface": "India",
+      "surface": "coal",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -196,10 +196,10 @@
       "id": "e13"
     },
     {
-      "surface": "India",
+      "surface": "coal",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -210,74 +210,32 @@
       "id": "e14"
     },
     {
-      "surface": "India",
+      "surface": "gas",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
+      "canonical": "gas",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e15"
     },
     {
-      "surface": "coal",
+      "surface": "gas",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
+      "canonical": "gas",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e16"
-    },
-    {
-      "surface": "coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
-      "surface": "gas",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "gas",
-      "var": "energy_source",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "gas",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "gas",
-      "var": "energy_source",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e19"
     },
     {
       "surface": "electricity generation",
@@ -290,7 +248,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e17"
     }
   ],
   "unresolved_mentions": [],
@@ -298,7 +256,7 @@
     {
       "section": "numbered_point",
       "label": "1",
-      "text": "Notice: \n- China has more clean power and fossils than the United States.\n- In 2020, India had more coal than the United States.\n- India barely has gas. "
+      "text": "Notice: \n- China has more clean power and fossils than the United States.\n- In 2020, India had more coal than the United States.\n- India barely has gas."
     },
     {
       "section": "numbered_point",
@@ -308,7 +266,7 @@
     {
       "section": "numbered_point",
       "label": "3",
-      "text": "Story:\n- The change in electricity generation of clean power and fossils around the world. "
+      "text": "Story:\n- The change in electricity generation of clean power and fossils around the world."
     },
     {
       "section": "numbered_point",
@@ -316,5 +274,5 @@
       "text": "Headline:\n- The World's Electricity: Clean or Dirty?"
     }
   ],
-  "tagged_text": "1. Notice: \n- <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"numbered_point\">China</entity> has more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"numbered_point\">clean power</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\">fossils</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"numbered_point\">United States</entity>.\n- In <entity type=\"TIME_REFERENCE\" canonical=\"2020\" section=\"numbered_point\">2020</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"numbered_point\">India</entity> had more <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"numbered_point\">coal</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"numbered_point\">United States</entity>.\n- <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"numbered_point\">India</entity> barely has <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" section=\"numbered_point\">gas</entity>. \n\n2. Wonder:\n- Why is <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"numbered_point\" modality=\"questioned\">India</entity> low on <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" section=\"numbered_point\" modality=\"questioned\">gas</entity>?\n- Why did the <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"numbered_point\" modality=\"questioned\">coal</entity> decline in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"numbered_point\" modality=\"questioned\">United States</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"2020\" section=\"numbered_point\" modality=\"questioned\">2020</entity>?\n\n3. Story:\n- The change in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"numbered_point\">electricity generation</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"numbered_point\">clean power</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\">fossils</entity> around the world. \n\n4. Headline:\n- The <entity type=\"LOCATION\" canonical=\"world\" section=\"headline\">World</entity>'s <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"headline\">Electricity</entity>: <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">Clean</entity> or Dirty?"
+  "tagged_text": "1. Notice: \n- <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean power</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossils</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>.\n- In <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> had more <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>.\n- <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> barely has <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity>. \n\n2. Wonder:\n- Why is <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> low on <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\" modality=\"questioned\">gas</entity>?\n- Why did the <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" modality=\"questioned\">coal</entity> decline in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"2020\" modality=\"questioned\">2020</entity>?\n\n3. Story:\n- The change in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean power</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossils</entity> around the <entity type=\"LOCATION\" canonical=\"world\">world</entity>. \n\n4. Headline:\n- <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">The World's Electricity: Clean or Dirty?</entity>"
 }

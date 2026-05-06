@@ -24,7 +24,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 73,
       "end": 86,
@@ -44,6 +44,47 @@
       "id": "e2"
     },
     {
+      "surface": "world",
+      "type": "LOCATION",
+      "canonical": "world",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 1398,
+      "end": 1403,
+      "id": "e3"
+    },
+    {
+      "surface": "clean sources",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "clean sources",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
       "surface": "fossil fuels",
       "type": "DATA_VAR_LEVEL",
       "canonical": "fossil",
@@ -53,23 +94,23 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 145,
-      "end": 157,
-      "id": "e3"
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "nuclear sources",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 178,
-      "end": 193,
-      "id": "e4"
+      "start": null,
+      "end": null,
+      "id": "e7"
     },
     {
       "surface": "years",
@@ -80,9 +121,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 241,
-      "end": 246,
-      "id": "e5"
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "years",
@@ -93,9 +134,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 1061,
-      "end": 1066,
-      "id": "e6"
+      "start": null,
+      "end": null,
+      "id": "e9"
     },
     {
       "surface": "electricity",
@@ -106,47 +147,6 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1168,
-      "end": 1179,
-      "id": "e7"
-    },
-    {
-      "surface": "clean energy sources",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1218,
-      "end": 1238,
-      "id": "e8"
-    },
-    {
-      "surface": "energy sources",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1224,
-      "end": 1238,
-      "id": "e9"
-    },
-    {
-      "surface": "clean sources",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e10"
@@ -204,22 +204,23 @@
       "id": "e14"
     },
     {
-      "surface": "electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 5,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e15"
     },
     {
-      "surface": "China",
+      "surface": "United States",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
+      "canonical": "united_states",
       "var": "country",
       "section": "body",
       "modality": "asserted",
@@ -239,21 +240,21 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e17"
     },
     {
-      "surface": "United States",
+      "surface": "India",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
+      "canonical": "india",
       "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e18"
@@ -267,7 +268,7 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e19"
@@ -281,7 +282,7 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e20"
@@ -295,21 +296,21 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 3,
       "start": null,
       "end": null,
       "id": "e21"
     },
     {
-      "surface": "India",
+      "surface": "clean energy sources",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
+      "terminology_drift": true,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e22"
@@ -322,7 +323,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": null,
       "end": null,
@@ -330,8 +331,23 @@
     },
     {
       "surface": "country",
-      "type": "DATA_VAR",
-      "canonical": "country",
+      "type": "OTHER_ENTITY",
+      "canonical": "country_economy",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e24"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "population",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -339,29 +355,16 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
-    },
-    {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e25"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
+      "surface": "energy sources",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_sources",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -369,7 +372,7 @@
       "id": "e26"
     },
     {
-      "surface": "fossil fuel usage",
+      "surface": "fossil fuel",
       "type": "DATA_VAR_LEVEL",
       "canonical": "fossil",
       "var": "power_category",
@@ -381,6 +384,19 @@
       "start": null,
       "end": null,
       "id": "e27"
+    },
+    {
+      "surface": "How Different Powers Charge the World",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e28"
     }
   ],
   "unresolved_mentions": [],
@@ -390,5 +406,5 @@
       "text": "After examining the World’s Electricity Generation Graph, I noticed that clean sources produce the most amount of power in the world compared to fossil fuels. More specifically, nuclear sources produce the most overall. Additionally, as the years increase, more and more electricity is being produced from all sources. In the smaller graphs below, I notice that China uses by far the most electricity compared to the United States and India. India produces the least amount of electricity and also uses the least amount of clean energy sources to produce electricity. I wonder if there is a reason as to why India produces the least amount of electricity. India is a very large country with over a billion people, so based on that, I would assume that India would be one of the countries that produces the most amount of electricity. The impact that this has on me and my community is making me wonder how much electricity I use daily and what kind of energy sources produce my electricity. Although, when observing the United States graph I notice that as the years increase, fossil fuel usage decreases. I am pointing this out because based on this observation, the electricity I use is more likely to be powered by clean energy sources. After looking at the main graph and the sub-graphs of the other countries, a catchy “headline” that captures these graphs is “How Different Powers Charge the World”."
     }
   ],
-  "tagged_text": "After examining the <entity type=\"CHART_ELEMENT\" canonical=\"world_electricity_generation_graph\">World’s Electricity Generation Graph</entity>, I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean sources</entity> produce the most amount of power in the <entity type=\"LOCATION\" canonical=\"world\">world</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>. More specifically, <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear sources</entity> produce the most overall. Additionally, as the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity> increase, more and more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> is being produced from all sources. In the smaller graphs below, I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> uses by far the most <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> compared to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> produces the least amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> and also uses the least amount of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy sources</entity> to produce <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>. I wonder if there is a reason as to why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> produces the least amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> is a very large <entity type=\"DATA_VAR\" canonical=\"country\">country</entity> with over a billion people, so based on that, I would assume that <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> would be one of the countries that produces the most amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity</entity>. The impact that this has on <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> is making me wonder how much <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> I use daily and what kind of <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy sources</entity> produce my <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>. Although, when observing the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> graph I notice that as the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity> increase, <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuel usage</entity> decreases. I am pointing this out because based on this observation, the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> I use is more likely to be powered by <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy sources</entity>. After looking at the main graph and the sub-graphs of the other countries, a catchy “headline” that captures these graphs is “How Different Powers Charge the World”."
+  "tagged_text": "After examining the <entity type=\"CHART_ELEMENT\" canonical=\"world_electricity_generation_graph\">World’s Electricity Generation Graph</entity>, I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean sources</entity> produce the most amount of power in the <entity type=\"LOCATION\" canonical=\"world\">world</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>. More specifically, <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear sources</entity> produce the most overall. Additionally, as the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity> increase, more and more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> is being produced from all sources. In the smaller graphs below, I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> uses by far the most <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> compared to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> produces the least amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> and also uses the least amount of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy sources</entity> to produce <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>. I wonder if there is a reason as to why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> produces the least amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> is a very large <entity type=\"OTHER_ENTITY\" canonical=\"country_economy\" subtype=\"concept\">country</entity> with over a billion <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\">people</entity>, so based on that, I would assume that <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> would be one of the countries that produces the most amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity</entity>. The impact that this has on me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> is making me wonder how much <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> I use daily and what kind of <entity type=\"energy_source_generation_type\" canonical=\"energy_sources\" subtype=\"other\">energy sources</entity> produce my <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>. Although, when observing the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> graph I notice that as the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity> increase, <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuel</entity> usage decreases. I am pointing this out because based on this observation, the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> I use is more likely to be powered by <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy sources</entity>. After looking at the main graph and the sub-graphs of the other countries, a catchy “headline” that captures these graphs is “How Different Powers Charge the <entity type=\"LOCATION\" canonical=\"world\">World</entity>”."
 }

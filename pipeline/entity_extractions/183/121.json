@@ -30,22 +30,24 @@
       "id": "e1"
     },
     {
-      "surface": "I",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
+      "surface": "younger women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 307,
-      "end": 308,
+      "start": null,
+      "end": null,
       "id": "e2"
     },
     {
-      "surface": "younger women",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "young_women",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -56,9 +58,10 @@
       "id": "e3"
     },
     {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
+      "surface": "young men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -69,24 +72,26 @@
       "id": "e4"
     },
     {
-      "surface": "their parents",
+      "surface": "parenting styles",
       "type": "OTHER_ENTITY",
-      "canonical": "parents",
+      "canonical": "parenting_styles",
+      "subtype": "concept",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e5"
     },
     {
-      "surface": "young men",
+      "surface": "kids",
       "type": "OTHER_ENTITY",
-      "canonical": "young_men",
+      "canonical": "kids",
+      "subtype": "group",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -95,25 +100,27 @@
       "id": "e6"
     },
     {
-      "surface": "I",
+      "surface": "humans",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker",
+      "canonical": "humans",
+      "subtype": "group",
       "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
+      "modality": "questioned",
+      "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e7"
     },
     {
-      "surface": "I wonder",
+      "surface": "family",
       "type": "OTHER_ENTITY",
-      "canonical": "questioned",
+      "canonical": "family",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -121,22 +128,10 @@
       "id": "e8"
     },
     {
-      "surface": "I wonder",
-      "type": "OTHER_ENTITY",
-      "canonical": "questioned",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
       "surface": "our community",
-      "type": "LOCATION",
-      "canonical": "our_community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": true,
@@ -144,28 +139,16 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e9"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "parenting styles",
-      "reason": "Could be an explanatory factor, but no confirmed canonical entity in the provided dictionary."
-    },
-    {
-      "surface": "how kids were brought up",
-      "reason": "Could refer to upbringing, but no exact canonical match provided."
-    },
-    {
-      "surface": "the way humans adapt and grow away from their closest family",
-      "reason": "Abstract causal phrase; not a clear entity type."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "This graph demonstrates that younger women are more likely to reach out to their parents than young men, I wonder why that is? Is it parenting styles, or how kids were brought up, or is it just the way humans adapt and grow away from their closest family? I wonder in our community how accurate this graph will actually be?"
     }
   ],
-  "tagged_text": "This graph demonstrates that younger women are more likely to reach out to their parents than young men, I wonder why that is? Is it parenting styles, or how kids were brought up, or is it just the way humans adapt and grow away from their closest family? I wonder in our community how accurate this graph will actually be?"
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> demonstrates that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">younger women</entity> are more likely to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young men</entity>, I wonder why that is? Is it <entity type=\"OTHER_ENTITY\" canonical=\"parenting_styles\" subtype=\"concept\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parenting styles</entity>, or how <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">kids</entity> were brought up, or is it just the way <entity type=\"OTHER_ENTITY\" canonical=\"humans\" subtype=\"group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">humans</entity> adapt and grow away from their closest <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">family</entity>? I wonder in <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" modality=\"questioned\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">our community</entity> how accurate this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> will actually be?"
 }

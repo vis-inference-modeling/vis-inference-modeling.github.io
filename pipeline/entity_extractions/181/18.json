@@ -6,7 +6,7 @@
     {
       "surface": "graph",
       "type": "CHART_ELEMENT",
-      "canonical": "graph",
+      "canonical": "world_electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -19,7 +19,7 @@
     {
       "surface": "graph",
       "type": "CHART_ELEMENT",
-      "canonical": "graph",
+      "canonical": "world_electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -30,16 +30,16 @@
       "id": "e1"
     },
     {
-      "surface": "Electricity Generation",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "world_electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1422,
-      "end": 1444,
+      "occurrence_index": 2,
+      "start": 1231,
+      "end": 1236,
       "id": "e2"
     },
     {
@@ -57,9 +57,9 @@
       "id": "e3"
     },
     {
-      "surface": "World's",
-      "type": "LOCATION",
-      "canonical": "world",
+      "surface": "World's Electricity Generation",
+      "type": "CHART_ELEMENT",
+      "canonical": "world_electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -89,7 +89,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
@@ -102,39 +102,13 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e7"
     },
     {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
       "surface": "clean",
       "type": "DATA_VAR_LEVEL",
       "canonical": "clean",
@@ -146,7 +120,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e8"
     },
     {
       "surface": "clean",
@@ -160,7 +134,7 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e9"
     },
     {
       "surface": "fossil",
@@ -174,12 +148,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e10"
     },
     {
       "surface": "gigawatt hours",
       "type": "UNIT",
-      "canonical": "gigawatt_hours",
+      "canonical": "million_gigawatt_hours",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -187,7 +161,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e11"
     },
     {
       "surface": "fossil electricity",
@@ -201,7 +175,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e12"
     },
     {
       "surface": "fossil electricity",
@@ -215,13 +189,41 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e13"
     },
     {
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "oil",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "oil_and_other",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -232,38 +234,10 @@
       "id": "e16"
     },
     {
-      "surface": "oil",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "oil_and_other",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -271,7 +245,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e17"
     },
     {
       "surface": "global warming crisis",
@@ -284,7 +258,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e18"
     },
     {
       "surface": "fossil fuels",
@@ -298,7 +272,21 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e21"
+      "id": "e19"
+    },
+    {
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
     },
     {
       "surface": "since 2000",
@@ -311,13 +299,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e21"
     },
     {
       "surface": "wind and solar",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -325,7 +313,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
+      "id": "e22"
     },
     {
       "surface": "climate change",
@@ -338,34 +326,21 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
-    },
-    {
-      "surface": "past couple of years",
-      "type": "TIME_REFERENCE",
-      "canonical": "past_20_years",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e25"
+      "id": "e23"
     },
     {
       "surface": "renewable energy",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e26"
+      "id": "e24"
     },
     {
       "surface": "solar panels",
@@ -379,17 +354,45 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e27"
+      "id": "e25"
     },
     {
       "surface": "graphs",
       "type": "CHART_ELEMENT",
-      "canonical": "graphs",
+      "canonical": "graph",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e26"
+    },
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e27"
+    },
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e28"
@@ -403,54 +406,12 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e29"
     },
     {
-      "surface": "China",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e30"
-    },
-    {
-      "surface": "China",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e31"
-    },
-    {
-      "surface": "China",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": null,
-      "end": null,
-      "id": "e32"
-    },
-    {
       "surface": "India",
       "type": "DATA_VAR_LEVEL",
       "canonical": "india",
@@ -462,7 +423,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e33"
+      "id": "e30"
     },
     {
       "surface": "India",
@@ -476,27 +437,69 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e34"
-    },
-    {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e35"
+      "id": "e31"
     },
     {
       "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
       "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e32"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e33"
+    },
+    {
+      "surface": "population",
+      "type": "OTHER_ENTITY",
+      "canonical": "population",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e34"
+    },
+    {
+      "surface": "population",
+      "type": "OTHER_ENTITY",
+      "canonical": "population",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e35"
+    },
+    {
+      "surface": "industrialized",
+      "type": "OTHER_ENTITY",
+      "canonical": "industrialized",
+      "subtype": "concept",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -507,57 +510,31 @@
       "id": "e36"
     },
     {
-      "surface": "U.S.",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "factories",
+      "type": "OTHER_ENTITY",
+      "canonical": "factories",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e37"
     },
     {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
+      "surface": "air quality and pollution",
+      "type": "EVENT",
+      "canonical": "air_pollution",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e38"
-    },
-    {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e39"
-    },
-    {
-      "surface": "pollution",
-      "type": "EVENT",
-      "canonical": "pollution",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e40"
     },
     {
       "surface": "fossil electricity",
@@ -571,13 +548,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e41"
+      "id": "e39"
     },
     {
       "surface": "The Future is Clean!",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -585,15 +561,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e42"
+      "id": "e40"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "This graph shows the World's Electricity Generation from 2000-2022, specifies where this energy is derived from, and if that energy is clean or fossil. I notice that there are more gigawatt hours of fossil electricity such as gas, oil, and coal than clean electricity. This is expected given the global warming crisis that we are currently facing as a result of these fossil fuels being emitted into the air in order to generate electricity. However, I also noticed that clean energy has significantly increased since 2000, especially wind and solar electricity which faced a significant increase. As climate change has become a more real and pressing issue over the past couple of years, there has been a bigger push to use renewable energy such as putting solar panels on your roof. The more specific graphs demonstrate electric generation in countries like China, India, and the U.S. I noticed that China used significantly more electricity than India even though they have the same population. China also generates most of its electricity through coal. This makes sense considering how industrialized China is and how many factories it needs to upkeep. I can infer this is why China has such bad air quality and pollution. The graph of the U.S. concerns me because while our population is much less than India's, we still use more electricity than them. I wonder what other innovations we will develop to limit fossil electricity generation.\n\"The Future is Clean!\""
+      "text": "This graph shows the World's Electricity Generation from 2000-2022, specifies where this energy is derived from, and if that energy is clean or fossil. I notice that there are more gigawatt hours of fossil electricity such as gas, oil, and coal than clean electricity. This is expected given the global warming crisis that we are currently facing as a result of these fossil fuels being emitted into the air in order to generate electricity. However, I also noticed that clean energy has significantly increased since 2000, especially wind and solar electricity which faced a significant increase. As climate change has become a more real and pressing issue over the past couple of years, there has been a bigger push to use renewable energy such as putting solar panels on your roof. The more specific graphs demonstrate electric generation in countries like China, India, and the U.S. I noticed that China used significantly more electricity than India even though they have the same population. China also generates most of its electricity through coal. This makes sense considering how industrialized China is and how many factories it needs to upkeep. I can infer this is why China has such bad air quality and pollution. The graph of the U.S. concerns me because while our population is much less than India's, we still use more electricity than them. I wonder what other innovations we will develop to limit fossil electricity generation."
+    },
+    {
+      "section": "headline",
+      "label": "The Future is Clean!",
+      "text": "The Future is Clean!"
     }
   ],
-  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the <entity type=\"LOCATION\" canonical=\"world\">World's</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">Electricity Generation</entity> from <entity type=\"TIME_REFERENCE\" canonical=\"2000_2022\">2000-2022</entity>, specifies where this <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> is derived from, and if that <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> is <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil</entity>. I notice that there are more <entity type=\"UNIT\" canonical=\"gigawatt_hours\">gigawatt hours</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil electricity</entity> such as <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\">oil</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean electricity</entity>. This is expected given the <entity type=\"EVENT\" canonical=\"global_warming_crisis\">global warming crisis</entity> that we are currently facing as a result of these <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> being emitted into the air in order to generate <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>. However, I also noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> has significantly increased <entity type=\"TIME_REFERENCE\" canonical=\"since_2000\">since 2000</entity>, especially <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind and solar</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> which faced a significant increase. As <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> has become a more real and pressing issue over the <entity type=\"TIME_REFERENCE\" canonical=\"past_20_years\">past couple of years</entity>, there has been a bigger push to use <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\">renewable energy</entity> such as putting <entity type=\"OTHER_ENTITY\" canonical=\"solar_panels\" subtype=\"technology\">solar panels</entity> on your roof. The more specific <entity type=\"CHART_ELEMENT\" canonical=\"graphs\">graphs</entity> demonstrate electric generation in <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>, and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity>. I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> used significantly more <entity type=\"DATA_VAR\">electricity</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> even though they have the same <entity type=\"DATA_VAR\" canonical=\"population\">population</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> also generates most of its <entity type=\"DATA_VAR\">electricity</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity>. This makes sense considering how industrialized <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> is and how many factories it needs to upkeep. I can infer this is why <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has such bad air quality and <entity type=\"EVENT\" canonical=\"pollution\">pollution</entity>. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> concerns me because while our <entity type=\"DATA_VAR\" canonical=\"population\">population</entity> is much less than <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>'s, we still use more <entity type=\"DATA_VAR\">electricity</entity> than them. I wonder what other innovations we will develop to limit <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil electricity</entity> generation.\n\"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">The Future is Clean!</entity>\""
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"world_electricity_generation\" section=\"body\">graph</entity> shows the <entity type=\"CHART_ELEMENT\" canonical=\"world_electricity_generation\" section=\"body\">World's Electricity Generation</entity> from <entity type=\"TIME_REFERENCE\" canonical=\"2000_2022\" section=\"body\">2000-2022</entity>, specifies where this <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy</entity> is derived from, and if that <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy</entity> is <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil</entity>. I notice that there are more <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\" section=\"body\">gigawatt hours</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil electricity</entity> such as <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\" section=\"body\">gas</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\" section=\"body\">oil</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\">coal</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean electricity</entity>. This is expected given the <entity type=\"EVENT\" canonical=\"global_warming_crisis\" section=\"body\">global warming crisis</entity> that we are currently facing as a result of these <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> being emitted into the air in order to generate <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity>. However, I also noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity> has significantly increased <entity type=\"TIME_REFERENCE\" canonical=\"since_2000\" section=\"body\">since 2000</entity>, especially <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" section=\"body\">wind and solar</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity> which faced a significant increase. As <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">climate change</entity> has become a more real and pressing issue over the past couple of years, there has been a bigger push to use <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">renewable energy</entity> such as putting <entity type=\"OTHER_ENTITY\" canonical=\"solar_panels\" subtype=\"technology\" section=\"body\">solar panels</entity> on your roof. The more specific <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graphs</entity> demonstrate electric generation in <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India</entity>, and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">U.S.</entity>. I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> used significantly more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India</entity> even though they have the same <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\" section=\"body\">population</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> also generates most of its <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\">coal</entity>. This makes sense considering how <entity type=\"OTHER_ENTITY\" canonical=\"industrialized\" subtype=\"concept\" section=\"body\">industrialized</entity> China is and how many <entity type=\"OTHER_ENTITY\" canonical=\"factories\" subtype=\"other\" section=\"body\">factories</entity> it needs to upkeep. I can infer this is why China has such bad <entity type=\"EVENT\" canonical=\"air_pollution\" section=\"body\">air quality and pollution</entity>. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">U.S.</entity> concerns me because while our <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\" section=\"body\">population</entity> is much less than India's, we still use more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity> than them. I wonder what other innovations we will develop to limit <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\" modality=\"questioned\">fossil electricity</entity> generation.\n\"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">The Future is Clean!</entity>\""
 }

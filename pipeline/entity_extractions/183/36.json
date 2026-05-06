@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "young women",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
+      "var": "gender_group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,8 +19,9 @@
     },
     {
       "surface": "young women",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
+      "var": "gender_group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -30,22 +32,38 @@
       "id": "e1"
     },
     {
-      "surface": "high school",
+      "surface": "kids",
       "type": "OTHER_ENTITY",
-      "canonical": "high_school",
+      "canonical": "kids",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 398,
+      "end": 402,
+      "id": "e2"
+    },
+    {
+      "surface": "high school",
+      "type": "OTHER_ENTITY",
+      "canonical": "high_school",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
       "start": 409,
       "end": 420,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "parents",
+      "canonical": "my_parents",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -53,12 +71,13 @@
       "occurrence_index": 0,
       "start": 449,
       "end": 456,
-      "id": "e3"
+      "id": "e4"
     },
     {
       "surface": "teenagers",
       "type": "OTHER_ENTITY",
       "canonical": "teenagers",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -66,12 +85,13 @@
       "occurrence_index": 0,
       "start": 564,
       "end": 573,
-      "id": "e4"
+      "id": "e5"
     },
     {
       "surface": "young men",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_men",
+      "var": "gender_group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -79,12 +99,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e5"
+      "id": "e6"
     },
     {
       "surface": "visits in person",
-      "type": "OTHER_ENTITY",
-      "canonical": "in_person_visit",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
@@ -92,15 +113,10 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e7"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "there parents",
-      "reason": "Likely means 'their parents', but the surface form is misspelled and not explicitly in the dictionary."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "numbered_point",
@@ -123,5 +139,5 @@
       "text": "What's going on in this graph? Write a catchy headline that captures the graph's main idea.\nHow much do teenagers reach out to there parents for help?"
     }
   ],
-  "tagged_text": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\nI noticed that in all three categories, <entity type=\"OTHER_ENTITY\" canonical=\"young_women\">young women</entity> reach out more than <entity type=\"OTHER_ENTITY\" canonical=\"young_men\">young men</entity>.\n2. What do you wonder?\nWhy is it that <entity type=\"OTHER_ENTITY\" canonical=\"in_person_visit\">visits in person</entity> are in the least common form and why do <entity type=\"OTHER_ENTITY\" canonical=\"young_women\">young women</entity> usually reach out more?\n3. What impact does this have on you and your community?\nThis impacts all of the kids in my <entity type=\"OTHER_ENTITY\" canonical=\"high_school\">high school</entity>, and when I reach out to my <entity type=\"OTHER_ENTITY\" canonical=\"parents\">parents</entity>\n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\nHow much do <entity type=\"OTHER_ENTITY\" canonical=\"teenagers\">teenagers</entity> reach out to there parents for help?"
+  "tagged_text": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\nI noticed that in all three categories, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> reach out more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>.\n2. What do you wonder?\nWhy is it that <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visits in person</entity> are in the least common form and why do <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> usually reach out more?\n3. What impact does this have on you and your community?\nThis impacts all of the <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\">kids</entity> in my <entity type=\"OTHER_ENTITY\" canonical=\"high_school\" subtype=\"other\" speaker_context=\"true\">high school</entity>, and when I reach out to my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>\n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\nHow much do <entity type=\"OTHER_ENTITY\" canonical=\"teenagers\" subtype=\"group\">teenagers</entity> reach out to there parents for help?"
 }

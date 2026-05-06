@@ -47,8 +47,8 @@
     {
       "surface": "environment",
       "type": "OTHER_ENTITY",
-      "canonical": "environment",
-      "subtype": "other",
+      "canonical": "our_environment",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -59,22 +59,22 @@
       "id": "e3"
     },
     {
-      "surface": "years",
+      "surface": "years to come",
       "type": "TIME_REFERENCE",
-      "canonical": "years",
+      "canonical": "years_to_come",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 449,
-      "end": 454,
+      "end": 462,
       "id": "e4"
     },
     {
       "surface": "ENERGY",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -91,25 +91,11 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "renewable resources",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e6"
     },
     {
       "surface": "2024",
@@ -122,13 +108,26 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e7"
     },
     {
       "surface": "solar energy",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "solar",
-      "var": "energy_source",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "2000",
+      "type": "TIME_REFERENCE",
+      "canonical": "since_2000",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -139,9 +138,10 @@
       "id": "e9"
     },
     {
-      "surface": "since 2000",
-      "type": "TIME_REFERENCE",
-      "canonical": "since_2000",
+      "surface": "Oil",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "oil_and_other",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -152,10 +152,10 @@
       "id": "e10"
     },
     {
-      "surface": "Oil",
+      "surface": "Hydroelectric",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "oil_and_other",
-      "var": "energy_source",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -166,12 +166,12 @@
       "id": "e11"
     },
     {
-      "surface": "Hydroelectric",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
+      "surface": "resource",
+      "type": "OTHER_ENTITY",
+      "canonical": "resource",
+      "subtype": "other",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -180,9 +180,10 @@
       "id": "e12"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
+      "surface": "community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -211,13 +212,13 @@
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice that fossil fuels are still the most used electricity resource, even with the amount of renewable resources available in 2024. I notice that solar energy has significantly increased since 2000. Oil and Hydroelectric have stayed steady, and I wonder if that is because of their limited capacities as a resource or their accessibility. This applies to my community because the use of fossil fuels can impact the earth and our environment for years to come."
+      "text": "I notice that fossil fuels are still the most used electricity resource, even with the amount of renewable resources available in 2024. I notice that solar energy has significantly increased since 2000. Oil and Hydroelectric have stayed steady, and I wonder if that is because of their limited capacities as a resource or their accessibility. This applies to my community because the use of fossil fuels can impact the earth and our environment for years to come. \nname : \"ENERGY\""
     },
     {
       "section": "headline",
-      "label": "name",
-      "text": "\"ENERGY\""
+      "label": "ENERGY",
+      "text": "ENERGY"
     }
   ],
-  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> are still the most used <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> resource, even with the amount of <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\">renewable resources</entity> available in <entity type=\"TIME_REFERENCE\" canonical=\"2024\">2024</entity>. I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"solar\" var=\"energy_source\">solar energy</entity> has significantly increased <entity type=\"TIME_REFERENCE\" canonical=\"since_2000\">since 2000</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\">Oil</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">Hydroelectric</entity> have stayed steady, and I wonder if that is because of their limited capacities as a resource or their accessibility. This applies to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> can impact the <entity type=\"LOCATION\" canonical=\"earth\">earth</entity> and our <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity> for <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity> to come. \nname : \"<entity type=\"DATA_VAR\" canonical=\"energy_source\" section=\"headline\">ENERGY</entity>\""
+  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> are still the most used <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity> resource, even with the amount of renewable resources available in <entity type=\"TIME_REFERENCE\" canonical=\"2024\" section=\"body\">2024</entity>. I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" section=\"body\">solar energy</entity> has significantly increased since <entity type=\"TIME_REFERENCE\" canonical=\"since_2000\" section=\"body\">2000</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\" section=\"body\">Oil</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\" section=\"body\">Hydroelectric</entity> have stayed steady, and I wonder if that is because of their limited capacities as a <entity type=\"OTHER_ENTITY\" canonical=\"resource\" subtype=\"other\" section=\"body\" modality=\"questioned\">resource</entity> or their accessibility. This applies to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" section=\"body\" speaker_context=\"true\">community</entity> because the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> can impact the <entity type=\"LOCATION\" canonical=\"earth\" section=\"body\">earth</entity> and our <entity type=\"OTHER_ENTITY\" canonical=\"our_environment\" subtype=\"group\" section=\"body\">environment</entity> for <entity type=\"TIME_REFERENCE\" canonical=\"years_to_come\" section=\"body\">years to come</entity>. \nname : \"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">ENERGY</entity>\""
 }

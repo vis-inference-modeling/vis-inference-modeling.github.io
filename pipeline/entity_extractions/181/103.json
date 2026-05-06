@@ -18,30 +18,18 @@
       "id": "e0"
     },
     {
-      "surface": "electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 102,
-      "end": 113,
-      "id": "e1"
-    },
-    {
-      "surface": "electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 218,
-      "end": 229,
-      "id": "e2"
+      "start": 302,
+      "end": 314,
+      "id": "e1"
     },
     {
       "surface": "energy usage",
@@ -50,30 +38,31 @@
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 359,
       "end": 371,
-      "id": "e3"
+      "id": "e2"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
+      "surface": "community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 390,
+      "start": 393,
       "end": 402,
-      "id": "e4"
+      "id": "e3"
     },
     {
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -81,35 +70,35 @@
       "occurrence_index": 0,
       "start": 427,
       "end": 430,
-      "id": "e5"
+      "id": "e4"
     },
     {
       "surface": "wind farms",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "type": "OTHER_ENTITY",
+      "canonical": "wind_farms",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 449,
       "end": 459,
-      "id": "e6"
+      "id": "e5"
     },
     {
       "surface": "solar farms",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "type": "OTHER_ENTITY",
+      "canonical": "solar_farms",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 464,
       "end": 475,
-      "id": "e7"
+      "id": "e6"
     },
     {
       "surface": "World",
@@ -122,12 +111,25 @@
       "occurrence_index": 0,
       "start": 541,
       "end": 546,
+      "id": "e7"
+    },
+    {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e8"
     },
     {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
+      "surface": "years",
+      "type": "TIME_REFERENCE",
+      "canonical": "years",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -136,6 +138,47 @@
       "start": null,
       "end": null,
       "id": "e9"
+    },
+    {
+      "surface": "years",
+      "type": "TIME_REFERENCE",
+      "canonical": "years",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "population",
+      "type": "OTHER_ENTITY",
+      "canonical": "population",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "areas with electricity",
+      "type": "OTHER_ENTITY",
+      "canonical": "areas_with_electricity",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
     }
   ],
   "unresolved_mentions": [],
@@ -145,5 +188,5 @@
       "text": "I notice that clean energy has been taking up more and more of a fraction, but every single method of electricity has increased over the years, likely because of an increase of population and an increase of areas with electricity over the years.  I wonder if there's going to be a bigger shift towards clean energy in the future that will shift the ratios of energy usage.  This relates to my community because we use a lot of gas, but we also have wind farms and solar farms here as well.  A headline could be \"What Kind Of Energy Does The World Use?\""
     }
   ],
-  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> has been taking up more and more of a fraction, but every single method of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> has increased over the years, likely because of an increase of <entity type=\"DATA_VAR\" canonical=\"population\">population</entity> and an increase of areas with <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> over the years.  I wonder if there's going to be a bigger shift towards <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean energy</entity> in the future that will shift the ratios of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">energy usage</entity>.  This relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because we use a lot of <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity>, but we also have <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind farms</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">solar farms</entity> here as well.  A headline could be \"What Kind Of Energy Does The <entity type=\"LOCATION\" canonical=\"world\">World</entity> Use?\""
+  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> has been taking up more and more of a fraction, but every single method of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> has increased over the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity>, likely because of an increase of <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\">population</entity> and an increase of <entity type=\"OTHER_ENTITY\" canonical=\"areas_with_electricity\" subtype=\"other\">areas with electricity</entity> over the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity>.  I wonder if there's going to be a bigger shift towards <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean energy</entity> in the future that will shift the ratios of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">energy usage</entity>.  This relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because we use a lot of <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity>, but we also have <entity type=\"OTHER_ENTITY\" canonical=\"wind_farms\" subtype=\"other\">wind farms</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"solar_farms\" subtype=\"other\">solar farms</entity> here as well.  A headline could be \"What Kind Of Energy Does The <entity type=\"LOCATION\" canonical=\"world\">World</entity> Use?\""
 }

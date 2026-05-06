@@ -17,56 +17,17 @@
       "id": "e0"
     },
     {
-      "surface": "electricity generation",
+      "surface": "world electricity generation",
       "type": "DATA_VAR",
       "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 80,
+      "start": 74,
       "end": 102,
       "id": "e1"
-    },
-    {
-      "surface": "electricity generation",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 413,
-      "end": 435,
-      "id": "e2"
-    },
-    {
-      "surface": "electricity generation",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 514,
-      "end": 536,
-      "id": "e3"
-    },
-    {
-      "surface": "electricity generation",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": 567,
-      "end": 589,
-      "id": "e4"
     },
     {
       "surface": "clean",
@@ -78,9 +39,37 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 175,
+      "end": 180,
+      "id": "e2"
+    },
+    {
+      "surface": "clean",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 207,
+      "end": 212,
+      "id": "e3"
+    },
+    {
+      "surface": "clean",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
       "start": 1108,
       "end": 1113,
-      "id": "e5"
+      "id": "e4"
     },
     {
       "surface": "fossil fuels",
@@ -94,20 +83,20 @@
       "occurrence_index": 0,
       "start": 1264,
       "end": 1276,
-      "id": "e6"
+      "id": "e5"
     },
     {
-      "surface": "world",
-      "type": "LOCATION",
-      "canonical": "world",
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1388,
-      "end": 1393,
-      "id": "e7"
+      "start": 1394,
+      "end": 1416,
+      "id": "e6"
     },
     {
       "surface": "fossil fuels",
@@ -119,6 +108,20 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e8"
@@ -180,6 +183,58 @@
       "id": "e12"
     },
     {
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    },
+    {
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 4,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
       "surface": "China",
       "type": "DATA_VAR_LEVEL",
       "canonical": "china",
@@ -191,7 +246,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e17"
     },
     {
       "surface": "China",
@@ -205,7 +260,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e18"
     },
     {
       "surface": "China",
@@ -219,7 +274,21 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e19"
+    },
+    {
+      "surface": "China",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e20"
     },
     {
       "surface": "China's",
@@ -233,7 +302,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e21"
     },
     {
       "surface": "China's",
@@ -247,7 +316,63 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e22"
+    },
+    {
+      "surface": "economic and industrial growth",
+      "type": "OTHER_ENTITY",
+      "canonical": "economic_and_industrial_growth",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e23"
+    },
+    {
+      "surface": "Energy sources",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_sources",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e24"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e25"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e26"
     },
     {
       "surface": "fossil fuels",
@@ -261,25 +386,41 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e27"
     },
     {
-      "surface": "energy sources",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e28"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e29"
     },
     {
       "surface": "energy source",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_sources",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -287,7 +428,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e30"
     },
     {
       "surface": "environment",
@@ -301,7 +442,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e21"
+      "id": "e31"
+    },
+    {
+      "surface": "world",
+      "type": "LOCATION",
+      "canonical": "world",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e32"
     },
     {
       "surface": "clean energy",
@@ -315,12 +469,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e33"
     },
     {
       "surface": "Fueling the Future- World Electricity Generation from 2000 to 2020",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -328,15 +482,21 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
+      "id": "e34"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "In this graph, I notice that there is an overall increase in the trend of world electricity generation, when looking at all sources of electricity. In differentiating between clean sources and fossil fuels, clean sources seem to be much more prevalent in use than fossil fuels, which is a positive consequence. Diving even further into detail, I noticed that the United States has a much more gradual increase in electricity generation than that of China, which has a much steeper slope and more rapid increase in electricity generation.\nI wonder why exactly China's electricity generation has increased so much faster than that of the United States. Both China and the United States are massive centers of economic and industrial growth, so it is interesting that China's change in electricity generation is far more drastic than the United States.\nEnergy sources have a huge impact on me and my surrounding community. It is highly important that we steer away from using fossil fuels as an energy source, as they are detrimental to the environment and the world that we live in, and create more sources of clean energy. The United States' electricity generation increasing at a much slower rate is both good and bad for my community- good in the sense that less fossil fuels are being used, bad in the sense that less clean energy is used. I would title this graph \"Fueling the Future- World Electricity Generation from 2000 to 2020\"."
+      "label": "",
+      "text": "In this graph, I notice that there is an overall increase in the trend of world electricity generation, when looking at all sources of electricity. In differentiating between clean sources and fossil fuels, clean sources seem to be much more prevalent in use than fossil fuels, which is a positive consequence. Diving even further into detail, I noticed that the United States has a much more gradual increase in electricity generation than that of China, which has a much steeper slope and more rapid increase in electricity generation.\nI wonder why exactly China's electricity generation has increased so much faster than that of the United States. Both China and the United States are massive centers of economic and industrial growth, so it is interesting that China's change in electricity generation is far more drastic than the United States.\nEnergy sources have a huge impact on me and my surrounding community. It is highly important that we steer away from using fossil fuels as an energy source, as they are detrimental to the environment and the world that we live in, and create more sources of clean energy. The United States' electricity generation increasing at a much slower rate is both good and bad for my community- good in the sense that less fossil fuels are being used, bad in the sense that less clean energy is used."
+    },
+    {
+      "section": "headline",
+      "label": "Fueling the Future- World Electricity Generation from 2000 to 2020",
+      "text": "I would title this graph \"Fueling the Future- World Electricity Generation from 2000 to 2020\"."
     }
   ],
-  "tagged_text": "In this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I notice that there is an overall increase in the trend of world <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity>, when looking at all sources of electricity. In differentiating between <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity> sources and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>, clean sources seem to be much more prevalent in use than fossil fuels, which is a positive consequence. Diving even further into detail, I noticed that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> has a much more gradual increase in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> than that of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>, which has a much steeper slope and more rapid increase in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity>.\nI wonder why exactly <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China's</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity generation</entity> has increased so much faster than that of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity>. Both <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity> are massive centers of economic and industrial growth, so it is interesting that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China's</entity> change in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity generation</entity> is far more drastic than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity>.\n<entity type=\"DATA_VAR\" canonical=\"energy_source\">Energy sources</entity> have a huge impact on me and my surrounding community. It is highly important that we steer away from using <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> as an <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy source</entity>, as they are detrimental to the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity> and the <entity type=\"LOCATION\" canonical=\"world\">world</entity> that we live in, and create more sources of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>' electricity generation increasing at a much slower rate is both good and bad for my community- good in the sense that less fossil fuels are being used, bad in the sense that less clean energy is used. I would title this graph \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Fueling the Future- World Electricity Generation from 2000 to 2020</entity>\"."
+  "tagged_text": "In this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I notice that there is an overall increase in the trend of world <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity>, when looking at all sources of electricity. In differentiating between <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity> sources and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity> sources seem to be much more prevalent in use than <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>, which is a positive consequence. Diving even further into detail, I noticed that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> has a much more gradual increase in <entity type=\"DATA_VAR\">electricity generation</entity> than that of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>, which has a much steeper slope and more rapid increase in <entity type=\"DATA_VAR\">electricity generation</entity>.\nI wonder why exactly <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China's</entity> <entity type=\"DATA_VAR\">electricity generation</entity> has increased so much faster than that of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity>. Both <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> are massive centers of <entity type=\"OTHER_ENTITY\" canonical=\"economic_and_industrial_growth\" subtype=\"concept\">economic and industrial growth</entity>, so it is interesting that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China's</entity> change in <entity type=\"DATA_VAR\">electricity generation</entity> is far more drastic than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>.\n<entity type=\"OTHER_ENTITY\" canonical=\"energy_sources\" subtype=\"other\">Energy sources</entity> have a huge impact on me and my surrounding <entity type=\"OTHER_ENTITY\" canonical=\"community\" subtype=\"group\" speaker_context=\"true\">community</entity>. It is highly important that we steer away from using <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> as an <entity type=\"OTHER_ENTITY\" canonical=\"energy_sources\" subtype=\"other\">energy source</entity>, as they are detrimental to the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity> and the <entity type=\"LOCATION\" canonical=\"world\">world</entity> that we live in, and create more sources of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>' <entity type=\"DATA_VAR\">electricity generation</entity> increasing at a much slower rate is both good and bad for my <entity type=\"OTHER_ENTITY\" canonical=\"community\" subtype=\"group\" speaker_context=\"true\">community</entity>- good in the sense that less <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> are being used, bad in the sense that less <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> is used. I would title this graph \"Fueling the Future- World Electricity Generation from 2000 to 2020\"."
 }

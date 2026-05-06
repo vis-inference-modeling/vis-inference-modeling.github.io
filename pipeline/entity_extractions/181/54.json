@@ -63,7 +63,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 1233,
       "end": 1245,
@@ -71,9 +71,8 @@
     },
     {
       "surface": "energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "energy_source",
-      "var": "energy_source",
+      "type": "DATA_VAR",
+      "canonical": "energy_source_generation_type",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -85,9 +84,8 @@
     },
     {
       "surface": "energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "energy_source",
-      "var": "energy_source",
+      "type": "DATA_VAR",
+      "canonical": "energy_source_generation_type",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -100,7 +98,7 @@
     {
       "surface": "New Global Data on how Electricity is Generated- How will it affect our kids in the future?",
       "type": "CHART_ELEMENT",
-      "canonical": "new_global_data_on_how_electricity_is_generated_how_will_it_affect_our_kids_in_the_future",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -170,7 +168,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 1,
       "start": null,
       "end": null,
@@ -184,7 +182,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
@@ -198,7 +196,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 1,
       "start": null,
       "end": null,
@@ -207,7 +205,7 @@
     {
       "surface": "graphs",
       "type": "CHART_ELEMENT",
-      "canonical": "graphs",
+      "canonical": "graph",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -220,7 +218,7 @@
     {
       "surface": "graphs",
       "type": "CHART_ELEMENT",
-      "canonical": "graphs",
+      "canonical": "graph",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -229,32 +227,6 @@
       "start": null,
       "end": null,
       "id": "e16"
-    },
-    {
-      "surface": "graphs",
-      "type": "CHART_ELEMENT",
-      "canonical": "graphs",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
     },
     {
       "surface": "energy use",
@@ -267,7 +239,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e17"
     },
     {
       "surface": "India",
@@ -281,7 +253,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e18"
     },
     {
       "surface": "China",
@@ -293,6 +265,32 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "energy_source_generation_type",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "energy_source_generation_type",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
       "start": null,
       "end": null,
       "id": "e21"
@@ -337,6 +335,48 @@
       "id": "e24"
     },
     {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e25"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e26"
+    },
+    {
+      "surface": "intervention",
+      "type": "OTHER_ENTITY",
+      "canonical": "policy_interventions",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e27"
+    },
+    {
       "surface": "earth",
       "type": "LOCATION",
       "canonical": "earth",
@@ -347,31 +387,14 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e25"
+      "id": "e28"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "the world",
-      "reason": "Could be a rhetorical/global-scope LOCATION mention, but it is also used generically in a non-chart-specific comment."
-    },
-    {
-      "surface": "statistics",
-      "reason": "Could refer to chart data or generic statistics; not enough context to tag confidently."
-    },
-    {
-      "surface": "rates",
-      "reason": "Likely refers to chart values, but the exact entity type/canonical is unclear without a reference list."
-    },
-    {
-      "surface": "intervention",
-      "reason": "Could be an EVENT/OTHER_ENTITY, but it is too generic to tag confidently."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "I noticed that the generation of electricity is increasing over the years as the world is changing. Additionally, more clean energy is being used as the world changes rather than using fossil fuels. Looking at the three smaller graphs, I notice that each graph contains vastly different amounts of energy use. For reference, India has the least usage while China uses the most.  I wonder why they change what energy is used throughout the years. I also wonder about ways we can lessen the energy consumption to have a decrease in statistics. Lastly I think about the last 3 graphs and how we can even achieve those rates. Even how those rates came to be would be beneficial to analyze a deeper look into how electricity is generated.\nThis relates to me and my community because we all generate electricity and this in turn consumes energy. This is not to say that energy should not be used at all, but especially fossil fuels can be harmful. In order to do this, there would need to be some sort of intervention. If my community does not begin to reduce their energy consumption, the world will not change for the better. I do not think that it is a matter of one energy being better than another, it has been made common sense that clean energy is, but overall reducing our usage will better support the earth than replacing energy sources. It is a start, but there still can be improvements made."
+      "text": "I noticed that the generation of electricity is increasing over the years as the world is changing. Additionally, more clean energy is being used as the world changes rather than using fossil fuels. Looking at the three smaller graphs, I notice that each graph contains vastly different amounts of energy use. For reference, India has the least usage while China uses the most. I wonder why they change what energy is used throughout the years. I also wonder about ways we can lessen the energy consumption to have a decrease in statistics. Lastly I think about the last 3 graphs and how we can even achieve those rates. Even how those rates came to be would be beneficial to analyze a deeper look into how electricity is generated.\nThis relates to me and my community because we all generate electricity and this in turn consumes energy. This is not to say that energy should not be used at all, but especially fossil fuels can be harmful. In order to do this, there would need to be some sort of intervention. If my community does not begin to reduce their energy consumption, the world will not change for the better. I do not think that it is a matter of one energy being better than another, it has been made common sense that clean energy is, but overall reducing our usage will better support the earth than replacing energy sources. It is a start, but there still can be improvements made."
     },
     {
       "section": "headline",
@@ -379,5 +402,5 @@
       "text": "New Global Data on how Electricity is Generated- How will it affect our kids in the future?"
     }
   ],
-  "tagged_text": "I noticed that the generation of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> is increasing over the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity> as the <entity type=\"LOCATION\" canonical=\"world\">world</entity> is changing. Additionally, more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"asserted\">clean energy</entity> is being used as the <entity type=\"LOCATION\" canonical=\"world\">world</entity> changes rather than using <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"asserted\">fossil fuels</entity>. Looking at the three smaller <entity type=\"CHART_ELEMENT\">graphs</entity>, I notice that each <entity type=\"CHART_ELEMENT\">graph</entity> contains vastly different amounts of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy use</entity>. For reference, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> has the least usage while <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> uses the most.  I wonder why they change what <entity type=\"DATA_VAR_LEVEL\" canonical=\"energy_source\" var=\"energy_source\" modality=\"questioned\">energy</entity> is used throughout the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity>. I also wonder about ways we can lessen the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy consumption</entity> to have a decrease in statistics. Lastly I think about the last <entity type=\"TIME_REFERENCE\" canonical=\"3\">3</entity> <entity type=\"CHART_ELEMENT\">graphs</entity> and how we can even achieve those rates. Even how those rates came to be would be beneficial to analyze a deeper look into how <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> is generated.\nThis relates to me and my community because we all generate <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> and this in turn consumes <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity>. This is not to say that <entity type=\"DATA_VAR\" canonical=\"energy_source\" modality=\"asserted\">energy</entity> should not be used at all, but especially <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> can be harmful. In order to do this, there would need to be some sort of intervention. If my community does not begin to reduce their <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy consumption</entity>, the <entity type=\"LOCATION\" canonical=\"world\">world</entity> will not change for the better. I do not think that it is a matter of one <entity type=\"DATA_VAR_LEVEL\" canonical=\"energy_source\" var=\"energy_source\">energy</entity> being better than another, it has been made common sense that <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> is, but overall reducing our usage will better support the <entity type=\"LOCATION\" canonical=\"earth\">earth</entity> than replacing energy sources. It is a start, but there still can be improvements made.\n\n<entity type=\"CHART_ELEMENT\" section=\"headline\">New Global Data on how Electricity is Generated- How will it affect our kids in the future?</entity>"
+  "tagged_text": "I noticed that the generation of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> is increasing over the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity> as the <entity type=\"LOCATION\" canonical=\"world\">world</entity> is changing. Additionally, more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> is being used as the <entity type=\"LOCATION\" canonical=\"world\">world</entity> changes rather than using <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>. Looking at the three smaller <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graphs</entity>, I notice that each graph contains vastly different amounts of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy use</entity>. For reference, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> has the least usage while <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> uses the most. I wonder why they change what <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\">energy</entity> is used throughout the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity>. I also wonder about ways we can lessen the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy consumption</entity> to have a decrease in statistics. Lastly I think about the last <entity type=\"TIME_REFERENCE\" canonical=\"3\">3</entity> graphs and how we can even achieve those rates. Even how those rates came to be would be beneficial to analyze a deeper look into how <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> is generated.\nThis relates to me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">community</entity> because we all generate <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> and this in turn consumes <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\">energy</entity>. This is not to say that <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\">energy</entity> should not be used at all, but especially <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> can be harmful. In order to do this, there would need to be some sort of <entity type=\"OTHER_ENTITY\" canonical=\"policy_interventions\" subtype=\"other\">intervention</entity>. If my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">community</entity> does not begin to reduce their <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy consumption</entity>, the <entity type=\"LOCATION\" canonical=\"world\">world</entity> will not change for the better. I do not think that it is a matter of one <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\">energy</entity> being better than another, it has been made common sense that <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> is, but overall reducing our usage will better support the <entity type=\"LOCATION\" canonical=\"earth\">earth</entity> than replacing <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\">energy</entity> sources. It is a start, but there still can be improvements made.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">New Global Data on how Electricity is Generated- How will it affect our kids in the future?</entity>"
 }

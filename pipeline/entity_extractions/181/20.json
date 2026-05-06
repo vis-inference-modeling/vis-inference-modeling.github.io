@@ -17,17 +17,16 @@
       "id": "e0"
     },
     {
-      "surface": "World Electricity Generation",
-      "type": "OTHER_ENTITY",
-      "canonical": "world_electricity_generation_graph",
-      "subtype": "other",
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 45,
-      "end": 73,
+      "occurrence_index": 1,
+      "start": 419,
+      "end": 424,
       "id": "e1"
     },
     {
@@ -40,8 +39,8 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 144,
-      "end": 149,
+      "start": 636,
+      "end": 641,
       "id": "e2"
     },
     {
@@ -54,23 +53,50 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 366,
-      "end": 371,
+      "start": 1034,
+      "end": 1039,
       "id": "e3"
     },
     {
-      "surface": "clean",
+      "surface": "coal",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 636,
-      "end": 641,
+      "occurrence_index": 0,
+      "start": 1096,
+      "end": 1100,
       "id": "e4"
+    },
+    {
+      "surface": "countries",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "country",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1101,
+      "end": 1110,
+      "id": "e5"
+    },
+    {
+      "surface": "World Electricity Generation",
+      "type": "CHART_ELEMENT",
+      "canonical": "world_electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "fossil fuel",
@@ -82,41 +108,14 @@
       "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 936,
-      "end": 947,
-      "id": "e5"
-    },
-    {
-      "surface": "coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1096,
-      "end": 1100,
-      "id": "e6"
-    },
-    {
-      "surface": "countries",
-      "type": "DATA_VAR",
-      "canonical": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1101,
-      "end": 1110,
+      "start": null,
+      "end": null,
       "id": "e7"
     },
     {
       "surface": "gigawatt hours",
       "type": "UNIT",
-      "canonical": "gigawatt_hours",
+      "canonical": "gigawatts",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -130,7 +129,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -144,7 +143,7 @@
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -158,7 +157,7 @@
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -183,36 +182,24 @@
       "id": "e12"
     },
     {
-      "surface": "environment",
-      "type": "OTHER_ENTITY",
-      "canonical": "environment",
-      "subtype": "other",
+      "surface": "clean electricity",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "graphs",
-      "type": "CHART_ELEMENT",
-      "canonical": "graphs",
-      "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e13"
     },
     {
       "surface": "countries",
-      "type": "DATA_VAR",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "country",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -220,7 +207,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e14"
     },
     {
       "surface": "China",
@@ -234,7 +221,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e15"
     },
     {
       "surface": "electricity generation",
@@ -247,7 +234,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e16"
     },
     {
       "surface": "United States",
@@ -261,13 +248,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e17"
     },
     {
       "surface": "fossil",
       "type": "DATA_VAR_LEVEL",
       "canonical": "fossil",
       "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e18"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -304,98 +305,32 @@
       "id": "e21"
     },
     {
-      "surface": "electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "country's economy",
+      "type": "OTHER_ENTITY",
+      "canonical": "country_economy",
+      "subtype": "concept",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e22"
     },
     {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
+      "surface": "technological advancement",
+      "type": "OTHER_ENTITY",
+      "canonical": "technological_advancement",
+      "subtype": "concept",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e23"
-    },
-    {
-      "surface": "country's",
-      "type": "DATA_VAR",
-      "canonical": "country",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e24"
-    },
-    {
-      "surface": "economy",
-      "type": "OTHER_ENTITY",
-      "canonical": "economy",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e25"
-    },
-    {
-      "surface": "technological advancement",
-      "type": "OTHER_ENTITY",
-      "canonical": "technology",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e26"
-    },
-    {
-      "surface": "countries",
-      "type": "DATA_VAR",
-      "canonical": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e27"
-    },
-    {
-      "surface": "countries",
-      "type": "DATA_VAR",
-      "canonical": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e28"
     },
     {
       "surface": "fossil fuels",
@@ -409,7 +344,21 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e29"
+      "id": "e24"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e25"
     },
     {
       "surface": "clean energy",
@@ -423,21 +372,34 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e30"
+      "id": "e26"
+    },
+    {
+      "surface": "our environment",
+      "type": "OTHER_ENTITY",
+      "canonical": "our_environment",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e27"
     },
     {
       "surface": "Clean Countries or Coal Countries",
-      "type": "OTHER_ENTITY",
-      "canonical": "clean_vs_fossil_electric_generation",
-      "subtype": "other",
-      "section": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e31"
+      "id": "e28"
     }
   ],
   "unresolved_mentions": [],
@@ -447,5 +409,5 @@
       "text": "The first thing I notice in the first graph \"World Electricity Generation\", is that over time there has been an overall steady increase in both clean and fossil fuel gigawatt hours. I additionally noticed that even over time, coal and gas, both very harmful to the environment, are still the most used. I wonder if gas and coal are more affordable, in comparison to clean electricity. In regards to the second group of graphs, I noticed all three countries given have very different graphs. China's graph shows a very steep increase in electricity generation. The United States graph displays a consistent generation of both fossil and clean electricity. India's graph shows very little generation of electricity at all. I wonder if the generation of electricity is affected by the country's economy or level of technological advancement. All three of these countries are all very populated, so that could be why they all still rely on fossil fuels. This relates to me and my community, as it is important to acknowledge the need for clean energy to preserve our environment. \"Clean Countries or Coal Countries\""
     }
   ],
-  "tagged_text": "The first thing I notice in the first <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> \"<entity type=\"OTHER_ENTITY\" canonical=\"world_electricity_generation_graph\" subtype=\"other\">World Electricity Generation</entity>\", is that over time there has been an overall steady increase in both <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuel</entity> <entity type=\"UNIT\" canonical=\"gigawatt_hours\">gigawatt hours</entity>. I additionally noticed that even over time, <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity>, both very harmful to the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity>, are still the most used. I wonder if <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" modality=\"questioned\">gas</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" modality=\"questioned\">coal</entity> are more affordable, in comparison to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean electricity</entity>. In regards to the second group of <entity type=\"CHART_ELEMENT\" canonical=\"graphs\">graphs</entity>, I noticed all three <entity type=\"DATA_VAR\" canonical=\"country\">countries</entity> given have very different graphs. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>'s graph shows a very steep increase in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity>. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> graph displays a consistent generation of both <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity> <entity type=\"DATA_VAR\">electricity</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>'s graph shows very little generation of <entity type=\"DATA_VAR\">electricity</entity> at all. I wonder if the generation of <entity type=\"DATA_VAR\">electricity</entity> is affected by the <entity type=\"DATA_VAR\" canonical=\"country\" modality=\"questioned\">country's</entity> <entity type=\"OTHER_ENTITY\" canonical=\"economy\" subtype=\"other\">economy</entity> or level of <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"other\">technological advancement</entity>. All three of these <entity type=\"DATA_VAR\" canonical=\"country\">countries</entity> are all very populated, so that could be why they all still rely on <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>. This relates to me and my community, as it is important to acknowledge the need for <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> to preserve our <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity>. \"<entity type=\"OTHER_ENTITY\" canonical=\"clean_vs_fossil_electric_generation\" subtype=\"other\">Clean Countries or Coal Countries</entity>\""
+  "tagged_text": "The first thing I notice in the first <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> \"<entity type=\"CHART_ELEMENT\" canonical=\"world_electricity_generation\" section=\"body\">World Electricity Generation</entity>\", is that over time there has been an overall steady increase in both <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuel</entity> <entity type=\"UNIT\" canonical=\"gigawatts\" section=\"body\">gigawatt hours</entity>. I additionally noticed that even over time, <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\" section=\"body\">gas</entity>, both very harmful to the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"body\">environment</entity>, are still the most used. I wonder if <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\" section=\"body\" modality=\"questioned\">gas</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\" modality=\"questioned\">coal</entity> are more affordable, in comparison to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\" modality=\"questioned\">clean electricity</entity>. In regards to the second group of <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graphs</entity>, I noticed all three <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\" section=\"body\">countries</entity> given have very different graphs. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity>'s graph shows a very steep increase in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity generation</entity>. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity> graph displays a consistent generation of both <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean electricity</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India</entity>'s graph shows very little generation of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity> at all. I wonder if the generation of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" modality=\"questioned\">electricity</entity> is affected by the <entity type=\"OTHER_ENTITY\" canonical=\"country_economy\" subtype=\"concept\" section=\"body\" modality=\"questioned\">country's economy</entity> or level of <entity type=\"OTHER_ENTITY\" canonical=\"technological_advancement\" subtype=\"concept\" section=\"body\" modality=\"questioned\">technological advancement</entity>. All three of these <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\" section=\"body\">countries</entity> are all very populated, so that could be why they all still rely on <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity>. This relates to me and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"community\" section=\"body\" speaker_context=\"true\">my community</entity>, as it is important to acknowledge the need for <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity> to preserve our <entity type=\"OTHER_ENTITY\" canonical=\"our_environment\" subtype=\"other\" section=\"body\">environment</entity>. \"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"body\">Clean Countries or Coal Countries</entity>\""
 }

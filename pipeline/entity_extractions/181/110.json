@@ -31,12 +31,13 @@
     },
     {
       "surface": "energy production",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_production",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 182,
       "end": 199,
@@ -78,7 +79,7 @@
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 347,
       "end": 367,
@@ -145,7 +146,7 @@
       "type": "CHART_ELEMENT",
       "canonical": "color_scale",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -157,7 +158,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -171,7 +172,7 @@
       "surface": "Nuclear",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -182,17 +183,32 @@
       "id": "e12"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
+      "surface": "community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 788,
+      "start": 791,
       "end": 800,
       "id": "e13"
+    },
+    {
+      "surface": "power",
+      "type": "OTHER_ENTITY",
+      "canonical": "power",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 841,
+      "end": 846,
+      "id": "e14"
     },
     {
       "surface": "clean energy production",
@@ -206,7 +222,20 @@
       "occurrence_index": 0,
       "start": 911,
       "end": 934,
-      "id": "e14"
+      "id": "e15"
+    },
+    {
+      "surface": "Headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 936,
+      "end": 944,
+      "id": "e16"
     }
   ],
   "unresolved_mentions": [],
@@ -216,5 +245,5 @@
       "text": "I notice that globally, all sources of electricity generation are increasing, as can be depicted by the world electricity generation graph. Currently, it looks like global source of energy production through clean methods are being utilized at similar rates to fossil fuel sources. \n\nI wonder what countries most largely contribute focus on using clean energy sources being that the break down of China, United States, and India show that these 3 countries rely mostly on fossil fuels.  I also wonder what the color scale means, aside from differentiating the different groups - Is coal the worst fossil fuel as it is put on the bottom and the darkest, and is Nuclear the cleanest source as it is on the top of the clean category and the lightest in color.\n\nThis is impactful as it makes my community and I aware of where we are getting our power from, and can possibly incentive the advocacy for more focus on clean energy production\n\nHeadline: Changing Global Sources of Energy"
     }
   ],
-  "tagged_text": "I notice that globally, all sources of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> are increasing, as can be depicted by the <entity type=\"CHART_ELEMENT\" canonical=\"world_electricity_generation_graph\">world electricity generation graph</entity>. Currently, it looks like global source of <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy production</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean methods</entity> are being utilized at similar rates to <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuel sources</entity>. \n\nI wonder what countries most largely contribute focus on using <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean energy sources</entity> being that the break down of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> show that these 3 countries rely mostly on <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuels</entity>.  I also wonder what the <entity type=\"CHART_ELEMENT\" canonical=\"color_scale\">color scale</entity> means, aside from differentiating the different groups - Is <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" modality=\"questioned\">coal</entity> the worst fossil fuel as it is put on the bottom and the darkest, and is <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\" modality=\"questioned\">Nuclear</entity> the cleanest source as it is on the top of the clean category and the lightest in color.\n\nThis is impactful as it makes <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> and I aware of where we are getting our power from, and can possibly incentive the advocacy for more focus on <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy production</entity>\n\nHeadline: Changing Global Sources of Energy"
+  "tagged_text": "I notice that globally, all sources of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> are increasing, as can be depicted by the <entity type=\"CHART_ELEMENT\" canonical=\"world_electricity_generation_graph\">world electricity generation graph</entity>. Currently, it looks like global source of <entity type=\"OTHER_ENTITY\" canonical=\"energy_production\" subtype=\"other\">energy production</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean methods</entity> are being utilized at similar rates to <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuel sources</entity>. \n\nI wonder what countries most largely contribute focus on using <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean energy sources</entity> being that the break down of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> show that these 3 countries rely mostly on <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuels</entity>.  I also wonder what the <entity type=\"CHART_ELEMENT\" canonical=\"color_scale\">color scale</entity> means, aside from differentiating the different groups - Is <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" modality=\"questioned\">coal</entity> the worst fossil fuel as it is put on the bottom and the darkest, and is <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\" modality=\"questioned\">Nuclear</entity> the cleanest source as it is on the top of the clean category and the lightest in color.\n\nThis is impactful as it makes my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> and I aware of where we are getting our <entity type=\"OTHER_ENTITY\" canonical=\"power\" subtype=\"other\">power</entity> from, and can possibly incentive the advocacy for more focus on <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy production</entity>\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Headline</entity>: Changing Global Sources of Energy"
 }

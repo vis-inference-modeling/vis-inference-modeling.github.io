@@ -7,8 +7,8 @@
       "surface": "nuclear",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
-      "section": "body",
+      "var": "energy_source_generation_type",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -21,8 +21,8 @@
       "surface": "hydroelectric electricity",
       "type": "DATA_VAR_LEVEL",
       "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
-      "section": "body",
+      "var": "energy_source_generation_type",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": true,
@@ -35,7 +35,7 @@
       "surface": "2020",
       "type": "TIME_REFERENCE",
       "canonical": "2020",
-      "section": "body",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -48,8 +48,8 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
-      "section": "body",
+      "var": "energy_source_generation_type",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -62,8 +62,8 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
-      "section": "body",
+      "var": "energy_source_generation_type",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -76,8 +76,8 @@
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
-      "section": "body",
+      "var": "energy_source_generation_type",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -91,7 +91,7 @@
       "type": "DATA_VAR_LEVEL",
       "canonical": "clean",
       "var": "power_category",
-      "section": "headline",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": true,
@@ -104,8 +104,8 @@
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
-      "section": "body",
+      "var": "energy_source_generation_type",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -115,31 +115,46 @@
       "id": "e7"
     },
     {
+      "surface": "gas",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "gas",
+      "var": "energy_source_generation_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
       "surface": "electric electricity's",
       "type": "DATA_VAR_LEVEL",
       "canonical": "electricity_generation",
       "var": "electricity_generation",
-      "section": "body",
+      "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e9"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
+      "surface": "community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
-      "section": "body",
+      "subtype": "other",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e10"
     }
   ],
   "unresolved_mentions": [],
@@ -147,40 +162,23 @@
     {
       "section": "numbered_point",
       "label": "1",
-      "text": "What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?"
-    },
-    {
-      "section": "body",
-      "text": "I notice that nuclear and hydroelectric electricity is increasing especially in 2020 but coal and gas still take up a big chunk at the bottom."
+      "text": "What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\n\nI notice that nuclear and hydroelectric electricity is increasing especially in 2020 but coal and gas still take up a big chunk at the bottom."
     },
     {
       "section": "numbered_point",
       "label": "2",
-      "text": "What do you wonder?"
-    },
-    {
-      "section": "body",
-      "text": "I wonder if we are making a new change and switching to more electric electricity's rather than gas and coal."
+      "text": "What do you wonder?\n\nI wonder if we are making a new change and switching to more electric electricity's rather than gas and coal."
     },
     {
       "section": "numbered_point",
       "label": "3",
-      "text": "What impact does this have on you and your community?"
-    },
-    {
-      "section": "body",
-      "text": "This relates to my community because we use a lot of gas."
+      "text": "What impact does this have on you and your community?\n\nThis relates to my community because we use a lot of gas."
     },
     {
       "section": "numbered_point",
       "label": "4",
-      "text": "What's going on in this graph? Write a catchy headline that captures the graph's main idea."
-    },
-    {
-      "section": "headline",
-      "label": "Is clean enegry taking over?",
-      "text": "Is clean enegry taking over?"
+      "text": "What's going on in this graph? Write a catchy headline that captures the graph's main idea.\n\nIs clean enegry taking over?"
     }
   ],
-  "tagged_text": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\n\nI notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">hydroelectric electricity</entity> is increasing especially in <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity> but <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity> still take up a big chunk at the bottom.\n\n2. What do you wonder?\n\nI wonder if we are making a new change and switching to more <entity type=\"DATA_VAR_LEVEL\" canonical=\"electricity_generation\" var=\"electricity_generation\" modality=\"questioned\">electric electricity's</entity> rather than <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" modality=\"questioned\">gas</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" modality=\"questioned\">coal</entity>. \n\n3. What impact does this have on you and your community?\n\nThis relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because we use a lot of <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity>. \n\n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\n\nIs <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">clean enegry</entity> taking over?"
+  "tagged_text": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\n\nI notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\">hydroelectric electricity</entity> is increasing especially in <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity> but <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity> still take up a big chunk at the bottom.\n\n2. What do you wonder?\n\nI wonder if we are making a new change and switching to more <entity type=\"DATA_VAR_LEVEL\" canonical=\"electricity_generation\" var=\"electricity_generation\" modality=\"questioned\">electric electricity's</entity> rather than <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\" modality=\"questioned\">gas</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" modality=\"questioned\">coal</entity>. \n\n3. What impact does this have on you and your community?\n\nThis relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because we use a lot of <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity>. \n\n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\n\nIs <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean enegry</entity> taking over?"
 }

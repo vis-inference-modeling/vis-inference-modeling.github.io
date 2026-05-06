@@ -4,23 +4,10 @@
   "raw_comment": "I noticed that in recent years, it appears that all countries have been increasing in the wind and solar electricity categories. It seemed like the USA was about the only country who leveled out or decreased their coal use. China seemed to significantly increase in it. I wonder why everyones wind and solar sections haven't drastically increased in the last couple of years. All we ever hear is how good solar energy and wind power is and I would think by now it would have drastically increased in other places. I wonder if this is due to some other countries not being as developed or financially able? I would say this applies to my community because I see several areas that have a lot of wind turbines and they are really trying to convert to more solar power and stuff it seems. A catchy headline for this graph I would say is \"Wind to coal, for our energy, what's our main goal\".",
   "entities": [
     {
-      "surface": "recent years",
-      "type": "TIME_REFERENCE",
-      "canonical": "recent_years",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 18,
-      "end": 30,
-      "id": "e0"
-    },
-    {
       "surface": "wind and solar",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -28,13 +15,13 @@
       "occurrence_index": 0,
       "start": 90,
       "end": 104,
-      "id": "e1"
+      "id": "e0"
     },
     {
       "surface": "wind and solar",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -42,13 +29,13 @@
       "occurrence_index": 1,
       "start": 293,
       "end": 307,
-      "id": "e2"
+      "id": "e1"
     },
     {
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -56,7 +43,7 @@
       "occurrence_index": 0,
       "start": 843,
       "end": 847,
-      "id": "e3"
+      "id": "e2"
     },
     {
       "surface": "USA",
@@ -70,7 +57,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e4"
+      "id": "e3"
     },
     {
       "surface": "China",
@@ -84,12 +71,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "solar energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e5"
     },
     {
-      "surface": "years",
-      "type": "TIME_REFERENCE",
-      "canonical": "years",
+      "surface": "wind power",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -100,37 +102,10 @@
       "id": "e6"
     },
     {
-      "surface": "solar energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "solar",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
-    },
-    {
-      "surface": "wind power",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
       "surface": "my community",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -138,7 +113,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e7"
     },
     {
       "surface": "wind turbines",
@@ -152,13 +127,26 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e8"
     },
     {
       "surface": "solar power",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "solar",
-      "var": "energy_source",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -166,28 +154,15 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e10"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "all countries",
-      "reason": "Generic collective reference; no specific country entity to tag."
-    },
-    {
-      "surface": "other countries",
-      "reason": "Generic collective reference; no specific country entity to tag."
-    },
-    {
-      "surface": "this graph",
-      "reason": "Chart reference is generic and not in the chart-element list."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "I noticed that in recent years, it appears that all countries have been increasing in the wind and solar electricity categories. It seemed like the USA was about the only country who leveled out or decreased their coal use. China seemed to significantly increase in it. I wonder why everyones wind and solar sections haven't drastically increased in the last couple of years. All we ever hear is how good solar energy and wind power is and I would think by now it would have drastically increased in other places. I wonder if this is due to some other countries not being as developed or financially able? I would say this applies to my community because I see several areas that have a lot of wind turbines and they are really trying to convert to more solar power and stuff it seems. A catchy headline for this graph I would say is \"Wind to coal, for our energy, what's our main goal\"."
     }
   ],
-  "tagged_text": "I noticed that in <entity type=\"TIME_REFERENCE\" canonical=\"recent_years\">recent years</entity>, it appears that all countries have been increasing in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind and solar</entity> electricity categories. It seemed like the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">USA</entity> was about the only country who leveled out or decreased their <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> use. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> seemed to significantly increase in it. I wonder why everyones <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\" modality=\"questioned\">wind and solar</entity> sections haven't drastically increased in the last couple of <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity>. All we ever hear is how good <entity type=\"DATA_VAR_LEVEL\" canonical=\"solar\" var=\"energy_source\">solar energy</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind power</entity> is and I would think by now it would have drastically increased in other places. I wonder if this is due to some other countries not being as developed or financially able? I would say this applies to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because I see several areas that have a lot of <entity type=\"OTHER_ENTITY\" canonical=\"wind_turbines\" subtype=\"technology\">wind turbines</entity> and they are really trying to convert to more <entity type=\"DATA_VAR_LEVEL\" canonical=\"solar\" var=\"energy_source\">solar power</entity> and stuff it seems. A catchy headline for this graph I would say is \"Wind to coal, for our energy, what's our main goal\"."
+  "tagged_text": "I noticed that in recent years, it appears that all countries have been increasing in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">wind and solar</entity> electricity categories. It seemed like the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">USA</entity> was about the only country who leveled out or decreased their <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> use. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> seemed to significantly increase in it. I wonder why everyones <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" modality=\"questioned\">wind and solar</entity> sections haven't drastically increased in the last couple of years. All we ever hear is how good <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">solar energy</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">wind power</entity> is and I would think by now it would have drastically increased in other places. I wonder if this is due to some other countries not being as developed or financially able? I would say this applies to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because I see several areas that have a lot of <entity type=\"OTHER_ENTITY\" canonical=\"wind_turbines\" subtype=\"technology\">wind turbines</entity> and they are really trying to convert to more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">solar power</entity> and stuff it seems. A catchy headline for this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> I would say is \"Wind to coal, for our energy, what's our main goal\"."
 }

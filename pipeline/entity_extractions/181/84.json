@@ -71,86 +71,18 @@
       "id": "e4"
     },
     {
-      "surface": "India",
+      "surface": "US",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
+      "canonical": "united_states",
       "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 484,
-      "end": 489,
+      "occurrence_index": 0,
+      "start": 225,
+      "end": 227,
       "id": "e5"
-    },
-    {
-      "surface": "US",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 508,
-      "end": 510,
-      "id": "e6"
-    },
-    {
-      "surface": "US",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 514,
-      "end": 516,
-      "id": "e7"
-    },
-    {
-      "surface": "gas",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "gas",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 543,
-      "end": 546,
-      "id": "e8"
-    },
-    {
-      "surface": "electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 654,
-      "end": 665,
-      "id": "e9"
-    },
-    {
-      "surface": "Country Power and Energy!",
-      "type": "OTHER_ENTITY",
-      "canonical": "country_power_and_energy",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 668,
-      "end": 693,
-      "id": "e10"
     },
     {
       "surface": "clean energy",
@@ -162,29 +94,96 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
+      "start": 287,
+      "end": 299,
+      "id": "e6"
     },
     {
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
+      "start": 307,
+      "end": 311,
+      "id": "e7"
     },
     {
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 313,
+      "end": 316,
+      "id": "e8"
+    },
+    {
+      "surface": "gas",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "gas",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 543,
+      "end": 546,
+      "id": "e9"
+    },
+    {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 654,
+      "end": 665,
+      "id": "e10"
+    },
+    {
+      "surface": "Country Power and Energy!",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 668,
+      "end": 693,
+      "id": "e11"
+    },
+    {
+      "surface": "energy consumption",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "China's",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -195,10 +194,37 @@
       "id": "e13"
     },
     {
+      "surface": "China's",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
       "surface": "oil",
       "type": "DATA_VAR_LEVEL",
       "canonical": "oil_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -206,7 +232,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e16"
     },
     {
       "surface": "20 years",
@@ -219,7 +245,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e17"
     },
     {
       "surface": "China",
@@ -233,7 +259,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e18"
     },
     {
       "surface": "electricity generated",
@@ -242,11 +268,39 @@
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e20"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e21"
     },
     {
       "surface": "electricity",
@@ -255,32 +309,32 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e22"
     },
     {
       "surface": "renewable energy sources",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e23"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "I noticed that the graph's general increasing trend and the significant increase in energy consumption starting in 2000. China's growth in electricity generation over time has been the steepest when compared to India and the US. In general, the bulk of this energy growth is coming from clean energy, since coal, gas, and oil have essentially stagnated over the past 20 years. \nI wonder what factors caused China to have a big increase in electricity generated compared to the US and India.\nThis relates because I use a lot of electricity and gas. Also, now awareness can be raised so that it is detectable how renewable energy sources can generate more electricity. \nCountry Power and Energy!"
+      "text": "I noticed that the graph's general increasing trend and the significant increase in energy consumption starting in 2000. China's growth in electricity generation over time has been the steepest when compared to India and the US. In general, the bulk of this energy growth is coming from clean energy, since coal, gas, and oil have essentially stagnated over the past 20 years. \nI wonder what factors caused China to have a big increase in electricity generated compared to the US and India.\nThis relates because I use a lot of electricity and gas. Also, now awareness can be raised so that it is detectable how renewable energy sources can generate more electricity."
     },
     {
       "section": "headline",
@@ -288,5 +342,5 @@
       "text": "Country Power and Energy!"
     }
   ],
-  "tagged_text": "I noticed that the graph's general increasing trend and the significant increase in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy consumption</entity> starting in <entity type=\"TIME_REFERENCE\" canonical=\"2000\" section=\"body\">2000</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China's</entity> growth in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity generation</entity> over time has been the steepest when compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">US</entity>. In general, the bulk of this energy growth is coming from <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity>, since <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">coal</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" section=\"body\">gas</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\" section=\"body\">oil</entity> have essentially stagnated over the past <entity type=\"TIME_REFERENCE\" canonical=\"20_years\" section=\"body\">20 years</entity>. \nI wonder what factors caused <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> to have a big increase in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity generated</entity> compared to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">US</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India</entity>.\nThis relates because I use a lot of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" section=\"body\">gas</entity>. Also, now awareness can be raised so that it is detectable how <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\" section=\"body\">renewable energy sources</entity> can generate more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity>. \nCountry Power and Energy!"
+  "tagged_text": "I noticed that the graph's general increasing trend and the significant increase in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" terminology_drift=\"true\" occurrences=\"2\">energy consumption</entity> starting in <entity type=\"TIME_REFERENCE\" canonical=\"2000\" section=\"body\" occurrences=\"1\">2000</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\" occurrences=\"3\">China's</entity> growth in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" occurrences=\"2\">electricity generation</entity> over time has been the steepest when compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\" occurrences=\"1\">India</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" occurrences=\"1\">US</entity>. In general, the bulk of this energy growth is coming from <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\" occurrences=\"1\">clean energy</entity>, since <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">coal</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">gas</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">oil</entity> have essentially stagnated over the past <entity type=\"TIME_REFERENCE\" canonical=\"20_years\" section=\"body\" occurrences=\"1\">20 years</entity>. \nI wonder what factors caused <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\" modality=\"questioned\" occurrences=\"1\">China</entity> to have a big increase in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" modality=\"questioned\" occurrences=\"2\">electricity generated</entity> compared to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" modality=\"questioned\" occurrences=\"1\">US</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\" modality=\"questioned\" occurrences=\"1\">India</entity>.\nThis relates because I use a lot of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" occurrences=\"2\">electricity</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">gas</entity>. Also, now awareness can be raised so that it is detectable how <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\" occurrences=\"1\">renewable energy sources</entity> can generate more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" occurrences=\"2\">electricity</entity>. \n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" occurrences=\"1\">Country Power and Energy!</entity>"
 }

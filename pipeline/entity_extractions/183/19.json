@@ -2,22 +2,42 @@
   "article_id": "183",
   "comment_index": 19,
   "raw_comment": "People need to talk with their parents more these days man.",
-  "entities": [],
-  "unresolved_mentions": [
+  "entities": [
     {
-      "surface": "their parents",
-      "reason": "Generic reference to parents; could be tagged as OTHER_ENTITY, but the comment is too generic and co-reference is not requested."
+      "surface": "People",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 0,
+      "end": 6,
+      "id": "e0"
     },
     {
-      "surface": "people",
-      "reason": "Generic mass noun; not tagged per instructions."
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 31,
+      "end": 38,
+      "id": "e1"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "People need to talk with their parents more these days man."
     }
   ],
-  "tagged_text": "People need to talk with their parents more these days man."
+  "tagged_text": "<entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\">People</entity> need to talk with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more these days man."
 }

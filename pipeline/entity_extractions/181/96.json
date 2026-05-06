@@ -7,7 +7,7 @@
       "surface": "nuclear",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
       "surface": "wind",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -35,7 +35,7 @@
       "surface": "solar",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -49,7 +49,7 @@
       "surface": "hydroelectric",
       "type": "DATA_VAR_LEVEL",
       "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -66,23 +66,24 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 148,
       "end": 159,
       "id": "e4"
     },
     {
-      "surface": "electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 303,
-      "end": 314,
+      "occurrence_index": 0,
+      "start": 182,
+      "end": 194,
       "id": "e5"
     },
     {
@@ -95,15 +96,29 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 269,
+      "end": 282,
+      "id": "e6"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
       "start": 400,
       "end": 413,
-      "id": "e6"
+      "id": "e7"
     },
     {
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -111,35 +126,7 @@
       "occurrence_index": 0,
       "start": 415,
       "end": 419,
-      "id": "e7"
-    },
-    {
-      "surface": "coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 538,
-      "end": 542,
       "id": "e8"
-    },
-    {
-      "surface": "coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 594,
-      "end": 598,
-      "id": "e9"
     },
     {
       "surface": "US",
@@ -151,6 +138,20 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 516,
+      "end": 518,
+      "id": "e9"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
       "start": 610,
       "end": 612,
       "id": "e10"
@@ -164,7 +165,7 @@
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 2,
       "start": 682,
       "end": 684,
       "id": "e11"
@@ -178,7 +179,7 @@
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 3,
       "start": 806,
       "end": 808,
       "id": "e12"
@@ -200,7 +201,7 @@
     {
       "surface": "planet",
       "type": "LOCATION",
-      "canonical": "earth",
+      "canonical": "planet",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -211,45 +212,30 @@
       "id": "e14"
     },
     {
+      "surface": "next generation",
+      "type": "TIME_REFERENCE",
+      "canonical": "next_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 901,
+      "end": 916,
+      "id": "e15"
+    },
+    {
       "surface": "Electricity Generation for our Next Generation",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 945,
       "end": 991,
-      "id": "e15"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e16"
-    },
-    {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e17"
     },
     {
       "surface": "United States’",
@@ -263,34 +249,30 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e17"
     },
     {
-      "surface": "US",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "policymakers",
+      "type": "OTHER_ENTITY",
+      "canonical": "policymakers",
+      "subtype": "group",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 3,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e18"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "I noticed that worldwide clean electricity sources such as nuclear, wind, solar, and hydroelectric have experienced a greater increase in output of electricity over time compared to fossil fuels. When examining the individual countries' graphs we can see that, for the United States specifically, clean electricity sources have only experienced a relatively slight increase over time. Meanwhile, the United States’ coal usage is the only source that experienced a decrease in generation. \nI am curious as to why the US is less reliant on coal, if it has something to do with the cost of mining coal, or if the US is choosing to prioritize investing in clean sources instead. If the US is in fact choosing to spend more on clean sources of electricity this would mean, policymakers are becoming more conscious of the need to take steps to protect the environment so our planet can be habitable for the next generation. I would title this graph: “Electricity Generation for our Next Generation”."
-    },
-    {
-      "section": "headline",
-      "label": "Electricity Generation for our Next Generation",
-      "text": "Electricity Generation for our Next Generation"
     }
   ],
-  "tagged_text": "I noticed that worldwide clean electricity sources such as <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">solar</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">hydroelectric</entity> have experienced a greater increase in output of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> over time compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>. When examining the individual countries' graphs we can see that, for the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> specifically, clean electricity sources have only experienced a relatively slight increase over time. Meanwhile, the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States’</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> usage is the only source that experienced a decrease in generation. \nI am curious as to why the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is less reliant on <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity>, if it has something to do with the cost of mining <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity>, or if the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is choosing to prioritize investing in clean sources instead. If the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is in fact choosing to spend more on clean sources of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> this would mean, policymakers are becoming more conscious of the need to take steps to protect the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity> so our <entity type=\"LOCATION\" canonical=\"earth\">planet</entity> can be habitable for the next generation. I would title this graph: “<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Electricity Generation for our Next Generation</entity>”."
+  "tagged_text": "I noticed that worldwide clean electricity sources such as <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">wind</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">solar</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\">hydroelectric</entity> have experienced a greater increase in output of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> over time compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>. When examining the individual countries' graphs we can see that, for the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> specifically, clean electricity sources have only experienced a relatively slight increase over time. Meanwhile, the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States’</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> usage is the only source that experienced a decrease in generation. \nI am curious as to why the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is less reliant on coal, if it has something to do with the cost of mining coal, or if the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is choosing to prioritize investing in clean sources instead. If the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is in fact choosing to spend more on clean sources of electricity this would mean, <entity type=\"OTHER_ENTITY\" canonical=\"policymakers\" subtype=\"group\">policymakers</entity> are becoming more conscious of the need to take steps to protect the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity> so our <entity type=\"LOCATION\" canonical=\"planet\">planet</entity> can be habitable for the <entity type=\"TIME_REFERENCE\" canonical=\"next_generation\">next generation</entity>. I would title this graph: “Electricity Generation for our Next Generation”."
 }

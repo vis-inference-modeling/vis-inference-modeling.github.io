@@ -4,6 +4,48 @@
   "raw_comment": "These graphs show total energy generation by country but the text says they exclude imports and exports so they probably don't represent usage by that country. If any of these countries are net importers of energy then their total consumption would be higher, whereas if they're net exporters it then it would be lower. \n\nWe can figure out something about the trends in production though. Overall, energy production has nearly doubled in 22 years. Coal and gas still by far make up the largest part of the market however wind and solar production is increasing at the fastest rate. Nuclear and other seam to have slightly reduced in production and hydro slightly increased.\n\nThere are two dips in production at around 2008 and 2019 (less pronounced in coal). I wonder what caused them. Something to do with the GFC and COVID19?\n\nIn terms of country level, China is by far producing the most coal and its coal production has increased around 4 times since 2000 and it looks to be the biggest coal producer in the world.\n\nIn the US by comparison, coal production has decreased by more than half and oil has increased. Oil and gas combined has stayed fairly steady and still make up more than half of overall production. Overall US energy production has stayed fairly steady over the 22 years.  \n\nIndia does not produce very much energy at all compared to the other countries and it is mostly coal.",
   "entities": [
     {
+      "surface": "net importers of energy",
+      "type": "OTHER_ENTITY",
+      "canonical": "net_importers_of_energy",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 190,
+      "end": 213,
+      "id": "e0"
+    },
+    {
+      "surface": "energy production",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_production",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 398,
+      "end": 415,
+      "id": "e1"
+    },
+    {
+      "surface": "energy production",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_production",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 1229,
+      "end": 1246,
+      "id": "e2"
+    },
+    {
       "surface": "22 years",
       "type": "TIME_REFERENCE",
       "canonical": "22_years",
@@ -12,28 +54,15 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 438,
-      "end": 446,
-      "id": "e0"
-    },
-    {
-      "surface": "22 years",
-      "type": "TIME_REFERENCE",
-      "canonical": "22_years",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
       "start": 1281,
       "end": 1289,
-      "id": "e1"
+      "id": "e3"
     },
     {
       "surface": "Coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -41,41 +70,13 @@
       "occurrence_index": 0,
       "start": 1390,
       "end": 1394,
-      "id": "e2"
-    },
-    {
-      "surface": "gas",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "gas",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e3"
-    },
-    {
-      "surface": "gas",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "gas",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
       "id": "e4"
     },
     {
-      "surface": "wind and solar",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "surface": "net exporters of energy",
+      "type": "OTHER_ENTITY",
+      "canonical": "net_exporters_of_energy",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -86,10 +87,51 @@
       "id": "e5"
     },
     {
-      "surface": "Nuclear",
+      "surface": "22 years",
+      "type": "TIME_REFERENCE",
+      "canonical": "22_years",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "Coal",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "nuclear",
-      "var": "energy_source",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "Coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "gas",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "gas",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -97,7 +139,63 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e9"
+    },
+    {
+      "surface": "gas",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "gas",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "gas",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "gas",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "wind and solar",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "Nuclear and other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e13"
     },
     {
       "surface": "2008",
@@ -110,7 +208,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e14"
     },
     {
       "surface": "2019",
@@ -123,7 +221,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e15"
     },
     {
       "surface": "GFC",
@@ -136,12 +234,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e16"
     },
     {
       "surface": "COVID19",
       "type": "EVENT",
-      "canonical": "covid_19_pandemic",
+      "canonical": "coronavirus",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -149,7 +247,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e17"
     },
     {
       "surface": "China",
@@ -163,7 +261,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e18"
     },
     {
       "surface": "2000",
@@ -176,7 +274,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e19"
     },
     {
       "surface": "US",
@@ -190,13 +288,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e20"
     },
     {
-      "surface": "US",
+      "surface": "oil",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "canonical": "oil_and_other",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e21"
+    },
+    {
+      "surface": "oil",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "oil_and_other",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -204,21 +316,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "oil",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "oil_and_other",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
+      "id": "e22"
     },
     {
       "surface": "India",
@@ -232,44 +330,15 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e23"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "these graphs",
-      "reason": "Generic chart reference; no specific chart element canonical available."
-    },
-    {
-      "surface": "imports and exports",
-      "reason": "Data-context phrase not represented in the schema."
-    },
-    {
-      "surface": "net importers of energy",
-      "reason": "Trade-status concept not represented in the schema."
-    },
-    {
-      "surface": "net exporters",
-      "reason": "Trade-status concept not represented in the schema."
-    },
-    {
-      "surface": "hydro",
-      "reason": "Likely hydroelectric_and_other, but the phrase is not explicit enough to tag confidently without the synonym table entry in this prompt."
-    },
-    {
-      "surface": "oil and gas combined",
-      "reason": "Composite phrase spanning two energy sources; could be split, but 'oil' is already tagged and 'gas' is tagged separately."
-    },
-    {
-      "surface": "the world",
-      "reason": "Generic world reference used contextually; could be LOCATION but is not clearly a standalone mention here."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "These graphs show total energy generation by country but the text says they exclude imports and exports so they probably don't represent usage by that country. If any of these countries are net importers of energy then their total consumption would be higher, whereas if they're net exporters it then it would be lower.\n\nWe can figure out something about the trends in production though. Overall, energy production has nearly doubled in 22 years. Coal and gas still by far make up the largest part of the market however wind and solar production is increasing at the fastest rate. Nuclear and other seam to have slightly reduced in production and hydro slightly increased.\n\nThere are two dips in production at around 2008 and 2019 (less pronounced in coal). I wonder what caused them. Something to do with the GFC and COVID19?\n\nIn terms of country level, China is by far producing the most coal and its coal production has increased around 4 times since 2000 and it looks to be the biggest coal producer in the world.\n\nIn the US by comparison, coal production has decreased by more than half and oil has increased. Oil and gas combined has stayed fairly steady and still make up more than half of overall production. Overall US energy production has stayed fairly steady over the 22 years.  \n\nIndia does not produce very much energy at all compared to the other countries and it is mostly coal."
+      "text": "These graphs show total energy generation by country but the text says they exclude imports and exports so they probably don't represent usage by that country. If any of these countries are net importers of energy then their total consumption would be higher, whereas if they're net exporters of energy it then it would be lower.\n\nWe can figure out something about the trends in production though. Overall, energy production has nearly doubled in 22 years. Coal and gas still by far make up the largest part of the market however wind and solar production is increasing at the fastest rate. Nuclear and other seam to have slightly reduced in production and hydro slightly increased.\n\nThere are two dips in production at around 2008 and 2019 (less pronounced in coal). I wonder what caused them. Something to do with the GFC and COVID19?\n\nIn terms of country level, China is by far producing the most coal and its coal production has increased around 4 times since 2000 and it looks to be the biggest coal producer in the world.\n\nIn the US by comparison, coal production has decreased by more than half and oil has increased. Oil and gas combined has stayed fairly steady and still make up more than half of overall production. Overall US energy production has stayed fairly steady over the 22 years.  \n\nIndia does not produce very much energy at all compared to the other countries and it is mostly coal."
     }
   ],
-  "tagged_text": "These graphs show total energy generation by country but the text says they exclude imports and exports so they probably don't represent usage by that country. If any of these countries are net importers of energy then their total consumption would be higher, whereas if they're net exporters it then it would be lower.\n\nWe can figure out something about the trends in production though. Overall, energy production has nearly doubled in <entity type=\"TIME_REFERENCE\" canonical=\"22_years\">22 years</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">Coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity> still by far make up the largest part of the market however <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind and solar</entity> production is increasing at the fastest rate. <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">Nuclear</entity> and other seam to have slightly reduced in production and hydro slightly increased.\n\nThere are two dips in production at around <entity type=\"TIME_REFERENCE\" canonical=\"2008\">2008</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"2019\">2019</entity> (less pronounced in coal). I wonder what caused them. Something to do with the <entity type=\"EVENT\" canonical=\"global_financial_crisis\" modality=\"questioned\">GFC</entity> and <entity type=\"EVENT\" canonical=\"covid_19_pandemic\" modality=\"questioned\">COVID19</entity>?\n\nIn terms of country level, <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> is by far producing the most coal and its coal production has increased around 4 times since <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity> and it looks to be the biggest coal producer in the world.\n\nIn the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> by comparison, coal production has decreased by more than half and oil has increased. Oil and gas combined has stayed fairly steady and still make up more than half of overall production. Overall US energy production has stayed fairly steady over the <entity type=\"TIME_REFERENCE\" canonical=\"22_years\">22 years</entity>.  \n\n<entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> does not produce very much energy at all compared to the other countries and it is mostly coal."
+  "tagged_text": "These graphs show total energy generation by country but the text says they exclude imports and exports so they probably don't represent usage by that country. If any of these countries are <entity type=\"OTHER_ENTITY\" canonical=\"net_importers_of_energy\" subtype=\"other\">net importers of energy</entity> then their total consumption would be higher, whereas if they're <entity type=\"OTHER_ENTITY\" canonical=\"net_exporters_of_energy\" subtype=\"other\">net exporters of energy</entity> it then it would be lower.\n\nWe can figure out something about the trends in production though. Overall, <entity type=\"OTHER_ENTITY\" canonical=\"energy_production\" subtype=\"other\">energy production</entity> has nearly doubled in <entity type=\"TIME_REFERENCE\" canonical=\"22_years\">22 years</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">Coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity> still by far make up the largest part of the market however <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">wind and solar</entity> production is increasing at the fastest rate. <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\">Nuclear and other</entity> seam to have slightly reduced in production and hydro slightly increased.\n\nThere are two dips in production at around <entity type=\"TIME_REFERENCE\" canonical=\"2008\">2008</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"2019\">2019</entity> (less pronounced in coal). I wonder what caused them. Something to do with the <entity type=\"EVENT\" canonical=\"global_financial_crisis\" modality=\"questioned\">GFC</entity> and <entity type=\"EVENT\" canonical=\"coronavirus\" modality=\"questioned\">COVID19</entity>?\n\nIn terms of country level, <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> is by far producing the most coal and its coal production has increased around 4 times since <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity> and it looks to be the biggest coal producer in the world.\n\nIn the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> by comparison, coal production has decreased by more than half and <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\">oil</entity> has increased. <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\">Oil</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity> combined has stayed fairly steady and still make up more than half of overall production. Overall US energy production has stayed fairly steady over the <entity type=\"TIME_REFERENCE\" canonical=\"22_years\">22 years</entity>.  \n\n<entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> does not produce very much energy at all compared to the other countries and it is mostly <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity>."
 }

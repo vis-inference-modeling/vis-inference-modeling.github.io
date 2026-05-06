@@ -64,7 +64,7 @@
       "var": "country",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 191,
@@ -107,5 +107,5 @@
       "text": "The production of electricity continues to increase globally. Clean electricity is used more frequently than fossil fuels which is better for Earth. When looking at the three smaller scales, America's has pretty much stayed constant, as well as, India's. China on the other hand has been showing exponential growth."
     }
   ],
-  "tagged_text": "The production of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> continues to increase globally. <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">Clean electricity</entity> is used more frequently than <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> which is better for <entity type=\"LOCATION\" canonical=\"earth\">Earth</entity>. When looking at the three smaller scales, <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" speaker_context=\"true\">America's</entity> has pretty much stayed constant, as well as, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India's</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> on the other hand has been showing exponential growth."
+  "tagged_text": "The production of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> continues to increase globally. <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">Clean electricity</entity> is used more frequently than <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> which is better for <entity type=\"LOCATION\" canonical=\"earth\">Earth</entity>. When looking at the three smaller scales, <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">America's</entity> has pretty much stayed constant, as well as, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India's</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> on the other hand has been showing exponential growth."
 }

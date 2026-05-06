@@ -15,23 +15,28 @@
       "start": 66,
       "end": 68,
       "id": "e0"
-    }
-  ],
-  "unresolved_mentions": [
-    {
-      "surface": "Guys",
-      "reason": "Could refer to young men or be a generic address; not confident enough to tag as OTHER_ENTITY."
     },
     {
-      "surface": "their parents",
-      "reason": "Could be taggable as parents/other entity, but the normalized dictionary is article-specific and this comment alone does not clearly establish a canonical mapping beyond generic reference."
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 97,
+      "end": 104,
+      "id": "e1"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "Guys this it's really cool to be independent as soon as they turn 18 so they don't talk to their parents as often."
     }
   ],
-  "tagged_text": "Guys this it's really cool to be independent as soon as they turn <entity type=\"TIME_REFERENCE\" canonical=\"18\">18</entity> so they don't talk to their parents as often."
+  "tagged_text": "Guys this it's really cool to be independent as soon as they turn 18 so they don't talk to their parents as often."
 }

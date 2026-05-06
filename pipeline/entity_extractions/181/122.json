@@ -21,7 +21,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -39,7 +39,7 @@
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 52,
       "end": 63,
@@ -61,8 +61,9 @@
     },
     {
       "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
+      "type": "OTHER_ENTITY",
+      "canonical": "population_of_china",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
@@ -73,9 +74,23 @@
       "id": "e4"
     },
     {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "community",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 186,
+      "end": 195,
+      "id": "e5"
+    },
+    {
       "surface": "energy sources",
       "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "canonical": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -83,7 +98,7 @@
       "occurrence_index": 0,
       "start": 244,
       "end": 258,
-      "id": "e5"
+      "id": "e6"
     }
   ],
   "unresolved_mentions": [],
@@ -94,5 +109,5 @@
       "text": "I notice that China uses coal as their most used fossil fuel. They also use the most clean power. \nI wonder if this has anything to do with their high population. \nThis relates to my community because of the impacts of using these different energy sources have on my future."
     }
   ],
-  "tagged_text": "1. I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"numbered_point\">China</entity> uses <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"numbered_point\">coal</entity> as their most used <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\">fossil fuel</entity>. They also use the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"numbered_point\">clean power</entity>. \nI wonder if this has anything to do with their high <entity type=\"DATA_VAR\" canonical=\"population\" section=\"numbered_point\" modality=\"questioned\">population</entity>. \nThis relates to my community because of the impacts of using these different <entity type=\"DATA_VAR\" canonical=\"energy_source\" section=\"numbered_point\">energy sources</entity> have on my future."
+  "tagged_text": "1. I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> uses <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> as their most used <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuel</entity>. They also use the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean power</entity>. \nI wonder if this has anything to do with their high <entity type=\"OTHER_ENTITY\" canonical=\"population_of_china\" subtype=\"other\">population</entity>. \nThis relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"community\" speaker_context=\"true\">community</entity> because of the impacts of using these different <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\">energy sources</entity> have on my future."
 }

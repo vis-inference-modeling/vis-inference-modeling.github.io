@@ -4,6 +4,20 @@
   "raw_comment": "What do you notice?\nI notice that the non-clean energy supplies is generally dropping in the United States. The power in China and India seems to haves similar trends.\nWhat do you wonder?\nIn what ways does this graph correlate to the passing of economic laws such as solar or wind tax credits.\nHow does this relate to you and your community?\nIt helps to inform me and my community how the power we use is from and if this power is sustainable for future generations. \nCreate a catchy headline that captures the graph’s main idea\nWorld Super-Powers in more ways then one, How China and United States get there energy.",
   "entities": [
     {
+      "surface": "non-clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 38,
+      "end": 54,
+      "id": "e0"
+    },
+    {
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
@@ -15,7 +29,49 @@
       "occurrence_index": 0,
       "start": 93,
       "end": 106,
-      "id": "e0"
+      "id": "e1"
+    },
+    {
+      "surface": "power",
+      "type": "OTHER_ENTITY",
+      "canonical": "power",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 112,
+      "end": 117,
+      "id": "e2"
+    },
+    {
+      "surface": "power",
+      "type": "OTHER_ENTITY",
+      "canonical": "power",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 389,
+      "end": 394,
+      "id": "e3"
+    },
+    {
+      "surface": "power",
+      "type": "OTHER_ENTITY",
+      "canonical": "power",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 422,
+      "end": 427,
+      "id": "e4"
     },
     {
       "surface": "China",
@@ -27,9 +83,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 121,
-      "end": 126,
-      "id": "e1"
+      "start": 575,
+      "end": 580,
+      "id": "e5"
     },
     {
       "surface": "India",
@@ -41,9 +97,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 131,
-      "end": 136,
-      "id": "e2"
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "graph",
@@ -54,86 +110,99 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 211,
-      "end": 216,
-      "id": "e3"
+      "start": null,
+      "end": null,
+      "id": "e7"
     },
     {
       "surface": "economic laws",
-      "type": "EVENT",
-      "canonical": "economic_recession",
+      "type": "OTHER_ENTITY",
+      "canonical": "economic_laws",
+      "subtype": "policy",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 245,
-      "end": 258,
-      "id": "e4"
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "solar",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "solar",
-      "var": "energy_source",
+      "type": "OTHER_ENTITY",
+      "canonical": "solar_tax_credits",
+      "subtype": "policy",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 267,
-      "end": 272,
-      "id": "e5"
+      "start": null,
+      "end": null,
+      "id": "e9"
     },
     {
-      "surface": "wind",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "surface": "wind tax credits",
+      "type": "OTHER_ENTITY",
+      "canonical": "wind_tax_credits",
+      "subtype": "policy",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 276,
-      "end": 280,
-      "id": "e6"
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
     },
     {
       "surface": "World Super-Powers in more ways then one, How China and United States get there energy.",
-      "type": "OTHER_ENTITY",
-      "canonical": "world_super-powers_in_more_ways_then_one_how_china_and_united_states_get_there_energy",
-      "subtype": "other",
-      "section": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 529,
-      "end": 616,
-      "id": "e7"
+      "start": null,
+      "end": null,
+      "id": "e13"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "non-clean energy supplies",
-      "reason": "Likely refers to fossil/non-clean energy, but the surface form is not an exact dictionary match and could map to multiple energy-related categories."
-    },
-    {
-      "surface": "economic laws",
-      "reason": "Possibly a mistaken reference to economic recession or policy, but not enough confidence to map cleanly."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "What do you notice?\nI notice that the non-clean energy supplies is generally dropping in the United States. The power in China and India seems to haves similar trends.\nWhat do you wonder?\nIn what ways does this graph correlate to the passing of economic laws such as solar or wind tax credits.\nHow does this relate to you and your community?\nIt helps to inform me and my community how the power we use is from and if this power is sustainable for future generations. \nCreate a catchy headline that captures the graph’s main idea\nWorld Super-Powers in more ways then one, How China and United States get there energy."
-    },
-    {
-      "section": "headline",
-      "label": "Create a catchy headline that captures the graph’s main idea",
-      "text": "World Super-Powers in more ways then one, How China and United States get there energy."
     }
   ],
-  "tagged_text": "What do you notice?\nI notice that the non-clean energy supplies is generally dropping in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. The power in <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> seems to haves similar trends.\nWhat do you wonder?\nIn what ways does this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> correlate to the passing of <entity type=\"EVENT\" canonical=\"economic_recession\">economic laws</entity> such as <entity type=\"DATA_VAR_LEVEL\" canonical=\"solar\" var=\"energy_source\">solar</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind</entity> tax credits.\nHow does this relate to you and your community?\nIt helps to inform me and my community how the power we use is from and if this power is sustainable for future generations. \nCreate a catchy headline that captures the graph’s main idea\n<entity type=\"OTHER_ENTITY\" canonical=\"world_super-powers_in_more_ways_then_one_how_china_and_united_states_get_there_energy\" subtype=\"other\" section=\"headline\">World Super-Powers in more ways then one, How China and United States get there energy.</entity>"
+  "tagged_text": "What do you notice?\nI notice that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">non-clean energy</entity> supplies is generally dropping in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. The <entity type=\"OTHER_ENTITY\" canonical=\"power\" subtype=\"other\">power</entity> in <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> seems to haves similar trends.\nWhat do you wonder?\nIn what ways does this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> correlate to the passing of <entity type=\"OTHER_ENTITY\" canonical=\"economic_laws\" subtype=\"policy\">economic laws</entity> such as <entity type=\"OTHER_ENTITY\" canonical=\"solar_tax_credits\" subtype=\"policy\">solar</entity> or <entity type=\"OTHER_ENTITY\" canonical=\"wind_tax_credits\" subtype=\"policy\">wind tax credits</entity>.\nHow does this relate to you and your community?\nIt helps to inform me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">community</entity> how the <entity type=\"OTHER_ENTITY\" canonical=\"power\" subtype=\"other\">power</entity> we use is from and if this <entity type=\"OTHER_ENTITY\" canonical=\"power\" subtype=\"other\">power</entity> is sustainable for future generations. \nCreate a catchy headline that captures the graph’s main idea\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">World Super-Powers in more ways then one, How China and United States get there energy.</entity>"
 }

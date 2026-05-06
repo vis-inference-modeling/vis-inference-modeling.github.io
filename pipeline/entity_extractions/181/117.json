@@ -73,9 +73,9 @@
     },
     {
       "surface": "Energy Shifts: How Energy Use around the World Is Changing",
-      "type": "OTHER_ENTITY",
-      "canonical": "energy_shifts_how_energy_use_around_the_world_is_changing",
-      "section": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -113,7 +113,7 @@
       "id": "e7"
     },
     {
-      "surface": "U.S.",
+      "surface": "the U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
       "var": "country",
@@ -127,7 +127,7 @@
       "id": "e8"
     },
     {
-      "surface": "U.S.",
+      "surface": "the U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
       "var": "country",
@@ -141,63 +141,10 @@
       "id": "e9"
     },
     {
-      "surface": "U.S.",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
@@ -205,7 +152,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e10"
     },
     {
       "surface": "Energy usage",
@@ -218,7 +165,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e11"
     },
     {
       "surface": "fossil fuels",
@@ -228,11 +175,11 @@
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e12"
     },
     {
       "surface": "clean energy",
@@ -246,13 +193,17 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e13"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "around the World",
-      "reason": "Could be a rhetorical/global reference or a location-like phrase; not specific enough to tag as LOCATION."
+      "surface": "population",
+      "reason": "Generic concept in context; not a listed data variable or specific entity."
+    },
+    {
+      "surface": "around the world",
+      "reason": "Ambiguous global scope phrase; could be rhetorical LOCATION but not clearly a specific entity."
     }
   ],
   "section_segments": [
@@ -277,5 +228,5 @@
       "text": "Headline: Energy Shifts: How Energy Use around the World Is Changing"
     }
   ],
-  "tagged_text": "1. Notice: <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> does not use a lot of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity>, even though the <entity type=\"DATA_VAR\" canonical=\"population\">population</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> is larger than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> population and comparable to the <entity type=\"DATA_VAR\" canonical=\"population\">population</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>.\n\n2. Wonder: Why does <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> use less <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity>? Why has the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> decreased in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity>?\n\n3. Story: <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">Energy usage</entity> has shifted from <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>\n\n4. Headline: <entity type=\"OTHER_ENTITY\" canonical=\"energy_shifts_how_energy_use_around_the_world_is_changing\" section=\"headline\">Energy Shifts: How Energy Use around the World Is Changing</entity>"
+  "tagged_text": "1. Notice: <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> does not use a lot of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity>, even though the population of <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> is larger than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> population and comparable to the population of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>.\n\n2. Wonder: Why does <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> use less <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity>? Why has the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> decreased in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity>?\n\n3. Story: <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">Energy usage</entity> has shifted from <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>\n\n4. Headline: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Energy Shifts: How Energy Use around the World Is Changing</entity>"
 }

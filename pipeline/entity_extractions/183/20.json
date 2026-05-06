@@ -2,22 +2,28 @@
   "article_id": "183",
   "comment_index": 20,
   "raw_comment": "Talking to your parents is a good thing. do it more often.",
-  "entities": [],
-  "unresolved_mentions": [
+  "entities": [
     {
-      "surface": "your parents",
-      "reason": "Generic imperative reference; could be tagged as OTHER_ENTITY, but co-reference is not requested."
-    },
-    {
-      "surface": "do it",
-      "reason": "Pronoun reference is ambiguous and should not be tagged."
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 16,
+      "end": 23,
+      "id": "e0"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "Talking to your parents is a good thing. do it more often."
     }
   ],
-  "tagged_text": "Talking to your parents is a good thing. do it more often."
+  "tagged_text": "Talking to your <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> is a good thing. do it more often."
 }

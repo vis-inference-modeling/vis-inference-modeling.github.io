@@ -11,7 +11,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 37,
       "end": 49,
@@ -25,7 +25,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 1,
       "start": 119,
       "end": 131,
@@ -39,7 +39,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 136,
       "end": 148,
@@ -47,10 +47,11 @@
     },
     {
       "surface": "population",
-      "type": "DATA_VAR",
+      "type": "OTHER_ENTITY",
       "canonical": "population",
+      "subtype": "other",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -59,9 +60,22 @@
       "id": "e3"
     },
     {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 224,
+      "end": 235,
+      "id": "e4"
+    },
+    {
       "surface": "Race to Fuel",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -69,7 +83,7 @@
       "occurrence_index": 0,
       "start": 259,
       "end": 271,
-      "id": "e4"
+      "id": "e5"
     },
     {
       "surface": "clean energy",
@@ -79,11 +93,11 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e5"
+      "id": "e6"
     },
     {
       "surface": "fossil fuels",
@@ -93,11 +107,25 @@
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e7"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "clean energy",
@@ -107,18 +135,45 @@
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e9"
+    },
+    {
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e10"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "China",
+      "reason": "Likely country reference, but the sentence is ungrammatical and the mention is not clearly tied to a specific tagged role in the provided text."
+    },
+    {
+      "surface": "India",
+      "reason": "Likely country reference, but the sentence is ungrammatical and the mention is not clearly tied to a specific tagged role in the provided text."
+    }
+  ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice that China  rely heavily on fossil fuels while also using the most clean energy.\n\nI wonder why India usage of fossil fuels and clean energy are so low despite having a large population? Does this mean the access of electricity is limited?"
+      "text": "I notice that China  rely heavily on fossil fuels while also using the most clean energy."
+    },
+    {
+      "section": "body",
+      "text": "I wonder why India usage of fossil fuels and clean energy are so low despite having a large population? Does this mean the access of electricity is limited?"
     },
     {
       "section": "headline",
@@ -126,5 +181,5 @@
       "text": "Race to Fuel"
     }
   ],
-  "tagged_text": "I notice that China  rely heavily on <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> while also using the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity>.\n\nI wonder why India usage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\" modality=\"questioned\">fossil fuels</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\" modality=\"questioned\">clean energy</entity> are so low despite having a large <entity type=\"DATA_VAR\" canonical=\"population\" section=\"body\" modality=\"questioned\">population</entity>? Does this mean the access of electricity is limited?\n\nHeadline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Race to Fuel</entity>"
+  "tagged_text": "I notice that China  rely heavily on <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> while also using the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>.\n\nI wonder why India usage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuels</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean energy</entity> are so low despite having a large <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\">population</entity>? Does this mean the access of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity</entity> is limited?\n\nHeadline: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Race to Fuel</entity>"
 }

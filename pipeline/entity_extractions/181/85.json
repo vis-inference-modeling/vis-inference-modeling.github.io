@@ -24,7 +24,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 59,
       "end": 71,
@@ -37,7 +37,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": 358,
       "end": 370,
@@ -58,112 +58,72 @@
       "id": "e3"
     },
     {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 474,
-      "end": 487,
+      "start": 463,
+      "end": 469,
       "id": "e4"
     },
     {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
-      "start": 659,
-      "end": 672,
+      "start": 698,
+      "end": 704,
       "id": "e5"
     },
     {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "oil",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "oil_and_other",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 698,
-      "end": 704,
+      "start": 791,
+      "end": 794,
       "id": "e6"
     },
     {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "oil",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "oil_and_other",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 725,
-      "end": 731,
+      "start": 1211,
+      "end": 1214,
       "id": "e7"
     },
     {
-      "surface": "years",
-      "type": "TIME_REFERENCE",
-      "canonical": "years",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 947,
-      "end": 952,
-      "id": "e8"
-    },
-    {
       "surface": "oil",
       "type": "DATA_VAR_LEVEL",
       "canonical": "oil_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1211,
-      "end": 1214,
-      "id": "e9"
-    },
-    {
-      "surface": "oil",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "oil_and_other",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
       "start": 1363,
       "end": 1366,
-      "id": "e10"
-    },
-    {
-      "surface": "3 largest countries in the world, how they use energy",
-      "type": "OTHER_ENTITY",
-      "canonical": "3_largest_countries_in_the_world_how_they_use_energy",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1446,
-      "end": 1499,
-      "id": "e11"
+      "id": "e8"
     },
     {
       "surface": "United States'",
@@ -177,7 +137,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e9"
     },
     {
       "surface": "United States'",
@@ -191,7 +151,21 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e10"
+    },
+    {
+      "surface": "United States'",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e11"
     },
     {
       "surface": "energy usage",
@@ -200,11 +174,24 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e12"
+    },
+    {
+      "surface": "energy usage",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e13"
     },
     {
       "surface": "China's",
@@ -218,26 +205,41 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e14"
     },
     {
-      "surface": "China's",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
+      "surface": "population",
+      "type": "OTHER_ENTITY",
+      "canonical": "population",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "population of China",
+      "type": "OTHER_ENTITY",
+      "canonical": "population_of_china",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e16"
     },
     {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -248,9 +250,10 @@
       "id": "e17"
     },
     {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -261,10 +264,10 @@
       "id": "e18"
     },
     {
-      "surface": "oil",
+      "surface": "United States",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "oil_and_other",
-      "var": "energy_source",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -275,23 +278,24 @@
       "id": "e19"
     },
     {
-      "surface": "wind and solar",
+      "surface": "United States",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 3,
       "start": null,
       "end": null,
       "id": "e20"
     },
     {
-      "surface": "2010",
-      "type": "TIME_REFERENCE",
-      "canonical": "2010",
+      "surface": "wind and solar",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -302,9 +306,10 @@
       "id": "e21"
     },
     {
-      "surface": "2010",
-      "type": "TIME_REFERENCE",
-      "canonical": "2010",
+      "surface": "wind and solar",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -315,10 +320,9 @@
       "id": "e22"
     },
     {
-      "surface": "coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
+      "surface": "2010",
+      "type": "TIME_REFERENCE",
+      "canonical": "2010",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -332,12 +336,12 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e24"
@@ -346,28 +350,43 @@
       "surface": "wind/solar energy",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e25"
     },
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
+      "surface": "coal energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e26"
+    },
+    {
+      "surface": "oil",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "oil_and_other",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e27"
     },
     {
       "surface": "2000",
@@ -380,7 +399,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e27"
+      "id": "e28"
     },
     {
       "surface": "2020",
@@ -393,7 +412,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e28"
+      "id": "e29"
     },
     {
       "surface": "20 years",
@@ -406,25 +425,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e29"
+      "id": "e30"
     },
     {
       "surface": "neighborhood",
       "type": "LOCATION",
-      "canonical": "my_neighborhood",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e30"
-    },
-    {
-      "surface": "solar panels",
-      "type": "OTHER_ENTITY",
-      "canonical": "solar_panels",
+      "canonical": "neighborhood",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -435,23 +441,10 @@
       "id": "e31"
     },
     {
-      "surface": "solar and wind power",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e32"
-    },
-    {
-      "surface": "town",
-      "type": "LOCATION",
-      "canonical": "my_town",
+      "surface": "solar panels",
+      "type": "OTHER_ENTITY",
+      "canonical": "solar_panels",
+      "subtype": "technology",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -459,42 +452,60 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e32"
+    },
+    {
+      "surface": "solar and wind power",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e33"
     },
     {
-      "surface": "My title",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_title",
+      "surface": "town",
+      "type": "LOCATION",
+      "canonical": "town",
       "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e34"
+    },
+    {
+      "surface": "3 largest countries in the world, and how they consume energy",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e34"
+      "id": "e35"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "my family's",
-      "reason": "Speaker-context possession is clear, but no dedicated entity type for family as a group beyond OTHER_ENTITY; not necessary to tag separately."
-    },
-    {
-      "surface": "walking/biking",
-      "reason": "Could be treated as activities rather than entities; not tagged."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "The first thing that I noticed was that the United States' energy usage was about half of China's despite the United States having a population less than a fourth of China's population. This means that per person, we use more than twice the amount of energy than China does. This only true for the most recent years too, as in earlier parts of the graph our energy usage per person is even greater compared to China's.\nAnother thing I noticed was how the type of energy the United States uses changed. We can see a gradual increase in both oil and wind and solar starting around 2010, with a decrease in coal around that same time. While it is good that  the United States is using more wind/solar energy and using less coal energy, I wonder if that will be offset by the increased usage in oil. \nAs the graph depicts energy usage from 2000 to 2020, I am able to observe if me and my family's energy usage coorelates with the graph. Over the last 20 years many families in my neighborhood, including my own, added solar panels to their roofs, this lines up fairly accurately with when solar and wind power starts to increase (around 2010). I am glad to see this change, however I unfortunately also observe that with the layout of my suburban town, driving is almost essential to go to places so seeing an increase in oil also makes sense. These graphs should encourage people to cut out oil, if they need to go somewhere close and walking/biking is a feasible means of travel then they should consider that instead. My title: \"3 largest countries in the world, how they use energy\""
+      "text": "The first thing that I noticed was that the United States' energy usage was about half of China's despite the United States having a population less than a fourth of China's population. This means that per person, we use more than twice the amount of energy than China does. This only true for the most recent years too, as in earlier parts of the graph our energy usage per person is even greater compared to China's.\nAnother thing I noticed was how the type of energy the United States uses changed. We can see a gradual increase in both oil and wind and solar starting around 2010, with a decrease in coal around that same time. While it is good that  the United States is using more wind/solar energy and using less coal energy, I wonder if that will be offset by the increased usage in oil. \nAs the graph depicts energy usage from 2000 to 2020, I am able to observe if me and my family's energy usage coorelates with the graph. Over the last 20 years many families in my neighborhood, including my own, added solar panels to their roofs, this lines up fairly accurately with when solar and wind power starts to increase (around 2010). I am glad to see this change, however I unfortunately also observe that with the layout of my suburban town, driving is almost essential to go to places so seeing an increase in oil also makes sense. These graphs should encourage people to cut out oil, if they need to go somewhere close and walking/biking is a feasible means of travel then they should consider that instead."
     },
     {
       "section": "headline",
-      "label": "My title",
-      "text": "\"3 largest countries in the world, how they use energy\""
+      "label": "3 largest countries in the world, and how they consume energy",
+      "text": "3 largest countries in the world, and how they consume energy"
     }
   ],
-  "tagged_text": "The first thing that I noticed was that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States'</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy usage</entity> was about half of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China's</entity> despite the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity> having a <entity type=\"DATA_VAR\" canonical=\"population\" section=\"body\">population</entity> less than a fourth of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China's</entity> <entity type=\"DATA_VAR\" canonical=\"population\" section=\"body\">population</entity>. This means that per person, we use more than twice the amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> does. This only true for the most recent <entity type=\"TIME_REFERENCE\" canonical=\"years\" section=\"body\">years</entity> too, as in earlier parts of the graph our <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy usage</entity> per person is even greater compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China's</entity>.\nAnother thing I noticed was how the type of <entity type=\"DATA_VAR\" canonical=\"energy_source\" section=\"body\">energy</entity> the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity> uses changed. We can see a gradual increase in both <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\" section=\"body\">oil</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\" section=\"body\">wind and solar</entity> starting around <entity type=\"TIME_REFERENCE\" canonical=\"2010\" section=\"body\">2010</entity>, with a decrease in <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">coal</entity> around that same time. While it is good that  the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity> is using more <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\" section=\"body\">wind/solar energy</entity> and using less <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">coal energy</entity>, I wonder if that will be offset by the increased usage in <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\" section=\"body\">oil</entity>. \nAs the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> depicts <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy usage</entity> from <entity type=\"TIME_REFERENCE\" canonical=\"2000\" section=\"body\">2000</entity> to <entity type=\"TIME_REFERENCE\" canonical=\"2020\" section=\"body\">2020</entity>, I am able to observe if me and my family's <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy usage</entity> coorelates with the graph. Over the last <entity type=\"TIME_REFERENCE\" canonical=\"20_years\" section=\"body\">20 years</entity> many families in my <entity type=\"LOCATION\" canonical=\"my_neighborhood\" speaker_context=\"true\" section=\"body\">neighborhood</entity>, including my own, added <entity type=\"OTHER_ENTITY\" canonical=\"solar_panels\" section=\"body\" speaker_context=\"true\">solar panels</entity> to their roofs, this lines up fairly accurately with when <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\" section=\"body\">solar and wind power</entity> starts to increase (around <entity type=\"TIME_REFERENCE\" canonical=\"2010\" section=\"body\">2010</entity>). I am glad to see this change, however I unfortunately also observe that with the layout of my suburban <entity type=\"LOCATION\" canonical=\"my_town\" speaker_context=\"true\" section=\"body\">town</entity>, driving is almost essential to go to places so seeing an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\" section=\"body\">oil</entity> also makes sense. These graphs should encourage people to cut out <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\" section=\"body\">oil</entity>, if they need to go somewhere close and walking/biking is a feasible means of travel then they should consider that instead. My title: \"3 largest countries in the world, how they use energy\""
+  "tagged_text": "The first thing that I noticed was that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" occurrences=\"4\">United States'</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" terminology_drift=\"true\" occurrences=\"4\">energy usage</entity> was about half of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\" occurrences=\"2\">China's</entity> despite the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" occurrences=\"4\">United States</entity> having a <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\" section=\"body\" occurrences=\"1\">population</entity> less than a fourth of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\" occurrences=\"2\">China's</entity> <entity type=\"OTHER_ENTITY\" canonical=\"population_of_china\" subtype=\"other\" section=\"body\" occurrences=\"1\">population</entity>. This means that per person, we use more than twice the amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" terminology_drift=\"true\" occurrences=\"4\">energy</entity> than China does. This only true for the most recent <entity type=\"TIME_REFERENCE\" canonical=\"years\" section=\"body\" occurrences=\"1\">years</entity> too, as in earlier parts of the graph our <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" terminology_drift=\"true\" occurrences=\"4\">energy usage</entity> per person is even greater compared to China's.\nAnother thing I noticed was how the type of <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\" section=\"body\" occurrences=\"2\">energy</entity> the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" occurrences=\"4\">United States</entity> uses changed. We can see a gradual increase in both <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"2\">oil</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"2\">wind and solar</entity> starting around <entity type=\"TIME_REFERENCE\" canonical=\"2010\" section=\"body\" occurrences=\"1\">2010</entity>, with a decrease in <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">coal</entity> around that same time. While it is good that  the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" occurrences=\"4\">United States</entity> is using more <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"2\">wind/solar energy</entity> and using less <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">coal energy</entity>, I wonder if that will be offset by the increased usage in <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\" section=\"body\" modality=\"questioned\" occurrences=\"2\">oil</entity>. \nAs the graph depicts <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" occurrences=\"4\">energy usage</entity> from <entity type=\"TIME_REFERENCE\" canonical=\"2000\" section=\"body\" occurrences=\"1\">2000</entity> to <entity type=\"TIME_REFERENCE\" canonical=\"2020\" section=\"body\" occurrences=\"1\">2020</entity>, I am able to observe if me and my family's <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" occurrences=\"4\">energy usage</entity> coorelates with the graph. Over the last <entity type=\"TIME_REFERENCE\" canonical=\"20_years\" section=\"body\" occurrences=\"1\">20 years</entity> many families in my <entity type=\"LOCATION\" canonical=\"neighborhood\" speaker_context=\"true\" section=\"body\" occurrences=\"1\">neighborhood</entity>, including my own, added <entity type=\"OTHER_ENTITY\" canonical=\"solar_panels\" subtype=\"technology\" speaker_context=\"true\" section=\"body\" occurrences=\"1\">solar panels</entity> to their roofs, this lines up fairly accurately with when <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"2\">solar and wind power</entity> starts to increase (around <entity type=\"TIME_REFERENCE\" canonical=\"2010\" section=\"body\" occurrences=\"1\">2010</entity>). I am glad to see this change, however I unfortunately also observe that with the layout of my suburban <entity type=\"LOCATION\" canonical=\"town\" speaker_context=\"true\" section=\"body\" occurrences=\"1\">town</entity>, driving is almost essential to go to places so seeing an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"2\">oil</entity> also makes sense. These graphs should encourage people to cut out <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"2\">oil</entity>, if they need to go somewhere close and walking/biking is a feasible means of travel then they should consider that instead. My title: \"3 largest countries in the world, and how they consume energy\""
 }

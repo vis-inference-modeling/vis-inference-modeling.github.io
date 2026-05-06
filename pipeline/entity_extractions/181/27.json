@@ -60,7 +60,7 @@
       "id": "e3"
     },
     {
-      "surface": "U.S.",
+      "surface": "The U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
       "var": "country",
@@ -69,15 +69,28 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 692,
+      "start": 688,
       "end": 696,
       "id": "e4"
     },
     {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 692,
+      "end": 696,
+      "id": "e5"
+    },
+    {
       "surface": "We Got Energy!",
-      "type": "OTHER_ENTITY",
-      "canonical": "we_got_energy",
-      "subtype": "other",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -85,7 +98,7 @@
       "occurrence_index": 0,
       "start": 699,
       "end": 713,
-      "id": "e5"
+      "id": "e6"
     },
     {
       "surface": "fossil fuels",
@@ -99,7 +112,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e7"
     },
     {
       "surface": "fossil fuels",
@@ -113,7 +126,7 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e8"
     },
     {
       "surface": "China",
@@ -127,35 +140,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "U.S.",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
       "id": "e9"
-    },
-    {
-      "surface": "U.S.",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e10"
     },
     {
       "surface": "India",
@@ -169,10 +154,10 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e10"
     },
     {
-      "surface": "China",
+      "surface": "China's",
       "type": "DATA_VAR_LEVEL",
       "canonical": "china",
       "var": "country",
@@ -181,6 +166,20 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e12"
@@ -194,58 +193,30 @@
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e13"
     },
     {
-      "surface": "U.S.",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "Inda",
+      "surface": "Inda's",
       "type": "DATA_VAR_LEVEL",
       "canonical": "india",
       "var": "country",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e14"
     },
     {
-      "surface": "me and my community",
+      "surface": "community",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_neighbors",
-      "subtype": "other",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -253,77 +224,35 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "environment",
+      "type": "OTHER_ENTITY",
+      "canonical": "environment",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "our environment",
+      "type": "OTHER_ENTITY",
+      "canonical": "our_environment",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e17"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "clean energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e20"
-    },
-    {
-      "surface": "environment",
-      "type": "OTHER_ENTITY",
-      "canonical": "environment",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e21"
-    },
-    {
-      "surface": "environment",
-      "type": "OTHER_ENTITY",
-      "canonical": "environment",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e22"
     },
     {
       "surface": "global warming",
@@ -336,28 +265,14 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
-    },
-    {
-      "surface": "U.S.",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e24"
+      "id": "e18"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice that there is more clean energy being used as time goes on, also that the gap between fossil fuels and clean energy continues to grow greater. I noticed that China has significantly higher numbers than The U.S. and India. I wonder why China's numbers continue to skyrocket while the U.S. stays the same or even drops in fossil fuels. I also wonder why Inda's numbers are so consistently low. This relates to me and my community because the use of fossil fuels and clean energy affects the environment around us. Using clean energy can help save our environment as global warming has become a big concern in the U.S., and this is why we can see the number of fossil fuels drop in the U.S..\n\"We Got Energy!\""
+      "text": "I notice that there is more clean energy being used as time goes on, also that the gap between fossil fuels and clean energy continues to grow greater. I noticed that China has significantly higher numbers than The U.S. and India. I wonder why China's numbers continue to skyrocket while the U.S. stays the same or even drops in fossil fuels. I also wonder why Inda's numbers are so consistently low. This relates to me and my community because the use of fossil fuels and clean energy affects the environment around us. Using clean energy can help save our environment as global warming has become a big concern in the U.S., and this is why we can see the number of fossil fuels drop in the U.S.."
     },
     {
       "section": "headline",
@@ -365,5 +280,5 @@
       "text": "We Got Energy!"
     }
   ],
-  "tagged_text": "I notice that there is more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> being used as time goes on, also that the gap between <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> continues to grow greater. I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has significantly higher numbers than The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China</entity>'s numbers continue to skyrocket while the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">U.S.</entity> stays the same or even drops in <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuels</entity>. I also wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">Inda</entity>'s numbers are so consistently low. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_neighbors\" subtype=\"other\" speaker_context=\"true\">me and my community</entity> because the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> affects the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity> around us. Using <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> can help save our <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity> as <entity type=\"EVENT\" canonical=\"global_warming\">global warming</entity> has become a big concern in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity>, and this is why we can see the number of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> drop in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity>.\n\"We Got Energy!\""
+  "tagged_text": "I notice that there is more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity> being used as time goes on, also that the gap between <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity> continues to grow greater. I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> has significantly higher numbers than <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">The U.S.</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India</entity>. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\" modality=\"questioned\">China's</entity> numbers continue to skyrocket while the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" modality=\"questioned\">U.S.</entity> stays the same or even drops in <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\" modality=\"questioned\">fossil fuels</entity>. I also wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\" modality=\"questioned\">Inda's</entity> numbers are so consistently low. This relates to me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" section=\"body\" speaker_context=\"true\">community</entity> because the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity> affects the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"body\">environment</entity> around us. Using <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity> can help save our <entity type=\"OTHER_ENTITY\" canonical=\"our_environment\" subtype=\"group\" section=\"body\">environment</entity> as <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\">global warming</entity> has become a big concern in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">U.S.</entity>, and this is why we can see the number of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> drop in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">U.S.</entity>.\n\"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">We Got Energy!</entity>\""
 }

@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "energy production",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_production",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -59,7 +60,7 @@
       "surface": "nuclear energy",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -76,37 +77,24 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 161,
       "end": 172,
       "id": "e5"
     },
     {
-      "surface": "color coding",
+      "surface": "energy type color coding",
       "type": "CHART_ELEMENT",
-      "canonical": "color_scale",
+      "canonical": "energy_type_color_coding",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 289,
+      "start": 277,
       "end": 301,
       "id": "e6"
-    },
-    {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 334,
-      "end": 339,
-      "id": "e7"
     },
     {
       "surface": "climate change",
@@ -119,12 +107,12 @@
       "occurrence_index": 0,
       "start": 380,
       "end": 394,
-      "id": "e8"
+      "id": "e7"
     },
     {
       "surface": "energy sources",
       "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "canonical": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -132,7 +120,7 @@
       "occurrence_index": 0,
       "start": 442,
       "end": 456,
-      "id": "e9"
+      "id": "e8"
     },
     {
       "surface": "clean",
@@ -146,46 +134,60 @@
       "occurrence_index": 0,
       "start": 475,
       "end": 480,
-      "id": "e10"
+      "id": "e9"
     },
     {
-      "surface": "me and my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
+      "surface": "me",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker_self",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 544,
+      "end": 546,
+      "id": "e10"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 551,
       "end": 563,
       "id": "e11"
     },
     {
-      "surface": "planet",
-      "type": "LOCATION",
-      "canonical": "earth",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 688,
-      "end": 694,
-      "id": "e12"
-    },
-    {
-      "surface": "World Electricity Generation (2000-2024)",
-      "type": "OTHER_ENTITY",
-      "canonical": "world_electricity_generation_continues_to_rise",
-      "subtype": "other",
-      "section": "body",
+      "surface": "World Electricity Generation",
+      "type": "CHART_ELEMENT",
+      "canonical": "world_electricity_generation",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 769,
-      "end": 809,
+      "end": 797,
+      "id": "e12"
+    },
+    {
+      "surface": "2000-2024",
+      "type": "TIME_REFERENCE",
+      "canonical": "2000_2024",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 799,
+      "end": 808,
       "id": "e13"
     }
   ],
@@ -194,7 +196,12 @@
     {
       "section": "body",
       "text": "I noticed how dips in energy production (2008 and 2020) seem to follow years with an economic recession. Additionally, nuclear energy seems to generate the most electricity but the differences between each type are not overwhelmingly different. I enjoyed the gradient with the energy type color coding. Thinking about the use of this graph in a broader sense, it could be tied to climate change. While there is an upward trend within all the energy sources, sources colored “clean” have a more dramatic slope in their trend line.  This impacts me and my community because it provides hope for the future and suggests we are headed in a good direction to work on taking better care of our planet. A catchy title for this graph would be Ticking Towards a Cleaner Future: World Electricity Generation (2000-2024)."
+    },
+    {
+      "section": "headline",
+      "label": "A catchy title for this graph would be",
+      "text": "Ticking Towards a Cleaner Future: World Electricity Generation (2000-2024)."
     }
   ],
-  "tagged_text": "I noticed how dips in <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy production</entity> (<entity type=\"TIME_REFERENCE\" canonical=\"2008\">2008</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity>) seem to follow years with an <entity type=\"EVENT\" canonical=\"economic_recession\">economic recession</entity>. Additionally, <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear energy</entity> seems to generate the most <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> but the differences between each type are not overwhelmingly different. I enjoyed the gradient with the energy type <entity type=\"CHART_ELEMENT\" canonical=\"color_scale\">color coding</entity>. Thinking about the use of this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> in a broader sense, it could be tied to <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity>. While there is an upward trend within all the <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy sources</entity>, sources colored “<entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity>” have a more dramatic slope in their trend line.  This impacts <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">me and my community</entity> because it provides hope for the future and suggests we are headed in a good direction to work on taking better care of our <entity type=\"LOCATION\" canonical=\"earth\">planet</entity>. A catchy title for this graph would be Ticking Towards a Cleaner Future: <entity type=\"OTHER_ENTITY\" canonical=\"world_electricity_generation_continues_to_rise\" subtype=\"other\">World Electricity Generation (2000-2024)</entity>."
+  "tagged_text": "I noticed how dips in <entity type=\"OTHER_ENTITY\" canonical=\"energy_production\" subtype=\"other\">energy production</entity> (<entity type=\"TIME_REFERENCE\" canonical=\"2008\">2008</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity>) seem to follow years with an <entity type=\"EVENT\" canonical=\"economic_recession\">economic recession</entity>. Additionally, <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear energy</entity> seems to generate the most <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> but the differences between each type are not overwhelmingly different. I enjoyed the gradient with the <entity type=\"CHART_ELEMENT\" canonical=\"energy_type_color_coding\">energy type color coding</entity>. Thinking about the use of this graph in a broader sense, it could be tied to <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity>. While there is an upward trend within all the <entity type=\"DATA_VAR_LEVEL\" canonical=\"energy_source_generation_type\" var=\"energy_source_generation_type\">energy sources</entity>, sources colored “<entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity>” have a more dramatic slope in their trend line.  This impacts <entity type=\"OTHER_ENTITY\" canonical=\"speaker_self\" subtype=\"other\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because it provides hope for the future and suggests we are headed in a good direction to work on taking better care of our planet. A catchy title for this graph would be Ticking Towards a Cleaner Future: <entity type=\"CHART_ELEMENT\" canonical=\"world_electricity_generation\">World Electricity Generation</entity> (<entity type=\"TIME_REFERENCE\" canonical=\"2000_2024\">2000-2024</entity>)."
 }

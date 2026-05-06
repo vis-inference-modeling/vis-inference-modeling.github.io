@@ -7,7 +7,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -24,7 +24,7 @@
       "var": "country",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 17,
@@ -38,7 +38,7 @@
       "var": "country",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
       "start": 82,
@@ -52,7 +52,7 @@
       "var": "country",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 2,
       "start": 138,
@@ -67,7 +67,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 170,
       "end": 182,
@@ -88,102 +88,17 @@
       "id": "e5"
     },
     {
-      "surface": "US",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "The extent the US, India, and China will go for clean power, oil, gas, and coal",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 230,
-      "end": 232,
-      "id": "e6"
-    },
-    {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 234,
-      "end": 239,
-      "id": "e7"
-    },
-    {
-      "surface": "China",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 245,
-      "end": 250,
-      "id": "e8"
-    },
-    {
-      "surface": "clean power",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 263,
-      "end": 274,
-      "id": "e9"
-    },
-    {
-      "surface": "oil",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "oil_and_other",
-      "var": "energy_source",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 276,
-      "end": 279,
-      "id": "e10"
-    },
-    {
-      "surface": "gas",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "gas",
-      "var": "energy_source",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 281,
-      "end": 284,
-      "id": "e11"
-    },
-    {
-      "surface": "coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 290,
+      "start": 215,
       "end": 294,
-      "id": "e12"
+      "id": "e6"
     },
     {
       "surface": "graph",
@@ -196,15 +111,28 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e7"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice coal in the US is the only thing significantly decreasing.\n\nI wonder why the US stayed roughly the same in its graph.\n\nI live in the US so it shows the usage of fossil fuels ad clean power in my country.\n\n\"The extent the US, India, and China will go for clean power, oil, gas, and coal\" would by my headline."
+      "text": "I notice coal in the US is the only thing significantly decreasing."
+    },
+    {
+      "section": "body",
+      "text": "I wonder why the US stayed roughly the same in its graph."
+    },
+    {
+      "section": "body",
+      "text": "I live in the US so it shows the usage of fossil fuels ad clean power in my country."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "The extent the US, India, and China will go for clean power, oil, gas, and coal"
     }
   ],
-  "tagged_text": "I notice <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">coal</entity> in <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">the US</entity> is the only thing significantly decreasing.\n\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" modality=\"questioned\">the US</entity> stayed roughly the same in its <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"questioned\">graph</entity>.\n\nI live in <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" speaker_context=\"true\">the US</entity> so it shows the usage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> ad <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean power</entity> in my country.\n\n\"The extent the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">US</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"headline\">India</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"headline\">China</entity> will go for <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">clean power</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\" section=\"headline\">oil</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" section=\"headline\">gas</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"headline\">coal</entity>\" would by my headline."
+  "tagged_text": "I notice <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> in <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">the US</entity> is the only thing significantly decreasing.\n\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">the US</entity> stayed roughly the same in its <entity type=\"CHART_ELEMENT\" canonical=\"graph\" modality=\"questioned\">graph</entity>.\n\nI live in <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" speaker_context=\"true\">the US</entity> so it shows the usage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> ad <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean power</entity> in my country.\n\n\"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">The extent the US, India, and China will go for clean power, oil, gas, and coal</entity>\" would by my headline."
 }

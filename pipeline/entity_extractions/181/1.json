@@ -7,7 +7,7 @@
       "surface": "wind and solar",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -85,20 +85,6 @@
       "id": "e5"
     },
     {
-      "surface": "environment",
-      "type": "OTHER_ENTITY",
-      "canonical": "environment",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 772,
-      "end": 783,
-      "id": "e6"
-    },
-    {
       "surface": "Akita",
       "type": "LOCATION",
       "canonical": "akita_japan",
@@ -109,7 +95,7 @@
       "occurrence_index": 0,
       "start": 787,
       "end": 792,
-      "id": "e7"
+      "id": "e6"
     },
     {
       "surface": "Akita cedars",
@@ -123,7 +109,7 @@
       "occurrence_index": 0,
       "start": 866,
       "end": 878,
-      "id": "e8"
+      "id": "e7"
     },
     {
       "surface": "Clean Energy",
@@ -137,13 +123,27 @@
       "occurrence_index": 0,
       "start": 963,
       "end": 975,
+      "id": "e8"
+    },
+    {
+      "surface": "materials",
+      "type": "OTHER_ENTITY",
+      "canonical": "materials",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e9"
     },
     {
-      "surface": "renewable energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
+      "surface": "governments of various countries",
+      "type": "OTHER_ENTITY",
+      "canonical": "governments_of_various_countries",
+      "subtype": "organization",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -154,6 +154,34 @@
       "id": "e10"
     },
     {
+      "surface": "renewable energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "junior high school student",
+      "type": "OTHER_ENTITY",
+      "canonical": "junior_high_school_student",
+      "subtype": "person",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
       "surface": "electric power generation",
       "type": "DATA_VAR",
       "canonical": "electricity_generation",
@@ -164,7 +192,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e13"
     },
     {
       "surface": "electric power generation",
@@ -175,32 +203,6 @@
       "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "world",
-      "type": "LOCATION",
-      "canonical": "world",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "2008",
-      "type": "TIME_REFERENCE",
-      "canonical": "2008",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e14"
@@ -213,7 +215,7 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e15"
@@ -261,7 +263,7 @@
       "surface": "economy",
       "type": "OTHER_ENTITY",
       "canonical": "economy",
-      "subtype": "other",
+      "subtype": "concept",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -270,6 +272,20 @@
       "start": null,
       "end": null,
       "id": "e19"
+    },
+    {
+      "surface": "demand",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_demand",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
     }
   ],
   "unresolved_mentions": [],
@@ -295,5 +311,5 @@
       "text": "What is the Solution to Increase the Rate of Clean Energy?"
     }
   ],
-  "tagged_text": "1. The rate of <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind and solar</entity> have been becoming higher <entity type=\"TIME_REFERENCE\" canonical=\"since_2000\">since 2000</entity>, but <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> occupies more than half of materials. In fact, the situation is seen as a problem, so the governments of various countries are promoting <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\">renewable energy</entity>. I had an opportunity to think about a solution to improve the situations when I was a junior high school student. \n2. I wonder why the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electric power generation</entity> in the <entity type=\"LOCATION\" canonical=\"world\">world</entity> decreased in around <entity type=\"TIME_REFERENCE\" canonical=\"2008\">2008</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"2021\">2021</entity>. I think that the <entity type=\"EVENT\" canonical=\"lehman_shock\">Lehman shock</entity> in 2008 and the spreading of <entity type=\"EVENT\" canonical=\"coronavirus\">coronavirus</entity> relate to the result. Indeed, the <entity type=\"OTHER_ENTITY\" canonical=\"economy\" subtype=\"other\">economy</entity> was in a slump because of them, so demand of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electric power generation</entity> decreased. \n3. If the rate of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"hypothetical\">fossil fuels</entity> remains steady, the <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"hypothetical\">global warming</entity> and the <entity type=\"EVENT\" canonical=\"air_pollution\" modality=\"hypothetical\">air pollution</entity> will worsen. So, the precious natural <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\">environment</entity> in <entity type=\"LOCATION\" canonical=\"akita_japan\" speaker_context=\"true\">Akita</entity>, where I live, could be negatively affected. For instance, the growth of <entity type=\"OTHER_ENTITY\" canonical=\"akita_cedars\" subtype=\"flora_fauna\">Akita cedars</entity> may deteriorate. \n4. Catchy headline : What is the Solution to Increase the Rate of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">Clean Energy</entity>?"
+  "tagged_text": "1. The rate of <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">wind and solar</entity> have been becoming higher <entity type=\"TIME_REFERENCE\" canonical=\"since_2000\">since 2000</entity>, but <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> occupies more than half of <entity type=\"OTHER_ENTITY\" canonical=\"materials\" subtype=\"other\">materials</entity>. In fact, the situation is seen as a problem, so the <entity type=\"OTHER_ENTITY\" canonical=\"governments_of_various_countries\" subtype=\"organization\">governments of various countries</entity> are promoting <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">renewable energy</entity>. I had an opportunity to think about a solution to improve the situations when I was a <entity type=\"OTHER_ENTITY\" canonical=\"junior_high_school_student\" subtype=\"person\" speaker_context=\"true\">junior high school student</entity>. \n2. I wonder why the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electric power generation</entity> in the world decreased in around <entity type=\"TIME_REFERENCE\" canonical=\"2008\">2008</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"2021\">2021</entity>. I think that the <entity type=\"EVENT\" canonical=\"lehman_shock\">Lehman shock</entity> in 2008 and the spreading of <entity type=\"EVENT\" canonical=\"coronavirus\">coronavirus</entity> relate to the result. Indeed, the <entity type=\"OTHER_ENTITY\" canonical=\"economy\" subtype=\"concept\">economy</entity> was in a slump because of them, so <entity type=\"OTHER_ENTITY\" canonical=\"energy_demand\" subtype=\"concept\">demand</entity> of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electric power generation</entity> decreased. \n3. If the rate of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"hypothetical\">fossil fuels</entity> remains steady, the <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"hypothetical\">global warming</entity> and the <entity type=\"EVENT\" canonical=\"air_pollution\" modality=\"hypothetical\">air pollution</entity> will worsen. So, the precious natural environment in <entity type=\"LOCATION\" canonical=\"akita_japan\" speaker_context=\"true\">Akita</entity>, where I live, could be negatively affected. For instance, the growth of <entity type=\"OTHER_ENTITY\" canonical=\"akita_cedars\" subtype=\"flora_fauna\">Akita cedars</entity> may deteriorate. \n4. Catchy headline : What is the Solution to Increase the Rate of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">Clean Energy</entity>?"
 }

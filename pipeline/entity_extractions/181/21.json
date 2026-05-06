@@ -30,19 +30,6 @@
       "id": "e1"
     },
     {
-      "surface": "electricity generation",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 631,
-      "end": 653,
-      "id": "e2"
-    },
-    {
       "surface": "China",
       "type": "DATA_VAR_LEVEL",
       "canonical": "china",
@@ -54,21 +41,7 @@
       "occurrence_index": 0,
       "start": 707,
       "end": 712,
-      "id": "e3"
-    },
-    {
-      "surface": "China",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 1133,
-      "end": 1138,
-      "id": "e4"
+      "id": "e2"
     },
     {
       "surface": "India",
@@ -82,7 +55,7 @@
       "occurrence_index": 0,
       "start": 1154,
       "end": 1159,
-      "id": "e5"
+      "id": "e3"
     },
     {
       "surface": "electricity",
@@ -91,11 +64,11 @@
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 1175,
       "end": 1186,
-      "id": "e6"
+      "id": "e4"
     },
     {
       "surface": "years",
@@ -108,12 +81,39 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e5"
     },
     {
       "surface": "graphs",
       "type": "CHART_ELEMENT",
-      "canonical": "graphs",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "graphs",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -124,9 +124,10 @@
       "id": "e8"
     },
     {
-      "surface": "graphs",
-      "type": "CHART_ELEMENT",
-      "canonical": "graphs",
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -137,23 +138,9 @@
       "id": "e9"
     },
     {
-      "surface": "China",
+      "surface": "China's",
       "type": "DATA_VAR_LEVEL",
       "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "US",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
       "var": "country",
       "section": "body",
       "modality": "asserted",
@@ -162,21 +149,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "US",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e12"
+      "id": "e10"
     },
     {
       "surface": "2000",
@@ -189,7 +162,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e11"
     },
     {
       "surface": "2020",
@@ -202,13 +175,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e12"
     },
     {
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -216,13 +189,41 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e13"
     },
     {
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
       "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "economic growth",
+      "type": "OTHER_ENTITY",
+      "canonical": "economic_growth",
+      "subtype": "concept",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -233,9 +234,10 @@
       "id": "e16"
     },
     {
-      "surface": "electricity generation",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "population growth",
+      "type": "OTHER_ENTITY",
+      "canonical": "population_growth",
+      "subtype": "concept",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -246,9 +248,10 @@
       "id": "e17"
     },
     {
-      "surface": "economic",
-      "type": "EVENT",
-      "canonical": "economic_recession",
+      "surface": "population",
+      "type": "OTHER_ENTITY",
+      "canonical": "population",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -259,9 +262,10 @@
       "id": "e18"
     },
     {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
+      "surface": "environmental laws and regulations",
+      "type": "OTHER_ENTITY",
+      "canonical": "environmental_laws_and_regulations",
+      "subtype": "policy",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -272,58 +276,18 @@
       "id": "e19"
     },
     {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
+      "surface": "renewable energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e20"
-    },
-    {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e21"
-    },
-    {
-      "surface": "my town",
-      "type": "LOCATION",
-      "canonical": "my_town",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e22"
-    },
-    {
-      "surface": "renewable energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e23"
     },
     {
       "surface": "air pollution",
@@ -336,13 +300,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
+      "id": "e21"
     },
     {
-      "surface": "health",
+      "surface": "people",
       "type": "OTHER_ENTITY",
-      "canonical": "health",
-      "subtype": "other",
+      "canonical": "people",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -350,7 +314,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e25"
+      "id": "e22"
     },
     {
       "surface": "China",
@@ -364,7 +328,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e26"
+      "id": "e23"
     },
     {
       "surface": "U.S.",
@@ -378,7 +342,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e27"
+      "id": "e24"
     },
     {
       "surface": "India",
@@ -392,7 +356,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e28"
+      "id": "e25"
     }
   ],
   "unresolved_mentions": [],
@@ -407,5 +371,5 @@
       "text": "How do China, the U.S., and India generate their electricity?"
     }
   ],
-  "tagged_text": "I see a rise in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> and a positive correlation with <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity> in these <entity type=\"CHART_ELEMENT\" canonical=\"graphs\">graphs</entity>. I noted that, as the <entity type=\"CHART_ELEMENT\" canonical=\"graphs\">graphs</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>, and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> demonstrate, this increase is not necessarily uniform across all nations. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>'s electrical production expanded year after year between <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity> at a high linear pace, while the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> increased only slightly throughout that time. I can also see that each nation uses <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> as its main source of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity>, but over time, the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> has been using less of it while the other two have both been using more. \n\n I wonder how the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity> has managed to maintain steady <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity generation</entity> in spite of <entity type=\"EVENT\" canonical=\"economic_recession\" modality=\"questioned\">economic</entity> and <entity type=\"DATA_VAR\" canonical=\"population\" modality=\"questioned\">population</entity> growth. Although <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has a much greater <entity type=\"DATA_VAR\" canonical=\"population\">population</entity>, the huge difference in electrical generation is still confusing. This raises the question of whether environmental laws and regulations are in force in nations other than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>.\n\n\nThis relates to <entity type=\"LOCATION\" canonical=\"my_town\" speaker_context=\"true\">my town</entity> since switching to <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\">renewable energy</entity> offers many advantages, especially in terms of lowering <entity type=\"EVENT\" canonical=\"air_pollution\">air pollution</entity> and enhancing general <entity type=\"OTHER_ENTITY\" canonical=\"health\" subtype=\"other\">health</entity> for a large number of people.\n\nHow do <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"headline\">China</entity>, the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">U.S.</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"headline\">India</entity> generate their <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"headline\">electricity</entity>?"
+  "tagged_text": "I see a rise in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity generation</entity> and a positive correlation with <entity type=\"TIME_REFERENCE\" canonical=\"years\" section=\"body\">years</entity> in these <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graphs</entity>. I noted that, as the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graphs</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India</entity>, and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">US</entity> demonstrate, this increase is not necessarily uniform across all nations. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China's</entity> electrical production expanded year after year between <entity type=\"TIME_REFERENCE\" canonical=\"2000\" section=\"body\">2000</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"2020\" section=\"body\">2020</entity> at a high linear pace, while the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">US</entity> increased only slightly throughout that time. I can also see that each nation uses <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\">coal</entity> as its main source of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity generation</entity>, but over time, the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">US</entity> has been using less of it while the other two have both been using more. \n\n I wonder how the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" modality=\"questioned\">United States</entity> has managed to maintain steady <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" modality=\"questioned\">electricity generation</entity> in spite of <entity type=\"OTHER_ENTITY\" canonical=\"economic_growth\" subtype=\"concept\" section=\"body\" modality=\"questioned\">economic growth</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"population_growth\" subtype=\"concept\" section=\"body\" modality=\"questioned\">population growth</entity>. Although <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\" modality=\"questioned\">China</entity> has a much greater <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\" section=\"body\" modality=\"questioned\">population</entity>, the huge difference in electrical generation is still confusing. This raises the question of whether <entity type=\"OTHER_ENTITY\" canonical=\"environmental_laws_and_regulations\" subtype=\"policy\" section=\"body\" modality=\"questioned\">environmental laws and regulations</entity> are in force in nations other than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" modality=\"questioned\">United States</entity>.\n\n\nThis relates to my <entity type=\"LOCATION\" canonical=\"my_town\" section=\"body\" speaker_context=\"true\">town</entity> since switching to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">renewable energy</entity> offers many advantages, especially in terms of lowering <entity type=\"EVENT\" canonical=\"air_pollution\" section=\"body\">air pollution</entity> and enhancing general health for a large number of <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\" section=\"body\">people</entity>.\n\nHow do <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"headline\">China</entity>, the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">U.S.</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"headline\">India</entity> generate their <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"headline\">electricity</entity>?"
 }

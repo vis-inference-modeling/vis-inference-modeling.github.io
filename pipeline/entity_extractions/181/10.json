@@ -5,10 +5,11 @@
   "entities": [
     {
       "surface": "neighborhood",
-      "type": "LOCATION",
-      "canonical": "my_neighborhood",
+      "type": "OTHER_ENTITY",
+      "canonical": "neighborhood",
+      "subtype": "group",
       "section": "body",
-      "modality": "asserted",
+      "modality": "hypothetical",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -17,47 +18,85 @@
       "id": "e0"
     },
     {
-      "surface": "Energy",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "100",
+      "type": "UNIT",
+      "canonical": "100",
       "section": "body",
-      "modality": "asserted",
+      "modality": "hypothetical",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 21,
+      "end": 24,
+      "id": "e1"
+    },
+    {
+      "surface": "1,000",
+      "type": "UNIT",
+      "canonical": "1000",
+      "section": "body",
+      "modality": "hypothetical",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 28,
+      "end": 33,
+      "id": "e2"
+    },
+    {
+      "surface": "solar panels",
+      "type": "OTHER_ENTITY",
+      "canonical": "solar_panels",
+      "subtype": "technology",
+      "section": "body",
+      "modality": "hypothetical",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 56,
+      "end": 68,
+      "id": "e3"
+    },
+    {
+      "surface": "Energy $ savings",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_savings",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 124,
-      "end": 130,
-      "id": "e1"
+      "end": 140,
+      "id": "e4"
     },
     {
-      "surface": "5-10",
-      "type": "TIME_REFERENCE",
-      "canonical": "5_10_years",
+      "surface": "5-10 regions of the country",
+      "type": "OTHER_ENTITY",
+      "canonical": "regions_of_the_country",
+      "subtype": "other",
       "section": "body",
-      "modality": "asserted",
+      "modality": "hypothetical",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 169,
-      "end": 173,
-      "id": "e2"
+      "start": null,
+      "end": null,
+      "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "roof solar panels",
-      "reason": "Could be tagged as OTHER_ENTITY or energy-source-related phrase, but no exact canonical level is provided in the article-specific dictionary."
-    },
-    {
-      "surface": "country",
-      "reason": "Generic reference to a country/region; unclear whether it refers to the Country data variable or a specific location."
+      "surface": "average household",
+      "reason": "Likely a demographic/group reference, but not in the provided normalized dictionary and not clearly tied to a specific canonical entity."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "If a neighborhood of 100 or 1,000 houses installed roof solar panels, what would the installation price for those homes be? Energy $ savings for average household?  For 5-10 regions of the  country.\nThanks."
+      "text": "If a neighborhood of 100 or 1,000 houses installed roof solar panels, what would the installation price for those homes be? Energy $ savings for average household?  For 5-10 regions of the country.\nThanks."
     }
   ],
-  "tagged_text": "If a <entity type=\"LOCATION\" canonical=\"my_neighborhood\">neighborhood</entity> of 100 or 1,000 houses installed roof solar panels, what would the installation price for those homes be? <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">Energy</entity> $ savings for average household?  For <entity type=\"TIME_REFERENCE\" canonical=\"5_10_years\">5-10</entity> regions of the  country.\nThanks."
+  "tagged_text": "If a <entity type=\"OTHER_ENTITY\" canonical=\"neighborhood\" subtype=\"group\">neighborhood</entity> of <entity type=\"UNIT\" canonical=\"100\">100</entity> or <entity type=\"UNIT\" canonical=\"1000\">1,000</entity> houses installed roof <entity type=\"OTHER_ENTITY\" canonical=\"solar_panels\" subtype=\"technology\">solar panels</entity>, what would the installation price for those homes be? <entity type=\"OTHER_ENTITY\" canonical=\"energy_savings\" subtype=\"other\">Energy $ savings</entity> for average household?  For <entity type=\"OTHER_ENTITY\" canonical=\"regions_of_the_country\" subtype=\"other\">5-10 regions of the country</entity>.\nThanks."
 }

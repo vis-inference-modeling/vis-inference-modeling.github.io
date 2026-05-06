@@ -66,9 +66,9 @@
       "var": "country",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e4"
@@ -76,12 +76,16 @@
   ],
   "unresolved_mentions": [
     {
-      "surface": "more of everything",
-      "reason": "Refers to multiple chart quantities but does not name a specific entity or variable."
+      "surface": "everything",
+      "reason": "Too vague to map to a specific data variable or entity."
+    },
+    {
+      "surface": "things on the chart",
+      "reason": "Generic reference to chart contents; not a specific entity mention."
     },
     {
       "surface": "low country",
-      "reason": "Likely a descriptive phrase about the United States or a socioeconomic status, but not a clear entity."
+      "reason": "Could be a descriptive phrase or a location-like term, but unclear in context."
     }
   ],
   "section_segments": [
@@ -90,5 +94,5 @@
       "text": "I noticed that China has more of everything on the chart I wonder how China has more of everything than the U.S It kinda relates to to here in the U.S because we use most of these things on the chart as well. China uses more than us that makes us low country."
     }
   ],
-  "tagged_text": "I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has more of everything on the chart I wonder how <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has more of everything than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S</entity> It kinda relates to to here in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S</entity> because we use most of these things on the chart as well. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> uses more than us that makes us low country."
+  "tagged_text": "I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> has more of everything on the chart I wonder how <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> has more of everything than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">U.S</entity> It kinda relates to to here in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" speaker_context=\"true\">U.S</entity> because we use most of these things on the chart as well. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> uses more than us that makes us low country."
 }

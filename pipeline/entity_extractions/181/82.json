@@ -7,7 +7,7 @@
       "surface": "Coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,18 +18,71 @@
       "id": "e0"
     },
     {
-      "surface": "Coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 71,
+      "end": 93,
+      "id": "e1"
+    },
+    {
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
+      "start": 359,
+      "end": 381,
+      "id": "e2"
+    },
+    {
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 452,
+      "end": 474,
+      "id": "e3"
+    },
+    {
+      "surface": "Fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 905,
+      "end": 917,
+      "id": "e4"
+    },
+    {
+      "surface": "coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
       "start": 1263,
       "end": 1267,
-      "id": "e1"
+      "id": "e5"
     },
     {
       "surface": "world",
@@ -42,26 +95,12 @@
       "occurrence_index": 0,
       "start": 1314,
       "end": 1319,
-      "id": "e2"
+      "id": "e6"
     },
     {
-      "surface": "Coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e3"
-    },
-    {
-      "surface": "electricity generation",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "2010",
+      "type": "TIME_REFERENCE",
+      "canonical": "2010",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -69,51 +108,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e4"
-    },
-    {
-      "surface": "electricity generation",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e5"
-    },
-    {
-      "surface": "electricity generation",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "electricity generation",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": null,
-      "end": null,
       "id": "e7"
     },
     {
-      "surface": "since 2010",
-      "type": "TIME_REFERENCE",
-      "canonical": "since_2010",
+      "surface": "gas",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "gas",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -124,10 +125,10 @@
       "id": "e8"
     },
     {
-      "surface": "Gas",
+      "surface": "wind and solar",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "gas",
-      "var": "energy_source",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -138,24 +139,23 @@
       "id": "e9"
     },
     {
-      "surface": "Gas",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "gas",
-      "var": "energy_source",
+      "surface": "2000",
+      "type": "TIME_REFERENCE",
+      "canonical": "2000",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e10"
     },
     {
-      "surface": "wind and solar",
+      "surface": "Nuclear",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "canonical": "nuclear",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -166,23 +166,23 @@
       "id": "e11"
     },
     {
-      "surface": "since 2000",
-      "type": "TIME_REFERENCE",
-      "canonical": "since_2000",
+      "surface": "hydro",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e12"
     },
     {
-      "surface": "Nuclear",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "nuclear",
-      "var": "energy_source",
+      "surface": "20 year period",
+      "type": "TIME_REFERENCE",
+      "canonical": "20_years",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -193,25 +193,25 @@
       "id": "e13"
     },
     {
-      "surface": "hydro",
+      "surface": "oil",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
+      "canonical": "oil_and_other",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e14"
     },
     {
-      "surface": "20 year",
-      "type": "TIME_REFERENCE",
-      "canonical": "20_years",
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -220,60 +220,30 @@
       "id": "e15"
     },
     {
-      "surface": "Fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
       "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "Fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
       "start": null,
       "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "electricity generation",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
       "id": "e17"
-    },
-    {
-      "surface": "oil",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "oil_and_other",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "clean sources",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
     },
     {
       "surface": "graph",
@@ -286,14 +256,41 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e18"
+    },
+    {
+      "surface": "coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
     },
     {
       "surface": "2020",
       "type": "TIME_REFERENCE",
       "canonical": "2020",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "pandemic",
+      "type": "EVENT",
+      "canonical": "pandemic",
+      "section": "body",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -302,11 +299,12 @@
       "id": "e21"
     },
     {
-      "surface": "pandemic",
-      "type": "EVENT",
-      "canonical": "pandemic",
+      "surface": "energy demand",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_demand",
+      "subtype": "concept",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -315,22 +313,9 @@
       "id": "e22"
     },
     {
-      "surface": "energy demand",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e23"
-    },
-    {
-      "surface": "countries",
+      "surface": "countries and regions",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "country",
+      "canonical": "countries_and_regions",
       "var": "country",
       "section": "body",
       "modality": "questioned",
@@ -339,25 +324,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
+      "id": "e23"
     },
     {
-      "surface": "electricity source",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e25"
-    },
-    {
-      "surface": "decades",
+      "surface": "coming decades",
       "type": "TIME_REFERENCE",
-      "canonical": "decades",
+      "canonical": "coming_decades",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -365,7 +337,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e26"
+      "id": "e24"
     },
     {
       "surface": "fossil fuels",
@@ -379,7 +351,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e27"
+      "id": "e25"
     },
     {
       "surface": "climate change",
@@ -392,7 +364,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e28"
+      "id": "e26"
     },
     {
       "surface": "air pollution",
@@ -405,7 +377,21 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e29"
+      "id": "e27"
+    },
+    {
+      "surface": "economic disruption",
+      "type": "OTHER_ENTITY",
+      "canonical": "economic_disruption",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e28"
     },
     {
       "surface": "clean energy",
@@ -419,13 +405,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e29"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e30"
     },
     {
-      "surface": "Headline",
-      "type": "OTHER_ENTITY",
+      "surface": "Coal still king as renewables rise in powering the world",
+      "type": "CHART_ELEMENT",
       "canonical": "headline",
-      "section": "body",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -433,41 +433,19 @@
       "start": null,
       "end": null,
       "id": "e31"
-    },
-    {
-      "surface": "Coal still king as renewables rise in powering the world",
-      "type": "OTHER_ENTITY",
-      "canonical": "coal_still_king_as_renewables_rise_in_powering_the_world",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e32"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "other renewables",
-      "reason": "Could refer to a broader renewable-energy category, but no exact canonical level is provided beyond clean/wind and solar/hydroelectric/nuclear."
-    },
-    {
-      "surface": "fossil-dependent communities",
-      "reason": "Could be a community descriptor or a location-like social group; not a standard entity type in the schema."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "What I notice:\nCoal has consistently been the largest source of global electricity generation, though it has declined slightly since 2010. Gas, wind and solar, and other renewables have been steadily increasing since 2000. Nuclear and hydro have stayed relatively flat over the 20 year period. Fossil fuels (coal, gas, oil) still make up the vast majority of electricity generation compared to clean sources.\n\nWhat I wonder:\nHow much have total global electricity generation amounts changed over this period? The graph shows share but not absolute amounts. What explains the slight dip in coal around 2020 - was it due to the pandemic reducing energy demand? How much variability is there between countries and regions in the electricity source mix? How are these trends projected to change in the coming decades as renewables scale up further?\n\nImpact on me and my community:\nThe still-dominant share of fossil fuels has major climate change and air pollution impacts that affect the whole world. More renewables means cleaner air and reduced emissions, but also potential economic disruption in fossil-dependent communities. The trends point to the need to massively scale up clean energy investment and infrastructure in my community and globally.\n\nHeadline: \"Coal still king as renewables rise in powering the world\""
+      "text": "What I notice:\nCoal has consistently been the largest source of global electricity generation, though it has declined slightly since 2010. Gas, wind and solar, and other renewables have been steadily increasing since 2000. Nuclear and hydro have stayed relatively flat over the 20 year period. Fossil fuels (coal, gas, oil) still make up the vast majority of electricity generation compared to clean sources.\n\nWhat I wonder:\nHow much have total global electricity generation amounts changed over this period? The graph shows share but not absolute amounts. What explains the slight dip in coal around 2020 - was it due to the pandemic reducing energy demand? How much variability is there between countries and regions in the electricity source mix? How are these trends projected to change in the coming decades as renewables scale up further?\n\nImpact on me and my community:\nThe still-dominant share of fossil fuels has major climate change and air pollution impacts that affect the whole world. More renewables means cleaner air and reduced emissions, but also potential economic disruption in fossil-dependent communities. The trends point to the need to massively scale up clean energy investment and infrastructure in my community and globally."
     },
     {
       "section": "headline",
-      "label": "Headline",
-      "text": "\"Coal still king as renewables rise in powering the world\""
+      "label": "Coal still king as renewables rise in powering the world",
+      "text": "Coal still king as renewables rise in powering the world"
     }
   ],
-  "tagged_text": "What I notice:\n<entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">Coal</entity> has consistently been the largest source of global <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity generation</entity>, though it has declined slightly <entity type=\"TIME_REFERENCE\" canonical=\"since_2010\" section=\"body\">since 2010</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" section=\"body\">Gas</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\" section=\"body\">wind and solar</entity>, and other renewables have been steadily increasing <entity type=\"TIME_REFERENCE\" canonical=\"since_2000\" section=\"body\">since 2000</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\" section=\"body\">Nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\" section=\"body\">hydro</entity> have stayed relatively flat over the <entity type=\"TIME_REFERENCE\" canonical=\"20_years\" section=\"body\">20 year</entity> period. <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">Fossil fuels</entity> (<entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">coal</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" section=\"body\">gas</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\" section=\"body\">oil</entity>) still make up the vast majority of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity generation</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean sources</entity>.\n\nWhat I wonder:\nHow much have total global <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity generation</entity> amounts changed over this period? The <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> shows share but not absolute amounts. What explains the slight dip in <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"body\">coal</entity> around <entity type=\"TIME_REFERENCE\" canonical=\"2020\" section=\"body\">2020</entity> - was it due to the <entity type=\"EVENT\" canonical=\"pandemic\" section=\"body\">pandemic</entity> reducing <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy demand</entity>? How much variability is there between <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\" section=\"body\">countries</entity> and regions in the <entity type=\"DATA_VAR\" canonical=\"energy_source\" section=\"body\">electricity source</entity> mix? How are these trends projected to change in the coming <entity type=\"TIME_REFERENCE\" canonical=\"decades\" section=\"body\">decades</entity> as renewables scale up further?\n\nImpact on me and my community:\nThe still-dominant share of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> has major <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">climate change</entity> and <entity type=\"EVENT\" canonical=\"air_pollution\" section=\"body\">air pollution</entity> impacts that affect the whole <entity type=\"LOCATION\" canonical=\"world\" section=\"body\">world</entity>. More renewables means cleaner air and reduced emissions, but also potential economic disruption in fossil-dependent communities. The trends point to the need to massively scale up <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity> investment and infrastructure in my community and globally.\n\nHeadline: \"Coal still king as renewables rise in powering the world\""
+  "tagged_text": "What I notice:\n<entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">Coal</entity> has consistently been the largest source of global <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" occurrences=\"3\">electricity generation</entity>, though it has declined slightly since <entity type=\"TIME_REFERENCE\" canonical=\"2010\" section=\"body\" occurrences=\"1\">2010</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">Gas</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">wind and solar</entity>, and other renewables have been steadily increasing since <entity type=\"TIME_REFERENCE\" canonical=\"2000\" section=\"body\" occurrences=\"1\">2000</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">Nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">hydro</entity> have stayed relatively flat over the <entity type=\"TIME_REFERENCE\" canonical=\"20_years\" section=\"body\" occurrences=\"1\">20 year period</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\" occurrences=\"1\">Fossil fuels</entity> (<entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">coal</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">gas</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">oil</entity>) still make up the vast majority of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" occurrences=\"3\">electricity generation</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\" occurrences=\"1\">clean sources</entity>.\n\nWhat I wonder:\nHow much have total global <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" modality=\"questioned\" occurrences=\"3\">electricity generation</entity> amounts changed over this period? The <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" occurrences=\"1\">graph</entity> shows share but not absolute amounts. What explains the slight dip in <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\" modality=\"questioned\" occurrences=\"1\">coal</entity> around <entity type=\"TIME_REFERENCE\" canonical=\"2020\" section=\"body\" modality=\"questioned\" occurrences=\"1\">2020</entity> - was it due to the <entity type=\"EVENT\" canonical=\"pandemic\" section=\"body\" modality=\"questioned\" occurrences=\"1\">pandemic</entity> reducing <entity type=\"OTHER_ENTITY\" canonical=\"energy_demand\" subtype=\"concept\" section=\"body\" occurrences=\"1\">energy demand</entity>? How much variability is there between <entity type=\"DATA_VAR_LEVEL\" canonical=\"countries_and_regions\" var=\"country\" section=\"body\" occurrences=\"1\">countries and regions</entity> in the electricity source mix? How are these trends projected to change in the <entity type=\"TIME_REFERENCE\" canonical=\"coming_decades\" section=\"body\" modality=\"questioned\" occurrences=\"1\">coming decades</entity> as renewables scale up further?\n\nImpact on me and my community:\nThe still-dominant share of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\" occurrences=\"1\">fossil fuels</entity> has major <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" occurrences=\"1\">climate change</entity> and <entity type=\"EVENT\" canonical=\"air_pollution\" section=\"body\" occurrences=\"1\">air pollution</entity> impacts that affect the whole <entity type=\"LOCATION\" canonical=\"world\" section=\"body\" occurrences=\"1\">world</entity>. More renewables means cleaner air and reduced emissions, but also potential <entity type=\"OTHER_ENTITY\" canonical=\"economic_disruption\" subtype=\"concept\" section=\"body\" occurrences=\"1\">economic disruption</entity> in fossil-dependent communities. The trends point to the need to massively scale up <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\" occurrences=\"1\">clean energy</entity> investment and infrastructure in my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\" section=\"body\" occurrences=\"1\">community</entity> and globally.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" occurrences=\"1\">Coal still king as renewables rise in powering the world</entity>"
 }

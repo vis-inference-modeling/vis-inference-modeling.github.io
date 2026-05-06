@@ -7,7 +7,7 @@
       "surface": "Nuclear",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
       "surface": "Hydroelectric",
       "type": "DATA_VAR_LEVEL",
       "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -32,30 +32,60 @@
       "id": "e1"
     },
     {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "energy",
+      "surface": "clean",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 88,
-      "end": 94,
+      "start": 114,
+      "end": 119,
       "id": "e2"
     },
     {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "energy",
+      "surface": "Gas",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "gas",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 281,
-      "end": 287,
+      "occurrence_index": 0,
+      "start": 136,
+      "end": 139,
       "id": "e3"
+    },
+    {
+      "surface": "Coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 144,
+      "end": 148,
+      "id": "e4"
+    },
+    {
+      "surface": "company’s",
+      "type": "OTHER_ENTITY",
+      "canonical": "companies",
+      "subtype": "organization",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 311,
+      "end": 320,
+      "id": "e5"
     },
     {
       "surface": "environment",
@@ -69,21 +99,21 @@
       "occurrence_index": 0,
       "start": 341,
       "end": 352,
-      "id": "e4"
+      "id": "e6"
     },
     {
-      "surface": "me and my community",
+      "surface": "community",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_neighbors",
-      "subtype": "other",
+      "canonical": "my_community",
+      "subtype": "community",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 418,
-      "end": 437,
-      "id": "e5"
+      "start": 391,
+      "end": 400,
+      "id": "e7"
     },
     {
       "surface": "climate change",
@@ -96,76 +126,34 @@
       "occurrence_index": 0,
       "start": 485,
       "end": 499,
-      "id": "e6"
+      "id": "e8"
     },
     {
-      "surface": "Should Electric Cars Be Mandatory?",
+      "surface": "Electric Cars",
       "type": "OTHER_ENTITY",
-      "canonical": "should_electric_cars_be_mandatory",
+      "canonical": "electric_car",
       "subtype": "other",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 592,
-      "end": 626,
-      "id": "e7"
-    },
-    {
-      "surface": "Gas",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "gas",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "Coal",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 599,
+      "end": 612,
       "id": "e9"
-    },
-    {
-      "surface": "coal production",
-      "type": "OTHER_ENTITY",
-      "canonical": "coal_production",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "different sources of energy",
+      "reason": "Could refer to energy source categories, but the phrase is too generic to map confidently."
+    }
+  ],
   "section_segments": [
     {
       "section": "body",
       "text": "What do you notice?\nI notice that Nuclear and Hydroelectric stayed the same in terms of energy, and it’s decently clean. I noticed that Gas and Coal increased a lot. \nWhat do you wonder?\nI wonder why our coal production is going down, could this be because of different sources of energy? Could this be because company’s care more about the environment?\nHow does this relate to you and your community?\nThis relates to me and my community because we are starting to feel the effects of climate change. \nCreate a catchy headline that captures the graph’s main idea.\nA catchy headline would be “Should Electric Cars Be Mandatory?”"
-    },
-    {
-      "section": "headline",
-      "label": "A catchy headline would be",
-      "text": "Should Electric Cars Be Mandatory?"
     }
   ],
-  "tagged_text": "What do you notice?\nI notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">Nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">Hydroelectric</entity> stayed the same in terms of <entity type=\"DATA_VAR\" canonical=\"energy\">energy</entity>, and it’s decently clean. I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">Gas</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">Coal</entity> increased a lot. \nWhat do you wonder?\nI wonder why our <entity type=\"OTHER_ENTITY\" canonical=\"coal_production\" subtype=\"other\" modality=\"questioned\">coal production</entity> is going down, could this be because of different sources of <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy</entity>? Could this be because company’s care more about the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" modality=\"questioned\">environment</entity>?\nHow does this relate to you and your community?\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_neighbors\" subtype=\"other\" speaker_context=\"true\">me and my community</entity> because we are starting to feel the effects of <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"asserted\">climate change</entity>. \nCreate a catchy headline that captures the graph’s main idea.\nA catchy headline would be “<entity type=\"OTHER_ENTITY\" canonical=\"should_electric_cars_be_mandatory\" subtype=\"other\" section=\"headline\">Should Electric Cars Be Mandatory?</entity>”"
+  "tagged_text": "What do you notice?\nI notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\" section=\"body\">Nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\" section=\"body\">Hydroelectric</entity> stayed the same in terms of energy, and it’s decently <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean</entity>. I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\" section=\"body\">Gas</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\">Coal</entity> increased a lot. \nWhat do you wonder?\nI wonder why our coal production is going down, could this be because of different sources of energy? Could this be because <entity type=\"OTHER_ENTITY\" canonical=\"companies\" subtype=\"organization\" section=\"body\" modality=\"questioned\">company’s</entity> care more about the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"body\" modality=\"questioned\">environment</entity>?\nHow does this relate to you and your community?\nThis relates to me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"community\" section=\"body\" speaker_context=\"true\">community</entity> because we are starting to feel the effects of <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">climate change</entity>. \nCreate a catchy headline that captures the graph’s main idea.\nA catchy headline would be “Should <entity type=\"OTHER_ENTITY\" canonical=\"electric_car\" subtype=\"other\" section=\"headline\">Electric Cars</entity> Be Mandatory?”"
 }

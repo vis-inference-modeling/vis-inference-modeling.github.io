@@ -4,20 +4,6 @@
   "raw_comment": "I noticed that India's energy consumption was the lowest over all years, while the US's was the largest until around ‘10 when it was passed by China. Additionally, clean power has increased in all countries, with wind and solar energy becoming more popular recently.\n\nI wonder why the United States' energy consumption has remained about the same despite the population becoming larger.\n\nThis allows me to see the energy I am likely consuming. It is difficult to know exactly where one's energy is coming from; however, this graph gives some context of the United States' and likely my own energy consumption.\n\nChange of type and amount of energy",
   "entities": [
     {
-      "surface": "India's",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 15,
-      "end": 22,
-      "id": "e0"
-    },
-    {
       "surface": "energy consumption",
       "type": "DATA_VAR",
       "canonical": "electricity_generation",
@@ -28,7 +14,7 @@
       "occurrence_index": 0,
       "start": 23,
       "end": 41,
-      "id": "e1"
+      "id": "e0"
     },
     {
       "surface": "energy consumption",
@@ -41,7 +27,7 @@
       "occurrence_index": 1,
       "start": 300,
       "end": 318,
-      "id": "e2"
+      "id": "e1"
     },
     {
       "surface": "energy consumption",
@@ -54,7 +40,7 @@
       "occurrence_index": 2,
       "start": 590,
       "end": 608,
-      "id": "e3"
+      "id": "e2"
     },
     {
       "surface": "energy",
@@ -63,10 +49,23 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 640,
       "end": 646,
+      "id": "e3"
+    },
+    {
+      "surface": "energy consumption",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
       "id": "e4"
     },
     {
@@ -90,11 +89,39 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e6"
+    },
+    {
+      "surface": "US's",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "US's",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "‘10",
@@ -103,11 +130,11 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e9"
     },
     {
       "surface": "China",
@@ -121,7 +148,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e10"
     },
     {
       "surface": "clean power",
@@ -135,45 +162,17 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "countries",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "country",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
+      "id": "e11"
     },
     {
       "surface": "wind and solar energy",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "United States'",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
@@ -188,15 +187,16 @@
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e13"
     },
     {
       "surface": "population",
-      "type": "DATA_VAR",
+      "type": "OTHER_ENTITY",
       "canonical": "population",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -213,11 +213,37 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e15"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e17"
     },
     {
       "surface": "graph",
@@ -230,12 +256,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e18"
     },
     {
       "surface": "Change of type and amount of energy",
-      "type": "OTHER_ENTITY",
-      "canonical": "change_of_type_and_amount_of_energy",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -243,14 +269,14 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e19"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "I noticed that India's energy consumption was the lowest over all years, while the US's was the largest until around ‘10 when it was passed by China. Additionally, clean power has increased in all countries, with wind and solar energy becoming more popular recently.\n\nI wonder why the United States' energy consumption has remained about the same despite the population becoming larger.\n\nThis allows me to see the energy I am likely consuming. It is difficult to know exactly where one's energy is coming from; however, this graph gives some context of the United States' and likely my own energy consumption.\n\nChange of type and amount of energy"
+      "text": "I noticed that India's energy consumption was the lowest over all years, while the US's was the largest until around ‘10 when it was passed by China. Additionally, clean power has increased in all countries, with wind and solar energy becoming more popular recently.\n\nI wonder why the United States' energy consumption has remained about the same despite the population becoming larger.\n\nThis allows me to see the energy I am likely consuming. It is difficult to know exactly where one's energy is coming from; however, this graph gives some context of the United States' and likely my own energy consumption."
     },
     {
       "section": "headline",
@@ -258,5 +284,5 @@
       "text": "Change of type and amount of energy"
     }
   ],
-  "tagged_text": "I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India's</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy consumption</entity> was the lowest over all <entity type=\"TIME_REFERENCE\" canonical=\"years\" section=\"body\">years</entity>, while the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">US's</entity> was the largest until around <entity type=\"TIME_REFERENCE\" canonical=\"2010\" section=\"body\">‘10</entity> when it was passed by <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity>. Additionally, <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean power</entity> has increased in all <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\" section=\"body\">countries</entity>, with <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\" section=\"body\">wind and solar energy</entity> becoming more popular recently.\n\nI wonder why the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States'</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy consumption</entity> has remained about the same despite the <entity type=\"DATA_VAR\" canonical=\"population\" section=\"body\">population</entity> becoming larger.\n\nThis allows me to see the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy</entity> I am likely consuming. It is difficult to know exactly where one's <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy</entity> is coming from; however, this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> gives some context of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States'</entity> and likely my own <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy consumption</entity>.\n\nChange of type and amount of energy"
+  "tagged_text": "I noticed that India's <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" terminology_drift=\"true\" occurrences=\"4\">energy consumption</entity> was the lowest over all <entity type=\"TIME_REFERENCE\" canonical=\"years\" section=\"body\" occurrences=\"1\">years</entity>, while the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" occurrences=\"3\">US's</entity> was the largest until around <entity type=\"TIME_REFERENCE\" canonical=\"2010\" section=\"body\" occurrences=\"1\">‘10</entity> when it was passed by <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\" occurrences=\"1\">China</entity>. Additionally, <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\" occurrences=\"1\">clean power</entity> has increased in all countries, with <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" section=\"body\" occurrences=\"1\">wind and solar energy</entity> becoming more popular recently.\n\nI wonder why the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" occurrences=\"1\">United States'</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" modality=\"questioned\" terminology_drift=\"true\" occurrences=\"2\">energy consumption</entity> has remained about the same despite the <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\" section=\"body\" occurrences=\"1\">population</entity> becoming larger.\n\nThis allows me to see the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" terminology_drift=\"true\" occurrences=\"4\">energy</entity> I am likely consuming. It is difficult to know exactly where one's <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" terminology_drift=\"true\" occurrences=\"4\">energy</entity> is coming from; however, this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" occurrences=\"1\">graph</entity> gives some context of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" occurrences=\"1\">United States'</entity> and likely my own <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" terminology_drift=\"true\" occurrences=\"4\">energy consumption</entity>.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" occurrences=\"1\">Change of type and amount of energy</entity>"
 }

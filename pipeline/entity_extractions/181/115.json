@@ -6,11 +6,11 @@
     {
       "surface": "energy",
       "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "canonical": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 18,
       "end": 24,
@@ -19,11 +19,11 @@
     {
       "surface": "energy",
       "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "canonical": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 1,
       "start": 179,
       "end": 185,
@@ -51,7 +51,7 @@
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
@@ -74,7 +74,7 @@
     {
       "surface": "gigawatt",
       "type": "UNIT",
-      "canonical": "gigawatt",
+      "canonical": "gigawatts",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -88,11 +88,11 @@
   "unresolved_mentions": [
     {
       "surface": "think take",
-      "reason": "Likely a typo or malformed phrase; unclear whether it refers to a chart element, concept, or something else."
+      "reason": "Unclear phrase; likely typo or non-entity."
     },
     {
       "surface": "READ THIS",
-      "reason": "Looks like emphatic filler rather than a meaningful entity."
+      "reason": "Filler text with no entity referent."
     }
   ],
   "section_segments": [
@@ -117,5 +117,5 @@
       "text": "READ THIS  READ THIS READ THIS"
     }
   ],
-  "tagged_text": "1. I noticed that <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> was being compared . I also noticed <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">china</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">America</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> were being compared. \n2. I wondered what a <entity type=\"UNIT\" canonical=\"gigawatt\">gigawatt</entity> is. I wondered what a think take is. \n3. <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">Energy</entity> is used at an alarming rate\n4. READ THIS  READ THIS READ THIS"
+  "tagged_text": "1. I noticed that <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\">energy</entity> was being compared . I also noticed <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">china</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">America</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> were being compared. \n2. I wondered what a <entity type=\"UNIT\" canonical=\"gigawatts\">gigawatt</entity> is. I wondered what a think take is. \n3. <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\">Energy</entity> is used at an alarming rate\n4. READ THIS  READ THIS READ THIS"
 }

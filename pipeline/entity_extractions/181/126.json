@@ -30,15 +30,15 @@
       "id": "e1"
     },
     {
-      "surface": "past 20 years",
+      "surface": "20 years",
       "type": "TIME_REFERENCE",
-      "canonical": "past_20_years",
+      "canonical": "20_years",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 96,
+      "start": 101,
       "end": 109,
       "id": "e2"
     },
@@ -71,7 +71,7 @@
       "id": "e4"
     },
     {
-      "surface": "the United States",
+      "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
       "var": "country",
@@ -80,7 +80,7 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 296,
+      "start": 300,
       "end": 313,
       "id": "e5"
     },
@@ -125,8 +125,8 @@
     },
     {
       "surface": "Electricity Around the World: How Is It Changing?",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -153,7 +153,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
@@ -200,5 +200,5 @@
       "text": "Electricity Around the World: How Is It Changing?"
     }
   ],
-  "tagged_text": "1. I noticed that <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"numbered_point\">electricity generation</entity> has increased by about <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\" section=\"numbered_point\">5 million gigawatt hours</entity> in the <entity type=\"TIME_REFERENCE\" canonical=\"past_20_years\" section=\"numbered_point\">past 20 years</entity>. Most notably in <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"numbered_point\">China</entity>, the total generation has increased by about <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\" section=\"numbered_point\">8 mill.</entity> in that country alone.\n2. I wonder why the usage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" section=\"numbered_point\" modality=\"questioned\">coal</entity> had increased dramatically in <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"numbered_point\" modality=\"questioned\">China</entity> yet decreased in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"numbered_point\" modality=\"questioned\">United States</entity>.\n3. This <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"numbered_point\">graph</entity> has a large impact on my future, in another <entity type=\"TIME_REFERENCE\" canonical=\"5_10_years\" section=\"numbered_point\">5-10 years</entity> the trend of this graph could have a huge place in the <entity type=\"LOCATION\" canonical=\"world\" section=\"numbered_point\">world</entity> around me.\n4. <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Electricity Around the World: How Is It Changing?</entity>"
+  "tagged_text": "1. I noticed that <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> has increased by about <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">5 million gigawatt hours</entity> in the past <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20 years</entity>. Most notably in <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>, the total generation has increased by about <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">8 mill.</entity> in that country alone.\n2. I wonder why the usage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> had increased dramatically in <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> yet decreased in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>.\n3. This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> has a large impact on my future, in another <entity type=\"TIME_REFERENCE\" canonical=\"5_10_years\">5-10 years</entity> the trend of this graph could have a huge place in the <entity type=\"LOCATION\" canonical=\"world\">world</entity> around me.\n4. <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Electricity Around the World: How Is It Changing?</entity>"
 }

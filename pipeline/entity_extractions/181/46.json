@@ -24,7 +24,7 @@
       "var": "country",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 60,
@@ -32,17 +32,17 @@
       "id": "e1"
     },
     {
-      "surface": "US",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "economy",
+      "type": "OTHER_ENTITY",
+      "canonical": "economy",
+      "subtype": "concept",
       "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
+      "modality": "questioned",
+      "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 314,
-      "end": 316,
+      "occurrence_index": 0,
+      "start": 199,
+      "end": 206,
       "id": "e2"
     },
     {
@@ -50,12 +50,12 @@
       "type": "DATA_VAR",
       "canonical": "electricity_generation",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 345,
-      "end": 356,
+      "start": 237,
+      "end": 248,
       "id": "e3"
     },
     {
@@ -63,12 +63,12 @@
       "type": "DATA_VAR",
       "canonical": "electricity_generation",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 389,
-      "end": 400,
+      "start": 345,
+      "end": 356,
       "id": "e4"
     },
     {
@@ -76,33 +76,32 @@
       "type": "DATA_VAR",
       "canonical": "electricity_generation",
       "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 430,
-      "end": 441,
-      "id": "e5"
-    },
-    {
-      "surface": "economy",
-      "type": "OTHER_ENTITY",
-      "canonical": "economy",
-      "subtype": "other",
-      "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 389,
+      "end": 400,
+      "id": "e5"
+    },
+    {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 430,
+      "end": 441,
       "id": "e6"
     },
     {
-      "surface": "me",
+      "surface": "community",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
+      "canonical": "my_community",
+      "subtype": "community",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -113,10 +112,10 @@
       "id": "e7"
     },
     {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_neighbors",
-      "subtype": "other",
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -125,27 +124,33 @@
       "start": null,
       "end": null,
       "id": "e8"
-    }
-  ],
-  "unresolved_mentions": [
-    {
-      "surface": "cleaner energy",
-      "reason": "Likely refers to clean energy, but the surface form is comparative and not an exact listed alias."
     },
     {
-      "surface": "non-clean electricity",
-      "reason": "Likely refers to fossil electricity, but no exact canonical alias is provided for this phrasing."
-    },
-    {
-      "surface": "New World of Clean electricity",
-      "reason": "Appears to be a title/headline, but segmentation is unclear because it is embedded after 'Title:' without a separate line."
+      "surface": "clean",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice that China has the greatest rate of change and the US is staying more constant. Cleaner energy is more used in all the countries. \n\nI wonder why cleaner energy is more used. I wonder if the economy effects the different type of electricity. \n\nThis relates t me and my community because we are part of the US that isn’t increasing their electricity. They are still using non-clean electricity. \n\nTitle: New World of Clean electricity"
+      "text": "I notice that China has the greatest rate of change and the US is staying more constant. Cleaner energy is more used in all the countries. \n\nI wonder why cleaner energy is more used. I wonder if the economy effects the different type of electricity. \n\nThis relates t me and my community because we are part of the US that isn’t increasing their electricity. They are still using non-clean electricity."
+    },
+    {
+      "section": "headline",
+      "label": "Title",
+      "text": "New World of Clean electricity"
     }
   ],
-  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has the greatest rate of change and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is staying more constant. Cleaner energy is more used in all the countries. \n\nI wonder why cleaner energy is more used. I wonder if the <entity type=\"OTHER_ENTITY\" canonical=\"economy\" subtype=\"other\" modality=\"questioned\">economy</entity> effects the different type of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>. \n\nThis relates t <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_neighbors\" subtype=\"other\" speaker_context=\"true\">my community</entity> because we are part of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" speaker_context=\"true\">US</entity> that isn’t increasing their <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>. They are still using non-clean <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>. \n\nTitle: New World of Clean <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"headline\">electricity</entity>"
+  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> has the greatest rate of change and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">US</entity> is staying more constant. Cleaner energy is more used in all the countries. \n\nI wonder why cleaner energy is more used. I wonder if the <entity type=\"OTHER_ENTITY\" canonical=\"economy\" subtype=\"concept\" section=\"body\" modality=\"questioned\">economy</entity> effects the different type of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" modality=\"questioned\">electricity</entity>. \n\nThis relates t me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"community\" section=\"body\" speaker_context=\"true\">community</entity> because we are part of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" speaker_context=\"true\">US</entity> that isn’t increasing their <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" speaker_context=\"true\">electricity</entity>. They are still using non-clean <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity>. \n\nTitle: New World of Clean <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">electricity</entity>"
 }

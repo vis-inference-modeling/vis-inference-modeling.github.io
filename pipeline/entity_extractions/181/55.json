@@ -88,17 +88,16 @@
       "id": "e5"
     },
     {
-      "surface": "clean power",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "surface": "years",
+      "type": "TIME_REFERENCE",
+      "canonical": "years",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
+      "occurrence_index": 0,
+      "start": 926,
+      "end": 931,
       "id": "e6"
     },
     {
@@ -110,21 +109,21 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e7"
     },
     {
-      "surface": "fossil fuels",
+      "surface": "clean power",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
+      "canonical": "clean",
       "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e8"
@@ -138,15 +137,29 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e9"
     },
     {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
       "surface": "2 million",
-      "type": "TIME_REFERENCE",
-      "canonical": "2_million",
+      "type": "UNIT",
+      "canonical": "million_gigawatt_hours",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -154,12 +167,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e11"
     },
     {
       "surface": "2 million",
-      "type": "TIME_REFERENCE",
-      "canonical": "2_million",
+      "type": "UNIT",
+      "canonical": "million_gigawatt_hours",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -167,25 +180,12 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "8 million",
-      "type": "TIME_REFERENCE",
-      "canonical": "8_million",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e12"
     },
     {
-      "surface": "gigawatt hours",
+      "surface": "8 million gigawatt hours",
       "type": "UNIT",
-      "canonical": "gigawatt_hours",
+      "canonical": "million_gigawatt_hours",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -196,9 +196,22 @@
       "id": "e13"
     },
     {
-      "surface": "gigawatt hours",
-      "type": "UNIT",
-      "canonical": "gigawatt_hours",
+      "surface": "20 years",
+      "type": "TIME_REFERENCE",
+      "canonical": "20_years",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "20 years",
+      "type": "TIME_REFERENCE",
+      "canonical": "20_years",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -206,25 +219,13 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "gigawatt hours",
-      "type": "UNIT",
-      "canonical": "gigawatt_hours",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
       "id": "e15"
     },
     {
-      "surface": "20 years",
-      "type": "TIME_REFERENCE",
-      "canonical": "20_years",
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -235,9 +236,10 @@
       "id": "e16"
     },
     {
-      "surface": "20 years",
-      "type": "TIME_REFERENCE",
-      "canonical": "20_years",
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -248,9 +250,10 @@
       "id": "e17"
     },
     {
-      "surface": "20 years",
-      "type": "TIME_REFERENCE",
-      "canonical": "20_years",
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -261,10 +264,9 @@
       "id": "e18"
     },
     {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "4 million gigawatt hours",
+      "type": "UNIT",
+      "canonical": "million_gigawatt_hours",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -275,9 +277,23 @@
       "id": "e19"
     },
     {
-      "surface": "United States",
+      "surface": "India",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
       "var": "country",
       "section": "body",
       "modality": "asserted",
@@ -286,12 +302,12 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e21"
     },
     {
-      "surface": "United States",
+      "surface": "India",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
+      "canonical": "india",
       "var": "country",
       "section": "body",
       "modality": "asserted",
@@ -300,26 +316,12 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e21"
-    },
-    {
-      "surface": "4 million",
-      "type": "TIME_REFERENCE",
-      "canonical": "4_million",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e22"
     },
     {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
+      "surface": "past 20 years",
+      "type": "TIME_REFERENCE",
+      "canonical": "past_20_years",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -330,65 +332,10 @@
       "id": "e23"
     },
     {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e24"
-    },
-    {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e25"
-    },
-    {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": null,
-      "end": null,
-      "id": "e26"
-    },
-    {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 4,
-      "start": null,
-      "end": null,
-      "id": "e27"
-    },
-    {
-      "surface": "16.4 million",
-      "type": "TIME_REFERENCE",
-      "canonical": "16_4_million",
+      "surface": "India's population",
+      "type": "OTHER_ENTITY",
+      "canonical": "population_of_india",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -396,28 +343,55 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e28"
-    }
-  ],
-  "unresolved_mentions": [
-    {
-      "surface": "my community",
-      "reason": "Speaker-context location/community reference, but no specific geographic entity is named."
+      "id": "e24"
     },
     {
-      "surface": "use of power",
-      "reason": "Could refer to electricity_generation or a broader concept; no chart-specific reference list was provided."
+      "surface": "16.4 million",
+      "type": "UNIT",
+      "canonical": "million_gigawatt_hours",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e25"
     },
     {
-      "surface": "upcoming years",
-      "reason": "Temporal reference is vague and not a specific year/range."
+      "surface": "power",
+      "type": "DATA_VAR",
+      "canonical": "power",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e26"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e27"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "In this graph I notice how China has had the biggest incline of both clean power and fossil fuels. China has jumped from under 2 million to over 8 million gigawatt hours in 20 years. The United States has stayed relatively the same with 4 million gigawatt hours in a span of 20 years. India on the other hand has had the smallest increase, but still less than the United States. India has grown more in fossil fuels than clean power, with a growth of 2 million in the past 20 years. This to me is a bit surprising because India's population is greater than both the United States and China. Compared to China, India has over 16.4 million more than the population of China and their use of power is significantly less.  This might relate to my community because there should probably be more of an increase of the use of clean power, but it also shows the slight decrease of fossil fuels so that is comforting for the upcoming years."
+      "text": "In this graph I notice how China has had the biggest incline of both clean power and fossil fuels. China has jumped from under 2 million to over 8 million gigawatt hours in 20 years. The United States has stayed relatively the same with 4 million gigawatt hours in a span of 20 years. India on the other hand has had the smallest increase, but still less than the United States. India has grown more in fossil fuels than clean power, with a growth of 2 million in the past 20 years. This to me is a bit surprising because India's population is greater than both the United States and China. Compared to China, India has over 16.4 million more than the population of China and their use of power is significantly less. This might relate to my community because there should probably be more of an increase of the use of clean power, but it also shows the slight decrease of fossil fuels so that is comforting for the upcoming years."
     }
   ],
-  "tagged_text": "In this graph I notice how <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has had the biggest incline of both <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean power</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has jumped from under <entity type=\"TIME_REFERENCE\" canonical=\"2_million\">2 million</entity> to over <entity type=\"TIME_REFERENCE\" canonical=\"8_million\">8 million</entity> <entity type=\"UNIT\" canonical=\"gigawatt_hours\">gigawatt hours</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20 years</entity>. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> has stayed relatively the same with <entity type=\"TIME_REFERENCE\" canonical=\"4_million\">4 million</entity> <entity type=\"UNIT\" canonical=\"gigawatt_hours\">gigawatt hours</entity> in a span of <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20 years</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> on the other hand has had the smallest increase, but still less than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> has grown more in <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean power</entity>, with a growth of <entity type=\"TIME_REFERENCE\" canonical=\"2_million\">2 million</entity> in the past <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20 years</entity>. This to me is a bit surprising because <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>'s population is greater than both the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>. Compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> has over <entity type=\"TIME_REFERENCE\" canonical=\"16_4_million\">16.4 million</entity> more than the population of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and their use of power is significantly less.  This might relate to my community because there should probably be more of an increase of the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean power</entity>, but it also shows the slight decrease of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> so that is comforting for the upcoming years."
+  "tagged_text": "In this graph I notice how <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has had the biggest incline of both <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean power</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has jumped from under <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">2 million</entity> to over <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">8 million gigawatt hours</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20 years</entity>. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> has stayed relatively the same with <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">4 million gigawatt hours</entity> in a span of <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">20 years</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> on the other hand has had the smallest increase, but still less than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> has grown more in <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean power</entity>, with a growth of <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">2 million</entity> in the <entity type=\"TIME_REFERENCE\" canonical=\"past_20_years\">past 20 years</entity>. This to me is a bit surprising because <entity type=\"OTHER_ENTITY\" canonical=\"population_of_india\" subtype=\"other\">India's population</entity> is greater than both the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>. Compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> has over <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">16.4 million</entity> more than the population of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and their use of <entity type=\"DATA_VAR\" canonical=\"power\">power</entity> is significantly less. This might relate to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">community</entity> because there should probably be more of an increase of the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean power</entity>, but it also shows the slight decrease of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> so that is comforting for the upcoming <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity>."
 }

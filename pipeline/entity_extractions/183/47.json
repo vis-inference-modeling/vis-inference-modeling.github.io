@@ -18,9 +18,9 @@
     },
     {
       "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -29,89 +29,6 @@
       "start": 53,
       "end": 56,
       "id": "e1"
-    },
-    {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 70,
-      "end": 83,
-      "id": "e2"
-    },
-    {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 137,
-      "end": 150,
-      "id": "e3"
-    },
-    {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 224,
-      "end": 237,
-      "id": "e4"
-    },
-    {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 344,
-      "end": 346,
-      "id": "e5"
-    },
-    {
-      "surface": "my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 351,
-      "end": 363,
-      "id": "e6"
-    },
-    {
-      "surface": "college",
-      "type": "OTHER_ENTITY",
-      "canonical": "college",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 409,
-      "end": 416,
-      "id": "e7"
     },
     {
       "surface": "parents",
@@ -123,9 +40,51 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 76,
+      "end": 83,
+      "id": "e2"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 143,
+      "end": 150,
+      "id": "e3"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 230,
+      "end": 237,
+      "id": "e4"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
       "start": 422,
       "end": 429,
-      "id": "e8"
+      "id": "e5"
     },
     {
       "surface": "children",
@@ -139,26 +98,26 @@
       "occurrence_index": 0,
       "start": 450,
       "end": 458,
-      "id": "e9"
+      "id": "e6"
     },
     {
       "surface": "Call Me, Where you been?",
       "type": "CHART_ELEMENT",
-      "canonical": "headline",
-      "section": "body",
+      "canonical": "title",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 550,
       "end": 574,
-      "id": "e10"
+      "id": "e7"
     },
     {
       "surface": "texts",
-      "type": "OTHER_ENTITY",
-      "canonical": "texts",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -166,7 +125,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e8"
     },
     {
       "surface": "73 percent",
@@ -179,16 +138,58 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e9"
     },
     {
       "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "text",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "community",
       "type": "OTHER_ENTITY",
-      "canonical": "women",
+      "canonical": "my_community",
       "subtype": "other",
       "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
+      "modality": "asserted",
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -196,12 +197,12 @@
       "id": "e13"
     },
     {
-      "surface": "a few times a week",
-      "type": "TIME_REFERENCE",
-      "canonical": "a_few_times_a_week",
+      "surface": "college",
+      "type": "LOCATION",
+      "canonical": "college",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -211,23 +212,16 @@
   ],
   "unresolved_mentions": [
     {
-      "surface": "around 73 percent",
-      "reason": "The provided TIME_REFERENCE dictionary does not include 73 percent specifically, though it is clearly a percentage."
-    },
-    {
-      "surface": "more caring",
-      "reason": "Attribute/quality phrase, not a clear entity."
-    },
-    {
-      "surface": "my piers",
-      "reason": "Likely means 'my peers' but misspelled; could be OTHER_ENTITY if normalized, but kept unresolved due to spelling uncertainty."
+      "surface": "piers",
+      "reason": "Likely a typo for 'peers'; not confidently mapped."
     }
   ],
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "What do you notice?\nI notice that only 50 percent of men reach out to their parents through texts, while around 73 percent of women text their parents a few times a week. \nWhat do you wonder?\nI wonder why women reach out to their parents more, is it because they are more caring?\nHow does this relate to you and your community?\nThis relates to me and my community because a lot of my piers are going away for college, and parents are expecting their children to contact them frequently. \nCreate a catchy headline that captures the graph’s main idea.\nCall Me, Where you been?"
     }
   ],
-  "tagged_text": "What do you notice?\nI notice that only 50 percent of men reach out to their parents through texts, while around 73 percent of women text their parents a few times a week. \nWhat do you wonder?\nI wonder why women reach out to their parents more, is it because they are more caring?\nHow does this relate to you and your community?\nThis relates to me and my community because a lot of my piers are going away for <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college</entity>, and parents are expecting their children to contact them frequently. \nCreate a catchy headline that captures the graph’s main idea.\nCall Me, Where you been?"
+  "tagged_text": "What do you notice?\nI notice that only <entity type=\"TIME_REFERENCE\" canonical=\"50_percent\">50 percent</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity>, while around <entity type=\"TIME_REFERENCE\" canonical=\"73_percent\">73 percent</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> a few times a week. \nWhat do you wonder?\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more, is it because they are more caring?\nHow does this relate to you and your community?\nThis relates to me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because a lot of my piers are going away for <entity type=\"LOCATION\" canonical=\"college\" speaker_context=\"true\">college</entity>, and <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> are expecting their <entity type=\"OTHER_ENTITY\" canonical=\"children\" subtype=\"other\">children</entity> to contact them frequently. \nCreate a catchy headline that captures the graph’s main idea.\n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Call Me, Where you been?</entity>"
 }

@@ -5,9 +5,9 @@
   "entities": [
     {
       "surface": "young girls",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_girls",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,7 +18,7 @@
       "id": "e0"
     },
     {
-      "surface": "their parents",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
       "subtype": "other",
@@ -27,15 +27,15 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 98,
+      "start": 104,
       "end": 111,
       "id": "e1"
     },
     {
       "surface": "young men",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_men",
-      "subtype": "other",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -46,144 +46,101 @@
       "id": "e2"
     },
     {
-      "surface": "number calculations",
-      "type": "OTHER_ENTITY",
-      "canonical": "number_calculations",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 180,
-      "end": 199,
-      "id": "e3"
-    },
-    {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "other",
+      "surface": "young woman",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 279,
-      "end": 281,
-      "id": "e4"
-    },
-    {
-      "surface": "young woman",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_woman",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 295,
       "end": 306,
-      "id": "e5"
+      "id": "e3"
     },
     {
-      "surface": "my mom",
+      "surface": "mom",
       "type": "OTHER_ENTITY",
-      "canonical": "my_mom",
+      "canonical": "mom",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 328,
+      "start": 331,
       "end": 334,
-      "id": "e6"
+      "id": "e4"
     },
     {
-      "surface": "People in my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
+      "surface": "People",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 358,
-      "end": 380,
-      "id": "e7"
+      "end": 364,
+      "id": "e5"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
+      "surface": "community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 368,
+      "start": 371,
       "end": 380,
-      "id": "e8"
+      "id": "e6"
     },
     {
-      "surface": "their families",
+      "surface": "communication",
       "type": "OTHER_ENTITY",
-      "canonical": "families",
+      "canonical": "communication",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 401,
-      "end": 415,
-      "id": "e9"
-    },
-    {
-      "surface": "the one another",
-      "type": "OTHER_ENTITY",
-      "canonical": "one_another",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 461,
-      "end": 476,
-      "id": "e10"
+      "start": 442,
+      "end": 455,
+      "id": "e7"
     },
     {
       "surface": "Who’s mom’s favorite?",
       "type": "CHART_ELEMENT",
-      "canonical": "headline",
-      "section": "body",
+      "canonical": "title",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 493,
       "end": 514,
-      "id": "e11"
+      "id": "e8"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "higher up on the scale",
-      "reason": "Chart-relative phrase, but not a specific chart element or data variable."
-    },
-    {
-      "surface": "stay in communication",
-      "reason": "Describes communication generally; no exact canonical entity beyond broader communication-related terms."
+      "surface": "number calculations",
+      "reason": "Refers to unspecified calculations; not a chart entity or reference-list item."
     }
   ],
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "What do you notice? \n\nI notice that the young girls are higher up on the scale in reaching out to their parents, then the young men are. \n\n\nWhat do you wonder? \n\nI wonder what the number calculations would be. \n\n\nHow does this relate to you and your community? \n\n\nThis relate to me because as a young woman I always check up on my mom and she does the same. People in my community are very close with their families, I feel like they stay in communication with the one another. \n \nHeadline \n \nWho’s mom’s favorite?"
     }
   ],
-  "tagged_text": "What do you notice? \n\nI notice that the young girls are higher up on the scale in reaching out to their parents, then the young men are. \n\n\nWhat do you wonder? \n\nI wonder what the number calculations would be. \n\n\nHow does this relate to you and your community? \n\n\nThis relate to me because as a young woman I always check up on my mom and she does the same. People in my community are very close with their families, I feel like they stay in communication with the one another. \n \nHeadline \n \nWho’s mom’s favorite?"
+  "tagged_text": "What do you notice? \n\nI notice that the young girls are higher up on the scale in reaching out to their parents, then the young men are. \n\n\nWhat do you wonder? \n\nI wonder what the number calculations would be. \n\n\nHow does this relate to you and your community? \n\n\nThis relate to me because as a <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" speaker_context=\"true\">young woman</entity> I always check up on my <entity type=\"OTHER_ENTITY\" canonical=\"mom\" subtype=\"other\" speaker_context=\"true\">mom</entity> and she does the same. <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" speaker_context=\"true\">People</entity> in my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> are very close with their families, I feel like they stay in <entity type=\"OTHER_ENTITY\" canonical=\"communication\" subtype=\"other\">communication</entity> with the one another. \n \nHeadline \n \n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Who’s mom’s favorite?</entity>"
 }

@@ -4,73 +4,6 @@
   "raw_comment": "Immediately, I noticed how a stacked area chart is being utilized to visualize the data presented. The issue with using a stacked area chart like these graphs is that it is difficult to determine the actual size of one section in the chart since each section is built on top of one another like layers of sediment. This also makes it difficult to visually see trends in specific sections since their baselines are all different and affected by the layers below. I also noticed how it appears clean energy sources have increased in the past 22 years, specifically how much wind and solar have exploded recently. \nI wonder how the U.S. has stayed fairly consistent with energy production when it feels as if electricity has become more and more integral to life each day in the twenty-first century. Similarly, on the opposite side, why has China’s production boomed so much?\nThese graphs relate to me and my community because as climate change continues and natural fossil fuels begin to run out, the need for sustainable energy sources and better energy consumption practices is more important than ever. Keeping energy use steady, or even decreasing is something that we as a community should strive for. Additionally, by making sure we continue to switch more and more to clean energy production, we are helping the prosperity and longevity of the planet and our own futures. \nTitle: “A Decade of the World’s Energy: Is Clean Power the Future?”",
   "entities": [
     {
-      "surface": "graphs",
-      "type": "CHART_ELEMENT",
-      "canonical": "graphs",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 152,
-      "end": 158,
-      "id": "e0"
-    },
-    {
-      "surface": "graphs",
-      "type": "CHART_ELEMENT",
-      "canonical": "graphs",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 880,
-      "end": 886,
-      "id": "e1"
-    },
-    {
-      "surface": "energy production",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 1280,
-      "end": 1297,
-      "id": "e2"
-    },
-    {
-      "surface": "A Decade of the World’s Energy: Is Clean Power the Future?",
-      "type": "OTHER_ENTITY",
-      "canonical": "a_decade_of_the_world_s_energy_is_clean_power_the_future",
-      "subtype": "other",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1387,
-      "end": 1445,
-      "id": "e3"
-    },
-    {
-      "surface": "clean energy sources",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e4"
-    },
-    {
       "surface": "22 years",
       "type": "TIME_REFERENCE",
       "canonical": "22_years",
@@ -79,23 +12,23 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e5"
+      "start": 540,
+      "end": 548,
+      "id": "e0"
     },
     {
       "surface": "wind and solar",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
+      "start": 572,
+      "end": 586,
+      "id": "e1"
     },
     {
       "surface": "U.S.",
@@ -107,9 +40,22 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
+      "start": 629,
+      "end": 633,
+      "id": "e2"
+    },
+    {
+      "surface": "energy production",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 668,
+      "end": 685,
+      "id": "e3"
     },
     {
       "surface": "electricity",
@@ -118,11 +64,11 @@
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
+      "start": 706,
+      "end": 717,
+      "id": "e4"
     },
     {
       "surface": "twenty-first century",
@@ -133,9 +79,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
+      "start": 776,
+      "end": 796,
+      "id": "e5"
     },
     {
       "surface": "China’s",
@@ -147,22 +93,23 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
+      "start": 839,
+      "end": 846,
+      "id": "e6"
     },
     {
-      "surface": "me and my community",
-      "type": "LOCATION",
-      "canonical": "speaker_and_neighbors",
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
+      "start": 904,
+      "end": 916,
+      "id": "e7"
     },
     {
       "surface": "climate change",
@@ -173,9 +120,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
+      "start": 928,
+      "end": 942,
+      "id": "e8"
     },
     {
       "surface": "fossil fuels",
@@ -185,25 +132,25 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
+      "start": 965,
+      "end": 977,
+      "id": "e9"
     },
     {
-      "surface": "sustainable energy sources",
+      "surface": "energy sources",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
+      "start": 1021,
+      "end": 1035,
+      "id": "e10"
     },
     {
       "surface": "energy consumption",
@@ -212,14 +159,14 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
+      "start": 1047,
+      "end": 1065,
+      "id": "e11"
     },
     {
-      "surface": "energy use",
+      "surface": "energy",
       "type": "DATA_VAR",
       "canonical": "electricity_generation",
       "section": "body",
@@ -227,9 +174,9 @@
       "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
+      "start": 1113,
+      "end": 1119,
+      "id": "e12"
     },
     {
       "surface": "clean energy",
@@ -239,11 +186,37 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 1274,
+      "end": 1286,
+      "id": "e13"
+    },
+    {
+      "surface": "planet",
+      "type": "LOCATION",
+      "canonical": "planet",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
+      "start": 1350,
+      "end": 1356,
+      "id": "e14"
+    },
+    {
+      "surface": "A Decade of the World’s Energy: Is Clean Power the Future?",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1387,
+      "end": 1445,
+      "id": "e15"
     }
   ],
   "unresolved_mentions": [],
@@ -251,7 +224,12 @@
     {
       "section": "body",
       "text": "Immediately, I noticed how a stacked area chart is being utilized to visualize the data presented. The issue with using a stacked area chart like these graphs is that it is difficult to determine the actual size of one section in the chart since each section is built on top of one another like layers of sediment. This also makes it difficult to visually see trends in specific sections since their baselines are all different and affected by the layers below. I also noticed how it appears clean energy sources have increased in the past 22 years, specifically how much wind and solar have exploded recently. \nI wonder how the U.S. has stayed fairly consistent with energy production when it feels as if electricity has become more and more integral to life each day in the twenty-first century. Similarly, on the opposite side, why has China’s production boomed so much?\nThese graphs relate to me and my community because as climate change continues and natural fossil fuels begin to run out, the need for sustainable energy sources and better energy consumption practices is more important than ever. Keeping energy use steady, or even decreasing is something that we as a community should strive for. Additionally, by making sure we continue to switch more and more to clean energy production, we are helping the prosperity and longevity of the planet and our own futures. \nTitle: “A Decade of the World’s Energy: Is Clean Power the Future?”"
+    },
+    {
+      "section": "headline",
+      "label": "A Decade of the World’s Energy: Is Clean Power the Future?",
+      "text": "A Decade of the World’s Energy: Is Clean Power the Future?"
     }
   ],
-  "tagged_text": "Immediately, I noticed how a stacked area chart is being utilized to visualize the data presented. The issue with using a stacked area chart like these <entity type=\"CHART_ELEMENT\" canonical=\"graphs\" section=\"body\">graphs</entity> is that it is difficult to determine the actual size of one section in the chart since each section is built on top of one another like layers of sediment. This also makes it difficult to visually see trends in specific sections since their baselines are all different and affected by the layers below. I also noticed how it appears <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy sources</entity> have increased in the past <entity type=\"TIME_REFERENCE\" canonical=\"22_years\" section=\"body\">22 years</entity>, specifically how much <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\" section=\"body\">wind and solar</entity> have exploded recently. \nI wonder how the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">U.S.</entity> has stayed fairly consistent with <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy production</entity> when it feels as if <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity> has become more and more integral to life each day in the <entity type=\"TIME_REFERENCE\" canonical=\"21st_century\" section=\"body\">twenty-first century</entity>. Similarly, on the opposite side, why has <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China’s</entity> production boomed so much?\nThese <entity type=\"CHART_ELEMENT\" canonical=\"graphs\" section=\"body\">graphs</entity> relate to <entity type=\"LOCATION\" canonical=\"speaker_and_neighbors\" speaker_context=\"true\" section=\"body\">me and my community</entity> because as <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">climate change</entity> continues and natural <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> begin to run out, the need for <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\" section=\"body\">sustainable energy sources</entity> and better <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy consumption</entity> practices is more important than ever. Keeping <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy use</entity> steady, or even decreasing is something that we as a community should strive for. Additionally, by making sure we continue to switch more and more to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity> production, we are helping the prosperity and longevity of the planet and our own futures. \nTitle: “<entity type=\"OTHER_ENTITY\" canonical=\"a_decade_of_the_world_s_energy_is_clean_power_the_future\" subtype=\"other\" section=\"headline\">A Decade of the World’s Energy: Is Clean Power the Future?</entity>”"
+  "tagged_text": "Immediately, I noticed how a stacked area chart is being utilized to visualize the data presented. The issue with using a stacked area chart like these graphs is that it is difficult to determine the actual size of one section in the chart since each section is built on top of one another like layers of sediment. This also makes it difficult to visually see trends in specific sections since their baselines are all different and affected by the layers below. I also noticed how it appears clean energy sources have increased in the past <entity type=\"TIME_REFERENCE\" canonical=\"22_years\">22 years</entity>, specifically how much <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">wind and solar</entity> have exploded recently. \nI wonder how the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> has stayed fairly consistent with <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy production</entity> when it feels as if <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> has become more and more integral to life each day in the <entity type=\"TIME_REFERENCE\" canonical=\"21st_century\">twenty-first century</entity>. Similarly, on the opposite side, why has <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China’s</entity> production boomed so much?\nThese graphs relate to me and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because as <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"asserted\">climate change</entity> continues and natural <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> begin to run out, the need for sustainable <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">energy sources</entity> and better <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy consumption</entity> practices is more important than ever. Keeping <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> use steady, or even decreasing is something that we as a community should strive for. Additionally, by making sure we continue to switch more and more to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> production, we are helping the prosperity and longevity of the <entity type=\"LOCATION\" canonical=\"planet\">planet</entity> and our own futures. \nTitle: “<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">A Decade of the World’s Energy: Is Clean Power the Future?</entity>”"
 }

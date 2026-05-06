@@ -4,48 +4,35 @@
   "raw_comment": "Where in the graph does the evidence reside to substantiate your claim?\nWhat factors contribute to the lower frequency of in-person visits, and what explains the trend of increased outreach by young women?\nThe consequences extend to all students at my high school, and when I communicate with my parents...\nTo what extent do teenagers seek assistance from their parents?",
   "entities": [
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 13,
-      "end": 18,
-      "id": "e0"
-    },
-    {
-      "surface": "in-person visits",
-      "type": "OTHER_ENTITY",
-      "canonical": "in_person_visits",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 122,
-      "end": 138,
-      "id": "e1"
-    },
-    {
       "surface": "young women",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
-      "subtype": "other",
+      "var": "gender_group",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 193,
       "end": 204,
-      "id": "e2"
+      "id": "e0"
     },
     {
-      "surface": "students at my high school",
+      "surface": "students",
+      "type": "OTHER_ENTITY",
+      "canonical": "students",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 237,
+      "end": 245,
+      "id": "e1"
+    },
+    {
+      "surface": "high school",
       "type": "LOCATION",
       "canonical": "my_high_school",
       "section": "body",
@@ -53,12 +40,12 @@
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 237,
+      "start": 252,
       "end": 263,
-      "id": "e3"
+      "id": "e2"
     },
     {
-      "surface": "my parents",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "my_parents",
       "subtype": "other",
@@ -67,15 +54,15 @@
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 293,
+      "start": 296,
       "end": 303,
-      "id": "e4"
+      "id": "e3"
     },
     {
       "surface": "teenagers",
       "type": "OTHER_ENTITY",
       "canonical": "teenagers",
-      "subtype": "other",
+      "subtype": "group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -83,15 +70,32 @@
       "occurrence_index": 0,
       "start": 325,
       "end": 334,
-      "id": "e5"
+      "id": "e4"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "graph",
+      "reason": "Could be a chart element, but the comment uses it generically and no specific chart element is referenced."
+    },
+    {
+      "surface": "in-person visits",
+      "reason": "Likely refers to the 'visit in person' level, but the phrasing is plural and not an exact confirmed surface form in the dictionary."
+    },
+    {
+      "surface": "increased outreach",
+      "reason": "Could refer to communication frequency, but it is not a confirmed variable or level."
+    },
+    {
+      "surface": "assistance from their parents",
+      "reason": "Abstract paraphrase of communication/help-seeking; not a confirmed entity."
+    }
+  ],
   "section_segments": [
     {
       "section": "body",
       "text": "Where in the graph does the evidence reside to substantiate your claim?\nWhat factors contribute to the lower frequency of in-person visits, and what explains the trend of increased outreach by young women?\nThe consequences extend to all students at my high school, and when I communicate with my parents...\nTo what extent do teenagers seek assistance from their parents?"
     }
   ],
-  "tagged_text": "Where in the graph does the evidence reside to substantiate your claim?\nWhat factors contribute to the lower frequency of in-person visits, and what explains the trend of increased outreach by young women?\nThe consequences extend to all students at my high school, and when I communicate with my parents...\nTo what extent do teenagers seek assistance from their parents?"
+  "tagged_text": "Where in the graph does the evidence reside to substantiate your claim?\nWhat factors contribute to the lower frequency of in-person visits, and what explains the trend of increased outreach by <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity>?\nThe consequences extend to all <entity type=\"OTHER_ENTITY\" canonical=\"students\" subtype=\"group\">students</entity> at my <entity type=\"LOCATION\" canonical=\"my_high_school\" speaker_context=\"true\">high school</entity>, and when I communicate with my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>...\nTo what extent do <entity type=\"OTHER_ENTITY\" canonical=\"teenagers\" subtype=\"group\">teenagers</entity> seek assistance from their parents?"
 }

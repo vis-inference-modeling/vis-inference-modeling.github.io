@@ -52,7 +52,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 982,
       "end": 988,
@@ -65,7 +65,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": 1316,
       "end": 1322,
@@ -78,7 +78,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 2,
       "start": 1342,
       "end": 1348,
@@ -86,10 +86,9 @@
     },
     {
       "surface": "Global Giga-Graph",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
-      "section": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "global_giga_graph",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -147,7 +146,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
@@ -216,7 +215,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 3,
       "start": null,
       "end": null,
@@ -265,10 +264,10 @@
       "id": "e18"
     },
     {
-      "surface": "China",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
+      "surface": "developing country",
+      "type": "OTHER_ENTITY",
+      "canonical": "developing_country",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -279,45 +278,18 @@
       "id": "e19"
     },
     {
-      "surface": "China",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
+      "surface": "our community",
+      "type": "OTHER_ENTITY",
+      "canonical": "our_community",
+      "subtype": "group",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e20"
-    },
-    {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e21"
-    },
-    {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e22"
     },
     {
       "surface": "clean renewable energy",
@@ -331,12 +303,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
+      "id": "e21"
     },
     {
-      "surface": "global issues",
-      "type": "EVENT",
-      "canonical": "global_issues",
+      "surface": "globe",
+      "type": "LOCATION",
+      "canonical": "globe",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -344,7 +316,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
+      "id": "e22"
     },
     {
       "surface": "climate change",
@@ -357,49 +329,35 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e23"
+    },
+    {
+      "surface": "carbon footprint",
+      "type": "OTHER_ENTITY",
+      "canonical": "carbon_footprint",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e24"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e25"
-    },
-    {
-      "surface": "US",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e26"
-    },
-    {
-      "surface": "US",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e27"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e28"
     },
     {
       "surface": "years",
@@ -412,12 +370,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e29"
+      "id": "e26"
     },
     {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "US citizens",
+      "type": "OTHER_ENTITY",
+      "canonical": "us_citizens",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -425,33 +384,15 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e30"
-    },
-    {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e31"
+      "id": "e27"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "What do you notice? If you make a claim, tell us what you noticed that supports your claim.\nWe notice that the use of fossil fuels is consistent, while clean energy is increasing. We also notice that the use of overall energy use has increased over time as well.  Moreover, China and the United States have a large portion of their energy coming from clean sources while India basically gets all their energy from fossil fuels.\n\nWhat do you wonder? What are you curious about that comes from what you notice in the graphs? \nWhy is China using more energy compared to India when both of these countries have a very similar population size is it because China is still a developing country?\n\nWhat impact does this topic have on you and your community?\nThis topic impacts our community because it emphasizes the importance of clean renewable energy. By looking at the graphs we can say that the globe is moving towards clean energy, although fossil fuels seem to be the main source of energy. This is important because it suggests that we are working to combat global issues such as climate change. Furthermore, it will encourage people to be thoughtful about their carbon footprint.\nOn the graph,  US reliance on fossil fuels decreases as the years go by.  As US citizens this could indicate a change in how we source energy as well as utilize energy, influencing our way of life."
-    },
-    {
-      "section": "headline",
-      "label": "Global Giga-Graph",
-      "text": "Global Giga-Graph"
+      "text": "What do you notice? If you make a claim, tell us what you noticed that supports your claim.\nWe notice that the use of fossil fuels is consistent, while clean energy is increasing. We also notice that the use of overall energy use has increased over time as well.  Moreover, China and the United States have a large portion of their energy coming from clean sources while India basically gets all their energy from fossil fuels.\n\nWhat do you wonder? What are you curious about that comes from what you notice in the graphs? \nWhy is China using more energy compared to India when both of these countries have a very similar population size is it because China is still a developing country?\n\nWhat impact does this topic have on you and your community?\nThis topic impacts our community because it emphasizes the importance of clean renewable energy. By looking at the graphs we can say that the globe is moving towards clean energy, although fossil fuels seem to be the main source of energy. This is important because it suggests that we are working to combat global issues such as climate change. Furthermore, it will encourage people to be thoughtful about their carbon footprint.\nOn the graph, US reliance on fossil fuels decreases as the years go by.  As US citizens this could indicate a change in how we source energy as well as utilize energy, influencing our way of life.\n \nWhat’s going on here? Write a catchy headline that captures the graph(')s(’) main idea.\nGlobal Giga-Graph"
     }
   ],
-  "tagged_text": "What do you notice? If you make a claim, tell us what you noticed that supports your claim.\nWe notice that the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\">fossil fuels</entity> is consistent, while <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"numbered_point\">clean energy</entity> is increasing. We also notice that the use of overall <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"numbered_point\">energy use</entity> has increased over time as well.  Moreover, <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"numbered_point\">China</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"numbered_point\">United States</entity> have a large portion of their <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"numbered_point\">energy</entity> coming from <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"numbered_point\">clean sources</entity> while <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"numbered_point\">India</entity> basically gets all their <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"numbered_point\">energy</entity> from <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\">fossil fuels</entity>.\n\nWhat do you wonder? What are you curious about that comes from what you notice in the graphs? \nWhy is <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"numbered_point\" modality=\"questioned\">China</entity> using more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"numbered_point\" modality=\"questioned\">energy</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"numbered_point\" modality=\"questioned\">India</entity> when both of these countries have a very similar population size is it because <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"numbered_point\" modality=\"questioned\">China</entity> is still a developing country?\n\nWhat impact does this topic have on you and your community?\nThis topic impacts our community because it emphasizes the importance of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"numbered_point\">clean renewable energy</entity>. By looking at the graphs we can say that the globe is moving towards <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"numbered_point\">clean energy</entity>, although <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\">fossil fuels</entity> seem to be the main source of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"numbered_point\">energy</entity>. This is important because it suggests that we are working to combat <entity type=\"EVENT\" canonical=\"global_issues\" section=\"numbered_point\">global issues</entity> such as <entity type=\"EVENT\" canonical=\"climate_change\" section=\"numbered_point\">climate change</entity>. Furthermore, it will encourage people to be thoughtful about their carbon footprint.\nOn the graph,  <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"numbered_point\">US</entity> reliance on <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"numbered_point\">fossil fuels</entity> decreases as the <entity type=\"TIME_REFERENCE\" canonical=\"years\" section=\"numbered_point\">years</entity> go by.  As <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"numbered_point\">US</entity> citizens this could indicate a change in how we source <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"numbered_point\">energy</entity> as well as utilize <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"numbered_point\">energy</entity>, influencing our way of life.\n \n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Global Giga-Graph</entity>"
+  "tagged_text": "What do you notice? If you make a claim, tell us what you noticed that supports your claim.\nWe notice that the use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> is consistent, while <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> is increasing. We also notice that the use of overall <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy use</entity> has increased over time as well.  Moreover, <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> have a large portion of their <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> coming from <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean sources</entity> while <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> basically gets all their <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> from <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>.\n\nWhat do you wonder? What are you curious about that comes from what you notice in the graphs? \nWhy is <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> using more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> when both of these countries have a very similar population size is it because <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> is still a developing country?\n\nWhat impact does this topic have on you and your community?\nThis topic impacts <entity type=\"OTHER_ENTITY\" canonical=\"our_community\" subtype=\"group\">our community</entity> because it emphasizes the importance of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean renewable energy</entity>. By looking at the graphs we can say that the <entity type=\"LOCATION\" canonical=\"globe\">globe</entity> is moving towards <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>, although <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> seem to be the main source of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity>. This is important because it suggests that we are working to combat global issues such as <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity>. Furthermore, it will encourage people to be thoughtful about their <entity type=\"OTHER_ENTITY\" canonical=\"carbon_footprint\" subtype=\"concept\">carbon footprint</entity>.\nOn the graph, <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> reliance on <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> decreases as the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity> go by.  As <entity type=\"OTHER_ENTITY\" canonical=\"us_citizens\" subtype=\"group\">US citizens</entity> this could indicate a change in how we source <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> as well as utilize <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity>, influencing our way of life.\n \nWhat’s going on here? Write a catchy headline that captures the graph(')s(’) main idea.\n<entity type=\"CHART_ELEMENT\" canonical=\"global_giga_graph\">Global Giga-Graph</entity>"
 }

@@ -18,9 +18,9 @@
     },
     {
       "surface": "males",
-      "type": "OTHER_ENTITY",
-      "canonical": "males",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -32,9 +32,9 @@
     },
     {
       "surface": "males",
-      "type": "OTHER_ENTITY",
-      "canonical": "males",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -46,9 +46,9 @@
     },
     {
       "surface": "males",
-      "type": "OTHER_ENTITY",
-      "canonical": "males",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -59,7 +59,7 @@
       "id": "e3"
     },
     {
-      "surface": "their parents",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
       "subtype": "other",
@@ -68,15 +68,15 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 250,
+      "start": 256,
       "end": 263,
       "id": "e4"
     },
     {
       "surface": "text",
-      "type": "OTHER_ENTITY",
-      "canonical": "text",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -87,97 +87,32 @@
       "id": "e5"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
+      "surface": "visit",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 503,
-      "end": 515,
+      "start": 638,
+      "end": 643,
       "id": "e6"
     },
     {
-      "surface": "elder community",
-      "type": "LOCATION",
-      "canonical": "elder_community",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 528,
-      "end": 543,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e7"
-    },
-    {
-      "surface": "Moms aren’t getting their visits",
-      "type": "CHART_ELEMENT",
-      "canonical": "headline",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 612,
-      "end": 644,
-      "id": "e8"
-    },
-    {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "at least once a week",
-      "type": "TIME_REFERENCE",
-      "canonical": "at_least_once_a_week",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "at least once a week",
-      "type": "TIME_REFERENCE",
-      "canonical": "at_least_once_a_week",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e12"
     },
     {
       "surface": "70%",
@@ -190,13 +125,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e8"
     },
     {
       "surface": "females",
-      "type": "OTHER_ENTITY",
-      "canonical": "females",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -204,13 +139,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e9"
     },
     {
       "surface": "females",
-      "type": "OTHER_ENTITY",
-      "canonical": "females",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -218,13 +153,13 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e10"
     },
     {
       "surface": "females",
-      "type": "OTHER_ENTITY",
-      "canonical": "females",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -232,13 +167,13 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e11"
     },
     {
       "surface": "phone calls",
-      "type": "OTHER_ENTITY",
-      "canonical": "phone_calls",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -246,7 +181,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e12"
     },
     {
       "surface": "30%",
@@ -259,7 +194,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e13"
     },
     {
       "surface": "55%",
@@ -272,21 +207,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "visit their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "visit_parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e20"
+      "id": "e14"
     },
     {
       "surface": "20%",
@@ -299,7 +220,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e21"
+      "id": "e15"
     },
     {
       "surface": "25%",
@@ -312,13 +233,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e16"
     },
     {
       "surface": "in person visiting",
-      "type": "OTHER_ENTITY",
-      "canonical": "visiting",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -326,13 +247,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
+      "id": "e17"
     },
     {
       "surface": "texting",
-      "type": "OTHER_ENTITY",
-      "canonical": "texting",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -340,24 +261,57 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
-    }
-  ],
-  "unresolved_mentions": [
-    {
-      "surface": "the gap between the percentages",
-      "reason": "Refers to a comparison in the chart, but not a standalone entity."
+      "id": "e18"
     },
     {
-      "surface": "percentages",
-      "reason": "Generic quantitative noun; could be UNIT, but the provided dictionary uses it broadly and the phrase is not a specific measurement here."
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "elder community",
+      "type": "OTHER_ENTITY",
+      "canonical": "elder_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "Moms aren’t getting their visits.",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e21"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "I notice that 50% of males say that they reach out to their parents through text at least once a week, while it’s around 70% for females. For phone calls, 30% of males do so at least once a week, and 55% of females do so. Even less percentages visit their parents once a week, with about 20% of males and 25% of females doing so.\n\nI wonder why the gap between the percentages decreases so significantly when it comes to in person visiting, but expands vastly when it comes to texting. \n\nThis relates to my community because the elder community is very important and they deserve to be treated gently.\n\nHeadline:\nMoms aren’t getting their visits."
     }
   ],
-  "tagged_text": "I notice that 50% of males say that they reach out to their parents through text at least once a week, while it’s around 70% for females. For phone calls, 30% of males do so at least once a week, and 55% of females do so. Even less percentages visit their parents once a week, with about 20% of males and 25% of females doing so.\n\nI wonder why the gap between the percentages decreases so significantly when it comes to in person visiting, but expands vastly when it comes to texting. \n\nThis relates to my community because the elder community is very important and they deserve to be treated gently.\n\nHeadline:\nMoms aren’t getting their visits."
+  "tagged_text": "I notice that <entity type=\"TIME_REFERENCE\" canonical=\"50_percent\">50%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> say that they reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> at least once a week, while it’s around <entity type=\"TIME_REFERENCE\" canonical=\"70_percent\">70%</entity> for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">females</entity>. For <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone calls</entity>, <entity type=\"TIME_REFERENCE\" canonical=\"30_percent\">30%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> do so at least once a week, and <entity type=\"TIME_REFERENCE\" canonical=\"55_percent\">55%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">females</entity> do so. Even less percentages <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> once a week, with about <entity type=\"TIME_REFERENCE\" canonical=\"20_percent\">20%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\">25%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">females</entity> doing so.\n\nI wonder why the gap between the percentages decreases so significantly when it comes to <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" modality=\"questioned\">in person visiting</entity>, but expands vastly when it comes to <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" modality=\"questioned\">texting</entity>. \n\nThis relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because the <entity type=\"OTHER_ENTITY\" canonical=\"elder_community\" subtype=\"other\">elder community</entity> is very important and they deserve to be treated gently.\n\nHeadline:\n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Moms aren’t getting their visits.</entity>"
 }

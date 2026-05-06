@@ -32,7 +32,7 @@
       "id": "e1"
     },
     {
-      "surface": "China",
+      "surface": "China's",
       "type": "DATA_VAR_LEVEL",
       "canonical": "china",
       "var": "country",
@@ -42,7 +42,7 @@
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 89,
-      "end": 94,
+      "end": 96,
       "id": "e2"
     },
     {
@@ -63,7 +63,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -77,7 +77,7 @@
       "surface": "my community",
       "type": "OTHER_ENTITY",
       "canonical": "my_community",
-      "subtype": "other",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -91,7 +91,7 @@
       "surface": "my community",
       "type": "OTHER_ENTITY",
       "canonical": "my_community",
-      "subtype": "other",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -105,11 +105,11 @@
       "surface": "wind power",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
+      "speaker_context": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 257,
       "end": 267,
@@ -119,11 +119,11 @@
       "surface": "oil/gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "oil_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
+      "speaker_context": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 272,
       "end": 279,
@@ -131,8 +131,8 @@
     },
     {
       "surface": "Populations Powers",
-      "type": "OTHER_ENTITY",
-      "canonical": "populations_powers",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -141,13 +141,39 @@
       "start": 310,
       "end": 328,
       "id": "e9"
+    },
+    {
+      "surface": "power usage",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "power usage",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e11"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice India and and the United States power usage has not increased nearly as much as China's has. At one point it even decreased a little bit.\nI wonder why Indias main power source is coal? \nThis relates to my community because my community is close to wind power and oil/gas producers. "
+      "text": "I notice India and and the United States power usage has not increased nearly as much as China's has. At one point it even decreased a little bit.\nI wonder why Indias main power source is coal? \nThis relates to my community because my community is close to wind power and oil/gas producers."
     },
     {
       "section": "headline",
@@ -155,5 +181,5 @@
       "text": "\"Populations Powers\""
     }
   ],
-  "tagged_text": "I notice <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> and and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> power usage has not increased nearly as much as <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>'s has. At one point it even decreased a little bit.\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">Indias</entity> main power source is <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" modality=\"questioned\">coal</entity>? \nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because my community is close to <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind power</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\">oil/gas</entity> producers. \nCatchy headline: \"<entity type=\"OTHER_ENTITY\" canonical=\"populations_powers\" section=\"headline\">Populations Powers</entity>\""
+  "tagged_text": "I notice <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> and and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> power usage has not increased nearly as much as <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China's</entity> has. At one point it even decreased a little bit.\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">Indias</entity> main <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">power usage</entity> is <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity>? \nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because my community is close to <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">wind power</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\">oil/gas</entity> producers. \nCatchy headline: \"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Populations Powers</entity>\""
 }

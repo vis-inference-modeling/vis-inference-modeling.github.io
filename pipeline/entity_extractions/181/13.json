@@ -19,7 +19,7 @@
     {
       "surface": "since 2000",
       "type": "TIME_REFERENCE",
-      "canonical": "2000",
+      "canonical": "since_2000",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -32,7 +32,7 @@
     {
       "surface": "Utilities",
       "type": "OTHER_ENTITY",
-      "canonical": "electric_utilities",
+      "canonical": "utilities",
       "subtype": "organization",
       "section": "body",
       "modality": "asserted",
@@ -44,34 +44,6 @@
       "id": "e2"
     },
     {
-      "surface": "Utilities",
-      "type": "OTHER_ENTITY",
-      "canonical": "electric_utilities",
-      "subtype": "organization",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 330,
-      "end": 339,
-      "id": "e3"
-    },
-    {
-      "surface": "humanity",
-      "type": "OTHER_ENTITY",
-      "canonical": "humanity",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 652,
-      "end": 660,
-      "id": "e4"
-    },
-    {
       "surface": "fossil fuels",
       "type": "DATA_VAR_LEVEL",
       "canonical": "fossil",
@@ -81,9 +53,9 @@
       "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e5"
+      "start": 111,
+      "end": 123,
+      "id": "e3"
     },
     {
       "surface": "clean energy",
@@ -95,9 +67,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
+      "start": 138,
+      "end": 150,
+      "id": "e4"
     },
     {
       "surface": "electricity",
@@ -108,8 +80,35 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 184,
+      "end": 195,
+      "id": "e5"
+    },
+    {
+      "surface": "planet",
+      "type": "LOCATION",
+      "canonical": "planet",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 248,
+      "end": 254,
+      "id": "e6"
+    },
+    {
+      "surface": "lifestyle",
+      "type": "OTHER_ENTITY",
+      "canonical": "non_sustainable_lifestyles",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 286,
+      "end": 295,
       "id": "e7"
     },
     {
@@ -122,8 +121,8 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 321,
+      "end": 339,
       "id": "e8"
     },
     {
@@ -136,8 +135,8 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 348,
+      "end": 368,
       "id": "e9"
     },
     {
@@ -150,31 +149,99 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 411,
+      "end": 421,
       "id": "e10"
     },
     {
-      "surface": "Catchy headline: Humanity’s Energy Use: Way Too Much, Way Too Dirty - What’s the Fix?",
+      "surface": "my community",
       "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
+      "canonical": "my_community",
+      "subtype": "community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 500,
+      "end": 512,
+      "id": "e11"
+    },
+    {
+      "surface": "neighbors",
+      "type": "OTHER_ENTITY",
+      "canonical": "neighbors",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 575,
+      "end": 584,
+      "id": "e12"
+    },
+    {
+      "surface": "existential despair",
+      "type": "OTHER_ENTITY",
+      "canonical": "existential_despair",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 597,
+      "end": 616,
+      "id": "e13"
+    },
+    {
+      "surface": "Catchy headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
+      "start": 635,
+      "end": 650,
+      "id": "e14"
+    },
+    {
+      "surface": "Humanity’s Energy Use: Way Too Much, Way Too Dirty - What’s the Fix?",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 652,
+      "end": 720,
+      "id": "e15"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "planet",
+      "reason": "Could be a LOCATION-like global reference, but the normalized dictionary maps 'planet' as a location; context is rhetorical and not clearly geographic."
+    },
+    {
+      "surface": "lifestyle",
+      "reason": "Abstract concept with no exact canonical match; likely refers to a non-sustainable lifestyle."
+    }
+  ],
   "section_segments": [
     {
       "section": "body",
-      "text": "What I noticed: Our use of electric energy has almost doubled since 2000.- alarming! Utilities are still using fossil fuels way more than clean energy - 3x times more! - to create our electricity.\n\nWhat I wonder: How will we ever save life on this planet with humanity’s addiction to a lifestyle that is not sustainable, electric utilities and the fossil fuel industry focused on amassing wealth and power, and government afraid to make the needed moves to regulate the solution.\n\nHow it will affect my community: Quality of life will fall slowly and then quickly for all my neighbors and me, and existential despair will be rampant.\n\nCatchy headline: Humanity’s Energy Use: Way Too Much, Way Too Dirty - What’s the Fix?"
+      "text": "What I noticed: Our use of electric energy has almost doubled since 2000.- alarming! Utilities are still using fossil fuels way more than clean energy - 3x times more! - to create our electricity.\n\nWhat I wonder: How will we ever save life on this planet with humanity’s addiction to a lifestyle that is not sustainable, electric utilities and the fossil fuel industry focused on amassing wealth and power, and government afraid to make the needed moves to regulate the solution.\n\nHow it will affect my community: Quality of life will fall slowly and then quickly for all my neighbors and me, and existential despair will be rampant."
+    },
+    {
+      "section": "headline",
+      "label": "Catchy headline",
+      "text": "Humanity’s Energy Use: Way Too Much, Way Too Dirty - What’s the Fix?"
     }
   ],
-  "tagged_text": "What I noticed: Our use of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electric energy</entity> has almost doubled <entity type=\"TIME_REFERENCE\" canonical=\"2000\">since 2000</entity>.- alarming! <entity type=\"OTHER_ENTITY\" canonical=\"electric_utilities\" subtype=\"organization\">Utilities</entity> are still using <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> way more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> - 3x times more! - to create our <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>.\n\nWhat I wonder: How will we ever save life on this planet with <entity type=\"OTHER_ENTITY\" canonical=\"humanity\" subtype=\"other\">humanity</entity>’s addiction to a lifestyle that is not sustainable, <entity type=\"OTHER_ENTITY\" canonical=\"electric_utilities\" subtype=\"organization\">electric utilities</entity> and the <entity type=\"OTHER_ENTITY\" canonical=\"fossil_fuel_industry\" subtype=\"organization\">fossil fuel industry</entity> focused on amassing wealth and power, and <entity type=\"OTHER_ENTITY\" canonical=\"government\" subtype=\"organization\">government</entity> afraid to make the needed moves to regulate the solution.\n\nHow it will affect my community: Quality of life will fall slowly and then quickly for all my neighbors and me, and existential despair will be rampant.\n\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Catchy headline: Humanity’s Energy Use: Way Too Much, Way Too Dirty - What’s the Fix?</entity>"
+  "tagged_text": "What I noticed: Our use of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electric energy</entity> has almost doubled <entity type=\"TIME_REFERENCE\" canonical=\"since_2000\" section=\"body\">since 2000</entity>.- alarming! <entity type=\"OTHER_ENTITY\" canonical=\"utilities\" subtype=\"organization\" section=\"body\">Utilities</entity> are still using <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> way more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity> - 3x times more! - to create our <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity>.\n\nWhat I wonder: How will we ever save life on this <entity type=\"LOCATION\" canonical=\"planet\" section=\"body\">planet</entity> with humanity’s addiction to a <entity type=\"OTHER_ENTITY\" canonical=\"non_sustainable_lifestyles\" subtype=\"concept\" section=\"body\">lifestyle</entity> that is not sustainable, <entity type=\"OTHER_ENTITY\" canonical=\"electric_utilities\" subtype=\"organization\" section=\"body\">electric utilities</entity> and the <entity type=\"OTHER_ENTITY\" canonical=\"fossil_fuel_industry\" subtype=\"organization\" section=\"body\">fossil fuel industry</entity> focused on amassing wealth and power, and <entity type=\"OTHER_ENTITY\" canonical=\"government\" subtype=\"organization\" section=\"body\">government</entity> afraid to make the needed moves to regulate the solution.\n\nHow it will affect <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"community\" section=\"body\" speaker_context=\"true\">my community</entity>: Quality of life will fall slowly and then quickly for all my <entity type=\"OTHER_ENTITY\" canonical=\"neighbors\" subtype=\"group\" section=\"body\">neighbors</entity> and me, and <entity type=\"OTHER_ENTITY\" canonical=\"existential_despair\" subtype=\"concept\" section=\"body\">existential despair</entity> will be rampant.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Catchy headline</entity>: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Humanity’s Energy Use: Way Too Much, Way Too Dirty - What’s the Fix?</entity>"
 }

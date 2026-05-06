@@ -7,11 +7,11 @@
       "surface": "oil",
       "type": "DATA_VAR_LEVEL",
       "canonical": "oil_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 37,
       "end": 40,
@@ -21,7 +21,7 @@
       "surface": "Hydroelectric",
       "type": "DATA_VAR_LEVEL",
       "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -35,7 +35,7 @@
       "surface": "nuclear power",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -49,7 +49,7 @@
       "surface": "wind and solar",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -60,87 +60,53 @@
       "id": "e3"
     },
     {
-      "surface": "calculations",
+      "surface": "community",
       "type": "OTHER_ENTITY",
-      "canonical": "calculations",
-      "subtype": "other",
+      "canonical": "my_community",
+      "subtype": "community",
       "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
+      "modality": "asserted",
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 173,
-      "end": 185,
+      "start": 246,
+      "end": 255,
       "id": "e4"
     },
     {
-      "surface": "me",
+      "surface": "people",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
+      "canonical": "people",
+      "subtype": "group",
       "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 275,
-      "end": 277,
-      "id": "e5"
-    },
-    {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "community",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 282,
-      "end": 294,
-      "id": "e6"
-    },
-    {
-      "surface": "my health",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_health",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 345,
-      "end": 354,
-      "id": "e7"
-    },
-    {
-      "surface": "Gassed up",
-      "type": "OTHER_ENTITY",
-      "canonical": "gassed_up",
-      "subtype": "other",
-      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 377,
-      "end": 386,
-      "id": "e8"
+      "start": 298,
+      "end": 304,
+      "id": "e5"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "calculations",
+      "reason": "Refers to the method used to compute the chart, but no canonical chart-element or concept mapping is provided."
+    },
+    {
+      "surface": "health",
+      "reason": "Abstract personal-impact concept; not clearly covered by the provided entity types."
+    },
+    {
+      "surface": "Are we Gassed up?",
+      "reason": "Headline is rhetorical and may allude to gas, but it is not a direct entity mention."
+    }
+  ],
   "section_segments": [
     {
       "section": "body",
-      "text": "What do you notice? \n\nI noticed that oil, Hydroelectric and nuclear power stays the same, and the wind and solar rise up.\n\n\nWhat do you wonder? \n\nI wonder how they do these calculations, how do they know?\n\n\n\nHow does this relate to  you and your community? \n\nThis can effect me and my community bc people are getting more cars and it can effect my health. \n\nHeadline \n\nAre we Gassed up?"
-    },
-    {
-      "section": "headline",
-      "label": "Headline",
-      "text": "Are we Gassed up?"
+      "text": "What do you notice? \n\nI noticed that oil, Hydroelectric and nuclear power stays the same, and the wind and solar rise up.\n\n\nWhat do you wonder? \n\nI wonder how they do these calculations, how do they know?\n\n\n\nHow does this relate to  you and your community? \n\nThis can effect me and my community bc people are getting more cars and it can effect my health. \n\n\nHeadline \n\nAre we Gassed up?"
     }
   ],
-  "tagged_text": "What do you notice? \n\nI noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\">oil</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">Hydroelectric</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear power</entity> stays the same, and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind and solar</entity> rise up.\n\n\nWhat do you wonder? \n\nI wonder how they do these <entity type=\"OTHER_ENTITY\" canonical=\"calculations\" subtype=\"other\" modality=\"questioned\">calculations</entity>, how do they know?\n\n\n\nHow does this relate to  you and your community? \n\nThis can effect <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"community\" subtype=\"other\" speaker_context=\"true\">my community</entity> bc people are getting more cars and it can effect <entity type=\"OTHER_ENTITY\" canonical=\"speaker_health\" subtype=\"other\" speaker_context=\"true\">my health</entity>. \n\nHeadline \n\nAre we <entity type=\"OTHER_ENTITY\" canonical=\"gassed_up\" subtype=\"other\" section=\"headline\">Gassed up</entity>?"
+  "tagged_text": "What do you notice? \n\nI noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\" section=\"body\">oil</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\" section=\"body\">Hydroelectric</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\" section=\"body\">nuclear power</entity> stays the same, and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" section=\"body\">wind and solar</entity> rise up.\n\n\nWhat do you wonder? \n\nI wonder how they do these calculations, how do they know?\n\n\n\nHow does this relate to  you and your community? \n\nThis can effect me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"community\" section=\"body\" speaker_context=\"true\">community</entity> bc <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\" section=\"body\">people</entity> are getting more cars and it can effect my health. \n\n\nHeadline \n\nAre we Gassed up?"
 }

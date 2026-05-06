@@ -10,14 +10,14 @@
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 93,
       "end": 111,
       "id": "e0"
     },
     {
-      "surface": "since 2000",
+      "surface": "2000",
       "type": "TIME_REFERENCE",
       "canonical": "since_2000",
       "section": "numbered_point",
@@ -25,7 +25,7 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 112,
+      "start": 118,
       "end": 122,
       "id": "e1"
     },
@@ -47,7 +47,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -61,7 +61,7 @@
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -75,7 +75,7 @@
       "surface": "oil",
       "type": "DATA_VAR_LEVEL",
       "canonical": "oil_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -84,19 +84,6 @@
       "start": 224,
       "end": 227,
       "id": "e5"
-    },
-    {
-      "surface": "two decades",
-      "type": "TIME_REFERENCE",
-      "canonical": "20_years",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 274,
-      "end": 285,
-      "id": "e6"
     },
     {
       "surface": "China",
@@ -110,6 +97,19 @@
       "occurrence_index": 0,
       "start": 306,
       "end": 311,
+      "id": "e6"
+    },
+    {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 347,
+      "end": 358,
       "id": "e7"
     },
     {
@@ -119,24 +119,11 @@
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 347,
-      "end": 358,
-      "id": "e8"
-    },
-    {
-      "surface": "electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": 507,
       "end": 518,
-      "id": "e9"
+      "id": "e8"
     },
     {
       "surface": "world",
@@ -149,7 +136,7 @@
       "occurrence_index": 0,
       "start": 572,
       "end": 577,
-      "id": "e10"
+      "id": "e9"
     },
     {
       "surface": "fossil fuels",
@@ -163,7 +150,7 @@
       "occurrence_index": 0,
       "start": 653,
       "end": 665,
-      "id": "e11"
+      "id": "e10"
     },
     {
       "surface": "earth",
@@ -176,21 +163,20 @@
       "occurrence_index": 0,
       "start": 711,
       "end": 716,
-      "id": "e12"
+      "id": "e11"
     },
     {
-      "surface": "Changes in Electricity Generation: Is it Changing for the Better?",
-      "type": "OTHER_ENTITY",
-      "canonical": "changes_in_electricity_generation_is_it_changing_for_the_better",
-      "subtype": "other",
-      "section": "headline",
+      "surface": "Changes in Electricity Generation",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 749,
-      "end": 814,
-      "id": "e13"
+      "end": 782,
+      "id": "e12"
     },
     {
       "surface": "United States",
@@ -204,7 +190,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e13"
     },
     {
       "surface": "India",
@@ -218,7 +204,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e14"
     },
     {
       "surface": "world",
@@ -231,12 +217,27 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e16"
     },
     {
-      "surface": "me and my community",
-      "type": "LOCATION",
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -247,14 +248,14 @@
       "id": "e17"
     },
     {
-      "surface": "renewable energy sources",
+      "surface": "clean",
       "type": "DATA_VAR_LEVEL",
       "canonical": "clean",
       "var": "power_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
@@ -292,10 +293,10 @@
       "text": "This concerns me and my community because as the world transitions to more clean and renewable energy sources, the pollution from fossil fuels is expected to reduce, which is good for the earth and will benefit all of us."
     },
     {
-      "section": "headline",
+      "section": "numbered_point",
       "label": "4",
       "text": "Changes in Electricity Generation: Is it Changing for the Better?"
     }
   ],
-  "tagged_text": "1. I noticed the graph's overall increasing tendency, as well as the significant increase in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy consumption</entity> <entity type=\"TIME_REFERENCE\" canonical=\"since_2000\">since 2000</entity>. Yet, <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> has accounted for the vast majority of this energy increase, while <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\">oil</entity> have remained relatively stable over the last <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">two decades</entity>.\n2. I'm curious why <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> has had such a significant rise in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> compared to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>. I also wonder what will motivate the entire <entity type=\"LOCATION\" canonical=\"world\">world</entity> to utilize more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> to create <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>.\n3. This concerns <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">me and my community</entity> because as the <entity type=\"LOCATION\" canonical=\"world\">world</entity> transitions to more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">renewable energy sources</entity>, the <entity type=\"EVENT\" canonical=\"pollution\">pollution</entity> from <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> is expected to reduce, which is good for the <entity type=\"LOCATION\" canonical=\"earth\">earth</entity> and will benefit all of us. \n4. Changes in Electricity Generation: Is it Changing for the Better?"
+  "tagged_text": "1. I noticed the graph's overall increasing tendency, as well as the significant increase in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy consumption</entity> since <entity type=\"TIME_REFERENCE\" canonical=\"since_2000\">2000</entity>. Yet, <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> has accounted for the vast majority of this energy increase, while <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\">oil</entity> have remained relatively stable over the last two decades.\n2. I'm curious why <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China</entity> has had such a significant rise in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity</entity> compared to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity>. I also wonder what will motivate the entire <entity type=\"LOCATION\" canonical=\"world\">world</entity> to utilize more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean energy</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuels</entity> to create <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity</entity>.\n3. This concerns me and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because as the <entity type=\"LOCATION\" canonical=\"world\">world</entity> transitions to more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean</entity> and renewable energy sources, the <entity type=\"EVENT\" canonical=\"pollution\">pollution</entity> from <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> is expected to reduce, which is good for the <entity type=\"LOCATION\" canonical=\"earth\">earth</entity> and will benefit all of us. \n4. <entity type=\"CHART_ELEMENT\" canonical=\"headline\">Changes in Electricity Generation</entity>: Is it Changing for the Better?"
 }

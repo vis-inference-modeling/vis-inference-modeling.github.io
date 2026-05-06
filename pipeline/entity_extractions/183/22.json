@@ -4,7 +4,7 @@
   "raw_comment": "This graph shows the percentage of young people who keep in contact with there parents on a pretty consistent basis. This graph shows that young women stay in more contact than young men with there parents.",
   "entities": [
     {
-      "surface": "This graph",
+      "surface": "graph",
       "type": "CHART_ELEMENT",
       "canonical": "graph",
       "section": "body",
@@ -12,12 +12,12 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 0,
+      "start": 5,
       "end": 10,
       "id": "e0"
     },
     {
-      "surface": "This graph",
+      "surface": "graph",
       "type": "CHART_ELEMENT",
       "canonical": "graph",
       "section": "body",
@@ -25,38 +25,58 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 117,
+      "start": 122,
       "end": 127,
       "id": "e1"
-    }
-  ],
-  "unresolved_mentions": [
-    {
-      "surface": "percentage",
-      "reason": "Could be UNIT percent/percentages, but the comment uses it generically and no chart-specific schema is available."
-    },
-    {
-      "surface": "young people",
-      "reason": "Could be OTHER_ENTITY, but no confirmed canonical for this article beyond the provided dictionary and the comment is generic."
     },
     {
       "surface": "young women",
-      "reason": "Could be OTHER_ENTITY, but no confirmed canonical mapping requested for this article."
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 139,
+      "end": 150,
+      "id": "e2"
     },
     {
       "surface": "young men",
-      "reason": "Could be OTHER_ENTITY, but no confirmed canonical mapping requested for this article."
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 177,
+      "end": 186,
+      "id": "e3"
     },
     {
-      "surface": "their parents",
-      "reason": "Generic reference; could be OTHER_ENTITY, but not confidently canonicalized here."
+      "surface": "percentage of young people who keep in contact with there parents",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_young_people_who_reach_out_to_a_parent",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "This graph shows the percentage of young people who keep in contact with there parents on a pretty consistent basis. This graph shows that young women stay in more contact than young men with there parents."
     }
   ],
-  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"graph\">This graph</entity> shows the percentage of young people who keep in contact with there parents on a pretty consistent basis. <entity type=\"CHART_ELEMENT\" canonical=\"graph\">This graph</entity> shows that young women stay in more contact than young men with there parents."
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young people who keep in contact with there parents</entity> on a pretty consistent basis. This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> stay in more contact than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> with there parents."
 }

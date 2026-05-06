@@ -32,10 +32,24 @@
       "id": "e1"
     },
     {
+      "surface": "Green sources",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 179,
+      "end": 192,
+      "id": "e2"
+    },
+    {
       "surface": "Coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -43,7 +57,21 @@
       "occurrence_index": 0,
       "start": 219,
       "end": 223,
-      "id": "e2"
+      "id": "e3"
+    },
+    {
+      "surface": "energy production",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_production",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 255,
+      "end": 272,
+      "id": "e4"
     },
     {
       "surface": "China",
@@ -57,7 +85,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e3"
+      "id": "e5"
     },
     {
       "surface": "India",
@@ -71,32 +99,29 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e4"
-    }
-  ],
-  "unresolved_mentions": [
-    {
-      "surface": "energy per person",
-      "reason": "Could imply a per-capita measure, but no canonical variable or unit is provided."
+      "id": "e6"
     },
     {
       "surface": "populations",
-      "reason": "Generic plural noun; not clearly a specific entity beyond the country references."
-    },
-    {
-      "surface": "Green sources",
-      "reason": "Likely refers to clean/renewable energy, but the phrase is not explicit enough to map confidently."
-    },
-    {
-      "surface": "energy production",
-      "reason": "Could map to electricity_generation, but the comment uses it generically and without a clear chart-specific context."
+      "type": "OTHER_ENTITY",
+      "canonical": "population",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "The US is using about 2x the energy per person as China and about 8x as India. It reflects the populations living in those countries with a standard of living similar to the US.  Green sources are increasing in all 3.  Coal is a substantial proportion of energy production."
     }
   ],
-  "tagged_text": "The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is using about 2x the energy per person as <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and about 8x as <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>. It reflects the populations living in those countries with a standard of living similar to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>.  Green sources are increasing in all 3.  <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">Coal</entity> is a substantial proportion of energy production."
+  "tagged_text": "The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is using about 2x the energy per person as <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and about 8x as <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>. It reflects the <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\">populations</entity> living in those countries with a standard of living similar to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>.  <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">Green sources</entity> are increasing in all 3.  <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">Coal</entity> is a substantial proportion of <entity type=\"OTHER_ENTITY\" canonical=\"energy_production\" subtype=\"other\">energy production</entity>."
 }

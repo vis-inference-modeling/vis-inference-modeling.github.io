@@ -56,30 +56,60 @@
       "id": "e3"
     },
     {
-      "surface": "electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "resources",
+      "type": "OTHER_ENTITY",
+      "canonical": "resources",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 4,
-      "start": 550,
-      "end": 561,
+      "occurrence_index": 0,
+      "start": 843,
+      "end": 852,
       "id": "e4"
     },
     {
       "surface": "resources",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "type": "OTHER_ENTITY",
+      "canonical": "resources",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 1327,
+      "end": 1336,
+      "id": "e5"
+    },
+    {
+      "surface": "resources",
+      "type": "OTHER_ENTITY",
+      "canonical": "resources",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "clean electricity sources",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 843,
-      "end": 852,
-      "id": "e5"
+      "start": null,
+      "end": null,
+      "id": "e7"
     },
     {
       "surface": "fossil fuels",
@@ -91,50 +121,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1238,
-      "end": 1250,
-      "id": "e6"
-    },
-    {
-      "surface": "my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1345,
-      "end": 1357,
-      "id": "e7"
-    },
-    {
-      "surface": "Clean Energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1398,
-      "end": 1410,
-      "id": "e8"
-    },
-    {
-      "surface": "clean electricity sources",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e8"
     },
     {
       "surface": "fossil fuels",
@@ -148,7 +137,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e9"
     },
     {
       "surface": "fossil fuels",
@@ -162,13 +151,27 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "fossil fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
       "id": "e11"
     },
     {
       "surface": "Coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -182,7 +185,7 @@
       "surface": "Wind and solar energy",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -224,7 +227,7 @@
       "canonical": "china",
       "var": "country",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -233,15 +236,15 @@
       "id": "e16"
     },
     {
-      "surface": "China",
+      "surface": "India",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
+      "canonical": "india",
       "var": "country",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e17"
@@ -252,10 +255,10 @@
       "canonical": "india",
       "var": "country",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e18"
@@ -266,74 +269,75 @@
       "canonical": "india",
       "var": "country",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e19"
     },
     {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e20"
-    },
-    {
-      "surface": "the United States",
+      "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
       "var": "country",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e21"
+      "id": "e20"
     },
     {
-      "surface": "the United States",
+      "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
       "var": "country",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e21"
     },
     {
-      "surface": "the United States",
+      "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
       "var": "country",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e23"
+      "id": "e22"
     },
     {
       "surface": "population",
-      "type": "DATA_VAR",
+      "type": "OTHER_ENTITY",
       "canonical": "population",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e23"
+    },
+    {
+      "surface": "clean electricity",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -344,9 +348,9 @@
       "id": "e24"
     },
     {
-      "surface": "clean electricity production",
+      "surface": "fossil fuel electricity",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
+      "canonical": "fossil",
       "var": "power_category",
       "section": "body",
       "modality": "questioned",
@@ -358,59 +362,18 @@
       "id": "e25"
     },
     {
-      "surface": "fossil fuel electricity production",
+      "surface": "renewable energy sources",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
+      "canonical": "clean",
       "var": "power_category",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e26"
-    },
-    {
-      "surface": "electricity production",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e27"
-    },
-    {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e28"
-    },
-    {
-      "surface": "renewable energy sources",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "renewable_energy",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e29"
     },
     {
       "surface": "pollution",
@@ -423,7 +386,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e30"
+      "id": "e27"
     }
   ],
   "unresolved_mentions": [],
@@ -431,12 +394,7 @@
     {
       "section": "body",
       "text": "What do you notice?\n\nLooking at the global scale, the production of electricity has been continuously increasing. This increase is also followed by the rise in the consumption of resources. Despite clean electricity sources having the ability to produce more electricity than fossil fuels, it seems that fossil fuels are more popular in terms of consumption. Coal, for instance, is the most consumed, but generates the least amount of electricity\n\nWind and solar energy began to receive more traction around 2010 and produces a significant amount of electricity.\n\nUnlike China and India, the fossil fuel consumption in the United States began to decrease around 2010.\n\nWhat do you wonder?\n\nWhy do China and India continue to consume fossil fuels?\n\nDespite having a smaller population, why does India produce less electricity and consume fewer resources than the United States?\n\nWhat does the steady trend in clean electricity production and the decrease in fossil fuel electricity production say about electricity production in the United States?\n\nHow does this relate to you and your community?\n\nThis is relevant to me and my community because we can see how much renewable energy sources can generate more electricity. Knowing how much fossil fuels cause pollution, I wonder how much I contribute to the consumption of these resources and how my community and I can avoid it.\n\nCatchy Headline:\n\n\"Clean Energy: More Power, Less Consumption - But why?\""
-    },
-    {
-      "section": "headline",
-      "label": "Catchy Headline",
-      "text": "\"Clean Energy: More Power, Less Consumption - But why?\""
     }
   ],
-  "tagged_text": "What do you notice?\n\nLooking at the global scale, the production of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> has been continuously increasing. This increase is also followed by the rise in the consumption of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">resources</entity>. Despite <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean electricity sources</entity> having the ability to produce more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>, it seems that <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> are more popular in terms of consumption. <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">Coal</entity>, for instance, is the most consumed, but generates the least amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>\n\n<entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">Wind and solar energy</entity> began to receive more traction around <entity type=\"TIME_REFERENCE\" canonical=\"2010\">2010</entity> and produces a significant amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>.\n\nUnlike <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>, the fossil fuel consumption in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> began to decrease around <entity type=\"TIME_REFERENCE\" canonical=\"2010\">2010</entity>.\n\nWhat do you wonder?\n\nWhy do <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> continue to consume <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuels</entity>?\n\nDespite having a smaller <entity type=\"DATA_VAR\" canonical=\"population\">population</entity>, why does <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> produce less <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity</entity> and consume fewer resources than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity>?\n\nWhat does the steady trend in <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean electricity production</entity> and the decrease in <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuel electricity production</entity> say about <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity production</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity>?\n\nHow does this relate to you and your community?\n\nThis is relevant to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because we can see how much <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\">renewable energy sources</entity> can generate more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>. Knowing how much <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> cause <entity type=\"EVENT\" canonical=\"pollution\">pollution</entity>, I wonder how much I contribute to the consumption of these resources and how my community and I can avoid it.\n\nCatchy Headline:\n\n\"<entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">Clean Energy</entity>: More Power, Less Consumption - But why?\""
+  "tagged_text": "What do you notice?\n\nLooking at the global scale, the production of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> has been continuously increasing. This increase is also followed by the rise in the consumption of <entity type=\"OTHER_ENTITY\" canonical=\"resources\" subtype=\"other\">resources</entity>. Despite <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean electricity sources</entity> having the ability to produce more electricity than <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>, it seems that <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> are more popular in terms of consumption. <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">Coal</entity>, for instance, is the most consumed, but generates the least amount of electricity\n\n<entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">Wind and solar energy</entity> began to receive more traction around <entity type=\"TIME_REFERENCE\" canonical=\"2010\">2010</entity> and produces a significant amount of electricity.\n\nUnlike <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>, the fossil fuel consumption in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> began to decrease around <entity type=\"TIME_REFERENCE\" canonical=\"2010\">2010</entity>.\n\nWhat do you wonder?\n\nWhy do <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> continue to consume <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuels</entity>?\n\nDespite having a smaller <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\">population</entity>, why does <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> produce less <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity</entity> and consume fewer <entity type=\"OTHER_ENTITY\" canonical=\"resources\" subtype=\"other\" modality=\"questioned\">resources</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity>?\n\nWhat does the steady trend in <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean electricity</entity> production and the decrease in <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuel electricity</entity> production say about <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity production</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity>?\n\nHow does this relate to you and your community?\n\nThis is relevant to me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because we can see how much <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">renewable energy sources</entity> can generate more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity>. Knowing how much <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> cause <entity type=\"EVENT\" canonical=\"pollution\">pollution</entity>, I wonder how much I contribute to the consumption of these <entity type=\"OTHER_ENTITY\" canonical=\"resources\" subtype=\"other\">resources</entity> and how my community and I can avoid it.\n\nCatchy Headline:\n\n\"<entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">Clean Energy</entity>: More Power, Less Consumption - But why?\""
 }

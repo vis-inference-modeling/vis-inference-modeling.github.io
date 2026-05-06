@@ -5,13 +5,13 @@
   "entities": [
     {
       "surface": "woman",
-      "type": "OTHER_ENTITY",
-      "canonical": "woman",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 21,
       "end": 26,
@@ -19,34 +19,25 @@
     },
     {
       "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 44,
       "end": 47,
       "id": "e1"
-    },
-    {
-      "surface": "your parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": 57,
-      "end": 69,
-      "id": "e2"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "parents",
+      "reason": "Could refer to the general concept of parents, but no confirmed canonical entity in the provided reference list beyond OTHER_ENTITY/parents; omitted from tagging due to headline brevity and ambiguity."
+    }
+  ],
   "section_segments": [
     {
       "section": "headline",
@@ -54,5 +45,5 @@
       "text": "Why woman are happier than men: contact your parents more!"
     }
   ],
-  "tagged_text": "Catchy headline: Why woman are happier than men: contact your parents more!"
+  "tagged_text": "Catchy headline: Why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">woman</entity> are happier than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>: contact your parents more!"
 }

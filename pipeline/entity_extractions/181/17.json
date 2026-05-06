@@ -57,10 +57,9 @@
     },
     {
       "surface": "Create more clean energy!",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
-      "section": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -109,6 +108,19 @@
       "id": "e7"
     },
     {
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
       "surface": "fossil fuels",
       "type": "DATA_VAR_LEVEL",
       "canonical": "fossil",
@@ -120,26 +132,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e9"
     },
     {
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
       "var": "country",
       "section": "body",
       "modality": "asserted",
@@ -159,10 +157,24 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e11"
+    },
+    {
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e12"
     },
     {
       "surface": "fossil",
@@ -176,7 +188,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e13"
     },
     {
       "surface": "clean electricity",
@@ -190,7 +202,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e14"
     },
     {
       "surface": "China",
@@ -204,61 +216,35 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e15"
     },
     {
       "surface": "countries",
-      "type": "DATA_VAR",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "country",
+      "var": "country",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "countries",
-      "type": "DATA_VAR",
-      "canonical": "country",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e16"
     },
     {
-      "surface": "fossil electricity",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "community",
       "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": true,
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e17"
-    },
-    {
-      "surface": "fossil electricity",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e18"
     }
   ],
   "unresolved_mentions": [],
@@ -268,5 +254,5 @@
       "text": "I noticed that in the graph for the world electricity had a growth overtime, specifically of fossil fuels, where as in the United States, it relatively remained the same over time. In India the electricity is predominantly fossil and there is little clean electricity. China had the largest spike over time.\nI wonder what causes countries like India to only produce fossil electricity. I also wonder which countries contribute the most to the fossil electricity. \nThis affects my community because it shows the amount of bad electricity that is contributed to the world and shows how it affects global warming.\n\"Create more clean energy!\""
     }
   ],
-  "tagged_text": "I noticed that in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> for the <entity type=\"LOCATION\" canonical=\"world\">world</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> had a growth overtime, specifically of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>, where as in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>, it relatively remained the same over time. In <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> is predominantly <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil</entity> and there is little <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean electricity</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity> had the largest spike over time.\nI wonder what causes <entity type=\"DATA_VAR\" canonical=\"country\" modality=\"questioned\">countries</entity> like <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> to only produce <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil electricity</entity>. I also wonder which <entity type=\"DATA_VAR\" canonical=\"country\" modality=\"questioned\">countries</entity> contribute the most to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil electricity</entity>. \nThis affects my community because it shows the amount of bad <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> that is contributed to the <entity type=\"LOCATION\" canonical=\"world\">world</entity> and shows how it affects <entity type=\"EVENT\" canonical=\"global_warming\">global warming</entity>.\n\"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Create more clean energy!</entity>\""
+  "tagged_text": "I noticed that in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> for the <entity type=\"LOCATION\" canonical=\"world\" section=\"body\">world</entity> <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity> had a growth overtime, specifically of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity>, where as in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity>, it relatively remained the same over time. In <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India</entity> the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity> is predominantly <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil</entity> and there is little <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean electricity</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity> had the largest spike over time.\nI wonder what causes countries like <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\" modality=\"questioned\">India</entity> to only produce fossil <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" modality=\"questioned\">electricity</entity>. I also wonder which <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\" section=\"body\" modality=\"questioned\">countries</entity> contribute the most to the fossil <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" modality=\"questioned\">electricity</entity>. \nThis affects my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"community\" section=\"body\" speaker_context=\"true\">community</entity> because it shows the amount of bad <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity> that is contributed to the <entity type=\"LOCATION\" canonical=\"world\" section=\"body\">world</entity> and shows how it affects <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\">global warming</entity>.\n\"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"body\">Create more clean energy!</entity>\""
 }

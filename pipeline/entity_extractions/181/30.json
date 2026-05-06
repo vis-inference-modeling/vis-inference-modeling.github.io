@@ -10,23 +10,23 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 29,
       "end": 40,
       "id": "e0"
     },
     {
-      "surface": "world",
-      "type": "LOCATION",
-      "canonical": "world",
+      "surface": "electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 48,
-      "end": 53,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 161,
+      "end": 172,
       "id": "e1"
     },
     {
@@ -39,23 +39,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 80,
-      "end": 92,
-      "id": "e2"
-    },
-    {
-      "surface": "clean energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
       "start": 325,
       "end": 337,
-      "id": "e3"
+      "id": "e2"
     },
     {
       "surface": "fossil fuels",
@@ -69,7 +55,7 @@
       "occurrence_index": 0,
       "start": 342,
       "end": 354,
-      "id": "e4"
+      "id": "e3"
     },
     {
       "surface": "US",
@@ -83,20 +69,33 @@
       "occurrence_index": 0,
       "start": 366,
       "end": 368,
-      "id": "e5"
+      "id": "e4"
     },
     {
-      "surface": "On the road to cleaner energy?",
-      "type": "OTHER_ENTITY",
-      "canonical": "on_the_road_to_cleaner_energy",
-      "subtype": "other",
-      "section": "headline",
+      "surface": "world",
+      "type": "LOCATION",
+      "canonical": "world",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 425,
-      "end": 455,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "clean energy",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e6"
     },
     {
@@ -128,22 +127,24 @@
       "id": "e8"
     },
     {
-      "surface": "electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e9"
     },
     {
       "surface": "population",
-      "type": "DATA_VAR",
+      "type": "OTHER_ENTITY",
       "canonical": "population",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -154,9 +155,10 @@
       "id": "e10"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
+      "surface": "community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -167,7 +169,7 @@
       "id": "e11"
     },
     {
-      "surface": "US",
+      "surface": "country",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
       "var": "country",
@@ -179,48 +181,6 @@
       "start": null,
       "end": null,
       "id": "e12"
-    },
-    {
-      "surface": "clean energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "country",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
     }
   ],
   "unresolved_mentions": [],
@@ -228,12 +188,7 @@
     {
       "section": "body",
       "text": "I  notice that over time the electricity in the world has increased in both the clean energy areas and the fossil fuels areas. I wonder why India generates less electricity than the US even though they have a bigger population. This can relate to my community because I live in the US and it makes me curious to see how much clean energy and fossil fuels my country uses in comparison to others. A catchy headline would be: \"On the road to cleaner energy?\""
-    },
-    {
-      "section": "headline",
-      "label": "On the road to cleaner energy?",
-      "text": "On the road to cleaner energy?"
     }
   ],
-  "tagged_text": "I  notice that over time the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> in the <entity type=\"LOCATION\" canonical=\"world\">world</entity> has increased in both the <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> areas and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> areas. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" modality=\"questioned\">India</entity> generates less <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">US</entity> even though they have a bigger <entity type=\"DATA_VAR\" canonical=\"population\" modality=\"questioned\">population</entity>. This can relate to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because I live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> and it makes me curious to see how much <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> my <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">country</entity> uses in comparison to others. A catchy headline would be: \"On the road to cleaner energy?\""
+  "tagged_text": "I  notice that over time the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity</entity> in the <entity type=\"LOCATION\" canonical=\"world\" section=\"body\">world</entity> has increased in both the <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity> areas and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> areas. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\" modality=\"questioned\">India</entity> generates less <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" modality=\"questioned\">electricity</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" modality=\"questioned\">US</entity> even though they have a bigger <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\" section=\"body\" modality=\"questioned\">population</entity>. This can relate to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" section=\"body\" speaker_context=\"true\">community</entity> because I live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">US</entity> and it makes me curious to see how much <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuels</entity> my <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" speaker_context=\"true\">country</entity> uses in comparison to others. A catchy headline would be: \"On the road to cleaner energy?\""
 }

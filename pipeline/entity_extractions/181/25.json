@@ -45,17 +45,17 @@
       "id": "e2"
     },
     {
-      "surface": "fossil fuel",
+      "surface": "clean energy",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
+      "canonical": "clean",
       "var": "power_category",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 590,
-      "end": 601,
+      "start": 384,
+      "end": 396,
       "id": "e3"
     },
     {
@@ -67,29 +67,29 @@
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": 667,
       "end": 679,
       "id": "e4"
     },
     {
-      "surface": "Clean vs. Fossil electric generation",
+      "surface": "Clean vs. Fossil electric generation, and it's effects",
       "type": "CHART_ELEMENT",
-      "canonical": "clean_vs_fossil_electric_generation",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 685,
-      "end": 721,
+      "end": 739,
       "id": "e5"
     },
     {
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -103,7 +103,7 @@
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -117,18 +117,18 @@
       "surface": "oil",
       "type": "DATA_VAR_LEVEL",
       "canonical": "oil_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e8"
     },
     {
-      "surface": "10 to 30 million gigawatt hours",
+      "surface": "10",
       "type": "UNIT",
       "canonical": "million_gigawatt_hours",
       "section": "numbered_point",
@@ -141,10 +141,9 @@
       "id": "e9"
     },
     {
-      "surface": "Nuclear",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "nuclear",
-      "var": "energy_source",
+      "surface": "30 million gigawatt hours",
+      "type": "UNIT",
+      "canonical": "million_gigawatt_hours",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -155,10 +154,10 @@
       "id": "e10"
     },
     {
-      "surface": "Hydroelectric energy",
+      "surface": "Nuclear",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
+      "canonical": "nuclear",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -169,26 +168,27 @@
       "id": "e11"
     },
     {
-      "surface": "wind turbines",
+      "surface": "Hydroelectric energy",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e12"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
+      "surface": "wind turbines",
+      "type": "OTHER_ENTITY",
+      "canonical": "wind_turbines",
+      "subtype": "technology",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -196,10 +196,66 @@
       "id": "e13"
     },
     {
-      "surface": "fossil fuel",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
+      "surface": "atmosphere",
+      "type": "OTHER_ENTITY",
+      "canonical": "atmosphere",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "ecosystem",
+      "type": "OTHER_ENTITY",
+      "canonical": "ecosystem",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e17"
+    },
+    {
+      "surface": "factories",
+      "type": "OTHER_ENTITY",
+      "canonical": "factories",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -207,7 +263,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e18"
     },
     {
       "surface": "Earth",
@@ -220,10 +276,10 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e19"
     },
     {
-      "surface": "my town",
+      "surface": "town",
       "type": "LOCATION",
       "canonical": "my_town",
       "section": "numbered_point",
@@ -233,21 +289,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "clean energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
+      "id": "e20"
     }
   ],
   "unresolved_mentions": [],
@@ -273,5 +315,5 @@
       "text": "Clean vs. Fossil electric generation, and it's effects"
     }
   ],
-  "tagged_text": "1.I notice up to <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">15 million gigawatt hours</entity>, takes up from <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuel</entity>, with majority being <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity>, while little being <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\">oil</entity>. Clean gigawatts start from <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\">10 to 30 million gigawatt hours</entity>, with most being taken up from <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">Nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">Hydroelectric energy</entity>, with little being from <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind turbines</entity>. \n\n2.I wonder how the graph will be affected in the future, will there be more <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuel</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean energy</entity> generation? I also wonder how both types of energy deeply affect our atmosphere and our ecosystem. \n\n3.This relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> as where I live, there are many factories letting out smoke (<entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuel</entity>) which damages the <entity type=\"LOCATION\" canonical=\"earth\">Earth</entity> and my community, as <entity type=\"LOCATION\" canonical=\"my_town\" speaker_context=\"true\">my town</entity> needs more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>.\n\n4.<entity type=\"CHART_ELEMENT\" canonical=\"clean_vs_fossil_electric_generation\" section=\"headline\">Clean vs. Fossil electric generation</entity>, and it's effects"
+  "tagged_text": "1.I notice up to <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\" section=\"body\">15 million gigawatt hours</entity>, takes up from <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuel</entity>, with majority being <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\" section=\"body\">gas</entity>, while little being <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\" section=\"body\">oil</entity>. Clean gigawatts start from <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\" section=\"body\">10</entity> to <entity type=\"UNIT\" canonical=\"million_gigawatt_hours\" section=\"body\">30 million gigawatt hours</entity>, with most being taken up from <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\" section=\"body\">Nuclear</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\" section=\"body\">Hydroelectric energy</entity>, with little being from <entity type=\"OTHER_ENTITY\" canonical=\"wind_turbines\" subtype=\"technology\" section=\"body\">wind turbines</entity>. \n\n2.I wonder how the graph will be affected in the future, will there be more <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\" modality=\"questioned\">fossil fuel</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\" modality=\"questioned\">clean energy</entity> generation? I also wonder how both types of energy deeply affect our <entity type=\"OTHER_ENTITY\" canonical=\"atmosphere\" subtype=\"other\" section=\"body\" modality=\"questioned\">atmosphere</entity> and our <entity type=\"OTHER_ENTITY\" canonical=\"ecosystem\" subtype=\"other\" section=\"body\" modality=\"questioned\">ecosystem</entity>. \n\n3.This relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" section=\"body\" speaker_context=\"true\">community</entity> as where I live, there are many <entity type=\"OTHER_ENTITY\" canonical=\"factories\" subtype=\"other\" section=\"body\">factories</entity> letting out smoke (<entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil fuel</entity>) which damages the <entity type=\"LOCATION\" canonical=\"earth\" section=\"body\">Earth</entity> and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" section=\"body\" speaker_context=\"true\">community</entity>, as my <entity type=\"LOCATION\" canonical=\"my_town\" section=\"body\" speaker_context=\"true\">town</entity> needs more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean energy</entity>. \n\n4.<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Clean vs. Fossil electric generation, and it's effects</entity>"
 }

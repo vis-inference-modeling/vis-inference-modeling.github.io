@@ -4,44 +4,43 @@
   "raw_comment": "Your parent's phones are dryer than your love life!",
   "entities": [
     {
-      "surface": "Your parent's",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": 0,
-      "end": 13,
-      "id": "e0"
-    },
-    {
       "surface": "phones",
       "type": "OTHER_ENTITY",
       "canonical": "phones",
+      "subtype": "other",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "subtype": "technology",
       "occurrence_index": 0,
       "start": 14,
       "end": 20,
+      "id": "e0"
+    },
+    {
+      "surface": "love life",
+      "type": "OTHER_ENTITY",
+      "canonical": "love_life",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 41,
+      "end": 50,
       "id": "e1"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "your love life",
-      "reason": "Not an entity in the provided dictionary; rhetorical comparison."
+      "surface": "parent's",
+      "reason": "Possessive form refers to parents, but the exact surface is not in the normalized dictionary and is not clearly a standalone entity mention."
     }
   ],
   "section_segments": [
     {
       "section": "headline",
-      "label": "headline",
       "text": "Your parent's phones are dryer than your love life!"
     }
   ],

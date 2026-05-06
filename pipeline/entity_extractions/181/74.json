@@ -31,22 +31,23 @@
       "id": "e1"
     },
     {
-      "surface": "graph",
+      "surface": "World Electricity Generation",
       "type": "CHART_ELEMENT",
-      "canonical": "graph",
+      "canonical": "world_electricity_generation",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 114,
-      "end": 119,
+      "start": 84,
+      "end": 112,
       "id": "e2"
     },
     {
       "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "energy_source",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -73,7 +74,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -87,7 +88,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -101,7 +102,7 @@
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -126,6 +127,20 @@
       "id": "e8"
     },
     {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 693,
+      "end": 695,
+      "id": "e9"
+    },
+    {
       "surface": "fossil fuels",
       "type": "DATA_VAR_LEVEL",
       "canonical": "fossil",
@@ -137,39 +152,65 @@
       "occurrence_index": 0,
       "start": 737,
       "end": 749,
-      "id": "e9"
+      "id": "e10"
+    },
+    {
+      "surface": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 773,
+      "end": 781,
+      "id": "e11"
+    },
+    {
+      "surface": "Energy Sources",
+      "type": "DATA_VAR",
+      "canonical": "energy_source_generation_type",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 869,
+      "end": 883,
+      "id": "e12"
     },
     {
       "surface": "2000",
       "type": "TIME_REFERENCE",
       "canonical": "2000",
-      "section": "body",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 886,
       "end": 890,
-      "id": "e10"
+      "id": "e13"
     },
     {
       "surface": "2022",
       "type": "TIME_REFERENCE",
       "canonical": "2022",
-      "section": "body",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 894,
       "end": 898,
-      "id": "e11"
+      "id": "e14"
     },
     {
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -177,12 +218,13 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e15"
     },
     {
       "surface": "renewable energy technology",
-      "type": "EVENT",
+      "type": "OTHER_ENTITY",
       "canonical": "renewable_energy_technology",
+      "subtype": "technology",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -190,13 +232,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e16"
     },
     {
       "surface": "natural gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -204,12 +246,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e17"
     },
     {
       "surface": "America",
-      "type": "LOCATION",
-      "canonical": "america",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -217,7 +260,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e18"
     },
     {
       "surface": "fossil fuel industry's",
@@ -231,7 +274,21 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e19"
+    },
+    {
+      "surface": "policymakers",
+      "type": "OTHER_ENTITY",
+      "canonical": "policymakers",
+      "subtype": "organization",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
     }
   ],
   "unresolved_mentions": [],
@@ -239,7 +296,12 @@
     {
       "section": "body",
       "text": "Switching fully to clean energy is crucial to mitigating environmental damage. The 'World Electricity Generation' graph shows energy trends over 20+ years, revealing a concerning global reliance on coal and gas, despite advances in renewable energy technology. It's alarming that, globally, these non-renewables dominate, even as the US shifts from coal to natural gas—ironic, given America's role in clean energy innovation. This data prompts questions about the fossil fuel industry's influence in maintaining this imbalance, despite its known environmental costs. I hope that eye-opening statistics like this help influence my local policymakers to make better, more environmentally conscious decisions regarding the continued use of fossil fuels. My personal suggested headline for this graph is, “Capturing the Disproportionality Between Renewable and Fossil Fuel Energy Sources - 2000 to 2022.”"
+    },
+    {
+      "section": "headline",
+      "label": "My personal suggested headline for this graph is,",
+      "text": "“Capturing the Disproportionality Between Renewable and Fossil Fuel Energy Sources - 2000 to 2022.”"
     }
   ],
-  "tagged_text": "Switching fully to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> is crucial to mitigating <entity type=\"EVENT\" canonical=\"environmental_health\">environmental damage</entity>. The 'World Electricity Generation' <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows <entity type=\"DATA_VAR\" canonical=\"energy_source\">energy</entity> trends over <entity type=\"TIME_REFERENCE\" canonical=\"20_plus_years\">20+ years</entity>, revealing a concerning global reliance on <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity>, despite advances in <entity type=\"EVENT\" canonical=\"renewable_energy_technology\">renewable energy technology</entity>. It's alarming that, globally, these non-renewables dominate, even as the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> shifts from <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> to <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">natural gas</entity>—ironic, given <entity type=\"LOCATION\" canonical=\"america\">America</entity>'s role in clean energy innovation. This data prompts questions about the <entity type=\"OTHER_ENTITY\" canonical=\"fossil_fuel_industry\" subtype=\"organization\">fossil fuel industry's</entity> influence in maintaining this imbalance, despite its known environmental costs. I hope that eye-opening statistics like this help influence my local policymakers to make better, more environmentally conscious decisions regarding the continued use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>. My personal suggested headline for this graph is, “Capturing the Disproportionality Between Renewable and Fossil Fuel Energy Sources - <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity> to <entity type=\"TIME_REFERENCE\" canonical=\"2022\">2022</entity>.”"
+  "tagged_text": "Switching fully to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity> is crucial to mitigating <entity type=\"EVENT\" canonical=\"environmental_health\">environmental damage</entity>. The '<entity type=\"CHART_ELEMENT\" canonical=\"world_electricity_generation\">World Electricity Generation</entity>' graph shows <entity type=\"OTHER_ENTITY\" canonical=\"energy\" subtype=\"other\">energy</entity> trends over <entity type=\"TIME_REFERENCE\" canonical=\"20_plus_years\">20+ years</entity>, revealing a concerning global reliance on <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">gas</entity>, despite advances in <entity type=\"OTHER_ENTITY\" canonical=\"renewable_energy_technology\" subtype=\"technology\">renewable energy technology</entity>. It's alarming that, globally, these non-renewables dominate, even as the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> shifts from <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> to <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\">natural gas</entity>—ironic, given <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">America</entity>'s role in clean energy innovation. This data prompts questions about the <entity type=\"OTHER_ENTITY\" canonical=\"fossil_fuel_industry\" subtype=\"organization\">fossil fuel industry's</entity> influence in maintaining this imbalance, despite its known environmental costs. I hope that eye-opening statistics like this help influence my local <entity type=\"OTHER_ENTITY\" canonical=\"policymakers\" subtype=\"organization\" speaker_context=\"true\">policymakers</entity> to make better, more environmentally conscious decisions regarding the continued use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity>. My personal suggested <entity type=\"CHART_ELEMENT\" canonical=\"headline\">headline</entity> for this graph is, “Capturing the Disproportionality Between Renewable and Fossil Fuel <entity type=\"DATA_VAR\" canonical=\"energy_source_generation_type\">Energy Sources</entity> - <entity type=\"TIME_REFERENCE\" canonical=\"2000\">2000</entity> to <entity type=\"TIME_REFERENCE\" canonical=\"2022\">2022</entity>.”"
 }

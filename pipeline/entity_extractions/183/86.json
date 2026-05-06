@@ -30,27 +30,28 @@
       "id": "e1"
     },
     {
-      "surface": "young adults",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_adults",
+      "surface": "text",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1377,
-      "end": 1389,
+      "start": 1329,
+      "end": 1333,
       "id": "e2"
     },
     {
-      "surface": "young adults",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_adults",
+      "surface": "percentage of young adults aged 18 to 34 who reach out to a parent at least once a day or a few times a week",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_young_people_who_reach_out_to_a_parent",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
+      "terminology_drift": true,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e3"
@@ -69,9 +70,9 @@
       "id": "e4"
     },
     {
-      "surface": "at least once a day",
-      "type": "TIME_REFERENCE",
-      "canonical": "at_least_once_a_day",
+      "surface": "communication methods",
+      "type": "DATA_VAR",
+      "canonical": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -82,9 +83,10 @@
       "id": "e5"
     },
     {
-      "surface": "a few times a week",
-      "type": "TIME_REFERENCE",
-      "canonical": "a_few_times_a_week",
+      "surface": "sending texts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -95,9 +97,10 @@
       "id": "e6"
     },
     {
-      "surface": "sending texts",
-      "type": "OTHER_ENTITY",
-      "canonical": "sending_texts",
+      "surface": "phone or video-chat",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -108,9 +111,10 @@
       "id": "e7"
     },
     {
-      "surface": "phone or video-chat",
-      "type": "OTHER_ENTITY",
-      "canonical": "phone_or_video_chat",
+      "surface": "visiting in person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -122,21 +126,9 @@
     },
     {
       "surface": "visiting in person",
-      "type": "OTHER_ENTITY",
-      "canonical": "visiting_in_person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "visiting in person",
-      "type": "OTHER_ENTITY",
-      "canonical": "visiting_in_person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -144,12 +136,27 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e9"
     },
     {
       "surface": "young women",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "young men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -160,9 +167,10 @@
       "id": "e11"
     },
     {
-      "surface": "their families",
-      "type": "OTHER_ENTITY",
-      "canonical": "families",
+      "surface": "texting",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -173,11 +181,12 @@
       "id": "e12"
     },
     {
-      "surface": "young men",
+      "surface": "female and male children",
       "type": "OTHER_ENTITY",
-      "canonical": "young_men",
+      "canonical": "female_and_male_children",
+      "subtype": "other",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -186,11 +195,12 @@
       "id": "e13"
     },
     {
-      "surface": "texting",
+      "surface": "participants",
       "type": "OTHER_ENTITY",
-      "canonical": "texting",
+      "canonical": "participants",
+      "subtype": "other",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -199,113 +209,10 @@
       "id": "e14"
     },
     {
-      "surface": "texting",
-      "type": "OTHER_ENTITY",
-      "canonical": "texting",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "highest percentages",
-      "type": "UNIT",
-      "canonical": "percentages",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "genders",
-      "type": "OTHER_ENTITY",
-      "canonical": "genders",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
-      "surface": "female and male children",
-      "type": "OTHER_ENTITY",
-      "canonical": "female_and_male_children",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "girls",
-      "type": "OTHER_ENTITY",
-      "canonical": "girls",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "participants",
-      "type": "OTHER_ENTITY",
-      "canonical": "participants",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e20"
-    },
-    {
-      "surface": "eldest",
-      "type": "OTHER_ENTITY",
-      "canonical": "eldest",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e21"
-    },
-    {
-      "surface": "only children",
-      "type": "OTHER_ENTITY",
-      "canonical": "only_children",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e22"
-    },
-    {
-      "surface": "my mom",
+      "surface": "mom",
       "type": "OTHER_ENTITY",
       "canonical": "my_mom",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -313,123 +220,50 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
-    },
-    {
-      "surface": "every day",
-      "type": "TIME_REFERENCE",
-      "canonical": "everyday",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e24"
-    },
-    {
-      "surface": "Video and phone calls",
-      "type": "OTHER_ENTITY",
-      "canonical": "video_and_phone_calls",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e25"
-    },
-    {
-      "surface": "different schedules",
-      "type": "TIME_REFERENCE",
-      "canonical": "schedule_convenience",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e26"
-    },
-    {
-      "surface": "in-person visits",
-      "type": "OTHER_ENTITY",
-      "canonical": "in_person_visits",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e27"
-    },
-    {
-      "surface": "a handful of times each year",
-      "type": "TIME_REFERENCE",
-      "canonical": "a_handful_of_times_each_year",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e28"
-    },
-    {
-      "surface": "schedule/ convenience",
-      "type": "OTHER_ENTITY",
-      "canonical": "schedule_convenience",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e29"
+      "id": "e15"
     },
     {
       "surface": "Texts and Calls: The New Bridge Between Today's Young Adults and Their Parents",
       "type": "CHART_ELEMENT",
-      "canonical": "texts_and_calls_the_new_bridge_between_todays_young_adults_and_their_parents",
-      "section": "body",
+      "canonical": "staying_connected_in_2024",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e30"
+      "id": "e16"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "young women",
-      "reason": "Could be a chart category or general demographic mention; no chart-specific reference list is available."
+      "surface": "families",
+      "reason": "Generic group reference; not a specific listed entity."
     },
     {
-      "surface": "young men",
-      "reason": "Could be a chart category or general demographic mention; no chart-specific reference list is available."
+      "surface": "parents",
+      "reason": "Generic relational noun; not clearly one of the listed entities."
     },
     {
-      "surface": "their families",
-      "reason": "Could refer to parents/family generally, but no exact canonical ID is confirmed."
+      "surface": "eldest or only children",
+      "reason": "Could map to a demographic group, but no confirmed canonical ID in the provided list."
     },
     {
-      "surface": "female and male children",
-      "reason": "Likely refers to gendered child groups, but the exact canonical mapping is uncertain."
+      "surface": "schedule/ convenience",
+      "reason": "Abstract causal concept, but not a confirmed canonical entity."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "The graph shows the percentage of young adults aged 18 to 34 who reach out to a parent at least once a day or a few times a week. It breaks down the communication methods into sending texts, phone or video-chat, and visiting in person. I noticed that while young women appear to reach out to their families at a higher rate than young men do, regardless of modality, that texting is the most common/ popular means of keeping in touch, as it has the highest percentages in either gender. \nVisiting in person shows the lowest gap between genders,  but is still less popular than other modalities.\nI wonder how the way that female and male children are socialized impacts the way and the frequency with which they stay in parents-- are girls more prone to keeping in touch because they spent more time with parents, or because they feel it is expected? Of the participants that has high rates of contact, how many of them were eldest or only children? \nThis resonates with me as my mom and I text nearly every day. Video and phone calls are harder to line up with different schedules, and in-person visits are the hardest-- we see each other a handful of times each year. Based on this, I'm inclined to think that schedule/ convenience has a decent weight behind the rates observed in this graph.\nI think a good headline could be, \"Texts and Calls: The New Bridge Between Today's Young Adults and Their Parents\""
+      "text": "The graph shows the percentage of young adults aged 18 to 34 who reach out to a parent at least once a day or a few times a week. It breaks down the communication methods into sending texts, phone or video-chat, and visiting in person. I noticed that while young women appear to reach out to their families at a higher rate than young men do, regardless of modality, that texting is the most common/ popular means of keeping in touch, as it has the highest percentages in either gender. \nVisiting in person shows the lowest gap between genders,  but is still less popular than other modalities.\nI wonder how the way that female and male children are socialized impacts the way and the frequency with which they stay in parents-- are girls more prone to keeping in touch because they spent more time with parents, or because they feel it is expected? Of the participants that has high rates of contact, how many of them were eldest or only children? \nThis resonates with me as my mom and I text nearly every day. Video and phone calls are harder to line up with different schedules, and in-person visits are the hardest-- we see each other a handful of times each year. Based on this, I'm inclined to think that schedule/ convenience has a decent weight behind the rates observed in this graph."
+    },
+    {
+      "section": "headline",
+      "label": "I think a good headline could be,",
+      "text": "\"Texts and Calls: The New Bridge Between Today's Young Adults and Their Parents\""
     }
   ],
-  "tagged_text": "The graph shows the percentage of young adults aged 18 to 34 who reach out to a parent at least once a day or a few times a week. It breaks down the communication methods into sending texts, phone or video-chat, and visiting in person. I noticed that while young women appear to reach out to their families at a higher rate than young men do, regardless of modality, that texting is the most common/ popular means of keeping in touch, as it has the highest percentages in either gender. \nVisiting in person shows the lowest gap between genders,  but is still less popular than other modalities.\nI wonder how the way that female and male children are socialized impacts the way and the frequency with which they stay in parents-- are girls more prone to keeping in touch because they spent more time with parents, or because they feel it is expected? Of the participants that has high rates of contact, how many of them were eldest or only children? \nThis resonates with me as my mom and I text nearly every day. Video and phone calls are harder to line up with different schedules, and in-person visits are the hardest-- we see each other a handful of times each year. Based on this, I'm inclined to think that schedule/ convenience has a decent weight behind the rates observed in this graph.\nI think a good headline could be, \"Texts and Calls: The New Bridge Between Today's Young Adults and Their Parents\""
+  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young adults aged <entity type=\"TIME_REFERENCE\" canonical=\"18_to_34\">18 to 34</entity> who reach out to a parent at least once a day or a few times a week</entity>. It breaks down the <entity type=\"DATA_VAR\" canonical=\"communication_method\">communication methods</entity> into <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">sending texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone or video-chat</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting in person</entity>. I noticed that while <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> appear to reach out to their families at a higher rate than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> do, regardless of modality, that <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> is the most common/ popular means of keeping in touch, as it has the highest percentages in either gender. \n<entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">Visiting in person</entity> shows the lowest gap between genders,  but is still less popular than other modalities.\nI wonder how the way that <entity type=\"OTHER_ENTITY\" canonical=\"female_and_male_children\" subtype=\"other\">female and male children</entity> are socialized impacts the way and the frequency with which they stay in parents-- are girls more prone to keeping in touch because they spent more time with parents, or because they feel it is expected? Of the <entity type=\"OTHER_ENTITY\" canonical=\"participants\" subtype=\"other\">participants</entity> that has high rates of contact, how many of them were eldest or only children? \nThis resonates with me as my <entity type=\"OTHER_ENTITY\" canonical=\"my_mom\" subtype=\"other\" speaker_context=\"true\">mom</entity> and I <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" speaker_context=\"true\">text</entity> nearly every day. Video and phone calls are harder to line up with different schedules, and in-person visits are the hardest-- we see each other a handful of times each year. Based on this, I'm inclined to think that schedule/ convenience has a decent weight behind the rates observed in this graph.\nI think a good headline could be, \"<entity type=\"CHART_ELEMENT\" canonical=\"staying_connected_in_2024\" section=\"headline\">Texts and Calls: The New Bridge Between Today's Young Adults and Their Parents</entity>\""
 }

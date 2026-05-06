@@ -4,58 +4,59 @@
   "raw_comment": "I noticed that three countries that are shown in the graph have the highest population out of the world, and it is also showing the the United States and china create the most amount of energy compared to everywhere else.\n\nI wonder why china and the United States produce the most energy, because if you didn’t see this you would think that china and us use the most energy out of the rest of the countries.  I also wonder why India having the largest population does not have the most energy. \n\nThis relates to my community because I live in the U.S where is considered to be one of the countries that produces the most amount of energy. So this can affect the amount of pollution in my area because of the energy usage. \n\n“Clean energy or more energy” This graph shows the amount of fuel and the pollution of energy that is made.",
   "entities": [
     {
-      "surface": "countries",
+      "surface": "United States",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "country",
+      "canonical": "united_states",
       "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 21,
-      "end": 30,
+      "start": 136,
+      "end": 149,
       "id": "e0"
     },
     {
-      "surface": "countries",
+      "surface": "china",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "country",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 154,
+      "end": 159,
+      "id": "e1"
+    },
+    {
+      "surface": "china",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
       "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 397,
-      "end": 406,
-      "id": "e1"
+      "start": 236,
+      "end": 241,
+      "id": "e2"
     },
     {
-      "surface": "countries",
+      "surface": "china",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "country",
+      "canonical": "china",
       "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 2,
-      "start": 588,
-      "end": 597,
-      "id": "e2"
-    },
-    {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 631,
-      "end": 637,
+      "start": 341,
+      "end": 346,
       "id": "e3"
     },
     {
@@ -65,10 +66,10 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 708,
-      "end": 714,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 367,
+      "end": 373,
       "id": "e4"
     },
     {
@@ -78,10 +79,10 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 731,
-      "end": 737,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 486,
+      "end": 492,
       "id": "e5"
     },
     {
@@ -91,10 +92,10 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": 746,
-      "end": 752,
+      "terminology_drift": true,
+      "occurrence_index": 2,
+      "start": 631,
+      "end": 637,
       "id": "e6"
     },
     {
@@ -104,134 +105,11 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 4,
-      "start": 811,
-      "end": 817,
-      "id": "e7"
-    },
-    {
-      "surface": "countries",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "country",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 3,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "world",
-      "type": "LOCATION",
-      "canonical": "world",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "china",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "china",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "china",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e16"
+      "start": 708,
+      "end": 714,
+      "id": "e7"
     },
     {
       "surface": "energy",
@@ -240,11 +118,51 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 4,
+      "start": 731,
+      "end": 737,
+      "id": "e8"
+    },
+    {
+      "surface": "pollution",
+      "type": "EVENT",
+      "canonical": "pollution",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 5,
+      "occurrence_index": 0,
+      "start": 798,
+      "end": 807,
+      "id": "e9"
+    },
+    {
+      "surface": "energy",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 811,
+      "end": 817,
+      "id": "e10"
+    },
+    {
+      "surface": "china",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "china",
+      "var": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e11"
     },
     {
       "surface": "us",
@@ -258,7 +176,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e12"
     },
     {
       "surface": "India",
@@ -272,13 +190,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e13"
     },
     {
-      "surface": "my community",
+      "surface": "community",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_neighbors",
-      "subtype": "other",
+      "canonical": "my_community",
+      "subtype": "community",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -286,7 +204,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e14"
     },
     {
       "surface": "U.S",
@@ -300,20 +218,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e21"
-    },
-    {
-      "surface": "pollution",
-      "type": "EVENT",
-      "canonical": "pollution",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e22"
+      "id": "e15"
     },
     {
       "surface": "pollution",
@@ -326,7 +231,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e23"
+      "id": "e16"
     },
     {
       "surface": "energy usage",
@@ -339,68 +244,46 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
+      "id": "e17"
     },
     {
       "surface": "Clean energy",
       "type": "DATA_VAR_LEVEL",
       "canonical": "clean",
       "var": "power_category",
-      "section": "body",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e25"
-    },
-    {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e26"
-    },
-    {
-      "surface": "fuel",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e27"
+      "id": "e18"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "highest population out of the world",
-      "reason": "Phrase is awkward and may refer to the three countries collectively rather than a distinct entity."
+      "surface": "world",
+      "reason": "Used as a broad comparative reference; not clearly a location entity in this context."
     },
     {
-      "surface": "more energy",
-      "reason": "Generic comparative phrase; not a distinct entity."
+      "surface": "highest population",
+      "reason": "Describes a property of countries but is not a standalone entity mention."
     },
     {
-      "surface": "the amount of pollution of energy that is made",
-      "reason": "Likely refers to pollution from energy production, but the phrasing is too broad to tag as a single entity."
+      "surface": "fuel",
+      "reason": "Generic substance term; could refer to fossil fuels but is not explicit enough to tag separately."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I noticed that three countries that are shown in the graph have the highest population out of the world, and it is also showing the the United States and china create the most amount of energy compared to everywhere else.\n\nI wonder why china and the United States produce the most energy, because if you didn’t see this you would think that china and us use the most energy out of the rest of the countries.  I also wonder why India having the largest population does not have the most energy. \n\nThis relates to my community because I live in the U.S where is considered to be one of the countries that produces the most amount of energy. So this can affect the amount of pollution in my area because of the energy usage. \n\n“Clean energy or more energy” This graph shows the amount of fuel and the pollution of energy that is made."
+      "text": "I noticed that three countries that are shown in the graph have the highest population out of the world, and it is also showing the the United States and china create the most amount of energy compared to everywhere else.\n\nI wonder why china and the United States produce the most energy, because if you didn’t see this you would think that china and us use the most energy out of the rest of the countries.  I also wonder why India having the largest population does not have the most energy. \n\nThis relates to my community because I live in the U.S where is considered to be one of the countries that produces the most amount of energy. So this can affect the amount of pollution in my area because of the energy usage."
+    },
+    {
+      "section": "headline",
+      "text": "“Clean energy or more energy” This graph shows the amount of fuel and the pollution of energy that is made."
     }
   ],
-  "tagged_text": "I noticed that three <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\">countries</entity> that are shown in the graph have the highest <entity type=\"DATA_VAR\" canonical=\"population\">population</entity> out of the <entity type=\"LOCATION\" canonical=\"world\">world</entity>, and it is also showing the the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">china</entity> create the most amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> compared to everywhere else.\n\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">china</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> produce the most <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity>, because if you didn’t see this you would think that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">china</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">us</entity> use the most <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> out of the rest of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\">countries</entity>.  I also wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> having the largest <entity type=\"DATA_VAR\">population</entity> does not have the most <entity type=\"DATA_VAR\">energy</entity>. \n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_neighbors\" subtype=\"other\" speaker_context=\"true\">my community</entity> because I live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" speaker_context=\"true\">U.S</entity> where is considered to be one of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\">countries</entity> that produces the most amount of <entity type=\"DATA_VAR\">energy</entity>. So this can affect the amount of <entity type=\"EVENT\" canonical=\"pollution\">pollution</entity> in my area because of the <entity type=\"DATA_VAR\">energy usage</entity>. \n\n“<entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">Clean energy</entity> or more energy” This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">fuel</entity> and the <entity type=\"EVENT\" canonical=\"pollution\">pollution</entity> of <entity type=\"DATA_VAR\">energy</entity> that is made."
+  "tagged_text": "I noticed that three countries that are shown in the graph have the highest population out of the world, and it is also showing the the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">china</entity> create the most amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy</entity> compared to everywhere else.\n\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\" modality=\"questioned\">china</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" modality=\"questioned\">United States</entity> produce the most <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" modality=\"questioned\">energy</entity>, because if you didn’t see this you would think that <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\" modality=\"questioned\">china</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" modality=\"questioned\">us</entity> use the most <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" modality=\"questioned\">energy</entity> out of the rest of the countries.  I also wonder why India having the largest population does not have the most <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" modality=\"questioned\">energy</entity>. \n\nThis relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"community\" section=\"body\" speaker_context=\"true\">community</entity> because I live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" speaker_context=\"true\">U.S</entity> where is considered to be one of the countries that produces the most amount of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" speaker_context=\"true\">energy</entity>. So this can affect the amount of <entity type=\"EVENT\" canonical=\"pollution\" section=\"body\">pollution</entity> in my area because of the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">energy usage</entity>. \n\n“<entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"headline\">Clean energy</entity> or more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"headline\">energy</entity>” This graph shows the amount of fuel and the <entity type=\"EVENT\" canonical=\"pollution\" section=\"body\">pollution</entity> of energy that is made."
 }

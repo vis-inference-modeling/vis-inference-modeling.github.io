@@ -6,7 +6,7 @@
     {
       "surface": "graphs",
       "type": "CHART_ELEMENT",
-      "canonical": "graphs",
+      "canonical": "graph",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -19,7 +19,7 @@
     {
       "surface": "graphs",
       "type": "CHART_ELEMENT",
-      "canonical": "graphs",
+      "canonical": "graph",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -30,10 +30,38 @@
       "id": "e1"
     },
     {
+      "surface": "fossil",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 762,
+      "end": 768,
+      "id": "e2"
+    },
+    {
+      "surface": "fossil",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 912,
+      "end": 918,
+      "id": "e3"
+    },
+    {
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -41,57 +69,31 @@
       "occurrence_index": 0,
       "start": 1260,
       "end": 1263,
-      "id": "e2"
-    },
-    {
-      "surface": "world",
-      "type": "LOCATION",
-      "canonical": "world",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1281,
-      "end": 1286,
-      "id": "e3"
-    },
-    {
-      "surface": "Gasolina",
-      "type": "OTHER_ENTITY",
-      "canonical": "gasolina",
-      "subtype": "other",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1307,
-      "end": 1315,
       "id": "e4"
     },
     {
-      "surface": "graphs",
-      "type": "CHART_ELEMENT",
-      "canonical": "graphs",
+      "surface": "gas",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "gas",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
+      "occurrence_index": 1,
+      "start": 1307,
+      "end": 1310,
       "id": "e5"
     },
     {
-      "surface": "graph",
+      "surface": "graphs",
       "type": "CHART_ELEMENT",
       "canonical": "graph",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e6"
@@ -104,44 +106,42 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e7"
     },
     {
-      "surface": "nuclear",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "nuclear",
-      "var": "energy_source",
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e8"
     },
     {
-      "surface": "hydroelectric and other",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e9"
     },
     {
-      "surface": "wind",
+      "surface": "clean",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -152,10 +152,24 @@
       "id": "e10"
     },
     {
-      "surface": "solar",
+      "surface": "clean",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "canonical": "clean",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "nuclear",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nuclear",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -163,27 +177,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "oil",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "oil_and_other",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e12"
     },
     {
-      "surface": "coal",
+      "surface": "hydroelectric and other",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
+      "canonical": "hydroelectric_and_other",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -194,23 +194,10 @@
       "id": "e13"
     },
     {
-      "surface": "coal",
+      "surface": "wind, solar",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "coal",
-      "var": "energy_source",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "years 2000 to 2020",
-      "type": "TIME_REFERENCE",
-      "canonical": "2000_2020",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -218,12 +205,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "fossil",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
       "id": "e15"
     },
     {
-      "surface": "recent years",
-      "type": "TIME_REFERENCE",
-      "canonical": "recent_years",
+      "surface": "oil",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "oil_and_other",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -234,10 +236,77 @@
       "id": "e16"
     },
     {
+      "surface": "coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e17"
+    },
+    {
+      "surface": "coal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "coal",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e18"
+    },
+    {
+      "surface": "years 2000",
+      "type": "TIME_REFERENCE",
+      "canonical": "2000",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "2020",
+      "type": "TIME_REFERENCE",
+      "canonical": "2020",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "2020",
+      "type": "TIME_REFERENCE",
+      "canonical": "2020",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e21"
+    },
+    {
       "surface": "environmentalists",
       "type": "OTHER_ENTITY",
       "canonical": "environmentalists",
-      "subtype": "other",
+      "subtype": "group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -245,7 +314,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e22"
     },
     {
       "surface": "environment",
@@ -259,7 +328,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e23"
     },
     {
       "surface": "environment",
@@ -273,7 +342,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e24"
     },
     {
       "surface": "environment",
@@ -287,21 +356,21 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e25"
     },
     {
       "surface": "fossil fuel emissions",
-      "type": "OTHER_ENTITY",
-      "canonical": "fossil_fuel_emissions",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e21"
+      "id": "e26"
     },
     {
       "surface": "clean energy",
@@ -315,7 +384,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e27"
     },
     {
       "surface": "electricity generation",
@@ -328,7 +397,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
+      "id": "e28"
     },
     {
       "surface": "China",
@@ -342,7 +411,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
+      "id": "e29"
     },
     {
       "surface": "China",
@@ -356,7 +425,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e25"
+      "id": "e30"
     },
     {
       "surface": "the U.S.",
@@ -370,135 +439,54 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e26"
-    },
-    {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e27"
-    },
-    {
-      "surface": "India",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "india",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e28"
-    },
-    {
-      "surface": "year range of 2000 to 2020",
-      "type": "TIME_REFERENCE",
-      "canonical": "2000_2020",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e29"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e30"
-    },
-    {
-      "surface": "fossil fuels",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
       "id": "e31"
     },
     {
-      "surface": "fossil fuels",
+      "surface": "India",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
+      "canonical": "india",
+      "var": "country",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 2,
+      "terminology_drift": false,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e32"
     },
     {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
+      "surface": "India",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "india",
+      "var": "country",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e33"
     },
     {
-      "surface": "population",
-      "type": "DATA_VAR",
-      "canonical": "population",
+      "surface": "pollution",
+      "type": "EVENT",
+      "canonical": "pollution",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e34"
     },
     {
       "surface": "population",
-      "type": "DATA_VAR",
+      "type": "OTHER_ENTITY",
       "canonical": "population",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e35"
-    },
-    {
-      "surface": "countries",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "country",
-      "var": "country",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -506,16 +494,30 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e35"
+    },
+    {
+      "surface": "population",
+      "type": "OTHER_ENTITY",
+      "canonical": "population",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e36"
     },
     {
-      "surface": "me and my community",
+      "surface": "population in both of those countries",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_neighbors",
+      "canonical": "population_of_china",
       "subtype": "other",
       "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
+      "modality": "questioned",
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -523,13 +525,12 @@
       "id": "e37"
     },
     {
-      "surface": "my dad",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_dad",
-      "subtype": "person",
+      "surface": "1.4 billion",
+      "type": "TIME_REFERENCE",
+      "canonical": "1_billion",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -537,10 +538,10 @@
       "id": "e38"
     },
     {
-      "surface": "electric car",
+      "surface": "community",
       "type": "OTHER_ENTITY",
-      "canonical": "electric_car",
-      "subtype": "technology",
+      "canonical": "my_community",
+      "subtype": "community",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -549,20 +550,47 @@
       "start": null,
       "end": null,
       "id": "e39"
+    },
+    {
+      "surface": "electric car",
+      "type": "OTHER_ENTITY",
+      "canonical": "electric_car",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e40"
+    },
+    {
+      "surface": "Gasolina",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e41"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "cleaner energy",
-      "reason": "Likely refers to clean energy, but not an exact listed surface form; could be a comparative phrase rather than a direct entity mention."
+      "surface": "world electricity",
+      "reason": "Likely refers to the chart scope or electricity generation globally, but not a direct canonical match in the provided dictionary."
     },
     {
-      "surface": "fuel",
-      "reason": "Could refer to fossil fuels or energy source generally, but the surface is too generic to tag confidently."
+      "surface": "fuel and gas costs",
+      "reason": "Could refer to energy/economic concepts, but the exact entity is unclear and overlaps with multiple possible mappings."
     },
     {
-      "surface": "gas costs",
-      "reason": "Could refer to the gas energy source or to prices/costs; ambiguous without clearer chart linkage."
+      "surface": "the world around me",
+      "reason": "Ambiguous rhetorical/global reference; not clearly a location entity."
     }
   ],
   "section_segments": [
@@ -576,5 +604,5 @@
       "text": "Gasolina"
     }
   ],
-  "tagged_text": "There are 2 <entity type=\"CHART_ELEMENT\" canonical=\"graphs\">graphs</entity> displayed here. The first <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> displays the world electricity in the clean category: <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">hydroelectric and other</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">solar</entity> and the fossil category <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source\">oil</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\">gas</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> from <entity type=\"TIME_REFERENCE\" canonical=\"2000_2020\">years 2000 to 2020</entity>. I noticed there was a large increase in the use of cleaner energy and fossil fuels in <entity type=\"TIME_REFERENCE\" canonical=\"recent_years\">recent years</entity>. I wonder how those <entity type=\"OTHER_ENTITY\" canonical=\"environmentalists\" subtype=\"other\" modality=\"questioned\">environmentalists</entity> or those who care about the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" modality=\"questioned\">environment</entity> feel about the increased use of <entity type=\"OTHER_ENTITY\" canonical=\"fossil_fuel_emissions\" subtype=\"other\" modality=\"questioned\">fossil fuel emissions</entity> and how that affects the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" modality=\"questioned\">environment</entity>. Does using <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" modality=\"questioned\">clean energy</entity> help? The second <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> below depicts the total <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> <entity type=\"CHART_ELEMENT\" canonical=\"graphs\">graphs</entity> for <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">the U.S.</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity> with the <entity type=\"TIME_REFERENCE\" canonical=\"2000_2020\">year range of 2000 to 2020</entity>. I notice that China produces the most coal and India produces the least. I wonder why China produces more <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuels</entity> than the US and India and how that affects the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" modality=\"questioned\">environment</entity> and <entity type=\"EVENT\" canonical=\"pollution\" modality=\"questioned\">pollution</entity>. I wonder if <entity type=\"DATA_VAR\" canonical=\"population\">population</entity> has an affect on the mass production of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" modality=\"questioned\">fossil fuels</entity> in China and India's because the current <entity type=\"DATA_VAR\" canonical=\"population\">population</entity> in both of those <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\">countries</entity> about 1.4 billion each. With the same <entity type=\"DATA_VAR\" canonical=\"population\">population</entity> you would think they would produce the same amount of fuel. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_neighbors\" subtype=\"other\" speaker_context=\"true\">me and my community</entity> as my dad owns an <entity type=\"OTHER_ENTITY\" canonical=\"electric_car\" subtype=\"technology\" speaker_context=\"true\">electric car</entity> which is environmental friendly and I have been more aware of how much fuel and gas costs affect the <entity type=\"LOCATION\" canonical=\"world\" modality=\"asserted\">world</entity> around me. \n\nTitle: <entity type=\"OTHER_ENTITY\" canonical=\"gasolina\" subtype=\"other\" section=\"headline\">Gasolina</entity>"
+  "tagged_text": "There are 2 <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graphs</entity> displayed here. The first <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> displays the world electricity in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\">clean</entity> category: <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\" section=\"body\">nuclear</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\" section=\"body\">hydroelectric and other</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" section=\"body\">wind, solar</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\">fossil</entity> category <entity type=\"DATA_VAR_LEVEL\" canonical=\"oil_and_other\" var=\"energy_source_generation_type\" section=\"body\">oil</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\" section=\"body\">gas</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\">coal</entity> from <entity type=\"TIME_REFERENCE\" canonical=\"2000\" section=\"body\">years 2000</entity> to <entity type=\"TIME_REFERENCE\" canonical=\"2020\" section=\"body\">2020</entity>. I noticed there was a large increase in the use of cleaner energy and fossil fuels in recent years. I wonder how those <entity type=\"OTHER_ENTITY\" canonical=\"environmentalists\" subtype=\"group\" section=\"body\" modality=\"questioned\">environmentalists</entity> or those who care about the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"body\" modality=\"questioned\">environment</entity> feel about the increased use of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\" modality=\"questioned\">fossil fuel emissions</entity> and how that affects the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"body\" modality=\"questioned\">environment</entity>. Does using <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\" section=\"body\" modality=\"questioned\">clean energy</entity> help? The second <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> below depicts the total <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity generation</entity> graphs for <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\">China</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">the U.S.</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India</entity> with the year range of <entity type=\"TIME_REFERENCE\" canonical=\"2000\" section=\"body\">2000</entity> to <entity type=\"TIME_REFERENCE\" canonical=\"2020\" section=\"body\">2020</entity>. I notice that China produces the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" section=\"body\">coal</entity> and India produces the least. I wonder why China produces more <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\" modality=\"questioned\">fossil fuels</entity> than the US and India and how that affects the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"body\" modality=\"questioned\">environment</entity> and <entity type=\"EVENT\" canonical=\"pollution\" section=\"body\" modality=\"questioned\">pollution</entity>. I wonder if <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\" section=\"body\" modality=\"questioned\">population</entity> has an affect on the mass production of <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"body\" modality=\"questioned\">fossil fuels</entity> in China and India's because the current <entity type=\"OTHER_ENTITY\" canonical=\"population_of_china\" subtype=\"other\" section=\"body\" modality=\"questioned\">population</entity> in both of those countries about <entity type=\"TIME_REFERENCE\" canonical=\"1_billion\" section=\"body\">1.4 billion</entity> each. With the same <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\" section=\"body\" modality=\"questioned\">population</entity> you would think they would produce the same amount of fuel. This relates to me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"community\" section=\"body\" speaker_context=\"true\">community</entity> as my dad owns an <entity type=\"OTHER_ENTITY\" canonical=\"electric_car\" subtype=\"other\" section=\"body\" speaker_context=\"true\">electric car</entity> which is environmental friendly and I have been more aware of how much fuel and gas costs affect the world around me. \n\nTitle: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Gasolina</entity>"
 }

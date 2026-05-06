@@ -5,12 +5,13 @@
   "entities": [
     {
       "surface": "energy generation",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_generation",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 31,
       "end": 48,
@@ -18,12 +19,13 @@
     },
     {
       "surface": "energy production",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_production",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 73,
       "end": 90,
@@ -31,12 +33,13 @@
     },
     {
       "surface": "energy production",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_production",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 1,
       "start": 180,
       "end": 197,
@@ -75,7 +78,7 @@
       "type": "CHART_ELEMENT",
       "canonical": "graph",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -98,9 +101,10 @@
       "id": "e6"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
+      "surface": "community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -111,10 +115,10 @@
       "id": "e7"
     },
     {
-      "surface": "clean energy",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "clean",
-      "var": "power_category",
+      "surface": "energy",
+      "type": "OTHER_ENTITY",
+      "canonical": "energy_generation",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -125,10 +129,11 @@
       "id": "e8"
     },
     {
-      "surface": "energy",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
+      "surface": "Fossil Fuels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "fossil",
+      "var": "power_category",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -136,28 +141,19 @@
       "start": null,
       "end": null,
       "id": "e9"
-    },
-    {
-      "surface": "Fossil Fuels; A Thing Of The Past",
-      "type": "OTHER_ENTITY",
-      "canonical": "fossil_fuel_industry",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice that clean methods of energy generation consistently yield more energy production than fossil fuels do for all fuel types. I wonder why China has a much steeper graph for energy production than the United States does. This relates to my community as we can continue to produce more clean energy-generation techniques that produce more and more energy and are more and more efficient. Headline: \"Fossil Fuels; A Thing Of The Past\""
+      "text": "I notice that clean methods of energy generation consistently yield more energy production than fossil fuels do for all fuel types. I wonder why China has a much steeper graph for energy production than the United States does. This relates to my community as we can continue to produce more clean energy-generation techniques that produce more and more energy and are more and more efficient."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Fossil Fuels; A Thing Of The Past"
     }
   ],
-  "tagged_text": "I notice that clean methods of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy generation</entity> consistently yield more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy production</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> do for all fuel types. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China</entity> has a much steeper <entity type=\"CHART_ELEMENT\" canonical=\"graph\" modality=\"questioned\">graph</entity> for <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">energy production</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity> does. This relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> as we can continue to produce more <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">clean energy</entity>-generation techniques that produce more and more <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">energy</entity> and are more and more efficient. Headline: \"<entity type=\"OTHER_ENTITY\" canonical=\"fossil_fuel_industry\" subtype=\"other\" section=\"headline\">Fossil Fuels; A Thing Of The Past</entity>\""
+  "tagged_text": "I notice that clean methods of <entity type=\"OTHER_ENTITY\" canonical=\"energy_generation\" subtype=\"other\">energy generation</entity> consistently yield more <entity type=\"OTHER_ENTITY\" canonical=\"energy_production\" subtype=\"other\">energy production</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">fossil fuels</entity> do for all fuel types. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China</entity> has a much steeper <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> for <entity type=\"OTHER_ENTITY\" canonical=\"energy_production\" subtype=\"other\" modality=\"questioned\">energy production</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity> does. This relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">community</entity> as we can continue to produce more clean energy-generation techniques that produce more and more <entity type=\"OTHER_ENTITY\" canonical=\"energy_generation\" subtype=\"other\">energy</entity> and are more and more efficient. Headline: \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\" section=\"headline\">Fossil Fuels</entity>; A Thing Of The Past\""
 }

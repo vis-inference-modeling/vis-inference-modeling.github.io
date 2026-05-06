@@ -4,139 +4,24 @@
   "raw_comment": "I notice that there's a higher percentage of texts being sent to their parents for women and men however women are more prone to contact their parents vs men. I also noticed that voting in person has the lowest percentage compared to the other forms of communication. \n\nI wonder how big of a difference it would be comparing states or with other countries. I also wonder if this is due to whether or not they were coddled or if kids didn't have a good relationship with their parents. \n\nThis relates because since I am going to college soon, if I dorm I would be contacting my parents more often then if I was at home and this goes for other seniors too. \n\nHow Often Do You Call Your Parents?",
   "entities": [
     {
-      "surface": "texts",
-      "type": "OTHER_ENTITY",
-      "canonical": "texts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 45,
-      "end": 50,
-      "id": "e0"
-    },
-    {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "their_parents",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 65,
-      "end": 78,
-      "id": "e1"
-    },
-    {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "their_parents",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 137,
-      "end": 150,
-      "id": "e2"
-    },
-    {
-      "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 154,
-      "end": 157,
-      "id": "e3"
-    },
-    {
       "surface": "voting in person",
-      "type": "OTHER_ENTITY",
-      "canonical": "voting_in_person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 179,
       "end": 195,
-      "id": "e4"
-    },
-    {
-      "surface": "percentage",
-      "type": "UNIT",
-      "canonical": "percent",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 211,
-      "end": 221,
-      "id": "e5"
-    },
-    {
-      "surface": "states",
-      "type": "LOCATION",
-      "canonical": "states",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 325,
-      "end": 331,
-      "id": "e6"
-    },
-    {
-      "surface": "other countries",
-      "type": "LOCATION",
-      "canonical": "other_countries",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 340,
-      "end": 355,
-      "id": "e7"
-    },
-    {
-      "surface": "kids",
-      "type": "OTHER_ENTITY",
-      "canonical": "kids",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 428,
-      "end": 432,
-      "id": "e8"
-    },
-    {
-      "surface": "their parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "their_parents",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 470,
-      "end": 483,
-      "id": "e9"
+      "id": "e0"
     },
     {
       "surface": "college",
       "type": "OTHER_ENTITY",
       "canonical": "college",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -144,136 +29,86 @@
       "occurrence_index": 0,
       "start": 528,
       "end": 535,
-      "id": "e10"
+      "id": "e1"
     },
     {
-      "surface": "my parents",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 574,
-      "end": 584,
-      "id": "e11"
-    },
-    {
-      "surface": "at home",
-      "type": "LOCATION",
-      "canonical": "home",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 610,
-      "end": 617,
-      "id": "e12"
-    },
-    {
-      "surface": "other seniors",
-      "type": "TIME_REFERENCE",
-      "canonical": "other_seniors",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 636,
-      "end": 649,
-      "id": "e13"
+      "start": 577,
+      "end": 584,
+      "id": "e2"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 684,
+      "end": 691,
+      "id": "e3"
     },
     {
       "surface": "How Often Do You Call Your Parents?",
       "type": "CHART_ELEMENT",
-      "canonical": "how_often_do_you_call_your_parents",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 657,
-      "end": 692,
-      "id": "e14"
-    },
-    {
-      "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "section": "body",
+      "canonical": "what_s_your_form_of_communicating_with_your_parents_do_you_do_it_at_all",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
-      "surface": "percentage",
-      "type": "UNIT",
-      "canonical": "percent",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e18"
+      "id": "e4"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "women",
-      "reason": "General demographic mention; no confirmed canonical level in the article dictionary."
+      "surface": "texts being sent",
+      "reason": "Likely send_texts, but the phrasing is awkward and partially ungrammatical."
     },
     {
-      "surface": "men",
-      "reason": "General demographic mention; no confirmed canonical level in the article dictionary."
+      "surface": "women and men",
+      "reason": "Likely young_women and young_men, but generic surfaces without explicit chart-level wording."
     },
     {
-      "surface": "texts",
-      "reason": "Likely communication method, but the article dictionary has overlapping text-related entities and no single confirmed canonical choice."
+      "surface": "states",
+      "reason": "Could be locations, but no specific state named."
     },
     {
-      "surface": "voting in person",
-      "reason": "Likely a comparison example rather than a chart category; canonical mapping is uncertain."
+      "surface": "other countries",
+      "reason": "Generic geographic scope without a specific location."
+    },
+    {
+      "surface": "kids",
+      "reason": "Generic group reference; not clearly one of the listed entities."
+    },
+    {
+      "surface": "other seniors",
+      "reason": "Ambiguous age/group reference not in the provided canonical list."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice that there's a higher percentage of texts being sent to their parents for women and men however women are more prone to contact their parents vs men. I also noticed that voting in person has the lowest percentage compared to the other forms of communication. \n\nI wonder how big of a difference it would be comparing states or with other countries. I also wonder if this is due to whether or not they were coddled or if kids didn't have a good relationship with their parents. \n\nThis relates because since I am going to college soon, if I dorm I would be contacting my parents more often then if I was at home and this goes for other seniors too. \n\nHow Often Do You Call Your Parents?"
+      "text": "I notice that there's a higher percentage of texts being sent to their parents for women and men however women are more prone to contact their parents vs men. I also noticed that voting in person has the lowest percentage compared to the other forms of communication. \n\nI wonder how big of a difference it would be comparing states or with other countries. I also wonder if this is due to whether or not they were coddled or if kids didn't have a good relationship with their parents. \n\nThis relates because since I am going to college soon, if I dorm I would be contacting my parents more often then if I was at home and this goes for other seniors too."
+    },
+    {
+      "section": "headline",
+      "label": "How Often Do You Call Your Parents?",
+      "text": "How Often Do You Call Your Parents?"
     }
   ],
-  "tagged_text": "I notice that there's a higher percentage of texts being sent to their parents for women and men however women are more prone to contact their parents vs men. I also noticed that voting in person has the lowest percentage compared to the other forms of communication. \n\nI wonder how big of a difference it would be comparing states or with other countries. I also wonder if this is due to whether or not they were coddled or if kids didn't have a good relationship with their parents. \n\nThis relates because since I am going to college soon, if I dorm I would be contacting my parents more often then if I was at home and this goes for other seniors too. \n\nHow Often Do You Call Your Parents?"
+  "tagged_text": "I notice that there's a higher percentage of texts being sent to their parents for women and men however women are more prone to contact their parents vs men. I also noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">voting in person</entity> has the lowest percentage compared to the other forms of communication. \n\nI wonder how big of a difference it would be comparing states or with other countries. I also wonder if this is due to whether or not they were coddled or if kids didn't have a good relationship with their parents. \n\nThis relates because since I am going to college soon, if I dorm I would be contacting my parents more often then if I was at home and this goes for other seniors too. \n\nHow Often Do You Call Your Parents?"
 }

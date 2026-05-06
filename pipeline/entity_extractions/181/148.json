@@ -7,7 +7,7 @@
       "surface": "nuclear",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
       "surface": "nuclear",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -74,7 +74,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -88,7 +88,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
@@ -99,9 +99,10 @@
       "id": "e6"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
+      "surface": "community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -110,6 +111,20 @@
       "start": null,
       "end": null,
       "id": "e7"
+    },
+    {
+      "surface": "NUCLEAR ON TOP",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nuclear",
+      "var": "energy_source_generation_type",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
     }
   ],
   "unresolved_mentions": [],
@@ -117,17 +132,17 @@
     {
       "section": "numbered_point",
       "label": "1",
-      "text": "I notice that nuclear is generating the most electricity . I also notice that coal generate electricity"
+      "text": "I notice that nuclear is generating the most electricity . I also notice that coal generate electricity "
     },
     {
       "section": "numbered_point",
       "label": "2",
-      "text": "I wonder how coal generate electricity?"
+      "text": "I wonder how coal generate electricity? "
     },
     {
       "section": "numbered_point",
       "label": "3",
-      "text": "this relates to my community because we use the electricity to do a lot of things like watch TV or use our phones."
+      "text": "this relates to my community because we use the electricity to do a lot of things like watch TV or use our phones. "
     },
     {
       "section": "numbered_point",
@@ -135,5 +150,5 @@
       "text": "NUCLEAR ON TOP!!!"
     }
   ],
-  "tagged_text": "1. I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear</entity> is generating the most <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> . I also notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> generate <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> \n2. I wonder how <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" modality=\"questioned\">coal</entity> generate <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity</entity>? \n3. this relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because we use the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> to do a lot of things like watch TV or use our phones. \n4. <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\" section=\"numbered_point\">NUCLEAR</entity> ON TOP!!!"
+  "tagged_text": "1. I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear</entity> is generating the most <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> . I also notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> generate <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> \n2. I wonder how <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" modality=\"questioned\">coal</entity> generate <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" modality=\"questioned\">electricity</entity>? \n3. this relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">community</entity> because we use the <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity</entity> to do a lot of things like watch TV or use our phones. \n4. <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\" section=\"headline\">NUCLEAR ON TOP</entity>!!!"
 }

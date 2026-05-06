@@ -4,6 +4,19 @@
   "raw_comment": "Over the past two decades, global electricity generation has experienced a steady rise, driven by advancements in technology. Examining country-specific data reveals intriguing patterns in developed countries such as the United States, but also in third world countries such as India. I wonder why the United States' electricity generation has been largely stagnant compared to that of China.  This especially intrigues me given the United States' drastic economic development throughout the 21st century. This relates to my community because the transition to renewable energy carries significant benefits, notably in reducing air pollution and enhancing overall health for so many individuals alike. Headline: \"Powering Progress: The Rise of Renewable Energy\"",
   "entities": [
     {
+      "surface": "two decades",
+      "type": "TIME_REFERENCE",
+      "canonical": "20_years",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 14,
+      "end": 25,
+      "id": "e0"
+    },
+    {
       "surface": "electricity generation",
       "type": "DATA_VAR",
       "canonical": "electricity_generation",
@@ -14,7 +27,7 @@
       "occurrence_index": 0,
       "start": 34,
       "end": 56,
-      "id": "e0"
+      "id": "e1"
     },
     {
       "surface": "electricity generation",
@@ -27,7 +40,7 @@
       "occurrence_index": 1,
       "start": 317,
       "end": 339,
-      "id": "e1"
+      "id": "e2"
     },
     {
       "surface": "United States",
@@ -41,20 +54,48 @@
       "occurrence_index": 0,
       "start": 433,
       "end": 446,
-      "id": "e2"
+      "id": "e3"
+    },
+    {
+      "surface": "economic development",
+      "type": "OTHER_ENTITY",
+      "canonical": "economic_development",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 456,
+      "end": 476,
+      "id": "e4"
     },
     {
       "surface": "21st century",
       "type": "TIME_REFERENCE",
       "canonical": "21st_century",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 492,
       "end": 504,
-      "id": "e3"
+      "id": "e5"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 525,
+      "end": 534,
+      "id": "e6"
     },
     {
       "surface": "renewable energy",
@@ -68,7 +109,7 @@
       "occurrence_index": 0,
       "start": 561,
       "end": 577,
-      "id": "e4"
+      "id": "e7"
     },
     {
       "surface": "air pollution",
@@ -81,13 +122,13 @@
       "occurrence_index": 0,
       "start": 628,
       "end": 641,
-      "id": "e5"
+      "id": "e8"
     },
     {
       "surface": "health",
       "type": "OTHER_ENTITY",
-      "canonical": "health",
-      "subtype": "other",
+      "canonical": "environmental_health",
+      "subtype": "concept",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -95,12 +136,12 @@
       "occurrence_index": 0,
       "start": 664,
       "end": 670,
-      "id": "e6"
+      "id": "e9"
     },
     {
       "surface": "Powering Progress: The Rise of Renewable Energy",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -108,7 +149,7 @@
       "occurrence_index": 0,
       "start": 713,
       "end": 760,
-      "id": "e7"
+      "id": "e10"
     },
     {
       "surface": "technology",
@@ -122,7 +163,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e11"
     },
     {
       "surface": "United States",
@@ -136,7 +177,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e12"
     },
     {
       "surface": "United States",
@@ -150,7 +191,7 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e13"
     },
     {
       "surface": "India",
@@ -164,7 +205,21 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e14"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
     },
     {
       "surface": "China",
@@ -178,15 +233,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e16"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "Over the past two decades, global electricity generation has experienced a steady rise, driven by advancements in technology. Examining country-specific data reveals intriguing patterns in developed countries such as the United States, but also in third world countries such as India. I wonder why the United States' electricity generation has been largely stagnant compared to that of China.  This especially intrigues me given the United States' drastic economic development throughout the 21st century. This relates to my community because the transition to renewable energy carries significant benefits, notably in reducing air pollution and enhancing overall health for so many individuals alike. Headline: \"Powering Progress: The Rise of Renewable Energy\""
+      "text": "Over the past two decades, global electricity generation has experienced a steady rise, driven by advancements in technology. Examining country-specific data reveals intriguing patterns in developed countries such as the United States, but also in third world countries such as India. I wonder why the United States' electricity generation has been largely stagnant compared to that of China.  This especially intrigues me given the United States' drastic economic development throughout the 21st century. This relates to my community because the transition to renewable energy carries significant benefits, notably in reducing air pollution and enhancing overall health for so many individuals alike."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Powering Progress: The Rise of Renewable Energy"
     }
   ],
-  "tagged_text": "Over the past two decades, global <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\">electricity generation</entity> has experienced a steady rise, driven by advancements in <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\" section=\"body\">technology</entity>. Examining country-specific data reveals intriguing patterns in developed countries such as the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity>, but also in third world countries such as <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\" section=\"body\">India</entity>. I wonder why the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" modality=\"questioned\">United States</entity>' <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"body\" modality=\"questioned\">electricity generation</entity> has been largely stagnant compared to that of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" section=\"body\" modality=\"questioned\">China</entity>.  This especially intrigues me given the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\" modality=\"questioned\">United States</entity>' drastic economic development throughout the <entity type=\"TIME_REFERENCE\" canonical=\"21st_century\" section=\"body\" modality=\"questioned\">21st century</entity>. This relates to my community because the transition to <entity type=\"DATA_VAR_LEVEL\" canonical=\"renewable_energy\" var=\"energy_source\" section=\"body\">renewable energy</entity> carries significant benefits, notably in reducing <entity type=\"EVENT\" canonical=\"air_pollution\" section=\"body\">air pollution</entity> and enhancing overall <entity type=\"OTHER_ENTITY\" canonical=\"health\" subtype=\"other\" section=\"body\">health</entity> for so many individuals alike. Headline: \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Powering Progress: The Rise of Renewable Energy</entity>\""
+  "tagged_text": "Over the past <entity type=\"TIME_REFERENCE\" canonical=\"20_years\">two decades</entity>, global <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">electricity generation</entity> has experienced a steady rise, driven by advancements in <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\">technology</entity>. Examining country-specific data reveals intriguing patterns in developed countries such as the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>, but also in third world countries such as <entity type=\"DATA_VAR_LEVEL\" canonical=\"india\" var=\"country\">India</entity>. I wonder why the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" modality=\"questioned\">United States</entity>' electricity generation has been largely stagnant compared to that of <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\" modality=\"questioned\">China</entity>.  This especially intrigues me given the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>' drastic <entity type=\"OTHER_ENTITY\" canonical=\"economic_development\" subtype=\"concept\">economic development</entity> throughout the <entity type=\"TIME_REFERENCE\" canonical=\"21st_century\">21st century</entity>. This relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"community\" speaker_context=\"true\">community</entity> because the transition to <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">renewable energy</entity> carries significant benefits, notably in reducing <entity type=\"EVENT\" canonical=\"air_pollution\">air pollution</entity> and enhancing overall <entity type=\"OTHER_ENTITY\" canonical=\"environmental_health\" subtype=\"concept\">health</entity> for so many individuals alike. <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Powering Progress: The Rise of Renewable Energy</entity>"
 }

@@ -21,7 +21,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -35,7 +35,7 @@
       "surface": "coal",
       "type": "DATA_VAR_LEVEL",
       "canonical": "coal",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -49,7 +49,7 @@
       "surface": "gas",
       "type": "DATA_VAR_LEVEL",
       "canonical": "gas",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -74,11 +74,12 @@
     },
     {
       "surface": "community",
-      "type": "LOCATION",
-      "canonical": "my_community",
+      "type": "OTHER_ENTITY",
+      "canonical": "community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 420,
@@ -87,8 +88,9 @@
     },
     {
       "surface": "renewable electricity",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "clean",
+      "var": "power_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -102,9 +104,9 @@
       "surface": "hydroelectric",
       "type": "DATA_VAR_LEVEL",
       "canonical": "hydroelectric_and_other",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
-      "modality": "asserted",
+      "modality": "hypothetical",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -116,9 +118,9 @@
       "surface": "wind",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
-      "modality": "asserted",
+      "modality": "hypothetical",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -130,9 +132,9 @@
       "surface": "solar",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
-      "modality": "asserted",
+      "modality": "hypothetical",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -141,24 +143,23 @@
       "id": "e9"
     },
     {
-      "surface": "China",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "china",
-      "var": "country",
-      "section": "body",
+      "surface": "Electricity",
+      "type": "DATA_VAR",
+      "canonical": "electricity_generation",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 650,
+      "end": 661,
       "id": "e10"
     },
     {
-      "surface": "wind and solar",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "surface": "countries like China",
+      "type": "OTHER_ENTITY",
+      "canonical": "countries_like_china",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -172,12 +173,12 @@
       "surface": "wind and solar",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e12"
@@ -186,7 +187,21 @@
       "surface": "wind and solar",
       "type": "DATA_VAR_LEVEL",
       "canonical": "wind_and_solar",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    },
+    {
+      "surface": "wind and solar",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wind_and_solar",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -194,7 +209,7 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e14"
     },
     {
       "surface": "2010",
@@ -207,13 +222,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e15"
     },
     {
       "surface": "nuclear",
       "type": "DATA_VAR_LEVEL",
       "canonical": "nuclear",
-      "var": "energy_source",
+      "var": "energy_source_generation_type",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -221,24 +236,15 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e16"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "the picture",
-      "reason": "Likely refers to the chart/visualization, but not explicit enough to tag as CHART_ELEMENT."
-    },
-    {
-      "surface": "The generational switch in Electricity, Lump of Coal to Solar and Gold",
-      "reason": "Looks like a proposed headline, but it is not a known canonical headline title and contains metaphorical wording."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "I notice that the US is using less coal than other countries like China. I also notice that wind and solar seem to be making their way into the picture. They started gathering traction around 2010 and now it’s made a decent sized impact with the use of it similar to nuclear. I wonder how long it will take for wind and solar to become very predominate and surpass coal and gas. Will it take 2 or 3 decades? I think the community would do better on a more sustainable form of renewable electricity. If we can see an increase in hydroelectric, wind, and solar, then this will be very beneficial. A catchy headline would be “The generational switch in Electricity, Lump of Coal to Solar and Gold”."
     }
   ],
-  "tagged_text": "I notice that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is using less <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\">coal</entity> than other countries like <entity type=\"DATA_VAR_LEVEL\" canonical=\"china\" var=\"country\">China</entity>. I also notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind and solar</entity> seem to be making their way into the picture. They started gathering traction around <entity type=\"TIME_REFERENCE\" canonical=\"2010\">2010</entity> and now it’s made a decent sized impact with the use of it similar to <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source\">nuclear</entity>. I wonder how long it will take for <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\" modality=\"questioned\">wind and solar</entity> to become very predominate and surpass <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source\" modality=\"questioned\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source\" modality=\"questioned\">gas</entity>. Will it take <entity type=\"TIME_REFERENCE\" canonical=\"2_or_3_decades\" modality=\"questioned\">2 or 3 decades</entity>? I think the <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> would do better on a more sustainable form of <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">renewable electricity</entity>. If we can see an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source\">hydroelectric</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">wind</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source\">solar</entity>, then this will be very beneficial. A catchy headline would be “The generational switch in Electricity, Lump of Coal to Solar and Gold”."
+  "tagged_text": "I notice that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is using less <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\">coal</entity> than other <entity type=\"OTHER_ENTITY\" canonical=\"countries_like_china\" subtype=\"group\">countries like China</entity>. I also notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\">wind and solar</entity> seem to be making their way into the picture. They started gathering traction around <entity type=\"TIME_REFERENCE\" canonical=\"2010\">2010</entity> and now it’s made a decent sized impact with the use of it similar to <entity type=\"DATA_VAR_LEVEL\" canonical=\"nuclear\" var=\"energy_source_generation_type\">nuclear</entity>. I wonder how long it will take for <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" modality=\"questioned\">wind and solar</entity> to become very predominate and surpass <entity type=\"DATA_VAR_LEVEL\" canonical=\"coal\" var=\"energy_source_generation_type\" modality=\"questioned\">coal</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"gas\" var=\"energy_source_generation_type\" modality=\"questioned\">gas</entity>. Will it take <entity type=\"TIME_REFERENCE\" canonical=\"2_or_3_decades\" modality=\"questioned\">2 or 3 decades</entity>? I think the <entity type=\"OTHER_ENTITY\" canonical=\"community\" subtype=\"group\">community</entity> would do better on a more sustainable form of <entity type=\"DATA_VAR_LEVEL\" canonical=\"clean\" var=\"power_category\">renewable electricity</entity>. If we can see an increase in <entity type=\"DATA_VAR_LEVEL\" canonical=\"hydroelectric_and_other\" var=\"energy_source_generation_type\" modality=\"hypothetical\">hydroelectric</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" modality=\"hypothetical\">wind</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"wind_and_solar\" var=\"energy_source_generation_type\" modality=\"hypothetical\">solar</entity>, then this will be very beneficial. A catchy headline would be “The generational switch in <entity type=\"DATA_VAR\" canonical=\"electricity_generation\" section=\"headline\">Electricity</entity>, Lump of Coal to Solar and Gold”."
 }

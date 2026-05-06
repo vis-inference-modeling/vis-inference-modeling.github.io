@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "young men/women",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_men_women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -18,8 +19,9 @@
     },
     {
       "surface": "young women/men",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_women_men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -31,8 +33,9 @@
     },
     {
       "surface": "text",
-      "type": "OTHER_ENTITY",
-      "canonical": "text",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -46,6 +49,7 @@
       "surface": "facetime",
       "type": "OTHER_ENTITY",
       "canonical": "facetime",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -56,129 +60,88 @@
       "id": "e3"
     },
     {
-      "surface": "walking around and talking",
+      "surface": "phones",
       "type": "OTHER_ENTITY",
-      "canonical": "walking_around_and_talking",
+      "canonical": "phones",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 142,
-      "end": 168,
+      "start": 220,
+      "end": 226,
       "id": "e4"
     },
     {
       "surface": "phones",
       "type": "OTHER_ENTITY",
       "canonical": "phones",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 220,
-      "end": 226,
-      "id": "e5"
-    },
-    {
-      "surface": "social in anxieity",
-      "type": "OTHER_ENTITY",
-      "canonical": "social_anxiety",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 233,
-      "end": 251,
-      "id": "e6"
-    },
-    {
-      "surface": "my",
-      "type": "speaker",
-      "canonical": "speaker",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 266,
-      "end": 268,
-      "id": "e7"
-    },
-    {
-      "surface": "community",
-      "type": "LOCATION",
-      "canonical": "my_community",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 269,
-      "end": 278,
-      "id": "e8"
-    },
-    {
-      "surface": "downtown",
-      "type": "LOCATION",
-      "canonical": "downtown",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 297,
-      "end": 305,
-      "id": "e9"
-    },
-    {
-      "surface": "kids",
-      "type": "OTHER_ENTITY",
-      "canonical": "kids",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 330,
-      "end": 334,
-      "id": "e10"
-    },
-    {
-      "surface": "phones",
-      "type": "OTHER_ENTITY",
-      "canonical": "phones",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 371,
-      "end": 377,
-      "id": "e11"
-    },
-    {
-      "surface": "phones",
-      "type": "OTHER_ENTITY",
-      "canonical": "phones",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
+      "start": 371,
+      "end": 377,
+      "id": "e5"
+    },
+    {
+      "surface": "phones",
+      "type": "OTHER_ENTITY",
+      "canonical": "phones",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
       "start": 397,
       "end": 403,
-      "id": "e12"
+      "id": "e6"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "kids",
+      "type": "OTHER_ENTITY",
+      "canonical": "kids",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "social in anxieity",
+      "reason": "Likely intended as 'social anxiety', but the surface text is misspelled and not a confirmed dictionary entry."
+    }
+  ],
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "have you wondered why young men/women are never outside as much , most of us young women/men that i see use text and they facetime instead of walking around and talking. I wonder why this is, is it because of the use of phones or of social in anxieity. This effects my community because when i am downtown or anywhere i never see kids my age or if i do they are on their phones we need yo put our phones down and go outside."
     }
   ],
-  "tagged_text": "have you wondered why <entity type=\"OTHER_ENTITY\" canonical=\"young_men_women\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young men/women</entity> are never outside as much , most of us <entity type=\"OTHER_ENTITY\" canonical=\"young_women_men\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young women/men</entity> that i see use <entity type=\"OTHER_ENTITY\" canonical=\"text\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">text</entity> and they <entity type=\"OTHER_ENTITY\" canonical=\"facetime\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">facetime</entity> instead of <entity type=\"OTHER_ENTITY\" canonical=\"walking_around_and_talking\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">walking around and talking</entity>. I wonder why this is, is it because of the use of <entity type=\"OTHER_ENTITY\" canonical=\"phones\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">phones</entity> or of <entity type=\"OTHER_ENTITY\" canonical=\"social_anxiety\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">social in anxieity</entity>. This effects <entity type=\"speaker\" canonical=\"speaker\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my</entity> <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">community</entity> because when i am <entity type=\"LOCATION\" canonical=\"downtown\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">downtown</entity> or anywhere i never see <entity type=\"OTHER_ENTITY\" canonical=\"kids\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">kids</entity> my age or if i do they are on their <entity type=\"OTHER_ENTITY\" canonical=\"phones\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">phones</entity> we need yo put our <entity type=\"OTHER_ENTITY\" canonical=\"phones\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">phones</entity> down and go outside."
+  "tagged_text": "have you wondered why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>/<entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> are never outside as much , most of us <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity>/<entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> that i see use <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> and they <entity type=\"OTHER_ENTITY\" canonical=\"facetime\" subtype=\"other\">facetime</entity> instead of walking around and talking. I wonder why this is, is it because of the use of <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity> or of social in anxieity. This effects <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because when i am downtown or anywhere i never see <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"other\">kids</entity> my age or if i do they are on their <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity> we need yo put our <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity> down and go outside."
 }

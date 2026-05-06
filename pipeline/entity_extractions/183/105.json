@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -17,35 +18,52 @@
       "id": "e0"
     },
     {
-      "surface": "men",
+      "surface": "people",
       "type": "OTHER_ENTITY",
-      "canonical": "men",
+      "canonical": "people",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 17,
-      "end": 20,
+      "start": 51,
+      "end": 57,
       "id": "e1"
+    },
+    {
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 63,
+      "end": 66,
+      "id": "e2"
     },
     {
       "surface": "phone",
       "type": "OTHER_ENTITY",
-      "canonical": "phone",
+      "canonical": "phones",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 111,
       "end": 116,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "peers",
       "type": "OTHER_ENTITY",
       "canonical": "my_peers",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -53,7 +71,7 @@
       "occurrence_index": 0,
       "start": 131,
       "end": 136,
-      "id": "e3"
+      "id": "e4"
     },
     {
       "surface": "Who's calling?",
@@ -66,15 +84,10 @@
       "occurrence_index": 0,
       "start": 148,
       "end": 162,
-      "id": "e4"
+      "id": "e5"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "people",
-      "reason": "Generic reference; could mean respondents or people in general, but no clear entity mapping is confirmed."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
@@ -82,9 +95,9 @@
     },
     {
       "section": "headline",
-      "label": "Headline",
+      "label": "headline",
       "text": "Who's calling?"
     }
   ],
-  "tagged_text": "I noticed that <entity type=\"OTHER_ENTITY\" canonical=\"women\" section=\"body\">women</entity> were likelier to reach out to people than <entity type=\"OTHER_ENTITY\" canonical=\"men\" section=\"body\">men</entity>. I wonder why this is. I feel I'm not on my <entity type=\"OTHER_ENTITY\" canonical=\"phone\" section=\"body\" speaker_context=\"true\">phone</entity> as much as my <entity type=\"OTHER_ENTITY\" canonical=\"my_peers\" section=\"body\" speaker_context=\"true\">peers</entity>.\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Who's calling?</entity>"
+  "tagged_text": "I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> were likelier to reach out to <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\">people</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>. I wonder why this is. I feel I'm not on my <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phone</entity> as much as my <entity type=\"OTHER_ENTITY\" canonical=\"my_peers\" subtype=\"group\" speaker_context=\"true\">peers</entity>.\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Who's calling?</entity>"
 }

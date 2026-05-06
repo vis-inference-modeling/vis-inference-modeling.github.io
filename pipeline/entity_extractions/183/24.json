@@ -2,22 +2,42 @@
   "article_id": "183",
   "comment_index": 24,
   "raw_comment": "Less people like don't talk to there parents.- Catchy Headline",
-  "entities": [],
-  "unresolved_mentions": [
+  "entities": [
     {
-      "surface": "Less people",
-      "reason": "Could imply a quantitative comparison, but no clear entity type or canonical mapping is available."
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 5,
+      "end": 11,
+      "id": "e0"
     },
     {
-      "surface": "there parents",
-      "reason": "Likely refers to parents, but the surface is ungrammatical and no confident canonical mapping is available from the provided dictionary."
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 37,
+      "end": 44,
+      "id": "e1"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "headline",
       "label": "Catchy Headline",
-      "text": "Less people like don't talk to there parents."
+      "text": "Less people like don't talk to there parents.- Catchy Headline"
     }
   ],
   "tagged_text": "Less people like don't talk to there parents.- Catchy Headline"
