@@ -4,9 +4,23 @@
   "raw_comment": "1. I notice that the drought is more severe in the middle of the country.\nI wonder if this is consistent data.\nThis relates to my community because Colorado is mostly dry.\nABOUT DROUGHTS!",
   "entities": [
     {
+      "surface": "drought is more severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 21,
+      "end": 43,
+      "id": "e0"
+    },
+    {
       "surface": "middle of the country",
       "type": "LOCATION",
-      "canonical": "middle_of_the_country",
+      "canonical": "central_us",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -14,7 +28,7 @@
       "occurrence_index": 0,
       "start": 51,
       "end": 72,
-      "id": "e0"
+      "id": "e1"
     },
     {
       "surface": "Colorado",
@@ -27,29 +41,10 @@
       "occurrence_index": 0,
       "start": 148,
       "end": 156,
-      "id": "e1"
-    },
-    {
-      "surface": "ABOUT DROUGHTS!",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": 172,
-      "end": 187,
       "id": "e2"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "consistent data",
-      "reason": "Could refer to chart consistency or data validity, but it is not a clear entity type."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "numbered_point",
@@ -57,5 +52,5 @@
       "text": "I notice that the drought is more severe in the middle of the country.\nI wonder if this is consistent data.\nThis relates to my community because Colorado is mostly dry.\nABOUT DROUGHTS!"
     }
   ],
-  "tagged_text": "1. I notice that the drought is more severe in the <entity type=\"LOCATION\" canonical=\"middle_of_the_country\" section=\"numbered_point\">middle of the country</entity>.\nI wonder if this is consistent data.\nThis relates to my community because <entity type=\"LOCATION\" canonical=\"colorado\" section=\"numbered_point\" speaker_context=\"true\">Colorado</entity> is mostly dry.\n<entity type=\"OTHER_ENTITY\" canonical=\"headline\" subtype=\"other\" section=\"headline\">ABOUT DROUGHTS!</entity>"
+  "tagged_text": "1. I notice that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">drought is more severe</entity> in the <entity type=\"LOCATION\" canonical=\"central_us\">middle of the country</entity>.\nI wonder if this is consistent data.\nThis relates to my community because <entity type=\"LOCATION\" canonical=\"colorado\">Colorado</entity> is mostly dry.\nABOUT DROUGHTS!"
 }

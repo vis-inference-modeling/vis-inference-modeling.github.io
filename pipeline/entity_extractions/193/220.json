@@ -4,50 +4,65 @@
   "raw_comment": "I Notice that droughts are more concentrated in the Middle and southern parts of the United States. In the south, there are the most extreme droughts in the United States. \n\nI wonder if the droughts will spread further to the east and west and how this will affect other States. \n\nThis affects me and my community because if the droughts worsen in Perth Amboy, this could impact the use of water, leading to restrictions on the use of water in houses. Perth Amboy could also face higher prices, which would affect many low-income families. \n\nHeadline: \"From Coast to Coast: Tracking Droughts Across the U.S.\"",
   "entities": [
     {
-      "surface": "United States",
+      "surface": "droughts",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 85,
-      "end": 98,
+      "start": 14,
+      "end": 22,
       "id": "e0"
     },
     {
-      "surface": "United States",
+      "surface": "droughts",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 157,
-      "end": 170,
+      "start": 141,
+      "end": 149,
       "id": "e1"
     },
     {
-      "surface": "States",
-      "type": "LOCATION",
-      "canonical": "states",
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 164,
-      "end": 170,
+      "occurrence_index": 2,
+      "start": 190,
+      "end": 198,
       "id": "e2"
+    },
+    {
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": 329,
+      "end": 337,
+      "id": "e3"
     },
     {
       "surface": "Perth Amboy",
       "type": "LOCATION",
-      "canonical": "perth_amboy",
+      "canonical": "new_jersey",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -55,12 +70,12 @@
       "occurrence_index": 0,
       "start": 348,
       "end": 359,
-      "id": "e3"
+      "id": "e4"
     },
     {
       "surface": "Perth Amboy",
       "type": "LOCATION",
-      "canonical": "perth_amboy",
+      "canonical": "new_jersey",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -68,48 +83,144 @@
       "occurrence_index": 1,
       "start": 452,
       "end": 463,
-      "id": "e4"
-    },
-    {
-      "surface": "families",
-      "type": "OTHER_ENTITY",
-      "canonical": "families",
-      "subtype": "other",
-      "section": "body",
-      "modality": "hypothetical",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 530,
-      "end": 538,
       "id": "e5"
     },
     {
-      "surface": "From Coast to Coast: Tracking Droughts Across the U.S.",
-      "type": "EVENT",
-      "canonical": "from_coast_to_coast_tracking_droughts_across_the_us",
+      "surface": "Droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 553,
-      "end": 607,
+      "start": 583,
+      "end": 591,
       "id": "e6"
     },
     {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 603,
+      "end": 607,
+      "id": "e7"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
-      "modality": "hypothetical",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e8"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "south",
+      "type": "LOCATION",
+      "canonical": "south",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "extreme droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "east",
+      "type": "LOCATION",
+      "canonical": "east_coast",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "west",
+      "type": "LOCATION",
+      "canonical": "west",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    },
+    {
+      "surface": "States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "states",
+      "var": "state_names_abbreviations",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
     },
     {
       "surface": "water",
@@ -117,36 +228,34 @@
       "canonical": "water",
       "subtype": "other",
       "section": "body",
-      "modality": "hypothetical",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e17"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "Middle",
-      "reason": "Could be a regional location, but the capitalization may simply indicate a generic middle area rather than a canonical region."
-    },
-    {
-      "surface": "south",
-      "reason": "Could refer to a region, but the exact canonical is uncertain in this context."
-    },
-    {
-      "surface": "east and west",
-      "reason": "Directional region reference without a clear single canonical match."
-    },
-    {
-      "surface": "low-income",
-      "reason": "Descriptive modifier, not an entity."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "I Notice that droughts are more concentrated in the Middle and southern parts of the United States. In the south, there are the most extreme droughts in the United States. \n\nI wonder if the droughts will spread further to the east and west and how this will affect other States. \n\nThis affects me and my community because if the droughts worsen in Perth Amboy, this could impact the use of water, leading to restrictions on the use of water in houses. Perth Amboy could also face higher prices, which would affect many low-income families."
     },
     {
@@ -155,5 +264,5 @@
       "text": "\"From Coast to Coast: Tracking Droughts Across the U.S.\""
     }
   ],
-  "tagged_text": "I Notice that droughts are more concentrated in the Middle and southern parts of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. In the south, there are the most extreme droughts in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. \n\nI wonder if the droughts will spread further to the east and west and how this will affect other <entity type=\"LOCATION\" canonical=\"states\" modality=\"questioned\">States</entity>. \n\nThis affects me and my community because if the droughts worsen in <entity type=\"LOCATION\" canonical=\"perth_amboy\" speaker_context=\"true\">Perth Amboy</entity>, this could impact the use of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" modality=\"hypothetical\">water</entity>, leading to restrictions on the use of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" modality=\"hypothetical\">water</entity> in houses. <entity type=\"LOCATION\" canonical=\"perth_amboy\" speaker_context=\"true\">Perth Amboy</entity> could also face higher prices, which would affect many low-income <entity type=\"OTHER_ENTITY\" canonical=\"families\" subtype=\"other\" modality=\"hypothetical\">families</entity>. \n\nHeadline: \"<entity type=\"EVENT\" canonical=\"from_coast_to_coast_tracking_droughts_across_the_us\" section=\"headline\">From Coast to Coast: Tracking Droughts Across the U.S.</entity>\""
+  "tagged_text": "I Notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">droughts</entity> are more concentrated in the Middle and southern parts of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>. In the <entity type=\"LOCATION\" canonical=\"south\">south</entity>, there are the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme droughts</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>. \n\nI wonder if the <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" modality=\"questioned\">droughts</entity> will spread further to the <entity type=\"LOCATION\" canonical=\"east_coast\" modality=\"questioned\">east</entity> and <entity type=\"LOCATION\" canonical=\"west\" modality=\"questioned\">west</entity> and how this will affect other <entity type=\"DATA_VAR_LEVEL\" canonical=\"states\" var=\"state_names_abbreviations\" modality=\"questioned\">States</entity>. \n\nThis affects me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because if the <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">droughts</entity> worsen in <entity type=\"new_jersey\" canonical=\"new_jersey\" speaker_context=\"true\">Perth Amboy</entity>, this could impact the use of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity>, leading to restrictions on the use of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity> in houses. <entity type=\"new_jersey\" canonical=\"new_jersey\" speaker_context=\"true\">Perth Amboy</entity> could also face higher prices, which would affect many low-income families. \n\nHeadline: \"From Coast to Coast: Tracking <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" section=\"headline\">Droughts</entity> Across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">U.S.</entity>\""
 }

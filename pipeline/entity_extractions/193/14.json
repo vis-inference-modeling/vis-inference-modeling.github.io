@@ -31,44 +31,17 @@
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 1100,
       "end": 1108,
       "id": "e2"
-    },
-    {
-      "surface": "Have you ever seen the Rain",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1153,
-      "end": 1180,
-      "id": "e3"
-    },
-    {
-      "surface": "Creedence Clearwater",
-      "type": "OTHER_ENTITY",
-      "canonical": "creedence_clearwater",
-      "subtype": "organization",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1221,
-      "end": 1241,
-      "id": "e4"
     },
     {
       "surface": "southeast",
@@ -81,38 +54,40 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e5"
+      "id": "e3"
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e4"
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e5"
     },
     {
       "surface": "coast",
       "type": "LOCATION",
-      "canonical": "coasts",
+      "canonical": "coast",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -120,7 +95,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e6"
     },
     {
       "surface": "ocean",
@@ -133,7 +108,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e7"
     },
     {
       "surface": "Rocky mountain",
@@ -146,7 +121,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e8"
     },
     {
       "surface": "Alaska",
@@ -159,12 +134,26 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e9"
     },
     {
       "surface": "Lake",
       "type": "LOCATION",
-      "canonical": "lake",
+      "canonical": "great_lakes",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "exceptional",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -172,12 +161,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "exceptional",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e12"
     },
     {
-      "surface": "southern states",
-      "type": "LOCATION",
-      "canonical": "southern_states",
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -188,10 +192,10 @@
       "id": "e13"
     },
     {
-      "surface": "exceptional",
+      "surface": "severe",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -202,50 +206,23 @@
       "id": "e14"
     },
     {
-      "surface": "exceptional",
+      "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "moderate",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e15"
     },
     {
-      "surface": "extreme",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "extreme",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "precipitation",
-      "type": "EVENT",
-      "canonical": "precipitation",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
       "surface": "Northwest Ohio",
       "type": "LOCATION",
-      "canonical": "northwest_ohio",
+      "canonical": "ohio",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -253,48 +230,41 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "Erie",
-      "type": "LOCATION",
-      "canonical": "erie",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "Graphing Droughts in the US",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e20"
+      "id": "e16"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "eastern western states",
-      "reason": "Phrase is internally contradictory and does not clearly match a single location canonical."
+      "reason": "Conflicting geographic phrase; unclear intended region."
     },
     {
       "surface": "dessert effects",
-      "reason": "Likely a misspelling of 'desert effects', but no exact canonical match provided."
+      "reason": "Likely misspelling of 'desert effects'; not a confirmed canonical entity."
     },
     {
       "surface": "mild",
-      "reason": "Appears to refer to drought severity, but no matching level canonical is provided in the reference list."
+      "reason": "Appears to refer to drought severity, but no matching level is provided in the reference list."
+    },
+    {
+      "surface": "surplus of precipitation",
+      "reason": "Abstract meteorological phrase; not a clear entity."
+    },
+    {
+      "surface": "Erie",
+      "reason": "Likely Lake Erie, but the surface form is incomplete/ambiguous."
+    },
+    {
+      "surface": "Graphing Droughts in the US",
+      "reason": "Headline-like phrase, but not in the provided chart-element headline list."
+    },
+    {
+      "surface": "Have you ever seen the Rain",
+      "reason": "Song title; could be an event/cultural reference, but not a clear entity in the schema."
+    },
+    {
+      "surface": "Creedence Clearwater",
+      "reason": "Band name; not in the provided entity dictionary."
     }
   ],
   "section_segments": [
@@ -303,5 +273,5 @@
       "text": "The Midwest, southeast and particularly eastern western states; all appear to suffer the heaviest of droughts while states on the coast seem to not suffer nearly as much droughts. It's important however, to realize three things aside from the ocean that this graph does not include in the key. Which are the Rocky mountain effect on the eastern west states, the effect of ice on Alaska. the Lake effect in the Midwest, and dessert effects in the southern states. These are the wonders of drought in the graph beyond just common visual interpretation. the differences all between exceptional. extreme, severe moderate and mild all have to be genuinely measured, as per the description some regions that show \"drought' are actually getting more rain than some places labeled as \"mild\" because the date comes from regional averages. Similarly, I wonder how any surplus of precipitation is shown, or could be shown. There seems to be an exceptional drought in my own residential region (Northwest Ohio) which I wonder if is because of the lake effect of Erie. The visual itself could be called \"Graphing Droughts in the US\" or for a more comical approach, \"Have you ever seen the Rain\" from a famous song written by the band Creedence Clearwater."
     }
   ],
-  "tagged_text": "The <entity type=\"LOCATION\" canonical=\"midwest\" section=\"body\">Midwest</entity>, <entity type=\"LOCATION\" canonical=\"southeast\" section=\"body\">southeast</entity> and particularly eastern western states; all appear to suffer the heaviest of <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> while states on the <entity type=\"LOCATION\" canonical=\"coasts\" section=\"body\">coast</entity> seem to not suffer nearly as much droughts. It's important however, to realize three things aside from the <entity type=\"LOCATION\" canonical=\"ocean\" section=\"body\">ocean</entity> that this graph does not include in the key. Which are the <entity type=\"LOCATION\" canonical=\"rocky_mountains\" section=\"body\">Rocky mountain</entity> effect on the eastern west states, the effect of ice on <entity type=\"LOCATION\" canonical=\"alaska\" section=\"body\">Alaska</entity>. the <entity type=\"LOCATION\" canonical=\"lake\" section=\"body\">Lake</entity> effect in the Midwest, and dessert effects in the <entity type=\"LOCATION\" canonical=\"southern_states\" section=\"body\">southern states</entity>. These are the wonders of drought in the graph beyond just common visual interpretation. the differences all between <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\">exceptional</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"body\">extreme</entity>, severe moderate and mild all have to be genuinely measured, as per the description some regions that show \"drought' are actually getting more rain than some places labeled as \"mild\" because the date comes from regional averages. Similarly, I wonder how any surplus of <entity type=\"EVENT\" canonical=\"precipitation\" section=\"body\" modality=\"questioned\">precipitation</entity> is shown, or could be shown. There seems to be an exceptional drought in my own residential region (<entity type=\"LOCATION\" canonical=\"northwest_ohio\" section=\"body\" speaker_context=\"true\">Northwest Ohio</entity>) which I wonder if is because of the lake effect of <entity type=\"LOCATION\" canonical=\"erie\" section=\"body\">Erie</entity>. The visual itself could be called \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Graphing Droughts in the US</entity>\" or for a more comical approach, \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Have you ever seen the Rain</entity>\" from a famous song written by the band <entity type=\"OTHER_ENTITY\" canonical=\"creedence_clearwater\" subtype=\"organization\" section=\"headline\">Creedence Clearwater</entity>."
+  "tagged_text": "The <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity>, <entity type=\"LOCATION\" canonical=\"southeast\">southeast</entity> and particularly eastern western states; all appear to suffer the heaviest of <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">droughts</entity> while states on the <entity type=\"LOCATION\" canonical=\"coast\">coast</entity> seem to not suffer nearly as much droughts. It's important however, to realize three things aside from the <entity type=\"LOCATION\" canonical=\"ocean\">ocean</entity> that this graph does not include in the key. Which are the <entity type=\"LOCATION\" canonical=\"rocky_mountains\">Rocky mountain</entity> effect on the eastern west states, the effect of ice on <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity>. the <entity type=\"LOCATION\" canonical=\"great_lakes\">Lake</entity> effect in the Midwest, and dessert effects in the southern states. These are the wonders of drought in the graph beyond just common visual interpretation. the differences all between <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity> and mild all have to be genuinely measured, as per the description some regions that show \"drought' are actually getting more rain than some places labeled as \"mild\" because the date comes from regional averages. Similarly, I wonder how any surplus of precipitation is shown, or could be shown. There seems to be an exceptional drought in my own residential region (<entity type=\"LOCATION\" canonical=\"ohio\">Northwest Ohio</entity>) which I wonder if is because of the lake effect of Erie. The visual itself could be called \"Graphing Droughts in the US\" or for a more comical approach, \"Have you ever seen the Rain\" from a famous song written by the band Creedence Clearwater."
 }

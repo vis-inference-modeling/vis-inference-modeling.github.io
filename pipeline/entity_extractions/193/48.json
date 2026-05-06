@@ -30,57 +30,18 @@
       "id": "e1"
     },
     {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 80,
-      "end": 88,
-      "id": "e2"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 166,
-      "end": 174,
-      "id": "e3"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 332,
-      "end": 340,
-      "id": "e4"
-    },
-    {
       "surface": "severe",
       "type": "DATA_VAR_LEVEL",
       "canonical": "severe",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e5"
+      "start": 159,
+      "end": 165,
+      "id": "e2"
     },
     {
       "surface": "future",
@@ -91,9 +52,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
+      "start": 182,
+      "end": 188,
+      "id": "e3"
     },
     {
       "surface": "us",
@@ -105,37 +66,43 @@
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
+      "start": 221,
+      "end": 223,
+      "id": "e4"
     },
     {
-      "surface": "me and my community",
+      "surface": "me",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
+      "start": 267,
+      "end": 269,
+      "id": "e5"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 274,
+      "end": 286,
+      "id": "e6"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "middle",
-      "reason": "Spatial reference but no exact canonical location match for the generic term alone."
-    },
-    {
-      "surface": "The Dry States",
-      "reason": "Could be a headline/title entity, but no confirmed canonical match in the provided dictionary."
-    },
-    {
-      "surface": "how we could avoid it",
-      "reason": "Refers to mitigation/action, but no entity-like canonical match is available."
+      "reason": "Spatial reference is vague; could mean central U.S. region but no specific canonical location is stated."
     }
   ],
   "section_segments": [
@@ -149,5 +116,5 @@
       "text": "The Dry States"
     }
   ],
-  "tagged_text": "Looking at this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity>, one thing that I noticed is how most of the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\">country</entity> have <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> especially in the middle. This makes me wonder if there would be more <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\" section=\"body\" modality=\"questioned\">severe</entity> <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\" modality=\"questioned\">droughts</entity> in the <entity type=\"TIME_REFERENCE\" canonical=\"future\" section=\"body\" modality=\"questioned\">future</entity> and how badly this could impact <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"body\" speaker_context=\"true\">us</entity> and how we could avoid it. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">me and my community</entity> because I now have a better understanding of <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> and where they are occurring. A catchy headline that I think could capture this graph is \"The Dry States\"."
+  "tagged_text": "Looking at this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, one thing that I noticed is how most of the <entity type=\"LOCATION\" canonical=\"country\">country</entity> have droughts especially in the middle. This makes me wonder if there would be more <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" modality=\"questioned\">severe</entity> droughts in the <entity type=\"TIME_REFERENCE\" canonical=\"future\" modality=\"questioned\">future</entity> and how badly this could impact <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">us</entity> and how we could avoid it. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"my_community\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because I now have a better understanding of droughts and where they are occurring. A catchy headline that I think could capture this graph is \"The Dry States\"."
 }

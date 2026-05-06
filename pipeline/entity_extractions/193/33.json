@@ -4,6 +4,32 @@
   "raw_comment": "1: America is facing the problem of lacking water\n2: I wonder to know the cause of the phenomenon and how can individuals like us to solve this problem\n3. This will have an effect on my friends, some of them living in the area where is severe drought.\n4: America is thirsty: Half of America lack of water",
   "entities": [
     {
+      "surface": "America",
+      "type": "LOCATION",
+      "canonical": "usa",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 3,
+      "end": 10,
+      "id": "e0"
+    },
+    {
+      "surface": "America",
+      "type": "LOCATION",
+      "canonical": "usa",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 255,
+      "end": 262,
+      "id": "e1"
+    },
+    {
       "surface": "water",
       "type": "OTHER_ENTITY",
       "canonical": "water",
@@ -13,87 +39,92 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 44,
-      "end": 49,
-      "id": "e0"
+      "start": 299,
+      "end": 304,
+      "id": "e2"
     },
     {
-      "surface": "phenomenon",
+      "surface": "water",
       "type": "OTHER_ENTITY",
-      "canonical": "phenomenon",
+      "canonical": "water",
       "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e3"
+    },
+    {
+      "surface": "individuals",
+      "type": "OTHER_ENTITY",
+      "canonical": "individuals",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 87,
-      "end": 97,
-      "id": "e1"
+      "start": null,
+      "end": null,
+      "id": "e4"
     },
     {
       "surface": "friends",
       "type": "OTHER_ENTITY",
       "canonical": "friends",
-      "subtype": "person",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 186,
-      "end": 193,
-      "id": "e2"
-    },
-    {
-      "surface": "area",
-      "type": "LOCATION",
-      "canonical": "area",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 222,
-      "end": 226,
-      "id": "e3"
+      "start": null,
+      "end": null,
+      "id": "e5"
     },
     {
       "surface": "severe drought",
-      "type": "EVENT",
-      "canonical": "severe_drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 236,
-      "end": 250,
-      "id": "e4"
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "America is thirsty: Half of America lack of water",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
-      "section": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 255,
-      "end": 304,
-      "id": "e5"
+      "start": null,
+      "end": null,
+      "id": "e7"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "America",
-      "reason": "Could map to LOCATION america, but the normalized dictionary also treats it as a country-level reference; context is rhetorical and not clearly geographic."
+      "surface": "the phenomenon",
+      "reason": "Likely refers to drought, but the surface is too generic to tag confidently."
     },
     {
-      "surface": "lacking water",
-      "reason": "Could refer to water scarcity or water shortage, but no exact canonical phrase is provided in the normalized dictionary."
+      "surface": "problem",
+      "reason": "Abstract and unspecific; not a clear entity."
+    },
+    {
+      "surface": "area",
+      "reason": "Generic location reference without a specific identifiable place."
     }
   ],
   "section_segments": [
@@ -118,5 +149,5 @@
       "text": "America is thirsty: Half of America lack of water"
     }
   ],
-  "tagged_text": "1: America is facing the problem of lacking water\n2: I wonder to know the cause of the phenomenon and how can individuals like us to solve this problem\n3. This will have an effect on my friends, some of them living in the area where is severe drought.\n4: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">America is thirsty: Half of America lack of water</entity>"
+  "tagged_text": "1: <entity type=\"LOCATION\" canonical=\"usa\">America</entity> is facing the problem of lacking <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity>\n2: I wonder to know the cause of the phenomenon and how can <entity type=\"OTHER_ENTITY\" canonical=\"individuals\" subtype=\"group\">individuals</entity> like us to solve this problem\n3. This will have an effect on my <entity type=\"OTHER_ENTITY\" canonical=\"friends\" subtype=\"group\" speaker_context=\"true\">friends</entity>, some of them living in the area where is <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe drought</entity>.\n4: <entity type=\"CHART_ELEMENT\" canonical=\"headline\">America is thirsty: Half of America lack of water</entity>"
 }

@@ -17,216 +17,97 @@
       "id": "e0"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 54,
-      "end": 61,
+      "start": 86,
+      "end": 99,
       "id": "e1"
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
+      "terminology_drift": true,
+      "occurrence_index": 0,
       "start": 117,
       "end": 124,
       "id": "e2"
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
+      "terminology_drift": true,
+      "occurrence_index": 1,
       "start": 182,
       "end": 189,
       "id": "e3"
     },
     {
-      "surface": "people",
-      "type": "OTHER_ENTITY",
-      "canonical": "people",
-      "subtype": "other",
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 191,
-      "end": 197,
-      "id": "e4"
-    },
-    {
-      "surface": "places",
-      "type": "LOCATION",
-      "canonical": "places",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 218,
-      "end": 224,
-      "id": "e5"
-    },
-    {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 256,
-      "end": 261,
-      "id": "e6"
-    },
-    {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 304,
-      "end": 309,
-      "id": "e7"
-    },
-    {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 2,
-      "start": 379,
-      "end": 384,
-      "id": "e8"
-    },
-    {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": 412,
-      "end": 417,
-      "id": "e9"
-    },
-    {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 4,
-      "start": 431,
-      "end": 436,
-      "id": "e10"
-    },
-    {
-      "surface": "plastic plates",
-      "type": "OTHER_ENTITY",
-      "canonical": "plastic_plates",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 450,
-      "end": 464,
-      "id": "e11"
-    },
-    {
-      "surface": "paper plates",
-      "type": "OTHER_ENTITY",
-      "canonical": "paper_plates",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 468,
-      "end": 480,
-      "id": "e12"
-    },
-    {
-      "surface": "the United States",
-      "type": "LOCATION",
-      "canonical": "united_states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "bottled water",
-      "type": "OTHER_ENTITY",
-      "canonical": "bottled_water",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
+      "start": 235,
+      "end": 242,
+      "id": "e4"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "drought condition",
-      "reason": "Could be normalized to drought, but the phrasing is slightly non-canonical and repeated in a generic way."
+      "surface": "water",
+      "reason": "Repeated generic substance reference; no confirmed canonical ID in the provided list for this comment."
     },
     {
-      "surface": "save water",
-      "reason": "Could be an action rather than an entity; included as unresolved because it may refer to the water resource concept."
+      "surface": "people",
+      "reason": "Generic human reference; not specific enough to tag as a group."
     },
     {
-      "surface": "water running",
-      "reason": "Could refer to water usage/conservation, but not a named entity in the dictionary."
+      "surface": "places without a drought",
+      "reason": "Location-like phrase is too vague to map to a specific canonical location."
+    },
+    {
+      "surface": "bathtub",
+      "reason": "Object mention not covered by the schema's confirmed canonical list."
+    },
+    {
+      "surface": "bottled water",
+      "reason": "Could be a resource/product reference, but no confirmed canonical ID is provided."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "JH I noticed that almost everywhere in New York has a drought condition. A lot of the United States has a lot of bad drought. You can drink more soda to save water.\n\nTT If there's a drought, people may have to move to places without a drought. To conserve water. take quicker showers and don't leave the water running when you brush your teeth. \n\nJQ It's important to save up on water. Fill up your bathtub with water. Get bottled water. You can use plastic plates or paper plates so that you don't have to use water washing dishes."
+      "text": "JH I noticed that almost everywhere in New York has a drought condition. A lot of the United States has a lot of bad drought. You can drink more soda to save water."
+    },
+    {
+      "section": "body",
+      "text": "TT If there's a drought, people may have to move to places without a drought. To conserve water. take quicker showers and don't leave the water running when you brush your teeth."
+    },
+    {
+      "section": "body",
+      "text": "JQ It's important to save up on water. Fill up your bathtub with water. Get bottled water. You can use plastic plates or paper plates so that you don't have to use water washing dishes."
     }
   ],
-  "tagged_text": "JH I noticed that almost everywhere in New York has a drought condition. A lot of the United States has a lot of bad drought. You can drink more soda to save water.\n\nTT If there's a drought, people may have to move to places without a drought. To conserve water. take quicker showers and don't leave the water running when you brush your teeth. \n\nJQ It's important to save up on water. Fill up your bathtub with water. Get bottled water. You can use plastic plates or paper plates so that you don't have to use water washing dishes."
+  "tagged_text": "JH I noticed that almost everywhere in <entity type=\"LOCATION\" canonical=\"new_york\" speaker_context=\"false\">New York</entity> has a drought condition. A lot of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity> has a lot of bad <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity>. You can drink more soda to save water.\n\nTT If there's a <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity>, people may have to move to places without a <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity>. To conserve water. take quicker showers and don't leave the water running when you brush your teeth. \n\nJQ It's important to save up on water. Fill up your bathtub with water. Get bottled water. You can use plastic plates or paper plates so that you don't have to use water washing dishes."
 }

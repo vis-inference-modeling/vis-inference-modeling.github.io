@@ -7,7 +7,7 @@
       "surface": "extreme",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,31 +18,18 @@
       "id": "e0"
     },
     {
-      "surface": "exceptional",
+      "surface": "exceptional droughts",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 34,
-      "end": 45,
-      "id": "e1"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 46,
       "end": 54,
-      "id": "e2"
+      "id": "e1"
     },
     {
       "surface": "country",
@@ -55,6 +42,19 @@
       "occurrence_index": 0,
       "start": 100,
       "end": 107,
+      "id": "e2"
+    },
+    {
+      "surface": "coast",
+      "type": "LOCATION",
+      "canonical": "coast",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 122,
+      "end": 127,
       "id": "e3"
     },
     {
@@ -63,7 +63,7 @@
       "canonical": "fossil_fuels",
       "subtype": "other",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -72,51 +72,38 @@
       "id": "e4"
     },
     {
-      "surface": "me and my community",
+      "surface": "me",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 237,
-      "end": 256,
+      "end": 239,
       "id": "e5"
     },
     {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 291,
-      "end": 295,
-      "id": "e6"
-    },
-    {
-      "surface": "moisture",
+      "surface": "my community",
       "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 323,
-      "end": 331,
-      "id": "e7"
+      "start": 244,
+      "end": 256,
+      "id": "e6"
     },
     {
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -124,40 +111,14 @@
       "occurrence_index": 0,
       "start": 355,
       "end": 363,
-      "id": "e8"
-    },
-    {
-      "surface": "Drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 385,
-      "end": 392,
-      "id": "e9"
+      "id": "e7"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "burning fossil fuels",
-      "reason": "The phrase suggests a causal activity, but only 'fossil fuels' is directly mappable; 'burning' is not separately tagged."
-    },
-    {
-      "surface": "increase in drought",
-      "reason": "Could refer to droughts generally or a trend; no exact canonical trend entity is available."
-    },
-    {
-      "surface": "Your State",
-      "reason": "Possibly a generic placeholder for a location, but no confirmed canonical match in the dictionary."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "I noticed that the extreme and or exceptional droughts are more inland or towards the middle of the country away from any coast\nI wonder if this increase in drought is happening due to an increase of burning fossil fuels\nThis relates to me and my community since we haven't experienced much rain recently but we still have moisture, so we are only in the moderate section for drought\n\"Drought Increase In Your State\""
+      "text": "I noticed that the extreme and or exceptional droughts are more inland or towards the middle of the country away from any coast\nI wonder if this increase in drought is happening due to an increase of burning fossil fuels\nThis relates to me and my community since we haven't experienced much rain recently but we still have moisture, so we are only in the moderate section for drought"
     },
     {
       "section": "headline",
@@ -165,5 +126,5 @@
       "text": "Drought Increase In Your State"
     }
   ],
-  "tagged_text": "I noticed that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"body\">extreme</entity> and or <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\">exceptional</entity> <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> are more inland or towards the middle of the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\">country</entity> away from any coast\nI wonder if this increase in drought is happening due to an increase of burning <entity type=\"OTHER_ENTITY\" canonical=\"fossil_fuels\" subtype=\"other\" section=\"body\">fossil fuels</entity>\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">me and my community</entity> since we haven't experienced much <entity type=\"EVENT\" canonical=\"rain\" section=\"body\">rain</entity> recently but we still have <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" section=\"body\">moisture</entity>, so we are only in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\" section=\"body\">moderate</entity> section for drought\n\"<entity type=\"EVENT\" canonical=\"drought\" section=\"headline\">Drought</entity> Increase In Your State\""
+  "tagged_text": "I noticed that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> and or <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional droughts</entity> are more inland or towards the middle of the <entity type=\"LOCATION\" canonical=\"country\">country</entity> away from any <entity type=\"LOCATION\" canonical=\"coast\">coast</entity>\nI wonder if this increase in drought is happening due to an increase of burning <entity type=\"OTHER_ENTITY\" canonical=\"fossil_fuels\" subtype=\"other\" modality=\"questioned\">fossil fuels</entity>\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"my_community\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> since we haven't experienced much rain recently but we still have moisture, so we are only in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity> section for drought\n\"Drought Increase In Your State\""
 }

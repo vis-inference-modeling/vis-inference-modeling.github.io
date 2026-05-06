@@ -4,61 +4,62 @@
   "raw_comment": "I first turned my attention toward the interior of the country, where I noticed that the Wyoming/SD/Nebraska area had gone through some considerable severe droughts recently.  I sum this up to weather having less facilitation within that part of the country, on account of lack of both geographical structure, and geographical location in regard to things like major rivers, lakes, and tributaries.  I also noticed that West Texas (and presumably North-East Mexico) are currently undergoing a serious drought, one which seems to rival all others across the continental US in both severity and concentration.  Finally, I noticed that Alaska has barely any notable droughts, possibly stemming from less surveying or just Alaska's general climate (I presume both).\n\nI wonder why Ohio (and West V.A) got hit so hard by a drought, as I feel a state located so close to lake Eerie would have a bit less severity when it comes to precipitation accumulating.  I also wonder why that specific section of Montana has such a drastic shift in severity compared to the surrounding location.\n\nWhile the map is broad, I notice that Ohio (a very close neighbor to Michigan and only about an hour or two away from my home) has taken a beating.  In a similar way, because of my proximity, such droughts could come to affect me and my family.\n\nContinental Heat Rash! - Heavy droughts in the West of Texas and throughout the continental United States.",
   "entities": [
     {
-      "surface": "country",
+      "surface": "Wyoming",
       "type": "LOCATION",
-      "canonical": "country",
+      "canonical": "wyoming",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 55,
-      "end": 62,
+      "start": 89,
+      "end": 96,
       "id": "e0"
     },
     {
-      "surface": "country",
+      "surface": "SD",
       "type": "LOCATION",
-      "canonical": "country",
+      "canonical": "south_dakota",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 250,
-      "end": 257,
+      "occurrence_index": 0,
+      "start": 97,
+      "end": 99,
       "id": "e1"
     },
     {
-      "surface": "rivers",
+      "surface": "Nebraska",
       "type": "LOCATION",
-      "canonical": "river",
+      "canonical": "nebraska",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 367,
-      "end": 373,
+      "start": 100,
+      "end": 108,
       "id": "e2"
     },
     {
-      "surface": "lakes",
-      "type": "LOCATION",
-      "canonical": "lake",
+      "surface": "severe droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 375,
-      "end": 380,
+      "start": 149,
+      "end": 164,
       "id": "e3"
     },
     {
       "surface": "West Texas",
       "type": "LOCATION",
-      "canonical": "west_texas",
+      "canonical": "texas",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -82,10 +83,24 @@
       "id": "e5"
     },
     {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 501,
+      "end": 508,
+      "id": "e6"
+    },
+    {
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -93,7 +108,7 @@
       "occurrence_index": 0,
       "start": 569,
       "end": 571,
-      "id": "e6"
+      "id": "e7"
     },
     {
       "surface": "Alaska",
@@ -106,7 +121,7 @@
       "occurrence_index": 0,
       "start": 633,
       "end": 639,
-      "id": "e7"
+      "id": "e8"
     },
     {
       "surface": "Alaska",
@@ -119,7 +134,7 @@
       "occurrence_index": 1,
       "start": 719,
       "end": 725,
-      "id": "e8"
+      "id": "e9"
     },
     {
       "surface": "Ohio",
@@ -132,7 +147,7 @@
       "occurrence_index": 0,
       "start": 776,
       "end": 780,
-      "id": "e9"
+      "id": "e10"
     },
     {
       "surface": "Ohio",
@@ -145,7 +160,7 @@
       "occurrence_index": 1,
       "start": 1117,
       "end": 1121,
-      "id": "e10"
+      "id": "e11"
     },
     {
       "surface": "Michigan",
@@ -158,13 +173,13 @@
       "occurrence_index": 0,
       "start": 1148,
       "end": 1156,
-      "id": "e11"
+      "id": "e12"
     },
     {
       "surface": "my home",
       "type": "OTHER_ENTITY",
-      "canonical": "my_location",
-      "subtype": "other",
+      "canonical": "speaker_home",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -172,7 +187,7 @@
       "occurrence_index": 0,
       "start": 1197,
       "end": 1204,
-      "id": "e12"
+      "id": "e13"
     },
     {
       "surface": "me",
@@ -186,13 +201,13 @@
       "occurrence_index": 0,
       "start": 1202,
       "end": 1204,
-      "id": "e13"
+      "id": "e14"
     },
     {
       "surface": "my family",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "my_family",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -200,59 +215,35 @@
       "occurrence_index": 0,
       "start": 1313,
       "end": 1322,
-      "id": "e14"
+      "id": "e15"
     },
     {
-      "surface": "Continental Heat Rash! - Heavy droughts in the West of Texas and throughout the continental United States.",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1325,
-      "end": 1431,
-      "id": "e15"
-    },
-    {
-      "surface": "Wyoming",
-      "type": "LOCATION",
-      "canonical": "wyoming",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 1417,
+      "end": 1430,
       "id": "e16"
     },
     {
-      "surface": "SD",
-      "type": "LOCATION",
-      "canonical": "south_dakota",
+      "surface": "severe droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e17"
-    },
-    {
-      "surface": "Nebraska",
-      "type": "LOCATION",
-      "canonical": "nebraska",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
     },
     {
       "surface": "West V.A",
@@ -265,12 +256,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e18"
     },
     {
       "surface": "lake Eerie",
       "type": "LOCATION",
-      "canonical": "lake",
+      "canonical": "great_lakes",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -278,20 +269,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
-    },
-    {
-      "surface": "precipitation",
-      "type": "EVENT",
-      "canonical": "precipitation",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e21"
+      "id": "e19"
     },
     {
       "surface": "Montana",
@@ -304,29 +282,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e20"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "tributaries",
-      "reason": "Waterway reference, but no exact canonical entry provided."
-    },
-    {
-      "surface": "severity",
-      "reason": "Could refer to drought severity level, but not a standalone canonical entity in the dictionary."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "I first turned my attention toward the interior of the country, where I noticed that the Wyoming/SD/Nebraska area had gone through some considerable severe droughts recently.  I sum this up to weather having less facilitation within that part of the country, on account of lack of both geographical structure, and geographical location in regard to things like major rivers, lakes, and tributaries.  I also noticed that West Texas (and presumably North-East Mexico) are currently undergoing a serious drought, one which seems to rival all others across the continental US in both severity and concentration.  Finally, I noticed that Alaska has barely any notable droughts, possibly stemming from less surveying or just Alaska's general climate (I presume both).\n\nI wonder why Ohio (and West V.A) got hit so hard by a drought, as I feel a state located so close to lake Eerie would have a bit less severity when it comes to precipitation accumulating.  I also wonder why that specific section of Montana has such a drastic shift in severity compared to the surrounding location.\n\nWhile the map is broad, I notice that Ohio (a very close neighbor to Michigan and only about an hour or two away from my home) has taken a beating.  In a similar way, because of my proximity, such droughts could come to affect me and my family."
+      "text": "I first turned my attention toward the interior of the country, where I noticed that the Wyoming/SD/Nebraska area had gone through some considerable severe droughts recently.  I sum this up to weather having less facilitation within that part of the country, on account of lack of both geographical structure, and geographical location in regard to things like major rivers, lakes, and tributaries.  I also noticed that West Texas (and presumably North-East Mexico) are currently undergoing a serious drought, one which seems to rival all others across the continental US in both severity and concentration.  Finally, I noticed that Alaska has barely any notable droughts, possibly stemming from less surveying or just Alaska's general climate (I presume both).\n\nI wonder why Ohio (and West V.A) got hit so hard by a drought, as I feel a state located so close to lake Eerie would have a bit less severity when it comes to precipitation accumulating.  I also wonder why that specific section of Montana has such a drastic shift in severity compared to the surrounding location.\n\nWhile the map is broad, I notice that Ohio (a very close neighbor to Michigan and only about an hour or two away from my home) has taken a beating.  In a similar way, because of my proximity, such droughts could come to affect me and my family.\n\nContinental Heat Rash! - Heavy droughts in the West of Texas and throughout the continental United States."
     },
     {
       "section": "headline",
-      "label": "Continental Heat Rash! - Heavy droughts in the West of Texas and throughout the continental United States.",
-      "text": "Continental Heat Rash! - Heavy droughts in the West of Texas and throughout the continental United States."
+      "label": "Continental Heat Rash!",
+      "text": "Heavy droughts in the West of Texas and throughout the continental United States."
     }
   ],
-  "tagged_text": "I first turned my attention toward the interior of the <entity type=\"LOCATION\" canonical=\"country\">country</entity>, where I noticed that the <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>/<entity type=\"LOCATION\" canonical=\"south_dakota\">SD</entity>/<entity type=\"LOCATION\" canonical=\"nebraska\">Nebraska</entity> area had gone through some considerable severe droughts recently.  I sum this up to weather having less facilitation within that part of the <entity type=\"LOCATION\" canonical=\"country\">country</entity>, on account of lack of both geographical structure, and geographical location in regard to things like major <entity type=\"LOCATION\" canonical=\"river\">rivers</entity>, <entity type=\"LOCATION\" canonical=\"lake\">lakes</entity>, and tributaries.  I also noticed that <entity type=\"LOCATION\" canonical=\"west_texas\">West Texas</entity> (and presumably <entity type=\"LOCATION\" canonical=\"north_east_mexico\">North-East Mexico</entity>) are currently undergoing a serious drought, one which seems to rival all others across the continental <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> in both severity and concentration.  Finally, I noticed that <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> has barely any notable droughts, possibly stemming from less surveying or just <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity>'s general climate (I presume both).\n\nI wonder why <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> (and <entity type=\"LOCATION\" canonical=\"west_virginia\">West V.A</entity>) got hit so hard by a drought, as I feel a state located so close to <entity type=\"LOCATION\" canonical=\"lake\">lake Eerie</entity> would have a bit less severity when it comes to <entity type=\"EVENT\" canonical=\"precipitation\">precipitation</entity> accumulating.  I also wonder why that specific section of <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity> has such a drastic shift in severity compared to the surrounding location.\n\nWhile the map is broad, I notice that <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> (a very close neighbor to <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> and only about an hour or two away from <entity type=\"OTHER_ENTITY\" canonical=\"my_location\" subtype=\"other\" speaker_context=\"true\">my home</entity>) has taken a beating.  In a similar way, because of my proximity, such droughts could come to affect <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my family</entity>.\n\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Continental Heat Rash! - Heavy droughts in the West of Texas and throughout the continental United States.</entity>"
+  "tagged_text": "I first turned my attention toward the interior of the country, where I noticed that the <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>/<entity type=\"LOCATION\" canonical=\"south_dakota\">SD</entity>/<entity type=\"LOCATION\" canonical=\"nebraska\">Nebraska</entity> area had gone through some considerable <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe droughts</entity> recently.  I sum this up to weather having less facilitation within that part of the country, on account of lack of both geographical structure, and geographical location in regard to things like major rivers, lakes, and tributaries.  I also noticed that <entity type=\"LOCATION\" canonical=\"west_texas\">West Texas</entity> (and presumably <entity type=\"LOCATION\" canonical=\"north_east_mexico\">North-East Mexico</entity>) are currently undergoing a serious <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">drought</entity>, one which seems to rival all others across the continental <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> in both severity and concentration.  Finally, I noticed that <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> has barely any notable droughts, possibly stemming from less surveying or just <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity>'s general climate (I presume both).\n\nI wonder why <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> (and <entity type=\"LOCATION\" canonical=\"west_virginia\">West V.A</entity>) got hit so hard by a drought, as I feel a state located so close to <entity type=\"LOCATION\" canonical=\"great_lakes\">lake Eerie</entity> would have a bit less severity when it comes to precipitation accumulating.  I also wonder why that specific section of <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity> has such a drastic shift in severity compared to the surrounding location.\n\nWhile the map is broad, I notice that <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> (a very close neighbor to <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> and only about an hour or two away from <entity type=\"speaker\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">my home</entity>) has taken a beating.  In a similar way, because of my proximity, such droughts could come to affect <entity type=\"speaker\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"my_community\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my family</entity>.\n\nContinental Heat Rash! - Heavy droughts in the West of Texas and throughout the continental <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>."
 }

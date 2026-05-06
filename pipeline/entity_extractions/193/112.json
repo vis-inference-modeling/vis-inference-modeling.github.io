@@ -5,8 +5,8 @@
   "entities": [
     {
       "surface": "Droughts Drowning The US",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -17,10 +17,23 @@
       "id": "e0"
     },
     {
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 54,
+      "end": 57,
+      "id": "e1"
+    },
+    {
       "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -28,13 +41,13 @@
       "occurrence_index": 0,
       "start": 65,
       "end": 69,
-      "id": "e1"
+      "id": "e2"
     },
     {
       "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -42,13 +55,13 @@
       "occurrence_index": 1,
       "start": 218,
       "end": 222,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -56,38 +69,40 @@
       "occurrence_index": 0,
       "start": 436,
       "end": 444,
-      "id": "e3"
+      "id": "e4"
     },
     {
-      "surface": "area",
-      "type": "LOCATION",
-      "canonical": "speaker_area",
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 517,
-      "end": 521,
-      "id": "e4"
-    },
-    {
-      "surface": "east coasts",
-      "type": "LOCATION",
-      "canonical": "east_coast",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 482,
+      "end": 494,
       "id": "e5"
     },
     {
-      "surface": "west coasts",
+      "surface": "weather",
+      "type": "OTHER_ENTITY",
+      "canonical": "weather",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 503,
+      "end": 510,
+      "id": "e6"
+    },
+    {
+      "surface": "east and west coasts",
       "type": "LOCATION",
-      "canonical": "west_coast",
+      "canonical": "coast",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -95,13 +110,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e7"
     },
     {
-      "surface": "moderate",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "moderate",
-      "var": "drought_severity",
+      "surface": "east and west coasts",
+      "type": "LOCATION",
+      "canonical": "coast",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -109,28 +123,15 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e7"
-    },
-    {
-      "surface": "abnormal droughts",
-      "type": "OTHER_ENTITY",
-      "canonical": "abnormal_droughts",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e8"
     },
     {
-      "surface": "north and south of the U.S.",
-      "type": "LOCATION",
-      "canonical": "north_and_south_west",
+      "surface": "abnormal",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -139,10 +140,9 @@
       "id": "e9"
     },
     {
-      "surface": "extreme",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "extreme",
-      "var": "drought_severity",
+      "surface": "north",
+      "type": "LOCATION",
+      "canonical": "north",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -153,10 +153,9 @@
       "id": "e10"
     },
     {
-      "surface": "violent droughts",
-      "type": "OTHER_ENTITY",
-      "canonical": "violent_droughts",
-      "subtype": "other",
+      "surface": "south",
+      "type": "LOCATION",
+      "canonical": "south",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -167,14 +166,15 @@
       "id": "e11"
     },
     {
-      "surface": "area",
-      "type": "LOCATION",
-      "canonical": "speaker_area",
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e12"
@@ -183,20 +183,7 @@
       "surface": "moderate droughts",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -204,7 +191,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e13"
     }
   ],
   "unresolved_mentions": [],
@@ -219,5 +206,5 @@
       "text": "I noticed in this map of the U.S. the states on the east and west coasts are only experiencing moderate or abnormal droughts. However, when looking toward the north and south of the U.S., they are experiencing more extreme and violent droughts. I wonder why this is the case and what has been causing droughts all over the U.S. This is extremely relevant to me because I live in an area experiencing moderate droughts, so it is heavily impacting my community and the weather in my area."
     }
   ],
-  "tagged_text": "Headline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Droughts Drowning The US</entity>\n\nI noticed in this map of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> the states on the <entity type=\"LOCATION\" canonical=\"east_coast\">east coasts</entity> and <entity type=\"LOCATION\" canonical=\"west_coast\">west coasts</entity> are only experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderate</entity> or <entity type=\"OTHER_ENTITY\" canonical=\"abnormal_droughts\" subtype=\"other\">abnormal droughts</entity>. However, when looking toward the <entity type=\"LOCATION\" canonical=\"north_and_south_west\">north and south of the U.S.</entity>, they are experiencing more <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\">extreme</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"violent_droughts\" subtype=\"other\">violent droughts</entity>. I wonder why this is the case and what has been causing droughts all over the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity>. This is extremely relevant to me because I live in an <entity type=\"LOCATION\" canonical=\"speaker_area\" speaker_context=\"true\">area</entity> experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderate droughts</entity>, so it is heavily impacting <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> and the weather in my <entity type=\"LOCATION\" canonical=\"speaker_area\" speaker_context=\"true\">area</entity>."
+  "tagged_text": "Headline: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Droughts Drowning The US</entity>\n\nI noticed in this <entity type=\"CHART_ELEMENT\" canonical=\"map\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">map</entity> of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">U.S.</entity> the states on the <entity type=\"LOCATION\" canonical=\"coast\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">east and west coasts</entity> are only experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">moderate</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">abnormal</entity> droughts. However, when looking toward the <entity type=\"LOCATION\" canonical=\"north\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">north</entity> and <entity type=\"LOCATION\" canonical=\"south\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">south</entity> of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">U.S.</entity>, they are experiencing more <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">extreme</entity> and violent droughts. I wonder why this is the case and what has been causing droughts all over the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">U.S.</entity>. This is extremely relevant to me because I live in an area experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">moderate droughts</entity>, so it is heavily impacting <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity> and the <entity type=\"OTHER_ENTITY\" canonical=\"weather\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">weather</entity> in my area."
 }

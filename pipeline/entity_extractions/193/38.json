@@ -30,30 +30,18 @@
       "id": "e1"
     },
     {
-      "surface": "states",
-      "type": "LOCATION",
-      "canonical": "other_states",
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 123,
-      "end": 129,
+      "start": 366,
+      "end": 378,
       "id": "e2"
-    },
-    {
-      "surface": "Mississippi River",
-      "type": "LOCATION",
-      "canonical": "mississippi_river",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 157,
-      "end": 174,
-      "id": "e3"
     },
     {
       "surface": "water",
@@ -65,8 +53,22 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 254,
-      "end": 259,
+      "start": 406,
+      "end": 411,
+      "id": "e3"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 628,
+      "end": 641,
       "id": "e4"
     },
     {
@@ -79,92 +81,27 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 406,
-      "end": 411,
+      "start": null,
+      "end": null,
       "id": "e5"
-    },
-    {
-      "surface": "crops",
-      "type": "OTHER_ENTITY",
-      "canonical": "crops",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 469,
-      "end": 474,
-      "id": "e6"
-    },
-    {
-      "surface": "The spread and impact of droughts across the United States.",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 583,
-      "end": 642,
-      "id": "e7"
-    },
-    {
-      "surface": "reservoirs",
-      "type": "LOCATION",
-      "canonical": "reservoir",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e10"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "hot and dry",
-      "reason": "Could correspond to a drought-related condition, but no exact canonical match is provided."
+      "surface": "the eastern half of the Mississippi River",
+      "reason": "Geographic reference not present in the provided canonical list."
     },
     {
       "surface": "coastline",
-      "reason": "Could be a location-related geographic feature, but no exact canonical match is provided."
+      "reason": "Could map to coast, but the surface is not an exact or clearly equivalent match."
     },
     {
-      "surface": "droughts",
-      "reason": "General event reference; could map to EVENT droughts, but the prompt allows unresolved mentions freely."
+      "surface": "reservoirs",
+      "reason": "Entity-like infrastructure, but not in the provided dictionary."
+    },
+    {
+      "surface": "The spread and impact of droughts across the United States.",
+      "reason": "Headline-like text, but not a known chart element label from the reference list."
     }
   ],
   "section_segments": [
@@ -173,5 +110,5 @@
       "text": "I noticed that there was multiple cases of droughts in places that are not hot and dry, such as Oregon, New York and other states on the eastern half of the Mississippi River. I wonder how these areas get into drought when they are surrounded by so much water, especially since they have a large amount of coastline and reservoirs. This relates to me personally and my community since we are so reliant on water, as we require it not only for drinking but to also grow crops for food as well, and without it we would have to go hungry. A potential headline for this graph could be: \"The spread and impact of droughts across the United States.\""
     }
   ],
-  "tagged_text": "I noticed that there was multiple cases of droughts in places that are not hot and dry, such as <entity type=\"LOCATION\" canonical=\"oregon\">Oregon</entity>, <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> and other <entity type=\"LOCATION\" canonical=\"other_states\">states</entity> on the eastern half of the <entity type=\"LOCATION\" canonical=\"mississippi_river\">Mississippi River</entity>. I wonder how these areas get into drought when they are surrounded by so much <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity>, especially since they have a large amount of coastline and <entity type=\"LOCATION\" canonical=\"reservoir\">reservoirs</entity>. This relates to me personally and my community since we are so reliant on <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" speaker_context=\"true\">water</entity>, as we require it not only for drinking but to also grow <entity type=\"OTHER_ENTITY\" canonical=\"crops\" subtype=\"other\">crops</entity> for food as well, and without it we would have to go hungry. A potential headline for this graph could be: \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">The spread and impact of droughts across the United States.</entity>\""
+  "tagged_text": "I noticed that there was multiple cases of droughts in places that are not hot and dry, such as <entity type=\"LOCATION\" canonical=\"oregon\">Oregon</entity>, <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> and other states on the eastern half of the Mississippi River. I wonder how these areas get into drought when they are surrounded by so much water, especially since they have a large amount of coastline and reservoirs. This relates to me personally and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> since we are so reliant on <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity>, as we require it not only for drinking but to also grow crops for food as well, and without it we would have to go hungry. A potential headline for this graph could be: \"The spread and impact of droughts across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>.\""
 }

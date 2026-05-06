@@ -30,35 +30,23 @@
       "id": "e1"
     },
     {
-      "surface": "Leeward Side of the Appalachian Mountains",
+      "surface": "Appalachian Mountains",
       "type": "LOCATION",
-      "canonical": "leeward_side_appalachian_mountains",
+      "canonical": "appalachian_mountains",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 49,
+      "start": 69,
       "end": 90,
       "id": "e2"
     },
     {
-      "surface": "rain shadow",
-      "type": "EVENT",
-      "canonical": "rain_shadow",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 113,
-      "end": 124,
-      "id": "e3"
-    },
-    {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -66,34 +54,7 @@
       "occurrence_index": 0,
       "start": 218,
       "end": 225,
-      "id": "e4"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 550,
-      "end": 557,
-      "id": "e5"
-    },
-    {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 629,
-      "end": 634,
-      "id": "e6"
+      "id": "e3"
     },
     {
       "surface": "country",
@@ -104,9 +65,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
+      "start": 233,
+      "end": 240,
+      "id": "e4"
     },
     {
       "surface": "La Nina",
@@ -117,84 +78,48 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e10"
+      "start": 251,
+      "end": 258,
+      "id": "e5"
     },
     {
       "surface": "my house",
-      "type": "LOCATION",
-      "canonical": "my_house",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "nearby neighborhoods",
-      "type": "LOCATION",
-      "canonical": "nearby_neighborhoods",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
+      "start": 347,
+      "end": 355,
+      "id": "e6"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "man-made lake",
-      "reason": "Could map to reservoir/lake-like location, but no exact canonical match for this article."
+      "surface": "Leeward Side",
+      "reason": "Geographic descriptor not present in the reference list and unclear canonical mapping."
     },
     {
-      "surface": "sediment",
-      "reason": "Entity-like noun but not present in the dictionary."
+      "surface": "weather conditions",
+      "reason": "Generic causal phrase; not a specific entity."
     },
     {
-      "surface": "minerals",
-      "reason": "Entity-like noun but not present in the dictionary."
+      "surface": "lake",
+      "reason": "Could be a location or water body, but no clear canonical mapping beyond speaker context."
+    },
+    {
+      "surface": "nearby neighborhoods",
+      "reason": "Collective local area reference, but not clearly one of the provided canonical locations."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I noticed that West Virginia and Ohio are on the Leeward Side of the Appalachian Mountains which is leading to a rain shadow being cast on those states. This is causing them to experience some of the highest levels of drought in the country. \n\nIs La Nina impacting these weather conditions in a substantial way?  \n\n  \n\n The man-made lake near my house is extremely low and I am starting to see cinderblocks and parking curbs which are usually hidden beneath the water. This lake is used as a source of water for some nearby neighborhoods, if the drought continues to evaporate the lake while leaving the sediment behind, the water may become worse quality and contain harsher amounts of minerals."
+      "text": "I noticed that West Virginia and Ohio are on the Leeward Side of the Appalachian Mountains which is leading to a rain shadow being cast on those states. This is causing them to experience some of the highest levels of drought in the country. \n\n  \n\nIs La Nina impacting these weather conditions in a substantial way?  \n\n  \n\n The man-made lake near my house is extremely low and I am starting to see cinderblocks and parking curbs which are usually hidden beneath the water. This lake is used as a source of water for some nearby neighborhoods, if the drought continues to evaporate the lake while leaving the sediment behind, the water may become worse quality and contain harsher amounts of minerals."
     }
   ],
-  "tagged_text": "I noticed that <entity type=\"LOCATION\" canonical=\"west_virginia\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">West Virginia</entity> and <entity type=\"LOCATION\" canonical=\"ohio\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Ohio</entity> are on the <entity type=\"LOCATION\" canonical=\"leeward_side_appalachian_mountains\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Leeward Side of the Appalachian Mountains</entity> which is leading to a <entity type=\"EVENT\" canonical=\"rain_shadow\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">rain shadow</entity> being cast on those states. This is causing them to experience some of the highest levels of <entity type=\"EVENT\" canonical=\"drought\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">drought</entity> in the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">country</entity>. \n\nIs <entity type=\"EVENT\" canonical=\"la_nina\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">La Nina</entity> impacting these weather conditions in a substantial way?  \n\n  \n\n The man-made lake near my house is extremely low and I am starting to see cinderblocks and parking curbs which are usually hidden beneath the water. This lake is used as a source of water for some nearby neighborhoods, if the drought continues to evaporate the lake while leaving the sediment behind, the water may become worse quality and contain harsher amounts of minerals."
+  "tagged_text": "I noticed that <entity type=\"LOCATION\" canonical=\"west_virginia\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">West Virginia</entity> and <entity type=\"LOCATION\" canonical=\"ohio\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Ohio</entity> are on the Leeward Side of the <entity type=\"LOCATION\" canonical=\"appalachian_mountains\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Appalachian Mountains</entity> which is leading to a rain shadow being cast on those states. This is causing them to experience some of the highest levels of <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">drought</entity> in the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">country</entity>. \n\n  \n\nIs <entity type=\"EVENT\" canonical=\"la_nina\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">La Nina</entity> impacting these weather conditions in a substantial way?  \n\n  \n\n The man-made lake near <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my house</entity> is extremely low and I am starting to see cinderblocks and parking curbs which are usually hidden beneath the water. This lake is used as a source of water for some nearby neighborhoods, if the drought continues to evaporate the lake while leaving the sediment behind, the water may become worse quality and contain harsher amounts of minerals."
 }

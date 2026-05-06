@@ -7,7 +7,7 @@
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,37 +18,64 @@
       "id": "e0"
     },
     {
-      "surface": "United States",
+      "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 340,
-      "end": 353,
+      "occurrence_index": 0,
+      "start": 45,
+      "end": 59,
       "id": "e1"
+    },
+    {
+      "surface": "country",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "country",
+      "var": "state_names_abbreviations",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 145,
+      "end": 152,
+      "id": "e2"
     },
     {
       "surface": "October",
       "type": "TIME_REFERENCE",
       "canonical": "october",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 186,
+      "end": 193,
+      "id": "e3"
+    },
+    {
+      "surface": "October",
+      "type": "TIME_REFERENCE",
+      "canonical": "october",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
       "start": 515,
       "end": 522,
-      "id": "e2"
+      "id": "e4"
     },
     {
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -56,13 +83,13 @@
       "occurrence_index": 0,
       "start": 545,
       "end": 558,
-      "id": "e3"
+      "id": "e5"
     },
     {
       "surface": "exceptionally dry",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -70,7 +97,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e4"
+      "id": "e6"
     },
     {
       "surface": "global warming",
@@ -83,40 +110,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e5"
-    },
-    {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "people",
-      "type": "OTHER_ENTITY",
-      "canonical": "people",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e7"
     },
     {
-      "surface": "October Brings Drought to the United States",
-      "type": "EVENT",
-      "canonical": "october_brings_drought_to_the_united_states",
+      "surface": "Headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -129,24 +128,12 @@
   ],
   "unresolved_mentions": [
     {
-      "surface": "abnormally dry",
-      "reason": "Likely a drought severity level, but no exact canonical level provided in the dictionary for this article."
-    },
-    {
-      "surface": "country",
-      "reason": "Could refer to the United States, but the surface form is generic and not explicitly tied to a canonical country level here."
-    },
-    {
-      "surface": "drought levels",
-      "reason": "Could refer to drought severity generally, but no exact canonical entity beyond specific severity levels."
-    },
-    {
-      "surface": "lessened quality of living",
-      "reason": "Abstract consequence phrase not in the dictionary."
+      "surface": "people around me",
+      "reason": "Generic group reference; not a specific named group or institution."
     },
     {
       "surface": "lifestyle changes",
-      "reason": "Abstract consequence phrase not in the dictionary."
+      "reason": "Abstract consequence, but not a specific entity in the reference list."
     }
   ],
   "section_segments": [
@@ -157,8 +144,8 @@
     {
       "section": "headline",
       "label": "Headline",
-      "text": "“October Brings Drought to the United States”"
+      "text": "October Brings Drought to the United States"
     }
   ],
-  "tagged_text": "I noticed that most of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> was abnormally dry. I also notice that there is not an obvious pattern in the drought levels across the country.\nI wonder what led to the end of <entity type=\"TIME_REFERENCE\" canonical=\"october\">October</entity> being <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" modality=\"questioned\">exceptionally dry</entity>. I also wonder if <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"questioned\">global warming</entity> is a main factor in this observation.\nThis relates to my community because I live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" speaker_context=\"true\">United States</entity> and drought levels affect where I live and the <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\">people</entity> around me. The drought could cause lessened quality of living and a need for lifestyle changes.\nHeadline: “<entity type=\"EVENT\" canonical=\"october_brings_drought_to_the_united_states\" section=\"headline\">October Brings Drought to the United States</entity>”"
+  "tagged_text": "I noticed that most of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity> was <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>. I also notice that there is not an obvious pattern in the drought levels across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"state_names_abbreviations\">country</entity>.\nI wonder what led to the end of <entity type=\"TIME_REFERENCE\" canonical=\"october\">October</entity> being <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\" modality=\"questioned\">exceptionally dry</entity>. I also wonder if <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"questioned\">global warming</entity> is a main factor in this observation.\nThis relates to my community because I live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" speaker_context=\"true\">United States</entity> and drought levels affect where I live and the people around me. The drought could cause lessened quality of living and a need for lifestyle changes.\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Headline</entity>: “<entity type=\"TIME_REFERENCE\" canonical=\"october\">October</entity> Brings Drought to the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>”"
 }

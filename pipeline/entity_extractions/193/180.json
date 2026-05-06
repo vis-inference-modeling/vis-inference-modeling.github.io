@@ -43,22 +43,23 @@
       "id": "e2"
     },
     {
-      "surface": "Long Island, NY",
-      "type": "LOCATION",
-      "canonical": "long_island",
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 526,
-      "end": 541,
+      "occurrence_index": 3,
+      "start": 600,
+      "end": 605,
       "id": "e3"
     },
     {
-      "surface": "country",
-      "type": "LOCATION",
-      "canonical": "country",
+      "surface": "exceptional",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -67,6 +68,34 @@
       "start": null,
       "end": null,
       "id": "e4"
+    },
+    {
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "Massachusetts",
@@ -79,7 +108,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e5"
+      "id": "e7"
     },
     {
       "surface": "New Jersey",
@@ -92,7 +121,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e8"
     },
     {
       "surface": "Delaware",
@@ -105,13 +134,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e9"
     },
     {
-      "surface": "me and my community",
+      "surface": "me",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -119,24 +148,84 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
-    }
-  ],
-  "unresolved_mentions": [
-    {
-      "surface": "water",
-      "reason": "Could be OTHER_ENTITY, but the comment uses it generically and it is not clearly a target entity here."
+      "id": "e10"
     },
     {
-      "surface": "moderately affected by drought",
-      "reason": "Composite severity phrase; no exact canonical level provided for this surface form."
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    },
+    {
+      "surface": "Long Island, NY",
+      "type": "LOCATION",
+      "canonical": "new_york_city_area",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "moderately",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "moderate",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "- After looking at the graph, I noticed that exceptional and extreme droughts occur more frequently in the inland areas, specifically toward the middle of the country. \n-After looking at the graph, I wonder why there is a severe drought in certain areas along the coastline, such as Massachusetts, New Jersey, and Delaware, since they are close to water. \n-This relates to me and my community because it is important to know how my community is affected by drought so I can plan accordingly. Based on the graph, my community, Long Island, NY, is moderately affected by drought. \n-A headline for this graph could be \"Where did all the water go?!?\""
     }
   ],
-  "tagged_text": "- After looking at the <entity type=\"CHART_ELEMENT\">graph</entity>, I noticed that exceptional and extreme droughts occur more frequently in the inland areas, specifically toward the middle of the <entity type=\"LOCATION\" canonical=\"country\">country</entity>. \n-After looking at the <entity type=\"CHART_ELEMENT\">graph</entity>, I wonder why there is a severe drought in certain areas along the coastline, such as <entity type=\"LOCATION\" canonical=\"massachusetts\">Massachusetts</entity>, <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>, and <entity type=\"LOCATION\" canonical=\"delaware\">Delaware</entity>, since they are close to water. \n-This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">me and my community</entity> because it is important to know how my community is affected by drought so I can plan accordingly. Based on the <entity type=\"CHART_ELEMENT\">graph</entity>, <entity type=\"LOCATION\" canonical=\"long_island\">Long Island, NY</entity>, is moderately affected by drought. \n-A headline for this <entity type=\"CHART_ELEMENT\">graph</entity> could be \"Where did all the water go?!?\""
+  "tagged_text": "- After looking at the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> droughts occur more frequently in the inland areas, specifically toward the middle of the country. \n-After looking at the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I wonder why there is a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity> drought in certain areas along the coastline, such as <entity type=\"LOCATION\" canonical=\"massachusetts\">Massachusetts</entity>, <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>, and <entity type=\"LOCATION\" canonical=\"delaware\">Delaware</entity>, since they are close to water. \n-This relates to <entity type=\"speaker\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"my_community\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because it is important to know how <entity type=\"my_community\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> is affected by drought so I can plan accordingly. Based on the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, <entity type=\"my_community\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity>, <entity type=\"new_york_city_area\" canonical=\"new_york_city_area\" speaker_context=\"true\">Long Island, NY</entity>, is <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderately</entity> affected by drought. \n-A headline for this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> could be \"Where did all the water go?!?\""
 }

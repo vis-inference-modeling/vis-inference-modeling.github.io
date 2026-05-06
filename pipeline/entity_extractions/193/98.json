@@ -17,115 +17,35 @@
       "id": "e0"
     },
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 345,
-      "end": 350,
-      "id": "e1"
-    },
-    {
-      "surface": "locations",
-      "type": "LOCATION",
-      "canonical": "place",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e2"
-    },
-    {
       "surface": "coastal regions",
       "type": "LOCATION",
-      "canonical": "coastal_areas",
+      "canonical": "coast",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e3"
-    },
-    {
-      "surface": "moisture",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e4"
-    },
-    {
-      "surface": "areas",
-      "type": "LOCATION",
-      "canonical": "areas",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e5"
-    },
-    {
-      "surface": "super dry",
-      "type": "EVENT",
-      "canonical": "dry_conditions",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
-    },
-    {
-      "surface": "where we live",
-      "type": "LOCATION",
-      "canonical": "where_we_live",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
+      "start": 98,
+      "end": 113,
+      "id": "e1"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "The dry drought dilema",
-      "reason": "Likely a headline/title, but no explicit headline marker is present and spelling is nonstandard."
+      "surface": "super dry",
+      "reason": "Likely refers to drought severity, but not specific enough to map confidently to a listed level."
+    },
+    {
+      "surface": "rain",
+      "reason": "Generic weather term; not a listed entity type."
+    },
+    {
+      "surface": "where we live",
+      "reason": "Speaker-context location reference is too vague to map to a specific location."
+    },
+    {
+      "surface": "dry drought dilema",
+      "reason": "Headline-like phrase, but not a known chart element or reference-list entity."
     }
   ],
   "section_segments": [
@@ -134,5 +54,5 @@
       "text": "What do you notice?\nI notice the color of the graph is different in different locations \nI notice coastal regions have more moisture \nWhat do you wonder? \nI wonder why some areas are super dry in comparison to others \nHow does this relate to you and your community?\nBecause we need rain where we live \nCreate a catchy headline that captures the graph’s main idea.\nThe dry drought dilema"
     }
   ],
-  "tagged_text": "What do you notice?\nI notice the color of the graph is different in different locations \nI notice coastal regions have more moisture \nWhat do you wonder? \nI wonder why some areas are super dry in comparison to others \nHow does this relate to you and your community?\nBecause we need rain where we live \nCreate a catchy headline that captures the graph’s main idea.\nThe dry drought dilema"
+  "tagged_text": "What do you notice?\nI notice the color of the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> is different in different locations \nI notice <entity type=\"LOCATION\" canonical=\"coast\" section=\"body\">coastal regions</entity> have more moisture \nWhat do you wonder? \nI wonder why some areas are super dry in comparison to others \nHow does this relate to you and your community?\nBecause we need rain where we live \nCreate a catchy headline that captures the graph’s main idea.\nThe dry drought dilema"
 }

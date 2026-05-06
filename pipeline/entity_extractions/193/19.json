@@ -4,10 +4,23 @@
   "raw_comment": "This graph shows the intensity of a drought for the last week of October. Indeed the given data is limited, providing a particular inability to give any conclusions. Dought is an important measurement of the ecological imprint of a particular region; however, it is important to remember that it is usually measured yearly and for multiple years, providing the ability to analyze the whole data set. Probably combining these graphs with others or a combination of them might give some interesting results, but I am not an expert in this field, thus no analogies can be made. Sharing my personal experience I live in a moderate area according to the graph and I haven't noticed any changes compared to other years they did not provide the graphs to compare so no conclusion can be made. Overall just some graph, which is must be posted under the name something, because truly it shows something, but I am not sure what.\n\nHeadline: Something",
   "entities": [
     {
+      "surface": "last week of October",
+      "type": "TIME_REFERENCE",
+      "canonical": "last_week_of_october_2024",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 52,
+      "end": 72,
+      "id": "e0"
+    },
+    {
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -15,48 +28,41 @@
       "occurrence_index": 0,
       "start": 618,
       "end": 626,
-      "id": "e0"
-    },
-    {
-      "surface": "other years",
-      "type": "TIME_REFERENCE",
-      "canonical": "previous_years",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 701,
-      "end": 712,
       "id": "e1"
-    },
-    {
-      "surface": "Something",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 930,
-      "end": 939,
-      "id": "e2"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "last week of October",
-      "reason": "Likely a time reference, but no exact canonical match is provided in the article dictionary."
+      "surface": "Dought",
+      "reason": "Likely misspelling of 'drought'; unclear whether to normalize or treat as a typo."
+    },
+    {
+      "surface": "ecological imprint",
+      "reason": "Abstract phrase, not a listed entity."
     },
     {
       "surface": "yearly",
-      "reason": "Could be a time reference, but the dictionary only provides broader or specific time canonicals."
+      "reason": "Could indicate a time reference, but no specific year or time span is given."
     },
     {
       "surface": "multiple years",
-      "reason": "Could be a time reference, but no exact canonical match is provided."
+      "reason": "Vague time span without a specific canonical match."
+    },
+    {
+      "surface": "the whole data set",
+      "reason": "Generic reference to data, not an entity."
+    },
+    {
+      "surface": "this field",
+      "reason": "Generic reference, not an entity."
+    },
+    {
+      "surface": "other years",
+      "reason": "Vague time reference without a specific canonical match."
+    },
+    {
+      "surface": "something",
+      "reason": "Placeholder headline text; not a clear entity."
     }
   ],
   "section_segments": [
@@ -70,5 +76,5 @@
       "text": "Something"
     }
   ],
-  "tagged_text": "This graph shows the intensity of a drought for the last week of October. Indeed the given data is limited, providing a particular inability to give any conclusions. Dought is an important measurement of the ecological imprint of a particular region; however, it is important to remember that it is usually measured yearly and for multiple years, providing the ability to analyze the whole data set. Probably combining these graphs with others or a combination of them might give some interesting results, but I am not an expert in this field, thus no analogies can be made. Sharing my personal experience I live in a <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\" section=\"body\">moderate</entity> area according to the graph and I haven't noticed any changes compared to <entity type=\"TIME_REFERENCE\" canonical=\"previous_years\" section=\"body\">other years</entity> they did not provide the graphs to compare so no conclusion can be made. Overall just some graph, which is must be posted under the name something, because truly it shows something, but I am not sure what.\n\nHeadline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Something</entity>"
+  "tagged_text": "This graph shows the intensity of a drought for the <entity type=\"TIME_REFERENCE\" canonical=\"last_week_of_october_2024\">last week of October</entity>. Indeed the given data is limited, providing a particular inability to give any conclusions. Dought is an important measurement of the ecological imprint of a particular region; however, it is important to remember that it is usually measured yearly and for multiple years, providing the ability to analyze the whole data set. Probably combining these graphs with others or a combination of them might give some interesting results, but I am not an expert in this field, thus no analogies can be made. Sharing my personal experience I live in a <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity> area according to the graph and I haven't noticed any changes compared to other years they did not provide the graphs to compare so no conclusion can be made. Overall just some graph, which is must be posted under the name something, because truly it shows something, but I am not sure what.\n\nHeadline: Something"
 }

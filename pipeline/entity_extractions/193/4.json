@@ -20,7 +20,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -34,7 +34,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -48,7 +48,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -59,22 +59,24 @@
       "id": "e3"
     },
     {
-      "surface": "Dry Dry Drought, state of the US",
-      "type": "EVENT",
-      "canonical": "dry_dry_drought_state_of_the_us",
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 558,
+      "start": 588,
       "end": 590,
       "id": "e4"
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -85,23 +87,10 @@
       "id": "e5"
     },
     {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
       "surface": "exceptional droughts",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -109,7 +98,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e6"
     },
     {
       "surface": "east coast",
@@ -122,7 +111,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e7"
     },
     {
       "surface": "west coast",
@@ -135,15 +124,28 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e8"
     },
     {
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "extreme event",
+      "type": "EVENT",
+      "canonical": "extreme_event",
+      "section": "numbered_point",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -152,37 +154,10 @@
       "id": "e10"
     },
     {
-      "surface": "water",
+      "surface": "me",
       "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "extreme event",
-      "type": "EVENT",
-      "canonical": "extreme_drought",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "me and my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -190,21 +165,31 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e11"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "lack of sources of water",
-      "reason": "Could imply water scarcity, but the exact canonical entity is not explicit beyond 'water'."
+      "reason": "Contains 'water' but the full phrase is not a confirmed canonical entity; could be a concept or other entity."
     },
     {
       "surface": "external conditions",
-      "reason": "Too vague to map confidently to a provided entity."
-    },
-    {
-      "surface": "more severe conditions",
-      "reason": "Likely refers to drought severity, but the exact level is not explicit."
+      "reason": "Too vague to map confidently to a specific entity type."
     }
   ],
   "section_segments": [
@@ -226,8 +211,8 @@
     {
       "section": "headline",
       "label": "Headline",
-      "text": "- Dry Dry Drought, state of the US"
+      "text": "Dry Dry Drought, state of the US"
     }
   ],
-  "tagged_text": "1. I notice that in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, most of the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is affected my <entity type=\"EVENT\" canonical=\"drought\">droughts</entity> or shown to be in a state of <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional droughts</entity>. Also, the <entity type=\"LOCATION\" canonical=\"east_coast\">east coast</entity> and <entity type=\"LOCATION\" canonical=\"west_coast\">west coast</entity> seem to be only <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\">abnormally dry</entity>, with areas of more severe conditions making a sort of line down the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>.\n\n2. This makes me wonder why these conditions are present, is it lack of sources of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity>, external conditions, or an <entity type=\"EVENT\" canonical=\"extreme_drought\" modality=\"questioned\">extreme event</entity>?\n\n3. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">me and my community</entity> because it is important to know the conditions around the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> and know where people are affected more. \n\nHeadline:\n- <entity type=\"EVENT\" canonical=\"dry_dry_drought_state_of_the_us\" section=\"headline\">Dry Dry Drought, state of the US</entity>"
+  "tagged_text": "1. I notice that in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, most of the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> is affected my <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">droughts</entity> or shown to be in a state of <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional droughts</entity>. Also, the <entity type=\"LOCATION\" canonical=\"east_coast\">east coast</entity> and <entity type=\"LOCATION\" canonical=\"west_coast\">west coast</entity> seem to be only <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>, with areas of more severe conditions making a sort of line down the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>.\n\n2. This makes me wonder why these conditions are present, is it lack of sources of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity>, external conditions, or an <entity type=\"EVENT\" canonical=\"extreme_event\">extreme event</entity>?\n\n3. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because it is important to know the conditions around the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> and know where people are affected more. \n\nHeadline:\n- Dry Dry Drought, state of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">US</entity>"
 }

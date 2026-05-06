@@ -6,8 +6,8 @@
     {
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "us",
-      "var": "country",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -20,8 +20,8 @@
     {
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "us",
-      "var": "country",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -35,7 +35,7 @@
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -49,7 +49,7 @@
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -73,51 +73,52 @@
       "id": "e4"
     },
     {
-      "surface": "Dry and drought conditions",
+      "surface": "Dry",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 354,
-      "end": 380,
+      "end": 357,
       "id": "e5"
     },
     {
-      "surface": "moderate",
+      "surface": "drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "moderate",
-      "var": "drought_severity",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 362,
+      "end": 369,
       "id": "e6"
+    },
+    {
+      "surface": "U.S",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 388,
+      "end": 391,
+      "id": "e7"
     },
     {
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e7"
-    },
-    {
-      "surface": "New York",
-      "type": "LOCATION",
-      "canonical": "new_york",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -126,24 +127,39 @@
       "start": null,
       "end": null,
       "id": "e8"
+    },
+    {
+      "surface": "moderate",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "moderate",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "the states with the most drought",
-      "reason": "Could refer to a region or set of locations, but no specific named location is given."
-    },
-    {
-      "surface": "the far sides of the US",
-      "reason": "Ambiguous geographic region; not a specific tagged location in the provided dictionary."
-    },
-    {
-      "surface": "the country’s",
-      "reason": "Likely refers to the United States, but the reference is incomplete and not fully explicit."
-    },
-    {
-      "surface": "oxygen problems",
-      "reason": "Entity-like phrase but not in the dictionary; unclear whether to tag as OTHER_ENTITY or leave untagged."
+      "surface": "country’s",
+      "reason": "Possibly refers to the United States, but the reference is truncated and not explicit enough to tag confidently."
     }
   ],
   "section_segments": [
@@ -152,5 +168,5 @@
       "text": "I noticed that the states with the most drought are in the middle of the US while the far sides of the US are abnormally dry or moderate.\n-I wonder the main cause of the droughts in most of the country’s \n-This relates to me and my community because in New York where it’s moderate and abnormally dry can cause oxygen problems and can cause more fires.\n-Dry and drought conditions in the U.S"
     }
   ],
-  "tagged_text": "I noticed that the states with the most drought are in the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"us\" var=\"country\">US</entity> while the far sides of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"us\" var=\"country\">US</entity> are <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\">abnormally dry</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderate</entity>.\n-I wonder the main cause of the droughts in most of the country’s \n-This relates to me and my community because in <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> where it’s <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderate</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\">abnormally dry</entity> can cause oxygen problems and can cause more <entity type=\"EVENT\" canonical=\"fires\">fires</entity>.\n-<entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">Dry and drought conditions</entity> in the U.S"
+  "tagged_text": "I noticed that the states with the most drought are in the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> while the far sides of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> are <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity>.\n-I wonder the main cause of the droughts in most of the country’s \n-This relates to me and my community because in <entity type=\"LOCATION\" canonical=\"new_york\" speaker_context=\"true\">New York</entity> where it’s <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity> can cause oxygen problems and can cause more <entity type=\"EVENT\" canonical=\"fires\">fires</entity>.\n-<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">Dry</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity> conditions in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S</entity>"
 }

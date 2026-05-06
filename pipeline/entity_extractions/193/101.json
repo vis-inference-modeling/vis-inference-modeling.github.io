@@ -7,7 +7,7 @@
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -73,7 +73,7 @@
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -84,35 +84,49 @@
       "id": "e5"
     },
     {
+      "surface": "climate",
+      "type": "OTHER_ENTITY",
+      "canonical": "climate",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 566,
+      "end": 573,
+      "id": "e6"
+    },
+    {
       "surface": "global warming",
       "type": "EVENT",
       "canonical": "global_warming",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 619,
       "end": 633,
-      "id": "e6"
+      "id": "e7"
     },
     {
       "surface": "climate change",
       "type": "EVENT",
       "canonical": "climate_change",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 638,
       "end": 652,
-      "id": "e7"
+      "id": "e8"
     },
     {
-      "surface": "my community and me",
+      "surface": "my community",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
+      "canonical": "my_community",
       "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
@@ -120,8 +134,22 @@
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 736,
+      "end": 748,
+      "id": "e9"
+    },
+    {
+      "surface": "me",
+      "type": "OTHER_ENTITY",
+      "canonical": "speaker",
+      "subtype": "person",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 753,
       "end": 755,
-      "id": "e8"
+      "id": "e10"
     },
     {
       "surface": "country",
@@ -134,46 +162,7 @@
       "occurrence_index": 0,
       "start": 781,
       "end": 788,
-      "id": "e9"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 815,
-      "end": 823,
-      "id": "e10"
-    },
-    {
-      "surface": "rainfall",
-      "type": "EVENT",
-      "canonical": "rainfall",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 866,
-      "end": 874,
       "id": "e11"
-    },
-    {
-      "surface": "cooler temperatures",
-      "type": "EVENT",
-      "canonical": "cooler_temperatures",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 879,
-      "end": 898,
-      "id": "e12"
     },
     {
       "surface": "New Jersey",
@@ -186,17 +175,13 @@
       "occurrence_index": 0,
       "start": 931,
       "end": 941,
-      "id": "e13"
+      "id": "e12"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "dry conditions",
-      "reason": "Could refer to drought severity or general weather; not an exact dictionary match."
-    },
-    {
       "surface": "The drought",
-      "reason": "Likely a headline/title fragment, but incomplete and not enough context to map confidently."
+      "reason": "Appears to be a truncated headline; no clear entity beyond the generic drought concept, which is not a listed level here."
     }
   ],
   "section_segments": [
@@ -221,5 +206,5 @@
       "text": "The drought"
     }
   ],
-  "tagged_text": "1.  What do you notice?\nCurrently, most of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> is experiencing dry conditions, except for a few states such as <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> and most of <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity>. Certain areas in the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> and the <entity type=\"LOCATION\" canonical=\"south\">South</entity> are particularly affected, facing extremely dry circumstances. The majority of states are categorized as <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\">abnormally dry</entity>, highlighting a significant concern regarding the overall moisture levels across the country.\n2. what do you wonder?\nI wonder what actions we can take to prevent this issue, and why it isn't discussed more often. I also wonder how we can address our climate challenges, as this indicates the effects of <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"questioned\">global warming</entity> and <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity>.\n3. How does this relate to you and your community?\nThis topic resonates with both <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my community and me</entity> because we all inhabit a <entity type=\"LOCATION\" canonical=\"country\" speaker_context=\"true\">country</entity> significantly impacted by <entity type=\"EVENT\" canonical=\"drought\" speaker_context=\"true\">droughts</entity> that occur when we should be experiencing <entity type=\"EVENT\" canonical=\"rainfall\">rainfall</entity> and <entity type=\"EVENT\" canonical=\"cooler_temperatures\">cooler temperatures</entity>. Having been born and raised in <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>.\n4. The drought"
+  "tagged_text": "1.  What do you notice?\nCurrently, most of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity> is experiencing dry conditions, except for a few states such as <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> and most of <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity>. Certain areas in the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> and the <entity type=\"LOCATION\" canonical=\"south\">South</entity> are particularly affected, facing extremely dry circumstances. The majority of states are categorized as <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>, highlighting a significant concern regarding the overall moisture levels across the country.\n2. what do you wonder?\nI wonder what actions we can take to prevent this issue, and why it isn't discussed more often. I also wonder how we can address our <entity type=\"OTHER_ENTITY\" canonical=\"climate\" subtype=\"concept\">climate</entity> challenges, as this indicates the effects of <entity type=\"EVENT\" canonical=\"global_warming\">global warming</entity> and <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity>.\n3. How does this relate to you and your community?\nThis topic resonates with both <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> because we all inhabit a <entity type=\"LOCATION\" canonical=\"country\" speaker_context=\"true\">country</entity> significantly impacted by droughts that occur when we should be experiencing rainfall and cooler temperatures. Having been born and raised in <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>.\n4. The drought"
 }

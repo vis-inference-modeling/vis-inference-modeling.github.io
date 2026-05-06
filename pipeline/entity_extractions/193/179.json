@@ -19,7 +19,7 @@
     {
       "surface": "Southwest",
       "type": "LOCATION",
-      "canonical": "southwest_region",
+      "canonical": "southwest",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -56,24 +56,24 @@
       "id": "e3"
     },
     {
-      "surface": "exceptional",
+      "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 660,
-      "end": 671,
+      "end": 679,
       "id": "e4"
     },
     {
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -84,17 +84,17 @@
       "id": "e5"
     },
     {
-      "surface": "abnormally dry",
+      "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "canonical": "moderate",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 727,
-      "end": 741,
+      "occurrence_index": 1,
+      "start": 834,
+      "end": 842,
       "id": "e6"
     },
     {
@@ -107,62 +107,35 @@
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 761,
-      "end": 763,
+      "start": 871,
+      "end": 873,
       "id": "e7"
     },
     {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "surface": "Michigan",
+      "type": "LOCATION",
+      "canonical": "michigan",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 768,
-      "end": 780,
+      "start": 968,
+      "end": 976,
       "id": "e8"
     },
     {
-      "surface": "Michigan",
-      "type": "LOCATION",
-      "canonical": "michigan",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 803,
-      "end": 811,
-      "id": "e9"
-    },
-    {
-      "surface": "Michigan",
-      "type": "LOCATION",
-      "canonical": "michigan",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 968,
-      "end": 976,
-      "id": "e10"
-    },
-    {
-      "surface": "Is America Drying Up?",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "surface": "Headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1201,
-      "end": 1222,
-      "id": "e11"
+      "start": 1191,
+      "end": 1199,
+      "id": "e9"
     },
     {
       "surface": "Florida",
@@ -175,7 +148,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e10"
     },
     {
       "surface": "Texas",
@@ -188,7 +161,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e11"
     },
     {
       "surface": "Texas",
@@ -201,13 +174,13 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e12"
     },
     {
-      "surface": "exceptional",
+      "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -215,13 +188,13 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e13"
     },
     {
-      "surface": "exceptional",
+      "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -229,33 +202,102 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e16"
+    },
+    {
+      "surface": "Michigan",
+      "type": "LOCATION",
+      "canonical": "michigan",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e17"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e18"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e19"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "no drought",
-      "reason": "Negated condition; could imply absence of drought severity but no exact canonical entity."
+      "surface": "no drought at all",
+      "reason": "Negated absence of drought; not a listed drought severity level and unclear whether to tag as a level."
     },
     {
-      "surface": "severe/moderate drought",
-      "reason": "Composite phrase combining severity levels; could be split, but the exact surface is not a canonical level."
+      "surface": "other states",
+      "reason": "Generic reference to unspecified states; no specific canonical mapping."
     },
     {
-      "surface": "fruits and vegetables",
-      "reason": "Could be OTHER_ENTITY (food/agriculture), but not explicitly listed as a canonical entity."
+      "surface": "my family",
+      "reason": "Speaker-context group, but not in the provided entity dictionary and not clearly a reference-list entity."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice that the most intense areas of the drought are concentrated in the Northwest and Southwest, with a little area in the Northeast. The area with the least drought is Florida. I also notice that Texas has the most diversity because it has all the types of severity even though it’s only one state. \n\tI wonder how Texas is able to have exceptional drought as well as no drought at all in the same general area. I also wonder what factors cause the areas that are experiencing exceptional drought to become that way. Additionally, because most of the more severe drought is concentrated in the same area, I wonder why that little area in the Northeast has exceptional drought when most of the area around it is moderate or abnormally dry. \n\tThis relates to me and my community because the map shows Michigan experiencing a severe/moderate drought, which could affect me personally. Fields need water to thrive, so if we are experiencing a severe drought, farms in Michigan may struggle to yield crops. Also, lots of fruits and vegetables my family buys at the store come from other states, so if those states are experiencing a drought then it might affect what I can buy at the store."
+      "text": "I notice that the most intense areas of the drought are concentrated in the Northwest and Southwest, with a little area in the Northeast. The area with the least drought is Florida. I also notice that Texas has the most diversity because it has all the types of severity even though it’s only one state. \n\tI wonder how Texas is able to have exceptional drought as well as no drought at all in the same general area. I also wonder what factors cause the areas that are experiencing exceptional drought to become that way. Additionally, because most of the more severe drought is concentrated in the same area, I wonder why that little area in the Northeast has exceptional drought when most of the area around it is moderate or abnormally dry. \n\tThis relates to me and my community because the map shows Michigan experiencing a severe/moderate drought, which could affect me personally. Fields need water to thrive, so if we are experiencing a severe drought, farms in Michigan may struggle to yield crops. Also, lots of fruits and vegetables my family buys at the store come from other states, so if those states are experiencing a drought then it might affect what I can buy at the store. \nHeadline: Is America Drying Up?"
     },
     {
       "section": "headline",
-      "label": "Is America Drying Up?",
+      "label": "Headline",
       "text": "Is America Drying Up?"
     }
   ],
-  "tagged_text": "I notice that the most intense areas of the drought are concentrated in the <entity type=\"LOCATION\" canonical=\"northwest\">Northwest</entity> and <entity type=\"LOCATION\" canonical=\"southwest_region\">Southwest</entity>, with a little area in the <entity type=\"LOCATION\" canonical=\"northeast\">Northeast</entity>. The area with the least drought is <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity>. I also notice that <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> has the most diversity because it has all the types of severity even though it’s only one state. \n\tI wonder how <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> is able to have <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional</entity> drought as well as no drought at all in the same general area. I also wonder what factors cause the areas that are experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional</entity> drought to become that way. Additionally, because most of the more severe drought is concentrated in the same area, I wonder why that little area in the <entity type=\"LOCATION\" canonical=\"northeast\">Northeast</entity> has <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional</entity> drought when most of the area around it is <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderate</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\">abnormally dry</entity>. \n\tThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because the map shows <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> experiencing a severe/moderate drought, which could affect me personally. Fields need water to thrive, so if we are experiencing a severe drought, farms in <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> may struggle to yield crops. Also, lots of fruits and vegetables my family buys at the store come from other states, so if those states are experiencing a drought then it might affect what I can buy at the store. \n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Is America Drying Up?</entity>"
+  "tagged_text": "I notice that the most intense areas of the drought are concentrated in the <entity type=\"LOCATION\" canonical=\"northwest\">Northwest</entity> and <entity type=\"LOCATION\" canonical=\"southwest\">Southwest</entity>, with a little area in the <entity type=\"LOCATION\" canonical=\"northeast\">Northeast</entity>. The area with the least drought is <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity>. I also notice that <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> has the most diversity because it has all the types of severity even though it’s only one state. \n\tI wonder how <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> is able to have <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity> as well as no drought at all in the same general area. I also wonder what factors cause the areas that are experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity> to become that way. Additionally, because most of the more severe drought is concentrated in the same area, I wonder why that little area in the <entity type=\"LOCATION\" canonical=\"northeast\">Northeast</entity> has <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity> when most of the area around it is <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>. \n\tThis relates to <entity type=\"speaker\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"my_community\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because the map shows <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> experiencing a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity>/<entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity> drought, which could affect me personally. Fields need water to thrive, so if we are experiencing a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity> drought, farms in <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> may struggle to yield crops. Also, lots of fruits and vegetables my family buys at the store come from other states, so if those states are experiencing a drought then it might affect what I can buy at the store. \n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Headline</entity>: Is America Drying Up?"
 }

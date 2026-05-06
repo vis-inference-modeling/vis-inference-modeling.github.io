@@ -18,8 +18,8 @@
     },
     {
       "surface": "The World is Getting Dry",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -32,12 +32,8 @@
   ],
   "unresolved_mentions": [
     {
-      "surface": "where in Alaska",
-      "reason": "The phrase indicates an unspecified sub-location within Alaska, but no more specific location is given."
-    },
-    {
       "surface": "The World",
-      "reason": "Could be a rhetorical/global reference or a title element; treated as part of the headline title rather than a standalone LOCATION."
+      "reason": "Appears in a headline-like title; could be rhetorical or a global scope reference, but not enough context to tag separately."
     }
   ],
   "section_segments": [
@@ -51,5 +47,5 @@
       "text": "The World is Getting Dry"
     }
   ],
-  "tagged_text": "Wonder: I wonder where in <entity type=\"LOCATION\" canonical=\"alaska\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Alaska</entity> was affected. \nTitle: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">The World is Getting Dry</entity>"
+  "tagged_text": "Wonder: I wonder where in <entity type=\"LOCATION\" canonical=\"alaska\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Alaska</entity> was affected. \nTitle: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">The World is Getting Dry</entity>"
 }

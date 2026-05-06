@@ -4,24 +4,28 @@
   "raw_comment": "I'm curious about how the drought situation is impacting US food production???",
   "entities": [
     {
-      "surface": "US food production",
-      "type": "OTHER_ENTITY",
-      "canonical": "us_food_production",
-      "subtype": "other",
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 57,
-      "end": 75,
+      "end": 59,
       "id": "e0"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "drought situation",
-      "reason": "Refers to drought generally, but no exact canonical EVENT/OTHER_ENTITY entry is confirmed in the article dictionary."
+      "reason": "Refers to drought generally, but no specific drought severity level or variable is explicitly named."
+    },
+    {
+      "surface": "food production",
+      "reason": "Not in the reference list and not clearly one of the confirmed normalized entities."
     }
   ],
   "section_segments": [
@@ -30,5 +34,5 @@
       "text": "I'm curious about how the drought situation is impacting US food production???"
     }
   ],
-  "tagged_text": "I'm curious about how the drought situation is impacting <entity type=\"OTHER_ENTITY\" canonical=\"us_food_production\" subtype=\"other\" modality=\"questioned\">US food production</entity>???"
+  "tagged_text": "I'm curious about how the drought situation is impacting <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> food production???"
 }

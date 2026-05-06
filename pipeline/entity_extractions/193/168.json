@@ -6,8 +6,8 @@
     {
       "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -35,7 +35,7 @@
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -49,7 +49,7 @@
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -86,19 +86,6 @@
       "id": "e5"
     },
     {
-      "surface": "phenomena",
-      "type": "EVENT",
-      "canonical": "phenomena",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 578,
-      "end": 587,
-      "id": "e6"
-    },
-    {
       "surface": "Michigan",
       "type": "LOCATION",
       "canonical": "michigan",
@@ -109,13 +96,13 @@
       "occurrence_index": 0,
       "start": 665,
       "end": 673,
-      "id": "e7"
+      "id": "e6"
     },
     {
       "surface": "severe",
       "type": "DATA_VAR_LEVEL",
       "canonical": "severe",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -123,59 +110,34 @@
       "occurrence_index": 0,
       "start": 688,
       "end": 694,
-      "id": "e8"
+      "id": "e7"
     },
     {
-      "surface": "our particular area",
-      "type": "LOCATION",
-      "canonical": "my_area",
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 725,
-      "end": 744,
-      "id": "e9"
+      "start": 761,
+      "end": 775,
+      "id": "e8"
     },
     {
-      "surface": "national crisis",
-      "type": "EVENT",
-      "canonical": "national_crisis",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 869,
-      "end": 884,
-      "id": "e10"
-    },
-    {
-      "surface": "Desert Warfare",
-      "type": "EVENT",
-      "canonical": "desert_warfare",
+      "surface": "Desert Warfare: Drought Ravages America",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 914,
-      "end": 928,
-      "id": "e11"
-    },
-    {
-      "surface": "Drought Ravages America",
-      "type": "EVENT",
-      "canonical": "drought_ravages_america",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 930,
       "end": 953,
-      "id": "e12"
+      "id": "e9"
     },
     {
       "surface": "United States",
@@ -188,28 +150,32 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "remarkable drought",
-      "type": "EVENT",
-      "canonical": "remarkable_drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
+      "id": "e10"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "the spot on the chart farthest from \"exceptional drought\"",
+      "reason": "Describes a chart position rather than a standalone entity; could refer to a severity level but is not explicit."
+    },
+    {
+      "surface": "the graph",
+      "reason": "Generic chart reference already covered by the chart element headline; not separately tagged to avoid duplication."
+    },
+    {
+      "surface": "phenomena",
+      "reason": "Abstract causal term with no clear canonical entity."
+    },
+    {
+      "surface": "national crisis",
+      "reason": "Abstract concept, not a listed entity."
+    }
+  ],
   "section_segments": [
     {
       "section": "body",
       "text": "- I notice that the spot on the chart farthest from \"exceptional drought\" is labelled \"abnormally dry,\" implying that the United States altogether is experiencing a period of remarkable drought. It's peculiar that the graph goes out of the way to avoid sharing this insight outright, even going so far as to label the level one worse than \"abnormally dry\" as \"moderate,\" which feels misleading. \n- I wonder why some of the states known for being particularly hot and dry, namely Texas and California, aren't the states experiencing the highest drought conditions. I wonder what phenomena could have occurred to cause such a situation.\n- I notice that a majority of Michigan is suffering \"severe\" drought conditions, although our particular area is only in the \"abnormally dry\" section, which still isn't ideal. If this map is to be believed, this drought seems to be a national crisis, and should be addressed. \n- Desert Warfare: Drought Ravages America"
     }
   ],
-  "tagged_text": "- I notice that the spot on the chart farthest from \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional drought</entity>\" is labelled \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\">abnormally dry</entity>\", implying that the <entity type=\"LOCATION\" canonical=\"united_states\">United States</entity> altogether is experiencing a period of <entity type=\"EVENT\" canonical=\"remarkable_drought\">remarkable drought</entity>. It's peculiar that the graph goes out of the way to avoid sharing this insight outright, even going so far as to label the level one worse than \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\">abnormally dry</entity>\" as \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderate</entity>\", which feels misleading. \n- I wonder why some of the states known for being particularly hot and dry, namely <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> and <entity type=\"LOCATION\" canonical=\"california\">California</entity>, aren't the states experiencing the highest drought conditions. I wonder what <entity type=\"EVENT\" canonical=\"phenomena\">phenomena</entity> could have occurred to cause such a situation.\n- I notice that a majority of <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> is suffering \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity>\" drought conditions, although <entity type=\"LOCATION\" canonical=\"my_area\" speaker_context=\"true\">our particular area</entity> is only in the \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\">abnormally dry</entity>\" section, which still isn't ideal. If this map is to be believed, this drought seems to be a <entity type=\"EVENT\" canonical=\"national_crisis\">national crisis</entity>, and should be addressed. \n- <entity type=\"EVENT\" canonical=\"desert_warfare\">Desert Warfare</entity>: <entity type=\"EVENT\" canonical=\"drought_ravages_america\">Drought Ravages America</entity>"
+  "tagged_text": "- I notice that the spot on the chart farthest from \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity>\" is labelled \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>\", implying that the <entity type=\"LOCATION\" canonical=\"united_states\" speaker_context=\"false\">United States</entity> altogether is experiencing a period of remarkable drought. It's peculiar that the graph goes out of the way to avoid sharing this insight outright, even going so far as to label the level one worse than \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>\" as \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity>\", which feels misleading. \n- I wonder why some of the states known for being particularly hot and dry, namely <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> and <entity type=\"LOCATION\" canonical=\"california\">California</entity>, aren't the states experiencing the highest drought conditions. I wonder what phenomena could have occurred to cause such a situation.\n- I notice that a majority of <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> is suffering \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity>\" drought conditions, although our particular area is only in the \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" speaker_context=\"true\">abnormally dry</entity>\" section, which still isn't ideal. If this map is to be believed, this drought seems to be a national crisis, and should be addressed. \n- <entity type=\"CHART_ELEMENT\" canonical=\"headline\">Desert Warfare: Drought Ravages America</entity>"
 }

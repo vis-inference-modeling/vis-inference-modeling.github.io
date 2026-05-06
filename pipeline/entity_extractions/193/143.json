@@ -7,7 +7,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -33,8 +33,9 @@
     },
     {
       "surface": "abnormally dry",
-      "type": "EVENT",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -48,7 +49,7 @@
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -59,61 +60,63 @@
       "id": "e3"
     },
     {
-      "surface": "rainstorms",
-      "type": "EVENT",
-      "canonical": "rainstorms",
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 337,
-      "end": 347,
+      "start": 308,
+      "end": 313,
       "id": "e4"
     },
     {
-      "surface": "hurricanes",
-      "type": "EVENT",
-      "canonical": "hurricanes",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 351,
-      "end": 361,
-      "id": "e5"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 414,
-      "end": 421,
-      "id": "e6"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 843,
-      "end": 850,
+      "start": 380,
+      "end": 385,
+      "id": "e5"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 663,
+      "end": 668,
+      "id": "e6"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 700,
+      "end": 706,
       "id": "e7"
     },
     {
       "surface": "exceptional drought",
-      "type": "EVENT",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -124,36 +127,9 @@
       "id": "e8"
     },
     {
-      "surface": "Where Did the Water Go?: America is Plagued With Drought",
-      "type": "OTHER_ENTITY",
-      "canonical": "where_did_the_water_go_america_is_plagued_with_drought",
-      "subtype": "headline_title",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1032,
-      "end": 1088,
-      "id": "e9"
-    },
-    {
-      "surface": "water shortage",
-      "type": "EVENT",
-      "canonical": "water_shortage",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "western Texas",
+      "surface": "Texas",
       "type": "LOCATION",
-      "canonical": "west_texas",
+      "canonical": "texas",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -161,7 +137,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e9"
     },
     {
       "surface": "Ohio",
@@ -174,7 +150,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e10"
     },
     {
       "surface": "West Virginia",
@@ -187,99 +163,49 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e11"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
+      "surface": "hurricanes",
+      "type": "EVENT",
+      "canonical": "hurricanes_helene_and_milton",
       "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "where I live",
-      "type": "LOCATION",
-      "canonical": "my_location",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "my state",
-      "type": "LOCATION",
-      "canonical": "my_state",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
-      "surface": "severe",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "severe",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e12"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "the border between Ohio and West Virginia",
-      "reason": "Composite location phrase; could be split into two locations plus a relation, but the exact span is not a standard canonical location."
+      "surface": "water shortage",
+      "reason": "Concept-like phrase related to drought, but no confirmed canonical ID is provided in the reference list."
     },
     {
-      "surface": "places that aren’t colored",
-      "reason": "Likely refers to unshaded map regions, but no specific location is named."
+      "surface": "my community",
+      "reason": "Speaker-context location-like reference, but no specific canonical mapping is available in the provided list for this comment."
     },
     {
-      "surface": "the worst of it",
-      "reason": "Refers to severity of drought, but is too implicit to tag confidently."
+      "surface": "water",
+      "reason": "Generic substance reference; no confirmed canonical ID in the provided list."
+    },
+    {
+      "surface": "normal amount of water",
+      "reason": "Phrase is too vague to map confidently to a specific entity."
+    },
+    {
+      "surface": "Where Did the Water Go?: America is Plagued With Drought",
+      "reason": "Looks like a headline, but it is not clearly marked as a chart element in the provided normalized dictionary."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I noticed that almost everywhere in the US is experiencing some sort of water shortage. It is the most extreme in western Texas and the border between Ohio and West Virginia. Lots of parts of the US are “abnormally dry”, but there are many places that are in the “moderate” or above group. I wonder how this graph looks after widespread rainstorms or hurricanes. I wonder if this graph is always this colored with drought or is it more extreme right now than normal? I wonder if the places that aren’t colored have a normal amount of water or if it just hasn’t been reported. This relates to my community because it has been very dry where I live lately and this graph shows that my state is in the “severe” group which is very abnormal for it. This can help my community prepare and use water sparingly, since we are not used to this kind of drought. It also provides perspective that we aren’t even in the worst of it, but how bad it feels, so it must feel even worse it the “exceptional drought” areas."
-    },
-    {
-      "section": "headline",
-      "label": "I would title this graph",
-      "text": "Where Did the Water Go?: America is Plagued With Drought"
+      "text": "I noticed that almost everywhere in the US is experiencing some sort of water shortage. It is the most extreme in western Texas and the border between Ohio and West Virginia. Lots of parts of the US are “abnormally dry”, but there are many places that are in the “moderate” or above group. I wonder how this graph looks after widespread rainstorms or hurricanes. I wonder if this graph is always this colored with drought or is it more extreme right now than normal? I wonder if the places that aren’t colored have a normal amount of water or if it just hasn’t been reported. This relates to my community because it has been very dry where I live lately and this graph shows that my state is in the “severe” group which is very abnormal for it. This can help my community prepare and use water sparingly, since we are not used to this kind of drought. It also provides perspective that we aren’t even in the worst of it, but how bad it feels, so it must feel even worse it the “exceptional drought” areas. I would title this graph: Where Did the Water Go?: America is Plagued With Drought"
     }
   ],
-  "tagged_text": "I noticed that almost everywhere in the US is experiencing some sort of water shortage. It is the most extreme in western Texas and the border between Ohio and West Virginia. Lots of parts of the US are “abnormally dry”, but there are many places that are in the “moderate” or above group. I wonder how this graph looks after widespread rainstorms or hurricanes. I wonder if this graph is always this colored with drought or is it more extreme right now than normal? I wonder if the places that aren’t colored have a normal amount of water or if it just hasn’t been reported. This relates to my community because it has been very dry where I live lately and this graph shows that my state is in the “severe” group which is very abnormal for it. This can help my community prepare and use water sparingly, since we are not used to this kind of drought. It also provides perspective that we aren’t even in the worst of it, but how bad it feels, so it must feel even worse it the “exceptional drought” areas. I would title this graph: Where Did the Water Go?: America is Plagued With Drought"
+  "tagged_text": "I noticed that almost everywhere in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> is experiencing some sort of water shortage. It is the most extreme in western <entity type=\"LOCATION\" canonical=\"texas\" speaker_context=\"false\">Texas</entity> and the border between <entity type=\"LOCATION\" canonical=\"ohio\" speaker_context=\"false\">Ohio</entity> and <entity type=\"LOCATION\" canonical=\"west_virginia\" speaker_context=\"false\">West Virginia</entity>. Lots of parts of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> are “<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>”, but there are many places that are in the “<entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity>” or above group. I wonder how this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> looks after widespread rainstorms or <entity type=\"EVENT\" canonical=\"hurricanes_helene_and_milton\" modality=\"questioned\">hurricanes</entity>. I wonder if this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> is always this colored with drought or is it more extreme right now than normal? I wonder if the places that aren’t colored have a normal amount of water or if it just hasn’t been reported. This relates to my community because it has been very dry where I live lately and this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows that my state is in the “<entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity>” group which is very abnormal for it. This can help my community prepare and use water sparingly, since we are not used to this kind of drought. It also provides perspective that we aren’t even in the worst of it, but how bad it feels, so it must feel even worse it the “<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity>” areas. I would title this graph: Where Did the Water Go?: America is Plagued With Drought"
 }

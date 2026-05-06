@@ -34,7 +34,7 @@
       "type": "LOCATION",
       "canonical": "colorado_river",
       "section": "body",
-      "modality": "hypothetical",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -46,8 +46,9 @@
       "surface": "water source",
       "type": "OTHER_ENTITY",
       "canonical": "water_source",
+      "subtype": "other",
       "section": "body",
-      "modality": "hypothetical",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -56,24 +57,24 @@
       "id": "e3"
     },
     {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "section": "body",
-      "modality": "hypothetical",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 492,
-      "end": 497,
-      "id": "e4"
-    },
-    {
       "surface": "Ohio",
       "type": "LOCATION",
       "canonical": "ohio",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "West Virginia",
+      "type": "LOCATION",
+      "canonical": "west_virginia",
+      "section": "body",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -82,11 +83,11 @@
       "id": "e5"
     },
     {
-      "surface": "West Virginia",
+      "surface": "Atlantic Ocean",
       "type": "LOCATION",
-      "canonical": "west_virginia",
+      "canonical": "atlantic_ocean",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -95,44 +96,31 @@
       "id": "e6"
     },
     {
-      "surface": "Atlantic Ocean",
+      "surface": "Great Lakes",
       "type": "LOCATION",
-      "canonical": "atlantic_ocean",
+      "canonical": "great_lakes",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e7"
-    },
-    {
-      "surface": "Great Lakes",
-      "type": "LOCATION",
-      "canonical": "great_lakes",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "northern part",
-      "reason": "Directional geographic phrase without an exact canonical match; could refer to northern Colorado or a broader region."
+      "reason": "Region reference within Colorado, but no exact canonical location provided."
     },
     {
-      "surface": "state's land",
-      "reason": "Generic possessive geographic phrase not in the dictionary; likely rhetorical."
+      "surface": "states",
+      "reason": "Generic plural geographic reference; no specific canonical match beyond the generic 'states' level, which is not clearly intended here."
     },
     {
-      "surface": "moisturizer",
-      "reason": "Metaphorical wording, not an entity."
+      "surface": "lives in those states",
+      "reason": "Contains a generic reference to people/lives in states, but the entity focus is unclear and not directly mappable."
     }
   ],
   "section_segments": [
@@ -141,5 +129,5 @@
       "text": "Even though Colorado feels pretty dry compared to other states, most of the state doesn't seem to be effected by drought. Only the northern part seems to be suffering from drought.\n\nWhy is the area between Ohio and West Virginia suffering from drought if they're next to the Atlantic Ocean and the Great Lakes.\n\nIf drought continues south of Colorado, or the Colorado River starts to dry up, states that rely on the river will have to find a different water source and anything that requires water will have to find a different source soon, or it will be quite difficult for lives in those states.\n\nA headline would be \"Does your state's land need some moisturizer?\""
     }
   ],
-  "tagged_text": "Even though <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Colorado</entity> feels pretty dry compared to other states, most of the state doesn't seem to be effected by drought. Only the northern part seems to be suffering from drought.\n\nWhy is the area between <entity type=\"LOCATION\" canonical=\"ohio\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Ohio</entity> and <entity type=\"LOCATION\" canonical=\"west_virginia\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">West Virginia</entity> suffering from drought if they're next to the <entity type=\"LOCATION\" canonical=\"atlantic_ocean\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Atlantic Ocean</entity> and the <entity type=\"LOCATION\" canonical=\"great_lakes\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Great Lakes</entity>.\n\nIf drought continues south of <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\" modality=\"hypothetical\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Colorado</entity>, or the <entity type=\"LOCATION\" canonical=\"colorado_river\" section=\"body\" modality=\"hypothetical\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Colorado River</entity> starts to dry up, states that rely on the river will have to find a different <entity type=\"OTHER_ENTITY\" canonical=\"water_source\" section=\"body\" modality=\"hypothetical\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">water source</entity> and anything that requires <entity type=\"OTHER_ENTITY\" canonical=\"water\" section=\"body\" modality=\"hypothetical\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">water</entity> will have to find a different source soon, or it will be quite difficult for lives in those states.\n\nA headline would be \"Does your state's land need some moisturizer?\""
+  "tagged_text": "Even though <entity type=\"LOCATION\" canonical=\"colorado\">Colorado</entity> feels pretty dry compared to other states, most of the state doesn't seem to be effected by drought. Only the northern part seems to be suffering from drought.\n\nWhy is the area between <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> and <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity> suffering from drought if they're next to the <entity type=\"LOCATION\" canonical=\"atlantic_ocean\">Atlantic Ocean</entity> and the <entity type=\"LOCATION\" canonical=\"great_lakes\">Great Lakes</entity>.\n\nIf drought continues south of <entity type=\"LOCATION\" canonical=\"colorado\">Colorado</entity>, or the <entity type=\"LOCATION\" canonical=\"colorado_river\">Colorado River</entity> starts to dry up, states that rely on the river will have to find a different <entity type=\"OTHER_ENTITY\" canonical=\"water_source\" subtype=\"other\">water source</entity> and anything that requires water will have to find a different source soon, or it will be quite difficult for lives in those states.\n\nA headline would be \"Does your state's land need some moisturizer?\""
 }

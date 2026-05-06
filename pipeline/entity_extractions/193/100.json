@@ -4,62 +4,50 @@
   "raw_comment": "I noticed that there is darker red in the middle of the map. I wonder why there is dark red in Ohio and West Virgina because it is an outlier. It relates to me and my community because recently my community went through a very long period without rain, we didn’t have rain for over a month. A headline that I would use is “Drought’s throughout the U.S.”",
   "entities": [
     {
-      "surface": "middle of the map",
-      "type": "CHART_ELEMENT",
-      "canonical": "map_middle",
+      "surface": "Ohio",
+      "type": "LOCATION",
+      "canonical": "ohio",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 42,
-      "end": 59,
-      "id": "e0"
-    },
-    {
-      "surface": "Ohio",
-      "type": "LOCATION",
-      "canonical": "ohio",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
       "start": 95,
       "end": 99,
-      "id": "e1"
+      "id": "e0"
     },
     {
       "surface": "West Virgina",
       "type": "LOCATION",
       "canonical": "west_virginia",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 104,
       "end": 116,
-      "id": "e2"
+      "id": "e1"
     },
     {
-      "surface": "me and my community",
+      "surface": "me",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
-      "subtype": "other",
       "occurrence_index": 0,
       "start": 157,
-      "end": 176,
-      "id": "e3"
+      "end": 159,
+      "id": "e2"
     },
     {
       "surface": "my community",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -67,12 +55,13 @@
       "occurrence_index": 0,
       "start": 164,
       "end": 176,
-      "id": "e4"
+      "id": "e3"
     },
     {
       "surface": "my community",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -80,76 +69,65 @@
       "occurrence_index": 1,
       "start": 194,
       "end": 206,
+      "id": "e4"
+    },
+    {
+      "surface": "Drought’s",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 323,
+      "end": 332,
       "id": "e5"
     },
     {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 247,
-      "end": 251,
-      "id": "e6"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 268,
-      "end": 272,
-      "id": "e7"
-    },
-    {
-      "surface": "over a month",
-      "type": "TIME_REFERENCE",
-      "canonical": "month_of_year",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 277,
-      "end": 289,
-      "id": "e8"
-    },
-    {
-      "surface": "Drought’s throughout the U.S.",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 323,
+      "start": 348,
       "end": 352,
-      "id": "e9"
+      "id": "e6"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "darker red",
-      "reason": "Likely a chart color reference, but color terms are not in the chart-element list for this article."
+      "reason": "Likely a map color reference, but not enough context to map confidently to a chart element or level."
     },
     {
       "surface": "outlier",
-      "reason": "Statistical/chart interpretation term, but not a listed entity type."
+      "reason": "Abstract statistical concept; not a listed entity type."
+    },
+    {
+      "surface": "rain",
+      "reason": "Generic weather term; not a listed entity type."
+    },
+    {
+      "surface": "without rain for over a month",
+      "reason": "Temporal span is clear, but not in the provided time-reference list."
     }
   ],
   "section_segments": [
     {
       "section": "body",
       "text": "I noticed that there is darker red in the middle of the map. I wonder why there is dark red in Ohio and West Virgina because it is an outlier. It relates to me and my community because recently my community went through a very long period without rain, we didn’t have rain for over a month. A headline that I would use is “Drought’s throughout the U.S.”"
+    },
+    {
+      "section": "headline",
+      "label": "A headline that I would use is",
+      "text": "Drought’s throughout the U.S."
     }
   ],
-  "tagged_text": "I noticed that there is darker red in the middle of the map. I wonder why there is dark red in Ohio and West Virgina because it is an outlier. It relates to me and my community because recently my community went through a very long period without rain, we didn’t have rain for over a month. A headline that I would use is “Drought’s throughout the U.S.”"
+  "tagged_text": "I noticed that there is darker red in the middle of the map. I wonder why there is dark red in <entity type=\"LOCATION\" canonical=\"ohio\" section=\"body\">Ohio</entity> and <entity type=\"LOCATION\" canonical=\"west_virginia\" section=\"body\">West Virgina</entity> because it is an outlier. It relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"body\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my community</entity> because recently my community went through a very long period without rain, we didn’t have rain for over a month. A headline that I would use is “<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"headline\">Drought’s</entity> throughout the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">U.S.</entity>”"
 }

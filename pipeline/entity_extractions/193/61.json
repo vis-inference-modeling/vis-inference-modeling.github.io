@@ -4,6 +4,85 @@
   "raw_comment": "The first thing I notice when looking at the graph is how almost every single part of the country has some sort of drought going on. While there are areas that remain uncolored, which I am assuming there is no drought occurring in those places, most are the very least abnormally dry. I also notice that there are very certain sections that have an extreme or exceptional drought happening that are scattered in different areas of the country, it is not in one particular area. \nI wonder how this graph would compare to a graph of last year's droughts. I also wonder if the areas experiencing droughts are also facing high rates of forest fires as well. Finally, I wonder if this has a large impact on farming.\nThis relates to my community because in NJ, where I reside, there was a large period of time we went without water and in a drought. While we have gotten snow and rain in the recent months, NJ remains in drought warning. Not only this, but these droughts are a direct result of climate change which effects every individual in the world. \nHeadline: The United States of Droughts",
   "entities": [
     {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 45,
+      "end": 50,
+      "id": "e0"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 497,
+      "end": 502,
+      "id": "e1"
+    },
+    {
+      "surface": "last year's",
+      "type": "TIME_REFERENCE",
+      "canonical": "last_year",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 531,
+      "end": 542,
+      "id": "e2"
+    },
+    {
+      "surface": "forest fires",
+      "type": "EVENT",
+      "canonical": "forest_fires",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 632,
+      "end": 644,
+      "id": "e3"
+    },
+    {
+      "surface": "farming",
+      "type": "OTHER_ENTITY",
+      "canonical": "farming",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 702,
+      "end": 709,
+      "id": "e4"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 730,
+      "end": 739,
+      "id": "e5"
+    },
+    {
       "surface": "NJ",
       "type": "LOCATION",
       "canonical": "new_jersey",
@@ -14,7 +93,7 @@
       "occurrence_index": 0,
       "start": 751,
       "end": 753,
-      "id": "e0"
+      "id": "e6"
     },
     {
       "surface": "NJ",
@@ -27,33 +106,7 @@
       "occurrence_index": 1,
       "start": 901,
       "end": 903,
-      "id": "e1"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 915,
-      "end": 922,
-      "id": "e2"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 957,
-      "end": 964,
-      "id": "e3"
+      "id": "e7"
     },
     {
       "surface": "climate change",
@@ -66,7 +119,7 @@
       "occurrence_index": 0,
       "start": 989,
       "end": 1003,
-      "id": "e4"
+      "id": "e8"
     },
     {
       "surface": "world",
@@ -79,7 +132,104 @@
       "occurrence_index": 0,
       "start": 1042,
       "end": 1047,
-      "id": "e5"
+      "id": "e9"
+    },
+    {
+      "surface": "Headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1050,
+      "end": 1058,
+      "id": "e10"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1064,
+      "end": 1077,
+      "id": "e11"
+    },
+    {
+      "surface": "country",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "country",
+      "var": "geographic_location_us_regions_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "country",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "country",
+      "var": "geographic_location_us_regions_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "exceptional drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e16"
     },
     {
       "surface": "water",
@@ -88,17 +238,17 @@
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e17"
     },
     {
-      "surface": "snow",
+      "surface": "snow and rain",
       "type": "EVENT",
-      "canonical": "snow",
+      "canonical": "rain_and_snow",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -106,25 +256,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e18"
     },
     {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "recent months",
+      "surface": "months",
       "type": "TIME_REFERENCE",
-      "canonical": "recent_months",
+      "canonical": "past_few_months",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -132,27 +269,10 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e19"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "the country",
-      "reason": "Could refer to the U.S. or country in general; no explicit country name is given in the body."
-    },
-    {
-      "surface": "abnormally dry",
-      "reason": "Likely a drought severity level, but the provided normalized dictionary does not include a matching canonical for this exact surface form."
-    },
-    {
-      "surface": "extreme or exceptional drought",
-      "reason": "Could be two separate severity levels or a combined phrase; exact mapping is uncertain without splitting guidance for this phrasing."
-    },
-    {
-      "surface": "forest fires",
-      "reason": "Could map to EVENT forest_fires, but the comment says 'high rates of forest fires' without clear direct reference to the chart's drought severity categories."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
@@ -164,5 +284,5 @@
       "text": "The United States of Droughts"
     }
   ],
-  "tagged_text": "The first thing I notice when looking at the graph is how almost every single part of the country has some sort of drought going on. While there are areas that remain uncolored, which I am assuming there is no drought occurring in those places, most are the very least abnormally dry. I also notice that there are very certain sections that have an extreme or exceptional drought happening that are scattered in different areas of the country, it is not in one particular area. \nI wonder how this graph would compare to a graph of last year's droughts. I also wonder if the areas experiencing droughts are also facing high rates of forest fires as well. Finally, I wonder if this has a large impact on farming.\nThis relates to my community because in <entity type=\"LOCATION\" canonical=\"new_jersey\" speaker_context=\"true\">NJ</entity>, where I reside, there was a large period of time we went without <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity> and in a <entity type=\"EVENT\" canonical=\"drought\">drought</entity>. While we have gotten <entity type=\"EVENT\" canonical=\"snow\">snow</entity> and <entity type=\"EVENT\" canonical=\"rain\">rain</entity> in the <entity type=\"TIME_REFERENCE\" canonical=\"recent_months\">recent months</entity>, <entity type=\"LOCATION\" canonical=\"new_jersey\">NJ</entity> remains in drought warning. Not only this, but these droughts are a direct result of <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> which effects every individual in the <entity type=\"LOCATION\" canonical=\"world\">world</entity>. \nHeadline: The United States of Droughts"
+  "tagged_text": "The first thing I notice when looking at the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> is how almost every single part of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"geographic_location_us_regions_states\">country</entity> has some sort of drought going on. While there are areas that remain uncolored, which I am assuming there is no drought occurring in those places, most are the very least <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>. I also notice that there are very certain sections that have an <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity> happening that are scattered in different areas of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"geographic_location_us_regions_states\">country</entity>, it is not in one particular area. \nI wonder how this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" modality=\"questioned\">graph</entity> would compare to a graph of <entity type=\"TIME_REFERENCE\" canonical=\"last_year\" modality=\"questioned\">last year's</entity> droughts. I also wonder if the areas experiencing droughts are also facing high rates of <entity type=\"EVENT\" canonical=\"forest_fires\" modality=\"questioned\">forest fires</entity> as well. Finally, I wonder if this has a large impact on <entity type=\"OTHER_ENTITY\" canonical=\"farming\" subtype=\"group\" modality=\"questioned\">farming</entity>.\nThis relates to my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because in <entity type=\"LOCATION\" canonical=\"new_jersey\" speaker_context=\"true\">NJ</entity>, where I reside, there was a large period of time we went without <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" speaker_context=\"true\">water</entity> and in a drought. While we have gotten <entity type=\"EVENT\" canonical=\"rain_and_snow\">snow and rain</entity> in the recent <entity type=\"TIME_REFERENCE\" canonical=\"past_few_months\">months</entity>, <entity type=\"LOCATION\" canonical=\"new_jersey\" speaker_context=\"true\">NJ</entity> remains in drought warning. Not only this, but these droughts are a direct result of <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> which effects every individual in the <entity type=\"LOCATION\" canonical=\"world\">world</entity>. \n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Headline</entity>: The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">United States</entity> of Droughts"
 }

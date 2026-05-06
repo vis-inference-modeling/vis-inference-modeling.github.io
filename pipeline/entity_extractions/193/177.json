@@ -20,7 +20,7 @@
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -34,7 +34,7 @@
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -48,7 +48,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -62,7 +62,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -76,7 +76,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -87,24 +87,24 @@
       "id": "e5"
     },
     {
-      "surface": "exceptional",
+      "surface": "US",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 3,
       "start": null,
       "end": null,
       "id": "e6"
     },
     {
-      "surface": "extreme",
+      "surface": "exceptional",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "extreme",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -115,10 +115,10 @@
       "id": "e7"
     },
     {
-      "surface": "severe",
+      "surface": "extreme",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "severe",
-      "var": "drought_severity",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -132,25 +132,26 @@
       "surface": "severe",
       "type": "DATA_VAR_LEVEL",
       "canonical": "severe",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "Florida",
-      "type": "LOCATION",
-      "canonical": "florida",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e10"
@@ -163,20 +164,20 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e11"
     },
     {
-      "surface": "Alaska",
+      "surface": "Florida",
       "type": "LOCATION",
-      "canonical": "alaska",
+      "canonical": "florida",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e12"
@@ -189,10 +190,23 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e13"
+    },
+    {
+      "surface": "Alaska",
+      "type": "LOCATION",
+      "canonical": "alaska",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e14"
     },
     {
       "surface": "me",
@@ -206,26 +220,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e15"
     },
     {
       "surface": "my community",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "My state, Michigan",
-      "type": "LOCATION",
-      "canonical": "michigan",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -236,10 +237,9 @@
       "id": "e16"
     },
     {
-      "surface": "moderate",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "moderate",
-      "var": "drought_severity",
+      "surface": "Michigan",
+      "type": "LOCATION",
+      "canonical": "michigan",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -250,10 +250,11 @@
       "id": "e17"
     },
     {
-      "surface": "Widespread Throughout: the Impact of US Drought",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "headline",
+      "surface": "moderate",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "moderate",
+      "var": "drought_severity_category",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -261,19 +262,59 @@
       "start": null,
       "end": null,
       "id": "e18"
+    },
+    {
+      "surface": "Widespread Throughout",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "the cause of the drought",
+      "reason": "Abstract causal phrase; not a named entity or reference-list item."
+    },
+    {
+      "surface": "the coasts",
+      "reason": "Could refer to geographic regions, but too generic to map confidently to a specific location level."
+    },
+    {
+      "surface": "the ecosystem of my area",
+      "reason": "Contains speaker context but the location is vague and not a specific reference-list location."
+    }
+  ],
   "section_segments": [
     {
       "section": "body",
-      "text": "What do you notice?\nThe graph shows areas in the United States impacted by drought. The middle of the US has been impacted the most, as it has most areas with exceptional, extreme, and severe widespread drought. Towards the east and west coasts, drought is still present, but it is less intense than in the center of the US. Almost all of the US has been affected by the drought to some extent, not including Florida, Alaska, and some small areas of the nation.\n\nWhat do you wonder?\nWhat is the cause of the drought? Why is the center of the US more impacted by the drought than the coasts? Why are Alaska and Florida the only states not affected by the drought?\n\nHow does this relate to you and your community?\nThis relates to me and my community because I live in the United States. My state, Michigan, is one of the states that has been affected by drought in the moderate and severe categories. If drought continues to impact the US, it could have a significant impact on the ecosystem of my area and the rest of the country.\n\nCreate a catchy headline that captures the graph’s main idea."
+      "text": "What do you notice?\nThe graph shows areas in the United States impacted by drought. The middle of the US has been impacted the most, as it has most areas with exceptional, extreme, and severe widespread drought. Towards the east and west coasts, drought is still present, but it is less intense than in the center of the US. Almost all of the US has been affected by the drought to some extent, not including Florida, Alaska, and some small areas of the nation.\n\nWhat do you wonder?\nWhat is the cause of the drought? Why is the center of the US more impacted by the drought than the coasts? Why are Alaska and Florida the only states not affected by the drought?\n\nHow does this relate to you and your community?\nThis relates to me and my community because I live in the United States. My state, Michigan, is one of the states that has been affected by drought in the moderate and severe categories. If drought continues to impact the US, it could have a significant impact on the ecosystem of my area and the rest of the country.\n\nCreate a catchy headline that captures the graph’s main idea.\n“Widespread Throughout: the Impact of US Drought”"
     },
     {
       "section": "headline",
-      "label": "Widespread Throughout: the Impact of US Drought",
-      "text": "Widespread Throughout: the Impact of US Drought"
+      "label": "Widespread Throughout",
+      "text": "the Impact of US Drought"
     }
   ],
-  "tagged_text": "What do you notice?\nThe <entity type=\"CHART_ELEMENT\">graph</entity> shows areas in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> impacted by drought. The middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> has been impacted the most, as it has most areas with <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\">extreme</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity> widespread drought. Towards the east and west coasts, drought is still present, but it is less intense than in the center of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>. Almost all of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> has been affected by the drought to some extent, not including <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity>, <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity>, and some small areas of the nation.\n\nWhat do you wonder?\nWhat is the cause of the drought? Why is the center of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> more impacted by the drought than the coasts? Why are <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> and <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> the only states not affected by the drought?\n\nHow does this relate to you and your community?\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because I live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. <entity type=\"LOCATION\" canonical=\"michigan\">My state, Michigan</entity>, is one of the states that has been affected by drought in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderate</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity> categories. If drought continues to impact the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>, it could have a significant impact on the ecosystem of my area and the rest of the country.\n\nCreate a catchy headline that captures the graph’s main idea.\n“Widespread Throughout: the Impact of US Drought”"
+  "tagged_text": "What do you notice?\nThe <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows areas in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity> impacted by drought. The middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> has been impacted the most, as it has most areas with <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity> widespread drought. Towards the east and west coasts, drought is still present, but it is less intense than in the center of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>. Almost all of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> has been affected by the drought to some extent, not including <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity>, <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity>, and some small areas of the nation.\n\nWhat do you wonder?\nWhat is the cause of the drought? Why is the center of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> more impacted by the drought than the coasts? Why are <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> and <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> the only states not affected by the drought?\n\nHow does this relate to you and your community?\nThis relates to <entity type=\"speaker\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"my_community\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because I live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>. My state, <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity>, is one of the states that has been affected by drought in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity> categories. If drought continues to impact the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>, it could have a significant impact on the ecosystem of my area and the rest of the country.\n\nCreate a catchy headline that captures the graph’s main idea.\n“Widespread Throughout: the Impact of <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> Drought”"
 }

@@ -5,8 +5,8 @@
   "entities": [
     {
       "surface": "Where Does The Rain Fall? Droughts Are Everywhere!",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -30,16 +30,7 @@
       "id": "e1"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "Droughts Are Everywhere",
-      "reason": "Could be a headline slogan/title fragment rather than a standalone entity."
-    },
-    {
-      "surface": "droughts",
-      "reason": "General event mention; not mapped to a specific normalized event level in the article dictionary."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "headline",
@@ -51,5 +42,5 @@
       "text": "I wonder why states towards the west aren't as affected?"
     }
   ],
-  "tagged_text": "Catchy Headline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Where Does The Rain Fall? Droughts Are Everywhere!</entity>\n\nI wonder why <entity type=\"LOCATION\" canonical=\"west\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">states towards the west</entity> aren't as affected?"
+  "tagged_text": "Catchy Headline: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Where Does The Rain Fall? Droughts Are Everywhere!</entity>\n\nI wonder why <entity type=\"LOCATION\" canonical=\"west\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">states towards the west</entity> aren't as affected?"
 }

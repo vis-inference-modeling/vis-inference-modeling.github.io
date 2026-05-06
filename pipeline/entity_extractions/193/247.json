@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "my community",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": true,
@@ -18,8 +19,9 @@
     },
     {
       "surface": "reservoir",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "reservoir",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": true,
@@ -32,7 +34,7 @@
     {
       "surface": "lakes",
       "type": "LOCATION",
-      "canonical": "lake",
+      "canonical": "my_community",
       "section": "body",
       "modality": "questioned",
       "speaker_context": true,
@@ -43,15 +45,15 @@
       "id": "e2"
     },
     {
-      "surface": "next s[ring",
+      "surface": "s[ring",
       "type": "TIME_REFERENCE",
-      "canonical": "next_spring",
+      "canonical": "spring",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 90,
+      "start": 95,
       "end": 101,
       "id": "e3"
     }
@@ -63,5 +65,5 @@
       "text": "How will my community reservoir and lakes that have dried up return back full strength by next s[ring?"
     }
   ],
-  "tagged_text": "How will <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" modality=\"questioned\" speaker_context=\"true\">my community</entity> <entity type=\"LOCATION\" canonical=\"reservoir\" section=\"body\" modality=\"questioned\" speaker_context=\"true\">reservoir</entity> and <entity type=\"LOCATION\" canonical=\"lake\" section=\"body\" modality=\"questioned\" speaker_context=\"true\">lakes</entity> that have dried up return back full strength by <entity type=\"TIME_REFERENCE\" canonical=\"next_spring\" section=\"body\" modality=\"questioned\" speaker_context=\"false\">next s[ring</entity>?"
+  "tagged_text": "How will <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" section=\"body\" modality=\"questioned\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity> <entity type=\"OTHER_ENTITY\" canonical=\"reservoir\" subtype=\"other\" section=\"body\" modality=\"questioned\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">reservoir</entity> and <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" modality=\"questioned\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">lakes</entity> that have dried up return back full strength by next <entity type=\"TIME_REFERENCE\" canonical=\"spring\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">s[ring</entity>?"
 }

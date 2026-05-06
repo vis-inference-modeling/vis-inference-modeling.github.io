@@ -57,59 +57,42 @@
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 152,
       "end": 159,
       "id": "e4"
     },
     {
-      "surface": "Droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "surface": "Droughts seen across the US",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 239,
-      "end": 247,
-      "id": "e5"
-    },
-    {
-      "surface": "US",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 264,
       "end": 266,
-      "id": "e6"
+      "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "other states",
-      "reason": "Generic location-like phrase without a specific canonical mapping."
-    },
-    {
       "surface": "dry scene",
-      "reason": "Non-standard phrasing for drought conditions; not a confirmed entity."
+      "reason": "Likely refers to drought conditions, but not a confirmed entity or level."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "Notice: Colorado isnt as dry compared to other states as we thought.\n\nWonder: Why is hawaii pretty severely dry? Why is West Virginia and Ohio in a bad drought?\n\nRelate: It's good to know if you live in a dry scene or a drought"
+      "text": "Notice: Colorado isnt as dry compared to other states as we thought.\n\nWonder: Why is hawaii pretty severely dry? Why is West Virginia and Ohio in a bad drought?\n\nRelate: It's good to know if you live in a dry scene or a drought\n\nHeadline: Droughts seen across the US"
     },
     {
       "section": "headline",
@@ -117,5 +100,5 @@
       "text": "Droughts seen across the US"
     }
   ],
-  "tagged_text": "Notice: <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\">Colorado</entity> isnt as dry compared to other states as we thought.\n\nWonder: Why is <entity type=\"LOCATION\" canonical=\"hawaii\" section=\"body\">hawaii</entity> pretty severely dry? Why is <entity type=\"LOCATION\" canonical=\"west_virginia\" section=\"body\">West Virginia</entity> and <entity type=\"LOCATION\" canonical=\"ohio\" section=\"body\">Ohio</entity> in a bad <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity>?\n\nRelate: It's good to know if you live in a dry scene or a drought\n\nHeadline: <entity type=\"EVENT\" canonical=\"droughts\" section=\"headline\">Droughts</entity> seen across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">US</entity>"
+  "tagged_text": "Notice: <entity type=\"LOCATION\" canonical=\"colorado\">Colorado</entity> isnt as dry compared to other states as we thought.\n\nWonder: Why is <entity type=\"LOCATION\" canonical=\"hawaii\">hawaii</entity> pretty severely dry? Why is <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity> and <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> in a bad <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity>?\n\nRelate: It's good to know if you live in a dry scene or a drought\n\nHeadline: <entity type=\"CHART_ELEMENT\" canonical=\"headline\">Droughts seen across the US</entity>"
 }

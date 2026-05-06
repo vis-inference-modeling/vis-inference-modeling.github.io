@@ -7,7 +7,7 @@
       "surface": "U.S",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
   "unresolved_mentions": [
     {
       "surface": "dryness",
-      "reason": "Could refer to drought conditions, but no exact canonical match in the provided dictionary."
+      "reason": "Could refer to drought severity, but it is not a listed level and is too vague to map confidently."
     }
   ],
   "section_segments": [
@@ -30,5 +30,5 @@
       "text": "A lot of the U.S is experiencing some sort of dryness."
     }
   ],
-  "tagged_text": "A lot of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S</entity> is experiencing some sort of dryness."
+  "tagged_text": "A lot of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S</entity> is experiencing some sort of dryness."
 }

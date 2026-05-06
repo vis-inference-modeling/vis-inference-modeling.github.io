@@ -4,35 +4,23 @@
   "raw_comment": "I notice that the droughts are located in clusters. It also looks like the droughts almost trail to the east, maybe due to the rain shadow of mountains? The prevailing winds in the US go from west to east, so it seems to match.\nI wonder what is different about those regions. Are they already desert? Is there a sudden area of lower elevation there? What is the atmosphere like above it? Is there a weaker area in the ozone layer?\n\nMy area occasionally gets hit by droughts, and is just southwest of one of the heavy drought areas. We get heavily affected by the lower moisture once the spring snow runoff is gone. \n\n\nAmerica Going Dry: Why?",
   "entities": [
     {
-      "surface": "rain shadow",
-      "type": "EVENT",
-      "canonical": "rain_shadow",
-      "section": "body",
-      "modality": "hypothetical",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 127,
-      "end": 138,
-      "id": "e0"
-    },
-    {
       "surface": "mountains",
       "type": "LOCATION",
-      "canonical": "mountain_ranges",
+      "canonical": "rocky_mountains",
       "section": "body",
-      "modality": "hypothetical",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 142,
       "end": 151,
-      "id": "e1"
+      "id": "e0"
     },
     {
       "surface": "US",
-      "type": "LOCATION",
-      "canonical": "us",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -40,12 +28,12 @@
       "occurrence_index": 0,
       "start": 181,
       "end": 183,
-      "id": "e2"
+      "id": "e1"
     },
     {
       "surface": "desert",
       "type": "LOCATION",
-      "canonical": "deserts",
+      "canonical": "desert_state",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -53,12 +41,13 @@
       "occurrence_index": 0,
       "start": 293,
       "end": 299,
-      "id": "e3"
+      "id": "e2"
     },
     {
       "surface": "My area",
-      "type": "LOCATION",
-      "canonical": "my_area",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -66,44 +55,42 @@
       "occurrence_index": 0,
       "start": 432,
       "end": 439,
-      "id": "e4"
-    },
-    {
-      "surface": "spring",
-      "type": "TIME_REFERENCE",
-      "canonical": "summer",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 587,
-      "end": 593,
-      "id": "e5"
+      "id": "e3"
     },
     {
       "surface": "America Going Dry: Why?",
-      "type": "OTHER_ENTITY",
-      "canonical": "america_going_dry_why",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "subtype": "other",
       "occurrence_index": 0,
       "start": 618,
       "end": 641,
-      "id": "e6"
+      "id": "e4"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "the east",
-      "reason": "Could be a location/region reference, but not specific enough to map confidently."
+      "reason": "Directional/geographic reference, but no confirmed canonical location in the reference list."
+    },
+    {
+      "surface": "rain shadow",
+      "reason": "Causal geographic concept, but not a confirmed entity in the provided schema."
+    },
+    {
+      "surface": "lower elevation",
+      "reason": "Abstract geographic descriptor, not a confirmed entity."
     },
     {
       "surface": "ozone layer",
-      "reason": "Entity-like scientific term, but not in the provided dictionary and unclear whether to tag as OTHER_ENTITY."
+      "reason": "Environmental concept not present in the reference list and not clearly an entity type here."
+    },
+    {
+      "surface": "spring snow runoff",
+      "reason": "Phrase refers to seasonal hydrology, but no confirmed canonical mapping."
     }
   ],
   "section_segments": [
@@ -113,9 +100,9 @@
     },
     {
       "section": "headline",
-      "label": "Headline",
+      "label": "America Going Dry: Why?",
       "text": "America Going Dry: Why?"
     }
   ],
-  "tagged_text": "I notice that the droughts are located in clusters. It also looks like the droughts almost trail to the east, maybe due to the <entity type=\"EVENT\" canonical=\"rain_shadow\" section=\"body\" modality=\"hypothetical\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">rain shadow</entity> of <entity type=\"LOCATION\" canonical=\"mountain_ranges\" section=\"body\" modality=\"hypothetical\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">mountains</entity>? The prevailing winds in the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">US</entity> go from west to east, so it seems to match.\nI wonder what is different about those regions. Are they already <entity type=\"LOCATION\" canonical=\"deserts\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">desert</entity>? Is there a sudden area of lower elevation there? What is the atmosphere like above it? Is there a weaker area in the ozone layer?\n\n<entity type=\"LOCATION\" canonical=\"my_area\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">My area</entity> occasionally gets hit by droughts, and is just southwest of one of the heavy drought areas. We get heavily affected by the lower moisture once the <entity type=\"TIME_REFERENCE\" canonical=\"summer\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">spring</entity> snow runoff is gone. \n\n\n<entity type=\"headline_title\" canonical=\"america_going_dry_why\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">America Going Dry: Why?</entity>"
+  "tagged_text": "I notice that the droughts are located in clusters. It also looks like the droughts almost trail to the east, maybe due to the rain shadow of <entity type=\"LOCATION\" canonical=\"rocky_mountains\">mountains</entity>? The prevailing winds in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> go from west to east, so it seems to match.\nI wonder what is different about those regions. Are they already <entity type=\"LOCATION\" canonical=\"desert_state\">desert</entity>? Is there a sudden area of lower elevation there? What is the atmosphere like above it? Is there a weaker area in the ozone layer?\n\n<entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">My area</entity> occasionally gets hit by droughts, and is just southwest of one of the heavy drought areas. We get heavily affected by the lower moisture once the spring snow runoff is gone. \n\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">America Going Dry: Why?</entity>"
 }

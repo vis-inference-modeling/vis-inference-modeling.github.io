@@ -33,11 +33,11 @@
       "surface": "United Stares",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 74,
       "end": 87,
@@ -47,7 +47,7 @@
       "surface": "severe",
       "type": "DATA_VAR_LEVEL",
       "canonical": "severe",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -58,58 +58,6 @@
       "id": "e3"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 113,
-      "end": 120,
-      "id": "e4"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 181,
-      "end": 188,
-      "id": "e5"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 298,
-      "end": 305,
-      "id": "e6"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": 529,
-      "end": 536,
-      "id": "e7"
-    },
-    {
       "surface": "NY",
       "type": "LOCATION",
       "canonical": "new_york",
@@ -118,23 +66,23 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
+      "start": 147,
+      "end": 149,
+      "id": "e4"
     },
     {
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
+      "start": 172,
+      "end": 180,
+      "id": "e5"
     },
     {
       "surface": "fires",
@@ -145,9 +93,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
+      "start": 218,
+      "end": 223,
+      "id": "e6"
     },
     {
       "surface": "climate change",
@@ -158,9 +106,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
+      "start": 336,
+      "end": 350,
+      "id": "e7"
     },
     {
       "surface": "climate change",
@@ -171,38 +119,39 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e12"
+      "start": 437,
+      "end": 451,
+      "id": "e8"
     },
     {
-      "surface": "community",
-      "type": "LOCATION",
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
+      "start": 466,
+      "end": 478,
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "United Stares",
-      "reason": "Likely typo for United States; mapped to united_states."
+      "surface": "drought",
+      "reason": "Generic reference to the phenomenon; not a specific level or variable mention."
     },
     {
-      "surface": "the state",
-      "reason": "Could refer to New York state, but not explicit enough to tag separately."
+      "surface": "new laws",
+      "reason": "Could imply policy, but no specific law or policy program is named."
     }
   ],
   "section_segments": [
     {
       "section": "headline",
-      "label": "Climate change",
+      "label": "Climate change - Will you be affected by fires?",
       "text": "Climate change - Will you be affected by fires?"
     },
     {
@@ -210,5 +159,5 @@
       "text": "I notice that most of the United Stares is experiencing a severe drought. I especially noticed how NY has been experiencing moderate drought but that was enough to start fires throughout the state. I wonder if there is any way to reverse this and if drought will continue to occur due to climate change. I also wonder if there will be any new laws placed to avoid the increasing amount of climate change. This affects my community and I because it can cause a danger for us as the drought increases."
     }
   ],
-  "tagged_text": "<entity type=\"EVENT\" canonical=\"climate_change\" section=\"headline\">Climate change</entity> - Will you be affected by <entity type=\"EVENT\" canonical=\"fires\" section=\"headline\">fires</entity>?\nI notice that most of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United Stares</entity> is experiencing a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\" section=\"body\">severe</entity> <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity>. I especially noticed how <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">NY</entity> has been experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\" section=\"body\">moderate</entity> <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> but that was enough to start <entity type=\"EVENT\" canonical=\"fires\" section=\"body\">fires</entity> throughout the state. I wonder if there is any way to reverse this and if <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> will continue to occur due to <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">climate change</entity>. I also wonder if there will be any new laws placed to avoid the increasing amount of <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">climate change</entity>. This affects my <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" speaker_context=\"true\">community</entity> and I because it can cause a danger for us as the <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> increases."
+  "tagged_text": "<entity type=\"EVENT\" canonical=\"climate_change\" section=\"headline\">Climate change</entity> - Will you be affected by <entity type=\"EVENT\" canonical=\"fires\" section=\"headline\">fires</entity>?\nI notice that most of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\">United Stares</entity> is experiencing a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" section=\"body\">severe</entity> drought. I especially noticed how <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">NY</entity> has been experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\" section=\"body\">moderate</entity> drought but that was enough to start <entity type=\"EVENT\" canonical=\"fires\" section=\"body\">fires</entity> throughout the state. I wonder if there is any way to reverse this and if drought will continue to occur due to <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\">climate change</entity>. I also wonder if there will be any new laws placed to avoid the increasing amount of <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\">climate change</entity>. This affects <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my community</entity> and I because it can cause a danger for us as the drought increases."
 }

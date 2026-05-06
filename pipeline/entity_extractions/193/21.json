@@ -4,135 +4,55 @@
   "raw_comment": "1,I have noticed that, except for areas near the equator, many regions are experiencing varying degrees of drought. Central areas are more severely affected, while coastal regions are relatively less impacted. This disparity highlights how geography and climate patterns influence water availability and the uneven effects of drought.\n I wonder about the main causes of drought and why its severity varies so greatly at the same latitude. Factors like atmospheric circulation, ocean currents, and human activities may contribute to these differences. Understanding these dynamics is key to explaining why some areas are more vulnerable than others.\nI live in the U.S. for my studies, and this has deepened my interest in the nation’s water conditions. Drought has significant impacts on agriculture, ecosystems, and urban areas, making it essential to understand regional differences and develop sustainable water management strategies.\nWidespread Drought Graph Shows A Lot",
   "entities": [
     {
-      "surface": "Central areas",
-      "type": "LOCATION",
-      "canonical": "central_areas",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 116,
-      "end": 129,
-      "id": "e0"
-    },
-    {
-      "surface": "coastal regions",
-      "type": "LOCATION",
-      "canonical": "coastal_areas",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 164,
-      "end": 179,
-      "id": "e1"
-    },
-    {
       "surface": "U.S.",
-      "type": "LOCATION",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "section": "numbered_point",
+      "var": "state_names_abbreviations",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 663,
       "end": 667,
-      "id": "e2"
+      "id": "e0"
     },
     {
-      "surface": "Drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 752,
-      "end": 759,
-      "id": "e3"
-    },
-    {
-      "surface": "agriculture",
-      "type": "OTHER_ENTITY",
-      "canonical": "agriculture",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 787,
-      "end": 798,
-      "id": "e4"
-    },
-    {
-      "surface": "ecosystems",
-      "type": "OTHER_ENTITY",
-      "canonical": "ecosystems",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 800,
-      "end": 810,
-      "id": "e5"
-    },
-    {
-      "surface": "urban areas",
-      "type": "LOCATION",
-      "canonical": "urban_areas",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 816,
-      "end": 827,
-      "id": "e6"
-    },
-    {
-      "surface": "Widespread Drought Graph",
+      "surface": "Widespread Drought Graph Shows A Lot",
       "type": "CHART_ELEMENT",
-      "canonical": "graph",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 937,
-      "end": 961,
-      "id": "e7"
+      "end": 973,
+      "id": "e1"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "areas near the equator",
-      "reason": "Could be a LOCATION-like geographic reference, but no matching canonical entity is provided in the article dictionary."
+      "reason": "Likely a geographic reference, but not in the provided location reference list and not clearly a chart level."
     },
     {
-      "surface": "atmospheric circulation",
-      "reason": "Entity-like scientific factor, but not covered by the provided schema or dictionary."
+      "surface": "Central areas",
+      "reason": "Could refer to a region on the map, but no exact canonical match is provided beyond broad geographic categories."
     },
     {
-      "surface": "ocean currents",
-      "reason": "Entity-like scientific factor, but not covered by the provided schema or dictionary."
+      "surface": "coastal regions",
+      "reason": "Could map to a broad coast-related location, but the exact intended region is unclear."
     },
     {
-      "surface": "human activities",
-      "reason": "Generic causal phrase; could be tagged as OTHER_ENTITY, but it is broad and not clearly a named entity."
+      "surface": "the nation’s",
+      "reason": "Likely refers to the United States, but the surface is indirect and not explicit enough to tag confidently."
     }
   ],
   "section_segments": [
     {
-      "section": "numbered_point",
-      "label": "1",
-      "text": "I have noticed that, except for areas near the equator, many regions are experiencing varying degrees of drought. Central areas are more severely affected, while coastal regions are relatively less impacted. This disparity highlights how geography and climate patterns influence water availability and the uneven effects of drought.\n I wonder about the main causes of drought and why its severity varies so greatly at the same latitude. Factors like atmospheric circulation, ocean currents, and human activities may contribute to these differences. Understanding these dynamics is key to explaining why some areas are more vulnerable than others.\nI live in the U.S. for my studies, and this has deepened my interest in the nation's water conditions. Drought has significant impacts on agriculture, ecosystems, and urban areas, making it essential to understand regional differences and develop sustainable water management strategies."
+      "section": "body",
+      "text": "1,I have noticed that, except for areas near the equator, many regions are experiencing varying degrees of drought. Central areas are more severely affected, while coastal regions are relatively less impacted. This disparity highlights how geography and climate patterns influence water availability and the uneven effects of drought.\n I wonder about the main causes of drought and why its severity varies so greatly at the same latitude. Factors like atmospheric circulation, ocean currents, and human activities may contribute to these differences. Understanding these dynamics is key to explaining why some areas are more vulnerable than others.\nI live in the U.S. for my studies, and this has deepened my interest in the nation’s water conditions. Drought has significant impacts on agriculture, ecosystems, and urban areas, making it essential to understand regional differences and develop sustainable water management strategies."
     },
     {
       "section": "headline",
@@ -140,5 +60,5 @@
       "text": "Widespread Drought Graph Shows A Lot"
     }
   ],
-  "tagged_text": "1,I have noticed that, except for areas near the equator, many regions are experiencing varying degrees of drought. <entity type=\"LOCATION\" canonical=\"central_areas\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Central areas</entity> are more severely affected, while <entity type=\"LOCATION\" canonical=\"coastal_areas\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">coastal regions</entity> are relatively less impacted. This disparity highlights how geography and climate patterns influence water availability and the uneven effects of drought.\n I wonder about the main causes of drought and why its severity varies so greatly at the same latitude. Factors like atmospheric circulation, ocean currents, and human activities may contribute to these differences. Understanding these dynamics is key to explaining why some areas are more vulnerable than others.\nI live in the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">U.S.</entity> for my studies, and this has deepened my interest in the nation's water conditions. <entity type=\"EVENT\" canonical=\"drought\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Drought</entity> has significant impacts on <entity type=\"OTHER_ENTITY\" canonical=\"agriculture\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">agriculture</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"ecosystems\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">ecosystems</entity>, and <entity type=\"LOCATION\" canonical=\"urban_areas\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">urban areas</entity>, making it essential to understand regional differences and develop sustainable water management strategies.\n<entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Widespread Drought Graph</entity> Shows A Lot"
+  "tagged_text": "1,I have noticed that, except for areas near the equator, many regions are experiencing varying degrees of drought. Central areas are more severely affected, while coastal regions are relatively less impacted. This disparity highlights how geography and climate patterns influence water availability and the uneven effects of drought.\n I wonder about the main causes of drought and why its severity varies so greatly at the same latitude. Factors like atmospheric circulation, ocean currents, and human activities may contribute to these differences. Understanding these dynamics is key to explaining why some areas are more vulnerable than others.\nI live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" speaker_context=\"true\">U.S.</entity> for my studies, and this has deepened my interest in the nation’s water conditions. Drought has significant impacts on agriculture, ecosystems, and urban areas, making it essential to understand regional differences and develop sustainable water management strategies.\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Widespread Drought Graph Shows A Lot</entity>"
 }

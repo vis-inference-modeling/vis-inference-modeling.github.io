@@ -18,7 +18,7 @@
     },
     {
       "surface": "world",
-      "type": "WORLD",
+      "type": "LOCATION",
       "canonical": "world",
       "section": "body",
       "modality": "questioned",
@@ -33,9 +33,9 @@
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -44,95 +44,79 @@
       "id": "e2"
     },
     {
-      "surface": "United States",
+      "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 406,
-      "end": 419,
-      "id": "e3"
-    },
-    {
-      "surface": "exceptional",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e4"
-    },
-    {
-      "surface": "people",
-      "type": "OTHER_ENTITY",
-      "canonical": "people",
-      "subtype": "other",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e5"
+      "start": 161,
+      "end": 180,
+      "id": "e3"
     },
     {
-      "surface": "me and my community",
+      "surface": "me",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
+      "start": 278,
+      "end": 280,
+      "id": "e4"
     },
     {
-      "surface": "environment",
+      "surface": "my community",
       "type": "OTHER_ENTITY",
-      "canonical": "environment",
-      "subtype": "other",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
+      "start": 285,
+      "end": 297,
+      "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "regions around it",
-      "reason": "Location-like phrase, but no clear canonical match in the provided dictionary."
+      "reason": "Vague location reference; unclear which specific region(s) are meant."
     },
     {
       "surface": "drought",
-      "reason": "General drought mention without a confirmed canonical EVENT/level mapping in the article dictionary."
+      "reason": "Generic mention of drought without a specific severity level or variable-level mapping in this sentence."
     },
     {
-      "surface": "droughts",
-      "reason": "General drought mention without a confirmed canonical EVENT/level mapping in the article dictionary."
+      "surface": "people",
+      "reason": "Generic group reference without a specific identifiable entity."
+    },
+    {
+      "surface": "these circumstances",
+      "reason": "Abstract reference to prior conditions; unclear entity mapping."
+    },
+    {
+      "surface": "The severity of droughts across the United States",
+      "reason": "Appears to be a headline fragment, but the comment is truncated and the exact intended chart element/title is uncertain."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "- I noticed that California and the regions around it has an abnormal amount of drought. \n- I wonder what will happen to the world if all of United States faced exceptional drought. I wonder how people would survive and what these circumstances will lead too.\n- This relates to me and my community because it shows the results of our actions towards the environment. \n- The severity of droughts across the United States"
+      "text": "- I noticed that California and the regions around it has an abnormal amount of drought. "
+    },
+    {
+      "section": "body",
+      "text": "- I wonder what will happen to the world if all of United States faced exceptional drought. I wonder how people would survive and what these circumstances will lead too.\n- This relates to me and my community because it shows the results of our actions towards the environment. \n- The severity of droughts across the United States"
     }
   ],
-  "tagged_text": "- I noticed that <entity type=\"LOCATION\" canonical=\"california\" section=\"body\">California</entity> and the regions around it has an abnormal amount of drought. \n- I wonder what will happen to the <entity type=\"WORLD\" canonical=\"world\" section=\"body\" modality=\"questioned\">world</entity> if all of <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity> faced <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\">exceptional</entity> drought. I wonder how <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"body\" modality=\"questioned\">people</entity> would survive and what these circumstances will lead too.\n- This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">me and my community</entity> because it shows the results of our actions towards the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"body\">environment</entity>. \n- The severity of droughts across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity>"
+  "tagged_text": "- I noticed that <entity type=\"LOCATION\" canonical=\"california\">California</entity> and the regions around it has an abnormal amount of drought. \n- I wonder what will happen to the <entity type=\"LOCATION\" canonical=\"world\">world</entity> if all of <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity> faced <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity>. I wonder how people would survive and what these circumstances will lead too.\n- This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because it shows the results of our actions towards the environment. \n- The severity of droughts across the United States"
 }

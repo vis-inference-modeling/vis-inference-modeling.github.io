@@ -30,35 +30,10 @@
       "id": "e1"
     },
     {
-      "surface": "lakes",
-      "type": "LOCATION",
-      "canonical": "lakes",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 99,
-      "end": 104,
-      "id": "e2"
-    },
-    {
-      "surface": "rivers",
-      "type": "LOCATION",
-      "canonical": "rivers",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 109,
-      "end": 115,
-      "id": "e3"
-    },
-    {
       "surface": "severe droughts",
-      "type": "EVENT",
-      "canonical": "severe_droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -66,25 +41,13 @@
       "occurrence_index": 0,
       "start": 133,
       "end": 148,
-      "id": "e4"
-    },
-    {
-      "surface": "fresh water",
-      "type": "OTHER_ENTITY",
-      "canonical": "fresh_water",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 227,
-      "end": 238,
-      "id": "e5"
+      "id": "e2"
     },
     {
       "surface": "my community",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -92,59 +55,62 @@
       "occurrence_index": 0,
       "start": 263,
       "end": 275,
-      "id": "e6"
+      "id": "e3"
     },
     {
-      "surface": "Water",
+      "surface": "my community",
       "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 283,
-      "end": 288,
-      "id": "e7"
-    },
-    {
-      "surface": "our environment",
-      "type": "OTHER_ENTITY",
-      "canonical": "environment",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 297,
+      "end": 309,
+      "id": "e4"
+    },
+    {
+      "surface": "environment",
+      "type": "OTHER_ENTITY",
+      "canonical": "environment",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 345,
+      "start": 349,
       "end": 360,
-      "id": "e8"
+      "id": "e5"
     },
     {
       "surface": "climate",
-      "type": "OTHER_ENTITY",
-      "canonical": "climate",
+      "type": "EVENT",
+      "canonical": "climate_change",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 365,
       "end": 372,
-      "id": "e9"
+      "id": "e6"
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 387,
       "end": 395,
-      "id": "e10"
+      "id": "e7"
     },
     {
       "surface": "forest fires",
@@ -157,7 +123,7 @@
       "occurrence_index": 0,
       "start": 418,
       "end": 430,
-      "id": "e11"
+      "id": "e8"
     },
     {
       "surface": "forest fires",
@@ -170,7 +136,7 @@
       "occurrence_index": 1,
       "start": 495,
       "end": 507,
-      "id": "e12"
+      "id": "e9"
     },
     {
       "surface": "New jersey",
@@ -183,12 +149,13 @@
       "occurrence_index": 0,
       "start": 530,
       "end": 540,
-      "id": "e13"
+      "id": "e10"
     },
     {
-      "surface": "homes",
+      "surface": "Water",
       "type": "OTHER_ENTITY",
-      "canonical": "homes",
+      "canonical": "water",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -196,23 +163,10 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e11"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "many places",
-      "reason": "Generic location-like phrase without a specific canonical match."
-    },
-    {
-      "surface": "natural water access",
-      "reason": "Describes water availability but is not a listed entity."
-    },
-    {
-      "surface": "current forest fires",
-      "reason": "Likely refers to forest fires already tagged, but the adjective 'current' is not separately canonicalized."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "numbered_point",
@@ -230,5 +184,5 @@
       "text": "How does it affect my community and I?\nWater impacts my community and I, especially when it comes to our environment and climate. For example, droughts often lead to massive forest fires that destroy homes. This has already been seen with the current forest fires that are happening in New jersey already."
     }
   ],
-  "tagged_text": "1. What do you notice?\nAfter analyzing the graph I’ve noticed many places, even those near oceans, lakes and rivers are dealing with severe droughts. \n\n2. \n-Why are places with so much natural water access still running low on fresh water?\n\n3. How does it affect my community and I?\nWater impacts my community and I, especially when it comes to our environment and climate. For example, droughts often lead to massive forest fires that destroy homes. This has already been seen with the current forest fires that are happening in New jersey already."
+  "tagged_text": "1. What do you notice?\nAfter analyzing the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> I’ve noticed many places, even those near <entity type=\"LOCATION\" canonical=\"ocean\">oceans</entity>, lakes and rivers are dealing with <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe droughts</entity>. \n\n2. \n-Why are places with so much natural water access still running low on fresh water?\n\n3. How does it affect <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> and I?\n<entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">Water</entity> impacts <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> and I, especially when it comes to our <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"concept\">environment</entity> and <entity type=\"EVENT\" canonical=\"climate_change\">climate</entity>. For example, <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">droughts</entity> often lead to massive <entity type=\"EVENT\" canonical=\"forest_fires\">forest fires</entity> that destroy homes. This has already been seen with the current <entity type=\"EVENT\" canonical=\"forest_fires\">forest fires</entity> that are happening in <entity type=\"LOCATION\" canonical=\"new_jersey\">New jersey</entity> already."
 }

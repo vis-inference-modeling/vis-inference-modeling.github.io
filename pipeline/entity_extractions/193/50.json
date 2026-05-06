@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "America",
-      "type": "LOCATION",
-      "canonical": "america",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -30,20 +31,6 @@
       "id": "e1"
     },
     {
-      "surface": "population",
-      "type": "OTHER_ENTITY",
-      "canonical": "population",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 317,
-      "end": 327,
-      "id": "e2"
-    },
-    {
       "surface": "New York",
       "type": "LOCATION",
       "canonical": "new_york",
@@ -54,21 +41,21 @@
       "occurrence_index": 0,
       "start": 385,
       "end": 393,
-      "id": "e3"
+      "id": "e2"
     },
     {
       "surface": "extreme",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 412,
       "end": 419,
-      "id": "e4"
+      "id": "e3"
     },
     {
       "surface": "coast",
@@ -81,13 +68,27 @@
       "occurrence_index": 0,
       "start": 461,
       "end": 466,
+      "id": "e4"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 655,
+      "end": 664,
       "id": "e5"
     },
     {
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -96,37 +97,20 @@
       "start": 810,
       "end": 812,
       "id": "e6"
-    },
-    {
-      "surface": "Drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 813,
-      "end": 820,
-      "id": "e7"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "center of America",
-      "reason": "Region-like phrase, but no exact canonical regional match is confirmed beyond the country reference."
-    },
-    {
-      "surface": "drought",
-      "reason": "Repeated generic event mention; could be tagged multiple times, but the comment uses it broadly without a distinct canonical beyond the general event."
+      "surface": "population",
+      "reason": "Abstract factor mentioned as a causal variable, but no confirmed canonical mapping in the provided dictionary."
     },
     {
       "surface": "water appliances",
-      "reason": "Object/infrastructure phrase not present in the canonical dictionary."
+      "reason": "Could be a technology/infrastructure reference, but no confirmed canonical mapping in the provided dictionary."
     },
     {
       "surface": "drinking water",
-      "reason": "Could relate to water, but no exact canonical match is confirmed for this phrase."
+      "reason": "Could refer to water as a resource, but no confirmed canonical mapping in the provided dictionary."
     }
   ],
   "section_segments": [
@@ -140,5 +124,5 @@
       "text": "US Drought! See if you're effected."
     }
   ],
-  "tagged_text": "I noticed that as one goes to the center of <entity type=\"LOCATION\" canonical=\"america\" section=\"body\">America</entity>, the drought seems to become more severe. However, there are some place that don't seem to follow this general pattern such as a small region in the left part of <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\">Texas</entity>. This makes me wonder what potential factors are playing into this drought. It doesn't seem like <entity type=\"OTHER_ENTITY\" canonical=\"population\" subtype=\"other\" section=\"body\">population</entity> plays a factor otherwise densely populated areas such as <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">New York</entity> would be under an <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"body\">extreme</entity> drought. I wonder if distance from a the <entity type=\"LOCATION\" canonical=\"coast\" section=\"body\">coast</entity> has a small factor to play in the drought as areas more inland tend to experience more drought in this case. While I haven't seen much of an effect of the drought, this likely impacts the community as a whole by increasing the cost of using water appliances as well as increase the cost of drinking water. A catchy headline for this would be \"US Drought! See if you're effected.\""
+  "tagged_text": "I noticed that as one goes to the center of <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">America</entity>, the drought seems to become more severe. However, there are some place that don't seem to follow this general pattern such as a small region in the left part of <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>. This makes me wonder what potential factors are playing into this drought. It doesn't seem like population plays a factor otherwise densely populated areas such as <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> would be under an <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" modality=\"questioned\">extreme</entity> drought. I wonder if distance from a the <entity type=\"LOCATION\" canonical=\"coast\">coast</entity> has a small factor to play in the drought as areas more inland tend to experience more drought in this case. While I haven't seen much of an effect of the drought, this likely impacts the <entity type=\"my_community\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">community</entity> as a whole by increasing the cost of using water appliances as well as increase the cost of drinking water. A catchy headline for this would be \"US Drought! See if you're effected.\""
 }

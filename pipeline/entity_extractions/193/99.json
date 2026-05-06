@@ -18,12 +18,13 @@
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 48,
       "end": 55,
@@ -31,12 +32,13 @@
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": 92,
       "end": 99,
@@ -44,95 +46,84 @@
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 2,
       "start": 167,
       "end": 174,
       "id": "e3"
     },
     {
-      "surface": "hot and dry",
-      "type": "EVENT",
-      "canonical": "hot_and_dry",
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 211,
-      "end": 222,
+      "start": 246,
+      "end": 254,
       "id": "e4"
-    },
-    {
-      "surface": "weather",
-      "type": "OTHER_ENTITY",
-      "canonical": "weather",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": 223,
-      "end": 230,
-      "id": "e5"
     },
     {
       "surface": "Montana",
       "type": "LOCATION",
       "canonical": "montana",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 283,
       "end": 290,
-      "id": "e6"
+      "id": "e5"
     },
     {
       "surface": "Nebraska",
       "type": "LOCATION",
       "canonical": "nebraska",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 292,
       "end": 300,
-      "id": "e7"
+      "id": "e6"
     },
     {
       "surface": "Wyoming",
       "type": "LOCATION",
       "canonical": "wyoming",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 306,
       "end": 313,
-      "id": "e8"
+      "id": "e7"
     },
     {
-      "surface": "rainfall",
-      "type": "EVENT",
-      "canonical": "rainfall",
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
+      "speaker_context": true,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 404,
-      "end": 412,
-      "id": "e9"
+      "start": 354,
+      "end": 361,
+      "id": "e8"
     },
     {
       "surface": "past few months",
@@ -145,61 +136,35 @@
       "occurrence_index": 0,
       "start": 421,
       "end": 436,
+      "id": "e9"
+    },
+    {
+      "surface": "Abnormal Droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 536,
+      "end": 553,
       "id": "e10"
     },
     {
-      "surface": "air",
-      "type": "OTHER_ENTITY",
-      "canonical": "air",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": 490,
-      "end": 493,
-      "id": "e11"
-    },
-    {
-      "surface": "extremely dry",
-      "type": "EVENT",
-      "canonical": "dry_conditions",
-      "section": "numbered_point",
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 499,
-      "end": 512,
-      "id": "e12"
-    },
-    {
-      "surface": "A Dry, Dry Winter- Abnormal Droughts Across United States",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": 517,
+      "start": 561,
       "end": 574,
-      "id": "e13"
-    },
-    {
-      "surface": "severe droughts",
-      "type": "EVENT",
-      "canonical": "severe_droughts",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
+      "id": "e11"
     },
     {
       "surface": "Texas",
@@ -212,7 +177,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e12"
     },
     {
       "surface": "Ohio",
@@ -225,7 +190,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e13"
     },
     {
       "surface": "West Virginia",
@@ -238,7 +203,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e14"
     },
     {
       "surface": "Oklahoma",
@@ -251,17 +216,25 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e15"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "the region I live in",
-      "reason": "Speaker-specific location reference, but no canonical location is identifiable from the text."
+      "reason": "Speaker-context location reference is too vague to map to a specific location."
+    },
+    {
+      "surface": "rainfall",
+      "reason": "Could relate to drought conditions, but not a listed entity type."
     },
     {
       "surface": "heaters",
-      "reason": "Technology-like noun, but not in the provided dictionary and not clearly an entity type."
+      "reason": "Not an entity in the provided schema."
+    },
+    {
+      "surface": "the air",
+      "reason": "Generic substance/medium mention; not a listed entity type."
     }
   ],
   "section_segments": [
@@ -284,7 +257,12 @@
       "section": "numbered_point",
       "label": "4",
       "text": "A Dry, Dry Winter- Abnormal Droughts Across United States"
+    },
+    {
+      "section": "headline",
+      "label": "A Dry, Dry Winter-",
+      "text": "Abnormal Droughts Across United States"
     }
   ],
-  "tagged_text": "1. A majority of the country is in some kind of drought at the moment, with the most severe droughts in Texas, Ohio, West Virginia, and Oklahoma.\n2. While some of the droughts are in places with more frequently hot and dry weather, why are there droughts occurring in places such as Montana, Nebraska, and Wyoming? \n3. The region I live in has been in a drought for some time- we’ve had extremely sparse rainfall for the past few months, and combined with heaters beginning to turn on, the air feel extremely dry.\n4. A Dry, Dry Winter- Abnormal Droughts Across United States"
+  "tagged_text": "1. A majority of the <entity type=\"LOCATION\" canonical=\"country\" section=\"numbered_point\">country</entity> is in some kind of <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"numbered_point\">drought</entity> at the moment, with the most severe <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" section=\"numbered_point\">droughts</entity> in <entity type=\"LOCATION\" canonical=\"texas\" section=\"numbered_point\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"ohio\" section=\"numbered_point\">Ohio</entity>, <entity type=\"LOCATION\" canonical=\"west_virginia\" section=\"numbered_point\">West Virginia</entity>, and <entity type=\"LOCATION\" canonical=\"oklahoma\" section=\"numbered_point\">Oklahoma</entity>.\n2. While some of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"numbered_point\">droughts</entity> are in places with more frequently hot and dry weather, why are there <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"numbered_point\" modality=\"questioned\">droughts</entity> occurring in places such as <entity type=\"LOCATION\" canonical=\"montana\" section=\"numbered_point\">Montana</entity>, <entity type=\"LOCATION\" canonical=\"nebraska\" section=\"numbered_point\">Nebraska</entity>, and <entity type=\"LOCATION\" canonical=\"wyoming\" section=\"numbered_point\">Wyoming</entity>? \n3. The region I live in has been in a <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"numbered_point\" speaker_context=\"true\">drought</entity> for some time- we’ve had extremely sparse rainfall for the <entity type=\"TIME_REFERENCE\" canonical=\"past_few_months\" section=\"numbered_point\">past few months</entity>, and combined with heaters beginning to turn on, the air feel extremely dry.\n4. A Dry, Dry Winter- <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"headline\">Abnormal Droughts</entity> Across <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">United States</entity>"
 }

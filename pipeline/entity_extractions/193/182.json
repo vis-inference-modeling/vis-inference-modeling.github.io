@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "America",
-      "type": "LOCATION",
-      "canonical": "america",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -17,6 +18,75 @@
       "id": "e0"
     },
     {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 37,
+      "end": 44,
+      "id": "e1"
+    },
+    {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 158,
+      "end": 165,
+      "id": "e2"
+    },
+    {
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 220,
+      "end": 227,
+      "id": "e3"
+    },
+    {
+      "surface": "exception",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 231,
+      "end": 240,
+      "id": "e4"
+    },
+    {
+      "surface": "Drought in America",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 303,
+      "end": 321,
+      "id": "e5"
+    },
+    {
       "surface": "Alaska",
       "type": "LOCATION",
       "canonical": "alaska",
@@ -25,9 +95,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 78,
-      "end": 84,
-      "id": "e1"
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "Florida",
@@ -38,46 +108,23 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 89,
-      "end": 96,
-      "id": "e2"
-    },
-    {
-      "surface": "extreme to exception drought",
-      "type": "EVENT",
-      "canonical": "extreme_drought",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 220,
-      "end": 248,
-      "id": "e3"
-    },
-    {
-      "surface": "Drought in America",
-      "type": "OTHER_ENTITY",
-      "canonical": "drought_in_america",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": 303,
-      "end": 321,
-      "id": "e4"
+      "start": null,
+      "end": null,
+      "id": "e7"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "the others states",
-      "reason": "Likely refers to other states, but the phrasing is ungrammatical and not a clear canonical match."
+      "surface": "white",
+      "reason": "Likely refers to unmapped/blank areas on the visualization, but no confirmed canonical chart element or data level."
+    },
+    {
+      "surface": "others states",
+      "reason": "Likely refers to other U.S. states, but the phrase is ungrammatical and not a confirmed canonical surface."
     },
     {
       "surface": "everyone",
-      "reason": "Generic human reference; could be tagged as OTHER_ENTITY but is not specific enough."
+      "reason": "Generic group reference with no specific canonical entity."
     }
   ],
   "section_segments": [
@@ -87,9 +134,9 @@
     },
     {
       "section": "headline",
-      "label": "Headline",
+      "label": "Drought in America",
       "text": "Drought in America"
     }
   ],
-  "tagged_text": "I noticed that most of <entity type=\"LOCATION\" canonical=\"america\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">America</entity> is in drought, with some parts being white and <entity type=\"LOCATION\" canonical=\"alaska\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Alaska</entity> and <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Florida</entity> not being affected as much like the others states.\nWhy these drought happen, and if there's anything we could do help stop <entity type=\"EVENT\" canonical=\"extreme_drought\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">extreme to exception drought</entity> from happening as much.\nWell it's affecting everyone,\n<entity type=\"headline_title\" canonical=\"drought_in_america\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Drought in America</entity>"
+  "tagged_text": "I noticed that most of <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">America</entity> is in <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity>, with some parts being white and <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> and <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> not being affected as much like the others states.\nWhy these <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity> happen, and if there's anything we could do help stop <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> to <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exception</entity> drought from happening as much.\nWell it's affecting everyone,\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Drought in America</entity>"
 }

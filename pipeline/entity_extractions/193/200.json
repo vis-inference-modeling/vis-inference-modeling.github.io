@@ -4,23 +4,10 @@
   "raw_comment": "I noticed there are much more droughts near the rocky mountain and the middle of the US. Also, i noticed  that the areas with less incoming water experienced  way more droughts then areas with more water such as around the coast. I wonder why areas that are drier experience more droughts when they are in the center of the us. Also I wonder how individuals are affected by the droughts. This relates to my community because i live in New York where its dry and should bring awareness. A headline is \" America is getting drier by the minute.",
   "entities": [
     {
-      "surface": "rocky mountain",
-      "type": "LOCATION",
-      "canonical": "rocky_mountains",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 48,
-      "end": 62,
-      "id": "e0"
-    },
-    {
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -28,60 +15,35 @@
       "occurrence_index": 0,
       "start": 85,
       "end": 87,
-      "id": "e1"
+      "id": "e0"
     },
     {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 168,
-      "end": 176,
-      "id": "e2"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 280,
-      "end": 288,
-      "id": "e3"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 378,
-      "end": 386,
-      "id": "e4"
+      "start": 324,
+      "end": 326,
+      "id": "e1"
     },
     {
       "surface": "us",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 421,
       "end": 423,
-      "id": "e5"
+      "id": "e2"
     },
     {
       "surface": "New York",
@@ -94,45 +56,62 @@
       "occurrence_index": 0,
       "start": 435,
       "end": 443,
-      "id": "e6"
+      "id": "e3"
     },
     {
-      "surface": "America",
-      "type": "OTHER_ENTITY",
-      "canonical": "america",
+      "surface": "us",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 502,
-      "end": 509,
-      "id": "e7"
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e4"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "middle of the US",
-      "reason": "Likely a region reference, but no exact canonical match in the dictionary."
+      "surface": "rocky mountain",
+      "reason": "Likely refers to a geographic region, but the exact canonical form is unclear from the provided list."
+    },
+    {
+      "surface": "middle",
+      "reason": "Vague geographic reference; not specific enough to map confidently."
     },
     {
       "surface": "coast",
-      "reason": "Likely a location/region reference, but no exact canonical match in the dictionary."
+      "reason": "Generic geographic reference; could map to a region but is not explicit enough here."
     },
     {
-      "surface": "center of the us",
-      "reason": "Likely a region reference, but no exact canonical match in the dictionary."
+      "surface": "areas with less incoming water",
+      "reason": "Descriptive phrase without a canonical geographic or conceptual entity."
     },
     {
-      "surface": "headline",
-      "reason": "Could be a title marker rather than an entity; not tagged as a content entity."
+      "surface": "areas with more water",
+      "reason": "Descriptive phrase without a canonical geographic or conceptual entity."
+    },
+    {
+      "surface": "individuals",
+      "reason": "Generic group reference without a specific canonical entity."
+    },
+    {
+      "surface": "dry",
+      "reason": "Could imply drought severity, but no exact level is specified."
+    },
+    {
+      "surface": "America",
+      "reason": "Appears in the headline, but the comment truncates before a clear standalone mention; if intended, it would map to United States."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I noticed there are much more droughts near the rocky mountain and the middle of the US. Also, i noticed  that the areas with less incoming water experienced  way more droughts then areas with more water such as around the coast. I wonder why areas that are drier experience more droughts when they are in the center of the us. Also I wonder how individuals are affected by the droughts. This relates to my community because i live in New York where its dry and should bring awareness. A headline is \" America is getting drier by the minute.\""
+      "text": "I noticed there are much more droughts near the rocky mountain and the middle of the US. Also, i noticed  that the areas with less incoming water experienced  way more droughts then areas with more water such as around the coast. I wonder why areas that are drier experience more droughts when they are in the center of the us. Also I wonder how individuals are affected by the droughts. This relates to my community because i live in New York where its dry and should bring awareness. A headline is \" America is getting drier by the minute."
     }
   ],
-  "tagged_text": "I noticed there are much more droughts near the <entity type=\"LOCATION\" canonical=\"rocky_mountains\">rocky mountain</entity> and the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>. Also, i noticed  that the areas with less incoming water experienced  way more droughts then areas with more water such as around the coast. I wonder why areas that are drier experience more droughts when they are in the center of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">us</entity>. Also I wonder how individuals are affected by the droughts. This relates to my community because i live in <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> where its dry and should bring awareness. A headline is \" <entity type=\"OTHER_ENTITY\" canonical=\"america\">America</entity> is getting drier by the minute.\","
+  "tagged_text": "I noticed there are much more droughts near the rocky mountain and the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">US</entity>. Also, i noticed  that the areas with less incoming water experienced  way more droughts then areas with more water such as around the coast. I wonder why areas that are drier experience more droughts when they are in the center of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">us</entity>. Also I wonder how individuals are affected by the droughts. This relates to my community because i live in <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\">New York</entity> where its dry and should bring awareness. A headline is \" America is getting drier by the minute."
 }

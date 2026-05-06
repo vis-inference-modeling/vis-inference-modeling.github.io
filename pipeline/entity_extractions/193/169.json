@@ -5,9 +5,8 @@
   "entities": [
     {
       "surface": "US",
-      "type": "DATA_VAR_LEVEL",
+      "type": "LOCATION",
       "canonical": "united_states",
-      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -19,9 +18,8 @@
     },
     {
       "surface": "US",
-      "type": "DATA_VAR_LEVEL",
+      "type": "LOCATION",
       "canonical": "united_states",
-      "var": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -32,51 +30,55 @@
       "id": "e1"
     },
     {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 285,
-      "end": 287,
-      "id": "e2"
-    },
-    {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 292,
-      "end": 304,
-      "id": "e3"
-    },
-    {
-      "surface": "The Drought is Making The US Pout",
-      "type": "EVENT",
-      "canonical": "the_drought_is_making_the_us_pout",
+      "surface": "Catchy headline: The Drought is Making The US Pout.",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 404,
-      "end": 437,
+      "start": 387,
+      "end": 438,
+      "id": "e2"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e3"
+    },
+    {
+      "surface": "exceptional drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e4"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "drought",
-      "reason": "Generic event mention repeated multiple times; not all instances were separately tagged to avoid over-fragmentation."
+      "surface": "some sort of drought",
+      "reason": "Generic drought reference; not a specific severity level beyond the tagged levels."
+    },
+    {
+      "surface": "problems",
+      "reason": "Too vague to map to a specific entity."
     }
   ],
   "section_segments": [
@@ -85,5 +87,5 @@
       "text": "What do you notice?\nI noticed that the US is mostly covered with some sort of drought whether its abnormally dry to an exceptional drought. \n\nWhat do you wonder?\nI wonder what is causing the droughts to occur in the US?\n\nHow does this relate to you and your community?\nThis relates to me and my community because if we have droughts it may lead to problems for me and others around me.\n\nCatchy headline: The Drought is Making The US Pout."
     }
   ],
-  "tagged_text": "What do you notice?\nI noticed that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is mostly covered with some sort of drought whether its abnormally dry to an exceptional drought. \n\nWhat do you wonder?\nI wonder what is causing the droughts to occur in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>?\n\nHow does this relate to you and your community?\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because if we have droughts it may lead to problems for me and others around me.\n\nCatchy headline: <entity type=\"EVENT\" canonical=\"the_drought_is_making_the_us_pout\">The Drought is Making The US Pout</entity>."
+  "tagged_text": "What do you notice?\nI noticed that the <entity type=\"LOCATION\" canonical=\"united_states\" speaker_context=\"false\">US</entity> is mostly covered with some sort of drought whether its <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity> to an <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity>. \n\nWhat do you wonder?\nI wonder what is causing the droughts to occur in the <entity type=\"LOCATION\" canonical=\"united_states\" speaker_context=\"false\">US</entity>?\n\nHow does this relate to you and your community?\nThis relates to me and my community because if we have droughts it may lead to problems for me and others around me.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Catchy headline: The Drought is Making The US Pout.</entity>"
 }

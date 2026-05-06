@@ -7,7 +7,7 @@
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -33,7 +33,7 @@
     {
       "surface": "Southwest",
       "type": "LOCATION",
-      "canonical": "southwest_region",
+      "canonical": "southwest",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -57,6 +57,34 @@
       "id": "e3"
     },
     {
+      "surface": "Abnormally Dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 232,
+      "end": 246,
+      "id": "e4"
+    },
+    {
+      "surface": "Exceptional Drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 252,
+      "end": 271,
+      "id": "e5"
+    },
+    {
       "surface": "climate change",
       "type": "EVENT",
       "canonical": "climate_change",
@@ -67,13 +95,41 @@
       "occurrence_index": 0,
       "start": 437,
       "end": 451,
-      "id": "e4"
+      "id": "e6"
+    },
+    {
+      "surface": "local water management issues",
+      "type": "OTHER_ENTITY",
+      "canonical": "local_water_management_issues",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 453,
+      "end": 482,
+      "id": "e7"
+    },
+    {
+      "surface": "communities",
+      "type": "OTHER_ENTITY",
+      "canonical": "communities",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 535,
+      "end": 546,
+      "id": "e8"
     },
     {
       "surface": "water shortages",
       "type": "OTHER_ENTITY",
       "canonical": "water_shortages",
-      "subtype": "other",
+      "subtype": "concept",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
@@ -81,7 +137,49 @@
       "occurrence_index": 0,
       "start": 586,
       "end": 601,
-      "id": "e5"
+      "id": "e9"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 635,
+      "end": 647,
+      "id": "e10"
+    },
+    {
+      "surface": "water availability",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_availability",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 660,
+      "end": 678,
+      "id": "e11"
+    },
+    {
+      "surface": "agricultural impacts",
+      "type": "OTHER_ENTITY",
+      "canonical": "agricultural_impacts",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 680,
+      "end": 700,
+      "id": "e12"
     },
     {
       "surface": "water conservation measures",
@@ -89,19 +187,18 @@
       "canonical": "water_conservation_measures",
       "subtype": "other",
       "section": "numbered_point",
-      "modality": "hypothetical",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 782,
       "end": 809,
-      "id": "e6"
+      "id": "e13"
     },
     {
       "surface": "America is Thirsty: Widespread Drought Strains Communities Nationwide",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -109,36 +206,24 @@
       "occurrence_index": 0,
       "start": 882,
       "end": 951,
-      "id": "e7"
+      "id": "e14"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "Abnormally Dry",
-      "reason": "Likely a drought severity level, but no exact canonical level is provided in the normalized dictionary for this article."
+      "surface": "natural weather patterns",
+      "reason": "Concept-like phrase, but not in the provided normalized dictionary and not clearly a specific entity."
     },
     {
-      "surface": "Exceptional Drought",
-      "reason": "Likely a drought severity level, but no exact canonical level is provided in the normalized dictionary for this article."
-    },
-    {
-      "surface": "drought conditions",
-      "reason": "General drought reference; could be EVENT 'drought' but the exact phrase is not separately canonicalized."
-    },
-    {
-      "surface": "water availability",
-      "reason": "Could map to water-related scarcity, but no exact canonical exists in the normalized dictionary."
-    },
-    {
-      "surface": "agricultural impacts",
-      "reason": "Could map to agriculture, but the surface form is broader than the provided canonical."
+      "surface": "natural landscapes",
+      "reason": "Too generic to map confidently."
     }
   ],
   "section_segments": [
     {
       "section": "numbered_point",
       "label": "1",
-      "text": "I notice that a significant portion of the United States is experiencing some level of drought, with the most severe areas concentrated in parts of the Midwest, Southwest, and California. The map categorizes drought levels from “Abnormally Dry” to “Exceptional Drought,” and darker colors indicate more extreme drought conditions."
+      "text": "I notice that a significant portion of the United States is experiencing some level of drought, with the most severe areas concentrated in parts of the Midwest, Southwest, and California. The map categorizes drought levels from “Abnormally Dry” to “Exceptional Drought”, and darker colors indicate more extreme drought conditions."
     },
     {
       "section": "numbered_point",
@@ -152,9 +237,9 @@
     },
     {
       "section": "headline",
-      "label": "headline",
+      "label": "America is Thirsty: Widespread Drought Strains Communities Nationwide",
       "text": "America is Thirsty: Widespread Drought Strains Communities Nationwide"
     }
   ],
-  "tagged_text": "1. I notice that a significant portion of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> is experiencing some level of drought, with the most severe areas concentrated in parts of the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity>, <entity type=\"LOCATION\" canonical=\"southwest_region\">Southwest</entity>, and <entity type=\"LOCATION\" canonical=\"california\">California</entity>. The map categorizes drought levels from “Abnormally Dry” to “Exceptional Drought,” and darker colors indicate more extreme drought conditions.\n\n\n2. I wonder what factors have contributed to the widespread drought conditions. Are these related to <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity>, local water management issues, or natural weather patterns? Additionally, how are communities in the most affected areas coping with <entity type=\"OTHER_ENTITY\" canonical=\"water_shortages\" subtype=\"other\" modality=\"questioned\">water shortages</entity>?\n\n\n3.This might relate to me and my community in terms of water availability, agricultural impacts, and local weather patterns. If I live in an affected area, this could influence <entity type=\"OTHER_ENTITY\" canonical=\"water_conservation_measures\" subtype=\"other\" modality=\"hypothetical\">water conservation measures</entity>, food prices, or even the appearance of natural landscapes around me.\n\n“<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">America is Thirsty: Widespread Drought Strains Communities Nationwide</entity>”"
+  "tagged_text": "1. I notice that a significant portion of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity> is experiencing some level of drought, with the most severe areas concentrated in parts of the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity>, <entity type=\"LOCATION\" canonical=\"southwest\">Southwest</entity>, and <entity type=\"LOCATION\" canonical=\"california\">California</entity>. The map categorizes drought levels from “<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">Abnormally Dry</entity>” to “<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">Exceptional Drought</entity>”, and darker colors indicate more extreme drought conditions.\n\n\n2. I wonder what factors have contributed to the widespread drought conditions. Are these related to <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"local_water_management_issues\" subtype=\"concept\" modality=\"questioned\">local water management issues</entity>, or natural weather patterns? Additionally, how are <entity type=\"OTHER_ENTITY\" canonical=\"communities\" subtype=\"group\" modality=\"questioned\">communities</entity> in the most affected areas coping with <entity type=\"OTHER_ENTITY\" canonical=\"water_shortages\" subtype=\"concept\" modality=\"questioned\">water shortages</entity>?\n\n\n3.This might relate to me and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> in terms of <entity type=\"OTHER_ENTITY\" canonical=\"water_availability\" subtype=\"concept\">water availability</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"agricultural_impacts\" subtype=\"concept\">agricultural impacts</entity>, and local weather patterns. If I live in an affected area, this could influence <entity type=\"OTHER_ENTITY\" canonical=\"water_conservation_measures\" subtype=\"other\">water conservation measures</entity>, food prices, or even the appearance of natural landscapes around me.\n\n“<entity type=\"CHART_ELEMENT\" canonical=\"headline\">America is Thirsty: Widespread Drought Strains Communities Nationwide</entity>”"
 }

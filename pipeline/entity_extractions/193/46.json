@@ -44,8 +44,9 @@
     },
     {
       "surface": "America",
-      "type": "LOCATION",
-      "canonical": "america",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -56,23 +57,37 @@
       "id": "e3"
     },
     {
-      "surface": "me and my community",
+      "surface": "me",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 408,
-      "end": 427,
+      "start": 326,
+      "end": 328,
       "id": "e4"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 415,
+      "end": 427,
+      "id": "e5"
     },
     {
       "surface": "two months",
       "type": "TIME_REFERENCE",
-      "canonical": "two_months",
+      "canonical": "past_two_months",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -80,7 +95,7 @@
       "occurrence_index": 0,
       "start": 482,
       "end": 492,
-      "id": "e5"
+      "id": "e6"
     },
     {
       "surface": "fires",
@@ -93,7 +108,7 @@
       "occurrence_index": 0,
       "start": 506,
       "end": 511,
-      "id": "e6"
+      "id": "e7"
     },
     {
       "surface": "New Jersey",
@@ -106,13 +121,13 @@
       "occurrence_index": 0,
       "start": 530,
       "end": 540,
-      "id": "e7"
+      "id": "e8"
     },
     {
       "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -120,21 +135,17 @@
       "occurrence_index": 0,
       "start": 572,
       "end": 576,
-      "id": "e8"
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "landlocked",
-      "reason": "Location-like descriptor but no exact canonical location match for the generic adjective alone."
-    },
-    {
-      "surface": "droughts",
-      "reason": "Generic repeated event mention; could be tagged as EVENT, but not separately resolved here due to broad usage."
+      "surface": "coloration",
+      "reason": "Likely intended as 'correlation', but the surface form is unclear and not an entity."
     },
     {
       "surface": "rising temperatures",
-      "reason": "Could map to temperature or climate-related event, but no exact canonical match is confirmed for this phrasing."
+      "reason": "Could be a causal concept, but no confirmed canonical mapping in the provided dictionary."
     }
   ],
   "section_segments": [
@@ -148,5 +159,5 @@
       "text": "The U.S. is going through a period of severe drought. What can we do to prevent this?"
     }
   ],
-  "tagged_text": "When looking at this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> I noticed that the states which are more landlocked are experiencing the greatest droughts. This does however have a few exceptions such as <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\">Colorado</entity> which still does have drought but less than other states. I wonder if there is any coloration between <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\" modality=\"questioned\">global warming</entity> and the increased droughts that <entity type=\"LOCATION\" canonical=\"america\" section=\"body\">America</entity> is experiencing as a whole due to the rising temperatures. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">me and my community</entity> because we recently experienced a drought that lasted <entity type=\"TIME_REFERENCE\" canonical=\"two_months\" section=\"body\">two months</entity>. This led to <entity type=\"EVENT\" canonical=\"fires\" section=\"body\">fires</entity> in states such as <entity type=\"LOCATION\" canonical=\"new_jersey\" section=\"body\">New Jersey</entity>. A catchy title could be, \"The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">U.S.</entity> is going through a period of severe drought. What can we do to prevent this?\""
+  "tagged_text": "When looking at this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> I noticed that the states which are more landlocked are experiencing the greatest droughts. This does however have a few exceptions such as <entity type=\"LOCATION\" canonical=\"colorado\">Colorado</entity> which still does have drought but less than other states. I wonder if there is any coloration between <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"questioned\">global warming</entity> and the increased droughts that <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">America</entity> is experiencing as a whole due to the rising temperatures. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"my_community\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because we recently experienced a drought that lasted <entity type=\"TIME_REFERENCE\" canonical=\"past_two_months\">two months</entity>. This led to <entity type=\"EVENT\" canonical=\"fires\">fires</entity> in states such as <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>. A catchy title could be, \"The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">U.S.</entity> is going through a period of severe drought. What can we do to prevent this?\""
 }

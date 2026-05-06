@@ -18,12 +18,13 @@
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 72,
       "end": 80,
@@ -31,12 +32,13 @@
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": 408,
       "end": 416,
@@ -44,35 +46,37 @@
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 2,
       "start": 757,
       "end": 765,
       "id": "e3"
     },
     {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 3,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e4"
     },
     {
-      "surface": "United States",
+      "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -83,10 +87,10 @@
       "id": "e5"
     },
     {
-      "surface": "exceptional drought",
+      "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -95,19 +99,6 @@
       "start": null,
       "end": null,
       "id": "e6"
-    },
-    {
-      "surface": "abnormally dry",
-      "type": "EVENT",
-      "canonical": "abnormally_dry",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
     },
     {
       "surface": "October of 2024",
@@ -120,12 +111,40 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e8"
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "water supply",
+      "type": "DATA_VAR",
+      "canonical": "water_usage",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -133,26 +152,14 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
       "id": "e10"
     },
     {
-      "surface": "middle of the country",
-      "type": "LOCATION",
-      "canonical": "middle_of_the_country",
-      "section": "body",
+      "surface": "Severe Droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -160,105 +167,36 @@
       "start": null,
       "end": null,
       "id": "e11"
-    },
-    {
-      "surface": "my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "our area",
-      "type": "LOCATION",
-      "canonical": "my_area",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "water supply",
-      "type": "OTHER_ENTITY",
-      "canonical": "water_supply",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "environment",
-      "type": "OTHER_ENTITY",
-      "canonical": "environment",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "agriculture",
-      "type": "OTHER_ENTITY",
-      "canonical": "agriculture",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "Severe Droughts Across the States",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "the past",
-      "reason": "Temporal reference is vague and not in the provided time-reference dictionary."
+      "surface": "the middle of the country",
+      "reason": "Likely refers to a central U.S. region, but not specific enough to map confidently to a location level."
     },
     {
-      "surface": "drought levels",
-      "reason": "Could refer to the drought severity variable, but not explicitly named as a canonical variable level or variable."
+      "surface": "the past",
+      "reason": "Temporal reference is too vague to map to a specific time level."
+    },
+    {
+      "surface": "environment",
+      "reason": "Abstract concept mentioned as an impact target, but not in the provided schema."
+    },
+    {
+      "surface": "agriculture",
+      "reason": "Abstract domain concept; not a listed entity type."
     }
   ],
   "section_segments": [
     {
       "section": "body",
       "text": "After looking at this graph, I noticed that it measures the severity of droughts across the United States with the most severe being exceptional drought and the least severe being abnormally dry. The data was collected in October of 2024. I noticed that there are very few areas that are not experiencing drought. The areas with the most drought are in the middle of the country. \nI wonder what causes these droughts. Also, will the drought levels become worse or get better? What did the drought levels look like in the past?\nThis relates to my community because our area is currently experiencing a drought. This leads to a low water supply, which has a negative impact on things like the environment and agriculture. \nA headline for the graph is “Severe Droughts Across the States”"
+    },
+    {
+      "section": "headline",
+      "label": "A headline for the graph is",
+      "text": "Severe Droughts Across the States"
     }
   ],
-  "tagged_text": "After looking at this graph, I noticed that it measures the severity of droughts across the United States with the most severe being exceptional drought and the least severe being abnormally dry. The data was collected in October of 2024. I noticed that there are very few areas that are not experiencing drought. The areas with the most drought are in the middle of the country. \nI wonder what causes these droughts. Also, will the drought levels become worse or get better? What did the drought levels look like in the past?\nThis relates to my community because our area is currently experiencing a drought. This leads to a low water supply, which has a negative impact on things like the environment and agriculture. \nA headline for the graph is “Severe Droughts Across the States”"
+  "tagged_text": "After looking at this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity>, I noticed that it measures the severity of <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\">droughts</entity> across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\">United States</entity> with the most severe being <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\" section=\"body\">exceptional drought</entity> and the least severe being <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\">abnormally dry</entity>. The data was collected in <entity type=\"TIME_REFERENCE\" canonical=\"october_2024\" section=\"body\">October of 2024</entity>. I noticed that there are very few areas that are not experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\">drought</entity>. The areas with the most drought are in the middle of the country. \nI wonder what causes these <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\" modality=\"questioned\">droughts</entity>. Also, will the drought levels become worse or get better? What did the drought levels look like in the past?\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my community</entity> because our area is currently experiencing a <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\" speaker_context=\"true\">drought</entity>. This leads to a low <entity type=\"DATA_VAR\" canonical=\"water_usage\" section=\"body\">water supply</entity>, which has a negative impact on things like the environment and agriculture. \nA headline for the graph is “<entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" section=\"headline\">Severe Droughts</entity> Across the States”"
 }

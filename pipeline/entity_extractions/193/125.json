@@ -6,7 +6,7 @@
     {
       "surface": "New York state",
       "type": "LOCATION",
-      "canonical": "new_york_state",
+      "canonical": "new_york",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -19,7 +19,7 @@
     {
       "surface": "New York state",
       "type": "LOCATION",
-      "canonical": "new_york_state",
+      "canonical": "new_york",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -33,7 +33,7 @@
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -46,11 +46,11 @@
     {
       "surface": "water supply",
       "type": "OTHER_ENTITY",
-      "canonical": "our_water_supply",
+      "canonical": "water_supply",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 460,
@@ -72,75 +72,51 @@
       "id": "e4"
     },
     {
-      "surface": "From Coastlines to Heartlands",
-      "type": "EVENT",
-      "canonical": "from_coastlines_to_heartlands",
+      "surface": "From Coastlines to Heartlands: Scorching Heat in the Heart of the US!",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 539,
-      "end": 568,
+      "end": 608,
       "id": "e5"
-    },
-    {
-      "surface": "Scorching Heat in the Heart of the US",
-      "type": "EVENT",
-      "canonical": "scorching_heat_in_the_heart_of_the_us",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 570,
-      "end": 607,
-      "id": "e6"
     },
     {
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e7"
     },
     {
-      "surface": "precipitation",
-      "type": "EVENT",
-      "canonical": "precipitation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "community",
-      "type": "LOCATION",
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "community",
-      "type": "LOCATION",
-      "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -148,7 +124,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e8"
     },
     {
       "surface": "hurricanes Helene and Milton",
@@ -161,38 +137,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e9"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "this year's disastrous hurricanes",
+      "surface": "this year's",
       "type": "TIME_REFERENCE",
-      "canonical": "this_years_disastrous_hurricanes",
+      "canonical": "this_year",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -200,46 +150,37 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "states",
-      "type": "LOCATION",
-      "canonical": "states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
+      "id": "e10"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "abnormally dry",
-      "reason": "Could be a drought severity level; mapped to the closest available normalized level."
+      "surface": "lack of precipitation",
+      "reason": "Could relate to drought severity, but no exact canonical mapping provided."
     },
     {
-      "surface": "water supply",
-      "reason": "Tagged as OTHER_ENTITY because no exact normalized data-variable or event canonical was provided."
+      "surface": "the areas they hit",
+      "reason": "Refers to locations affected by hurricanes, but the specific places are not named."
+    },
+    {
+      "surface": "drought",
+      "reason": "Generic reference to the phenomenon; not a specific level or variable mention."
+    },
+    {
+      "surface": "water supply and crops",
+      "reason": "Compound phrase with two entity-like concepts; both are relevant but not individually canonicalized in the provided list."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "- I noticed that New York state is marked as being abnormally dry as is confirmed by the concerning lack of precipitation in my community."
-    },
-    {
-      "section": "body",
-      "text": "-I wonder whether the recent hurricanes Helene and Milton decreased the level of drought in the areas they hit and if the drought in these areas was worse before this year's disastrous hurricanes. -This relates to me and my community because, like many other states, New York state is abnormally dry. This means that our water supply and crops, which we need to survive, are under threat."
+      "text": "- I noticed that New York state is marked as being abnormally dry as is confirmed by the concerning lack of precipitation in my community.\n-I wonder whether the recent hurricanes Helene and Milton decreased the level of drought in the areas they hit and if the drought in these areas was worse before this year's disastrous hurricanes. -This relates to me and my community because, like many other states, New York state is abnormally dry. This means that our water supply and crops, which we need to survive, are under threat."
     },
     {
       "section": "headline",
-      "label": "From Coastlines to Heartlands",
-      "text": "Scorching Heat in the Heart of the US!"
+      "label": "From Coastlines to Heartlands: Scorching Heat in the Heart of the US!",
+      "text": "From Coastlines to Heartlands: Scorching Heat in the Heart of the US!"
     }
   ],
-  "tagged_text": "- I noticed that <entity type=\"LOCATION\" canonical=\"new_york_state\" section=\"body\">New York state</entity> is marked as being abnormally dry as is confirmed by the concerning lack of <entity type=\"EVENT\" canonical=\"precipitation\" section=\"body\">precipitation</entity> in my <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" speaker_context=\"true\">community</entity>.\n-I wonder whether the recent <entity type=\"EVENT\" canonical=\"hurricanes_helene_and_milton\" section=\"body\">hurricanes Helene and Milton</entity> decreased the level of <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> in the areas they hit and if the <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> in these areas was worse before <entity type=\"TIME_REFERENCE\" canonical=\"this_years_disastrous_hurricanes\" section=\"body\">this year's disastrous hurricanes</entity>. -This relates to me and my <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" speaker_context=\"true\">community</entity> because, like many other <entity type=\"LOCATION\" canonical=\"states\" section=\"body\">states</entity>, <entity type=\"LOCATION\" canonical=\"new_york_state\" section=\"body\">New York state</entity> is abnormally dry. This means that our <entity type=\"OTHER_ENTITY\" canonical=\"our_water_supply\" subtype=\"other\" section=\"body\">water supply</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"crops\" subtype=\"other\" section=\"body\">crops</entity>, which we need to survive, are under threat.\nHeadline - From Coastlines to Heartlands: Scorching Heat in the Heart of the US!"
+  "tagged_text": "- I noticed that <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">New York state</entity> is marked as being <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\">abnormally dry</entity> as is confirmed by the concerning lack of precipitation in <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my community</entity>.\n-I wonder whether the recent <entity type=\"EVENT\" canonical=\"hurricanes_helene_and_milton\" section=\"body\" modality=\"questioned\">hurricanes Helene and Milton</entity> decreased the level of drought in the areas they hit and if the drought in these areas was worse before <entity type=\"TIME_REFERENCE\" canonical=\"this_year\" section=\"body\" modality=\"questioned\">this year's</entity> disastrous hurricanes. -This relates to me and my community because, like many other states, <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">New York state</entity> is <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\">abnormally dry</entity>. This means that our water supply and crops, which we need to survive, are under threat.\nHeadline - From Coastlines to Heartlands: Scorching Heat in the Heart of the US!"
 }

@@ -5,9 +5,10 @@
   "entities": [
     {
       "surface": "US",
-      "type": "LOCATION",
-      "canonical": "us",
-      "section": "numbered_point",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -18,9 +19,10 @@
     },
     {
       "surface": "US",
-      "type": "LOCATION",
-      "canonical": "us",
-      "section": "numbered_point",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -30,23 +32,24 @@
       "id": "e1"
     },
     {
-      "surface": "Texas",
-      "type": "LOCATION",
-      "canonical": "texas",
-      "section": "numbered_point",
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 569,
-      "end": 574,
+      "occurrence_index": 2,
+      "start": 783,
+      "end": 785,
       "id": "e2"
     },
     {
       "surface": "Rocky Mountain",
       "type": "LOCATION",
-      "canonical": "rocky_mountains",
-      "section": "numbered_point",
+      "canonical": "rocky_mountain_region",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -54,32 +57,61 @@
       "start": null,
       "end": null,
       "id": "e3"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "extremely drought area",
-      "reason": "Likely refers to drought severity, but the phrasing is ungrammatical and not a clean match to a canonical level."
+      "reason": "Likely refers to the extreme drought level, but the phrasing is ungrammatical and not an exact level surface."
     },
     {
-      "surface": "ocean",
-      "reason": "Geographic feature mentioned generically; no specific canonical location/feature match provided beyond broad water bodies."
+      "surface": "center area",
+      "reason": "Could refer to a central U.S. region, but no exact canonical location match is provided."
     },
     {
-      "surface": "humid air",
-      "reason": "Entity-like environmental factor, but not covered by the schema."
+      "surface": "west south side",
+      "reason": "Directional phrase that may indicate a region of Texas, but no exact canonical location is available."
+    },
+    {
+      "surface": "the ocean",
+      "reason": "Could be a broad geographic reference, but the intended specific location is unclear."
     },
     {
       "surface": "rivers and canals",
-      "reason": "Could be LOCATION-like water features, but the dictionary only includes rivers generally and canals are not listed."
+      "reason": "Infrastructure-like entities, but not covered by the provided canonical lists."
     }
   ],
   "section_segments": [
     {
-      "section": "numbered_point",
-      "label": "1",
+      "section": "body",
       "text": "The first thing I noticed is that the extremely drought area is pretty much in the center area of the US. Moreover, that actually makes a lot of sense. The more closer the place is to the ocean the more unlikely it's going to be dry. But because of the Rocky Mountain, the humid air is not very likely to go through that, and that leads to a severe drought in the middle of the US. If the weather in a certain area is cold, then it's less unlikely to have a drought in that area. I also noticed that there is a large drought area in the west south side of the state of Texas, and that's because Texas is moderately away from the ocean and it has extremely hot weather. What I wonder is how to solve all those drought? It's very important because most of the agricultural industry in US comes from the middle of the it. We can also depend on rivers and canals to avoid extreme drought."
     }
   ],
-  "tagged_text": "The first thing I noticed is that the extremely drought area is pretty much in the center area of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">US</entity>. Moreover, that actually makes a lot of sense. The more closer the place is to the ocean the more unlikely it's going to be dry. But because of the <entity type=\"LOCATION\" canonical=\"rocky_mountains\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Rocky Mountain</entity>, the humid air is not very likely to go through that, and that leads to a severe drought in the middle of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">US</entity>. If the weather in a certain area is cold, then it's less unlikely to have a drought in that area. I also noticed that there is a large drought area in the west south side of the state of <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Texas</entity>, and that's because Texas is moderately away from the ocean and it has extremely hot weather. What I wonder is how to solve all those drought? It's very important because most of the agricultural industry in <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">US</entity> comes from the middle of the it. We can also depend on rivers and canals to avoid extreme drought."
+  "tagged_text": "The first thing I noticed is that the extremely drought area is pretty much in the center area of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>. Moreover, that actually makes a lot of sense. The more closer the place is to the ocean the more unlikely it's going to be dry. But because of the <entity type=\"LOCATION\" canonical=\"rocky_mountain_region\">Rocky Mountain</entity>, the humid air is not very likely to go through that, and that leads to a severe drought in the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>. If the weather in a certain area is cold, then it's less unlikely to have a drought in that area. I also noticed that there is a large drought area in the west south side of the state of <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, and that's because <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> is moderately away from the ocean and it has extremely hot weather. What I wonder is how to solve all those drought? It's very important because most of the agricultural industry in <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> comes from the middle of the it. We can also depend on rivers and canals to avoid extreme drought."
 }

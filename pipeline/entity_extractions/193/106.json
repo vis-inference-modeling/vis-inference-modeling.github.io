@@ -7,7 +7,7 @@
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -33,9 +33,9 @@
     },
     {
       "surface": "severe",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "severe",
-      "subtype": "other",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -46,90 +46,93 @@
       "id": "e2"
     },
     {
-      "surface": "middle of the U.S",
-      "type": "LOCATION",
-      "canonical": "middle_of_the_country",
+      "surface": "U.S",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 146,
+      "start": 160,
       "end": 163,
       "id": "e3"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 189,
-      "end": 196,
-      "id": "e4"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "U.S",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 243,
-      "end": 250,
-      "id": "e5"
+      "start": 258,
+      "end": 261,
+      "id": "e4"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "U.S",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 2,
-      "start": 279,
-      "end": 286,
-      "id": "e6"
-    },
-    {
-      "surface": "U.S",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
       "start": 503,
       "end": 506,
-      "id": "e7"
+      "id": "e5"
     },
     {
       "surface": "U.S",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 3,
       "start": 546,
       "end": 549,
-      "id": "e8"
+      "id": "e6"
     },
     {
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "exceptional drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "wildfire",
+      "type": "EVENT",
+      "canonical": "wildfires",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -138,82 +141,20 @@
       "start": null,
       "end": null,
       "id": "e9"
-    },
-    {
-      "surface": "exceptional drought",
-      "type": "EVENT",
-      "canonical": "exceptional_drought",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "U.S",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "my state",
-      "type": "LOCATION",
-      "canonical": "my_state",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "wildfire",
-      "type": "EVENT",
-      "canonical": "wildfire",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "spots",
-      "reason": "Generic location-like term, but not specific enough to map confidently."
+      "surface": "middle of the U.S",
+      "reason": "Geographic region is vague; could refer to central U.S. but not stated explicitly."
+    },
+    {
+      "surface": "my state",
+      "reason": "Speaker-specific location not named."
     },
     {
       "surface": "U.S citizens",
-      "reason": "Could be people in the United States, but 'citizens' is not a listed entity and the phrase is generic."
+      "reason": "Generic population reference; not an entity type in the provided schema."
     }
   ],
   "section_segments": [
@@ -238,5 +179,5 @@
       "text": "What’s going on in this graph?\nThe U.S has a lot of drought, will this affect U.S citizens?"
     }
   ],
-  "tagged_text": "1) What do you notice?\nMost states are moderate or abnormally dry. Not a lot of spots have exceptional drought its mostly moderate or severe. The middle of the U.S is experiencing the most drought.\n2) What do you wonder?\nWhy is there a lot of drought in the U.S? Why is most the drought in the middle? How come certain spots have no drought?\n3) How does this relate to you and your community?\nThe droughts can cause something to happen in my state like a wildfire.\n4) What’s going on in this graph?\nThe U.S has a lot of drought, will this affect U.S citizens?"
+  "tagged_text": "1) What do you notice?\nMost states are <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>. Not a lot of spots have <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity> its mostly <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity>. The middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S</entity> is experiencing the most drought.\n2) What do you wonder?\nWhy is there a lot of drought in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S</entity>? Why is most the drought in the middle? How come certain spots have no drought?\n3) How does this relate to you and your community?\nThe droughts can cause something to happen in my state like a <entity type=\"EVENT\" canonical=\"wildfires\">wildfire</entity>.\n4) What’s going on in this graph?\nThe <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S</entity> has a lot of drought, will this affect <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S</entity> citizens?"
 }

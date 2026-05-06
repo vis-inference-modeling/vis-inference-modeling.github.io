@@ -19,8 +19,8 @@
     {
       "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -58,8 +58,9 @@
     },
     {
       "surface": "my community",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -70,22 +71,9 @@
       "id": "e4"
     },
     {
-      "surface": "countries",
-      "type": "LOCATION",
-      "canonical": "countries",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 185,
-      "end": 194,
-      "id": "e5"
-    },
-    {
       "surface": "Droughts through out the US",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -93,23 +81,19 @@
       "occurrence_index": 0,
       "start": 213,
       "end": 240,
-      "id": "e6"
+      "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "dry",
-      "reason": "Could indicate drought severity, but the exact level is not specified and no confirmed canonical match is available."
-    },
-    {
-      "surface": "there’s is any droughts",
-      "reason": "Contains an implicit reference to drought presence; not a distinct entity surface worth tagging separately."
+      "surface": "different countries",
+      "reason": "Likely a mistaken reference to the U.S. states/regions in the chart, but not a clear taggable entity from the reference list."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I noticed that near Wyoming there is a exceptional drought \nI wonder why New York and Utah are dry\nThis relates to my community because it shows if there’s is any droughts in different countries \nCatchy HeadLine: Droughts through out the US"
+      "text": "I noticed that near Wyoming there is a exceptional drought \nI wonder why New York and Utah are dry\nThis relates to my community because it shows if there’s is any droughts in different countries"
     },
     {
       "section": "headline",
@@ -117,5 +101,5 @@
       "text": "Droughts through out the US"
     }
   ],
-  "tagged_text": "I noticed that near <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity> there is a <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional drought</entity> \nI wonder why <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> and <entity type=\"LOCATION\" canonical=\"utah\">Utah</entity> are dry\nThis relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because it shows if there’s is any droughts in different <entity type=\"LOCATION\" canonical=\"countries\">countries</entity> \nCatchy HeadLine: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Droughts through out the US</entity>"
+  "tagged_text": "I noticed that near <entity type=\"LOCATION\" canonical=\"wyoming\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Wyoming</entity> there is a <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">exceptional drought</entity> \nI wonder why <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">New York</entity> and <entity type=\"LOCATION\" canonical=\"utah\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Utah</entity> are dry\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity> because it shows if there’s is any droughts in different countries \nCatchy HeadLine: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Droughts through out the US</entity>"
 }

@@ -6,8 +6,8 @@
     {
       "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,229 +18,32 @@
       "id": "e0"
     },
     {
-      "surface": "Southwest",
-      "type": "LOCATION",
-      "canonical": "southwest_region",
+      "surface": "exceptional drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 67,
-      "end": 76,
+      "occurrence_index": 1,
+      "start": 206,
+      "end": 225,
       "id": "e1"
     },
     {
-      "surface": "Texas",
-      "type": "LOCATION",
-      "canonical": "texas",
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 85,
-      "end": 90,
+      "start": 267,
+      "end": 271,
       "id": "e2"
-    },
-    {
-      "surface": "New Mexico",
-      "type": "LOCATION",
-      "canonical": "new_mexico",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 97,
-      "end": 107,
-      "id": "e3"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 165,
-      "end": 173,
-      "id": "e4"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 218,
-      "end": 226,
-      "id": "e5"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 353,
-      "end": 361,
-      "id": "e6"
-    },
-    {
-      "surface": "water usage",
-      "type": "DATA_VAR",
-      "canonical": "electricity_generation",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 386,
-      "end": 397,
-      "id": "e7"
-    },
-    {
-      "surface": "water reservoirs",
-      "type": "OTHER_ENTITY",
-      "canonical": "water_resources",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 456,
-      "end": 472,
-      "id": "e8"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 598,
-      "end": 602,
-      "id": "e9"
-    },
-    {
-      "surface": "precipitation",
-      "type": "EVENT",
-      "canonical": "precipitation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 614,
-      "end": 627,
-      "id": "e10"
-    },
-    {
-      "surface": "severe drought",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "severe",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 642,
-      "end": 656,
-      "id": "e11"
-    },
-    {
-      "surface": "Long Island",
-      "type": "LOCATION",
-      "canonical": "long_island",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 748,
-      "end": 759,
-      "id": "e12"
-    },
-    {
-      "surface": "severe",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "severe",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 889,
-      "end": 895,
-      "id": "e13"
-    },
-    {
-      "surface": "America",
-      "type": "OTHER_ENTITY",
-      "canonical": "america",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 974,
-      "end": 981,
-      "id": "e14"
-    },
-    {
-      "surface": "U.S.",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "U.S.",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "landlocked areas",
-      "type": "LOCATION",
-      "canonical": "landlocked_states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
     },
     {
       "surface": "Wyoming",
@@ -251,9 +54,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
+      "start": 277,
+      "end": 284,
+      "id": "e3"
     },
     {
       "surface": "Montana",
@@ -264,36 +67,113 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
+      "start": 288,
+      "end": 295,
+      "id": "e4"
     },
     {
-      "surface": "severe droughts",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "severe",
-      "var": "drought_severity",
+      "surface": "Long Island",
+      "type": "LOCATION",
+      "canonical": "new_york_city_area",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 748,
+      "end": 759,
+      "id": "e5"
+    },
+    {
+      "surface": "Southwest",
+      "type": "LOCATION",
+      "canonical": "southwest",
+      "section": "body",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e6"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "New Mexico",
+      "type": "LOCATION",
+      "canonical": "new_mexico",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "safety measured",
-      "reason": "Likely refers to safety measures, but no exact canonical entity provided."
+      "surface": "water usage",
+      "reason": "Listed in the normalized dictionary as a data variable, but the reference list for this task does not include it as a canonical data variable."
+    },
+    {
+      "surface": "water reservoirs",
+      "reason": "Hydrological infrastructure concept not present in the provided canonical reference list."
+    },
+    {
+      "surface": "intense heat",
+      "reason": "Environmental condition, but not a listed entity type or canonical item."
+    },
+    {
+      "surface": "rain",
+      "reason": "Weather phenomenon mentioned generically; no canonical mapping provided."
+    },
+    {
+      "surface": "precipitation",
+      "reason": "Generic weather term without a matching canonical entity."
+    },
+    {
+      "surface": "protection and safety measures",
+      "reason": "Abstract policy/measure phrase without a clear canonical mapping."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "The first thing I noticed was the large exceptional drought in the Southwest part of Texas under New Mexico. I noticed how it stands out compared to the rest of the droughts in the U.S. because most of the exceptional droughts are more in the landlocked areas of the U.S. like Wyoming or Montana.\nI wonder how people in areas with exceptional or severe droughts conserve their water or water usage. I also wonder what protection those areas have for their water reservoirs, so they don't completely evaporate due to the intense heat.\nThis relates to me and my community because I haven't seen much rain or form of precipitation in my area. A severe drought here could damage my area a ton considering the fact that we don't usually get droughts in Long Island, and because we usually don't get droughts, we wouldn't have proper protection and safety measured put in place in the case of a severe or exceptional drought occurring.\nA catchy headline for this graph could be, \"America is drying up like a sponge!\""
+      "text": "The first thing I noticed was the large exceptional drought in the Southwest part of Texas under New Mexico. I noticed how it stands out compared to the rest of the droughts in the U.S. because most of the exceptional droughts are more in the landlocked areas of the U.S. like Wyoming or Montana.\nI wonder how people in areas with exceptional or severe droughts conserve their water or water usage. I also wonder what protection those areas have for their water reservoirs, so they don't completely evaporate due to the intense heat.\nThis relates to me and my community because I haven't seen much rain or form of precipitation in my area. A severe drought here could damage my area a ton considering the fact that we don't usually get droughts in Long Island, and because we usually don't get droughts, we wouldn't have proper protection and safety measured put in place in the case of a severe or exceptional drought occurring."
+    },
+    {
+      "section": "headline",
+      "label": "America is drying up like a sponge!",
+      "text": "America is drying up like a sponge!"
     }
   ],
-  "tagged_text": "The first thing I noticed was the large <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional drought</entity> in the <entity type=\"LOCATION\" canonical=\"southwest_region\">Southwest</entity> part of <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> under <entity type=\"LOCATION\" canonical=\"new_mexico\">New Mexico</entity>. I noticed how it stands out compared to the rest of the <entity type=\"EVENT\" canonical=\"droughts\">droughts</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> because most of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional</entity> droughts are more in the <entity type=\"LOCATION\" canonical=\"landlocked_states\">landlocked areas</entity> of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> like <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity> or <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>.\nI wonder how people in areas with <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe droughts</entity> conserve their water or <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">water usage</entity>. I also wonder what protection those areas have for their <entity type=\"OTHER_ENTITY\" canonical=\"water_resources\">water reservoirs</entity>, so they don't completely evaporate due to the intense heat.\nThis relates to me and my community because I haven't seen much <entity type=\"EVENT\" canonical=\"rain\">rain</entity> or form of <entity type=\"EVENT\" canonical=\"precipitation\">precipitation</entity> in my area. A <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe drought</entity> here could damage my area a ton considering the fact that we don't usually get <entity type=\"EVENT\" canonical=\"droughts\">droughts</entity> in <entity type=\"LOCATION\" canonical=\"long_island\">Long Island</entity>, and because we usually don't get <entity type=\"EVENT\" canonical=\"droughts\">droughts</entity>, we wouldn't have proper protection and safety measured put in place in the case of a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional drought</entity> occurring.\nA catchy headline for this graph could be, \"<entity type=\"OTHER_ENTITY\" canonical=\"america\">America</entity> is drying up like a sponge!\""
+  "tagged_text": "The first thing I noticed was the large <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">exceptional drought</entity> in the <entity type=\"LOCATION\" canonical=\"southwest\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Southwest</entity> part of <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Texas</entity> under <entity type=\"LOCATION\" canonical=\"new_mexico\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">New Mexico</entity>. I noticed how it stands out compared to the rest of the droughts in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">U.S.</entity> because most of the exceptional droughts are more in the landlocked areas of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">U.S.</entity> like <entity type=\"LOCATION\" canonical=\"wyoming\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Wyoming</entity> or <entity type=\"LOCATION\" canonical=\"montana\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Montana</entity>.\nI wonder how people in areas with exceptional or severe droughts conserve their water or water usage. I also wonder what protection those areas have for their water reservoirs, so they don't completely evaporate due to the intense heat.\nThis relates to me and my community because I haven't seen much rain or form of precipitation in my area. A severe drought here could damage my area a ton considering the fact that we don't usually get droughts in <entity type=\"LOCATION\" canonical=\"new_york_city_area\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\">Long Island</entity>, and because we usually don't get droughts, we wouldn't have proper protection and safety measured put in place in the case of a severe or exceptional drought occurring.\nA catchy headline for this graph could be, \"America is drying up like a sponge!\""
 }

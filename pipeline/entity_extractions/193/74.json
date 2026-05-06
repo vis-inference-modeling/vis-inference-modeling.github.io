@@ -6,8 +6,8 @@
     {
       "surface": "severe droughts",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "extreme",
-      "var": "drought_severity",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -20,8 +20,8 @@
     {
       "surface": "severe droughts",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "extreme",
-      "var": "drought_severity",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -32,53 +32,53 @@
       "id": "e1"
     },
     {
-      "surface": "me and my community",
+      "surface": "me",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 443,
-      "end": 462,
+      "end": 445,
       "id": "e2"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 450,
+      "end": 462,
+      "id": "e3"
     },
     {
       "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
-      "section": "headline",
+      "var": "state_names_abbreviations",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 546,
       "end": 550,
-      "id": "e3"
-    },
-    {
-      "surface": "red",
-      "type": "CHART_ELEMENT",
-      "canonical": "red",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e4"
     },
     {
-      "surface": "exceptional droughts",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -87,10 +87,10 @@
       "id": "e5"
     },
     {
-      "surface": "exceptional drought",
+      "surface": "exceptional droughts",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
@@ -101,29 +101,29 @@
       "id": "e6"
     },
     {
-      "surface": "me and my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "surface": "exceptional drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
+      "modality": "questioned",
+      "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e7"
     },
     {
-      "surface": "large body of water",
+      "surface": "my community",
       "type": "OTHER_ENTITY",
-      "canonical": "large_body_of_water",
-      "subtype": "other",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e8"
@@ -158,15 +158,19 @@
   "unresolved_mentions": [
     {
       "surface": "most states",
-      "reason": "Plural location-like reference not matched to a single canonical location level in the dictionary."
+      "reason": "Generic plural reference; not a specific listed state or region."
     },
     {
-      "surface": "locations",
-      "reason": "Generic location reference without a specific canonical match."
+      "surface": "locations they do",
+      "reason": "Vague location reference without a specific canonical mapping."
     },
     {
-      "surface": "state",
-      "reason": "Generic reference to a U.S. state; could be a chart-level country/state concept but no exact canonical match."
+      "surface": "conditions",
+      "reason": "Abstract causal term; not clearly a listed entity."
+    },
+    {
+      "surface": "potential droughts",
+      "reason": "Generic drought reference without a specific severity level."
     }
   ],
   "section_segments": [
@@ -191,5 +195,5 @@
       "text": "Headline: Severity of Droughts in the U.S. Is your state the most severe?"
     }
   ],
-  "tagged_text": "1. I noticed that most states don't have <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"numbered_point\">severe droughts</entity>. Only a few exceptions are marked as <entity type=\"CHART_ELEMENT\" canonical=\"red\" section=\"numbered_point\">red</entity> on the map.\n2. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"numbered_point\" modality=\"questioned\">exceptional droughts</entity> occur in the locations they do. I don't see a clear pattern, so I wonder what conditions cause <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"numbered_point\" modality=\"questioned\">exceptional drought</entity> in these locations.\n3. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"numbered_point\" speaker_context=\"true\">me and my community</entity> since I live near a <entity type=\"OTHER_ENTITY\" canonical=\"large_body_of_water\" subtype=\"other\" section=\"numbered_point\" speaker_context=\"true\">large body of water</entity>. <entity type=\"LOCATION\" canonical=\"new_jersey\" section=\"numbered_point\">New Jersey</entity>, which is near <entity type=\"LOCATION\" canonical=\"new_york\" section=\"numbered_point\">New York</entity>, has many <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"numbered_point\">severe droughts</entity>, so this relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"numbered_point\" speaker_context=\"true\">me and my community</entity> since there could be potential droughts. \n4. Headline: Severity of Droughts in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">U.S.</entity> Is your state the most severe?"
+  "tagged_text": "1. I noticed that most states don't have <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe droughts</entity>. Only a few exceptions are marked as red on the <entity type=\"CHART_ELEMENT\" canonical=\"map\">map</entity>.\n2. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\" modality=\"questioned\">exceptional droughts</entity> occur in the locations they do. I don't see a clear pattern, so I wonder what conditions cause <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\" modality=\"questioned\">exceptional drought</entity> in these locations.\n3. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> since I live near a large body of water. <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>, which is near <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity>, has many <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe droughts</entity>, so this relates to me and my community since there could be potential droughts. \n4. Headline: Severity of Droughts in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">U.S.</entity>. Is your state the most severe?"
 }

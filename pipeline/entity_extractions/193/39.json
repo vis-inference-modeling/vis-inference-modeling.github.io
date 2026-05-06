@@ -4,23 +4,10 @@
   "raw_comment": "1. This graph shows how severe the drought is across the United States. Areas with darker shades of orange represent the worst drought conditions, while lighter yellow indicates less severe droughts. Regions with normal rainfall are shown in white. States like Texas, Wyoming, West Virginia, and Ohio are facing the most extreme conditions, while Florida and Alaska seem to have little to no drought impact.\n2. It makes me curious about what causes some areas to be drier than others. Could this be linked to climate change? Does the geography or natural features of a state play a role? How does this drought compare to previous ones in the U.S. or in other parts of the world?\n3. This feels personal because I have family that lives in New Jersey, where they’re dealing with very dry conditions. These droughts have even led to wildfires in the area, making it a serious issue for the community.\n4. Whats lies ahead for these Dry States?",
   "entities": [
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 8,
-      "end": 13,
-      "id": "e0"
-    },
-    {
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -28,7 +15,7 @@
       "occurrence_index": 0,
       "start": 57,
       "end": 70,
-      "id": "e1"
+      "id": "e0"
     },
     {
       "surface": "Texas",
@@ -41,7 +28,7 @@
       "occurrence_index": 0,
       "start": 261,
       "end": 266,
-      "id": "e2"
+      "id": "e1"
     },
     {
       "surface": "Wyoming",
@@ -54,7 +41,7 @@
       "occurrence_index": 0,
       "start": 268,
       "end": 275,
-      "id": "e3"
+      "id": "e2"
     },
     {
       "surface": "West Virginia",
@@ -67,7 +54,7 @@
       "occurrence_index": 0,
       "start": 277,
       "end": 290,
-      "id": "e4"
+      "id": "e3"
     },
     {
       "surface": "Ohio",
@@ -80,7 +67,7 @@
       "occurrence_index": 0,
       "start": 296,
       "end": 300,
-      "id": "e5"
+      "id": "e4"
     },
     {
       "surface": "Florida",
@@ -93,7 +80,7 @@
       "occurrence_index": 0,
       "start": 347,
       "end": 354,
-      "id": "e6"
+      "id": "e5"
     },
     {
       "surface": "Alaska",
@@ -106,7 +93,7 @@
       "occurrence_index": 0,
       "start": 359,
       "end": 365,
-      "id": "e7"
+      "id": "e6"
     },
     {
       "surface": "climate change",
@@ -119,6 +106,20 @@
       "occurrence_index": 0,
       "start": 509,
       "end": 523,
+      "id": "e7"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 642,
+      "end": 646,
       "id": "e8"
     },
     {
@@ -136,11 +137,11 @@
     },
     {
       "surface": "New Jersey",
-      "type": "LOCATION",
+      "type": "NEW_ENTITY",
       "canonical": "new_jersey",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 738,
@@ -163,24 +164,20 @@
   ],
   "unresolved_mentions": [
     {
-      "surface": "drought conditions",
-      "reason": "General drought reference; could be EVENT 'drought' but the exact phrase is not separately canonicalized."
+      "surface": "geography",
+      "reason": "Abstract concept; not a tagged entity type in this schema."
     },
     {
-      "surface": "orange",
-      "reason": "Likely chart color reference, but not listed as a chart element in the normalized dictionary for this article."
+      "surface": "natural features",
+      "reason": "Too vague to map confidently to a specific entity."
     },
     {
-      "surface": "yellow",
-      "reason": "Likely chart color reference, but not listed as a chart element in the normalized dictionary for this article."
-    },
-    {
-      "surface": "white",
-      "reason": "Likely chart color reference, but not listed as a chart element in the normalized dictionary for this article."
+      "surface": "very dry conditions",
+      "reason": "Describes drought severity, but not a specific listed level phrase."
     },
     {
       "surface": "Dry States",
-      "reason": "Could be a headline-like phrase or a drought condition descriptor; no exact canonical match provided."
+      "reason": "Could refer to drought-affected states generally, but no exact canonical match."
     }
   ],
   "section_segments": [
@@ -205,5 +202,5 @@
       "text": "Whats lies ahead for these Dry States?"
     }
   ],
-  "tagged_text": "1. This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows how severe the drought is across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. Areas with darker shades of orange represent the worst drought conditions, while lighter yellow indicates less severe droughts. Regions with normal rainfall are shown in white. States like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>, <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity>, and <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> are facing the most extreme conditions, while <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> and <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> seem to have little to no drought impact.\n2. It makes me curious about what causes some areas to be drier than others. Could this be linked to <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity>? Does the geography or natural features of a state play a role? How does this drought compare to previous ones in the U.S. or in other parts of the <entity type=\"LOCATION\" canonical=\"world\">world</entity>?\n3. This feels personal because I have family that lives in <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>, where they’re dealing with very dry conditions. These droughts have even led to <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity> in the area, making it a serious issue for the community.\n4. Whats lies ahead for these Dry States?"
+  "tagged_text": "1. This graph shows how severe the drought is across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>. Areas with darker shades of orange represent the worst drought conditions, while lighter yellow indicates less severe droughts. Regions with normal rainfall are shown in white. States like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>, <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity>, and <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> are facing the most extreme conditions, while <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> and <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> seem to have little to no drought impact.\n2. It makes me curious about what causes some areas to be drier than others. Could this be linked to <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity>? Does the geography or natural features of a state play a role? How does this drought compare to previous ones in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity> or in other parts of the <entity type=\"LOCATION\" canonical=\"world\">world</entity>?\n3. This feels personal because I have family that lives in <entity type=\"NEW_ENTITY\" canonical=\"new_jersey\">New Jersey</entity>, where they’re dealing with very dry conditions. These droughts have even led to <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity> in the area, making it a serious issue for the community.\n4. Whats lies ahead for these Dry States?"
 }

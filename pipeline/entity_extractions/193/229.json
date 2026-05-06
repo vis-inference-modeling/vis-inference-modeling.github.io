@@ -19,11 +19,11 @@
     {
       "surface": "coast",
       "type": "LOCATION",
-      "canonical": "coasts",
+      "canonical": "coast",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 101,
       "end": 106,
@@ -32,7 +32,7 @@
     {
       "surface": "mountain range",
       "type": "LOCATION",
-      "canonical": "mountain_ranges",
+      "canonical": "rocky_mountains",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -43,61 +43,24 @@
       "id": "e2"
     },
     {
-      "surface": "oceans",
-      "type": "LOCATION",
-      "canonical": "ocean",
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 257,
-      "end": 263,
+      "start": 167,
+      "end": 173,
       "id": "e3"
-    },
-    {
-      "surface": "lakes",
-      "type": "LOCATION",
-      "canonical": "lake",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 265,
-      "end": 270,
-      "id": "e4"
-    },
-    {
-      "surface": "rivers",
-      "type": "LOCATION",
-      "canonical": "river",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 272,
-      "end": 278,
-      "id": "e5"
-    },
-    {
-      "surface": "mountains",
-      "type": "LOCATION",
-      "canonical": "mountain_ranges",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 284,
-      "end": 293,
-      "id": "e6"
     },
     {
       "surface": "Water",
       "type": "OTHER_ENTITY",
       "canonical": "water",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -105,33 +68,7 @@
       "occurrence_index": 0,
       "start": 387,
       "end": 392,
-      "id": "e7"
-    },
-    {
-      "surface": "climate",
-      "type": "OTHER_ENTITY",
-      "canonical": "climate",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 441,
-      "end": 448,
-      "id": "e8"
-    },
-    {
-      "surface": "environment",
-      "type": "OTHER_ENTITY",
-      "canonical": "environment",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 453,
-      "end": 464,
-      "id": "e9"
+      "id": "e4"
     },
     {
       "surface": "Forest fires",
@@ -139,35 +76,26 @@
       "canonical": "forest_fires",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 472,
       "end": 484,
-      "id": "e10"
-    },
-    {
-      "surface": "people",
-      "type": "OTHER_ENTITY",
-      "canonical": "people",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 539,
-      "end": 545,
-      "id": "e11"
+      "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "freshwater",
-      "reason": "Likely equivalent to fresh water, but the surface form is not exact and no direct canonical is provided in the article dictionary."
+      "surface": "oceans, lakes, rivers, and mountains",
+      "reason": "Contains multiple geographic features; only some map cleanly to provided canonical locations, and the full phrase is not a single entity."
     },
     {
-      "surface": "America's Water: Drought Killing Communities one-by-one",
-      "reason": "Headline-like phrase, but not an exact match to a provided headline canonical."
+      "surface": "freshwater",
+      "reason": "Likely refers to water resources, but no exact canonical entity provided."
+    },
+    {
+      "surface": "my community",
+      "reason": "Speaker-context community reference, but the normalized dictionary only provides a generic community canonical; not explicitly listed in the reference list for this task."
     }
   ],
   "section_segments": [
@@ -176,5 +104,5 @@
       "text": "I noticed that most of the country is experiencing some sort of drought, and despite being next to a coast or a mountain range, lots of places are facing increasingly severe droughts.\n\nI wonder why: Why is it that these places, that have a lot of access to oceans, lakes, rivers, and mountains are facing so much lack of freshwater? How is this happening, and what can we do to fix it?\n\nWater relates to me and my community by affecting our climate and environment first. Forest fires, for example, ravage our communities, displacing many people who often, have not much more than what they've lost.\n\nA good headline is:\nAmerica's Water: Drought Killing Communities one-by-one"
     }
   ],
-  "tagged_text": "I noticed that most of the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">country</entity> is experiencing some sort of drought, and despite being next to a <entity type=\"LOCATION\" canonical=\"coasts\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">coast</entity> or a <entity type=\"LOCATION\" canonical=\"mountain_ranges\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">mountain range</entity>, lots of places are facing increasingly severe droughts.\n\nI wonder why: Why is it that these places, that have a lot of access to <entity type=\"LOCATION\" canonical=\"ocean\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">oceans</entity>, <entity type=\"LOCATION\" canonical=\"lake\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">lakes</entity>, <entity type=\"LOCATION\" canonical=\"river\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">rivers</entity>, and <entity type=\"LOCATION\" canonical=\"mountain_ranges\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">mountains</entity> are facing so much lack of freshwater? How is this happening, and what can we do to fix it?\n\n<entity type=\"OTHER_ENTITY\" canonical=\"water\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">Water</entity> relates to me and my community by affecting our <entity type=\"OTHER_ENTITY\" canonical=\"climate\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">climate</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"environment\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">environment</entity> first. <entity type=\"EVENT\" canonical=\"forest_fires\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">Forest fires</entity>, for example, ravage our communities, displacing many <entity type=\"OTHER_ENTITY\" canonical=\"people\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">people</entity> who often, have not much more than what they've lost.\n\nA good headline is:\nAmerica's Water: Drought Killing Communities one-by-one"
+  "tagged_text": "I noticed that most of the <entity type=\"LOCATION\" canonical=\"country\">country</entity> is experiencing some sort of drought, and despite being next to a <entity type=\"LOCATION\" canonical=\"coast\">coast</entity> or a <entity type=\"LOCATION\" canonical=\"rocky_mountains\">mountain range</entity>, lots of places are facing increasingly <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity> droughts.\n\nI wonder why: Why is it that these places, that have a lot of access to oceans, lakes, rivers, and mountains are facing so much lack of freshwater? How is this happening, and what can we do to fix it?\n\n<entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">Water</entity> relates to me and my community by affecting our climate and environment first. <entity type=\"EVENT\" canonical=\"forest_fires\">Forest fires</entity>, for example, ravage our communities, displacing many people who often, have not much more than what they've lost.\n\nA good headline is:\nAmerica's Water: Drought Killing Communities one-by-one"
 }

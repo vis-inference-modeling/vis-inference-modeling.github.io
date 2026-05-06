@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,8 +19,9 @@
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -31,8 +33,9 @@
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -69,9 +72,9 @@
       "id": "e4"
     },
     {
-      "surface": "temperature",
+      "surface": "extreme temperature variations",
       "type": "EVENT",
-      "canonical": "temperature",
+      "canonical": "extreme_weather",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -80,20 +83,6 @@
       "start": null,
       "end": null,
       "id": "e5"
-    },
-    {
-      "surface": "water resources",
-      "type": "OTHER_ENTITY",
-      "canonical": "water_resources",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
     },
     {
       "surface": "global warming",
@@ -106,35 +95,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e7"
-    },
-    {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
     },
     {
       "surface": "country",
@@ -147,21 +121,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e8"
     },
     {
-      "surface": "human activities",
-      "type": "OTHER_ENTITY",
-      "canonical": "human_factors",
-      "subtype": "other",
+      "surface": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e9"
     },
     {
       "surface": "graph",
@@ -174,47 +147,25 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "Drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "Climate Change",
-      "type": "EVENT",
-      "canonical": "climate_change",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
+      "id": "e10"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "central U.S. states",
-      "reason": "Could be a region/location, but no exact canonical match is confirmed beyond the generic 'country' and regional terms."
+      "reason": "Broad regional reference; could be LOCATION but not in the provided location list as an exact canonical."
     },
     {
       "surface": "rugged, mountainous terrain",
-      "reason": "Describes geography but no exact canonical entity is confirmed."
+      "reason": "Descriptive geography, but no exact canonical location/entity mapping."
     },
     {
-      "surface": "local areas",
-      "reason": "Generic location reference without a confirmed canonical match."
+      "surface": "limited water resources",
+      "reason": "Could refer to water-related concept/entity, but no confirmed canonical ID provided."
+    },
+    {
+      "surface": "human activities",
+      "reason": "Generic causal group/concept without a confirmed canonical ID."
     }
   ],
   "section_segments": [
@@ -223,5 +174,5 @@
       "text": "I observed that the central U.S. states tend to experience the most severe droughts, which I believe may be influenced by the region's rugged, mountainous terrain and the extreme temperature variations they face. These areas are especially vulnerable to droughts because of these geographical factors, combined with limited water resources. Additionally, I wonder if the increasing effects of global warming and climate change are contributing to the growing severity of droughts in these regions. This is an issue that hits close to home for me and my community, as it highlights how climate change is impacting not only local areas but the entire country, with human activities playing a significant role. A potential headline for the graph could be \"Drought Risk Across Your State: The Impact of Climate Change.\""
     }
   ],
-  "tagged_text": "I observed that the central U.S. states tend to experience the most severe <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity>, which I believe may be influenced by the region's rugged, mountainous terrain and the extreme <entity type=\"EVENT\" canonical=\"temperature\" section=\"body\">temperature</entity> variations they face. These areas are especially vulnerable to <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> because of these geographical factors, combined with limited <entity type=\"OTHER_ENTITY\" canonical=\"water_resources\" subtype=\"other\" section=\"body\">water resources</entity>. Additionally, I wonder if the increasing effects of <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\" modality=\"questioned\">global warming</entity> and <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\">climate change</entity> are contributing to the growing severity of <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\" modality=\"questioned\">droughts</entity> in these regions. This is an issue that hits close to home for <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\" section=\"body\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\" section=\"body\">my community</entity>, as it highlights how <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">climate change</entity> is impacting not only local areas but the entire <entity type=\"LOCATION\" canonical=\"country\" section=\"body\">country</entity>, with <entity type=\"OTHER_ENTITY\" canonical=\"human_factors\" subtype=\"other\" section=\"body\">human activities</entity> playing a significant role. A potential headline for the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> could be \"<entity type=\"EVENT\" canonical=\"drought\" section=\"headline\">Drought</entity> Risk Across Your State: The Impact of <entity type=\"EVENT\" canonical=\"climate_change\" section=\"headline\">Climate Change</entity>.\""
+  "tagged_text": "I observed that the central U.S. states tend to experience the most severe <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">droughts</entity>, which I believe may be influenced by the region's rugged, mountainous terrain and the <entity type=\"EVENT\" canonical=\"extreme_weather\">extreme temperature variations</entity> they face. These areas are especially vulnerable to <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">droughts</entity> because of these geographical factors, combined with limited water resources. Additionally, I wonder if the increasing effects of <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"questioned\">global warming</entity> and <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity> are contributing to the growing severity of <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\" modality=\"questioned\">droughts</entity> in these regions. This is an issue that hits close to home for me and my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity>, as it highlights how <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> is impacting not only local areas but the entire <entity type=\"LOCATION\" canonical=\"country\">country</entity>, with human activities playing a significant role. A potential <entity type=\"CHART_ELEMENT\" canonical=\"headline\">headline</entity> for the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> could be \"Drought Risk Across Your State: The Impact of Climate Change.\""
 }

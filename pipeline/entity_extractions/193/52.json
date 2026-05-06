@@ -31,8 +31,9 @@
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -44,8 +45,9 @@
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -56,69 +58,31 @@
       "id": "e3"
     },
     {
-      "surface": "lakes",
+      "surface": "nation",
       "type": "LOCATION",
-      "canonical": "lakes",
+      "canonical": "country",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 434,
-      "end": 439,
+      "start": 507,
+      "end": 513,
       "id": "e4"
     },
     {
-      "surface": "parks",
-      "type": "LOCATION",
-      "canonical": "parks",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 443,
-      "end": 448,
-      "id": "e5"
-    },
-    {
-      "surface": "Drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 499,
-      "end": 506,
-      "id": "e6"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 525,
-      "end": 533,
-      "id": "e7"
-    },
-    {
       "surface": "USA",
-      "type": "LOCATION",
-      "canonical": "us",
-      "section": "headline",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 545,
       "end": 548,
-      "id": "e8"
+      "id": "e5"
     },
     {
       "surface": "climate changes",
@@ -131,26 +95,64 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e6"
     },
     {
       "surface": "recent times",
       "type": "TIME_REFERENCE",
-      "canonical": "recent_months",
+      "canonical": "past_years",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "Long Island",
+      "type": "LOCATION",
+      "canonical": "new_york_city_area",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e10"
     },
     {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "surface": "lakes in parks",
+      "type": "LOCATION",
+      "canonical": "my_community",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -161,9 +163,9 @@
       "id": "e11"
     },
     {
-      "surface": "Long Island",
-      "type": "LOCATION",
-      "canonical": "long_island",
+      "surface": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -174,22 +176,12 @@
       "id": "e12"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "the nation as a whole",
-      "reason": "Could refer to the country, but it is phrased generically and not explicitly tied to a confirmed canonical location beyond the earlier 'country' mention."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "My first thought seeing the graph was that the entire country is enveloped in varying degrees of drought and there are hardly any areas unaffected by it.\nI wonder how much of an affect climate changes over recent times have had an impact and how much does this effect the nation as a whole.\nThis relates to my community as the map shows the whole of Long Island is affected by a drought, it is noticeable enough that I have seen some lakes in parks starting to dry up."
-    },
-    {
-      "section": "headline",
-      "label": "A headline for this could be",
-      "text": "Drought nation: Where the droughts are in the USA"
+      "text": "My first thought seeing the graph was that the entire country is enveloped in varying degrees of drought and there are hardly any areas unaffected by it.\nI wonder how much of an affect climate changes over recent times have had an impact and how much does this effect the nation as a whole.\nThis relates to my community as the map shows the whole of Long Island is affected by a drought, it is noticeable enough that I have seen some lakes in parks starting to dry up.\nA headline for this could be \"Drought nation: Where the droughts are in the USA\""
     }
   ],
-  "tagged_text": "My first thought seeing the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> was that the entire <entity type=\"LOCATION\" canonical=\"country\" section=\"body\">country</entity> is enveloped in varying degrees of <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> and there are hardly any areas unaffected by it.\nI wonder how much of an affect <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\">climate changes</entity> over <entity type=\"TIME_REFERENCE\" canonical=\"recent_months\" section=\"body\" modality=\"questioned\">recent times</entity> have had an impact and how much does this effect the nation as a whole.\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\" section=\"body\">my community</entity> as the map shows the whole of <entity type=\"LOCATION\" canonical=\"long_island\" section=\"body\">Long Island</entity> is affected by a <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity>, it is noticeable enough that I have seen some <entity type=\"LOCATION\" canonical=\"lakes\" section=\"body\">lakes</entity> in <entity type=\"LOCATION\" canonical=\"parks\" section=\"body\">parks</entity> starting to dry up.\nA headline for this could be \"<entity type=\"EVENT\" canonical=\"drought\" section=\"headline\">Drought</entity> nation: Where the <entity type=\"EVENT\" canonical=\"droughts\" section=\"headline\">droughts</entity> are in the <entity type=\"LOCATION\" canonical=\"us\" section=\"headline\">USA</entity>\""
+  "tagged_text": "My first thought seeing the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> was that the entire <entity type=\"LOCATION\" canonical=\"country\">country</entity> is enveloped in varying degrees of <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">drought</entity> and there are hardly any areas unaffected by it.\nI wonder how much of an affect <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate changes</entity> over <entity type=\"TIME_REFERENCE\" canonical=\"past_years\">recent times</entity> have had an impact and how much does this effect the <entity type=\"LOCATION\" canonical=\"country\">nation</entity> as a whole.\nThis relates to my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> as the <entity type=\"CHART_ELEMENT\" canonical=\"map\">map</entity> shows the whole of <entity type=\"new_york_city_area\" canonical=\"new_york_city_area\">Long Island</entity> is affected by a <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">drought</entity>, it is noticeable enough that I have seen some <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">lakes in parks</entity> starting to dry up.\nA <entity type=\"CHART_ELEMENT\" canonical=\"headline\">headline</entity> for this could be \"Drought nation: Where the droughts are in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">USA</entity>\""
 }

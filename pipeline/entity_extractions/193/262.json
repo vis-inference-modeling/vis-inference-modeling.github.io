@@ -5,10 +5,11 @@
   "entities": [
     {
       "surface": "drought conditions",
-      "type": "EVENT",
-      "canonical": "drought_conditions",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -18,10 +19,11 @@
     },
     {
       "surface": "drought conditions",
-      "type": "EVENT",
-      "canonical": "drought_conditions",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
@@ -31,10 +33,11 @@
     },
     {
       "surface": "drought conditions",
-      "type": "EVENT",
-      "canonical": "drought_conditions",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 2,
@@ -48,7 +51,7 @@
       "canonical": "water_supplies",
       "subtype": "other",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -57,44 +60,27 @@
       "id": "e3"
     },
     {
-      "surface": "temperature",
-      "type": "DATA_VAR",
-      "canonical": "temperature",
+      "surface": "brush and forest fires",
+      "type": "EVENT",
+      "canonical": "fires",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e4"
-    },
-    {
-      "surface": "forest fires",
-      "type": "EVENT",
-      "canonical": "forest_fires",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "brush",
-      "reason": "Likely refers to brush fires, but the exact phrase is incomplete/ambiguous in the comment."
+      "surface": "temperature",
+      "reason": "Likely a related variable, but it is not in the provided reference list or normalized dictionary."
     },
     {
       "surface": "historical context",
-      "reason": "Time-related but not a specific time reference; could be a general temporal framing rather than a concrete date/range."
-    },
-    {
-      "surface": "drawdowns",
-      "reason": "Could be a process/action related to water levels, but not a standalone entity in the reference list."
+      "reason": "Abstract phrase that may refer to time/history, but no clear canonical entity mapping."
     }
   ],
   "section_segments": [
@@ -103,5 +89,5 @@
       "text": "How do drought conditions correlate to temperature and increase or decrease frequency of brush and forest fires?\n\nWhat is the historical context of drought conditions?\n\nHow much do drought conditions cause drawdowns in water supplies?"
     }
   ],
-  "tagged_text": "How do <entity type=\"EVENT\" canonical=\"drought_conditions\" modality=\"questioned\">drought conditions</entity> correlate to <entity type=\"DATA_VAR\" canonical=\"temperature\" modality=\"questioned\">temperature</entity> and increase or decrease frequency of brush and <entity type=\"EVENT\" canonical=\"forest_fires\" modality=\"questioned\">forest fires</entity>?\n\nWhat is the historical context of <entity type=\"EVENT\" canonical=\"drought_conditions\" modality=\"questioned\">drought conditions</entity>?\n\nHow much do <entity type=\"EVENT\" canonical=\"drought_conditions\" modality=\"questioned\">drought conditions</entity> cause drawdowns in <entity type=\"OTHER_ENTITY\" canonical=\"water_supplies\" subtype=\"other\" modality=\"questioned\">water supplies</entity>?"
+  "tagged_text": "How do <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought conditions</entity> correlate to temperature and increase or decrease frequency of <entity type=\"EVENT\" canonical=\"fires\">brush and forest fires</entity>?\n\nWhat is the historical context of <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought conditions</entity>?\n\nHow much do <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought conditions</entity> cause drawdowns in <entity type=\"OTHER_ENTITY\" canonical=\"water_supplies\" subtype=\"other\">water supplies</entity>?"
 }

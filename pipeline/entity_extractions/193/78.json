@@ -4,9 +4,23 @@
   "raw_comment": "Title: Wheres My Water?\n\nI noticed that the states closer to the middle of the U.S. have more droughts then the sides of the U.S., I wonder why that is?",
   "entities": [
     {
+      "surface": "Wheres My Water?",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 7,
+      "end": 23,
+      "id": "e0"
+    },
+    {
       "surface": "U.S.",
-      "type": "LOCATION",
-      "canonical": "us",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -14,12 +28,13 @@
       "occurrence_index": 0,
       "start": 79,
       "end": 83,
-      "id": "e0"
+      "id": "e1"
     },
     {
       "surface": "U.S.",
-      "type": "LOCATION",
-      "canonical": "us",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -27,17 +42,25 @@
       "occurrence_index": 1,
       "start": 125,
       "end": 129,
-      "id": "e1"
+      "id": "e2"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "states closer to the middle of the U.S.",
-      "reason": "Could map to a regional location, but no exact canonical region is confirmed from the text alone."
+      "surface": "states closer to the middle",
+      "reason": "Refers to a geographic region within the U.S. but is too vague to map to a specific listed region."
     },
     {
-      "surface": "droughts",
-      "reason": "General drought mention without a confirmed canonical EVENT/level mapping in the article dictionary."
+      "surface": "more droughts",
+      "reason": "Generic drought reference without a specific severity level."
+    },
+    {
+      "surface": "the sides of the U.S.",
+      "reason": "Vague geographic reference; could imply coasts or outer regions but is not explicit."
+    },
+    {
+      "surface": "that",
+      "reason": "Pronoun with unclear antecedent."
     }
   ],
   "section_segments": [
@@ -51,5 +74,5 @@
       "text": "I noticed that the states closer to the middle of the U.S. have more droughts then the sides of the U.S., I wonder why that is?"
     }
   ],
-  "tagged_text": "Title: Wheres My Water?\n\nI noticed that the states closer to the middle of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\">U.S.</entity> have more droughts then the sides of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\">U.S.</entity>, I wonder why that is?"
+  "tagged_text": "Title: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Wheres My Water?</entity>\n\nI noticed that the states closer to the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity> have more droughts then the sides of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity>, I wonder why that is?"
 }

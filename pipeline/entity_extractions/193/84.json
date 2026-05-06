@@ -5,8 +5,8 @@
   "entities": [
     {
       "surface": "The Good, The Bad, and The Drought",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -17,7 +17,7 @@
       "id": "e0"
     },
     {
-      "surface": "ocean side",
+      "surface": "ocean",
       "type": "LOCATION",
       "canonical": "ocean",
       "section": "body",
@@ -26,7 +26,7 @@
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 98,
-      "end": 108,
+      "end": 103,
       "id": "e1"
     },
     {
@@ -43,12 +43,7 @@
       "id": "e2"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "drought",
-      "reason": "General event mention; could be EVENT:drought, but the comment focuses on a drought area rather than naming a specific drought event."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "headline",
@@ -60,5 +55,5 @@
       "text": "Wonder: Why is there a large area of drought by the ocean side in Texas."
     }
   ],
-  "tagged_text": "Headline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">The Good, The Bad, and The Drought</entity>\n\nWonder: Why is there a large area of drought by the <entity type=\"LOCATION\" canonical=\"ocean\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">ocean side</entity> in <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Texas</entity>."
+  "tagged_text": "Headline: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">The Good, The Bad, and The Drought</entity>\n\nWonder: Why is there a large area of drought by the <entity type=\"LOCATION\" canonical=\"ocean\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">ocean</entity> side in <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Texas</entity>."
 }

@@ -6,8 +6,8 @@
     {
       "surface": "coasts",
       "type": "LOCATION",
-      "canonical": "coasts",
-      "section": "body",
+      "canonical": "coast",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -17,138 +17,87 @@
       "id": "e0"
     },
     {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
+      "surface": "midland areas",
+      "type": "LOCATION",
+      "canonical": "central_us",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 42,
-      "end": 50,
+      "start": 61,
+      "end": 74,
       "id": "e1"
     },
     {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 361,
-      "end": 369,
+      "occurrence_index": 0,
+      "start": 122,
+      "end": 126,
       "id": "e2"
     },
     {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "headline",
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 389,
-      "end": 393,
+      "start": 151,
+      "end": 158,
       "id": "e3"
     },
     {
-      "surface": "midland areas",
-      "type": "LOCATION",
-      "canonical": "midland_areas",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e4"
-    },
-    {
-      "surface": "U.S.",
-      "type": "LOCATION",
-      "canonical": "us",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e5"
-    },
-    {
-      "surface": "Oklahoma",
+      "surface": "midland around Oklahoma",
       "type": "LOCATION",
       "canonical": "oklahoma",
-      "section": "body",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "states",
-      "type": "LOCATION",
-      "canonical": "states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
-    },
-    {
-      "surface": "large concentrations of drought",
-      "type": "EVENT",
-      "canonical": "large_concentrations_of_drought",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "family",
-      "type": "OTHER_ENTITY",
-      "canonical": "family",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
+      "start": 166,
+      "end": 189,
+      "id": "e4"
     },
     {
       "surface": "Middle East",
       "type": "LOCATION",
       "canonical": "middle_east",
-      "section": "body",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
+      "start": 325,
+      "end": 336,
+      "id": "e5"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "droughts",
+      "reason": "Generic plural reference; no specific drought severity level is named."
+    },
+    {
+      "surface": "family",
+      "reason": "Generic group reference, not a specific entity."
+    },
+    {
+      "surface": "the rain",
+      "reason": "Could be rhetorical or refer to precipitation; not a listed entity."
+    }
+  ],
   "section_segments": [
     {
       "section": "numbered_point",
@@ -171,5 +120,5 @@
       "text": "Where did the rain go"
     }
   ],
-  "tagged_text": "1.I see that the <entity type=\"LOCATION\" canonical=\"coasts\" section=\"body\">coasts</entity> seem to have less <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> while the <entity type=\"LOCATION\" canonical=\"midland_areas\" section=\"body\">midland areas</entity> towards the more industrialized midland of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\">U.S.</entity> While intensity is more extreme in the midland around <entity type=\"LOCATION\" canonical=\"oklahoma\" section=\"body\">Oklahoma</entity>, other <entity type=\"LOCATION\" canonical=\"states\" section=\"body\">states</entity> aren't still doing great.\n2. I wonder what those <entity type=\"EVENT\" canonical=\"large_concentrations_of_drought\" section=\"body\">large concentrations of drought</entity> have in common.\n3. I Have <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" section=\"body\">family</entity> in the <entity type=\"LOCATION\" canonical=\"middle_east\" section=\"body\">Middle East</entity> that tend to experience <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity>. \n4. Where did the <entity type=\"EVENT\" canonical=\"rain\" section=\"headline\">rain</entity> go"
+  "tagged_text": "1.I see that the <entity type=\"LOCATION\" canonical=\"coast\" section=\"numbered_point\">coasts</entity> seem to have less droughts while the <entity type=\"LOCATION\" canonical=\"central_us\" section=\"numbered_point\">midland areas</entity> towards the more industrialized midland of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"numbered_point\">U.S.</entity> While intensity is more <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" section=\"numbered_point\">extreme</entity> in the <entity type=\"LOCATION\" canonical=\"oklahoma\" section=\"numbered_point\">midland around Oklahoma</entity>, other states aren't still doing great.\n2. I wonder what those large concentrations of drought have in common.\n3. I Have family in the <entity type=\"LOCATION\" canonical=\"middle_east\" section=\"numbered_point\">Middle East</entity> that tend to experience droughts. \n4. Where did the rain go"
 }

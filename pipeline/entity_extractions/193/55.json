@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -17,124 +18,6 @@
       "id": "e0"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 128,
-      "end": 135,
-      "id": "e1"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 209,
-      "end": 216,
-      "id": "e2"
-    },
-    {
-      "surface": "year",
-      "type": "TIME_REFERENCE",
-      "canonical": "this_year",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 244,
-      "end": 248,
-      "id": "e3"
-    },
-    {
-      "surface": "me and my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 269,
-      "end": 288,
-      "id": "e4"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 320,
-      "end": 324,
-      "id": "e5"
-    },
-    {
-      "surface": "area",
-      "type": "LOCATION",
-      "canonical": "speaker_area",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 332,
-      "end": 336,
-      "id": "e6"
-    },
-    {
-      "surface": "past few months",
-      "type": "TIME_REFERENCE",
-      "canonical": "past_few_months",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 396,
-      "end": 411,
-      "id": "e7"
-    },
-    {
-      "surface": "Droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 435,
-      "end": 443,
-      "id": "e8"
-    },
-    {
-      "surface": "US",
-      "type": "LOCATION",
-      "canonical": "us",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 471,
-      "end": 473,
-      "id": "e9"
-    },
-    {
       "surface": "states",
       "type": "LOCATION",
       "canonical": "states",
@@ -143,14 +26,28 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
+      "start": 53,
+      "end": 59,
+      "id": "e1"
     },
     {
       "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 90,
+      "end": 94,
+      "id": "e2"
+    },
+    {
+      "surface": "New York",
       "type": "LOCATION",
-      "canonical": "us",
+      "canonical": "new_york",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -158,36 +55,50 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e3"
     },
     {
-      "surface": "2024",
-      "type": "TIME_REFERENCE",
-      "canonical": "2024",
+      "surface": "state",
+      "type": "DATA_VAR",
+      "canonical": "state_names_abbreviations",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "USA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "numbered_point",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "years",
-      "type": "TIME_REFERENCE",
-      "canonical": "previous_years",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
+      "id": "e5"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "mid South and North of America",
+      "reason": "Not an exact listed location; appears to refer to broad U.S. regions but mapping is uncertain."
+    },
+    {
+      "surface": "around America",
+      "reason": "Ambiguous broad geographic reference; unclear if rhetorical or a specific region."
+    },
+    {
+      "surface": "draught",
+      "reason": "Likely a misspelling of drought, but not tagged because the intended canonical is uncertain from surface alone."
+    }
+  ],
   "section_segments": [
     {
       "section": "numbered_point",
@@ -197,18 +108,18 @@
     {
       "section": "numbered_point",
       "label": "2",
-      "text": "I wonder why there is so much drought currently in 2024 as opposed to other years where there wasn't much of a drought occurring as it is in this year."
+      "text": "Why is there higher rate in mid South and North of America and not around America."
     },
     {
       "section": "numbered_point",
       "label": "3",
-      "text": "This relates to me and my community because there hasn't been much rain in the area where I live with the exception of a few days out of these past few months."
+      "text": "Since I’m living in New York, it could help me understand if my state is struggling with draught or not."
     },
     {
       "section": "numbered_point",
       "label": "4",
-      "text": "A catchy headline: Droughts Currently Occurring in the US"
+      "text": "Caught the drought USA"
     }
   ],
-  "tagged_text": "1. I noticed that the excessive <entity type=\"EVENT\" canonical=\"drought\" section=\"numbered_point\">drought</entity> is mostly in <entity type=\"LOCATION\" canonical=\"states\" section=\"numbered_point\">states</entity> that are in the middle of the <entity type=\"LOCATION\" canonical=\"us\" section=\"numbered_point\">U.S.</entity>\n2. I wonder why there is so much <entity type=\"EVENT\" canonical=\"drought\" section=\"numbered_point\" modality=\"questioned\">drought</entity> currently in <entity type=\"TIME_REFERENCE\" canonical=\"2024\" section=\"numbered_point\" modality=\"questioned\">2024</entity> as opposed to other <entity type=\"TIME_REFERENCE\" canonical=\"previous_years\" section=\"numbered_point\" modality=\"questioned\">years</entity> where there wasn't much of a <entity type=\"EVENT\" canonical=\"drought\" section=\"numbered_point\" modality=\"questioned\">drought</entity> occurring as it is in this <entity type=\"TIME_REFERENCE\" canonical=\"this_year\" section=\"numbered_point\" modality=\"questioned\">year</entity>.\n3. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\" section=\"numbered_point\">me and my community</entity> because there hasn't been much <entity type=\"EVENT\" canonical=\"rain\" section=\"numbered_point\">rain</entity> in the <entity type=\"LOCATION\" canonical=\"speaker_area\" section=\"numbered_point\" speaker_context=\"true\">area</entity> where I live with the exception of a few days out of these <entity type=\"TIME_REFERENCE\" canonical=\"past_few_months\" section=\"numbered_point\">past few months</entity>.\n4. A catchy headline: <entity type=\"EVENT\" canonical=\"droughts\" section=\"headline\">Droughts</entity> Currently Occurring in the <entity type=\"LOCATION\" canonical=\"us\" section=\"headline\">US</entity>"
+  "tagged_text": "1. I noticed that the excessive <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">drought</entity> is mostly in <entity type=\"LOCATION\" canonical=\"states\">states</entity> that are in the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity>\n2. Why is there higher rate in mid South and North of America and not around America.\n3. Since I’m living in <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity>, it could help me understand if my <entity type=\"LOCATION\" canonical=\"state_names_abbreviations\">state</entity> is struggling with draught or not.\n4. Caught the drought <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">USA</entity>"
 }

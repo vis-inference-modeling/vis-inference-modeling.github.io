@@ -17,17 +17,88 @@
       "id": "e0"
     },
     {
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 64,
+      "end": 72,
+      "id": "e1"
+    },
+    {
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 438,
+      "end": 446,
+      "id": "e2"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 460,
+      "end": 469,
+      "id": "e3"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 571,
+      "end": 580,
+      "id": "e4"
+    },
+    {
+      "surface": "United states",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 669,
+      "end": 682,
+      "id": "e5"
+    },
+    {
       "surface": "county",
-      "type": "LOCATION",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 152,
-      "end": 158,
-      "id": "e1"
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "ocean",
@@ -38,37 +109,51 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 186,
-      "end": 191,
-      "id": "e2"
+      "start": null,
+      "end": null,
+      "id": "e7"
     },
     {
       "surface": "people",
       "type": "OTHER_ENTITY",
       "canonical": "people",
-      "subtype": "people",
+      "subtype": "group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 250,
-      "end": 256,
-      "id": "e3"
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "communities",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "communities",
+      "subtype": "group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 261,
-      "end": 272,
-      "id": "e4"
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
     },
     {
       "surface": "water",
@@ -80,9 +165,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 376,
-      "end": 381,
-      "id": "e5"
+      "start": null,
+      "end": null,
+      "id": "e11"
     },
     {
       "surface": "New York",
@@ -93,49 +178,37 @@
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 488,
-      "end": 496,
-      "id": "e6"
+      "start": null,
+      "end": null,
+      "id": "e12"
     },
     {
       "surface": "abnormally dry",
-      "type": "EVENT",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 509,
-      "end": 523,
-      "id": "e7"
-    },
-    {
-      "surface": "United states",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 669,
-      "end": 682,
-      "id": "e8"
+      "start": null,
+      "end": null,
+      "id": "e13"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "I notice that the areas in the Midwest are the most affected by droughts. I wonder if it may be a possibility that these areas are in the middle of the county and furthest away from the ocean which is why they are the most affected\n\nI wonder how the people and communities in the areas exceptionally affected by drought are coping with this and how they are getting access to water.\n\nHow does this relate to you and your community?\nthese droughts relate to my community because I live in New York where it is abnormally dry. We should bring attention to this fact in the community to spread awareness."
     },
     {
       "section": "headline",
-      "label": "Catch headline",
-      "text": "\"A dry and drougthful December takes hold of the United states\""
+      "label": "Catch headline - \"A dry and drougthful December takes hold of the United states\"",
+      "text": "Catch headline - \"A dry and drougthful December takes hold of the United states\""
     }
   ],
-  "tagged_text": "I notice that the areas in the <entity type=\"LOCATION\" canonical=\"midwest\" modality=\"asserted\">Midwest</entity> are the most affected by droughts. I wonder if it may be a possibility that these areas are in the middle of the <entity type=\"LOCATION\" canonical=\"country\" modality=\"questioned\">county</entity> and furthest away from the <entity type=\"LOCATION\" canonical=\"ocean\" modality=\"questioned\">ocean</entity> which is why they are the most affected\n\nI wonder how the <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"people\" modality=\"questioned\">people</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" modality=\"questioned\">communities</entity> in the areas exceptionally affected by drought are coping with this and how they are getting access to <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" modality=\"questioned\">water</entity>.\n\nHow does this relate to you and your community?\nthese droughts relate to my community because I live in <entity type=\"LOCATION\" canonical=\"new_york\" speaker_context=\"true\">New York</entity> where it is <entity type=\"EVENT\" canonical=\"abnormally_dry\" speaker_context=\"true\">abnormally dry</entity>. We should bring attention to this fact in the community to spread awareness.\n\nCatch headline - \"A dry and drougthful December takes hold of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">United states</entity>\""
+  "tagged_text": "I notice that the areas in the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> are the most affected by <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">droughts</entity>. I wonder if it may be a possibility that these areas are in the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"state_names_abbreviations\" modality=\"questioned\">county</entity> and furthest away from the <entity type=\"LOCATION\" canonical=\"ocean\" modality=\"questioned\">ocean</entity> which is why they are the most affected\n\nI wonder how the <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\" modality=\"questioned\">people</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"communities\" subtype=\"group\" modality=\"questioned\">communities</entity> in the areas exceptionally affected by <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\" modality=\"questioned\">drought</entity> are coping with this and how they are getting access to <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" modality=\"questioned\">water</entity>.\n\nHow does this relate to you and your community?\nthese <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">droughts</entity> relate to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because I live in <entity type=\"LOCATION\" canonical=\"new_york\" speaker_context=\"true\">New York</entity> where it is <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" speaker_context=\"true\">abnormally dry</entity>. We should bring attention to this fact in the <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\">community</entity> to spread awareness.\n\nCatch headline - \"A dry and drougthful December takes hold of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">United states</entity>\""
 }

@@ -7,7 +7,7 @@
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,31 +18,31 @@
       "id": "e0"
     },
     {
-      "surface": "Exceptional",
+      "surface": "Exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 99,
-      "end": 110,
+      "end": 118,
       "id": "e1"
     },
     {
-      "surface": "extreme",
+      "surface": "extreme drought",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 183,
-      "end": 190,
+      "start": 205,
+      "end": 220,
       "id": "e2"
     },
     {
@@ -59,36 +59,10 @@
       "id": "e3"
     },
     {
-      "surface": "precipitation",
-      "type": "DATA_VAR",
-      "canonical": "precipitation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 362,
-      "end": 375,
-      "id": "e4"
-    },
-    {
-      "surface": "soil moisture",
-      "type": "DATA_VAR",
-      "canonical": "soil_moisture",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 380,
-      "end": 393,
-      "id": "e5"
-    },
-    {
       "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -96,7 +70,7 @@
       "occurrence_index": 0,
       "start": 466,
       "end": 470,
-      "id": "e6"
+      "id": "e4"
     },
     {
       "surface": "Alaska",
@@ -109,7 +83,7 @@
       "occurrence_index": 0,
       "start": 585,
       "end": 591,
-      "id": "e7"
+      "id": "e5"
     },
     {
       "surface": "Kentucky",
@@ -122,29 +96,25 @@
       "occurrence_index": 0,
       "start": 596,
       "end": 604,
-      "id": "e8"
+      "id": "e6"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "drought map",
-      "reason": "Chart reference, but not an exact chart element canonical in the provided dictionary."
+      "surface": "historical conditions",
+      "reason": "Temporal/abstract phrase without a clear canonical mapping."
     },
     {
-      "surface": "D4",
-      "reason": "Severity code not explicitly canonicalized in the provided dictionary."
+      "surface": "precipitation",
+      "reason": "Data-like term, but not in the provided reference list."
     },
     {
-      "surface": "D3",
-      "reason": "Severity code not explicitly canonicalized in the provided dictionary."
+      "surface": "soil moisture",
+      "reason": "Data-like term, but not in the provided reference list."
     },
     {
-      "surface": "severe",
-      "reason": "Likely a drought severity level, but no exact canonical match is provided for this standalone surface form."
-    },
-    {
-      "surface": "moderate",
-      "reason": "Likely a drought severity level, but no exact canonical match is provided for this standalone surface form."
+      "surface": "D3-D4 levels",
+      "reason": "Shorthand for drought categories; could be inferred but not explicitly listed as a surface form."
     }
   ],
   "section_segments": [
@@ -153,5 +123,5 @@
       "text": "The drought map highlights the rarity and severity of current conditions across the United States. Exceptional drought (D4) occurs in less than 2% of historical conditions, making it extremely rare, while extreme drought (D3) reflects conditions in the 2nd to 5th percentiles. In regions like the Midwest, where D3-D4 levels dominate, drought indicators such as precipitation and soil moisture are alarmingly low, underscoring the severity. Approximately 10% of the U.S. is in exceptional drought, while larger portions are experiencing extreme, severe, or moderate drought, with only Alaska and Kentucky remaining unaffected."
     }
   ],
-  "tagged_text": "The drought map highlights the rarity and severity of current conditions across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">Exceptional</entity> drought (D4) occurs in less than 2% of historical conditions, making it extremely rare, while <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\">extreme</entity> drought (D3) reflects conditions in the 2nd to 5th percentiles. In regions like the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity>, where D3-D4 levels dominate, drought indicators such as <entity type=\"DATA_VAR\" canonical=\"precipitation\">precipitation</entity> and <entity type=\"DATA_VAR\" canonical=\"soil_moisture\">soil moisture</entity> are alarmingly low, underscoring the severity. Approximately 10% of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> is in exceptional drought, while larger portions are experiencing extreme, severe, or moderate drought, with only <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> and <entity type=\"LOCATION\" canonical=\"kentucky\">Kentucky</entity> remaining unaffected."
+  "tagged_text": "The drought map highlights the rarity and severity of current conditions across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">Exceptional drought</entity> (D4) occurs in less than 2% of historical conditions, making it extremely rare, while <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme drought</entity> (D3) reflects conditions in the 2nd to 5th percentiles. In regions like the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity>, where D3-D4 levels dominate, drought indicators such as precipitation and soil moisture are alarmingly low, underscoring the severity. Approximately 10% of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity> is in exceptional drought, while larger portions are experiencing extreme, severe, or moderate drought, with only <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> and <entity type=\"LOCATION\" canonical=\"kentucky\">Kentucky</entity> remaining unaffected."
 }

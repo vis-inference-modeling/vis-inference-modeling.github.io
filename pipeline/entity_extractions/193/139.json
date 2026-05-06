@@ -20,7 +20,7 @@
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -31,24 +31,36 @@
       "id": "e1"
     },
     {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "coast",
+      "type": "LOCATION",
+      "canonical": "east_coast",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 180,
+      "end": 185,
+      "id": "e2"
+    },
+    {
+      "surface": "coast",
+      "type": "LOCATION",
+      "canonical": "east_coast",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 665,
-      "end": 678,
-      "id": "e2"
+      "start": 280,
+      "end": 285,
+      "id": "e3"
     },
     {
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -56,27 +68,13 @@
       "occurrence_index": 0,
       "start": 1455,
       "end": 1457,
-      "id": "e3"
-    },
-    {
-      "surface": "moderate",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "moderate",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e4"
     },
     {
       "surface": "severe",
       "type": "DATA_VAR_LEVEL",
       "canonical": "severe",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -90,7 +88,7 @@
       "surface": "severe",
       "type": "DATA_VAR_LEVEL",
       "canonical": "severe",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -99,6 +97,76 @@
       "start": null,
       "end": null,
       "id": "e6"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "abnormally warm",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "moderate",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "moderate",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
     },
     {
       "surface": "midwest",
@@ -111,7 +179,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e12"
     },
     {
       "surface": "midwest",
@@ -124,7 +192,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e13"
     },
     {
       "surface": "south",
@@ -137,7 +205,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e14"
     },
     {
       "surface": "Wyoming",
@@ -150,7 +218,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e15"
     },
     {
       "surface": "Montana",
@@ -163,7 +231,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e16"
     },
     {
       "surface": "S.D",
@@ -176,7 +244,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e17"
     },
     {
       "surface": "N.D",
@@ -189,7 +257,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e18"
     },
     {
       "surface": "New Mexico",
@@ -202,7 +270,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e19"
     },
     {
       "surface": "Texas",
@@ -215,7 +283,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e20"
     },
     {
       "surface": "Oklahoma",
@@ -228,7 +296,21 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e21"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e22"
     },
     {
       "surface": "ocean",
@@ -241,20 +323,33 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e23"
     },
     {
-      "surface": "Ohio and West Virginia area",
+      "surface": "Ohio",
       "type": "LOCATION",
-      "canonical": "ohio_west_virginia_area",
+      "canonical": "ohio",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e24"
+    },
+    {
+      "surface": "West Virginia",
+      "type": "LOCATION",
+      "canonical": "west_virginia",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e25"
     },
     {
       "surface": "New Jersey",
@@ -267,7 +362,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e26"
     },
     {
       "surface": "water resources",
@@ -281,7 +376,21 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e27"
+    },
+    {
+      "surface": "demand",
+      "type": "OTHER_ENTITY",
+      "canonical": "demand",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e28"
     },
     {
       "surface": "summer months",
@@ -294,13 +403,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e21"
+      "id": "e29"
     },
     {
       "surface": "air quality",
       "type": "OTHER_ENTITY",
       "canonical": "air_quality",
-      "subtype": "other",
+      "subtype": "concept",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -308,12 +417,26 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e30"
     },
     {
       "surface": "ecosystems",
       "type": "OTHER_ENTITY",
       "canonical": "ecosystems",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e31"
+    },
+    {
+      "surface": "water supplies",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_supplies",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -322,12 +445,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
+      "id": "e32"
     },
     {
-      "surface": "From Coastlines to Heartlands: Scorching Heat in the Heart of the US!",
-      "type": "EVENT",
-      "canonical": "from_coastlines_to_heartlands",
+      "surface": "Headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -335,32 +458,34 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
+      "id": "e33"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e34"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "eastern coast",
-      "reason": "Geographic region phrase not directly present as a canonical location; closest matches are coast/coasts but the specific region is not listed."
-    },
-    {
-      "surface": "western coast",
-      "reason": "Geographic region phrase not directly present as a canonical location; could map to coast/coasts but not exact."
-    },
-    {
-      "surface": "abnormally dry",
-      "reason": "Likely a drought severity level, but no exact canonical level provided in the dictionary for this article."
-    },
-    {
-      "surface": "abnormally warm",
-      "reason": "Descriptive condition not present in the dictionary."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "This graph shows the locations of droughts and their respective severities in the United States, which are represented by how saturated the shade of yellow is. Much of the eastern coast of the US does not have severe droughts, but is considered to be abnormally warm. The western coast, on the other hand, is a mix of abnormally dry, moderate, and severe. The areas with the most severe droughts are along the midwest and the south, with the states of Wyoming, Montana, S.D and N.D in the north, and New Mexico, Texas, and Oklahoma in the south. These states have the most numerous and severe droughts. \n\nWhat Do You Wonder - I wonder why most of the center of the United States faces the most severe droughts, and why the droughts in the extreme east and west boundaries are generally not as severe. Is it due to the proximity to the ocean? In addition, why are the droughts within the Ohio and West Virginia area so severe compared to the rest of the east coast?\n\nRelation to Community - Though the conditions in New Jersey may not be as severe as in the midwest, there are still major implications for the communities surrounding it. Drier conditions will strain water resources, especially when the demand is higher during the summer months. Droughts can also affect air quality by increasing dust and particulates and harm ecosystems that depend on stable water supplies.\n\nHeadline - From Coastlines to Heartlands: Scorching Heat in the Heart of the US!"
+      "text": "This graph shows the locations of droughts and their respective severities in the United States, which are represented by how saturated the shade of yellow is. Much of the eastern coast of the US does not have severe droughts, but is considered to be abnormally warm. The western coast, on the other hand, is a mix of abnormally dry, moderate, and severe. The areas with the most severe droughts are along the midwest and the south, with the states of Wyoming, Montana, S.D and N.D in the north, and New Mexico, Texas, and Oklahoma in the south. These states have the most numerous and severe droughts. \n\nWhat Do You Wonder - I wonder why most of the center of the United States faces the most severe droughts, and why the droughts in the extreme east and west boundaries are generally not as severe. Is it due to the proximity to the ocean? In addition, why are the droughts within the Ohio and West Virginia area so severe compared to the rest of the east coast?\n\nRelation to Community - Though the conditions in New Jersey may not be as severe as in the midwest, there are still major implications for the communities surrounding it. Drier conditions will strain water resources, especially when the demand is higher during the summer months. Droughts can also affect air quality by increasing dust and particulates and harm ecosystems that depend on stable water supplies."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "From Coastlines to Heartlands: Scorching Heat in the Heart of the US!"
     }
   ],
-  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the locations of droughts and their respective severities in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>, which are represented by how saturated the shade of yellow is. Much of the eastern coast of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> does not have severe droughts, but is considered to be abnormally warm. The western coast, on the other hand, is a mix of abnormally dry, <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderate</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity>. The areas with the most severe droughts are along the <entity type=\"LOCATION\" canonical=\"midwest\">midwest</entity> and the <entity type=\"LOCATION\" canonical=\"south\">south</entity>, with the states of <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>, <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, <entity type=\"LOCATION\" canonical=\"south_dakota\">S.D</entity> and <entity type=\"LOCATION\" canonical=\"north_dakota\">N.D</entity> in the north, and <entity type=\"LOCATION\" canonical=\"new_mexico\">New Mexico</entity>, <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, and <entity type=\"LOCATION\" canonical=\"oklahoma\">Oklahoma</entity> in the south. These states have the most numerous and severe droughts. \n\nWhat Do You Wonder - I wonder why most of the center of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> faces the most severe droughts, and why the droughts in the extreme east and west boundaries are generally not as severe. Is it due to the proximity to the <entity type=\"LOCATION\" canonical=\"ocean\">ocean</entity>? In addition, why are the droughts within the <entity type=\"LOCATION\" canonical=\"ohio_west_virginia_area\">Ohio and West Virginia area</entity> so severe compared to the rest of the east coast?\n\nRelation to Community - Though the conditions in <entity type=\"LOCATION\" canonical=\"new_jersey\" speaker_context=\"true\">New Jersey</entity> may not be as severe as in the <entity type=\"LOCATION\" canonical=\"midwest\">midwest</entity>, there are still major implications for the communities surrounding it. Drier conditions will strain <entity type=\"OTHER_ENTITY\" canonical=\"water_resources\" subtype=\"other\">water resources</entity>, especially when the demand is higher during the <entity type=\"TIME_REFERENCE\" canonical=\"summer_months\">summer months</entity>. Droughts can also affect <entity type=\"OTHER_ENTITY\" canonical=\"air_quality\" subtype=\"other\">air quality</entity> by increasing dust and particulates and harm <entity type=\"OTHER_ENTITY\" canonical=\"ecosystems\" subtype=\"other\">ecosystems</entity> that depend on stable water supplies.\n\n<entity type=\"EVENT\" canonical=\"from_coastlines_to_heartlands\" section=\"headline\">From Coastlines to Heartlands: Scorching Heat in the Heart of the US!</entity>"
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the locations of droughts and their respective severities in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>, which are represented by how saturated the shade of yellow is. Much of the eastern <entity type=\"LOCATION\" canonical=\"east_coast\">coast</entity> of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> does not have <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity> droughts, but is considered to be <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally warm</entity>. The western <entity type=\"LOCATION\" canonical=\"west\">coast</entity>, on the other hand, is a mix of <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity>. The areas with the most severe droughts are along the <entity type=\"LOCATION\" canonical=\"midwest\">midwest</entity> and the <entity type=\"LOCATION\" canonical=\"south\">south</entity>, with the states of <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>, <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, <entity type=\"LOCATION\" canonical=\"south_dakota\">S.D</entity> and <entity type=\"LOCATION\" canonical=\"north_dakota\">N.D</entity> in the north, and <entity type=\"LOCATION\" canonical=\"new_mexico\">New Mexico</entity>, <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, and <entity type=\"LOCATION\" canonical=\"oklahoma\">Oklahoma</entity> in the south. These states have the most numerous and severe droughts. \n\nWhat Do You Wonder - I wonder why most of the center of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" modality=\"questioned\">United States</entity> faces the most severe droughts, and why the droughts in the extreme east and west boundaries are generally not as severe. Is it due to the proximity to the <entity type=\"LOCATION\" canonical=\"ocean\" modality=\"questioned\">ocean</entity>? In addition, why are the droughts within the <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> and <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity> area so severe compared to the rest of the east coast?\n\nRelation to Community - Though the conditions in <entity type=\"LOCATION\" canonical=\"new_jersey\" speaker_context=\"true\">New Jersey</entity> may not be as severe as in the <entity type=\"LOCATION\" canonical=\"midwest\">midwest</entity>, there are still major implications for the communities surrounding it. Drier conditions will strain <entity type=\"OTHER_ENTITY\" canonical=\"water_resources\" subtype=\"other\">water resources</entity>, especially when the <entity type=\"OTHER_ENTITY\" canonical=\"demand\" subtype=\"concept\">demand</entity> is higher during the <entity type=\"TIME_REFERENCE\" canonical=\"summer_months\">summer months</entity>. Droughts can also affect <entity type=\"OTHER_ENTITY\" canonical=\"air_quality\" subtype=\"concept\">air quality</entity> by increasing dust and particulates and harm <entity type=\"OTHER_ENTITY\" canonical=\"ecosystems\" subtype=\"concept\">ecosystems</entity> that depend on stable <entity type=\"OTHER_ENTITY\" canonical=\"water_supplies\" subtype=\"other\">water supplies</entity>.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Headline</entity> - From Coastlines to Heartlands: Scorching Heat in the Heart of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>!"
 }

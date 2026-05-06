@@ -4,37 +4,36 @@
   "raw_comment": "Headline: Drought Tightens Its Hold Across the U.S\nThis map shows drought conditions across the United States in late October 2024, with areas ranging from \"Abnormally Dry\" to \"Exceptional Drought.\" The worst impacts are in the Southwest, like Texas and New Mexico, and parts of the Midwest, such as Kansas and Nebraska, while the Northeast and coastal areas are less affected. I wonder what is causing all these droughts. Is this a result of climate change? Why is a place like West Virginia so much drier than Virginia, which is right next to it? This relates to me and my community because in the past months, we have been experiencing little to no rainfall. The drought caused multiple, small, but dangerous wildfires, even one just over a mile from my house. These droughts are damaging places around me and it's very concerning.",
   "entities": [
     {
-      "surface": "U.S",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "Headline: Drought Tightens Its Hold Across the U.S",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 47,
+      "start": 0,
       "end": 50,
       "id": "e0"
     },
     {
-      "surface": "drought conditions",
-      "type": "EVENT",
-      "canonical": "drought_conditions",
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 66,
-      "end": 84,
+      "start": 56,
+      "end": 59,
       "id": "e1"
     },
     {
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -47,7 +46,7 @@
     {
       "surface": "late October 2024",
       "type": "TIME_REFERENCE",
-      "canonical": "late_october_2024",
+      "canonical": "october_2024",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -61,7 +60,7 @@
       "surface": "Abnormally Dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -75,7 +74,7 @@
       "surface": "Exceptional Drought",
       "type": "DATA_VAR_LEVEL",
       "canonical": "exceptional_drought",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -88,7 +87,7 @@
     {
       "surface": "Southwest",
       "type": "LOCATION",
-      "canonical": "southwest_region",
+      "canonical": "southwest",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -138,32 +137,6 @@
       "id": "e9"
     },
     {
-      "surface": "Kansas",
-      "type": "LOCATION",
-      "canonical": "kansas",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 300,
-      "end": 306,
-      "id": "e10"
-    },
-    {
-      "surface": "Nebraska",
-      "type": "LOCATION",
-      "canonical": "nebraska",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 311,
-      "end": 319,
-      "id": "e11"
-    },
-    {
       "surface": "Northeast",
       "type": "LOCATION",
       "canonical": "northeast",
@@ -174,12 +147,12 @@
       "occurrence_index": 0,
       "start": 331,
       "end": 340,
-      "id": "e12"
+      "id": "e10"
     },
     {
       "surface": "coastal areas",
       "type": "LOCATION",
-      "canonical": "coastal_areas",
+      "canonical": "coast",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -187,20 +160,7 @@
       "occurrence_index": 0,
       "start": 345,
       "end": 358,
-      "id": "e13"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "drought_conditions",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 413,
-      "end": 421,
-      "id": "e14"
+      "id": "e11"
     },
     {
       "surface": "climate change",
@@ -213,47 +173,61 @@
       "occurrence_index": 0,
       "start": 443,
       "end": 457,
-      "id": "e15"
+      "id": "e12"
     },
     {
       "surface": "West Virginia",
       "type": "LOCATION",
       "canonical": "west_virginia",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 479,
       "end": 492,
-      "id": "e16"
+      "id": "e13"
     },
     {
       "surface": "Virginia",
       "type": "LOCATION",
       "canonical": "virginia",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 484,
       "end": 492,
-      "id": "e17"
+      "id": "e14"
     },
     {
-      "surface": "me and my community",
+      "surface": "me",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 565,
+      "end": 567,
+      "id": "e15"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 572,
       "end": 584,
-      "id": "e18"
+      "id": "e16"
     },
     {
       "surface": "past months",
@@ -266,33 +240,7 @@
       "occurrence_index": 0,
       "start": 600,
       "end": 611,
-      "id": "e19"
-    },
-    {
-      "surface": "rainfall",
-      "type": "EVENT",
-      "canonical": "rainfall",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 652,
-      "end": 660,
-      "id": "e20"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 666,
-      "end": 673,
-      "id": "e21"
+      "id": "e17"
     },
     {
       "surface": "wildfires",
@@ -305,37 +253,31 @@
       "occurrence_index": 0,
       "start": 712,
       "end": 721,
-      "id": "e22"
+      "id": "e18"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "Kansas",
+      "reason": "A state name appears in the text but is not included in the provided normalized entity dictionary for this task."
+    },
+    {
+      "surface": "Nebraska",
+      "reason": "A state name appears in the text but is not included in the provided normalized entity dictionary for this task."
+    },
+    {
+      "surface": "drought conditions",
+      "reason": "Generic drought reference; no specific severity level beyond the listed categories is explicit in this phrase."
+    },
+    {
+      "surface": "little to no rainfall",
+      "reason": "Describes weather conditions but is not a listed entity type or canonical level."
     },
     {
       "surface": "my house",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 754,
-      "end": 762,
-      "id": "e23"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 770,
-      "end": 778,
-      "id": "e24"
+      "reason": "Personal location reference, but the dictionary only confirms broader speaker/community entities here."
     }
   ],
-  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "headline",
@@ -347,5 +289,5 @@
       "text": "This map shows drought conditions across the United States in late October 2024, with areas ranging from \"Abnormally Dry\" to \"Exceptional Drought.\" The worst impacts are in the Southwest, like Texas and New Mexico, and parts of the Midwest, such as Kansas and Nebraska, while the Northeast and coastal areas are less affected. I wonder what is causing all these droughts. Is this a result of climate change? Why is a place like West Virginia so much drier than Virginia, which is right next to it? This relates to me and my community because in the past months, we have been experiencing little to no rainfall. The drought caused multiple, small, but dangerous wildfires, even one just over a mile from my house. These droughts are damaging places around me and it's very concerning."
     }
   ],
-  "tagged_text": "Headline: Drought Tightens Its Hold Across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">U.S</entity>\nThis map shows <entity type=\"EVENT\" canonical=\"drought_conditions\" section=\"body\">drought conditions</entity> across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"late_october_2024\">late October 2024</entity>, with areas ranging from \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\" section=\"body\">Abnormally Dry</entity>\" to \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity\" section=\"body\">Exceptional Drought</entity>.\" The worst impacts are in the <entity type=\"LOCATION\" canonical=\"southwest_region\" section=\"body\">Southwest</entity>, like <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\">Texas</entity> and <entity type=\"LOCATION\" canonical=\"new_mexico\" section=\"body\">New Mexico</entity>, and parts of the <entity type=\"LOCATION\" canonical=\"midwest\" section=\"body\">Midwest</entity>, such as <entity type=\"LOCATION\" canonical=\"kansas\" section=\"body\">Kansas</entity> and <entity type=\"LOCATION\" canonical=\"nebraska\" section=\"body\">Nebraska</entity>, while the <entity type=\"LOCATION\" canonical=\"northeast\" section=\"body\">Northeast</entity> and <entity type=\"LOCATION\" canonical=\"coastal_areas\" section=\"body\">coastal areas</entity> are less affected. I wonder what is causing all these <entity type=\"EVENT\" canonical=\"drought_conditions\" section=\"body\" modality=\"questioned\">droughts</entity>. Is this a result of <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\">climate change</entity>? Why is a place like <entity type=\"LOCATION\" canonical=\"west_virginia\" section=\"body\" modality=\"questioned\">West Virginia</entity> so much drier than <entity type=\"LOCATION\" canonical=\"virginia\" section=\"body\" modality=\"questioned\">Virginia</entity>, which is right next to it? This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">me and my community</entity> because in the <entity type=\"TIME_REFERENCE\" canonical=\"past_few_months\" section=\"body\">past months</entity>, we have been experiencing little to no <entity type=\"EVENT\" canonical=\"rainfall\" section=\"body\">rainfall</entity>. The <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> caused multiple, small, but dangerous <entity type=\"EVENT\" canonical=\"wildfires\" section=\"body\">wildfires</entity>, even one just over a mile from <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my house</entity>. These <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">droughts</entity> are damaging places around me and it's very concerning."
+  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Headline: Drought Tightens Its Hold Across the U.S</entity>\nThis <entity type=\"CHART_ELEMENT\" canonical=\"map\">map</entity> shows drought conditions across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity> in <entity type=\"TIME_REFERENCE\" canonical=\"october_2024\">late October 2024</entity>, with areas ranging from \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">Abnormally Dry</entity>\" to \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">Exceptional Drought</entity>.\" The worst impacts are in the <entity type=\"LOCATION\" canonical=\"southwest\">Southwest</entity>, like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> and <entity type=\"LOCATION\" canonical=\"new_mexico\">New Mexico</entity>, and parts of the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity>, such as Kansas and Nebraska, while the <entity type=\"LOCATION\" canonical=\"northeast\">Northeast</entity> and <entity type=\"LOCATION\" canonical=\"coast\">coastal areas</entity> are less affected. I wonder what is causing all these droughts. Is this a result of <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity>? Why is a place like <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity> so much drier than <entity type=\"LOCATION\" canonical=\"virginia\">Virginia</entity>, which is right next to it? This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because in the <entity type=\"TIME_REFERENCE\" canonical=\"past_few_months\">past months</entity>, we have been experiencing little to no rainfall. The drought caused multiple, small, but dangerous <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity>, even one just over a mile from my house. These droughts are damaging places around me and it's very concerning."
 }

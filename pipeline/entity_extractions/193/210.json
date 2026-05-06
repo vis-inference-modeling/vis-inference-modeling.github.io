@@ -4,62 +4,24 @@
   "raw_comment": "I notice that the drought is the worst in the central USA; however, it is not very consistent or centralized in one area, so there may be different severities of drought in a state. For example, there are areas ranging from no drought to \"Exceptional Drought\" in Ohio alone. I wonder if this drought is related to our lifestyle or other world events. Another idea could be that this is related to global warming and is a notable way in which it is causing our climate to change. I also wonder if this drought is affecting bordering countries. This directly affects my community because I live in the United States, and a drought could impact my resources and therefore my day-to-day life. A catchy title for this graph would be \"Newfound Drought Spans America.\"",
   "entities": [
     {
-      "surface": "the drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "USA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 14,
-      "end": 25,
-      "id": "e0"
-    },
-    {
-      "surface": "central USA",
-      "type": "LOCATION",
-      "canonical": "central_united_states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 46,
+      "start": 54,
       "end": 57,
-      "id": "e1"
-    },
-    {
-      "surface": "one area",
-      "type": "LOCATION",
-      "canonical": "areas",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 112,
-      "end": 120,
-      "id": "e2"
-    },
-    {
-      "surface": "areas",
-      "type": "LOCATION",
-      "canonical": "areas",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 205,
-      "end": 210,
-      "id": "e3"
+      "id": "e0"
     },
     {
       "surface": "Exceptional Drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -67,7 +29,7 @@
       "occurrence_index": 0,
       "start": 239,
       "end": 258,
-      "id": "e4"
+      "id": "e1"
     },
     {
       "surface": "Ohio",
@@ -80,7 +42,7 @@
       "occurrence_index": 0,
       "start": 263,
       "end": 267,
-      "id": "e5"
+      "id": "e2"
     },
     {
       "surface": "world events",
@@ -93,51 +55,39 @@
       "occurrence_index": 0,
       "start": 337,
       "end": 349,
-      "id": "e6"
+      "id": "e3"
     },
     {
       "surface": "global warming",
       "type": "EVENT",
       "canonical": "global_warming",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 397,
       "end": 411,
-      "id": "e7"
+      "id": "e4"
     },
     {
       "surface": "climate",
-      "type": "OTHER_ENTITY",
-      "canonical": "climate",
+      "type": "EVENT",
+      "canonical": "climate_change",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 460,
       "end": 467,
-      "id": "e8"
-    },
-    {
-      "surface": "bordering countries",
-      "type": "LOCATION",
-      "canonical": "countries",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 522,
-      "end": 541,
-      "id": "e9"
+      "id": "e5"
     },
     {
       "surface": "my community",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -145,120 +95,80 @@
       "occurrence_index": 0,
       "start": 565,
       "end": 577,
-      "id": "e10"
+      "id": "e6"
     },
     {
-      "surface": "the United States",
+      "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 596,
+      "start": 600,
       "end": 613,
-      "id": "e11"
+      "id": "e7"
     },
     {
       "surface": "resources",
       "type": "OTHER_ENTITY",
-      "canonical": "water_resources",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 645,
-      "end": 654,
-      "id": "e12"
-    },
-    {
-      "surface": "day-to-day life",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_life",
+      "canonical": "resources",
+      "subtype": "concept",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 672,
-      "end": 687,
-      "id": "e13"
+      "start": 645,
+      "end": 654,
+      "id": "e8"
     },
     {
-      "surface": "Newfound Drought Spans America",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 729,
+      "start": 713,
+      "end": 718,
+      "id": "e9"
+    },
+    {
+      "surface": "America",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 752,
       "end": 759,
-      "id": "e14"
-    },
-    {
-      "surface": "the drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "the drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "the drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": null,
-      "end": null,
-      "id": "e17"
+      "id": "e10"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "different severities of drought",
-      "reason": "Severity concept is present, but no exact canonical level or variable phrase matches the full expression."
+      "surface": "central",
+      "reason": "Likely refers to a U.S. region, but the surface is incomplete and not a listed location canonical."
     },
     {
-      "surface": "no drought",
-      "reason": "Absence of drought is meaningful but not a listed canonical entity."
-    },
-    {
-      "surface": "other world events",
-      "reason": "Plural/modified form of world events; close to canonical but not exact."
+      "surface": "bordering countries",
+      "reason": "Generic geographic reference without a specific canonical location."
     }
   ],
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "I notice that the drought is the worst in the central USA; however, it is not very consistent or centralized in one area, so there may be different severities of drought in a state. For example, there are areas ranging from no drought to \"Exceptional Drought\" in Ohio alone. I wonder if this drought is related to our lifestyle or other world events. Another idea could be that this is related to global warming and is a notable way in which it is causing our climate to change. I also wonder if this drought is affecting bordering countries. This directly affects my community because I live in the United States, and a drought could impact my resources and therefore my day-to-day life. A catchy title for this graph would be \"Newfound Drought Spans America.\""
     }
   ],
-  "tagged_text": "I notice that the drought is the worst in the central USA; however, it is not very consistent or centralized in one area, so there may be different severities of drought in a state. For example, there are areas ranging from no drought to \"Exceptional Drought\" in Ohio alone. I wonder if this drought is related to our lifestyle or other world events. Another idea could be that this is related to global warming and is a notable way in which it is causing our climate to change. I also wonder if this drought is affecting bordering countries. This directly affects my community because I live in the United States, and a drought could impact my resources and therefore my day-to-day life. A catchy title for this graph would be \"Newfound Drought Spans America.\""
+  "tagged_text": "I notice that the drought is the worst in the central <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">USA</entity>; however, it is not very consistent or centralized in one area, so there may be different severities of drought in a state. For example, there are areas ranging from no drought to \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">Exceptional Drought</entity>\" in <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> alone. I wonder if this drought is related to our lifestyle or other <entity type=\"EVENT\" canonical=\"world_events\">world events</entity>. Another idea could be that this is related to <entity type=\"EVENT\" canonical=\"global_warming\">global warming</entity> and is a notable way in which it is causing our <entity type=\"EVENT\" canonical=\"climate_change\">climate</entity> to change. I also wonder if this drought is affecting bordering countries. This directly affects <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because I live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" speaker_context=\"true\">United States</entity>, and a drought could impact my <entity type=\"OTHER_ENTITY\" canonical=\"resources\" subtype=\"concept\" speaker_context=\"true\">resources</entity> and therefore my day-to-day life. A catchy title for this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> would be \"Newfound Drought Spans <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">America</entity>.\""
 }

@@ -7,7 +7,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -32,85 +32,18 @@
       "id": "e1"
     },
     {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 448,
-      "end": 456,
+      "occurrence_index": 2,
+      "start": 418,
+      "end": 420,
       "id": "e2"
-    },
-    {
-      "surface": "gardening",
-      "type": "OTHER_ENTITY",
-      "canonical": "gardening",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 517,
-      "end": 526,
-      "id": "e3"
-    },
-    {
-      "surface": "my parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 532,
-      "end": 542,
-      "id": "e4"
-    },
-    {
-      "surface": "The United States of Dehydration; whos being affected the most",
-      "type": "OTHER_ENTITY",
-      "canonical": "the_united_states_of_dehydration_whos_being_affected_the_most",
-      "subtype": "headline_title",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 587,
-      "end": 649,
-      "id": "e5"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "lack of precipitation",
-      "type": "DATA_VAR",
-      "canonical": "precipitation",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
     },
     {
       "surface": "climate change",
@@ -123,62 +56,29 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "vegetation",
-      "type": "OTHER_ENTITY",
-      "canonical": "vegetation",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "my grandparents",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_grandparents",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
+      "id": "e3"
     }
   ],
   "unresolved_mentions": [
     {
+      "surface": "droughts",
+      "reason": "Generic plural usage; could map to a drought severity level, but the specific level is unclear."
+    },
+    {
       "surface": "community specific thing",
-      "reason": "Generic phrase; may refer to speaker's community but not a named entity."
+      "reason": "Speaker-context concept, but no confirmed canonical ID is provided."
     },
     {
-      "surface": "the hardest",
-      "reason": "Comparative severity phrase without a named entity."
+      "surface": "lack of precipitation",
+      "reason": "Descriptive phrase related to drought, but no confirmed canonical ID is provided."
     },
     {
-      "surface": "their were several issues",
-      "reason": "Contains misspellings and likely refers to issues with vegetation/gardening, but not a distinct entity."
+      "surface": "vegetation",
+      "reason": "Could be flora/fauna-like, but no confirmed canonical ID is provided in the list."
+    },
+    {
+      "surface": "gardening",
+      "reason": "Activity reference not covered by the schema."
     }
   ],
   "section_segments": [
@@ -198,10 +98,10 @@
       "text": "This affects my community as we, like the rest of the US have had troubles with the droughts. I know that their were several issues with vegatation, and gardening that my parents and grandparents had complained about."
     },
     {
-      "section": "numbered_point",
-      "label": "4",
-      "text": "\"The United States of Dehydration; whos being affected the most\""
+      "section": "headline",
+      "label": "The United States of Dehydration; whos being affected the most",
+      "text": "The United States of Dehydration; whos being affected the most"
     }
   ],
-  "tagged_text": "1. I notice that the entire US has been experiencing droughts. I thought that it was a community specific thing, but this is intresting to see we didn't even have it the hardest.\n\n2. I wonder what is causing the US to experience such a lack of precipitation. I can assume it has something to do with climate change, but I'd love to figure out specific causes.\n\n3. This affects my community as we, like the rest of the US have had troubles with the droughts. I know that their were several issues with vegatation, and gardening that my parents and grandparents had complained about.\n\n4. \"The United States of Dehydration; whos being affected the most\""
+  "tagged_text": "1. I notice that the entire <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> has been experiencing droughts. I thought that it was a community specific thing, but this is intresting to see we didn't even have it the hardest.\n\n2. I wonder what is causing the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> to experience such a lack of precipitation. I can assume it has something to do with <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity>, but I'd love to figure out specific causes.\n\n3. This affects my community as we, like the rest of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> have had troubles with the droughts. I know that their were several issues with vegatation, and gardening that my parents and grandparents had complained about.\n\n4. \"The United States of Dehydration; whos being affected the most\""
 }

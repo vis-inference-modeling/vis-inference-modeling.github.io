@@ -17,9 +17,38 @@
       "id": "e0"
     },
     {
-      "surface": "abnormally dry",
-      "type": "EVENT",
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 60,
+      "end": 64,
+      "id": "e1"
+    },
+    {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 97,
+      "end": 104,
+      "id": "e2"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -27,7 +56,7 @@
       "occurrence_index": 0,
       "start": 115,
       "end": 129,
-      "id": "e1"
+      "id": "e3"
     },
     {
       "surface": "Montana",
@@ -40,7 +69,7 @@
       "occurrence_index": 0,
       "start": 168,
       "end": 175,
-      "id": "e2"
+      "id": "e4"
     },
     {
       "surface": "Texas",
@@ -53,7 +82,7 @@
       "occurrence_index": 0,
       "start": 177,
       "end": 182,
-      "id": "e3"
+      "id": "e5"
     },
     {
       "surface": "Ohio",
@@ -66,7 +95,7 @@
       "occurrence_index": 0,
       "start": 184,
       "end": 188,
-      "id": "e4"
+      "id": "e6"
     },
     {
       "surface": "West Virginia",
@@ -79,86 +108,79 @@
       "occurrence_index": 0,
       "start": 193,
       "end": 206,
-      "id": "e5"
-    },
-    {
-      "surface": "precipitation",
-      "type": "DATA_VAR",
-      "canonical": "precipitation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 345,
-      "end": 358,
-      "id": "e6"
-    },
-    {
-      "surface": "streamflow",
-      "type": "DATA_VAR",
-      "canonical": "streamflow",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 380,
-      "end": 390,
       "id": "e7"
     },
     {
-      "surface": "reservoir levels",
-      "type": "DATA_VAR",
-      "canonical": "reservoir_levels",
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 392,
-      "end": 408,
+      "start": 223,
+      "end": 230,
       "id": "e8"
     },
     {
-      "surface": "temperature",
-      "type": "DATA_VAR",
-      "canonical": "temperature",
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 410,
-      "end": 421,
+      "occurrence_index": 1,
+      "start": 583,
+      "end": 590,
       "id": "e9"
     },
     {
-      "surface": "soil moisture",
-      "type": "DATA_VAR",
-      "canonical": "soil_moisture",
+      "surface": "exceptional droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 439,
-      "end": 452,
+      "start": null,
+      "end": null,
       "id": "e10"
     }
   ],
   "unresolved_mentions": [
     {
+      "surface": "precipitation",
+      "reason": "Causal factor mentioned in the article, but not a confirmed canonical entity in the provided reference list."
+    },
+    {
+      "surface": "streamflow",
+      "reason": "Causal factor mentioned in the article, but not a confirmed canonical entity in the provided reference list."
+    },
+    {
+      "surface": "reservoir levels",
+      "reason": "Causal factor mentioned in the article, but not a confirmed canonical entity in the provided reference list."
+    },
+    {
+      "surface": "temperature",
+      "reason": "Causal factor mentioned in the article, but not a confirmed canonical entity in the provided reference list."
+    },
+    {
       "surface": "evaporation",
-      "reason": "Likely refers to evaporative demand, but the surface form is not an exact match in the provided dictionary."
+      "reason": "Causal factor mentioned in the article, but not a confirmed canonical entity in the provided reference list."
     },
     {
-      "surface": "vegetations",
-      "reason": "Likely vegetation_health or vegetation, but the phrasing is not a clear canonical match."
+      "surface": "soil moisture",
+      "reason": "Causal factor mentioned in the article, but not a confirmed canonical entity in the provided reference list."
     },
     {
-      "surface": "extreme to exceptional droughts",
-      "reason": "Could map to drought severity levels, but the exact span is ambiguous and overlaps multiple possible levels."
+      "surface": "health of vegetations",
+      "reason": "Causal factor mentioned in the article, but not a confirmed canonical entity in the provided reference list."
     }
   ],
   "section_segments": [
@@ -167,5 +189,5 @@
       "text": "On the graph, something that stands out is that most of the U.S. is graphed to have a widespread drought rated as \"abnormally dry,\" while certain areas, for example in Montana, Texas, Ohio and West Virginia have areas with extreme to exceptional droughts. The article says that droughts can be caused by many different factors, such as how much precipitation there is in an area, streamflow, reservoir levels, temperature and evaporation, soil moisture, and the health of vegetations. It can be inferred that these areas most likely suffer from one or more of these factors, causing extreme drought conditions."
     }
   ],
-  "tagged_text": "On the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity>, something that stands out is that most of the U.S. is graphed to have a widespread drought rated as \"<entity type=\"EVENT\" canonical=\"abnormally_dry\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">abnormally dry</entity>\", while certain areas, for example in <entity type=\"LOCATION\" canonical=\"montana\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Montana</entity>, <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"ohio\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Ohio</entity> and <entity type=\"LOCATION\" canonical=\"west_virginia\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">West Virginia</entity> have areas with extreme to exceptional droughts. The article says that droughts can be caused by many different factors, such as how much <entity type=\"DATA_VAR\" canonical=\"precipitation\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">precipitation</entity> there is in an area, <entity type=\"DATA_VAR\" canonical=\"streamflow\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">streamflow</entity>, <entity type=\"DATA_VAR\" canonical=\"reservoir_levels\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">reservoir levels</entity>, <entity type=\"DATA_VAR\" canonical=\"temperature\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">temperature</entity> and evaporation, <entity type=\"DATA_VAR\" canonical=\"soil_moisture\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">soil moisture</entity>, and the health of vegetations. It can be inferred that these areas most likely suffer from one or more of these factors, causing extreme drought conditions."
+  "tagged_text": "On the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, something that stands out is that most of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity> is graphed to have a widespread <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity> rated as \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>\", while certain areas, for example in <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> and <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity> have areas with <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> to <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional droughts</entity>. The article says that droughts can be caused by many different factors, such as how much precipitation there is in an area, streamflow, reservoir levels, temperature and evaporation, soil moisture, and the health of vegetations. It can be inferred that these areas most likely suffer from one or more of these factors, causing <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme drought conditions</entity>."
 }

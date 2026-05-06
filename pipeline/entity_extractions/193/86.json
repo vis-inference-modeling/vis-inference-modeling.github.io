@@ -4,16 +4,16 @@
   "raw_comment": "Wonder: I wonder which state has had the most Droughts in the past 10 years. \n\n\nHeadline: \"Severity of Droughts Around the US: How Safe is Your State?\"",
   "entities": [
     {
-      "surface": "Droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "surface": "state",
+      "type": "LOCATION",
+      "canonical": "states",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 46,
-      "end": 54,
+      "start": 23,
+      "end": 28,
       "id": "e0"
     },
     {
@@ -31,8 +31,8 @@
     },
     {
       "surface": "Severity of Droughts Around the US: How Safe is Your State?",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -43,16 +43,7 @@
       "id": "e2"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "state",
-      "reason": "Generic location reference; could refer to a U.S. state but no specific state is named."
-    },
-    {
-      "surface": "US",
-      "reason": "Could map to a country/location entity, but the article-specific dictionary does not include a direct country-level canonical for this context."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
@@ -64,5 +55,5 @@
       "text": "\"Severity of Droughts Around the US: How Safe is Your State?\""
     }
   ],
-  "tagged_text": "Wonder: I wonder which state has had the most <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Droughts</entity> in the <entity type=\"TIME_REFERENCE\" canonical=\"past_10_years\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">past 10 years</entity>. \n\n\nHeadline: \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Severity of Droughts Around the US: How Safe is Your State?</entity>\""
+  "tagged_text": "Wonder: I wonder which <entity type=\"LOCATION\" canonical=\"states\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">state</entity> has had the most Droughts in the <entity type=\"TIME_REFERENCE\" canonical=\"past_10_years\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">past 10 years</entity>. \n\n\nHeadline: \"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Severity of Droughts Around the US: How Safe is Your State?</entity>\""
 }

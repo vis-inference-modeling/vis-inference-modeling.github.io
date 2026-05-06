@@ -20,7 +20,7 @@
       "surface": "my community",
       "type": "OTHER_ENTITY",
       "canonical": "my_community",
-      "subtype": "other",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -31,10 +31,24 @@
       "id": "e1"
     },
     {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 185,
+      "end": 197,
+      "id": "e2"
+    },
+    {
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -42,34 +56,40 @@
       "occurrence_index": 0,
       "start": 214,
       "end": 222,
-      "id": "e2"
+      "id": "e3"
     },
     {
-      "surface": "Midwest U.S Faces Severe Drought Crisis",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 232,
-      "end": 271,
-      "id": "e3"
+      "end": 239,
+      "id": "e4"
+    },
+    {
+      "surface": "Severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 250,
+      "end": 256,
+      "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "extreme droughts",
-      "reason": "Could map to drought severity plus event, but the phrase is not an exact canonical level/entity combination in the dictionary."
-    },
-    {
       "surface": "normal map",
-      "reason": "Chart-like reference, but not a confirmed chart element canonical."
-    },
-    {
-      "surface": "drought conditions",
-      "reason": "Could be an EVENT, but the phrase is generic and not clearly a confirmed canonical beyond drought-related wording."
+      "reason": "Chart reference is implied, but 'map' is not explicitly present as a standalone chart element in the body sentence."
     }
   ],
   "section_segments": [
@@ -83,5 +103,5 @@
       "text": "Midwest U.S Faces Severe Drought Crisis"
     }
   ],
-  "tagged_text": "-I noticed that the more extreme droughts are in the <entity type=\"LOCATION\" canonical=\"midwest\" section=\"body\">Midwest</entity> area mostly.\n-I wonder what a normal map of the drought conditions would look like\n-This relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my community</entity> because in my community we recently had <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\" section=\"body\">moderate</entity> drought\n-<entity type=\"EVENT\" canonical=\"drought\" section=\"headline\">Midwest U.S Faces Severe Drought Crisis</entity>"
+  "tagged_text": "-I noticed that the more extreme droughts are in the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> area mostly.\n-I wonder what a normal map of the drought conditions would look like\n-This relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because in <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> we recently had <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity> drought\n-<entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> U.S Faces <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" section=\"headline\">Severe</entity> Drought Crisis"
 }

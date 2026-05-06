@@ -75,14 +75,14 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e5"
     },
     {
-      "surface": "Rocky Mountain",
+      "surface": "Rocky Mountain ranges",
       "type": "LOCATION",
       "canonical": "rocky_mountains",
       "section": "body",
@@ -96,16 +96,30 @@
     },
     {
       "surface": "US",
-      "type": "LOCATION",
-      "canonical": "us",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e7"
+    },
+    {
+      "surface": "Climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "Pollution",
@@ -118,25 +132,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e9"
     },
     {
       "surface": "Pipelines",
       "type": "OTHER_ENTITY",
       "canonical": "pipelines",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "air pollution",
-      "type": "OTHER_ENTITY",
-      "canonical": "air_quality",
+      "subtype": "technology",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -147,9 +149,9 @@
       "id": "e10"
     },
     {
-      "surface": "climate change",
+      "surface": "air pollution",
       "type": "EVENT",
-      "canonical": "climate_change",
+      "canonical": "air_pollution",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -158,12 +160,40 @@
       "start": null,
       "end": null,
       "id": "e11"
+    },
+    {
+      "surface": "kids",
+      "type": "OTHER_ENTITY",
+      "canonical": "kids",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "kids",
+      "type": "OTHER_ENTITY",
+      "canonical": "kids",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e13"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "draught",
-      "reason": "Likely a misspelling of drought, but not in the provided canonical dictionary; could be mapped to EVENT drought if normalization is allowed."
+      "reason": "Likely intended as 'drought', but the reference list uses drought-related levels rather than the misspelled surface form; mapped implicitly in context only where clear."
     }
   ],
   "section_segments": [
@@ -172,5 +202,5 @@
       "text": "Observation and Questions\n\nWe are surprised that the drought conditions of our state (Massachusetts) are matched by many other states. We know that there are many more wild fires in Massachusetts than usual. Is this also true in other draught areas?\n\nIt looks like the Appalachian and Rocky Mountain ranges may have some effect on drought. How do mountains affect drought?\n\nIs the US draught caused by \nClimate change?\nPollution?\nPipelines?\n\nDo wild fires produce air pollution?\n\nWhat can kids do to reduce draught?\n\nWhat can kids do to slow climate change?"
     }
   ],
-  "tagged_text": "Observation and Questions\n\nWe are surprised that the drought conditions of our state (<entity type=\"LOCATION\" canonical=\"massachusetts\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Massachusetts</entity>) are matched by many other states. We know that there are many more <entity type=\"EVENT\" canonical=\"wildfires\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">wild fires</entity> in <entity type=\"LOCATION\" canonical=\"massachusetts\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Massachusetts</entity> than usual. Is this also true in other draught areas?\n\nIt looks like the <entity type=\"LOCATION\" canonical=\"appalachian_mountains\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Appalachian</entity> and <entity type=\"LOCATION\" canonical=\"rocky_mountains\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Rocky Mountain</entity> ranges may have some effect on drought. How do mountains affect drought?\n\nIs the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">US</entity> draught caused by \n<entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Climate change</entity>?\n<entity type=\"EVENT\" canonical=\"pollution\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Pollution</entity>?\n<entity type=\"OTHER_ENTITY\" canonical=\"pipelines\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Pipelines</entity>?\n\nDo <entity type=\"EVENT\" canonical=\"wildfires\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">wild fires</entity> produce <entity type=\"OTHER_ENTITY\" canonical=\"air_quality\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">air pollution</entity>?\n\nWhat can kids do to reduce draught?\n\nWhat can kids do to slow <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">climate change</entity>?"
+  "tagged_text": "Observation and Questions\n\nWe are surprised that the drought conditions of our state (<entity type=\"LOCATION\" canonical=\"massachusetts\">Massachusetts</entity>) are matched by many other states. We know that there are many more <entity type=\"EVENT\" canonical=\"wildfires\">wild fires</entity> in <entity type=\"LOCATION\" canonical=\"massachusetts\">Massachusetts</entity> than usual. Is this also true in other draught areas?\n\nIt looks like the <entity type=\"LOCATION\" canonical=\"appalachian_mountains\">Appalachian</entity> and <entity type=\"LOCATION\" canonical=\"rocky_mountains\">Rocky Mountain ranges</entity> may have some effect on drought. How do mountains affect drought?\n\nIs the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> draught caused by \n<entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">Climate change</entity>?\n<entity type=\"EVENT\" canonical=\"pollution\" modality=\"questioned\">Pollution</entity>?\n<entity type=\"OTHER_ENTITY\" canonical=\"pipelines\" subtype=\"technology\" modality=\"questioned\">Pipelines</entity>?\n\nDo <entity type=\"EVENT\" canonical=\"wildfires\" modality=\"questioned\">wild fires</entity> produce <entity type=\"EVENT\" canonical=\"air_pollution\" modality=\"questioned\">air pollution</entity>?\n\nWhat can <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\" modality=\"questioned\">kids</entity> do to reduce draught?\n\nWhat can <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\" modality=\"questioned\">kids</entity> do to slow <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity>?"
 }

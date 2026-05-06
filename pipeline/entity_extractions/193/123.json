@@ -5,7 +5,7 @@
   "entities": [
     {
       "surface": "Droughts Take Over America",
-      "type": "EVENT",
+      "type": "CHART_ELEMENT",
       "canonical": "droughts_take_over_america",
       "section": "headline",
       "modality": "asserted",
@@ -17,76 +17,23 @@
       "id": "e0"
     },
     {
-      "surface": "states on the shoreline",
-      "type": "LOCATION",
-      "canonical": "coastal_states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 46,
-      "end": 69,
-      "id": "e1"
-    },
-    {
-      "surface": "extreme",
+      "surface": "extreme/exceptional droughts",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 87,
-      "end": 94,
-      "id": "e2"
-    },
-    {
-      "surface": "exceptional",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 95,
-      "end": 106,
-      "id": "e3"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 107,
       "end": 115,
-      "id": "e4"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 129,
-      "end": 137,
-      "id": "e5"
+      "id": "e1"
     },
     {
       "surface": "other countries",
       "type": "LOCATION",
-      "canonical": "other_countries",
+      "canonical": "country",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -94,23 +41,33 @@
       "occurrence_index": 0,
       "start": 155,
       "end": 170,
-      "id": "e6"
+      "id": "e2"
     },
     {
-      "surface": "community",
-      "type": "LOCATION",
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 194,
+      "start": 191,
       "end": 203,
-      "id": "e7"
+      "id": "e3"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "states on the shoreline",
+      "reason": "Geographic description, but not a specific location from the reference list."
+    },
+    {
+      "surface": "droughts",
+      "reason": "Generic plural reference; could indicate the drought severity variable but no specific level is named."
+    }
+  ],
   "section_segments": [
     {
       "section": "headline",
@@ -119,16 +76,8 @@
     },
     {
       "section": "body",
-      "text": "I notice that the states on the shoreline don’t experience extreme/exceptional droughts"
-    },
-    {
-      "section": "body",
-      "text": "I wonder if droughts are happening in other countries"
-    },
-    {
-      "section": "body",
-      "text": "It greatly effects my community and how we live daily"
+      "text": "I notice that the states on the shoreline don’t experience extreme/exceptional droughts\n\nI wonder if droughts are happening in other countries\n\nIt greatly effects my community and how we live daily"
     }
   ],
-  "tagged_text": "<entity type=\"EVENT\" canonical=\"droughts_take_over_america\" section=\"headline\">Droughts Take Over America</entity>\n\nI notice that the <entity type=\"LOCATION\" canonical=\"coastal_states\" section=\"body\">states on the shoreline</entity> don’t experience <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"body\">extreme</entity>/<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\">exceptional</entity> <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity>\n\nI wonder if <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> are happening in <entity type=\"LOCATION\" canonical=\"other_countries\" section=\"body\">other countries</entity>\n\nIt greatly effects my <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" speaker_context=\"true\">community</entity> and how we live daily"
+  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"droughts_take_over_america\" section=\"headline\">Droughts Take Over America</entity>\n\nI notice that the states on the shoreline don’t experience <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" section=\"body\">extreme/exceptional droughts</entity>\n\nI wonder if droughts are happening in <entity type=\"LOCATION\" canonical=\"country\" section=\"body\">other countries</entity>\n\nIt greatly effects <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my community</entity> and how we live daily"
 }

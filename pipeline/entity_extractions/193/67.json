@@ -69,18 +69,57 @@
       "id": "e4"
     },
     {
-      "surface": "fire pits",
-      "type": "OTHER_ENTITY",
-      "canonical": "fire_pits",
-      "subtype": "other",
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 542,
-      "end": 551,
+      "occurrence_index": 4,
+      "start": 338,
+      "end": 345,
       "id": "e5"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 356,
+      "end": 362,
+      "id": "e6"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 406,
+      "end": 413,
+      "id": "e7"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 451,
+      "end": 460,
+      "id": "e8"
     },
     {
       "surface": "wildfires",
@@ -93,13 +132,13 @@
       "occurrence_index": 0,
       "start": 570,
       "end": 579,
-      "id": "e6"
+      "id": "e9"
     },
     {
       "surface": "USA",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "canonical": "usa",
+      "var": "state_names_abbreviations",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -107,13 +146,13 @@
       "occurrence_index": 0,
       "start": 656,
       "end": 659,
-      "id": "e7"
+      "id": "e10"
     },
     {
-      "surface": "yellow",
-      "type": "OTHER_ENTITY",
-      "canonical": "yellow",
-      "subtype": "other",
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -121,37 +160,10 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "yellow",
-      "type": "OTHER_ENTITY",
-      "canonical": "yellow",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e9"
+      "id": "e11"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "abnormally dry",
-      "reason": "Likely a drought severity level, but no exact canonical is provided in the normalized dictionary."
-    },
-    {
-      "surface": "severe",
-      "reason": "Could refer to drought severity, but the standalone adjective is ambiguous without a matching canonical."
-    },
-    {
-      "surface": "significant drought",
-      "reason": "Likely a drought severity/event phrase, but no exact canonical is provided."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
@@ -159,9 +171,9 @@
     },
     {
       "section": "headline",
-      "label": "Headline",
+      "label": "A catchphrase to name this graph could be",
       "text": "The USA Is Drying Up: How will we get out of this significant drought."
     }
   ],
-  "tagged_text": "In this graph, droughts around the country are being shown. The country is color coded to depict how bad the drought is and/or how dry it is. The I noticed how most of the country is at least yellow. Yellow is abnormally dry. It is concerning that this is the state of the majority of the country. I wonder how long it will be before the country is mainly severe. I wonder how can we make it so we get our country out of this drought. This impacts my community because where I live we are in a drought to the point we are not allowed to have fire pits and can smell the wildfires resulting from the droughts. A catchphrase to name this graph could be \"The USA Is Drying Up: How will we get out of this significant drought.\""
+  "tagged_text": "In this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, droughts around the <entity type=\"LOCATION\" canonical=\"country\">country</entity> are being shown. The <entity type=\"LOCATION\" canonical=\"country\">country</entity> is color coded to depict how bad the drought is and/or how dry it is. The I noticed how most of the <entity type=\"LOCATION\" canonical=\"country\">country</entity> is at least yellow. Yellow is <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>. It is concerning that this is the state of the majority of the <entity type=\"LOCATION\" canonical=\"country\">country</entity>. I wonder how long it will be before the <entity type=\"LOCATION\" canonical=\"country\" modality=\"questioned\">country</entity> is mainly <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" modality=\"questioned\">severe</entity>. I wonder how can we make it so we get our <entity type=\"LOCATION\" canonical=\"country\" speaker_context=\"true\">country</entity> out of this drought. This impacts my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because where I live we are in a drought to the point we are not allowed to have fire pits and can smell the <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity> resulting from the droughts. A catchphrase to name this graph could be \"The <entity type=\"DATA_VAR_LEVEL\" canonical=\"usa\" var=\"state_names_abbreviations\" section=\"headline\">USA</entity> Is Drying Up: How will we get out of this significant drought.\""
 }

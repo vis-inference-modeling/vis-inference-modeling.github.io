@@ -4,36 +4,10 @@
   "raw_comment": "- I noticed that the places with the most drought are in the middle of the US while the far ends of the US are abnormally dry or moderate.\n-I wonder the main cause for certain areas to be extreme drought and those nearby to be abnormally dry.\n-This relates to me and my community because whether there is a lot of drought or it is dry it affects the people living in that area and may lead to problems within my community.\n-Dry or drought doubt in the US",
   "entities": [
     {
-      "surface": "US",
-      "type": "LOCATION",
-      "canonical": "us",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 75,
-      "end": 77,
-      "id": "e0"
-    },
-    {
-      "surface": "US",
-      "type": "LOCATION",
-      "canonical": "us",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 104,
-      "end": 106,
-      "id": "e1"
-    },
-    {
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -41,13 +15,13 @@
       "occurrence_index": 0,
       "start": 111,
       "end": 125,
-      "id": "e2"
+      "id": "e0"
     },
     {
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -55,7 +29,7 @@
       "occurrence_index": 1,
       "start": 227,
       "end": 241,
-      "id": "e3"
+      "id": "e1"
     },
     {
       "surface": "me",
@@ -69,13 +43,13 @@
       "occurrence_index": 0,
       "start": 260,
       "end": 262,
-      "id": "e4"
+      "id": "e2"
     },
     {
       "surface": "my community",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -83,13 +57,13 @@
       "occurrence_index": 0,
       "start": 267,
       "end": 279,
-      "id": "e5"
+      "id": "e3"
     },
     {
       "surface": "my community",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -97,18 +71,47 @@
       "occurrence_index": 1,
       "start": 409,
       "end": 421,
-      "id": "e6"
+      "id": "e4"
     },
     {
-      "surface": "Dry or drought doubt in the US",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "surface": "Dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 424,
+      "end": 427,
+      "id": "e5"
+    },
+    {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 431,
+      "end": 438,
+      "id": "e6"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 452,
       "end": 454,
       "id": "e7"
     },
@@ -116,7 +119,7 @@
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -130,7 +133,7 @@
       "surface": "extreme drought",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -141,25 +144,12 @@
       "id": "e9"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "the middle of the US",
-      "reason": "Could be a LOCATION phrase, but the normalized dictionary only provides broader region/location entries and no exact canonical for this phrasing."
-    },
-    {
-      "surface": "the far ends of the US",
-      "reason": "Likely a location/region reference, but no exact canonical match is available."
-    },
-    {
-      "surface": "people living in that area",
-      "reason": "Generic people reference tied to an unspecified area; not enough specificity for a stable entity tag."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "- I noticed that the places with the most drought are in the middle of the US while the far ends of the US are abnormally dry or moderate.\n-I wonder the main cause for certain areas to be extreme drought and those nearby to be abnormally dry.\n-This relates to me and my community because whether there is a lot of drought or it is dry it affects the people living in that area and may lead to problems within my community.\n-Dry or drought doubt in the US"
     }
   ],
-  "tagged_text": "- I noticed that the places with the most drought are in the middle of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\">US</entity> while the far ends of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\">US</entity> are <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\" section=\"body\">abnormally dry</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\" section=\"body\">moderate</entity>.\n-I wonder the main cause for certain areas to be <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"body\" modality=\"questioned\">extreme drought</entity> and those nearby to be <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\" section=\"body\" modality=\"questioned\">abnormally dry</entity>.\n-This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"body\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my community</entity> because whether there is a lot of drought or it is dry it affects the people living in that area and may lead to problems within <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my community</entity>.\n-<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"body\">Dry or drought doubt in the US</entity>"
+  "tagged_text": "- I noticed that the places with the most drought are in the middle of the US while the far ends of the US are <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity>.\n-I wonder the main cause for certain areas to be <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" modality=\"questioned\">extreme drought</entity> and those nearby to be <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" modality=\"questioned\">abnormally dry</entity>.\n-This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because whether there is a lot of drought or it is dry it affects the people living in that area and may lead to problems within <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity>.\n-<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">Dry</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity> doubt in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>"
 }

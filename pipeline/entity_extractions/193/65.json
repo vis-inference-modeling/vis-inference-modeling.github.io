@@ -4,6 +4,117 @@
   "raw_comment": "1. I notice that the is more drought near the middle of the country where there may be less water. There also many states that don't have extreme droughts and hare either abnormally dry or no dryness.\n2. I wonder why those very specific spots of land have exceptional droughts in the United States.\n3. This relates to me and my community because where I live there are moderate number of droughts even though I live next to the Atlantic Ocean so that can be concerning.\n4. The US is experiencing extreme droughts: What can we do to prevent this.",
   "entities": [
     {
+      "surface": "country",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "country",
+      "var": "geographic_location_us_regions_states",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 60,
+      "end": 67,
+      "id": "e0"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 92,
+      "end": 97,
+      "id": "e1"
+    },
+    {
+      "surface": "extreme droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 138,
+      "end": 154,
+      "id": "e2"
+    },
+    {
+      "surface": "extreme droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 496,
+      "end": 512,
+      "id": "e3"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "exceptional droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
       "surface": "Atlantic Ocean",
       "type": "LOCATION",
       "canonical": "atlantic_ocean",
@@ -12,41 +123,29 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 428,
-      "end": 442,
-      "id": "e0"
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 477,
-      "end": 479,
-      "id": "e1"
+      "start": null,
+      "end": null,
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "middle of the country",
-      "reason": "Likely a location, but the exact canonical is not fully certain from the available list; could map to central_united_states or middle_of_the_country."
-    },
-    {
-      "surface": "water",
-      "reason": "Generic mention; could be relevant to the chart theme but not clearly an entity in this comment."
-    },
-    {
-      "surface": "abnormally dry",
-      "reason": "Likely a drought severity level, but no exact canonical is provided in the normalized dictionary."
-    },
-    {
-      "surface": "exceptional droughts",
-      "reason": "Could map to exceptional drought severity, but the comment uses plural and the available canonical is singular severity-level wording."
+      "surface": "moderate number of droughts",
+      "reason": "Likely refers to the 'moderate' drought severity level, but the wording is not exact and could be descriptive rather than a level label."
     }
   ],
   "section_segments": [
@@ -71,5 +170,5 @@
       "text": "The US is experiencing extreme droughts: What can we do to prevent this."
     }
   ],
-  "tagged_text": "1. I notice that the is more drought near the middle of the country where there may be less water. There also many states that don't have extreme droughts and hare either abnormally dry or no dryness.\n2. I wonder why those very specific spots of land have exceptional droughts in the United States.\n3. This relates to me and my community because where I live there are moderate number of droughts even though I live next to the <entity type=\"LOCATION\" canonical=\"atlantic_ocean\">Atlantic Ocean</entity> so that can be concerning.\n4. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is experiencing extreme droughts: What can we do to prevent this."
+  "tagged_text": "1. I notice that the is more drought near the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"geographic_location_us_regions_states\">country</entity> where there may be less <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity>. There also many states that don't have <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme droughts</entity> and hare either <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity> or no dryness.\n2. I wonder why those very specific spots of land have <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional droughts</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>.\n3. This relates to me and my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because where I live there are moderate number of droughts even though I live next to the <entity type=\"LOCATION\" canonical=\"atlantic_ocean\">Atlantic Ocean</entity> so that can be concerning.\n4. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> is experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme droughts</entity>: What can we do to prevent this."
 }

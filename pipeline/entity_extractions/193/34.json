@@ -4,23 +4,10 @@
   "raw_comment": "1. This graph illustrates the severity of drought conditions across the United States. Darker shades of orange highlight areas experiencing the most extreme drought, while lighter yellow indicates milder conditions. Regions with normal rainfall are represented in white. States like Texas, Wyoming, West Virginia, and Ohio are enduring the most severe droughts, whereas Florida and Alaska appear largely unaffected.  \n\n2. This raises questions about why some areas are drier than others. Could climate change be a contributing factor? Do geography or natural features within a state influence drought severity? How does this drought compare to past ones in the U.S. or to those occurring in other parts of the world?\n\n3. I currently live in South Florida and the weather here does somehow match what the chart shows. There is a lot of rainfall here, especially in the summer. Probably because of the coast, hurricane weather is also more frequent here (compared to other inland states).\n\n4. Dry Out in the US: A Nationwide Look at Drought Across the United States",
   "entities": [
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 8,
-      "end": 13,
-      "id": "e0"
-    },
-    {
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -28,13 +15,13 @@
       "occurrence_index": 0,
       "start": 72,
       "end": 85,
-      "id": "e1"
+      "id": "e0"
     },
     {
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -42,6 +29,20 @@
       "occurrence_index": 1,
       "start": 1050,
       "end": 1063,
+      "id": "e1"
+    },
+    {
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e2"
     },
     {
@@ -136,9 +137,10 @@
       "id": "e9"
     },
     {
-      "surface": "world",
-      "type": "LOCATION",
-      "canonical": "world",
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -149,12 +151,12 @@
       "id": "e10"
     },
     {
-      "surface": "South Florida",
+      "surface": "world",
       "type": "LOCATION",
-      "canonical": "south_florida",
+      "canonical": "world",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -162,12 +164,12 @@
       "id": "e11"
     },
     {
-      "surface": "rainfall",
-      "type": "EVENT",
-      "canonical": "rainfall",
+      "surface": "South Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -177,7 +179,7 @@
     {
       "surface": "summer",
       "type": "TIME_REFERENCE",
-      "canonical": "summer",
+      "canonical": "summer_months",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -188,11 +190,10 @@
       "id": "e13"
     },
     {
-      "surface": "Dry Out in the US: A Nationwide Look at Drought Across the United States",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
-      "section": "headline",
+      "surface": "coast",
+      "type": "LOCATION",
+      "canonical": "coast",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -200,24 +201,33 @@
       "start": null,
       "end": null,
       "id": "e14"
+    },
+    {
+      "surface": "Dry Out in the US: A Nationwide Look at Drought Across the United States",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "drought conditions",
-      "reason": "General drought reference; could be EVENT 'drought' but the exact phrase is not separately canonicalized."
+      "surface": "geography",
+      "reason": "Abstract concept; not a tagged entity type in this schema."
     },
     {
-      "surface": "orange",
-      "reason": "Likely chart color reference, but not listed as a chart element in the normalized dictionary for this article."
+      "surface": "natural features",
+      "reason": "Too vague to map confidently to a specific entity."
     },
     {
-      "surface": "yellow",
-      "reason": "Likely chart color reference, but not listed as a chart element in the normalized dictionary for this article."
-    },
-    {
-      "surface": "white",
-      "reason": "Likely chart color reference, but not listed as a chart element in the normalized dictionary for this article."
+      "surface": "inland states",
+      "reason": "Could be a regional/location reference, but no exact canonical match is available."
     }
   ],
   "section_segments": [
@@ -242,5 +252,5 @@
       "text": "Dry Out in the US: A Nationwide Look at Drought Across the United States"
     }
   ],
-  "tagged_text": "1. This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> illustrates the severity of drought conditions across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. Darker shades of orange highlight areas experiencing the most extreme drought, while lighter yellow indicates milder conditions. Regions with normal rainfall are represented in white. States like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>, <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity>, and <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> are enduring the most severe droughts, whereas <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> and <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> appear largely unaffected.  \n\n2. This raises questions about why some areas are drier than others. Could <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity> be a contributing factor? Do geography or natural features within a state influence drought severity? How does this drought compare to past ones in the U.S. or to those occurring in other parts of the <entity type=\"LOCATION\" canonical=\"world\">world</entity>?\n\n3. I currently live in <entity type=\"LOCATION\" canonical=\"south_florida\" speaker_context=\"true\">South Florida</entity> and the weather here does somehow match what the chart shows. There is a lot of <entity type=\"EVENT\" canonical=\"rainfall\">rainfall</entity> here, especially in the <entity type=\"TIME_REFERENCE\" canonical=\"summer\">summer</entity>. Probably because of the coast, hurricane weather is also more frequent here (compared to other inland states).\n\n4. <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Dry Out in the US: A Nationwide Look at Drought Across the United States</entity>"
+  "tagged_text": "1. This graph illustrates the severity of drought conditions across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>. Darker shades of orange highlight areas experiencing the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> drought, while lighter yellow indicates milder conditions. Regions with normal rainfall are represented in white. States like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>, <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity>, and <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> are enduring the most severe droughts, whereas <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> and <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> appear largely unaffected.  \n\n2. This raises questions about why some areas are drier than others. Could <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity> be a contributing factor? Do geography or natural features within a state influence drought severity? How does this drought compare to past ones in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity> or to those occurring in other parts of the <entity type=\"LOCATION\" canonical=\"world\">world</entity>?\n\n3. I currently live in <entity type=\"LOCATION\" canonical=\"florida\" speaker_context=\"true\">South Florida</entity> and the weather here does somehow match what the chart shows. There is a lot of rainfall here, especially in the <entity type=\"TIME_REFERENCE\" canonical=\"summer_months\">summer</entity>. Probably because of the <entity type=\"LOCATION\" canonical=\"coast\">coast</entity>, hurricane weather is also more frequent here (compared to other inland states).\n\n4. <entity type=\"CHART_ELEMENT\" canonical=\"headline\">Dry Out in the US: A Nationwide Look at Drought Across the United States</entity>"
 }

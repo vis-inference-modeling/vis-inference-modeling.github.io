@@ -4,16 +4,16 @@
   "raw_comment": "Title: Lower 48 is a little thirsty\n\nwhy is Florida not droughtfull.",
   "entities": [
     {
-      "surface": "Lower 48",
-      "type": "LOCATION",
-      "canonical": "lower_48",
+      "surface": "Lower 48 is a little thirsty",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 7,
-      "end": 15,
+      "end": 35,
       "id": "e0"
     },
     {
@@ -33,7 +33,11 @@
   "unresolved_mentions": [
     {
       "surface": "droughtfull",
-      "reason": "Nonstandard wording for drought; no exact canonical match."
+      "reason": "Nonstandard wording; likely means drought-affected, but no clear canonical mapping."
+    },
+    {
+      "surface": "Lower 48",
+      "reason": "Common U.S. geographic phrase, but not explicitly listed in the provided canonical dictionary."
     }
   ],
   "section_segments": [
@@ -47,5 +51,5 @@
       "text": "why is Florida not droughtfull."
     }
   ],
-  "tagged_text": "Title: <entity type=\"LOCATION\" canonical=\"lower_48\" section=\"headline\">Lower 48</entity> is a little thirsty\n\nwhy is <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\">Florida</entity> not droughtfull."
+  "tagged_text": "Title: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Lower 48 is a little thirsty</entity>\n\nwhy is <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> not droughtfull."
 }

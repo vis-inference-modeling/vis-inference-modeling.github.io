@@ -4,6 +4,19 @@
   "raw_comment": "Some things I noticed is that the driest areas tend to be in the mid-west section of the country. I wonder what the science behind it all is. Recently PA has been very dry and needing water for our lawns and vegetation, but if PA is one of the less dry places on the map, then I wonder what its like in Wyoming and Texas where the extreme drought is. A catchy title for this graph could be, \"Hopefully Rain will be Pouring, Maybe Even and Old Man Will Snore.\"",
   "entities": [
     {
+      "surface": "mid-west",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 65,
+      "end": 73,
+      "id": "e0"
+    },
+    {
       "surface": "country",
       "type": "LOCATION",
       "canonical": "country",
@@ -14,12 +27,12 @@
       "occurrence_index": 0,
       "start": 89,
       "end": 96,
-      "id": "e0"
+      "id": "e1"
     },
     {
       "surface": "PA",
       "type": "LOCATION",
-      "canonical": "pa_pennsylvania",
+      "canonical": "pennsylvania",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -27,12 +40,12 @@
       "occurrence_index": 0,
       "start": 151,
       "end": 153,
-      "id": "e1"
+      "id": "e2"
     },
     {
       "surface": "PA",
       "type": "LOCATION",
-      "canonical": "pa_pennsylvania",
+      "canonical": "pennsylvania",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -40,7 +53,20 @@
       "occurrence_index": 1,
       "start": 227,
       "end": 229,
-      "id": "e2"
+      "id": "e3"
+    },
+    {
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 267,
+      "end": 270,
+      "id": "e4"
     },
     {
       "surface": "Wyoming",
@@ -53,7 +79,7 @@
       "occurrence_index": 0,
       "start": 303,
       "end": 310,
-      "id": "e3"
+      "id": "e5"
     },
     {
       "surface": "Texas",
@@ -66,20 +92,21 @@
       "occurrence_index": 0,
       "start": 315,
       "end": 320,
-      "id": "e4"
+      "id": "e6"
     },
     {
       "surface": "extreme drought",
-      "type": "EVENT",
-      "canonical": "extreme_drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 331,
       "end": 346,
-      "id": "e5"
+      "id": "e7"
     },
     {
       "surface": "graph",
@@ -92,7 +119,7 @@
       "occurrence_index": 0,
       "start": 375,
       "end": 380,
-      "id": "e6"
+      "id": "e8"
     },
     {
       "surface": "water",
@@ -106,21 +133,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "mid-west section",
-      "reason": "Likely a location/region reference, but the normalized dictionary only includes 'Midwest' and related variants; surface form is hyphenated and slightly nonstandard."
-    },
-    {
-      "surface": "lawns and vegetation",
-      "reason": "Could be generic entities or chart-related context; not clearly a tagged entity from the provided dictionary."
-    },
-    {
-      "surface": "Hopefully Rain will be Pouring, Maybe Even and Old Man Will Snore.",
-      "reason": "Appears to be a creative headline/title, but no exact canonical headline match is available."
+      "surface": "science",
+      "reason": "Abstract concept; not clearly an entity type in the schema and no canonical mapping provided."
     }
   ],
   "section_segments": [
@@ -129,5 +148,5 @@
       "text": "Some things I noticed is that the driest areas tend to be in the mid-west section of the country. I wonder what the science behind it all is. Recently PA has been very dry and needing water for our lawns and vegetation, but if PA is one of the less dry places on the map, then I wonder what its like in Wyoming and Texas where the extreme drought is. A catchy title for this graph could be, \"Hopefully Rain will be Pouring, Maybe Even and Old Man Will Snore.\""
     }
   ],
-  "tagged_text": "Some things I noticed is that the driest areas tend to be in the mid-west section of the <entity type=\"LOCATION\" canonical=\"country\">country</entity>. I wonder what the science behind it all is. Recently <entity type=\"LOCATION\" canonical=\"pa_pennsylvania\">PA</entity> has been very dry and needing <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity> for our lawns and vegetation, but if <entity type=\"LOCATION\" canonical=\"pa_pennsylvania\">PA</entity> is one of the less dry places on the map, then I wonder what its like in <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity> and <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> where the <entity type=\"EVENT\" canonical=\"extreme_drought\">extreme drought</entity> is. A catchy title for this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> could be, \"Hopefully Rain will be Pouring, Maybe Even and Old Man Will Snore.\""
+  "tagged_text": "Some things I noticed is that the driest areas tend to be in the <entity type=\"LOCATION\" canonical=\"midwest\">mid-west</entity> section of the <entity type=\"LOCATION\" canonical=\"country\">country</entity>. I wonder what the science behind it all is. Recently <entity type=\"LOCATION\" canonical=\"pennsylvania\">PA</entity> has been very dry and needing <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity> for our lawns and vegetation, but if <entity type=\"LOCATION\" canonical=\"pennsylvania\">PA</entity> is one of the less dry places on the <entity type=\"CHART_ELEMENT\" canonical=\"map\">map</entity>, then I wonder what its like in <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity> and <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> where the <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme drought</entity> is. A catchy title for this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> could be, \"Hopefully Rain will be Pouring, Maybe Even and Old Man Will Snore.\""
 }

@@ -6,7 +6,7 @@
     {
       "surface": "mountains",
       "type": "LOCATION",
-      "canonical": "mountain",
+      "canonical": "rocky_mountains",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -17,24 +17,23 @@
       "id": "e0"
     },
     {
-      "surface": "Mountains are better",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
+      "surface": "Headline: Mountains are better",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 58,
+      "start": 48,
       "end": 78,
       "id": "e1"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "drought",
-      "reason": "General drought mention without a confirmed canonical EVENT/level mapping in the article dictionary."
+      "surface": "less drought",
+      "reason": "Generic drought reference; no specific severity level is named."
     }
   ],
   "section_segments": [
@@ -48,5 +47,5 @@
       "text": "Mountains are better"
     }
   ],
-  "tagged_text": "Wonder: Why do the <entity type=\"LOCATION\" canonical=\"mountain\" section=\"body\">mountains</entity> have less drought \nHeadline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Mountains are better</entity>"
+  "tagged_text": "Wonder: Why do the <entity type=\"LOCATION\" canonical=\"rocky_mountains\">mountains</entity> have less drought \n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Headline: Mountains are better</entity>"
 }

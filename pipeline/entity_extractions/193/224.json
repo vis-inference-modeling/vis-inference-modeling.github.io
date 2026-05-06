@@ -4,6 +4,34 @@
   "raw_comment": "1) What do you notice? \nI notice that most of the hot weather states are abnormally dry. Some of the cold states are always abnormally dry. I noticed that a good percentage of the country is under drought. I noticed that the area of Texas that is extremely dry is the one near Mexico. \n\n2) What do you wonder?\nI wonder if this drought has something to do with how the climate is rapidly changing. How come the places that are near the ocean and have access to rivers and lakes have some sorta level of drought? I wonder if at some point the northeastern side of the country will no longer have the 4 seasons and will the western side of the country will have the 4 seasons?\n\n3) How does this relate to you and your community?\nThis relates to me and my community because it means that the summer and winter will be extremely cold or extremely hot. It will increase the amount of fires that happen every year. It will dry out our lakes and rivers.\n\n4) What’s going on in this graph?\n“Escalating Droughts: U.S. Faces Severe Water Shortages”",
   "entities": [
     {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 73,
+      "end": 87,
+      "id": "e0"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 124,
+      "end": 138,
+      "id": "e1"
+    },
+    {
       "surface": "country",
       "type": "LOCATION",
       "canonical": "country",
@@ -14,7 +42,7 @@
       "occurrence_index": 0,
       "start": 180,
       "end": 187,
-      "id": "e0"
+      "id": "e2"
     },
     {
       "surface": "country",
@@ -27,7 +55,7 @@
       "occurrence_index": 1,
       "start": 566,
       "end": 573,
-      "id": "e1"
+      "id": "e3"
     },
     {
       "surface": "country",
@@ -40,7 +68,7 @@
       "occurrence_index": 2,
       "start": 641,
       "end": 648,
-      "id": "e2"
+      "id": "e4"
     },
     {
       "surface": "rivers",
@@ -53,20 +81,35 @@
       "occurrence_index": 0,
       "start": 938,
       "end": 944,
-      "id": "e3"
+      "id": "e5"
     },
     {
       "surface": "U.S.",
-      "type": "LOCATION",
-      "canonical": "us",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 1003,
+      "end": 1007,
+      "id": "e6"
+    },
+    {
+      "surface": "Severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1003,
-      "end": 1007,
-      "id": "e4"
+      "start": 1014,
+      "end": 1020,
+      "id": "e7"
     },
     {
       "surface": "Texas",
@@ -79,7 +122,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e5"
+      "id": "e8"
     },
     {
       "surface": "Mexico",
@@ -92,7 +135,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e9"
+    },
+    {
+      "surface": "climate",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
     },
     {
       "surface": "ocean",
@@ -105,7 +161,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e11"
     },
     {
       "surface": "rivers",
@@ -118,38 +174,38 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e12"
     },
     {
       "surface": "lakes",
       "type": "LOCATION",
-      "canonical": "lake",
+      "canonical": "great_lakes",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e13"
     },
     {
       "surface": "lakes",
       "type": "LOCATION",
-      "canonical": "lake",
+      "canonical": "great_lakes",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e14"
     },
     {
-      "surface": "summer",
+      "surface": "summer and winter",
       "type": "TIME_REFERENCE",
-      "canonical": "summer",
+      "canonical": "summer_and_winter",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -157,20 +213,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "winter",
-      "type": "TIME_REFERENCE",
-      "canonical": "winter",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
+      "id": "e15"
     },
     {
       "surface": "fires",
@@ -178,45 +221,28 @@
       "canonical": "fires",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e16"
     },
     {
-      "surface": "year",
+      "surface": "every year",
       "type": "TIME_REFERENCE",
       "canonical": "every_year",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e17"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "hot weather states",
-      "reason": "Could refer to a location category or a descriptive phrase; no exact canonical match provided."
-    },
-    {
-      "surface": "cold states",
-      "reason": "Could refer to a location category or a descriptive phrase; no exact canonical match provided."
-    },
-    {
-      "surface": "abnormally dry",
-      "reason": "Likely maps to a drought severity level or event, but no exact canonical provided in the article dictionary."
-    },
-    {
-      "surface": "drought",
-      "reason": "Generic event mention appears multiple times; could be tagged as EVENT drought, but the provided dictionary does not include a direct canonical for plain 'drought' in this article-specific list."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "numbered_point",
@@ -234,10 +260,10 @@
       "text": "How does this relate to you and your community?\nThis relates to me and my community because it means that the summer and winter will be extremely cold or extremely hot. It will increase the amount of fires that happen every year. It will dry out our lakes and rivers."
     },
     {
-      "section": "headline",
-      "label": "What’s going on in this graph?",
-      "text": "Escalating Droughts: U.S. Faces Severe Water Shortages"
+      "section": "numbered_point",
+      "label": "4",
+      "text": "What’s going on in this graph?\n“Escalating Droughts: U.S. Faces Severe Water Shortages”"
     }
   ],
-  "tagged_text": "1) What do you notice? \nI notice that most of the hot weather states are abnormally dry. Some of the cold states are always abnormally dry. I noticed that a good percentage of the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">country</entity> is under drought. I noticed that the area of <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Texas</entity> that is extremely dry is the one near <entity type=\"LOCATION\" canonical=\"mexico\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Mexico</entity>. \n\n2) What do you wonder?\nI wonder if this drought has something to do with how the climate is rapidly changing. How come the places that are near the <entity type=\"LOCATION\" canonical=\"ocean\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">ocean</entity> and have access to <entity type=\"LOCATION\" canonical=\"river\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">rivers</entity> and <entity type=\"LOCATION\" canonical=\"lake\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">lakes</entity> have some sorta level of drought? I wonder if at some point the northeastern side of the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">country</entity> will no longer have the 4 seasons and will the western side of the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">country</entity> will have the 4 seasons?\n\n3) How does this relate to you and your community?\nThis relates to me and my community because it means that the <entity type=\"TIME_REFERENCE\" canonical=\"summer\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">summer</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"winter\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">winter</entity> will be extremely cold or extremely hot. It will increase the amount of <entity type=\"EVENT\" canonical=\"fires\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">fires</entity> that happen every <entity type=\"TIME_REFERENCE\" canonical=\"every_year\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">year</entity>. It will dry out our <entity type=\"LOCATION\" canonical=\"lake\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">lakes</entity> and <entity type=\"LOCATION\" canonical=\"river\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">rivers</entity>.\n\n4) What’s going on in this graph?\n“Escalating Droughts: U.S. Faces Severe Water Shortages”"
+  "tagged_text": "1) What do you notice? \nI notice that most of the hot weather states are <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>. Some of the cold states are always <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>. I noticed that a good percentage of the <entity type=\"LOCATION\" canonical=\"country\">country</entity> is under drought. I noticed that the area of <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> that is extremely dry is the one near <entity type=\"LOCATION\" canonical=\"mexico\">Mexico</entity>. \n\n2) What do you wonder?\nI wonder if this drought has something to do with how the <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate</entity> is rapidly changing. How come the places that are near the <entity type=\"LOCATION\" canonical=\"ocean\">ocean</entity> and have access to <entity type=\"LOCATION\" canonical=\"river\">rivers</entity> and <entity type=\"LOCATION\" canonical=\"great_lakes\">lakes</entity> have some sorta level of drought? I wonder if at some point the northeastern side of the <entity type=\"LOCATION\" canonical=\"country\">country</entity> will no longer have the 4 seasons and will the western side of the <entity type=\"LOCATION\" canonical=\"country\">country</entity> will have the 4 seasons?\n\n3) How does this relate to you and your community?\nThis relates to me and my community because it means that the <entity type=\"TIME_REFERENCE\" canonical=\"summer_and_winter\">summer and winter</entity> will be extremely cold or extremely hot. It will increase the amount of <entity type=\"EVENT\" canonical=\"fires\">fires</entity> that happen <entity type=\"TIME_REFERENCE\" canonical=\"every_year\">every year</entity>. It will dry out our <entity type=\"LOCATION\" canonical=\"great_lakes\">lakes</entity> and <entity type=\"LOCATION\" canonical=\"river\">rivers</entity>.\n\n4) What’s going on in this graph?\n“Escalating Droughts: <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">U.S.</entity> Faces <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" section=\"headline\">Severe</entity> Water Shortages”"
 }

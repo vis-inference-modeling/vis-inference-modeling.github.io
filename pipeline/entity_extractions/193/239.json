@@ -18,12 +18,13 @@
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 39,
       "end": 47,
@@ -32,7 +33,7 @@
     {
       "surface": "america",
       "type": "LOCATION",
-      "canonical": "america",
+      "canonical": "usa",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -45,46 +46,37 @@
     {
       "surface": "america",
       "type": "LOCATION",
-      "canonical": "america",
+      "canonical": "usa",
       "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
+      "modality": "questioned",
+      "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": 136,
       "end": 143,
       "id": "e3"
     },
     {
-      "surface": "America",
-      "type": "LOCATION",
-      "canonical": "america",
-      "section": "headline",
-      "modality": "asserted",
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 153,
-      "end": 160,
+      "start": null,
+      "end": null,
       "id": "e4"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "abnormally dry",
-      "reason": "Could indicate drought conditions, but no confirmed canonical entity matches this exact phrase."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice that alaska does not have any droughts\n\nI wonder why most of america is abnormally dry\n\nthis relates to me because I reside in america"
-    },
-    {
-      "section": "headline",
-      "label": "dry dry america.. goodbye!",
-      "text": "dry dry America.. goodbye!"
+      "text": "I notice that alaska does not have any droughts\n\nI wonder why most of america is abnormally dry\n\nthis relates to me because I reside in america\n\ndry dry america.. goodbye!"
     }
   ],
-  "tagged_text": "I notice that <entity type=\"LOCATION\" canonical=\"alaska\" section=\"body\">alaska</entity> does not have any <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity>\n\nI wonder why most of <entity type=\"LOCATION\" canonical=\"america\" section=\"body\">america</entity> is abnormally dry\n\nthis relates to me because I reside in <entity type=\"LOCATION\" canonical=\"america\" section=\"body\" speaker_context=\"true\">america</entity>\n\ndry dry <entity type=\"LOCATION\" canonical=\"america\" section=\"headline\">America</entity>.. goodbye!"
+  "tagged_text": "I notice that <entity type=\"LOCATION\" canonical=\"alaska\">alaska</entity> does not have any <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">droughts</entity>\n\nI wonder why most of <entity type=\"LOCATION\" canonical=\"usa\">america</entity> is <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>\n\nthis relates to me because I reside in <entity type=\"LOCATION\" canonical=\"usa\">america</entity>\n\ndry dry america.. goodbye!"
 }

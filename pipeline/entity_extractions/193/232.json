@@ -4,48 +4,63 @@
   "raw_comment": "I noticed that the middle regions and middle states have drought or extreme drought because there is surrounding mountain ranges and regions. This shows that when there is mountain, there can be drought.\nI wonder why the mountain ranges and regions barely have any water?(What's the science behind it?)\nI am in Colorado and it shows that where the Rocky Mountains are, there is drought.\nDroughts.",
   "entities": [
     {
-      "surface": "middle regions and middle states",
+      "surface": "middle regions",
       "type": "LOCATION",
-      "canonical": "middle_regions_and_middle_states",
+      "canonical": "central_us",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 19,
-      "end": 51,
+      "end": 33,
       "id": "e0"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "middle states",
+      "type": "LOCATION",
+      "canonical": "central_us",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 57,
-      "end": 64,
+      "start": 38,
+      "end": 51,
       "id": "e1"
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 57,
+      "end": 64,
+      "id": "e2"
+    },
+    {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": 76,
       "end": 83,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "mountain ranges",
       "type": "LOCATION",
-      "canonical": "mountain_ranges",
+      "canonical": "rocky_mountains",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -53,38 +68,38 @@
       "occurrence_index": 0,
       "start": 113,
       "end": 128,
-      "id": "e3"
-    },
-    {
-      "surface": "mountain ranges",
-      "type": "LOCATION",
-      "canonical": "mountain_ranges",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 221,
-      "end": 236,
       "id": "e4"
     },
     {
       "surface": "regions",
       "type": "LOCATION",
-      "canonical": "regions",
+      "canonical": "central_us",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 133,
+      "end": 140,
+      "id": "e5"
+    },
+    {
+      "surface": "regions",
+      "type": "LOCATION",
+      "canonical": "central_us",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
       "start": 241,
       "end": 248,
-      "id": "e5"
+      "id": "e6"
     },
     {
       "surface": "mountain",
       "type": "LOCATION",
-      "canonical": "mountain",
+      "canonical": "rocky_mountains",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -92,25 +107,13 @@
       "occurrence_index": 0,
       "start": 354,
       "end": 362,
-      "id": "e6"
-    },
-    {
-      "surface": "Droughts.",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 387,
-      "end": 396,
       "id": "e7"
     },
     {
       "surface": "extreme drought",
-      "type": "EVENT",
-      "canonical": "extreme_drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -119,19 +122,6 @@
       "start": null,
       "end": null,
       "id": "e8"
-    },
-    {
-      "surface": "regions",
-      "type": "LOCATION",
-      "canonical": "regions",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e9"
     },
     {
       "surface": "Colorado",
@@ -144,7 +134,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e9"
     },
     {
       "surface": "Rocky Mountains",
@@ -157,25 +147,15 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e10"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "What's the science behind it?",
-      "reason": "Question refers to causal explanation, not a clear entity."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "I noticed that the middle regions and middle states have drought or extreme drought because there is surrounding mountain ranges and regions. This shows that when there is mountain, there can be drought.\nI wonder why the mountain ranges and regions barely have any water?(What's the science behind it?)\nI am in Colorado and it shows that where the Rocky Mountains are, there is drought.\nDroughts."
-    },
-    {
-      "section": "headline",
-      "label": "Droughts",
-      "text": "Droughts."
     }
   ],
-  "tagged_text": "I noticed that the <entity type=\"LOCATION\" canonical=\"middle_regions_and_middle_states\" section=\"body\">middle regions and middle states</entity> have <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> or <entity type=\"EVENT\" canonical=\"extreme_drought\" section=\"body\">extreme drought</entity> because there is surrounding <entity type=\"LOCATION\" canonical=\"mountain_ranges\" section=\"body\">mountain ranges</entity> and <entity type=\"LOCATION\" canonical=\"regions\" section=\"body\">regions</entity>. This shows that when there is <entity type=\"LOCATION\" canonical=\"mountain\" section=\"body\">mountain</entity>, there can be drought.\nI wonder why the <entity type=\"LOCATION\" canonical=\"mountain_ranges\" section=\"body\">mountain ranges</entity> and <entity type=\"LOCATION\" canonical=\"regions\" section=\"body\">regions</entity> barely have any water?(What's the science behind it?)\nI am in <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\" speaker_context=\"true\">Colorado</entity> and it shows that where the <entity type=\"LOCATION\" canonical=\"rocky_mountains\" section=\"body\">Rocky Mountains</entity> are, there is drought.\n<entity type=\"EVENT\" canonical=\"droughts\" section=\"headline\">Droughts.</entity>"
+  "tagged_text": "I noticed that the <entity type=\"LOCATION\" canonical=\"central_us\">middle regions</entity> and <entity type=\"LOCATION\" canonical=\"central_us\">middle states</entity> have <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme drought</entity> because there is surrounding <entity type=\"LOCATION\" canonical=\"rocky_mountains\">mountain ranges</entity> and <entity type=\"LOCATION\" canonical=\"central_us\">regions</entity>. This shows that when there is <entity type=\"LOCATION\" canonical=\"rocky_mountains\">mountain</entity>, there can be drought.\nI wonder why the <entity type=\"LOCATION\" canonical=\"rocky_mountains\">mountain ranges</entity> and <entity type=\"LOCATION\" canonical=\"central_us\">regions</entity> barely have any water?(What's the science behind it?)\nI am in <entity type=\"LOCATION\" canonical=\"colorado\">Colorado</entity> and it shows that where the <entity type=\"LOCATION\" canonical=\"rocky_mountains\">Rocky Mountains</entity> are, there is drought.\nDroughts."
 }

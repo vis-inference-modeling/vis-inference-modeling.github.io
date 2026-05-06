@@ -6,7 +6,7 @@
     {
       "surface": "coasts",
       "type": "LOCATION",
-      "canonical": "coasts",
+      "canonical": "coast",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -17,43 +17,18 @@
       "id": "e0"
     },
     {
-      "surface": "inland areas",
-      "type": "LOCATION",
-      "canonical": "inland_areas",
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 69,
-      "end": 81,
+      "start": 131,
+      "end": 135,
       "id": "e1"
-    },
-    {
-      "surface": "heartland",
-      "type": "LOCATION",
-      "canonical": "heartland",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 114,
-      "end": 123,
-      "id": "e2"
-    },
-    {
-      "surface": "heartland",
-      "type": "LOCATION",
-      "canonical": "heartland",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 175,
-      "end": 184,
-      "id": "e3"
     },
     {
       "surface": "Oklahoma",
@@ -66,101 +41,21 @@
       "occurrence_index": 0,
       "start": 192,
       "end": 200,
-      "id": "e4"
-    },
-    {
-      "surface": "states",
-      "type": "LOCATION",
-      "canonical": "states",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 208,
-      "end": 214,
-      "id": "e5"
-    },
-    {
-      "surface": "map",
-      "type": "CHART_ELEMENT",
-      "canonical": "map",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 263,
-      "end": 266,
-      "id": "e6"
+      "id": "e2"
     },
     {
       "surface": "abnormal levels",
-      "type": "OTHER_ENTITY",
-      "canonical": "abnormal_levels",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 273,
       "end": 288,
-      "id": "e7"
-    },
-    {
-      "surface": "large concentrations of drought",
-      "type": "EVENT",
-      "canonical": "large_concentrations_of_drought",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 325,
-      "end": 356,
-      "id": "e8"
-    },
-    {
-      "surface": "geographical features",
-      "type": "OTHER_ENTITY",
-      "canonical": "geographical_features",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 372,
-      "end": 393,
-      "id": "e9"
-    },
-    {
-      "surface": "locations of manmade importance",
-      "type": "OTHER_ENTITY",
-      "canonical": "locations_of_manmade_importance",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 398,
-      "end": 429,
-      "id": "e10"
-    },
-    {
-      "surface": "vulnerable places",
-      "type": "LOCATION",
-      "canonical": "vulnerable_places",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 448,
-      "end": 465,
-      "id": "e11"
+      "id": "e3"
     },
     {
       "surface": "South India",
@@ -168,73 +63,46 @@
       "canonical": "south_india",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 501,
       "end": 512,
-      "id": "e12"
+      "id": "e4"
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 549,
       "end": 557,
-      "id": "e13"
+      "id": "e5"
     },
     {
-      "surface": "rainwater",
-      "type": "OTHER_ENTITY",
-      "canonical": "rainwater",
-      "subtype": "other",
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 630,
-      "end": 639,
-      "id": "e14"
-    },
-    {
-      "surface": "Rain, rain has gone away: How droughts are affecting the United States and why?",
-      "type": "OTHER_ENTITY",
-      "canonical": "rain_rain_has_gone_away_how_droughts_are_affecting_the_united_states_and_why",
-      "subtype": "headline_title",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 644,
-      "end": 723,
-      "id": "e15"
+      "start": 701,
+      "end": 714,
+      "id": "e6"
     },
     {
       "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "U.S.",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -242,21 +110,29 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e7"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "the more industrialized heartland",
-      "reason": "Likely refers to heartland, but includes an extra modifier not in the canonical list."
+      "surface": "inland areas",
+      "reason": "Descriptive geographic phrase without a specific canonical mapping."
     },
     {
-      "surface": "other states",
-      "reason": "Generic location phrase; not specific enough for a canonical location."
+      "surface": "heartland",
+      "reason": "Could refer to a region, but no confirmed canonical ID is provided."
     },
     {
-      "surface": "significant droughts",
-      "reason": "Could map to drought severity, but no exact severity level is specified."
+      "surface": "states",
+      "reason": "Generic plural reference; not specific enough to tag confidently."
+    },
+    {
+      "surface": "large concentrations of drought",
+      "reason": "Could refer to drought severity, but the exact level is unclear."
+    },
+    {
+      "surface": "resources as vital as rainwater",
+      "reason": "Entity-like concept, but no confirmed canonical ID is provided."
     }
   ],
   "section_segments": [

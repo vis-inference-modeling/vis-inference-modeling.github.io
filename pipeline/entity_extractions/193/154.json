@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "United States",
-      "type": "LOCATION",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -20,7 +21,7 @@
       "surface": "extreme",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -31,17 +32,59 @@
       "id": "e1"
     },
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 249,
+      "end": 256,
+      "id": "e2"
+    },
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 107,
-      "end": 112,
-      "id": "e2"
+      "start": 357,
+      "end": 365,
+      "id": "e3"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 394,
+      "end": 408,
+      "id": "e4"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 525,
+      "end": 538,
+      "id": "e5"
     },
     {
       "surface": "Wyoming",
@@ -52,9 +95,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 131,
-      "end": 138,
-      "id": "e3"
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "Oklahoma",
@@ -65,22 +108,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 143,
-      "end": 151,
-      "id": "e4"
-    },
-    {
-      "surface": "New York",
-      "type": "LOCATION",
-      "canonical": "new_york",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 179,
-      "end": 187,
-      "id": "e5"
+      "start": null,
+      "end": null,
+      "id": "e7"
     },
     {
       "surface": "New York",
@@ -91,49 +121,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 357,
-      "end": 365,
-      "id": "e6"
-    },
-    {
-      "surface": "abnormally dry",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "abnormally_dry",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 394,
-      "end": 408,
-      "id": "e7"
-    },
-    {
-      "surface": "Drought Intensity Throughout the United States",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 492,
-      "end": 538,
-      "id": "e8"
-    },
-    {
-      "surface": "Philadelphia",
-      "type": "LOCATION",
-      "canonical": "philadelphia",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e8"
     },
     {
       "surface": "global warming",
@@ -146,7 +136,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e9"
     },
     {
       "surface": "pollution",
@@ -159,35 +149,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "human-made problems",
-      "type": "OTHER_ENTITY",
-      "canonical": "human_made_problems",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
+      "id": "e10"
     }
   ],
   "unresolved_mentions": [],
@@ -202,5 +164,5 @@
       "text": "Drought Intensity Throughout the United States"
     }
   ],
-  "tagged_text": "I noticed a drought all throughout the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"body\">United States</entity>, but the drought was <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"body\">extreme</entity> toward the middle of the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> in states such as <entity type=\"LOCATION\" canonical=\"wyoming\" section=\"body\">Wyoming</entity> and <entity type=\"LOCATION\" canonical=\"oklahoma\" section=\"body\">Oklahoma</entity> compared to states such as <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">New York</entity> and <entity type=\"LOCATION\" canonical=\"philadelphia\" section=\"body\">Philadelphia</entity>\n\nI wonder what is causing the drought to be extreme. Is it <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\" modality=\"questioned\">global warming</entity>, <entity type=\"EVENT\" canonical=\"pollution\" section=\"body\" modality=\"questioned\">pollution</entity>, or <entity type=\"OTHER_ENTITY\" canonical=\"human_made_problems\" subtype=\"other\" section=\"body\" modality=\"questioned\">human-made problems</entity>?\n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my community</entity> because, in <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">New York</entity>, the drought is considered \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\" section=\"body\">abnormally dry</entity>\", meaning it is drier than it should be and is slowly entering drought.\n\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Drought Intensity Throughout the United States</entity>"
+  "tagged_text": "I noticed a drought all throughout the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>, but the drought was <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> toward the middle of the graph in states such as <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity> and <entity type=\"LOCATION\" canonical=\"oklahoma\">Oklahoma</entity> compared to states such as <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> and Philadelphia\n\nI wonder what is causing the drought to be <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" modality=\"questioned\">extreme</entity>. Is it <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"questioned\">global warming</entity>, <entity type=\"EVENT\" canonical=\"pollution\" modality=\"questioned\">pollution</entity>, or human-made problems?\n\nThis relates to my community because, in <entity type=\"LOCATION\" canonical=\"new_york\" speaker_context=\"true\">New York</entity>, the drought is considered \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>\", meaning it is drier than it should be and is slowly entering drought.\n\nHeadline: Drought Intensity Throughout the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>"
 }

@@ -4,29 +4,30 @@
   "raw_comment": "I notice that this graph is showcasing the widespread drought across the US.\n\nI wonder why almost all of Florida is completely gray.\n\nThis graph doesn't really relate to me or my community as Florida is completely gray.\n\n\"National drought but no need to pout.\"",
   "entities": [
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 19,
-      "end": 24,
+      "start": 73,
+      "end": 75,
       "id": "e0"
     },
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 139,
-      "end": 144,
+      "occurrence_index": 0,
+      "start": 105,
+      "end": 112,
       "id": "e1"
     },
     {
@@ -37,57 +38,20 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": 192,
       "end": 199,
       "id": "e2"
-    },
-    {
-      "surface": "National drought but no need to pout.",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 222,
-      "end": 259,
-      "id": "e3"
-    },
-    {
-      "surface": "US",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e4"
-    },
-    {
-      "surface": "Florida",
-      "type": "LOCATION",
-      "canonical": "florida",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "widespread drought",
-      "reason": "Could be an EVENT-like reference to drought, but the provided normalized dictionary does not include a direct canonical for this exact phrase."
+      "surface": "gray",
+      "reason": "Likely refers to map coloring, but not a standalone tagged entity in this context."
+    },
+    {
+      "surface": "National drought but no need to pout.",
+      "reason": "Headline-like text, but it does not clearly name a chart element from the reference list."
     }
   ],
   "section_segments": [
@@ -96,5 +60,5 @@
       "text": "I notice that this graph is showcasing the widespread drought across the US.\n\nI wonder why almost all of Florida is completely gray.\n\nThis graph doesn't really relate to me or my community as Florida is completely gray.\n\n\"National drought but no need to pout.\""
     }
   ],
-  "tagged_text": "I notice that this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> is showcasing the widespread drought across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity>.\n\nI wonder why almost all of <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> is completely gray.\n\nThis <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> doesn't really relate to me or my community as <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> is completely gray.\n\n\"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">National drought but no need to pout.</entity>\""
+  "tagged_text": "I notice that this graph is showcasing the widespread drought across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>.\n\nI wonder why almost all of <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> is completely gray.\n\nThis graph doesn't really relate to me or my community as <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> is completely gray.\n\n\"National drought but no need to pout.\""
 }

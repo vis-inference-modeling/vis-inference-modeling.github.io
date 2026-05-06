@@ -5,12 +5,13 @@
   "entities": [
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 13,
       "end": 20,
@@ -18,12 +19,13 @@
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": 197,
       "end": 204,
@@ -43,49 +45,22 @@
       "id": "e2"
     },
     {
-      "surface": "Thirst Trap",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": 224,
-      "end": 235,
-      "id": "e3"
-    },
-    {
-      "surface": "deserts",
-      "type": "LOCATION",
-      "canonical": "deserts",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e4"
-    },
-    {
       "surface": "previous years",
       "type": "TIME_REFERENCE",
       "canonical": "previous_years",
       "section": "numbered_point",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e5"
+      "id": "e3"
     },
     {
       "surface": "Northern Colorado",
       "type": "LOCATION",
-      "canonical": "northern_colorado",
+      "canonical": "colorado",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -93,10 +68,15 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e4"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "deserts",
+      "reason": "Plural geographic reference, but no confirmed canonical location mapping beyond generic desert-state concept."
+    }
+  ],
   "section_segments": [
     {
       "section": "numbered_point",
@@ -119,5 +99,5 @@
       "text": "Thirst Trap"
     }
   ],
-  "tagged_text": "1. The worst <entity type=\"EVENT\" canonical=\"drought\" section=\"numbered_point\">drought</entity> is surprisingly not in the <entity type=\"LOCATION\" canonical=\"deserts\" section=\"numbered_point\">deserts</entity>.\n2. How much has this increased from <entity type=\"TIME_REFERENCE\" canonical=\"previous_years\" section=\"numbered_point\">previous years</entity>?\n3. This relates to us because we live in <entity type=\"LOCATION\" canonical=\"northern_colorado\" section=\"numbered_point\" speaker_context=\"true\">Northern Colorado</entity>, which has some of the worst drought in the <entity type=\"LOCATION\" canonical=\"country\" section=\"numbered_point\">country</entity>.\n4. <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Thirst Trap</entity>"
+  "tagged_text": "1. The worst <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity> is surprisingly not in the deserts.\n2. How much has this increased from <entity type=\"TIME_REFERENCE\" canonical=\"previous_years\">previous years</entity>?\n3. This relates to us because we live in <entity type=\"LOCATION\" canonical=\"colorado\">Northern Colorado</entity>, which has some of the worst <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity> in the <entity type=\"LOCATION\" canonical=\"country\">country</entity>.\n4. Thirst Trap"
 }

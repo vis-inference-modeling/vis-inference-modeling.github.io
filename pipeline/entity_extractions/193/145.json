@@ -4,122 +4,58 @@
   "raw_comment": "1. I notice that the states in the middle of the country experience the most severe droughts. I also noticed that a lot of the country is experiencing severe droughts, even in areas near water sources, and mountain ranges.\n\n2. I wonder why many of the hot and dry states aren't experiencing droughts like the middle of the country? I also wonder how global warming and climate change is affecting these droughts. \n\n3. This impacts my coummunity as I live in Mass, and my state experienced moderate and severe droughts, and I did not even realize. I also used to live in California where I experienced a lot of droughts.\n\n4. The United States or the Sahara Desert: How Have Droughts effected the country?",
   "entities": [
     {
-      "surface": "the middle of the country",
-      "type": "LOCATION",
-      "canonical": "middle_of_the_country",
+      "surface": "severe droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 31,
-      "end": 56,
+      "start": 77,
+      "end": 92,
       "id": "e0"
     },
     {
-      "surface": "the middle of the country",
-      "type": "LOCATION",
-      "canonical": "middle_of_the_country",
+      "surface": "severe droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 305,
-      "end": 330,
+      "start": 151,
+      "end": 166,
       "id": "e1"
     },
     {
-      "surface": "severe droughts",
-      "type": "EVENT",
-      "canonical": "severe_droughts",
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 502,
-      "end": 517,
+      "start": 323,
+      "end": 330,
       "id": "e2"
     },
     {
-      "surface": "the country",
+      "surface": "country",
       "type": "LOCATION",
       "canonical": "country",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 691,
+      "occurrence_index": 1,
+      "start": 695,
       "end": 702,
       "id": "e3"
-    },
-    {
-      "surface": "severe droughts",
-      "type": "EVENT",
-      "canonical": "severe_droughts",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e4"
-    },
-    {
-      "surface": "the country",
-      "type": "LOCATION",
-      "canonical": "country",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e5"
-    },
-    {
-      "surface": "water sources",
-      "type": "OTHER_ENTITY",
-      "canonical": "water_sources",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "mountain ranges",
-      "type": "LOCATION",
-      "canonical": "mountain_ranges",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
-    },
-    {
-      "surface": "hot and dry states",
-      "type": "LOCATION",
-      "canonical": "hot_and_dry_states",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
     },
     {
       "surface": "global warming",
@@ -132,7 +68,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e4"
     },
     {
       "surface": "climate change",
@@ -145,7 +81,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e5"
     },
     {
       "surface": "Mass",
@@ -153,31 +89,18 @@
       "canonical": "massachusetts",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "my state",
-      "type": "LOCATION",
-      "canonical": "my_state",
-      "section": "numbered_point",
-      "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e6"
     },
     {
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -185,7 +108,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e7"
     },
     {
       "surface": "California",
@@ -193,40 +116,48 @@
       "canonical": "california",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e8"
     },
     {
-      "surface": "The United States or the Sahara Desert",
-      "type": "OTHER_ENTITY",
-      "canonical": "the_united_states_or_the_sahara_desert",
-      "subtype": "headline_title",
-      "section": "headline",
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "my coummunity",
-      "reason": "Misspelled form of 'my community'; likely speaker-context location, but not exact canonical surface."
+      "surface": "water sources",
+      "reason": "Plural resource/location-like phrase, but no confirmed canonical ID is provided."
     },
     {
-      "surface": "the Sahara Desert",
-      "reason": "Not in the provided dictionary; likely a location-like comparison in the headline."
+      "surface": "mountain ranges",
+      "reason": "Could refer to a geographic feature, but no specific canonical mapping is available here."
     },
     {
-      "surface": "droughts",
-      "reason": "Generic event mention repeated in several places; could be normalized to drought or severe_droughts depending context."
+      "surface": "hot and dry states",
+      "reason": "Descriptive phrase likely referring to locations, but too vague to map confidently."
+    },
+    {
+      "surface": "Sahara Desert",
+      "reason": "Not present in the provided canonical list; likely a comparative location reference."
+    },
+    {
+      "surface": "the country",
+      "reason": "Could refer to the United States or a generic country; ambiguous in this context."
     }
   ],
   "section_segments": [
@@ -251,5 +182,5 @@
       "text": "The United States or the Sahara Desert: How Have Droughts effected the country?"
     }
   ],
-  "tagged_text": "1. I notice that the states in the middle of the country experience the most severe droughts. I also noticed that a lot of the country is experiencing severe droughts, even in areas near water sources, and mountain ranges.\n\n2. I wonder why many of the hot and dry states aren't experiencing droughts like the middle of the country? I also wonder how global warming and climate change is affecting these droughts. \n\n3. This impacts my coummunity as I live in Mass, and my state experienced moderate and severe droughts, and I did not even realize. I also used to live in California where I experienced a lot of droughts.\n\n4. The United States or the Sahara Desert: How Have Droughts effected the country?"
+  "tagged_text": "1. I notice that the states in the middle of the country experience the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe droughts</entity>. I also noticed that a lot of the <entity type=\"LOCATION\" canonical=\"country\" speaker_context=\"false\">country</entity> is experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe droughts</entity>, even in areas near water sources, and mountain ranges.\n\n2. I wonder why many of the hot and dry states aren't experiencing droughts like the middle of the country? I also wonder how <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"questioned\">global warming</entity> and <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity> is affecting these droughts. \n\n3. This impacts my coummunity as I live in <entity type=\"LOCATION\" canonical=\"massachusetts\" speaker_context=\"true\">Mass</entity>, and my state experienced <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe droughts</entity>, and I did not even realize. I also used to live in <entity type=\"LOCATION\" canonical=\"california\" speaker_context=\"true\">California</entity> where I experienced a lot of droughts.\n\n4. The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity> or the <entity type=\"LOCATION\" canonical=\"desert_state\" speaker_context=\"false\">Sahara Desert</entity>: How Have Droughts effected the country?"
 }

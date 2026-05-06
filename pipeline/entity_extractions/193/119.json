@@ -5,8 +5,8 @@
   "entities": [
     {
       "surface": "It’s Fall: Do You Know Where Our Rain Is? Parts of the U.S. Face Serious Droughts!",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -20,7 +20,7 @@
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -83,6 +83,20 @@
       "id": "e5"
     },
     {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 388,
+      "end": 402,
+      "id": "e6"
+    },
+    {
       "surface": "global warming",
       "type": "EVENT",
       "canonical": "global_warming",
@@ -93,7 +107,7 @@
       "occurrence_index": 0,
       "start": 706,
       "end": 720,
-      "id": "e6"
+      "id": "e7"
     },
     {
       "surface": "climate change",
@@ -106,12 +120,13 @@
       "occurrence_index": 0,
       "start": 725,
       "end": 739,
-      "id": "e7"
+      "id": "e8"
     },
     {
       "surface": "my community",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -119,7 +134,7 @@
       "occurrence_index": 0,
       "start": 823,
       "end": 835,
-      "id": "e8"
+      "id": "e9"
     },
     {
       "surface": "me",
@@ -133,7 +148,7 @@
       "occurrence_index": 0,
       "start": 840,
       "end": 842,
-      "id": "e9"
+      "id": "e10"
     },
     {
       "surface": "country",
@@ -141,38 +156,12 @@
       "canonical": "country",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 868,
       "end": 875,
-      "id": "e10"
-    },
-    {
-      "surface": "rainfall",
-      "type": "EVENT",
-      "canonical": "rainfall",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 953,
-      "end": 961,
       "id": "e11"
-    },
-    {
-      "surface": "cooler temperatures",
-      "type": "TIME_REFERENCE",
-      "canonical": "fall",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 966,
-      "end": 985,
-      "id": "e12"
     },
     {
       "surface": "New Jersey",
@@ -185,7 +174,7 @@
       "occurrence_index": 0,
       "start": 1018,
       "end": 1028,
-      "id": "e13"
+      "id": "e12"
     },
     {
       "surface": "wildfires",
@@ -193,12 +182,12 @@
       "canonical": "wildfires",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 1116,
       "end": 1125,
-      "id": "e14"
+      "id": "e13"
     },
     {
       "surface": "fall",
@@ -206,52 +195,28 @@
       "canonical": "fall",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 1161,
       "end": 1165,
+      "id": "e14"
+    },
+    {
+      "surface": "New Jersey",
+      "type": "new_jersey",
+      "canonical": "new_jersey",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e15"
-    },
-    {
-      "surface": "farms",
-      "type": "OTHER_ENTITY",
-      "canonical": "local_farms",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1196,
-      "end": 1201,
-      "id": "e16"
-    },
-    {
-      "surface": "national parks",
-      "type": "OTHER_ENTITY",
-      "canonical": "national_parks",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1206,
-      "end": 1220,
-      "id": "e17"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "abnormally dry",
-      "reason": "Likely a drought severity label, but no exact canonical match is confirmed in the provided dictionary."
-    },
-    {
-      "surface": "dry conditions",
-      "reason": "Could refer to drought severity, but no exact canonical level is confirmed."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "headline",
@@ -274,5 +239,5 @@
       "text": "How does this relate to you and your community?\nThis topic resonates with both my community and me because we all inhabit a country significantly impacted by droughts that occur when we should be experiencing rainfall and cooler temperatures. Having been born and raised in New Jersey, I have witnessed the damage that these droughts have inflicted on my state, including wildfires, increased temperatures during the fall, and challenges for our local farms and national parks."
     }
   ],
-  "tagged_text": "\"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">It’s Fall: Do You Know Where Our Rain Is? Parts of the U.S. Face Serious Droughts!</entity>\"\n1.  What do you notice?\nCurrently, most of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> is experiencing dry conditions, except for a few states such as <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> and most of <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity>. Certain areas in the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> and the <entity type=\"LOCATION\" canonical=\"south\">South</entity> are particularly affected, facing extremely dry circumstances. The majority of states are categorized as abnormally dry, highlighting a significant concern regarding the overall moisture levels across the country.\n2. what do you wonder?\nI wonder what actions we can take to prevent this issue, and why it isn't discussed more often. I also wonder how we can address our climate challenges, as this indicates the effects of <entity type=\"EVENT\" canonical=\"global_warming\">global warming</entity> and <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity>.\n3. How does this relate to you and your community?\nThis topic resonates with both <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> because we all inhabit a <entity type=\"LOCATION\" canonical=\"country\">country</entity> significantly impacted by droughts that occur when we should be experiencing <entity type=\"EVENT\" canonical=\"rainfall\">rainfall</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"fall\">cooler temperatures</entity>. Having been born and raised in <entity type=\"new_jersey\">New Jersey</entity>, I have witnessed the damage that these droughts have inflicted on my state, including <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity>, increased temperatures during the <entity type=\"TIME_REFERENCE\" canonical=\"fall\">fall</entity>, and challenges for our local <entity type=\"OTHER_ENTITY\" canonical=\"local_farms\" subtype=\"other\">farms</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"national_parks\" subtype=\"other\">national parks</entity>."
+  "tagged_text": "**<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">It’s Fall: Do You Know Where Our Rain Is? Parts of the U.S. Face Serious Droughts!</entity>**\n1.  What do you notice?\nCurrently, most of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">United States</entity> is experiencing dry conditions, except for a few states such as <entity type=\"LOCATION\" canonical=\"florida\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Florida</entity> and most of <entity type=\"LOCATION\" canonical=\"alaska\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Alaska</entity>. Certain areas in the <entity type=\"LOCATION\" canonical=\"midwest\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Midwest</entity> and the <entity type=\"LOCATION\" canonical=\"south\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">South</entity> are particularly affected, facing extremely dry circumstances. The majority of states are categorized as <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">abnormally dry</entity>, highlighting a significant concern regarding the overall moisture levels across the country.\n2. what do you wonder?\nI wonder what actions we can take to prevent this issue, and why it isn't discussed more often. I also wonder how we can address our climate challenges, as this indicates the effects of <entity type=\"EVENT\" canonical=\"global_warming\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">global warming</entity> and <entity type=\"EVENT\" canonical=\"climate_change\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">climate change</entity>.\n3. How does this relate to you and your community?\nThis topic resonates with both <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">me</entity> because we all inhabit a <entity type=\"LOCATION\" canonical=\"country\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">country</entity> significantly impacted by droughts that occur when we should be experiencing rainfall and cooler temperatures. Having been born and raised in <entity type=\"new_jersey\" canonical=\"new_jersey\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"2\">New Jersey</entity>, I have witnessed the damage that these droughts have inflicted on my state, including <entity type=\"EVENT\" canonical=\"wildfires\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">wildfires</entity>, increased temperatures during the <entity type=\"TIME_REFERENCE\" canonical=\"fall\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">fall</entity>, and challenges for our local farms and national parks."
 }

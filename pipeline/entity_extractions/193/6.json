@@ -7,7 +7,7 @@
       "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,56 +18,98 @@
       "id": "e0"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 30,
-      "end": 37,
+      "start": 57,
+      "end": 64,
       "id": "e1"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "West",
+      "type": "LOCATION",
+      "canonical": "west",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 142,
-      "end": 149,
+      "occurrence_index": 0,
+      "start": 66,
+      "end": 70,
       "id": "e2"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 295,
-      "end": 302,
+      "occurrence_index": 0,
+      "start": 76,
+      "end": 81,
       "id": "e3"
+    },
+    {
+      "surface": "farmers",
+      "type": "OTHER_ENTITY",
+      "canonical": "farmers",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 158,
+      "end": 165,
+      "id": "e4"
+    },
+    {
+      "surface": "water supplies",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_supplies",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 167,
+      "end": 181,
+      "id": "e5"
+    },
+    {
+      "surface": "wildlife",
+      "type": "OTHER_ENTITY",
+      "canonical": "wildlife",
+      "subtype": "flora_fauna",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 187,
+      "end": 195,
+      "id": "e6"
     },
     {
       "surface": "water usage",
       "type": "DATA_VAR",
-      "canonical": "electricity_generation",
+      "canonical": "water_usage",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 342,
       "end": 353,
-      "id": "e4"
+      "id": "e7"
     },
     {
       "surface": "future",
@@ -80,91 +122,21 @@
       "occurrence_index": 0,
       "start": 504,
       "end": 510,
-      "id": "e5"
-    },
-    {
-      "surface": "A Nation's Thirst.",
-      "type": "EVENT",
-      "canonical": "a_nations_thirst",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 535,
-      "end": 553,
-      "id": "e6"
-    },
-    {
-      "surface": "Midwest",
-      "type": "LOCATION",
-      "canonical": "midwest",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
-    },
-    {
-      "surface": "West",
-      "type": "LOCATION",
-      "canonical": "west",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e8"
-    },
-    {
-      "surface": "Texas",
-      "type": "LOCATION",
-      "canonical": "texas",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "water supplies",
-      "type": "OTHER_ENTITY",
-      "canonical": "water_sources",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "farmers",
-      "reason": "Could be relevant to agriculture, but no exact canonical entity is provided."
-    },
-    {
-      "surface": "wildlife",
-      "reason": "Could map to animals, but the comment does not explicitly use the provided canonical term."
+      "surface": "the situation",
+      "reason": "Generic reference to the drought context; not a specific entity."
     },
     {
       "surface": "drier landscapes",
-      "reason": "Descriptive phrase without a specific canonical match."
+      "reason": "Descriptive phrase without a confirmed canonical mapping."
     },
     {
-      "surface": "our area",
-      "reason": "Speaker-specific location reference, but no precise location canonical is available."
+      "surface": "daily life",
+      "reason": "Abstract context, not an entity in the schema."
     }
   ],
   "section_segments": [
@@ -178,5 +150,5 @@
       "text": "A Nation's Thirst."
     }
   ],
-  "tagged_text": "The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> is facing widespread <entity type=\"EVENT\" canonical=\"drought\">drought</entity>, especially in the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity>, <entity type=\"LOCATION\" canonical=\"west\">West</entity>, and <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, where some areas have been hit very hard. I wonder how the <entity type=\"EVENT\" canonical=\"drought\" modality=\"questioned\">drought</entity> impacts farmers, <entity type=\"OTHER_ENTITY\" canonical=\"water_sources\" subtype=\"other\">water supplies</entity>, and wildlife in the affected areas. I also wonder what steps are being taken to manage the situation and if the <entity type=\"EVENT\" canonical=\"drought\" modality=\"questioned\">drought</entity> will get worse. It could mean stricter <entity type=\"DATA_VAR\" canonical=\"electricity_generation\">water usage</entity> rules, higher food prices, and possible environmental changes like drier landscapes. These challenges might affect daily life and how we plan for the <entity type=\"TIME_REFERENCE\" canonical=\"future\">future</entity> in our area.\n\nHeadline: <entity type=\"EVENT\" canonical=\"a_nations_thirst\" section=\"headline\">A Nation's Thirst.</entity>"
+  "tagged_text": "The <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity> is facing widespread drought, especially in the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity>, <entity type=\"LOCATION\" canonical=\"west\">West</entity>, and <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, where some areas have been hit very hard. I wonder how the drought impacts <entity type=\"OTHER_ENTITY\" canonical=\"farmers\" subtype=\"group\">farmers</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"water_supplies\" subtype=\"other\">water supplies</entity>, and <entity type=\"OTHER_ENTITY\" canonical=\"wildlife\" subtype=\"flora_fauna\">wildlife</entity> in the affected areas. I also wonder what steps are being taken to manage the situation and if the drought will get worse. It could mean stricter <entity type=\"DATA_VAR\" canonical=\"water_usage\">water usage</entity> rules, higher food prices, and possible environmental changes like drier landscapes. These challenges might affect daily life and how we plan for the <entity type=\"TIME_REFERENCE\" canonical=\"future\">future</entity> in our area.\n\nHeadline: A Nation's Thirst."
 }

@@ -18,8 +18,9 @@
     },
     {
       "surface": "Oklahomans",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "oklahomans",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -37,5 +38,5 @@
       "text": "Dust Bowl.  Oklahomans are going to be on the move again."
     }
   ],
-  "tagged_text": "<entity type=\"EVENT\" canonical=\"dust_bowl\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Dust Bowl</entity>.  <entity type=\"LOCATION\" canonical=\"oklahomans\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Oklahomans</entity> are going to be on the move again."
+  "tagged_text": "<entity type=\"EVENT\" canonical=\"dust_bowl\">Dust Bowl</entity>.  <entity type=\"OTHER_ENTITY\" canonical=\"oklahomans\" subtype=\"group\">Oklahomans</entity> are going to be on the move again."
 }

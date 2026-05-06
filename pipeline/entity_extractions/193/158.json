@@ -4,6 +4,45 @@
   "raw_comment": "When observing this graph, I noticed that states in the middle of the country such as Wyoming, Nebraska, Oklahoma and Texas had the most severe droughts.\n\nI wonder if the drought heavily affected climate conditions in central states. Recently this drought has created forest fires throughout New York, so there are likely more intense fires in areas with more severe drought.\n\nThis graph relates to me and my community because the lack of rain in recent months has caused multiple fires in New York and other northeastern states. This can also affect the air quality in affected regions.\n\nHeadline: Drought Intensifies in Central US",
   "entities": [
     {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 20,
+      "end": 25,
+      "id": "e0"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 382,
+      "end": 387,
+      "id": "e1"
+    },
+    {
+      "surface": "New York",
+      "type": "LOCATION",
+      "canonical": "new_york",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 490,
+      "end": 498,
+      "id": "e2"
+    },
+    {
       "surface": "Wyoming",
       "type": "LOCATION",
       "canonical": "wyoming",
@@ -12,9 +51,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 86,
-      "end": 93,
-      "id": "e0"
+      "start": null,
+      "end": null,
+      "id": "e3"
     },
     {
       "surface": "Nebraska",
@@ -25,9 +64,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 95,
-      "end": 103,
-      "id": "e1"
+      "start": null,
+      "end": null,
+      "id": "e4"
     },
     {
       "surface": "Oklahoma",
@@ -38,9 +77,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 105,
-      "end": 113,
-      "id": "e2"
+      "start": null,
+      "end": null,
+      "id": "e5"
     },
     {
       "surface": "Texas",
@@ -51,23 +90,51 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 118,
-      "end": 123,
-      "id": "e3"
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "severe droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "severe droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "climate conditions",
       "type": "OTHER_ENTITY",
       "canonical": "climate",
-      "subtype": "other",
+      "subtype": "concept",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 196,
-      "end": 214,
-      "id": "e4"
+      "start": null,
+      "end": null,
+      "id": "e9"
     },
     {
       "surface": "forest fires",
@@ -78,9 +145,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 268,
-      "end": 280,
-      "id": "e5"
+      "start": null,
+      "end": null,
+      "id": "e10"
     },
     {
       "surface": "New York",
@@ -88,65 +155,12 @@
       "canonical": "new_york",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 292,
-      "end": 300,
-      "id": "e6"
-    },
-    {
-      "surface": "New York",
-      "type": "LOCATION",
-      "canonical": "new_york",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 490,
-      "end": 498,
-      "id": "e7"
-    },
-    {
-      "surface": "northeastern states",
-      "type": "LOCATION",
-      "canonical": "northeastern_states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 509,
-      "end": 528,
-      "id": "e8"
-    },
-    {
-      "surface": "air quality",
-      "type": "OTHER_ENTITY",
-      "canonical": "air_quality",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 555,
-      "end": 566,
-      "id": "e9"
-    },
-    {
-      "surface": "Drought Intensifies in Central US",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 599,
-      "end": 632,
-      "id": "e10"
+      "start": null,
+      "end": null,
+      "id": "e11"
     },
     {
       "surface": "me",
@@ -160,13 +174,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e12"
     },
     {
       "surface": "my community",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -174,25 +188,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e13"
     },
     {
-      "surface": "months",
+      "surface": "recent months",
       "type": "TIME_REFERENCE",
-      "canonical": "recent_months",
+      "canonical": "past_years",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -201,35 +202,9 @@
       "start": null,
       "end": null,
       "id": "e14"
-    },
-    {
-      "surface": "fires",
-      "type": "EVENT",
-      "canonical": "fires",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "middle of the country",
-      "reason": "Could map to a central region, but no exact canonical match is provided for this phrasing."
-    },
-    {
-      "surface": "more severe drought",
-      "reason": "Severity phrase without an exact normalized drought level."
-    },
-    {
-      "surface": "affected regions",
-      "reason": "Generic location phrase without a stable canonical."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
@@ -241,5 +216,5 @@
       "text": "Drought Intensifies in Central US"
     }
   ],
-  "tagged_text": "When observing this graph, I noticed that states in the middle of the country such as <entity type=\"LOCATION\" canonical=\"wyoming\" section=\"body\">Wyoming</entity>, <entity type=\"LOCATION\" canonical=\"nebraska\" section=\"body\">Nebraska</entity>, <entity type=\"LOCATION\" canonical=\"oklahoma\" section=\"body\">Oklahoma</entity> and <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\">Texas</entity> had the most severe droughts.\n\nI wonder if the drought heavily affected <entity type=\"OTHER_ENTITY\" canonical=\"climate\" subtype=\"other\" section=\"body\" modality=\"questioned\">climate conditions</entity> in central states. Recently this drought has created <entity type=\"EVENT\" canonical=\"forest_fires\" section=\"body\" modality=\"questioned\">forest fires</entity> throughout <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">New York</entity>, so there are likely more intense fires in areas with more severe drought.\n\nThis graph relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"body\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my community</entity> because the lack of <entity type=\"EVENT\" canonical=\"rain\" section=\"body\">rain</entity> in recent <entity type=\"TIME_REFERENCE\" canonical=\"recent_months\" section=\"body\">months</entity> has caused multiple <entity type=\"EVENT\" canonical=\"fires\" section=\"body\">fires</entity> in <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">New York</entity> and other <entity type=\"LOCATION\" canonical=\"northeastern_states\" section=\"body\">northeastern states</entity>. This can also affect the <entity type=\"OTHER_ENTITY\" canonical=\"air_quality\" subtype=\"other\" section=\"body\">air quality</entity> in affected regions.\n\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Drought Intensifies in Central US</entity>"
+  "tagged_text": "When observing this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I noticed that states in the middle of the country such as <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>, <entity type=\"LOCATION\" canonical=\"nebraska\">Nebraska</entity>, <entity type=\"LOCATION\" canonical=\"oklahoma\">Oklahoma</entity> and <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> had the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe droughts</entity>.\n\nI wonder if the drought heavily affected <entity type=\"OTHER_ENTITY\" canonical=\"climate\" subtype=\"concept\" modality=\"questioned\">climate conditions</entity> in central states. Recently this drought has created <entity type=\"EVENT\" canonical=\"forest_fires\" modality=\"questioned\">forest fires</entity> throughout <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity>, so there are likely more intense fires in areas with more severe drought.\n\nThis <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because the lack of rain in recent months has caused multiple fires in <entity type=\"LOCATION\" canonical=\"new_york\" speaker_context=\"true\">New York</entity> and other northeastern states. This can also affect the air quality in affected regions.\n\nHeadline: Drought Intensifies in Central US"
 }

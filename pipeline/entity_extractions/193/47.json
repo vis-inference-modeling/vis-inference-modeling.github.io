@@ -18,8 +18,9 @@
     },
     {
       "surface": "America",
-      "type": "LOCATION",
-      "canonical": "america",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -43,20 +44,7 @@
       "id": "e2"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "states",
-      "reason": "Generic plural location reference; not specific enough to map to a single canonical location."
-    },
-    {
-      "surface": "drought",
-      "reason": "Generic event mention without a confirmed exact canonical beyond the general drought event."
-    },
-    {
-      "surface": "hottest states",
-      "reason": "Descriptive phrase, but no exact canonical entity is confirmed."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
@@ -68,5 +56,5 @@
       "text": "What Will America Do To Prevent The Next Dust Bowl?"
     }
   ],
-  "tagged_text": "I was wondering how <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\">Florida</entity> is one of the states with the least amount of drought considering it one of the hottest states.\n\nCatchy Headline: What Will <entity type=\"LOCATION\" canonical=\"america\" section=\"headline\">America</entity> Do To Prevent The Next <entity type=\"EVENT\" canonical=\"dust_bowl\" section=\"headline\">Dust Bowl</entity>?"
+  "tagged_text": "I was wondering how <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> is one of the states with the least amount of drought considering it one of the hottest states.\n\nCatchy Headline: What Will <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">America</entity> Do To Prevent The Next <entity type=\"EVENT\" canonical=\"dust_bowl\" section=\"headline\">Dust Bowl</entity>?"
 }

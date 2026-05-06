@@ -4,23 +4,10 @@
   "raw_comment": "I notice that many states more towards the middle of the US have more serve droughts that states on the edge of the US. I wonder why these droughts are happening and what could we possibly do to prevent this from happening again. This relates to me and my community since there have been a lot of brush fires and wildfires recently since the drought. A catchy title could be How Siverly a Drought Affected States in the US",
   "entities": [
     {
-      "surface": "the middle of the US",
-      "type": "LOCATION",
-      "canonical": "central_united_states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 39,
-      "end": 59,
-      "id": "e0"
-    },
-    {
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -28,13 +15,13 @@
       "occurrence_index": 0,
       "start": 57,
       "end": 59,
-      "id": "e1"
+      "id": "e0"
     },
     {
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -42,20 +29,7 @@
       "occurrence_index": 1,
       "start": 116,
       "end": 118,
-      "id": "e2"
-    },
-    {
-      "surface": "brush fires",
-      "type": "EVENT",
-      "canonical": "fires",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 297,
-      "end": 308,
-      "id": "e3"
+      "id": "e1"
     },
     {
       "surface": "wildfires",
@@ -68,21 +42,31 @@
       "occurrence_index": 0,
       "start": 313,
       "end": 322,
-      "id": "e4"
+      "id": "e2"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 420,
+      "end": 422,
+      "id": "e3"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "serve droughts",
-      "reason": "Likely a misspelling of 'severe droughts', but the exact canonical is uncertain."
+      "reason": "Likely a misspelling of 'severe droughts'; mapped concept is clear but the surface form is noisy."
     },
     {
-      "surface": "droughts",
-      "reason": "General event mention; could be tagged as EVENT drought, but the comment uses it repeatedly in a broad way."
-    },
-    {
-      "surface": "How Siverly a Drought Affected States in the US",
-      "reason": "Headline contains misspellings and an unclear phrasing; likely intended as a title about drought severity, but exact canonicalization is uncertain."
+      "surface": "brush fires",
+      "reason": "Could map to forest fires/fires, but the provided dictionary only confirms 'wildfires' and related fire terms indirectly."
     }
   ],
   "section_segments": [
@@ -92,9 +76,9 @@
     },
     {
       "section": "headline",
-      "label": "Headline",
+      "label": "A catchy title could be",
       "text": "How Siverly a Drought Affected States in the US"
     }
   ],
-  "tagged_text": "I notice that many states more towards the middle of the US have more serve droughts that states on the edge of the US. I wonder why these droughts are happening and what could we possibly do to prevent this from happening again. This relates to me and my community since there have been a lot of brush fires and wildfires recently since the drought. A catchy title could be How Siverly a Drought Affected States in the US"
+  "tagged_text": "I notice that many states more towards the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> have more serve droughts that states on the edge of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>. I wonder why these droughts are happening and what could we possibly do to prevent this from happening again. This relates to me and my community since there have been a lot of brush fires and <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity> recently since the drought. A catchy title could be How Siverly a Drought Affected States in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>"
 }

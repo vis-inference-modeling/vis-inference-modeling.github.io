@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "drought conditions",
-      "type": "EVENT",
-      "canonical": "drought_conditions",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,8 +19,9 @@
     },
     {
       "surface": "United States",
-      "type": "LOCATION",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -97,7 +99,7 @@
     {
       "surface": "Pacific Northwest",
       "type": "LOCATION",
-      "canonical": "pacific_northwest",
+      "canonical": "northwest",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -108,115 +110,6 @@
       "id": "e7"
     },
     {
-      "surface": "agriculture",
-      "type": "OTHER_ENTITY",
-      "canonical": "agriculture",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 284,
-      "end": 295,
-      "id": "e8"
-    },
-    {
-      "surface": "agriculture",
-      "type": "OTHER_ENTITY",
-      "canonical": "agriculture",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 544,
-      "end": 555,
-      "id": "e9"
-    },
-    {
-      "surface": "environment",
-      "type": "OTHER_ENTITY",
-      "canonical": "environment",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 564,
-      "end": 575,
-      "id": "e10"
-    },
-    {
-      "surface": "America Parched: Widespread Drought Grasps the Nation in 2024",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 582,
-      "end": 643,
-      "id": "e11"
-    },
-    {
-      "surface": "2024",
-      "type": "TIME_REFERENCE",
-      "canonical": "2024",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 639,
-      "end": 643,
-      "id": "e12"
-    },
-    {
-      "surface": "water supplies",
-      "type": "OTHER_ENTITY",
-      "canonical": "water_supply",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "water supplies",
-      "type": "OTHER_ENTITY",
-      "canonical": "water_supply",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "water shortages",
-      "type": "EVENT",
-      "canonical": "water_shortages",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
       "surface": "New York",
       "type": "LOCATION",
       "canonical": "new_york",
@@ -225,42 +118,63 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
+      "start": 387,
+      "end": 395,
+      "id": "e8"
     },
     {
       "surface": "Abnormally Dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
+      "start": 418,
+      "end": 432,
+      "id": "e9"
     },
     {
       "surface": "chart",
       "type": "CHART_ELEMENT",
-      "canonical": "chart",
+      "canonical": "graph",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
+      "start": 462,
+      "end": 467,
+      "id": "e10"
+    },
+    {
+      "surface": "America Parched: Widespread Drought Grasps the Nation in 2024",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 582,
+      "end": 643,
+      "id": "e11"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "widespread of drought conditions",
-      "reason": "Phrase is awkwardly formed; likely refers to drought conditions, but the exact span is uncertain."
+      "surface": "water supplies",
+      "reason": "Listed in normalized dictionary as OTHER_ENTITY, but the required output schema here does not include that subtype mapping from the provided prompt context; left unresolved to avoid over-tagging."
+    },
+    {
+      "surface": "agriculture",
+      "reason": "Could be a sector/group concept, but no confirmed canonical ID in the provided reference list."
+    },
+    {
+      "surface": "environment",
+      "reason": "Generic abstract concept without a confirmed canonical ID."
     }
   ],
   "section_segments": [
@@ -285,5 +199,5 @@
       "text": "\"America Parched: Widespread Drought Grasps the Nation in 2024\""
     }
   ],
-  "tagged_text": "1. I noticed that there is a widespread of <entity type=\"EVENT\" canonical=\"drought_conditions\" section=\"numbered_point\">drought conditions</entity> in the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"numbered_point\">United States</entity>, most severe ones are concentrated in areas like <entity type=\"LOCATION\" canonical=\"texas\" section=\"numbered_point\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"california\" section=\"numbered_point\">California</entity> and parts of the <entity type=\"LOCATION\" canonical=\"midwest\" section=\"numbered_point\">Midwest</entity> and <entity type=\"LOCATION\" canonical=\"west\" section=\"numbered_point\">West</entity>. The <entity type=\"LOCATION\" canonical=\"east_coast\" section=\"numbered_point\">East Coast</entity> and parts of the <entity type=\"LOCATION\" canonical=\"pacific_northwest\" section=\"numbered_point\">Pacific Northwest</entity> show lesser severity.  \n2. How might this impact <entity type=\"OTHER_ENTITY\" canonical=\"agriculture\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\">agriculture</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"water_supply\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\">water supplies</entity>? What are possible solutions being taken to manage <entity type=\"EVENT\" canonical=\"water_shortages\" section=\"numbered_point\" modality=\"questioned\">water shortages</entity>? \n3. <entity type=\"LOCATION\" canonical=\"new_york\" section=\"numbered_point\">New York</entity> is experiencing some \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\" section=\"numbered_point\">Abnormally Dry</entity>\" conditions according to the <entity type=\"CHART_ELEMENT\" canonical=\"chart\" section=\"numbered_point\">chart</entity>. While not as severe as other areas this could still affect <entity type=\"OTHER_ENTITY\" canonical=\"water_supply\" subtype=\"other\" section=\"numbered_point\">water supplies</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"agriculture\" subtype=\"other\" section=\"numbered_point\">agriculture</entity> and the <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"numbered_point\">environment</entity>. \n4. \"<entity type=\"EVENT\" canonical=\"drought\" section=\"headline\">America Parched: Widespread Drought Grasps the Nation in <entity type=\"TIME_REFERENCE\" canonical=\"2024\" section=\"headline\">2024</entity>\""
+  "tagged_text": "1. I noticed that there is a widespread of <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">drought conditions</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>, most severe ones are concentrated in areas like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"california\">California</entity> and parts of the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> and <entity type=\"LOCATION\" canonical=\"west\">West</entity>. The <entity type=\"LOCATION\" canonical=\"east_coast\">East Coast</entity> and parts of the <entity type=\"LOCATION\" canonical=\"northwest\">Pacific Northwest</entity> show lesser severity.  \n2. How might this impact agriculture and water supplies? What are possible solutions being taken to manage water shortages? \n3. <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> is experiencing some \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">Abnormally Dry</entity>\" conditions according to the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">chart</entity>. While not as severe as other areas this could still affect water supplies, agriculture and the environment. \n4. \"<entity type=\"CHART_ELEMENT\" canonical=\"headline\">America Parched: Widespread Drought Grasps the Nation in 2024</entity>\""
 }

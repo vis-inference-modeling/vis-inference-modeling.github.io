@@ -4,9 +4,23 @@
   "raw_comment": "The map shows significant areas of drought across the United States, with the most severe conditions in parts of the Midwest, Mountain West, and Western regions. There are gradients of severity, ranging from \"Abnormally Dry\" to \"Exceptional Drought.\"\nI wonder what factors are contributing to this. How are farms and overall agricultural communities b being affected. Florida is only shown slightly. Drought Nation: Severe Dry Conditions Stretch Across the U.S.",
   "entities": [
     {
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 4,
+      "end": 7,
+      "id": "e0"
+    },
+    {
       "surface": "United States",
-      "type": "LOCATION",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -14,7 +28,7 @@
       "occurrence_index": 0,
       "start": 54,
       "end": 67,
-      "id": "e0"
+      "id": "e1"
     },
     {
       "surface": "Midwest",
@@ -27,12 +41,12 @@
       "occurrence_index": 0,
       "start": 117,
       "end": 124,
-      "id": "e1"
+      "id": "e2"
     },
     {
       "surface": "Mountain West",
       "type": "LOCATION",
-      "canonical": "mountain_west",
+      "canonical": "rocky_mountain_region",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -40,25 +54,26 @@
       "occurrence_index": 0,
       "start": 126,
       "end": 139,
-      "id": "e2"
+      "id": "e3"
     },
     {
-      "surface": "Western regions",
+      "surface": "Western",
       "type": "LOCATION",
-      "canonical": "western_regions",
+      "canonical": "west",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 145,
-      "end": 160,
-      "id": "e3"
+      "end": 152,
+      "id": "e4"
     },
     {
       "surface": "Abnormally Dry",
-      "type": "EVENT",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -66,13 +81,13 @@
       "occurrence_index": 0,
       "start": 209,
       "end": 223,
-      "id": "e4"
+      "id": "e5"
     },
     {
       "surface": "Exceptional Drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -80,25 +95,25 @@
       "occurrence_index": 0,
       "start": 229,
       "end": 248,
-      "id": "e5"
+      "id": "e6"
     },
     {
       "surface": "Florida",
       "type": "LOCATION",
       "canonical": "florida",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 368,
       "end": 375,
-      "id": "e6"
+      "id": "e7"
     },
     {
       "surface": "Drought Nation: Severe Dry Conditions Stretch Across the U.S.",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -106,31 +121,23 @@
       "occurrence_index": 0,
       "start": 400,
       "end": 461,
-      "id": "e7"
+      "id": "e8"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "drought",
-      "reason": "General event mention in the opening sentence; could be tagged, but the comment focuses on areas/severity and the exact span is not repeated as a distinct entity."
-    },
-    {
-      "surface": "severity",
-      "reason": "Abstract descriptor of drought intensity; not a canonical entity."
-    },
-    {
       "surface": "farms",
-      "reason": "Could be agriculture-related, but not a canonical entity."
+      "reason": "Collective noun for agricultural actors; could be a group, but not clearly an entity in the provided schema."
     },
     {
       "surface": "agricultural communities",
-      "reason": "Could relate to agriculture/communities, but no exact canonical match is provided."
+      "reason": "Could be a group, but the phrase is broad and not a specific canonical entity."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "The map shows significant areas of drought across the United States, with the most severe conditions in parts of the Midwest, Mountain West, and Western regions. There are gradients of severity, ranging from \"Abnormally Dry\" to \"Exceptional Drought.\"\nI wonder what factors are contributing to this. How are farms and overall agricultural communities b being affected. Florida is only shown slightly. Drought Nation: Severe Dry Conditions Stretch Across the U.S."
+      "text": "The map shows significant areas of drought across the United States, with the most severe conditions in parts of the Midwest, Mountain West, and Western regions. There are gradients of severity, ranging from \"Abnormally Dry\" to \"Exceptional Drought.\"\nI wonder what factors are contributing to this. How are farms and overall agricultural communities b being affected. Florida is only shown slightly."
     },
     {
       "section": "headline",
@@ -138,5 +145,5 @@
       "text": "Drought Nation: Severe Dry Conditions Stretch Across the U.S."
     }
   ],
-  "tagged_text": "The map shows significant areas of drought across the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">United States</entity>, with the most severe conditions in parts of the <entity type=\"LOCATION\" canonical=\"midwest\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Midwest</entity>, <entity type=\"LOCATION\" canonical=\"mountain_west\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Mountain West</entity>, and <entity type=\"LOCATION\" canonical=\"western_regions\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Western regions</entity>. There are gradients of severity, ranging from \"<entity type=\"EVENT\" canonical=\"abnormally_dry\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Abnormally Dry</entity>\" to \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Exceptional Drought</entity>.\"\nI wonder what factors are contributing to this. How are farms and overall agricultural communities b being affected. <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Florida</entity> is only shown slightly. <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Drought Nation: Severe Dry Conditions Stretch Across the U.S.</entity>"
+  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"map\">map</entity> shows significant areas of drought across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>, with the most severe conditions in parts of the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity>, <entity type=\"LOCATION\" canonical=\"rocky_mountain_region\">Mountain West</entity>, and <entity type=\"LOCATION\" canonical=\"west\">Western</entity> regions. There are gradients of severity, ranging from \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">Abnormally Dry</entity>\" to \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">Exceptional Drought</entity>.\"\nI wonder what factors are contributing to this. How are farms and overall agricultural communities b being affected. <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> is only shown slightly. <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Drought Nation: Severe Dry Conditions Stretch Across the U.S.</entity>"
 }

@@ -4,6 +4,74 @@
   "raw_comment": "1. The graph shows the drought concentration throughout the United States, based on the last week of October in 2024. I noticed that more landlocked states like Kansas, Missouri, and Oklahoma have a more intense drought in their counties. While states that have a portion of its land touching water like California, Florida, and Georgia don’t have as severe of a drought in their counties. \n2. One thing when looking at this graph that caught me off guard was the lack of severity in droughts that California has. I have family that lives in California and it feels like every day I hear their concerns about their water supply becoming more and more limited because of the droughts. California does not tend to receive as many storms as Florida does and also receives a lot of wildfires, which makes me wonder why California’s drought severity is so low. \n3. This relates to my community because it gives me a better sense of understanding of how certain states in the United States need better/more programs to receive clean and drinkable water. While us Floridians don’t usually think about this problem since we are blessed with frequent storms, easy location to the ocean, and Lake Okeechobee, it also relates to my family’s awareness of the drought situation in other parts of the United States. \n4. Headline: Damaging droughts scatter the U.S., is your state next?",
   "entities": [
     {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 60,
+      "end": 73,
+      "id": "e0"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 970,
+      "end": 983,
+      "id": "e1"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 1287,
+      "end": 1300,
+      "id": "e2"
+    },
+    {
+      "surface": "Damaging droughts scatter the U.S., is your state next?",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1316,
+      "end": 1371,
+      "id": "e3"
+    },
+    {
+      "surface": "last week of October in 2024",
+      "type": "TIME_REFERENCE",
+      "canonical": "last_week_of_october_2024",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
       "surface": "Kansas",
       "type": "LOCATION",
       "canonical": "kansas",
@@ -12,9 +80,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 161,
-      "end": 167,
-      "id": "e0"
+      "start": null,
+      "end": null,
+      "id": "e5"
     },
     {
       "surface": "Missouri",
@@ -25,9 +93,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 169,
-      "end": 177,
-      "id": "e1"
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "Oklahoma",
@@ -38,35 +106,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 183,
-      "end": 191,
-      "id": "e2"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 212,
-      "end": 219,
-      "id": "e3"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 363,
-      "end": 370,
-      "id": "e4"
+      "start": null,
+      "end": null,
+      "id": "e7"
     },
     {
       "surface": "California",
@@ -77,9 +119,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 498,
-      "end": 508,
-      "id": "e5"
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "California",
@@ -90,9 +132,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 542,
-      "end": 552,
-      "id": "e6"
+      "start": null,
+      "end": null,
+      "id": "e9"
     },
     {
       "surface": "California",
@@ -103,9 +145,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 2,
-      "start": 684,
-      "end": 694,
-      "id": "e7"
+      "start": null,
+      "end": null,
+      "id": "e10"
     },
     {
       "surface": "Florida",
@@ -113,54 +155,25 @@
       "canonical": "florida",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 738,
-      "end": 745,
-      "id": "e8"
-    },
-    {
-      "surface": "family",
-      "type": "OTHER_ENTITY",
-      "canonical": "family",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1221,
-      "end": 1227,
-      "id": "e9"
-    },
-    {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1287,
-      "end": 1300,
-      "id": "e10"
-    },
-    {
-      "surface": "Damaging droughts scatter the U.S., is your state next?",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1316,
-      "end": 1371,
+      "start": null,
+      "end": null,
       "id": "e11"
+    },
+    {
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e12"
     },
     {
       "surface": "Georgia",
@@ -173,26 +186,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "water supply",
-      "type": "OTHER_ENTITY",
-      "canonical": "our_water_supply",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e13"
     },
     {
-      "surface": "storms",
-      "type": "EVENT",
-      "canonical": "storms",
+      "surface": "water supply",
+      "type": "DATA_VAR",
+      "canonical": "water_usage",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -216,15 +215,14 @@
       "id": "e15"
     },
     {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e16"
@@ -256,7 +254,24 @@
       "id": "e18"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "landlocked states",
+      "reason": "Geographic descriptor, but no exact canonical region/state mapping."
+    },
+    {
+      "surface": "counties",
+      "reason": "Administrative unit mentioned generically; not in the reference list."
+    },
+    {
+      "surface": "clean and drinkable water",
+      "reason": "Could relate to water usage/quality, but only 'water supply' is confirmed in the normalized dictionary."
+    },
+    {
+      "surface": "Floridians",
+      "reason": "Demographic group tied to Florida; could be a group entity, but the surface is not explicitly listed as a canonical entity."
+    }
+  ],
   "section_segments": [
     {
       "section": "numbered_point",
@@ -274,10 +289,10 @@
       "text": "This relates to my community because it gives me a better sense of understanding of how certain states in the United States need better/more programs to receive clean and drinkable water. While us Floridians don’t usually think about this problem since we are blessed with frequent storms, easy location to the ocean, and Lake Okeechobee, it also relates to my family’s awareness of the drought situation in other parts of the United States."
     },
     {
-      "section": "headline",
-      "label": "Headline",
-      "text": "Damaging droughts scatter the U.S., is your state next?"
+      "section": "numbered_point",
+      "label": "4",
+      "text": "Headline: Damaging droughts scatter the U.S., is your state next?"
     }
   ],
-  "tagged_text": "1. The graph shows the drought concentration throughout the United States, based on the last week of October in 2024. I noticed that more landlocked states like <entity type=\"LOCATION\" canonical=\"kansas\" section=\"numbered_point\">Kansas</entity>, <entity type=\"LOCATION\" canonical=\"missouri\" section=\"numbered_point\">Missouri</entity>, and <entity type=\"LOCATION\" canonical=\"oklahoma\" section=\"numbered_point\">Oklahoma</entity> have a more intense <entity type=\"EVENT\" canonical=\"drought\" section=\"numbered_point\">drought</entity> in their counties. While states that have a portion of its land touching water like <entity type=\"LOCATION\" canonical=\"california\" section=\"numbered_point\">California</entity>, <entity type=\"LOCATION\" canonical=\"florida\" section=\"numbered_point\">Florida</entity>, and <entity type=\"LOCATION\" canonical=\"georgia\" section=\"numbered_point\">Georgia</entity> don’t have as severe of a <entity type=\"EVENT\" canonical=\"drought\" section=\"numbered_point\">drought</entity> in their counties. \n2. One thing when looking at this graph that caught me off guard was the lack of severity in droughts that <entity type=\"LOCATION\" canonical=\"california\" section=\"numbered_point\">California</entity> has. I have <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" section=\"numbered_point\">family</entity> that lives in <entity type=\"LOCATION\" canonical=\"california\" section=\"numbered_point\">California</entity> and it feels like every day I hear their concerns about their <entity type=\"OTHER_ENTITY\" canonical=\"our_water_supply\" subtype=\"other\" section=\"numbered_point\">water supply</entity> becoming more and more limited because of the droughts. California does not tend to receive as many <entity type=\"EVENT\" canonical=\"storms\" section=\"numbered_point\">storms</entity> as Florida does and also receives a lot of <entity type=\"EVENT\" canonical=\"wildfires\" section=\"numbered_point\">wildfires</entity>, which makes me wonder why California’s drought severity is so low. \n3. This relates to my community because it gives me a better sense of understanding of how certain states in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"numbered_point\">United States</entity> need better/more programs to receive clean and drinkable water. While us Floridians don’t usually think about this problem since we are blessed with frequent storms, easy location to the <entity type=\"LOCATION\" canonical=\"ocean\" section=\"numbered_point\">ocean</entity>, and <entity type=\"LOCATION\" canonical=\"lake_okeechobee\" section=\"numbered_point\">Lake Okeechobee</entity>, it also relates to my family’s awareness of the drought situation in other parts of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"numbered_point\">United States</entity>. \n4. Headline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Damaging droughts scatter the U.S., is your state next?</entity>"
+  "tagged_text": "1. The graph shows the drought concentration throughout the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>, based on the <entity type=\"TIME_REFERENCE\" canonical=\"last_week_of_october_2024\">last week of October in 2024</entity>. I noticed that more landlocked states like <entity type=\"LOCATION\" canonical=\"kansas\">Kansas</entity>, <entity type=\"LOCATION\" canonical=\"missouri\">Missouri</entity>, and <entity type=\"LOCATION\" canonical=\"oklahoma\">Oklahoma</entity> have a more intense drought in their counties. While states that have a portion of its land touching water like <entity type=\"LOCATION\" canonical=\"california\">California</entity>, <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity>, and <entity type=\"LOCATION\" canonical=\"georgia\">Georgia</entity> don’t have as severe of a drought in their counties. \n2. One thing when looking at this graph that caught me off guard was the lack of severity in droughts that <entity type=\"LOCATION\" canonical=\"california\">California</entity> has. I have family that lives in <entity type=\"LOCATION\" canonical=\"california\" speaker_context=\"true\">California</entity> and it feels like every day I hear their concerns about their <entity type=\"DATA_VAR\" canonical=\"water_usage\">water supply</entity> becoming more and more limited because of the droughts. California does not tend to receive as many storms as Florida does and also receives a lot of <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity>, which makes me wonder why California’s drought severity is so low. \n3. This relates to my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because it gives me a better sense of understanding of how certain states in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity> need better/more programs to receive clean and drinkable water. While us <entity type=\"LOCATION\" canonical=\"florida\" speaker_context=\"true\">Floridians</entity> don’t usually think about this problem since we are blessed with frequent storms, easy location to the <entity type=\"LOCATION\" canonical=\"ocean\">ocean</entity>, and <entity type=\"LOCATION\" canonical=\"lake_okeechobee\">Lake Okeechobee</entity>, it also relates to my family’s awareness of the drought situation in other parts of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>. \n4. Headline: Damaging droughts scatter the U.S., is your state next?"
 }

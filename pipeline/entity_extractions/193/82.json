@@ -31,8 +31,8 @@
     },
     {
       "surface": "Dry Horizon: The Emerging Threat of Widespread Drought.",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -43,16 +43,7 @@
       "id": "e2"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "drought",
-      "reason": "General event mention; could map to EVENT:drought, but the prompt emphasizes using unresolved_mentions freely when uncertain and the comment is primarily about location-specific drought occurrence."
-    },
-    {
-      "surface": "widespread drought",
-      "reason": "Could map to EVENT:widespread_drought, but the surface appears only in the headline and may be part of a title rather than a direct comment entity."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
@@ -64,5 +55,5 @@
       "text": "\"Dry Horizon: The Emerging Threat of Widespread Drought.\""
     }
   ],
-  "tagged_text": "Wonder: I wonder why the only part of <entity type=\"LOCATION\" canonical=\"alaska\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Alaska</entity> that is experiencing drought is in the <entity type=\"LOCATION\" canonical=\"southeast\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Southeast</entity>?\n\nHeadline: \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Dry Horizon: The Emerging Threat of Widespread Drought.</entity>\""
+  "tagged_text": "Wonder: I wonder why the only part of <entity type=\"LOCATION\" canonical=\"alaska\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Alaska</entity> that is experiencing drought is in the <entity type=\"LOCATION\" canonical=\"southeast\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Southeast</entity>?\n\nHeadline: \"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Dry Horizon: The Emerging Threat of Widespread Drought.</entity>\""
 }

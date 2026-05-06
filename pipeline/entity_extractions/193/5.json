@@ -4,9 +4,23 @@
   "raw_comment": "What do you notice? The map shows the prevalence of drought in the U.S with the most drought occuring in the Midwestern states. There is almost a vertical \"line\" of severe/extreme/exceptional drought in the central states. Meanwhile, some regions are left blank. Based on the index, it appears that no data is available on these regions.\n\nWhat do you wonder? I wonder why states like Wyoming and Nebraska are the most affected. What climate events contribute to the imbalance? Is the phenomenon because of atmospheric movement or something else? How do the local communities deal with the droughts?\n\nHow does this relate to you and your community? Florida is not represented in the graph. However, food production is a problem that goes past borders (state or country). As such, I wonder how the droughts might affect the availability of agriculutural products produced in the colder states.\n\nHeadline: Climate change - a local issue",
   "entities": [
     {
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 24,
+      "end": 27,
+      "id": "e0"
+    },
+    {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -14,12 +28,13 @@
       "occurrence_index": 0,
       "start": 52,
       "end": 59,
-      "id": "e0"
+      "id": "e1"
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -27,154 +42,10 @@
       "occurrence_index": 1,
       "start": 85,
       "end": 92,
-      "id": "e1"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 192,
-      "end": 199,
       "id": "e2"
     },
     {
-      "surface": "central states",
-      "type": "LOCATION",
-      "canonical": "central_states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 207,
-      "end": 221,
-      "id": "e3"
-    },
-    {
-      "surface": "regions",
-      "type": "LOCATION",
-      "canonical": "regions",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 239,
-      "end": 246,
-      "id": "e4"
-    },
-    {
-      "surface": "Wyoming",
-      "type": "LOCATION",
-      "canonical": "wyoming",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 384,
-      "end": 391,
-      "id": "e5"
-    },
-    {
-      "surface": "Nebraska",
-      "type": "LOCATION",
-      "canonical": "nebraska",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 396,
-      "end": 404,
-      "id": "e6"
-    },
-    {
-      "surface": "climate events",
-      "type": "EVENT",
-      "canonical": "climate_change",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 433,
-      "end": 447,
-      "id": "e7"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 589,
-      "end": 597,
-      "id": "e8"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 796,
-      "end": 804,
-      "id": "e9"
-    },
-    {
-      "surface": "state",
-      "type": "LOCATION",
-      "canonical": "states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 884,
-      "end": 889,
-      "id": "e10"
-    },
-    {
-      "surface": "Climate change - a local issue",
-      "type": "EVENT",
-      "canonical": "climate_change_a_local_issue",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 903,
-      "end": 933,
-      "id": "e11"
-    },
-    {
-      "surface": "U.S.",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "Midwestern states",
+      "surface": "Midwestern",
       "type": "LOCATION",
       "canonical": "midwest",
       "section": "body",
@@ -182,51 +53,77 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
+      "start": 109,
+      "end": 119,
+      "id": "e3"
     },
     {
       "surface": "severe",
       "type": "DATA_VAR_LEVEL",
       "canonical": "severe",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
+      "start": 165,
+      "end": 171,
+      "id": "e4"
     },
     {
       "surface": "extreme",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
+      "start": 172,
+      "end": 179,
+      "id": "e5"
     },
     {
       "surface": "exceptional",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
+      "start": 180,
+      "end": 191,
+      "id": "e6"
+    },
+    {
+      "surface": "Wyoming",
+      "type": "LOCATION",
+      "canonical": "wyoming",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 384,
+      "end": 391,
+      "id": "e7"
+    },
+    {
+      "surface": "Nebraska",
+      "type": "LOCATION",
+      "canonical": "nebraska",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 396,
+      "end": 404,
+      "id": "e8"
     },
     {
       "surface": "Florida",
@@ -237,28 +134,28 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
+      "start": 648,
+      "end": 655,
+      "id": "e9"
     },
     {
-      "surface": "graph",
+      "surface": "Climate change - a local issue",
       "type": "CHART_ELEMENT",
-      "canonical": "graph",
-      "section": "body",
+      "canonical": "headline",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
+      "start": 903,
+      "end": 933,
+      "id": "e10"
     },
     {
-      "surface": "food production",
-      "type": "OTHER_ENTITY",
-      "canonical": "food_production",
-      "subtype": "other",
+      "surface": "U.S",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -266,44 +163,31 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "country",
-      "type": "LOCATION",
-      "canonical": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e20"
+      "id": "e11"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "the index",
-      "reason": "Likely refers to a chart legend/index, but no exact chart-element canonical is provided."
+      "surface": "states",
+      "reason": "Generic plural reference; could refer to U.S. states but is too generic to tag confidently as a specific entity."
+    },
+    {
+      "surface": "climate events",
+      "reason": "Could refer to EVENT concepts, but no specific named event is mentioned."
     },
     {
       "surface": "atmospheric movement",
-      "reason": "Conceptual cause, but not a provided canonical entity."
+      "reason": "Abstract causal concept, but not a confirmed canonical entity."
     },
     {
-      "surface": "colder states",
-      "reason": "Descriptive location phrase without a specific canonical match."
-    },
-    {
-      "surface": "agriculutural products",
-      "reason": "Likely intended as agricultural products, but no exact canonical entity is provided."
+      "surface": "the colder states",
+      "reason": "Descriptive reference to states without a specific canonical mapping."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "What do you notice? The map shows the prevalence of drought in the U.S. with the most drought occuring in the Midwestern states. There is almost a vertical \"line\" of severe/extreme/exceptional drought in the central states. Meanwhile, some regions are left blank. Based on the index, it appears that no data is available on these regions.\n\nWhat do you wonder? I wonder why states like Wyoming and Nebraska are the most affected. What climate events contribute to the imbalance? Is the phenomenon because of atmospheric movement or something else? How do the local communities deal with the droughts?\n\nHow does this relate to you and your community? Florida is not represented in the graph. However, food production is a problem that goes past borders (state or country). As such, I wonder how the droughts might affect the availability of agriculutural products produced in the colder states."
+      "text": "What do you notice? The map shows the prevalence of drought in the U.S with the most drought occuring in the Midwestern states. There is almost a vertical \"line\" of severe/extreme/exceptional drought in the central states. Meanwhile, some regions are left blank. Based on the index, it appears that no data is available on these regions.\n\nWhat do you wonder? I wonder why states like Wyoming and Nebraska are the most affected. What climate events contribute to the imbalance? Is the phenomenon because of atmospheric movement or something else? How do the local communities deal with the droughts?\n\nHow does this relate to you and your community? Florida is not represented in the graph. However, food production is a problem that goes past borders (state or country). As such, I wonder how the droughts might affect the availability of agriculutural products produced in the colder states."
     },
     {
       "section": "headline",
@@ -311,5 +195,5 @@
       "text": "Climate change - a local issue"
     }
   ],
-  "tagged_text": "What do you notice? The map shows the prevalence of <entity type=\"EVENT\" canonical=\"drought\">drought</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> with the most <entity type=\"EVENT\" canonical=\"drought\">drought</entity> occuring in the <entity type=\"LOCATION\" canonical=\"midwest\">Midwestern states</entity>. There is almost a vertical \"line\" of <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity>/<entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\">extreme</entity>/<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional</entity> <entity type=\"EVENT\" canonical=\"drought\">drought</entity> in the <entity type=\"LOCATION\" canonical=\"central_states\">central states</entity>. Meanwhile, some <entity type=\"LOCATION\" canonical=\"regions\">regions</entity> are left blank. Based on the index, it appears that no data is available on these regions.\n\nWhat do you wonder? I wonder why states like <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity> and <entity type=\"LOCATION\" canonical=\"nebraska\">Nebraska</entity> are the most affected. What <entity type=\"EVENT\" canonical=\"climate_change\">climate events</entity> contribute to the imbalance? Is the phenomenon because of atmospheric movement or something else? How do the local communities deal with the <entity type=\"EVENT\" canonical=\"droughts\">droughts</entity>?\n\nHow does this relate to you and your community? <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> is not represented in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>. However, <entity type=\"OTHER_ENTITY\" canonical=\"food_production\" subtype=\"other\">food production</entity> is a problem that goes past borders (<entity type=\"LOCATION\" canonical=\"states\">state</entity> or <entity type=\"LOCATION\" canonical=\"country\">country</entity>). As such, I wonder how the <entity type=\"EVENT\" canonical=\"droughts\" modality=\"questioned\">droughts</entity> might affect the availability of agriculutural products produced in the colder states.\n\nHeadline: <entity type=\"EVENT\" canonical=\"climate_change_a_local_issue\" section=\"headline\">Climate change - a local issue</entity>"
+  "tagged_text": "What do you notice? The <entity type=\"CHART_ELEMENT\" canonical=\"map\">map</entity> shows the prevalence of <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity> with the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity> occuring in the <entity type=\"LOCATION\" canonical=\"midwest\">Midwestern</entity> states. There is almost a vertical \"line\" of <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity>/<entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity>/<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional</entity> drought in the central states. Meanwhile, some regions are left blank. Based on the index, it appears that no data is available on these regions.\n\nWhat do you wonder? I wonder why states like <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity> and <entity type=\"LOCATION\" canonical=\"nebraska\">Nebraska</entity> are the most affected. What climate events contribute to the imbalance? Is the phenomenon because of atmospheric movement or something else? How do the local communities deal with the droughts?\n\nHow does this relate to you and your community? <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> is not represented in the graph. However, food production is a problem that goes past borders (state or country). As such, I wonder how the droughts might affect the availability of agriculutural products produced in the colder states.\n\nHeadline: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Climate change - a local issue</entity>"
 }

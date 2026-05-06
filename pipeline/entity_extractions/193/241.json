@@ -4,6 +4,32 @@
   "raw_comment": "I notice that locations with higher elevations have lower humidity levels. This is likely due to their distance from the ocean.  However, there are higher drought levels than anticipated in a few places along the East Coast.\n\nI wonder why areas like New York and Delaware are recorded to have less humidity when they are almost directly on the water.\n\nI live in a mountainous region, and we are regularly in droughts so it's surprising to see that we aren't at the dryest level when we regularly have a large lack of humidity.\n\nTitle: Hawaii: the not so Tropical Punch.",
   "entities": [
     {
+      "surface": "ocean",
+      "type": "LOCATION",
+      "canonical": "ocean",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 121,
+      "end": 126,
+      "id": "e0"
+    },
+    {
+      "surface": "East Coast",
+      "type": "LOCATION",
+      "canonical": "east_coast",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 213,
+      "end": 223,
+      "id": "e1"
+    },
+    {
       "surface": "New York",
       "type": "LOCATION",
       "canonical": "new_york",
@@ -14,7 +40,7 @@
       "occurrence_index": 0,
       "start": 250,
       "end": 258,
-      "id": "e0"
+      "id": "e2"
     },
     {
       "surface": "Delaware",
@@ -27,7 +53,48 @@
       "occurrence_index": 0,
       "start": 263,
       "end": 271,
-      "id": "e1"
+      "id": "e3"
+    },
+    {
+      "surface": "mountainous region",
+      "type": "LOCATION",
+      "canonical": "rocky_mountains",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 364,
+      "end": 382,
+      "id": "e4"
+    },
+    {
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 408,
+      "end": 416,
+      "id": "e5"
+    },
+    {
+      "surface": "dryest level",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 465,
+      "end": 477,
+      "id": "e6"
     },
     {
       "surface": "Hawaii",
@@ -40,27 +107,10 @@
       "occurrence_index": 0,
       "start": 535,
       "end": 541,
-      "id": "e2"
+      "id": "e7"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "higher elevations",
-      "reason": "Could be a geographic descriptor but no matching canonical location/variable level in the provided dictionary."
-    },
-    {
-      "surface": "the ocean",
-      "reason": "Likely a location-like reference, but not in the dictionary and unclear whether to tag as LOCATION or leave generic."
-    },
-    {
-      "surface": "East Coast",
-      "reason": "Matches a known location-like concept in general, but the provided dictionary does not include this exact canonical for this article."
-    },
-    {
-      "surface": "mountainous region",
-      "reason": "Generic location description without a confirmed canonical match."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
@@ -72,5 +122,5 @@
       "text": "Hawaii: the not so Tropical Punch."
     }
   ],
-  "tagged_text": "I notice that locations with higher elevations have lower humidity levels. This is likely due to their distance from the ocean.  However, there are higher drought levels than anticipated in a few places along the East Coast.\n\nI wonder why areas like <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">New York</entity> and <entity type=\"LOCATION\" canonical=\"delaware\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Delaware</entity> are recorded to have less humidity when they are almost directly on the water.\n\nI live in a mountainous region, and we are regularly in droughts so it's surprising to see that we aren't at the dryest level when we regularly have a large lack of humidity.\n\nTitle: <entity type=\"LOCATION\" canonical=\"hawaii\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Hawaii</entity>: the not so Tropical Punch."
+  "tagged_text": "I notice that locations with higher elevations have lower humidity levels. This is likely due to their distance from the <entity type=\"LOCATION\" canonical=\"ocean\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">ocean</entity>.  However, there are higher drought levels than anticipated in a few places along the <entity type=\"LOCATION\" canonical=\"east_coast\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">East Coast</entity>.\n\nI wonder why areas like <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">New York</entity> and <entity type=\"LOCATION\" canonical=\"delaware\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Delaware</entity> are recorded to have less humidity when they are almost directly on the water.\n\nI live in a <entity type=\"LOCATION\" canonical=\"rocky_mountains\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">mountainous region</entity>, and we are regularly in <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"true\" occurrences=\"1\">droughts</entity> so it's surprising to see that we aren't at the <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"true\" occurrences=\"1\">dryest level</entity> when we regularly have a large lack of humidity.\n\nTitle: <entity type=\"LOCATION\" canonical=\"hawaii\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Hawaii</entity>: the not so Tropical Punch."
 }

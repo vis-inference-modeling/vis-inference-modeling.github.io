@@ -46,7 +46,7 @@
       "surface": "extreme",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -59,57 +59,15 @@
     {
       "surface": "America",
       "type": "LOCATION",
-      "canonical": "america",
+      "canonical": "united_states",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 293,
       "end": 300,
       "id": "e4"
-    },
-    {
-      "surface": "nature",
-      "type": "OTHER_ENTITY",
-      "canonical": "nature",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 342,
-      "end": 348,
-      "id": "e5"
-    },
-    {
-      "surface": "humans",
-      "type": "OTHER_ENTITY",
-      "canonical": "humans",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 356,
-      "end": 362,
-      "id": "e6"
-    },
-    {
-      "surface": "humans",
-      "type": "OTHER_ENTITY",
-      "canonical": "humans",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 515,
-      "end": 521,
-      "id": "e7"
     },
     {
       "surface": "Michigan",
@@ -122,13 +80,13 @@
       "occurrence_index": 0,
       "start": 530,
       "end": 538,
-      "id": "e8"
+      "id": "e5"
     },
     {
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -136,126 +94,32 @@
       "occurrence_index": 0,
       "start": 548,
       "end": 556,
-      "id": "e9"
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "middle of the United States",
+      "reason": "Region-like phrase, but not an exact listed location level."
     },
     {
-      "surface": "heavy drought",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "fossil",
-      "var": "power_category",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 576,
-      "end": 589,
-      "id": "e10"
+      "surface": "nature",
+      "reason": "Abstract causal reference; not a listed entity."
     },
     {
-      "surface": "breathing",
-      "type": "OTHER_ENTITY",
-      "canonical": "breathing",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 621,
-      "end": 630,
-      "id": "e11"
-    },
-    {
-      "surface": "animals",
-      "type": "OTHER_ENTITY",
-      "canonical": "animals",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 632,
-      "end": 639,
-      "id": "e12"
-    },
-    {
-      "surface": "human exercise",
-      "type": "OTHER_ENTITY",
-      "canonical": "human_exercise",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 641,
-      "end": 655,
-      "id": "e13"
+      "surface": "humans",
+      "reason": "Generic group mention; too broad to tag as a specific group entity here."
     },
     {
       "surface": "Mother Nature has no tears left to cry",
-      "type": "EVENT",
-      "canonical": "mother_nature_has_no_tears_left_to_cry",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 661,
-      "end": 699,
-      "id": "e14"
-    },
-    {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "air",
-      "type": "OTHER_ENTITY",
-      "canonical": "air",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
+      "reason": "Likely a headline, but not an exact chart-element label from the provided list."
     }
   ],
-  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "What do you notice?\nI notice that the places with the most drought tend to be placed mostly in the middle of the United States. \n\nWhat do you wonder?\nI wonder why in places like Montana and Ohio there is an extreme amount of drought that is not following the pattern of being in the center of America? Are there different factors relating to nature, or to humans? \n\nHow does this relate to you and your community?\nThis relates to me and my community because when the air is very dry it impacts the everyday life of humans and for Michigan it shows moderate drought, so when a heavy drought hits, it can negatively affect breathing, animals, human exercise.  \n\n“Mother Nature has no tears left to cry”"
     }
   ],
-  "tagged_text": "What do you notice?\nI notice that the places with the most drought tend to be placed mostly in the middle of the <entity type=\"LOCATION\" canonical=\"united_states\">United States</entity>. \n\nWhat do you wonder?\nI wonder why in places like <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity> and <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> there is an <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\">extreme</entity> amount of drought that is not following the pattern of being in the center of <entity type=\"LOCATION\" canonical=\"america\">America</entity>? Are there different factors relating to <entity type=\"OTHER_ENTITY\" canonical=\"nature\" subtype=\"other\">nature</entity>, or to <entity type=\"OTHER_ENTITY\" canonical=\"humans\" subtype=\"other\">humans</entity>? \n\nHow does this relate to you and your community?\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because when the <entity type=\"OTHER_ENTITY\" canonical=\"air\" subtype=\"other\">air</entity> is very dry it impacts the everyday life of <entity type=\"OTHER_ENTITY\" canonical=\"humans\" subtype=\"other\">humans</entity> and for <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> it shows <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderate</entity> drought, so when a <entity type=\"DATA_VAR_LEVEL\" canonical=\"fossil\" var=\"power_category\">heavy drought</entity> hits, it can negatively affect <entity type=\"OTHER_ENTITY\" canonical=\"breathing\" subtype=\"other\">breathing</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"animals\" subtype=\"other\">animals</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"human_exercise\" subtype=\"other\">human exercise</entity>.  \n\n“<entity type=\"EVENT\" canonical=\"mother_nature_has_no_tears_left_to_cry\">Mother Nature has no tears left to cry</entity>”"
+  "tagged_text": "What do you notice?\nI notice that the places with the most drought tend to be placed mostly in the middle of the <entity type=\"LOCATION\" canonical=\"united_states\" speaker_context=\"false\">United States</entity>. \n\nWhat do you wonder?\nI wonder why in places like <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity> and <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> there is an <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> amount of drought that is not following the pattern of being in the center of <entity type=\"LOCATION\" canonical=\"united_states\" speaker_context=\"false\">America</entity>? Are there different factors relating to nature, or to humans? \n\nHow does this relate to you and your community?\nThis relates to me and my community because when the air is very dry it impacts the everyday life of humans and for <entity type=\"LOCATION\" canonical=\"michigan\" speaker_context=\"false\">Michigan</entity> it shows <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity> drought, so when a heavy drought hits, it can negatively affect breathing, animals, human exercise.  \n\n“Mother Nature has no tears left to cry”"
 }

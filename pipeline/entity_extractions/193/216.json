@@ -32,8 +32,8 @@
     {
       "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -46,7 +46,7 @@
     {
       "surface": "Ohio/West Virginia",
       "type": "LOCATION",
-      "canonical": "ohio_west_virginia",
+      "canonical": "west_virginia",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -83,49 +83,23 @@
       "id": "e5"
     },
     {
-      "surface": "precipitation",
-      "type": "EVENT",
-      "canonical": "precipitation",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 275,
-      "end": 288,
-      "id": "e6"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 481,
-      "end": 485,
-      "id": "e7"
-    },
-    {
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "moderate",
-      "var": "drought_severity",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 517,
       "end": 531,
-      "id": "e8"
+      "id": "e6"
     },
     {
       "surface": "coasts",
       "type": "LOCATION",
-      "canonical": "coasts",
+      "canonical": "coast",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -133,7 +107,7 @@
       "occurrence_index": 0,
       "start": 576,
       "end": 582,
-      "id": "e9"
+      "id": "e7"
     },
     {
       "surface": "water",
@@ -147,7 +121,7 @@
       "occurrence_index": 0,
       "start": 626,
       "end": 631,
-      "id": "e10"
+      "id": "e8"
     },
     {
       "surface": "water",
@@ -161,12 +135,26 @@
       "occurrence_index": 1,
       "start": 793,
       "end": 798,
-      "id": "e11"
+      "id": "e9"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 846,
+      "end": 851,
+      "id": "e10"
     },
     {
       "surface": "A Struggle For Water: America Dispersed With Droughts",
-      "type": "EVENT",
-      "canonical": "a_struggle_for_water_america_dispersed_with_droughts",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -174,12 +162,25 @@
       "occurrence_index": 0,
       "start": 1014,
       "end": 1067,
-      "id": "e12"
+      "id": "e11"
     },
     {
       "surface": "Great Lake state",
       "type": "LOCATION",
-      "canonical": "great_lake",
+      "canonical": "great_lakes",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "Michigan",
+      "type": "LOCATION",
+      "canonical": "michigan",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -197,20 +198,21 @@
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e14"
     },
     {
-      "surface": "Michigan",
-      "type": "LOCATION",
-      "canonical": "michigan",
+      "surface": "severe drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e15"
@@ -220,13 +222,14 @@
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "I noticed that the graph is a representation of the last week of October 2024. I also noticed a really dark patch (meaning an exceptional drought) around Ohio/West Virginia. Lastly, I noticed that two states, Florida and Alaska, are almost completely white (meaning a lot of precipitation). \nI wonder if the graph is a good representation of the state's general behavior or if it was just during this particular time that the state's weather acted this way. I also wonder how much rain is needed to not be considered abnormally dry (the white color). Lastly, I wonder why the coasts experience any drought at all with all the water surrounding them. \nThis connects with me as I live in the Great Lake state (Michigan). I am shocked that Michigan has a severe drought when we are surrounded by water. I feel like the more a state is surrounded by water the less droughts it should have. Overall, this map connects with me as it gives me a different perspective when considering what causes or prevents a drought."
     },
     {
       "section": "headline",
-      "label": "“A Struggle For Water",
-      "text": "America Dispersed With Droughts”"
+      "label": "A Struggle For Water: America Dispersed With Droughts",
+      "text": "A Struggle For Water: America Dispersed With Droughts"
     }
   ],
-  "tagged_text": "I noticed that the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" modality=\"asserted\">graph</entity> is a representation of the <entity type=\"TIME_REFERENCE\" canonical=\"last_week_of_october_2024\" modality=\"asserted\">last week of October 2024</entity>. I also noticed a really dark patch (meaning an <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" modality=\"asserted\">exceptional drought</entity>) around <entity type=\"LOCATION\" canonical=\"ohio_west_virginia\" modality=\"asserted\">Ohio/West Virginia</entity>. Lastly, I noticed that two states, <entity type=\"LOCATION\" canonical=\"florida\" modality=\"asserted\">Florida</entity> and <entity type=\"LOCATION\" canonical=\"alaska\" modality=\"asserted\">Alaska</entity>, are almost completely white (meaning a lot of <entity type=\"EVENT\" canonical=\"precipitation\" modality=\"asserted\">precipitation</entity>). \nI wonder if the graph is a good representation of the state's general behavior or if it was just during this particular time that the state's weather acted this way. I also wonder how much <entity type=\"EVENT\" canonical=\"rain\" modality=\"questioned\">rain</entity> is needed to not be considered <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\" modality=\"questioned\">abnormally dry</entity> (the white color). Lastly, I wonder why the <entity type=\"LOCATION\" canonical=\"coasts\" modality=\"questioned\">coasts</entity> experience any drought at all with all the <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" modality=\"questioned\">water</entity> surrounding them. \nThis connects with me as I live in the <entity type=\"LOCATION\" canonical=\"great_lake\" speaker_context=\"true\">Great Lake state</entity> (<entity type=\"LOCATION\" canonical=\"michigan\" speaker_context=\"true\">Michigan</entity>). I am shocked that <entity type=\"LOCATION\" canonical=\"michigan\" speaker_context=\"true\">Michigan</entity> has a severe drought when we are surrounded by <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" modality=\"asserted\">water</entity>. I feel like the more a state is surrounded by water the less droughts it should have. Overall, this map connects with me as it gives me a different perspective when considering what causes or prevents a drought. \n“<entity type=\"EVENT\" canonical=\"a_struggle_for_water_america_dispersed_with_droughts\" section=\"headline\">A Struggle For Water: America Dispersed With Droughts</entity>”"
+  "tagged_text": "I noticed that the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> is a representation of the <entity type=\"TIME_REFERENCE\" canonical=\"last_week_of_october_2024\">last week of October 2024</entity>. I also noticed a really dark patch (meaning an <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity>) around <entity type=\"LOCATION\" canonical=\"west_virginia\">Ohio/West Virginia</entity>. Lastly, I noticed that two states, <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> and <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity>, are almost completely white (meaning a lot of precipitation). \nI wonder if the graph is a good representation of the state's general behavior or if it was just during this particular time that the state's weather acted this way. I also wonder how much rain is needed to not be considered <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" modality=\"questioned\">abnormally dry</entity> (the white color). Lastly, I wonder why the <entity type=\"LOCATION\" canonical=\"coast\" modality=\"questioned\">coasts</entity> experience any drought at all with all the <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" modality=\"questioned\">water</entity> surrounding them. \nThis connects with me as I live in the <entity type=\"LOCATION\" canonical=\"great_lakes\" speaker_context=\"true\">Great Lake state</entity> (<entity type=\"LOCATION\" canonical=\"michigan\" speaker_context=\"true\">Michigan</entity>). I am shocked that <entity type=\"LOCATION\" canonical=\"michigan\" speaker_context=\"true\">Michigan</entity> has a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe drought</entity> when we are surrounded by <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" speaker_context=\"true\">water</entity>. I feel like the more a state is surrounded by <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity> the less droughts it should have. Overall, this map connects with me as it gives me a different perspective when considering what causes or prevents a drought. \n“<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">A Struggle For Water: America Dispersed With Droughts</entity>”"
 }

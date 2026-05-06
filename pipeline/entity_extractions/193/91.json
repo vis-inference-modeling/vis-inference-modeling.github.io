@@ -6,7 +6,7 @@
     {
       "surface": "coastal states",
       "type": "LOCATION",
-      "canonical": "coastal_states",
+      "canonical": "coast",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,12 +18,13 @@
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 52,
       "end": 60,
@@ -83,8 +84,9 @@
     },
     {
       "surface": "extreme drought",
-      "type": "EVENT",
-      "canonical": "extreme_drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -96,8 +98,9 @@
     },
     {
       "surface": "extreme drought",
-      "type": "EVENT",
-      "canonical": "extreme_drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -108,43 +111,44 @@
       "id": "e7"
     },
     {
-      "surface": "center",
-      "type": "LOCATION",
-      "canonical": "center_of_country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 235,
-      "end": 241,
-      "id": "e8"
-    },
-    {
       "surface": "water",
       "type": "OTHER_ENTITY",
       "canonical": "water",
+      "subtype": "other",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "subtype": "other",
       "occurrence_index": 0,
       "start": 305,
       "end": 310,
-      "id": "e9"
+      "id": "e8"
     },
     {
-      "surface": "me and my community",
+      "surface": "me",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
-      "subtype": "other",
       "occurrence_index": 0,
       "start": 351,
+      "end": 353,
+      "id": "e9"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 358,
       "end": 370,
       "id": "e10"
     },
@@ -152,11 +156,11 @@
       "surface": "moderate climate",
       "type": "OTHER_ENTITY",
       "canonical": "moderate_climate",
+      "subtype": "concept",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
-      "subtype": "other",
       "occurrence_index": 0,
       "start": 391,
       "end": 407,
@@ -165,11 +169,11 @@
     {
       "surface": "wild fire",
       "type": "EVENT",
-      "canonical": "wild_fire",
+      "canonical": "wildfires",
       "section": "body",
-      "modality": "hypothetical",
+      "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 442,
       "end": 451,
@@ -178,8 +182,16 @@
   ],
   "unresolved_mentions": [
     {
-      "surface": "Don’t doubt the drought",
-      "reason": "Likely a headline/title, but no explicit headline marker is present in the raw comment."
+      "surface": "the center",
+      "reason": "Likely refers to the central U.S. region, but not explicit enough to map confidently to a location level."
+    },
+    {
+      "surface": "the states on the sides",
+      "reason": "Vague geographic reference; could mean coastal states or side regions, but not specific enough to map confidently."
+    },
+    {
+      "surface": "the drought",
+      "reason": "Generic reference; unclear whether it refers to drought severity as a data level or the overall phenomenon."
     }
   ],
   "section_segments": [
@@ -188,5 +200,5 @@
       "text": "* I noticed that a lot of coastal states have fewer droughts, and the deep interior states like North Dakota, New Mexico, Texas, and Oklahoma have the most extreme drought.\n\nI wonder why is the extreme drought mostly take place in the center more than the states on the sides. I wonder if this is because water is further from them. \n\nThis relates to me and my community because I live in a moderate climate. and it could potentially cuase a wild fire.\n\nDon’t doubt the drought"
     }
   ],
-  "tagged_text": "* I noticed that a lot of coastal states have fewer droughts, and the deep interior states like North Dakota, New Mexico, Texas, and Oklahoma have the most extreme drought.\n\nI wonder why is the extreme drought mostly take place in the center more than the states on the sides. I wonder if this is because water is further from them. \n\nThis relates to me and my community because I live in a moderate climate. and it could potentially cuase a wild fire.\n\nDon’t doubt the drought"
+  "tagged_text": "* I noticed that a lot of <entity type=\"LOCATION\" canonical=\"coast\" section=\"body\">coastal states</entity> have fewer <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\">droughts</entity>, and the deep interior states like <entity type=\"LOCATION\" canonical=\"north_dakota\" section=\"body\">North Dakota</entity>, <entity type=\"LOCATION\" canonical=\"new_mexico\" section=\"body\">New Mexico</entity>, <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\">Texas</entity>, and <entity type=\"LOCATION\" canonical=\"oklahoma\" section=\"body\">Oklahoma</entity> have the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" section=\"body\">extreme drought</entity>.\n\nI wonder why is the <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" section=\"body\" modality=\"questioned\">extreme drought</entity> mostly take place in the center more than the states on the sides. I wonder if this is because <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" section=\"body\" modality=\"questioned\">water</entity> is further from them. \n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"body\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my community</entity> because I live in a <entity type=\"OTHER_ENTITY\" canonical=\"moderate_climate\" subtype=\"concept\" section=\"body\" speaker_context=\"true\">moderate climate</entity>. and it could potentially cuase a <entity type=\"EVENT\" canonical=\"wildfires\" section=\"body\">wild fire</entity>.\n\nDon’t doubt the drought"
 }

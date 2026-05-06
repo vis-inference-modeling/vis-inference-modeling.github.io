@@ -4,36 +4,10 @@
   "raw_comment": "I noticed that every single state on the graph has an abnormal amount of drought across the United States. I wonder why there is severe the least and abnormally dry is the most. This relate to me and community because of the weather is getting dry and colder in NY. A catchy headline of this graph is Weather Conditions in the US.",
   "entities": [
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 41,
-      "end": 46,
-      "id": "e0"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 73,
-      "end": 80,
-      "id": "e1"
-    },
-    {
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -41,26 +15,54 @@
       "occurrence_index": 0,
       "start": 92,
       "end": 105,
+      "id": "e0"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 129,
+      "end": 135,
+      "id": "e1"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 150,
+      "end": 164,
       "id": "e2"
     },
     {
-      "surface": "me and community",
+      "surface": "community",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
+      "canonical": "my_community",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 193,
+      "start": 200,
       "end": 209,
       "id": "e3"
     },
     {
       "surface": "NY",
       "type": "LOCATION",
-      "canonical": "ny",
+      "canonical": "new_york",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -71,36 +73,28 @@
       "id": "e4"
     },
     {
-      "surface": "Weather Conditions in the US",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 301,
+      "start": 327,
       "end": 329,
       "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "abnormal amount of drought",
-      "reason": "Could be a paraphrase of drought severity, but not an exact level or variable match."
+      "surface": "graph",
+      "reason": "Could be a chart element, but the comment does not explicitly refer to the visualization structure beyond 'graph' in a generic way."
     },
     {
-      "surface": "severe the least",
-      "reason": "Ungrammatical phrase; likely refers to drought severity but unclear which level."
-    },
-    {
-      "surface": "abnormally dry",
-      "reason": "Likely a drought severity level, but the comment uses it comparatively without a clear standalone reference."
-    },
-    {
-      "surface": "weather",
-      "reason": "Generic environmental term; not clearly an entity in the provided dictionary."
+      "surface": "Weather Conditions in the US",
+      "reason": "Looks like a headline/title, but the comment formatting is not explicit enough to segment confidently."
     }
   ],
   "section_segments": [
@@ -109,5 +103,5 @@
       "text": "I noticed that every single state on the graph has an abnormal amount of drought across the United States. I wonder why there is severe the least and abnormally dry is the most. This relate to me and community because of the weather is getting dry and colder in NY. A catchy headline of this graph is Weather Conditions in the US."
     }
   ],
-  "tagged_text": "I noticed that every single state on the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> has an abnormal amount of <entity type=\"EVENT\" canonical=\"drought\">drought</entity> across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. I wonder why there is severe the least and abnormally dry is the most. This relate to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">me and community</entity> because of the weather is getting dry and colder in <entity type=\"LOCATION\" canonical=\"ny\">NY</entity>. A catchy headline of this graph is <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Weather Conditions in the US</entity>."
+  "tagged_text": "I noticed that every single state on the graph has an abnormal amount of drought across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>. I wonder why there is <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" modality=\"questioned\">severe</entity> the least and <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" modality=\"questioned\">abnormally dry</entity> is the most. This relate to me and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because of the weather is getting dry and colder in <entity type=\"LOCATION\" canonical=\"new_york\">NY</entity>. A catchy headline of this graph is Weather Conditions in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">US</entity>.\","
 }

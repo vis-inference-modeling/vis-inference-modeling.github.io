@@ -6,7 +6,7 @@
     {
       "surface": "coasts",
       "type": "LOCATION",
-      "canonical": "coastal_areas",
+      "canonical": "coast",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -15,19 +15,6 @@
       "start": 20,
       "end": 26,
       "id": "e0"
-    },
-    {
-      "surface": "landlocked states",
-      "type": "LOCATION",
-      "canonical": "landlocked_states",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 75,
-      "end": 92,
-      "id": "e1"
     },
     {
       "surface": "country",
@@ -40,7 +27,7 @@
       "occurrence_index": 0,
       "start": 114,
       "end": 121,
-      "id": "e2"
+      "id": "e1"
     },
     {
       "surface": "country",
@@ -53,7 +40,7 @@
       "occurrence_index": 1,
       "start": 369,
       "end": 376,
-      "id": "e3"
+      "id": "e2"
     },
     {
       "surface": "country",
@@ -66,38 +53,40 @@
       "occurrence_index": 2,
       "start": 679,
       "end": 686,
-      "id": "e4"
+      "id": "e3"
     },
     {
-      "surface": "country",
-      "type": "LOCATION",
-      "canonical": "country",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": 738,
-      "end": 745,
-      "id": "e5"
-    },
-    {
-      "surface": "Dry counties throughout the country.",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "numbered_point",
+      "surface": "Dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 793,
-      "end": 829,
-      "id": "e6"
+      "end": 796,
+      "id": "e4"
     },
     {
-      "surface": "coast",
+      "surface": "coasts",
       "type": "LOCATION",
-      "canonical": "coastal_areas",
+      "canonical": "coast",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -105,14 +94,29 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e7"
     },
     {
-      "surface": "spots",
-      "type": "LOCATION",
-      "canonical": "spots",
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -121,11 +125,12 @@
       "id": "e8"
     },
     {
-      "surface": "spots",
-      "type": "LOCATION",
-      "canonical": "spots",
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
@@ -134,17 +139,46 @@
       "id": "e9"
     },
     {
-      "surface": "areas",
-      "type": "LOCATION",
-      "canonical": "areas",
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e10"
+    },
+    {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "very serious droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
     },
     {
       "surface": "Alaska",
@@ -157,40 +191,25 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "my life",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "family",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_family",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e13"
     },
     {
       "surface": "west Texas",
       "type": "LOCATION",
-      "canonical": "west_texas",
+      "canonical": "texas",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "this country",
+      "type": "LOCATION",
+      "canonical": "country",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -198,19 +217,10 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e15"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "states on the coast",
-      "reason": "Could be tagged as coastal_areas, but the phrase is broader and partially overlaps with the already tagged coast/coasts mentions."
-    },
-    {
-      "surface": "very serious droughts",
-      "reason": "Could map to a drought severity level, but no exact normalized level is provided for this wording."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "numbered_point",
@@ -228,10 +238,10 @@
       "text": "This applies to my life as I have family who live in west Texas and talk about the drought all the time. This is a serious problem this country is facing and it seems to be something most of the country has to deal with in some way shape or form."
     },
     {
-      "section": "numbered_point",
+      "section": "headline",
       "label": "4",
       "text": "Dry counties throughout the country."
     }
   ],
-  "tagged_text": "1.I notice that the <entity type=\"LOCATION\" canonical=\"coastal_areas\" section=\"numbered_point\" label=\"1\">coasts</entity> on the map have less intense droughts while the <entity type=\"LOCATION\" canonical=\"landlocked_states\" section=\"numbered_point\" label=\"1\">landlocked states</entity> in the center of the <entity type=\"LOCATION\" canonical=\"country\" section=\"numbered_point\" label=\"1\">country</entity> have it the worst. While intensity is more extreme in the center, some states on the <entity type=\"LOCATION\" canonical=\"coastal_areas\" section=\"numbered_point\" label=\"1\">coast</entity> are still facing this problem.\n2. I wonder why some <entity type=\"LOCATION\" canonical=\"spots\" section=\"numbered_point\" label=\"2\">spots</entity> are completely clear of the drought. I wonder this because these <entity type=\"LOCATION\" canonical=\"spots\" section=\"numbered_point\" label=\"2\">spots</entity> are seemingly all over the <entity type=\"LOCATION\" canonical=\"country\" section=\"numbered_point\" label=\"2\">country</entity>. Some of these <entity type=\"LOCATION\" canonical=\"areas\" section=\"numbered_point\" label=\"2\">areas</entity> without drought are even near states that are facing very serious droughts.\nI also wonder why <entity type=\"LOCATION\" canonical=\"alaska\" section=\"numbered_point\" label=\"2\">Alaska</entity> seems to face no drought what’s so ever.\n3. This applies to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"numbered_point\" label=\"3\" speaker_context=\"true\">my life</entity> as I have <entity type=\"OTHER_ENTITY\" canonical=\"speaker_family\" subtype=\"other\" section=\"numbered_point\" label=\"3\" speaker_context=\"true\">family</entity> who live in <entity type=\"LOCATION\" canonical=\"west_texas\" section=\"numbered_point\" label=\"3\">west Texas</entity> and talk about the drought all the time. This is a serious problem this <entity type=\"LOCATION\" canonical=\"country\" section=\"numbered_point\" label=\"3\">country</entity> is facing and it seems to be something most of the <entity type=\"LOCATION\" canonical=\"country\" section=\"numbered_point\" label=\"3\">country</entity> has to deal with in some way shape or form.\n4. <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"numbered_point\" label=\"4\">Dry counties throughout the country.</entity>"
+  "tagged_text": "1.I notice that the coasts on the map have less intense droughts while the landlocked states in the center of the country have it the worst. While intensity is more extreme in the center, some states on the coast are still facing this problem.\n2. I wonder why some spots are completely clear of the drought. I wonder this because these spots are seemingly all over the country. Some of these areas without drought are even near states that are facing very serious droughts.\nI also wonder why <entity type=\"LOCATION\" canonical=\"alaska\" modality=\"questioned\">Alaska</entity> seems to face no drought what’s so ever.\n3. This applies to my life as I have family who live in <entity type=\"LOCATION\" canonical=\"texas\" speaker_context=\"true\">west Texas</entity> and talk about the drought all the time. This is a serious problem this country is facing and it seems to be something most of the country has to deal with in some way shape or form.\n4. Dry counties throughout the country."
 }

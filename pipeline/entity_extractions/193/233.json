@@ -4,43 +4,32 @@
   "raw_comment": "I notice the areas with the most flat land typically are the states that are in a drought. I wonder why areas close to mountain ranges are much more prone to droughts? This relates to my community because in colorado it Is an arid region which colorlates with the intensity of the drought. \"Bone Dry\"",
   "entities": [
     {
-      "surface": "areas with the most flat land",
-      "type": "LOCATION",
-      "canonical": "flat_land_areas",
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 13,
-      "end": 42,
+      "start": 82,
+      "end": 89,
       "id": "e0"
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 82,
-      "end": 89,
-      "id": "e1"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": 158,
       "end": 165,
-      "id": "e2"
+      "id": "e1"
     },
     {
       "surface": "colorado",
@@ -53,38 +42,12 @@
       "occurrence_index": 0,
       "start": 208,
       "end": 216,
-      "id": "e3"
-    },
-    {
-      "surface": "arid region",
-      "type": "LOCATION",
-      "canonical": "arid_region",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 226,
-      "end": 237,
-      "id": "e4"
-    },
-    {
-      "surface": "Bone Dry",
-      "type": "EVENT",
-      "canonical": "bone_dry",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 291,
-      "end": 299,
-      "id": "e5"
+      "id": "e2"
     },
     {
       "surface": "mountain ranges",
       "type": "LOCATION",
-      "canonical": "mountain_ranges",
+      "canonical": "rocky_mountains",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -92,42 +55,42 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e3"
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e4"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "states",
-      "reason": "Generic reference to states; could be chart category or location-like plural, but not specific enough to tag confidently."
+      "surface": "flat land",
+      "reason": "Descriptive geographic feature, but no confirmed canonical location mapping in the provided list."
     },
     {
-      "surface": "colorlates",
-      "reason": "Likely misspelling of 'correlates'; not an entity."
+      "surface": "arid region",
+      "reason": "Could describe Colorado, but it is not a confirmed canonical entity in the reference list."
+    },
+    {
+      "surface": "the intensity of the drought",
+      "reason": "Refers to drought severity conceptually, but the exact level is unclear."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice the areas with the most flat land typically are the states that are in a drought. I wonder why areas close to mountain ranges are much more prone to droughts? This relates to my community because in colorado it Is an arid region which colorlates with the intensity of the drought."
-    },
-    {
-      "section": "headline",
-      "label": "Bone Dry",
-      "text": "\"Bone Dry\""
+      "text": "I notice the areas with the most flat land typically are the states that are in a drought. I wonder why areas close to mountain ranges are much more prone to droughts? This relates to my community because in colorado it Is an arid region which colorlates with the intensity of the drought. \"Bone Dry\""
     }
   ],
-  "tagged_text": "I notice the <entity type=\"LOCATION\" canonical=\"flat_land_areas\" section=\"body\">areas with the most flat land</entity> typically are the states that are in a <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity>. I wonder why areas close to <entity type=\"LOCATION\" canonical=\"mountain_ranges\" section=\"body\">mountain ranges</entity> are much more prone to <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity>? This relates to my community because in <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\" speaker_context=\"true\">colorado</entity> it Is an <entity type=\"LOCATION\" canonical=\"arid_region\" section=\"body\">arid region</entity> which colorlates with the intensity of the drought. \"<entity type=\"EVENT\" canonical=\"bone_dry\" section=\"headline\">Bone Dry</entity>\""
+  "tagged_text": "I notice the areas with the most flat land typically are the states that are in a <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity>. I wonder why areas close to <entity type=\"LOCATION\" canonical=\"rocky_mountains\">mountain ranges</entity> are much more prone to <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">droughts</entity>? This relates to my community because in <entity type=\"LOCATION\" canonical=\"colorado\">colorado</entity> it Is an arid region which colorlates with the intensity of the drought. \"Bone Dry\""
 }

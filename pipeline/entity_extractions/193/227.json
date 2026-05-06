@@ -7,7 +7,7 @@
       "surface": "country",
       "type": "LOCATION",
       "canonical": "country",
-      "section": "body",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -20,7 +20,7 @@
       "surface": "graph",
       "type": "CHART_ELEMENT",
       "canonical": "graph",
-      "section": "body",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -33,7 +33,7 @@
       "surface": "graph",
       "type": "CHART_ELEMENT",
       "canonical": "graph",
-      "section": "body",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -46,10 +46,10 @@
       "surface": "years prior",
       "type": "TIME_REFERENCE",
       "canonical": "previous_years",
-      "section": "body",
+      "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 316,
       "end": 327,
@@ -58,11 +58,12 @@
     {
       "surface": "American",
       "type": "OTHER_ENTITY",
-      "canonical": "american_possessive",
-      "section": "body",
+      "canonical": "american",
+      "subtype": "group",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 374,
       "end": 382,
@@ -71,8 +72,8 @@
     {
       "surface": "fire danger warnings",
       "type": "EVENT",
-      "canonical": "fire_danger_warning",
-      "section": "body",
+      "canonical": "fire_danger_warnings",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -82,37 +83,37 @@
       "id": "e5"
     },
     {
-      "surface": "local parks",
-      "type": "LOCATION",
-      "canonical": "parks",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 443,
-      "end": 454,
-      "id": "e6"
-    },
-    {
-      "surface": "American's",
-      "type": "OTHER_ENTITY",
-      "canonical": "american_possessive",
-      "section": "body",
+      "surface": "Oct. 2024",
+      "type": "TIME_REFERENCE",
+      "canonical": "october_2024",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 519,
-      "end": 529,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "Coastal states",
+      "type": "LOCATION",
+      "canonical": "coast",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e7"
     },
     {
-      "surface": "Oct. 2024",
-      "type": "TIME_REFERENCE",
-      "canonical": "october_2024",
-      "section": "body",
-      "modality": "asserted",
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "numbered_point",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -121,38 +122,62 @@
       "id": "e8"
     },
     {
-      "surface": "Coastal states",
-      "type": "LOCATION",
-      "canonical": "coastal_states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "Texas",
-      "type": "LOCATION",
-      "canonical": "texas",
-      "section": "body",
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
-      "section": "body",
-      "text": "We noticed that... \n1. Most of the country is in a state of drought. \n2. The graph was made very recently, which was dated Oct. 2024\n3. Coastal states have fewer droughts\n\nWe wonder...\n1. Why is Texas in particular experiencing such extreme drought? \n2. How would this graph compare to graphs on the same topic from years prior\n\nWe relate to this...\n1. Because almost every American is impacted by this\n2. We notice fire danger warnings in at local parks\n\nFor our catchy headline, we came up with: \nA nation in thirst: American's drought struggle intensifies"
+      "section": "numbered_point",
+      "label": "1",
+      "text": "Most of the country is in a state of drought."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "The graph was made very recently, which was dated Oct. 2024"
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "Coastal states have fewer droughts"
+    },
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "Why is Texas in particular experiencing such extreme drought?"
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "How would this graph compare to graphs on the same topic from years prior"
+    },
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "Because almost every American is impacted by this"
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "We notice fire danger warnings in at local parks"
+    },
+    {
+      "section": "headline",
+      "label": "headline",
+      "text": "A nation in thirst: American's drought struggle intensifies"
     }
   ],
-  "tagged_text": "We noticed that... \n1. Most of the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">country</entity> is in a state of drought. \n2. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> was made very recently, which was dated <entity type=\"TIME_REFERENCE\" canonical=\"october_2024\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Oct. 2024</entity>\n3. <entity type=\"LOCATION\" canonical=\"coastal_states\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Coastal states</entity> have fewer droughts\n\nWe wonder...\n1. Why is <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Texas</entity> in particular experiencing such extreme drought? \n2. How would this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> compare to graphs on the same topic from <entity type=\"TIME_REFERENCE\" canonical=\"previous_years\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">years prior</entity>\n\nWe relate to this...\n1. Because almost every <entity type=\"OTHER_ENTITY\" canonical=\"american_possessive\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">American</entity> is impacted by this\n2. We notice <entity type=\"EVENT\" canonical=\"fire_danger_warning\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">fire danger warnings</entity> in at <entity type=\"LOCATION\" canonical=\"parks\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">local parks</entity>\n\nFor our catchy headline, we came up with: \nA nation in thirst: <entity type=\"OTHER_ENTITY\" canonical=\"american_possessive\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">American's</entity> drought struggle intensifies"
+  "tagged_text": "We noticed that... \n1. Most of the <entity type=\"LOCATION\" canonical=\"country\">country</entity> is in a state of drought. \n2. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> was made very recently, which was dated <entity type=\"TIME_REFERENCE\" canonical=\"october_2024\">Oct. 2024</entity>\n3. <entity type=\"LOCATION\" canonical=\"coast\">Coastal states</entity> have fewer droughts\n\nWe wonder...\n1. Why is <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> in particular experiencing such <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> drought? \n2. How would this graph compare to graphs on the same topic from <entity type=\"TIME_REFERENCE\" canonical=\"previous_years\">years prior</entity>\n\nWe relate to this...\n1. Because almost every <entity type=\"OTHER_ENTITY\" canonical=\"american\" subtype=\"group\">American</entity> is impacted by this\n2. We notice <entity type=\"EVENT\" canonical=\"fire_danger_warnings\">fire danger warnings</entity> in at local parks\n\nFor our catchy headline, we came up with: \nA nation in thirst: American's drought struggle intensifies"
 }

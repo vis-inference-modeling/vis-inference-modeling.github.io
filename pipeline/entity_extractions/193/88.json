@@ -30,30 +30,18 @@
       "id": "e1"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "severe drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 138,
+      "start": 131,
       "end": 145,
       "id": "e2"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 296,
-      "end": 303,
-      "id": "e3"
     },
     {
       "surface": "Arizona",
@@ -64,62 +52,50 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e4"
-    },
-    {
-      "surface": "periods of years",
-      "type": "TIME_REFERENCE",
-      "canonical": "periods_of_years",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e5"
-    },
-    {
-      "surface": "planet",
-      "type": "OTHER_ENTITY",
-      "canonical": "planet",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
+      "start": 154,
+      "end": 161,
+      "id": "e3"
     },
     {
       "surface": "Droughts across the United States",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "numbered_point",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 296,
+      "end": 329,
+      "id": "e4"
+    },
+    {
+      "surface": "severe drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "my community",
-      "reason": "Could be speaker-linked location/community, but no exact canonical match in the provided normalized dictionary for this article."
+      "reason": "Could be tagged as a speaker-linked location-like entity, but no specific canonical location is provided in the reference list."
     },
     {
-      "surface": "other areas",
-      "reason": "Generic location reference without a specific canonical match."
+      "surface": "our actions",
+      "reason": "Abstract causal reference; not a specific entity in the provided schema."
     },
     {
-      "surface": "United States",
-      "reason": "Could map to a country/location entity, but no direct country canonical is provided in this article-specific dictionary."
+      "surface": "the planet",
+      "reason": "Could be a LOCATION/world-like reference, but here it is used generically and not clearly as a chart-relevant location."
     }
   ],
   "section_segments": [
@@ -144,5 +120,5 @@
       "text": "Droughts across the United States"
     }
   ],
-  "tagged_text": "1. I noticed that the region around <entity type=\"LOCATION\" canonical=\"texas\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Texas</entity> has a more severe <entity type=\"EVENT\" canonical=\"drought\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">drought</entity> than the other areas.\n\n2. I wonder why only <entity type=\"LOCATION\" canonical=\"texas\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Texas</entity> has the most severe <entity type=\"EVENT\" canonical=\"drought\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">drought</entity> and not <entity type=\"LOCATION\" canonical=\"arizona\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Arizona</entity>.\n\n3. This relates to my community because it is the result of our actions over the <entity type=\"TIME_REFERENCE\" canonical=\"periods_of_years\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">periods of years</entity> of what we did to the <entity type=\"OTHER_ENTITY\" canonical=\"planet\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">planet</entity>.\n\n4. <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Droughts across the United States</entity>"
+  "tagged_text": "1. I noticed that the region around <entity type=\"LOCATION\" canonical=\"texas\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">Texas</entity> has a more <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">severe drought</entity> than the other areas.\n\n2. I wonder why only <entity type=\"LOCATION\" canonical=\"texas\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">Texas</entity> has the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">severe drought</entity> and not <entity type=\"LOCATION\" canonical=\"arizona\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Arizona</entity>.\n\n3. This relates to my community because it is the result of our actions over the periods of years of what we did to the planet.\n\n4. <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Droughts across the United States</entity>"
 }

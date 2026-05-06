@@ -30,32 +30,6 @@
       "id": "e1"
     },
     {
-      "surface": "our community",
-      "type": "LOCATION",
-      "canonical": "our_community",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 251,
-      "end": 264,
-      "id": "e2"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 297,
-      "end": 301,
-      "id": "e3"
-    },
-    {
       "surface": "forest fires",
       "type": "EVENT",
       "canonical": "forest_fires",
@@ -66,25 +40,21 @@
       "occurrence_index": 0,
       "start": 319,
       "end": 331,
-      "id": "e4"
+      "id": "e2"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "clean-drinking water",
-      "reason": "Could relate to water-related entities, but no exact canonical match is available and the phrase is hyphenated/novel."
+      "reason": "Could refer to water quality or water usage, but no confirmed canonical mapping in the provided list."
     },
     {
-      "surface": "drought",
-      "reason": "Likely an EVENT, but the surface is used generically and no exact canonical was selected to avoid over-tagging."
+      "surface": "our community",
+      "reason": "Speaker-context location likely, but the exact canonical form is not explicitly listed in the normalized dictionary."
     },
     {
-      "surface": "Wide-Spread Drought",
-      "reason": "Headline/title phrase with no exact canonical match; likely a creative title variant."
-    },
-    {
-      "surface": "Florida's fault",
-      "reason": "Possessive phrase is not an entity; could be part of the headline."
+      "surface": "rain",
+      "reason": "Weather term is relevant but no canonical entity provided in the reference list."
     }
   ],
   "section_segments": [
@@ -98,5 +68,5 @@
       "text": "And It's not Florida's fault"
     }
   ],
-  "tagged_text": "I noticed that there are extremely limited areas where there wasn't any drought. I also noticed how <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> didn't have any drought at all. I wonder if the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> calculates clean-drinking water in terms of drought or just no rainfall. This relates to <entity type=\"LOCATION\" canonical=\"our_community\" speaker_context=\"true\">our community</entity> because we haven't had a lot of <entity type=\"EVENT\" canonical=\"rain\">rain</entity> and had a lot of <entity type=\"EVENT\" canonical=\"forest_fires\">forest fires</entity>. \"Areas affected by Wide-Spread Drought: And It's not Florida's fault\""
+  "tagged_text": "I noticed that there are extremely limited areas where there wasn't any drought. I also noticed how <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> didn't have any drought at all. I wonder if the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> calculates clean-drinking water in terms of drought or just no rainfall. This relates to our community because we haven't had a lot of rain and had a lot of <entity type=\"EVENT\" canonical=\"forest_fires\">forest fires</entity>. \"Areas affected by Wide-Spread Drought: And It's not Florida's fault\""
 }

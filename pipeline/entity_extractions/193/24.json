@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "US",
-      "type": "LOCATION",
-      "canonical": "us",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -72,7 +73,7 @@
       "surface": "extreme",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -83,23 +84,24 @@
       "id": "e5"
     },
     {
-      "surface": "exceptional",
+      "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 154,
-      "end": 165,
+      "end": 173,
       "id": "e6"
     },
     {
       "surface": "Abnormally dry",
-      "type": "EVENT",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -113,7 +115,7 @@
       "surface": "moderate drought",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -177,9 +179,9 @@
     },
     {
       "surface": "US Drought: Widespread Drought Leaves Millions Feeling the Heat",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "numbered_point",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -204,7 +206,7 @@
     {
       "surface": "Pacific Northwest",
       "type": "LOCATION",
-      "canonical": "pacific_northwest",
+      "canonical": "northwest",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -215,11 +217,11 @@
       "id": "e15"
     },
     {
-      "surface": "year's",
+      "surface": "this year's",
       "type": "TIME_REFERENCE",
       "canonical": "this_year",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -232,7 +234,7 @@
       "type": "EVENT",
       "canonical": "climate_change",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -243,7 +245,7 @@
     {
       "surface": "Coconut Creek, Florida",
       "type": "LOCATION",
-      "canonical": "coconut_creek_florida",
+      "canonical": "florida_keys_area",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -256,16 +258,16 @@
   ],
   "unresolved_mentions": [
     {
-      "surface": "abnormally dry to moderate drought",
-      "reason": "Mixed severity phrase spanning an EVENT-like term and a DATA_VAR_LEVEL; tagged separately where possible, but the full span is not a clean canonical match."
+      "surface": "most of the states",
+      "reason": "Generic reference to states; not a specific location entity."
+    },
+    {
+      "surface": "previous years",
+      "reason": "Temporal reference is clear, but no exact canonical time label is provided in the reference list."
     },
     {
       "surface": "other states",
-      "reason": "Generic location reference without a specific canonical match in the dictionary."
-    },
-    {
-      "surface": "crop yields",
-      "reason": "Entity-like agricultural phrase, but not listed as a canonical entity."
+      "reason": "Generic plural reference without a specific canonical mapping."
     }
   ],
   "section_segments": [
@@ -290,5 +292,5 @@
       "text": "\"US Drought: Widespread Drought Leaves Millions Feeling the Heat\""
     }
   ],
-  "tagged_text": "1. I noticed most of the states in <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">US</entity> are experiencing <entity type=\"EVENT\" canonical=\"drought\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">drought</entity>. States like <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"kansas\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Kansas</entity>, <entity type=\"LOCATION\" canonical=\"nebraska\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Nebraska</entity>, and parts of <entity type=\"LOCATION\" canonical=\"california\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">California</entity> have regions with <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">extreme</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">exceptional</entity> drought. <entity type=\"EVENT\" canonical=\"abnormally_dry\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Abnormally dry</entity> to <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">moderate drought</entity> is widespread, covering much of the <entity type=\"LOCATION\" canonical=\"midwest\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Midwest</entity>, <entity type=\"LOCATION\" canonical=\"great_plains\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Great Plains</entity>, and <entity type=\"LOCATION\" canonical=\"southeast\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Southeast</entity>. The <entity type=\"LOCATION\" canonical=\"northeast\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Northeast</entity> and parts of the <entity type=\"LOCATION\" canonical=\"pacific_northwest\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Pacific Northwest</entity> have relatively fewer areas of drought.\n\n2. I wonder what steps are being taken to mitigate the effects of these droughts?\n\nHow do this <entity type=\"TIME_REFERENCE\" canonical=\"this_year\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">year's</entity> droughts compare to previous years?\n\nWhat role does <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">climate change</entity> play in the increased frequency or severity of droughts?\n\n3. Living in <entity type=\"LOCATION\" canonical=\"coconut_creek_florida\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">Coconut Creek, Florida</entity>, I didn't feel the direct effects of the drought since the <entity type=\"LOCATION\" canonical=\"southeast\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Southeast</entity> isn’t as heavily impacted. However, I could still see indirect effects, such as higher food prices due to reduced crop yields in other states.\n\n4. \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">US Drought: Widespread Drought Leaves Millions Feeling the Heat</entity>\""
+  "tagged_text": "1. I noticed most of the states in <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> are experiencing drought. States like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"kansas\">Kansas</entity>, <entity type=\"LOCATION\" canonical=\"nebraska\">Nebraska</entity>, and parts of <entity type=\"LOCATION\" canonical=\"california\">California</entity> have regions with <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">Abnormally dry</entity> to <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate drought</entity> is widespread, covering much of the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity>, <entity type=\"LOCATION\" canonical=\"great_plains\">Great Plains</entity>, and <entity type=\"LOCATION\" canonical=\"southeast\">Southeast</entity>. The <entity type=\"LOCATION\" canonical=\"northeast\">Northeast</entity> and parts of the <entity type=\"LOCATION\" canonical=\"northwest\">Pacific Northwest</entity> have relatively fewer areas of drought.\n\n2. I wonder what steps are being taken to mitigate the effects of these droughts?\n\nHow do this <entity type=\"TIME_REFERENCE\" canonical=\"this_year\">year's</entity> droughts compare to previous years?\n\nWhat role does <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> play in the increased frequency or severity of droughts?\n\n3. Living in <entity type=\"LOCATION\" canonical=\"florida_keys_area\" speaker_context=\"true\">Coconut Creek, Florida</entity>, I didn't feel the direct effects of the drought since the <entity type=\"LOCATION\" canonical=\"southeast\">Southeast</entity> isn’t as heavily impacted. However, I could still see indirect effects, such as higher food prices due to reduced crop yields in other states.\n\n4. \"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">US Drought: Widespread Drought Leaves Millions Feeling the Heat</entity>\""
 }

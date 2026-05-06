@@ -4,85 +4,6 @@
   "raw_comment": "I noticed that a lot of the inland states have more common and higher levels of droughts. Ohio has the most extreme drought out of all of the states it also has the largest area of the bad drought. all of the states close to the coast don't have very bad droughts. Why do inland states have so much more drought compared to other states, but some don't have any? Why do states that have drought in some parts not have it in other parts of the states? This relates to my communities because Michigan where I live is all over the place with extreme to normal it varys a lot\nThe thirsty nation: drought coming into the Untied states",
   "entities": [
     {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 80,
-      "end": 88,
-      "id": "e0"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 255,
-      "end": 263,
-      "id": "e1"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 304,
-      "end": 311,
-      "id": "e2"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 387,
-      "end": 394,
-      "id": "e3"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 592,
-      "end": 599,
-      "id": "e4"
-    },
-    {
-      "surface": "Untied states",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 616,
-      "end": 629,
-      "id": "e5"
-    },
-    {
       "surface": "Ohio",
       "type": "LOCATION",
       "canonical": "ohio",
@@ -91,23 +12,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "extreme drought",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "extreme",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
+      "start": 90,
+      "end": 94,
+      "id": "e0"
     },
     {
       "surface": "Michigan",
@@ -118,44 +25,39 @@
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "extreme",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "extreme",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
+      "start": 490,
+      "end": 498,
+      "id": "e1"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "inland states",
-      "reason": "Likely a location/region reference, but no exact canonical match in the provided dictionary."
+      "reason": "Describes a region of states, but no exact canonical region level is provided in the reference list."
     },
     {
       "surface": "coast",
-      "reason": "Likely a location/region reference, but the dictionary only has broader coastal variants; uncertain whether to map to coastlines/coastal_areas."
+      "reason": "Could map to a geographic region, but the comment uses it generically and not as a specific listed level."
     },
     {
-      "surface": "my communities",
-      "reason": "Could refer to speaker community, but the surface form is plural and not an exact dictionary match."
+      "surface": "extreme",
+      "reason": "Likely a drought severity level, but the phrase is embedded in a comparative description and not clearly a standalone level mention."
+    },
+    {
+      "surface": "normal",
+      "reason": "Likely means no drought/low drought, but there is no exact canonical level for this wording."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I noticed that a lot of the inland states have more common and higher levels of droughts. Ohio has the most extreme drought out of all of the states it also has the largest area of the bad drought. all of the states close to the coast don't have very bad droughts. Why do inland states have so much more drought compared to other states, but some don't have any? Why do states that have drought in some parts not have it in other parts of the states? This relates to my communities because Michigan where I live is all over the place with extreme to normal it varys a lot\nThe thirsty nation: drought coming into the Untied states"
+      "text": "I noticed that a lot of the inland states have more common and higher levels of droughts. Ohio has the most extreme drought out of all of the states it also has the largest area of the bad drought. all of the states close to the coast don't have very bad droughts. Why do inland states have so much more drought compared to other states, but some don't have any? Why do states that have drought in some parts not have it in other parts of the states? This relates to my communities because Michigan where I live is all over the place with extreme to normal it varys a lot"
+    },
+    {
+      "section": "headline",
+      "label": "The thirsty nation: drought coming into the Untied states",
+      "text": "The thirsty nation: drought coming into the Untied states"
     }
   ],
-  "tagged_text": "I noticed that a lot of the inland states have more common and higher levels of <entity type=\"EVENT\" canonical=\"droughts\">droughts</entity>. <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> has the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\">extreme drought</entity> out of all of the states it also has the largest area of the bad <entity type=\"EVENT\" canonical=\"drought\">drought</entity>. all of the states close to the coast don't have very bad <entity type=\"EVENT\" canonical=\"droughts\">droughts</entity>. Why do inland states have so much more <entity type=\"EVENT\" canonical=\"drought\">drought</entity> compared to other states, but some don't have any? Why do states that have <entity type=\"EVENT\" canonical=\"drought\">drought</entity> in some parts not have it in other parts of the states? This relates to my communities because <entity type=\"LOCATION\" canonical=\"michigan\" speaker_context=\"true\">Michigan</entity> where I live is all over the place with <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\">extreme</entity> to normal it varys a lot\nThe thirsty nation: drought coming into the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">Untied states</entity>"
+  "tagged_text": "I noticed that a lot of the inland states have more common and higher levels of droughts. <entity type=\"LOCATION\" canonical=\"ohio\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Ohio</entity> has the most extreme drought out of all of the states it also has the largest area of the bad drought. all of the states close to the coast don't have very bad droughts. Why do inland states have so much more drought compared to other states, but some don't have any? Why do states that have drought in some parts not have it in other parts of the states? This relates to my communities because <entity type=\"LOCATION\" canonical=\"michigan\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\">Michigan</entity> where I live is all over the place with extreme to normal it varys a lot\nThe thirsty nation: drought coming into the Untied states"
 }

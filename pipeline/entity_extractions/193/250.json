@@ -4,7 +4,7 @@
   "raw_comment": "I found it interesting that the whole country was affected by this. Up until reading this article I was only aware of the drought being in my area, not the whole country.",
   "entities": [
     {
-      "surface": "the whole country",
+      "surface": "country",
       "type": "LOCATION",
       "canonical": "country",
       "section": "body",
@@ -12,12 +12,12 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 28,
+      "start": 38,
       "end": 45,
       "id": "e0"
     },
     {
-      "surface": "the whole country",
+      "surface": "country",
       "type": "LOCATION",
       "canonical": "country",
       "section": "body",
@@ -25,27 +25,15 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 152,
+      "start": 162,
       "end": 169,
       "id": "e1"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e2"
-    },
-    {
       "surface": "my area",
-      "type": "LOCATION",
-      "canonical": "my_area",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -53,20 +41,15 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e3"
+      "id": "e2"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "this",
-      "reason": "Generic pronoun; not tagged."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "I found it interesting that the whole country was affected by this. Up until reading this article I was only aware of the drought being in my area, not the whole country."
     }
   ],
-  "tagged_text": "I found it interesting that the whole country was affected by this. Up until reading this article I was only aware of the drought being in my area, not the whole country."
+  "tagged_text": "I found it interesting that the whole <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">country</entity> was affected by this. Up until reading this article I was only aware of the drought being in <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my area</entity>, not the whole <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">country</entity>."
 }

@@ -4,70 +4,141 @@
   "raw_comment": "I noticed that there are significantly more droughts on the right side of the Rocky Mtn. region and in the middle of the US. I also noticed that areas near the coast had significantly less droughts than those around no or little water.\n\nI wonder what causes the dry regions when they are located in the middle of the nation. I also wonder how the land near the Great Lakes region is experiencing drought since they are around large bodies of water.\n\nDrought can impact the quality of the soil which affects crop growth/yield. Many of these crops are used to create different produce and foods in stores that are local to me. Since there may be little product, there would be inflation and possibly overconsumption by consumers.\n\nSecond Thoughts to Droughts: Tracking Drought Severity in America",
   "entities": [
     {
-      "surface": "Rocky Mtn.",
-      "type": "LOCATION",
-      "canonical": "rocky_mountains",
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 78,
-      "end": 88,
+      "start": 44,
+      "end": 52,
       "id": "e0"
+    },
+    {
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 189,
+      "end": 197,
+      "id": "e1"
+    },
+    {
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 748,
+      "end": 756,
+      "id": "e2"
+    },
+    {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 767,
+      "end": 774,
+      "id": "e3"
+    },
+    {
+      "surface": "Rocky Mtn. region",
+      "type": "LOCATION",
+      "canonical": "rocky_mountain_region",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
     },
     {
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "us",
-      "var": "country",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 121,
-      "end": 123,
-      "id": "e1"
+      "start": null,
+      "end": null,
+      "id": "e5"
     },
     {
       "surface": "coast",
       "type": "LOCATION",
-      "canonical": "coasts",
+      "canonical": "coast",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 160,
-      "end": 165,
-      "id": "e2"
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "Great Lakes region",
       "type": "LOCATION",
-      "canonical": "great_lakes",
+      "canonical": "great_lakes_region",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 361,
-      "end": 379,
-      "id": "e3"
-    },
-    {
-      "surface": "large bodies of water",
-      "type": "LOCATION",
-      "canonical": "large_bodies_of_water",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 426,
-      "end": 447,
-      "id": "e4"
+      "start": null,
+      "end": null,
+      "id": "e9"
     },
     {
       "surface": "soil",
@@ -79,35 +150,36 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 488,
-      "end": 492,
-      "id": "e5"
+      "start": null,
+      "end": null,
+      "id": "e10"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "middle of the nation",
-      "reason": "Likely refers to a U.S. interior region, but no exact canonical match is provided and it overlaps with several possible regional locations."
+      "surface": "dry regions",
+      "reason": "Could refer to drought severity or a geographic area; not enough confidence for a specific canonical mapping."
     },
     {
-      "surface": "crops",
-      "reason": "Entity-like but not clearly a listed canonical in the provided dictionary for this article."
+      "surface": "product",
+      "reason": "Ambiguous generic noun; unclear entity referent."
     },
     {
-      "surface": "produce",
-      "reason": "Could be food-related OTHER_ENTITY, but no confirmed canonical provided."
+      "surface": "consumers",
+      "reason": "Generic group not clearly tied to a specific named or described collective in the reference list."
     }
   ],
   "section_segments": [
     {
       "section": "body",
+      "label": "",
       "text": "I noticed that there are significantly more droughts on the right side of the Rocky Mtn. region and in the middle of the US. I also noticed that areas near the coast had significantly less droughts than those around no or little water.\n\nI wonder what causes the dry regions when they are located in the middle of the nation. I also wonder how the land near the Great Lakes region is experiencing drought since they are around large bodies of water.\n\nDrought can impact the quality of the soil which affects crop growth/yield. Many of these crops are used to create different produce and foods in stores that are local to me. Since there may be little product, there would be inflation and possibly overconsumption by consumers."
     },
     {
       "section": "headline",
-      "label": "Second Thoughts to Droughts",
-      "text": "Tracking Drought Severity in America"
+      "label": "Second Thoughts to Droughts: Tracking Drought Severity in America",
+      "text": "Second Thoughts to Droughts: Tracking Drought Severity in America"
     }
   ],
-  "tagged_text": "I noticed that there are significantly more droughts on the right side of the <entity type=\"LOCATION\" canonical=\"rocky_mountains\" modality=\"asserted\">Rocky Mtn.</entity> region and in the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"us\" var=\"country\">US</entity>. I also noticed that areas near the <entity type=\"LOCATION\" canonical=\"coasts\" modality=\"asserted\">coast</entity> had significantly less droughts than those around no or little water.\n\nI wonder what causes the dry regions when they are located in the middle of the nation. I also wonder how the land near the <entity type=\"LOCATION\" canonical=\"great_lakes\" modality=\"questioned\">Great Lakes region</entity> is experiencing drought since they are around <entity type=\"LOCATION\" canonical=\"large_bodies_of_water\" modality=\"questioned\">large bodies of water</entity>.\n\nDrought can impact the quality of the <entity type=\"OTHER_ENTITY\" canonical=\"soil\" subtype=\"other\" modality=\"asserted\">soil</entity> which affects crop growth/yield. Many of these crops are used to create different produce and foods in stores that are local to me. Since there may be little product, there would be inflation and possibly overconsumption by consumers.\n\nSecond Thoughts to Droughts: Tracking Drought Severity in America"
+  "tagged_text": "I noticed that there are significantly more <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">droughts</entity> on the right side of the <entity type=\"LOCATION\" canonical=\"rocky_mountain_region\">Rocky Mtn. region</entity> and in the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>. I also noticed that areas near the <entity type=\"LOCATION\" canonical=\"coast\">coast</entity> had significantly less <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">droughts</entity> than those around no or little <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity>.\n\nI wonder what causes the dry regions when they are located in the middle of the nation. I also wonder how the land near the <entity type=\"LOCATION\" canonical=\"great_lakes_region\">Great Lakes region</entity> is experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" modality=\"questioned\">drought</entity> since they are around large bodies of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" modality=\"questioned\">water</entity>.\n\n<entity type=\"OTHER_ENTITY\" canonical=\"soil\" subtype=\"other\">Drought can impact the quality of the soil</entity> which affects crop growth/yield. Many of these crops are used to create different produce and foods in stores that are local to me. Since there may be little product, there would be inflation and possibly overconsumption by consumers.\n\nSecond Thoughts to Droughts: Tracking Drought Severity in America"
 }

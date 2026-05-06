@@ -7,7 +7,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -35,7 +35,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -49,7 +49,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -63,7 +63,7 @@
       "surface": "US",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -74,69 +74,46 @@
       "id": "e4"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 783,
-      "end": 790,
+      "occurrence_index": 5,
+      "start": 807,
+      "end": 809,
       "id": "e5"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
+      "terminology_drift": true,
+      "occurrence_index": 0,
       "start": 1120,
-      "end": 1127,
+      "end": 1128,
       "id": "e6"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
+      "terminology_drift": true,
+      "occurrence_index": 1,
       "start": 1247,
-      "end": 1254,
+      "end": 1255,
       "id": "e7"
-    },
-    {
-      "surface": "map",
-      "type": "CHART_ELEMENT",
-      "canonical": "map",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "warm colors",
-      "type": "CHART_ELEMENT",
-      "canonical": "warm_colors",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
     },
     {
       "surface": "Oklahoma",
@@ -149,7 +126,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e8"
     },
     {
       "surface": "Texas",
@@ -162,14 +139,43 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
       "id": "e11"
     },
     {
       "surface": "exceptional drought",
-      "type": "EVENT",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -178,150 +184,30 @@
       "id": "e12"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "Alaska",
+      "type": "LOCATION",
+      "canonical": "alaska",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 3,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e13"
     },
     {
-      "surface": "agriculture",
-      "type": "OTHER_ENTITY",
-      "canonical": "agriculture",
-      "subtype": "other",
+      "surface": "past couple weeks",
+      "type": "TIME_REFERENCE",
+      "canonical": "past_two_months",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e14"
-    },
-    {
-      "surface": "agriculture",
-      "type": "OTHER_ENTITY",
-      "canonical": "agriculture",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "Alaska",
-      "type": "LOCATION",
-      "canonical": "alaska",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "states",
-      "type": "LOCATION",
-      "canonical": "states",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
-      "surface": "past couple weeks",
-      "type": "TIME_REFERENCE",
-      "canonical": "past_couple_weeks",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "rain fall",
-      "type": "EVENT",
-      "canonical": "rain_fall",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e20"
-    },
-    {
-      "surface": "rain fall",
-      "type": "EVENT",
-      "canonical": "rain_fall",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e21"
-    },
-    {
-      "surface": "highways",
-      "type": "OTHER_ENTITY",
-      "canonical": "highways",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e22"
-    },
-    {
-      "surface": "fires",
-      "type": "EVENT",
-      "canonical": "fires",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e23"
     },
     {
       "surface": "forest fires",
@@ -334,35 +220,42 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
+      "id": "e15"
     },
     {
       "surface": "Severe droughts in US!",
-      "type": "OTHER_ENTITY",
-      "canonical": "severe_droughts_in_us",
-      "subtype": "headline_title",
-      "section": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e25"
+      "id": "e16"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "more extreme droughts",
-      "reason": "Could map to drought severity, but the exact severity level is not explicit enough to normalize confidently."
+      "surface": "warm colors",
+      "reason": "Could refer to a chart color scale, but the exact chart element canonical is not explicit enough here."
     },
     {
-      "surface": "the most extreme kind of drought",
-      "reason": "Likely refers to exceptional drought, but phrasing is descriptive rather than exact."
+      "surface": "light colors",
+      "reason": "Could refer to the chart color scale, but not enough specificity to tag confidently."
     },
     {
-      "surface": "the severity of droughts",
-      "reason": "Could be a chart summary phrase rather than a distinct entity."
+      "surface": "darker colors",
+      "reason": "Could refer to the chart color scale, but not enough specificity to tag confidently."
+    },
+    {
+      "surface": "agriculture",
+      "reason": "Entity-like concept, but no confirmed canonical ID is provided."
+    },
+    {
+      "surface": "rain fall",
+      "reason": "Likely means rainfall, but no confirmed canonical ID is provided."
     }
   ],
   "section_segments": [
@@ -389,8 +282,8 @@
     {
       "section": "numbered_point",
       "label": "5",
-      "text": "Caution: Severe droughts in US!"
+      "text": "Severe droughts in US!"
     }
   ],
-  "tagged_text": "1. I notice that there is a map of the US with several different shades of warm colors. The colors are all seen in different parts of the US, with some more drastic than others. I see more light colors than darker colors. I notice that the mid portion of the United States, especially Oklahoma and Texas have the largest amount of more extreme droughts. \n2. I wonder the cause of an exceptional drought, which seems to be the most extreme kind of drought across the US. I also wonder how much this has affected lots of agriculture in the US since it has become such a drastic issue. I wonder why there are no droughts in Alaska? I also wonder how certain states are coping with the extreme droughts throughout the US? \n3. I think that in this graph, it is displaying the severity of droughts throughout the US in the past couple weeks. \n4. This relates to me and my community by acknowledging such a big issue. For a moment, there was absolutely no rain fall near me. There were signs throughout the highways to not start any fires because of the high risk of forest fires. From the no rain fall, there has been lots of droughts caused by this which affects lots of agriculture throughout the US, which ultimately affects us.  \n5. Caution: Severe droughts in US!"
+  "tagged_text": "1. I notice that there is a map of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> with several different shades of warm colors. The colors are all seen in different parts of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>, with some more drastic than others. I see more light colors than darker colors. I notice that the mid portion of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>, especially <entity type=\"LOCATION\" canonical=\"oklahoma\" speaker_context=\"false\">Oklahoma</entity> and <entity type=\"LOCATION\" canonical=\"texas\" speaker_context=\"false\">Texas</entity> have the largest amount of more extreme <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">droughts</entity>. \n2. I wonder the cause of an <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity>, which seems to be the most extreme kind of drought across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>. I also wonder how much this has affected lots of agriculture in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> since it has become such a drastic issue. I wonder why there are no droughts in <entity type=\"LOCATION\" canonical=\"alaska\" speaker_context=\"false\">Alaska</entity>? I also wonder how certain states are coping with the <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme droughts</entity> throughout the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>? \n3. I think that in this graph, it is displaying the severity of droughts throughout the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> in the <entity type=\"TIME_REFERENCE\" canonical=\"past_two_months\">past couple weeks</entity>. \n4. This relates to me and my community by acknowledging such a big issue. For a moment, there was absolutely no rain fall near me. There were signs throughout the highways to not start any fires because of the high risk of <entity type=\"EVENT\" canonical=\"forest_fires\">forest fires</entity>. From the no rain fall, there has been lots of droughts caused by this which affects lots of agriculture throughout the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>, which ultimately affects us.  \n5. <entity type=\"CHART_ELEMENT\" canonical=\"headline\">Severe droughts in US!</entity>"
 }

@@ -4,42 +4,45 @@
   "raw_comment": "What do you notice?\n1. Droughts tend to be more extreme in less populated areas.\n2. Central states like Wyoming, Nebraska, and Texas are experiencing the most extreme drought.\n\nWhat do you wonder?\n1. Are drought levels around the world also high?\n2. How have drought levels changed over time?\n\nHow does this relate to you and your community?\nThis is a nationwide issue that we can work together across communities to address. It's an example of how local action can impact a more global issue.\n\nTitle:\n\"A Flow of Trouble Ahead--Water You Doing?!: Drought Throughout the U.S.\"",
   "entities": [
     {
-      "surface": "Wyoming",
-      "type": "LOCATION",
-      "canonical": "wyoming",
-      "section": "numbered_point",
+      "surface": "Droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 104,
-      "end": 111,
+      "start": 23,
+      "end": 31,
       "id": "e0"
     },
     {
-      "surface": "Nebraska",
-      "type": "LOCATION",
-      "canonical": "nebraska",
-      "section": "numbered_point",
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 113,
-      "end": 121,
+      "start": 48,
+      "end": 55,
       "id": "e1"
     },
     {
-      "surface": "Texas",
-      "type": "LOCATION",
-      "canonical": "texas",
-      "section": "numbered_point",
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 127,
-      "end": 132,
+      "occurrence_index": 1,
+      "start": 159,
+      "end": 166,
       "id": "e2"
     },
     {
@@ -56,9 +59,23 @@
       "id": "e3"
     },
     {
+      "surface": "drought levels",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 259,
+      "end": 273,
+      "id": "e4"
+    },
+    {
       "surface": "time",
       "type": "TIME_REFERENCE",
-      "canonical": "time",
+      "canonical": "time_reference",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -66,12 +83,26 @@
       "occurrence_index": 0,
       "start": 287,
       "end": 291,
-      "id": "e4"
+      "id": "e5"
+    },
+    {
+      "surface": "communities",
+      "type": "OTHER_ENTITY",
+      "canonical": "communities",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 402,
+      "end": 413,
+      "id": "e6"
     },
     {
       "surface": "A Flow of Trouble Ahead--Water You Doing?!: Drought Throughout the U.S.",
-      "type": "EVENT",
-      "canonical": "a_flow_of_trouble_ahead_water_you_doing_drought_throughout_the_us",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -79,25 +110,74 @@
       "occurrence_index": 0,
       "start": 503,
       "end": 574,
-      "id": "e5"
+      "id": "e7"
+    },
+    {
+      "surface": "Wyoming",
+      "type": "LOCATION",
+      "canonical": "wyoming",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "Nebraska",
+      "type": "LOCATION",
+      "canonical": "nebraska",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
-      "section": "numbered_point",
-      "label": "1",
-      "text": "Droughts tend to be more extreme in less populated areas."
-    },
-    {
-      "section": "numbered_point",
-      "label": "2",
-      "text": "Central states like Wyoming, Nebraska, and Texas are experiencing the most extreme drought."
-    },
-    {
       "section": "body",
-      "text": "What do you wonder?\n1. Are drought levels around the world also high?\n2. How have drought levels changed over time?\n\nHow does this relate to you and your community?\nThis is a nationwide issue that we can work together across communities to address. It's an example of how local action can impact a more global issue.\n\nTitle:\n\"A Flow of Trouble Ahead--Water You Doing?!: Drought Throughout the U.S.\""
+      "label": "",
+      "text": "What do you notice?\n1. Droughts tend to be more extreme in less populated areas.\n2. Central states like Wyoming, Nebraska, and Texas are experiencing the most extreme drought.\n\nWhat do you wonder?\n1. Are drought levels around the world also high?\n2. How have drought levels changed over time?\n\nHow does this relate to you and your community?\nThis is a nationwide issue that we can work together across communities to address. It's an example of how local action can impact a more global issue."
+    },
+    {
+      "section": "headline",
+      "label": "Title",
+      "text": "\"A Flow of Trouble Ahead--Water You Doing?!: Drought Throughout the U.S.\""
     }
   ],
-  "tagged_text": "What do you notice?\n1. Droughts tend to be more extreme in less populated areas.\n2. Central states like <entity type=\"LOCATION\" canonical=\"wyoming\" modality=\"asserted\">Wyoming</entity>, <entity type=\"LOCATION\" canonical=\"nebraska\" modality=\"asserted\">Nebraska</entity>, and <entity type=\"LOCATION\" canonical=\"texas\" modality=\"asserted\">Texas</entity> are experiencing the most extreme drought.\n\nWhat do you wonder?\n1. Are drought levels around the <entity type=\"LOCATION\" canonical=\"world\" modality=\"questioned\">world</entity> also high?\n2. How have drought levels changed over <entity type=\"TIME_REFERENCE\" canonical=\"time\" modality=\"questioned\">time</entity>?\n\nHow does this relate to you and your community?\nThis is a nationwide issue that we can work together across communities to address. It's an example of how local action can impact a more global issue.\n\nTitle:\n\"<entity type=\"EVENT\" canonical=\"a_flow_of_trouble_ahead_water_you_doing_drought_throughout_the_us\" section=\"headline\">A Flow of Trouble Ahead--Water You Doing?!: Drought Throughout the U.S.</entity>\""
+  "tagged_text": "What do you notice?\n1. <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">Droughts</entity> tend to be more <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> in less populated areas.\n2. Central states like <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>, <entity type=\"LOCATION\" canonical=\"nebraska\">Nebraska</entity>, and <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> are experiencing the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme drought</entity>.\n\nWhat do you wonder?\n1. Are <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" modality=\"questioned\">droughts</entity> levels around the <entity type=\"LOCATION\" canonical=\"world\" modality=\"questioned\">world</entity> also high?\n2. How have <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" modality=\"questioned\">drought levels</entity> changed over <entity type=\"TIME_REFERENCE\" canonical=\"time_reference\" modality=\"questioned\">time</entity>?\n\nHow does this relate to you and your community?\nThis is a nationwide issue that we can work together across <entity type=\"OTHER_ENTITY\" canonical=\"communities\" subtype=\"group\">communities</entity> to address. It's an example of how local action can impact a more global issue.\n\nTitle:\n\"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">A Flow of Trouble Ahead--Water You Doing?!: Drought Throughout the U.S.</entity>\""
 }

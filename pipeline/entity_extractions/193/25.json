@@ -17,49 +17,40 @@
       "id": "e0"
     },
     {
-      "surface": "me and my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 240,
-      "end": 259,
-      "id": "e1"
-    },
-    {
-      "surface": "U.S.",
-      "type": "LOCATION",
-      "canonical": "united_states",
-      "section": "body",
-      "modality": "wished",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 504,
       "end": 508,
-      "id": "e2"
+      "id": "e1"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "hot and dry climates",
-      "reason": "Could relate to drought severity or climate conditions, but no exact canonical match is provided."
+      "surface": "my community",
+      "reason": "Speaker-context community reference, but no specific canonical location is given."
     },
     {
-      "surface": "abundant water sources",
-      "reason": "Could map to water_sources, but the phrase is generic and not an exact listed surface form."
+      "surface": "water sources",
+      "reason": "Could refer to water-related entities, but no confirmed canonical mapping is provided."
     },
     {
       "surface": "food shortages",
-      "reason": "Entity-like impact phrase, but not listed in the canonical dictionary."
+      "reason": "Abstract consequence not covered by the provided entity types."
     },
     {
       "surface": "hunger",
-      "reason": "Entity-like impact phrase, but not listed in the canonical dictionary."
+      "reason": "Abstract condition not covered by the provided entity types."
+    },
+    {
+      "surface": "the negative impact drought has across the U.S.",
+      "reason": "Headline-like phrase, but it is not clearly a chart element title from the provided list."
     }
   ],
   "section_segments": [
@@ -68,5 +59,5 @@
       "text": "I noticed that there are cases of drought in regions that are typically not associated with hot and dry climates, such as New York. I wonder how these areas can experience drought despite being near abundant water sources. This connects to me and my community because water is essential not only for drinking but also for growing crops that provide our food. Without sufficient water, we could face food shortages and hunger. A headline for this graph could be the negative impact drought has across the U.S."
     }
   ],
-  "tagged_text": "I noticed that there are cases of drought in regions that are typically not associated with hot and dry climates, such as <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">New York</entity>. I wonder how these areas can experience drought despite being near abundant water sources. This connects to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">me and my community</entity> because water is essential not only for drinking but also for growing crops that provide our food. Without sufficient water, we could face food shortages and hunger. A headline for this graph could be the negative impact drought has across the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"body\" modality=\"wished\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">U.S.</entity>."
+  "tagged_text": "I noticed that there are cases of drought in regions that are typically not associated with hot and dry climates, such as <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity>. I wonder how these areas can experience drought despite being near abundant water sources. This connects to me and my community because water is essential not only for drinking but also for growing crops that provide our food. Without sufficient water, we could face food shortages and hunger. A headline for this graph could be the negative impact drought has across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity>.\n"
 }

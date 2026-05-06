@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "U.S.",
-      "type": "LOCATION",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -56,51 +57,56 @@
       "id": "e3"
     },
     {
-      "surface": "U.S. Drought Intensifies, Straining Resources",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 295,
+      "end": 302,
+      "id": "e4"
+    },
+    {
+      "surface": "U.S. drought intensifies, straining resources.",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 316,
-      "end": 361,
-      "id": "e4"
+      "start": null,
+      "end": null,
+      "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "drought severity",
-      "reason": "Abstract severity phrase; no exact canonical level or variable match."
-    },
-    {
-      "surface": "intense drought",
-      "reason": "Could imply severe drought severity, but not an exact listed surface form."
-    },
-    {
       "surface": "water restrictions",
-      "reason": "Could be an impact entity, but not listed in the canonical dictionary."
+      "reason": "Policy/action phrase, but not a specific named policy entity."
     },
     {
       "surface": "ecological impacts",
-      "reason": "Could relate to ecosystems/environment, but not an exact canonical entity."
+      "reason": "Abstract consequence phrase without a specific canonical entity."
     },
     {
       "surface": "local areas",
-      "reason": "Generic location reference without a specific canonical match."
+      "reason": "Generic geographic reference without a specific canonical mapping."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "Notices:\nVarying drought severity across the U.S.\nIntense drought in the West and Midwest.\n\nWonders:\nWhat's causing these conditions?\nHow are these conditions affecting local areas?\n\nRelation to Community:\nPotential for water restrictions and ecological impacts outside of Florida as no drought is shown in Florida.\n\nHeadline: \"U.S. Drought Intensifies, Straining Resources\""
+      "text": "Notices:\nVarying drought severity across the U.S.\nIntense drought in the West and Midwest.\n\nWonders:\nWhat's causing these conditions?\nHow are these conditions affecting local areas?\n\nRelation to Community:\nPotential for water restrictions and ecological impacts outside of Florida as no drought is shown in Florida."
     },
     {
       "section": "headline",
-      "label": "U.S. Drought Intensifies, Straining Resources",
-      "text": "U.S. Drought Intensifies, Straining Resources"
+      "label": "U.S. drought intensifies, straining resources.",
+      "text": "U.S. drought intensifies, straining resources."
     }
   ],
-  "tagged_text": "Notices:\nVarying drought severity across the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">U.S.</entity>.\nIntense drought in the <entity type=\"LOCATION\" canonical=\"west\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">West</entity> and <entity type=\"LOCATION\" canonical=\"midwest\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Midwest</entity>.\n\nWonders:\nWhat's causing these conditions?\nHow are these conditions affecting local areas?\n\nRelation to Community:\nPotential for water restrictions and ecological impacts outside of <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Florida</entity> as no drought is shown in Florida.\n\nHeadline: \"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">U.S. Drought Intensifies, Straining Resources</entity>\""
+  "tagged_text": "Notices:\nVarying drought severity across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity>.\nIntense drought in the <entity type=\"LOCATION\" canonical=\"west\">West</entity> and <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity>.\n\nWonders:\nWhat's causing these conditions?\nHow are these conditions affecting local areas?\n\nRelation to Community:\nPotential for water restrictions and ecological impacts outside of <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> as no drought is shown in Florida.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">U.S. drought intensifies, straining resources.</entity>"
 }

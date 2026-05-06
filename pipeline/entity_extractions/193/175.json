@@ -17,6 +17,19 @@
       "id": "e0"
     },
     {
+      "surface": "desert states",
+      "type": "LOCATION",
+      "canonical": "desert_state",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 243,
+      "end": 256,
+      "id": "e1"
+    },
+    {
       "surface": "Montana",
       "type": "LOCATION",
       "canonical": "montana",
@@ -27,7 +40,7 @@
       "occurrence_index": 0,
       "start": 282,
       "end": 289,
-      "id": "e1"
+      "id": "e2"
     },
     {
       "surface": "West Virginia",
@@ -40,7 +53,7 @@
       "occurrence_index": 0,
       "start": 291,
       "end": 304,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "Wyoming",
@@ -53,72 +66,79 @@
       "occurrence_index": 0,
       "start": 306,
       "end": 313,
-      "id": "e3"
+      "id": "e4"
     },
     {
-      "surface": "landlocked states",
+      "surface": "Dakotas",
       "type": "LOCATION",
-      "canonical": "landlocked_states",
+      "canonical": "north_dakota",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 391,
-      "end": 408,
-      "id": "e4"
+      "start": 323,
+      "end": 330,
+      "id": "e5"
     },
     {
-      "surface": "my community",
+      "surface": "my",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 442,
-      "end": 454,
-      "id": "e5"
+      "end": 444,
+      "id": "e6"
     },
     {
-      "surface": "environmental issues",
-      "type": "EVENT",
-      "canonical": "environmental_issues",
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 445,
+      "end": 454,
+      "id": "e7"
+    },
+    {
+      "surface": "Americans",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 463,
-      "end": 483,
-      "id": "e6"
+      "start": 520,
+      "end": 529,
+      "id": "e8"
     },
     {
-      "surface": "Droughts Spring Up Across America",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "headline",
+      "surface": "America",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 574,
+      "start": 600,
       "end": 607,
-      "id": "e7"
+      "id": "e9"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "the Dakotas",
-      "reason": "Plural region reference; could map to a location concept, but no exact canonical entry is provided."
-    },
-    {
-      "surface": "Americans",
-      "reason": "Could be a people-group OTHER_ENTITY, but not explicitly listed in the dictionary."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "numbered_point",
@@ -141,5 +161,5 @@
       "text": "Droughts Spring Up Across America"
     }
   ],
-  "tagged_text": "1) I notice that droughts in general are a lot more prevalent across the <entity type=\"LOCATION\" canonical=\"country\">country</entity> than I previously was aware of. I also assumed that arid states would be more prone to drought than others, but that appears to be incorrect.\n2) I wonder why the desert states maintain more water than <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity>, <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>, and the Dakotas. I am also curious about if there’s any correlation between <entity type=\"LOCATION\" canonical=\"landlocked_states\">landlocked states</entity> and drought. \n3) This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because <entity type=\"EVENT\" canonical=\"environmental_issues\">environmental issues</entity> such as these have an impact on all Americans and we need to do something to stop it. \n4) <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Droughts Spring Up Across America</entity>"
+  "tagged_text": "1) I notice that droughts in general are a lot more prevalent across the <entity type=\"LOCATION\" canonical=\"country\">country</entity> than I previously was aware of. I also assumed that arid states would be more prone to drought than others, but that appears to be incorrect.\n2) I wonder why the <entity type=\"LOCATION\" canonical=\"desert_state\">desert states</entity> maintain more water than <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity>, <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>, and the <entity type=\"LOCATION\" canonical=\"north_dakota\">Dakotas</entity>. I am also curious about if there’s any correlation between landlocked states and drought. \n3) This relates to <entity type=\"speaker\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">my</entity> <entity type=\"my_community\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">community</entity> because environmental issues such as these have an impact on all <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">Americans</entity> and we need to do something to stop it. \n4) Droughts Spring Up Across <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">America</entity>"
 }

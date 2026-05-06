@@ -30,29 +30,29 @@
       "id": "e1"
     },
     {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 379,
-      "end": 384,
+      "occurrence_index": 2,
+      "start": 257,
+      "end": 262,
       "id": "e2"
     },
     {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
+      "surface": "coast",
+      "type": "LOCATION",
+      "canonical": "coast",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 455,
-      "end": 460,
+      "occurrence_index": 0,
+      "start": 466,
+      "end": 471,
       "id": "e3"
     },
     {
@@ -69,14 +69,14 @@
       "id": "e4"
     },
     {
-      "surface": "the U.S",
+      "surface": "U.S",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
@@ -84,37 +84,39 @@
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e6"
     },
     {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "surface": "time",
+      "type": "TIME_REFERENCE",
+      "canonical": "time_reference",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e7"
     },
     {
-      "surface": "the coast",
-      "type": "LOCATION",
-      "canonical": "the_coast",
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -122,11 +124,12 @@
       "id": "e8"
     },
     {
-      "surface": "specific time",
-      "type": "TIME_REFERENCE",
-      "canonical": "time",
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -135,73 +138,60 @@
       "id": "e9"
     },
     {
-      "surface": "my community",
-      "type": "LOCATION",
-      "canonical": "my_community",
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e10"
     },
     {
-      "surface": "an island",
-      "type": "LOCATION",
-      "canonical": "island",
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e11"
     },
     {
-      "surface": "our crops",
+      "surface": "water",
       "type": "OTHER_ENTITY",
-      "canonical": "crops",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "The fight for water from coast to coast",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "body",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e12"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "dryer places",
-      "reason": "Likely means drier places, but no exact canonical entity for this phrase."
-    },
-    {
-      "surface": "correct statistics",
-      "reason": "Chart-quality commentary, not an entity."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "What I notice in this graph is that the Midwest areas of the U.S are the most affected by droughts, and near the coast there's less. This makes me wonder why the dryer places attract more water and if the graph is a specific time or in general because some graphs don't show correct statistics. This affects my community because we are on an island already surrounded by tons of water so any drought would severely affect us and our crops. \"The fight for water from coast to coast\""
+      "label": "",
+      "text": "What I notice in this graph is that the Midwest areas of the U.S are the most affected by droughts, and near the coast there's less. This makes me wonder why the dryer places attract more water and if the graph is a specific time or in general because some graphs don't show correct statistics. This affects my community because we are on an island already surrounded by tons of water so any drought would severely affect us and our crops."
+    },
+    {
+      "section": "headline",
+      "label": "",
+      "text": "\"The fight for water from coast to coast\""
     }
   ],
-  "tagged_text": "What I notice in this graph is that the Midwest areas of the U.S are the most affected by droughts, and near the coast there's less. This makes me wonder why the dryer places attract more water and if the graph is a specific time or in general because some graphs don't show correct statistics. This affects my community because we are on an island already surrounded by tons of water so any drought would severely affect us and our crops. \"The fight for water from coast to coast\""
+  "tagged_text": "What I notice in this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> is that the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> areas of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity> are the most affected by <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">droughts</entity>, and near the <entity type=\"LOCATION\" canonical=\"coast\">coast</entity> there's less. This makes me wonder why the dryer places attract more water and if the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> is a specific <entity type=\"TIME_REFERENCE\" canonical=\"time_reference\">time</entity> or in general because some <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graphs</entity> don't show correct statistics. This affects <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because we are on an island already surrounded by tons of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity> so any <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" modality=\"questioned\">drought</entity> would severely affect us and our crops. \"The fight for <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" section=\"headline\">water</entity> from coast to coast\""
 }

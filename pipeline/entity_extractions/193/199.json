@@ -30,69 +30,57 @@
       "id": "e1"
     },
     {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
+      "surface": "Florida",
+      "type": "LOCATION",
+      "canonical": "florida",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 294,
-      "end": 298,
+      "start": 366,
+      "end": 373,
       "id": "e2"
     },
     {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 435,
-      "end": 439,
-      "id": "e3"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 531,
-      "end": 535,
-      "id": "e4"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": 637,
-      "end": 641,
-      "id": "e5"
-    },
-    {
-      "surface": "states",
+      "surface": "Alaska",
       "type": "LOCATION",
-      "canonical": "states",
+      "canonical": "alaska",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 820,
+      "start": 402,
+      "end": 408,
+      "id": "e3"
+    },
+    {
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 798,
+      "end": 805,
+      "id": "e4"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 813,
       "end": 826,
-      "id": "e6"
+      "id": "e5"
     },
     {
       "surface": "Texas",
@@ -105,102 +93,55 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "severe to exceptional drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e7"
-    },
-    {
-      "surface": "oceans",
-      "type": "LOCATION",
-      "canonical": "ocean",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "Florida",
-      "type": "LOCATION",
-      "canonical": "florida",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "Alaska",
-      "type": "LOCATION",
-      "canonical": "alaska",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "weather app",
-      "type": "CHART_ELEMENT",
-      "canonical": "weather_app",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "22 degrees",
-      "type": "UNIT",
-      "canonical": "degrees",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "The rise of Droughts in the Midwest of the United States",
-      "type": "LOCATION",
-      "canonical": "west_region",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "lower part of Texas",
-      "reason": "Likely a regional location phrase, but no exact canonical match beyond Texas."
+      "reason": "Geographic subregion phrase; Texas is tagged, but the subregion itself is not separately canonicalized."
     },
     {
-      "surface": "The rise of Droughts in the Midwest of the United States",
-      "reason": "Appears to be a headline/title, but no explicit headline marker is present; also contains a mix of region and title text."
+      "surface": "little to no rain",
+      "reason": "Weather condition phrase without a matching canonical entity."
+    },
+    {
+      "surface": "oceans",
+      "reason": "Generic geographic feature, not a listed canonical entity."
+    },
+    {
+      "surface": "weather app",
+      "reason": "Chart-like or device reference not relevant to the provided schema."
+    },
+    {
+      "surface": "22 degrees",
+      "reason": "Numeric temperature mention, but units are not explicit and no temperature entity type is provided."
     }
   ],
   "section_segments": [
     {
       "section": "body",
       "text": "I notice that in the mid-west areas and the lower part of Texas have severe to exceptional drought. I wonder why there's been little to no rain for most of the states, but also why it affects the mid-west more. I wonder if it's because they aren't as close to the oceans, so there's a lot less rain that makes it to the mid-west. I also notice that basically all of Florida isn't colored in along with Alaska, so I assume there's been rain in those places. This relates to my community because I didn't even realize that it hadn't rained in a while until my teachers and mom started pointing it out. It's been a lot cooler ever since it rained. When I checked the weather app today, it said it was supposed to feel like 22 degrees out. I think a good headline could be \"The rise of Droughts in the Midwest of the United States.\""
+    },
+    {
+      "section": "headline",
+      "label": "The rise of Droughts in the Midwest of the United States.",
+      "text": "The rise of Droughts in the Midwest of the United States."
     }
   ],
-  "tagged_text": "I notice that in the <entity type=\"LOCATION\" canonical=\"midwest\">mid-west</entity> areas and the lower part of <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> have severe to exceptional drought. I wonder why there's been little to no <entity type=\"EVENT\" canonical=\"rain\">rain</entity> for most of the <entity type=\"LOCATION\" canonical=\"states\">states</entity>, but also why it affects the <entity type=\"LOCATION\" canonical=\"midwest\">mid-west</entity> more. I wonder if it's because they aren't as close to the <entity type=\"LOCATION\" canonical=\"ocean\">oceans</entity>, so there's a lot less <entity type=\"EVENT\" canonical=\"rain\">rain</entity> that makes it to the <entity type=\"LOCATION\" canonical=\"midwest\">mid-west</entity>. I also notice that basically all of <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> isn't colored in along with <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity>, so I assume there's been <entity type=\"EVENT\" canonical=\"rain\">rain</entity> in those places. This relates to my community because I didn't even realize that it hadn't rained in a while until my teachers and mom started pointing it out. It's been a lot cooler ever since it rained. When I checked the <entity type=\"CHART_ELEMENT\" canonical=\"weather_app\">weather app</entity> today, it said it was supposed to feel like <entity type=\"UNIT\" canonical=\"degrees\">22 degrees</entity> out. I think a good headline could be \"<entity type=\"LOCATION\" canonical=\"west_region\">The rise of Droughts in the Midwest of the United States</entity>.\""
+  "tagged_text": "I notice that in the mid-west areas and the lower part of Texas have severe to exceptional drought. I wonder why there's been little to no rain for most of the states, but also why it affects the mid-west more. I wonder if it's because they aren't as close to the oceans, so there's a lot less rain that makes it to the mid-west. I also notice that basically all of Florida isn't colored in along with Alaska, so I assume there's been rain in those places. This relates to my community because I didn't even realize that it hadn't rained in a while until my teachers and mom started pointing it out. It's been a lot cooler ever since it rained. When I checked the weather app today, it said it was supposed to feel like 22 degrees out. I think a good headline could be \"The rise of Droughts in the Midwest of the United States.\""
 }

@@ -4,226 +4,63 @@
   "raw_comment": "This map depicts drought conditions across the United States, categorized into five levels: abnormally dry, moderate, severe, extreme, and exceptional drought. The most severe drought (indicated in deep red) is concentrated in Texas and parts of Wyoming, while extreme drought areas also appear prominently in these regions and the southern Plains. Large portions of the western U.S., particularly in states like California, Nevada, Utah, and Arizona, show widespread severe to moderate drought conditions, a pattern consistent with ongoing water scarcity issues in the region. In the Midwest and eastern U.S., pockets of drought are less severe but still present, notably in Ohio and parts of West Virginia. The map highlights the widespread nature of drought, affecting diverse regions from the Great Plains to the Southeast, underscoring the need for water resource management and climate resilience strategies.\n\nHow are these droughts affecting agriculture, water supplies, and ecosystems in the most affected areas, especially in the already arid western states?\nWhat are the predictions for future drought patterns across the country, and which regions are most vulnerable to worsening conditions?\n\nProlonged drought in other parts of the country could drive population migration toward states with more stable water supplies, like New Jersey, potentially impacting housing, infrastructure, and resources.\n\n\"Crisis in Color: How the Drought Map Paints a Dire Picture for the U.S.\"",
   "entities": [
     {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 47,
-      "end": 60,
+      "start": 5,
+      "end": 8,
       "id": "e0"
     },
     {
-      "surface": "abnormally dry",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "abnormally_dry",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 92,
-      "end": 106,
-      "id": "e1"
-    },
-    {
-      "surface": "moderate",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "moderate",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 108,
-      "end": 116,
-      "id": "e2"
-    },
-    {
-      "surface": "severe",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "severe",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 118,
-      "end": 124,
-      "id": "e3"
-    },
-    {
-      "surface": "severe",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "severe",
-      "var": "drought_severity",
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 169,
-      "end": 175,
-      "id": "e4"
+      "start": 713,
+      "end": 716,
+      "id": "e1"
     },
     {
-      "surface": "extreme",
+      "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "extreme",
-      "var": "drought_severity",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 261,
-      "end": 268,
-      "id": "e5"
+      "start": 1481,
+      "end": 1485,
+      "id": "e2"
     },
     {
-      "surface": "southern Plains",
-      "type": "LOCATION",
-      "canonical": "south",
+      "surface": "drought conditions",
+      "type": "DATA_VAR",
+      "canonical": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 332,
-      "end": 347,
-      "id": "e6"
+      "start": null,
+      "end": null,
+      "id": "e3"
     },
     {
-      "surface": "U.S.",
+      "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 379,
-      "end": 383,
-      "id": "e7"
-    },
-    {
-      "surface": "U.S.",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 605,
-      "end": 609,
-      "id": "e8"
-    },
-    {
-      "surface": "Ohio",
-      "type": "LOCATION",
-      "canonical": "ohio",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 676,
-      "end": 680,
-      "id": "e9"
-    },
-    {
-      "surface": "West Virginia",
-      "type": "LOCATION",
-      "canonical": "west_virginia",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 694,
-      "end": 707,
-      "id": "e10"
-    },
-    {
-      "surface": "Great Plains",
-      "type": "LOCATION",
-      "canonical": "great_plains",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 797,
-      "end": 809,
-      "id": "e11"
-    },
-    {
-      "surface": "Southeast",
-      "type": "LOCATION",
-      "canonical": "southeast",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 817,
-      "end": 826,
-      "id": "e12"
-    },
-    {
-      "surface": "country",
-      "type": "LOCATION",
-      "canonical": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1132,
-      "end": 1139,
-      "id": "e13"
-    },
-    {
-      "surface": "New Jersey",
-      "type": "LOCATION",
-      "canonical": "new_jersey",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1338,
-      "end": 1348,
-      "id": "e14"
-    },
-    {
-      "surface": "Crisis in Color: How the Drought Map Paints a Dire Picture for the U.S.",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1414,
-      "end": 1485,
-      "id": "e15"
-    },
-    {
-      "surface": "exceptional",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -231,7 +68,133 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e4"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "moderate",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "moderate",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "moderate",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "moderate",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "exceptional drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e13"
     },
     {
       "surface": "Texas",
@@ -244,7 +207,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e14"
     },
     {
       "surface": "Wyoming",
@@ -257,7 +220,35 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e15"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "U.S.",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e17"
     },
     {
       "surface": "California",
@@ -270,7 +261,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e18"
     },
     {
       "surface": "Nevada",
@@ -283,7 +274,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e19"
     },
     {
       "surface": "Utah",
@@ -296,7 +287,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e21"
+      "id": "e20"
     },
     {
       "surface": "Arizona",
@@ -309,7 +300,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e21"
     },
     {
       "surface": "Midwest",
@@ -322,33 +313,137 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e22"
+    },
+    {
+      "surface": "Ohio",
+      "type": "LOCATION",
+      "canonical": "ohio",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e23"
-    }
-  ],
-  "unresolved_mentions": [
-    {
-      "surface": "water scarcity",
-      "reason": "Could be an OTHER_ENTITY concept, but not explicitly in the provided dictionary and not a standard tag type."
     },
     {
-      "surface": "climate resilience strategies",
-      "reason": "Conceptual phrase; could be OTHER_ENTITY but not clearly listed in the dictionary."
+      "surface": "West Virginia",
+      "type": "LOCATION",
+      "canonical": "west_virginia",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e24"
     },
     {
-      "surface": "agriculture, water supplies, and ecosystems",
-      "reason": "These are entity-like concepts, but only loosely covered by OTHER_ENTITY categories and not clearly separable here."
+      "surface": "Great Plains",
+      "type": "LOCATION",
+      "canonical": "great_plains",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e25"
+    },
+    {
+      "surface": "Southeast",
+      "type": "LOCATION",
+      "canonical": "southeast",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e26"
+    },
+    {
+      "surface": "future",
+      "type": "TIME_REFERENCE",
+      "canonical": "future",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e27"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e28"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e29"
+    },
+    {
+      "surface": "New Jersey",
+      "type": "LOCATION",
+      "canonical": "new_jersey",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e30"
+    },
+    {
+      "surface": "Map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e31"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "This map depicts drought conditions across the United States, categorized into five levels: abnormally dry, moderate, severe, extreme, and exceptional drought. The most severe drought (indicated in deep red) is concentrated in Texas and parts of Wyoming, while extreme drought areas also appear prominently in these regions and the southern Plains. Large portions of the western U.S., particularly in states like California, Nevada, Utah, and Arizona, show widespread severe to moderate drought conditions, a pattern consistent with ongoing water scarcity issues in the region. In the Midwest and eastern U.S., pockets of drought are less severe but still present, notably in Ohio and parts of West Virginia. The map highlights the widespread nature of drought, affecting diverse regions from the Great Plains to the Southeast, underscoring the need for water resource management and climate resilience strategies.\n\nHow are these droughts affecting agriculture, water supplies, and ecosystems in the most affected areas, especially in the already arid western states?\nWhat are the predictions for future drought patterns across the country, and which regions are most vulnerable to worsening conditions?\n\nProlonged drought in other parts of the country could drive population migration toward states with more stable water supplies, like New Jersey, potentially impacting housing, infrastructure, and resources."
+      "text": "This map depicts drought conditions across the United States, categorized into five levels: abnormally dry, moderate, severe, extreme, and exceptional drought. The most severe drought (indicated in deep red) is concentrated in Texas and parts of Wyoming, while extreme drought areas also appear prominently in these regions and the southern Plains. Large portions of the western U.S., particularly in states like California, Nevada, Utah, and Arizona, show widespread severe to moderate drought conditions, a pattern consistent with ongoing water scarcity issues in the region. In the Midwest and eastern U.S., pockets of drought are less severe but still present, notably in Ohio and parts of West Virginia. The map highlights the widespread nature of drought, affecting diverse regions from the Great Plains to the Southeast, underscoring the need for water resource management and climate resilience strategies.\n\nHow are these droughts affecting agriculture, water supplies, and ecosystems in the most affected areas, especially in the already arid western states?\nWhat are the predictions for future drought patterns across the country, and which regions are most vulnerable to worsening conditions?\n\nProlonged drought in other parts of the country could drive population migration toward states with more stable water supplies, like New Jersey, potentially impacting housing, infrastructure, and resources.\n\n\"Crisis in Color: How the Drought Map Paints a Dire Picture for the U.S.\""
     },
     {
       "section": "headline",
-      "label": "Crisis in Color: How the Drought Map Paints a Dire Picture for the U.S.",
-      "text": "Crisis in Color: How the Drought Map Paints a Dire Picture for the U.S."
+      "label": "Crisis in Color",
+      "text": "How the Drought Map Paints a Dire Picture for the U.S."
     }
   ],
-  "tagged_text": "This map depicts drought conditions across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>, categorized into five levels: <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\">abnormally dry</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderate</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\">extreme</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional</entity> drought. The most severe drought (indicated in deep red) is concentrated in <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> and parts of <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>, while extreme drought areas also appear prominently in these regions and the <entity type=\"LOCATION\" canonical=\"south\">southern Plains</entity>. Large portions of the western <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity>, particularly in states like <entity type=\"LOCATION\" canonical=\"california\">California</entity>, <entity type=\"LOCATION\" canonical=\"nevada\">Nevada</entity>, <entity type=\"LOCATION\" canonical=\"utah\">Utah</entity>, and <entity type=\"LOCATION\" canonical=\"arizona\">Arizona</entity>, show widespread severe to moderate drought conditions, a pattern consistent with ongoing water scarcity issues in the region. In the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> and eastern <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity>, pockets of drought are less severe but still present, notably in <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> and parts of <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity>. The map highlights the widespread nature of drought, affecting diverse regions from the <entity type=\"LOCATION\" canonical=\"great_plains\">Great Plains</entity> to the <entity type=\"LOCATION\" canonical=\"southeast\">Southeast</entity>, underscoring the need for water resource management and climate resilience strategies.\n\nHow are these droughts affecting agriculture, water supplies, and ecosystems in the most affected areas, especially in the already arid western states?\nWhat are the predictions for future drought patterns across the country, and which regions are most vulnerable to worsening conditions?\n\nProlonged drought in other parts of the <entity type=\"LOCATION\" canonical=\"country\">country</entity> could drive population migration toward states with more stable water supplies, like <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>, potentially impacting housing, infrastructure, and resources.\n\n\"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">Crisis in Color: How the Drought Map Paints a Dire Picture for the U.S.</entity>\""
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"map\">map</entity> depicts <entity type=\"DATA_VAR\" canonical=\"drought_severity_category\">drought conditions</entity> across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>, categorized into five levels: <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity>. The most <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity> drought (indicated in deep red) is concentrated in <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> and parts of <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>, while <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> drought areas also appear prominently in these regions and the southern Plains. Large portions of the western <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity>, particularly in states like <entity type=\"LOCATION\" canonical=\"california\">California</entity>, <entity type=\"LOCATION\" canonical=\"nevada\">Nevada</entity>, <entity type=\"LOCATION\" canonical=\"utah\">Utah</entity>, and <entity type=\"LOCATION\" canonical=\"arizona\">Arizona</entity>, show widespread <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity> to <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity> drought conditions, a pattern consistent with ongoing water scarcity issues in the region. In the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> and eastern <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity>, pockets of drought are less severe but still present, notably in <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> and parts of <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity>. The map highlights the widespread nature of drought, affecting diverse regions from the <entity type=\"LOCATION\" canonical=\"great_plains\">Great Plains</entity> to the <entity type=\"LOCATION\" canonical=\"southeast\">Southeast</entity>, underscoring the need for water resource management and climate resilience strategies.\n\nHow are these droughts affecting agriculture, water supplies, and ecosystems in the most affected areas, especially in the already arid western states?\nWhat are the predictions for <entity type=\"TIME_REFERENCE\" canonical=\"future\">future</entity> drought patterns across the <entity type=\"LOCATION\" canonical=\"country\">country</entity>, and which regions are most vulnerable to worsening conditions?\n\nProlonged drought in other parts of the <entity type=\"LOCATION\" canonical=\"country\">country</entity> could drive population migration toward states with more stable water supplies, like <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>, potentially impacting housing, infrastructure, and resources.\n\n\"Crisis in Color: How the Drought <entity type=\"CHART_ELEMENT\" canonical=\"map\">Map</entity> Paints a Dire Picture for the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity>.\""
 }

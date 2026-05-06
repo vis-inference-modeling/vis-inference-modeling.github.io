@@ -7,7 +7,7 @@
       "surface": "extreme",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
       "surface": "extreme",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -32,23 +32,24 @@
       "id": "e1"
     },
     {
-      "surface": "exceptional",
+      "surface": "U.S",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
-      "section": "body",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 323,
+      "end": 326,
       "id": "e2"
     },
     {
-      "surface": "country",
-      "type": "LOCATION",
-      "canonical": "country",
+      "surface": "exceptional droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -63,7 +64,7 @@
       "type": "CHART_ELEMENT",
       "canonical": "graph",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -72,12 +73,12 @@
       "id": "e4"
     },
     {
-      "surface": "year",
-      "type": "TIME_REFERENCE",
-      "canonical": "this_year",
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -85,13 +86,13 @@
       "id": "e5"
     },
     {
-      "surface": "me and my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "surface": "extreme drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -101,16 +102,12 @@
   ],
   "unresolved_mentions": [
     {
-      "surface": "droughts",
-      "reason": "Could be an EVENT, but the exact canonical is not specified in the normalized dictionary for this article."
+      "surface": "middle of the country",
+      "reason": "Geographic region is vague; could refer to a U.S. region but no specific canonical location is provided."
     },
     {
-      "surface": "drought category",
-      "reason": "Likely refers to drought severity/category, but no exact canonical match is provided."
-    },
-    {
-      "surface": "U.S",
-      "reason": "Likely maps to United States, but the comment uses it only in the headline and the surface is truncated."
+      "surface": "now",
+      "reason": "Temporal reference is too vague to map confidently."
     }
   ],
   "section_segments": [
@@ -124,5 +121,5 @@
       "text": "Intensity of the drought conditions in the U.S"
     }
   ],
-  "tagged_text": "I noticed that the majority of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\">extreme</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional</entity> droughts were toward the middle of the <entity type=\"LOCATION\" canonical=\"country\">country</entity>.\n\nI wonder what the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> looked like a little bit earlier in the <entity type=\"TIME_REFERENCE\" canonical=\"this_year\">year</entity> compared to now.\n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">me and my community</entity> because we are in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\">extreme</entity> drought category.\n\n\"Intensity of the drought conditions in the U.S\""
+  "tagged_text": "I noticed that the majority of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional droughts</entity> were toward the middle of the country.\n\nI wonder what the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> looked like a little bit earlier in the year compared to now.\n\nThis relates to me and <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because we are in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme drought</entity> category.\n\nIntensity of the drought conditions in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">U.S</entity>"
 }

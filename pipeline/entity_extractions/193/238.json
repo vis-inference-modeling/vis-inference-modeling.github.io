@@ -19,7 +19,7 @@
     {
       "surface": "Coastal areas",
       "type": "LOCATION",
-      "canonical": "coastal_areas",
+      "canonical": "coast",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -28,6 +28,19 @@
       "start": 75,
       "end": 88,
       "id": "e1"
+    },
+    {
+      "surface": "west",
+      "type": "LOCATION",
+      "canonical": "west",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 120,
+      "end": 124,
+      "id": "e2"
     },
     {
       "surface": "California",
@@ -40,7 +53,7 @@
       "occurrence_index": 0,
       "start": 126,
       "end": 136,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "Oregon",
@@ -53,117 +66,44 @@
       "occurrence_index": 0,
       "start": 141,
       "end": 147,
-      "id": "e3"
-    },
-    {
-      "surface": "central areas",
-      "type": "LOCATION",
-      "canonical": "central_areas",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 189,
-      "end": 202,
       "id": "e4"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 212,
-      "end": 216,
-      "id": "e5"
-    },
-    {
-      "surface": "snow",
-      "type": "EVENT",
-      "canonical": "snow",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 217,
-      "end": 221,
-      "id": "e6"
-    },
-    {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": 279,
-      "end": 284,
-      "id": "e7"
-    },
-    {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 1,
-      "start": 302,
-      "end": 307,
-      "id": "e8"
     },
     {
       "surface": "Aurora CO",
       "type": "LOCATION",
-      "canonical": "aurora_co",
+      "canonical": "colorado",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 374,
       "end": 383,
-      "id": "e9"
-    },
-    {
-      "surface": "Where's my Water?",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": 449,
-      "end": 466,
-      "id": "e10"
+      "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "more snow are less dry",
-      "reason": "Descriptive phrase; not a standalone entity."
+      "surface": "more snow",
+      "reason": "Describes a condition, but no confirmed data variable or level mapping in the provided list."
     },
     {
-      "surface": "high eleveation",
-      "reason": "Misspelled common noun, not an entity."
+      "surface": "less dry",
+      "reason": "Likely refers to drought severity, but the exact level is unclear."
+    },
+    {
+      "surface": "rain/snow",
+      "reason": "Could refer to precipitation, but no matching data variable is provided."
+    },
+    {
+      "surface": "water",
+      "reason": "Generic substance mention; not clearly the confirmed water_usage variable in this context."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "What do you notice?\n\nPlaces with more snow are less dry, such as colorado. Coastal areas are the same especially in the west, California and Oregon being examples\n\nWhat do you wonder?\n\nWhy central areas get less rain/snow\n\nHow does this relate to you and your community?\n\nI like water, my friends like water. We don't want to be thirsty especially at a high eleveation like Aurora CO.\n\nCreate a catchy headline that captures the graph’s main idea."
+      "text": "What do you notice?\n\nPlaces with more snow are less dry, such as colorado. Coastal areas are the same especially in the west, California and Oregon being examples\n\nWhat do you wonder?\n\nWhy central areas get less rain/snow\n\nHow does this relate to you and your community?\n\nI like water, my friends like water. We don't want to be thirsty especially at a high eleveation like Aurora CO.\n\nCreate a catchy headline that captures the graph’s main idea.\n\nWhere's my Water?"
     },
     {
       "section": "headline",
@@ -171,5 +111,5 @@
       "text": "Where's my Water?"
     }
   ],
-  "tagged_text": "What do you notice?\n\nPlaces with more snow are less dry, such as <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\">colorado</entity>. <entity type=\"LOCATION\" canonical=\"coastal_areas\" section=\"body\">Coastal areas</entity> are the same especially in the west, <entity type=\"LOCATION\" canonical=\"california\" section=\"body\">California</entity> and <entity type=\"LOCATION\" canonical=\"oregon\" section=\"body\">Oregon</entity> being examples\n\nWhat do you wonder?\n\nWhy <entity type=\"LOCATION\" canonical=\"central_areas\" section=\"body\">central areas</entity> get less <entity type=\"EVENT\" canonical=\"rain\" section=\"body\">rain</entity>/<entity type=\"EVENT\" canonical=\"snow\" section=\"body\">snow</entity>\n\nHow does this relate to you and your community?\n\nI like <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" section=\"body\">water</entity>, my friends like <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" section=\"body\">water</entity>. We don't want to be thirsty especially at a high eleveation like <entity type=\"LOCATION\" canonical=\"aurora_co\" section=\"body\">Aurora CO</entity>.\n\nCreate a catchy headline that captures the graph’s main idea.\n\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Where's my Water?</entity>"
+  "tagged_text": "What do you notice?\n\nPlaces with more snow are less dry, such as <entity type=\"LOCATION\" canonical=\"colorado\">colorado</entity>. <entity type=\"LOCATION\" canonical=\"coast\">Coastal areas</entity> are the same especially in the <entity type=\"LOCATION\" canonical=\"west\">west</entity>, <entity type=\"LOCATION\" canonical=\"california\">California</entity> and <entity type=\"LOCATION\" canonical=\"oregon\">Oregon</entity> being examples\n\nWhat do you wonder?\n\nWhy central areas get less rain/snow\n\nHow does this relate to you and your community?\n\nI like water, my friends like water. We don't want to be thirsty especially at a high eleveation like <entity type=\"LOCATION\" canonical=\"colorado\">Aurora CO</entity>.\n\nCreate a catchy headline that captures the graph’s main idea.\n\nWhere's my Water?"
 }

@@ -17,32 +17,72 @@
       "id": "e0"
     },
     {
-      "surface": "US",
+      "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 209,
+      "end": 223,
+      "id": "e1"
+    },
+    {
+      "surface": "dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 220,
+      "end": 223,
+      "id": "e2"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 452,
-      "end": 454,
-      "id": "e1"
+      "start": 381,
+      "end": 390,
+      "id": "e3"
     },
     {
-      "surface": "US",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 1,
+      "start": 521,
+      "end": 530,
+      "id": "e4"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
       "start": 551,
       "end": 553,
-      "id": "e2"
+      "id": "e5"
     },
     {
       "surface": "climate change",
@@ -55,7 +95,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e3"
+      "id": "e6"
     },
     {
       "surface": "global warming",
@@ -68,25 +108,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e4"
+      "id": "e7"
+    },
+    {
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "abnormally dry",
-      "reason": "Likely a drought severity level, but no exact canonical is provided in the normalized dictionary."
-    },
-    {
-      "surface": "dry",
-      "reason": "Likely a drought severity level, but no exact canonical is provided in the normalized dictionary."
-    },
-    {
       "surface": "white parts",
-      "reason": "Could refer to uncolored map regions or a chart element, but no explicit chart-element canonical is provided."
-    },
-    {
-      "surface": "droughts",
-      "reason": "General event mention; could be tagged as EVENT drought, but repeated generic mentions make exact counting ambiguous in this comment."
+      "reason": "Likely refers to uncolored map areas, but the exact chart meaning is not explicit enough to tag as a chart element or level."
     }
   ],
   "section_segments": [
@@ -96,9 +138,9 @@
     },
     {
       "section": "headline",
-      "label": "Headline",
-      "text": "Is the US drying up?"
+      "label": "\"Is the US drying up?\"",
+      "text": "\"Is the US drying up?\""
     }
   ],
-  "tagged_text": "I noticed that certain regions, like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, are experiencing more droughts than other areas. I also see several areas with less drought than other areas. Many states don't have extreme droughts and are either abnormally dry or dry. I wonder why there are white parts. I wonder why these droughts are happening and how we could prevent them from happening again. This relates to my community because it has affected my way of living since I live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" speaker_context=\"true\">US</entity>. This also shows how <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> and <entity type=\"EVENT\" canonical=\"global_warming\">global warming</entity> affect our community and nation. \"Is the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> drying up?\""
+  "tagged_text": "I noticed that certain regions, like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, are experiencing more droughts than other areas. I also see several areas with less drought than other areas. Many states don't have extreme droughts and are either <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">dry</entity>. I wonder why there are white parts. I wonder why these droughts are happening and how we could prevent them from happening again. This relates to my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because it has affected my way of living since I live in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" speaker_context=\"true\">US</entity>. This also shows how <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> and <entity type=\"EVENT\" canonical=\"global_warming\">global warming</entity> affect our community and nation. \"Is the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> drying up?\""
 }

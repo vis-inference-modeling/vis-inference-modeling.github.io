@@ -47,7 +47,7 @@
       "type": "LOCATION",
       "canonical": "new_york",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -60,7 +60,7 @@
       "type": "LOCATION",
       "canonical": "new_york",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
@@ -69,17 +69,16 @@
       "id": "e4"
     },
     {
-      "surface": "my community and I",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 696,
-      "end": 714,
+      "start": 699,
+      "end": 708,
       "id": "e5"
     },
     {
@@ -98,8 +97,8 @@
     {
       "surface": "exceptional",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -111,8 +110,9 @@
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -123,22 +123,9 @@
       "id": "e8"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "years",
+      "surface": "past years",
       "type": "TIME_REFERENCE",
-      "canonical": "previous_years",
+      "canonical": "past_years",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -146,7 +133,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e9"
     },
     {
       "surface": "California",
@@ -159,39 +146,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "global warming",
-      "type": "EVENT",
-      "canonical": "global_warming",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "recent years",
-      "type": "TIME_REFERENCE",
-      "canonical": "recent_months",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
+      "id": "e10"
     },
     {
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -199,57 +160,47 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e11"
     },
     {
       "surface": "New York",
       "type": "LOCATION",
       "canonical": "new_york",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e12"
     },
     {
-      "surface": "rainfall",
-      "type": "EVENT",
-      "canonical": "rainfall",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "my community and me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e13"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "the area",
-      "reason": "Generic location reference; likely New York, but not explicit enough to canonicalize separately."
+      "surface": "rainfall",
+      "reason": "Related to water/weather but no confirmed canonical ID in the provided list."
+    },
+    {
+      "surface": "atmospheric conditions",
+      "reason": "Abstract environmental concept without a confirmed canonical ID."
     },
     {
       "surface": "dry conditions",
-      "reason": "Could refer to drought severity, but the exact canonical level is not always explicit."
+      "reason": "Could refer to drought severity, but the exact level is unclear beyond the already tagged drought mentions."
     }
   ],
   "section_segments": [
@@ -258,5 +209,5 @@
       "text": "From this graph, I noticed that the northwest has an exceptional amount of drought, which makes me wonder what caused this change. In past years, I have studied that the majority of drought was centered in California, making me wonder about the impacts of global warming in recent years. I also wonder about the cause of the abnormally dry conditions in New York, considering that the area typically receives a reasonable amount of rainfall. This graph relates to my community and me because it should prompt us to be aware of the atmospheric conditions, such as those pertaining to global warming, that are causing the dry conditions in New York. New York usually is never a dry area, therefore my community and I should begin to consider our actions that may be contributing to these dry conditions."
     }
   ],
-  "tagged_text": "From this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity>, I noticed that the <entity type=\"LOCATION\" canonical=\"northwest\" section=\"body\">northwest</entity> has an <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\">exceptional</entity> amount of <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity>, which makes me wonder what caused this change. In past <entity type=\"TIME_REFERENCE\" canonical=\"previous_years\" section=\"body\">years</entity>, I have studied that the majority of <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> was centered in <entity type=\"LOCATION\" canonical=\"california\" section=\"body\">California</entity>, making me wonder about the impacts of <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\" modality=\"questioned\">global warming</entity> in recent <entity type=\"TIME_REFERENCE\" canonical=\"recent_months\" section=\"body\">years</entity>. I also wonder about the cause of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\" section=\"body\" modality=\"questioned\">abnormally dry</entity> conditions in <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">New York</entity>, considering that the area typically receives a reasonable amount of <entity type=\"EVENT\" canonical=\"rainfall\" section=\"body\">rainfall</entity>. This <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\" section=\"body\">my community and me</entity> because it should prompt us to be aware of the atmospheric conditions, such as those pertaining to <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\">global warming</entity>, that are causing the dry conditions in <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">New York</entity>. <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">New York</entity> usually is never a dry area, therefore <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\" section=\"body\">my community and I</entity> should begin to consider our actions that may be contributing to these dry conditions."
+  "tagged_text": "From this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I noticed that the <entity type=\"LOCATION\" canonical=\"northwest\">northwest</entity> has an <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional</entity> amount of <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">drought</entity>, which makes me wonder what caused this change. In <entity type=\"TIME_REFERENCE\" canonical=\"past_years\">past years</entity>, I have studied that the majority of drought was centered in <entity type=\"LOCATION\" canonical=\"california\">California</entity>, making me wonder about the impacts of <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"questioned\">global warming</entity> in recent years. I also wonder about the cause of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" modality=\"questioned\">abnormally dry</entity> conditions in <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity>, considering that the area typically receives a reasonable amount of rainfall. This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> relates to my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> and me because it should prompt us to be aware of the atmospheric conditions, such as those pertaining to <entity type=\"EVENT\" canonical=\"global_warming\">global warming</entity>, that are causing the dry conditions in <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity>. <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> usually is never a dry area, therefore my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> and I should begin to consider our actions that may be contributing to these dry conditions."
 }

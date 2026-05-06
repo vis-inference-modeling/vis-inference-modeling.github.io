@@ -4,6 +4,19 @@
   "raw_comment": "1. The worst droughts seem to be roughly concentrated near the middle of the country. Alaska seems mostly unaffected by drought. \n2. How does this map compare to those showing heat waves and wildfires? What geographic characteristics do the regions most impacted by droughts have in common? Where are the major agricultural areas and how are they impacted by this?\n3. One of my primary hobbies is gardening, so I’ve noticed that my area has been especially dry lately. Knowing about precipitation levels can help choose more drought-resistant strains to plant.\n4. All Dried Up- A Closer Look at Drought Across the States",
   "entities": [
     {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 77,
+      "end": 84,
+      "id": "e0"
+    },
+    {
       "surface": "Alaska",
       "type": "LOCATION",
       "canonical": "alaska",
@@ -14,66 +27,52 @@
       "occurrence_index": 0,
       "start": 86,
       "end": 92,
-      "id": "e0"
+      "id": "e1"
+    },
+    {
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 147,
+      "end": 150,
+      "id": "e2"
     },
     {
       "surface": "heat waves",
       "type": "EVENT",
       "canonical": "heat_waves",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 176,
       "end": 186,
-      "id": "e1"
+      "id": "e3"
     },
     {
       "surface": "wildfires",
       "type": "EVENT",
       "canonical": "wildfires",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 191,
       "end": 200,
-      "id": "e2"
-    },
-    {
-      "surface": "agricultural areas",
-      "type": "OTHER_ENTITY",
-      "canonical": "agriculture",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 311,
-      "end": 329,
-      "id": "e3"
-    },
-    {
-      "surface": "gardening",
-      "type": "OTHER_ENTITY",
-      "canonical": "gardening",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 397,
-      "end": 406,
       "id": "e4"
     },
     {
       "surface": "my area",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_area",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -84,9 +83,24 @@
       "id": "e5"
     },
     {
+      "surface": "dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 457,
+      "end": 460,
+      "id": "e6"
+    },
+    {
       "surface": "precipitation levels",
-      "type": "DATA_VAR",
-      "canonical": "precipitation",
+      "type": "OTHER_ENTITY",
+      "canonical": "precipitation_levels",
+      "subtype": "concept",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -94,36 +108,37 @@
       "occurrence_index": 0,
       "start": 483,
       "end": 503,
-      "id": "e6"
+      "id": "e7"
     },
     {
-      "surface": "All Dried Up- A Closer Look at Drought Across the States",
+      "surface": "drought-resistant strains",
       "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "canonical": "drought_resistant_strains",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 564,
+      "start": 525,
+      "end": 550,
+      "id": "e8"
+    },
+    {
+      "surface": "Drought Across the States",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 595,
       "end": 620,
-      "id": "e7"
+      "id": "e9"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "middle of the country",
-      "reason": "Location/region phrase without an exact canonical match."
-    },
-    {
-      "surface": "drought-resistant strains",
-      "reason": "Could refer to plant varieties, but not a normalized entity."
-    },
-    {
-      "surface": "states",
-      "reason": "Generic location term; could be a broader region reference but no specific canonical is intended here."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "numbered_point",
@@ -141,10 +156,10 @@
       "text": "One of my primary hobbies is gardening, so I’ve noticed that my area has been especially dry lately. Knowing about precipitation levels can help choose more drought-resistant strains to plant."
     },
     {
-      "section": "numbered_point",
+      "section": "headline",
       "label": "4",
       "text": "All Dried Up- A Closer Look at Drought Across the States"
     }
   ],
-  "tagged_text": "1. The worst droughts seem to be roughly concentrated near the middle of the country. <entity type=\"LOCATION\" canonical=\"alaska\" section=\"numbered_point\" label=\"1\">Alaska</entity> seems mostly unaffected by drought. \n2. How does this map compare to those showing <entity type=\"EVENT\" canonical=\"heat_waves\" section=\"numbered_point\" label=\"2\">heat waves</entity> and <entity type=\"EVENT\" canonical=\"wildfires\" section=\"numbered_point\" label=\"2\">wildfires</entity>? What geographic characteristics do the regions most impacted by droughts have in common? Where are the major <entity type=\"OTHER_ENTITY\" canonical=\"agriculture\" subtype=\"other\" section=\"numbered_point\" label=\"2\">agricultural areas</entity> and how are they impacted by this?\n3. One of my primary hobbies is <entity type=\"OTHER_ENTITY\" canonical=\"gardening\" subtype=\"other\" section=\"numbered_point\" label=\"3\">gardening</entity>, so I’ve noticed that <entity type=\"LOCATION\" canonical=\"my_area\" section=\"numbered_point\" label=\"3\" speaker_context=\"true\">my area</entity> has been especially dry lately. Knowing about <entity type=\"DATA_VAR\" canonical=\"precipitation\" section=\"numbered_point\" label=\"3\">precipitation levels</entity> can help choose more drought-resistant strains to plant.\n4. <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"numbered_point\" label=\"4\">All Dried Up- A Closer Look at Drought Across the States</entity>"
+  "tagged_text": "1. The worst droughts seem to be roughly concentrated near the middle of the country. <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> seems mostly unaffected by drought. \n2. How does this <entity type=\"CHART_ELEMENT\" canonical=\"map\">map</entity> compare to those showing <entity type=\"EVENT\" canonical=\"heat_waves\">heat waves</entity> and <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity>? What geographic characteristics do the regions most impacted by droughts have in common? Where are the major agricultural areas and how are they impacted by this?\n3. One of my primary hobbies is gardening, so I’ve noticed that <entity type=\"OTHER_ENTITY\" canonical=\"my_area\" subtype=\"group\" speaker_context=\"true\">my area</entity> has been especially dry lately. Knowing about precipitation levels can help choose more drought-resistant strains to plant.\n4. All Dried Up- A Closer Look at <entity type=\"CHART_ELEMENT\" canonical=\"headline\">Drought Across the States</entity>"
 }

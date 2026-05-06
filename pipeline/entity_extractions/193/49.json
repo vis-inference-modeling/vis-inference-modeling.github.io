@@ -7,7 +7,7 @@
       "surface": "severe",
       "type": "DATA_VAR_LEVEL",
       "canonical": "severe",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,49 +18,49 @@
       "id": "e0"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "Nebraska",
+      "type": "LOCATION",
+      "canonical": "nebraska",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 65,
-      "end": 72,
+      "start": 76,
+      "end": 84,
       "id": "e1"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "Wyoming",
+      "type": "LOCATION",
+      "canonical": "wyoming",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 162,
-      "end": 169,
+      "occurrence_index": 0,
+      "start": 89,
+      "end": 96,
       "id": "e2"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "21st century",
+      "type": "TIME_REFERENCE",
+      "canonical": "21st_century",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 230,
-      "end": 237,
+      "occurrence_index": 0,
+      "start": 217,
+      "end": 229,
       "id": "e3"
     },
     {
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -69,32 +69,6 @@
       "start": 284,
       "end": 297,
       "id": "e4"
-    },
-    {
-      "surface": "American Southwest",
-      "type": "LOCATION",
-      "canonical": "southwest_region",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 313,
-      "end": 331,
-      "id": "e5"
-    },
-    {
-      "surface": "Lower 48 states",
-      "type": "LOCATION",
-      "canonical": "lower_48",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 337,
-      "end": 352,
-      "id": "e6"
     },
     {
       "surface": "Alaska",
@@ -107,53 +81,13 @@
       "occurrence_index": 0,
       "start": 354,
       "end": 360,
-      "id": "e7"
-    },
-    {
-      "surface": "southern United States",
-      "type": "LOCATION",
-      "canonical": "southern_united_states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 370,
-      "end": 392,
-      "id": "e8"
-    },
-    {
-      "surface": "ecosystem",
-      "type": "OTHER_ENTITY",
-      "canonical": "ecosystems",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 461,
-      "end": 470,
-      "id": "e9"
-    },
-    {
-      "surface": "wildfire",
-      "type": "EVENT",
-      "canonical": "wildfires",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 500,
-      "end": 508,
-      "id": "e10"
+      "id": "e5"
     },
     {
       "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -161,61 +95,25 @@
       "occurrence_index": 0,
       "start": 603,
       "end": 607,
-      "id": "e11"
-    },
-    {
-      "surface": "Nebraska",
-      "type": "LOCATION",
-      "canonical": "nebraska",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "Wyoming",
-      "type": "LOCATION",
-      "canonical": "wyoming",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "animals",
-      "type": "OTHER_ENTITY",
-      "canonical": "animals",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
+      "id": "e6"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "21st century drought",
-      "reason": "Temporal-historical phrase not present as a confirmed canonical event; could be a specific drought reference."
+      "surface": "American Southwest",
+      "reason": "Could map to a regional location, but no exact canonical entry is provided; 'Southwest' exists but the full phrase is not listed."
     },
     {
-      "surface": "plant communities",
-      "reason": "Entity-like ecological phrase but no confirmed canonical match in the provided dictionary."
+      "surface": "Lower 48 states",
+      "reason": "Common U.S. regional phrase, but no exact canonical mapping is provided in the reference list."
     },
     {
-      "surface": "The drought brought by the U.S.",
-      "reason": "Could be a headline/title phrase, but no exact canonical title match is confirmed."
+      "surface": "wildfire risk",
+      "reason": "Likely an event/concept, but no confirmed canonical mapping in the provided dictionary."
+    },
+    {
+      "surface": "altered plant communities",
+      "reason": "Could refer to ecological change, but no confirmed canonical mapping in the provided dictionary."
     }
   ],
   "section_segments": [
@@ -229,5 +127,5 @@
       "text": "The drought brought by the U.S."
     }
   ],
-  "tagged_text": "After observing the graph, I have noticed that there is a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\" section=\"body\">severe</entity> <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> in <entity type=\"LOCATION\" canonical=\"nebraska\" section=\"body\">Nebraska</entity> and <entity type=\"LOCATION\" canonical=\"wyoming\" section=\"body\">Wyoming</entity>. This makes me wonder if the <entity type=\"OTHER_ENTITY\" canonical=\"animals\" subtype=\"other\" section=\"body\" modality=\"questioned\">animals</entity> over there can survive. The drought reminds me of one I had studied before. It was 21st century drought, which had occurred in several regions of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity>, including the <entity type=\"LOCATION\" canonical=\"southwest_region\" section=\"body\">American Southwest</entity>, the <entity type=\"LOCATION\" canonical=\"lower_48\" section=\"body\">Lower 48 states</entity>, <entity type=\"LOCATION\" canonical=\"alaska\" section=\"body\">Alaska</entity>, and the <entity type=\"LOCATION\" canonical=\"southern_united_states\" section=\"body\">southern United States</entity>. After the drought, some recent effects were the causing widespread <entity type=\"OTHER_ENTITY\" canonical=\"ecosystems\" subtype=\"other\" section=\"body\">ecosystem</entity> changes, including increased <entity type=\"EVENT\" canonical=\"wildfires\" section=\"body\">wildfire</entity> risk, altered plant communities, etc.  A catchy headline would be \"The drought brought by the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">U.S.</entity>\""
+  "tagged_text": "After observing the graph, I have noticed that there is a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity> drought in <entity type=\"LOCATION\" canonical=\"nebraska\">Nebraska</entity> and <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>. This makes me wonder if the animals over there can survive. The drought reminds me of one I had studied before. It was <entity type=\"TIME_REFERENCE\" canonical=\"21st_century\">21st century</entity> drought, which had occurred in several regions of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>, including the American Southwest, the Lower 48 states, <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity>, and the southern United States. After the drought, some recent effects were the causing widespread ecosystem changes, including increased wildfire risk, altered plant communities, etc.  A catchy headline would be \"The drought brought by the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">U.S.</entity>\""
 }

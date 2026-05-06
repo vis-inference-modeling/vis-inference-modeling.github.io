@@ -5,8 +5,8 @@
   "entities": [
     {
       "surface": "Droughts Spread Coast to Coast Across the U.S.",
-      "type": "EVENT",
-      "canonical": "droughts_spread_coast_to_coast_across_the_us",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -30,57 +30,152 @@
       "id": "e1"
     },
     {
-      "surface": "United States",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 91,
-      "end": 104,
+      "start": 80,
+      "end": 83,
       "id": "e2"
     },
     {
-      "surface": "Western Texas",
-      "type": "LOCATION",
-      "canonical": "west_texas",
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 228,
-      "end": 241,
+      "occurrence_index": 1,
+      "start": 655,
+      "end": 658,
       "id": "e3"
     },
     {
-      "surface": "Presidio",
-      "type": "LOCATION",
-      "canonical": "presidio_texas",
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 267,
-      "end": 275,
+      "start": 812,
+      "end": 818,
       "id": "e4"
     },
     {
-      "surface": "Van Hom",
+      "surface": "South Jersey",
       "type": "LOCATION",
-      "canonical": "van_horn_texas",
+      "canonical": "south",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 280,
-      "end": 287,
+      "start": 822,
+      "end": 834,
       "id": "e5"
+    },
+    {
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 848,
+      "end": 862,
+      "id": "e6"
+    },
+    {
+      "surface": "North Jersey",
+      "type": "LOCATION",
+      "canonical": "north",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 866,
+      "end": 878,
+      "id": "e7"
+    },
+    {
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
     },
     {
       "surface": "Great Plains",
@@ -91,9 +186,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 475,
-      "end": 487,
-      "id": "e6"
+      "start": null,
+      "end": null,
+      "id": "e13"
     },
     {
       "surface": "Oklahoma",
@@ -104,9 +199,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 497,
-      "end": 505,
-      "id": "e7"
+      "start": null,
+      "end": null,
+      "id": "e14"
     },
     {
       "surface": "Montana",
@@ -117,9 +212,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 507,
-      "end": 514,
-      "id": "e8"
+      "start": null,
+      "end": null,
+      "id": "e15"
     },
     {
       "surface": "Wyoming",
@@ -130,9 +225,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 520,
-      "end": 527,
-      "id": "e9"
+      "start": null,
+      "end": null,
+      "id": "e16"
     },
     {
       "surface": "New Jersey",
@@ -143,39 +238,31 @@
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 708,
-      "end": 718,
-      "id": "e10"
+      "start": null,
+      "end": null,
+      "id": "e17"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "droughts across the country",
-      "reason": "Could be an EVENT phrase, but it is generic and overlaps with the headline theme rather than a specific canonical form."
+      "surface": "Presidio",
+      "reason": "Place name mentioned in the comment, but not present in the provided reference list."
     },
     {
-      "surface": "dark red",
-      "reason": "Chart color description; not a listed chart element or entity."
-    },
-    {
-      "surface": "South Jersey",
-      "reason": "Not present in the provided location dictionary."
-    },
-    {
-      "surface": "North Jersey",
-      "reason": "Not present in the provided location dictionary."
+      "surface": "Van Hom",
+      "reason": "Likely a place name, but not present in the provided reference list and spelling may be uncertain."
     }
   ],
   "section_segments": [
     {
       "section": "headline",
-      "label": "Headline",
-      "text": "\"Droughts Spread Coast to Coast Across the U.S.\""
+      "label": "Droughts Spread Coast to Coast Across the U.S.",
+      "text": "Droughts Spread Coast to Coast Across the U.S."
     },
     {
       "section": "body",
       "text": "The graph depicts a map of the United States and the droughts across the country. The darker an area is, the more severe the drought is. One thing I noticed is that in Western Texas, in nearby towns such as Presidio and Van Hom, the area is a very dark red. This indicates that the drought there is very severe. Also, I noticed the most severe droughts are located in areas where there are lots of plains, like the Great Plains, such as Oklahoma, Montana, and Wyoming. One thing I wonder about is how we can deal with droughts and if there is any way to reduce the serious effects of them. This map relates to me and my community because I live in New Jersey, and the map shows the dryness in my state and the area I live in. While the dryness is more severe in South Jersey, it is still abnormally dry in North Jersey, making the whole state dry and miserable."
     }
   ],
-  "tagged_text": "Headline: \"<entity type=\"EVENT\" canonical=\"droughts_spread_coast_to_coast_across_the_us\" section=\"headline\">Droughts Spread Coast to Coast Across the U.S.</entity>\"\n\nThe <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> depicts a map of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> and the droughts across the country. The darker an area is, the more severe the drought is. One thing I noticed is that in <entity type=\"LOCATION\" canonical=\"west_texas\">Western Texas</entity>, in nearby towns such as <entity type=\"LOCATION\" canonical=\"presidio_texas\">Presidio</entity> and <entity type=\"LOCATION\" canonical=\"van_horn_texas\">Van Hom</entity>, the area is a very dark red. This indicates that the drought there is very severe. Also, I noticed the most severe droughts are located in areas where there are lots of plains, like the <entity type=\"LOCATION\" canonical=\"great_plains\">Great Plains</entity>, such as <entity type=\"LOCATION\" canonical=\"oklahoma\">Oklahoma</entity>, <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, and <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>. One thing I wonder about is how we can deal with droughts and if there is any way to reduce the serious effects of them. This map relates to me and my community because I live in <entity type=\"LOCATION\" canonical=\"new_jersey\" speaker_context=\"true\">New Jersey</entity>, and the map shows the dryness in my state and the area I live in. While the dryness is more severe in South Jersey, it is still abnormally dry in North Jersey, making the whole state dry and miserable."
+  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Droughts Spread Coast to Coast Across the U.S.</entity>\n\nThe <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> depicts a <entity type=\"CHART_ELEMENT\" canonical=\"map\">map</entity> of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity> and the droughts across the <entity type=\"LOCATION\" canonical=\"country\">country</entity>. The darker an area is, the more <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity> the drought is. One thing I noticed is that in Western <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, in nearby towns such as Presidio and Van Hom, the area is a very dark red. This indicates that the drought there is very <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity>. Also, I noticed the most severe droughts are located in areas where there are lots of plains, like the <entity type=\"LOCATION\" canonical=\"great_plains\">Great Plains</entity>, such as <entity type=\"LOCATION\" canonical=\"oklahoma\">Oklahoma</entity>, <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, and <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>. One thing I wonder about is how we can deal with droughts and if there is any way to reduce the serious effects of them. This map relates to me and my community because I live in <entity type=\"LOCATION\" canonical=\"new_jersey\" speaker_context=\"true\">New Jersey</entity>, and the map shows the dryness in my state and the area I live in. While the dryness is more severe in <entity type=\"LOCATION\" canonical=\"south\">South Jersey</entity>, it is still <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity> in <entity type=\"LOCATION\" canonical=\"north\">North Jersey</entity>, making the whole state dry and miserable."
 }

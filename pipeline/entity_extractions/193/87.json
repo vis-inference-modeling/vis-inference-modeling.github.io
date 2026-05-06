@@ -5,8 +5,8 @@
   "entities": [
     {
       "surface": "How Dry Is Your State?",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -17,42 +17,20 @@
       "id": "e0"
     },
     {
-      "surface": "east, Ocean bordering states",
+      "surface": "How are a lot of east, Ocean bordering states",
       "type": "LOCATION",
-      "canonical": "east",
+      "canonical": "east_coast",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 52,
+      "start": 35,
       "end": 80,
       "id": "e1"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 86,
-      "end": 93,
-      "id": "e2"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "Ocean bordering states",
-      "reason": "Could be a location category, but no exact canonical match is available beyond broader geographic labels."
-    },
-    {
-      "surface": "east",
-      "reason": "Ambiguous between directional region and part of a broader location phrase; tagged conservatively as LOCATION."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "headline",
@@ -64,5 +42,5 @@
       "text": "How are a lot of east, Ocean bordering states in a drought?"
     }
   ],
-  "tagged_text": "Headline-\n\"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">How Dry Is Your State?</entity>\"\n<entity type=\"LOCATION\" canonical=\"east\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">How are a lot of east, Ocean bordering states</entity> in a <entity type=\"EVENT\" canonical=\"drought\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">drought</entity>?"
+  "tagged_text": "Headline-\n\"<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">How Dry Is Your State?</entity>\"\n<entity type=\"LOCATION\" canonical=\"east_coast\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">How are a lot of east, Ocean bordering states</entity> in a drought?"
 }

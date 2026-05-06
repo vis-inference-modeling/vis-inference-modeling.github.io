@@ -4,6 +4,32 @@
   "raw_comment": "What I have noticed in this graph is that there are very high drought in more the upper northern states and lower southern states. When looking at this I can tell that eastern and western states are less venerable to extreme droughts. Another interesting thing I found when looking at this graph is how Florida  and Alaska are the only 2 places that have little to no droughts.",
   "entities": [
     {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 28,
+      "end": 33,
+      "id": "e0"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 290,
+      "end": 295,
+      "id": "e1"
+    },
+    {
       "surface": "Florida",
       "type": "LOCATION",
       "canonical": "florida",
@@ -14,7 +40,7 @@
       "occurrence_index": 0,
       "start": 303,
       "end": 310,
-      "id": "e0"
+      "id": "e2"
     },
     {
       "surface": "Alaska",
@@ -27,32 +53,42 @@
       "occurrence_index": 0,
       "start": 316,
       "end": 322,
-      "id": "e1"
+      "id": "e3"
+    },
+    {
+      "surface": "extreme droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "upper northern states",
-      "reason": "Region reference, but no exact canonical match provided."
+      "reason": "Geographic region phrase not directly mappable to a confirmed canonical location."
     },
     {
       "surface": "lower southern states",
-      "reason": "Region reference, but no exact canonical match provided."
+      "reason": "Geographic region phrase not directly mappable to a confirmed canonical location."
     },
     {
       "surface": "eastern and western states",
-      "reason": "Plural regional reference; could map to east/west or states, but not a clear exact canonical match."
-    },
-    {
-      "surface": "extreme droughts",
-      "reason": "Could be EVENT drought with severity modifier, but the exact canonical span is ambiguous."
+      "reason": "Broad directional region phrase; could map to regions but no exact confirmed canonical surface."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I have noticed that there are very high drought in more the upper northern states and lower southern states. When looking at this I can tell that eastern and western states are less venerable to extreme droughts. Another interesting thing I found when looking at this graph is how Florida and Alaska are the only 2 places that have little to no droughts."
+      "text": "What I have noticed in this graph is that there are very high drought in more the upper northern states and lower southern states. When looking at this I can tell that eastern and western states are less venerable to extreme droughts. Another interesting thing I found when looking at this graph is how Florida and Alaska are the only 2 places that have little to no droughts."
     }
   ],
-  "tagged_text": "I have noticed that there are very high drought in more the upper northern states and lower southern states. When looking at this I can tell that eastern and western states are less venerable to extreme droughts. Another interesting thing I found when looking at this graph is how <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Florida</entity> and <entity type=\"LOCATION\" canonical=\"alaska\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Alaska</entity> are the only 2 places that have little to no droughts."
+  "tagged_text": "What I have noticed in this graph is that there are very high drought in more the upper northern states and lower southern states. When looking at this I can tell that eastern and western states are less venerable to <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme droughts</entity>. Another interesting thing I found when looking at this graph is how <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> and <entity type=\"LOCATION\" canonical=\"alaska\">Alaska</entity> are the only 2 places that have little to no droughts."
 }

@@ -20,7 +20,7 @@
       "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -34,7 +34,7 @@
       "surface": "severe",
       "type": "DATA_VAR_LEVEL",
       "canonical": "severe",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -47,8 +47,8 @@
     {
       "surface": "exceptional",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -62,7 +62,7 @@
       "surface": "agriculture",
       "type": "OTHER_ENTITY",
       "canonical": "agriculture",
-      "subtype": "other",
+      "subtype": "concept",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -76,7 +76,7 @@
       "surface": "food production",
       "type": "OTHER_ENTITY",
       "canonical": "food_production",
-      "subtype": "other",
+      "subtype": "concept",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -87,29 +87,30 @@
       "id": "e5"
     },
     {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 420,
-      "end": 428,
-      "id": "e6"
-    },
-    {
-      "surface": "me and my community",
+      "surface": "me",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 460,
+      "end": 462,
+      "id": "e6"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 467,
       "end": 479,
       "id": "e7"
     },
@@ -127,23 +128,10 @@
       "id": "e8"
     },
     {
-      "surface": "Drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 600,
-      "end": 607,
-      "id": "e9"
-    },
-    {
       "surface": "U.S.A.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -151,21 +139,17 @@
       "occurrence_index": 0,
       "start": 615,
       "end": 621,
-      "id": "e10"
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "states",
-      "reason": "Could refer to U.S. states generically; a plural location-like reference is present but not specific enough to map to a single canonical location."
+      "reason": "Could refer to U.S. states generally, but no specific state-level canonical mapping is intended here beyond the explicit abbreviations/names."
     },
     {
-      "surface": "center of the U.S.",
-      "reason": "Location-like phrase referring to a region; no exact canonical regional match is confirmed beyond generic country reference."
-    },
-    {
-      "surface": "any steps",
-      "reason": "Could imply actions or interventions, but no entity-like canonical match is available."
+      "surface": "how many droughts",
+      "reason": "Likely refers to drought frequency/extent, but no matching data variable or level in the provided reference list."
     }
   ],
   "section_segments": [
@@ -179,5 +163,5 @@
       "text": "Drought In the U.S.A."
     }
   ],
-  "tagged_text": "I notice the states with the least drought seem to be located closer to the <entity type=\"LOCATION\" canonical=\"ocean\" section=\"body\">ocean</entity> and states with a lot of drought are located closer to the center of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">U.S.</entity>\nI wonder why some many states seem to be facing <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\" section=\"body\">severe</entity> to <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\">exceptional</entity> drought. I also wonder how this will affect <entity type=\"OTHER_ENTITY\" canonical=\"agriculture\" subtype=\"other\" section=\"body\">agriculture</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"food_production\" subtype=\"other\" section=\"body\">food production</entity> in general. Additionally, I wonder is there any steps that can occurring. to prevent or fix the issue of how many <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> are occurring.\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">me and my community</entity> because it shows on the map that <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\">NY</entity> isn't facing any drought so that explains why this news hasn’t been discussed much.\n<entity type=\"EVENT\" canonical=\"drought\" section=\"headline\">Drought</entity> In the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"headline\">U.S.A.</entity>."
+  "tagged_text": "I notice the states with the least drought seem to be located closer to the <entity type=\"LOCATION\" canonical=\"ocean\">ocean</entity> and states with a lot of drought are located closer to the center of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity>\nI wonder why some many states seem to be facing <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity> to <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional</entity> drought. I also wonder how this will affect <entity type=\"OTHER_ENTITY\" canonical=\"agriculture\" subtype=\"concept\">agriculture</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"food_production\" subtype=\"concept\">food production</entity> in general. Additionally, I wonder is there any steps that can occurring. to prevent or fix the issue of how many droughts are occurring.\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"my_community\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity> because it shows on the map that <entity type=\"LOCATION\" canonical=\"new_york\">NY</entity> isn't facing any drought so that explains why this news hasn’t been discussed much.\nDrought In the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">U.S.A.</entity>."
 }

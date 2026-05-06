@@ -4,22 +4,10 @@
   "raw_comment": "I noticed that:\n1. The majority of the country is considered abnormally dry or a more severe form of drought.\n2. Every state has at least a small area of drought.\n3. The Midwest is in the most critical state of drought.\n\nI wonder:\n1. Why are the areas of extreme and exceptional drought concentrated to small areas such as in Montana, Wyoming, and Texas\n2. how this map compare to a map of low humidity?\n\nI relate to this:\nBecause this could be attributed to climate change, and climate change affects everyone.\n\nMy headline is: Drought devastates the Midwest: How drought is affecting America’s communities.",
   "entities": [
     {
-      "surface": "country",
-      "type": "LOCATION",
-      "canonical": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 39,
-      "end": 46,
-      "id": "e0"
-    },
-    {
       "surface": "abnormally dry",
-      "type": "EVENT",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -27,20 +15,7 @@
       "occurrence_index": 0,
       "start": 61,
       "end": 75,
-      "id": "e1"
-    },
-    {
-      "surface": "state",
-      "type": "LOCATION",
-      "canonical": "states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 119,
-      "end": 124,
-      "id": "e2"
+      "id": "e0"
     },
     {
       "surface": "Midwest",
@@ -53,35 +28,48 @@
       "occurrence_index": 0,
       "start": 170,
       "end": 177,
-      "id": "e3"
+      "id": "e1"
+    },
+    {
+      "surface": "Midwest",
+      "type": "LOCATION",
+      "canonical": "midwest",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 552,
+      "end": 559,
+      "id": "e2"
     },
     {
       "surface": "extreme",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 255,
-      "end": 262,
-      "id": "e4"
+      "start": null,
+      "end": null,
+      "id": "e3"
     },
     {
-      "surface": "exceptional",
+      "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 267,
-      "end": 278,
-      "id": "e5"
+      "start": null,
+      "end": null,
+      "id": "e4"
     },
     {
       "surface": "Montana",
@@ -92,9 +80,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 326,
-      "end": 333,
-      "id": "e6"
+      "start": null,
+      "end": null,
+      "id": "e5"
     },
     {
       "surface": "Wyoming",
@@ -105,9 +93,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 335,
-      "end": 342,
-      "id": "e7"
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "Texas",
@@ -118,9 +106,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 348,
-      "end": 353,
-      "id": "e8"
+      "start": null,
+      "end": null,
+      "id": "e7"
     },
     {
       "surface": "climate change",
@@ -131,32 +119,53 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 459,
-      "end": 473,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e9"
     },
     {
       "surface": "Drought devastates the Midwest: How drought is affecting America’s communities.",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 529,
-      "end": 608,
+      "start": null,
+      "end": null,
       "id": "e10"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "low humidity",
-      "reason": "Could be relevant to drought conditions, but no canonical match is provided."
+      "surface": "the country",
+      "reason": "Generic geographic reference; could mean the United States but is not explicit enough to tag as a level."
     },
     {
-      "surface": "everyone",
-      "reason": "Generic pronoun-like collective reference; not tagged as an entity."
+      "surface": "every state",
+      "reason": "Generic plural reference without a specific canonical mapping."
+    },
+    {
+      "surface": "low humidity",
+      "reason": "Conceptual phrase that may relate to drought causes, but no confirmed canonical entity is provided."
+    },
+    {
+      "surface": "America’s communities",
+      "reason": "Collective phrase that may refer to U.S. communities, but it is not a precise canonical entity."
     }
   ],
   "section_segments": [
@@ -165,5 +174,5 @@
       "text": "I noticed that:\n1. The majority of the country is considered abnormally dry or a more severe form of drought.\n2. Every state has at least a small area of drought.\n3. The Midwest is in the most critical state of drought.\n\nI wonder:\n1. Why are the areas of extreme and exceptional drought concentrated to small areas such as in Montana, Wyoming, and Texas\n2. how this map compare to a map of low humidity?\n\nI relate to this:\nBecause this could be attributed to climate change, and climate change affects everyone.\n\nMy headline is: Drought devastates the Midwest: How drought is affecting America’s communities."
     }
   ],
-  "tagged_text": "I noticed that:\n1. The majority of the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">country</entity> is considered <entity type=\"EVENT\" canonical=\"abnormally_dry\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">abnormally dry</entity> or a more severe form of drought.\n2. Every <entity type=\"LOCATION\" canonical=\"states\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">state</entity> has at least a small area of drought.\n3. The <entity type=\"LOCATION\" canonical=\"midwest\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Midwest</entity> is in the most critical state of drought.\n\nI wonder:\n1. Why are the areas of <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">extreme</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">exceptional</entity> drought concentrated to small areas such as in <entity type=\"LOCATION\" canonical=\"montana\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Montana</entity>, <entity type=\"LOCATION\" canonical=\"wyoming\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Wyoming</entity>, and <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Texas</entity>\n2. how this map compare to a map of low humidity?\n\nI relate to this:\nBecause this could be attributed to <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">climate change</entity>, and climate change affects everyone.\n\nMy headline is: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Drought devastates the Midwest: How drought is affecting America’s communities.</entity>"
+  "tagged_text": "I noticed that:\n1. The majority of the country is considered <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity> or a more severe form of drought.\n2. Every state has at least a small area of drought.\n3. The <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> is in the most critical state of drought.\n\nI wonder:\n1. Why are the areas of <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity> concentrated to small areas such as in <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>, and <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>\n2. how this map compare to a map of low humidity?\n\nI relate to this:\nBecause this could be attributed to <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity>, and <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> affects everyone.\n\nMy headline is: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Drought devastates the Midwest: How drought is affecting America’s communities.</entity>"
 }

@@ -4,19 +4,6 @@
   "raw_comment": "What are the variables contributing to the fluctuating drought levels in Wyoming? Headline: \" Will Rainfall Improve? I Drought It\"",
   "entities": [
     {
-      "surface": "variables",
-      "type": "DATA_VAR",
-      "canonical": "variables",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 13,
-      "end": 22,
-      "id": "e0"
-    },
-    {
       "surface": "Wyoming",
       "type": "LOCATION",
       "canonical": "wyoming",
@@ -27,39 +14,34 @@
       "occurrence_index": 0,
       "start": 73,
       "end": 80,
+      "id": "e0"
+    },
+    {
+      "surface": "Headline: \" Will Rainfall Improve? I Drought It\"",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 82,
+      "end": 130,
       "id": "e1"
-    },
-    {
-      "surface": "Rainfall",
-      "type": "EVENT",
-      "canonical": "rainfall",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 99,
-      "end": 107,
-      "id": "e2"
-    },
-    {
-      "surface": "Drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 119,
-      "end": 126,
-      "id": "e3"
     }
   ],
   "unresolved_mentions": [
     {
+      "surface": "variables",
+      "reason": "Generic reference; unclear whether this means data variables or causal factors."
+    },
+    {
       "surface": "drought levels",
-      "reason": "Refers to drought severity/conditions, but no exact canonical level or variable is confirmed in the article dictionary."
+      "reason": "Likely refers to drought severity category, but the exact level is unspecified."
+    },
+    {
+      "surface": "rainfall",
+      "reason": "Not in the reference list and not clearly a confirmed normalized entity."
     }
   ],
   "section_segments": [
@@ -73,5 +55,5 @@
       "text": "\" Will Rainfall Improve? I Drought It\""
     }
   ],
-  "tagged_text": "What are the <entity type=\"DATA_VAR\" canonical=\"variables\" section=\"body\">variables</entity> contributing to the fluctuating drought levels in <entity type=\"LOCATION\" canonical=\"wyoming\" section=\"body\">Wyoming</entity>? Headline: \" Will <entity type=\"EVENT\" canonical=\"rainfall\" section=\"headline\">Rainfall</entity> Improve? I <entity type=\"EVENT\" canonical=\"drought\" section=\"headline\">Drought</entity> It\""
+  "tagged_text": "What are the variables contributing to the fluctuating drought levels in <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>? <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Headline: \" Will Rainfall Improve? I Drought It\"</entity>"
 }

@@ -4,23 +4,10 @@
   "raw_comment": "What stands out to you? If you make a claim, back it with evidence from the graph.\nThe map shows that drought is widespread across the U.S., with the Southwest, Texas, and parts of the Midwest experiencing extreme or exceptional drought. This is evident from the darkest red areas concentrated in these regions.\n\nWhat questions or curiosities does the graph spark for you?\nI wonder how these drought conditions impact local water supplies, agriculture and everyday life. What steps are being taken in the hardest-hit areas like Texas to address these issues?\n\nRelate the graph to your life and community.\nIn Miami, we don't see these drought levels, but it makes me think about how we rely on water and how climate change could affect us in the future.\n\nSummarize the main idea of the graph with a headline.\n\"Drought Hits Hard: U.S. Fights Widespread Water Scarcity.\"",
   "entities": [
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 102,
-      "end": 109,
-      "id": "e0"
-    },
-    {
       "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -28,12 +15,12 @@
       "occurrence_index": 0,
       "start": 135,
       "end": 139,
-      "id": "e1"
+      "id": "e0"
     },
     {
       "surface": "Southwest",
       "type": "LOCATION",
-      "canonical": "southwest_region",
+      "canonical": "southwest",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -41,7 +28,7 @@
       "occurrence_index": 0,
       "start": 150,
       "end": 159,
-      "id": "e2"
+      "id": "e1"
     },
     {
       "surface": "Texas",
@@ -54,7 +41,7 @@
       "occurrence_index": 0,
       "start": 161,
       "end": 166,
-      "id": "e3"
+      "id": "e2"
     },
     {
       "surface": "Texas",
@@ -67,7 +54,7 @@
       "occurrence_index": 1,
       "start": 528,
       "end": 533,
-      "id": "e4"
+      "id": "e3"
     },
     {
       "surface": "Miami",
@@ -75,26 +62,12 @@
       "canonical": "miami",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 608,
       "end": 613,
-      "id": "e5"
-    },
-    {
-      "surface": "water",
-      "type": "OTHER_ENTITY",
-      "canonical": "water",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 693,
-      "end": 698,
-      "id": "e6"
+      "id": "e4"
     },
     {
       "surface": "climate change",
@@ -107,13 +80,12 @@
       "occurrence_index": 0,
       "start": 707,
       "end": 721,
-      "id": "e7"
+      "id": "e5"
     },
     {
       "surface": "Drought Hits Hard: U.S. Fights Widespread Water Scarcity.",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -121,7 +93,7 @@
       "occurrence_index": 0,
       "start": 809,
       "end": 866,
-      "id": "e8"
+      "id": "e6"
     },
     {
       "surface": "Midwest",
@@ -134,13 +106,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e7"
     },
     {
       "surface": "extreme",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -148,13 +120,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e8"
     },
     {
-      "surface": "exceptional",
+      "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -162,24 +134,31 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "water supplies",
+      "reason": "Could map to water_usage, but the normalized dictionary only confirms 'water supply' singular; plural form is slightly uncertain."
     },
     {
       "surface": "agriculture",
-      "type": "OTHER_ENTITY",
-      "canonical": "agriculture",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
+      "reason": "Relevant concept, but not in the provided entity dictionary."
+    },
+    {
+      "surface": "everyday life",
+      "reason": "Generic phrase, not an entity."
+    },
+    {
+      "surface": "hardest-hit areas",
+      "reason": "Refers back to regions already mentioned; not a standalone entity."
+    },
+    {
+      "surface": "water scarcity",
+      "reason": "Abstract concept; not a confirmed entity."
     }
   ],
-  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
@@ -187,9 +166,9 @@
     },
     {
       "section": "headline",
-      "label": "Summarize the main idea of the graph with a headline",
+      "label": "headline",
       "text": "\"Drought Hits Hard: U.S. Fights Widespread Water Scarcity.\""
     }
   ],
-  "tagged_text": "What stands out to you? If you make a claim, back it with evidence from the graph.\nThe map shows that <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> is widespread across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\" section=\"body\">U.S.</entity>, with the <entity type=\"LOCATION\" canonical=\"southwest_region\" section=\"body\">Southwest</entity>, <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\">Texas</entity>, and parts of the <entity type=\"LOCATION\" canonical=\"midwest\" section=\"body\">Midwest</entity> experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"body\">extreme</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\">exceptional</entity> drought. This is evident from the darkest red areas concentrated in these regions.\n\nWhat questions or curiosities does the graph spark for you?\nI wonder how these drought conditions impact local water supplies, <entity type=\"OTHER_ENTITY\" canonical=\"agriculture\" subtype=\"other\" section=\"body\">agriculture</entity> and everyday life. What steps are being taken in the hardest-hit areas like <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\">Texas</entity> to address these issues?\n\nRelate the graph to your life and community.\nIn <entity type=\"LOCATION\" canonical=\"miami\" section=\"body\">Miami</entity>, we don't see these drought levels, but it makes me think about how we rely on <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\" section=\"body\">water</entity> and how <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"hypothetical\">climate change</entity> could affect us in the future.\n\nSummarize the main idea of the graph with a headline.\n\"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Drought Hits Hard: U.S. Fights Widespread Water Scarcity.</entity>\""
+  "tagged_text": "What stands out to you? If you make a claim, back it with evidence from the graph.\nThe map shows that drought is widespread across the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity>, with the <entity type=\"LOCATION\" canonical=\"southwest\">Southwest</entity>, <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, and parts of the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> experiencing <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity>. This is evident from the darkest red areas concentrated in these regions.\n\nWhat questions or curiosities does the graph spark for you?\nI wonder how these drought conditions impact local water supplies, agriculture and everyday life. What steps are being taken in the hardest-hit areas like Texas to address these issues?\n\nRelate the graph to your life and community.\nIn <entity type=\"LOCATION\" canonical=\"miami\">Miami</entity>, we don't see these drought levels, but it makes me think about how we rely on water and how <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"hypothetical\">climate change</entity> could affect us in the future.\n\nSummarize the main idea of the graph with a headline.\n\"Drought Hits Hard: U.S. Fights Widespread Water Scarcity.\""
 }

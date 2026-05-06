@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -17,9 +18,23 @@
       "id": "e0"
     },
     {
+      "surface": "nation",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 53,
+      "end": 59,
+      "id": "e1"
+    },
+    {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -27,12 +42,13 @@
       "occurrence_index": 0,
       "start": 121,
       "end": 128,
-      "id": "e1"
+      "id": "e2"
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -40,59 +56,47 @@
       "occurrence_index": 1,
       "start": 159,
       "end": 166,
-      "id": "e2"
+      "id": "e3"
+    },
+    {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 469,
+      "end": 476,
+      "id": "e4"
     },
     {
       "surface": "humans",
       "type": "OTHER_ENTITY",
       "canonical": "humans",
-      "subtype": "person",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 277,
-      "end": 283,
-      "id": "e3"
+      "start": null,
+      "end": null,
+      "id": "e5"
     },
     {
-      "surface": "my area",
+      "surface": "area",
       "type": "LOCATION",
-      "canonical": "my_area",
+      "canonical": "my_community",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 303,
-      "end": 310,
-      "id": "e4"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 321,
-      "end": 325,
-      "id": "e5"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 390,
-      "end": 394,
+      "start": null,
+      "end": null,
       "id": "e6"
     },
     {
@@ -103,15 +107,41 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 437,
-      "end": 441,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e7"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "rain",
+      "type": "EVENT",
+      "canonical": "rain",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e9"
     },
     {
       "surface": "month",
       "type": "TIME_REFERENCE",
-      "canonical": "month_of_year",
+      "canonical": "month_of_the_year",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -119,24 +149,28 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
-    }
-  ],
-  "unresolved_mentions": [
-    {
-      "surface": "the nation",
-      "reason": "Likely refers to a country/region, but no exact canonical match is confirmed in the provided dictionary."
+      "id": "e10"
     },
     {
-      "surface": "pretty dry",
-      "reason": "Describes conditions but does not clearly match a confirmed EVENT or DATA_VAR_LEVEL in the dictionary."
+      "surface": "2",
+      "type": "TIME_REFERENCE",
+      "canonical": "2_weeks_ago",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "I see that there is a lot of droughts throughout the nation, and I wonder why this is. There are some areas with lots of drought, and others with little to no drought. There are probably many different reasons that contribute to this, and I assume that a large part was due to humans. I experienced, in my area, not much rain for about month and was pretty dry. After that time, we did get rain for a day or 2, but it was somewhat light rain. I hope we don't get a big drought that lasts a long time since that would probably cause many issues."
     }
   ],
-  "tagged_text": "I see that there is a lot of <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> throughout the nation, and I wonder why this is. There are some areas with lots of <entity type=\"EVENT\" canonical=\"drought\" section=\"body\" modality=\"questioned\">drought</entity>, and others with little to no <entity type=\"EVENT\" canonical=\"drought\" section=\"body\" modality=\"questioned\">drought</entity>. There are probably many different reasons that contribute to this, and I assume that a large part was due to <entity type=\"OTHER_ENTITY\" canonical=\"humans\" subtype=\"person\" section=\"body\">humans</entity>. I experienced, in <entity type=\"LOCATION\" canonical=\"my_area\" speaker_context=\"true\" section=\"body\">my area</entity>, not much <entity type=\"EVENT\" canonical=\"rain\" section=\"body\">rain</entity> for about <entity type=\"TIME_REFERENCE\" canonical=\"month_of_year\" section=\"body\">month</entity> and was pretty dry. After that time, we did get <entity type=\"EVENT\" canonical=\"rain\" section=\"body\">rain</entity> for a day or 2, but it was somewhat light <entity type=\"EVENT\" canonical=\"rain\" section=\"body\">rain</entity>. I hope we don't get a big <entity type=\"EVENT\" canonical=\"drought\" section=\"body\" modality=\"wished\">drought</entity> that lasts a long time since that would probably cause many issues."
+  "tagged_text": "I see that there is a lot of <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">droughts</entity> throughout the <entity type=\"LOCATION\" canonical=\"country\">nation</entity>, and I wonder why this is. There are some areas with lots of <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\" modality=\"questioned\">drought</entity>, and others with little to no <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\" modality=\"questioned\">drought</entity>. There are probably many different reasons that contribute to this, and I assume that a large part was due to <entity type=\"OTHER_ENTITY\" canonical=\"humans\" subtype=\"group\">humans</entity>. I experienced, in my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">area</entity>, not much <entity type=\"EVENT\" canonical=\"rain\">rain</entity> for about <entity type=\"TIME_REFERENCE\" canonical=\"month_of_the_year\">month</entity> and was pretty dry. After that time, we did get <entity type=\"EVENT\" canonical=\"rain\">rain</entity> for a day or <entity type=\"TIME_REFERENCE\" canonical=\"2_weeks_ago\">2</entity>, but it was somewhat light <entity type=\"EVENT\" canonical=\"rain\">rain</entity>. I hope we don't get a big <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\" modality=\"wished\">drought</entity> that lasts a long time since that would probably cause many issues."
 }

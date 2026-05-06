@@ -21,7 +21,7 @@
       "surface": "people",
       "type": "OTHER_ENTITY",
       "canonical": "people",
-      "subtype": "other",
+      "subtype": "group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -32,34 +32,39 @@
       "id": "e1"
     },
     {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
+      "surface": "a few weeks back",
+      "type": "TIME_REFERENCE",
+      "canonical": "a_few_weeks_back",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 175,
-      "end": 179,
+      "start": 180,
+      "end": 196,
       "id": "e2"
-    }
-  ],
-  "unresolved_mentions": [
-    {
-      "surface": "this massive problem",
-      "reason": "Generic problem reference; entity-like but no clear canonical match."
     },
     {
-      "surface": "a few weeks back",
-      "reason": "Time reference is implied but not in the confirmed time dictionary."
+      "surface": "a severe lack of rain",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e3"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "I noticed all the droughts are happening in places with little water sources.\nI wonder how people are going to fix this massive problem.\nThere was previously I severe lack of rain a few weeks back, so this article can be important."
     }
   ],
-  "tagged_text": "I noticed all the droughts are happening in places with little <entity type=\"OTHER_ENTITY\" canonical=\"water_sources\" subtype=\"other\">water sources</entity>.\nI wonder how <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\">people</entity> are going to fix this massive problem.\nThere was previously I severe lack of <entity type=\"EVENT\" canonical=\"rain\">rain</entity> a few weeks back, so this article can be important."
+  "tagged_text": "I noticed all the droughts are happening in places with little <entity type=\"OTHER_ENTITY\" canonical=\"water_sources\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">water sources</entity>.\nI wonder how <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">people</entity> are going to fix this massive problem.\nThere was previously <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">a severe lack of rain</entity> <entity type=\"TIME_REFERENCE\" canonical=\"a_few_weeks_back\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">a few weeks back</entity>, so this article can be important."
 }

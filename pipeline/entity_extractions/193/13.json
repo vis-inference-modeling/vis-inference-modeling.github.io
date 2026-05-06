@@ -4,43 +4,17 @@
   "raw_comment": "One thing I noticed that this graph shows is that much of the western and central U.S. is experiencing a lot of drought. Places like Texas, Oklahoma, and California can be seen being the most affected areas. I immediately raised a question in my head about why these regions are facing such harsh conditions and started thinking about if there is anything being done to address them. This is important because drought can impact daily lifes tremendously, especially for those living in the hardest-hit areas. For people in less affected areas, it might also spark concerns about how drought elsewhere could impact things like food supply or migration. Not only that but it could also serve as warning that that might be them soon if a solution isn't found.",
   "entities": [
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "western and central U.S.",
+      "type": "LOCATION",
+      "canonical": "west",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 112,
-      "end": 119,
+      "start": 62,
+      "end": 86,
       "id": "e0"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 410,
-      "end": 417,
-      "id": "e1"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 583,
-      "end": 590,
-      "id": "e2"
     },
     {
       "surface": "Texas",
@@ -51,9 +25,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e3"
+      "start": 133,
+      "end": 138,
+      "id": "e1"
     },
     {
       "surface": "Oklahoma",
@@ -64,9 +38,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e4"
+      "start": 140,
+      "end": 148,
+      "id": "e2"
     },
     {
       "surface": "California",
@@ -77,17 +51,94 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 154,
+      "end": 164,
+      "id": "e3"
+    },
+    {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 410,
+      "end": 417,
+      "id": "e4"
+    },
+    {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 583,
+      "end": 590,
+      "id": "e5"
+    },
+    {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e5"
+      "id": "e6"
+    },
+    {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e7"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "central U.S.",
+      "reason": "Geographic region mentioned, but no exact canonical region match is provided in the reference list."
+    },
+    {
+      "surface": "daily lifes",
+      "reason": "Likely refers to daily life in general; not an entity."
+    },
+    {
+      "surface": "food supply",
+      "reason": "Could be a concept or resource, but not clearly a tagged entity in the provided schema."
+    },
+    {
+      "surface": "migration",
+      "reason": "Abstract social process; not a clear entity in the reference list."
+    },
+    {
+      "surface": "a solution",
+      "reason": "Abstract, unspecified."
+    }
+  ],
   "section_segments": [
     {
       "section": "body",
       "text": "One thing I noticed that this graph shows is that much of the western and central U.S. is experiencing a lot of drought. Places like Texas, Oklahoma, and California can be seen being the most affected areas. I immediately raised a question in my head about why these regions are facing such harsh conditions and started thinking about if there is anything being done to address them. This is important because drought can impact daily lifes tremendously, especially for those living in the hardest-hit areas. For people in less affected areas, it might also spark concerns about how drought elsewhere could impact things like food supply or migration. Not only that but it could also serve as warning that that might be them soon if a solution isn't found."
     }
   ],
-  "tagged_text": "One thing I noticed that this graph shows is that much of the western and central U.S. is experiencing a lot of <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity>. Places like <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"oklahoma\" section=\"body\">Oklahoma</entity>, and <entity type=\"LOCATION\" canonical=\"california\" section=\"body\">California</entity> can be seen being the most affected areas. I immediately raised a question in my head about why these regions are facing such harsh conditions and started thinking about if there is anything being done to address them. This is important because <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> can impact daily lifes tremendously, especially for those living in the hardest-hit areas. For people in less affected areas, it might also spark concerns about how drought elsewhere could impact things like food supply or migration. Not only that but it could also serve as warning that that might be them soon if a solution isn't found."
+  "tagged_text": "One thing I noticed that this graph shows is that much of the western and central U.S. is experiencing a lot of drought. Places like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"oklahoma\">Oklahoma</entity>, and <entity type=\"LOCATION\" canonical=\"california\">California</entity> can be seen being the most affected areas. I immediately raised a question in my head about why these regions are facing such harsh conditions and started thinking about if there is anything being done to address them. This is important because drought can impact daily lifes tremendously, especially for those living in the hardest-hit areas. For people in less affected areas, it might also spark concerns about how drought elsewhere could impact things like food supply or migration. Not only that but it could also serve as warning that that might be them soon if a solution isn't found."
 }

@@ -4,29 +4,31 @@
   "raw_comment": "I notice that the regions with extreme drought are near mountainous regions, like the rocky mountains and the Appalachian mountains.  Suggesting that the more mountainous or near mountainous the area is, results in more drought.\n\nI wonder why there are certain specific regions with extreme droughts, specifically near the south, northwest and mid-Atlantic region.  I also wonder if the areas of drought change location depending on the month of the year, as the image only shows the level of drought for the last week of October, 2024.\n\nThis relates to me and my community because we can all be affected by droughts.  Hence, being well versed in the location of droughts is beneficial. \n\n“Droughts from the North to the South, Droughts from the East to the West!”",
   "entities": [
     {
-      "surface": "rocky mountains",
-      "type": "LOCATION",
-      "canonical": "rocky_mountains",
+      "surface": "extreme drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 86,
-      "end": 101,
+      "start": 31,
+      "end": 46,
       "id": "e0"
     },
     {
-      "surface": "Appalachian mountains",
-      "type": "LOCATION",
-      "canonical": "appalachian_mountains",
+      "surface": "extreme drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 110,
-      "end": 131,
+      "occurrence_index": 1,
+      "start": 283,
+      "end": 298,
       "id": "e1"
     },
     {
@@ -71,7 +73,7 @@
     {
       "surface": "month of the year",
       "type": "TIME_REFERENCE",
-      "canonical": "month_of_year",
+      "canonical": "month_of_the_year",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -86,7 +88,7 @@
       "type": "TIME_REFERENCE",
       "canonical": "last_week_of_october_2024",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -95,52 +97,141 @@
       "id": "e6"
     },
     {
-      "surface": "me and my community",
+      "surface": "me",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 554,
-      "end": 573,
+      "end": 556,
       "id": "e7"
     },
     {
-      "surface": "droughts from the North to the South, Droughts from the East to the West",
+      "surface": "my community",
       "type": "OTHER_ENTITY",
-      "canonical": "headline_slogan",
-      "subtype": "other",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 561,
+      "end": 573,
+      "id": "e8"
+    },
+    {
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 608,
+      "end": 616,
+      "id": "e9"
+    },
+    {
+      "surface": "Droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 690,
+      "end": 698,
+      "id": "e10"
+    },
+    {
+      "surface": "North",
+      "type": "LOCATION",
+      "canonical": "north",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 690,
+      "start": 708,
+      "end": 713,
+      "id": "e11"
+    },
+    {
+      "surface": "South",
+      "type": "LOCATION",
+      "canonical": "south",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 721,
+      "end": 726,
+      "id": "e12"
+    },
+    {
+      "surface": "East",
+      "type": "LOCATION",
+      "canonical": "east_coast",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 746,
+      "end": 750,
+      "id": "e13"
+    },
+    {
+      "surface": "West",
+      "type": "LOCATION",
+      "canonical": "west",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 758,
       "end": 762,
-      "id": "e8"
+      "id": "e14"
+    },
+    {
+      "surface": "rocky mountains",
+      "type": "LOCATION",
+      "canonical": "rocky_mountains",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "Appalachian mountains",
+      "type": "LOCATION",
+      "canonical": "appalachian_mountains",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e16"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "extreme drought",
-      "reason": "Could map to EVENT 'extreme_drought', but the comment uses it generically and the dictionary also includes drought severity levels; kept unresolved to avoid over-tagging."
-    },
-    {
-      "surface": "more mountainous or near mountainous",
-      "reason": "Geographic descriptor without a confirmed canonical location."
-    },
-    {
-      "surface": "areas of drought",
-      "reason": "Generic phrase; not a specific entity in the dictionary."
-    },
-    {
-      "surface": "location of droughts",
-      "reason": "Abstract phrase rather than a concrete entity."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
@@ -148,8 +239,9 @@
     },
     {
       "section": "headline",
+      "label": "headline",
       "text": "“Droughts from the North to the South, Droughts from the East to the West!”"
     }
   ],
-  "tagged_text": "I notice that the regions with extreme drought are near mountainous regions, like the rocky mountains and the Appalachian mountains.  Suggesting that the more mountainous or near mountainous the area is, results in more drought.\n\nI wonder why there are certain specific regions with extreme droughts, specifically near the south, northwest and mid-Atlantic region.  I also wonder if the areas of drought change location depending on the month of the year, as the image only shows the level of drought for the last week of October, 2024.\n\nThis relates to me and my community because we can all be affected by droughts.  Hence, being well versed in the location of droughts is beneficial. \n\n“Droughts from the North to the South, Droughts from the East to the West!”"
+  "tagged_text": "I notice that the regions with <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">extreme drought</entity> are near mountainous regions, like the <entity type=\"LOCATION\" canonical=\"rocky_mountains\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">rocky mountains</entity> and the <entity type=\"LOCATION\" canonical=\"appalachian_mountains\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Appalachian mountains</entity>.  Suggesting that the more mountainous or near mountainous the area is, results in more drought.\n\nI wonder why there are certain specific regions with <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">extreme droughts</entity>, specifically near the <entity type=\"LOCATION\" canonical=\"south\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">south</entity>, <entity type=\"LOCATION\" canonical=\"northwest\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">northwest</entity> and <entity type=\"LOCATION\" canonical=\"mid_atlantic_region\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">mid-Atlantic region</entity>.  I also wonder if the areas of drought change location depending on the <entity type=\"TIME_REFERENCE\" canonical=\"month_of_the_year\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">month of the year</entity>, as the image only shows the level of drought for the <entity type=\"TIME_REFERENCE\" canonical=\"last_week_of_october_2024\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">last week of October, 2024</entity>.\n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity> because we can all be affected by <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"true\" occurrences=\"1\">droughts</entity>.  Hence, being well versed in the location of droughts is beneficial. \n\n“<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"true\" occurrences=\"1\">Droughts</entity> from the <entity type=\"LOCATION\" canonical=\"north\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">North</entity> to the <entity type=\"LOCATION\" canonical=\"south\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">South</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"true\" occurrences=\"1\">Droughts</entity> from the <entity type=\"LOCATION\" canonical=\"east_coast\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">East</entity> to the <entity type=\"LOCATION\" canonical=\"west\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">West</entity>!”"
 }

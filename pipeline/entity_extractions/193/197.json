@@ -7,7 +7,7 @@
       "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -42,125 +42,52 @@
       "start": 186,
       "end": 196,
       "id": "e2"
-    },
-    {
-      "surface": "agriculture",
-      "type": "OTHER_ENTITY",
-      "canonical": "agriculture",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 252,
-      "end": 263,
-      "id": "e3"
-    },
-    {
-      "surface": "rainfall",
-      "type": "EVENT",
-      "canonical": "rainfall",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 335,
-      "end": 343,
-      "id": "e4"
-    },
-    {
-      "surface": "crops",
-      "type": "OTHER_ENTITY",
-      "canonical": "crops",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 358,
-      "end": 363,
-      "id": "e5"
-    },
-    {
-      "surface": "wildfires",
-      "type": "EVENT",
-      "canonical": "wildfires",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 430,
-      "end": 439,
-      "id": "e6"
-    },
-    {
-      "surface": "wildfire",
-      "type": "EVENT",
-      "canonical": "wildfires",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 480,
-      "end": 488,
-      "id": "e7"
-    },
-    {
-      "surface": "air quality",
-      "type": "OTHER_ENTITY",
-      "canonical": "air_quality",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 533,
-      "end": 544,
-      "id": "e8"
-    },
-    {
-      "surface": "Droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 606,
-      "end": 614,
-      "id": "e9"
-    },
-    {
-      "surface": "US",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 624,
-      "end": 626,
-      "id": "e10"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "middle of the U.S.",
-      "reason": "Likely a region reference, but no exact canonical match in the dictionary."
+      "surface": "middle",
+      "reason": "Refers to a geographic area of the U.S. but is too vague to map confidently to a listed region."
     },
     {
       "surface": "coastal states",
-      "reason": "Likely a location/region reference, but no exact canonical match in the dictionary."
+      "reason": "Could map to a coastal region, but no exact canonical level is provided."
+    },
+    {
+      "surface": "warmer states",
+      "reason": "Descriptive phrase without a canonical geographic entity."
+    },
+    {
+      "surface": "severe drought",
+      "reason": "Likely a drought severity level, but the exact level is not explicit enough to distinguish from general severity."
+    },
+    {
+      "surface": "agriculture",
+      "reason": "Abstract domain concept not present in the reference list."
+    },
+    {
+      "surface": "rainfall",
+      "reason": "Weather term without a matching canonical entity."
+    },
+    {
+      "surface": "crops",
+      "reason": "Flora/fauna/agricultural product concept not in the provided canonical list."
+    },
+    {
+      "surface": "wildfires",
+      "reason": "Could map to EVENT, but the comment uses it generically and not as a direct named event reference."
+    },
+    {
+      "surface": "wildfire smoke",
+      "reason": "Composite phrase; smoke is not a listed entity and wildfire is used generically."
     },
     {
       "surface": "wind",
-      "reason": "Could be a chart-related environmental factor, but no canonical entity provided."
+      "reason": "Weather term without a matching canonical entity."
+    },
+    {
+      "surface": "poor air quality",
+      "reason": "Environmental condition not present in the canonical list."
     }
   ],
   "section_segments": [
@@ -169,5 +96,5 @@
       "text": "I notice that there is a lot more drought within the middle of the U.S. compared to the more coastal states. I also noticed that there is no considerable drought in Florida and parts of California, even though they are warmer states. I wonder what the agriculture is like in areas with severe drought, as they don’t have much (if any) rainfall to help their crops grow.  This relates to me and my community because there are more wildfires in places experiencing drought, and the wildfire smoke can be carried by wind and bring poor air quality to where I live. A catchy headline for this graph could be ' Droughts: How the US is Feeling the Heat '."
     }
   ],
-  "tagged_text": "I notice that there is a lot more drought within the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> compared to the more coastal states. I also noticed that there is no considerable drought in <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity> and parts of <entity type=\"LOCATION\" canonical=\"california\">California</entity>, even though they are warmer states. I wonder what the <entity type=\"OTHER_ENTITY\" canonical=\"agriculture\">agriculture</entity> is like in areas with severe drought, as they don’t have much (if any) <entity type=\"EVENT\" canonical=\"rainfall\">rainfall</entity> to help their <entity type=\"OTHER_ENTITY\" canonical=\"crops\">crops</entity> grow.  This relates to me and my community because there are more <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity> in places experiencing drought, and the <entity type=\"EVENT\" canonical=\"wildfires\">wildfire</entity> smoke can be carried by wind and bring poor <entity type=\"OTHER_ENTITY\" canonical=\"air_quality\">air quality</entity> to where I live. A catchy headline for this graph could be ' <entity type=\"EVENT\" canonical=\"droughts\">Droughts</entity>: How the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">US</entity> is Feeling the Heat '."
+  "tagged_text": "I notice that there is a lot more drought within the middle of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">U.S.</entity> compared to the more coastal states. I also noticed that there is no considerable drought in <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Florida</entity> and parts of <entity type=\"LOCATION\" canonical=\"california\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">California</entity>, even though they are warmer states. I wonder what the agriculture is like in areas with severe drought, as they don’t have much (if any) rainfall to help their crops grow.  This relates to me and my community because there are more wildfires in places experiencing drought, and the wildfire smoke can be carried by wind and bring poor air quality to where I live. A catchy headline for this graph could be ' Droughts: How the US is Feeling the Heat '."
 }

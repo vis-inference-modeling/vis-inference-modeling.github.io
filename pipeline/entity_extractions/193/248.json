@@ -17,6 +17,62 @@
       "id": "e0"
     },
     {
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 78,
+      "end": 86,
+      "id": "e1"
+    },
+    {
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 160,
+      "end": 168,
+      "id": "e2"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 262,
+      "end": 274,
+      "id": "e3"
+    },
+    {
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 339,
+      "end": 346,
+      "id": "e4"
+    },
+    {
       "surface": "Colorado",
       "type": "LOCATION",
       "canonical": "colorado",
@@ -25,30 +81,22 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 129,
-      "end": 137,
-      "id": "e1"
+      "start": null,
+      "end": null,
+      "id": "e5"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "my community",
-      "reason": "Speaker-context location phrase, but no exact canonical match in the provided dictionary for this article."
-    },
-    {
-      "surface": "graph",
-      "reason": "Chart element mentioned in instruction text, but not clearly part of the student's substantive response."
-    },
-    {
-      "surface": "we are in a drought",
-      "reason": "Could be an EVENT mention, but it appears as a slogan-like headline/instruction rather than a clear observation."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "What do you notice?\nI noticed that Wyoming is one of the parts with the worst droughts \nWhat do you wonder?\nI wonder why part of Colorado doesn't have a lot of droughts compared to the other states\nHow does this relate to you and your community?\nThis related to my community because where you live obviously effects if you are harmed by a drought or not \nCreate a catchy headline that captures the graph’s main idea.\nIf in doubt remember that we are in a drought"
+      "text": "What do you notice?\nI noticed that Wyoming is one of the parts with the worst droughts \nWhat do you wonder?\nI wonder why part of Colorado doesn't have a lot of droughts compared to the other states\nHow does this relate to you and your community?\nThis related to my community because where you live obviously effects if you are harmed by a drought or not \nCreate a catchy headline that captures the graph’s main idea."
+    },
+    {
+      "section": "headline",
+      "label": "headline",
+      "text": "If in doubt remember that we are in a drought"
     }
   ],
-  "tagged_text": "What do you notice?\nI noticed that <entity type=\"LOCATION\" canonical=\"wyoming\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Wyoming</entity> is one of the parts with the worst droughts \nWhat do you wonder?\nI wonder why part of <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Colorado</entity> doesn't have a lot of droughts compared to the other states\nHow does this relate to you and your community?\nThis related to my community because where you live obviously effects if you are harmed by a drought or not \nCreate a catchy headline that captures the graph’s main idea.\nIf in doubt remember that we are in a drought"
+  "tagged_text": "What do you notice?\nI noticed that <entity type=\"LOCATION\" canonical=\"wyoming\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Wyoming</entity> is one of the parts with the worst <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"true\" occurrences=\"1\">droughts</entity> \nWhat do you wonder?\nI wonder why part of <entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Colorado</entity> doesn't have a lot of <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"true\" occurrences=\"1\">droughts</entity> compared to the other states\nHow does this relate to you and your community?\nThis related to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity> because where you live obviously effects if you are harmed by a drought or not \nCreate a catchy headline that captures the graph’s main idea.\nIf in doubt remember that we are in a <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"true\" occurrences=\"1\">drought</entity>"
 }

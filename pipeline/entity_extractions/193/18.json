@@ -30,17 +30,17 @@
       "id": "e1"
     },
     {
-      "surface": "exceptional",
+      "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 116,
-      "end": 127,
+      "end": 135,
       "id": "e2"
     },
     {
@@ -57,20 +57,6 @@
       "id": "e3"
     },
     {
-      "surface": "farming",
-      "type": "OTHER_ENTITY",
-      "canonical": "farming",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 423,
-      "end": 430,
-      "id": "e4"
-    },
-    {
       "surface": "Florida",
       "type": "LOCATION",
       "canonical": "florida",
@@ -81,27 +67,12 @@
       "occurrence_index": 0,
       "start": 512,
       "end": 519,
-      "id": "e5"
-    },
-    {
-      "surface": "environmental issues",
-      "type": "OTHER_ENTITY",
-      "canonical": "environmental_issues",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 580,
-      "end": 600,
-      "id": "e6"
+      "id": "e4"
     },
     {
       "surface": "U.S. Drought Patterns: A Growing Climate Concern",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -109,21 +80,45 @@
       "occurrence_index": 0,
       "start": 628,
       "end": 676,
-      "id": "e7"
+      "id": "e5"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "central states",
-      "reason": "Could refer to a region, but no exact canonical region match is provided in the article dictionary."
+      "reason": "Geographic region mentioned, but no exact canonical region match is provided."
+    },
+    {
+      "surface": "landlocked states",
+      "reason": "Geographic descriptor, but no exact canonical mapping."
+    },
+    {
+      "surface": "oceans",
+      "reason": "Plural geographic feature; the reference list only includes singular 'ocean'."
     },
     {
       "surface": "coastal areas",
-      "reason": "Likely a location/region reference, but no exact canonical match is provided in the article dictionary."
+      "reason": "Could map to coast, but plural phrasing is slightly broader and not exact."
     },
     {
-      "surface": "rising temperatures",
-      "reason": "Could be a time-independent environmental condition or an event-like concept, but no exact canonical match is provided."
+      "surface": "farming",
+      "reason": "Activity/concept, not a listed entity."
+    },
+    {
+      "surface": "food shortages",
+      "reason": "Abstract outcome, not a listed entity."
+    },
+    {
+      "surface": "higher prices",
+      "reason": "Abstract economic outcome, not a listed entity."
+    },
+    {
+      "surface": "economic problems",
+      "reason": "Abstract concept, not a listed entity."
+    },
+    {
+      "surface": "environmental issues",
+      "reason": "Generic abstract phrase, not a specific entity."
     }
   ],
   "section_segments": [
@@ -137,5 +132,5 @@
       "text": "U.S. Drought Patterns: A Growing Climate Concern"
     }
   ],
-  "tagged_text": "The drought map shows that the <entity type=\"LOCATION\" canonical=\"midwest\" section=\"body\">Midwest</entity> and central states are facing the worst conditions, with <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\">Texas</entity> experiencing \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\" section=\"body\">exceptional</entity> drought.\" This is likely because landlocked states don’t have access to oceans like coastal areas which helps prevent droughts. The map also makes me wonder if droughts are becoming worse over time due to <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\" modality=\"questioned\">global warming</entity>, as these patterns seem to align with rising temperatures. Droughts affect <entity type=\"OTHER_ENTITY\" canonical=\"farming\" subtype=\"other\" section=\"body\">farming</entity>, which can lead to food shortages, higher prices, and economic problems. Even in <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\">Florida</entity>, where drought isn’t a problem, we feel the effects because <entity type=\"OTHER_ENTITY\" canonical=\"environmental_issues\" subtype=\"other\" section=\"body\">environmental issues</entity> impact everyone. Headline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">U.S. Drought Patterns: A Growing Climate Concern</entity>"
+  "tagged_text": "The drought map shows that the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest</entity> and central states are facing the worst conditions, with <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> experiencing \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity>.\" This is likely because landlocked states don’t have access to oceans like coastal areas which helps prevent droughts. The map also makes me wonder if droughts are becoming worse over time due to <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"questioned\">global warming</entity>, as these patterns seem to align with rising temperatures. Droughts affect farming, which can lead to food shortages, higher prices, and economic problems. Even in <entity type=\"LOCATION\" canonical=\"florida\">Florida</entity>, where drought isn’t a problem, we feel the effects because environmental issues impact everyone. Headline: U.S. Drought Patterns: A Growing Climate Concern"
 }

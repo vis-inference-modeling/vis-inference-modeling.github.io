@@ -4,6 +4,32 @@
   "raw_comment": "I notice that the drought is mainly towards the middle of the United States, with some outliers towards the far east and west of the land. I wonder why it is all in the middle instead of all over the country. this relates to me because my water supply is short. My headline for this graph is \"Drought affects the middle of the United States, while still reaching to the outskirts\".",
   "entities": [
     {
+      "surface": "United States",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 62,
+      "end": 75,
+      "id": "e0"
+    },
+    {
+      "surface": "United States",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 327,
+      "end": 340,
+      "id": "e1"
+    },
+    {
       "surface": "country",
       "type": "LOCATION",
       "canonical": "country",
@@ -12,9 +38,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 200,
-      "end": 207,
-      "id": "e0"
+      "start": null,
+      "end": null,
+      "id": "e2"
     },
     {
       "surface": "water supply",
@@ -26,9 +52,9 @@
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 239,
-      "end": 251,
-      "id": "e1"
+      "start": null,
+      "end": null,
+      "id": "e3"
     },
     {
       "surface": "graph",
@@ -39,36 +65,19 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 283,
-      "end": 288,
-      "id": "e2"
-    },
-    {
-      "surface": "country",
-      "type": "LOCATION",
-      "canonical": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e3"
+      "id": "e4"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "the middle of the United States",
-      "reason": "Likely refers to a region, but the provided normalized dictionary does not include this exact phrase; could also be a chart-level geographic description."
+      "surface": "middle",
+      "reason": "Spatial region reference is vague; could refer to a U.S. region but no specific canonical location is provided."
     },
     {
-      "surface": "far east and west of the land",
-      "reason": "Geographic reference is vague and not directly mappable to a listed location canonical."
-    },
-    {
-      "surface": "Drought affects the middle of the United States, while still reaching to the outskirts",
-      "reason": "Headline/title-like text, but no exact canonical headline match is available."
+      "surface": "east and west of the land",
+      "reason": "Directional geographic reference is too vague to map confidently to a canonical location."
     }
   ],
   "section_segments": [
@@ -77,5 +86,5 @@
       "text": "I notice that the drought is mainly towards the middle of the United States, with some outliers towards the far east and west of the land. I wonder why it is all in the middle instead of all over the country. this relates to me because my water supply is short. My headline for this graph is \"Drought affects the middle of the United States, while still reaching to the outskirts\"."
     }
   ],
-  "tagged_text": "I notice that the drought is mainly towards the middle of the <entity type=\"LOCATION\" canonical=\"country\">country</entity>, with some outliers towards the far east and west of the land. I wonder why it is all in the middle instead of all over the country. this relates to me because my <entity type=\"OTHER_ENTITY\" canonical=\"water_supply\" subtype=\"other\" speaker_context=\"true\">water supply</entity> is short. My headline for this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> is \"Drought affects the middle of the <entity type=\"LOCATION\" canonical=\"country\">country</entity>, while still reaching to the outskirts\"."
+  "tagged_text": "I notice that the drought is mainly towards the middle of the <entity type=\"LOCATION\" canonical=\"country\">United States</entity>, with some outliers towards the far east and west of the land. I wonder why it is all in the middle instead of all over the <entity type=\"LOCATION\" canonical=\"country\">country</entity>. this relates to me because my <entity type=\"OTHER_ENTITY\" canonical=\"water_supply\" subtype=\"other\" speaker_context=\"true\">water supply</entity> is short. My headline for this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> is \"Drought affects the middle of the <entity type=\"LOCATION\" canonical=\"country\">United States</entity>, while still reaching to the outskirts\"."
 }

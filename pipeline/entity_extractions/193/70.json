@@ -18,16 +18,30 @@
     },
     {
       "surface": "America",
-      "type": "LOCATION",
-      "canonical": "america",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 179,
       "end": 186,
       "id": "e1"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 268,
+      "end": 277,
+      "id": "e2"
     },
     {
       "surface": "climate change",
@@ -40,7 +54,7 @@
       "occurrence_index": 0,
       "start": 306,
       "end": 320,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "climate change",
@@ -53,13 +67,27 @@
       "occurrence_index": 1,
       "start": 443,
       "end": 457,
-      "id": "e3"
+      "id": "e4"
+    },
+    {
+      "surface": "extreme droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 486,
+      "end": 502,
+      "id": "e5"
     },
     {
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -67,45 +95,43 @@
       "occurrence_index": 0,
       "start": 510,
       "end": 523,
-      "id": "e4"
+      "id": "e6"
     },
     {
-      "surface": "snow",
-      "type": "EVENT",
-      "canonical": "snow",
-      "section": "body",
+      "surface": "United States",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e5"
+      "start": 597,
+      "end": 610,
+      "id": "e7"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "exceptionally high drought",
-      "reason": "Likely refers to drought severity, but no exact canonical level is provided."
-    },
-    {
       "surface": "large bodies of water",
-      "reason": "Could be a location-like geographic feature, but no exact canonical match is available."
+      "reason": "Describes a geographic feature but no specific canonical location/entity is identified."
     },
     {
       "surface": "weather",
-      "reason": "Generic environmental term; not clearly an entity in the provided dictionary."
-    },
-    {
-      "surface": "extreme droughts",
-      "reason": "Likely a drought severity level, but no exact canonical is provided in the normalized dictionary."
+      "reason": "Too generic to tag as a distinct entity."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I noticed that the majority of the places with an exceptionally high drought are the Midwest states. I wonder if this high level of drought is because the states in the middle of America are not near large bodies of water. The information from the graph relates to my community because I have noticed that climate change has impacted the weather in the region I live in; the weather has become warmer, and we do not get snow as often anymore. Climate change may also play a role in the extreme droughts in the United States. A catchy headline for the graph could be \"Drought Levels Throughout the United States.\""
+      "text": "I noticed that the majority of the places with an exceptionally high drought are the Midwest states. I wonder if this high level of drought is because the states in the middle of America are not near large bodies of water. The information from the graph relates to my community because I have noticed that climate change has impacted the weather in the region I live in; the weather has become warmer, and we do not get snow as often anymore. Climate change may also play a role in the extreme droughts in the United States."
+    },
+    {
+      "section": "headline",
+      "label": "A catchy headline for the graph could be",
+      "text": "Drought Levels Throughout the United States."
     }
   ],
-  "tagged_text": "I noticed that the majority of the places with an exceptionally high drought are the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest states</entity>. I wonder if this high level of drought is because the states in the middle of <entity type=\"LOCATION\" canonical=\"america\">America</entity> are not near large bodies of water. The information from the graph relates to my community because I have noticed that <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> has impacted the weather in the region I live in; the weather has become warmer, and we do not get <entity type=\"EVENT\" canonical=\"snow\">snow</entity> as often anymore. <entity type=\"EVENT\" canonical=\"climate_change\">Climate change</entity> may also play a role in the extreme droughts in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity>. A catchy headline for the graph could be \"Drought Levels Throughout the United States.\""
+  "tagged_text": "I noticed that the majority of the places with an exceptionally high drought are the <entity type=\"LOCATION\" canonical=\"midwest\">Midwest states</entity>. I wonder if this high level of drought is because the states in the middle of <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">America</entity> are not near large bodies of water. The information from the graph relates to my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because I have noticed that <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> has impacted the weather in the region I live in; the weather has become warmer, and we do not get snow as often anymore. <entity type=\"EVENT\" canonical=\"climate_change\">Climate change</entity> may also play a role in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme droughts</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity>. A catchy headline for the graph could be \"Drought Levels Throughout the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"headline\">United States</entity>.\""
 }

@@ -2,23 +2,38 @@
   "article_id": "193",
   "comment_index": 9,
   "raw_comment": "Regarding this crisis, I think the key to solving the problem is to find the key problem. Then find the key solution to the key problem. As young people, we should pay more attention to this issue and work together to solve the key problem.",
-  "entities": [],
+  "entities": [
+    {
+      "surface": "young people",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 140,
+      "end": 152,
+      "id": "e0"
+    }
+  ],
   "unresolved_mentions": [
     {
       "surface": "this crisis",
-      "reason": "Refers to the topic of the article, but no specific canonical entity is named."
+      "reason": "Generic reference to the article topic; not a specific entity."
     },
     {
-      "surface": "the problem",
-      "reason": "Generic reference without a specific entity."
+      "surface": "key problem",
+      "reason": "Abstract phrase repeated for emphasis, but not a concrete entity."
     },
     {
-      "surface": "the key problem",
-      "reason": "Generic reference without a specific entity."
+      "surface": "key solution",
+      "reason": "Abstract phrase repeated for emphasis, but not a concrete entity."
     },
     {
-      "surface": "the key solution",
-      "reason": "Generic reference without a specific entity."
+      "surface": "this issue",
+      "reason": "Generic reference to the topic; not a specific entity."
     }
   ],
   "section_segments": [

@@ -4,23 +4,9 @@
   "raw_comment": "I wondered which country has the most droughts in 10 year",
   "entities": [
     {
-      "surface": "country",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "country",
-      "var": "country",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 17,
-      "end": 24,
-      "id": "e0"
-    },
-    {
       "surface": "10 year",
       "type": "TIME_REFERENCE",
-      "canonical": "10_years",
+      "canonical": "10_year",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -28,13 +14,17 @@
       "occurrence_index": 0,
       "start": 50,
       "end": 57,
-      "id": "e1"
+      "id": "e0"
     }
   ],
   "unresolved_mentions": [
     {
+      "surface": "country",
+      "reason": "Could refer to the generic country variable or a specific country; no explicit country entity is named."
+    },
+    {
       "surface": "droughts",
-      "reason": "Mentions a phenomenon not in the confirmed normalized dictionary for this article; could be tagged as EVENT if allowed, but no exact canonical provided here."
+      "reason": "Likely refers to drought severity, but the surface is generic and not clearly one of the listed levels without more context."
     }
   ],
   "section_segments": [
@@ -43,5 +33,5 @@
       "text": "I wondered which country has the most droughts in 10 year"
     }
   ],
-  "tagged_text": "I wondered which <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\" modality=\"questioned\">country</entity> has the most droughts in <entity type=\"TIME_REFERENCE\" canonical=\"10_years\">10 year</entity>"
+  "tagged_text": "I wondered which country has the most droughts in <entity type=\"TIME_REFERENCE\" canonical=\"10_year\" modality=\"questioned\">10 year</entity>"
 }

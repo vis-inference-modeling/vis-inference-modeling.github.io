@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "United States",
-      "type": "LOCATION",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,8 +19,9 @@
     },
     {
       "surface": "United States",
-      "type": "LOCATION",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -28,19 +30,6 @@
       "start": 481,
       "end": 494,
       "id": "e1"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "moderate_drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 497,
-      "end": 504,
-      "id": "e2"
     },
     {
       "surface": "New Jersey",
@@ -53,7 +42,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e3"
+      "id": "e2"
     },
     {
       "surface": "fires",
@@ -66,20 +55,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e4"
-    },
-    {
-      "surface": "fires",
-      "type": "EVENT",
-      "canonical": "fires",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e5"
+      "id": "e3"
     },
     {
       "surface": "climate change",
@@ -92,12 +68,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e4"
     },
     {
       "surface": "other countries",
       "type": "LOCATION",
-      "canonical": "other_countries",
+      "canonical": "country",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -105,13 +81,40 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e5"
     },
     {
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "our community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "long Island",
+      "type": "LOCATION",
+      "canonical": "new_york_city_area",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -122,12 +125,13 @@
       "id": "e8"
     },
     {
-      "surface": "community",
-      "type": "LOCATION",
-      "canonical": "speaker_community",
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -135,36 +139,10 @@
       "id": "e9"
     },
     {
-      "surface": "long Island",
-      "type": "LOCATION",
-      "canonical": "long_island",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "extreme",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "extreme",
-      "var": "drought_severity",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
       "surface": "my community",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "my_community",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -172,30 +150,21 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "Drought is bringing doubt to our nation",
-      "type": "EVENT",
-      "canonical": "drought_is_bringing_doubt_to_our_nation",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
+      "id": "e10"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "moderation of drought",
-      "reason": "Phrase suggests drought severity but no exact canonical match; partially normalized to drought."
+      "reason": "Likely refers to drought severity, but the phrasing is awkward and not a clean level mention."
     },
     {
       "surface": "abnormally amount of drought",
-      "reason": "Likely means abnormally dry or severe drought, but wording is ungrammatical and ambiguous."
+      "reason": "Malformed phrase; likely intended to mean abnormally dry, but not explicit enough."
+    },
+    {
+      "surface": "our nation",
+      "reason": "Could refer to the United States, but it is not explicit and may be rhetorical."
     }
   ],
   "section_segments": [
@@ -204,5 +173,5 @@
       "text": "Almost everywhere in the United States, experiencing some moderation of drought. And many place including New Jersey have experienced fires. I wonder if this is connected to climate change? I wonder what is happening in other countries? we have moderate drought so our community is more prone to fires. in addition to list the area around long Island, or experiencing more severe to extreme drought which can spread to my community. There is an abnormally amount of drought in the United States. “Drought is bringing doubt to our nation”"
     }
   ],
-  "tagged_text": "Almost everywhere in the <entity type=\"LOCATION\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity>, experiencing some moderation of <entity type=\"EVENT\" canonical=\"moderate_drought\" section=\"body\">drought</entity>. And many place including <entity type=\"LOCATION\" canonical=\"new_jersey\" section=\"body\">New Jersey</entity> have experienced <entity type=\"EVENT\" canonical=\"fires\" section=\"body\">fires</entity>. I wonder if this is connected to <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">climate change</entity>? I wonder what is happening in <entity type=\"LOCATION\" canonical=\"other_countries\" section=\"body\">other countries</entity>? we have <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\" section=\"body\">moderate</entity> drought so our <entity type=\"LOCATION\" canonical=\"speaker_community\" section=\"body\" speaker_context=\"true\">community</entity> is more prone to <entity type=\"EVENT\" canonical=\"fires\" section=\"body\">fires</entity>. in addition to list the area around <entity type=\"LOCATION\" canonical=\"long_island\" section=\"body\">long Island</entity>, or experiencing more severe to <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\" section=\"body\">extreme</entity> drought which can spread to my <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" speaker_context=\"true\">community</entity>. There is an abnormally amount of drought in the <entity type=\"LOCATION\" canonical=\"united_states\" var=\"country\" section=\"body\">United States</entity>. “<entity type=\"EVENT\" canonical=\"drought_is_bringing_doubt_to_our_nation\" section=\"headline\">Drought is bringing doubt to our nation</entity>”"
+  "tagged_text": "Almost everywhere in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\">United States</entity>, experiencing some moderation of drought. And many place including <entity type=\"new_jersey\" canonical=\"new_jersey\" section=\"body\">New Jersey</entity> have experienced <entity type=\"EVENT\" canonical=\"fires\" section=\"body\">fires</entity>. I wonder if this is connected to <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\">climate change</entity>? I wonder what is happening in <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" modality=\"questioned\">other countries</entity>? we have <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\" section=\"body\">moderate</entity> drought so <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">our community</entity> is more prone to fires. in addition to list the area around <entity type=\"LOCATION\" canonical=\"new_york_city_area\" section=\"body\">long Island</entity>, or experiencing more severe to <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" section=\"body\">extreme</entity> drought which can spread to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" speaker_context=\"true\">my community</entity>. There is an abnormally amount of drought in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\">United States</entity>. “Drought is bringing doubt to our nation”"
 }

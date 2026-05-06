@@ -7,7 +7,7 @@
       "surface": "U.S.",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -57,6 +57,20 @@
       "id": "e3"
     },
     {
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 103,
+      "end": 110,
+      "id": "e4"
+    },
+    {
       "surface": "New York",
       "type": "LOCATION",
       "canonical": "new_york",
@@ -67,7 +81,7 @@
       "occurrence_index": 0,
       "start": 161,
       "end": 169,
-      "id": "e4"
+      "id": "e5"
     },
     {
       "surface": "California",
@@ -80,21 +94,35 @@
       "occurrence_index": 0,
       "start": 174,
       "end": 184,
-      "id": "e5"
+      "id": "e6"
     },
     {
-      "surface": "my community and I",
+      "surface": "my",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
+      "canonical": "speaker",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 348,
-      "end": 366,
-      "id": "e6"
+      "end": 350,
+      "id": "e7"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 351,
+      "end": 360,
+      "id": "e8"
     },
     {
       "surface": "October",
@@ -107,26 +135,13 @@
       "occurrence_index": 0,
       "start": 389,
       "end": 396,
-      "id": "e7"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 426,
-      "end": 430,
-      "id": "e8"
+      "id": "e9"
     },
     {
       "surface": "farmers",
       "type": "OTHER_ENTITY",
-      "canonical": "people",
-      "subtype": "other",
+      "canonical": "farmers",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -134,38 +149,43 @@
       "occurrence_index": 0,
       "start": 481,
       "end": 488,
-      "id": "e9"
+      "id": "e10"
     },
     {
-      "surface": "A Drought Throughout: What US States Were Affected the Most by This Drought?",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "headline",
+      "surface": "US",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 636,
-      "end": 712,
-      "id": "e10"
+      "start": 663,
+      "end": 665,
+      "id": "e11"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "large body of water",
-      "reason": "Could be a location-like geographic feature, but no exact canonical entry provided."
+      "surface": "middle states",
+      "reason": "Could refer to a region, but not a specific canonical location level in the provided list."
+    },
+    {
+      "surface": "east and west coast states",
+      "reason": "Composite geographic phrase; not a single canonical location."
+    },
+    {
+      "surface": "a large body of water",
+      "reason": "Generic geographic feature, not a listed entity."
     },
     {
       "surface": "deserts",
-      "reason": "Geographic feature reference, but no exact canonical entry provided."
+      "reason": "Generic geographic feature; no specific canonical mapping provided."
     },
     {
-      "surface": "grass",
-      "reason": "Could be flora-related OTHER_ENTITY, but not explicitly listed in the dictionary."
-    },
-    {
-      "surface": "crops and plants",
-      "reason": "Mixed agricultural/flora reference; could be split into OTHER_ENTITYs, but not clearly canonicalized here."
+      "surface": "the grass",
+      "reason": "Likely vegetation, but too generic to tag confidently."
     }
   ],
   "section_segments": [
@@ -174,5 +194,5 @@
       "text": "I noticed that the middle states of the U.S. such as Texas, Montana, and Wyoming are experiencing more extreme droughts that the east and west coast states like New York and California. I wonder if this has to do with those states not being so close to a large body of water, or due to the number of deserts located in those areas. This relates to my community and I because where I live, October was filled with no chance of rain for a while. This led to some growing concern for farmers and other people that are trying to maintain their crops and plants. I began to notice that the grass and became drier. A catchy headline would be A Drought Throughout: What US States Were Affected the Most by This Drought?"
     }
   ],
-  "tagged_text": "I noticed that the middle states of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">U.S.</entity> such as <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, and <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity> are experiencing more extreme droughts that the east and west coast states like <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> and <entity type=\"LOCATION\" canonical=\"california\">California</entity>. I wonder if this has to do with those states not being so close to a large body of water, or due to the number of deserts located in those areas. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\">my community and I</entity> because where I live, <entity type=\"TIME_REFERENCE\" canonical=\"october\">October</entity> was filled with no chance of <entity type=\"EVENT\" canonical=\"rain\">rain</entity> for a while. This led to some growing concern for <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\">farmers</entity> and other people that are trying to maintain their crops and plants. I began to notice that the grass and became drier. A catchy headline would be <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\">A Drought Throughout: What US States Were Affected the Most by This Drought?</entity>"
+  "tagged_text": "I noticed that the middle states of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">U.S.</entity> such as <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, and <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity> are experiencing more <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> droughts that the east and west coast states like <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity> and <entity type=\"LOCATION\" canonical=\"california\">California</entity>. I wonder if this has to do with those states not being so close to a large body of water, or due to the number of deserts located in those areas. This relates to <entity type=\"speaker\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">my</entity> <entity type=\"my_community\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">community</entity> and I because where I live, <entity type=\"TIME_REFERENCE\" canonical=\"october\">October</entity> was filled with no chance of rain for a while. This led to some growing concern for <entity type=\"OTHER_ENTITY\" canonical=\"farmers\" subtype=\"group\">farmers</entity> and other people that are trying to maintain their crops and plants. I began to notice that the grass and became drier. A catchy headline would be A Drought Throughout: What <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> States Were Affected the Most by This Drought?"
 }

@@ -6,8 +6,8 @@
     {
       "surface": "exceptional drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -35,7 +35,7 @@
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -46,62 +46,23 @@
       "id": "e2"
     },
     {
-      "surface": "nationwide crisis",
-      "type": "EVENT",
-      "canonical": "nationwide_crisis",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 474,
-      "end": 491,
-      "id": "e3"
-    },
-    {
-      "surface": "Desert Warfare",
-      "type": "EVENT",
-      "canonical": "desert_warfare",
+      "surface": "Desert Warfare: Drought Hits America.",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 494,
-      "end": 508,
-      "id": "e4"
-    },
-    {
-      "surface": "Drought Hits America",
-      "type": "EVENT",
-      "canonical": "drought_hits_america",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 510,
-      "end": 530,
-      "id": "e5"
-    },
-    {
-      "surface": "nationwide drought",
-      "type": "EVENT",
-      "canonical": "nationwide_drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
+      "end": 531,
+      "id": "e3"
     },
     {
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -109,7 +70,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e4"
     },
     {
       "surface": "Texas",
@@ -122,7 +83,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e5"
     },
     {
       "surface": "California",
@@ -135,7 +96,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e6"
     },
     {
       "surface": "Michigan",
@@ -148,13 +109,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e7"
     },
     {
       "surface": "severe",
       "type": "DATA_VAR_LEVEL",
       "canonical": "severe",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -162,12 +123,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e8"
     },
     {
-      "surface": "my area",
-      "type": "LOCATION",
-      "canonical": "my_area",
+      "surface": "abnormally dry",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -175,7 +137,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [],
@@ -185,5 +147,5 @@
       "text": "I notice that the chart labels areas far from \"exceptional drought\" as \"abnormally dry,\" suggesting a nationwide drought, but it avoids stating this directly, even calling a worse condition \"moderate,\" which feels misleading.\n\nI wonder why states like Texas and California aren’t experiencing the worst droughts despite their hot, dry climates. What’s causing this?\n\nMost of Michigan is facing \"severe\" drought, though my area is only \"abnormally dry.\" This seems to show a nationwide crisis.\n\nDesert Warfare: Drought Hits America."
     }
   ],
-  "tagged_text": "I notice that the chart labels areas far from \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">exceptional drought</entity>\" as \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\">abnormally dry</entity>\", suggesting a <entity type=\"EVENT\" canonical=\"nationwide_drought\">nationwide drought</entity>, but it avoids stating this directly, even calling a worse condition \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">moderate</entity>\", which feels misleading.\n\nI wonder why states like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> and <entity type=\"LOCATION\" canonical=\"california\">California</entity> aren’t experiencing the worst droughts despite their hot, dry climates. What’s causing this?\n\nMost of <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> is facing \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\">severe</entity>\" drought, though <entity type=\"LOCATION\" canonical=\"my_area\" speaker_context=\"true\">my area</entity> is only \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\">abnormally dry</entity>.\" This seems to show a <entity type=\"EVENT\" canonical=\"nationwide_crisis\">nationwide crisis</entity>.\n\n<entity type=\"EVENT\" canonical=\"desert_warfare\">Desert Warfare</entity>: <entity type=\"EVENT\" canonical=\"drought_hits_america\">Drought Hits America</entity>."
+  "tagged_text": "I notice that the chart labels areas far from \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">exceptional drought</entity>\" as \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>\", suggesting a nationwide drought, but it avoids stating this directly, even calling a worse condition \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">moderate</entity>\", which feels misleading.\n\nI wonder why states like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> and <entity type=\"LOCATION\" canonical=\"california\">California</entity> aren’t experiencing the worst droughts despite their hot, dry climates. What’s causing this?\n\nMost of <entity type=\"LOCATION\" canonical=\"michigan\">Michigan</entity> is facing \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity>\" drought, though my area is only \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" speaker_context=\"true\">abnormally dry</entity>.\" This seems to show a nationwide crisis.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Desert Warfare: Drought Hits America.</entity>"
 }

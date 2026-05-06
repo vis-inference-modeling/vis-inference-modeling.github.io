@@ -20,11 +20,7 @@
   "unresolved_mentions": [
     {
       "surface": "people",
-      "reason": "Generic mass noun; not tagged per instructions."
-    },
-    {
-      "surface": "harmful effects",
-      "reason": "Abstract phrase without a specific entity match."
+      "reason": "Generic group noun without a qualifying referent; not tagged per instructions."
     }
   ],
   "section_segments": [
@@ -33,5 +29,5 @@
       "text": "Hope people become more conscious about their responsability to lessen these harmful effects of global warming."
     }
   ],
-  "tagged_text": "Hope people become more conscious about their responsability to lessen these harmful effects of <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">global warming</entity>."
+  "tagged_text": "Hope people become more conscious about their responsability to lessen these harmful effects of <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">global warming</entity>."
 }

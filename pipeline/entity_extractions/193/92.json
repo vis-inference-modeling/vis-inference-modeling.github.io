@@ -6,7 +6,7 @@
     {
       "surface": "coastal areas",
       "type": "LOCATION",
-      "canonical": "coastal_areas",
+      "canonical": "coast",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -17,48 +17,50 @@
       "id": "e0"
     },
     {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 67,
-      "end": 75,
+      "start": 39,
+      "end": 42,
       "id": "e1"
     },
     {
-      "surface": "landlocked states",
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 67,
+      "end": 75,
+      "id": "e2"
+    },
+    {
+      "surface": "landlocked states in the central part of the country",
       "type": "LOCATION",
-      "canonical": "landlocked_states",
+      "canonical": "central_us",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 87,
-      "end": 104,
-      "id": "e2"
-    },
-    {
-      "surface": "central part of the country",
-      "type": "LOCATION",
-      "canonical": "central_part_of_the_country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 112,
       "end": 139,
       "id": "e3"
     },
     {
       "surface": "extreme drought",
-      "type": "EVENT",
-      "canonical": "extreme_drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -70,8 +72,9 @@
     },
     {
       "surface": "abnormally dry",
-      "type": "EVENT",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -85,11 +88,11 @@
       "surface": "me",
       "type": "OTHER_ENTITY",
       "canonical": "speaker",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
-      "subtype": "person",
       "occurrence_index": 0,
       "start": 280,
       "end": 282,
@@ -97,8 +100,9 @@
     },
     {
       "surface": "severe drought area",
-      "type": "EVENT",
-      "canonical": "severe_drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -111,37 +115,28 @@
     {
       "surface": "wildfire",
       "type": "EVENT",
-      "canonical": "wildfire",
+      "canonical": "wildfires",
       "section": "body",
-      "modality": "hypothetical",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 354,
       "end": 362,
       "id": "e8"
-    },
-    {
-      "surface": "Mother Nature has no tears left to cry",
-      "type": "OTHER_ENTITY",
-      "canonical": "mother_nature_has_no_tears_left_to_cry",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": 364,
-      "end": 402,
-      "id": "e9"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "Mother Nature",
+      "reason": "Personified abstract phrase; not clearly an entity type in the schema."
+    }
+  ],
   "section_segments": [
     {
       "section": "body",
       "text": "I notice that the coastal areas on the map experience less intense droughts, while the landlocked states in the central part of the country are hit the hardest. I wonder the main cause for certain areas to be extreme drought and those nearby to be abnormally dry. This relates to me because I live in a severe drought area and it can potentially cause a wildfire. Mother Nature has no tears left to cry"
     }
   ],
-  "tagged_text": "I notice that the coastal areas on the map experience less intense droughts, while the landlocked states in the central part of the country are hit the hardest. I wonder the main cause for certain areas to be extreme drought and those nearby to be abnormally dry. This relates to me because I live in a severe drought area and it can potentially cause a wildfire. Mother Nature has no tears left to cry"
+  "tagged_text": "I notice that the <entity type=\"LOCATION\" canonical=\"coast\" section=\"body\">coastal areas</entity> on the <entity type=\"CHART_ELEMENT\" canonical=\"map\" section=\"body\">map</entity> experience less intense <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\">droughts</entity>, while the <entity type=\"LOCATION\" canonical=\"central_us\" section=\"body\">landlocked states in the central part of the country</entity> are hit the hardest. I wonder the main cause for certain areas to be <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\" section=\"body\" modality=\"questioned\">extreme drought</entity> and those nearby to be <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\" modality=\"questioned\">abnormally dry</entity>. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"body\" speaker_context=\"true\">me</entity> because I live in a <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" section=\"body\" speaker_context=\"true\">severe drought area</entity> and it can potentially cause a <entity type=\"EVENT\" canonical=\"wildfires\" section=\"body\">wildfire</entity>. Mother Nature has no tears left to cry"
 }

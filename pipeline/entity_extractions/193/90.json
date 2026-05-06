@@ -18,8 +18,9 @@
     },
     {
       "surface": "America",
-      "type": "LOCATION",
-      "canonical": "america",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -28,6 +29,19 @@
       "start": 40,
       "end": 47,
       "id": "e1"
+    },
+    {
+      "surface": "colors",
+      "type": "CHART_ELEMENT",
+      "canonical": "color_scale",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 61,
+      "end": 67,
+      "id": "e2"
     },
     {
       "surface": "Hawaii",
@@ -40,7 +54,7 @@
       "occurrence_index": 0,
       "start": 168,
       "end": 174,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "Hawaii",
@@ -53,12 +67,26 @@
       "occurrence_index": 1,
       "start": 314,
       "end": 320,
-      "id": "e3"
+      "id": "e4"
+    },
+    {
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 372,
+      "end": 375,
+      "id": "e5"
     },
     {
       "surface": "US",
-      "type": "LOCATION",
-      "canonical": "us",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -66,12 +94,12 @@
       "occurrence_index": 0,
       "start": 383,
       "end": 385,
-      "id": "e4"
+      "id": "e6"
     },
     {
       "surface": "fall",
       "type": "TIME_REFERENCE",
-      "canonical": "this_fall",
+      "canonical": "fall",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -79,7 +107,7 @@
       "occurrence_index": 0,
       "start": 449,
       "end": 453,
-      "id": "e5"
+      "id": "e7"
     },
     {
       "surface": "climate change",
@@ -92,7 +120,7 @@
       "occurrence_index": 0,
       "start": 514,
       "end": 528,
-      "id": "e6"
+      "id": "e8"
     },
     {
       "surface": "world",
@@ -105,20 +133,7 @@
       "occurrence_index": 0,
       "start": 564,
       "end": 569,
-      "id": "e7"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 618,
-      "end": 622,
-      "id": "e8"
+      "id": "e9"
     },
     {
       "surface": "past few months",
@@ -126,17 +141,17 @@
       "canonical": "past_few_months",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 630,
       "end": 645,
-      "id": "e9"
+      "id": "e10"
     },
     {
       "surface": "A thirst to be quenched when the first snow falls.",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -144,42 +159,21 @@
       "occurrence_index": 0,
       "start": 689,
       "end": 739,
-      "id": "e10"
-    },
-    {
-      "surface": "islands",
-      "type": "LOCATION",
-      "canonical": "island",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e11"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "droughts",
-      "reason": "General event mention; not separately canonicalized beyond the broader drought event references already captured in context."
-    },
-    {
-      "surface": "drought's",
-      "reason": "Possessive form of drought; normalized as the same general event but not separately tagged to avoid duplication."
-    },
-    {
-      "surface": "driness",
-      "reason": "Likely refers to dryness/drought severity, but no exact canonical match is available."
-    },
-    {
       "surface": "my community",
-      "reason": "Speaker-linked community reference, but no exact canonical match in the provided normalized dictionary for this article."
+      "reason": "Speaker-linked community reference without a specific canonical location in the provided list."
     },
     {
       "surface": "where I live",
-      "reason": "Speaker-context location reference without a specific place name."
+      "reason": "Speaker-linked location reference without a specific canonical location in the provided list."
+    },
+    {
+      "surface": "driness",
+      "reason": "Likely means dryness, but not a listed entity or variable level."
     }
   ],
   "section_segments": [
@@ -193,5 +187,5 @@
       "text": "A thirst to be quenched when the first snow falls."
     }
   ],
-  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">graph</entity> displays all the droughts in <entity type=\"LOCATION\" canonical=\"america\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">America</entity>. I found the colors used for showing the scale to which drought's have been happening. I also found it interesting that <entity type=\"LOCATION\" canonical=\"hawaii\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Hawaii</entity> is almost completly colored, displaying its driness. I found this interesting because <entity type=\"LOCATION\" canonical=\"island\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">islands</entity> typically have a humid climate. I wonder why <entity type=\"LOCATION\" canonical=\"hawaii\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">Hawaii</entity> has been experiencing a drought. Nearly the entire map of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">US</entity> is covered in some color, which shows how dry it has been this <entity type=\"TIME_REFERENCE\" canonical=\"this_fall\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">fall</entity>. This relates to my community because this is the result of <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">climate change</entity>, which effects every person in the <entity type=\"LOCATION\" canonical=\"world\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">world</entity>. Also, where I live, there has been very little <entity type=\"EVENT\" canonical=\"rain\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">rain</entity> in the <entity type=\"TIME_REFERENCE\" canonical=\"past_few_months\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">past few months</entity>, which becomes very concerning. \nHeadline: <entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">A thirst to be quenched when the first snow falls.</entity>"
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> displays all the droughts in <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">America</entity>. I found the <entity type=\"CHART_ELEMENT\" canonical=\"color_scale\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">colors</entity> used for showing the scale to which drought's have been happening. I also found it interesting that <entity type=\"LOCATION\" canonical=\"hawaii\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Hawaii</entity> is almost completly colored, displaying its driness. I found this interesting because islands typically have a humid climate. I wonder why <entity type=\"LOCATION\" canonical=\"hawaii\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Hawaii</entity> has been experiencing a drought. Nearly the entire <entity type=\"CHART_ELEMENT\" canonical=\"map\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">map</entity> of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">US</entity> is covered in some color, which shows how dry it has been this <entity type=\"TIME_REFERENCE\" canonical=\"fall\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">fall</entity>. This relates to my community because this is the result of <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">climate change</entity>, which effects every person in the <entity type=\"LOCATION\" canonical=\"world\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">world</entity>. Also, where I live, there has been very little rain in the <entity type=\"TIME_REFERENCE\" canonical=\"past_few_months\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">past few months</entity>, which becomes very concerning. \nHeadline: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">A thirst to be quenched when the first snow falls.</entity>"
 }

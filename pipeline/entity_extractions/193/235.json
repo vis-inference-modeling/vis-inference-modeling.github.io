@@ -6,7 +6,7 @@
     {
       "surface": "mountains",
       "type": "LOCATION",
-      "canonical": "mountain",
+      "canonical": "rocky_mountains",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -31,12 +31,13 @@
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 74,
       "end": 81,
@@ -44,29 +45,44 @@
     },
     {
       "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": 142,
       "end": 149,
       "id": "e3"
     },
     {
-      "surface": "Texas",
-      "type": "LOCATION",
-      "canonical": "texas",
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 2,
+      "start": 255,
+      "end": 262,
+      "id": "e4"
+    },
+    {
+      "surface": "climate change",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 180,
-      "end": 185,
-      "id": "e4"
+      "start": 273,
+      "end": 287,
+      "id": "e5"
     },
     {
       "surface": "Colorado",
@@ -79,7 +95,7 @@
       "occurrence_index": 0,
       "start": 323,
       "end": 331,
-      "id": "e5"
+      "id": "e6"
     },
     {
       "surface": "desert state",
@@ -92,10 +108,10 @@
       "occurrence_index": 0,
       "start": 372,
       "end": 384,
-      "id": "e6"
+      "id": "e7"
     },
     {
-      "surface": "year",
+      "surface": "every year",
       "type": "TIME_REFERENCE",
       "canonical": "every_year",
       "section": "body",
@@ -103,28 +119,28 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 396,
+      "start": 390,
       "end": 400,
-      "id": "e7"
+      "id": "e8"
     },
     {
-      "surface": "Dying for thirst (and a better environment)",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "section": "headline",
+      "surface": "drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "subtype": "other",
-      "occurrence_index": 0,
-      "start": 472,
-      "end": 515,
-      "id": "e8"
+      "terminology_drift": true,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e9"
     },
     {
       "surface": "middle/north area",
       "type": "LOCATION",
-      "canonical": "middle_north_area",
+      "canonical": "central_us",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -132,37 +148,33 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e10"
+    },
+    {
+      "surface": "Texas",
+      "type": "LOCATION",
+      "canonical": "texas",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "states",
-      "reason": "Generic plural reference; not specific enough to map to a location entity."
-    },
-    {
-      "surface": "climate change",
-      "reason": "Could be tagged as EVENT, but the article-specific normalized dictionary does not confirm it as a canonical entity here; left unresolved per instruction to use unresolved_mentions freely."
-    },
-    {
-      "surface": "some areas",
-      "reason": "Generic location-like phrase without a specific canonical mapping."
-    },
-    {
-      "surface": "what I personally have felt",
-      "reason": "Speaker experience, but not an entity."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "In the regions where mountains and oceans are present, there's a lot less drought than areas without them. The middle/north area has the most drought along with a small portion in Texas.\n\nWhat can be done to prevent states from having such high levels of drought? Why does climate change effect some areas but not others.\n\nColorado is a mainly white state despite being a desert state, and every year it keeps getting hotter and hotter from what I personally have felt."
+      "text": "In the regions where mountains and oceans are present, there's a lot less drought than areas without them. The middle/north area has the most drought along with a small portion in Texas.\n\nWhat can be done to prevent states from having such high levels of drought? Why does climate change effect some areas but not others.\n\nColorado is a mainly white state despite being a desert state, and every year it keeps getting hotter and hotter from what I personally have felt. \n\n\"Dying for thirst (and a better environment)\""
     },
     {
       "section": "headline",
       "label": "Dying for thirst (and a better environment)",
-      "text": "\"Dying for thirst (and a better environment)\""
+      "text": "Dying for thirst (and a better environment)"
     }
   ],
-  "tagged_text": "In the regions where <entity type=\"LOCATION\" canonical=\"mountain\" section=\"body\">mountains</entity> and <entity type=\"LOCATION\" canonical=\"ocean\" section=\"body\">oceans</entity> are present, there's a lot less <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> than areas without them. The <entity type=\"LOCATION\" canonical=\"middle_north_area\" section=\"body\">middle/north area</entity> has the most drought along with a small portion in <entity type=\"LOCATION\" canonical=\"texas\" section=\"body\">Texas</entity>.\n\nWhat can be done to prevent states from having such high levels of drought? Why does climate change effect some areas but not others.\n\n<entity type=\"LOCATION\" canonical=\"colorado\" section=\"body\" speaker_context=\"true\">Colorado</entity> is a mainly white state despite being a <entity type=\"LOCATION\" canonical=\"desert_state\" section=\"body\">desert state</entity>, and every <entity type=\"TIME_REFERENCE\" canonical=\"every_year\" section=\"body\">year</entity> it keeps getting hotter and hotter from what I personally have felt. \n\n\"<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Dying for thirst (and a better environment)</entity>\""
+  "tagged_text": "In the regions where <entity type=\"LOCATION\" canonical=\"rocky_mountains\">mountains</entity> and <entity type=\"LOCATION\" canonical=\"ocean\">oceans</entity> are present, there's a lot less <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity> than areas without them. The <entity type=\"LOCATION\" canonical=\"central_us\">middle/north area</entity> has the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity> along with a small portion in <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>.\n\nWhat can be done to prevent states from having such high levels of <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">drought</entity>? Why does <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> effect some areas but not others.\n\n<entity type=\"LOCATION\" canonical=\"colorado\">Colorado</entity> is a mainly white state despite being a <entity type=\"LOCATION\" canonical=\"desert_state\">desert state</entity>, and <entity type=\"TIME_REFERENCE\" canonical=\"every_year\">every year</entity> it keeps getting hotter and hotter from what I personally have felt. \n\n\"Dying for thirst (and a better environment)\""
 }

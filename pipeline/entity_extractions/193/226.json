@@ -4,49 +4,50 @@
   "raw_comment": "1.  States with the worst drought correlate with Trump voters who deny climate change.\n2.  Since all colors refer to *some* level of drought, I wonder what the colors really mean.  Why is the entire nation in some kind of drought?  And are the coasts more immune to drought because of their proximity to the ocean?\n3.  For my own community (NH) it means as usual we live in a bubble divorced from the bulk of the US in terms of climate as well as everything else.\n4.  Title:  \"Drought aims at red states despite denials of global warming.\"",
   "entities": [
     {
-      "surface": "States",
-      "type": "OTHER_ENTITY",
-      "canonical": "states",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 4,
-      "end": 10,
-      "id": "e0"
-    },
-    {
       "surface": "Trump voters",
       "type": "OTHER_ENTITY",
       "canonical": "trump_voters",
-      "section": "body",
+      "subtype": "group",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 49,
       "end": 61,
-      "id": "e1"
+      "id": "e0"
     },
     {
       "surface": "climate change",
       "type": "EVENT",
       "canonical": "climate_change",
-      "section": "body",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 71,
       "end": 85,
+      "id": "e1"
+    },
+    {
+      "surface": "colors",
+      "type": "CHART_ELEMENT",
+      "canonical": "color_scale",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 101,
+      "end": 107,
       "id": "e2"
     },
     {
       "surface": "nation",
       "type": "LOCATION",
       "canonical": "country",
-      "section": "body",
+      "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": true,
@@ -58,8 +59,8 @@
     {
       "surface": "coasts",
       "type": "LOCATION",
-      "canonical": "coasts",
-      "section": "body",
+      "canonical": "coast",
+      "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
@@ -72,7 +73,7 @@
       "surface": "ocean",
       "type": "LOCATION",
       "canonical": "ocean",
-      "section": "body",
+      "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
@@ -82,56 +83,95 @@
       "id": "e5"
     },
     {
+      "surface": "my own community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 323,
+      "end": 339,
+      "id": "e6"
+    },
+    {
       "surface": "NH",
       "type": "LOCATION",
       "canonical": "new_hampshire",
-      "section": "body",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 341,
       "end": 343,
-      "id": "e6"
+      "id": "e7"
     },
     {
       "surface": "US",
-      "type": "LOCATION",
-      "canonical": "us",
-      "section": "body",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
+      "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
+      "speaker_context": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 413,
       "end": 415,
-      "id": "e7"
+      "id": "e8"
+    },
+    {
+      "surface": "climate",
+      "type": "EVENT",
+      "canonical": "climate_change",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 428,
+      "end": 435,
+      "id": "e9"
     },
     {
       "surface": "global warming",
       "type": "EVENT",
       "canonical": "global_warming",
-      "section": "headline",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 523,
       "end": 537,
-      "id": "e8"
+      "id": "e10"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "red states",
-      "reason": "Political/geographic phrase not in the provided canonical dictionary; could be a location-like collective."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
-      "section": "body",
-      "text": "1. States with the worst drought correlate with Trump voters who deny climate change.\n2. Since all colors refer to *some* level of drought, I wonder what the colors really mean.  Why is the entire nation in some kind of drought?  And are the coasts more immune to drought because of their proximity to the ocean?\n3. For my own community (NH) it means as usual we live in a bubble divorced from the bulk of the US in terms of climate as well as everything else.\n4. Title:  \"Drought aims at red states despite denials of global warming.\""
+      "section": "numbered_point",
+      "label": "1",
+      "text": "States with the worst drought correlate with Trump voters who deny climate change."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "Since all colors refer to *some* level of drought, I wonder what the colors really mean. Why is the entire nation in some kind of drought? And are the coasts more immune to drought because of their proximity to the ocean?"
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "For my own community (NH) it means as usual we live in a bubble divorced from the bulk of the US in terms of climate as well as everything else."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "Title:  \"Drought aims at red states despite denials of global warming.\""
     }
   ],
-  "tagged_text": "<entity type=\"OTHER_ENTITY\" canonical=\"states\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">States</entity> with the worst drought correlate with <entity type=\"OTHER_ENTITY\" canonical=\"trump_voters\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Trump voters</entity> who deny <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">climate change</entity>.\n2. Since all colors refer to *some* level of drought, I wonder what the colors really mean.  Why is the entire <entity type=\"LOCATION\" canonical=\"country\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">nation</entity> in some kind of drought?  And are the <entity type=\"LOCATION\" canonical=\"coasts\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">coasts</entity> more immune to drought because of their proximity to the <entity type=\"LOCATION\" canonical=\"ocean\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">ocean</entity>?\n3. For my own community (<entity type=\"LOCATION\" canonical=\"new_hampshire\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">NH</entity>) it means as usual we live in a bubble divorced from the bulk of the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">US</entity> in terms of climate as well as everything else.\n4. Title:  \"Drought aims at red states despite denials of <entity type=\"EVENT\" canonical=\"global_warming\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">global warming</entity>.\""
+  "tagged_text": "1. States with the worst drought correlate with <entity type=\"OTHER_ENTITY\" canonical=\"trump_voters\" subtype=\"group\">Trump voters</entity> who deny <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity>.\n2. Since all colors refer to *some* level of drought, I wonder what the <entity type=\"CHART_ELEMENT\" canonical=\"color_scale\">colors</entity> really mean.  Why is the entire <entity type=\"LOCATION\" canonical=\"country\">nation</entity> in some kind of drought?  And are the <entity type=\"LOCATION\" canonical=\"coast\">coasts</entity> more immune to drought because of their proximity to the <entity type=\"LOCATION\" canonical=\"ocean\">ocean</entity>?\n3. For <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my own community</entity> (<entity type=\"LOCATION\" canonical=\"new_hampshire\">NH</entity>) it means as usual we live in a bubble divorced from the bulk of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity> in terms of <entity type=\"EVENT\" canonical=\"climate_change\">climate</entity> as well as everything else.\n4. Title:  \"Drought aims at red states despite denials of <entity type=\"EVENT\" canonical=\"global_warming\">global warming</entity>.\""
 }

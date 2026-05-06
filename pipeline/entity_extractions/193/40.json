@@ -7,7 +7,7 @@
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -21,7 +21,7 @@
       "surface": "United States",
       "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
-      "var": "country",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -34,8 +34,8 @@
     {
       "surface": "Abnormally Dry",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "moderate",
-      "var": "drought_severity",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -48,8 +48,8 @@
     {
       "surface": "Exceptional Drought",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "exceptional",
-      "var": "drought_severity",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -60,23 +60,24 @@
       "id": "e3"
     },
     {
-      "surface": "Central U.S.",
-      "type": "LOCATION",
-      "canonical": "central_us",
+      "surface": "Exceptional Drought",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 377,
-      "end": 389,
+      "occurrence_index": 1,
+      "start": 419,
+      "end": 438,
       "id": "e4"
     },
     {
       "surface": "Extreme",
       "type": "DATA_VAR_LEVEL",
       "canonical": "extreme",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -89,8 +90,8 @@
     {
       "surface": "Severe",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "moderate",
-      "var": "drought_severity",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -103,8 +104,8 @@
     {
       "surface": "Severe",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "moderate",
-      "var": "drought_severity",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -115,64 +116,9 @@
       "id": "e7"
     },
     {
-      "surface": "precipitation",
-      "type": "DATA_VAR",
-      "canonical": "precipitation",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1216,
-      "end": 1229,
-      "id": "e8"
-    },
-    {
-      "surface": "weather sources",
-      "type": "OTHER_ENTITY",
-      "canonical": "weather_sources",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1266,
-      "end": 1281,
-      "id": "e9"
-    },
-    {
-      "surface": "fire",
-      "type": "EVENT",
-      "canonical": "fire",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1300,
-      "end": 1304,
-      "id": "e10"
-    },
-    {
-      "surface": "water shortages",
-      "type": "OTHER_ENTITY",
-      "canonical": "water_shortages",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1319,
-      "end": 1334,
-      "id": "e11"
-    },
-    {
       "surface": "Drought Conditions Spreading Across the United States",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
-      "subtype": "other",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -180,7 +126,7 @@
       "occurrence_index": 0,
       "start": 1348,
       "end": 1401,
-      "id": "e12"
+      "id": "e8"
     },
     {
       "surface": "Central United States",
@@ -193,7 +139,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e9"
+    },
+    {
+      "surface": "Central U.S.",
+      "type": "LOCATION",
+      "canonical": "central_us",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
     },
     {
       "surface": "Texas",
@@ -206,7 +165,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e11"
     },
     {
       "surface": "Texas",
@@ -219,20 +178,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "Texas",
-      "type": "LOCATION",
-      "canonical": "texas",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e16"
+      "id": "e12"
     },
     {
       "surface": "Ohio",
@@ -245,7 +191,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e13"
     },
     {
       "surface": "West Virginia",
@@ -258,7 +204,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e14"
     },
     {
       "surface": "Montana",
@@ -271,20 +217,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "Idaho",
-      "type": "LOCATION",
-      "canonical": "idaho",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e20"
+      "id": "e15"
     },
     {
       "surface": "Wyoming",
@@ -297,7 +230,33 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e21"
+      "id": "e16"
+    },
+    {
+      "surface": "Western",
+      "type": "LOCATION",
+      "canonical": "west",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e17"
+    },
+    {
+      "surface": "Eastern",
+      "type": "LOCATION",
+      "canonical": "east_coast",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e18"
     },
     {
       "surface": "water supply",
@@ -311,13 +270,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e19"
     },
     {
-      "surface": "farming",
+      "surface": "farms",
       "type": "OTHER_ENTITY",
-      "canonical": "farming",
-      "subtype": "other",
+      "canonical": "farms",
+      "subtype": "group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -325,13 +284,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
+      "id": "e20"
     },
     {
       "surface": "Moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -339,25 +298,29 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
+      "id": "e21"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "drought conditions",
-      "reason": "General drought reference; could be EVENT 'drought' but the exact phrase is not separately canonicalized."
+      "surface": "the country",
+      "reason": "Generic reference likely meaning the United States, but not explicitly a distinct entity here."
     },
     {
-      "surface": "Western and Eastern U.S.",
-      "reason": "Directional regional reference not explicitly canonicalized as a single location."
+      "surface": "drought free",
+      "reason": "Describes absence of drought rather than a listed level."
     },
     {
-      "surface": "daily lives",
-      "reason": "Generic phrase, not entity-like enough for a canonical match."
+      "surface": "weather sources",
+      "reason": "Could refer to organizations or media, but not specific enough to tag confidently."
     },
     {
-      "surface": "region where I live",
-      "reason": "Speaker-specific location reference, but no exact canonical match is provided."
+      "surface": "fire",
+      "reason": "Likely refers to fire danger, but the surface is too generic without a clearer entity label."
+    },
+    {
+      "surface": "water shortages",
+      "reason": "Concept-like phrase not in the provided normalized dictionary."
     }
   ],
   "section_segments": [
@@ -378,9 +341,9 @@
     },
     {
       "section": "headline",
-      "label": "headline",
+      "label": "Headline",
       "text": "Drought Conditions Spreading Across the United States"
     }
   ],
-  "tagged_text": "After looking closely at this graph, I notice that most areas in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> are experiencing droughts, with no state being fully exempt from experiencing this phenomenon. The <entity type=\"LOCATION\" canonical=\"central_us\">Central United States</entity> is experiencing a wide range of drought conditions from \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">Abnormally Dry</entity>\" to \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">Exceptional Drought</entity>\", and the worst drought conditions compared to the rest of the country. The <entity type=\"LOCATION\" canonical=\"central_us\">Central U.S.</entity> has most of the States with \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional\" var=\"drought_severity\">Exceptional Drought</entity>\", \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity\">Extreme</entity>\", and \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">Severe</entity>\" conditions. There are some outliers, such as the western part of <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, some parts of <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> and <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity>, and regions in <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, <entity type=\"LOCATION\" canonical=\"idaho\">Idaho</entity>, and <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>. Overall, the Western and Eastern U.S. has less severe droughts.\n\nI wonder why some states, like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, are experiencing all drought conditions in different regions, and some regions are completely drought free. Is it because <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> is a large state? Additionally, I wonder how the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"country\">United States</entity> as a whole will overcome these drought conditions, because the drought has most likely started affecting <entity type=\"OTHER_ENTITY\" canonical=\"water_supply\" subtype=\"other\">water supply</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"farming\" subtype=\"other\">farms</entity>, and the daily lives of many.\n\nThis relates to me because the region where I live and its surroundings are experiencing \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">Moderate</entity>\" to \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\">Severe</entity>\" drought conditions, with a lack of <entity type=\"DATA_VAR\" canonical=\"precipitation\">precipitation</entity>. This has led to many warnings from <entity type=\"OTHER_ENTITY\" canonical=\"weather_sources\" subtype=\"other\">weather sources</entity> of a high risk of <entity type=\"EVENT\" canonical=\"fire\">fire</entity> and potential <entity type=\"OTHER_ENTITY\" canonical=\"water_shortages\" subtype=\"other\">water shortages</entity>.\n\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" subtype=\"other\" section=\"headline\">Drought Conditions Spreading Across the United States</entity>"
+  "tagged_text": "After looking closely at this graph, I notice that most areas in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity> are experiencing droughts, with no state being fully exempt from experiencing this phenomenon. The <entity type=\"LOCATION\" canonical=\"central_us\">Central United States</entity> is experiencing a wide range of drought conditions from \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">Abnormally Dry</entity>\" to \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">Exceptional Drought</entity>\", and the worst drought conditions compared to the rest of the country. The <entity type=\"LOCATION\" canonical=\"central_us\">Central U.S.</entity> has most of the States with \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">Exceptional Drought</entity>\", \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">Extreme</entity>\", and \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">Severe</entity>\" conditions. There are some outliers, such as the western part of <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, some parts of <entity type=\"LOCATION\" canonical=\"ohio\">Ohio</entity> and <entity type=\"LOCATION\" canonical=\"west_virginia\">West Virginia</entity>, and regions in <entity type=\"LOCATION\" canonical=\"montana\">Montana</entity>, Idaho, and <entity type=\"LOCATION\" canonical=\"wyoming\">Wyoming</entity>. Overall, the <entity type=\"LOCATION\" canonical=\"west\">Western</entity> and <entity type=\"LOCATION\" canonical=\"east_coast\">Eastern</entity> U.S. has less severe droughts.\n\nI wonder why some states, like <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity>, are experiencing all drought conditions in different regions, and some regions are completely drought free. Is it because <entity type=\"LOCATION\" canonical=\"texas\">Texas</entity> is a large state? Additionally, I wonder how the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity> as a whole will overcome these drought conditions, because the drought has most likely started affecting <entity type=\"OTHER_ENTITY\" canonical=\"water_supply\" subtype=\"other\">water supply</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"farms\" subtype=\"group\">farms</entity>, and the daily lives of many.\n\nThis relates to me because the region where I live and its surroundings are experiencing \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\">Moderate</entity>\" to \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">Severe</entity>\" drought conditions, with a lack of precipitation. This has led to many warnings from weather sources of a high risk of fire and potential water shortages.\n\nHeadline: \"<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Drought Conditions Spreading Across the United States</entity>\""
 }

@@ -7,7 +7,7 @@
       "surface": "severe",
       "type": "DATA_VAR_LEVEL",
       "canonical": "severe",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,95 +18,30 @@
       "id": "e0"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 41,
-      "end": 48,
+      "start": 90,
+      "end": 97,
       "id": "e1"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 251,
-      "end": 258,
+      "start": 142,
+      "end": 149,
       "id": "e2"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 498,
-      "end": 505,
-      "id": "e3"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": 582,
-      "end": 589,
-      "id": "e4"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 4,
-      "start": 650,
-      "end": 657,
-      "id": "e5"
-    },
-    {
-      "surface": "country",
-      "type": "LOCATION",
-      "canonical": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "country",
-      "type": "LOCATION",
-      "canonical": "country",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e7"
     },
     {
       "surface": "Florida",
@@ -117,35 +52,22 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
+      "start": 236,
+      "end": 243,
+      "id": "e3"
     },
     {
-      "surface": "storms",
+      "surface": "intense storms",
       "type": "EVENT",
-      "canonical": "storms",
+      "canonical": "intense_storms",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "storms",
-      "type": "EVENT",
-      "canonical": "storms",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e10"
+      "start": 296,
+      "end": 310,
+      "id": "e4"
     },
     {
       "surface": "GA",
@@ -156,9 +78,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
+      "start": 332,
+      "end": 334,
+      "id": "e5"
     },
     {
       "surface": "SC",
@@ -169,36 +91,23 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "rain",
-      "type": "EVENT",
-      "canonical": "rain",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
+      "start": 339,
+      "end": 341,
+      "id": "e6"
     },
     {
       "surface": "abnormally dry",
       "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
+      "start": 415,
+      "end": 429,
+      "id": "e7"
     },
     {
       "surface": "New York",
@@ -209,9 +118,9 @@
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
+      "start": 549,
+      "end": 557,
+      "id": "e8"
     },
     {
       "surface": "fires",
@@ -222,53 +131,63 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
+      "start": 568,
+      "end": 573,
+      "id": "e9"
     },
     {
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
+      "start": 599,
+      "end": 607,
+      "id": "e10"
     },
     {
       "surface": "Abnormal droughts",
-      "type": "EVENT",
-      "canonical": "abnormal_droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
+      "start": 641,
+      "end": 658,
+      "id": "e11"
     }
   ],
   "unresolved_mentions": [
     {
+      "surface": "drought",
+      "reason": "Used generically multiple times; could refer to the drought severity variable but not consistently as a specific level."
+    },
+    {
       "surface": "abnormal dryness",
-      "reason": "Likely refers to drought severity, but exact canonical level is not provided in the dictionary."
+      "reason": "Likely refers to the abnormally dry level, but the surface is truncated/merged in the sentence and not cleanly separable."
     },
     {
       "surface": "very good title",
-      "reason": "Not an entity; included only because it appears in the headline-like tail of the comment."
+      "reason": "Meta-commentary, not an entity."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I noticed that there is a line of severe drought almost in a band horizontally across the country, also one vertically down the middle of the country. \nDrought doesn't seem to be connected to a type of geography, save for the fact that Florida has no drought , presumably because it has had such intense storms lately. I wonder why GA and SC, which also got a ton of rain in the more recent storms, are nonetheless abnormally dryi don’t think that makes a lot of sense. I also why there is so much drought and abnormal dryness everywhere .I live in New York which had fires and the drought was only moderate so that’s not. very good title : Abnormal droughts"
+      "text": "I noticed that there is a line of severe drought almost in a band horizontally across the country, also one vertically down the middle of the country. \nDrought doesn't seem to be connected to a type of geography, save for the fact that Florida has no drought , presumably because it has had such intense storms lately. I wonder why GA and SC, which also got a ton of rain in the more recent storms, are nonetheless abnormally dryi don’t think that makes a lot of sense. I also why there is so much drought and abnormal dryness everywhere .I live in New York which had fires and the drought was only moderate so that’s not. very good title :"
+    },
+    {
+      "section": "headline",
+      "label": "Abnormal droughts",
+      "text": "Abnormal droughts"
     }
   ],
-  "tagged_text": "I noticed that there is a line of <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity\" section=\"body\">severe</entity> <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> almost in a band horizontally across the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\">country</entity>, also one vertically down the middle of the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\">country</entity>. \n<entity type=\"EVENT\" canonical=\"drought\" section=\"body\">Drought</entity> doesn't seem to be connected to a type of geography, save for the fact that <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\">Florida</entity> has no <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> , presumably because it has had such intense <entity type=\"EVENT\" canonical=\"storms\" section=\"body\">storms</entity> lately. I wonder why <entity type=\"LOCATION\" canonical=\"georgia\" section=\"body\">GA</entity> and <entity type=\"LOCATION\" canonical=\"south_carolina\" section=\"body\">SC</entity>, which also got a ton of <entity type=\"EVENT\" canonical=\"rain\" section=\"body\">rain</entity> in the more recent <entity type=\"EVENT\" canonical=\"storms\" section=\"body\">storms</entity>, are nonetheless <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity\" section=\"body\">abnormally dry</entity>i don’t think that makes a lot of sense. I also why there is so much <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> and abnormal dryness everywhere .I live in <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\" speaker_context=\"true\">New York</entity> which had <entity type=\"EVENT\" canonical=\"fires\" section=\"body\">fires</entity> and the <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity> was only <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity\" section=\"body\">moderate</entity> so that’s not. very good title : <entity type=\"EVENT\" canonical=\"abnormal_droughts\" section=\"headline\">Abnormal droughts</entity>"
+  "tagged_text": "I noticed that there is a line of <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\">severe</entity> drought almost in a band horizontally across the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\">country</entity>, also one vertically down the middle of the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\">country</entity>. \nDrought doesn't seem to be connected to a type of geography, save for the fact that <entity type=\"LOCATION\" canonical=\"florida\" section=\"body\">Florida</entity> has no drought , presumably because it has had such <entity type=\"EVENT\" canonical=\"intense_storms\" section=\"body\">intense storms</entity> lately. I wonder why <entity type=\"LOCATION\" canonical=\"georgia\" section=\"body\">GA</entity> and <entity type=\"LOCATION\" canonical=\"south_carolina\" section=\"body\">SC</entity>, which also got a ton of rain in the more recent storms, are nonetheless <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"body\">abnormally dry</entity>i don’t think that makes a lot of sense. I also why there is so much drought and abnormal dryness everywhere .I live in <entity type=\"LOCATION\" canonical=\"new_york\" section=\"body\" speaker_context=\"true\">New York</entity> which had <entity type=\"EVENT\" canonical=\"fires\" section=\"body\">fires</entity> and the drought was only <entity type=\"DATA_VAR_LEVEL\" canonical=\"moderate\" var=\"drought_severity_category\" section=\"body\">moderate</entity> so that’s not. very good title : <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\" section=\"headline\">Abnormal droughts</entity>"
 }

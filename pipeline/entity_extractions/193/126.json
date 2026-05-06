@@ -4,16 +4,17 @@
   "raw_comment": "What did I notice?\nAcross the nation, severe droughts are becoming alarmingly common even in areas close to oceans, lakes, and mountain ranges. It’s puzzling to think that places with seemingly abundant water resources are grappling with growing freshwater shortages. What’s driving these conditions, and more importantly, how can we mitigate them?\nWhat do I wonder?\nClimate change seems to be a major factor in this crisis. How is it that regions near large bodies of water and rivers are still struggling with drought? Could these changes eventually alter weather patterns so drastically that parts of the country lose their distinct seasons like the Northeast becoming seasonless while the West gains variability?\nWhat effect does it have on me?\nWater scarcity touches all aspects of life, from our environment to our communities. Droughts intensify wildfires, which wreak havoc on towns and displace families, leaving them with little to rebuild their lives. Addressing this issue is critical for protecting both people and ecosystems.\nPossible Headline: \"Drying Up: Unraveling the Mystery of Drought in Water-Rich Regions\"",
   "entities": [
     {
-      "surface": "severe droughts",
-      "type": "EVENT",
-      "canonical": "severe_droughts",
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 38,
-      "end": 53,
+      "end": 44,
       "id": "e0"
     },
     {
@@ -32,7 +33,7 @@
     {
       "surface": "lakes",
       "type": "LOCATION",
-      "canonical": "lakes",
+      "canonical": "great_lakes",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -45,7 +46,7 @@
     {
       "surface": "mountain ranges",
       "type": "LOCATION",
-      "canonical": "mountain_ranges",
+      "canonical": "rocky_mountains",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -54,34 +55,6 @@
       "start": 127,
       "end": 142,
       "id": "e3"
-    },
-    {
-      "surface": "water resources",
-      "type": "OTHER_ENTITY",
-      "canonical": "water_resources",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 203,
-      "end": 218,
-      "id": "e4"
-    },
-    {
-      "surface": "freshwater shortages",
-      "type": "OTHER_ENTITY",
-      "canonical": "freshwater_shortages",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 246,
-      "end": 266,
-      "id": "e5"
     },
     {
       "surface": "Climate change",
@@ -94,59 +67,60 @@
       "occurrence_index": 0,
       "start": 367,
       "end": 381,
+      "id": "e4"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "country",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 608,
+      "end": 615,
+      "id": "e5"
+    },
+    {
+      "surface": "Northeast",
+      "type": "LOCATION",
+      "canonical": "northeast",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 653,
+      "end": 662,
       "id": "e6"
     },
     {
-      "surface": "large bodies of water",
+      "surface": "West",
       "type": "LOCATION",
-      "canonical": "large_bodies_of_water",
+      "canonical": "west",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 453,
-      "end": 474,
+      "start": 693,
+      "end": 697,
       "id": "e7"
     },
     {
-      "surface": "rivers",
-      "type": "LOCATION",
-      "canonical": "river",
+      "surface": "Water scarcity",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_scarcity",
+      "subtype": "concept",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 479,
-      "end": 485,
+      "start": 749,
+      "end": 763,
       "id": "e8"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 512,
-      "end": 519,
-      "id": "e9"
-    },
-    {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 834,
-      "end": 841,
-      "id": "e10"
     },
     {
       "surface": "wildfires",
@@ -159,67 +133,12 @@
       "occurrence_index": 0,
       "start": 853,
       "end": 862,
-      "id": "e11"
-    },
-    {
-      "surface": "towns",
-      "type": "LOCATION",
-      "canonical": "towns",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 885,
-      "end": 890,
-      "id": "e12"
-    },
-    {
-      "surface": "families",
-      "type": "OTHER_ENTITY",
-      "canonical": "families",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 904,
-      "end": 912,
-      "id": "e13"
-    },
-    {
-      "surface": "people",
-      "type": "OTHER_ENTITY",
-      "canonical": "people",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1017,
-      "end": 1023,
-      "id": "e14"
-    },
-    {
-      "surface": "ecosystems",
-      "type": "OTHER_ENTITY",
-      "canonical": "ecosystems",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1028,
-      "end": 1038,
-      "id": "e15"
+      "id": "e9"
     },
     {
       "surface": "Drying Up: Unraveling the Mystery of Drought in Water-Rich Regions",
-      "type": "EVENT",
-      "canonical": "drying_up_unraveling_the_mystery_of_drought_in_water_rich_regions",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -227,131 +146,53 @@
       "occurrence_index": 0,
       "start": 1060,
       "end": 1126,
-      "id": "e16"
-    },
-    {
-      "surface": "weather patterns",
-      "type": "OTHER_ENTITY",
-      "canonical": "weather_patterns",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
-      "surface": "country",
-      "type": "LOCATION",
-      "canonical": "country",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "Northeast",
-      "type": "LOCATION",
-      "canonical": "northeast",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "West",
-      "type": "LOCATION",
-      "canonical": "west",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e20"
-    },
-    {
-      "surface": "Water scarcity",
-      "type": "OTHER_ENTITY",
-      "canonical": "water_scarcity",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e21"
-    },
-    {
-      "surface": "environment",
-      "type": "OTHER_ENTITY",
-      "canonical": "environment",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e22"
-    },
-    {
-      "surface": "Droughts",
-      "type": "EVENT",
-      "canonical": "drought",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e23"
+      "id": "e10"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "across the nation",
-      "reason": "Could be a location-like scope phrase, but no exact canonical provided."
+      "surface": "the nation",
+      "reason": "Could refer to the United States or a broader geographic scope; not explicit enough to tag confidently."
     },
     {
-      "surface": "distinct seasons",
-      "reason": "Not clearly an entity in the dictionary; could be a weather concept."
+      "surface": "water resources",
+      "reason": "Generic resource phrase; likely related to water supply but not a specific canonical entity."
+    },
+    {
+      "surface": "freshwater shortages",
+      "reason": "Abstract condition, but no exact canonical mapping provided."
+    },
+    {
+      "surface": "weather patterns",
+      "reason": "Abstract concept without a specific canonical entity."
+    },
+    {
+      "surface": "seasons",
+      "reason": "Generic temporal/geographic concept; not a listed entity."
+    },
+    {
+      "surface": "towns",
+      "reason": "Generic settlement reference, not a specific location."
+    },
+    {
+      "surface": "families",
+      "reason": "Generic group, not a specific entity in the provided list."
+    },
+    {
+      "surface": "people and ecosystems",
+      "reason": "Compound phrase with a generic group and ecological concept; not cleanly mappable."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "What did I notice?\nAcross the nation, severe droughts are becoming alarmingly common even in areas close to oceans, lakes, and mountain ranges. It’s puzzling to think that places with seemingly abundant water resources are grappling with growing freshwater shortages. What’s driving these conditions, and more importantly, how can we mitigate them?"
-    },
-    {
-      "section": "body",
-      "text": "What do I wonder?\nClimate change seems to be a major factor in this crisis. How is it that regions near large bodies of water and rivers are still struggling with drought? Could these changes eventually alter weather patterns so drastically that parts of the country lose their distinct seasons like the Northeast becoming seasonless while the West gains variability?"
-    },
-    {
-      "section": "body",
-      "text": "What effect does it have on me?\nWater scarcity touches all aspects of life, from our environment to our communities. Droughts intensify wildfires, which wreak havoc on towns and displace families, leaving them with little to rebuild their lives. Addressing this issue is critical for protecting both people and ecosystems."
+      "text": "What did I notice?\nAcross the nation, severe droughts are becoming alarmingly common even in areas close to oceans, lakes, and mountain ranges. It’s puzzling to think that places with seemingly abundant water resources are grappling with growing freshwater shortages. What’s driving these conditions, and more importantly, how can we mitigate them?\nWhat do I wonder?\nClimate change seems to be a major factor in this crisis. How is it that regions near large bodies of water and rivers are still struggling with drought? Could these changes eventually alter weather patterns so drastically that parts of the country lose their distinct seasons like the Northeast becoming seasonless while the West gains variability?\nWhat effect does it have on me?\nWater scarcity touches all aspects of life, from our environment to our communities. Droughts intensify wildfires, which wreak havoc on towns and displace families, leaving them with little to rebuild their lives. Addressing this issue is critical for protecting both people and ecosystems."
     },
     {
       "section": "headline",
       "label": "Possible Headline",
-      "text": "\"Drying Up: Unraveling the Mystery of Drought in Water-Rich Regions\""
+      "text": "Drying Up: Unraveling the Mystery of Drought in Water-Rich Regions"
     }
   ],
-  "tagged_text": "What did I notice?\nAcross the nation, <entity type=\"EVENT\" canonical=\"severe_droughts\" section=\"body\">severe droughts</entity> are becoming alarmingly common even in areas close to <entity type=\"LOCATION\" canonical=\"ocean\" section=\"body\">oceans</entity>, <entity type=\"LOCATION\" canonical=\"lakes\" section=\"body\">lakes</entity>, and <entity type=\"LOCATION\" canonical=\"mountain_ranges\" section=\"body\">mountain ranges</entity>. It’s puzzling to think that places with seemingly abundant <entity type=\"OTHER_ENTITY\" canonical=\"water_resources\" subtype=\"other\" section=\"body\">water resources</entity> are grappling with growing <entity type=\"OTHER_ENTITY\" canonical=\"freshwater_shortages\" subtype=\"other\" section=\"body\">freshwater shortages</entity>. What’s driving these conditions, and more importantly, how can we mitigate them?\nWhat do I wonder?\n<entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">Climate change</entity> seems to be a major factor in this crisis. How is it that regions near <entity type=\"LOCATION\" canonical=\"large_bodies_of_water\" section=\"body\">large bodies of water</entity> and <entity type=\"LOCATION\" canonical=\"river\" section=\"body\">rivers</entity> are still struggling with <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">drought</entity>? Could these changes eventually alter <entity type=\"EVENT\" canonical=\"weather_patterns\" section=\"body\">weather patterns</entity> so drastically that parts of the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\">country</entity> lose their distinct seasons like the <entity type=\"LOCATION\" canonical=\"northeast\" section=\"body\">Northeast</entity> becoming seasonless while the <entity type=\"LOCATION\" canonical=\"west\" section=\"body\">West</entity> gains variability?\nWhat effect does it have on me?\n<entity type=\"OTHER_ENTITY\" canonical=\"water_scarcity\" subtype=\"other\" section=\"body\">Water scarcity</entity> touches all aspects of life, from our <entity type=\"OTHER_ENTITY\" canonical=\"environment\" subtype=\"other\" section=\"body\">environment</entity> to our communities. <entity type=\"EVENT\" canonical=\"drought\" section=\"body\">Droughts</entity> intensify <entity type=\"EVENT\" canonical=\"wildfires\" section=\"body\">wildfires</entity>, which wreak havoc on <entity type=\"LOCATION\" canonical=\"towns\" section=\"body\">towns</entity> and displace <entity type=\"OTHER_ENTITY\" canonical=\"families\" subtype=\"other\" section=\"body\">families</entity>, leaving them with little to rebuild their lives. Addressing this issue is critical for protecting both <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"body\">people</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"ecosystems\" subtype=\"other\" section=\"body\">ecosystems</entity>.\nPossible Headline: \"<entity type=\"EVENT\" canonical=\"drying_up_unraveling_the_mystery_of_drought_in_water_rich_regions\" section=\"headline\">Drying Up: Unraveling the Mystery of Drought in Water-Rich Regions</entity>\""
+  "tagged_text": "What did I notice?\nAcross the nation, <entity type=\"DATA_VAR_LEVEL\" canonical=\"severe\" var=\"drought_severity_category\" section=\"body\">severe</entity> droughts are becoming alarmingly common even in areas close to <entity type=\"LOCATION\" canonical=\"ocean\" section=\"body\">oceans</entity>, <entity type=\"LOCATION\" canonical=\"great_lakes\" section=\"body\">lakes</entity>, and <entity type=\"LOCATION\" canonical=\"rocky_mountains\" section=\"body\">mountain ranges</entity>. It’s puzzling to think that places with seemingly abundant water resources are grappling with growing freshwater shortages. What’s driving these conditions, and more importantly, how can we mitigate them?\nWhat do I wonder?\n<entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\">Climate change</entity> seems to be a major factor in this crisis. How is it that regions near large bodies of water and rivers are still struggling with drought? Could these changes eventually alter weather patterns so drastically that parts of the <entity type=\"LOCATION\" canonical=\"country\" section=\"body\">country</entity> lose their distinct seasons like the <entity type=\"LOCATION\" canonical=\"northeast\" section=\"body\">Northeast</entity> becoming seasonless while the <entity type=\"LOCATION\" canonical=\"west\" section=\"body\">West</entity> gains variability?\nWhat effect does it have on me?\n<entity type=\"OTHER_ENTITY\" canonical=\"water_scarcity\" subtype=\"concept\" section=\"body\">Water scarcity</entity> touches all aspects of life, from our environment to our communities. Droughts intensify <entity type=\"EVENT\" canonical=\"wildfires\" section=\"body\">wildfires</entity>, which wreak havoc on towns and displace families, leaving them with little to rebuild their lives. Addressing this issue is critical for protecting both people and ecosystems.\nPossible Headline: \"Drying Up: Unraveling the Mystery of Drought in Water-Rich Regions\""
 }

@@ -7,7 +7,7 @@
       "surface": "moderate",
       "type": "DATA_VAR_LEVEL",
       "canonical": "moderate",
-      "var": "drought_severity",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -16,24 +16,48 @@
       "start": 66,
       "end": 74,
       "id": "e0"
+    },
+    {
+      "surface": "abnormally dry droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 78,
+      "end": 101,
+      "id": "e1"
+    },
+    {
+      "surface": "severe",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "severe",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "hypothetical",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 141,
+      "end": 147,
+      "id": "e2"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "plains",
-      "reason": "Geographic/landform reference not present in the normalized dictionary."
+      "reason": "Could be a geographic region, but no canonical location mapping is provided."
     },
     {
       "surface": "deserts",
-      "reason": "Could be a location/landform reference, but no exact canonical match is available."
-    },
-    {
-      "surface": "abnormally dry droughts",
-      "reason": "Likely refers to a drought severity level, but the exact canonical mapping is uncertain because the phrase combines a level with a generic noun."
+      "reason": "Could be a geographic feature or region, but no canonical location mapping is provided."
     },
     {
       "surface": "dense forestation",
-      "reason": "Could relate to vegetation/environment, but no exact canonical match is provided."
+      "reason": "Environmental concept not covered by the schema; no canonical mapping provided."
     }
   ],
   "section_segments": [

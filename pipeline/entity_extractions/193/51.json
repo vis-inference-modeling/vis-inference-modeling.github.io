@@ -30,22 +30,23 @@
       "id": "e1"
     },
     {
-      "surface": "Drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "central U.S. states",
+      "type": "LOCATION",
+      "canonical": "central_us",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 391,
-      "end": 398,
+      "start": null,
+      "end": null,
       "id": "e2"
     },
     {
-      "surface": "central U.S. states",
-      "type": "LOCATION",
-      "canonical": "central_us",
+      "surface": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -57,21 +58,9 @@
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e4"
-    },
-    {
-      "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "exceptional_drought",
+      "var": "drought_severity_category",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -79,25 +68,12 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e5"
+      "id": "e4"
     },
     {
-      "surface": "areas",
-      "type": "LOCATION",
-      "canonical": "central_us",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "weather",
+      "surface": "extreme weather",
       "type": "EVENT",
-      "canonical": "weather",
+      "canonical": "extreme_weather",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -105,7 +81,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e5"
     },
     {
       "surface": "global warming",
@@ -118,7 +94,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e6"
     },
     {
       "surface": "climate change",
@@ -131,7 +107,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e7"
     },
     {
       "surface": "climate change",
@@ -144,48 +120,41 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e10"
-    },
-    {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker_and_community",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "rough terrain",
-      "reason": "Could be a location/geographical feature, but no confirmed canonical entity in the provided dictionary."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "Looking at the graph, I noticed that the central U.S. states have the worst droughts. These areas might be more affected because of their rough terrain and extreme weather. I wonder if global warming and climate change are making these droughts worse. This is important to me and my community because it shows how climate change is impacting us all. A good headline for this graph could be \"Drought in Your State.\""
     }
   ],
-  "tagged_text": "Looking at the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I noticed that the <entity type=\"LOCATION\" canonical=\"central_us\" section=\"body\">central U.S. states</entity> have the worst <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity>. These <entity type=\"LOCATION\" canonical=\"central_us\" section=\"body\">areas</entity> might be more affected because of their rough terrain and extreme <entity type=\"EVENT\" canonical=\"weather\" section=\"body\">weather</entity>. I wonder if <entity type=\"EVENT\" canonical=\"global_warming\" section=\"body\" modality=\"questioned\">global warming</entity> and <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\" modality=\"questioned\">climate change</entity> are making these <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\" modality=\"questioned\">droughts</entity> worse. This is important to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\" section=\"body\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"speaker_and_community\" subtype=\"other\" speaker_context=\"true\" section=\"body\">my community</entity> because it shows how <entity type=\"EVENT\" canonical=\"climate_change\" section=\"body\">climate change</entity> is impacting us all. A good headline for this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> could be \"<entity type=\"EVENT\" canonical=\"drought\" section=\"body\">Drought</entity> in Your State.\""
+  "tagged_text": "Looking at the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I noticed that the <entity type=\"LOCATION\" canonical=\"central_us\">central U.S. states</entity> have the worst <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\">droughts</entity>. These areas might be more affected because of their rough terrain and <entity type=\"EVENT\" canonical=\"extreme_weather\">extreme weather</entity>. I wonder if <entity type=\"EVENT\" canonical=\"global_warming\" modality=\"questioned\">global warming</entity> and <entity type=\"EVENT\" canonical=\"climate_change\" modality=\"questioned\">climate change</entity> are making these <entity type=\"DATA_VAR_LEVEL\" canonical=\"exceptional_drought\" var=\"drought_severity_category\" modality=\"questioned\">droughts</entity> worse. This is important to me and my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because it shows how <entity type=\"EVENT\" canonical=\"climate_change\">climate change</entity> is impacting us all. A good <entity type=\"CHART_ELEMENT\" canonical=\"headline\">headline</entity> for this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> could be \"Drought in Your State.\""
 }

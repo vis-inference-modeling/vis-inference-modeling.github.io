@@ -2,98 +2,42 @@
   "article_id": "193",
   "comment_index": 130,
   "raw_comment": "What do you notice?\nI notice that air quality is different in many places.\n• What do you wonder?\nI wonder if this is happening in other countries. \n• How does this relate to you and your community?\nIt’s relatable because if droughts happen where we live it will cause many issues within our community\n• What’s going on in this graph? Create a catchy headline that captures the graph’s main idea\nWhere is the rain",
-  "entities": [
+  "entities": [],
+  "unresolved_mentions": [
     {
       "surface": "air quality",
-      "type": "OTHER_ENTITY",
-      "canonical": "air_quality",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 34,
-      "end": 45,
-      "id": "e0"
+      "reason": "Not in the provided reference list and no confirmed canonical mapping."
     },
     {
       "surface": "other countries",
-      "type": "LOCATION",
-      "canonical": "other_countries",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 130,
-      "end": 145,
-      "id": "e1"
+      "reason": "Generic geographic reference; not a specific location in the reference list."
     },
     {
       "surface": "droughts",
-      "type": "EVENT",
-      "canonical": "droughts",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 224,
-      "end": 232,
-      "id": "e2"
+      "reason": "Generic plural reference; no specific drought severity level is named."
     },
     {
-      "surface": "community",
-      "type": "LOCATION",
-      "canonical": "speaker_community",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 291,
-      "end": 300,
-      "id": "e3"
+      "surface": "where we live",
+      "reason": "Speaker-context location reference, but too vague to map to a specific location."
+    },
+    {
+      "surface": "our community",
+      "reason": "Speaker-context group/location-like reference, but not a clean canonical match in the provided list."
+    },
+    {
+      "surface": "graph",
+      "reason": "Chart element is mentioned, but the comment is too generic and the headline is not clearly a title."
     },
     {
       "surface": "Where is the rain",
-      "type": "EVENT",
-      "canonical": "where_is_the_rain",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 395,
-      "end": 412,
-      "id": "e4"
-    }
-  ],
-  "unresolved_mentions": [
-    {
-      "surface": "where we live",
-      "reason": "Speaker-location reference is implicit; no exact location provided."
+      "reason": "Likely a headline, but it is phrased as a question and not clearly a chart element title."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "What do you notice?\nI notice that air quality is different in many places."
-    },
-    {
-      "section": "body",
-      "text": "• What do you wonder?\nI wonder if this is happening in other countries."
-    },
-    {
-      "section": "body",
-      "text": "• How does this relate to you and your community?\nIt’s relatable because if droughts happen where we live it will cause many issues within our community"
-    },
-    {
-      "section": "headline",
-      "label": "What’s going on in this graph? Create a catchy headline that captures the graph’s main idea",
-      "text": "Where is the rain"
+      "text": "What do you notice?\nI notice that air quality is different in many places.\n• What do you wonder?\nI wonder if this is happening in other countries. \n• How does this relate to you and your community?\nIt’s relatable because if droughts happen where we live it will cause many issues within our community\n• What’s going on in this graph? Create a catchy headline that captures the graph’s main idea\nWhere is the rain"
     }
   ],
-  "tagged_text": "What do you notice?\nI notice that <entity type=\"OTHER_ENTITY\" canonical=\"air_quality\" subtype=\"other\" section=\"body\">air quality</entity> is different in many places.\n• What do you wonder?\nI wonder if this is happening in <entity type=\"LOCATION\" canonical=\"other_countries\" section=\"body\">other countries</entity>. \n• How does this relate to you and your community?\nIt’s relatable because if <entity type=\"EVENT\" canonical=\"droughts\" section=\"body\">droughts</entity> happen where we live it will cause many issues within our <entity type=\"LOCATION\" canonical=\"speaker_community\" section=\"body\" speaker_context=\"true\">community</entity>\n• What’s going on in this graph? Create a catchy headline that captures the graph’s main idea\n<entity type=\"EVENT\" canonical=\"where_is_the_rain\" section=\"headline\">Where is the rain</entity>"
+  "tagged_text": "What do you notice?\nI notice that air quality is different in many places.\n• What do you wonder?\nI wonder if this is happening in other countries. \n• How does this relate to you and your community?\nIt’s relatable because if droughts happen where we live it will cause many issues within our community\n• What’s going on in this graph? Create a catchy headline that captures the graph’s main idea\nWhere is the rain"
 }

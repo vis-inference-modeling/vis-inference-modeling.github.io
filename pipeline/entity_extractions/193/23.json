@@ -18,8 +18,9 @@
     },
     {
       "surface": "US",
-      "type": "LOCATION",
-      "canonical": "us",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -31,8 +32,9 @@
     },
     {
       "surface": "United States",
-      "type": "LOCATION",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -44,8 +46,9 @@
     },
     {
       "surface": "United States",
-      "type": "LOCATION",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "united_states",
+      "var": "state_names_abbreviations",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -57,8 +60,8 @@
     },
     {
       "surface": "The Urgency of Water in America",
-      "type": "OTHER_ENTITY",
-      "canonical": "headline_title",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -69,9 +72,10 @@
       "id": "e4"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -82,9 +86,10 @@
       "id": "e5"
     },
     {
-      "surface": "drought",
-      "type": "EVENT",
-      "canonical": "drought",
+      "surface": "extreme",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -99,7 +104,7 @@
       "type": "LOCATION",
       "canonical": "california",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -112,7 +117,7 @@
       "type": "LOCATION",
       "canonical": "california",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
@@ -125,7 +130,7 @@
       "type": "EVENT",
       "canonical": "wildfires",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -135,10 +140,11 @@
     },
     {
       "surface": "abnormally dry",
-      "type": "EVENT",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "abnormally_dry",
+      "var": "drought_severity_category",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -149,19 +155,23 @@
   ],
   "unresolved_mentions": [
     {
+      "surface": "middle area",
+      "reason": "Likely a region on the map, but no exact canonical location is provided."
+    },
+    {
       "surface": "lack of water",
-      "reason": "Could refer to drought/water scarcity, but no exact canonical match in the provided dictionary."
+      "reason": "Could refer to water scarcity, but no confirmed canonical entity beyond the general concept is provided."
     },
     {
       "surface": "my community",
-      "reason": "Speaker-linked community reference, but no exact canonical location/entity match is provided in the article dictionary."
+      "reason": "Speaker-context community reference, but no specific canonical location is given."
     }
   ],
   "section_segments": [
     {
       "section": "numbered_point",
       "label": "1",
-      "text": "The graph shows the drought distribution in the US. I notice that the middle area of the United States is approximately more extreme than others. In addition, I see that most of the area has drought and lack of water. "
+      "text": "The graph shows the drought distribution in the US. I notice that the middle area of the United States is approximately more extreme than others. In addition, I see that most of the area has drought and lack of water."
     },
     {
       "section": "numbered_point",
@@ -179,5 +189,5 @@
       "text": "The Urgency of Water in America"
     }
   ],
-  "tagged_text": "1. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> shows the drought distribution in the <entity type=\"LOCATION\" canonical=\"us\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">US</entity>. I notice that the middle area of the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">United States</entity> is approximately more extreme than others. In addition, I see that most of the area has <entity type=\"EVENT\" canonical=\"drought\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">drought</entity> and lack of water. \n2. I wonder why the middle part has more drought than <entity type=\"LOCATION\" canonical=\"california\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">California</entity> because California has lots of <entity type=\"EVENT\" canonical=\"wildfires\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">wildfires</entity> but is at the stage of <entity type=\"EVENT\" canonical=\"abnormally_dry\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">abnormally dry</entity>, it's not extreme.\n3. This relates to my community because it gives a sense that the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">United States</entity> lacks water.\n\n<entity type=\"OTHER_ENTITY\" canonical=\"headline_title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">The Urgency of Water in America</entity>"
+  "tagged_text": "1. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the drought distribution in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">US</entity>. I notice that the middle area of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\">United States</entity> is approximately more <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity> than others. In addition, I see that most of the area has drought and lack of water. \n2. I wonder why the middle part has more drought than <entity type=\"LOCATION\" canonical=\"california\">California</entity> because <entity type=\"LOCATION\" canonical=\"california\">California</entity> has lots of <entity type=\"EVENT\" canonical=\"wildfires\">wildfires</entity> but is at the stage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"abnormally_dry\" var=\"drought_severity_category\">abnormally dry</entity>, it's not <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme</entity>.\n3. This relates to my community because it gives a sense that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"united_states\" var=\"state_names_abbreviations\" speaker_context=\"true\">United States</entity> lacks water.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">The Urgency of Water in America</entity>"
 }

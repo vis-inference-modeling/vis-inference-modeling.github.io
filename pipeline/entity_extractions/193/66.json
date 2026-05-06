@@ -4,6 +4,87 @@
   "raw_comment": "•\tI noticed that most states don’t seem to be dealing with extreme droughts. Only a few areas on the map are marked in red, showing they’re in really bad shape. It made me wonder why these specific places are struggling while others aren’t.\n\t•\tI’m curious about what causes droughts to hit certain areas harder. There doesn’t seem to be a clear pattern on the map, which makes me think there must be specific conditions—like climate, geography, or how people use water—that lead to these severe droughts.\n\t•\tThis feels relevant to me because I live near a large body of water. Even though New Jersey, which is close to New York, has had droughts before, it’s not something I usually worry about. But seeing how unpredictable droughts can be makes me realize it could affect my community too. If a drought hit here, we’d have to deal with things like water restrictions, which would definitely be a big change.\n\t•\tHow Severe Are Droughts Across the U.S., and Could Your State Be Next?",
   "entities": [
     {
+      "surface": "extreme droughts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "extreme",
+      "var": "drought_severity_category",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 59,
+      "end": 75,
+      "id": "e0"
+    },
+    {
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 101,
+      "end": 104,
+      "id": "e1"
+    },
+    {
+      "surface": "map",
+      "type": "CHART_ELEMENT",
+      "canonical": "map",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 360,
+      "end": 363,
+      "id": "e2"
+    },
+    {
+      "surface": "climate",
+      "type": "OTHER_ENTITY",
+      "canonical": "climate",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 425,
+      "end": 432,
+      "id": "e3"
+    },
+    {
+      "surface": "water",
+      "type": "DATA_VAR",
+      "canonical": "water_usage",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 463,
+      "end": 468,
+      "id": "e4"
+    },
+    {
+      "surface": "water",
+      "type": "OTHER_ENTITY",
+      "canonical": "water",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 570,
+      "end": 575,
+      "id": "e5"
+    },
+    {
       "surface": "New Jersey",
       "type": "LOCATION",
       "canonical": "new_jersey",
@@ -14,7 +95,7 @@
       "occurrence_index": 0,
       "start": 589,
       "end": 599,
-      "id": "e0"
+      "id": "e6"
     },
     {
       "surface": "New York",
@@ -27,51 +108,55 @@
       "occurrence_index": 0,
       "start": 619,
       "end": 627,
-      "id": "e1"
+      "id": "e7"
     },
     {
-      "surface": "U.S.",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "united_states",
-      "var": "country",
-      "section": "headline",
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 777,
+      "end": 786,
+      "id": "e8"
+    },
+    {
+      "surface": "water restrictions",
+      "type": "OTHER_ENTITY",
+      "canonical": "water_restrictions",
+      "subtype": "policy",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 948,
-      "end": 952,
-      "id": "e2"
+      "start": 850,
+      "end": 868,
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "extreme droughts",
-      "reason": "Likely a drought severity level, but no exact canonical is provided in the normalized dictionary."
-    },
-    {
       "surface": "red",
-      "reason": "Could refer to a map color encoding or chart element, but no chart-element canonical for colors is provided."
+      "reason": "Likely refers to map coloring for drought severity, but the exact chart element/legend mapping is not explicit enough to tag confidently."
     },
     {
-      "surface": "large body of water",
-      "reason": "Could map to a water-related location/entity, but no exact canonical match is available."
+      "surface": "geography",
+      "reason": "Abstract causal concept, but no confirmed canonical mapping is provided."
     },
     {
-      "surface": "water restrictions",
-      "reason": "Could be an OTHER_ENTITY or event-like consequence, but no matching canonical is provided."
+      "surface": "How Severe Are Droughts Across the U.S., and Could Your State Be Next?",
+      "reason": "Headline-like text, but it is not clearly separated as a title line in the raw comment."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "•\tI noticed that most states don’t seem to be dealing with extreme droughts. Only a few areas on the map are marked in red, showing they’re in really bad shape. It made me wonder why these specific places are struggling while others aren’t.\n\t•\tI’m curious about what causes droughts to hit certain areas harder. There doesn’t seem to be a clear pattern on the map, which makes me think there must be specific conditions—like climate, geography, or how people use water—that lead to these severe droughts.\n\t•\tThis feels relevant to me because I live near a large body of water. Even though New Jersey, which is close to New York, has had droughts before, it’s not something I usually worry about. But seeing how unpredictable droughts can be makes me realize it could affect my community too. If a drought hit here, we’d have to deal with things like water restrictions, which would definitely be a big change."
-    },
-    {
-      "section": "headline",
-      "label": "Headline",
-      "text": "How Severe Are Droughts Across the U.S., and Could Your State Be Next?"
+      "text": "•\tI noticed that most states don’t seem to be dealing with extreme droughts. Only a few areas on the map are marked in red, showing they’re in really bad shape. It made me wonder why these specific places are struggling while others aren’t.\n\t•\tI’m curious about what causes droughts to hit certain areas harder. There doesn’t seem to be a clear pattern on the map, which makes me think there must be specific conditions—like climate, geography, or how people use water—that lead to these severe droughts.\n\t•\tThis feels relevant to me because I live near a large body of water. Even though New Jersey, which is close to New York, has had droughts before, it’s not something I usually worry about. But seeing how unpredictable droughts can be makes me realize it could affect my community too. If a drought hit here, we’d have to deal with things like water restrictions, which would definitely be a big change.\n\t•\tHow Severe Are Droughts Across the U.S., and Could Your State Be Next?"
     }
   ],
-  "tagged_text": "•\tI noticed that most states don’t seem to be dealing with extreme droughts. Only a few areas on the map are marked in red, showing they’re in really bad shape. It made me wonder why these specific places are struggling while others aren’t.\n\t•\tI’m curious about what causes droughts to hit certain areas harder. There doesn’t seem to be a clear pattern on the map, which makes me think there must be specific conditions—like climate, geography, or how people use water—that lead to these severe droughts.\n\t•\tThis feels relevant to me because I live near a large body of water. Even though <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>, which is close to <entity type=\"LOCATION\" canonical=\"new_york\">New York</entity>, has had droughts before, it’s not something I usually worry about. But seeing how unpredictable droughts can be makes me realize it could affect my community too. If a drought hit here, we’d have to deal with things like water restrictions, which would definitely be a big change.\n\t•\tHow Severe Are Droughts Across the U.S., and Could Your State Be Next?"
+  "tagged_text": "•\tI noticed that most states don’t seem to be dealing with <entity type=\"DATA_VAR_LEVEL\" canonical=\"extreme\" var=\"drought_severity_category\">extreme droughts</entity>. Only a few areas on the <entity type=\"CHART_ELEMENT\" canonical=\"map\">map</entity> are marked in red, showing they’re in really bad shape. It made me wonder why these specific places are struggling while others aren’t.\n\t•\tI’m curious about what causes droughts to hit certain areas harder. There doesn’t seem to be a clear pattern on the <entity type=\"CHART_ELEMENT\" canonical=\"map\">map</entity>, which makes me think there must be specific conditions—like <entity type=\"OTHER_ENTITY\" canonical=\"climate\" subtype=\"concept\">climate</entity>, geography, or how people use <entity type=\"DATA_VAR\" canonical=\"water_usage\">water</entity>—that lead to these severe droughts.\n\t•\tThis feels relevant to me because I live near a large body of <entity type=\"OTHER_ENTITY\" canonical=\"water\" subtype=\"other\">water</entity>. Even though <entity type=\"new_jersey\" canonical=\"new_jersey\">New Jersey</entity>, which is close to <entity type=\"new_york\" canonical=\"new_york\">New York</entity>, has had droughts before, it’s not something I usually worry about. But seeing how unpredictable droughts can be makes me realize it could affect my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> too. If a drought hit here, we’d have to deal with things like <entity type=\"OTHER_ENTITY\" canonical=\"water_restrictions\" subtype=\"policy\">water restrictions</entity>, which would definitely be a big change.\n\t•\tHow Severe Are Droughts Across the U.S., and Could Your State Be Next?"
 }
