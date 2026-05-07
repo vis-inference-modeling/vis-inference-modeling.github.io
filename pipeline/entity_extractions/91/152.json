@@ -1,0 +1,120 @@
+{
+  "article_id": "91",
+  "comment_index": 152,
+  "raw_comment": "What do you notice?\nThere is a higher percentage of players than coaches, and a lower percentage in both players and coaches in the baseball league\nWhat do you wonder?\nWe wonder why are there less head coaches of colour than players?\nImpact on community?\n Less percentage of people of colour in the higher positions like coaches. Need more representation in those jobs of power.\nWhat is going on in this graph?\nThey are comparing the percentages of players of colour & head coaches of colour in different sports leagues.\nCatchy Title:\nThe Colour of Sports",
+  "entities": [
+    {
+      "surface": "baseball league",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 132,
+      "end": 147,
+      "id": "e0"
+    },
+    {
+      "surface": "head coaches of colour",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 197,
+      "end": 219,
+      "id": "e1"
+    },
+    {
+      "surface": "people of colour",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 275,
+      "end": 291,
+      "id": "e2"
+    },
+    {
+      "surface": "players of colour",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 449,
+      "end": 466,
+      "id": "e3"
+    },
+    {
+      "surface": "head coaches of colour",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 469,
+      "end": 491,
+      "id": "e4"
+    },
+    {
+      "surface": "sports leagues",
+      "type": "DATA_VAR",
+      "canonical": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 505,
+      "end": 519,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "higher percentage of players than coaches",
+      "reason": "Comparative phrase refers to chart values but does not specify a canonical variable or level directly."
+    },
+    {
+      "surface": "lower percentage in both players and coaches",
+      "reason": "Comparative phrase is vague without a specific variable/level mapping."
+    },
+    {
+      "surface": "higher positions",
+      "reason": "Abstract concept; could be an entity-like role category but no confirmed canonical ID."
+    },
+    {
+      "surface": "jobs of power",
+      "reason": "Abstract concept not in the reference list."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice?\nThere is a higher percentage of players than coaches, and a lower percentage in both players and coaches in the baseball league\nWhat do you wonder?\nWe wonder why are there less head coaches of colour than players?\nImpact on community?\n Less percentage of people of colour in the higher positions like coaches. Need more representation in those jobs of power.\nWhat is going on in this graph?\nThey are comparing the percentages of players of colour & head coaches of colour in different sports leagues."
+    },
+    {
+      "section": "headline",
+      "label": "Catchy Title",
+      "text": "The Colour of Sports"
+    }
+  ],
+  "tagged_text": "What do you notice?\nThere is a higher percentage of players than coaches, and a lower percentage in both players and coaches in the baseball league\nWhat do you wonder?\nWe wonder why are there less head coaches of colour than players?\nImpact on community?\n Less percentage of people of colour in the higher positions like coaches. Need more representation in those jobs of power.\nWhat is going on in this graph?\nThey are comparing the percentages of players of colour & head coaches of colour in different sports leagues.\nCatchy Title:\nThe Colour of Sports"
+}

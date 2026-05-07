@@ -64,7 +64,7 @@
       "canonical": "young_men",
       "var": "gender_group",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -78,7 +78,7 @@
       "canonical": "young_women",
       "var": "gender_group",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -90,7 +90,7 @@
       "surface": "relationships",
       "type": "OTHER_ENTITY",
       "canonical": "relationships",
-      "subtype": "concept",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -129,16 +129,17 @@
       "id": "e8"
     },
     {
-      "surface": "Screen Age: How Electronics have Impacted Parental Communication",
-      "type": "CHART_ELEMENT",
-      "canonical": "title",
-      "section": "headline",
+      "surface": "Electronics",
+      "type": "OTHER_ENTITY",
+      "canonical": "electronics",
+      "subtype": "other",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 832,
-      "end": 896,
+      "start": 848,
+      "end": 859,
       "id": "e9"
     },
     {
@@ -244,7 +245,7 @@
       "type": "TIME_REFERENCE",
       "canonical": "time_frame",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -257,9 +258,8 @@
   "section_segments": [
     {
       "section": "body",
-      "label": "",
       "text": "Looking at the graph, I immediately notice that young men in this survey reach out to parents noticeably less than the young women who were surveyed. With such a large disparity between the men and the women, I wonder how representative these results are for young men and women. Since the data was gathered via online survey over a relatively short time frame, I think the results might not be able to be generalized to young men and women in general. Whether or not the results are generalizable, knowing these statistics about the strength of relationships between parent and child is useful knowledge to have. There is a large amount of information regarding mental health issues in young adults, and cross referencing with data like this has the possibility to give insights to other broader issues. A title for this could be \"Screen Age: How Electronics have Impacted Parental Communication\""
     }
   ],
-  "tagged_text": "Looking at the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I immediately notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> in this survey reach out to <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> noticeably less than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> who were surveyed. With such a large disparity between the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>, I wonder how representative these results are for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>. Since the data was gathered via <entity type=\"OTHER_ENTITY\" canonical=\"online_survey\" subtype=\"other\">online survey</entity> over a relatively short <entity type=\"TIME_REFERENCE\" canonical=\"time_frame\" modality=\"questioned\">time frame</entity>, I think the results might not be able to be generalized to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> in general. Whether or not the results are generalizable, knowing these statistics about the strength of <entity type=\"OTHER_ENTITY\" canonical=\"relationships\" subtype=\"concept\">relationships</entity> between parent and child is useful knowledge to have. There is a large amount of information regarding <entity type=\"OTHER_ENTITY\" canonical=\"mental_health_issues\" subtype=\"other\">mental health issues</entity> in <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\" subtype=\"group\">young adults</entity>, and cross referencing with data like this has the possibility to give insights to other broader issues. A title for this could be \"<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Screen Age: How Electronics have Impacted Parental Communication</entity>\""
+  "tagged_text": "Looking at the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I immediately notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> in this survey reach out to <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> noticeably less than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> who were surveyed. With such a large disparity between the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>, I wonder how representative these results are for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>. Since the data was gathered via <entity type=\"OTHER_ENTITY\" canonical=\"online_survey\" subtype=\"other\">online survey</entity> over a relatively short <entity type=\"TIME_REFERENCE\" canonical=\"time_frame\">time frame</entity>, I think the results might not be able to be generalized to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> in general. Whether or not the results are generalizable, knowing these statistics about the strength of <entity type=\"OTHER_ENTITY\" canonical=\"relationships\" subtype=\"other\">relationships</entity> between parent and child is useful knowledge to have. There is a large amount of information regarding <entity type=\"OTHER_ENTITY\" canonical=\"mental_health_issues\" subtype=\"other\">mental health issues</entity> in <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\" subtype=\"group\">young adults</entity>, and cross referencing with data like this has the possibility to give insights to other broader issues. A title for this could be \"Screen Age: How <entity type=\"OTHER_ENTITY\" canonical=\"electronics\" subtype=\"other\">Electronics</entity> have Impacted Parental Communication\""
 }

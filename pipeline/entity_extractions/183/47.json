@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "50 percent",
-      "type": "TIME_REFERENCE",
-      "canonical": "50_percent",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage_50",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -73,18 +74,46 @@
       "id": "e4"
     },
     {
-      "surface": "parents",
+      "surface": "me and my community",
       "type": "OTHER_ENTITY",
-      "canonical": "parents",
+      "canonical": "my_community",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 344,
+      "end": 363,
+      "id": "e5"
+    },
+    {
+      "surface": "piers",
+      "type": "OTHER_ENTITY",
+      "canonical": "peers",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 384,
+      "end": 389,
+      "id": "e6"
+    },
+    {
+      "surface": "college",
+      "type": "OTHER_ENTITY",
+      "canonical": "college",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": 422,
-      "end": 429,
-      "id": "e5"
+      "occurrence_index": 0,
+      "start": 409,
+      "end": 416,
+      "id": "e7"
     },
     {
       "surface": "children",
@@ -98,7 +127,7 @@
       "occurrence_index": 0,
       "start": 450,
       "end": 458,
-      "id": "e6"
+      "id": "e8"
     },
     {
       "surface": "Call Me, Where you been?",
@@ -111,7 +140,7 @@
       "occurrence_index": 0,
       "start": 550,
       "end": 574,
-      "id": "e7"
+      "id": "e9"
     },
     {
       "surface": "texts",
@@ -125,12 +154,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e10"
     },
     {
       "surface": "73 percent",
-      "type": "TIME_REFERENCE",
-      "canonical": "73_percent",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage_75",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -138,7 +168,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e11"
     },
     {
       "surface": "women",
@@ -152,7 +182,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e12"
     },
     {
       "surface": "women",
@@ -166,7 +196,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e13"
     },
     {
       "surface": "text",
@@ -180,48 +210,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "community",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_community",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "college",
-      "type": "LOCATION",
-      "canonical": "college",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e14"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "piers",
-      "reason": "Likely a typo for 'peers'; not confidently mapped."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
-      "text": "What do you notice?\nI notice that only 50 percent of men reach out to their parents through texts, while around 73 percent of women text their parents a few times a week. \nWhat do you wonder?\nI wonder why women reach out to their parents more, is it because they are more caring?\nHow does this relate to you and your community?\nThis relates to me and my community because a lot of my piers are going away for college, and parents are expecting their children to contact them frequently. \nCreate a catchy headline that captures the graph’s main idea.\nCall Me, Where you been?"
+      "text": "What do you notice?\nI notice that only 50 percent of men reach out to their parents through texts, while around 73 percent of women text their parents a few times a week. \nWhat do you wonder?\nI wonder why women reach out to their parents more, is it because they are more caring?\nHow does this relate to you and your community?\nThis relates to me and my community because a lot of my piers are going away for college, and parents are expecting their children to contact them frequently.\nCreate a catchy headline that captures the graph’s main idea."
+    },
+    {
+      "section": "headline",
+      "label": "headline",
+      "text": "Call Me, Where you been?"
     }
   ],
-  "tagged_text": "What do you notice?\nI notice that only <entity type=\"TIME_REFERENCE\" canonical=\"50_percent\">50 percent</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity>, while around <entity type=\"TIME_REFERENCE\" canonical=\"73_percent\">73 percent</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> a few times a week. \nWhat do you wonder?\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more, is it because they are more caring?\nHow does this relate to you and your community?\nThis relates to me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because a lot of my piers are going away for <entity type=\"LOCATION\" canonical=\"college\" speaker_context=\"true\">college</entity>, and <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> are expecting their <entity type=\"OTHER_ENTITY\" canonical=\"children\" subtype=\"other\">children</entity> to contact them frequently. \nCreate a catchy headline that captures the graph’s main idea.\n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Call Me, Where you been?</entity>"
+  "tagged_text": "What do you notice?\nI notice that only <entity type=\"OTHER_ENTITY\" canonical=\"percentage_50\" subtype=\"other\">50 percent</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity>, while around <entity type=\"OTHER_ENTITY\" canonical=\"percentage_75\" subtype=\"other\">73 percent</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> their parents a few times a week. \nWhat do you wonder?\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more, is it because they are more caring?\nHow does this relate to you and your community?\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">me and my community</entity> because a lot of my <entity type=\"OTHER_ENTITY\" canonical=\"peers\" subtype=\"group\" speaker_context=\"true\">piers</entity> are going away for <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college</entity>, and <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> are expecting their <entity type=\"OTHER_ENTITY\" canonical=\"children\" subtype=\"other\">children</entity> to contact them frequently.\nCreate a catchy headline that captures the graph’s main idea.\n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Call Me, Where you been?</entity>"
 }

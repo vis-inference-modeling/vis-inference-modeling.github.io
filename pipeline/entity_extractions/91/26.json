@@ -1,0 +1,114 @@
+{
+  "article_id": "91",
+  "comment_index": 26,
+  "raw_comment": "What do you notice?\nI noticed that in every major sport except for baseball, more than half of the players are people of color. Unlike the coaches, with the majority being mostly white. \nWhat do you Wonder?\nI wonder if the year that the data was taken affected the results because of the world diversifying. \nWhat is the impact on my community?\nSports slowly becoming more diverse helps my community because of the idolization of different races to inspire some young people of color to strive for being a professional athlete or coach.\n\nDiversity is quickly escalating in the recent years of professional sports.",
+  "entities": [
+    {
+      "surface": "people of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "people_of_color",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 111,
+      "end": 126,
+      "id": "e0"
+    },
+    {
+      "surface": "year",
+      "type": "DATA_VAR",
+      "canonical": "year",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 223,
+      "end": 227,
+      "id": "e1"
+    },
+    {
+      "surface": "world",
+      "type": "LOCATION",
+      "canonical": "world",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 288,
+      "end": 293,
+      "id": "e2"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 331,
+      "end": 343,
+      "id": "e3"
+    },
+    {
+      "surface": "young people of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_people_of_color",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 462,
+      "end": 483,
+      "id": "e4"
+    },
+    {
+      "surface": "professional athlete",
+      "type": "OTHER_ENTITY",
+      "canonical": "professional_athlete",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 506,
+      "end": 526,
+      "id": "e5"
+    },
+    {
+      "surface": "Diversity is quickly escalating in the recent years of professional sports.",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 538,
+      "end": 613,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice?\nI noticed that in every major sport except for baseball, more than half of the players are people of color. Unlike the coaches, with the majority being mostly white. \nWhat do you Wonder?\nI wonder if the year that the data was taken affected the results because of the world diversifying. \nWhat is the impact on my community?\nSports slowly becoming more diverse helps my community because of the idolization of different races to inspire some young people of color to strive for being a professional athlete or coach."
+    },
+    {
+      "section": "headline",
+      "label": "headline",
+      "text": "Diversity is quickly escalating in the recent years of professional sports."
+    }
+  ],
+  "tagged_text": "What do you notice?\nI noticed that in every major sport except for baseball, more than half of the players are <entity type=\"OTHER_ENTITY\" canonical=\"people_of_color\" subtype=\"group\" section=\"body\">people of color</entity>. Unlike the coaches, with the majority being mostly white. \nWhat do you Wonder?\nI wonder if the <entity type=\"DATA_VAR\" canonical=\"year\" section=\"body\" modality=\"questioned\">year</entity> that the data was taken affected the results because of the <entity type=\"LOCATION\" canonical=\"world\" section=\"body\" modality=\"questioned\">world</entity> diversifying. \nWhat is the impact on my community?\nSports slowly becoming more diverse helps <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" speaker_context=\"true\">my community</entity> because of the idolization of different races to inspire some <entity type=\"OTHER_ENTITY\" canonical=\"young_people_of_color\" subtype=\"group\" section=\"body\">young people of color</entity> to strive for being a <entity type=\"OTHER_ENTITY\" canonical=\"professional_athlete\" subtype=\"person\" section=\"body\">professional athlete</entity> or coach.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Diversity is quickly escalating in the recent years of professional sports.</entity>"
+}

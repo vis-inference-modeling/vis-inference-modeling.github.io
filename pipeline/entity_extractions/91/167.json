@@ -1,0 +1,157 @@
+{
+  "article_id": "91",
+  "comment_index": 167,
+  "raw_comment": "1.What do you notice?\nI notice there is far less head coaches of color than there is players of color.This pattern is constant throughout the graphs.\n\n2.What do you wonder?\nI wonder why the number of head coaches of color  is so low compared to players of color?\n\n3.What impact does this have on you and your community?\nWith all the diversity in my very own community I see many people of color participating in sports however it may be difficult for them to relate or connect with their own coaches.\n\n4. What's going on in this graph?Write a catchy headline that would capture the graph's main idea.\nA catchy headline that would capture the graph's main idea could be \" The difference between head coaches and players of color among  different sport leagues\"",
+  "entities": [
+    {
+      "surface": "head coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 49,
+      "end": 70,
+      "id": "e0"
+    },
+    {
+      "surface": "head coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 200,
+      "end": 221,
+      "id": "e1"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 245,
+      "end": 261,
+      "id": "e2"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 711,
+      "end": 727,
+      "id": "e3"
+    },
+    {
+      "surface": "different sport leagues",
+      "type": "OTHER_ENTITY",
+      "canonical": "different_sports_leagues",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 735,
+      "end": 758,
+      "id": "e4"
+    },
+    {
+      "surface": "diversity",
+      "type": "OTHER_ENTITY",
+      "canonical": "diversity",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "community",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "people of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "people_of_color",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I notice there is far less head coaches of color than there is players of color.This pattern is constant throughout the graphs."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "I wonder why the number of head coaches of color is so low compared to players of color?"
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "With all the diversity in my very own community I see many people of color participating in sports however it may be difficult for them to relate or connect with their own coaches."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "What's going on in this graph?Write a catchy headline that would capture the graph's main idea.\nA catchy headline that would capture the graph's main idea could be \" The difference between head coaches and players of color among  different sport leagues\""
+    }
+  ],
+  "tagged_text": "1.What do you notice?\nI notice there is far less <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\">head coaches of color</entity> than there is <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity>.This pattern is constant throughout the graphs.\n\n2.What do you wonder?\nI wonder why the number of <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" modality=\"questioned\">head coaches of color</entity> is so low compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" modality=\"questioned\">players of color</entity>?\n\n3.What impact does this have on you and your community?\nWith all the <entity type=\"OTHER_ENTITY\" canonical=\"diversity\" subtype=\"concept\" speaker_context=\"true\">diversity</entity> in my very own <entity type=\"OTHER_ENTITY\" canonical=\"community\" subtype=\"group\" speaker_context=\"true\">community</entity> I see many <entity type=\"OTHER_ENTITY\" canonical=\"people_of_color\" subtype=\"group\">people of color</entity> participating in <entity type=\"OTHER_ENTITY\" canonical=\"sports\" subtype=\"group\">sports</entity> however it may be difficult for them to relate or connect with their own coaches.\n\n4. What's going on in this graph?Write a catchy headline that would capture the graph's main idea.\nA catchy headline that would capture the graph's main idea could be \" The difference between head coaches and players of color among  different sport leagues\""
+}

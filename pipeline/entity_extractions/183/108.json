@@ -18,6 +18,34 @@
       "id": "e0"
     },
     {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 38,
+      "end": 45,
+      "id": "e1"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 249,
+      "end": 256,
+      "id": "e2"
+    },
+    {
       "surface": "women",
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
@@ -27,9 +55,23 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 56,
-      "end": 61,
-      "id": "e1"
+      "start": null,
+      "end": null,
+      "id": "e3"
+    },
+    {
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e4"
     },
     {
       "surface": "young men",
@@ -41,9 +83,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 82,
-      "end": 91,
-      "id": "e2"
+      "start": null,
+      "end": null,
+      "id": "e5"
     },
     {
       "surface": "people",
@@ -55,9 +97,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 129,
-      "end": 135,
-      "id": "e3"
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "young women",
@@ -69,64 +111,21 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 141,
-      "end": 152,
-      "id": "e4"
+      "start": null,
+      "end": null,
+      "id": "e7"
     },
     {
-      "surface": "my community",
-      "type": "speaker",
-      "canonical": "speaker",
-      "subtype": "person",
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 212,
-      "end": 224,
-      "id": "e5"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 249,
-      "end": 256,
-      "id": "e6"
-    },
-    {
-      "surface": "sons",
-      "type": "OTHER_ENTITY",
-      "canonical": "sons",
-      "subtype": "group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 323,
-      "end": 327,
-      "id": "e7"
-    },
-    {
-      "surface": "daughters",
-      "type": "OTHER_ENTITY",
-      "canonical": "daughters",
-      "subtype": "group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 362,
-      "end": 371,
+      "start": null,
+      "end": null,
       "id": "e8"
     }
   ],
@@ -137,5 +136,5 @@
       "text": "I noticed that men reach out to their parents less than women. I also noticed how young men are also less likely to reach out to people than young women in general. I wonder why this is the case. This relates to my community because I often see old parents who look sad and those who don't and maybe it's because they have sons who don't reach out but some have daughters who do."
     }
   ],
-  "tagged_text": "I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> reach out to their parents less than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>. I also noticed how <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> are also less likely to reach out to <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\">people</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> in general. I wonder why this is the case. This relates to <entity type=\"speaker\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">my community</entity> because I often see old <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> who look sad and those who don't and maybe it's because they have <entity type=\"OTHER_ENTITY\" canonical=\"sons\" subtype=\"group\">sons</entity> who don't reach out but some have <entity type=\"OTHER_ENTITY\" canonical=\"daughters\" subtype=\"group\">daughters</entity> who do."
+  "tagged_text": "I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\">men</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity> less than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\">women</entity>. I also noticed how <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\">young men</entity> are also less likely to reach out to <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"body\">people</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\">young women</entity> in general. I wonder why this is the case. This relates to my <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" speaker_context=\"true\">community</entity> because I often see old <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity> who look sad and those who don't and maybe it's because they have sons who don't reach out but some have daughters who do."
 }

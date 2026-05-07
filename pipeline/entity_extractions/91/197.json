@@ -1,0 +1,112 @@
+{
+  "article_id": "91",
+  "comment_index": 197,
+  "raw_comment": "One thing I noticed is that in the graphs there is more colored people with athletes. They were the red and had very high percentages. I thing I wondered is why soccer has the most color coaches. I don’t think it impacts or changes my perspective on things because I don’t see the color of someone’s skin a difference from all of us. I don’t think it impacts our community except for the people who think differently and have there opinions for people of color. So I don’t think it makes a big impact at all on my life or anyone’s.",
+  "entities": [
+    {
+      "surface": "colored people",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "people_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 56,
+      "end": 70,
+      "id": "e0"
+    },
+    {
+      "surface": "athletes",
+      "type": "OTHER_ENTITY",
+      "canonical": "athletes",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 76,
+      "end": 84,
+      "id": "e1"
+    },
+    {
+      "surface": "soccer",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mls",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 161,
+      "end": 167,
+      "id": "e2"
+    },
+    {
+      "surface": "color",
+      "type": "OTHER_ENTITY",
+      "canonical": "color",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 181,
+      "end": 186,
+      "id": "e3"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 363,
+      "end": 372,
+      "id": "e4"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 388,
+      "end": 394,
+      "id": "e5"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "people_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 445,
+      "end": 460,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "One thing I noticed is that in the graphs there is more colored people with athletes. They were the red and had very high percentages. I thing I wondered is why soccer has the most color coaches. I don’t think it impacts or changes my perspective on things because I don’t see the color of someone’s skin a difference from all of us. I don’t think it impacts our community except for the people who think differently and have there opinions for people of color. So I don’t think it makes a big impact at all on my life or anyone’s."
+    }
+  ],
+  "tagged_text": "One thing I noticed is that in the graphs there is more <entity type=\"DATA_VAR_LEVEL\" canonical=\"people_of_color\" var=\"group_type\" section=\"body\">colored people</entity> with <entity type=\"OTHER_ENTITY\" canonical=\"athletes\" subtype=\"group\" section=\"body\">athletes</entity>. They were the red and had very high percentages. I thing I wondered is why <entity type=\"DATA_VAR_LEVEL\" canonical=\"mls\" var=\"sports_league\" section=\"body\">soccer</entity> has the most color coaches. I don’t think it impacts or changes my perspective on things because I don’t see the <entity type=\"OTHER_ENTITY\" canonical=\"color\" subtype=\"other\" section=\"body\">color</entity> of someone’s skin a difference from all of us. I don’t think it impacts our <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" speaker_context=\"true\">community</entity> except for the <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"body\">people</entity> who think differently and have there opinions for <entity type=\"DATA_VAR_LEVEL\" canonical=\"people_of_color\" var=\"group_type\" section=\"body\">people of color</entity>. So I don’t think it makes a big impact at all on my life or anyone’s."
+}

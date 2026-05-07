@@ -142,6 +142,34 @@
       "id": "e9"
     },
     {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 8,
+      "start": 1010,
+      "end": 1017,
+      "id": "e10"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 9,
+      "start": 1106,
+      "end": 1113,
+      "id": "e11"
+    },
+    {
       "surface": "call",
       "type": "DATA_VAR_LEVEL",
       "canonical": "phone_or_video_chat",
@@ -153,7 +181,7 @@
       "occurrence_index": 0,
       "start": 1407,
       "end": 1411,
-      "id": "e10"
+      "id": "e12"
     },
     {
       "surface": "young people",
@@ -167,12 +195,12 @@
       "occurrence_index": 0,
       "start": 1422,
       "end": 1434,
-      "id": "e11"
+      "id": "e13"
     },
     {
       "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
+      "canonical": "parents",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -181,21 +209,7 @@
       "occurrence_index": 0,
       "start": 1485,
       "end": 1492,
-      "id": "e12"
-    },
-    {
-      "surface": "Women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e13"
+      "id": "e14"
     },
     {
       "surface": "men",
@@ -209,41 +223,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "75%",
-      "type": "OTHER_ENTITY",
-      "canonical": "75_percent",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e15"
     },
     {
-      "surface": "text",
+      "surface": "men",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "text",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -251,13 +237,27 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "75%",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage_75",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e17"
     },
     {
-      "surface": "50%",
-      "type": "OTHER_ENTITY",
-      "canonical": "50_percent",
-      "subtype": "other",
+      "surface": "text",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -270,22 +270,22 @@
     {
       "surface": "50%",
       "type": "OTHER_ENTITY",
-      "canonical": "50_percent",
+      "canonical": "percentage_50",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e19"
     },
     {
-      "surface": "call",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "phone_or_video_chat",
-      "var": "communication_method",
+      "surface": "50%",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage_50",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -298,7 +298,7 @@
     {
       "surface": "25%",
       "type": "OTHER_ENTITY",
-      "canonical": "25_percent",
+      "canonical": "percentage_25",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -312,7 +312,7 @@
     {
       "surface": "25%",
       "type": "OTHER_ENTITY",
-      "canonical": "25_percent",
+      "canonical": "percentage_25",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -326,7 +326,7 @@
     {
       "surface": "25%",
       "type": "OTHER_ENTITY",
-      "canonical": "25_percent",
+      "canonical": "percentage_25",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -352,20 +352,6 @@
       "id": "e24"
     },
     {
-      "surface": "young women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e25"
-    },
-    {
       "surface": "visit",
       "type": "DATA_VAR_LEVEL",
       "canonical": "visit_in_person",
@@ -377,21 +363,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e26"
-    },
-    {
-      "surface": "visit",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e27"
+      "id": "e25"
     },
     {
       "surface": "young men",
@@ -405,34 +377,46 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e26"
+    },
+    {
+      "surface": "percentage of seeing parents regularly",
+      "type": "DATA_VAR",
+      "canonical": "difference_between_gender_groups_within_each_method",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e27"
+    },
+    {
+      "surface": "18-34-year-olds",
+      "type": "TIME_REFERENCE",
+      "canonical": "18_34",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e28"
     },
     {
-      "surface": "see",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
+      "surface": "time",
+      "type": "TIME_REFERENCE",
+      "canonical": "time_frame",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e29"
-    },
-    {
-      "surface": "18-34",
-      "type": "TIME_REFERENCE",
-      "canonical": "18_to_34",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e30"
     },
     {
       "surface": "social media",
@@ -446,13 +430,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e31"
+      "id": "e30"
     },
     {
       "surface": "technology",
       "type": "OTHER_ENTITY",
       "canonical": "technology",
-      "subtype": "technology",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -460,13 +444,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e32"
+      "id": "e31"
     },
     {
       "surface": "community",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -474,18 +457,32 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e32"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e33"
     },
     {
-      "surface": "teenager",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "teenagers",
-      "subtype": "group",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e34"
@@ -508,13 +505,14 @@
   "section_segments": [
     {
       "section": "body",
-      "text": "This graph depicts the difference between young men and women and how likely they are to communicate with their parents daily. Womenare more likely than men to reach out to their parents at least once a day. However, it is mainly digital with just under 75% responding that they text and over 50% saying that they call their parents. Only about 25% of young women responded that they visit their parents on a daily or weekly basis. On the other hand, young men are far less likely to have active communication with their parents. About 50% text, between 25%-50% call, and less than 25% see their parents frequently. I wonder why the percentage of seeing parents regularly is so low. I understand that this poll was asked by 18-34-year-olds who live with either one or no parents, but I feel like this statistic is so low. I wonder how these statistics have changed over time. With the new age of social media and technology, has there been a significant increase in young people who can communicate with their parents daily? This relates to my community because as a teenager, communication is key with my parents and most of my friend's parents. If we do not answer them right away or frequently check in, parents nowadays are prone or getting anxious and hysterical. I wonder in the upcoming generation if these numbers will spike because of the constant communication needed between child and parent. "
+      "text": "This graph depicts the difference between young men and women and how likely they are to communicate with their parents daily. Womenare more likely than men to reach out to their parents at least once a day. However, it is mainly digital with just under 75% responding that they text and over 50% saying that they call their parents. Only about 25% of young women responded that they visit their parents on a daily or weekly basis. On the other hand, young men are far less likely to have active communication with their parents. About 50% text, between 25%-50% call, and less than 25% see their parents frequently. I wonder why the percentage of seeing parents regularly is so low. I understand that this poll was asked by 18-34-year-olds who live with either one or no parents, but I feel like this statistic is so low. I wonder how these statistics have changed over time. With the new age of social media and technology, has there been a significant increase in young people who can communicate with their parents daily? This relates to my community because as a teenager, communication is key with my parents and most of my friend's parents. If we do not answer them right away or frequently check in, parents nowadays are prone or getting anxious and hysterical. I wonder in the upcoming generation if these numbers will spike because of the constant communication needed between child and parent. ",
+      "label": ""
     },
     {
       "section": "headline",
-      "label": "Call Your Mom! Young People And Their Lackluster Interest In Talking To Their Parents.",
-      "text": "Call Your Mom! Young People And Their Lackluster Interest In Talking To Their Parents."
+      "label": "",
+      "text": "“Call Your Mom! Young People And Their Lackluster Interest In Talking To Their Parents.”"
     }
   ],
-  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> depicts the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">difference between young men and women</entity> and how likely they are to communicate with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> daily. <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">Women</entity>are more likely than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> at least once a day. However, it is mainly digital with just under <entity type=\"OTHER_ENTITY\" canonical=\"75_percent\" subtype=\"other\">75%</entity> responding that they <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> and over <entity type=\"OTHER_ENTITY\" canonical=\"50_percent\" subtype=\"other\">50%</entity> saying that they <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">call</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. Only about <entity type=\"OTHER_ENTITY\" canonical=\"25_percent\" subtype=\"other\">25%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> responded that they <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> on a daily or weekly basis. On the other hand, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> are far less likely to have active communication with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. About <entity type=\"OTHER_ENTITY\" canonical=\"50_percent\" subtype=\"other\">50%</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity>, between <entity type=\"OTHER_ENTITY\" canonical=\"25_percent\" subtype=\"other\">25%</entity>-<entity type=\"OTHER_ENTITY\" canonical=\"50_percent\" subtype=\"other\">50%</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">call</entity>, and less than <entity type=\"OTHER_ENTITY\" canonical=\"25_percent\" subtype=\"other\">25%</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">see</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> frequently. I wonder why the percentage of seeing parents regularly is so low. I understand that this poll was asked by <entity type=\"TIME_REFERENCE\" canonical=\"18_to_34\">18-34</entity>-year-olds who live with either one or no <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>, but I feel like this statistic is so low. I wonder how these statistics have changed over time. With the new age of <entity type=\"OTHER_ENTITY\" canonical=\"social_media\" subtype=\"other\">social media</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\">technology</entity>, has there been a significant increase in <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> who can communicate with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> daily? This relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because as a <entity type=\"OTHER_ENTITY\" canonical=\"teenagers\" subtype=\"group\">teenager</entity>, communication is key with my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> and most of my friend's <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. If we do not answer them right away or frequently check in, <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> nowadays are prone or getting anxious and hysterical. I wonder in the upcoming generation if these numbers will spike because of the constant communication needed between child and parent. \n\n“<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Call Your Mom! Young People And Their Lackluster Interest In Talking To Their Parents.</entity>”"
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> depicts the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">difference between young men and women</entity> and how likely they are to communicate with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> daily. Womenare more likely than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> at least once a day. However, it is mainly digital with just under <entity type=\"OTHER_ENTITY\" canonical=\"percentage_75\" subtype=\"other\">75%</entity> responding that they <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> and over <entity type=\"OTHER_ENTITY\" canonical=\"percentage_50\" subtype=\"other\">50%</entity> saying that they <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">call</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. Only about <entity type=\"OTHER_ENTITY\" canonical=\"percentage_25\" subtype=\"other\">25%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> responded that they <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> on a daily or weekly basis. On the other hand, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> are far less likely to have active communication with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. About <entity type=\"OTHER_ENTITY\" canonical=\"percentage_50\" subtype=\"other\">50%</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> text, between <entity type=\"OTHER_ENTITY\" canonical=\"percentage_25\" subtype=\"other\">25%-50%</entity> call, and less than <entity type=\"OTHER_ENTITY\" canonical=\"percentage_25\" subtype=\"other\">25%</entity> see their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> frequently. I wonder why the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\" modality=\"questioned\">percentage of seeing parents regularly</entity> is so low. I understand that this poll was asked by <entity type=\"TIME_REFERENCE\" canonical=\"18_34\" modality=\"questioned\">18-34-year-olds</entity> who live with either one or no <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>, but I feel like this statistic is so low. I wonder how these statistics have changed over <entity type=\"TIME_REFERENCE\" canonical=\"time_frame\" modality=\"questioned\">time</entity>. With the new age of <entity type=\"OTHER_ENTITY\" canonical=\"social_media\" subtype=\"other\">social media</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"other\">technology</entity>, has there been a significant increase in <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> who can communicate with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> daily? This relates to my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because as a teenager, communication is key with my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> and most of my friend's <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. If we do not answer them right away or frequently check in, <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> nowadays are prone or getting anxious and hysterical. I wonder in the upcoming generation if these numbers will spike because of the constant communication needed between child and parent. \n\n“<entity type=\"CHART_ELEMENT\" canonical=\"title\">Call Your Mom! Young People And Their Lackluster Interest In Talking To Their Parents.</entity>”"
 }

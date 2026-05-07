@@ -60,32 +60,18 @@
       "id": "e3"
     },
     {
-      "surface": "young men",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 778,
-      "end": 787,
-      "id": "e4"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 3,
       "start": 803,
       "end": 810,
-      "id": "e5"
+      "id": "e4"
     },
     {
       "surface": "young women",
@@ -97,6 +83,20 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "young men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e6"
@@ -174,7 +174,7 @@
       "canonical": "young_people",
       "subtype": "group",
       "section": "numbered_point",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -184,8 +184,9 @@
     },
     {
       "surface": "college",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "college",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -210,12 +211,13 @@
       "id": "e14"
     },
     {
-      "surface": "Are young men ghosting their parents?",
-      "type": "CHART_ELEMENT",
-      "canonical": "title",
-      "section": "headline",
+      "surface": "my parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_parents",
+      "subtype": "other",
+      "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -246,5 +248,5 @@
       "text": "What's going on in this graph? \nAre young men ghosting their parents?"
     }
   ],
-  "tagged_text": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\nI notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> are more likely to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>, and that <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> is the most common form of <entity type=\"DATA_VAR\" canonical=\"communication_method\">communication</entity>. \n2. What do you wonder?\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visits in person</entity> are the least likely form of <entity type=\"DATA_VAR\" canonical=\"communication_method\">communication</entity> given that most <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> live with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. \n3. What impact does this have on you and your community?\nThis has an impact on my generation since we are all going to <entity type=\"LOCATION\" canonical=\"college\" speaker_context=\"true\">college</entity> very soon and shows which type of <entity type=\"DATA_VAR\" canonical=\"communication_method\">communication</entity> is most used for those who don't live at home and for how I, a <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" speaker_context=\"true\">young woman</entity>, am most likely to interact with my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> when I don't live at home anymore. \n4. What's going on in this graph? \n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Are young men ghosting their parents?</entity>"
+  "tagged_text": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\nI notice that young women are more likely to reach out to their parents compared to young men, and that texting is the most common form of communication. \n2. What do you wonder?\nI wonder why visits in person are the least likely form of communication given that most young people live with their parents. \n3. What impact does this have on you and your community?\nThis has an impact on my generation since we are all going to college very soon and shows which type of communication is most used for those who don't live at home and for how I, a young woman, am most likely to interact with my parents when I don't live at home anymore. \n4. What's going on in this graph? \nAre young men ghosting their parents?"
 }

@@ -1,0 +1,168 @@
+{
+  "article_id": "91",
+  "comment_index": 64,
+  "raw_comment": "There are a lot more players of color who are in these leagues but the head coaches percentages are significantly different and lower than the percentage of the players.\n\nI wonder if the difference comes from the time span of the players and the coaches since they are very different. Since players in these categories have lower years played in the field than coaches because playing takes a giant toll on your body compared to coaching.\n\nThis impacts my community because New Hampshire is not a very diverse place. This impacts the judgment of us and how we view sports. There are some teams with a few people of color but it is mostly white.\n\n“Diversity, seen on the field but not the sidelines.”",
+  "entities": [
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 21,
+      "end": 37,
+      "id": "e0"
+    },
+    {
+      "surface": "head coaches",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 71,
+      "end": 83,
+      "id": "e1"
+    },
+    {
+      "surface": "time span",
+      "type": "TIME_REFERENCE",
+      "canonical": "time_span",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 213,
+      "end": 222,
+      "id": "e2"
+    },
+    {
+      "surface": "years played in the field",
+      "type": "TIME_REFERENCE",
+      "canonical": "years_played",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 330,
+      "end": 355,
+      "id": "e3"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 456,
+      "end": 465,
+      "id": "e4"
+    },
+    {
+      "surface": "New Hampshire",
+      "type": "LOCATION",
+      "canonical": "new_hampshire",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 474,
+      "end": 487,
+      "id": "e5"
+    },
+    {
+      "surface": "sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 565,
+      "end": 571,
+      "id": "e6"
+    },
+    {
+      "surface": "teams",
+      "type": "OTHER_ENTITY",
+      "canonical": "team",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 588,
+      "end": 593,
+      "id": "e7"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "people_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 605,
+      "end": 620,
+      "id": "e8"
+    },
+    {
+      "surface": "Diversity, seen on the field but not the sidelines.",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 647,
+      "end": 698,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "the players",
+      "reason": "Refers back to players of color, but the surface is generic and not explicitly a canonical level."
+    },
+    {
+      "surface": "the percentage of the players",
+      "reason": "Likely refers to percentage of players of color, but the surface is incomplete/implicit."
+    },
+    {
+      "surface": "white",
+      "reason": "Likely refers to white people or white population, but not in the provided canonical dictionary for this comment."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "There are a lot more players of color who are in these leagues but the head coaches percentages are significantly different and lower than the percentage of the players.\n\nI wonder if the difference comes from the time span of the players and the coaches since they are very different. Since players in these categories have lower years played in the field than coaches because playing takes a giant toll on your body compared to coaching.\n\nThis impacts my community because New Hampshire is not a very diverse place. This impacts the judgment of us and how we view sports. There are some teams with a few people of color but it is mostly white."
+    },
+    {
+      "section": "headline",
+      "label": "“Diversity, seen on the field but not the sidelines.”",
+      "text": "“Diversity, seen on the field but not the sidelines.”"
+    }
+  ],
+  "tagged_text": "There are a lot more <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> who are in these leagues but the <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\">head coaches</entity> percentages are significantly different and lower than the percentage of the players.\n\nI wonder if the difference comes from the <entity type=\"TIME_REFERENCE\" canonical=\"time_span\">time span</entity> of the players and the coaches since they are very different. Since players in these categories have lower <entity type=\"TIME_REFERENCE\" canonical=\"years_played\">years played in the field</entity> than coaches because playing takes a giant toll on your body compared to coaching.\n\nThis impacts my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because <entity type=\"LOCATION\" canonical=\"new_hampshire\">New Hampshire</entity> is not a very diverse place. This impacts the judgment of us and how we view <entity type=\"OTHER_ENTITY\" canonical=\"sports\" subtype=\"other\">sports</entity>. There are some <entity type=\"OTHER_ENTITY\" canonical=\"team\" subtype=\"other\">teams</entity> with a few <entity type=\"DATA_VAR_LEVEL\" canonical=\"people_of_color\" var=\"group_type\">people of color</entity> but it is mostly white.\n\n“Diversity, seen on the field but not the sidelines.”"
+}

@@ -4,6 +4,89 @@
   "raw_comment": "I've noticed that among young adults who communicate with their parents at least once a week, young women tend to do so significantly more often than young men. Specifically, young women text their parents nearly 25% more frequently than their male counterparts. Regardless of the method,  we can see that young women are more likely to maintain contact with their parents compared to young men.\n\nI'm curious how these trends might vary by country, as cultural norms around family connections can differ widely. It would be intriguing to explore these dynamics in different global contexts. Additionally, examining this behavior in older age groups, such as those aged 35-40, could provide further insights. It would also be interesting to see how often mothers and fathers initiate contact with their children and whether similar patterns exist.\n\nAs a college student, I find it hard to keep in regular contact with my parents, but try to do so once every month.\n\nA potential catchy headline could be : \"Staying in Touch\"",
   "entities": [
     {
+      "surface": "young adults",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_adults",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 24,
+      "end": 36,
+      "id": "e0"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 64,
+      "end": 71,
+      "id": "e1"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 198,
+      "end": 205,
+      "id": "e2"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 365,
+      "end": 372,
+      "id": "e3"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": 920,
+      "end": 927,
+      "id": "e4"
+    },
+    {
+      "surface": "Staying in Touch",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1005,
+      "end": 1021,
+      "id": "e5"
+    },
+    {
       "surface": "young women",
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
@@ -13,9 +96,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 94,
-      "end": 105,
-      "id": "e0"
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "young women",
@@ -27,9 +110,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 175,
-      "end": 186,
-      "id": "e1"
+      "start": null,
+      "end": null,
+      "id": "e7"
     },
     {
       "surface": "young women",
@@ -41,9 +124,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 2,
-      "start": 306,
-      "end": 317,
-      "id": "e2"
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "young men",
@@ -55,90 +138,8 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 385,
-      "end": 394,
-      "id": "e3"
-    },
-    {
-      "surface": "text",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 584,
-      "end": 588,
-      "id": "e4"
-    },
-    {
-      "surface": "35-40",
-      "type": "TIME_REFERENCE",
-      "canonical": "35_40",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 669,
-      "end": 674,
-      "id": "e5"
-    },
-    {
-      "surface": "mothers",
-      "type": "OTHER_ENTITY",
-      "canonical": "mothers",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 754,
-      "end": 761,
-      "id": "e6"
-    },
-    {
-      "surface": "fathers",
-      "type": "OTHER_ENTITY",
-      "canonical": "fathers",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 766,
-      "end": 773,
-      "id": "e7"
-    },
-    {
-      "surface": "college student",
-      "type": "OTHER_ENTITY",
-      "canonical": "college_student",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 853,
-      "end": 868,
-      "id": "e8"
-    },
-    {
-      "surface": "Staying in Touch",
-      "type": "CHART_ELEMENT",
-      "canonical": "staying_connected_in_2024",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1005,
-      "end": 1021,
+      "start": null,
+      "end": null,
       "id": "e9"
     },
     {
@@ -156,9 +157,10 @@
       "id": "e10"
     },
     {
-      "surface": "25%",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
+      "surface": "text",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -167,6 +169,33 @@
       "start": null,
       "end": null,
       "id": "e11"
+    },
+    {
+      "surface": "25% more",
+      "type": "OTHER_ENTITY",
+      "canonical": "25_percent_more",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "country",
+      "type": "DATA_VAR",
+      "canonical": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e13"
     },
     {
       "surface": "cultural norms",
@@ -180,37 +209,116 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e14"
+    },
+    {
+      "surface": "age groups",
+      "type": "TIME_REFERENCE",
+      "canonical": "age",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "35-40",
+      "type": "TIME_REFERENCE",
+      "canonical": "35_40",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "mothers",
+      "type": "OTHER_ENTITY",
+      "canonical": "mothers",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e17"
+    },
+    {
+      "surface": "fathers",
+      "type": "OTHER_ENTITY",
+      "canonical": "fathers",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e18"
+    },
+    {
+      "surface": "children",
+      "type": "OTHER_ENTITY",
+      "canonical": "children",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "college student",
+      "type": "OTHER_ENTITY",
+      "canonical": "college",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e21"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "young adults",
-      "reason": "Likely refers to the population in the chart, but no explicit canonical level exists for this age group in the provided reference list."
-    },
-    {
-      "surface": "country",
-      "reason": "Generic location scope; no specific country named."
-    },
-    {
-      "surface": "global contexts",
-      "reason": "Vague geographic scope without a specific location entity."
-    },
-    {
-      "surface": "children",
-      "reason": "Generic group reference; not clearly one of the listed entities."
+      "surface": "different global contexts",
+      "reason": "Broad geographic phrase without a specific canonical location or country."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I've noticed that among young adults who communicate with their parents at least once a week, young women tend to do so significantly more often than young men. Specifically, young women text their parents nearly 25% more frequently than their male counterparts. Regardless of the method,  we can see that young women are more likely to maintain contact with their parents compared to young men.\n\nI'm curious how these trends might vary by country, as cultural norms around family connections can differ widely. It would be intriguing to explore these dynamics in different global contexts. Additionally, examining this behavior in older age groups, such as those aged 35-40, could provide further insights. It would also be interesting to see how often mothers and fathers initiate contact with their children and whether similar patterns exist.\n\nAs a college student, I find it hard to keep in regular contact with my parents, but try to do so once every month."
-    },
-    {
-      "section": "headline",
-      "label": "A potential catchy headline could be",
-      "text": "\"Staying in Touch\""
+      "text": "I've noticed that among young adults who communicate with their parents at least once a week, young women tend to do so significantly more often than young men. Specifically, young women text their parents nearly 25% more frequently than their male counterparts. Regardless of the method,  we can see that young women are more likely to maintain contact with their parents compared to young men.\n\nI'm curious how these trends might vary by country, as cultural norms around family connections can differ widely. It would be intriguing to explore these dynamics in different global contexts. Additionally, examining this behavior in older age groups, such as those aged 35-40, could provide further insights. It would also be interesting to see how often mothers and fathers initiate contact with their children and whether similar patterns exist.\n\nAs a college student, I find it hard to keep in regular contact with my parents, but try to do so once every month.\n\nA potential catchy headline could be : \"Staying in Touch\""
     }
   ],
-  "tagged_text": "I've noticed that among young adults who communicate with their parents at least once a week, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> tend to do so significantly more often than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>. Specifically, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> their parents nearly <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\">25%</entity> more frequently than their male counterparts. Regardless of the method,  we can see that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> are more likely to maintain contact with their parents compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>.\n\nI'm curious how these trends might vary by country, as <entity type=\"OTHER_ENTITY\" canonical=\"culture\" subtype=\"concept\">cultural norms</entity> around family connections can differ widely. It would be intriguing to explore these dynamics in different global contexts. Additionally, examining this behavior in older age groups, such as those aged <entity type=\"TIME_REFERENCE\" canonical=\"35_40\">35-40</entity>, could provide further insights. It would also be interesting to see how often <entity type=\"OTHER_ENTITY\" canonical=\"mothers\" subtype=\"other\">mothers</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"fathers\" subtype=\"other\">fathers</entity> initiate contact with their children and whether similar patterns exist.\n\nAs a <entity type=\"OTHER_ENTITY\" canonical=\"college_student\" subtype=\"person\" speaker_context=\"true\">college student</entity>, I find it hard to keep in regular contact with my parents, but try to do so once every month.\n\nA potential catchy headline could be : \"<entity type=\"CHART_ELEMENT\" canonical=\"staying_connected_in_2024\" section=\"headline\">Staying in Touch</entity>\""
+  "tagged_text": "I've noticed that among <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\" subtype=\"group\">young adults</entity> who communicate with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> at least once a week, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> tend to do so significantly more often than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>. Specifically, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> nearly <entity type=\"OTHER_ENTITY\" canonical=\"25_percent_more\" subtype=\"other\">25% more</entity> frequently than their male counterparts. Regardless of the method,  we can see that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> are more likely to maintain contact with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>.\n\nI'm curious how these trends might vary by <entity type=\"DATA_VAR\" canonical=\"country\">country</entity>, as <entity type=\"OTHER_ENTITY\" canonical=\"culture\" subtype=\"concept\">cultural norms</entity> around family connections can differ widely. It would be intriguing to explore these dynamics in different global contexts. Additionally, examining this behavior in older <entity type=\"TIME_REFERENCE\" canonical=\"age\">age groups</entity>, such as those aged <entity type=\"TIME_REFERENCE\" canonical=\"35_40\">35-40</entity>, could provide further insights. It would also be interesting to see how often <entity type=\"OTHER_ENTITY\" canonical=\"mothers\" subtype=\"other\">mothers</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"fathers\" subtype=\"other\">fathers</entity> initiate contact with their <entity type=\"OTHER_ENTITY\" canonical=\"children\" subtype=\"group\">children</entity> and whether similar patterns exist.\n\nAs a <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college student</entity>, I find it hard to keep in regular contact with my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>, but try to do so once every month.\n\nA potential catchy headline could be : \"<entity type=\"CHART_ELEMENT\" canonical=\"title\">Staying in Touch</entity>\""
 }

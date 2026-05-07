@@ -32,17 +32,13 @@
       "id": "e1"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "parent's",
-      "reason": "Possessive form refers to parents, but the exact surface is not in the normalized dictionary and is not clearly a standalone entity mention."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "headline",
+      "label": "headline",
       "text": "Your parent's phones are dryer than your love life!"
     }
   ],
-  "tagged_text": "Your parent's phones are dryer than your love life!"
+  "tagged_text": "Your parent's <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\" section=\"headline\">phones</entity> are dryer than your <entity type=\"OTHER_ENTITY\" canonical=\"love_life\" subtype=\"other\" section=\"headline\">love life</entity>!"
 }

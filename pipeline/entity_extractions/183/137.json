@@ -4,7 +4,7 @@
   "raw_comment": "have you wondered why young men/women are never outside as much , most of us young women/men that i see use text and they facetime instead of walking around and talking. I wonder why this is, is it because of the use of phones or of social in anxieity. This effects my community because when i am downtown or anywhere i never see kids my age or if i do they are on their phones we need yo put our phones down and go outside.",
   "entities": [
     {
-      "surface": "young men/women",
+      "surface": "young men",
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_men",
       "var": "gender_group",
@@ -14,11 +14,25 @@
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 22,
-      "end": 37,
+      "end": 31,
       "id": "e0"
     },
     {
-      "surface": "young women/men",
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 32,
+      "end": 37,
+      "id": "e1"
+    },
+    {
+      "surface": "young women",
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
       "var": "gender_group",
@@ -28,8 +42,22 @@
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 77,
-      "end": 92,
-      "id": "e1"
+      "end": 88,
+      "id": "e2"
+    },
+    {
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 85,
+      "end": 88,
+      "id": "e3"
     },
     {
       "surface": "text",
@@ -43,13 +71,13 @@
       "occurrence_index": 0,
       "start": 108,
       "end": 112,
-      "id": "e2"
+      "id": "e4"
     },
     {
       "surface": "facetime",
-      "type": "OTHER_ENTITY",
-      "canonical": "facetime",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -57,7 +85,7 @@
       "occurrence_index": 0,
       "start": 122,
       "end": 130,
-      "id": "e3"
+      "id": "e5"
     },
     {
       "surface": "phones",
@@ -71,7 +99,7 @@
       "occurrence_index": 0,
       "start": 220,
       "end": 226,
-      "id": "e4"
+      "id": "e6"
     },
     {
       "surface": "phones",
@@ -85,7 +113,7 @@
       "occurrence_index": 1,
       "start": 371,
       "end": 377,
-      "id": "e5"
+      "id": "e7"
     },
     {
       "surface": "phones",
@@ -99,13 +127,12 @@
       "occurrence_index": 2,
       "start": 397,
       "end": 403,
-      "id": "e6"
+      "id": "e8"
     },
     {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
+      "surface": "community",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -113,7 +140,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e9"
     },
     {
       "surface": "kids",
@@ -127,21 +154,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e10"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "social in anxieity",
-      "reason": "Likely intended as 'social anxiety', but the surface text is misspelled and not a confirmed dictionary entry."
+      "reason": "Likely intended as 'social anxiety', but the surface text is misspelled and not a confirmed canonical entity."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
       "text": "have you wondered why young men/women are never outside as much , most of us young women/men that i see use text and they facetime instead of walking around and talking. I wonder why this is, is it because of the use of phones or of social in anxieity. This effects my community because when i am downtown or anywhere i never see kids my age or if i do they are on their phones we need yo put our phones down and go outside."
     }
   ],
-  "tagged_text": "have you wondered why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>/<entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> are never outside as much , most of us <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity>/<entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> that i see use <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> and they <entity type=\"OTHER_ENTITY\" canonical=\"facetime\" subtype=\"other\">facetime</entity> instead of walking around and talking. I wonder why this is, is it because of the use of <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity> or of social in anxieity. This effects <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because when i am downtown or anywhere i never see <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"other\">kids</entity> my age or if i do they are on their <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity> we need yo put our <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity> down and go outside."
+  "tagged_text": "have you wondered why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>/<entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> are never outside as much , most of us <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity>/<entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> that i see use <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> and they <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">facetime</entity> instead of walking around and talking. I wonder why this is, is it because of the use of <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity> or of social in anxieity. This effects my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because when i am downtown or anywhere i never see <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"other\">kids</entity> my age or if i do they are on their <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity> we need yo put our <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity> down and go outside."
 }

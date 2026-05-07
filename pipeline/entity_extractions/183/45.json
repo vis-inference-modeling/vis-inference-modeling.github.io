@@ -5,8 +5,9 @@
   "entities": [
     {
       "surface": "50%",
-      "type": "TIME_REFERENCE",
-      "canonical": "50_percent",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage_50",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -116,8 +117,9 @@
     },
     {
       "surface": "70%",
-      "type": "TIME_REFERENCE",
-      "canonical": "70_percent",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage_75",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -185,8 +187,9 @@
     },
     {
       "surface": "30%",
-      "type": "TIME_REFERENCE",
-      "canonical": "30_percent",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage_26",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -198,8 +201,9 @@
     },
     {
       "surface": "55%",
-      "type": "TIME_REFERENCE",
-      "canonical": "55_percent",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage_75",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -211,8 +215,9 @@
     },
     {
       "surface": "20%",
-      "type": "TIME_REFERENCE",
-      "canonical": "20_percent",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage_18",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -224,8 +229,9 @@
     },
     {
       "surface": "25%",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage_26",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -234,6 +240,19 @@
       "start": null,
       "end": null,
       "id": "e16"
+    },
+    {
+      "surface": "percentages",
+      "type": "DATA_VAR",
+      "canonical": "difference_between_gender_groups_within_each_method",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e17"
     },
     {
       "surface": "in person visiting",
@@ -247,7 +266,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e18"
     },
     {
       "surface": "texting",
@@ -261,10 +280,10 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e19"
     },
     {
-      "surface": "community",
+      "surface": "my community",
       "type": "OTHER_ENTITY",
       "canonical": "my_community",
       "subtype": "other",
@@ -275,7 +294,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e20"
     },
     {
       "surface": "elder community",
@@ -289,7 +308,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e21"
     },
     {
       "surface": "Moms aren’t getting their visits.",
@@ -302,16 +321,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e21"
+      "id": "e22"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
-      "text": "I notice that 50% of males say that they reach out to their parents through text at least once a week, while it’s around 70% for females. For phone calls, 30% of males do so at least once a week, and 55% of females do so. Even less percentages visit their parents once a week, with about 20% of males and 25% of females doing so.\n\nI wonder why the gap between the percentages decreases so significantly when it comes to in person visiting, but expands vastly when it comes to texting. \n\nThis relates to my community because the elder community is very important and they deserve to be treated gently.\n\nHeadline:\nMoms aren’t getting their visits."
+      "text": "I notice that 50% of males say that they reach out to their parents through text at least once a week, while it’s around 70% for females. For phone calls, 30% of males do so at least once a week, and 55% of females do so. Even less percentages visit their parents once a week, with about 20% of males and 25% of females doing so.\n\nI wonder why the gap between the percentages decreases so significantly when it comes to in person visiting, but expands vastly when it comes to texting. \n\nThis relates to my community because the elder community is very important and they deserve to be treated gently."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Moms aren’t getting their visits."
     }
   ],
-  "tagged_text": "I notice that <entity type=\"TIME_REFERENCE\" canonical=\"50_percent\">50%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> say that they reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> at least once a week, while it’s around <entity type=\"TIME_REFERENCE\" canonical=\"70_percent\">70%</entity> for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">females</entity>. For <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone calls</entity>, <entity type=\"TIME_REFERENCE\" canonical=\"30_percent\">30%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> do so at least once a week, and <entity type=\"TIME_REFERENCE\" canonical=\"55_percent\">55%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">females</entity> do so. Even less percentages <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> once a week, with about <entity type=\"TIME_REFERENCE\" canonical=\"20_percent\">20%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\">25%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">females</entity> doing so.\n\nI wonder why the gap between the percentages decreases so significantly when it comes to <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" modality=\"questioned\">in person visiting</entity>, but expands vastly when it comes to <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" modality=\"questioned\">texting</entity>. \n\nThis relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because the <entity type=\"OTHER_ENTITY\" canonical=\"elder_community\" subtype=\"other\">elder community</entity> is very important and they deserve to be treated gently.\n\nHeadline:\n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Moms aren’t getting their visits.</entity>"
+  "tagged_text": "I notice that <entity type=\"OTHER_ENTITY\" canonical=\"percentage_50\" subtype=\"other\">50%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> say that they reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> at least once a week, while it’s around <entity type=\"OTHER_ENTITY\" canonical=\"percentage_75\" subtype=\"other\">70%</entity> for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">females</entity>. For <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone calls</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"percentage_26\" subtype=\"other\">30%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> do so at least once a week, and <entity type=\"OTHER_ENTITY\" canonical=\"percentage_75\" subtype=\"other\">55%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">females</entity> do so. Even less percentages <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> once a week, with about <entity type=\"OTHER_ENTITY\" canonical=\"percentage_18\" subtype=\"other\">20%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"percentage_26\" subtype=\"other\">25%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">females</entity> doing so.\n\nI wonder why the gap between the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\" modality=\"questioned\">percentages</entity> decreases so significantly when it comes to <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" modality=\"questioned\">in person visiting</entity>, but expands vastly when it comes to <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" modality=\"questioned\">texting</entity>. \n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because the <entity type=\"OTHER_ENTITY\" canonical=\"elder_community\" subtype=\"other\">elder community</entity> is very important and they deserve to be treated gently.\n\nHeadline:\n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Moms aren’t getting their visits.</entity>"
 }

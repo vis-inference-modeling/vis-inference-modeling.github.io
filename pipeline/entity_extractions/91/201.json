@@ -1,0 +1,136 @@
+{
+  "article_id": "91",
+  "comment_index": 201,
+  "raw_comment": "What do you notice?\n1. It seems that soccer is the least diverse sport, racially.\nWhat do you wonder?\n1. What exactly have major sports leagues done to make their organizations more diverse?\nWhat impact does this have on you and your community?\nThis graph remindS me that we are still very unequal when it comes to employment.\nWhat's going on in this graph? Write a catchy headline that captures the graph's main idea.\nWhen Intent Leaves Us With Inequality.",
+  "entities": [
+    {
+      "surface": "soccer",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "soccer",
+      "var": "sports_league",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 37,
+      "end": 43,
+      "id": "e0"
+    },
+    {
+      "surface": "major sports leagues",
+      "type": "OTHER_ENTITY",
+      "canonical": "major_sports_leagues",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 123,
+      "end": 143,
+      "id": "e1"
+    },
+    {
+      "surface": "organizations",
+      "type": "OTHER_ENTITY",
+      "canonical": "organizations",
+      "subtype": "organization",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 163,
+      "end": 176,
+      "id": "e2"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 234,
+      "end": 243,
+      "id": "e3"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 250,
+      "end": 255,
+      "id": "e4"
+    },
+    {
+      "surface": "employment",
+      "type": "OTHER_ENTITY",
+      "canonical": "employment",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 315,
+      "end": 325,
+      "id": "e5"
+    },
+    {
+      "surface": "When Intent Leaves Us With Inequality.",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 419,
+      "end": 457,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "racially",
+      "reason": "Abstract descriptor; not a reference-list entity and unclear whether to tag as EVENT/concept."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "It seems that soccer is the least diverse sport, racially."
+    },
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "What exactly have major sports leagues done to make their organizations more diverse?"
+    },
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "What impact does this have on you and your community?"
+    },
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "This graph remindS me that we are still very unequal when it comes to employment."
+    },
+    {
+      "section": "headline",
+      "label": "headline",
+      "text": "When Intent Leaves Us With Inequality."
+    }
+  ],
+  "tagged_text": "What do you notice?\n1. It seems that <entity type=\"DATA_VAR_LEVEL\" canonical=\"soccer\" var=\"sports_league\" section=\"numbered_point\">soccer</entity> is the least diverse sport, racially.\nWhat do you wonder?\n1. What exactly have <entity type=\"OTHER_ENTITY\" canonical=\"major_sports_leagues\" subtype=\"other\" section=\"numbered_point\">major sports leagues</entity> done to make their <entity type=\"OTHER_ENTITY\" canonical=\"organizations\" subtype=\"organization\" section=\"numbered_point\">organizations</entity> more diverse?\nWhat impact does this have on you and your <entity type=\"LOCATION\" canonical=\"my_community\" section=\"numbered_point\" speaker_context=\"true\">community</entity>?\nThis <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"numbered_point\">graph</entity> remindS me that we are still very unequal when it comes to <entity type=\"OTHER_ENTITY\" canonical=\"employment\" subtype=\"other\" section=\"numbered_point\">employment</entity>.\nWhat's going on in this graph? Write a catchy headline that captures the graph's main idea.\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">When Intent Leaves Us With Inequality.</entity>"
+}

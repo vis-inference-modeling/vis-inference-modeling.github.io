@@ -4,19 +4,6 @@
   "raw_comment": "I notice that 50% of males say that they reach out to their parents through text at least once a week, while it’s around 70% for females. For phone calls, 30% of males do so at least once a week, and 55% of females do so. Even less percentages visit their parents once a week, with about 20% of males and 25% of females doing so.\n\nI wonder why the gap between the percentages decreases so significantly when it comes to in person visiting, but expands vastly when it comes to texting. \n\nThe graph shows me different ways people around my age engage with their family during weekly periods. It reminds me of the different ways I myself can contact my parents, and the observed low percentage of males who contact their parents encourages me to do so more.\n\nHeadline:\n\"Keeping Ties Strong: Gender Trends in Weekly Parental Contact Across Communication Channels\"",
   "entities": [
     {
-      "surface": "50%",
-      "type": "TIME_REFERENCE",
-      "canonical": "50_percent",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 14,
-      "end": 17,
-      "id": "e0"
-    },
-    {
       "surface": "males",
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_men",
@@ -28,7 +15,7 @@
       "occurrence_index": 0,
       "start": 21,
       "end": 26,
-      "id": "e1"
+      "id": "e0"
     },
     {
       "surface": "males",
@@ -42,7 +29,7 @@
       "occurrence_index": 1,
       "start": 131,
       "end": 136,
-      "id": "e2"
+      "id": "e1"
     },
     {
       "surface": "males",
@@ -56,82 +43,54 @@
       "occurrence_index": 2,
       "start": 162,
       "end": 167,
-      "id": "e3"
-    },
-    {
-      "surface": "males",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": 209,
-      "end": 214,
-      "id": "e4"
-    },
-    {
-      "surface": "text",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 476,
-      "end": 480,
-      "id": "e5"
-    },
-    {
-      "surface": "family",
-      "type": "OTHER_ENTITY",
-      "canonical": "family",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 560,
-      "end": 566,
-      "id": "e6"
+      "id": "e2"
     },
     {
       "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
+      "canonical": "parents",
       "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 650,
-      "end": 657,
-      "id": "e7"
-    },
-    {
-      "surface": "males",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 694,
-      "end": 699,
-      "id": "e8"
+      "start": 256,
+      "end": 263,
+      "id": "e3"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 650,
+      "end": 657,
+      "id": "e4"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 718,
+      "end": 725,
+      "id": "e5"
     },
     {
       "surface": "Headline",
       "type": "CHART_ELEMENT",
-      "canonical": "headline",
+      "canonical": "title",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -139,7 +98,7 @@
       "occurrence_index": 0,
       "start": 756,
       "end": 764,
-      "id": "e9"
+      "id": "e6"
     },
     {
       "surface": "Keeping Ties Strong: Gender Trends in Weekly Parental Contact Across Communication Channels",
@@ -152,12 +111,27 @@
       "occurrence_index": 0,
       "start": 767,
       "end": 858,
-      "id": "e10"
+      "id": "e7"
     },
     {
-      "surface": "70%",
-      "type": "TIME_REFERENCE",
-      "canonical": "70_percent",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "text",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -165,7 +139,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e9"
     },
     {
       "surface": "females",
@@ -179,7 +153,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e10"
     },
     {
       "surface": "females",
@@ -193,7 +167,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e11"
     },
     {
       "surface": "females",
@@ -207,7 +181,7 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e12"
     },
     {
       "surface": "phone calls",
@@ -221,12 +195,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e13"
     },
     {
-      "surface": "30%",
-      "type": "TIME_REFERENCE",
-      "canonical": "30_percent",
+      "surface": "visit",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -234,46 +209,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "55%",
-      "type": "TIME_REFERENCE",
-      "canonical": "55_percent",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
-      "surface": "20%",
-      "type": "TIME_REFERENCE",
-      "canonical": "20_percent",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "25%",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
+      "id": "e14"
     },
     {
       "surface": "in person visiting",
@@ -287,7 +223,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e15"
     },
     {
       "surface": "texting",
@@ -301,6 +237,75 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e17"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e18"
+    },
+    {
+      "surface": "family",
+      "type": "OTHER_ENTITY",
+      "canonical": "family",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e21"
     }
   ],
@@ -308,7 +313,6 @@
   "section_segments": [
     {
       "section": "body",
-      "label": "",
       "text": "I notice that 50% of males say that they reach out to their parents through text at least once a week, while it’s around 70% for females. For phone calls, 30% of males do so at least once a week, and 55% of females do so. Even less percentages visit their parents once a week, with about 20% of males and 25% of females doing so.\n\nI wonder why the gap between the percentages decreases so significantly when it comes to in person visiting, but expands vastly when it comes to texting. \n\nThe graph shows me different ways people around my age engage with their family during weekly periods. It reminds me of the different ways I myself can contact my parents, and the observed low percentage of males who contact their parents encourages me to do so more."
     },
     {
@@ -317,5 +321,5 @@
       "text": "Keeping Ties Strong: Gender Trends in Weekly Parental Contact Across Communication Channels"
     }
   ],
-  "tagged_text": "I notice that <entity type=\"TIME_REFERENCE\" canonical=\"50_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">50%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">males</entity> say that they reach out to their parents through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">text</entity> at least once a week, while it’s around <entity type=\"TIME_REFERENCE\" canonical=\"70_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">70%</entity> for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">females</entity>. For <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">phone calls</entity>, <entity type=\"TIME_REFERENCE\" canonical=\"30_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">30%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">males</entity> do so at least once a week, and <entity type=\"TIME_REFERENCE\" canonical=\"55_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">55%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">females</entity> do so. Even less percentages visit their parents once a week, with about <entity type=\"TIME_REFERENCE\" canonical=\"20_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">20%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">males</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">25%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">females</entity> doing so.\n\nI wonder why the gap between the percentages decreases so significantly when it comes to <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">in person visiting</entity>, but expands vastly when it comes to <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">texting</entity>. \n\nThe graph shows me different ways people around my age engage with their <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">family</entity> during weekly periods. It reminds me of the different ways I myself can contact my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">parents</entity>, and the observed low percentage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">males</entity> who contact their parents encourages me to do so more.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Headline</entity>:\n\"<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Keeping Ties Strong: Gender Trends in Weekly Parental Contact Across Communication Channels</entity>\""
+  "tagged_text": "I notice that 50% of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> say that they reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> at least once a week, while it’s around 70% for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">females</entity>. For <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone calls</entity>, 30% of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> do so at least once a week, and 55% of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">females</entity> do so. Even less percentages <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> once a week, with about 20% of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> and 25% of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">females</entity> doing so.\n\nI wonder why the gap between the percentages decreases so significantly when it comes to <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" modality=\"questioned\">in person visiting</entity>, but expands vastly when it comes to <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" modality=\"questioned\">texting</entity>. \n\nThe <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows me different ways <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\">people</entity> around my age engage with their <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\">family</entity> during weekly periods. It reminds me of the different ways I myself can contact my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>, and the observed low percentage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> who contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> encourages me to do so more.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Headline</entity>:\n\"<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Keeping Ties Strong: Gender Trends in Weekly Parental Contact Across Communication Channels</entity>\""
 }

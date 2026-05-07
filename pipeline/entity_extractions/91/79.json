@@ -1,0 +1,57 @@
+{
+  "article_id": "91",
+  "comment_index": 79,
+  "raw_comment": "I notice that in every league the head coach's percentage always stays under 45%. Also i noticed that basketball has the most color diversity.\n\nI wonder why baseball doesn't have as much color diversity as the other sports.",
+  "entities": [
+    {
+      "surface": "45%",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "45",
+      "var": "percentage_of_head_coaches_of_color",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 77,
+      "end": 80,
+      "id": "e0"
+    },
+    {
+      "surface": "basketball",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 102,
+      "end": 112,
+      "id": "e1"
+    },
+    {
+      "surface": "baseball",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 157,
+      "end": 165,
+      "id": "e2"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that in every league the head coach's percentage always stays under 45%. Also i noticed that basketball has the most color diversity.\n\nI wonder why baseball doesn't have as much color diversity as the other sports."
+    }
+  ],
+  "tagged_text": "I notice that in every league the head coach's percentage always stays under <entity type=\"DATA_VAR_LEVEL\" canonical=\"45\" var=\"percentage_of_head_coaches_of_color\">45%</entity>. Also i noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\">basketball</entity> has the most color diversity.\n\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\">baseball</entity> doesn't have as much color diversity as the other sports."
+}

@@ -1,0 +1,254 @@
+{
+  "article_id": "91",
+  "comment_index": 51,
+  "raw_comment": "This graph displays the racial disparity in different major sports leagues. It shows the percent players of color and the percent coaches of color. Both the womens and mens NBA have the highest percentage of players of color at 83% and the MLB has the smallest at 40% of players.\nI wonder why they chose to only incorporate one women's sport association. I also wonder what these graphs have looked like in previous years, how much have they changed throughout the years?\nOur community is predominantly white and seeing this data impacts us by giving us a better understanding of the diversity of sports across the US. It also implies that people of color are not represented enough in the coaching community and may not be given as many opportunities.",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 5,
+      "end": 10,
+      "id": "e0"
+    },
+    {
+      "surface": "racial disparity",
+      "type": "EVENT",
+      "canonical": "racial_disparity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 24,
+      "end": 40,
+      "id": "e1"
+    },
+    {
+      "surface": "sports leagues",
+      "type": "DATA_VAR",
+      "canonical": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 60,
+      "end": 74,
+      "id": "e2"
+    },
+    {
+      "surface": "percent players of color",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_players_of_color",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 89,
+      "end": 113,
+      "id": "e3"
+    },
+    {
+      "surface": "percent coaches of color",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_head_coaches_of_color",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 122,
+      "end": 146,
+      "id": "e4"
+    },
+    {
+      "surface": "NBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 173,
+      "end": 176,
+      "id": "e5"
+    },
+    {
+      "surface": "percentage of players of color",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_players_of_color",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 194,
+      "end": 224,
+      "id": "e6"
+    },
+    {
+      "surface": "83%",
+      "type": "TIME_REFERENCE",
+      "canonical": "83%",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 228,
+      "end": 231,
+      "id": "e7"
+    },
+    {
+      "surface": "MLB",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 240,
+      "end": 243,
+      "id": "e8"
+    },
+    {
+      "surface": "40%",
+      "type": "TIME_REFERENCE",
+      "canonical": "40%",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 264,
+      "end": 267,
+      "id": "e9"
+    },
+    {
+      "surface": "previous years",
+      "type": "TIME_REFERENCE",
+      "canonical": "previous_years",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 407,
+      "end": 421,
+      "id": "e10"
+    },
+    {
+      "surface": "years",
+      "type": "TIME_REFERENCE",
+      "canonical": "years",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 416,
+      "end": 421,
+      "id": "e11"
+    },
+    {
+      "surface": "Our community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 472,
+      "end": 485,
+      "id": "e12"
+    },
+    {
+      "surface": "US",
+      "type": "LOCATION",
+      "canonical": "united_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 615,
+      "end": 617,
+      "id": "e13"
+    },
+    {
+      "surface": "people of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "people_of_color",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 640,
+      "end": 655,
+      "id": "e14"
+    },
+    {
+      "surface": "coaching",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaching",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 690,
+      "end": 698,
+      "id": "e15"
+    },
+    {
+      "surface": "NBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "one women's sport association",
+      "reason": "Likely refers to WNBA, but the surface does not explicitly name the league."
+    },
+    {
+      "surface": "different major sports leagues",
+      "reason": "Could refer to the sports_league variable or to the set of league levels; kept broad because the phrase is generic."
+    },
+    {
+      "surface": "diversity of sports",
+      "reason": "Abstract concept; not clearly a listed variable or level."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "This graph displays the racial disparity in different major sports leagues. It shows the percent players of color and the percent coaches of color. Both the womens and mens NBA have the highest percentage of players of color at 83% and the MLB has the smallest at 40% of players.\nI wonder why they chose to only incorporate one women's sport association. I also wonder what these graphs have looked like in previous years, how much have they changed throughout the years?\nOur community is predominantly white and seeing this data impacts us by giving us a better understanding of the diversity of sports across the US. It also implies that people of color are not represented enough in the coaching community and may not be given as many opportunities."
+    }
+  ],
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> displays the <entity type=\"EVENT\" canonical=\"racial_disparity\">racial disparity</entity> in different major <entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\">sports leagues</entity>. It shows the <entity type=\"DATA_VAR\" canonical=\"percentage_of_players_of_color\">percent players of color</entity> and the <entity type=\"DATA_VAR\" canonical=\"percentage_of_head_coaches_of_color\">percent coaches of color</entity>. Both the womens and mens <entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\">NBA</entity> have the highest <entity type=\"DATA_VAR\" canonical=\"percentage_of_players_of_color\">percentage of players of color</entity> at <entity type=\"TIME_REFERENCE\" canonical=\"83%\">83%</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\">MLB</entity> has the smallest at <entity type=\"TIME_REFERENCE\" canonical=\"40%\">40%</entity> of players.\nI wonder why they chose to only incorporate one women's sport association. I also wonder what these graphs have looked like in <entity type=\"TIME_REFERENCE\" canonical=\"previous_years\">previous years</entity>, how much have they changed throughout the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity>?\n<entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">Our community</entity> is predominantly white and seeing this data impacts us by giving us a better understanding of the diversity of sports across the <entity type=\"LOCATION\" canonical=\"united_states\">US</entity>. It also implies that <entity type=\"OTHER_ENTITY\" canonical=\"people_of_color\" subtype=\"group\">people of color</entity> are not represented enough in the <entity type=\"OTHER_ENTITY\" canonical=\"coaching\" subtype=\"concept\">coaching</entity> community and may not be given as many opportunities."
+}

@@ -1,0 +1,103 @@
+{
+  "article_id": "91",
+  "comment_index": 109,
+  "raw_comment": "Notice- I notice that the players of color is higher than the coaches of color\nWonder- I wonder why the numbers for head coaches of color is so low for the national football league\nImpact- it is more difficult for people of color to become coaches \nHeadline- the diversity in sports",
+  "entities": [
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 26,
+      "end": 42,
+      "id": "e0"
+    },
+    {
+      "surface": "coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 62,
+      "end": 78,
+      "id": "e1"
+    },
+    {
+      "surface": "head coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 116,
+      "end": 137,
+      "id": "e2"
+    },
+    {
+      "surface": "national football league",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nfl",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 156,
+      "end": 180,
+      "id": "e3"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "people_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 214,
+      "end": 229,
+      "id": "e4"
+    },
+    {
+      "surface": "diversity in sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "diversity_in_sports",
+      "subtype": "concept",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 263,
+      "end": 282,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Notice- I notice that the players of color is higher than the coaches of color\nWonder- I wonder why the numbers for head coaches of color is so low for the national football league\nImpact- it is more difficult for people of color to become coaches "
+    },
+    {
+      "section": "headline",
+      "text": "the diversity in sports"
+    }
+  ],
+  "tagged_text": "Notice- I notice that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">players of color</entity> is higher than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"body\">coaches of color</entity>\nWonder- I wonder why the numbers for <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"body\">head coaches of color</entity> is so low for the <entity type=\"DATA_VAR_LEVEL\" canonical=\"nfl\" var=\"sports_league\" section=\"body\">national football league</entity>\nImpact- it is more difficult for <entity type=\"DATA_VAR_LEVEL\" canonical=\"people_of_color\" var=\"group_type\" section=\"body\">people of color</entity> to become coaches \nHeadline- the <entity type=\"OTHER_ENTITY\" canonical=\"diversity_in_sports\" subtype=\"concept\" section=\"headline\">diversity in sports</entity>"
+}

@@ -1,0 +1,148 @@
+{
+  "article_id": "91",
+  "comment_index": 95,
+  "raw_comment": "From this graph I notice that there are more players of color than there are head coaches of color. I wonder how these graphs might be different if they did them in past years. I think there would be a huge difference. This affects my community because this reflects racism in today's world. This shows that even though we are all supposed to be equal we still aren't. My headline for this graph would be \"Racism on the Field\".",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 10,
+      "end": 15,
+      "id": "e0"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 119,
+      "end": 124,
+      "id": "e1"
+    },
+    {
+      "surface": "past years",
+      "type": "TIME_REFERENCE",
+      "canonical": "past_years",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 165,
+      "end": 175,
+      "id": "e2"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 235,
+      "end": 244,
+      "id": "e3"
+    },
+    {
+      "surface": "racism",
+      "type": "EVENT",
+      "canonical": "racism",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 267,
+      "end": 273,
+      "id": "e4"
+    },
+    {
+      "surface": "racism",
+      "type": "EVENT",
+      "canonical": "racism",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 406,
+      "end": 412,
+      "id": "e5"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "head coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "graphs",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "world",
+      "type": "LOCATION",
+      "canonical": "world",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "From this graph I notice that there are more players of color than there are head coaches of color. I wonder how these graphs might be different if they did them in past years. I think there would be a huge difference. This affects my community because this reflects racism in today's world. This shows that even though we are all supposed to be equal we still aren't. My headline for this graph would be \"Racism on the Field.\""
+    }
+  ],
+  "tagged_text": "From this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> I notice that there are more <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> than there are <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\">head coaches of color</entity>. I wonder how these <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graphs</entity> might be different if they did them in <entity type=\"TIME_REFERENCE\" canonical=\"past_years\">past years</entity>. I think there would be a huge difference. This affects my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">community</entity> because this reflects <entity type=\"EVENT\" canonical=\"racism\">racism</entity> in today's <entity type=\"LOCATION\" canonical=\"world\">world</entity>. This shows that even though we are all supposed to be equal we still aren't. My headline for this graph would be \"<entity type=\"EVENT\" canonical=\"racism\">Racism</entity> on the Field.\""
+}

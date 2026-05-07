@@ -4,45 +4,6 @@
   "raw_comment": "I wonder why there is a grey bar between the two dots.\nThe bar implies that there is something meaningful between the two dots and I think there is not.\nAnd that frustrates me that smart people would make such a weird mistake.",
   "entities": [
     {
-      "surface": "grey bar",
-      "type": "CHART_ELEMENT",
-      "canonical": "grey_bar",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 24,
-      "end": 32,
-      "id": "e0"
-    },
-    {
-      "surface": "two dots",
-      "type": "CHART_ELEMENT",
-      "canonical": "two_dots",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 45,
-      "end": 53,
-      "id": "e1"
-    },
-    {
-      "surface": "two dots",
-      "type": "CHART_ELEMENT",
-      "canonical": "two_dots",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 118,
-      "end": 126,
-      "id": "e2"
-    },
-    {
       "surface": "smart people",
       "type": "OTHER_ENTITY",
       "canonical": "smart_people",
@@ -54,28 +15,28 @@
       "occurrence_index": 0,
       "start": 181,
       "end": 193,
-      "id": "e3"
+      "id": "e0"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "grey bar",
+      "reason": "Likely a chart element, but not a confirmed canonical chart element in the reference list."
+    },
+    {
+      "surface": "two dots",
+      "reason": "Could refer to a chart element, but the exact canonical mapping is uncertain without more context."
     },
     {
       "surface": "bar",
-      "type": "CHART_ELEMENT",
-      "canonical": "bar",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e4"
+      "reason": "Could refer to a chart element, but the exact canonical mapping is uncertain without more context."
     }
   ],
-  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "I wonder why there is a grey bar between the two dots.\nThe bar implies that there is something meaningful between the two dots and I think there is not.\nAnd that frustrates me that smart people would make such a weird mistake."
     }
   ],
-  "tagged_text": "I wonder why there is a <entity type=\"CHART_ELEMENT\" canonical=\"grey_bar\">grey bar</entity> between the <entity type=\"CHART_ELEMENT\" canonical=\"two_dots\">two dots</entity>.\nThe <entity type=\"CHART_ELEMENT\" canonical=\"bar\">bar</entity> implies that there is something meaningful between the <entity type=\"CHART_ELEMENT\" canonical=\"two_dots\">two dots</entity> and I think there is not.\nAnd that frustrates me that <entity type=\"OTHER_ENTITY\" canonical=\"smart_people\" subtype=\"group\">smart people</entity> would make such a weird mistake."
+  "tagged_text": "I wonder why there is a grey bar between the two dots.\nThe bar implies that there is something meaningful between the two dots and I think there is not.\nAnd that frustrates me that <entity type=\"OTHER_ENTITY\" canonical=\"smart_people\" subtype=\"group\">smart people</entity> would make such a weird mistake."
 }

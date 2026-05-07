@@ -1,0 +1,71 @@
+{
+  "article_id": "91",
+  "comment_index": 46,
+  "raw_comment": "I notice that people of color have a tendency to be more prevalent in professional sports. I wonder why there aren't more coaches of color. I understand that somewhat, but I feel as though there should be more diversity there.",
+  "entities": [
+    {
+      "surface": "people of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "people_of_color",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 14,
+      "end": 29,
+      "id": "e0"
+    },
+    {
+      "surface": "professional sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "professional_sports",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 70,
+      "end": 89,
+      "id": "e1"
+    },
+    {
+      "surface": "coaches of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaches_of_color",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 122,
+      "end": 138,
+      "id": "e2"
+    },
+    {
+      "surface": "diversity",
+      "type": "OTHER_ENTITY",
+      "canonical": "diversity",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "wished",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 210,
+      "end": 219,
+      "id": "e3"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that people of color have a tendency to be more prevalent in professional sports. I wonder why there aren't more coaches of color. I understand that somewhat, but I feel as though there should be more diversity there."
+    }
+  ],
+  "tagged_text": "I notice that <entity type=\"OTHER_ENTITY\" canonical=\"people_of_color\" subtype=\"group\">people of color</entity> have a tendency to be more prevalent in <entity type=\"OTHER_ENTITY\" canonical=\"professional_sports\" subtype=\"other\">professional sports</entity>. I wonder why there aren't more <entity type=\"OTHER_ENTITY\" canonical=\"coaches_of_color\" subtype=\"group\">coaches of color</entity>. I understand that somewhat, but I feel as though there should be more <entity type=\"OTHER_ENTITY\" canonical=\"diversity\" subtype=\"concept\">diversity</entity> there."
+}

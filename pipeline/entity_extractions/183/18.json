@@ -32,31 +32,31 @@
       "id": "e1"
     },
     {
-      "surface": "messages",
+      "surface": "father",
       "type": "OTHER_ENTITY",
-      "canonical": "messages",
-      "subtype": "other",
+      "canonical": "father",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 112,
-      "end": 120,
+      "start": 156,
+      "end": 162,
       "id": "e2"
     },
     {
-      "surface": "messages",
+      "surface": "mother",
       "type": "OTHER_ENTITY",
-      "canonical": "messages",
-      "subtype": "other",
+      "canonical": "mother",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 261,
-      "end": 269,
+      "occurrence_index": 0,
+      "start": 167,
+      "end": 173,
       "id": "e3"
     },
     {
@@ -69,9 +69,23 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 183,
+      "end": 188,
+      "id": "e4"
+    },
+    {
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
       "start": 331,
       "end": 336,
-      "id": "e4"
+      "id": "e5"
     },
     {
       "surface": "parents",
@@ -85,13 +99,13 @@
       "occurrence_index": 0,
       "start": 343,
       "end": 350,
-      "id": "e5"
+      "id": "e6"
     },
     {
       "surface": "sons",
       "type": "OTHER_ENTITY",
-      "canonical": "sons",
-      "subtype": "other",
+      "canonical": "young_male_adult",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -99,85 +113,28 @@
       "occurrence_index": 0,
       "start": 374,
       "end": 378,
-      "id": "e6"
-    },
-    {
-      "surface": "magic voice box",
-      "type": "OTHER_ENTITY",
-      "canonical": "magic_voice_box",
-      "subtype": "technology",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 398,
-      "end": 413,
       "id": "e7"
-    },
+    }
+  ],
+  "unresolved_mentions": [
     {
-      "surface": "children's father and mother",
-      "type": "OTHER_ENTITY",
-      "canonical": "children_s_father_and_mother",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "keyboard",
-      "type": "OTHER_ENTITY",
-      "canonical": "keyboard",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
+      "surface": "like of men",
+      "reason": "Unclear phrase; likely intended to refer to men but not a clean entity mention."
     },
     {
       "surface": "ancestors",
-      "type": "OTHER_ENTITY",
-      "canonical": "ancestors",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
+      "reason": "Could refer to parents or older relatives, but the intended entity is unclear."
+    },
+    {
+      "surface": "Long distances voice talks",
+      "reason": "Nonstandard phrasing; likely refers to phone/video chat but not confident enough to map."
     }
   ],
-  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "Texting eludes to like of men, thou fingers do not rest upon the silky smooth, glassy surface of thy phones. No messages find their way to their children's father and mother.  Though women articulate their fingers gracefully across the keyboard and scribe down messages to their ancestors. Long distances voice talks occur most in women. Thou parents must hither their poor sons to talk across thy magic voice box."
     }
   ],
-  "tagged_text": "<entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">Texting</entity> eludes to like of men, thou fingers do not rest upon the silky smooth, glassy surface of thy <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity>. No <entity type=\"OTHER_ENTITY\" canonical=\"messages\" subtype=\"other\">messages</entity> find their way to their <entity type=\"OTHER_ENTITY\" canonical=\"children_s_father_and_mother\" subtype=\"other\">children's father and mother</entity>.  Though <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> articulate their fingers gracefully across the <entity type=\"OTHER_ENTITY\" canonical=\"keyboard\" subtype=\"other\">keyboard</entity> and scribe down <entity type=\"OTHER_ENTITY\" canonical=\"messages\" subtype=\"other\">messages</entity> to their <entity type=\"OTHER_ENTITY\" canonical=\"ancestors\" subtype=\"other\">ancestors</entity>. Long distances voice talks occur most in <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>. Thou <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> must hither their poor <entity type=\"OTHER_ENTITY\" canonical=\"sons\" subtype=\"other\">sons</entity> to talk across thy <entity type=\"OTHER_ENTITY\" canonical=\"magic_voice_box\" subtype=\"technology\">magic voice box</entity>."
+  "tagged_text": "<entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Texting</entity> eludes to like of men, thou fingers do not rest upon the silky smooth, glassy surface of thy <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">phones</entity>. No messages find their way to their children's <entity type=\"OTHER_ENTITY\" canonical=\"father\" subtype=\"person\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">father</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"mother\" subtype=\"person\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">mother</entity>.  Though <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">women</entity> articulate their fingers gracefully across the keyboard and scribe down messages to their ancestors. Long distances voice talks occur most in <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">women</entity>. Thou <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">parents</entity> must hither their poor sons to talk across thy magic voice box."
 }

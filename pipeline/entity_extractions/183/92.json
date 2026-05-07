@@ -18,60 +18,46 @@
       "id": "e0"
     },
     {
-      "surface": "young males",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 102,
-      "end": 113,
-      "id": "e1"
-    },
-    {
-      "surface": "visiting in person",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 171,
-      "end": 189,
-      "id": "e2"
+      "start": 58,
+      "end": 65,
+      "id": "e1"
     },
     {
-      "surface": "visiting in person",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 302,
-      "end": 320,
-      "id": "e3"
+      "start": 159,
+      "end": 166,
+      "id": "e2"
     },
     {
-      "surface": "survey participants",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "participants",
-      "subtype": "group",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 356,
-      "end": 375,
-      "id": "e4"
+      "occurrence_index": 2,
+      "start": 393,
+      "end": 400,
+      "id": "e3"
     },
     {
       "surface": "jobs",
@@ -85,7 +71,7 @@
       "occurrence_index": 0,
       "start": 405,
       "end": 409,
-      "id": "e5"
+      "id": "e4"
     },
     {
       "surface": "college",
@@ -99,7 +85,7 @@
       "occurrence_index": 0,
       "start": 414,
       "end": 421,
-      "id": "e6"
+      "id": "e5"
     },
     {
       "surface": "college",
@@ -113,21 +99,21 @@
       "occurrence_index": 1,
       "start": 550,
       "end": 557,
-      "id": "e7"
+      "id": "e6"
     },
     {
-      "surface": "college",
+      "surface": "people",
       "type": "OTHER_ENTITY",
-      "canonical": "college",
+      "canonical": "people",
       "subtype": "other",
       "section": "numbered_point",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 614,
-      "end": 621,
-      "id": "e8"
+      "occurrence_index": 0,
+      "start": 590,
+      "end": 596,
+      "id": "e7"
     },
     {
       "surface": "out of state",
@@ -140,24 +126,37 @@
       "occurrence_index": 0,
       "start": 638,
       "end": 650,
-      "id": "e9"
+      "id": "e8"
     },
     {
-      "surface": "sending texts",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
-      "section": "numbered_point",
+      "surface": "Staying Connected : How Today's Youth Keep Their Parents Involved",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 778,
+      "end": 843,
+      "id": "e9"
+    },
+    {
+      "surface": "young women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e10"
     },
     {
-      "surface": "young men",
+      "surface": "young males",
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_men",
       "var": "gender_group",
@@ -171,6 +170,62 @@
       "id": "e11"
     },
     {
+      "surface": "visiting in person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "visiting in person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    },
+    {
+      "surface": "sending texts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "young men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
       "surface": "women",
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
@@ -178,39 +233,51 @@
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_community",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e16"
     },
     {
-      "surface": "people around my age",
+      "surface": "survey participants",
       "type": "OTHER_ENTITY",
-      "canonical": "people_around_my_age",
+      "canonical": "survey_participants",
       "subtype": "group",
       "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e17"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e18"
+    },
+    {
+      "surface": "age",
+      "type": "TIME_REFERENCE",
+      "canonical": "age",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
     }
   ],
   "unresolved_mentions": [],
@@ -236,5 +303,5 @@
       "text": "Staying Connected : How Today's Youth Keep Their Parents Involved"
     }
   ],
-  "tagged_text": "1)In all three categories, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> reach out to their parents significantly more in comparison to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young males</entity>. The least popular method of reaching out to parents was <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting in person</entity> while the most popular method was <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">sending texts</entity>. The smallest difference between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> was in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting in person</entity> category. \n\n2)I wonder how far the <entity type=\"OTHER_ENTITY\" canonical=\"participants\" subtype=\"group\">survey participants</entity> lived from their parents? Do <entity type=\"OTHER_ENTITY\" canonical=\"jobs\" subtype=\"other\">jobs</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college</entity> affect the methods of participants reaching out? \n\n3)In <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> I know a lot of <entity type=\"OTHER_ENTITY\" canonical=\"people_around_my_age\" subtype=\"group\" speaker_context=\"true\">people around my age</entity> that plan on going to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college</entity>. Depending on future plans some people plan on going to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college</entity> nearby or going <entity type=\"LOCATION\" canonical=\"out_of_state\">out of state</entity>. So, it is interesting to see that one day we may fit into one of these categories depending on what path in life we take. \n\n4)Staying Connected : How Today's Youth Keep Their Parents Involved"
+  "tagged_text": "1)<entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"numbered_point\">In all three categories, young women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\">parents</entity> significantly more in comparison to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"numbered_point\">young males</entity>. The least popular method of reaching out to <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\">parents</entity> was <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\">visiting in person</entity> while the most popular method was <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"numbered_point\">sending texts</entity>. The smallest difference between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"numbered_point\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"numbered_point\">women</entity> was in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\">visiting in person</entity> category. \n\n2)I wonder how far the <entity type=\"OTHER_ENTITY\" canonical=\"survey_participants\" subtype=\"group\" section=\"numbered_point\" modality=\"questioned\">survey participants</entity> lived from their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\">parents</entity>? Do <entity type=\"OTHER_ENTITY\" canonical=\"jobs\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\">jobs</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\">college</entity> affect the methods of participants reaching out? \n\n3)In my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\" section=\"numbered_point\">community</entity> I know a lot of <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"numbered_point\">people</entity> around my <entity type=\"TIME_REFERENCE\" canonical=\"age\" section=\"numbered_point\">age</entity> that plan on going to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" section=\"numbered_point\">college</entity>. Depending on future plans some people plan on going to college nearby or going out of state. So, it is interesting to see that one day we may fit into one of these categories depending on what path in life we take. \n\n4)<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Staying Connected : How Today's Youth Keep Their Parents Involved</entity>"
 }

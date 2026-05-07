@@ -129,11 +129,10 @@
     },
     {
       "surface": "our community",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -146,9 +145,8 @@
   "section_segments": [
     {
       "section": "body",
-      "label": "",
       "text": "This graph demonstrates that younger women are more likely to reach out to their parents than young men, I wonder why that is? Is it parenting styles, or how kids were brought up, or is it just the way humans adapt and grow away from their closest family? I wonder in our community how accurate this graph will actually be?"
     }
   ],
-  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> demonstrates that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">younger women</entity> are more likely to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young men</entity>, I wonder why that is? Is it <entity type=\"OTHER_ENTITY\" canonical=\"parenting_styles\" subtype=\"concept\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parenting styles</entity>, or how <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">kids</entity> were brought up, or is it just the way <entity type=\"OTHER_ENTITY\" canonical=\"humans\" subtype=\"group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">humans</entity> adapt and grow away from their closest <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">family</entity>? I wonder in <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" modality=\"questioned\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">our community</entity> how accurate this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> will actually be?"
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> demonstrates that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">younger women</entity> are more likely to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>, I wonder why that is? Is it <entity type=\"OTHER_ENTITY\" canonical=\"parenting_styles\" subtype=\"concept\" modality=\"questioned\">parenting styles</entity>, or how <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\" modality=\"questioned\">kids</entity> were brought up, or is it just the way <entity type=\"OTHER_ENTITY\" canonical=\"humans\" subtype=\"group\" modality=\"questioned\">humans</entity> adapt and grow away from their closest <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" modality=\"questioned\">family</entity>? I wonder in <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">our community</entity> how accurate this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> will actually be?"
 }

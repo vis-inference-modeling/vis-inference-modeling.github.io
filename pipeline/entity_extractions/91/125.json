@@ -1,0 +1,97 @@
+{
+  "article_id": "91",
+  "comment_index": 125,
+  "raw_comment": "I wonder why the differnece in players and coaches of color is so high in both categories, becuase I know there are more players but in most of these the difference is astounding. Most notably with coaches. \n\nI also notice that the time frame for these graphs are from 1 - 2 years ago, why tdo hey not figure out the percentages now.",
+  "entities": [
+    {
+      "surface": "coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 43,
+      "end": 59,
+      "id": "e0"
+    },
+    {
+      "surface": "players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 121,
+      "end": 128,
+      "id": "e1"
+    },
+    {
+      "surface": "coaches",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaches",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 198,
+      "end": 205,
+      "id": "e2"
+    },
+    {
+      "surface": "time frame",
+      "type": "TIME_REFERENCE",
+      "canonical": "years",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 232,
+      "end": 242,
+      "id": "e3"
+    },
+    {
+      "surface": "1 - 2 years ago",
+      "type": "TIME_REFERENCE",
+      "canonical": "year",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 269,
+      "end": 284,
+      "id": "e4"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I wonder why the differnece in players and coaches of color is so high in both categories, becuase I know there are more players but in most of these the difference is astounding. Most notably with coaches. \n\nI also notice that the time frame for these graphs are from 1 - 2 years ago, why tdo hey not figure out the percentages now."
+    }
+  ],
+  "tagged_text": "I wonder why the differnece in <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" modality=\"questioned\">players of color</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" modality=\"questioned\">coaches of color</entity> is so high in both categories, becuase I know there are more <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\">players</entity> but in most of these the difference is astounding. Most notably with <entity type=\"OTHER_ENTITY\" canonical=\"coaches\" subtype=\"group\">coaches</entity>. \n\nI also notice that the <entity type=\"TIME_REFERENCE\" canonical=\"years\">time frame</entity> for these graphs are from <entity type=\"TIME_REFERENCE\" canonical=\"year\">1 - 2 years ago</entity>, why tdo hey not figure out the percentages now."
+}

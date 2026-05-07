@@ -1,0 +1,138 @@
+{
+  "article_id": "91",
+  "comment_index": 146,
+  "raw_comment": "1. What do you notice? I notice and acknowledge the fact that the red percentage represents the players of color and the lighter red represents the head coaches of color.\n\n2. What do you wonder? I wonder if this is just in the U.S. or is this the same issue around the world?\n\n3. What impact does this have on you and your community?\nThis impacts my community because the  discrepancy between players of colors and coaches as there isn't someone the players can relate to.\n\n4. What’s going on in this graph? Write a catchy headline that captures the graph’s main idea.  Is there a division between Players of color and Head Coaches of color?",
+  "entities": [
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 96,
+      "end": 112,
+      "id": "e0"
+    },
+    {
+      "surface": "head coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 148,
+      "end": 169,
+      "id": "e1"
+    },
+    {
+      "surface": "U.S.",
+      "type": "LOCATION",
+      "canonical": "united_states",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 227,
+      "end": 231,
+      "id": "e2"
+    },
+    {
+      "surface": "world",
+      "type": "LOCATION",
+      "canonical": "world",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 269,
+      "end": 274,
+      "id": "e3"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 323,
+      "end": 332,
+      "id": "e4"
+    },
+    {
+      "surface": "players of colors",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 393,
+      "end": 410,
+      "id": "e5"
+    },
+    {
+      "surface": "coaches",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaches",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 415,
+      "end": 422,
+      "id": "e6"
+    },
+    {
+      "surface": "Players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 598,
+      "end": 614,
+      "id": "e7"
+    },
+    {
+      "surface": "Head Coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 619,
+      "end": 640,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "1. What do you notice? I notice and acknowledge the fact that the red percentage represents the players of color and the lighter red represents the head coaches of color.\n\n2. What do you wonder? I wonder if this is just in the U.S. or is this the same issue around the world?\n\n3. What impact does this have on you and your community?\nThis impacts my community because the  discrepancy between players of colors and coaches as there isn't someone the players can relate to.\n\n4. What’s going on in this graph? Write a catchy headline that captures the graph’s main idea.  Is there a division between Players of color and Head Coaches of color?"
+    }
+  ],
+  "tagged_text": "1. What do you notice? I notice and acknowledge the fact that the red percentage represents the <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">players of color</entity> and the lighter red represents the <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"body\">head coaches of color</entity>.\n\n2. What do you wonder? I wonder if this is just in the <entity type=\"LOCATION\" canonical=\"united_states\" section=\"body\">U.S.</entity> or is this the same issue around the <entity type=\"LOCATION\" canonical=\"world\" section=\"body\">world</entity>?\n\n3. What impact does this have on you and your community?\nThis impacts my <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" speaker_context=\"true\">community</entity> because the  discrepancy between <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">players of colors</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"coaches\" subtype=\"group\" section=\"body\">coaches</entity> as there isn't someone the players can relate to.\n\n4. What’s going on in this graph? Write a catchy headline that captures the graph’s main idea.  Is there a division between <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"headline\">Players of color</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"headline\">Head Coaches of color</entity>?"
+}

@@ -1,0 +1,120 @@
+{
+  "article_id": "91",
+  "comment_index": 69,
+  "raw_comment": "I notice that baseball is the sport with the least amount of players of color. This makes me wonder why the sport of baseball is this way, and if there is any specific reason why this could be. This has an impact on my community, as I wonder what can be done in the community to include children of all races to participate in certain sports so we don’t have this gap at the professional level.",
+  "entities": [
+    {
+      "surface": "baseball",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 14,
+      "end": 22,
+      "id": "e0"
+    },
+    {
+      "surface": "baseball",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 117,
+      "end": 125,
+      "id": "e1"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 219,
+      "end": 228,
+      "id": "e2"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 266,
+      "end": 275,
+      "id": "e3"
+    },
+    {
+      "surface": "children",
+      "type": "OTHER_ENTITY",
+      "canonical": "kids",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 287,
+      "end": 295,
+      "id": "e4"
+    },
+    {
+      "surface": "sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 335,
+      "end": 341,
+      "id": "e5"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "the sport",
+      "reason": "Could refer to baseball or sports generally; ambiguous in context."
+    },
+    {
+      "surface": "the professional level",
+      "reason": "Abstract level of competition, but no canonical mapping provided."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that baseball is the sport with the least amount of players of color. This makes me wonder why the sport of baseball is this way, and if there is any specific reason why this could be. This has an impact on my community, as I wonder what can be done in the community to include children of all races to participate in certain sports so we don’t have this gap at the professional level."
+    }
+  ],
+  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\">baseball</entity> is the sport with the least amount of <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity>. This makes me wonder why the sport of <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\">baseball</entity> is this way, and if there is any specific reason why this could be. This has an impact on my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity>, as I wonder what can be done in the <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> to include <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\">children</entity> of all races to participate in certain <entity type=\"OTHER_ENTITY\" canonical=\"sports\" subtype=\"other\">sports</entity> so we don’t have this gap at the professional level."
+}

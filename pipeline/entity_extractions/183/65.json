@@ -59,32 +59,18 @@
       "id": "e3"
     },
     {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
+      "surface": "visits",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 889,
-      "end": 896,
-      "id": "e4"
-    },
-    {
-      "surface": "community",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_community",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1124,
-      "end": 1133,
-      "id": "e5"
+      "start": 118,
+      "end": 124,
+      "id": "e4"
     },
     {
       "surface": "visits",
@@ -95,10 +81,63 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 441,
+      "end": 447,
+      "id": "e5"
+    },
+    {
+      "surface": "young women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 830,
+      "end": 841,
       "id": "e6"
+    },
+    {
+      "surface": "distance",
+      "type": "LOCATION",
+      "canonical": "distance",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 937,
+      "end": 945,
+      "id": "e7"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1124,
+      "end": 1133,
+      "id": "e8"
+    },
+    {
+      "surface": "Dialing Differences: Exploring Gender Disparities in Parental Connection",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1157,
+      "end": 1229,
+      "id": "e9"
     },
     {
       "surface": "texts",
@@ -112,7 +151,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e10"
     },
     {
       "surface": "calls/video chats",
@@ -126,68 +165,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "young women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "young women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "digital communication",
-      "type": "OTHER_ENTITY",
-      "canonical": "digital_communication",
-      "subtype": "concept",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e11"
     },
     {
-      "surface": "digital communication",
-      "type": "OTHER_ENTITY",
-      "canonical": "digital_communication",
-      "subtype": "concept",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
       "surface": "25%",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage_25",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -195,7 +179,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e12"
     },
     {
       "surface": "societal expectations",
@@ -209,13 +193,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e13"
     },
     {
       "surface": "cultural influences",
       "type": "OTHER_ENTITY",
-      "canonical": "culture",
+      "canonical": "cultural_influences",
       "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "face-to-face interaction",
+      "type": "OTHER_ENTITY",
+      "canonical": "face_to_face_interaction",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -228,7 +226,7 @@
     {
       "surface": "parent-child relationships",
       "type": "OTHER_ENTITY",
-      "canonical": "relationships",
+      "canonical": "parent_child_relationship",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -238,19 +236,6 @@
       "start": null,
       "end": null,
       "id": "e16"
-    },
-    {
-      "surface": "gender differences",
-      "type": "DATA_VAR",
-      "canonical": "difference_between_gender_groups_within_each_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
     },
     {
       "surface": "young women",
@@ -264,55 +249,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "distance",
-      "type": "LOCATION",
-      "canonical": "distance",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e20"
-    },
-    {
-      "surface": "Staying Connected: Young Women Lead in Family Communication",
-      "type": "CHART_ELEMENT",
-      "canonical": "staying_connected_young_women_lead_in_family_communication",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e21"
+      "id": "e17"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "The graph highlights a clear divide in communication frequency between young men and women with their parents. Across visits, texts, and calls/video chats, young women consistently reach out more frequently, with digital communication showing the largest gender gap, nearly 25% higher for women. This prompts questions about societal expectations and cultural influences shaping these patterns. Furthermore, the data suggests that in-person visits, while still less frequent overall, show a more modest discrepancy between genders. This raises questions about the significance placed on face-to-face interaction versus digital communication in parent-child relationships. Why do these gender differences manifest more prominently in virtual interactions? Reflecting on my own experience and community, I see the representation of young women, like myself, maintaining regular contact with parents, primarily through digital means due to distance. This underscores the importance of nurturing relationships beyond physical proximity, while also highlighting the need to address gender-based communication barriers within our community. A catchy headline is \"Staying Connected: Young Women Lead in Family Communication\"."
+      "text": "The graph highlights a clear divide in communication frequency between young men and women with their parents. Across visits, texts, and calls/video chats, young women consistently reach out more frequently, with digital communication showing the largest gender gap, nearly 25% higher for women. This prompts questions about societal expectations and cultural influences shaping these patterns. Furthermore, the data suggests that in-person visits, while still less frequent overall, show a more modest discrepancy between genders. This raises questions about the significance placed on face-to-face interaction versus digital communication in parent-child relationships. Why do these gender differences manifest more prominently in virtual interactions? Reflecting on my own experience and community, I see the representation of young women, like myself, maintaining regular contact with parents, primarily through digital means due to distance. This underscores the importance of nurturing relationships beyond physical proximity, while also highlighting the need to address gender-based communication barriers within our community."
+    },
+    {
+      "section": "headline",
+      "label": "A catchy headline is",
+      "text": "\"Dialing Differences: Exploring Gender Disparities in Parental Connection\""
     }
   ],
-  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> highlights a clear divide in communication frequency between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. Across <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visits</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calls/video chats</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> consistently reach out more frequently, with <entity type=\"OTHER_ENTITY\" canonical=\"digital_communication\" subtype=\"concept\">digital communication</entity> showing the largest gender gap, nearly <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\">25%</entity> higher for women. This prompts questions about <entity type=\"OTHER_ENTITY\" canonical=\"societal_expectations\" subtype=\"concept\">societal expectations</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"culture\" subtype=\"concept\">cultural influences</entity> shaping these patterns. Furthermore, the data suggests that in-person visits, while still less frequent overall, show a more modest discrepancy between genders. This raises questions about the significance placed on face-to-face interaction versus digital communication in <entity type=\"OTHER_ENTITY\" canonical=\"relationships\" subtype=\"other\">parent-child relationships</entity>. Why do these <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">gender differences</entity> manifest more prominently in virtual interactions? Reflecting on my own experience and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity>, I see the representation of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity>, like myself, maintaining regular contact with <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>, primarily through digital means due to <entity type=\"LOCATION\" canonical=\"distance\" speaker_context=\"true\">distance</entity>. This underscores the importance of nurturing relationships beyond physical proximity, while also highlighting the need to address gender-based communication barriers within our community. A catchy headline is \"<entity type=\"CHART_ELEMENT\" canonical=\"staying_connected_young_women_lead_in_family_communication\" section=\"headline\">Staying Connected: Young Women Lead in Family Communication</entity>.\""
+  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> highlights a clear divide in communication frequency between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. Across <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visits</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calls/video chats</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> consistently reach out more frequently, with digital communication showing the largest gender gap, nearly <entity type=\"OTHER_ENTITY\" canonical=\"percentage_25\" subtype=\"other\">25%</entity> higher for women. This prompts questions about <entity type=\"OTHER_ENTITY\" canonical=\"societal_expectations\" subtype=\"concept\">societal expectations</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"cultural_influences\" subtype=\"concept\">cultural influences</entity> shaping these patterns. Furthermore, the data suggests that in-person visits, while still less frequent overall, show a more modest discrepancy between genders. This raises questions about the significance placed on <entity type=\"OTHER_ENTITY\" canonical=\"face_to_face_interaction\" subtype=\"other\">face-to-face interaction</entity> versus digital communication in <entity type=\"OTHER_ENTITY\" canonical=\"parent_child_relationship\" subtype=\"other\">parent-child relationships</entity>. Why do these gender differences manifest more prominently in virtual interactions? Reflecting on my own experience and community, I see the representation of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" speaker_context=\"true\">young women</entity>, like myself, maintaining regular contact with parents, primarily through digital means due to <entity type=\"LOCATION\" canonical=\"distance\" speaker_context=\"true\">distance</entity>. This underscores the importance of nurturing relationships beyond physical proximity, while also highlighting the need to address gender-based communication barriers within our <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity>. A catchy headline is \"Dialing Differences: Exploring Gender Disparities in Parental Connection\"."
 }

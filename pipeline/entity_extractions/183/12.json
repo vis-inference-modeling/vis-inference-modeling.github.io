@@ -10,7 +10,7 @@
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 29,
       "end": 92,
@@ -71,32 +71,18 @@
       "id": "e4"
     },
     {
-      "surface": "women",
+      "surface": "men",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
+      "canonical": "young_men",
       "var": "gender_group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 556,
+      "occurrence_index": 2,
+      "start": 558,
       "end": 561,
       "id": "e5"
-    },
-    {
-      "surface": "texting",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 879,
-      "end": 886,
-      "id": "e6"
     },
     {
       "surface": "parents",
@@ -108,34 +94,50 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 899,
-      "end": 906,
+      "start": 576,
+      "end": 583,
+      "id": "e6"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 777,
+      "end": 784,
       "id": "e7"
     },
     {
-      "surface": "out f state",
-      "type": "LOCATION",
-      "canonical": "out_of_state",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 992,
-      "end": 1003,
+      "occurrence_index": 2,
+      "start": 899,
+      "end": 906,
       "id": "e8"
     },
     {
-      "surface": "Maintaining Contact: How Do Teens Get in Touch with Their Parents?",
-      "type": "CHART_ELEMENT",
-      "canonical": "title",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1009,
-      "end": 1075,
+      "occurrence_index": 3,
+      "start": 1067,
+      "end": 1074,
       "id": "e9"
     },
     {
@@ -180,6 +182,48 @@
       "id": "e12"
     },
     {
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    },
+    {
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 4,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
       "surface": "texting",
       "type": "DATA_VAR_LEVEL",
       "canonical": "send_texts",
@@ -188,10 +232,10 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e16"
     },
     {
       "surface": "visiting in person",
@@ -205,13 +249,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e17"
     },
     {
-      "surface": "women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
@@ -219,21 +263,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "men",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
+      "id": "e18"
     },
     {
       "surface": "me",
@@ -247,13 +277,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e19"
     },
     {
       "surface": "community",
-      "type": "OTHER_ENTITY",
-      "canonical": "community",
-      "subtype": "group",
+      "type": "LOCATION",
+      "canonical": "my_community",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -261,7 +290,34 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e20"
+    },
+    {
+      "surface": "personal communication",
+      "type": "OTHER_ENTITY",
+      "canonical": "personal_communication",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e21"
+    },
+    {
+      "surface": "age",
+      "type": "TIME_REFERENCE",
+      "canonical": "age",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e22"
     },
     {
       "surface": "college",
@@ -270,26 +326,12 @@
       "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "texting",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
-      "section": "numbered_point",
-      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e23"
     },
     {
       "surface": "calling",
@@ -303,7 +345,33 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e21"
+      "id": "e24"
+    },
+    {
+      "surface": "going out f state",
+      "type": "LOCATION",
+      "canonical": "out_of_state",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e25"
+    },
+    {
+      "surface": "Maintaining Contact: How Do Teens Get in Touch with Their Parents?",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e26"
     }
   ],
   "unresolved_mentions": [],
@@ -329,5 +397,5 @@
       "text": "Maintaining Contact: How Do Teens Get in Touch with Their Parents?"
     }
   ],
-  "tagged_text": "1. What I notice is that the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young people who claim they talk to their parents</entity> at least once a day or a few times a week is shown in this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>. The <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">gap</entity> between the number of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> questioned and the methods by which participants reach out are also displayed in the graph. I've seen that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> communicate with their parents more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> do in every communication category. I also see that <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> is more frequently used when it comes to reaching out to parents, while <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting in person</entity> is the least common.\n2. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" modality=\"questioned\">women</entity> contact their parents more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" modality=\"questioned\">men</entity>? I also wonder why people visit in person less? \n3. This is relevant to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and the <entity type=\"OTHER_ENTITY\" canonical=\"community\" subtype=\"group\" speaker_context=\"true\">community</entity> because, as I'm sure many others will agree, having personal communication with one's <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> is important. Since many people my age, like myself, are already planning on going to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calling</entity> parents will be the most convenient ways to stay in touch especially for those who are going <entity type=\"LOCATION\" canonical=\"out_of_state\">out f state</entity>.\n4. <entity type=\"CHART_ELEMENT\" canonical=\"title\">Maintaining Contact: How Do Teens Get in Touch with Their Parents?</entity>"
+  "tagged_text": "1. What I notice is that the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">percentage of young people who claim they talk to their parents</entity> at least once a day or a few times a week is shown in this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">graph</entity>. The <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">gap</entity> between the number of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">young women</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">men</entity> questioned and the methods by which participants reach out are also displayed in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">graph</entity>. I've seen that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">women</entity> communicate with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">parents</entity> more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">men</entity> do in every communication category. I also see that <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">texting</entity> is more frequently used when it comes to reaching out to <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">parents</entity>, while <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">visiting in person</entity> is the least common.\n2. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">women</entity> contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">parents</entity> more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">men</entity>? I also wonder why <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">people</entity> visit in person less? \n3. This is relevant to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\">me</entity> and the <entity type=\"LOCATION\" canonical=\"my_community\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\">community</entity> because, as I'm sure many others will agree, having <entity type=\"OTHER_ENTITY\" canonical=\"personal_communication\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">personal communication</entity> with one's <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">parents</entity> is important. Since many <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">people</entity> my <entity type=\"TIME_REFERENCE\" canonical=\"age\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">age</entity>, like <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\">myself</entity>, are already planning on going to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">college</entity> texting and calling <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">parents</entity> will be the most convenient ways to stay in touch especially for those who are going out f state. \n4. <entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Maintaining Contact: How Do Teens Get in Touch with Their Parents?</entity>"
 }

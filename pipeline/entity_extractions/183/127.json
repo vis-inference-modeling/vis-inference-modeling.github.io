@@ -46,9 +46,22 @@
       "id": "e2"
     },
     {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 388,
+      "end": 393,
+      "id": "e3"
+    },
+    {
       "surface": "Being In Contact: How Often Do Young People Reach Out To Their Parents?",
       "type": "CHART_ELEMENT",
-      "canonical": "being_in_contact_how_often_do_young_people_reach_out_to_their_parents",
+      "canonical": "title",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -56,24 +69,10 @@
       "occurrence_index": 0,
       "start": 433,
       "end": 504,
-      "id": "e3"
-    },
-    {
-      "surface": "women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
       "id": "e4"
     },
     {
-      "surface": "texts",
+      "surface": "sending texts",
       "type": "DATA_VAR_LEVEL",
       "canonical": "send_texts",
       "var": "communication_method",
@@ -115,9 +114,9 @@
       "id": "e7"
     },
     {
-      "surface": "pride with men",
+      "surface": "pride",
       "type": "OTHER_ENTITY",
-      "canonical": "masculinity",
+      "canonical": "pride",
       "subtype": "concept",
       "section": "body",
       "modality": "questioned",
@@ -141,48 +140,19 @@
       "start": null,
       "end": null,
       "id": "e9"
-    },
-    {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_community",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
-      "text": "I notice that young men are less likely to reach out to their parents than women do through sending texts, phone or video-chat, or visiting them in person. I wonder if it has to do something with pride with men, or just possible jobs that keep them more busy. This relates to me and my community because I try to reach out to my parents through one or more of the 3 reasons listed on the graph.\nA possible catchy headline would be, \"Being In Contact: How Often Do Young People Reach Out To Their Parents?\""
+      "text": "I notice that young men are less likely to reach out to their parents than women do through sending texts, phone or video-chat, or visiting them in person. I wonder if it has to do something with pride with men, or just possible jobs that keep them more busy. This relates to me and my community because I try to reach out to my parents through one or more of the 3 reasons listed on the graph."
     },
     {
       "section": "headline",
-      "label": "",
-      "text": "Being In Contact: How Often Do Young People Reach Out To Their Parents?"
+      "label": "A possible catchy headline would be,",
+      "text": "\"Being In Contact: How Often Do Young People Reach Out To Their Parents?\""
     }
   ],
-  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young men</entity> are less likely to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">women</entity> do through sending <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">phone or video-chat</entity>, or <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">visiting them in person</entity>. I wonder if it has to do something with <entity type=\"OTHER_ENTITY\" canonical=\"masculinity\" subtype=\"concept\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">pride with men</entity>, or just possible <entity type=\"OTHER_ENTITY\" canonical=\"jobs\" subtype=\"other\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">jobs</entity> that keep them more busy. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity> because I try to reach out to my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> through one or more of the 3 reasons listed on the graph.\nA possible catchy headline would be, \"<entity type=\"CHART_ELEMENT\" canonical=\"being_in_contact_how_often_do_young_people_reach_out_to_their_parents\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Being In Contact: How Often Do Young People Reach Out To Their Parents?</entity>\""
+  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> are less likely to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> than women do through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">sending texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone or video-chat</entity>, or <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting them in person</entity>. I wonder if it has to do something with <entity type=\"OTHER_ENTITY\" canonical=\"pride\" subtype=\"concept\" modality=\"questioned\">pride</entity> with men, or just possible <entity type=\"OTHER_ENTITY\" canonical=\"jobs\" subtype=\"other\" modality=\"questioned\">jobs</entity> that keep them more busy. This relates to me and my community because I try to reach out to my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> through one or more of the 3 reasons listed on the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>.\nA possible catchy headline would be, \"Being In Contact: How Often Do Young People Reach Out To Their Parents?\""
 }

@@ -6,11 +6,11 @@
     {
       "surface": "college student",
       "type": "OTHER_ENTITY",
-      "canonical": "college_student",
-      "subtype": "person",
+      "canonical": "college",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 5,
@@ -18,10 +18,23 @@
       "id": "e0"
     },
     {
+      "surface": "distance",
+      "type": "LOCATION",
+      "canonical": "distance",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 159,
+      "end": 167,
+      "id": "e1"
+    },
+    {
       "surface": "family",
       "type": "OTHER_ENTITY",
       "canonical": "family",
-      "subtype": "other",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -29,13 +42,13 @@
       "occurrence_index": 0,
       "start": 176,
       "end": 182,
-      "id": "e1"
+      "id": "e2"
     },
     {
       "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "subtype": "person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -43,13 +56,13 @@
       "occurrence_index": 0,
       "start": 301,
       "end": 306,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "subtype": "person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -57,13 +70,13 @@
       "occurrence_index": 1,
       "start": 712,
       "end": 717,
-      "id": "e3"
+      "id": "e4"
     },
     {
       "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "subtype": "person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -71,13 +84,13 @@
       "occurrence_index": 2,
       "start": 940,
       "end": 945,
-      "id": "e4"
+      "id": "e5"
     },
     {
       "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "subtype": "person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -85,13 +98,27 @@
       "occurrence_index": 0,
       "start": 942,
       "end": 945,
-      "id": "e5"
+      "id": "e6"
     },
     {
-      "surface": "men",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "subtype": "person",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -99,13 +126,13 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e8"
     },
     {
-      "surface": "men",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "subtype": "person",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -113,13 +140,82 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e9"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 4,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    },
+    {
+      "surface": "communication methods",
+      "type": "DATA_VAR",
+      "canonical": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
     },
     {
       "surface": "males",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "subtype": "person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -127,7 +223,33 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e15"
+    },
+    {
+      "surface": "age",
+      "type": "TIME_REFERENCE",
+      "canonical": "age",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "Reach Out to Your Parents: Are Women Better Communicators?",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e17"
     }
   ],
   "unresolved_mentions": [],
@@ -142,5 +264,5 @@
       "text": "\"Reach Out to Your Parents: Are Women Better Communicators?\""
     }
   ],
-  "tagged_text": "As a <entity type=\"OTHER_ENTITY\" canonical=\"college_student\" subtype=\"person\">college student</entity>, striking a balance between complete independence and parental contact can be a difficult task. While I personally enjoy my own space and distance from my <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" speaker_context=\"true\">family</entity>, I understand the importance of reaching out in a consistent manner. One thing that stood out to me was the fact that <entity type=\"OTHER_ENTITY\" canonical=\"women\" subtype=\"person\">women</entity> tend to reach out to their parents more than <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"person\">men</entity> among all 3 communication methods. This made me wonder if <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"person\">males</entity> tend to view reaching out to parents as an \"intrusion\" into their independence. \n\nThis analysis is extremely relevant, as I am close in age to the ages investigated. Understanding this data can help tell us more about more than just preferred modes of communication with parents, such as why <entity type=\"OTHER_ENTITY\" canonical=\"women\" subtype=\"person\">women</entity> tend to reach out to their parents more than <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"person\">men</entity>. Analyzing this type of data helps us formulate better questions to ask about our social environment.\n\nA good title for this graph would be, \"Reach Out to Your Parents: Are Women Better Communicators?\""
+  "tagged_text": "As a <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" section=\"body\" speaker_context=\"true\">college student</entity>, striking a balance between complete independence and parental contact can be a difficult task. While I personally enjoy my own space and <entity type=\"LOCATION\" canonical=\"distance\" section=\"body\" speaker_context=\"true\">distance</entity> from my <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"group\" section=\"body\" speaker_context=\"true\">family</entity>, I understand the importance of reaching out in a consistent manner. One thing that stood out to me was the fact that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\">women</entity> tend to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity> more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\">men</entity> among all 3 <entity type=\"DATA_VAR_LEVEL\" canonical=\"communication_method\" var=\"communication_method\" section=\"body\">communication methods</entity>. This made me wonder if <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"questioned\">males</entity> tend to view reaching out to <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"questioned\">parents</entity> as an \"intrusion\" into their independence. \n\nThis analysis is extremely relevant, as I am close in <entity type=\"TIME_REFERENCE\" canonical=\"age\" section=\"body\" speaker_context=\"true\">age</entity> to the ages investigated. Understanding this data can help tell us more about more than just preferred modes of communication with <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity>, such as why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\">women</entity> tend to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity> more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\">men</entity>. Analyzing this type of data helps us formulate better questions to ask about our social environment.\n\nA good title for this graph would be, \"Reach Out to Your Parents: Are Women Better Communicators?\""
 }

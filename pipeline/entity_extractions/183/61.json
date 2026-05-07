@@ -75,9 +75,9 @@
     },
     {
       "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "subtype": "group",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -103,9 +103,9 @@
     },
     {
       "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "subtype": "group",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -117,9 +117,8 @@
     },
     {
       "surface": "community",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -130,18 +129,31 @@
       "id": "e8"
     },
     {
-      "surface": "20-year-old sister",
-      "type": "OTHER_ENTITY",
-      "canonical": "20-year-old_sister",
-      "subtype": "person",
+      "surface": "20-year-old",
+      "type": "TIME_REFERENCE",
+      "canonical": "20",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 320,
-      "end": 338,
+      "end": 331,
       "id": "e9"
+    },
+    {
+      "surface": "sister",
+      "type": "OTHER_ENTITY",
+      "canonical": "sister",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 332,
+      "end": 338,
+      "id": "e10"
     },
     {
       "surface": "college",
@@ -155,7 +167,7 @@
       "occurrence_index": 0,
       "start": 342,
       "end": 349,
-      "id": "e10"
+      "id": "e11"
     },
     {
       "surface": "college",
@@ -169,7 +181,21 @@
       "occurrence_index": 1,
       "start": 392,
       "end": 399,
-      "id": "e11"
+      "id": "e12"
+    },
+    {
+      "surface": "brother",
+      "type": "OTHER_ENTITY",
+      "canonical": "brother",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 416,
+      "end": 423,
+      "id": "e13"
     },
     {
       "surface": "call",
@@ -183,7 +209,7 @@
       "occurrence_index": 0,
       "start": 433,
       "end": 437,
-      "id": "e12"
+      "id": "e14"
     },
     {
       "surface": "family",
@@ -197,7 +223,7 @@
       "occurrence_index": 0,
       "start": 441,
       "end": 447,
-      "id": "e13"
+      "id": "e15"
     },
     {
       "surface": "parents",
@@ -211,13 +237,12 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e16"
     },
     {
-      "surface": "18-year-old brother",
-      "type": "OTHER_ENTITY",
-      "canonical": "18-year-old_brother",
-      "subtype": "person",
+      "surface": "18-year-old",
+      "type": "TIME_REFERENCE",
+      "canonical": "18",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -225,7 +250,21 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e17"
+    },
+    {
+      "surface": "brother",
+      "type": "OTHER_ENTITY",
+      "canonical": "brother",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e18"
     }
   ],
   "unresolved_mentions": [],
@@ -240,5 +279,5 @@
       "text": "\"Thanks for raising me... bye\""
     }
   ],
-  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> are far more likely to keep in contact with their <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\">families</entity> on a regular basis. I also notice that not many <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit in person</entity> and most only <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> a couple of times a week. I wonder why <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"group\" modality=\"questioned\">men</entity> do not talk to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" modality=\"questioned\">parents</entity> as much as <entity type=\"OTHER_ENTITY\" canonical=\"women\" subtype=\"group\" modality=\"questioned\">women</entity>. This can relate to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because I have a <entity type=\"OTHER_ENTITY\" canonical=\"20-year-old_sister\" subtype=\"person\" speaker_context=\"true\">20-year-old sister</entity> in <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college</entity> and an <entity type=\"OTHER_ENTITY\" canonical=\"18-year-old_brother\" subtype=\"person\" speaker_context=\"true\">18-year-old brother</entity> about to go to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college</entity>. I wonder if my brother will not <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" modality=\"questioned\">call</entity> my <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" speaker_context=\"true\">family</entity> as much as my sister does. A catchy headline would be: \"Thanks for raising me... bye\""
+  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> are far more likely to keep in contact with their <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\">families</entity> on a regular basis. I also notice that not many <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit in person</entity> and most only <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> a couple of times a week. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" modality=\"questioned\">men</entity> do not talk to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" modality=\"questioned\">parents</entity> as much as women. This can relate to my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because I have a <entity type=\"TIME_REFERENCE\" canonical=\"20\" speaker_context=\"true\">20-year-old</entity> <entity type=\"OTHER_ENTITY\" canonical=\"sister\" subtype=\"person\" speaker_context=\"true\">sister</entity> in <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college</entity> and an <entity type=\"TIME_REFERENCE\" canonical=\"18\" speaker_context=\"true\">18-year-old</entity> <entity type=\"OTHER_ENTITY\" canonical=\"brother\" subtype=\"person\" speaker_context=\"true\">brother</entity> about to go to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college</entity>. I wonder if my brother will not <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" modality=\"questioned\">call</entity> my <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" speaker_context=\"true\">family</entity> as much as my sister does. A catchy headline would be: \"Thanks for raising me... bye\""
 }

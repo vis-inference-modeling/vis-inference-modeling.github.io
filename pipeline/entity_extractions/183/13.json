@@ -18,6 +18,34 @@
       "id": "e0"
     },
     {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 66,
+      "end": 73,
+      "id": "e1"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 369,
+      "end": 376,
+      "id": "e2"
+    },
+    {
       "surface": "visit in person",
       "type": "DATA_VAR_LEVEL",
       "canonical": "visit_in_person",
@@ -27,51 +55,76 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 129,
-      "end": 144,
-      "id": "e1"
-    },
-    {
-      "surface": "distance/timing",
-      "type": "OTHER_ENTITY",
-      "canonical": "distance_timing",
-      "subtype": "concept",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 195,
-      "end": 210,
-      "id": "e2"
-    },
-    {
-      "surface": "laziness/other excuses",
-      "type": "OTHER_ENTITY",
-      "canonical": "laziness_other_excuses",
-      "subtype": "concept",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 225,
-      "end": 247,
+      "start": null,
+      "end": null,
       "id": "e3"
     },
     {
-      "surface": "my community",
+      "surface": "distance",
+      "type": "LOCATION",
+      "canonical": "distance",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "timing",
+      "type": "TIME_REFERENCE",
+      "canonical": "time_frame",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "laziness",
       "type": "OTHER_ENTITY",
-      "canonical": "my_community",
+      "canonical": "laziness",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "other excuses",
+      "type": "OTHER_ENTITY",
+      "canonical": "other_excuses",
       "subtype": "other",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 265,
-      "end": 277,
-      "id": "e4"
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "college",
@@ -80,43 +133,38 @@
       "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 319,
-      "end": 326,
-      "id": "e5"
+      "start": null,
+      "end": null,
+      "id": "e9"
     },
     {
       "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
+      "canonical": "parents",
       "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 369,
-      "end": 376,
-      "id": "e6"
-    },
-    {
-      "surface": "technology",
-      "type": "OTHER_ENTITY",
-      "canonical": "technology",
-      "subtype": "technology",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 386,
-      "end": 396,
-      "id": "e7"
+      "start": null,
+      "end": null,
+      "id": "e10"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "technology",
+      "reason": "Could be a general concept or a chart/article theme; not clearly a specific entity in the reference list."
+    },
+    {
+      "surface": "relationships",
+      "reason": "Abstract concept mentioned in a rhetorical question; no clear canonical mapping beyond a generic concept."
+    }
+  ],
   "section_segments": [
     {
       "section": "numbered_point",
@@ -139,5 +187,5 @@
       "text": "\" is technology slowly finding a wedge between our relationships?\""
     }
   ],
-  "tagged_text": "1. I notice that the majority of young people <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send texts</entity> to their parents as their way of reaching out while only a small amount <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit in person</entity>.\n2. I wonder if the reason for this is because of <entity type=\"OTHER_ENTITY\" canonical=\"distance_timing\" subtype=\"concept\" modality=\"questioned\">distance/timing</entity> or because of <entity type=\"OTHER_ENTITY\" canonical=\"laziness_other_excuses\" subtype=\"concept\" modality=\"questioned\">laziness/other excuses</entity>.\n3. This affects my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because we are soon to be heading off to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college</entity> and needed knew ways to catch up with our <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>.\n4. \" is <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\">technology</entity> slowly finding a wedge between our relationships?\""
+  "tagged_text": "1. I notice that the majority of young people <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">send texts</entity> to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">parents</entity> as their way of reaching out while only a small amount <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">visit in person</entity>.\n2. I wonder if the reason for this is because of <entity type=\"LOCATION\" canonical=\"distance\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">distance</entity>/<entity type=\"TIME_REFERENCE\" canonical=\"time_frame\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">timing</entity> or because of <entity type=\"OTHER_ENTITY\" canonical=\"laziness\" subtype=\"concept\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">laziness</entity>/<entity type=\"OTHER_ENTITY\" canonical=\"other_excuses\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">other excuses</entity>.\n3. This affects my <entity type=\"LOCATION\" canonical=\"my_community\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\">community</entity> because we are soon to be heading off to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">college</entity> and needed knew ways to catch up with our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">parents</entity>.\n4. \" is technology slowly finding a wedge between our relationships?\""
 }

@@ -1,0 +1,37 @@
+{
+  "article_id": "91",
+  "comment_index": 217,
+  "raw_comment": "major is the least popular\n\nwonder how differinet it was 10 years ago\n\nit dosent have a impact\n\nmost popular sports",
+  "entities": [
+    {
+      "surface": "10 years ago",
+      "type": "TIME_REFERENCE",
+      "canonical": "10_years_ago",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 57,
+      "end": 69,
+      "id": "e0"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "major",
+      "reason": "Likely refers to a sports league or major sports category, but too vague to map confidently."
+    },
+    {
+      "surface": "most popular sports",
+      "reason": "Could refer to sports as a category, but no clear entity boundary or canonical mapping beyond a generic phrase."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "major is the least popular\n\nwonder how differinet it was 10 years ago\n\nit dosent have a impact\n\nmost popular sports"
+    }
+  ],
+  "tagged_text": "major is the least popular\n\nwonder how differinet it was <entity type=\"TIME_REFERENCE\" canonical=\"10_years_ago\">10 years ago</entity>\n\nit dosent have a impact\n\nmost popular sports"
+}

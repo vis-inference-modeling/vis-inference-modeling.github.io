@@ -73,6 +73,33 @@
       "id": "e4"
     },
     {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 268,
+      "end": 275,
+      "id": "e5"
+    },
+    {
+      "surface": "ears eyes or mouth everyone communicates some how",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 288,
+      "end": 337,
+      "id": "e6"
+    },
+    {
       "surface": "people",
       "type": "OTHER_ENTITY",
       "canonical": "people",
@@ -84,21 +111,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e5"
+      "id": "e7"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "there parents",
-      "reason": "Likely 'their parents'; spelling error makes the exact surface ambiguous, but it clearly refers to parents."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
-      "text": "In this graph i have noticed that more men and women text there parents instead of visiting in person or calling. i wonder why people do not call there parents more than they text. this relates to my community because almost every one that can communicates with there parents every day. \"ears eyes or mouth everyone communicates some how\""
+      "text": "In this graph i have noticed that more men and women text there parents instead of visiting in person or calling. i wonder why people do not call there parents more than they text there parents. this relates to my community because almost every one that can communicates with there parents every day."
+    },
+    {
+      "section": "headline",
+      "label": "\"ears eyes or mouth everyone communicates some how\"",
+      "text": "ears eyes or mouth everyone communicates some how"
     }
   ],
-  "tagged_text": "In this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> i have noticed that more <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">women</entity> text there <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> instead of visiting in person or calling. i wonder why <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">people</entity> do not call there parents more than they text. this relates to my community because almost every one that can communicates with there parents every day. \"ears eyes or mouth everyone communicates some how\""
+  "tagged_text": "In this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> i have noticed that more <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> text there <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> instead of visiting in person or calling. i wonder why <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" modality=\"questioned\">people</entity> do not call there <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" modality=\"questioned\">parents</entity> more than they text there parents. this relates to my community because almost every one that can communicates with there <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> every day. \"ears eyes or mouth everyone communicates some how\""
 }

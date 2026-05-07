@@ -1,0 +1,144 @@
+{
+  "article_id": "91",
+  "comment_index": 53,
+  "raw_comment": "I noticed that the NBA and the WNBA has the highest percent of black people. I wonder why Baseball has the lowest amount. I thought that it would be higher because of the famous black people who where in the sport. Why are all of the graphs in 2020 except the Women's National Basketball Association that one is in 2019.",
+  "entities": [
+    {
+      "surface": "NBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 19,
+      "end": 22,
+      "id": "e0"
+    },
+    {
+      "surface": "WNBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wnba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 31,
+      "end": 35,
+      "id": "e1"
+    },
+    {
+      "surface": "black people",
+      "type": "OTHER_ENTITY",
+      "canonical": "black_people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 63,
+      "end": 75,
+      "id": "e2"
+    },
+    {
+      "surface": "black people",
+      "type": "OTHER_ENTITY",
+      "canonical": "black_people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 178,
+      "end": 190,
+      "id": "e3"
+    },
+    {
+      "surface": "2020",
+      "type": "TIME_REFERENCE",
+      "canonical": "2020",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 244,
+      "end": 248,
+      "id": "e4"
+    },
+    {
+      "surface": "Women's National Basketball Association",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wnba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 260,
+      "end": 299,
+      "id": "e5"
+    },
+    {
+      "surface": "2019",
+      "type": "TIME_REFERENCE",
+      "canonical": "2019",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 315,
+      "end": 319,
+      "id": "e6"
+    },
+    {
+      "surface": "WNBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wnba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "Baseball",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "the sport",
+      "reason": "Generic reference; could mean the league or sports in general."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that the NBA and the WNBA has the highest percent of black people. I wonder why Baseball has the lowest amount. I thought that it would be higher because of the famous black people who where in the sport. Why are all of the graphs in 2020 except the Women's National Basketball Association that one is in 2019."
+    }
+  ],
+  "tagged_text": "I noticed that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\">NBA</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"wnba\" var=\"sports_league\">WNBA</entity> has the highest percent of <entity type=\"OTHER_ENTITY\" canonical=\"black_people\" subtype=\"group\">black people</entity>. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\">Baseball</entity> has the lowest amount. I thought that it would be higher because of the famous <entity type=\"OTHER_ENTITY\" canonical=\"black_people\" subtype=\"group\">black people</entity> who where in the sport. Why are all of the graphs in <entity type=\"TIME_REFERENCE\" canonical=\"2020\">2020</entity> except the <entity type=\"DATA_VAR_LEVEL\" canonical=\"wnba\" var=\"sports_league\">Women's National Basketball Association</entity> that one is in <entity type=\"TIME_REFERENCE\" canonical=\"2019\">2019</entity>."
+}

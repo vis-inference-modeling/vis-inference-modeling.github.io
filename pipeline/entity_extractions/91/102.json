@@ -1,0 +1,129 @@
+{
+  "article_id": "91",
+  "comment_index": 102,
+  "raw_comment": "Color of Sports\nI noticed that there are more players of color in contact sports. I wonder if this has to do with how people of color are raised. This impacts my community because my community has a minority of people with color so our sports teams are typically white.",
+  "entities": [
+    {
+      "surface": "Color of Sports",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 0,
+      "end": 15,
+      "id": "e0"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 46,
+      "end": 62,
+      "id": "e1"
+    },
+    {
+      "surface": "contact sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "contact_sports",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 66,
+      "end": 80,
+      "id": "e2"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "people_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 118,
+      "end": 133,
+      "id": "e3"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 162,
+      "end": 171,
+      "id": "e4"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 183,
+      "end": 192,
+      "id": "e5"
+    },
+    {
+      "surface": "sports teams",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports_teams",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 236,
+      "end": 248,
+      "id": "e6"
+    },
+    {
+      "surface": "white",
+      "type": "OTHER_ENTITY",
+      "canonical": "white_people",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 263,
+      "end": 268,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "headline",
+      "label": "Color of Sports",
+      "text": "Color of Sports"
+    },
+    {
+      "section": "body",
+      "text": "I noticed that there are more players of color in contact sports. I wonder if this has to do with how people of color are raised. This impacts my community because my community has a minority of people with color so our sports teams are typically white."
+    }
+  ],
+  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Color of Sports</entity>\nI noticed that there are more <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">players of color</entity> in <entity type=\"OTHER_ENTITY\" canonical=\"contact_sports\" subtype=\"other\" section=\"body\">contact sports</entity>. I wonder if this has to do with how <entity type=\"DATA_VAR_LEVEL\" canonical=\"people_of_color\" var=\"group_type\" section=\"body\">people of color</entity> are raised. This impacts my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\" section=\"body\">community</entity> because my community has a minority of people with color so our <entity type=\"OTHER_ENTITY\" canonical=\"sports_teams\" subtype=\"other\" section=\"body\">sports teams</entity> are typically <entity type=\"OTHER_ENTITY\" canonical=\"white_people\" subtype=\"other\" section=\"body\">white</entity>."
+}

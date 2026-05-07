@@ -16,6 +16,20 @@
       "start": 15,
       "end": 22,
       "id": "e0"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 37,
+      "end": 44,
+      "id": "e1"
     }
   ],
   "unresolved_mentions": [],
@@ -26,5 +40,5 @@
       "text": "stop texting and meet your parents more often."
     }
   ],
-  "tagged_text": "headline: stop <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> and meet your parents more often."
+  "tagged_text": "headline: stop <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">texting</entity> and meet your <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">parents</entity> more often."
 }

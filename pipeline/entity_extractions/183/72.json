@@ -140,33 +140,6 @@
       "id": "e9"
     },
     {
-      "surface": "5 percentage points",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 404,
-      "end": 423,
-      "id": "e10"
-    },
-    {
-      "surface": "phenomenon",
-      "type": "OTHER_ENTITY",
-      "canonical": "phenomena",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 444,
-      "end": 454,
-      "id": "e11"
-    },
-    {
       "surface": "young men",
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_men",
@@ -178,7 +151,7 @@
       "occurrence_index": 0,
       "start": 492,
       "end": 501,
-      "id": "e12"
+      "id": "e10"
     },
     {
       "surface": "young women",
@@ -192,13 +165,13 @@
       "occurrence_index": 0,
       "start": 534,
       "end": 545,
-      "id": "e13"
+      "id": "e11"
     },
     {
       "surface": "difference between how girls and boys are raised and socialized",
       "type": "OTHER_ENTITY",
-      "canonical": "difference_between_how_girls_and_boys_are_raised_and_socialized",
-      "subtype": "concept",
+      "canonical": "gender_roles",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -206,7 +179,7 @@
       "occurrence_index": 0,
       "start": 588,
       "end": 651,
-      "id": "e14"
+      "id": "e12"
     },
     {
       "surface": "me",
@@ -220,13 +193,12 @@
       "occurrence_index": 0,
       "start": 673,
       "end": 675,
-      "id": "e15"
+      "id": "e13"
     },
     {
       "surface": "my community",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -234,12 +206,12 @@
       "occurrence_index": 0,
       "start": 680,
       "end": 692,
-      "id": "e16"
+      "id": "e14"
     },
     {
       "surface": "age range",
       "type": "TIME_REFERENCE",
-      "canonical": "age_range_of_respondents",
+      "canonical": "age",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -247,48 +219,20 @@
       "occurrence_index": 0,
       "start": 780,
       "end": 789,
-      "id": "e17"
+      "id": "e15"
     },
     {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 849,
-      "end": 856,
-      "id": "e18"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
-      "subtype": "other",
+      "surface": "age range",
+      "type": "TIME_REFERENCE",
+      "canonical": "age",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 974,
-      "end": 981,
-      "id": "e19"
-    },
-    {
-      "surface": "communication",
-      "type": "DATA_VAR",
-      "canonical": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1018,
-      "end": 1031,
-      "id": "e20"
+      "start": 1054,
+      "end": 1063,
+      "id": "e16"
     },
     {
       "surface": "Title",
@@ -301,10 +245,10 @@
       "occurrence_index": 0,
       "start": 1097,
       "end": 1102,
-      "id": "e21"
+      "id": "e17"
     },
     {
-      "surface": "How Adulthood Changes Communication in Parent-Child Relationships. ",
+      "surface": "How Adulthood Changes Communication in Parent-Child Relationships",
       "type": "CHART_ELEMENT",
       "canonical": "title",
       "section": "headline",
@@ -313,29 +257,43 @@
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 1105,
-      "end": 1172,
-      "id": "e22"
+      "end": 1170,
+      "id": "e18"
     },
     {
-      "surface": "20 percentage point difference",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
+      "id": "e19"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e20"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
-      "text": "I notice how much higher the percentage of young women who reach out to their parents is than the percentage of young men who reach out to their parents. For texts and phone or video chats, this difference is really large, over a 20 percentage point difference. However, visits in person have a smaller difference between men and women, but women still have a higher percentage in this category by about 5 percentage points.\n\nI wonder why this phenomenon occurs. What is the reason much less young men reach out to their parents than young women? What factors into this? Is it due to the difference between how girls and boys are raised and socialized?\n\nThis is related to me and my community since I, along with nearly everyone I am surrounded with on a regular basis, am in the age range this graphic examines. The way my relationship with my own parents is changing as I no longer live with them is interesting to me and I have become more aware of how much I talk to my parents, so having an idea of what types of communication are common amongst my age range is interesting to keep in mind."
+      "text": "I notice how much higher the percentage of young women who reach out to their parents is than the percentage of young men who reach out to their parents. For texts and phone or video chats, this difference is really large, over a 20 percentage point difference. However, visits in person have a smaller difference between men and women, but women still have a higher percentage in this category by about 5 percentage points.\n\nI wonder why this phenomenon occurs. What is the reason much less young men reach out to their parents than young women? What factors into this? Is it due to the difference between how girls and boys are raised and socialized?\n\nThis is related to me and my community since I, along with nearly everyone I am surrounded with on a regular basis, am in the age range this graph examines. The way my relationship with my own parents is changing as I no longer live with them is interesting to me and I have become more aware of how much I talk to my parents, so having an idea of what types of communication are common amongst my age range is interesting to keep in mind."
     },
     {
       "section": "headline",
@@ -343,5 +301,5 @@
       "text": "How Adulthood Changes Communication in Parent-Child Relationships. "
     }
   ],
-  "tagged_text": "I notice how much higher the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">percentage of young women who reach out to their parents</entity> is than the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">percentage of young men who reach out to their parents</entity>. For <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">texts</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">phone or video chats</entity>, this <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">difference</entity> is really large, over a <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">20 percentage point difference</entity>. However, <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">visits in person</entity> have a smaller <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">difference</entity> between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">women</entity>, but <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">women</entity> still have a higher percentage in this category by about <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">5 percentage points</entity>.\n\nI wonder why this <entity type=\"OTHER_ENTITY\" canonical=\"phenomena\" subtype=\"other\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">phenomenon</entity> occurs. What is the reason much less <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young men</entity> reach out to their parents than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young women</entity>? What factors into this? Is it due to the <entity type=\"OTHER_ENTITY\" canonical=\"difference_between_how_girls_and_boys_are_raised_and_socialized\" subtype=\"concept\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">difference between how girls and boys are raised and socialized</entity>?\n\nThis is related to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity> since I, along with nearly everyone I am surrounded with on a regular basis, am in the <entity type=\"TIME_REFERENCE\" canonical=\"age_range_of_respondents\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">age range</entity> this graphic examines. The way my relationship with my own <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> is changing as I no longer live with them is interesting to me and I have become more aware of how much I talk to my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">parents</entity>, so having an idea of what types of <entity type=\"DATA_VAR\" canonical=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">communication</entity> are common amongst my age range is interesting to keep in mind.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Title</entity>: “<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">How Adulthood Changes Communication in Parent-Child Relationships. </entity>”"
+  "tagged_text": "I notice how much higher the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young women who reach out to their parents</entity> is than the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young men who reach out to their parents</entity>. For <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone or video chats</entity>, this <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">difference</entity> is really large, over a 20 percentage point difference. However, <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visits in person</entity> have a smaller <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">difference</entity> between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>, but <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> still have a higher percentage in this category by about 5 percentage points.\n\nI wonder why this phenomenon occurs. What is the reason much less <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> reach out to their parents than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity>? What factors into this? Is it due to the <entity type=\"OTHER_ENTITY\" canonical=\"gender_roles\" subtype=\"other\" modality=\"questioned\">difference between how girls and boys are raised and socialized</entity>?\n\nThis is related to <entity type=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> since I, along with nearly everyone I am surrounded with on a regular basis, am in the <entity type=\"TIME_REFERENCE\" canonical=\"age\" speaker_context=\"true\">age range</entity> this graph examines. The way my relationship with my own <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> is changing as I no longer live with them is interesting to me and I have become more aware of how much I talk to my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>, so having an idea of what types of communication are common amongst my age range is interesting to keep in mind.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Title</entity>: “<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">How Adulthood Changes Communication in Parent-Child Relationships</entity>. ”"
 }

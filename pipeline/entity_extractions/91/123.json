@@ -1,0 +1,181 @@
+{
+  "article_id": "91",
+  "comment_index": 123,
+  "raw_comment": "In looking at this graph, I notice how players of color make up way over 50% besides baseball in major sports leagues. Because of this, I wonder why the number of head coaches of color are substantially lower than number of players. Is this lower number because of race or is it just that way because? This impacts my community because if coaches are mostly white because of race, that will seriously damage our country. Every person in America deserves a chance to pursue whatever career or dream they wish without race playing a role. \nNew Headline: \"Does Race Play a Role In Sports Teams?\"",
+  "entities": [
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 39,
+      "end": 55,
+      "id": "e0"
+    },
+    {
+      "surface": "50%",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_players_of_color",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 73,
+      "end": 76,
+      "id": "e1"
+    },
+    {
+      "surface": "baseball",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 85,
+      "end": 93,
+      "id": "e2"
+    },
+    {
+      "surface": "head coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 163,
+      "end": 184,
+      "id": "e3"
+    },
+    {
+      "surface": "players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 224,
+      "end": 231,
+      "id": "e4"
+    },
+    {
+      "surface": "race",
+      "type": "EVENT",
+      "canonical": "racism",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 265,
+      "end": 269,
+      "id": "e5"
+    },
+    {
+      "surface": "race",
+      "type": "EVENT",
+      "canonical": "racism",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 375,
+      "end": 379,
+      "id": "e6"
+    },
+    {
+      "surface": "country",
+      "type": "LOCATION",
+      "canonical": "united_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 412,
+      "end": 419,
+      "id": "e7"
+    },
+    {
+      "surface": "America",
+      "type": "LOCATION",
+      "canonical": "united_states",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 437,
+      "end": 444,
+      "id": "e8"
+    },
+    {
+      "surface": "dream",
+      "type": "OTHER_ENTITY",
+      "canonical": "dream",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 492,
+      "end": 497,
+      "id": "e9"
+    },
+    {
+      "surface": "New Headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 538,
+      "end": 550,
+      "id": "e10"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "In looking at this graph, I notice how players of color make up way over 50% besides baseball in major sports leagues. Because of this, I wonder why the number of head coaches of color are substantially lower than number of players. Is this lower number because of race or is it just that way because? This impacts my community because if coaches are mostly white because of race, that will seriously damage our country. Every person in America deserves a chance to pursue whatever career or dream they wish without race playing a role."
+    },
+    {
+      "section": "headline",
+      "label": "New Headline",
+      "text": "\"Does Race Play a Role In Sports Teams?\""
+    }
+  ],
+  "tagged_text": "In looking at this graph, I notice how <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> make up way over <entity type=\"DATA_VAR\" canonical=\"percentage_of_players_of_color\">50%</entity> besides <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\">baseball</entity> in major sports leagues. Because of this, I wonder why the number of <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\">head coaches of color</entity> are substantially lower than number of <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\">players</entity>. Is this lower number because of <entity type=\"EVENT\" canonical=\"racism\" modality=\"questioned\">race</entity> or is it just that way because? This impacts my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because if coaches are mostly white because of race, that will seriously damage our <entity type=\"LOCATION\" canonical=\"united_states\">country</entity>. Every person in <entity type=\"LOCATION\" canonical=\"united_states\" speaker_context=\"true\">America</entity> deserves a chance to pursue whatever career or <entity type=\"OTHER_ENTITY\" canonical=\"dream\" subtype=\"concept\">dream</entity> they wish without race playing a role. \n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">New Headline</entity>: \"Does Race Play a Role In Sports Teams?\""
+}

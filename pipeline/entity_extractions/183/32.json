@@ -30,45 +30,17 @@
       "id": "e1"
     },
     {
-      "surface": "young women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 217,
-      "end": 228,
-      "id": "e2"
-    },
-    {
-      "surface": "young men",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 233,
-      "end": 242,
-      "id": "e3"
-    },
-    {
-      "surface": "communication",
+      "surface": "disparity between young women and young men",
       "type": "DATA_VAR",
-      "canonical": "communication_method",
+      "canonical": "difference_between_gender_groups_within_each_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 288,
-      "end": 301,
-      "id": "e4"
+      "start": 199,
+      "end": 242,
+      "id": "e2"
     },
     {
       "surface": "women",
@@ -80,14 +52,28 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 223,
+      "end": 228,
+      "id": "e3"
+    },
+    {
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
       "start": 303,
       "end": 308,
-      "id": "e5"
+      "id": "e4"
     },
     {
       "surface": "parent(s)",
       "type": "OTHER_ENTITY",
-      "canonical": "parent",
+      "canonical": "parents",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -96,7 +82,7 @@
       "occurrence_index": 0,
       "start": 328,
       "end": 337,
-      "id": "e6"
+      "id": "e5"
     },
     {
       "surface": "men",
@@ -110,35 +96,35 @@
       "occurrence_index": 0,
       "start": 348,
       "end": 351,
+      "id": "e6"
+    },
+    {
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 441,
+      "end": 444,
       "id": "e7"
     },
     {
       "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "subtype": "group",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 441,
-      "end": 444,
-      "id": "e8"
-    },
-    {
-      "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "subtype": "group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 449,
+      "start": 451,
       "end": 454,
-      "id": "e9"
+      "id": "e8"
     },
     {
       "surface": "visiting a parent in person",
@@ -152,7 +138,7 @@
       "occurrence_index": 0,
       "start": 486,
       "end": 513,
-      "id": "e10"
+      "id": "e9"
     },
     {
       "surface": "texting",
@@ -166,7 +152,7 @@
       "occurrence_index": 0,
       "start": 574,
       "end": 581,
-      "id": "e11"
+      "id": "e10"
     },
     {
       "surface": "texting",
@@ -180,21 +166,76 @@
       "occurrence_index": 1,
       "start": 829,
       "end": 836,
-      "id": "e12"
+      "id": "e11"
     },
     {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
+      "surface": "calling",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 841,
+      "end": 848,
+      "id": "e12"
+    },
+    {
+      "surface": "demographic",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_adults",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 936,
+      "end": 947,
+      "id": "e13"
+    },
+    {
+      "surface": "34",
+      "type": "TIME_REFERENCE",
+      "canonical": "34",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 996,
+      "end": 998,
+      "id": "e14"
+    },
+    {
+      "surface": "college",
+      "type": "OTHER_ENTITY",
+      "canonical": "college",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1041,
+      "end": 1048,
+      "id": "e15"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
       "start": 1097,
       "end": 1104,
-      "id": "e13"
+      "id": "e16"
     },
     {
       "surface": "text",
@@ -208,7 +249,7 @@
       "occurrence_index": 0,
       "start": 1230,
       "end": 1234,
-      "id": "e14"
+      "id": "e17"
     },
     {
       "surface": "calls",
@@ -222,7 +263,7 @@
       "occurrence_index": 0,
       "start": 1239,
       "end": 1244,
-      "id": "e15"
+      "id": "e18"
     },
     {
       "surface": "visits",
@@ -236,7 +277,7 @@
       "occurrence_index": 0,
       "start": 1257,
       "end": 1263,
-      "id": "e16"
+      "id": "e19"
     },
     {
       "surface": "Message Mothers More!",
@@ -249,7 +290,7 @@
       "occurrence_index": 0,
       "start": 1267,
       "end": 1288,
-      "id": "e17"
+      "id": "e20"
     },
     {
       "surface": "percentage of young people who say they reach out to a parent",
@@ -262,57 +303,15 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e21"
     },
     {
-      "surface": "young women",
+      "surface": "women",
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
       "var": "gender_group",
       "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "young men",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e20"
-    },
-    {
-      "surface": "texting",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e21"
-    },
-    {
-      "surface": "Texting",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -321,10 +320,10 @@
       "id": "e22"
     },
     {
-      "surface": "calling",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "phone_or_video_chat",
-      "var": "communication_method",
+      "surface": "convenience",
+      "type": "OTHER_ENTITY",
+      "canonical": "convenience",
+      "subtype": "concept",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -333,59 +332,20 @@
       "start": null,
       "end": null,
       "id": "e23"
-    },
-    {
-      "surface": "34",
-      "type": "TIME_REFERENCE",
-      "canonical": "34",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e24"
-    },
-    {
-      "surface": "college",
-      "type": "LOCATION",
-      "canonical": "college",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e25"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e26"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "This graph depicts the percentage of young people who say they reach out to a parent at least once a day or a few times a week. The graph also shows the means by which participants reach out and the disparity between young women and young men surveyed. I notice that in every category of communication, women reach out to their parent(s) more than men. I wonder why this is. Is it just a matter of inherent psychological differences between men and women?  Additionally, I noticed that visiting a parent in person is the least popular method of reaching out to a parent and texting is the most popular method. I speculate that this is because of convenience. Texting is so easy and can be done in a matter of seconds while driving all the way to visit your parents could take hours depending on how far they live. I am surprised texting and calling are not more popular because they are so accessible and easy to use. I wonder how this demographic would change if they surveyed people older than 34. This relates to me because I am going to college next year and will be forced to reach out to my parents because I will no longer be living with them. I will try to contact them at least a few times per week most frequently using text and calls rather than visits. "
+      "text": "This graph depicts the percentage of young people who say they reach out to a parent at least once a day or a few times a week. The graph also shows the means by which participants reach out and the disparity between young women and young men surveyed. I notice that in every category of communication, women reach out to their parent(s) more than men. I wonder why this is. Is it just a matter of inherent psychological differences between men and women?  Additionally, I noticed that visiting a parent in person is the least popular method of reaching out to a parent and texting is the most popular method. I speculate that this is because of convenience. Texting is so easy and can be done in a matter of seconds while driving all the way to visit your parents could take hours depending on how far they live. I am surprised texting and calling are not more popular because they are so accessible and easy to use. I wonder how this demographic would change if they surveyed people older than 34. This relates to me because I am going to college next year and will be forced to reach out to my parents because I will no longer be living with them. I will try to contact them at least a few times per week most frequently using text and calls rather than visits. ",
+      "label": ""
     },
     {
       "section": "headline",
-      "label": "Message Mothers More!",
-      "text": "Message Mothers More!"
+      "label": "",
+      "text": "\"Message Mothers More!\""
     }
   ],
-  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> depicts the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young people who say they reach out to a parent</entity> at least once a day or a few times a week. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> also shows the means by which participants reach out and the disparity between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> surveyed. I notice that in every category of <entity type=\"DATA_VAR\" canonical=\"communication_method\">communication</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\">parent(s)</entity> more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>. I wonder why this is. Is it just a matter of inherent psychological differences between <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"group\">men</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"women\" subtype=\"group\">women</entity>?  Additionally, I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting a parent in person</entity> is the least popular method of reaching out to a parent and <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> is the most popular method. I speculate that this is because of convenience. <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">Texting</entity> is so easy and can be done in a matter of seconds while driving all the way to visit your <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> could take hours depending on how far they live. I am surprised <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calling</entity> are not more popular because they are so accessible and easy to use. I wonder how this demographic would change if they surveyed people older than <entity type=\"TIME_REFERENCE\" canonical=\"34\">34</entity>. This relates to me because I am going to <entity type=\"LOCATION\" canonical=\"college\" speaker_context=\"true\">college</entity> next year and will be forced to reach out to my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> because I will no longer be living with them. I will try to contact them at least a few times per week most frequently using <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calls</entity> rather than <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visits</entity>. \n\"<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Message Mothers More!</entity>\""
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> depicts the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young people who say they reach out to a parent</entity> at least once a day or a few times a week. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> also shows the means by which participants reach out and the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">disparity between young women and young men</entity> surveyed. I notice that in every category of communication, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parent(s)</entity> more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>. I wonder why this is. Is it just a matter of inherent psychological differences between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>?  Additionally, I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting a parent in person</entity> is the least popular method of reaching out to a parent and <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> is the most popular method. I speculate that this is because of <entity type=\"OTHER_ENTITY\" canonical=\"convenience\" subtype=\"concept\">convenience</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">Texting</entity> is so easy and can be done in a matter of seconds while driving all the way to visit your <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> could take hours depending on how far they live. I am surprised <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calling</entity> are not more popular because they are so accessible and easy to use. I wonder how this <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\" subtype=\"group\">demographic</entity> would change if they surveyed people older than <entity type=\"TIME_REFERENCE\" canonical=\"34\">34</entity>. This relates to me because I am going to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college</entity> next year and will be forced to reach out to my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> because I will no longer be living with them. I will try to contact them at least a few times per week most frequently using <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calls</entity> rather than <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visits</entity>. \n\"<entity type=\"CHART_ELEMENT\" canonical=\"title\">Message Mothers More!</entity>\""
 }

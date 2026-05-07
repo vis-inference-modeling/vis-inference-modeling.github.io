@@ -1,0 +1,156 @@
+{
+  "article_id": "91",
+  "comment_index": 137,
+  "raw_comment": "1. What do I notice. The women’s Basketball team has more players than the national football team.\n2. What do I wonder? I wonder why does the woman’s BasketBall team have more players than the National Football team.\n3. It really doesn’t have an impact on me but it might affect some people in my city.\n4. Comparing sports. Sports are gooooood.",
+  "entities": [
+    {
+      "surface": "women’s Basketball team",
+      "type": "OTHER_ENTITY",
+      "canonical": "womens_basketball_team",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 25,
+      "end": 48,
+      "id": "e0"
+    },
+    {
+      "surface": "players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 58,
+      "end": 65,
+      "id": "e1"
+    },
+    {
+      "surface": "players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 176,
+      "end": 183,
+      "id": "e2"
+    },
+    {
+      "surface": "national football team",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nfl",
+      "var": "sports_league",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 193,
+      "end": 215,
+      "id": "e3"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 284,
+      "end": 290,
+      "id": "e4"
+    },
+    {
+      "surface": "city",
+      "type": "LOCATION",
+      "canonical": "city",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 297,
+      "end": 301,
+      "id": "e5"
+    },
+    {
+      "surface": "sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 316,
+      "end": 322,
+      "id": "e6"
+    },
+    {
+      "surface": "woman’s BasketBall team",
+      "type": "OTHER_ENTITY",
+      "canonical": "womens_basketball_team",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "National Football team",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nfl",
+      "var": "sports_league",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "What do I notice. The women’s Basketball team has more players than the national football team."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "What do I wonder? I wonder why does the woman’s BasketBall team have more players than the National Football team."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "It really doesn’t have an impact on me but it might affect some people in my city."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "Comparing sports. Sports are gooooood."
+    }
+  ],
+  "tagged_text": "1. What do I notice. The <entity type=\"OTHER_ENTITY\" canonical=\"womens_basketball_team\" subtype=\"other\">women’s Basketball team</entity> has more <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\">players</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"nfl\" var=\"sports_league\">national football team</entity>.\n2. What do I wonder? I wonder why does the <entity type=\"OTHER_ENTITY\" canonical=\"womens_basketball_team\" subtype=\"other\">woman’s BasketBall team</entity> have more <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\">players</entity> than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"nfl\" var=\"sports_league\">National Football team</entity>.\n3. It really doesn’t have an impact on me but it might affect some <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\">people</entity> in my <entity type=\"LOCATION\" canonical=\"city\" speaker_context=\"true\">city</entity>.\n4. Comparing sports. <entity type=\"OTHER_ENTITY\" canonical=\"sports\" subtype=\"other\">Sports</entity> are gooooood."
+}

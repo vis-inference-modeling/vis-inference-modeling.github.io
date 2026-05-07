@@ -1,0 +1,98 @@
+{
+  "article_id": "91",
+  "comment_index": 160,
+  "raw_comment": "I've noticed that there aren't as many players of color in the MLB than any other league, most likely due to the years of context behind the sport. I also noticed the NFL has the smallest proportion of coaches of color.\n\nHeadline: \"Major sports leagues have made steps to diversify leadership, here are the results\"",
+  "entities": [
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 39,
+      "end": 55,
+      "id": "e0"
+    },
+    {
+      "surface": "MLB",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 63,
+      "end": 66,
+      "id": "e1"
+    },
+    {
+      "surface": "years",
+      "type": "TIME_REFERENCE",
+      "canonical": "years",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 113,
+      "end": 118,
+      "id": "e2"
+    },
+    {
+      "surface": "NFL",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nfl",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 167,
+      "end": 170,
+      "id": "e3"
+    },
+    {
+      "surface": "coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 202,
+      "end": 218,
+      "id": "e4"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "context behind the sport",
+      "reason": "Abstract phrase not in the reference list."
+    },
+    {
+      "surface": "Major sports leagues have made steps to diversify leadership, here are the results",
+      "reason": "Headline/title phrase; no confirmed canonical ID."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I've noticed that there aren't as many players of color in the MLB than any other league, most likely due to the years of context behind the sport. I also noticed the NFL has the smallest proportion of coaches of color."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "\"Major sports leagues have made steps to diversify leadership, here are the results\""
+    }
+  ],
+  "tagged_text": "I've noticed that there aren't as many <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\">MLB</entity> than any other league, most likely due to the <entity type=\"TIME_REFERENCE\" canonical=\"years\">years</entity> of context behind the sport. I also noticed the <entity type=\"DATA_VAR_LEVEL\" canonical=\"nfl\" var=\"sports_league\">NFL</entity> has the smallest proportion of <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\">coaches of color</entity>.\n\nHeadline: \"Major sports leagues have made steps to diversify leadership, here are the results\""
+}

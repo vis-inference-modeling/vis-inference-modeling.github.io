@@ -18,7 +18,7 @@
       "id": "e0"
     },
     {
-      "surface": "texts",
+      "surface": "send texts",
       "type": "DATA_VAR_LEVEL",
       "canonical": "send_texts",
       "var": "communication_method",
@@ -27,7 +27,7 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 144,
+      "start": 139,
       "end": 149,
       "id": "e1"
     },
@@ -60,24 +60,24 @@
       "id": "e3"
     },
     {
-      "surface": "relationships",
+      "surface": "people",
       "type": "OTHER_ENTITY",
-      "canonical": "relationships",
-      "subtype": "concept",
+      "canonical": "people",
+      "subtype": "group",
       "section": "numbered_point",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 646,
-      "end": 659,
+      "start": 665,
+      "end": 671,
       "id": "e4"
     },
     {
       "surface": "wifi",
       "type": "OTHER_ENTITY",
       "canonical": "wifi",
-      "subtype": "technology",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -121,13 +121,27 @@
       "canonical": "young_men",
       "var": "gender_group",
       "section": "numbered_point",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e8"
+    },
+    {
+      "surface": "texts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
     },
     {
       "surface": "phone calls",
@@ -141,7 +155,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e10"
     },
     {
       "surface": "age range",
@@ -154,13 +168,26 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e11"
     },
     {
-      "surface": "community",
+      "surface": "people",
       "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -168,13 +195,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e13"
     },
     {
       "surface": "phones",
       "type": "OTHER_ENTITY",
       "canonical": "phones",
-      "subtype": "technology",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -182,23 +209,38 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
-    }
-  ],
-  "unresolved_mentions": [
-    {
-      "surface": "higher percentage's",
-      "reason": "Refers to a quantitative comparison, but no exact canonical measure is named."
+      "id": "e14"
     },
     {
-      "surface": "connection",
-      "reason": "Abstract concept; could be related to relationships or communication, but not clearly a distinct entity."
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
     },
     {
-      "surface": "Do you not have wifi??",
-      "reason": "Headline-like phrase, but not explicitly separated as a headline in the raw comment."
+      "surface": "relationships",
+      "type": "OTHER_ENTITY",
+      "canonical": "relationships",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e16"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "numbered_point",
@@ -221,5 +263,5 @@
       "text": "What's going on in this graph? Write a catchy headline that captures the graph's main idea.\n\nDo you not have wifi??"
     }
   ],
-  "tagged_text": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\n\nI notice that the majority of <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\">kids</entity> send <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity> to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> which it is more convenient and easy. I also notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> are at higher percentage's for all of them compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>.\n\n2. What do you wonder?\n\nI wonder why the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" modality=\"questioned\">men</entity> don't send more <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" modality=\"questioned\">texts</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" modality=\"questioned\">phone calls</entity>. I also wonder what <entity type=\"TIME_REFERENCE\" canonical=\"age_range\" modality=\"questioned\">age range</entity> these people are that answered. \n\n3. What impact does this have on you and your community?\n\nThis has an impact on my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because we have <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"technology\">phones</entity> that have access to reaching our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> but if we don't use them we can lose connection and <entity type=\"OTHER_ENTITY\" canonical=\"relationships\" subtype=\"concept\">relationships</entity> with people close to us. \n\n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\n\nDo you not have <entity type=\"OTHER_ENTITY\" canonical=\"wifi\" subtype=\"technology\">wifi</entity>??"
+  "tagged_text": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\n\nI notice that the majority of <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\">kids</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send texts</entity> to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> which it is more convenient and easy. I also notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> are at higher percentage's for all of them compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>.\n\n2. What do you wonder?\n\nI wonder why the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" modality=\"questioned\">men</entity> don't send more <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" modality=\"questioned\">texts</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" modality=\"questioned\">phone calls</entity>. I also wonder what <entity type=\"TIME_REFERENCE\" canonical=\"age_range\" modality=\"questioned\">age range</entity> these <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\" modality=\"questioned\">people</entity> are that answered. \n\n3. What impact does this have on you and your community?\n\nThis has an impact on my <entity type=\"my_community\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because we have <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity> that have access to reaching our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> but if we don't use them we can lose connection and <entity type=\"OTHER_ENTITY\" canonical=\"relationships\" subtype=\"concept\">relationships</entity> with <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\">people</entity> close to us. \n\n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\n\nDo you not have <entity type=\"OTHER_ENTITY\" canonical=\"wifi\" subtype=\"other\">wifi</entity>??"
 }

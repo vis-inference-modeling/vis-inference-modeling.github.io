@@ -4,6 +4,20 @@
   "raw_comment": "I notice that most kids send text messages to their parents because it's easier and more convenient. Women are at higher percentages than men in this graph. \n\nI wonder Why aren't the men texting more? Why aren't they making more phone calls? What age range are the people that responded?\n\nThis has an impact on my community because we have phones that have access to reaching our parents but if we don't use them we can lose connection and relationships with people close to us. \n\n\nDo you not have wifi??",
   "entities": [
     {
+      "surface": "kids",
+      "type": "OTHER_ENTITY",
+      "canonical": "kids",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 19,
+      "end": 23,
+      "id": "e0"
+    },
+    {
       "surface": "send text messages",
       "type": "DATA_VAR_LEVEL",
       "canonical": "send_texts",
@@ -15,7 +29,7 @@
       "occurrence_index": 0,
       "start": 24,
       "end": 42,
-      "id": "e0"
+      "id": "e1"
     },
     {
       "surface": "parents",
@@ -29,7 +43,7 @@
       "occurrence_index": 0,
       "start": 52,
       "end": 59,
-      "id": "e1"
+      "id": "e2"
     },
     {
       "surface": "parents",
@@ -43,13 +57,13 @@
       "occurrence_index": 1,
       "start": 380,
       "end": 387,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "people",
       "type": "OTHER_ENTITY",
       "canonical": "people",
-      "subtype": "group",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -57,40 +71,26 @@
       "occurrence_index": 0,
       "start": 459,
       "end": 465,
-      "id": "e3"
+      "id": "e4"
     },
     {
       "surface": "wifi",
       "type": "OTHER_ENTITY",
       "canonical": "wifi",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 498,
-      "end": 502,
-      "id": "e4"
-    },
-    {
-      "surface": "Women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
+      "subtype": "technology",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 498,
+      "end": 502,
       "id": "e5"
     },
     {
-      "surface": "men",
+      "surface": "Women",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
+      "canonical": "young_women",
       "var": "gender_group",
       "section": "body",
       "modality": "asserted",
@@ -110,20 +110,21 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e7"
     },
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e8"
@@ -145,7 +146,7 @@
     {
       "surface": "age range",
       "type": "TIME_REFERENCE",
-      "canonical": "age_range_of_respondents",
+      "canonical": "age",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -159,7 +160,7 @@
       "surface": "people",
       "type": "OTHER_ENTITY",
       "canonical": "people",
-      "subtype": "group",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -171,9 +172,8 @@
     },
     {
       "surface": "community",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -187,7 +187,7 @@
       "surface": "phones",
       "type": "OTHER_ENTITY",
       "canonical": "phones",
-      "subtype": "other",
+      "subtype": "technology",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -219,5 +219,5 @@
       "text": "I notice that most kids send text messages to their parents because it's easier and more convenient. Women are at higher percentages than men in this graph. \n\nI wonder Why aren't the men texting more? Why aren't they making more phone calls? What age range are the people that responded?\n\nThis has an impact on my community because we have phones that have access to reaching our parents but if we don't use them we can lose connection and relationships with people close to us. \n\n\nDo you not have wifi??"
     }
   ],
-  "tagged_text": "I notice that most kids <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send text messages</entity> to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> because it's easier and more convenient. <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">Women</entity> are at higher percentages than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> in this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>. \n\nI wonder Why aren't the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" modality=\"questioned\">men</entity> texting more? Why aren't they making more <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" modality=\"questioned\">phone calls</entity>? What <entity type=\"TIME_REFERENCE\" canonical=\"age_range_of_respondents\" modality=\"questioned\">age range</entity> are the <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\" modality=\"questioned\">people</entity> that responded?\n\nThis has an impact on my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because we have <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity> that have access to reaching our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> but if we don't use them we can lose connection and <entity type=\"OTHER_ENTITY\" canonical=\"relationships\" subtype=\"concept\">relationships</entity> with <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\">people</entity> close to us. \n\n\nDo you not have <entity type=\"OTHER_ENTITY\" canonical=\"wifi\" subtype=\"other\">wifi</entity>??"
+  "tagged_text": "I notice that most <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\">kids</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send text messages</entity> to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> because it's easier and more convenient. <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">Women</entity> are at higher percentages than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> in this graph. \n\nI wonder Why aren't the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" modality=\"questioned\">men</entity> texting more? Why aren't they making more <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" modality=\"questioned\">phone calls</entity>? What <entity type=\"TIME_REFERENCE\" canonical=\"age\" modality=\"questioned\">age range</entity> are the <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" modality=\"questioned\">people</entity> that responded?\n\nThis has an impact on my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because we have <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"technology\">phones</entity> that have access to reaching our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> but if we don't use them we can lose connection and <entity type=\"OTHER_ENTITY\" canonical=\"relationships\" subtype=\"concept\">relationships</entity> with <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\">people</entity> close to us. \n\n\nDo you not have <entity type=\"OTHER_ENTITY\" canonical=\"wifi\" subtype=\"technology\">wifi</entity>??"
 }

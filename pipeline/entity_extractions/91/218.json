@@ -1,0 +1,52 @@
+{
+  "article_id": "91",
+  "comment_index": 218,
+  "raw_comment": "Its intriguing yet also questioning of why most major sport team players and coaches are of color",
+  "entities": [
+    {
+      "surface": "players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 65,
+      "end": 72,
+      "id": "e0"
+    },
+    {
+      "surface": "coaches",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaches",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 77,
+      "end": 84,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "major sport team",
+      "reason": "Could refer to sports teams or leagues, but no clear canonical mapping in the provided list."
+    },
+    {
+      "surface": "of color",
+      "reason": "Refers to a demographic attribute, but without a clear target entity it is not separately taggable here."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Its intriguing yet also questioning of why most major sport team players and coaches are of color"
+    }
+  ],
+  "tagged_text": "Its intriguing yet also questioning of why most major sport team <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\">players</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"coaches\" subtype=\"group\">coaches</entity> are of color"
+}

@@ -1,0 +1,52 @@
+{
+  "article_id": "91",
+  "comment_index": 219,
+  "raw_comment": "i notice that basketball seems more popular \n\ni wounder how come basket is so close to women's basket \n\nit don't have a impact \n\nwhich sport is more popular",
+  "entities": [
+    {
+      "surface": "basketball",
+      "type": "OTHER_ENTITY",
+      "canonical": "basketball",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 14,
+      "end": 24,
+      "id": "e0"
+    },
+    {
+      "surface": "sport",
+      "type": "OTHER_ENTITY",
+      "canonical": "sport",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 135,
+      "end": 140,
+      "id": "e1"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "basket",
+      "reason": "Likely a truncated reference to basketball, but the surface form is incomplete and ambiguous."
+    },
+    {
+      "surface": "women's basket",
+      "reason": "Likely refers to women's basketball, but the surface form is truncated/unclear."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "i notice that basketball seems more popular \n\ni wounder how come basket is so close to women's basket \n\nit don't have a impact \n\nwhich sport is more popular"
+    }
+  ],
+  "tagged_text": "i notice that <entity type=\"OTHER_ENTITY\" canonical=\"basketball\" subtype=\"other\">basketball</entity> seems more popular \n\ni wounder how come basket is so close to women's basket \n\nit don't have a impact \n\nwhich <entity type=\"OTHER_ENTITY\" canonical=\"sport\" subtype=\"other\">sport</entity> is more popular"
+}

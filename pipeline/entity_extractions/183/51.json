@@ -32,7 +32,7 @@
     {
       "surface": "week",
       "type": "TIME_REFERENCE",
-      "canonical": "week",
+      "canonical": "time_frame",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -43,6 +43,19 @@
       "id": "e2"
     },
     {
+      "surface": "Headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 675,
+      "end": 683,
+      "id": "e3"
+    },
+    {
       "surface": "percentage of young women vs young men who reach out to their parents",
       "type": "DATA_VAR",
       "canonical": "percentage_of_young_people_who_reach_out_to_a_parent",
@@ -51,19 +64,6 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e3"
-    },
-    {
-      "surface": "week",
-      "type": "TIME_REFERENCE",
-      "canonical": "week",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e4"
@@ -97,7 +97,7 @@
       "id": "e6"
     },
     {
-      "surface": "texting",
+      "surface": "sent texts",
       "type": "DATA_VAR_LEVEL",
       "canonical": "send_texts",
       "var": "communication_method",
@@ -111,10 +111,10 @@
       "id": "e7"
     },
     {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
+      "surface": "called",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -125,18 +125,87 @@
       "id": "e8"
     },
     {
+      "surface": "visited in person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "genders",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "texting",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
       "surface": "parents",
       "type": "OTHER_ENTITY",
       "canonical": "parents",
       "subtype": "other",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e13"
+    },
+    {
+      "surface": "percentage",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_young_people_who_reach_out_to_a_parent",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
     },
     {
       "surface": "me",
@@ -150,13 +219,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e15"
     },
     {
-      "surface": "community",
-      "type": "OTHER_ENTITY",
+      "surface": "my community",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -164,7 +232,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e16"
     },
     {
       "surface": "brother",
@@ -178,7 +246,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e17"
     },
     {
       "surface": "South Carolina",
@@ -191,7 +259,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e18"
     },
     {
       "surface": "sister",
@@ -205,7 +273,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e19"
     },
     {
       "surface": "Rhode Island",
@@ -218,13 +286,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e20"
     },
     {
       "surface": "family",
       "type": "OTHER_ENTITY",
       "canonical": "family",
-      "subtype": "other",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -232,7 +300,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e21"
     },
     {
       "surface": "New Jersey",
@@ -245,7 +313,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e22"
     },
     {
       "surface": "Facetime",
@@ -255,16 +323,16 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e23"
     },
     {
-      "surface": "3",
+      "surface": "3 times a week",
       "type": "TIME_REFERENCE",
-      "canonical": "3",
+      "canonical": "3_times_a_week",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -272,23 +340,14 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e24"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "going home",
-      "reason": "Likely refers to visiting in person, but the surface form is not an exact confirmed level and could be idiomatic."
-    },
-    {
-      "surface": "Don't be a stranger!",
-      "reason": "Headline/slogan-like phrase with no clear entity mapping."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "This graph shows the percentage of young women vs young men who reach out to their parents throughout the week. I noticed in this graph the significantly more amount of women who sent texts, called, or visited in person. I also noticed that the most popular form of communication among both genders is texting. I wonder how far these people live from their parents, especially since the percentage of going home and visiting is so low. This relates to me and my community because my brother and his wife live in South Carolina, and my sister lives in Rhode Island,  while the rest of my family lives in New Jersey. We Facetime them at least 3 times a week to stay in touch."
+      "text": "This graph shows the percentage of young women vs young men who reach out to their parents throughout the week. I noticed in this graph the significantly more amount of women who sent texts, called, or visited in person. I also noticed that the most popular form of communication among both genders is texting. I wonder how far these people live from their parents, especially since the percentage of going home and visiting is so low. This relates to me and my community because my brother and his wife live in South Carolina, and my sister lives in Rhode Island, while the rest of my family lives in New Jersey. We Facetime them at least 3 times a week to stay in touch."
     },
     {
       "section": "headline",
@@ -296,5 +355,5 @@
       "text": "Don't be a stranger!"
     }
   ],
-  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"graph\">This graph</entity> shows the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young women vs young men who reach out to their parents</entity> throughout the <entity type=\"TIME_REFERENCE\" canonical=\"week\">week</entity>. I noticed in this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> the significantly more amount of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> who sent texts, called, or visited in person. I also noticed that the most popular form of communication among both genders is <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity>. I wonder how far these people live from their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>, especially since the percentage of going home and visiting is so low. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because my <entity type=\"OTHER_ENTITY\" canonical=\"brother\" subtype=\"person\" speaker_context=\"true\">brother</entity> and his wife live in <entity type=\"LOCATION\" canonical=\"south_carolina\">South Carolina</entity>, and my <entity type=\"OTHER_ENTITY\" canonical=\"sister\" subtype=\"person\" speaker_context=\"true\">sister</entity> lives in <entity type=\"LOCATION\" canonical=\"rhode_island\">Rhode Island</entity>,  while the rest of my <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" speaker_context=\"true\">family</entity> lives in <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>. We <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">Facetime</entity> them at least <entity type=\"TIME_REFERENCE\" canonical=\"3\">3</entity> times a <entity type=\"TIME_REFERENCE\" canonical=\"week\">week</entity> to stay in touch. \nHeadline:\nDon't be a stranger!"
+  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"graph\">This graph</entity> shows the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young women vs young men who reach out to their parents</entity> throughout the <entity type=\"TIME_REFERENCE\" canonical=\"time_frame\">week</entity>. I noticed in this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> the significantly more amount of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> who <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">sent texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">called</entity>, or <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visited in person</entity>. I also noticed that the most popular form of communication among both <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">genders</entity> is <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity>. I wonder how far these <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\" modality=\"questioned\">people</entity> live from their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" modality=\"questioned\">parents</entity>, especially since the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage</entity> of going home and visiting is so low. This relates to <entity type=\"speaker\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"my_community\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because my <entity type=\"OTHER_ENTITY\" canonical=\"brother\" subtype=\"person\" speaker_context=\"true\">brother</entity> and his wife live in <entity type=\"LOCATION\" canonical=\"south_carolina\">South Carolina</entity>, and my <entity type=\"OTHER_ENTITY\" canonical=\"sister\" subtype=\"person\" speaker_context=\"true\">sister</entity> lives in <entity type=\"LOCATION\" canonical=\"rhode_island\">Rhode Island</entity>, while the rest of my <entity type=\"family\" canonical=\"family\" subtype=\"group\" speaker_context=\"true\">family</entity> lives in <entity type=\"LOCATION\" canonical=\"new_jersey\">New Jersey</entity>. We <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">Facetime</entity> them at least <entity type=\"TIME_REFERENCE\" canonical=\"3_times_a_week\">3 times a week</entity> to stay in touch. \n<entity type=\"CHART_ELEMENT\" canonical=\"graph\">Headline</entity>:\nDon't be a stranger!"
 }

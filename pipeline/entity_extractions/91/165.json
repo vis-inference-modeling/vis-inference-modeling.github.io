@@ -1,0 +1,112 @@
+{
+  "article_id": "91",
+  "comment_index": 165,
+  "raw_comment": "What do you notice?\nI notice that players of color have a higher percentage \n\nWhat do you wonder?\nI wonder why players in color have a higher percentage \n\nWhat impact does this have on you and your community?\nThis impacts me and my community because of racism. There’s clearly something going on and a reason why there’s not so many coaches of color \n\nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\nColored coaches vs players",
+  "entities": [
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 34,
+      "end": 50,
+      "id": "e0"
+    },
+    {
+      "surface": "players in color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 111,
+      "end": 127,
+      "id": "e1"
+    },
+    {
+      "surface": "community",
+      "type": "OTHER_ENTITY",
+      "canonical": "community",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 198,
+      "end": 207,
+      "id": "e2"
+    },
+    {
+      "surface": "racism",
+      "type": "EVENT",
+      "canonical": "racism",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 253,
+      "end": 259,
+      "id": "e3"
+    },
+    {
+      "surface": "coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 333,
+      "end": 349,
+      "id": "e4"
+    },
+    {
+      "surface": "Colored coaches",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 444,
+      "end": 459,
+      "id": "e5"
+    },
+    {
+      "surface": "players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 463,
+      "end": 470,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice?\nI notice that players of color have a higher percentage \n\nWhat do you wonder?\nI wonder why players in color have a higher percentage \n\nWhat impact does this have on you and your community?\nThis impacts me and my community because of racism. There’s clearly something going on and a reason why there’s not so many coaches of color \n\nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\nColored coaches vs players"
+    }
+  ],
+  "tagged_text": "What do you notice?\nI notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> have a higher percentage \n\nWhat do you wonder?\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" modality=\"questioned\">players in color</entity> have a higher percentage \n\nWhat impact does this have on you and your community?\nThis impacts me and my <entity type=\"OTHER_ENTITY\" canonical=\"community\" subtype=\"group\" speaker_context=\"true\">community</entity> because of <entity type=\"EVENT\" canonical=\"racism\">racism</entity>. There’s clearly something going on and a reason why there’s not so many <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\">coaches of color</entity> \n\nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\n<entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"headline\">Colored coaches</entity> vs <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"headline\">players</entity>"
+}

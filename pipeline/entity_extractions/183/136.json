@@ -5,9 +5,9 @@
   "entities": [
     {
       "surface": "Young people",
-      "type": "OTHER_ENTITY",
+      "type": "DATA_VAR_LEVEL",
       "canonical": "young_people",
-      "subtype": "group",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,32 +18,46 @@
       "id": "e0"
     },
     {
-      "surface": "Young people",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "young_people",
-      "subtype": "group",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 32,
+      "end": 39,
+      "id": "e1"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 108,
-      "end": 120,
-      "id": "e1"
+      "start": 143,
+      "end": 150,
+      "id": "e2"
     },
     {
-      "surface": "Young people",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "young_people",
-      "subtype": "group",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 2,
-      "start": 165,
-      "end": 177,
-      "id": "e2"
+      "start": 213,
+      "end": 220,
+      "id": "e3"
     },
     {
       "surface": "text",
@@ -57,7 +71,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e3"
+      "id": "e4"
     },
     {
       "surface": "call",
@@ -71,7 +85,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e4"
+      "id": "e5"
     },
     {
       "surface": "In person",
@@ -85,16 +99,57 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e5"
+      "id": "e6"
+    },
+    {
+      "surface": "young people",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_people",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "young people",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_people",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "young people",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_people",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
-      "text": "Young people reach out to their parents most over text compared to call. In person has the lowest amount of young people reaching out to their parents I wonder why young people have little interaction with their parents"
+      "text": "Young people reach out to their parents most over text compared to call. In person has the lowest amount of young people reaching out to their parents. I wonder why young people have little interaction with their parents"
     }
   ],
-  "tagged_text": "<entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">Young people</entity> reach out to their parents most over <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">call</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">In person</entity> has the lowest amount of <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> reaching out to their parents I wonder why <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> have little interaction with their parents"
+  "tagged_text": "<entity type=\"DATA_VAR_LEVEL\" canonical=\"young_people\" var=\"gender_group\">Young people</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> most over <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">call</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">In person</entity> has the lowest amount of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_people\" var=\"gender_group\">young people</entity> reaching out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_people\" var=\"gender_group\" modality=\"questioned\">young people</entity> have little interaction with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>"
 }

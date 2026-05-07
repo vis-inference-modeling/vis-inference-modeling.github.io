@@ -1,0 +1,172 @@
+{
+  "article_id": "91",
+  "comment_index": 107,
+  "raw_comment": "I noticed that there are more people of color on the WNBA and the NBA.\n\nI wonder why most managers are not people of color and why the MLB has less people of color as players.\n\nThis affects my community because it can inspire or encourage more kids to play sports, they can look up to these people.\n\n\"White people still want control?: Graph about players of color.\"",
+  "entities": [
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "people_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 30,
+      "end": 45,
+      "id": "e0"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "people_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 107,
+      "end": 122,
+      "id": "e1"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "people_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 148,
+      "end": 163,
+      "id": "e2"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 193,
+      "end": 202,
+      "id": "e3"
+    },
+    {
+      "surface": "kids",
+      "type": "OTHER_ENTITY",
+      "canonical": "kids",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 244,
+      "end": 248,
+      "id": "e4"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 291,
+      "end": 297,
+      "id": "e5"
+    },
+    {
+      "surface": "White people still want control?: Graph about players of color.",
+      "type": "OTHER_ENTITY",
+      "canonical": "white_people_still_want_control",
+      "subtype": "concept",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 301,
+      "end": 364,
+      "id": "e6"
+    },
+    {
+      "surface": "WNBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wnba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "NBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "managers",
+      "type": "OTHER_ENTITY",
+      "canonical": "managers",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "MLB",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that there are more people of color on the WNBA and the NBA.\n\nI wonder why most managers are not people of color and why the MLB has less people of color as players.\n\nThis affects my community because it can inspire or encourage more kids to play sports, they can look up to these people."
+    },
+    {
+      "section": "headline",
+      "text": "\"White people still want control?: Graph about players of color.\""
+    }
+  ],
+  "tagged_text": "I noticed that there are more <entity type=\"DATA_VAR_LEVEL\" canonical=\"people_of_color\" var=\"group_type\" section=\"body\">people of color</entity> on the <entity type=\"DATA_VAR_LEVEL\" canonical=\"wnba\" var=\"sports_league\" section=\"body\">WNBA</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\" section=\"body\">NBA</entity>.\n\nI wonder why most <entity type=\"OTHER_ENTITY\" canonical=\"managers\" subtype=\"other\" section=\"body\">managers</entity> are not <entity type=\"DATA_VAR_LEVEL\" canonical=\"people_of_color\" var=\"group_type\" section=\"body\">people of color</entity> and why the <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\" section=\"body\">MLB</entity> has less <entity type=\"DATA_VAR_LEVEL\" canonical=\"people_of_color\" var=\"group_type\" section=\"body\">people of color</entity> as players.\n\nThis affects my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\" section=\"body\">community</entity> because it can inspire or encourage more <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\" section=\"body\">kids</entity> to play sports, they can look up to these <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"body\">people</entity>.\n\n\"<entity type=\"OTHER_ENTITY\" canonical=\"white_people_still_want_control\" subtype=\"concept\" section=\"headline\">White people still want control?: Graph about players of color.</entity>\""
+}

@@ -1,0 +1,168 @@
+{
+  "article_id": "91",
+  "comment_index": 86,
+  "raw_comment": "Notice: I definitely notice a strong absence of head coaches that are POC. Unsurprising really that there is almost always going to be at least double the number of POC players than head coaches.\n\nWonder: I wonder how big their sample size is and what the numbers really are. I also wonder what each association plans on doing to change this because it really should be more correlated. \n\nThis may not have a great impact on my immediate community, but I am from Iowa so a couple of our college teams are kinda good I guess. It mainly has an impact on the players of color who I feel for because they are more than likely to not see a coach who is also POC during their career (throughout college athletics and throughout their career if they choose that path). \n\nPossible Headline: Broken Promises: National Athletics Associations Refuse To Level With Their Commitments to Racial Equity.",
+  "entities": [
+    {
+      "surface": "Notice",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 0,
+      "end": 6,
+      "id": "e0"
+    },
+    {
+      "surface": "POC",
+      "type": "OTHER_ENTITY",
+      "canonical": "poc",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 70,
+      "end": 73,
+      "id": "e1"
+    },
+    {
+      "surface": "POC",
+      "type": "OTHER_ENTITY",
+      "canonical": "poc",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 165,
+      "end": 168,
+      "id": "e2"
+    },
+    {
+      "surface": "POC",
+      "type": "OTHER_ENTITY",
+      "canonical": "poc",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 653,
+      "end": 656,
+      "id": "e3"
+    },
+    {
+      "surface": "association",
+      "type": "OTHER_ENTITY",
+      "canonical": "association",
+      "subtype": "organization",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 819,
+      "end": 830,
+      "id": "e4"
+    },
+    {
+      "surface": "Wonder",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "my immediate community",
+      "type": "LOCATION",
+      "canonical": "iowa",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "Iowa",
+      "type": "LOCATION",
+      "canonical": "iowa",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "Headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "Broken Promises: National Athletics Associations Refuse To Level With Their Commitments to Racial Equity.",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Notice: I definitely notice a strong absence of head coaches that are POC. Unsurprising really that there is almost always going to be at least double the number of POC players than head coaches.\n\nWonder: I wonder how big their sample size is and what the numbers really are. I also wonder what each association plans on doing to change this because it really should be more correlated. \n\nThis may not have a great impact on my immediate community, but I am from Iowa so a couple of our college teams are kinda good I guess. It mainly has an impact on the players of color who I feel for because they are more than likely to not see a coach who is also POC during their career (throughout college athletics and throughout their career if they choose that path)."
+    },
+    {
+      "section": "headline",
+      "label": "Possible Headline",
+      "text": "Broken Promises: National Athletics Associations Refuse To Level With Their Commitments to Racial Equity."
+    }
+  ],
+  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Notice</entity>: I definitely notice a strong absence of head coaches that are <entity type=\"OTHER_ENTITY\" canonical=\"poc\" subtype=\"group\">POC</entity>. Unsurprising really that there is almost always going to be at least double the number of <entity type=\"OTHER_ENTITY\" canonical=\"poc\" subtype=\"group\">POC</entity> players than head coaches.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Wonder</entity>: I wonder how big their sample size is and what the numbers really are. I also wonder what each <entity type=\"OTHER_ENTITY\" canonical=\"association\" subtype=\"organization\">association</entity> plans on doing to change this because it really should be more correlated. \n\nThis may not have a great impact on <entity type=\"LOCATION\" canonical=\"iowa\">my immediate community</entity>, but I am from <entity type=\"LOCATION\" canonical=\"iowa\">Iowa</entity> so a couple of our college teams are kinda good I guess. It mainly has an impact on the <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> who I feel for because they are more than likely to not see a coach who is also <entity type=\"OTHER_ENTITY\" canonical=\"poc\" subtype=\"group\">POC</entity> during their career (throughout college athletics and throughout their career if they choose that path). \n\nPossible <entity type=\"CHART_ELEMENT\" canonical=\"headline\">Headline</entity>: Broken Promises: National Athletics Associations Refuse To Level With Their Commitments to Racial Equity."
+}

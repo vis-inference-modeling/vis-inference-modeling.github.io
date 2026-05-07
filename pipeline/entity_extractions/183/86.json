@@ -30,21 +30,21 @@
       "id": "e1"
     },
     {
-      "surface": "text",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
+      "surface": "parent",
+      "type": "OTHER_ENTITY",
+      "canonical": "parent",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1329,
-      "end": 1333,
+      "start": 1400,
+      "end": 1406,
       "id": "e2"
     },
     {
-      "surface": "percentage of young adults aged 18 to 34 who reach out to a parent at least once a day or a few times a week",
+      "surface": "percentage of young adults",
       "type": "DATA_VAR",
       "canonical": "percentage_of_young_people_who_reach_out_to_a_parent",
       "section": "body",
@@ -59,7 +59,7 @@
     {
       "surface": "18 to 34",
       "type": "TIME_REFERENCE",
-      "canonical": "18_to_34",
+      "canonical": "18_34",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -125,24 +125,24 @@
       "id": "e8"
     },
     {
-      "surface": "visiting in person",
+      "surface": "young women",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e9"
     },
     {
-      "surface": "young women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
+      "surface": "families",
+      "type": "OTHER_ENTITY",
+      "canonical": "family",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -181,12 +181,11 @@
       "id": "e12"
     },
     {
-      "surface": "female and male children",
-      "type": "OTHER_ENTITY",
-      "canonical": "female_and_male_children",
-      "subtype": "other",
+      "surface": "gender",
+      "type": "DATA_VAR",
+      "canonical": "gender_group",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -195,9 +194,63 @@
       "id": "e13"
     },
     {
-      "surface": "participants",
+      "surface": "gender",
+      "type": "DATA_VAR",
+      "canonical": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "genders",
+      "type": "DATA_VAR",
+      "canonical": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "female",
       "type": "OTHER_ENTITY",
-      "canonical": "participants",
+      "canonical": "young_women",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "male",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_men",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e17"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
       "subtype": "other",
       "section": "body",
       "modality": "questioned",
@@ -206,12 +259,26 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e18"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e19"
     },
     {
       "surface": "mom",
       "type": "OTHER_ENTITY",
-      "canonical": "my_mom",
+      "canonical": "mother",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -220,12 +287,26 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e20"
+    },
+    {
+      "surface": "text",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e21"
     },
     {
       "surface": "Texts and Calls: The New Bridge Between Today's Young Adults and Their Parents",
       "type": "CHART_ELEMENT",
-      "canonical": "staying_connected_in_2024",
+      "canonical": "title",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -233,37 +314,24 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e22"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "families",
-      "reason": "Generic group reference; not a specific listed entity."
-    },
-    {
-      "surface": "parents",
-      "reason": "Generic relational noun; not clearly one of the listed entities."
-    },
-    {
-      "surface": "eldest or only children",
-      "reason": "Could map to a demographic group, but no confirmed canonical ID in the provided list."
+      "surface": "participants",
+      "reason": "Refers to survey respondents, but the exact canonical entity is not explicitly listed in the normalized dictionary for this comment."
     },
     {
       "surface": "schedule/ convenience",
-      "reason": "Abstract causal concept, but not a confirmed canonical entity."
+      "reason": "Abstract causal phrase without a confirmed canonical mapping."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "The graph shows the percentage of young adults aged 18 to 34 who reach out to a parent at least once a day or a few times a week. It breaks down the communication methods into sending texts, phone or video-chat, and visiting in person. I noticed that while young women appear to reach out to their families at a higher rate than young men do, regardless of modality, that texting is the most common/ popular means of keeping in touch, as it has the highest percentages in either gender. \nVisiting in person shows the lowest gap between genders,  but is still less popular than other modalities.\nI wonder how the way that female and male children are socialized impacts the way and the frequency with which they stay in parents-- are girls more prone to keeping in touch because they spent more time with parents, or because they feel it is expected? Of the participants that has high rates of contact, how many of them were eldest or only children? \nThis resonates with me as my mom and I text nearly every day. Video and phone calls are harder to line up with different schedules, and in-person visits are the hardest-- we see each other a handful of times each year. Based on this, I'm inclined to think that schedule/ convenience has a decent weight behind the rates observed in this graph."
-    },
-    {
-      "section": "headline",
-      "label": "I think a good headline could be,",
-      "text": "\"Texts and Calls: The New Bridge Between Today's Young Adults and Their Parents\""
+      "text": "The graph shows the percentage of young adults aged 18 to 34 who reach out to a parent at least once a day or a few times a week. It breaks down the communication methods into sending texts, phone or video-chat, and visiting in person. I noticed that while young women appear to reach out to their families at a higher rate than young men do, regardless of modality, that texting is the most common/ popular means of keeping in touch, as it has the highest percentages in either gender. \nVisiting in person shows the lowest gap between genders,  but is still less popular than other modalities.\nI wonder how the way that female and male children are socialized impacts the way and the frequency with which they stay in parents-- are girls more prone to keeping in touch because they spent more time with parents, or because they feel it is expected? Of the participants that has high rates of contact, how many of them were eldest or only children? \nThis resonates with me as my mom and I text nearly every day. Video and phone calls are harder to line up with different schedules, and in-person visits are the hardest-- we see each other a handful of times each year. Based on this, I'm inclined to think that schedule/ convenience has a decent weight behind the rates observed in this graph.\nI think a good headline could be, \"Texts and Calls: The New Bridge Between Today's Young Adults and Their Parents\""
     }
   ],
-  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young adults aged <entity type=\"TIME_REFERENCE\" canonical=\"18_to_34\">18 to 34</entity> who reach out to a parent at least once a day or a few times a week</entity>. It breaks down the <entity type=\"DATA_VAR\" canonical=\"communication_method\">communication methods</entity> into <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">sending texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone or video-chat</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting in person</entity>. I noticed that while <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> appear to reach out to their families at a higher rate than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> do, regardless of modality, that <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> is the most common/ popular means of keeping in touch, as it has the highest percentages in either gender. \n<entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">Visiting in person</entity> shows the lowest gap between genders,  but is still less popular than other modalities.\nI wonder how the way that <entity type=\"OTHER_ENTITY\" canonical=\"female_and_male_children\" subtype=\"other\">female and male children</entity> are socialized impacts the way and the frequency with which they stay in parents-- are girls more prone to keeping in touch because they spent more time with parents, or because they feel it is expected? Of the <entity type=\"OTHER_ENTITY\" canonical=\"participants\" subtype=\"other\">participants</entity> that has high rates of contact, how many of them were eldest or only children? \nThis resonates with me as my <entity type=\"OTHER_ENTITY\" canonical=\"my_mom\" subtype=\"other\" speaker_context=\"true\">mom</entity> and I <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" speaker_context=\"true\">text</entity> nearly every day. Video and phone calls are harder to line up with different schedules, and in-person visits are the hardest-- we see each other a handful of times each year. Based on this, I'm inclined to think that schedule/ convenience has a decent weight behind the rates observed in this graph.\nI think a good headline could be, \"<entity type=\"CHART_ELEMENT\" canonical=\"staying_connected_in_2024\" section=\"headline\">Texts and Calls: The New Bridge Between Today's Young Adults and Their Parents</entity>\""
+  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young adults</entity> aged <entity type=\"TIME_REFERENCE\" canonical=\"18_34\">18 to 34</entity> who reach out to a <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\">parent</entity> at least once a day or a few times a week. It breaks down the <entity type=\"DATA_VAR\" canonical=\"communication_method\">communication methods</entity> into <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">sending texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone or video-chat</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting in person</entity>. I noticed that while <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> appear to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\">families</entity> at a higher rate than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> do, regardless of modality, that <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> is the most common/ popular means of keeping in touch, as it has the highest percentages in either <entity type=\"DATA_VAR\" canonical=\"gender_group\">gender</entity>. \nVisiting in person shows the lowest gap between <entity type=\"DATA_VAR\" canonical=\"gender_group\">genders</entity>,  but is still less popular than other modalities.\nI wonder how the way that <entity type=\"OTHER_ENTITY\" canonical=\"young_women\" subtype=\"group\">female</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"young_men\" subtype=\"group\">male</entity> children are socialized impacts the way and the frequency with which they stay in <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>-- are girls more prone to keeping in touch because they spent more time with <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>, or because they feel it is expected? Of the participants that has high rates of contact, how many of them were eldest or only children? \nThis resonates with me as my <entity type=\"OTHER_ENTITY\" canonical=\"mother\" subtype=\"other\" speaker_context=\"true\">mom</entity> and I <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" speaker_context=\"true\">text</entity> nearly every day. Video and phone calls are harder to line up with different schedules, and in-person visits are the hardest-- we see each other a handful of times each year. Based on this, I'm inclined to think that schedule/ convenience has a decent weight behind the rates observed in this graph.\nI think a good headline could be, \"<entity type=\"CHART_ELEMENT\" canonical=\"title\">Texts and Calls: The New Bridge Between Today's Young Adults and Their Parents</entity>\""
 }

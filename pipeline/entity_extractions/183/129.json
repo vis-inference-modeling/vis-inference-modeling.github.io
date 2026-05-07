@@ -115,20 +115,6 @@
       "id": "e7"
     },
     {
-      "surface": "text",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 571,
-      "end": 575,
-      "id": "e8"
-    },
-    {
       "surface": "parent",
       "type": "OTHER_ENTITY",
       "canonical": "parent",
@@ -140,12 +126,26 @@
       "occurrence_index": 0,
       "start": 584,
       "end": 590,
+      "id": "e8"
+    },
+    {
+      "surface": "days a week",
+      "type": "TIME_REFERENCE",
+      "canonical": "3_times_a_week",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
       "id": "e9"
     },
     {
       "surface": "75%",
-      "type": "TIME_REFERENCE",
-      "canonical": "75_percent",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage_75",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -184,12 +184,12 @@
       "id": "e12"
     },
     {
-      "surface": "young men",
+      "surface": "women",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
+      "canonical": "young_women",
       "var": "gender_group",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -198,12 +198,12 @@
       "id": "e13"
     },
     {
-      "surface": "women",
+      "surface": "young men",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
+      "canonical": "young_men",
       "var": "gender_group",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -216,9 +216,8 @@
   "section_segments": [
     {
       "section": "body",
-      "label": "",
       "text": "This graph shows that only half of men reach out to their parents once or a few days a week. While nearly 75% of young women do reach out to their parents every week. I wonder why women are more likely to reach out to their parents. A statistic that stands out, and relates to my community, is that less than a quarter of young men and women actually visit or reach out to their parents in person each week. I understand this statistic as it probably gets harder to find the time to visit your parents in person when you may live farther away or have a job. So sending a text to your parent every week is a simple and easy way to stay in contact."
     }
   ],
-  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> shows that only half of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">men</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> once or a few days a week. While nearly <entity type=\"TIME_REFERENCE\" canonical=\"75_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">75%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young women</entity> do reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> every week. I wonder why women are more likely to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity>. A statistic that stands out, and relates to my community, is that less than a quarter of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">women</entity> actually visit or reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> in person each week. I understand this statistic as it probably gets harder to find the time to visit your <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> in person when you may live farther away or have a <entity type=\"OTHER_ENTITY\" canonical=\"jobs\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">job</entity>. So sending a <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">text</entity> to your <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parent</entity> every week is a simple and easy way to stay in contact."
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows that only half of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> once or a few <entity type=\"TIME_REFERENCE\" canonical=\"3_times_a_week\">days a week</entity>. While nearly <entity type=\"OTHER_ENTITY\" canonical=\"percentage_75\" subtype=\"other\">75%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> do reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> every week. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" modality=\"questioned\">women</entity> are more likely to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" modality=\"questioned\">parents</entity>. A statistic that stands out, and relates to my community, is that less than a quarter of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> actually visit or reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> in person each week. I understand this statistic as it probably gets harder to find the time to visit your <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> in person when you may live farther away or have a <entity type=\"OTHER_ENTITY\" canonical=\"jobs\" subtype=\"other\">job</entity>. So sending a text to your <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\">parent</entity> every week is a simple and easy way to stay in contact."
 }

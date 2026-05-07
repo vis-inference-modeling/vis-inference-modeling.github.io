@@ -1,0 +1,127 @@
+{
+  "article_id": "91",
+  "comment_index": 48,
+  "raw_comment": "a.\tNo major sports league has over 50% head coaches of color.\nb.\tHow the leagues that contain the most athletes of color can contain the least number of coaches of color.\nc.\tBeing a person of color, it is saddening to see that we are being underrepresented in the coaching departments of these major sporting leagues.\nd.\tUnderrepresented in Sports",
+  "entities": [
+    {
+      "surface": "50%",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_head_coaches_of_color",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 35,
+      "end": 38,
+      "id": "e0"
+    },
+    {
+      "surface": "head coaches of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "head_coaches_of_color",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 39,
+      "end": 60,
+      "id": "e1"
+    },
+    {
+      "surface": "athletes of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "athletes_of_color",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 103,
+      "end": 120,
+      "id": "e2"
+    },
+    {
+      "surface": "coaches of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaches_of_color",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 153,
+      "end": 169,
+      "id": "e3"
+    },
+    {
+      "surface": "person of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "person_of_color",
+      "subtype": "person",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 182,
+      "end": 197,
+      "id": "e4"
+    },
+    {
+      "surface": "coaching departments",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaching_departments",
+      "subtype": "organization",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 264,
+      "end": 284,
+      "id": "e5"
+    },
+    {
+      "surface": "Underrepresented in Sports",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 321,
+      "end": 347,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "a",
+      "text": "No major sports league has over 50% head coaches of color."
+    },
+    {
+      "section": "numbered_point",
+      "label": "b",
+      "text": "How the leagues that contain the most athletes of color can contain the least number of coaches of color."
+    },
+    {
+      "section": "numbered_point",
+      "label": "c",
+      "text": "Being a person of color, it is saddening to see that we are being underrepresented in the coaching departments of these major sporting leagues."
+    },
+    {
+      "section": "numbered_point",
+      "label": "d",
+      "text": "Underrepresented in Sports"
+    }
+  ],
+  "tagged_text": "a.\tNo major sports league has over <entity type=\"DATA_VAR\" canonical=\"percentage_of_head_coaches_of_color\">50%</entity> <entity type=\"OTHER_ENTITY\" canonical=\"head_coaches_of_color\" subtype=\"group\">head coaches of color</entity>.\nb.\tHow the leagues that contain the most <entity type=\"OTHER_ENTITY\" canonical=\"athletes_of_color\" subtype=\"group\">athletes of color</entity> can contain the least number of <entity type=\"OTHER_ENTITY\" canonical=\"coaches_of_color\" subtype=\"group\">coaches of color</entity>.\nc.\tBeing a <entity type=\"OTHER_ENTITY\" canonical=\"person_of_color\" subtype=\"person\">person of color</entity>, it is saddening to see that we are being underrepresented in the <entity type=\"OTHER_ENTITY\" canonical=\"coaching_departments\" subtype=\"organization\">coaching departments</entity> of these major sporting leagues.\nd.\t<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Underrepresented in Sports</entity>"
+}

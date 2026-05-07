@@ -18,31 +18,31 @@
       "id": "e0"
     },
     {
-      "surface": "young women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 97,
-      "end": 108,
+      "start": 62,
+      "end": 69,
       "id": "e1"
     },
     {
-      "surface": "young women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 178,
-      "end": 189,
+      "start": 1090,
+      "end": 1097,
       "id": "e2"
     },
     {
@@ -54,10 +54,51 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 388,
-      "end": 399,
+      "occurrence_index": 0,
+      "start": 1335,
+      "end": 1346,
       "id": "e3"
+    },
+    {
+      "surface": "me",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1343,
+      "end": 1345,
+      "id": "e4"
+    },
+    {
+      "surface": "young women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "young women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "young women",
@@ -69,9 +110,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 3,
-      "start": 1335,
-      "end": 1346,
-      "id": "e4"
+      "start": null,
+      "end": null,
+      "id": "e7"
     },
     {
       "surface": "young men",
@@ -85,7 +126,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e5"
+      "id": "e8"
     },
     {
       "surface": "young men",
@@ -99,7 +140,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e9"
     },
     {
       "surface": "young men",
@@ -113,7 +154,7 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e10"
     },
     {
       "surface": "send texts",
@@ -127,12 +168,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e11"
     },
     {
-      "surface": "25%",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
+      "surface": "send texts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "parent",
+      "type": "OTHER_ENTITY",
+      "canonical": "parent",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -140,7 +196,35 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e13"
+    },
+    {
+      "surface": "parent",
+      "type": "OTHER_ENTITY",
+      "canonical": "parent",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "25% more",
+      "type": "OTHER_ENTITY",
+      "canonical": "25_percent_more",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
     },
     {
       "surface": "visiting a parent in person",
@@ -150,15 +234,67 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e16"
+    },
+    {
+      "surface": "gap",
+      "type": "DATA_VAR",
+      "canonical": "difference_between_gender_groups_within_each_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e17"
+    },
+    {
+      "surface": "visual",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e18"
+    },
+    {
+      "surface": "visual",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "visual",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e20"
     },
     {
       "surface": "country",
-      "type": "LOCATION",
+      "type": "DATA_VAR",
       "canonical": "country",
       "section": "body",
       "modality": "questioned",
@@ -167,7 +303,89 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e21"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e22"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e23"
+    },
+    {
+      "surface": "countries",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "country",
+      "var": "country",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e24"
+    },
+    {
+      "surface": "family",
+      "type": "OTHER_ENTITY",
+      "canonical": "family",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e25"
+    },
+    {
+      "surface": "graphic",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e26"
+    },
+    {
+      "surface": "age group",
+      "type": "TIME_REFERENCE",
+      "canonical": "age",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e27"
     },
     {
       "surface": "35-40",
@@ -180,7 +398,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e28"
     },
     {
       "surface": "mothers",
@@ -194,7 +412,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e29"
     },
     {
       "surface": "fathers",
@@ -208,13 +426,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e30"
+    },
+    {
+      "surface": "kids",
+      "type": "OTHER_ENTITY",
+      "canonical": "kids",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e31"
     },
     {
       "surface": "college student",
       "type": "OTHER_ENTITY",
-      "canonical": "college_student",
-      "subtype": "person",
+      "canonical": "college",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -222,50 +454,89 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e32"
     },
     {
-      "surface": "Staying in touch: Why do young women seem to do it more frequently?",
-      "type": "CHART_ELEMENT",
-      "canonical": "staying_connected_in_2024",
-      "section": "headline",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e33"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e34"
+    },
+    {
+      "surface": "age range",
+      "type": "TIME_REFERENCE",
+      "canonical": "age",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e35"
+    },
+    {
+      "surface": "parent",
+      "type": "OTHER_ENTITY",
+      "canonical": "parent",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e36"
+    },
+    {
+      "surface": "young women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e37"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "women",
-      "reason": "Generic mention likely referring to young_women, but not explicit."
-    },
-    {
-      "surface": "men",
-      "reason": "Generic mention likely referring to young_men, but not explicit."
-    },
-    {
-      "surface": "the world",
-      "reason": "Used as a broad geographic scope; not a specific location."
-    },
-    {
-      "surface": "kids",
-      "reason": "Generic group reference; not clearly one of the listed entities."
+      "surface": "around the world",
+      "reason": "Broad geographic phrase without a specific canonical location or country."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice that, out of the young people who reach out to their parents at least once a week, that young women reach out a lot more than young men. In terms of how they reach out, young women send texts to a parent almost 25% more than young men who send texts. However, when it comes to visiting a parent in person, the gap between men and women is a lot smaller. According to the visual, young women are more likely to reach out to a parent, no matter how they do so, compared to young men.\n\nI wonder how this visual would change depending the country in which the people were surveyed. In some countries, it is more common to stay closely connected with family and would be interesting to see how this differs around the world. I also wonder what this graphic would look for an older age group such as 35-40. I think it would also be interesting to see how frequently mothers and fathers reach out to their kids and wonder if some of the gaps that we see in this visual would be the same.\n\nThis relates to me because, as a college student, I do find it really important to reach out to my parents frequently. However, it can be easily understandable that people in this age range can be busy and make it hard to frequently reach out to a parent, especially seeing them in person."
-    },
-    {
-      "section": "headline",
-      "label": "A catchy headline could be",
-      "text": "\"Staying in touch: Why do young women seem to do it more frequently?\""
+      "text": "I notice that, out of the young people who reach out to their parents at least once a week, that young women reach out a lot more than young men. In terms of how they reach out, young women send texts to a parent almost 25% more than young men who send texts. However, when it comes to visiting a parent in person, the gap between men and women is a lot smaller. According to the visual, young women are more likely to reach out to a parent, no matter how they do so, compared to young men.\n\nI wonder how this visual would change depending the country in which the people were surveyed. In some countries, it is more common to stay closely connected with family and would be interesting to see how this differs around the world. I also wonder what this graphic would look for an older age group such as 35-40. I think it would also be interesting to see how frequently mothers and fathers reach out to their kids and wonder if some of the gaps that we see in this visual would be the same.\n\nThis relates to me because, as a college student, I do find it really important to reach out to my parents frequently. However, it can be easily understandable that people in this age range can be busy and make it hard to frequently reach out to a parent, especially seeing them in person.\n\nA catchy headline could be \"Staying in touch: Why do young women seem to do it more frequently?\""
     }
   ],
-  "tagged_text": "I notice that, out of the <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> who reach out to their parents at least once a week, that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> reach out a lot more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>. In terms of how they reach out, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send texts</entity> to a parent almost <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\">25%</entity> more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> who send texts. However, when it comes to <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting a parent in person</entity>, the gap between men and women is a lot smaller. According to the visual, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> are more likely to reach out to a parent, no matter how they do so, compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>.\n\nI wonder how this visual would change depending the <entity type=\"LOCATION\" canonical=\"country\">country</entity> in which the people were surveyed. In some countries, it is more common to stay closely connected with family and would be interesting to see how this differs around the world. I also wonder what this graphic would look for an older age group such as <entity type=\"TIME_REFERENCE\" canonical=\"35_40\">35-40</entity>. I think it would also be interesting to see how frequently <entity type=\"OTHER_ENTITY\" canonical=\"mothers\" subtype=\"other\">mothers</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"fathers\" subtype=\"other\">fathers</entity> reach out to their kids and wonder if some of the gaps that we see in this visual would be the same.\n\nThis relates to me because, as a <entity type=\"OTHER_ENTITY\" canonical=\"college_student\" subtype=\"person\" speaker_context=\"true\">college student</entity>, I do find it really important to reach out to my parents frequently. However, it can be easily understandable that people in this age range can be busy and make it hard to frequently reach out to a parent, especially seeing them in person.\n\nA catchy headline could be \"Staying in touch: Why do young women seem to do it more frequently?\""
+  "tagged_text": "I notice that, out of the <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> who reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> at least once a week, that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> reach out a lot more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>. In terms of how they reach out, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send texts</entity> to a <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\">parent</entity> almost <entity type=\"OTHER_ENTITY\" canonical=\"25_percent_more\" subtype=\"other\">25% more</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> who <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send texts</entity>. However, when it comes to <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting a parent in person</entity>, the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">gap</entity> between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> is a lot smaller. According to the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">visual</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> are more likely to reach out to a <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\">parent</entity>, no matter how they do so, compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>.\n\nI wonder how this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">visual</entity> would change depending the <entity type=\"DATA_VAR\" canonical=\"country\">country</entity> in which the <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\">people</entity> were surveyed. In some <entity type=\"DATA_VAR_LEVEL\" canonical=\"country\" var=\"country\">countries</entity>, it is more common to stay closely connected with <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\">family</entity> and would be interesting to see how this differs around the world. I also wonder what this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graphic</entity> would look for an older <entity type=\"TIME_REFERENCE\" canonical=\"age\">age group</entity> such as <entity type=\"TIME_REFERENCE\" canonical=\"35_40\">35-40</entity>. I think it would also be interesting to see how frequently <entity type=\"OTHER_ENTITY\" canonical=\"mothers\" subtype=\"other\">mothers</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"fathers\" subtype=\"other\">fathers</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\">kids</entity> and wonder if some of the gaps that we see in this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">visual</entity> would be the same.\n\nThis relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">me</entity> because, as a <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college student</entity>, I do find it really important to reach out to my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> frequently. However, it can be easily understandable that <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\">people</entity> in this <entity type=\"TIME_REFERENCE\" canonical=\"age\">age range</entity> can be busy and make it hard to frequently reach out to a <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\">parent</entity>, especially seeing them in person.\n\nA catchy headline could be \"Staying in touch: Why do <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> seem to do it more frequently?\""
 }

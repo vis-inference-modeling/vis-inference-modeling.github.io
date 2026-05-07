@@ -65,7 +65,7 @@
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 419,
       "end": 430,
@@ -99,22 +99,22 @@
       "id": "e6"
     },
     {
-      "surface": "age demographic",
+      "surface": "age",
       "type": "TIME_REFERENCE",
-      "canonical": "age_range_of_respondents",
+      "canonical": "age",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 530,
-      "end": 545,
+      "end": 533,
       "id": "e7"
     },
     {
       "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
+      "canonical": "parents",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -128,8 +128,8 @@
     {
       "surface": "college student",
       "type": "OTHER_ENTITY",
-      "canonical": "college_student",
-      "subtype": "person",
+      "canonical": "college",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -156,7 +156,7 @@
     {
       "surface": "How often do Young Adults Contact their Parents?",
       "type": "CHART_ELEMENT",
-      "canonical": "how_often_do_young_adults_contact_their_parents",
+      "canonical": "title",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -171,7 +171,7 @@
   "section_segments": [
     {
       "section": "body",
-      "text": "The first thing I notice is that the percentage of young adults that visit their parents at least once a week was much higher than I expected. I did not expect that around a quarter of all young adults visit in person on a weekly basis because this would mean that around that number live in close enough vicinity to visit frequently. I wonder why the difference between men and women seem about the same for texts and video-chats but the difference is not very wide for visits in person. \nThis is related to me because I fit the age demographic and don't live with my parents; since I'm a college student the people around me also fit these categories.\nTitle: \"How often do Young Adults Contact their Parents?\""
+      "text": "The first thing I notice is that the percentage of young adults that visit their parents at least once a week was much higher than I expected. I did not expect that around a quarter of all young adults visit in person on a weekly basis because this would mean that around that number live in close enough vicinity to visit frequently. I wonder why the difference between men and women seem about the same for texts and video-chats but the difference is not very wide for visits in person. \nThis is related to me because I fit the age demographic and don't live with my parents; since I'm a college student the people around me also fit these categories."
     },
     {
       "section": "headline",
@@ -179,5 +179,5 @@
       "text": "How often do Young Adults Contact their Parents?"
     }
   ],
-  "tagged_text": "The first thing I notice is that the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young adults that visit their parents at least once a week</entity> was much higher than I expected. I did not expect that around a quarter of all young adults <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit in person</entity> on a weekly basis because this would mean that around that number live in close enough vicinity to visit frequently. I wonder why the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\" modality=\"questioned\">difference between men and women</entity> seem about the same for <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" modality=\"questioned\">texts</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" modality=\"questioned\">video-chats</entity> but the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\" modality=\"questioned\">difference</entity> is not very wide for <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" modality=\"questioned\">visits in person</entity>. \nThis is related to me because I fit the <entity type=\"TIME_REFERENCE\" canonical=\"age_range_of_respondents\" speaker_context=\"true\">age demographic</entity> and don't live with my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>; since I'm a <entity type=\"OTHER_ENTITY\" canonical=\"college_student\" subtype=\"person\" speaker_context=\"true\">college student</entity> the <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" speaker_context=\"true\">people</entity> around me also fit these categories.\nTitle: \"How often do Young Adults Contact their Parents?\""
+  "tagged_text": "The first thing I notice is that the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young adults that visit their parents at least once a week</entity> was much higher than I expected. I did not expect that around a quarter of all young adults <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit in person</entity> on a weekly basis because this would mean that around that number live in close enough vicinity to visit frequently. I wonder why the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\" modality=\"questioned\">difference between men and women</entity> seem about the same for <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">video-chats</entity> but the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\" modality=\"questioned\">difference</entity> is not very wide for <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visits in person</entity>. \nThis is related to me because I fit the <entity type=\"TIME_REFERENCE\" canonical=\"age\" speaker_context=\"true\">age</entity> demographic and don't live with my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>; since I'm a <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college student</entity> the <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" speaker_context=\"true\">people</entity> around me also fit these categories.\nTitle: \"How often do Young Adults Contact their Parents?\""
 }

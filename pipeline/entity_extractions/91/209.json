@@ -1,0 +1,138 @@
+{
+  "article_id": "91",
+  "comment_index": 209,
+  "raw_comment": "I noticed that there more players of color in sports than managers/ head coaches. I think that there should be more leaders of color than there are right now. I wonder why that is. This impacts me and community by showing that anyone no matter their race or gender can play sports. And with time, I think that we can get more people of color as managers and head coaches. This graph is displaying the ratio to players of color to head coaches with different leagues so I think this graph should be called The absents of divers leaders in sports",
+  "entities": [
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 26,
+      "end": 42,
+      "id": "e0"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 410,
+      "end": 426,
+      "id": "e1"
+    },
+    {
+      "surface": "head coaches",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 430,
+      "end": 442,
+      "id": "e2"
+    },
+    {
+      "surface": "The absents of divers leaders in sports",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 505,
+      "end": 544,
+      "id": "e3"
+    },
+    {
+      "surface": "managers/ head coaches",
+      "type": "OTHER_ENTITY",
+      "canonical": "managers_head_coaches",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "leaders of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "leaders_of_color",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "time",
+      "type": "TIME_REFERENCE",
+      "canonical": "time",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "people of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "people_of_color",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that there more players of color in sports than managers/ head coaches. I think that there should be more leaders of color than there are right now. I wonder why that is. This impacts me and community by showing that anyone no matter their race or gender can play sports. And with time, I think that we can get more people of color as managers and head coaches. This graph is displaying the ratio to players of color to head coaches with different leagues so I think this graph should be called The absents of divers leaders in sports"
+    }
+  ],
+  "tagged_text": "I noticed that there more <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">players of color</entity> in sports than <entity type=\"OTHER_ENTITY\" canonical=\"managers_head_coaches\" subtype=\"group\" section=\"body\">managers/ head coaches</entity>. I think that there should be more <entity type=\"OTHER_ENTITY\" canonical=\"leaders_of_color\" subtype=\"group\" section=\"body\">leaders of color</entity> than there are right now. I wonder why that is. This impacts me and <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" speaker_context=\"true\">community</entity> by showing that anyone no matter their race or gender can play sports. And with <entity type=\"TIME_REFERENCE\" canonical=\"time\" section=\"body\">time</entity>, I think that we can get more <entity type=\"OTHER_ENTITY\" canonical=\"people_of_color\" subtype=\"group\" section=\"body\">people of color</entity> as managers and head coaches. This graph is displaying the ratio to <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">players of color</entity> to <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"body\">head coaches</entity> with different leagues so I think this graph should be called <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">The absents of divers leaders in sports</entity>"
+}

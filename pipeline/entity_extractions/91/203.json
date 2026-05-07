@@ -1,0 +1,118 @@
+{
+  "article_id": "91",
+  "comment_index": 203,
+  "raw_comment": "I noticed that there are less coaches of color for every major sports organization.\nI wonder why is there is less coaches of color for every major sports organization.\nI am part of the community of color. The impact it has on us is that they could be trying to say that people of color are not fit to be in leadership. This is not true.\nAre African Americans fit to run Sports Organizations?",
+  "entities": [
+    {
+      "surface": "coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 30,
+      "end": 46,
+      "id": "e0"
+    },
+    {
+      "surface": "coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 114,
+      "end": 130,
+      "id": "e1"
+    },
+    {
+      "surface": "community of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "community_of_color",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 185,
+      "end": 203,
+      "id": "e2"
+    },
+    {
+      "surface": "people of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "people_of_color",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 270,
+      "end": 285,
+      "id": "e3"
+    },
+    {
+      "surface": "leadership",
+      "type": "OTHER_ENTITY",
+      "canonical": "leadership",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 307,
+      "end": 317,
+      "id": "e4"
+    },
+    {
+      "surface": "Are African Americans",
+      "type": "OTHER_ENTITY",
+      "canonical": "african_americans",
+      "subtype": "group",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 337,
+      "end": 358,
+      "id": "e5"
+    },
+    {
+      "surface": "Sports Organizations",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports_organizations",
+      "subtype": "organization",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 370,
+      "end": 390,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that there are less coaches of color for every major sports organization.\nI wonder why is there is less coaches of color for every major sports organization.\nI am part of the community of color. The impact it has on us is that they could be trying to say that people of color are not fit to be in leadership. This is not true."
+    },
+    {
+      "section": "headline",
+      "label": "headline",
+      "text": "Are African Americans fit to run Sports Organizations?"
+    }
+  ],
+  "tagged_text": "I noticed that there are less <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"body\">coaches of color</entity> for every major sports organization.\nI wonder why is there is less <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"body\">coaches of color</entity> for every major sports organization.\nI am part of the <entity type=\"OTHER_ENTITY\" canonical=\"community_of_color\" subtype=\"group\" section=\"body\" speaker_context=\"true\">community of color</entity>. The impact it has on us is that they could be trying to say that <entity type=\"OTHER_ENTITY\" canonical=\"people_of_color\" subtype=\"group\" section=\"body\">people of color</entity> are not fit to be in <entity type=\"OTHER_ENTITY\" canonical=\"leadership\" subtype=\"concept\" section=\"body\">leadership</entity>. This is not true.\n<entity type=\"OTHER_ENTITY\" canonical=\"african_americans\" subtype=\"group\" section=\"headline\">Are African Americans</entity> fit to run <entity type=\"OTHER_ENTITY\" canonical=\"sports_organizations\" subtype=\"organization\" section=\"headline\">Sports Organizations</entity>?"
+}

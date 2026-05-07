@@ -1,0 +1,117 @@
+{
+  "article_id": "91",
+  "comment_index": 174,
+  "raw_comment": "What do you notice?\nNBA has the most players and coaches of color. \nWhat do you wonder?\nI wonder why there aren't nearly as many coaches of color. \nWhat impact does this have on you and your community?\nIt impacts my community because of the lack of diversity within coach jobs in professional sports leagues. \nWhat's going on in this graph? Write a catchy headline that captures the graph's main idea.\nHow diverse are American sports really?",
+  "entities": [
+    {
+      "surface": "NBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 20,
+      "end": 23,
+      "id": "e0"
+    },
+    {
+      "surface": "players",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 37,
+      "end": 44,
+      "id": "e1"
+    },
+    {
+      "surface": "coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 49,
+      "end": 65,
+      "id": "e2"
+    },
+    {
+      "surface": "coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": 129,
+      "end": 145,
+      "id": "e3"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "speaker_context": true,
+      "section": "body",
+      "modality": "asserted",
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 191,
+      "end": 200,
+      "id": "e4"
+    },
+    {
+      "surface": "diversity",
+      "type": "OTHER_ENTITY",
+      "canonical": "diversity",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 249,
+      "end": 258,
+      "id": "e5"
+    },
+    {
+      "surface": "coach jobs",
+      "type": "OTHER_ENTITY",
+      "canonical": "coach_jobs",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 266,
+      "end": 276,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "professional sports leagues",
+      "reason": "Could refer to the sports_league data variable, but the phrase is generic and not a specific level or clearly intended as a tagged entity beyond the chart context."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice?\nNBA has the most players and coaches of color. \nWhat do you wonder?\nI wonder why there aren't nearly as many coaches of color. \nWhat impact does this have on you and your community?\nIt impacts my community because of the lack of diversity within coach jobs in professional sports leagues. \nWhat's going on in this graph? Write a catchy headline that captures the graph's main idea.\nHow diverse are American sports really?"
+    }
+  ],
+  "tagged_text": "What do you notice?\n<entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\" section=\"body\">NBA</entity> has the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">players</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"body\">coaches of color</entity>. \nWhat do you wonder?\nI wonder why there aren't nearly as many <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"body\">coaches of color</entity>. \nWhat impact does this have on you and your community?\nIt impacts my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\" section=\"body\">community</entity> because of the lack of <entity type=\"OTHER_ENTITY\" canonical=\"diversity\" subtype=\"concept\" section=\"body\">diversity</entity> within <entity type=\"OTHER_ENTITY\" canonical=\"coach_jobs\" subtype=\"other\" section=\"body\">coach jobs</entity> in professional sports leagues. \nWhat's going on in this graph? Write a catchy headline that captures the graph's main idea.\nHow diverse are American sports really?"
+}

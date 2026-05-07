@@ -1,0 +1,147 @@
+{
+  "article_id": "91",
+  "comment_index": 73,
+  "raw_comment": "1. What do you notice?\nI notice that there seems to be many more players of color than coaches of color in every sport.\n2. What do you wonder?\nI wonder why Soccer has the most coaches of color, but almost the least players of color.\n3. What impact does this have on you and your community?\nThis doesn’t directly impact my community, although I guess it’s saying if I was going to go pro in any sport, coaching would be my most likely way of reaching that goal.\n4. What’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\nRacial Differences Among Professional Sports",
+  "entities": [
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 65,
+      "end": 81,
+      "id": "e0"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 215,
+      "end": 231,
+      "id": "e1"
+    },
+    {
+      "surface": "my community",
+      "type": "OTHER_ENTITY",
+      "canonical": "my_community",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 319,
+      "end": 331,
+      "id": "e2"
+    },
+    {
+      "surface": "Racial Differences Among Professional Sports",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 556,
+      "end": 600,
+      "id": "e3"
+    },
+    {
+      "surface": "coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "Soccer",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mls",
+      "var": "sports_league",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "go pro",
+      "reason": "Could be interpreted as a career aspiration rather than a specific entity; not tagged as an entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "What do you notice?\nI notice that there seems to be many more players of color than coaches of color in every sport."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "What do you wonder?\nI wonder why Soccer has the most coaches of color, but almost the least players of color."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "What impact does this have on you and your community?\nThis doesn’t directly impact my community, although I guess it’s saying if I was going to go pro in any sport, coaching would be my most likely way of reaching that goal."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "What’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\nRacial Differences Among Professional Sports"
+    }
+  ],
+  "tagged_text": "1. What do you notice?\nI notice that there seems to be many more <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\">coaches of color</entity> in every sport.\n2. What do you wonder?\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"mls\" var=\"sports_league\">Soccer</entity> has the most <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\">coaches of color</entity>, but almost the least <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity>.\n3. What impact does this have on you and your community?\nThis doesn’t directly impact <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"group\" speaker_context=\"true\">my community</entity>, although I guess it’s saying if I was going to go pro in any sport, coaching would be my most likely way of reaching that goal.\n4. What’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Racial Differences Among Professional Sports</entity>"
+}

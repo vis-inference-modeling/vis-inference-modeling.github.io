@@ -1,0 +1,147 @@
+{
+  "article_id": "91",
+  "comment_index": 94,
+  "raw_comment": "1) Notice: I see that people of color dominate the field but are less seen to be the leader or coach of the whole team. \n\n2) Wonder: I wonder if this is done purposely? I wonder how the players feel when being led by someone who they can't relate to or have had the same experiences? \n\n3) It could have a big impact on the way we see ourselves. Living in an area filled with people of color  we see the lack of representation in the higher-up positions. The graph would make others around me believe that they wouldn't be able to coach or have a better job.\n\n4) Headline: Difference in positions for people of color on the sports field.",
+  "entities": [
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 22,
+      "end": 37,
+      "id": "e0"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 375,
+      "end": 390,
+      "id": "e1"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 600,
+      "end": 615,
+      "id": "e2"
+    },
+    {
+      "surface": "sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 623,
+      "end": 629,
+      "id": "e3"
+    },
+    {
+      "surface": "coach",
+      "type": "OTHER_ENTITY",
+      "canonical": "head_coach",
+      "subtype": "person",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "coach",
+      "type": "OTHER_ENTITY",
+      "canonical": "head_coach",
+      "subtype": "person",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "higher-up positions",
+      "reason": "Abstract role reference; could imply coaching/leadership positions but no exact canonical mapping in the reference list."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "Notice: I see that people of color dominate the field but are less seen to be the leader or coach of the whole team."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "Wonder: I wonder if this is done purposely? I wonder how the players feel when being led by someone who they can't relate to or have had the same experiences?"
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "It could have a big impact on the way we see ourselves. Living in an area filled with people of color we see the lack of representation in the higher-up positions. The graph would make others around me believe that they wouldn't be able to coach or have a better job."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "Headline: Difference in positions for people of color on the sports field."
+    }
+  ],
+  "tagged_text": "1) Notice: I see that <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">people of color</entity> dominate the field but are less seen to be the leader or <entity type=\"OTHER_ENTITY\" canonical=\"head_coach\" subtype=\"person\">coach</entity> of the whole team. \n\n2) Wonder: I wonder if this is done purposely? I wonder how the <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\">players</entity> feel when being led by someone who they can't relate to or have had the same experiences? \n\n3) It could have a big impact on the way we see ourselves. Living in an area filled with <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">people of color</entity> we see the lack of representation in the higher-up positions. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> would make others around me believe that they wouldn't be able to coach or have a better job.\n\n4) Headline: Difference in positions for <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">people of color</entity> on the <entity type=\"OTHER_ENTITY\" canonical=\"sports\" subtype=\"group\">sports</entity> field."
+}

@@ -62,10 +62,10 @@
       "surface": "families",
       "type": "OTHER_ENTITY",
       "canonical": "family",
-      "subtype": "other",
+      "subtype": "group",
       "section": "body",
       "modality": "questioned",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 360,
@@ -73,7 +73,7 @@
       "id": "e4"
     },
     {
-      "surface": "community",
+      "surface": "my community",
       "type": "OTHER_ENTITY",
       "canonical": "my_community",
       "subtype": "other",
@@ -82,14 +82,29 @@
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 392,
+      "start": 389,
       "end": 401,
       "id": "e5"
     },
     {
+      "surface": "life",
+      "type": "OTHER_ENTITY",
+      "canonical": "life",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 405,
+      "end": 409,
+      "id": "e6"
+    },
+    {
       "surface": "college",
-      "type": "LOCATION",
+      "type": "OTHER_ENTITY",
       "canonical": "college",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -97,7 +112,7 @@
       "occurrence_index": 0,
       "start": 435,
       "end": 442,
-      "id": "e6"
+      "id": "e7"
     },
     {
       "surface": "next year",
@@ -110,7 +125,21 @@
       "occurrence_index": 0,
       "start": 443,
       "end": 452,
-      "id": "e7"
+      "id": "e8"
+    },
+    {
+      "surface": "family",
+      "type": "OTHER_ENTITY",
+      "canonical": "family",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 484,
+      "end": 490,
+      "id": "e9"
     },
     {
       "surface": "parents",
@@ -124,7 +153,34 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e10"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "title",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
     },
     {
       "surface": "send texts",
@@ -138,7 +194,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e13"
     },
     {
       "surface": "young women",
@@ -152,29 +208,10 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "families",
-      "type": "OTHER_ENTITY",
-      "canonical": "family",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e11"
+      "id": "e14"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "how involved are parents in their young adult's lives",
-      "reason": "Appears to be a quoted title-like phrase, but it is not in the normalized chart-element dictionary and may be a paraphrase rather than an exact title."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "headline",
@@ -183,9 +220,8 @@
     },
     {
       "section": "body",
-      "label": "",
       "text": "This graph describes how much young men and women reach out to their parents. I notice how the title is \"how involved are parents in their young adult's lives,\" and the data does not relate to it. I wonder why not many more people send texts because they're so easy to send. I wonder why young women generally communicate with their families more. It relates to my community or life because I am going on to college next year and staying in contact with my family is very important to me."
     }
   ],
-  "tagged_text": "Title: staying in the loop\nThis <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> describes how much <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. I notice how the title is \"how involved are parents in their young adult's lives,\" and the data does not relate to it. I wonder why not many more people <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send texts</entity> because they're so easy to send. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> generally communicate with their <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\">families</entity> more. It relates to my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> or life because I am going on to <entity type=\"LOCATION\" canonical=\"college\" speaker_context=\"true\">college</entity> <entity type=\"TIME_REFERENCE\" canonical=\"next_year\" speaker_context=\"true\">next year</entity> and staying in contact with my <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" speaker_context=\"true\">family</entity> is very important to me."
+  "tagged_text": "Title: staying in the loop\nThis <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> describes how much <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. I notice how the <entity type=\"CHART_ELEMENT\" canonical=\"title\">title</entity> is \"how involved are parents in their young adult's lives,\" and the data does not relate to it. I wonder why not many more people <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send texts</entity> because they're so easy to send. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> generally communicate with their <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"group\">families</entity> more. It relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> or <entity type=\"OTHER_ENTITY\" canonical=\"life\" subtype=\"other\" speaker_context=\"true\">life</entity> because I am going on to <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college</entity> <entity type=\"TIME_REFERENCE\" canonical=\"next_year\" speaker_context=\"true\">next year</entity> and staying in contact with my <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"group\" speaker_context=\"true\">family</entity> is very important to me."
 }

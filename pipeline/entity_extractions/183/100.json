@@ -32,51 +32,52 @@
       "id": "e1"
     },
     {
-      "surface": "me",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 665,
-      "end": 667,
-      "id": "e2"
-    },
-    {
-      "surface": "Newer Generations Are Barely Interacting With Their Parents",
-      "type": "CHART_ELEMENT",
-      "canonical": "newer_generations_are_barely_interacting_with_their_parents",
-      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 837,
-      "end": 896,
+      "start": 696,
+      "end": 703,
+      "id": "e2"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 810,
+      "end": 817,
       "id": "e3"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 889,
+      "end": 896,
+      "id": "e4"
     },
     {
       "surface": "visit their parents in person",
       "type": "DATA_VAR_LEVEL",
       "canonical": "visit_in_person",
       "var": "communication_method",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e4"
-    },
-    {
-      "surface": "phone",
-      "type": "OTHER_ENTITY",
-      "canonical": "phones",
-      "subtype": "technology",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -90,20 +91,7 @@
       "surface": "phone",
       "type": "OTHER_ENTITY",
       "canonical": "phones",
-      "subtype": "technology",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "25%",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -111,12 +99,27 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "phone",
+      "type": "OTHER_ENTITY",
+      "canonical": "phones",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e7"
     },
     {
-      "surface": "50%",
-      "type": "TIME_REFERENCE",
-      "canonical": "50_percent",
+      "surface": "25%",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage_26",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -127,9 +130,9 @@
       "id": "e8"
     },
     {
-      "surface": "video calls",
+      "surface": "50%",
       "type": "OTHER_ENTITY",
-      "canonical": "calling",
+      "canonical": "percentage_50",
       "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
@@ -141,10 +144,10 @@
       "id": "e9"
     },
     {
-      "surface": "women",
+      "surface": "video calls",
       "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "subtype": "person",
+      "canonical": "facetime",
+      "subtype": "technology",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -155,10 +158,10 @@
       "id": "e10"
     },
     {
-      "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "subtype": "person",
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -167,6 +170,76 @@
       "start": null,
       "end": null,
       "id": "e11"
+    },
+    {
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 4,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e16"
     },
     {
       "surface": "graph",
@@ -179,7 +252,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e17"
     },
     {
       "surface": "young men",
@@ -193,7 +266,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e18"
     },
     {
       "surface": "young women",
@@ -207,7 +280,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e19"
     },
     {
       "surface": "societal gender norms",
@@ -221,27 +294,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e20"
     },
     {
-      "surface": "masculinity",
-      "type": "OTHER_ENTITY",
-      "canonical": "masculinity",
-      "subtype": "concept",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
+      "surface": "community",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -249,7 +307,34 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e21"
+    },
+    {
+      "surface": "generations",
+      "type": "OTHER_ENTITY",
+      "canonical": "generation",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e22"
+    },
+    {
+      "surface": "Newer Generations Are Barely Interacting With Their Parents",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e23"
     }
   ],
   "unresolved_mentions": [],
@@ -275,5 +360,5 @@
       "text": "Newer Generations Are Barely Interacting With Their Parents"
     }
   ],
-  "tagged_text": "1.I found it interesting that a majority of <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> don't <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit their parents in person</entity>, even look at them through the <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"technology\">phone</entity>, as around <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\">25%</entity> of people meet them in person, while less than <entity type=\"TIME_REFERENCE\" canonical=\"50_percent\">50%</entity> of people talk to them through the <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"technology\">phone</entity> using <entity type=\"OTHER_ENTITY\" canonical=\"calling\" subtype=\"other\">video calls</entity>. Secondly, I found it interesting that <entity type=\"OTHER_ENTITY\" canonical=\"women\" subtype=\"person\">women</entity> talked to their parents more, in general than <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"person\">men</entity>, as shown on the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>.\n2.I wonder, why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> talk to their parents less than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity>. I'm curious why this happens and if it has anything to do with <entity type=\"OTHER_ENTITY\" canonical=\"societal_gender_norms\" subtype=\"concept\">societal gender norms</entity> revolving around <entity type=\"OTHER_ENTITY\" canonical=\"masculinity\" subtype=\"concept\">masculinity</entity>. \n3.It relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity>, due to the fact that, it shows that <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> are taking less time and effort to contact their parents. As well, if this keeps going on, as generations go on, will the amount of <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> speaking to their parents keep decreasing.\n4.Newer Generations Are Barely Interacting With Their Parents"
+  "tagged_text": "1.I found it interesting that a majority of <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\" section=\"numbered_point\">young people</entity> don't <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\">visit their parents in person</entity>, even look at them through the <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\" section=\"numbered_point\">phone</entity>, as around <entity type=\"OTHER_ENTITY\" canonical=\"percentage_26\" subtype=\"other\" section=\"numbered_point\">25%</entity> of people meet them in person, while less than <entity type=\"OTHER_ENTITY\" canonical=\"percentage_50\" subtype=\"other\" section=\"numbered_point\">50%</entity> of people talk to them through the <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\" section=\"numbered_point\">phone</entity> using <entity type=\"OTHER_ENTITY\" canonical=\"facetime\" subtype=\"technology\" section=\"numbered_point\">video calls</entity>. Secondly, I found it interesting that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"numbered_point\">women</entity> talked to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\">parents</entity> more, in general than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"numbered_point\">men</entity>, as shown on the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"numbered_point\">graph</entity>.\n2.I wonder, why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"numbered_point\" modality=\"questioned\">young men</entity> talk to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\">parents</entity> less than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"numbered_point\" modality=\"questioned\">young women</entity>. I'm curious why this happens and if it has anything to do with <entity type=\"OTHER_ENTITY\" canonical=\"societal_gender_norms\" subtype=\"concept\" section=\"numbered_point\" modality=\"questioned\">societal gender norms</entity> revolving around masculinity. \n3.It relates to me and my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\" section=\"numbered_point\">community</entity>, due to the fact that, it shows that <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\" section=\"numbered_point\">young people</entity> are taking less time and effort to contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\">parents</entity>. As well, if this keeps going on, as <entity type=\"OTHER_ENTITY\" canonical=\"generation\" subtype=\"concept\" section=\"numbered_point\">generations</entity> go on, will the amount of <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\" section=\"numbered_point\">young people</entity> speaking to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\">parents</entity> keep decreasing.\n4.<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Newer Generations Are Barely Interacting With Their Parents</entity>"
 }

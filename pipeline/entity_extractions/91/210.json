@@ -1,0 +1,148 @@
+{
+  "article_id": "91",
+  "comment_index": 210,
+  "raw_comment": "I notice that the most popular sport is basketball and the majority of the sports has 50% and higher basketball players. I wondered compared to other sports is basketball still a popularly played sports game. The impacts that this graph has on the community is the number of players who are playing basketball and the number of people who play basketball as a real paying job.  The graph is showing several different types of basketball players who are involved in major sports leagues. A catchy headline can be players who play major sports league in basketball.",
+  "entities": [
+    {
+      "surface": "basketball",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 40,
+      "end": 50,
+      "id": "e0"
+    },
+    {
+      "surface": "basketball",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 101,
+      "end": 111,
+      "id": "e1"
+    },
+    {
+      "surface": "basketball",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 160,
+      "end": 170,
+      "id": "e2"
+    },
+    {
+      "surface": "basketball players",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 426,
+      "end": 444,
+      "id": "e3"
+    },
+    {
+      "surface": "players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 437,
+      "end": 444,
+      "id": "e4"
+    },
+    {
+      "surface": "players who play major sports league in basketball.",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 512,
+      "end": 563,
+      "id": "e5"
+    },
+    {
+      "surface": "50%",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_players_of_color",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "sports game",
+      "reason": "Generic phrase; unclear whether it refers to a specific league or a chart concept."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that the most popular sport is basketball and the majority of the sports has 50% and higher basketball players. I wondered compared to other sports is basketball still a popularly played sports game. The impacts that this graph has on the community is the number of players who are playing basketball and the number of people who play basketball as a real paying job.  The graph is showing several different types of basketball players who are involved in major sports leagues."
+    },
+    {
+      "section": "headline",
+      "label": "headline",
+      "text": "players who play major sports league in basketball."
+    }
+  ],
+  "tagged_text": "I notice that the most popular sport is <entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\" section=\"body\">basketball</entity> and the majority of the sports has <entity type=\"DATA_VAR\" canonical=\"percentage_of_players_of_color\" section=\"body\">50%</entity> and higher <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">basketball players</entity>. I wondered compared to other sports is basketball still a popularly played sports game. The impacts that this graph has on the community is the number of <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\" section=\"body\">players</entity> who are playing basketball and the number of <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\" section=\"body\">people</entity> who play basketball as a real paying job.  The <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> is showing several different types of basketball players who are involved in major sports leagues. A catchy headline can be <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">players who play major sports league in basketball.</entity>"
+}

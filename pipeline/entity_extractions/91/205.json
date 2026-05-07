@@ -1,0 +1,125 @@
+{
+  "article_id": "91",
+  "comment_index": 205,
+  "raw_comment": "What do you notice? There are a lot more colored players than there are coaches.\n \n \n \nWhat do you wonder? I wonder why there is such a big difference between players and coaches.\n \n \n \nWhat impact does this have on you and your community? This has a big impact because so many black people have a dream but too afraid of what might and might not happen.\n \n \n \n \nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea. “Why are there so many colored players than coaches!?”",
+  "entities": [
+    {
+      "surface": "colored players",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "colored_players",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 41,
+      "end": 56,
+      "id": "e0"
+    },
+    {
+      "surface": "coaches",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaches",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 72,
+      "end": 79,
+      "id": "e1"
+    },
+    {
+      "surface": "coaches",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaches",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 171,
+      "end": 178,
+      "id": "e2"
+    },
+    {
+      "surface": "players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 486,
+      "end": 493,
+      "id": "e3"
+    },
+    {
+      "surface": "black people",
+      "type": "OTHER_ENTITY",
+      "canonical": "black_people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "dream",
+      "type": "OTHER_ENTITY",
+      "canonical": "dream",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "Why are there so many colored players than coaches!?",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice? There are a lot more colored players than there are coaches."
+    },
+    {
+      "section": "body",
+      "text": "What do you wonder? I wonder why there is such a big difference between players and coaches."
+    },
+    {
+      "section": "body",
+      "text": "What impact does this have on you and your community? This has a big impact because so many black people have a dream but too afraid of what might and might not happen."
+    },
+    {
+      "section": "headline",
+      "label": "headline",
+      "text": "“Why are there so many colored players than coaches!?”"
+    }
+  ],
+  "tagged_text": "What do you notice? There are a lot more <entity type=\"DATA_VAR_LEVEL\" canonical=\"colored_players\" var=\"group_type\" section=\"body\">colored players</entity> than there are <entity type=\"OTHER_ENTITY\" canonical=\"coaches\" subtype=\"group\" section=\"body\">coaches</entity>.\n \n \n \nWhat do you wonder? I wonder why there is such a big difference between <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\" section=\"body\">players</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"coaches\" subtype=\"group\" section=\"body\">coaches</entity>.\n \n \n \nWhat impact does this have on you and your community? This has a big impact because so many <entity type=\"OTHER_ENTITY\" canonical=\"black_people\" subtype=\"group\" section=\"body\">black people</entity> have a <entity type=\"OTHER_ENTITY\" canonical=\"dream\" subtype=\"concept\" section=\"body\">dream</entity> but too afraid of what might and might not happen.\n \n \n \n \nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea. “Why are there so many colored players than coaches!?”"
+}

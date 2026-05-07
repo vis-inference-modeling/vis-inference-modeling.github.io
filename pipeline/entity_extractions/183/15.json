@@ -35,7 +35,7 @@
       "surface": "kids",
       "type": "OTHER_ENTITY",
       "canonical": "kids",
-      "subtype": "group",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -62,11 +62,11 @@
     {
       "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
+      "canonical": "parents",
       "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 449,
@@ -74,17 +74,17 @@
       "id": "e4"
     },
     {
-      "surface": "teenagers",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "teenagers",
-      "subtype": "group",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 564,
-      "end": 573,
+      "occurrence_index": 1,
+      "start": 593,
+      "end": 600,
       "id": "e5"
     },
     {
@@ -114,6 +114,20 @@
       "start": null,
       "end": null,
       "id": "e7"
+    },
+    {
+      "surface": "teenagers",
+      "type": "OTHER_ENTITY",
+      "canonical": "teenagers",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
     }
   ],
   "unresolved_mentions": [],
@@ -139,5 +153,5 @@
       "text": "What's going on in this graph? Write a catchy headline that captures the graph's main idea.\nHow much do teenagers reach out to there parents for help?"
     }
   ],
-  "tagged_text": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\nI noticed that in all three categories, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> reach out more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>.\n2. What do you wonder?\nWhy is it that <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visits in person</entity> are in the least common form and why do <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> usually reach out more?\n3. What impact does this have on you and your community?\nThis impacts all of the <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\">kids</entity> in my <entity type=\"OTHER_ENTITY\" canonical=\"high_school\" subtype=\"other\" speaker_context=\"true\">high school</entity>, and when I reach out to my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>\n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\nHow much do <entity type=\"OTHER_ENTITY\" canonical=\"teenagers\" subtype=\"group\">teenagers</entity> reach out to there parents for help?"
+  "tagged_text": "1. What do you notice? If your notice makes a claim, where in the graph is the evidence to support it?\nI noticed that in all three categories, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">young women</entity> reach out more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">young men</entity>.\n2. What do you wonder?\nWhy is it that <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">visits in person</entity> are in the least common form and why do <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"numbered_point\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\">young women</entity> usually reach out more?\n3. What impact does this have on you and your community?\nThis impacts all of the <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">kids</entity> in my <entity type=\"OTHER_ENTITY\" canonical=\"high_school\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\">high school</entity>, and when I reach out to my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">parents</entity>\n4. What's going on in this graph? Write a catchy headline that captures the graph's main idea.\nHow much do <entity type=\"OTHER_ENTITY\" canonical=\"teenagers\" subtype=\"other\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">teenagers</entity> reach out to there <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">parents</entity> for help?"
 }

@@ -17,58 +17,101 @@
       "id": "e0"
     },
     {
-      "surface": "visit their parents in person",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 85,
-      "end": 114,
+      "start": 78,
+      "end": 84,
       "id": "e1"
     },
     {
-      "surface": "15-25%",
-      "type": "TIME_REFERENCE",
-      "canonical": "15_25",
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 116,
-      "end": 122,
+      "occurrence_index": 1,
+      "start": 460,
+      "end": 466,
       "id": "e2"
     },
     {
-      "surface": "50-75%",
-      "type": "TIME_REFERENCE",
-      "canonical": "50_75",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 176,
-      "end": 182,
+      "start": 800,
+      "end": 807,
       "id": "e3"
     },
     {
-      "surface": "reach out to their parents",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 929,
+      "end": 936,
+      "id": "e4"
+    },
+    {
+      "surface": "text",
       "type": "DATA_VAR_LEVEL",
       "canonical": "send_texts",
       "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 184,
-      "end": 210,
-      "id": "e4"
+      "start": 945,
+      "end": 949,
+      "id": "e5"
+    },
+    {
+      "surface": "video-chat",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 957,
+      "end": 967,
+      "id": "e6"
+    },
+    {
+      "surface": "Buzz buzz",
+      "type": "CHART_ELEMENT",
+      "canonical": "buzz_buzz",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1034,
+      "end": 1043,
+      "id": "e7"
     },
     {
       "surface": "women",
@@ -80,78 +123,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 313,
-      "end": 318,
-      "id": "e5"
-    },
-    {
-      "surface": "20%",
-      "type": "TIME_REFERENCE",
-      "canonical": "20_percent",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 325,
-      "end": 328,
-      "id": "e6"
-    },
-    {
-      "surface": "text",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 348,
-      "end": 352,
-      "id": "e7"
-    },
-    {
-      "surface": "text",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 414,
-      "end": 418,
+      "start": null,
+      "end": null,
       "id": "e8"
-    },
-    {
-      "surface": "video-chat",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "phone_or_video_chat",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 423,
-      "end": 433,
-      "id": "e9"
-    },
-    {
-      "surface": "video-chat",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "phone_or_video_chat",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 957,
-      "end": 967,
-      "id": "e10"
     },
     {
       "surface": "men",
@@ -165,7 +139,63 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "text",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "video-chat",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e11"
+    },
+    {
+      "surface": "young people",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "young adults",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_adults",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e13"
     },
     {
       "surface": "18",
@@ -178,7 +208,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e14"
     },
     {
       "surface": "34",
@@ -191,13 +221,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e15"
     },
     {
       "surface": "community",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -205,7 +234,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e16"
     },
     {
       "surface": "college",
@@ -214,30 +243,44 @@
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e17"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e18"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "young individuals",
-      "reason": "Likely refers to the respondent age group, but it is not a confirmed level or variable in the reference list."
+      "surface": "15-25%",
+      "reason": "A percentage range is mentioned, but no matching canonical percentage level is provided in the reference list excerpt."
     },
     {
-      "surface": "young adults",
-      "reason": "Could refer to the respondent group, but it is not a confirmed level or variable in the reference list."
+      "surface": "50-75%",
+      "reason": "A percentage range is mentioned, but no matching canonical percentage level is provided in the reference list excerpt."
     },
     {
-      "surface": "life stages",
-      "reason": "Abstract concept not present in the reference list."
+      "surface": "daily or a few times a week",
+      "reason": "Frequency phrase likely corresponds to a chart category, but no confirmed canonical mapping is provided."
     },
     {
-      "surface": "parents",
-      "reason": "Generic reference; could be tagged as OTHER_ENTITY/parents, but the comment does not clearly introduce a specific parent entity beyond the chart topic."
+      "surface": "gender difference",
+      "reason": "Could refer to the data variable 'difference_between_gender_groups_within_each_method', but the exact phrasing is not in the normalized dictionary excerpt."
     }
   ],
   "section_segments": [
@@ -251,5 +294,5 @@
       "text": "Buzz buzz"
     }
   ],
-  "tagged_text": "I noticed a few trends in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>. It seems that the smallest percentage of people <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit their parents in person</entity> (<entity type=\"TIME_REFERENCE\" canonical=\"15_25\">15-25%</entity>), while the largest percentage of young individuals (<entity type=\"TIME_REFERENCE\" canonical=\"50_75\">50-75%</entity>) <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">reach out to their parents</entity> either daily or a few times a week. Additionally, the gender difference in communication habits, with <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> being <entity type=\"TIME_REFERENCE\" canonical=\"20_percent\">20%</entity> more likely to use <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">video-chat</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>.\nI wonder if the prevalence of <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" modality=\"questioned\">text</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" modality=\"questioned\">video-chat</entity> communication among young people is due to its convenience compared to writing long texts. Furthermore, I'm curious if there's a difference in communication between the young adults who were surveyed who are closer to <entity type=\"TIME_REFERENCE\" canonical=\"18\">18</entity> and those closer to <entity type=\"TIME_REFERENCE\" canonical=\"34\">34</entity>. This could potentially bring to light whether certain life stages influence the amount of communication people have with parents. This is relevant to me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> as I am going for <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college</entity> next year where my main form of communication with my parents will be texting and video-chatting to stay in touch since I won't be seeing them daily.\n\nTitle:“Buzz buzz”"
+  "tagged_text": "I noticed a few trends in the graph. It seems that the smallest percentage of people visit their parents in person (15-25%), while the largest percentage of young individuals (50-75%) reach out to their parents either daily or a few times a week. Additionally, the gender difference in communication habits, with women being 20% more likely to use text or video-chat compared to men.\nI wonder if the prevalence of text and video-chat communication among young people is due to its convenience compared to writing long texts. Furthermore, I'm curious if there's a difference in communication between the young adults who were surveyed who are closer to <entity type=\"TIME_REFERENCE\" canonical=\"18\" modality=\"questioned\">18</entity> and those closer to <entity type=\"TIME_REFERENCE\" canonical=\"34\" modality=\"questioned\">34</entity>. This could potentially bring to light whether certain life stages influence the amount of communication people have with parents. This is relevant to me and my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> as I am going for <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college</entity> next year where my main form of communication with my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> will be texting and video-chatting to stay in touch since I won't be seeing them daily.\n\nTitle:“Buzz buzz”"
 }

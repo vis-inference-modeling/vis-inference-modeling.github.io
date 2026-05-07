@@ -1,0 +1,144 @@
+{
+  "article_id": "91",
+  "comment_index": 144,
+  "raw_comment": "I notice that most of the players are people of color, but most coaches aren't people of color\n\nI wonder if the people of color playing sports is a majority during the other years\n\nThis doesnt really impact me, its just people playing sports\n\nA catchy headline could be, \"Here are the graphs of people of color playing sports, huge improvement!\"",
+  "entities": [
+    {
+      "surface": "players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 26,
+      "end": 33,
+      "id": "e0"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 38,
+      "end": 53,
+      "id": "e1"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 79,
+      "end": 94,
+      "id": "e2"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 112,
+      "end": 127,
+      "id": "e3"
+    },
+    {
+      "surface": "years",
+      "type": "TIME_REFERENCE",
+      "canonical": "previous_years",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 174,
+      "end": 179,
+      "id": "e4"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 220,
+      "end": 226,
+      "id": "e5"
+    },
+    {
+      "surface": "graphs",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 285,
+      "end": 291,
+      "id": "e6"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 295,
+      "end": 310,
+      "id": "e7"
+    },
+    {
+      "surface": "coaches",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaches",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that most of the players are people of color, but most coaches aren't people of color\n\nI wonder if the people of color playing sports is a majority during the other years\n\nThis doesnt really impact me, its just people playing sports"
+    },
+    {
+      "section": "headline",
+      "label": "A catchy headline could be,",
+      "text": "\"Here are the graphs of people of color playing sports, huge improvement!\""
+    }
+  ],
+  "tagged_text": "I notice that most of the <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\" section=\"body\">players</entity> are <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">people of color</entity>, but most <entity type=\"OTHER_ENTITY\" canonical=\"coaches\" subtype=\"group\" section=\"body\">coaches</entity> aren't <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">people of color</entity>\n\nI wonder if the <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\" modality=\"questioned\">people of color</entity> playing sports is a majority during the other <entity type=\"TIME_REFERENCE\" canonical=\"previous_years\" section=\"body\">years</entity>\n\nThis doesnt really impact me, its just <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\" section=\"body\">people</entity> playing sports\n\nA catchy headline could be, \"Here are the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"headline\">graphs</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"headline\">people of color</entity> playing sports, huge improvement!\""
+}

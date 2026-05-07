@@ -1,0 +1,144 @@
+{
+  "article_id": "91",
+  "comment_index": 180,
+  "raw_comment": "I noticed that the Women's National Basketball Association and National Basketball Association have the same amount, 83%. I wonder how many of those coaches played the sport? The graph shows the amount of players of color and head-coaches of color. Player or coach.",
+  "entities": [
+    {
+      "surface": "Women's National Basketball Association",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wnba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 19,
+      "end": 58,
+      "id": "e0"
+    },
+    {
+      "surface": "National Basketball Association",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 27,
+      "end": 58,
+      "id": "e1"
+    },
+    {
+      "surface": "83%",
+      "type": "TIME_REFERENCE",
+      "canonical": "83",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 117,
+      "end": 120,
+      "id": "e2"
+    },
+    {
+      "surface": "coaches",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaches",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 149,
+      "end": 156,
+      "id": "e3"
+    },
+    {
+      "surface": "sport",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "sports_league",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 168,
+      "end": 173,
+      "id": "e4"
+    },
+    {
+      "surface": "graph",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_players_of_color",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 179,
+      "end": 184,
+      "id": "e5"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 205,
+      "end": 221,
+      "id": "e6"
+    },
+    {
+      "surface": "head-coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 226,
+      "end": 247,
+      "id": "e7"
+    },
+    {
+      "surface": "Player or coach",
+      "type": "OTHER_ENTITY",
+      "canonical": "player_or_coach",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 249,
+      "end": 264,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "graph",
+      "reason": "Likely refers to the chart element, but the sentence 'The graph shows...' is used generically and the normalized dictionary also lists 'graph' as a chart element; kept as DATA_VAR here only because the prompt examples sometimes over-tag chart references ambiguously."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that the Women's National Basketball Association and National Basketball Association have the same amount, 83%. I wonder how many of those coaches played the sport? The graph shows the amount of players of color and head-coaches of color. Player or coach."
+    }
+  ],
+  "tagged_text": "I noticed that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"wnba\" var=\"sports_league\" section=\"body\">Women's National Basketball Association</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\" section=\"body\">National Basketball Association</entity> have the same amount, <entity type=\"TIME_REFERENCE\" canonical=\"83\" section=\"body\">83%</entity>. I wonder how many of those <entity type=\"OTHER_ENTITY\" canonical=\"coaches\" subtype=\"group\" section=\"body\">coaches</entity> played the <entity type=\"DATA_VAR_LEVEL\" canonical=\"sports_league\" var=\"sports_league\" section=\"body\">sport</entity>? The <entity type=\"DATA_VAR\" canonical=\"percentage_of_players_of_color\" section=\"body\">graph</entity> shows the amount of <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">players of color</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"body\">head-coaches of color</entity>. <entity type=\"OTHER_ENTITY\" canonical=\"player_or_coach\" subtype=\"other\" section=\"body\">Player or coach</entity>."
+}

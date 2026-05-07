@@ -4,29 +4,29 @@
   "raw_comment": "This graph shows the percentage of young people who keep in contact with there parents on a pretty consistent basis. This graph shows that young women stay in more contact than young men with there parents.",
   "entities": [
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
+      "surface": "This graph shows the percentage of young people who keep in contact with there parents",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_young_people_who_reach_out_to_a_parent",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 5,
-      "end": 10,
+      "start": 0,
+      "end": 86,
       "id": "e0"
     },
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
+      "surface": "This graph shows",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_young_people_who_reach_out_to_a_parent",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 122,
-      "end": 127,
+      "occurrence_index": 0,
+      "start": 117,
+      "end": 133,
       "id": "e1"
     },
     {
@@ -58,16 +58,17 @@
       "id": "e3"
     },
     {
-      "surface": "percentage of young people who keep in contact with there parents",
-      "type": "DATA_VAR",
-      "canonical": "percentage_of_young_people_who_reach_out_to_a_parent",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 198,
+      "end": 205,
       "id": "e4"
     }
   ],
@@ -78,5 +79,5 @@
       "text": "This graph shows the percentage of young people who keep in contact with there parents on a pretty consistent basis. This graph shows that young women stay in more contact than young men with there parents."
     }
   ],
-  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young people who keep in contact with there parents</entity> on a pretty consistent basis. This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> stay in more contact than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> with there parents."
+  "tagged_text": "<entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\" section=\"body\">This graph shows the percentage of young people who keep in contact with there parents</entity> on a pretty consistent basis. <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\" section=\"body\">This graph shows</entity> that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\">young women</entity> stay in more contact than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\">young men</entity> with there <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity>."
 }

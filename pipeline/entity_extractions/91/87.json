@@ -1,0 +1,180 @@
+{
+  "article_id": "91",
+  "comment_index": 87,
+  "raw_comment": "Notice- The percentage of players of color is so much higher than coaches of color\n\nWonder- Why is the MLB so much lower than the rest in terms of player percentage?\n\nImpact- A very good majority of people watch sports, especially right now with the superbowl coming up. It's important for kids to see someone of the same race as them doing great things and showing that they can be more than they are told\n\nHeadline- Diversity in Sports: Who do Our Children Have to Look up to?",
+  "entities": [
+    {
+      "surface": "Notice",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 0,
+      "end": 6,
+      "id": "e0"
+    },
+    {
+      "surface": "percentage of players of color",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_players_of_color",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 12,
+      "end": 42,
+      "id": "e1"
+    },
+    {
+      "surface": "coaches of color",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_head_coaches_of_color",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 66,
+      "end": 82,
+      "id": "e2"
+    },
+    {
+      "surface": "Wonder",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 84,
+      "end": 90,
+      "id": "e3"
+    },
+    {
+      "surface": "MLB",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 103,
+      "end": 106,
+      "id": "e4"
+    },
+    {
+      "surface": "Impact",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 167,
+      "end": 173,
+      "id": "e5"
+    },
+    {
+      "surface": "sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 212,
+      "end": 218,
+      "id": "e6"
+    },
+    {
+      "surface": "superbowl",
+      "type": "EVENT",
+      "canonical": "super_bowl",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 250,
+      "end": 259,
+      "id": "e7"
+    },
+    {
+      "surface": "kids",
+      "type": "OTHER_ENTITY",
+      "canonical": "kids",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 290,
+      "end": 294,
+      "id": "e8"
+    },
+    {
+      "surface": "race",
+      "type": "OTHER_ENTITY",
+      "canonical": "race",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 322,
+      "end": 326,
+      "id": "e9"
+    },
+    {
+      "surface": "Headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 408,
+      "end": 416,
+      "id": "e10"
+    },
+    {
+      "surface": "Diversity in Sports: Who do Our Children Have to Look up to?",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 418,
+      "end": 478,
+      "id": "e11"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "Notice- The percentage of players of color is so much higher than coaches of color\n\nWonder- Why is the MLB so much lower than the rest in terms of player percentage?\n\nImpact- A very good majority of people watch sports, especially right now with the superbowl coming up. It's important for kids to see someone of the same race as them doing great things and showing that they can be more than they are told"
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "Diversity in Sports: Who do Our Children Have to Look up to?"
+    }
+  ],
+  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Notice</entity>- The <entity type=\"DATA_VAR\" canonical=\"percentage_of_players_of_color\">percentage of players of color</entity> is so much higher than <entity type=\"DATA_VAR\" canonical=\"percentage_of_head_coaches_of_color\">coaches of color</entity>\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Wonder</entity>- Why is the <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\">MLB</entity> so much lower than the rest in terms of player percentage?\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Impact</entity>- A very good majority of people watch <entity type=\"OTHER_ENTITY\" canonical=\"sports\" subtype=\"group\">sports</entity>, especially right now with the <entity type=\"EVENT\" canonical=\"super_bowl\">superbowl</entity> coming up. It's important for <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\">kids</entity> to see someone of the same <entity type=\"OTHER_ENTITY\" canonical=\"race\" subtype=\"other\">race</entity> as them doing great things and showing that they can be more than they are told\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\">Headline</entity>- <entity type=\"CHART_ELEMENT\" canonical=\"headline\">Diversity in Sports: Who do Our Children Have to Look up to?</entity>"
+}

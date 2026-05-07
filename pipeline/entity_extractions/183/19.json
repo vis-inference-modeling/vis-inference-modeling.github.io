@@ -7,7 +7,7 @@
       "surface": "People",
       "type": "OTHER_ENTITY",
       "canonical": "people",
-      "subtype": "group",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -39,5 +39,5 @@
       "text": "People need to talk with their parents more these days man."
     }
   ],
-  "tagged_text": "<entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\">People</entity> need to talk with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more these days man."
+  "tagged_text": "<entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">People</entity> need to talk with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">parents</entity> more these days man."
 }

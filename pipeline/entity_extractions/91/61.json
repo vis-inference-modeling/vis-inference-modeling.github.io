@@ -1,0 +1,137 @@
+{
+  "article_id": "91",
+  "comment_index": 61,
+  "raw_comment": "What I notice is that the WNBA and the NBA are the most popular and have the larger percentages.\n \nWhat I wonder is why are those the most popular and not the other ones.\n\nThis impacts the community because it shows how blacks don't have that opportunity to be a coach.\n\nBasically, it is showing the percentage difference between all these black coaches. A catchy headline for this is \"When will these sport coaches have equalality.",
+  "entities": [
+    {
+      "surface": "WNBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wnba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 26,
+      "end": 30,
+      "id": "e0"
+    },
+    {
+      "surface": "NBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 27,
+      "end": 30,
+      "id": "e1"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 189,
+      "end": 198,
+      "id": "e2"
+    },
+    {
+      "surface": "blacks",
+      "type": "OTHER_ENTITY",
+      "canonical": "black_people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 220,
+      "end": 226,
+      "id": "e3"
+    },
+    {
+      "surface": "coach",
+      "type": "OTHER_ENTITY",
+      "canonical": "head_coach",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 263,
+      "end": 268,
+      "id": "e4"
+    },
+    {
+      "surface": "percentage difference",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_head_coaches_of_color",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 300,
+      "end": 321,
+      "id": "e5"
+    },
+    {
+      "surface": "black coaches",
+      "type": "OTHER_ENTITY",
+      "canonical": "black_people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 340,
+      "end": 353,
+      "id": "e6"
+    },
+    {
+      "surface": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 364,
+      "end": 372,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "the most popular",
+      "reason": "Refers to popularity but no clear canonical entity in the reference list."
+    },
+    {
+      "surface": "the other ones",
+      "reason": "Ambiguous reference to other leagues; not specific enough to tag confidently."
+    },
+    {
+      "surface": "equalality",
+      "reason": "Likely intended as 'equality', but this is an abstract concept not in the schema and the surface form is misspelled."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What I notice is that the WNBA and the NBA are the most popular and have the larger percentages.\n \nWhat I wonder is why are those the most popular and not the other ones.\n\nThis impacts the community because it shows how blacks don't have that opportunity to be a coach.\n\nBasically, it is showing the percentage difference between all these black coaches. A catchy headline for this is \"When will these sport coaches have equalality."
+    }
+  ],
+  "tagged_text": "What I notice is that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"wnba\" var=\"sports_league\">WNBA</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\">NBA</entity> are the most popular and have the larger percentages.\n \nWhat I wonder is why are those the most popular and not the other ones.\n\nThis impacts the <entity type=\"LOCATION\" canonical=\"community\">community</entity> because it shows how <entity type=\"OTHER_ENTITY\" canonical=\"black_people\" subtype=\"group\">blacks</entity> don't have that opportunity to be a <entity type=\"OTHER_ENTITY\" canonical=\"head_coach\" subtype=\"person\">coach</entity>.\n\nBasically, it is showing the <entity type=\"DATA_VAR\" canonical=\"percentage_of_head_coaches_of_color\">percentage difference</entity> between all these <entity type=\"OTHER_ENTITY\" canonical=\"black_people\" subtype=\"group\">black coaches</entity>. A catchy <entity type=\"CHART_ELEMENT\" canonical=\"headline\">headline</entity> for this is \"When will these sport coaches have equalality."
+}

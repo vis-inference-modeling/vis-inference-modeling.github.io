@@ -52,7 +52,7 @@
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 111,
@@ -62,7 +62,7 @@
     {
       "surface": "peers",
       "type": "OTHER_ENTITY",
-      "canonical": "my_peers",
+      "canonical": "peers",
       "subtype": "group",
       "section": "body",
       "modality": "asserted",
@@ -76,7 +76,7 @@
     {
       "surface": "Who's calling?",
       "type": "CHART_ELEMENT",
-      "canonical": "headline",
+      "canonical": "title",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -95,9 +95,9 @@
     },
     {
       "section": "headline",
-      "label": "headline",
+      "label": "Headline",
       "text": "Who's calling?"
     }
   ],
-  "tagged_text": "I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> were likelier to reach out to <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\">people</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>. I wonder why this is. I feel I'm not on my <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phone</entity> as much as my <entity type=\"OTHER_ENTITY\" canonical=\"my_peers\" subtype=\"group\" speaker_context=\"true\">peers</entity>.\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Who's calling?</entity>"
+  "tagged_text": "I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\">women</entity> were likelier to reach out to <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"body\">people</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\">men</entity>. I wonder why this is. I feel I'm not on my <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\" section=\"body\">phone</entity> as much as my <entity type=\"OTHER_ENTITY\" canonical=\"peers\" subtype=\"group\" section=\"body\">peers</entity>.\nHeadline: Who's calling?"
 }

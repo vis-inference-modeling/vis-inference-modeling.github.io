@@ -1,0 +1,54 @@
+{
+  "article_id": "91",
+  "comment_index": 88,
+  "raw_comment": "What I noticed in this graph that the number of head coaches of color are significantly lower than the players of color",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 23,
+      "end": 28,
+      "id": "e0"
+    },
+    {
+      "surface": "head coaches of color",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_head_coaches_of_color",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 48,
+      "end": 69,
+      "id": "e1"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_players_of_color",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 103,
+      "end": 119,
+      "id": "e2"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What I noticed in this graph that the number of head coaches of color are significantly lower than the players of color"
+    }
+  ],
+  "tagged_text": "What I noticed in this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> that the number of <entity type=\"DATA_VAR\" canonical=\"percentage_of_head_coaches_of_color\">head coaches of color</entity> are significantly lower than the <entity type=\"DATA_VAR\" canonical=\"percentage_of_players_of_color\">players of color</entity>"
+}

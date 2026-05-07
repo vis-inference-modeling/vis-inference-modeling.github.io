@@ -18,18 +18,46 @@
       "id": "e0"
     },
     {
-      "surface": "visit their parents",
+      "surface": "visit",
       "type": "DATA_VAR_LEVEL",
       "canonical": "visit_in_person",
       "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 24,
-      "end": 43,
+      "end": 29,
       "id": "e1"
+    },
+    {
+      "surface": "visit",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 271,
+      "end": 276,
+      "id": "e2"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e3"
     },
     {
       "surface": "young women",
@@ -41,9 +69,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 54,
-      "end": 65,
-      "id": "e2"
+      "start": null,
+      "end": null,
+      "id": "e4"
     },
     {
       "surface": "young women",
@@ -55,35 +83,8 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
-      "start": 152,
-      "end": 163,
-      "id": "e3"
-    },
-    {
-      "surface": "year",
-      "type": "TIME_REFERENCE",
-      "canonical": "entire_year",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 191,
-      "end": 195,
-      "id": "e4"
-    },
-    {
-      "surface": "visit them",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": 271,
-      "end": 281,
+      "start": null,
+      "end": null,
       "id": "e5"
     },
     {
@@ -98,6 +99,46 @@
       "start": null,
       "end": null,
       "id": "e6"
+    },
+    {
+      "surface": "year",
+      "type": "TIME_REFERENCE",
+      "canonical": "year",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "family",
+      "type": "OTHER_ENTITY",
+      "canonical": "family",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [],
@@ -107,5 +148,5 @@
       "text": "I notice that young men visit their parents less than young women do. I wonder why that is? I notice that around the summer most of the pedestrians are young women I have not seen the entire year. A catchy headline could be \" How to have the best family vacation, Step 1 visit them.\""
     }
   ],
-  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit their parents</entity> less than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> do. I wonder why that is? I notice that around the <entity type=\"TIME_REFERENCE\" canonical=\"summer\">summer</entity> most of the pedestrians are <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> I have not seen the entire <entity type=\"TIME_REFERENCE\" canonical=\"entire_year\">year</entity>. A catchy headline could be \" How to have the best family vacation, Step 1 <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit them</entity>.\""
+  "tagged_text": "I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">young men</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">visit</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">parents</entity> less than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">young women</entity> do. I wonder why that is? I notice that around the <entity type=\"TIME_REFERENCE\" canonical=\"summer\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">summer</entity> most of the pedestrians are <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">young women</entity> I have not seen the entire <entity type=\"TIME_REFERENCE\" canonical=\"year\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">year</entity>. A catchy <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">headline</entity> could be \" How to have the best <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">family</entity> vacation, Step 1 <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">visit</entity> them.\""
 }

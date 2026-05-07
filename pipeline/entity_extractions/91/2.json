@@ -1,0 +1,196 @@
+{
+  "article_id": "91",
+  "comment_index": 2,
+  "raw_comment": "1. What do you notice?\nI noticed that this graph is horizontal instead of it being vertical and that it has percentages on it.\n2. What do you wonder?\nWhy are they showing Players of color and head coaches of color\n3. How does this relate to you and your community? \nBecause its talking about sports and some people from our community play sports. \n4. What’s going on in this graph? Create a catchy headline that captures the graph’s main idea. Its showing the percentages of players of color and the head coaches of color",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 43,
+      "end": 48,
+      "id": "e0"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 375,
+      "end": 380,
+      "id": "e1"
+    },
+    {
+      "surface": "percentages",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 460,
+      "end": 471,
+      "id": "e2"
+    },
+    {
+      "surface": "Players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 475,
+      "end": 491,
+      "id": "e3"
+    },
+    {
+      "surface": "head coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 500,
+      "end": 521,
+      "id": "e4"
+    },
+    {
+      "surface": "percentages",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentage",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "Players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "head coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "people",
+      "type": "OTHER_ENTITY",
+      "canonical": "people",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "our community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "What do you notice?\nI noticed that this graph is horizontal instead of it being vertical and that it has percentages on it."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "What do you wonder?\nWhy are they showing Players of color and head coaches of color"
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "How does this relate to you and your community? \nBecause its talking about sports and some people from our community play sports."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "What’s going on in this graph? Create a catchy headline that captures the graph’s main idea. Its showing the percentages of players of color and the head coaches of color"
+    }
+  ],
+  "tagged_text": "1. What do you notice?\nI noticed that this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"numbered_point\">graph</entity> is horizontal instead of it being vertical and that it has <entity type=\"OTHER_ENTITY\" canonical=\"percentage\" subtype=\"concept\" section=\"numbered_point\">percentages</entity> on it.\n2. What do you wonder?\nWhy are they showing <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"numbered_point\">Players of color</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"numbered_point\">head coaches of color</entity>\n3. How does this relate to you and your community? \nBecause its talking about <entity type=\"OTHER_ENTITY\" canonical=\"sports\" subtype=\"group\" section=\"numbered_point\">sports</entity> and some <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\" section=\"numbered_point\">people</entity> from <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\" section=\"numbered_point\">our community</entity> play <entity type=\"OTHER_ENTITY\" canonical=\"sports\" subtype=\"group\" section=\"numbered_point\">sports</entity>. \n4. What’s going on in this graph? Create a catchy headline that captures the graph’s main idea. Its showing the percentages of <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"numbered_point\">players of color</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"numbered_point\">head coaches of color</entity>"
+}

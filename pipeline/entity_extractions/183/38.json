@@ -59,17 +59,17 @@
       "id": "e3"
     },
     {
-      "surface": "women",
+      "surface": "men",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
+      "canonical": "young_men",
       "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": 718,
-      "end": 723,
+      "occurrence_index": 0,
+      "start": 389,
+      "end": 392,
       "id": "e4"
     },
     {
@@ -81,9 +81,9 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 720,
-      "end": 723,
+      "occurrence_index": 1,
+      "start": 710,
+      "end": 713,
       "id": "e5"
     },
     {
@@ -95,24 +95,10 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 732,
-      "end": 735,
-      "id": "e6"
-    },
-    {
-      "surface": "men",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
       "occurrence_index": 2,
-      "start": 780,
-      "end": 783,
-      "id": "e7"
+      "start": 720,
+      "end": 723,
+      "id": "e6"
     },
     {
       "surface": "parents",
@@ -126,7 +112,7 @@
       "occurrence_index": 0,
       "start": 1045,
       "end": 1052,
-      "id": "e8"
+      "id": "e7"
     },
     {
       "surface": "sending texts",
@@ -140,7 +126,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e8"
     },
     {
       "surface": "phone or video-chat",
@@ -154,7 +140,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e9"
     },
     {
       "surface": "visit in person",
@@ -168,21 +154,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "men",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": null,
-      "end": null,
-      "id": "e12"
+      "id": "e10"
     },
     {
       "surface": "parents",
@@ -196,7 +168,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e11"
     },
     {
       "surface": "parents",
@@ -210,35 +182,7 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "visiting in person",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
+      "id": "e12"
     },
     {
       "surface": "phones",
@@ -252,7 +196,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e13"
     },
     {
       "surface": "young people",
@@ -266,7 +210,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e14"
     },
     {
       "surface": "gender",
@@ -279,13 +223,38 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e15"
     },
     {
-      "surface": "sister",
-      "type": "OTHER_ENTITY",
-      "canonical": "sister",
-      "subtype": "person",
+      "surface": "percentage difference between men and women",
+      "type": "DATA_VAR",
+      "canonical": "difference_between_gender_groups_within_each_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "men truly do not seem to reach out as much as women",
+      "type": "DATA_VAR",
+      "canonical": "difference_between_gender_groups_within_each_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e17"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -293,26 +262,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e18"
     },
     {
-      "surface": "brother",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_brother",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e21"
-    },
-    {
-      "surface": "Incoming call, it's your parents! Accept or Decline?",
+      "surface": "Catchy headline: \"Incoming call, it's your parents! Accept or Decline?\"",
       "type": "CHART_ELEMENT",
-      "canonical": "headline",
+      "canonical": "title",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -320,20 +275,21 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e19"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "What I notice is how the percentage of young people who reach out to their parents at least once a day or few days a week is particularly dominated by women. Whether its sending texts, phone or video-chat, or a visit in person, women always tend to do so more then men and some by a large margin. What I wonder is if the percentages have increased or decreased over time by both men and women of how often they reach out to their parents.  Also if visiting in person decreased when more kids started getting phones. What's going on in this graph is it is trying to show the different ways young people will reach out to their parents, characterizing it by gender, and showing the percentage difference between men and women and how men truly do not seem to reach out as much as women. This relates to my community because I have siblings and I think my sister, who is out of the house, and I reach out more then my brother does. We also would tend to see them in person more rather then call or text. "
+      "text": "What I notice is how the percentage of young people who reach out to their parents at least once a day or few days a week is particularly dominated by women. Whether its sending texts, phone or video-chat, or a visit in person, women always tend to do so more then men and some by a large margin. What I wonder is if the percentages have increased or decreased over time by both men and women of how often they reach out to their parents.  Also if visiting in person decreased when more kids started getting phones. What's going on in this graph is it is trying to show the different ways young people will reach out to their parents, characterizing it by gender, and showing the percentage difference between men and women and how men truly do not seem to reach out as much as women. This relates to my community because I have siblings and I think my sister, who is out of the house, and I reach out more then my brother does. We also would tend to see them in person more rather then call or text. ",
+      "label": ""
     },
     {
       "section": "headline",
-      "label": "Catchy headline",
-      "text": "\"Incoming call, it's your parents! Accept or Decline?\""
+      "label": "",
+      "text": "Catchy headline: \"Incoming call, it's your parents! Accept or Decline?\""
     }
   ],
-  "tagged_text": "What I notice is how the percentage of <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">young people who reach out to their parents</entity> at least once a day or few days a week is particularly dominated by <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>. Whether its <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">sending texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone or video-chat</entity>, or a <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit in person</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> always tend to do so more then <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and some by a large margin. What I wonder is if the percentages have increased or decreased over time by both <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> of how often they reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>.  Also if <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting in person</entity> decreased when more kids started getting <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity>. What's going on in this graph is it is trying to show the different ways <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> will reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>, characterizing it by <entity type=\"DATA_VAR\" canonical=\"gender_group\">gender</entity>, and showing the percentage difference between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> and how <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> truly do not seem to reach out as much as <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>. This relates to my community because I have siblings and I think my sister, who is out of the house, and I reach out more then my brother does. We also would tend to see them in person more rather then call or text. \nCatchy headline: \"Incoming call, it's your parents! Accept or Decline?\""
+  "tagged_text": "What I notice is how the percentage of <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">young people who reach out to their parents</entity> at least once a day or few days a week is particularly dominated by <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>. Whether its <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">sending texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone or video-chat</entity>, or a <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit in person</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> always tend to do so more then <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and some by a large margin. What I wonder is if the percentages have increased or decreased over time by both <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> of how often they reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>.  Also if visiting in person decreased when more kids started getting <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\">phones</entity>. What's going on in this graph is it is trying to show the different ways <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> will reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>, characterizing it by <entity type=\"DATA_VAR\" canonical=\"gender_group\">gender</entity>, and showing the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">percentage difference between men and women</entity> and how <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">men truly do not seem to reach out as much as women</entity>. This relates to my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because I have siblings and I think my sister, who is out of the house, and I reach out more then my brother does. We also would tend to see them in person more rather then call or text. \n<entity type=\"CHART_ELEMENT\" canonical=\"title\">Catchy headline: \"Incoming call, it's your parents! Accept or Decline?\"</entity>"
 }

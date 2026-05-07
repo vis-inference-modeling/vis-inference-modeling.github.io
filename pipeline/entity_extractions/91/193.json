@@ -1,0 +1,156 @@
+{
+  "article_id": "91",
+  "comment_index": 193,
+  "raw_comment": "1. What I notice is that the percentages of the Women's National Basketball Association and National Basketball Association of players of color are the same. \n2. What I wonder about these graphs is why does each of the sports have a different percentage increase to their players of color. \n3. The impact this has on me and my community is that there are more people like me and my community joining sports and being able to play in these professional leagues. I feel like no matter what color or race you are you can be successful to do what you want to do, and these graphs shows that more people of color are playing more. \n4. The interesting percentages of professional leagues of color.",
+  "entities": [
+    {
+      "surface": "Women's National Basketball Association",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wnba",
+      "var": "sports_league",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 48,
+      "end": 87,
+      "id": "e0"
+    },
+    {
+      "surface": "National Basketball Association",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 56,
+      "end": 87,
+      "id": "e1"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 127,
+      "end": 143,
+      "id": "e2"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 272,
+      "end": 288,
+      "id": "e3"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 327,
+      "end": 336,
+      "id": "e4"
+    },
+    {
+      "surface": "sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 400,
+      "end": 406,
+      "id": "e5"
+    },
+    {
+      "surface": "color",
+      "type": "OTHER_ENTITY",
+      "canonical": "color",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 488,
+      "end": 493,
+      "id": "e6"
+    },
+    {
+      "surface": "race",
+      "type": "OTHER_ENTITY",
+      "canonical": "race",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 497,
+      "end": 501,
+      "id": "e7"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "people_of_color",
+      "var": "group_type",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 592,
+      "end": 607,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "What I notice is that the percentages of the Women's National Basketball Association and National Basketball Association of players of color are the same."
+    },
+    {
+      "section": "numbered_point",
+      "label": "2",
+      "text": "What I wonder about these graphs is why does each of the sports have a different percentage increase to their players of color."
+    },
+    {
+      "section": "numbered_point",
+      "label": "3",
+      "text": "The impact this has on me and my community is that there are more people like me and my community joining sports and being able to play in these professional leagues. I feel like no matter what color or race you are you can be successful to do what you want to do, and these graphs shows that more people of color are playing more."
+    },
+    {
+      "section": "numbered_point",
+      "label": "4",
+      "text": "The interesting percentages of professional leagues of color."
+    }
+  ],
+  "tagged_text": "1. What I notice is that the percentages of the <entity type=\"DATA_VAR_LEVEL\" canonical=\"wnba\" var=\"sports_league\" section=\"numbered_point\">Women's National Basketball Association</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\" section=\"numbered_point\">National Basketball Association</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"numbered_point\">players of color</entity> are the same. \n2. What I wonder about these graphs is why does each of the sports have a different percentage increase to their <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"numbered_point\">players of color</entity>. \n3. The impact this has on me and my <entity type=\"LOCATION\" canonical=\"my_community\" section=\"numbered_point\" speaker_context=\"true\">community</entity> is that there are more people like me and my community joining <entity type=\"OTHER_ENTITY\" canonical=\"sports\" subtype=\"other\" section=\"numbered_point\">sports</entity> and being able to play in these professional leagues. I feel like no matter what <entity type=\"OTHER_ENTITY\" canonical=\"color\" subtype=\"other\" section=\"numbered_point\">color</entity> or <entity type=\"OTHER_ENTITY\" canonical=\"race\" subtype=\"other\" section=\"numbered_point\">race</entity> you are you can be successful to do what you want to do, and these graphs shows that more <entity type=\"DATA_VAR_LEVEL\" canonical=\"people_of_color\" var=\"group_type\" section=\"numbered_point\">people of color</entity> are playing more. \n4. The interesting percentages of professional leagues of color."
+}

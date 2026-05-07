@@ -18,6 +18,20 @@
       "id": "e0"
     },
     {
+      "surface": "parent",
+      "type": "OTHER_ENTITY",
+      "canonical": "parent",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 50,
+      "end": 56,
+      "id": "e1"
+    },
+    {
       "surface": "young men",
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_men",
@@ -29,7 +43,7 @@
       "occurrence_index": 0,
       "start": 105,
       "end": 114,
-      "id": "e1"
+      "id": "e2"
     },
     {
       "surface": "texting",
@@ -43,7 +57,7 @@
       "occurrence_index": 0,
       "start": 151,
       "end": 158,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "calling",
@@ -57,62 +71,7 @@
       "occurrence_index": 0,
       "start": 200,
       "end": 207,
-      "id": "e3"
-    },
-    {
-      "surface": "calling",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "phone_or_video_chat",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 419,
-      "end": 426,
       "id": "e4"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 467,
-      "end": 474,
-      "id": "e5"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 721,
-      "end": 728,
-      "id": "e6"
-    },
-    {
-      "surface": "Contacting the Other- Communicating With Your Parent",
-      "type": "CHART_ELEMENT",
-      "canonical": "contacting_the_other_communicating_with_your_parent",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 731,
-      "end": 783,
-      "id": "e7"
     },
     {
       "surface": "seeing each other in person",
@@ -122,11 +81,11 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
+      "start": 211,
+      "end": 238,
+      "id": "e5"
     },
     {
       "surface": "visiting in person",
@@ -138,9 +97,23 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
+      "start": 397,
+      "end": 415,
+      "id": "e6"
+    },
+    {
+      "surface": "calling",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 419,
+      "end": 426,
+      "id": "e7"
     },
     {
       "surface": "me",
@@ -152,46 +125,67 @@
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
+      "start": 514,
+      "end": 516,
+      "id": "e8"
     },
     {
       "surface": "my community",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
+      "start": 521,
+      "end": 533,
+      "id": "e9"
     },
     {
       "surface": "parental figure",
       "type": "OTHER_ENTITY",
-      "canonical": "parent",
+      "canonical": "parental_figure",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
+      "start": 597,
+      "end": 612,
+      "id": "e10"
+    },
+    {
+      "surface": "Contacting the Other- Communicating With Your Parent",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 731,
+      "end": 783,
+      "id": "e11"
     }
   ],
-  "unresolved_mentions": [],
+  "unresolved_mentions": [
+    {
+      "surface": "their parents",
+      "reason": "Possessive reference is clear in context but not directly listed as a canonical entity; could be resolved to parent/parents if desired."
+    }
+  ],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
-      "text": "I noticed that young women tend to reach out to a parent once a day or a few times each week compared to young men as well as, the preferred method is texting rather than something more personal like calling or seeing each other in person.\nI wonder if or how this changes in the future. Do they stop reaching out? Will they start reaching out or communicating with each other more intimately like visiting in person or calling? How does their relationship with their parents affect their response?\nThis relates to me and my community because everyone is constantly growing up and has some kind of parental figure, and is developing into their own person and this can change the ways you interact with each other and your parents.\n\"Contacting the Other- Communicating With Your Parent\""
+      "text": "I noticed that young women tend to reach out to a parent once a day or a few times each week compared to young men as well as, the preferred method is texting rather than something more personal like calling or seeing each other in person.\nI wonder if or how this changes in the future. Do they stop reaching out? Will they start reaching out or communicating with each other more intimately like visiting in person or calling? How does their relationship with their parents affect their response?\nThis relates to me and my community because everyone is constantly growing up and has some kind of parental figure, and is developing into their own person and this can change the ways you interact with each other and your parents."
+    },
+    {
+      "section": "headline",
+      "label": "Contacting the Other- Communicating With Your Parent",
+      "text": "Contacting the Other- Communicating With Your Parent"
     }
   ],
-  "tagged_text": "I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> tend to reach out to a parent once a day or a few times each week compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> as well as, the preferred method is <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> rather than something more personal like <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calling</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">seeing each other in person</entity>.\nI wonder if or how this changes in the future. Do they stop reaching out? Will they start reaching out or communicating with each other more intimately like <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" modality=\"questioned\">visiting in person</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" modality=\"questioned\">calling</entity>? How does their relationship with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> affect their response?\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because everyone is constantly growing up and has some kind of <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\">parental figure</entity>, and is developing into their own person and this can change the ways you interact with each other and your <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>.\n\"<entity type=\"CHART_ELEMENT\" canonical=\"contacting_the_other_communicating_with_your_parent\" section=\"headline\">Contacting the Other- Communicating With Your Parent</entity>\""
+  "tagged_text": "I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> tend to reach out to a <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\">parent</entity> once a day or a few times each week compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> as well as, the preferred method is <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> rather than something more personal like <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calling</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">seeing each other in person</entity>.\nI wonder if or how this changes in the future. Do they stop reaching out? Will they start reaching out or communicating with each other more intimately like <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" modality=\"questioned\">visiting in person</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" modality=\"questioned\">calling</entity>? How does their relationship with their parents affect their response?\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because everyone is constantly growing up and has some kind of <entity type=\"OTHER_ENTITY\" canonical=\"parental_figure\" subtype=\"other\">parental figure</entity>, and is developing into their own person and this can change the ways you interact with each other and your parents.\n\"<entity type=\"CHART_ELEMENT\" canonical=\"title\">Contacting the Other- Communicating With Your Parent</entity>\""
 }

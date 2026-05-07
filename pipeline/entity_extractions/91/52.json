@@ -1,0 +1,206 @@
+{
+  "article_id": "91",
+  "comment_index": 52,
+  "raw_comment": "What do you notice?\nI noticed that this graph displays the racial disparity in different major sport leagues; showing the players of color in red and head coaches of color in pink. One of the graphs shows the women's national basketball association while the other ones just show the national sports associations which are men. \nWhat do you wonder?\nI wonder why they chose to incorporate only the women's national basketball association. I also wonder why there are more players of color rather than coaches. \nWhat impact does this have on you and your community?\nThis impacts my community in knowing that maybe there should be more diverse coaches in the national teams across the country in order for players and aspiring players of color to have someone they can see themselves in to look up to.\nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\nA headline for this graph could be \"Players vs Coaches of Color in Major League Sports\"",
+  "entities": [
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 40,
+      "end": 45,
+      "id": "e0"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 192,
+      "end": 197,
+      "id": "e1"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 471,
+      "end": 487,
+      "id": "e2"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 724,
+      "end": 740,
+      "id": "e3"
+    },
+    {
+      "surface": "players",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 927,
+      "end": 934,
+      "id": "e4"
+    },
+    {
+      "surface": "Coaches of Color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 938,
+      "end": 954,
+      "id": "e5"
+    },
+    {
+      "surface": "racial disparity",
+      "type": "EVENT",
+      "canonical": "racial_disparity",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "head coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "women's national basketball association",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wnba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    },
+    {
+      "surface": "women's national basketball association",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wnba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "my community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "Players",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "national sports associations which are men",
+      "reason": "Likely refers to male leagues, but the exact canonical level is unclear."
+    },
+    {
+      "surface": "national teams across the country",
+      "reason": "Could refer to organizations or teams, but no clear canonical mapping in the provided list."
+    },
+    {
+      "surface": "diverse coaches",
+      "reason": "Abstract description; could imply head coaches of color but is not explicit enough to tag confidently."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice?\nI noticed that this graph displays the racial disparity in different major sport leagues; showing the players of color in red and head coaches of color in pink. One of the graphs shows the women's national basketball association while the other ones just show the national sports associations which are men. \nWhat do you wonder?\nI wonder why they chose to incorporate only the women's national basketball association. I also wonder why there are more players of color rather than coaches. \nWhat impact does this have on you and your community?\nThis impacts my community in knowing that maybe there should be more diverse coaches in the national teams across the country in order for players and aspiring players of color to have someone they can see themselves in to look up to.\nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\nA headline for this graph could be \"Players vs Coaches of Color in Major League Sports\""
+    }
+  ],
+  "tagged_text": "What do you notice?\nI noticed that this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> displays the <entity type=\"EVENT\" canonical=\"racial_disparity\">racial disparity</entity> in different major sport leagues; showing the <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> in red and <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\">head coaches of color</entity> in pink. One of the graphs shows the <entity type=\"DATA_VAR_LEVEL\" canonical=\"wnba\" var=\"sports_league\">women's national basketball association</entity> while the other ones just show the national sports associations which are men. \nWhat do you wonder?\nI wonder why they chose to incorporate only the <entity type=\"DATA_VAR_LEVEL\" canonical=\"wnba\" var=\"sports_league\">women's national basketball association</entity>. I also wonder why there are more <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> rather than coaches. \nWhat impact does this have on you and your community?\nThis impacts <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> in knowing that maybe there should be more diverse coaches in the national teams across the country in order for <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players</entity> and aspiring <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> to have someone they can see themselves in to look up to.\nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\nA headline for this graph could be \"<entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"headline\">Players</entity> vs <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\" section=\"headline\">Coaches of Color</entity> in Major League Sports\""
+}

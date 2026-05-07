@@ -30,17 +30,17 @@
       "id": "e1"
     },
     {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
+      "surface": "male",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 255,
-      "end": 262,
+      "start": 289,
+      "end": 293,
       "id": "e2"
     },
     {
@@ -52,7 +52,7 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": 311,
       "end": 318,
       "id": "e3"
@@ -72,23 +72,23 @@
       "id": "e4"
     },
     {
-      "surface": "person",
+      "surface": "visiting the parent in person",
       "type": "DATA_VAR_LEVEL",
       "canonical": "visit_in_person",
       "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 425,
+      "start": 402,
       "end": 431,
       "id": "e5"
     },
     {
       "surface": "26%",
       "type": "OTHER_ENTITY",
-      "canonical": "26_percent",
+      "canonical": "percentage_26",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -102,7 +102,7 @@
     {
       "surface": "18%",
       "type": "OTHER_ENTITY",
-      "canonical": "18_percent",
+      "canonical": "percentage_18",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -127,23 +127,23 @@
       "id": "e8"
     },
     {
-      "surface": "gender differences",
+      "surface": "gender differences between males and females",
       "type": "DATA_VAR",
-      "canonical": "gender_group",
+      "canonical": "difference_between_gender_groups_within_each_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 629,
-      "end": 647,
+      "end": 673,
       "id": "e9"
     },
     {
-      "surface": "young adults",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_adults",
-      "subtype": "group",
+      "surface": "young adults either female",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -175,7 +175,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
@@ -184,7 +184,7 @@
     {
       "surface": "50%",
       "type": "OTHER_ENTITY",
-      "canonical": "50_percent",
+      "canonical": "percentage_50",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -198,7 +198,7 @@
     {
       "surface": "75%",
       "type": "OTHER_ENTITY",
-      "canonical": "75_percent",
+      "canonical": "percentage_75",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -208,29 +208,14 @@
       "start": null,
       "end": null,
       "id": "e14"
-    },
-    {
-      "surface": "visiting",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": true,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
       "text": "The graph shows how likely young adults either female or male interact with their parents each time a week. It says that they either text, call, or actually talk to their parent in person. The graph shows that they are most likely to send a text to their parents with it being roughly 50% males will text their parents while 75% females will text their parents. The least likely to be done is actually visiting the parent in person with only 26% females and roughly 18%. There is definitely a difference here with males always being in the lower margin and females being in the larger margin. This most likely has to do with the gender differences between males and females."
     }
   ],
-  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows how likely <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\" subtype=\"group\">young adults</entity> either female or male interact with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> each time a week. It says that they either <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">call</entity>, or actually talk to their parent in <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">person</entity>. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows that they are most likely to <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send a text</entity> to their parents with it being roughly <entity type=\"OTHER_ENTITY\" canonical=\"50_percent\" subtype=\"other\">50%</entity> males will text their parents while <entity type=\"OTHER_ENTITY\" canonical=\"75_percent\" subtype=\"other\">75%</entity> females will text their parents. The least likely to be done is actually <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting</entity> the parent in person with only <entity type=\"OTHER_ENTITY\" canonical=\"26_percent\" subtype=\"other\">26%</entity> females and roughly <entity type=\"OTHER_ENTITY\" canonical=\"18_percent\" subtype=\"other\">18%</entity>. There is definitely a <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">difference</entity> here with males always being in the lower margin and females being in the larger margin. This most likely has to do with the <entity type=\"DATA_VAR\" canonical=\"gender_group\">gender differences</entity> between males and females."
+  "tagged_text": "The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows how likely <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young adults either female</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">male</entity> interact with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> each time a week. It says that they either <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">call</entity>, or actually talk to their parent in person. The <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows that they are most likely to <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send a text</entity> to their parents with it being roughly <entity type=\"OTHER_ENTITY\" canonical=\"percentage_50\" subtype=\"other\">50%</entity> males will text their parents while <entity type=\"OTHER_ENTITY\" canonical=\"percentage_75\" subtype=\"other\">75%</entity> females will text their parents. The least likely to be done is actually <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting the parent in person</entity> with only <entity type=\"OTHER_ENTITY\" canonical=\"percentage_26\" subtype=\"other\">26%</entity> females and roughly <entity type=\"OTHER_ENTITY\" canonical=\"percentage_18\" subtype=\"other\">18%</entity>. There is definitely a <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">difference</entity> here with males always being in the lower margin and females being in the larger margin. This most likely has to do with the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">gender differences between males and females</entity>."
 }

@@ -1,0 +1,172 @@
+{
+  "article_id": "91",
+  "comment_index": 132,
+  "raw_comment": "I notice that there is a higher number of players of colors than there are head coaches of color. I wonder why this is? But I also understand that coaches just do not come and go. However, the graphs show that POC are clearly not in higher positions very much. We need to put people of color in higher positions. This gives us the statistics we need to push for equality in sports.\nCatchy Title: Sideline Diversity",
+  "entities": [
+    {
+      "surface": "players of colors",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 42,
+      "end": 59,
+      "id": "e0"
+    },
+    {
+      "surface": "head coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 75,
+      "end": 96,
+      "id": "e1"
+    },
+    {
+      "surface": "coaches",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaches",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 80,
+      "end": 87,
+      "id": "e2"
+    },
+    {
+      "surface": "graphs",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 193,
+      "end": 199,
+      "id": "e3"
+    },
+    {
+      "surface": "POC",
+      "type": "OTHER_ENTITY",
+      "canonical": "poc",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 210,
+      "end": 213,
+      "id": "e4"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "people_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 276,
+      "end": 291,
+      "id": "e5"
+    },
+    {
+      "surface": "higher positions",
+      "type": "OTHER_ENTITY",
+      "canonical": "higher_positions",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 295,
+      "end": 311,
+      "id": "e6"
+    },
+    {
+      "surface": "statistics",
+      "type": "OTHER_ENTITY",
+      "canonical": "statistics",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 331,
+      "end": 341,
+      "id": "e7"
+    },
+    {
+      "surface": "sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 374,
+      "end": 380,
+      "id": "e8"
+    },
+    {
+      "surface": "Sideline Diversity",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 396,
+      "end": 414,
+      "id": "e9"
+    },
+    {
+      "surface": "higher positions",
+      "type": "OTHER_ENTITY",
+      "canonical": "higher_positions",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that there is a higher number of players of colors than there are head coaches of color. I wonder why this is? But I also understand that coaches just do not come and go. However, the graphs show that POC are clearly not in higher positions very much. We need to put people of color in higher positions. This gives us the statistics we need to push for equality in sports."
+    },
+    {
+      "section": "headline",
+      "label": "Catchy Title",
+      "text": "Sideline Diversity"
+    }
+  ],
+  "tagged_text": "I notice that there is a higher number of <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of colors</entity> than there are <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\">head coaches of color</entity>. I wonder why this is? But I also understand that <entity type=\"OTHER_ENTITY\" canonical=\"coaches\" subtype=\"group\">coaches</entity> just do not come and go. However, the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graphs</entity> show that <entity type=\"OTHER_ENTITY\" canonical=\"poc\" subtype=\"other\">POC</entity> are clearly not in higher positions very much. We need to put <entity type=\"DATA_VAR_LEVEL\" canonical=\"people_of_color\" var=\"group_type\">people of color</entity> in <entity type=\"OTHER_ENTITY\" canonical=\"higher_positions\" subtype=\"other\">higher positions</entity>. This gives us the <entity type=\"OTHER_ENTITY\" canonical=\"statistics\" subtype=\"other\">statistics</entity> we need to push for equality in <entity type=\"OTHER_ENTITY\" canonical=\"sports\" subtype=\"other\">sports</entity>.\nCatchy Title: <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Sideline Diversity</entity>"
+}

@@ -6,7 +6,7 @@
     {
       "surface": "WOMAN LOVE THEIR PARENTS MORE",
       "type": "CHART_ELEMENT",
-      "canonical": "woman_love_their_parents_more",
+      "canonical": "title",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,9 +18,9 @@
     },
     {
       "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -73,52 +73,23 @@
       "id": "e4"
     },
     {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": 406,
-      "end": 413,
-      "id": "e5"
-    },
-    {
       "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "subtype": "other",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e7"
+      "start": 382,
+      "end": 385,
+      "id": "e5"
     },
     {
       "surface": "my community",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -126,21 +97,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "people",
-      "type": "OTHER_ENTITY",
-      "canonical": "people",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
+      "id": "e6"
     },
     {
       "surface": "college",
@@ -154,12 +111,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e7"
     },
     {
-      "surface": "my home town",
+      "surface": "home town",
       "type": "LOCATION",
-      "canonical": "home_town",
+      "canonical": "hometown",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -167,21 +124,34 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e8"
+    },
+    {
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "hypothetical",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e9"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "headline",
-      "label": "",
+      "label": "WOMAN LOVE THEIR PARENTS MORE",
       "text": "WOMAN LOVE THEIR PARENTS MORE"
     },
     {
       "section": "body",
-      "label": "",
       "text": "I notice that on average, women seem to be more in touched with their parents and contact them more.\n\nI wonder why we see this trend, is it not cool for men to be in contact with their parents and check in on them?\n\nThis relates to my community because as more people leave for college in my home town their parents get worried about their safety. If men don't contact their parents then they will be more worried."
     }
   ],
-  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"woman_love_their_parents_more\" section=\"headline\">WOMAN LOVE THEIR PARENTS MORE</entity>\n\nI notice that on average, <entity type=\"OTHER_ENTITY\" canonical=\"women\" subtype=\"other\">women</entity> seem to be more in touched with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> and contact them more.\n\nI wonder why we see this trend, is it not cool for <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"other\">men</entity> to be in contact with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> and check in on them?\n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because as more <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\">people</entity> leave for <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college</entity> in <entity type=\"LOCATION\" canonical=\"home_town\" speaker_context=\"true\">my home town</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> get worried about their safety. If <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"other\">men</entity> don't contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> then they will be more worried."
+  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"title\">WOMAN LOVE THEIR PARENTS MORE</entity>\n\nI notice that on average, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> seem to be more in touched with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> and contact them more.\n\nI wonder why we see this trend, is it not cool for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" modality=\"questioned\">men</entity> to be in contact with their parents and check in on them?\n\nThis relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because as more people leave for <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college</entity> in my <entity type=\"LOCATION\" canonical=\"hometown\" speaker_context=\"true\">home town</entity> their parents get worried about their safety. If <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" modality=\"hypothetical\">men</entity> don't contact their parents then they will be more worried."
 }

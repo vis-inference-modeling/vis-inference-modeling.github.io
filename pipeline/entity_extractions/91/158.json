@@ -1,0 +1,163 @@
+{
+  "article_id": "91",
+  "comment_index": 158,
+  "raw_comment": "Diversity in Pro Sports\nThis graph shows the number of players that are people of color on various sports teams based on the percentage of players on the team, while also showing the number of people of color that are in charge of coaching these teams. As a group, we noticed that people of color make up a very high percentage of these sports teams, despite making up a very small amount of the coaches and managers. Our group is curious about a few things in this graph. For one; which group makes up the gray portion of each bar? We also want to know why there is a noticeable lack of players of color within the MLB. The data collection process also makes us wonder, what specific teams were involved, who gathered the data? Though arguably most importantly, we wonder about the paycheck difference between coaches and players. We want to know what are some consequences of having so few people of color acting as coaches.",
+  "entities": [
+    {
+      "surface": "players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 55,
+      "end": 62,
+      "id": "e0"
+    },
+    {
+      "surface": "players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 139,
+      "end": 146,
+      "id": "e1"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 193,
+      "end": 208,
+      "id": "e2"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 281,
+      "end": 296,
+      "id": "e3"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 892,
+      "end": 907,
+      "id": "e4"
+    },
+    {
+      "surface": "people of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "sports teams",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports_teams",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "sports teams",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports_teams",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e7"
+    },
+    {
+      "surface": "MLB",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "coaches and managers",
+      "reason": "Composite role phrase; managers are not in the reference list as a specific canonical entity here."
+    },
+    {
+      "surface": "grey portion of each bar",
+      "reason": "Chart element reference is plausible, but the provided chart-element dictionary does not include this exact label."
+    },
+    {
+      "surface": "data collection process",
+      "reason": "Process phrase not in the reference list."
+    },
+    {
+      "surface": "paycheck difference",
+      "reason": "Abstract concept not in the reference list."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "headline",
+      "label": "Diversity in Pro Sports",
+      "text": "Diversity in Pro Sports"
+    },
+    {
+      "section": "body",
+      "text": "This graph shows the number of players that are people of color on various sports teams based on the percentage of players on the team, while also showing the number of people of color that are in charge of coaching these teams. As a group, we noticed that people of color make up a very high percentage of these sports teams, despite making up a very small amount of the coaches and managers. Our group is curious about a few things in this graph. For one; which group makes up the grey portion of each bar? We also want to know why there is a noticeable lack of players of color within the MLB. The data collection process also makes us wonder, what specific teams were involved, who gathered the data? Though arguably most importantly, we wonder about the paycheck difference between coaches and players. We want to know what are some consequences of having so few people of color acting as coaches."
+    }
+  ],
+  "tagged_text": "Diversity in Pro Sports\nThis graph shows the number of <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\">players</entity> that are <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">people of color</entity> on various <entity type=\"OTHER_ENTITY\" canonical=\"sports_teams\" subtype=\"other\">sports teams</entity> based on the percentage of <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\">players</entity> on the team, while also showing the number of <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">people of color</entity> that are in charge of coaching these teams. As a group, we noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">people of color</entity> make up a very high percentage of these <entity type=\"OTHER_ENTITY\" canonical=\"sports_teams\" subtype=\"other\">sports teams</entity>, despite making up a very small amount of the coaches and managers. Our group is curious about a few things in this graph. For one; which group makes up the grey portion of each bar? We also want to know why there is a noticeable lack of <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> within the <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\">MLB</entity>. The data collection process also makes us wonder, what specific teams were involved, who gathered the data? Though arguably most importantly, we wonder about the paycheck difference between coaches and players. We want to know what are some consequences of having so few <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">people of color</entity> acting as coaches."
+}

@@ -172,9 +172,9 @@
       "id": "e11"
     },
     {
-      "surface": "college students",
+      "surface": "group of people",
       "type": "OTHER_ENTITY",
-      "canonical": "college_students",
+      "canonical": "people",
       "subtype": "group",
       "section": "body",
       "modality": "questioned",
@@ -188,13 +188,13 @@
     {
       "surface": "college students",
       "type": "OTHER_ENTITY",
-      "canonical": "college_students",
-      "subtype": "group",
+      "canonical": "college",
+      "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e13"
@@ -202,7 +202,7 @@
     {
       "surface": "age range",
       "type": "TIME_REFERENCE",
-      "canonical": "age_range_of_respondents",
+      "canonical": "age",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -213,18 +213,46 @@
       "id": "e14"
     },
     {
-      "surface": "me",
+      "surface": "college students",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
+      "canonical": "college",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e15"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e16"
+    },
+    {
+      "surface": "texting",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e17"
     },
     {
       "surface": "calling",
@@ -238,12 +266,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e18"
     },
     {
       "surface": "home",
       "type": "LOCATION",
-      "canonical": "home_town",
+      "canonical": "home",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -251,12 +279,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e19"
     },
     {
       "surface": "home",
       "type": "LOCATION",
-      "canonical": "home_town",
+      "canonical": "home",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -264,7 +292,20 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e20"
+    },
+    {
+      "surface": "state",
+      "type": "LOCATION",
+      "canonical": "out_of_state",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e21"
     },
     {
       "surface": "Dialing Home: When Do Young Adults Contact Their Parents?",
@@ -277,14 +318,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e22"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
       "text": "What do you notice?\n\nWhether it be through texts, calls, or, visits, young women tend to reach out to their parents more often than young men. The most common form of communication is texting, followed by phone or video calls, and finally, in-person visits.\n\nWhat do you wonder?\n\nWhat group of people was the sample taken from? Are they college students? Fresh college graduates? What is the age range?\n\nHow does this relate to you and your community?\n\nA good amount of college students, including me, live away from our parents so our main form of communication is through texting and calling. Finding time to go back home is not the easiest, especially if home is three hours away or in a different state."
     },
     {
@@ -293,5 +333,5 @@
       "text": "Dialing Home: When Do Young Adults Contact Their Parents?"
     }
   ],
-  "tagged_text": "What do you notice?\n\nWhether it be through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">calls</entity>, or, <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">visits</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young women</entity> tend to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> more often than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young men</entity>. The most common form of communication is <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">texting</entity>, followed by <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">phone or video calls</entity>, and finally, <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">in-person visits</entity>.\n\nWhat do you wonder?\n\nWhat group of people was the sample taken from? Are they <entity type=\"OTHER_ENTITY\" canonical=\"college_students\" subtype=\"group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">college students</entity>? Fresh college graduates? What is the <entity type=\"TIME_REFERENCE\" canonical=\"age_range_of_respondents\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">age range</entity>?\n\nHow does this relate to you and your community?\n\nA good amount of <entity type=\"OTHER_ENTITY\" canonical=\"college_students\" subtype=\"group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">college students</entity>, including <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">me</entity>, live away from our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> so our main form of communication is through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">texting</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">calling</entity>. Finding time to go back <entity type=\"LOCATION\" canonical=\"home_town\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">home</entity> is not the easiest, especially if <entity type=\"LOCATION\" canonical=\"home_town\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">home</entity> is three hours away or in a different state.\n\nCatchy Headline\n\n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Dialing Home: When Do Young Adults Contact Their Parents?</entity>"
+  "tagged_text": "What do you notice?\n\nWhether it be through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calls</entity>, or, <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visits</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> tend to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more often than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>. The most common form of communication is <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity>, followed by <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone or video calls</entity>, and finally, <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">in-person visits</entity>.\n\nWhat do you wonder?\n\nWhat <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\" modality=\"questioned\">group of people</entity> was the sample taken from? Are they <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" modality=\"questioned\">college students</entity>? Fresh college graduates? What is the <entity type=\"TIME_REFERENCE\" canonical=\"age\" modality=\"questioned\">age range</entity>?\n\nHow does this relate to you and your community?\n\nA good amount of <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college students</entity>, including me, live away from our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> so our main form of communication is through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calling</entity>. Finding time to go back <entity type=\"LOCATION\" canonical=\"home\" speaker_context=\"true\">home</entity> is not the easiest, especially if <entity type=\"LOCATION\" canonical=\"home\" speaker_context=\"true\">home</entity> is three hours away or in a different <entity type=\"LOCATION\" canonical=\"out_of_state\" speaker_context=\"true\">state</entity>.\n\nCatchy Headline\n\n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Dialing Home: When Do Young Adults Contact Their Parents?</entity>"
 }

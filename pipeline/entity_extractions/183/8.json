@@ -4,6 +4,62 @@
   "raw_comment": "Notice\n- Females reach out to parents more in general\n- Huge gap betweeen females and males who reach out by text and by phone or video chat. \n\nWonder \n- Does the relationship between parents and young adults affect them reaching out?\n\nHeadline - \nReaching Out: Are Young Women More Attached to Their Parents than Males?",
   "entities": [
     {
+      "surface": "Females",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 9,
+      "end": 16,
+      "id": "e0"
+    },
+    {
+      "surface": "Females",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 74,
+      "end": 81,
+      "id": "e1"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 184,
+      "end": 191,
+      "id": "e2"
+    },
+    {
+      "surface": "males",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 314,
+      "end": 319,
+      "id": "e3"
+    },
+    {
       "surface": "text",
       "type": "DATA_VAR_LEVEL",
       "canonical": "send_texts",
@@ -13,9 +69,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 109,
-      "end": 113,
-      "id": "e0"
+      "start": null,
+      "end": null,
+      "id": "e4"
     },
     {
       "surface": "phone or video chat",
@@ -27,42 +83,39 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 121,
-      "end": 140,
-      "id": "e1"
+      "start": null,
+      "end": null,
+      "id": "e5"
     },
     {
-      "surface": "Headline",
-      "type": "CHART_ELEMENT",
-      "canonical": "headline",
+      "surface": "relationship between parents and young adults",
+      "type": "OTHER_ENTITY",
+      "canonical": "relationship_between_parents_and_young_adults",
+      "subtype": "concept",
       "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "Reaching Out: Are Young Women More Attached to Their Parents than Males?",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 236,
-      "end": 244,
-      "id": "e2"
+      "start": null,
+      "end": null,
+      "id": "e7"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "Females",
-      "reason": "Likely refers to young women, but the surface form is not explicitly confirmed in the normalized dictionary for this exact comment context."
-    },
-    {
-      "surface": "males",
-      "reason": "Likely refers to young men, but the surface form is not explicitly confirmed in the normalized dictionary for this exact comment context."
-    },
-    {
-      "surface": "parents",
-      "reason": "Generic reference; could be tagged as OTHER_ENTITY/parents, but the comment does not clearly introduce a specific parent entity beyond the chart topic."
-    },
-    {
-      "surface": "young adults",
-      "reason": "Could refer to the respondent group, but it is not a confirmed level or variable in the reference list."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
@@ -74,5 +127,5 @@
       "text": "Reaching Out: Are Young Women More Attached to Their Parents than Males?"
     }
   ],
-  "tagged_text": "Notice\n- Females reach out to parents more in general\n- Huge gap betweeen females and males who reach out by <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> and by <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone or video chat</entity>. \n\nWonder \n- Does the relationship between parents and young adults affect them reaching out?\n\nHeadline - \nReaching Out: Are Young Women More Attached to Their Parents than Males?"
+  "tagged_text": "Notice\n- <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">Females</entity> reach out to <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more in general\n- Huge gap betweeen <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">females</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">males</entity> who reach out by <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> and by <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone or video chat</entity>. \n\nWonder \n- Does the <entity type=\"OTHER_ENTITY\" canonical=\"relationship_between_parents_and_young_adults\" subtype=\"concept\" modality=\"questioned\">relationship between parents and young adults</entity> affect them reaching out?\n\nHeadline - \n<entity type=\"CHART_ELEMENT\" canonical=\"title\">Reaching Out: Are Young Women More Attached to Their Parents than Males?</entity>"
 }

@@ -4,16 +4,16 @@
   "raw_comment": "1- This graph shows the percentages of young people who say they reach out to their parents at least once a day or a few times a week. I also notice how young women send texts, phone or video-chat, and visit their parents in person at a higher rate than young men do. \n\n2- Something I wonder is if social media and technology ruined genuine face-to-face conversations? Or is it because the 18-34 age group lives away from home, in-person visits are unattainable.\n\n3- This relates to my community because I fit the demographics of this study and also feel represented in the data. Also, I get along with nearly everyone I am surrounded with on a regular basis, am in the age range this graphic examines.\n\n4- \"Are you chatting ?\"",
   "entities": [
     {
-      "surface": "graph",
-      "type": "CHART_ELEMENT",
-      "canonical": "graph",
+      "surface": "percentages",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_young_people_who_reach_out_to_a_parent",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 8,
-      "end": 13,
+      "start": 24,
+      "end": 35,
       "id": "e0"
     },
     {
@@ -143,6 +143,20 @@
       "id": "e9"
     },
     {
+      "surface": "face-to-face conversations",
+      "type": "OTHER_ENTITY",
+      "canonical": "face_to_face_interaction",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 341,
+      "end": 367,
+      "id": "e10"
+    },
+    {
       "surface": "18-34 age group",
       "type": "TIME_REFERENCE",
       "canonical": "18_34",
@@ -153,27 +167,38 @@
       "occurrence_index": 0,
       "start": 390,
       "end": 405,
-      "id": "e10"
+      "id": "e11"
     },
     {
-      "surface": "in-person",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
+      "surface": "home",
+      "type": "LOCATION",
+      "canonical": "home",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 422,
+      "end": 426,
+      "id": "e12"
+    },
+    {
+      "surface": "in-person visits",
+      "type": "EVENT",
+      "canonical": "moving_out_from_parents_home",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 428,
-      "end": 437,
-      "id": "e11"
+      "end": 444,
+      "id": "e13"
     },
     {
       "surface": "my community",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -181,7 +206,48 @@
       "occurrence_index": 0,
       "start": 483,
       "end": 495,
-      "id": "e12"
+      "id": "e14"
+    },
+    {
+      "surface": "demographics",
+      "type": "OTHER_ENTITY",
+      "canonical": "demographics",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 514,
+      "end": 526,
+      "id": "e15"
+    },
+    {
+      "surface": "study",
+      "type": "OTHER_ENTITY",
+      "canonical": "this_study",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 535,
+      "end": 540,
+      "id": "e16"
+    },
+    {
+      "surface": "age",
+      "type": "TIME_REFERENCE",
+      "canonical": "age",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 670,
+      "end": 673,
+      "id": "e17"
     },
     {
       "surface": "graphic",
@@ -192,9 +258,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 518,
-      "end": 525,
-      "id": "e13"
+      "start": 685,
+      "end": 692,
+      "id": "e18"
     }
   ],
   "unresolved_mentions": [],
@@ -220,5 +286,5 @@
       "text": "\"Are you chatting ?\""
     }
   ],
-  "tagged_text": "1- This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> shows the percentages of <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> who say they reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> at least once a day or a few times a week. I also notice how <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone or video-chat</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit their parents in person</entity> at a higher rate than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> do. \n\n2- Something I wonder is if <entity type=\"OTHER_ENTITY\" canonical=\"social_media\" subtype=\"other\" modality=\"questioned\">social media</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\" modality=\"questioned\">technology</entity> ruined genuine face-to-face conversations? Or is it because the <entity type=\"TIME_REFERENCE\" canonical=\"18_34\" modality=\"questioned\">18-34 age group</entity> lives away from home, <entity type=\"LOCATION\" canonical=\"home_town\" modality=\"questioned\">in-person</entity> visits are unattainable.\n\n3- This relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> because I fit the demographics of this study and also feel represented in the data. Also, I get along with nearly everyone I am surrounded with on a regular basis, am in the age range this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graphic</entity> examines.\n\n4- \"Are you chatting ?\""
+  "tagged_text": "1- This graph shows the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\" section=\"numbered_point\">percentages</entity> of <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\" section=\"numbered_point\">young people</entity> who say they reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\">parents</entity> at least once a day or a few times a week. I also notice how <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"numbered_point\">young women</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"numbered_point\">send texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"numbered_point\">phone or video-chat</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\">visit their parents in person</entity> at a higher rate than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"numbered_point\">young men</entity> do. \n\n2- Something I wonder is if <entity type=\"OTHER_ENTITY\" canonical=\"social_media\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\">social media</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\" section=\"numbered_point\" modality=\"questioned\">technology</entity> ruined genuine <entity type=\"OTHER_ENTITY\" canonical=\"face_to_face_interaction\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\">face-to-face conversations</entity>? Or is it because the <entity type=\"TIME_REFERENCE\" canonical=\"18_34\" section=\"numbered_point\" modality=\"questioned\">18-34 age group</entity> lives away from <entity type=\"LOCATION\" canonical=\"home\" section=\"numbered_point\" modality=\"questioned\">home</entity>, <entity type=\"EVENT\" canonical=\"moving_out_from_parents_home\" section=\"numbered_point\" modality=\"questioned\">in-person visits</entity> are unattainable.\n\n3- This relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\" section=\"numbered_point\">my community</entity> because I fit the <entity type=\"OTHER_ENTITY\" canonical=\"demographics\" subtype=\"other\" section=\"numbered_point\">demographics</entity> of this <entity type=\"OTHER_ENTITY\" canonical=\"this_study\" subtype=\"other\" section=\"numbered_point\">study</entity> and also feel represented in the data. Also, I get along with nearly everyone I am surrounded with on a regular basis, am in the <entity type=\"TIME_REFERENCE\" canonical=\"age\" section=\"numbered_point\">age</entity> range this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"numbered_point\">graphic</entity> examines.\n\n4- \"Are you chatting ?\""
 }

@@ -11,7 +11,7 @@
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 21,
       "end": 26,
@@ -25,19 +25,28 @@
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 44,
       "end": 47,
       "id": "e1"
-    }
-  ],
-  "unresolved_mentions": [
+    },
     {
       "surface": "parents",
-      "reason": "Could refer to the general concept of parents, but no confirmed canonical entity in the provided reference list beyond OTHER_ENTITY/parents; omitted from tagging due to headline brevity and ambiguity."
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 62,
+      "end": 69,
+      "id": "e2"
     }
   ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "headline",
@@ -45,5 +54,5 @@
       "text": "Why woman are happier than men: contact your parents more!"
     }
   ],
-  "tagged_text": "Catchy headline: Why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">woman</entity> are happier than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>: contact your parents more!"
+  "tagged_text": "Catchy headline: Why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"headline\">woman</entity> are happier than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"headline\">men</entity>: contact your <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"headline\">parents</entity> more!"
 }

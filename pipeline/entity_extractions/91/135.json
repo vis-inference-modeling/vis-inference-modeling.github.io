@@ -1,0 +1,158 @@
+{
+  "article_id": "91",
+  "comment_index": 135,
+  "raw_comment": "What do you notice?\nThere are more percentage of color players than coaches of color. Especially in the NFL you notice a huge contrast between the players of color than coaches.  \n\nWhat do you wonder?\nWhy is there a huge ratio difference in players of color and coaches \n\nWhat impact does this have on you and your community?\nReally goes to show there is also a lack of inequality in the sports industry too. \n\nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\n“Lack of Diversity in Sports”",
+  "entities": [
+    {
+      "surface": "color players",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 49,
+      "end": 62,
+      "id": "e0"
+    },
+    {
+      "surface": "coaches of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 68,
+      "end": 84,
+      "id": "e1"
+    },
+    {
+      "surface": "NFL",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nfl",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 104,
+      "end": 107,
+      "id": "e2"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 147,
+      "end": 163,
+      "id": "e3"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 241,
+      "end": 257,
+      "id": "e4"
+    },
+    {
+      "surface": "coaches",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 262,
+      "end": 269,
+      "id": "e5"
+    },
+    {
+      "surface": "inequality",
+      "type": "OTHER_ENTITY",
+      "canonical": "inequality",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 370,
+      "end": 380,
+      "id": "e6"
+    },
+    {
+      "surface": "sports industry",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports_industry",
+      "subtype": "organization",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 388,
+      "end": 403,
+      "id": "e7"
+    },
+    {
+      "surface": "Lack of Diversity in Sports",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 504,
+      "end": 531,
+      "id": "e8"
+    },
+    {
+      "surface": "coaches",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "head_coaches_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice?\nThere are more percentage of color players than coaches of color. Especially in the NFL you notice a huge contrast between the players of color than coaches.  \n\nWhat do you wonder?\nWhy is there a huge ratio difference in players of color and coaches \n\nWhat impact does this have on you and your community?\nReally goes to show there is also a lack of inequality in the sports industry too. \n\nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\n“Lack of Diversity in Sports”"
+    },
+    {
+      "section": "headline",
+      "text": "Lack of Diversity in Sports"
+    }
+  ],
+  "tagged_text": "What do you notice?\nThere are more percentage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">color players</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\">coaches of color</entity>. Especially in the <entity type=\"DATA_VAR_LEVEL\" canonical=\"nfl\" var=\"sports_league\">NFL</entity> you notice a huge contrast between the <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\">coaches</entity>.  \n\nWhat do you wonder?\nWhy is there a huge ratio difference in <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"head_coaches_of_color\" var=\"group_type\">coaches</entity> \n\nWhat impact does this have on you and your community?\nReally goes to show there is also a lack of <entity type=\"OTHER_ENTITY\" canonical=\"inequality\" subtype=\"concept\">inequality</entity> in the <entity type=\"OTHER_ENTITY\" canonical=\"sports_industry\" subtype=\"organization\">sports industry</entity> too. \n\nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\n“<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Lack of Diversity in Sports</entity>”"
+}

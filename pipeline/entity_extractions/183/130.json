@@ -88,18 +88,45 @@
       "id": "e5"
     },
     {
-      "surface": "my community",
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    },
+    {
+      "surface": "percentages",
       "type": "OTHER_ENTITY",
-      "canonical": "my_community",
+      "canonical": "percentages",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e6"
+      "id": "e7"
+    },
+    {
+      "surface": "genders",
+      "type": "DATA_VAR",
+      "canonical": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "texting",
@@ -113,12 +140,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e7"
+      "id": "e9"
     },
     {
       "surface": "Communication With My Parents Through A Screen",
       "type": "CHART_ELEMENT",
-      "canonical": "communication_with_my_parents_through_a_screen",
+      "canonical": "title",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -126,26 +153,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e10"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "todays modern day time",
-      "reason": "Time reference is vague and not a canonical match; likely refers to the present but not specific enough to tag confidently."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
       "text": "I notice that more women visit their parents and video call them than men, but it is still at pretty low percentages for both genders. \nI wonder why women are more likely to contact their parents than men are?\nThis relates to my community because in todays modern day time the main form of communication is texting, in which we do a lot and is now apart of out daily lives"
     },
     {
       "section": "headline",
-      "label": "",
-      "text": "Communication With My Parents Through A Screen should be the title."
+      "label": "Communication With My Parents Through A Screen",
+      "text": "should be the title."
     }
   ],
-  "tagged_text": "I notice that more <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">women</entity> visit their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">video call</entity> them than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">men</entity>, but it is still at pretty low percentages for both genders. \nI wonder why women are more likely to contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> than men are?\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity> because in todays modern day time the main form of communication is <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">texting</entity>, in which we do a lot and is now apart of out daily lives\n<entity type=\"CHART_ELEMENT\" canonical=\"communication_with_my_parents_through_a_screen\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Communication With My Parents Through A Screen</entity> should be the title."
+  "tagged_text": "I notice that more <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> visit their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> and video call them than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>, but it is still at pretty low percentages for both genders. \nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" modality=\"questioned\">women</entity> are more likely to contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" modality=\"questioned\">parents</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" modality=\"questioned\">men</entity> are?\nThis relates to my community because in todays modern day time the main form of communication is <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity>, in which we do a lot and is now apart of out daily lives\n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Communication With My Parents Through A Screen</entity> should be the title."
 }

@@ -17,9 +17,23 @@
       "id": "e0"
     },
     {
+      "surface": "young adults",
+      "type": "OTHER_ENTITY",
+      "canonical": "young_adults",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 74,
+      "end": 86,
+      "id": "e1"
+    },
+    {
       "surface": "18-34",
       "type": "TIME_REFERENCE",
-      "canonical": "18_to_34",
+      "canonical": "18_34",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -27,7 +41,7 @@
       "occurrence_index": 0,
       "start": 92,
       "end": 97,
-      "id": "e1"
+      "id": "e2"
     },
     {
       "surface": "parents",
@@ -41,60 +55,47 @@
       "occurrence_index": 0,
       "start": 132,
       "end": 139,
-      "id": "e2"
-    },
-    {
-      "surface": "data",
-      "type": "DATA_VAR",
-      "canonical": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 145,
-      "end": 149,
       "id": "e3"
     },
     {
-      "surface": "data",
-      "type": "DATA_VAR",
-      "canonical": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 983,
-      "end": 987,
-      "id": "e4"
-    },
-    {
-      "surface": "parent",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "parent",
+      "canonical": "parents",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1089,
-      "end": 1095,
-      "id": "e5"
+      "occurrence_index": 1,
+      "start": 822,
+      "end": 829,
+      "id": "e4"
     },
     {
-      "surface": "young men",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 1195,
+      "end": 1202,
+      "id": "e5"
+    },
+    {
+      "surface": "data",
+      "type": "DATA_VAR",
+      "canonical": "communication_method",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
-      "start": 1155,
-      "end": 1164,
+      "start": null,
+      "end": null,
       "id": "e6"
     },
     {
@@ -104,22 +105,21 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e7"
     },
     {
-      "surface": "young women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
+      "surface": "genders",
+      "type": "DATA_VAR",
+      "canonical": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
+      "terminology_drift": true,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e8"
@@ -133,30 +133,16 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e9"
     },
     {
-      "surface": "texting",
+      "surface": "young women",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "texting",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -164,12 +150,27 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "young women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
       "id": "e11"
     },
     {
-      "surface": "100%",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
+      "surface": "texting",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -180,7 +181,7 @@
       "id": "e12"
     },
     {
-      "surface": "text",
+      "surface": "texting",
       "type": "DATA_VAR_LEVEL",
       "canonical": "send_texts",
       "var": "communication_method",
@@ -188,7 +189,7 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e13"
@@ -202,15 +203,16 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e14"
     },
     {
-      "surface": "75%",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
+      "surface": "young men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -219,32 +221,6 @@
       "start": null,
       "end": null,
       "id": "e15"
-    },
-    {
-      "surface": "75%",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "75%",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e17"
     },
     {
       "surface": "young men",
@@ -258,7 +234,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e16"
     },
     {
       "surface": "phone or video chats",
@@ -272,33 +248,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "50%",
-      "type": "TIME_REFERENCE",
-      "canonical": "50_percent",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e20"
-    },
-    {
-      "surface": "25%",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e21"
+      "id": "e17"
     },
     {
       "surface": "in-person visits",
@@ -312,7 +262,49 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e18"
+    },
+    {
+      "surface": "face-to-face interaction",
+      "type": "OTHER_ENTITY",
+      "canonical": "face_to_face_interaction",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "family",
+      "type": "OTHER_ENTITY",
+      "canonical": "family",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "generation",
+      "type": "OTHER_ENTITY",
+      "canonical": "generation",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e21"
     },
     {
       "surface": "title",
@@ -325,7 +317,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e23"
+      "id": "e22"
     },
     {
       "surface": "The Talk: Do Young Men or Women Talk More with Their Parents",
@@ -338,15 +330,14 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e24"
+      "id": "e23"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
-      "text": "This graph provides fascinating insights into the communication habits of young adults aged 18-34 who live independently from their parents. The data highlights notable differences between genders in their preferred methods of maintaining regular contact.\nAmong young women, texting emerges as the dominant mode of communication, with 100% reaching out to a parent via text at least once a day or a few times per week. In comparison, only around 75% of young men exhibit the same texting frequency. Young men show a higher inclination towards phone or video chats, with approximately 75% using these methods regularly, as opposed to only about 50% of young women.\nInterestingly, despite the prevalence of digital communication, a significant proportion of both genders, roughly 25%, still prioritize in-person visits with parents at least once a day or a few times weekly. This underscores the persistent value placed on face-to-face interaction in fostering close family ties. \nThe data presents a nuanced picture of a generation navigating independence while striving to maintain strong parental connections. "
+      "text": "This graph provides fascinating insights into the communication habits of young adults aged 18-34 who live independently from their parents. The data highlights notable differences between genders in their preferred methods of maintaining regular contact.\nAmong young women, texting emerges as the dominant mode of communication, with 100% reaching out to a parent via text at least once a day or a few times per week. In comparison, only around 75% of young men exhibit the same texting frequency. Young men show a higher inclination towards phone or video chats, with approximately 75% using these methods regularly, as opposed to only about 50% of young women.\nInterestingly, despite the prevalence of digital communication, a significant proportion of both genders, roughly 25%, still prioritize in-person visits with parents at least once a day or a few times weekly. This underscores the persistent value placed on face-to-face interaction in fostering close family ties. \nThe data presents a nuanced picture of a generation navigating independence while striving to maintain strong parental connections."
     },
     {
       "section": "headline",
@@ -354,5 +345,5 @@
       "text": "The Talk: Do Young Men or Women Talk More with Their Parents"
     }
   ],
-  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">graph</entity> provides fascinating insights into the communication habits of young adults aged <entity type=\"TIME_REFERENCE\" canonical=\"18_to_34\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">18-34</entity> who live independently from their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity>. The <entity type=\"DATA_VAR\" canonical=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">data</entity> highlights notable differences between <entity type=\"DATA_VAR\" canonical=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">genders</entity> in their preferred methods of maintaining regular contact.\nAmong <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">young women</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">texting</entity> emerges as the dominant mode of communication, with <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">100%</entity> reaching out to a <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parent</entity> via <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">text</entity> at least once a day or a few times per week. In comparison, only around <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">75%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">young men</entity> exhibit the same texting frequency. <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">Young men</entity> show a higher inclination towards <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">phone or video chats</entity>, with approximately <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">75%</entity> using these methods regularly, as opposed to only about <entity type=\"TIME_REFERENCE\" canonical=\"50_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">50%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"2\">young women</entity>.\nInterestingly, despite the prevalence of digital communication, a significant proportion of both <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">genders</entity>, roughly <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">25%</entity>, still prioritize <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">in-person visits</entity> with <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> at least once a day or a few times weekly. This underscores the persistent value placed on face-to-face interaction in fostering close family ties. \nThe <entity type=\"DATA_VAR\" canonical=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">data</entity> presents a nuanced picture of a generation navigating independence while striving to maintain strong parental connections. \n\nAn interesting <entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">title</entity> may be: <entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">The Talk: Do Young Men or Women Talk More with Their Parents</entity>"
+  "tagged_text": "This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> provides fascinating insights into the communication habits of <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\" subtype=\"group\">young adults</entity> aged <entity type=\"TIME_REFERENCE\" canonical=\"18_34\">18-34</entity> who live independently from their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. The <entity type=\"DATA_VAR\" canonical=\"communication_method\">data</entity> highlights notable differences between <entity type=\"DATA_VAR\" canonical=\"gender_group\">genders</entity> in their preferred methods of maintaining regular contact.\nAmong <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> emerges as the dominant mode of communication, with 100% reaching out to a parent via <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> at least once a day or a few times per week. In comparison, only around 75% of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> exhibit the same <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> frequency. <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">Young men</entity> show a higher inclination towards <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone or video chats</entity>, with approximately 75% using these methods regularly, as opposed to only about 50% of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity>.\nInterestingly, despite the prevalence of digital communication, a significant proportion of both <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">genders</entity>, roughly 25%, still prioritize <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">in-person visits</entity> with <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> at least once a day or a few times weekly. This underscores the persistent value placed on <entity type=\"OTHER_ENTITY\" canonical=\"face_to_face_interaction\" subtype=\"other\">face-to-face interaction</entity> in fostering close <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\">family</entity> ties. \nThe <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">data</entity> presents a nuanced picture of a <entity type=\"OTHER_ENTITY\" canonical=\"generation\" subtype=\"other\">generation</entity> navigating independence while striving to maintain strong parental connections. \n\nAn interesting <entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">title</entity> may be: <entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">The Talk: Do Young Men or Women Talk More with Their Parents</entity>"
 }

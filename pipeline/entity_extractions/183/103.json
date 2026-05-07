@@ -11,7 +11,7 @@
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 0,
       "start": 40,
       "end": 46,
@@ -25,14 +25,42 @@
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": false,
+      "terminology_drift": true,
       "occurrence_index": 1,
       "start": 243,
       "end": 249,
       "id": "e1"
     },
     {
-      "surface": "person",
+      "surface": "in person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 373,
+      "end": 382,
+      "id": "e2"
+    },
+    {
+      "surface": "in person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 438,
+      "end": 447,
+      "id": "e3"
+    },
+    {
+      "surface": "in person",
       "type": "DATA_VAR_LEVEL",
       "canonical": "visit_in_person",
       "var": "communication_method",
@@ -41,105 +69,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 2,
-      "start": 376,
-      "end": 382,
-      "id": "e2"
-    },
-    {
-      "surface": "phones",
-      "type": "OTHER_ENTITY",
-      "canonical": "phones",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 557,
-      "end": 563,
-      "id": "e3"
-    },
-    {
-      "surface": "phones",
-      "type": "OTHER_ENTITY",
-      "canonical": "phones",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 596,
-      "end": 602,
-      "id": "e4"
-    },
-    {
-      "surface": "in person",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
-      "section": "numbered_point",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
       "start": 693,
       "end": 702,
-      "id": "e5"
-    },
-    {
-      "surface": "50%",
-      "type": "TIME_REFERENCE",
-      "canonical": "50_percent",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e6"
-    },
-    {
-      "surface": "70%",
-      "type": "TIME_REFERENCE",
-      "canonical": "70_percent",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
-    },
-    {
-      "surface": "men",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
-    },
-    {
-      "surface": "women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e9"
+      "id": "e4"
     },
     {
       "surface": "text",
@@ -153,33 +85,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
-    },
-    {
-      "surface": "30%",
-      "type": "TIME_REFERENCE",
-      "canonical": "30_percent",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
-      "surface": "55%",
-      "type": "TIME_REFERENCE",
-      "canonical": "55_percent",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
+      "id": "e5"
     },
     {
       "surface": "Video Calls",
@@ -189,43 +95,31 @@
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e6"
     },
     {
-      "surface": "17%",
-      "type": "TIME_REFERENCE",
-      "canonical": "17_percent",
+      "surface": "phones",
+      "type": "OTHER_ENTITY",
+      "canonical": "phones",
+      "subtype": "other",
       "section": "numbered_point",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e7"
     },
     {
-      "surface": "25%",
-      "type": "TIME_REFERENCE",
-      "canonical": "25_percent",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "in person",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
+      "surface": "phones",
+      "type": "OTHER_ENTITY",
+      "canonical": "phones",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
@@ -233,12 +127,13 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e8"
     },
     {
-      "surface": "years",
-      "type": "TIME_REFERENCE",
-      "canonical": "years",
+      "surface": "parent",
+      "type": "OTHER_ENTITY",
+      "canonical": "parent",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
@@ -246,12 +141,38 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e9"
+    },
+    {
+      "surface": "years",
+      "type": "TIME_REFERENCE",
+      "canonical": "last_few_years",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
     },
     {
       "surface": "me and my community",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "my_community",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e11"
+    },
+    {
+      "surface": "generation",
+      "type": "OTHER_ENTITY",
+      "canonical": "generation",
       "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
@@ -260,7 +181,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e12"
     },
     {
       "surface": "smartphones",
@@ -274,7 +195,35 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e13"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "lazy",
+      "type": "OTHER_ENTITY",
+      "canonical": "laziness",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
     }
   ],
   "unresolved_mentions": [],
@@ -300,5 +249,5 @@
       "text": "Has in-person contact become irrelevant?"
     }
   ],
-  "tagged_text": "1.I notice that talking with parents in <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\">person</entity> has gone down and became somewhat irrelevant as being to lowest way to talk with parents. Between <entity type=\"TIME_REFERENCE\" canonical=\"50_percent\" section=\"numbered_point\">50%</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"70_percent\" section=\"numbered_point\">70%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"numbered_point\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"numbered_point\">women</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"numbered_point\">text</entity> their parents while <entity type=\"TIME_REFERENCE\" canonical=\"30_percent\" section=\"numbered_point\">30%</entity> to <entity type=\"TIME_REFERENCE\" canonical=\"55_percent\" section=\"numbered_point\">55%</entity> contact through <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"numbered_point\">Video Calls</entity>. In <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\">person</entity> however, it ranges between <entity type=\"TIME_REFERENCE\" canonical=\"17_percent\" section=\"numbered_point\">17%</entity> and <entity type=\"TIME_REFERENCE\" canonical=\"25_percent\" section=\"numbered_point\">25%</entity>. \n\n2.I wonder if <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\">phones</entity> affect how many times they contact their parent compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\" modality=\"questioned\">in person</entity>. I also wonder the rates throughout the <entity type=\"TIME_REFERENCE\" canonical=\"years\" section=\"numbered_point\" modality=\"questioned\">years</entity> to where <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\" modality=\"questioned\">in person</entity> contact will come to an end. \n\n3.This relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"numbered_point\" speaker_context=\"true\">me and my community</entity> because my generation grew up with <entity type=\"OTHER_ENTITY\" canonical=\"smartphones\" subtype=\"technology\" section=\"numbered_point\">smartphones</entity> and everyone is on it. They use <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\" section=\"numbered_point\">phones</entity> as avoidance from parents when there is conflict and seem lazy to talk with them maturely in <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\">person</entity>. \n\n4.Has in-person contact become irrelevant?"
+  "tagged_text": "1.I notice that talking with parents in <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\">person</entity> has gone down and became somewhat irrelevant as being to lowest way to talk with parents. Between 50% and 70% of men and women, <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"numbered_point\">text</entity> their parents while 30% to 55% contact through <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"numbered_point\">Video Calls</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\">In person</entity> however, it ranges between 17% and 25%. \n\n2.I wonder if <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\">phones</entity> affect how many times they contact their <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\" section=\"numbered_point\" modality=\"questioned\">parent</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\" modality=\"questioned\">in person</entity>. I also wonder the rates throughout the <entity type=\"TIME_REFERENCE\" canonical=\"last_few_years\" section=\"numbered_point\" modality=\"questioned\">years</entity> to where <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\" modality=\"questioned\">in person</entity> contact will come to an end. \n\n3.This relates to <entity type=\"LOCATION\" canonical=\"my_community\" section=\"numbered_point\" speaker_context=\"true\">me and my community</entity> because my <entity type=\"OTHER_ENTITY\" canonical=\"generation\" subtype=\"other\" section=\"numbered_point\" speaker_context=\"true\">generation</entity> grew up with <entity type=\"OTHER_ENTITY\" canonical=\"smartphones\" subtype=\"technology\" section=\"numbered_point\">smartphones</entity> and everyone is on it. They use <entity type=\"OTHER_ENTITY\" canonical=\"phones\" subtype=\"other\" section=\"numbered_point\">phones</entity> as avoidance from <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"numbered_point\">parents</entity> when there is conflict and seem <entity type=\"OTHER_ENTITY\" canonical=\"laziness\" subtype=\"concept\" section=\"numbered_point\">lazy</entity> to talk with them maturely in <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\">person</entity>. \n\n4.Has <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"numbered_point\">in-person</entity> contact become irrelevant?"
 }

@@ -74,10 +74,10 @@
       "id": "e4"
     },
     {
-      "surface": "stereotypes",
+      "surface": "stereotypes of the male figure",
       "type": "OTHER_ENTITY",
-      "canonical": "gender_stereotypes",
-      "subtype": "concept",
+      "canonical": "male_figure_stereotype",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -88,46 +88,18 @@
       "id": "e5"
     },
     {
-      "surface": "stereotypes",
+      "surface": "stereotypes of the female figure",
       "type": "OTHER_ENTITY",
-      "canonical": "gender_stereotypes",
-      "subtype": "concept",
+      "canonical": "female_figure_stereotype",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e6"
-    },
-    {
-      "surface": "male figure",
-      "type": "OTHER_ENTITY",
-      "canonical": "male_figure",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
-    },
-    {
-      "surface": "female figure",
-      "type": "OTHER_ENTITY",
-      "canonical": "female_figure",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e8"
     },
     {
       "surface": "young man",
@@ -137,11 +109,11 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e7"
     }
   ],
   "unresolved_mentions": [],
@@ -151,5 +123,5 @@
       "text": "I believe that young men don't contact their parents as much because of the stereotypes of the male figure being able to do it themselves and that they are strong and don't need help from anyone, much less their parents. However there are also stereotypes of the female figure being responsible for taking care of the parents. Personally though, I'm going to be the young man who contacts and sees their parents all the time."
     }
   ],
-  "tagged_text": "I believe that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> don't contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> as much because of the <entity type=\"OTHER_ENTITY\" canonical=\"gender_stereotypes\" subtype=\"concept\">stereotypes</entity> of the <entity type=\"OTHER_ENTITY\" canonical=\"male_figure\" subtype=\"other\">male figure</entity> being able to do it themselves and that they are strong and don't need help from anyone, much less their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. However there are also stereotypes of the <entity type=\"OTHER_ENTITY\" canonical=\"female_figure\" subtype=\"other\">female figure</entity> being responsible for taking care of the <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. Personally though, I'm going to be the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" speaker_context=\"true\">young man</entity> who contacts and sees their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> all the time."
+  "tagged_text": "I believe that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\">young men</entity> don't contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity> as much because of the <entity type=\"OTHER_ENTITY\" canonical=\"male_figure_stereotype\" subtype=\"other\" section=\"body\">stereotypes of the male figure</entity> being able to do it themselves and that they are strong and don't need help from anyone, much less their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity>. However there are also <entity type=\"OTHER_ENTITY\" canonical=\"female_figure_stereotype\" subtype=\"other\" section=\"body\">stereotypes of the female figure</entity> being responsible for taking care of the <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity>. Personally though, I'm going to be the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" speaker_context=\"true\">young man</entity> who contacts and sees their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity> all the time."
 }

@@ -45,17 +45,17 @@
       "id": "e2"
     },
     {
-      "surface": "women",
+      "surface": "young men",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
+      "canonical": "young_men",
       "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 158,
-      "end": 163,
+      "occurrence_index": 2,
+      "start": 209,
+      "end": 218,
       "id": "e3"
     },
     {
@@ -67,10 +67,24 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": 237,
       "end": 242,
       "id": "e4"
+    },
+    {
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 253,
+      "end": 258,
+      "id": "e5"
     },
     {
       "surface": "parents",
@@ -84,7 +98,7 @@
       "occurrence_index": 0,
       "start": 292,
       "end": 299,
-      "id": "e5"
+      "id": "e6"
     },
     {
       "surface": "parents",
@@ -98,7 +112,7 @@
       "occurrence_index": 1,
       "start": 385,
       "end": 392,
-      "id": "e6"
+      "id": "e7"
     },
     {
       "surface": "parents",
@@ -112,7 +126,7 @@
       "occurrence_index": 2,
       "start": 439,
       "end": 446,
-      "id": "e7"
+      "id": "e8"
     },
     {
       "surface": "parents",
@@ -126,33 +140,20 @@
       "occurrence_index": 3,
       "start": 539,
       "end": 546,
-      "id": "e8"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 4,
-      "start": 742,
-      "end": 749,
       "id": "e9"
     },
     {
-      "surface": "communications",
-      "type": "DATA_VAR",
-      "canonical": "communication_method",
+      "surface": "children",
+      "type": "OTHER_ENTITY",
+      "canonical": "children",
+      "subtype": "group",
       "section": "body",
-      "modality": "asserted",
+      "modality": "hypothetical",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 826,
-      "end": 840,
+      "start": 666,
+      "end": 674,
       "id": "e10"
     },
     {
@@ -161,13 +162,41 @@
       "canonical": "children",
       "subtype": "group",
       "section": "body",
-      "modality": "asserted",
+      "modality": "hypothetical",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 717,
+      "end": 725,
+      "id": "e11"
+    },
+    {
+      "surface": "children",
+      "type": "OTHER_ENTITY",
+      "canonical": "children",
+      "subtype": "group",
+      "section": "body",
+      "modality": "hypothetical",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 869,
+      "end": 877,
+      "id": "e12"
+    },
+    {
+      "surface": "complete chaos",
+      "type": "OTHER_ENTITY",
+      "canonical": "complete_chaos",
+      "subtype": "other",
+      "section": "body",
+      "modality": "hypothetical",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 869,
-      "end": 877,
-      "id": "e11"
+      "start": 933,
+      "end": 947,
+      "id": "e13"
     },
     {
       "surface": "Young People Reaching Out: A Viewpoint on Generational Shifts in Parental Relationships",
@@ -180,21 +209,35 @@
       "occurrence_index": 0,
       "start": 950,
       "end": 1037,
-      "id": "e12"
+      "id": "e14"
     },
     {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
+      "surface": "young men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 5,
+      "occurrence_index": 3,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e15"
+    },
+    {
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e16"
     },
     {
       "surface": "texts",
@@ -208,112 +251,71 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e17"
     },
     {
       "surface": "50%",
       "type": "OTHER_ENTITY",
-      "canonical": "50_percent",
+      "canonical": "percentage_50",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "70%",
-      "type": "OTHER_ENTITY",
-      "canonical": "70_percent",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "men",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
-      "surface": "communications",
-      "type": "DATA_VAR",
-      "canonical": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e18"
     },
     {
-      "surface": "children",
+      "surface": "70%",
       "type": "OTHER_ENTITY",
-      "canonical": "children",
-      "subtype": "group",
+      "canonical": "percentage_75",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e19"
     },
     {
-      "surface": "children",
+      "surface": "future generations",
       "type": "OTHER_ENTITY",
-      "canonical": "children",
+      "canonical": "future_generations",
       "subtype": "group",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e20"
     },
     {
-      "surface": "children",
+      "surface": "communications between children and their parents",
       "type": "OTHER_ENTITY",
-      "canonical": "children",
-      "subtype": "group",
+      "canonical": "communications_between_children_and_parents",
+      "subtype": "other",
       "section": "body",
-      "modality": "asserted",
+      "modality": "hypothetical",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 3,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e21"
     },
     {
-      "surface": "decision making",
+      "surface": "crimes",
       "type": "OTHER_ENTITY",
-      "canonical": "decision_making",
-      "subtype": "concept",
+      "canonical": "crimes",
+      "subtype": "other",
       "section": "body",
-      "modality": "asserted",
+      "modality": "hypothetical",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -322,26 +324,26 @@
       "id": "e22"
     },
     {
-      "surface": "decision making",
+      "surface": "children",
       "type": "OTHER_ENTITY",
-      "canonical": "decision_making",
-      "subtype": "concept",
+      "canonical": "children",
+      "subtype": "group",
       "section": "body",
-      "modality": "asserted",
+      "modality": "hypothetical",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 3,
       "start": null,
       "end": null,
       "id": "e23"
     },
     {
-      "surface": "educate them",
+      "surface": "decision making",
       "type": "OTHER_ENTITY",
-      "canonical": "educate_them",
+      "canonical": "decision_making",
       "subtype": "concept",
       "section": "body",
-      "modality": "asserted",
+      "modality": "hypothetical",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -350,59 +352,32 @@
       "id": "e24"
     },
     {
-      "surface": "educate them",
+      "surface": "decision making",
       "type": "OTHER_ENTITY",
-      "canonical": "educate_them",
+      "canonical": "decision_making",
       "subtype": "concept",
       "section": "body",
-      "modality": "asserted",
+      "modality": "hypothetical",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e25"
-    },
-    {
-      "surface": "lead them on the right path",
-      "type": "OTHER_ENTITY",
-      "canonical": "lead_them_on_the_right_path",
-      "subtype": "concept",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e26"
-    },
-    {
-      "surface": "lead them on the right path",
-      "type": "OTHER_ENTITY",
-      "canonical": "lead_them_on_the_right_path",
-      "subtype": "concept",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e27"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "I notice a graph that shows the percentages of how frequently young men and women reach out to their parents. In general, it is more likely for young men and women to reach out through texts with about 50% of young men and about 70% for women. Overall, women are more likely to contact their parents than men. \n\nI wonder how this may affect the future generations when reaching out to parents. If communications between children and their parents become less likely, is it more likely for crimes to increase? Most children depend on their parents for decision making, to educate them and lead them on the right path but if communications decrease significantly most children can begin to depend on themselves.\n\n Most children depend on their parents for decision making, to educate them and lead them on the right path but if communications decrease significantly most children can begin to depend on themselves and that can lead to complete chaos.\n\n"
+      "text": "I notice a graph that shows the percentages of how frequently young men and women reach out to their parents. In general, it is more likely for young men and women to reach out through texts with about 50% of young men and about 70% for women. Overall, women are more likely to contact their parents than men. \n\nI wonder how this may affect the future generations when reaching out to parents. If communications between children and their parents become less likely, is it more likely for crimes to increase? Most children depend on their parents for decision making, to educate them and lead them on the right path but if communications decrease significantly most children can begin to depend on themselves.\n\n Most children depend on their parents for decision making, to educate them and lead them on the right path but if communications decrease significantly most children can begin to depend on themselves and that can lead to complete chaos.\n\n",
+      "label": ""
     },
     {
       "section": "headline",
-      "label": "Young People Reaching Out: A Viewpoint on Generational Shifts in Parental Relationships",
+      "label": "",
       "text": "Young People Reaching Out: A Viewpoint on Generational Shifts in Parental Relationships"
     }
   ],
-  "tagged_text": "I notice a <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> that shows the percentages of how frequently <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. In general, it is more likely for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> to reach out through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity> with about <entity type=\"OTHER_ENTITY\" canonical=\"50_percent\" subtype=\"other\">50%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and about <entity type=\"OTHER_ENTITY\" canonical=\"70_percent\" subtype=\"other\">70%</entity> for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>. Overall, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> are more likely to contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>. \n\nI wonder how this may affect the future generations when reaching out to <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. If communications between children and their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> become less likely, is it more likely for crimes to increase? Most children depend on their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> for decision making, to educate them and lead them on the right path but if communications decrease significantly most children can begin to depend on themselves.\n\n Most children depend on their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> for decision making, to educate them and lead them on the right path but if communications decrease significantly most children can begin to depend on themselves and that can lead to complete chaos.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Young People Reaching Out: A Viewpoint on Generational Shifts in Parental Relationships</entity>"
+  "tagged_text": "I notice a <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> that shows the percentages of how frequently <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. In general, it is more likely for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> to reach out through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity> with about <entity type=\"OTHER_ENTITY\" canonical=\"percentage_50\" subtype=\"other\">50%</entity> of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and about <entity type=\"OTHER_ENTITY\" canonical=\"percentage_75\" subtype=\"other\">70%</entity> for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>. Overall, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> are more likely to contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>. \n\nI wonder how this may affect the <entity type=\"OTHER_ENTITY\" canonical=\"future_generations\" subtype=\"group\" modality=\"questioned\">future generations</entity> when reaching out to <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" modality=\"questioned\">parents</entity>. If <entity type=\"OTHER_ENTITY\" canonical=\"communications_between_children_and_parents\" subtype=\"other\" modality=\"hypothetical\">communications between children and their parents</entity> become less likely, is it more likely for <entity type=\"OTHER_ENTITY\" canonical=\"crimes\" subtype=\"other\" modality=\"hypothetical\">crimes</entity> to increase? Most <entity type=\"OTHER_ENTITY\" canonical=\"children\" subtype=\"group\" modality=\"hypothetical\">children</entity> depend on their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" modality=\"hypothetical\">parents</entity> for <entity type=\"OTHER_ENTITY\" canonical=\"decision_making\" subtype=\"concept\" modality=\"hypothetical\">decision making</entity>, to educate them and lead them on the right path but if communications decrease significantly most <entity type=\"OTHER_ENTITY\" canonical=\"children\" subtype=\"group\" modality=\"hypothetical\">children</entity> can begin to depend on themselves.\n\n Most <entity type=\"OTHER_ENTITY\" canonical=\"children\" subtype=\"group\" modality=\"hypothetical\">children</entity> depend on their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" modality=\"hypothetical\">parents</entity> for <entity type=\"OTHER_ENTITY\" canonical=\"decision_making\" subtype=\"concept\" modality=\"hypothetical\">decision making</entity>, to educate them and lead them on the right path but if communications decrease significantly most <entity type=\"OTHER_ENTITY\" canonical=\"children\" subtype=\"group\" modality=\"hypothetical\">children</entity> can begin to depend on themselves and that can lead to <entity type=\"OTHER_ENTITY\" canonical=\"complete_chaos\" subtype=\"other\" modality=\"hypothetical\">complete chaos</entity>.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"title\">Young People Reaching Out: A Viewpoint on Generational Shifts in Parental Relationships</entity>"
 }

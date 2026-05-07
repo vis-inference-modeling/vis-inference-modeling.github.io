@@ -1,0 +1,120 @@
+{
+  "article_id": "91",
+  "comment_index": 151,
+  "raw_comment": "What do you notice? \nI notice that the player to coach ratio for colour is significantly in favour for players of colour. I notice that the MLB is the lowest in terms of players of colour and the NFL is lowest for coaches of colour. \n\nWhat do you wonder? \nI wonder how this compares to the general population and why there is a significantly low percentage of coloured coaches. \n\nWhat impact does this have on you and your community? \nI think this impacts our communities in a good way, because it shows that diversity in sports is growing. \n\nWhat is going on in this graph? \nThe majority of the sports are dominated by players of color (ie. 83% NBA). However, most of coaches are white. This shows that poc get less higher management positions which is a bad impact on our community. \n\nCatchy title: Behind the screen. Is it really diverse in the front office?",
+  "entities": [
+    {
+      "surface": "MLB",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 140,
+      "end": 143,
+      "id": "e0"
+    },
+    {
+      "surface": "NFL",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nfl",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 196,
+      "end": 199,
+      "id": "e1"
+    },
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 620,
+      "end": 636,
+      "id": "e2"
+    },
+    {
+      "surface": "83%",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_players_of_color",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 642,
+      "end": 645,
+      "id": "e3"
+    },
+    {
+      "surface": "NBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 646,
+      "end": 649,
+      "id": "e4"
+    },
+    {
+      "surface": "poc",
+      "type": "OTHER_ENTITY",
+      "canonical": "poc",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 704,
+      "end": 707,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "coloured coaches",
+      "reason": "Likely refers to coaches of color, but the surface form is not an exact listed synonym and could be interpreted more broadly."
+    },
+    {
+      "surface": "general population",
+      "reason": "Abstract comparison group not in the reference list; unclear whether to tag as a group or leave untagged."
+    },
+    {
+      "surface": "diversity in sports",
+      "reason": "Abstract concept; could be tagged as OTHER_ENTITY/concept, but no confirmed canonical ID in the provided dictionary."
+    },
+    {
+      "surface": "higher management positions",
+      "reason": "Entity-like concept, but not clearly a reference-list item and may be too generic to canonicalize."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice? \nI notice that the player to coach ratio for colour is significantly in favour for players of colour. I notice that the MLB is the lowest in terms of players of colour and the NFL is lowest for coaches of colour. \n\nWhat do you wonder? \nI wonder how this compares to the general population and why there is a significantly low percentage of coloured coaches. \n\nWhat impact does this have on you and your community? \nI think this impacts our communities in a good way, because it shows that diversity in sports is growing. \n\nWhat is going on in this graph? \nThe majority of the sports are dominated by players of color (ie. 83% NBA). However, most of coaches are white. This shows that poc get less higher management positions which is a bad impact on our community."
+    },
+    {
+      "section": "headline",
+      "label": "Catchy title",
+      "text": "Behind the screen. Is it really diverse in the front office?"
+    }
+  ],
+  "tagged_text": "What do you notice? \nI notice that the player to coach ratio for colour is significantly in favour for players of colour. I notice that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\">MLB</entity> is the lowest in terms of players of colour and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"nfl\" var=\"sports_league\">NFL</entity> is lowest for coaches of colour. \n\nWhat do you wonder? \nI wonder how this compares to the general population and why there is a significantly low percentage of coloured coaches. \n\nWhat impact does this have on you and your community? \nI think this impacts our communities in a good way, because it shows that diversity in sports is growing. \n\nWhat is going on in this graph? \nThe majority of the sports are dominated by <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">players of color</entity> (ie. <entity type=\"DATA_VAR\" canonical=\"percentage_of_players_of_color\">83%</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\">NBA</entity>). However, most of coaches are white. This shows that <entity type=\"OTHER_ENTITY\" canonical=\"poc\" subtype=\"other\">poc</entity> get less higher management positions which is a bad impact on our community. \n\nCatchy title: Behind the screen. Is it really diverse in the front office?"
+}

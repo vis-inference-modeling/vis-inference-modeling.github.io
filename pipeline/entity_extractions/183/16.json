@@ -7,7 +7,7 @@
       "surface": "students",
       "type": "OTHER_ENTITY",
       "canonical": "students",
-      "subtype": "group",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -18,84 +18,73 @@
       "id": "e0"
     },
     {
-      "surface": "Are Young Men Ghosting Their Parents?",
+      "surface": "headlines",
       "type": "CHART_ELEMENT",
-      "canonical": "title",
+      "canonical": "headline",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 102,
-      "end": 139,
+      "start": 72,
+      "end": 81,
       "id": "e1"
     },
     {
-      "surface": "Tatum",
-      "type": "OTHER_ENTITY",
-      "canonical": "tatum",
-      "subtype": "person",
+      "surface": "Young Men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 144,
-      "end": 149,
+      "start": 106,
+      "end": 115,
       "id": "e2"
     },
     {
-      "surface": "Andover High School",
-      "type": "LOCATION",
-      "canonical": "andover_high_school",
+      "surface": "Parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 153,
-      "end": 172,
+      "start": 131,
+      "end": 138,
       "id": "e3"
     },
     {
-      "surface": "Mass.",
-      "type": "LOCATION",
-      "canonical": "massachusetts",
+      "surface": "Parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 176,
-      "end": 181,
+      "occurrence_index": 1,
+      "start": 184,
+      "end": 191,
       "id": "e4"
     },
     {
-      "surface": "Parents and Children: How Connected Are They Really?",
-      "type": "CHART_ELEMENT",
-      "canonical": "title",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 184,
-      "end": 236,
-      "id": "e5"
-    },
-    {
-      "surface": "Caroline",
+      "surface": "Children",
       "type": "OTHER_ENTITY",
-      "canonical": "caroline",
-      "subtype": "person",
+      "canonical": "children",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 241,
-      "end": 249,
-      "id": "e6"
+      "start": 196,
+      "end": 204,
+      "id": "e5"
     },
     {
       "surface": "Academy of Saint Elizabeth",
@@ -108,7 +97,7 @@
       "occurrence_index": 0,
       "start": 253,
       "end": 279,
-      "id": "e7"
+      "id": "e6"
     },
     {
       "surface": "Morristown, N.J.",
@@ -121,34 +110,21 @@
       "occurrence_index": 0,
       "start": 283,
       "end": 299,
-      "id": "e8"
+      "id": "e7"
     },
     {
-      "surface": "Family Connections in the Digital Age",
-      "type": "CHART_ELEMENT",
-      "canonical": "title",
+      "surface": "Family",
+      "type": "OTHER_ENTITY",
+      "canonical": "family",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 302,
-      "end": 339,
-      "id": "e9"
-    },
-    {
-      "surface": "Alea",
-      "type": "OTHER_ENTITY",
-      "canonical": "alea",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 344,
-      "end": 348,
-      "id": "e10"
+      "end": 308,
+      "id": "e8"
     },
     {
       "surface": "Calif.",
@@ -161,7 +137,7 @@
       "occurrence_index": 0,
       "start": 352,
       "end": 358,
-      "id": "e11"
+      "id": "e9"
     },
     {
       "surface": "California Polytechnic State University, San Luis Obispo",
@@ -174,7 +150,7 @@
       "occurrence_index": 0,
       "start": 385,
       "end": 441,
-      "id": "e12"
+      "id": "e10"
     },
     {
       "surface": "Staying in Touch: Why Do Young Women Seem to Do It More Frequently?",
@@ -187,48 +163,35 @@
       "occurrence_index": 0,
       "start": 445,
       "end": 512,
+      "id": "e11"
+    },
+    {
+      "surface": "Young Women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 470,
+      "end": 481,
+      "id": "e12"
+    },
+    {
+      "surface": "Young Women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 544,
+      "end": 555,
       "id": "e13"
-    },
-    {
-      "surface": "Miles",
-      "type": "OTHER_ENTITY",
-      "canonical": "miles",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 517,
-      "end": 522,
-      "id": "e14"
-    },
-    {
-      "surface": "Staying Connected: Young Women Lead in Family Communication",
-      "type": "CHART_ELEMENT",
-      "canonical": "title",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 525,
-      "end": 584,
-      "id": "e15"
-    },
-    {
-      "surface": "Hailey",
-      "type": "OTHER_ENTITY",
-      "canonical": "hailey",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 589,
-      "end": 595,
-      "id": "e16"
     },
     {
       "surface": "Screen Age: How Electronics Have Impacted Parental Communication",
@@ -241,21 +204,7 @@
       "occurrence_index": 0,
       "start": 601,
       "end": 665,
-      "id": "e17"
-    },
-    {
-      "surface": "Aaron",
-      "type": "OTHER_ENTITY",
-      "canonical": "aaron",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 670,
-      "end": 675,
-      "id": "e18"
+      "id": "e14"
     },
     {
       "surface": "Friday",
@@ -268,7 +217,7 @@
       "occurrence_index": 0,
       "start": 699,
       "end": 705,
-      "id": "e19"
+      "id": "e15"
     },
     {
       "surface": "Friday",
@@ -281,7 +230,20 @@
       "occurrence_index": 1,
       "start": 1070,
       "end": 1076,
-      "id": "e20"
+      "id": "e16"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1107,
+      "end": 1112,
+      "id": "e17"
     },
     {
       "surface": "HOTTER summers",
@@ -294,26 +256,12 @@
       "occurrence_index": 0,
       "start": 1127,
       "end": 1141,
-      "id": "e21"
-    },
-    {
-      "surface": "Sharon Hessney",
-      "type": "OTHER_ENTITY",
-      "canonical": "sharon_hessney",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1161,
-      "end": 1175,
-      "id": "e22"
+      "id": "e18"
     },
     {
       "surface": "Boston",
       "type": "LOCATION",
-      "canonical": "boston",
+      "canonical": "boston_massachusetts",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -321,39 +269,52 @@
       "occurrence_index": 0,
       "start": 1181,
       "end": 1187,
-      "id": "e23"
+      "id": "e19"
     },
     {
-      "surface": "Sunday at 11 am",
+      "surface": "college",
+      "type": "OTHER_ENTITY",
+      "canonical": "college",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 1228,
+      "end": 1235,
+      "id": "e20"
+    },
+    {
+      "surface": "Sunday",
       "type": "TIME_REFERENCE",
-      "canonical": "sunday_11_am",
+      "canonical": "friday",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 1270,
-      "end": 1285,
-      "id": "e24"
+      "end": 1276,
+      "id": "e21"
     },
     {
-      "surface": "Erica Heinzman",
-      "type": "OTHER_ENTITY",
-      "canonical": "erica_heinzman",
-      "subtype": "person",
+      "surface": "11 am",
+      "type": "TIME_REFERENCE",
+      "canonical": "9_am",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 1291,
-      "end": 1305,
-      "id": "e25"
+      "start": 1280,
+      "end": 1285,
+      "id": "e22"
     },
     {
       "surface": "San Diego",
       "type": "LOCATION",
-      "canonical": "san_diego",
+      "canonical": "san_diego_california",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -361,12 +322,12 @@
       "occurrence_index": 0,
       "start": 1309,
       "end": 1318,
-      "id": "e26"
+      "id": "e23"
     },
     {
-      "surface": "school year",
-      "type": "TIME_REFERENCE",
-      "canonical": "school_year",
+      "surface": "Andover High School",
+      "type": "LOCATION",
+      "canonical": "andover_high_school",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -374,7 +335,85 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e24"
+    },
+    {
+      "surface": "Mass.",
+      "type": "LOCATION",
+      "canonical": "massachusetts",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e25"
+    },
+    {
+      "surface": "Staying Connected: Young Women Lead in Family Communication",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e26"
+    },
+    {
+      "surface": "Friday",
+      "type": "TIME_REFERENCE",
+      "canonical": "friday",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
       "id": "e27"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e28"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e29"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 3,
+      "start": null,
+      "end": null,
+      "id": "e30"
     }
   ],
   "unresolved_mentions": [],
@@ -384,5 +423,5 @@
       "text": "Thanks to all the students who responded.   Here are some of the catchy headlines that we received:  “Are Young Men Ghosting Their Parents?” by Tatum of Andover High School in Mass.; \"Parents and Children: How Connected Are They Really?\" by Caroline of Academy of Saint Elizabeth in Morristown, N.J.; \"Family Connections in the Digital Age\" by Alea of Calif.; and three headlines from California Polytechnic State University, San Luis Obispo – \"Staying in Touch: Why Do Young Women Seem to Do It More Frequently?\" by Miles, \"Staying Connected: Young Women Lead in Family Communication\" by Hailey and \"Screen Age: How Electronics Have Impacted Parental Communication\" by Aaron. \n\n \n\nPlease return on Friday when we will reveal the free link to the article that included this graph, a summary of the article, additional questions, shout outs for some of the best headlines for the graph and Stat Nuggets -- definitions of words that relate to the graphs and where you can find them in the graphs.\n\n \n\nThis is the second to last graph of the school year.  Please return on Friday when we will release the last graph.  The topic – HOTTER summers.\n\n \n\nSigning off – Sharon Hessney from Boston, who used to write letters home when in college and paid by the minute to call on Sunday at 11 am, and Erica Heinzman of San Diego, who is thankful the days of long distance charges are in the past, though sometimes it is best said on a handwritten card you can treasure"
     }
   ],
-  "tagged_text": "Thanks to all the <entity type=\"OTHER_ENTITY\" canonical=\"students\" subtype=\"group\">students</entity> who responded.   Here are some of the catchy headlines that we received:  “<entity type=\"CHART_ELEMENT\" canonical=\"title\">Are Young Men Ghosting Their Parents?</entity>” by <entity type=\"OTHER_ENTITY\" canonical=\"tatum\" subtype=\"person\">Tatum</entity> of <entity type=\"LOCATION\" canonical=\"andover_high_school\">Andover High School</entity> in <entity type=\"LOCATION\" canonical=\"massachusetts\">Mass.</entity>; \"<entity type=\"CHART_ELEMENT\" canonical=\"title\">Parents and Children: How Connected Are They Really?</entity>\" by <entity type=\"OTHER_ENTITY\" canonical=\"caroline\" subtype=\"person\">Caroline</entity> of <entity type=\"LOCATION\" canonical=\"academy_of_saint_elizabeth\">Academy of Saint Elizabeth</entity> in <entity type=\"LOCATION\" canonical=\"morristown_new_jersey\">Morristown, N.J.</entity>; \"<entity type=\"CHART_ELEMENT\" canonical=\"title\">Family Connections in the Digital Age</entity>\" by <entity type=\"OTHER_ENTITY\" canonical=\"alea\" subtype=\"person\">Alea</entity> of <entity type=\"LOCATION\" canonical=\"california\">Calif.</entity>; and three headlines from <entity type=\"LOCATION\" canonical=\"california_polytechnic_state_university_san_luis_obispo\">California Polytechnic State University, San Luis Obispo</entity> – \"<entity type=\"CHART_ELEMENT\" canonical=\"title\">Staying in Touch: Why Do Young Women Seem to Do It More Frequently?</entity>\" by <entity type=\"OTHER_ENTITY\" canonical=\"miles\" subtype=\"person\">Miles</entity>, \"<entity type=\"CHART_ELEMENT\" canonical=\"title\">Staying Connected: Young Women Lead in Family Communication</entity>\" by <entity type=\"OTHER_ENTITY\" canonical=\"hailey\" subtype=\"person\">Hailey</entity> and \"<entity type=\"CHART_ELEMENT\" canonical=\"title\">Screen Age: How Electronics Have Impacted Parental Communication</entity>\" by <entity type=\"OTHER_ENTITY\" canonical=\"aaron\" subtype=\"person\">Aaron</entity>. \n\n \n\nPlease return on <entity type=\"TIME_REFERENCE\" canonical=\"friday\">Friday</entity> when we will reveal the free link to the article that included this graph, a summary of the article, additional questions, shout outs for some of the best headlines for the graph and Stat Nuggets -- definitions of words that relate to the graphs and where you can find them in the graphs.\n\n \n\nThis is the second to last graph of the <entity type=\"TIME_REFERENCE\" canonical=\"school_year\">school year</entity>.  Please return on <entity type=\"TIME_REFERENCE\" canonical=\"friday\">Friday</entity> when we will release the last graph.  The topic – <entity type=\"EVENT\" canonical=\"hotter_summers\">HOTTER summers</entity>.\n\n \n\nSigning off – <entity type=\"OTHER_ENTITY\" canonical=\"sharon_hessney\" subtype=\"person\">Sharon Hessney</entity> from <entity type=\"LOCATION\" canonical=\"boston\">Boston</entity>, who used to write letters home when in college and paid by the minute to call on <entity type=\"TIME_REFERENCE\" canonical=\"sunday_11_am\">Sunday at 11 am</entity>, and <entity type=\"OTHER_ENTITY\" canonical=\"erica_heinzman\" subtype=\"person\">Erica Heinzman</entity> of <entity type=\"LOCATION\" canonical=\"san_diego\">San Diego</entity>, who is thankful the days of long distance charges are in the past, though sometimes it is best said on a handwritten card you can treasure"
+  "tagged_text": "Thanks to all the <entity type=\"OTHER_ENTITY\" canonical=\"students\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">students</entity> who responded.   Here are some of the catchy <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">headlines</entity> that we received:  “Are <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Young Men</entity> Ghosting Their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Parents</entity>?” by Tatum of <entity type=\"LOCATION\" canonical=\"andover_high_school\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Andover High School</entity> in <entity type=\"LOCATION\" canonical=\"massachusetts\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Mass.</entity>; \"<entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Parents</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"children\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Children</entity>: How Connected Are They Really?\" by Caroline of <entity type=\"LOCATION\" canonical=\"academy_of_saint_elizabeth\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Academy of Saint Elizabeth</entity> in <entity type=\"LOCATION\" canonical=\"morristown_new_jersey\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Morristown, N.J.</entity>; \"<entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Family</entity> Connections in the Digital Age\" by Alea of <entity type=\"LOCATION\" canonical=\"california\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Calif.</entity>; and three headlines from <entity type=\"LOCATION\" canonical=\"california_polytechnic_state_university_san_luis_obispo\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">California Polytechnic State University, San Luis Obispo</entity> – \"<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Staying in Touch: Why Do <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Young Women</entity> Seem to Do It More Frequently?</entity>\" by Miles, \"<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Staying Connected: <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Young Women</entity> Lead in Family Communication</entity>\" by Hailey and \"<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Screen Age: How Electronics Have Impacted Parental Communication</entity>\" by Aaron. \n\n \n\nPlease return on <entity type=\"TIME_REFERENCE\" canonical=\"friday\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Friday</entity> when we will reveal the free link to the article that included this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">graph</entity>, a summary of the article, additional questions, shout outs for some of the best headlines for the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">graph</entity> and Stat Nuggets -- definitions of words that relate to the graphs and where you can find them in the graphs.\n\n \n\nThis is the second to last <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">graph</entity> of the school year.  Please return on <entity type=\"TIME_REFERENCE\" canonical=\"friday\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Friday</entity> when we will release the last <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">graph</entity>.  The topic – <entity type=\"EVENT\" canonical=\"hotter_summers\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">HOTTER summers</entity>.\n\n \n\nSigning off – Sharon Hessney from <entity type=\"LOCATION\" canonical=\"boston_massachusetts\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Boston</entity>, who used to write letters home when in <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">college</entity> and paid by the minute to call on <entity type=\"TIME_REFERENCE\" canonical=\"friday\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">Sunday</entity> at <entity type=\"TIME_REFERENCE\" canonical=\"9_am\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">11 am</entity>, and Erica Heinzman of <entity type=\"LOCATION\" canonical=\"san_diego_california\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\">San Diego</entity>, who is thankful the days of long distance charges are in the past, though sometimes it is best said on a handwritten card you can treasure"
 }

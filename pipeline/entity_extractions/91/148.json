@@ -1,0 +1,115 @@
+{
+  "article_id": "91",
+  "comment_index": 148,
+  "raw_comment": "I noticed that there are a good amount of players of color and that each league has different percentages. I wonder why there are more colored payers then colored coaches on these league teams. This impacts my community by showing other people that they can make it into a league team. they might not have the highest chance in getting one but if they try and are good they have a pretty good chance.",
+  "entities": [
+    {
+      "surface": "players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 42,
+      "end": 49,
+      "id": "e0"
+    },
+    {
+      "surface": "league",
+      "type": "DATA_VAR",
+      "canonical": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 73,
+      "end": 79,
+      "id": "e1"
+    },
+    {
+      "surface": "league",
+      "type": "DATA_VAR",
+      "canonical": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 180,
+      "end": 186,
+      "id": "e2"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 210,
+      "end": 219,
+      "id": "e3"
+    },
+    {
+      "surface": "league team",
+      "type": "OTHER_ENTITY",
+      "canonical": "team",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 273,
+      "end": 284,
+      "id": "e4"
+    },
+    {
+      "surface": "colored",
+      "type": "OTHER_ENTITY",
+      "canonical": "colored_people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    },
+    {
+      "surface": "colored",
+      "type": "OTHER_ENTITY",
+      "canonical": "colored_people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "payers",
+      "reason": "Likely a misspelling of 'players'; uncertain whether to normalize or tag as the intended entity."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that there are a good amount of players of color and that each league has different percentages. I wonder why there are more colored payers then colored coaches on these league teams. This impacts my community by showing other people that they can make it into a league team. they might not have the highest chance in getting one but if they try and are good they have a pretty good chance."
+    }
+  ],
+  "tagged_text": "I noticed that there are a good amount of <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\" section=\"body\">players</entity> of color and that each <entity type=\"DATA_VAR\" canonical=\"sports_league\" section=\"body\">league</entity> has different percentages. I wonder why there are more <entity type=\"OTHER_ENTITY\" canonical=\"colored_people\" subtype=\"group\" section=\"body\">colored</entity> payers then <entity type=\"OTHER_ENTITY\" canonical=\"colored_people\" subtype=\"group\" section=\"body\">colored</entity> coaches on these <entity type=\"DATA_VAR\" canonical=\"sports_league\" section=\"body\">league</entity> teams. This impacts my <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" speaker_context=\"true\">community</entity> by showing other people that they can make it into a <entity type=\"OTHER_ENTITY\" canonical=\"team\" subtype=\"group\" section=\"body\">league team</entity>. they might not have the highest chance in getting one but if they try and are good they have a pretty good chance."
+}

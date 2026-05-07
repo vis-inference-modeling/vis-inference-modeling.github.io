@@ -62,8 +62,8 @@
     {
       "surface": "woman",
       "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "subtype": "other",
+      "canonical": "woman",
+      "subtype": "person",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -74,24 +74,24 @@
       "id": "e4"
     },
     {
-      "surface": "woman",
+      "surface": "relationship",
       "type": "OTHER_ENTITY",
-      "canonical": "women",
+      "canonical": "relationships",
       "subtype": "other",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e5"
     },
     {
-      "surface": "relationship",
-      "type": "OTHER_ENTITY",
-      "canonical": "relationships",
-      "subtype": "concept",
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -103,23 +103,9 @@
     },
     {
       "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "subtype": "group",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e7"
-    },
-    {
-      "surface": "men",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "subtype": "group",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -127,16 +113,29 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e8"
+      "id": "e7"
     },
     {
       "surface": "my community",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e8"
+    },
+    {
+      "surface": "woman",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -162,9 +161,8 @@
   "section_segments": [
     {
       "section": "body",
-      "label": "",
       "text": "I noticed that young woman reached out to their parents more than young men. I wonder if this trend is caused due to woman wanting to continue the relationship with them and if it’s “uncool” for men to reach out. This relates to my community because i’ve seen many woman come back and spend time with their family’s. What is the reason for men being less active with their parents?"
     }
   ],
-  "tagged_text": "I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young woman</entity> reached out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young men</entity>. I wonder if this trend is caused due to <entity type=\"OTHER_ENTITY\" canonical=\"women\" subtype=\"other\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">woman</entity> wanting to continue the <entity type=\"OTHER_ENTITY\" canonical=\"relationships\" subtype=\"concept\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">relationship</entity> with them and if it’s “uncool” for <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">men</entity> to reach out. This relates to <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">my community</entity> because i’ve seen many <entity type=\"OTHER_ENTITY\" canonical=\"women\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">woman</entity> come back and spend time with their <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">family’s</entity>. What is the reason for <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">men</entity> being less active with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity>?"
+  "tagged_text": "I noticed that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young woman</entity> reached out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>. I wonder if this trend is caused due to <entity type=\"OTHER_ENTITY\" canonical=\"woman\" subtype=\"person\" modality=\"questioned\">woman</entity> wanting to continue the <entity type=\"OTHER_ENTITY\" canonical=\"relationships\" subtype=\"other\" modality=\"questioned\">relationship</entity> with them and if it’s “uncool” for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" modality=\"questioned\">men</entity> to reach out. This relates to <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">my community</entity> because i’ve seen many <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">woman</entity> come back and spend time with their <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\">family’s</entity>. What is the reason for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> being less active with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>?"
 }

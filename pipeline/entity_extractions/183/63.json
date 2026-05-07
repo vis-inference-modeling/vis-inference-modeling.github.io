@@ -59,17 +59,17 @@
       "id": "e3"
     },
     {
-      "surface": "women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": 268,
-      "end": 273,
+      "occurrence_index": 0,
+      "start": 170,
+      "end": 177,
       "id": "e4"
     },
     {
@@ -81,7 +81,7 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": 572,
       "end": 579,
       "id": "e5"
@@ -103,7 +103,7 @@
     {
       "surface": "Staying Connected in 2024",
       "type": "CHART_ELEMENT",
-      "canonical": "staying_connected_in_2024",
+      "canonical": "title",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -136,24 +136,10 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e9"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e9"
     },
     {
       "surface": "texts",
@@ -167,7 +153,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e10"
     },
     {
       "surface": "phone calls",
@@ -181,7 +167,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e11"
     },
     {
       "surface": "in-person communication",
@@ -191,7 +177,21 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
@@ -200,12 +200,12 @@
     {
       "surface": "societal norms",
       "type": "OTHER_ENTITY",
-      "canonical": "societal_standards",
+      "canonical": "societal_gender_norms",
       "subtype": "concept",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
@@ -254,9 +254,8 @@
     },
     {
       "surface": "community",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -269,7 +268,7 @@
     {
       "surface": "age range",
       "type": "TIME_REFERENCE",
-      "canonical": "age_range_of_respondents",
+      "canonical": "age",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -316,9 +315,9 @@
     },
     {
       "section": "headline",
-      "label": "Staying Connected in 2024",
+      "label": "Title",
       "text": "Staying Connected in 2024"
     }
   ],
-  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"graph\">This graph</entity> shows how <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> socialize with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone calls</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">in-person communication</entity>. I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> communicate with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> do in all forms. I wonder if this is because of built-in <entity type=\"OTHER_ENTITY\" canonical=\"societal_standards\" subtype=\"concept\" modality=\"questioned\">societal norms</entity> for <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" modality=\"questioned\">women</entity> regarding their role in <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" modality=\"questioned\">family</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"socialization\" subtype=\"concept\" modality=\"questioned\">socialization</entity>. I also wonder how this chart would compare to a similar chart <entity type=\"TIME_REFERENCE\" canonical=\"30_years_ago\" modality=\"questioned\">30 years in the past</entity>. This relates to me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because I am almost entering the <entity type=\"TIME_REFERENCE\" canonical=\"age_range_of_respondents\" speaker_context=\"true\">age range</entity> that these statistics are concerning, so it makes me sad that one day I won't see my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> every day. I think we take our <entity type=\"OTHER_ENTITY\" canonical=\"families\" subtype=\"other\">families</entity> for granted a lot and I hope that I communicate with my <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" speaker_context=\"true\">family</entity> on a normal basis when I get older. \n\"<entity type=\"CHART_ELEMENT\" canonical=\"staying_connected_in_2024\" section=\"headline\">Staying Connected in 2024</entity>\""
+  "tagged_text": "<entity type=\"CHART_ELEMENT\" canonical=\"graph\">This graph</entity> shows how <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> socialize with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone calls</entity>, and <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">in-person communication</entity>. I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> communicate with their parents more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> do in all forms. I wonder if this is because of built-in <entity type=\"OTHER_ENTITY\" canonical=\"societal_gender_norms\" subtype=\"concept\" modality=\"questioned\">societal norms</entity> for women regarding their role in <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" modality=\"questioned\">family</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"socialization\" subtype=\"concept\" modality=\"questioned\">socialization</entity>. I also wonder how this chart would compare to a similar chart <entity type=\"TIME_REFERENCE\" canonical=\"30_years_ago\" modality=\"questioned\">30 years in the past</entity>. This relates to me and my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because I am almost entering the <entity type=\"TIME_REFERENCE\" canonical=\"age\" speaker_context=\"true\">age range</entity> that these statistics are concerning, so it makes me sad that one day I won't see my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> every day. I think we take our <entity type=\"OTHER_ENTITY\" canonical=\"families\" subtype=\"other\">families</entity> for granted a lot and I hope that I communicate with my <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" speaker_context=\"true\">family</entity> on a normal basis when I get older. \n\"<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Staying Connected in 2024</entity>\""
 }

@@ -74,17 +74,17 @@
       "id": "e4"
     },
     {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
+      "surface": "call",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 3,
-      "start": 1154,
-      "end": 1161,
+      "occurrence_index": 0,
+      "start": 1149,
+      "end": 1153,
       "id": "e5"
     },
     {
@@ -96,7 +96,7 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": 1360,
       "end": 1364,
       "id": "e6"
@@ -130,15 +130,15 @@
       "id": "e8"
     },
     {
-      "surface": "call",
+      "surface": "text",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "phone_or_video_chat",
+      "canonical": "send_texts",
       "var": "communication_method",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e9"
@@ -152,29 +152,15 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e10"
     },
     {
-      "surface": "text",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e11"
-    },
-    {
       "surface": "18-34",
       "type": "TIME_REFERENCE",
-      "canonical": "18_to_34",
+      "canonical": "18_34",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -182,13 +168,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e11"
     },
     {
-      "surface": "visit",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
+      "surface": "distance",
+      "type": "LOCATION",
+      "canonical": "distance",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -196,12 +181,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e12"
     },
     {
       "surface": "C'mon, they deserve a call",
       "type": "CHART_ELEMENT",
-      "canonical": "cmon_they_deserve_a_call",
+      "canonical": "title",
       "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
@@ -209,20 +194,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e13"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "text": "The first thing to note is that for every row the young women's percentage was greater than the young men's. This is likely due to a variety of factors one of which I believe is that parents are more protective over their daughters compared to their sons. I would assume a good amount of these responses are from young adults whose parents require them to call or text at least once a week. There are a lot of things I wonder about the graph, one of them being if there is a difference between the teens and the people in their thirties. The survey targeted people from the ages 18-34, which in my opinion is a pretty large gap. I would be interested in learning how getting older affects how often you reach out to your parents.  There are many ways to categorize this data, in college or not in college, taken or single, and living in a different time zone or the same time zore are just some of the many ways that this data could be explored. I would also wonder if the survey counted reaching out if the young adult was just responding to a previous text from a parent. Reaching out, especially for texting, is a little ambiguous. Personally, I call parents at least once a week and text them very often throughout the week. I don't visit them due to the distance thought. This all lines up very well with the data. A title could be \"C'mon, they deserve a call\""
+      "text": "The first thing to note is that for every row the young women's percentage was greater than the young men's. This is likely due to a variety of factors one of which I believe is that parents are more protective over their daughters compared to their sons. I would assume a good amount of these responses are from young adults whose parents require them to call or text at least once a week. There are a lot of things I wonder about the graph, one of them being if there is a difference between the teens and the people in their thirties. The survey targeted people from the ages 18-34, which in my opinion is a pretty large gap. I would be interested in learning how getting older affects how often you reach out to your parents.  There are many ways to categorize this data, in college or not in college, taken or single, and living in a different time zone or the same time zore are just some of the many ways that this data could be explored. I would also wonder if the survey counted reaching out if the young adult was just responding to a previous text from a parent. Reaching out, especially for texting, is a little ambiguous. Personally, I call parents at least once a week and text them very often throughout the week. I don't visit them due to the distance thought. This all lines up very well with the data."
     },
     {
       "section": "headline",
       "label": "A title could be",
-      "text": "C'mon, they deserve a call"
+      "text": "\"C'mon, they deserve a call\""
     }
   ],
-  "tagged_text": "The first thing to note is that for every row the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women's</entity> percentage was greater than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men's</entity>. This is likely due to a variety of factors one of which I believe is that <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> are more protective over their daughters compared to their sons. I would assume a good amount of these responses are from <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\" subtype=\"group\">young adults</entity> whose <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> require them to <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">call</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> at least once a week. There are a lot of things I wonder about the graph, one of them being if there is a difference between the teens and the people in their thirties. The survey targeted people from the ages <entity type=\"TIME_REFERENCE\" canonical=\"18_to_34\">18-34</entity>, which in my opinion is a pretty large gap. I would be interested in learning how getting older affects how often you reach out to your <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>.  There are many ways to categorize this data, in college or not in college, taken or single, and living in a different time zone or the same time zore are just some of the many ways that this data could be explored. I would also wonder if the survey counted reaching out if the young adult was just responding to a previous text from a parent. Reaching out, especially for texting, is a little ambiguous. Personally, I <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" speaker_context=\"true\">call</entity> parents at least once a week and <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" speaker_context=\"true\">text</entity> them very often throughout the week. I don't <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" speaker_context=\"true\">visit</entity> them due to the distance thought. This all lines up very well with the data. A title could be \"C'mon, they deserve a call\""
+  "tagged_text": "The first thing to note is that for every row the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women's</entity> percentage was greater than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men's</entity>. This is likely due to a variety of factors one of which I believe is that <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> are more protective over their daughters compared to their sons. I would assume a good amount of these responses are from <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\" subtype=\"group\">young adults</entity> whose parents require them to <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">call</entity> or <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> at least once a week. There are a lot of things I wonder about the graph, one of them being if there is a difference between the teens and the people in their thirties. The survey targeted people from the ages <entity type=\"TIME_REFERENCE\" canonical=\"18_34\">18-34</entity>, which in my opinion is a pretty large gap. I would be interested in learning how getting older affects how often you reach out to your parents.  There are many ways to categorize this data, in college or not in college, taken or single, and living in a different time zone or the same time zore are just some of the many ways that this data could be explored. I would also wonder if the survey counted reaching out if the young adult was just responding to a previous text from a parent. Reaching out, especially for texting, is a little ambiguous. Personally, I <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" speaker_context=\"true\">call</entity> parents at least once a week and <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" speaker_context=\"true\">text</entity> them very often throughout the week. I don't visit them due to the <entity type=\"LOCATION\" canonical=\"distance\" speaker_context=\"true\">distance</entity> thought. This all lines up very well with the data. A title could be \"C'mon, they deserve a call\""
 }

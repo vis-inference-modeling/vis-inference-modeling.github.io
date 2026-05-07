@@ -8,7 +8,7 @@
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_men",
       "var": "gender_group",
-      "section": "numbered_point",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -22,7 +22,7 @@
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
       "var": "gender_group",
-      "section": "numbered_point",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -36,7 +36,7 @@
       "type": "DATA_VAR_LEVEL",
       "canonical": "send_texts",
       "var": "communication_method",
-      "section": "numbered_point",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
@@ -50,8 +50,8 @@
       "type": "OTHER_ENTITY",
       "canonical": "parents",
       "subtype": "other",
-      "section": "numbered_point",
-      "modality": "questioned",
+      "section": "body",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -64,8 +64,8 @@
       "type": "OTHER_ENTITY",
       "canonical": "parents",
       "subtype": "other",
-      "section": "numbered_point",
-      "modality": "questioned",
+      "section": "body",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 1,
@@ -74,98 +74,81 @@
       "id": "e4"
     },
     {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": 299,
+      "end": 306,
+      "id": "e5"
+    },
+    {
+      "surface": "Say Hello: How Often Young Adults Communicate With Their Parents",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 311,
+      "end": 375,
+      "id": "e6"
+    },
+    {
       "surface": "visit in person",
       "type": "DATA_VAR_LEVEL",
       "canonical": "visit_in_person",
       "var": "communication_method",
-      "section": "numbered_point",
+      "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 165,
-      "end": 180,
-      "id": "e5"
-    },
-    {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 197,
-      "end": 199,
-      "id": "e6"
+      "start": null,
+      "end": null,
+      "id": "e7"
     },
     {
       "surface": "senior in high school",
       "type": "OTHER_ENTITY",
       "canonical": "senior_in_high_school",
       "subtype": "person",
-      "section": "numbered_point",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 210,
-      "end": 231,
-      "id": "e7"
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "college",
       "type": "OTHER_ENTITY",
       "canonical": "college",
       "subtype": "other",
-      "section": "numbered_point",
+      "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 255,
-      "end": 262,
-      "id": "e8"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
-      "subtype": "other",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 299,
-      "end": 306,
+      "start": null,
+      "end": null,
       "id": "e9"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
-      "section": "numbered_point",
-      "label": "1",
-      "text": "I notice that a higher percentage of both men and women send texts to communicate with their parents."
-    },
-    {
-      "section": "numbered_point",
-      "label": "2",
-      "text": "I wonder how close the parents live to them to those who visit in person"
-    },
-    {
-      "section": "numbered_point",
-      "label": "3",
-      "text": "This impacts me as I am a senior in high school and have yet to attend college, where I will not be living with my parents."
-    },
-    {
-      "section": "headline",
-      "label": "4",
-      "text": "Say Hello: How Often Young Adults Communicate With Their Parents"
+      "section": "body",
+      "text": "I notice that a higher percentage of both men and women send texts to communicate with their parents.\nI wonder how close the parents live to them to those who visit in person\nThis impacts me as I am a senior in high school and have yet to attend college, where I will not be living with my parents.\nSay Hello: How Often Young Adults Communicate With Their Parents"
     }
   ],
-  "tagged_text": "1. I notice that a higher percentage of both <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send texts</entity> to communicate with their parents.\n2. I wonder how close the <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> live to them to those who <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit in person</entity>\n3. This impacts <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> as I am a <entity type=\"OTHER_ENTITY\" canonical=\"senior_in_high_school\" subtype=\"person\" speaker_context=\"true\">senior in high school</entity> and have yet to attend <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college</entity>, where I will not be living with my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>.\n4. Say Hello: How Often Young Adults Communicate With Their Parents"
+  "tagged_text": "1. I notice that a higher percentage of both <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\">women</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\">send texts</entity> to communicate with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity>.\n2. I wonder how close the <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"questioned\">parents</entity> live to them to those who <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"body\" modality=\"questioned\">visit in person</entity>\n3. This impacts me as I am a <entity type=\"OTHER_ENTITY\" canonical=\"senior_in_high_school\" subtype=\"person\" speaker_context=\"true\" section=\"body\">senior in high school</entity> and have yet to attend <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" section=\"body\">college</entity>, where I will not be living with my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity>.\n4. <entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Say Hello: How Often Young Adults Communicate With Their Parents</entity>"
 }

@@ -43,17 +43,17 @@
       "id": "e2"
     },
     {
-      "surface": "parents",
+      "surface": "parent",
       "type": "OTHER_ENTITY",
-      "canonical": "parents",
+      "canonical": "parent",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 667,
-      "end": 674,
+      "end": 673,
       "id": "e3"
     },
     {
@@ -99,17 +99,16 @@
       "id": "e6"
     },
     {
-      "surface": "young women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
+      "surface": "ages",
+      "type": "TIME_REFERENCE",
+      "canonical": "age",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": null,
-      "end": null,
+      "start": 800,
+      "end": 804,
       "id": "e7"
     },
     {
@@ -121,30 +120,30 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e8"
     },
     {
-      "surface": "young men",
+      "surface": "young women",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
+      "canonical": "young_women",
       "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e9"
     },
     {
-      "surface": "young men",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
+      "surface": "parent",
+      "type": "OTHER_ENTITY",
+      "canonical": "parent",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -155,24 +154,23 @@
       "id": "e10"
     },
     {
-      "surface": "young men",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
+      "surface": "few times a week",
+      "type": "TIME_REFERENCE",
+      "canonical": "3_times_a_week",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e11"
     },
     {
-      "surface": "parent(s)",
-      "type": "OTHER_ENTITY",
-      "canonical": "parent",
-      "subtype": "other",
+      "surface": "young men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -183,10 +181,52 @@
       "id": "e12"
     },
     {
+      "surface": "young men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e13"
+    },
+    {
+      "surface": "generational influence",
+      "type": "OTHER_ENTITY",
+      "canonical": "generational_influence",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e14"
+    },
+    {
+      "surface": "parent(s)",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
+    },
+    {
       "surface": "family",
       "type": "OTHER_ENTITY",
       "canonical": "family",
-      "subtype": "other",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -194,7 +234,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e16"
     },
     {
       "surface": "friends",
@@ -208,7 +248,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e17"
     },
     {
       "surface": "college",
@@ -222,7 +262,49 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e18"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e21"
     }
   ],
   "unresolved_mentions": [],
@@ -232,5 +314,5 @@
       "text": "After I looked at the graph, I noticed that more young women reach out to a parent at least once a day or a few times a week than young men. Based on these observations, I wonder if there is a scientific reason or generational influence behind why less young men contact a parent compared to young women when they live away from their parent(s). The results portrayed in the graph relate to many of my family, friends, and I who are either close to or currently entering college and adulthood which likely involves moving away from our parents and childhood homes. When we reach this stage in our lives, this graph can help predict how often we will connect with our parents through texting, calling, or visiting in person because the samples of people used in the graph are not too distant from our ages, and the experiment is recent."
     }
   ],
-  "tagged_text": "After I looked at the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity>, I noticed that more <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> reach out to a parent at least once a day or a few times a week than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity>. Based on these observations, I wonder if there is a scientific reason or generational influence behind why less <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" modality=\"questioned\">young men</entity> contact a parent compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" modality=\"questioned\">young women</entity> when they live away from their <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\" modality=\"questioned\">parent(s)</entity>. The results portrayed in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> relate to many of my <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"other\" speaker_context=\"true\">family</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"friends\" subtype=\"group\" speaker_context=\"true\">friends</entity>, and I who are either close to or currently entering <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college</entity> and adulthood which likely involves moving away from our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> and childhood homes. When we reach this stage in our lives, this <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> can help predict how often we will connect with our parents through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calling</entity>, or <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visiting in person</entity> because the samples of people used in the graph are not too distant from our ages, and the experiment is recent."
+  "tagged_text": "After I looked at the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity>, I noticed that more <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\">young women</entity> reach out to a <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\" section=\"body\">parent</entity> at least once a day or a <entity type=\"TIME_REFERENCE\" canonical=\"3_times_a_week\" section=\"body\">few times a week</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\">young men</entity>. Based on these observations, I wonder if there is a scientific reason or <entity type=\"OTHER_ENTITY\" canonical=\"generational_influence\" subtype=\"concept\" section=\"body\" modality=\"questioned\">generational influence</entity> behind why less <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"questioned\">young men</entity> contact a <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\" section=\"body\" modality=\"questioned\">parent</entity> compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"questioned\">young women</entity> when they live away from their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"questioned\">parent(s)</entity>. The results portrayed in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> relate to many of my <entity type=\"OTHER_ENTITY\" canonical=\"family\" subtype=\"group\" section=\"body\" speaker_context=\"true\">family</entity>, <entity type=\"OTHER_ENTITY\" canonical=\"friends\" subtype=\"group\" section=\"body\" speaker_context=\"true\">friends</entity>, and I who are either close to or currently entering <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" section=\"body\" speaker_context=\"true\">college</entity> and adulthood which likely involves moving away from our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" speaker_context=\"true\">parents</entity> and childhood homes. When we reach this stage in our lives, this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> can help predict how often we will connect with our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity> through <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\">texting</entity>, <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"body\">calling</entity>, or <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"body\">visiting in person</entity> because the samples of people used in the <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> are not too distant from our <entity type=\"TIME_REFERENCE\" canonical=\"age\" section=\"body\">ages</entity>, and the experiment is recent.\n"
 }

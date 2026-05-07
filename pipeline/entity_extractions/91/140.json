@@ -1,0 +1,169 @@
+{
+  "article_id": "91",
+  "comment_index": 140,
+  "raw_comment": "What do you notice?\n\nI notice that the NBA and the WNBA has the highest player of color.\n\nWhat do you wonder?\n\nI wonder why the only American made sport has the lowest diversity percentage rate.\n\nWhat impact does this have on you and your community?\n\nThis impacts the community because is show the American still are racist in some way or fashion. I feel like where racist happens less is in music.\n\nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\n\nSports and how they are racist",
+  "entities": [
+    {
+      "surface": "NBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 39,
+      "end": 42,
+      "id": "e0"
+    },
+    {
+      "surface": "WNBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wnba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 51,
+      "end": 55,
+      "id": "e1"
+    },
+    {
+      "surface": "player of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 72,
+      "end": 87,
+      "id": "e2"
+    },
+    {
+      "surface": "American made sport",
+      "type": "OTHER_ENTITY",
+      "canonical": "american_made_sport",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 133,
+      "end": 152,
+      "id": "e3"
+    },
+    {
+      "surface": "diversity percentage rate",
+      "type": "OTHER_ENTITY",
+      "canonical": "diversity_percentage_rate",
+      "subtype": "other",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 168,
+      "end": 193,
+      "id": "e4"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 239,
+      "end": 248,
+      "id": "e5"
+    },
+    {
+      "surface": "American",
+      "type": "OTHER_ENTITY",
+      "canonical": "american_people",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 298,
+      "end": 306,
+      "id": "e6"
+    },
+    {
+      "surface": "racist",
+      "type": "EVENT",
+      "canonical": "racism",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 317,
+      "end": 323,
+      "id": "e7"
+    },
+    {
+      "surface": "racist",
+      "type": "EVENT",
+      "canonical": "racism",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 366,
+      "end": 372,
+      "id": "e8"
+    },
+    {
+      "surface": "music",
+      "type": "OTHER_ENTITY",
+      "canonical": "music",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 392,
+      "end": 397,
+      "id": "e9"
+    },
+    {
+      "surface": "Sports and how they are racist",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 493,
+      "end": 523,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What do you notice?\n\nI notice that the NBA and the WNBA has the highest player of color.\n\nWhat do you wonder?\n\nI wonder why the only American made sport has the lowest diversity percentage rate.\n\nWhat impact does this have on you and your community?\n\nThis impacts the community because is show the American still are racist in some way or fashion. I feel like where racist happens less is in music."
+    },
+    {
+      "section": "headline",
+      "text": "Sports and how they are racist"
+    }
+  ],
+  "tagged_text": "What do you notice?\n\nI notice that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\">NBA</entity> and the <entity type=\"DATA_VAR_LEVEL\" canonical=\"wnba\" var=\"sports_league\">WNBA</entity> has the highest <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\">player of color</entity>.\n\nWhat do you wonder?\n\nI wonder why the only <entity type=\"OTHER_ENTITY\" canonical=\"american_made_sport\" subtype=\"other\">American made sport</entity> has the lowest <entity type=\"OTHER_ENTITY\" canonical=\"diversity_percentage_rate\" subtype=\"other\">diversity percentage rate</entity>.\n\nWhat impact does this have on you and your community?\n\nThis impacts the <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> because is show the <entity type=\"OTHER_ENTITY\" canonical=\"american_people\" subtype=\"group\">American</entity> still are <entity type=\"EVENT\" canonical=\"racism\" modality=\"asserted\">racist</entity> in some way or fashion. I feel like where <entity type=\"EVENT\" canonical=\"racism\" modality=\"asserted\">racist</entity> happens less is in <entity type=\"OTHER_ENTITY\" canonical=\"music\" subtype=\"other\">music</entity>.\n\nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\n\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Sports and how they are racist</entity>"
+}

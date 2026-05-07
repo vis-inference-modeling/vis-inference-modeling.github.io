@@ -20,7 +20,7 @@
     {
       "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
+      "canonical": "parents",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -34,7 +34,7 @@
     {
       "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
+      "canonical": "parents",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -74,15 +74,15 @@
       "id": "e4"
     },
     {
-      "surface": "young men",
+      "surface": "young women",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
+      "canonical": "young_women",
       "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e5"
@@ -96,7 +96,7 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e6"
@@ -110,43 +110,42 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 1,
       "start": null,
       "end": null,
       "id": "e7"
     },
     {
-      "surface": "women",
+      "surface": "young men",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
+      "canonical": "young_men",
       "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
+      "occurrence_index": 2,
       "start": null,
       "end": null,
       "id": "e8"
     },
     {
-      "surface": "women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
+      "surface": "data",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_young_people_who_reach_out_to_a_parent",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
+      "terminology_drift": true,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e9"
     },
     {
-      "surface": "age range",
+      "surface": "age",
       "type": "TIME_REFERENCE",
-      "canonical": "age_range_of_respondents",
+      "canonical": "age",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -161,7 +160,7 @@
       "type": "TIME_REFERENCE",
       "canonical": "18_22",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -172,9 +171,9 @@
     {
       "surface": "18-34",
       "type": "TIME_REFERENCE",
-      "canonical": "18_to_34",
+      "canonical": "18_34",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -188,7 +187,7 @@
       "canonical": "college_aged_people",
       "subtype": "group",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -197,12 +196,12 @@
       "id": "e13"
     },
     {
-      "surface": "young people",
-      "type": "OTHER_ENTITY",
-      "canonical": "young_people",
-      "subtype": "group",
+      "surface": "sending texts",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -211,13 +210,13 @@
       "id": "e14"
     },
     {
-      "surface": "third-year in college",
-      "type": "OTHER_ENTITY",
-      "canonical": "third_year_in_college",
-      "subtype": "person",
+      "surface": "phone calls",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "phone_or_video_chat",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -225,13 +224,13 @@
       "id": "e15"
     },
     {
-      "surface": "my parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
-      "subtype": "other",
+      "surface": "visits in person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "visit_in_person",
+      "var": "communication_method",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
@@ -239,9 +238,9 @@
       "id": "e16"
     },
     {
-      "surface": "college students",
+      "surface": "young people",
       "type": "OTHER_ENTITY",
-      "canonical": "college_students",
+      "canonical": "young_people",
       "subtype": "group",
       "section": "body",
       "modality": "asserted",
@@ -253,9 +252,89 @@
       "id": "e17"
     },
     {
-      "surface": "my community",
+      "surface": "college",
       "type": "OTHER_ENTITY",
-      "canonical": "my_community",
+      "canonical": "college",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e18"
+    },
+    {
+      "surface": "college",
+      "type": "OTHER_ENTITY",
+      "canonical": "college",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "home",
+      "type": "LOCATION",
+      "canonical": "home",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e20"
+    },
+    {
+      "surface": "home",
+      "type": "LOCATION",
+      "canonical": "home",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e21"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e22"
+    },
+    {
+      "surface": "third-year in college",
+      "type": "TIME_REFERENCE",
+      "canonical": "third_year_in_college",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e23"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -264,7 +343,20 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e24"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e25"
     },
     {
       "surface": "students",
@@ -272,26 +364,13 @@
       "canonical": "students",
       "subtype": "group",
       "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "Catchy headline",
-      "type": "CHART_ELEMENT",
-      "canonical": "title",
-      "section": "headline",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e26"
     },
     {
       "surface": "Texts, Calls, Visits: How Today's Youth Communicate with Their Parents",
@@ -304,21 +383,19 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e21"
+      "id": "e27"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
       "text": "Something that I noticed that’s pretty interesting to me (yet not very surprising!) is that young women tend to reach out to their parents more often than the young men in all three categories. Additionally, I’m surprised to see how often young men and women who do not live with at least one parent visit their parent(s) in person. I was actually expecting to see lower percentages for this category. I wonder how this data would change if the age range wasn’t so wide. For example, young men and women could be categorized as 18-22 instead of 18-34 (i.e. college aged people). I feel like this result in higher percentages for sending texts/phone calls and less visits in person as most young people in college are far away from home. This graph is really intriguing to me! I’m currently a third-year in college and tend to call my parents a lot. Luckily, I’m close enough to home that I can visit pretty frequently though. I think other college students in my community would find this graph interesting as well. I wonder how much other students’ opinions of this graph deviate from mine."
     },
     {
       "section": "headline",
-      "label": "Catchy headline",
       "text": "Texts, Calls, Visits: How Today's Youth Communicate with Their Parents"
     }
   ],
-  "tagged_text": "Something that I noticed that’s pretty interesting to me (yet not very surprising!) is that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young women</entity> tend to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> more often than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young men</entity> in all three categories. Additionally, I’m surprised to see how often <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">women</entity> who do not live with at least one <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parent</entity> visit their parent(s) in person. I was actually expecting to see lower percentages for this category. I wonder how this data would change if the <entity type=\"TIME_REFERENCE\" canonical=\"age_range_of_respondents\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">age range</entity> wasn’t so wide. For example, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">women</entity> could be categorized as <entity type=\"TIME_REFERENCE\" canonical=\"18_22\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">18-22</entity> instead of <entity type=\"TIME_REFERENCE\" canonical=\"18_to_34\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">18-34</entity> (i.e. <entity type=\"OTHER_ENTITY\" canonical=\"college_aged_people\" subtype=\"group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">college aged people</entity>). I feel like this result in higher percentages for sending texts/phone calls and less visits in person as most <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">young people</entity> in college are far away from home. This graph is really intriguing to me! I’m currently a <entity type=\"OTHER_ENTITY\" canonical=\"third_year_in_college\" subtype=\"person\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">third-year in college</entity> and tend to call my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">parents</entity> a lot. Luckily, I’m close enough to home that I can visit pretty frequently though. I think other <entity type=\"OTHER_ENTITY\" canonical=\"college_students\" subtype=\"group\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">college students</entity> in my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"true\" terminology_drift=\"false\" occurrences=\"1\">community</entity> would find this graph interesting as well. I wonder how much other <entity type=\"OTHER_ENTITY\" canonical=\"students\" subtype=\"group\" section=\"body\" modality=\"questioned\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">students</entity>’ opinions of this graph deviate from mine. <entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Catchy headline</entity>: “<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">Texts, Calls, Visits: How Today's Youth Communicate with Their Parents</entity>”."
+  "tagged_text": "Something that I noticed that’s pretty interesting to me (yet not very surprising!) is that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> tend to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> more often than the <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> in all three categories. Additionally, I’m surprised to see how often <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> who do not live with at least one <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\">parent</entity> visit their parent(s) in person. I was actually expecting to see lower percentages for this category. I wonder how this <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">data</entity> would change if the <entity type=\"TIME_REFERENCE\" canonical=\"age\">age</entity> range wasn’t so wide. For example, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> could be categorized as <entity type=\"TIME_REFERENCE\" canonical=\"18_22\">18-22</entity> instead of <entity type=\"TIME_REFERENCE\" canonical=\"18_34\">18-34</entity> (i.e. <entity type=\"OTHER_ENTITY\" canonical=\"college_aged_people\" subtype=\"group\">college aged people</entity>). I feel like this result in higher percentages for <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">sending texts</entity>/<entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone calls</entity> and less <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visits in person</entity> as most <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> in <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college</entity> are far away from <entity type=\"LOCATION\" canonical=\"home\">home</entity>. This <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> is really intriguing to me! I’m currently a <entity type=\"TIME_REFERENCE\" canonical=\"third_year_in_college\" speaker_context=\"true\">third-year in college</entity> and tend to call my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> a lot. Luckily, I’m close enough to <entity type=\"LOCATION\" canonical=\"home\" speaker_context=\"true\">home</entity> that I can visit pretty frequently though. I think other <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college students</entity> in my <entity type=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> would find this graph interesting as well. I wonder how much other <entity type=\"OTHER_ENTITY\" canonical=\"students\" subtype=\"group\">students</entity>’ opinions of this graph deviate from mine. <entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Texts, Calls, Visits: How Today's Youth Communicate with Their Parents</entity>."
 }

@@ -19,9 +19,9 @@
     },
     {
       "surface": "women",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "subtype": "person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
@@ -39,7 +39,7 @@
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
-      "terminology_drift": true,
+      "terminology_drift": false,
       "occurrence_index": 0,
       "start": 137,
       "end": 153,
@@ -102,6 +102,34 @@
       "id": "e6"
     },
     {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 4,
+      "start": 829,
+      "end": 836,
+      "id": "e7"
+    },
+    {
+      "surface": "study",
+      "type": "OTHER_ENTITY",
+      "canonical": "this_study",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 878,
+      "end": 883,
+      "id": "e8"
+    },
+    {
       "surface": "culture",
       "type": "OTHER_ENTITY",
       "canonical": "culture",
@@ -113,7 +141,7 @@
       "occurrence_index": 0,
       "start": 913,
       "end": 920,
-      "id": "e7"
+      "id": "e9"
     },
     {
       "surface": "city",
@@ -121,12 +149,53 @@
       "canonical": "city",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 933,
       "end": 937,
-      "id": "e8"
+      "id": "e10"
+    },
+    {
+      "surface": "Stay In Touch: Young Adults Keep Digital Contact",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 941,
+      "end": 989,
+      "id": "e11"
+    },
+    {
+      "surface": "kids",
+      "type": "OTHER_ENTITY",
+      "canonical": "kids",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e12"
+    },
+    {
+      "surface": "study",
+      "type": "OTHER_ENTITY",
+      "canonical": "this_study",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
+      "id": "e13"
     },
     {
       "surface": "culture",
@@ -140,7 +209,20 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e14"
+    },
+    {
+      "surface": "home",
+      "type": "LOCATION",
+      "canonical": "home",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
     },
     {
       "surface": "families",
@@ -154,13 +236,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e16"
     },
     {
       "surface": "females",
-      "type": "OTHER_ENTITY",
-      "canonical": "women",
-      "subtype": "person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -168,7 +250,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e17"
     },
     {
       "surface": "text",
@@ -182,13 +264,13 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e18"
     },
     {
       "surface": "males",
-      "type": "OTHER_ENTITY",
-      "canonical": "men",
-      "subtype": "person",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -196,27 +278,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e19"
     },
     {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "my community",
-      "type": "OTHER_ENTITY",
+      "surface": "community",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -224,7 +291,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e20"
     }
   ],
   "unresolved_mentions": [],
@@ -234,5 +301,5 @@
       "text": "-  I notice that young men reach out to their parents less overall compared to women with the category with the lowest percentages being in person visits. This indicates that parents seem to be less involved in their kids lives (with the study already excluding those that don't keep contact with their parents).\n- I wonder how much culture plays into the number of parents involved in their children lives. The reason being that for many it is tradition to have a few generations living in one home at a time so the amount of families where this comes into play would be interesting to know. Furthermore, I wonder why females text their parents so much more than males, with it being the biggest gap between the two genders in the graph. \n- This relates to me and my community as many around me keep frequent contact with their parents entering adulthood so the results of the study are shocking compared to the culture here in the city.\n- Stay In Touch: Young Adults Keep Digital Contact"
     }
   ],
-  "tagged_text": "-  I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> reach out to their parents less overall compared to <entity type=\"OTHER_ENTITY\" canonical=\"women\" subtype=\"person\">women</entity> with the category with the lowest percentages being <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">in person visits</entity>. This indicates that <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> seem to be less involved in their kids lives (with the study already excluding those that don't keep contact with their parents).\n- I wonder how much <entity type=\"OTHER_ENTITY\" canonical=\"culture\" subtype=\"concept\">culture</entity> plays into the number of <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> involved in their children lives. The reason being that for many it is tradition to have a few generations living in one home at a time so the amount of <entity type=\"OTHER_ENTITY\" canonical=\"families\" subtype=\"group\">families</entity> where this comes into play would be interesting to know. Furthermore, I wonder why <entity type=\"OTHER_ENTITY\" canonical=\"women\" subtype=\"person\">females</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> their parents so much more than <entity type=\"OTHER_ENTITY\" canonical=\"men\" subtype=\"person\">males</entity>, with it being the biggest gap between the two genders in the graph. \n- This relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">my community</entity> as many around me keep frequent contact with their parents entering adulthood so the results of the study are shocking compared to the <entity type=\"OTHER_ENTITY\" canonical=\"culture\" subtype=\"concept\">culture</entity> here in the <entity type=\"LOCATION\" canonical=\"city\" speaker_context=\"true\">city</entity>.\n- Stay In Touch: Young Adults Keep Digital Contact"
+  "tagged_text": "-  I notice that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\">young men</entity> reach out to their parents less overall compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\">women</entity> with the category with the lowest percentages being <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\" section=\"body\">in person visits</entity>. This indicates that <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity> seem to be less involved in their <entity type=\"OTHER_ENTITY\" canonical=\"kids\" subtype=\"group\" section=\"body\">kids</entity> lives (with the <entity type=\"OTHER_ENTITY\" canonical=\"this_study\" subtype=\"other\" section=\"body\">study</entity> already excluding those that don't keep contact with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity>).\n- I wonder how much <entity type=\"OTHER_ENTITY\" canonical=\"culture\" subtype=\"concept\" section=\"body\" modality=\"questioned\">culture</entity> plays into the number of <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"questioned\">parents</entity> involved in their children lives. The reason being that for many it is tradition to have a few generations living in one <entity type=\"LOCATION\" canonical=\"home\" section=\"body\" modality=\"questioned\">home</entity> at a time so the amount of <entity type=\"OTHER_ENTITY\" canonical=\"families\" subtype=\"group\" section=\"body\" modality=\"questioned\">families</entity> where this comes into play would be interesting to know. Furthermore, I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\" modality=\"questioned\">females</entity> <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" modality=\"questioned\">text</entity> their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"questioned\">parents</entity> so much more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\" modality=\"questioned\">males</entity>, with it being the biggest gap between the two genders in the graph. \n- This relates to me and my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\" section=\"body\">community</entity> as many around me keep frequent contact with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity> entering adulthood so the results of the <entity type=\"OTHER_ENTITY\" canonical=\"this_study\" subtype=\"other\" section=\"body\">study</entity> are shocking compared to the <entity type=\"OTHER_ENTITY\" canonical=\"culture\" subtype=\"concept\" section=\"body\">culture</entity> here in the <entity type=\"LOCATION\" canonical=\"city\" section=\"body\">city</entity>.\n- <entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Stay In Touch: Young Adults Keep Digital Contact</entity>"
 }

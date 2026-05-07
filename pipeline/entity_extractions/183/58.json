@@ -4,6 +4,19 @@
   "raw_comment": "I notice that the largest percentage of young people (50-75%) reach out to their parents at least one a day or a few times a week while the smallest percentage visit in person (15-25%). I also notice that there is a relatively large disparity between young men and women's communication habits: women are 20% more likely to send texts or do video-chats than men.\n\nI wonder if more young people reach out via text and video-chat because they are less time-intensive. I also wonder how the data is divided based on age--- are Gen Z young people more likely to use technology to reach out? I am curious if women are more likely to reach out to their parents due to societal expectations and because they are expected to be the caregivers.\n\nThis relates to me and my community because I will not always live near my parents. Instead of seeing them at home, I will have to reach out in order to maintain in contact. The data also indicates a shift in communication methods. Technology is an increasingly important means to connect.\n\n\"Send a Wire: More Female than Male?\"",
   "entities": [
     {
+      "surface": "percentage",
+      "type": "DATA_VAR",
+      "canonical": "percentage_of_young_people_who_reach_out_to_a_parent",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 26,
+      "end": 36,
+      "id": "e0"
+    },
+    {
       "surface": "young people",
       "type": "OTHER_ENTITY",
       "canonical": "young_people",
@@ -15,7 +28,7 @@
       "occurrence_index": 0,
       "start": 40,
       "end": 52,
-      "id": "e0"
+      "id": "e1"
     },
     {
       "surface": "young people",
@@ -29,7 +42,7 @@
       "occurrence_index": 1,
       "start": 381,
       "end": 393,
-      "id": "e1"
+      "id": "e2"
     },
     {
       "surface": "young people",
@@ -43,7 +56,7 @@
       "occurrence_index": 2,
       "start": 530,
       "end": 542,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "parents",
@@ -57,7 +70,7 @@
       "occurrence_index": 0,
       "start": 647,
       "end": 654,
-      "id": "e3"
+      "id": "e4"
     },
     {
       "surface": "parents",
@@ -71,7 +84,7 @@
       "occurrence_index": 1,
       "start": 812,
       "end": 819,
-      "id": "e4"
+      "id": "e5"
     },
     {
       "surface": "technology",
@@ -85,20 +98,6 @@
       "occurrence_index": 0,
       "start": 969,
       "end": 979,
-      "id": "e5"
-    },
-    {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1009,
-      "end": 1011,
       "id": "e6"
     },
     {
@@ -200,7 +199,7 @@
       "id": "e13"
     },
     {
-      "surface": "texts",
+      "surface": "send texts",
       "type": "DATA_VAR_LEVEL",
       "canonical": "send_texts",
       "var": "communication_method",
@@ -228,12 +227,12 @@
       "id": "e15"
     },
     {
-      "surface": "men",
+      "surface": "text",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
+      "canonical": "send_texts",
+      "var": "communication_method",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -242,32 +241,18 @@
       "id": "e16"
     },
     {
-      "surface": "text",
+      "surface": "video-chat",
       "type": "DATA_VAR_LEVEL",
-      "canonical": "send_texts",
+      "canonical": "phone_or_video_chat",
       "var": "communication_method",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e17"
-    },
-    {
-      "surface": "video-chat",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "phone_or_video_chat",
-      "var": "communication_method",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
     },
     {
       "surface": "age",
@@ -280,27 +265,41 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e18"
     },
     {
-      "surface": "technology",
+      "surface": "Gen Z",
       "type": "OTHER_ENTITY",
-      "canonical": "technology",
-      "subtype": "technology",
+      "canonical": "gen_z",
+      "subtype": "group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e19"
+    },
+    {
+      "surface": "societal expectations",
+      "type": "OTHER_ENTITY",
+      "canonical": "societal_standards",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e20"
     },
     {
-      "surface": "societal expectations",
+      "surface": "caregivers",
       "type": "OTHER_ENTITY",
-      "canonical": "societal_gender_norms",
-      "subtype": "concept",
+      "canonical": "caregivers",
+      "subtype": "group",
       "section": "body",
       "modality": "questioned",
       "speaker_context": false,
@@ -311,10 +310,9 @@
       "id": "e21"
     },
     {
-      "surface": "community",
-      "type": "OTHER_ENTITY",
+      "surface": "my community",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -330,38 +328,48 @@
       "canonical": "parents",
       "subtype": "other",
       "section": "body",
-      "modality": "asserted",
+      "modality": "questioned",
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
       "id": "e23"
+    },
+    {
+      "surface": "home",
+      "type": "LOCATION",
+      "canonical": "home",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e24"
+    },
+    {
+      "surface": "Technology",
+      "type": "OTHER_ENTITY",
+      "canonical": "technology",
+      "subtype": "technology",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e25"
     }
   ],
-  "unresolved_mentions": [
-    {
-      "surface": "50-75%",
-      "reason": "Range of percentages, but no exact canonical percentage entity is provided."
-    },
-    {
-      "surface": "15-25%",
-      "reason": "Range of percentages, but no exact canonical percentage entity is provided."
-    },
-    {
-      "surface": "Gen Z",
-      "reason": "Generational label not present in the reference list."
-    },
-    {
-      "surface": "Send a Wire: More Female than Male?",
-      "reason": "Headline-like text, but not explicitly separated as a headline in the raw comment."
-    }
-  ],
+  "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
       "text": "I notice that the largest percentage of young people (50-75%) reach out to their parents at least one a day or a few times a week while the smallest percentage visit in person (15-25%). I also notice that there is a relatively large disparity between young men and women's communication habits: women are 20% more likely to send texts or do video-chats than men.\n\nI wonder if more young people reach out via text and video-chat because they are less time-intensive. I also wonder how the data is divided based on age--- are Gen Z young people more likely to use technology to reach out? I am curious if women are more likely to reach out to their parents due to societal expectations and because they are expected to be the caregivers.\n\nThis relates to me and my community because I will not always live near my parents. Instead of seeing them at home, I will have to reach out in order to maintain in contact. The data also indicates a shift in communication methods. Technology is an increasingly important means to connect.\n\n\"Send a Wire: More Female than Male?\""
     }
   ],
-  "tagged_text": "I notice that the largest percentage of <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> (50-75%) reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> at least one a day or a few times a week while the smallest percentage <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit in person</entity> (15-25%). I also notice that there is a relatively large disparity between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>'s communication habits: <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> are 20% more likely to send <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texts</entity> or do <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">video-chats</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>.\n\nI wonder if more <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> reach out via <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">video-chat</entity> because they are less time-intensive. I also wonder how the data is divided based on <entity type=\"TIME_REFERENCE\" canonical=\"age\">age</entity>--- are Gen Z <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> more likely to use <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\">technology</entity> to reach out? I am curious if <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> are more likely to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> due to <entity type=\"OTHER_ENTITY\" canonical=\"societal_gender_norms\" subtype=\"concept\">societal expectations</entity> and because they are expected to be the caregivers.\n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity> and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because I will not always live near my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>. Instead of seeing them at home, I will have to reach out in order to maintain in contact. The data also indicates a shift in communication methods. <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\">Technology</entity> is an increasingly important means to connect.\n\n\"Send a Wire: More Female than Male?\""
+  "tagged_text": "I notice that the largest <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage</entity> of <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\">young people</entity> (50-75%) reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> at least one a day or a few times a week while the smallest <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">percentage visit in person</entity> (15-25%). I also notice that there is a relatively large disparity between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>'s communication habits: <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> are 20% more likely to <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">send texts</entity> or do <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">video-chats</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>.\n\nI wonder if more <entity type=\"OTHER_ENTITY\" canonical=\"young_people\" subtype=\"group\" modality=\"questioned\">young people</entity> reach out via <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" modality=\"questioned\">text</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" modality=\"questioned\">video-chat</entity> because they are less time-intensive. I also wonder how the data is divided based on <entity type=\"TIME_REFERENCE\" canonical=\"age\" modality=\"questioned\">age</entity>--- are <entity type=\"OTHER_ENTITY\" canonical=\"gen_z\" subtype=\"group\" modality=\"questioned\">Gen Z</entity> young people more likely to use <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\" modality=\"questioned\">technology</entity> to reach out? I am curious if <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" modality=\"questioned\">women</entity> are more likely to reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" modality=\"questioned\">parents</entity> due to <entity type=\"OTHER_ENTITY\" canonical=\"societal_standards\" subtype=\"concept\" modality=\"questioned\">societal expectations</entity> and because they are expected to be the <entity type=\"OTHER_ENTITY\" canonical=\"caregivers\" subtype=\"group\" modality=\"questioned\">caregivers</entity>.\n\nThis relates to me and my <entity type=\"my_community\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> because I will not always live near my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity>. Instead of seeing them at <entity type=\"LOCATION\" canonical=\"home\" speaker_context=\"true\">home</entity>, I will have to reach out in order to maintain in contact. The data also indicates a shift in communication methods. <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\">Technology</entity> is an increasingly important means to connect.\n\n\"Send a Wire: More Female than Male?\""
 }

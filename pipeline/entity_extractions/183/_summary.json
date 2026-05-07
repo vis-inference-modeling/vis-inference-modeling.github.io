@@ -1,8 +1,29 @@
 {
   "article_id": "183",
-  "unique_canonicals": 253,
-  "total_occurrences": 2131,
+  "unique_canonicals": 222,
+  "total_occurrences": 2406,
   "entities": [
+    {
+      "canonical": "parents",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "parents",
+        "Parents",
+        "parent",
+        "parent(s)",
+        "my parents",
+        "parents in person"
+      ],
+      "comment_count": 122,
+      "occurrence_count": 402,
+      "modalities": {
+        "asserted": 382,
+        "questioned": 20
+      },
+      "speaker_context_count": 37
+    },
     {
       "canonical": "young_women",
       "type": "DATA_VAR_LEVEL",
@@ -15,21 +36,25 @@
         "Young women",
         "young woman",
         "girls",
-        "Women",
-        "younger women",
-        "young women/men",
         "woman",
+        "Young Women",
+        "genders",
+        "Females",
+        "younger women",
+        "young adults either female",
         "young girls",
         "Girls",
-        "young women's"
+        "young women's",
+        "Women",
+        "female"
       ],
-      "comment_count": 103,
-      "occurrence_count": 260,
+      "comment_count": 108,
+      "occurrence_count": 283,
       "modalities": {
-        "asserted": 243,
-        "questioned": 17
+        "asserted": 254,
+        "questioned": 29
       },
-      "speaker_context_count": 5
+      "speaker_context_count": 6
     },
     {
       "canonical": "young_men",
@@ -40,38 +65,22 @@
         "young men",
         "men",
         "males",
+        "male",
+        "boys",
         "young males",
         "young man",
         "young male",
-        "male",
-        "young men/women",
-        "boys",
+        "Young Men",
         "young men's"
       ],
-      "comment_count": 95,
-      "occurrence_count": 223,
+      "comment_count": 102,
+      "occurrence_count": 253,
       "modalities": {
-        "asserted": 209,
-        "questioned": 14
+        "asserted": 224,
+        "questioned": 28,
+        "hypothetical": 1
       },
-      "speaker_context_count": 2
-    },
-    {
-      "canonical": "parents",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "parents",
-        "my parents"
-      ],
-      "comment_count": 83,
-      "occurrence_count": 220,
-      "modalities": {
-        "asserted": 202,
-        "questioned": 18
-      },
-      "speaker_context_count": 8
+      "speaker_context_count": 3
     },
     {
       "canonical": "send_texts",
@@ -85,23 +94,26 @@
         "send texts",
         "sending texts",
         "text messaging",
-        "Texting",
         "sending text messages",
+        "Texting",
+        "Texts and calls",
         "text messages",
-        "Texts",
-        "reach out to their parents",
+        "sending text",
         "Sending text",
         "sent text",
         "send a text",
+        "messaging",
+        "contact their parents virtually",
+        "sent texts",
         "send text messages"
       ],
       "comment_count": 89,
-      "occurrence_count": 149,
+      "occurrence_count": 151,
       "modalities": {
-        "asserted": 141,
-        "questioned": 8
+        "asserted": 140,
+        "questioned": 11
       },
-      "speaker_context_count": 4
+      "speaker_context_count": 9
     },
     {
       "canonical": "visit_in_person",
@@ -113,83 +125,37 @@
         "visit in person",
         "in-person visits",
         "visit",
-        "person",
         "visits in person",
-        "visit their parents in person",
         "in person",
         "visits",
+        "visit their parents in person",
+        "person",
         "visiting",
-        "in-person",
         "Visiting in person",
+        "in-person",
+        "in-person check-ins",
         "visiting a parent in person",
         "in person visiting",
         "personal visits",
         "meeting in person",
-        "in-person check-ins",
         "visiting them in person",
         "seeing each other in person",
+        "visiting the parent in person",
         "In person",
-        "visit their parents",
-        "visit them",
-        "see",
         "in person meeting",
+        "visited in person",
         "in-person communication",
-        "visiting their parents in person",
-        "visit home",
-        "those who visit in person",
         "voting in person",
         "in person visits"
       ],
       "comment_count": 73,
-      "occurrence_count": 108,
+      "occurrence_count": 103,
       "modalities": {
         "asserted": 94,
-        "questioned": 13,
-        "hypothetical": 1
+        "hypothetical": 1,
+        "questioned": 8
       },
-      "speaker_context_count": 1
-    },
-    {
-      "canonical": "phone_or_video_chat",
-      "type": "DATA_VAR_LEVEL",
-      "var": "communication_method",
-      "subtype": null,
-      "surface_forms": [
-        "call",
-        "calling",
-        "phone or video-chat",
-        "phone calls",
-        "calls",
-        "phone",
-        "video-chat",
-        "phone/video chat",
-        "phone/video-chat",
-        "video-chats",
-        "phone or video chats",
-        "Call or video chat",
-        "Video Calls",
-        "Phone or video chat",
-        "Phone and video chat",
-        "video conversations",
-        "telephone",
-        "phone or video calls",
-        "video chats",
-        "video call",
-        "Facetime",
-        "calls/video chats",
-        "phone call",
-        "contact",
-        "talk on the phone",
-        "phone or video chat",
-        "calling on the phone"
-      ],
-      "comment_count": 69,
-      "occurrence_count": 98,
-      "modalities": {
-        "asserted": 94,
-        "questioned": 4
-      },
-      "speaker_context_count": 7
+      "speaker_context_count": 0
     },
     {
       "canonical": "graph",
@@ -200,34 +166,140 @@
         "graph",
         "This graph",
         "graphic",
-        "The Curve of Kid Conversations"
+        "visual",
+        "Headline",
+        "Graph"
       ],
-      "comment_count": 48,
-      "occurrence_count": 78,
+      "comment_count": 54,
+      "occurrence_count": 100,
       "modalities": {
-        "asserted": 77,
-        "questioned": 1
+        "asserted": 96,
+        "questioned": 4
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "my_community",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
+      "canonical": "phone_or_video_chat",
+      "type": "DATA_VAR_LEVEL",
+      "var": "communication_method",
+      "subtype": null,
       "surface_forms": [
-        "community",
-        "my community",
-        "me and my community",
-        "our community"
+        "calling",
+        "call",
+        "phone calls",
+        "phone or video-chat",
+        "calls",
+        "phone",
+        "video-chat",
+        "phone/video chat",
+        "Phone or video chat",
+        "phone/video-chat",
+        "video-chats",
+        "phone or video chats",
+        "Call or video chat",
+        "Video Calls",
+        "Phone and video chat",
+        "video conversations",
+        "telephone",
+        "phone or video calls",
+        "video chats",
+        "video call",
+        "facetime",
+        "called",
+        "Facetime",
+        "calls/video chats",
+        "phone call",
+        "contact",
+        "phone or video chat",
+        "calling on the phone"
       ],
-      "comment_count": 56,
-      "occurrence_count": 58,
+      "comment_count": 68,
+      "occurrence_count": 98,
       "modalities": {
-        "asserted": 57,
-        "questioned": 1
+        "asserted": 91,
+        "questioned": 7
       },
-      "speaker_context_count": 57
+      "speaker_context_count": 9
+    },
+    {
+      "canonical": "title",
+      "type": "CHART_ELEMENT",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "title",
+        "Staying Connected: Young Women Lead in Family Communication",
+        "Going Digital: Keeping in Touch with Loved Ones",
+        "headline",
+        "Parental Guidance – How Young Men and Women Differ in Contact with Parents.",
+        "Newer Generations Are Barely Interacting With Their Parents",
+        "Who's calling?",
+        "Is Parental Communication a Common Priority?",
+        "Why parents want daughters: they keep in touch!",
+        "Maintaining Contact: How Do Teens Get in Touch with Their Parents?",
+        "Dialing Home: When Do Young Adults Contact Their Parents?",
+        "Title being… “texting vs. humanity”",
+        "What’s Your Form of Communicating With Your Parents? Do You Do it at All?",
+        "Being In Contact: How Often Do Young People Reach Out To Their Parents?",
+        "ears eyes or mouth everyone communicates some how",
+        "Communication With My Parents Through A Screen",
+        "Contacting the Other- Communicating With Your Parent",
+        "WOMAN LOVE THEIR PARENTS MORE",
+        "Sleep Revolution: More Americans Than Ever Finally Getting Enough Zzzs!",
+        "Staying in Touch: Why Do Young Women Seem to Do It More Frequently?",
+        "Screen Age: How Electronics Have Impacted Parental Communication",
+        "Message Mothers More!",
+        "The Importance of Text Messages–In Young Adults’ Contact With Their Parents",
+        "Call Your Mom! Young People And Their Lackluster Interest In Talking To Their Parents.",
+        "Young People Reaching Out: A Viewpoint on Generational Shifts in Parental Relationships",
+        "Catchy headline: \"Incoming call, it's your parents! Accept or Decline?\"",
+        "Parents Were Right: The Phone Does Work Both Ways",
+        "Moms aren’t getting their visits.",
+        "Call Me, Where you been?",
+        "Connecting with Loved Ones - \"Kiss me through the phone?\"",
+        "The Curve of Kid Conversations",
+        "Keeping Connected",
+        "headlines",
+        "Staying Connected in 2024",
+        "Gender Disparities In Young Adult Child Communication With Parents",
+        "Dialing Differences: Exploring Gender Disparities in Parental Connection",
+        "How often do Young Adults Contact their Parents?",
+        "C'mon, they deserve a call",
+        "Young Women More Likely to Call Mom than Men",
+        "Most Kids Prefer Texting their Parents, Not Calling",
+        "Keeping in Touch, Who Does It Best?",
+        "The Talk: Do Young Men or Women Talk More with Their Parents",
+        "Title",
+        "How Adulthood Changes Communication in Parent-Child Relationships",
+        "How Do You Get in Touch With Your Parents?",
+        "Young Adults and Their Astonishing Levels of Involvement With Parents",
+        "Communication Trends: How Youth Stay Connected with Parents Across Genders",
+        "Headline",
+        "Keeping Ties Strong: Gender Trends in Weekly Parental Contact Across Communication Channels",
+        "How young adults are staying in touch with their parents",
+        "Texts, Calls, Visits: How Today's Youth Communicate with Their Parents",
+        "Reaching Out: Are Young Women More Attached to Their Parents than Males?",
+        "Parents Back Home: Are You Staying In Touch?",
+        "Staying in Touch",
+        "Keeping Parental Contact in Adulthood",
+        "Texts and Calls: The New Bridge Between Today's Young Adults and Their Parents",
+        "Family Connections in the Digital Age",
+        "How Often Do You Call Your Parents?",
+        "Has Technology Caused Communicating to Become Completely Digital?",
+        "Stay In Touch: Young Adults Keep Digital Contact",
+        "Staying Connected : How Today's Youth Keep Their Parents Involved",
+        "Say Hello: How Often Young Adults Communicate With Their Parents",
+        "Reach Out to Your Parents: Are Women Better Communicators?",
+        "Connected But Disconnected",
+        "Parental communication: disconnecting to connect",
+        "Headline: A Battle of the Sexes"
+      ],
+      "comment_count": 64,
+      "occurrence_count": 72,
+      "modalities": {
+        "asserted": 72
+      },
+      "speaker_context_count": 0
     },
     {
       "canonical": "college",
@@ -236,122 +308,41 @@
       "subtype": "other",
       "surface_forms": [
         "college",
+        "college student",
+        "college students",
         "community",
-        "kindergarten"
+        "college years",
+        "people in college",
+        "young college student",
+        "college life"
       ],
-      "comment_count": 36,
-      "occurrence_count": 47,
+      "comment_count": 50,
+      "occurrence_count": 66,
       "modalities": {
-        "asserted": 40,
-        "questioned": 7
+        "asserted": 54,
+        "questioned": 10,
+        "hypothetical": 2
       },
-      "speaker_context_count": 19
+      "speaker_context_count": 29
     },
     {
-      "canonical": "my_parents",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "parents",
-        "my parents"
-      ],
-      "comment_count": 28,
-      "occurrence_count": 39,
-      "modalities": {
-        "asserted": 35,
-        "questioned": 4
-      },
-      "speaker_context_count": 30
-    },
-    {
-      "canonical": "title",
-      "type": "CHART_ELEMENT",
+      "canonical": "my_community",
+      "type": "LOCATION",
       "var": null,
       "subtype": null,
       "surface_forms": [
-        "Parents and Children: How Connected Are They Really?",
-        "title",
-        "Parental Guidance – How Young Men and Women Differ in Contact with Parents.",
-        "Why parents want daughters: they keep in touch!",
-        "Maintaining Contact: How Do Teens Get in Touch with Their Parents?",
-        "Dialing Home: When Do Young Adults Contact Their Parents?",
-        "Are Young Men Ghosting Their Parents?",
-        "Family Connections in the Digital Age",
-        "Staying in Touch: Why Do Young Women Seem to Do It More Frequently?",
-        "Staying Connected: Young Women Lead in Family Communication",
-        "Screen Age: How Electronics Have Impacted Parental Communication",
-        "Message Mothers More!",
-        "The Importance of Text Messages–In Young Adults’ Contact With Their Parents",
-        "Call Your Mom! Young People And Their Lackluster Interest In Talking To Their Parents.",
-        "Young People Reaching Out: A Viewpoint on Generational Shifts in Parental Relationships",
-        "Are young men ghosting their parents?",
-        "Parents Were Right: The Phone Does Work Both Ways",
-        "Screen Age: How Electronics have Impacted Parental Communication",
-        "Moms aren’t getting their visits.",
-        "Who’s mom’s favorite?",
-        "Call Me, Where you been?",
-        "Title: Connecting with Loved Ones - \"Kiss me through the phone?\"",
-        "Keeping Connected",
-        "The Talk: Do Young Men or Women Talk More with Their Parents",
-        "Title",
-        "How Adulthood Changes Communication in Parent-Child Relationships. ",
-        "Young Adults and Their Astonishing Levels of Involvement With Parents!",
-        "Communication Trends: How Youth Stay Connected with Parents Across Genders",
-        "Keeping Ties Strong: Gender Trends in Weekly Parental Contact Across Communication Channels",
-        "Going Digital: Keeping in Touch with Loved Ones",
-        "How young adults are staying in touch with their parents.",
-        "Catchy headline",
-        "Texts, Calls, Visits: How Today's Youth Communicate with Their Parents",
-        "Parents Back Home: Are You Staying In Touch?",
-        "What's the Go-To for Parents and Adult Kids to Stay Connected?"
-      ],
-      "comment_count": 29,
-      "occurrence_count": 38,
-      "modalities": {
-        "asserted": 38
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "speaker",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "me",
-        "my community",
         "community",
-        "myself",
+        "my community",
+        "me and my community",
+        "me",
         "our community"
       ],
-      "comment_count": 33,
-      "occurrence_count": 34,
+      "comment_count": 61,
+      "occurrence_count": 65,
       "modalities": {
-        "asserted": 34
+        "asserted": 65
       },
-      "speaker_context_count": 34
-    },
-    {
-      "canonical": "25_percent",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "25%",
-        "75%",
-        "5%",
-        "25",
-        "100%",
-        "5 percentage points",
-        "20 percentage point difference"
-      ],
-      "comment_count": 19,
-      "occurrence_count": 33,
-      "modalities": {
-        "asserted": 33
-      },
-      "speaker_context_count": 0
+      "speaker_context_count": 65
     },
     {
       "canonical": "family",
@@ -361,16 +352,38 @@
       "surface_forms": [
         "family",
         "families",
-        "family’s"
+        "family’s",
+        "Family"
       ],
-      "comment_count": 23,
-      "occurrence_count": 29,
+      "comment_count": 24,
+      "occurrence_count": 32,
       "modalities": {
-        "asserted": 19,
-        "questioned": 8,
-        "wished": 2
+        "asserted": 23,
+        "questioned": 9
       },
-      "speaker_context_count": 10
+      "speaker_context_count": 7
+    },
+    {
+      "canonical": "age",
+      "type": "TIME_REFERENCE",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "age",
+        "age range",
+        "ages",
+        "age groups",
+        "time",
+        "age ranges",
+        "age group"
+      ],
+      "comment_count": 25,
+      "occurrence_count": 32,
+      "modalities": {
+        "asserted": 18,
+        "questioned": 14
+      },
+      "speaker_context_count": 6
     },
     {
       "canonical": "young_people",
@@ -380,103 +393,67 @@
       "surface_forms": [
         "young people",
         "Young people",
+        "people",
         "youth"
       ],
-      "comment_count": 21,
-      "occurrence_count": 29,
+      "comment_count": 22,
+      "occurrence_count": 31,
       "modalities": {
-        "asserted": 27,
-        "questioned": 2
+        "questioned": 8,
+        "asserted": 23
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "women",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "women",
-        "woman",
-        "females"
-      ],
-      "comment_count": 14,
-      "occurrence_count": 23,
-      "modalities": {
-        "asserted": 15,
-        "questioned": 8
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "men",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "men",
-        "males"
-      ],
-      "comment_count": 13,
-      "occurrence_count": 23,
-      "modalities": {
-        "asserted": 16,
-        "questioned": 7
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "communication_method",
-      "type": "DATA_VAR",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "communication",
-        "communications",
-        "data",
-        "communication methods"
-      ],
-      "comment_count": 13,
-      "occurrence_count": 22,
-      "modalities": {
-        "asserted": 20,
-        "questioned": 2
-      },
-      "speaker_context_count": 1
-    },
-    {
-      "canonical": "50_percent",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "50%",
-        "50 percent"
-      ],
-      "comment_count": 17,
-      "occurrence_count": 21,
-      "modalities": {
-        "asserted": 21
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "parent",
+      "canonical": "people",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "parent",
-        "a parent",
-        "parent(s)",
-        "parental figure",
-        "which parent"
+        "people",
+        "People",
+        "group of people",
+        "people's"
       ],
-      "comment_count": 15,
-      "occurrence_count": 21,
+      "comment_count": 22,
+      "occurrence_count": 30,
       "modalities": {
-        "questioned": 4,
-        "asserted": 17
+        "asserted": 19,
+        "questioned": 11
+      },
+      "speaker_context_count": 1
+    },
+    {
+      "canonical": "percentage_of_young_people_who_reach_out_to_a_parent",
+      "type": "DATA_VAR",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "percentage",
+        "percentages",
+        "percentage of young adults",
+        "percentage of young people who claim they talk to their parents",
+        "This graph shows the percentage of young people who keep in contact with there parents",
+        "This graph shows",
+        "percentage of young people who say they reach out to a parent",
+        "young people who reach out to their parents",
+        "percentage of people",
+        "percentages of young people who say they reach out to their parents",
+        "percentage of young women vs young men who reach out to their parents",
+        "percentage of young adults that visit their parents at least once a week",
+        "percentage of young women who reach out to their parents",
+        "percentage of young men who reach out to their parents",
+        "data",
+        "percentage of young women who reach out to a parent",
+        "percentage of men who reach out to a parent",
+        "percentage of young people who see their parents in person",
+        "percentage of young people who reach out"
+      ],
+      "comment_count": 21,
+      "occurrence_count": 30,
+      "modalities": {
+        "asserted": 28,
+        "questioned": 2
       },
       "speaker_context_count": 0
     },
@@ -488,37 +465,43 @@
       "surface_forms": [
         "difference",
         "gap",
-        "difference between young men and women",
-        "difference between the groups",
-        "The difference between young women and young men reaching out",
-        "gender differences",
         "difference between men and women",
+        "gender differences between males and females",
+        "disparity between young women and young men",
+        "difference between young men and women",
+        "percentage of seeing parents regularly",
+        "percentage difference between men and women",
+        "men truly do not seem to reach out as much as women",
+        "difference between the groups",
+        "percentages",
+        "percentage of men and women",
+        "The difference between young women and young men reaching out",
         "percentage of men that contact their parents compared to women"
       ],
-      "comment_count": 13,
-      "occurrence_count": 20,
+      "comment_count": 19,
+      "occurrence_count": 29,
       "modalities": {
-        "asserted": 14,
-        "questioned": 6
+        "asserted": 22,
+        "questioned": 7
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "people",
+      "canonical": "parent",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "people",
-        "People"
+        "parent",
+        "a parent"
       ],
-      "comment_count": 18,
-      "occurrence_count": 19,
+      "comment_count": 19,
+      "occurrence_count": 28,
       "modalities": {
-        "asserted": 13,
-        "questioned": 6
+        "questioned": 1,
+        "asserted": 27
       },
-      "speaker_context_count": 2
+      "speaker_context_count": 0
     },
     {
       "canonical": "young_adults",
@@ -527,18 +510,68 @@
       "subtype": "group",
       "surface_forms": [
         "young adults",
-        "Young Adults"
+        "demographic"
       ],
-      "comment_count": 12,
-      "occurrence_count": 18,
+      "comment_count": 18,
+      "occurrence_count": 27,
       "modalities": {
-        "questioned": 2,
+        "questioned": 12,
+        "asserted": 15
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "speaker",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "person",
+      "surface_forms": [
+        "me",
+        "myself",
+        "person"
+      ],
+      "comment_count": 22,
+      "occurrence_count": 22,
+      "modalities": {
+        "asserted": 22
+      },
+      "speaker_context_count": 22
+    },
+    {
+      "canonical": "gender_group",
+      "type": "DATA_VAR",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "gender",
+        "genders"
+      ],
+      "comment_count": 16,
+      "occurrence_count": 21,
+      "modalities": {
+        "questioned": 5,
         "asserted": 16
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "18_to_34",
+      "canonical": "home",
+      "type": "LOCATION",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "home"
+      ],
+      "comment_count": 15,
+      "occurrence_count": 18,
+      "modalities": {
+        "asserted": 15,
+        "questioned": 3
+      },
+      "speaker_context_count": 9
+    },
+    {
+      "canonical": "18_34",
       "type": "TIME_REFERENCE",
       "var": null,
       "subtype": null,
@@ -546,44 +579,34 @@
         "18-34",
         "18 to 34",
         "18 and 34",
-        "ages 18 to 34",
-        "18-34 age group"
+        "18-34 age group",
+        "ages 18-34",
+        "18-34-year-olds",
+        "ages 18 to 34"
       ],
       "comment_count": 16,
       "occurrence_count": 18,
       "modalities": {
-        "asserted": 14,
-        "questioned": 4
+        "asserted": 12,
+        "questioned": 6
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "percentage_of_young_people_who_reach_out_to_a_parent",
-      "type": "DATA_VAR",
+      "canonical": "percentage_50",
+      "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": null,
+      "subtype": "other",
       "surface_forms": [
-        "percentage of adults",
-        "percentage of young people who claim they talk to their parents",
-        "percentage of young people who keep in contact with there parents",
-        "percentage of young people who say they reach out to a parent",
-        "young people who reach out to their parents",
-        "percentage of young women vs young men who reach out to their parents",
-        "percentage of people ages 18-34 that don’t live with a parent who say they reach out to a parent at least once a day or a few times a week",
-        "percentage of young adults that visit their parents at least once a week",
-        "percentage of young women who reach out to their parents",
-        "percentage of young men who reach out to their parents",
-        "percentage of young women who reach out to a parent",
-        "percentage of men who reach out to a parent",
-        "percentage of young adults aged 18 to 34 who reach out to a parent at least once a day or a few times a week",
-        "percentage of young people who see their parents in person",
-        "percentage of young people who reach out"
+        "50%",
+        "percentage",
+        "50 percent",
+        "30%"
       ],
-      "comment_count": 13,
+      "comment_count": 11,
       "occurrence_count": 17,
       "modalities": {
-        "asserted": 14,
-        "questioned": 3
+        "asserted": 17
       },
       "speaker_context_count": 0
     },
@@ -591,7 +614,7 @@
       "canonical": "phones",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "technology",
+      "subtype": "other",
       "surface_forms": [
         "phones",
         "phone"
@@ -605,94 +628,140 @@
       "speaker_context_count": 1
     },
     {
-      "canonical": "age_range_of_respondents",
-      "type": "TIME_REFERENCE",
+      "canonical": "relationships",
+      "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": null,
+      "subtype": "concept",
       "surface_forms": [
-        "age range",
-        "age range of respondents",
-        "age group",
-        "age demographic"
+        "relationships",
+        "relationship",
+        "relationships with parents and young adults"
       ],
-      "comment_count": 12,
-      "occurrence_count": 14,
+      "comment_count": 15,
+      "occurrence_count": 15,
       "modalities": {
-        "questioned": 8,
-        "asserted": 6
+        "questioned": 11,
+        "asserted": 4
       },
-      "speaker_context_count": 3
+      "speaker_context_count": 0
     },
     {
-      "canonical": "gender_group",
+      "canonical": "percentage_75",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "75%",
+        "70%",
+        "55%",
+        "73 percent"
+      ],
+      "comment_count": 13,
+      "occurrence_count": 15,
+      "modalities": {
+        "asserted": 15
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "children",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "group",
+      "surface_forms": [
+        "children",
+        "Children",
+        "older and younger children"
+      ],
+      "comment_count": 7,
+      "occurrence_count": 13,
+      "modalities": {
+        "asserted": 6,
+        "hypothetical": 4,
+        "questioned": 3
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "communication_method",
       "type": "DATA_VAR",
       "var": null,
       "subtype": null,
       "surface_forms": [
-        "gender",
-        "gender differences",
-        "genders"
+        "communication",
+        "communication methods",
+        "data"
       ],
-      "comment_count": 11,
+      "comment_count": 9,
+      "occurrence_count": 13,
+      "modalities": {
+        "asserted": 13
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "my_parents",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "parents",
+        "my parents"
+      ],
+      "comment_count": 9,
       "occurrence_count": 11,
       "modalities": {
-        "questioned": 4,
+        "asserted": 11
+      },
+      "speaker_context_count": 11
+    },
+    {
+      "canonical": "brother",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "brother",
+        "brothers"
+      ],
+      "comment_count": 8,
+      "occurrence_count": 10,
+      "modalities": {
+        "asserted": 10
+      },
+      "speaker_context_count": 10
+    },
+    {
+      "canonical": "kids",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "group",
+      "surface_forms": [
+        "kids"
+      ],
+      "comment_count": 10,
+      "occurrence_count": 10,
+      "modalities": {
+        "questioned": 3,
         "asserted": 7
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "college_students",
+      "canonical": "peers",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "group",
       "surface_forms": [
-        "college students"
-      ],
-      "comment_count": 10,
-      "occurrence_count": 11,
-      "modalities": {
-        "questioned": 6,
-        "asserted": 5
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "headline",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "Headline",
-        "How Often Are You Contacting Your Parents?",
-        "Are You Contacting Your Parents Enough?",
-        "Who's calling?",
-        "\"Is Parental Communication a Common Priority?\"",
-        "Incoming call, it's your parents! Accept or Decline?",
-        "How Do You Get in Touch With Your Parents?",
-        "A Battle of the Sexes"
-      ],
-      "comment_count": 10,
-      "occurrence_count": 10,
-      "modalities": {
-        "asserted": 10
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "75_percent",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "75%"
+        "peers",
+        "piers"
       ],
       "comment_count": 9,
-      "occurrence_count": 10,
+      "occurrence_count": 9,
       "modalities": {
-        "asserted": 10
+        "asserted": 9
       },
-      "speaker_context_count": 0
+      "speaker_context_count": 8
     },
     {
       "canonical": "technology",
@@ -703,61 +772,13 @@
         "technology",
         "Technology"
       ],
-      "comment_count": 8,
-      "occurrence_count": 10,
-      "modalities": {
-        "asserted": 7,
-        "questioned": 3
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "relationships",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "relationships",
-        "relationship",
-        "parent-child relationships"
-      ],
-      "comment_count": 9,
+      "comment_count": 7,
       "occurrence_count": 9,
       "modalities": {
-        "questioned": 4,
-        "asserted": 5
+        "questioned": 2,
+        "asserted": 7
       },
       "speaker_context_count": 0
-    },
-    {
-      "canonical": "children",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "group",
-      "surface_forms": [
-        "children"
-      ],
-      "comment_count": 4,
-      "occurrence_count": 8,
-      "modalities": {
-        "asserted": 8
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "college_student",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "college student"
-      ],
-      "comment_count": 8,
-      "occurrence_count": 8,
-      "modalities": {
-        "asserted": 8
-      },
-      "speaker_context_count": 7
     },
     {
       "canonical": "jobs",
@@ -769,142 +790,13 @@
         "job",
         "work"
       ],
-      "comment_count": 7,
-      "occurrence_count": 7,
+      "comment_count": 8,
+      "occurrence_count": 8,
       "modalities": {
-        "asserted": 5,
+        "asserted": 6,
         "questioned": 2
       },
       "speaker_context_count": 0
-    },
-    {
-      "canonical": "brother",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "brother",
-        "brothers"
-      ],
-      "comment_count": 7,
-      "occurrence_count": 7,
-      "modalities": {
-        "asserted": 7
-      },
-      "speaker_context_count": 7
-    },
-    {
-      "canonical": "20_percent",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "20%",
-        "20 percentage points",
-        "20-25%"
-      ],
-      "comment_count": 6,
-      "occurrence_count": 6,
-      "modalities": {
-        "asserted": 6
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "teenagers",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "group",
-      "surface_forms": [
-        "teenagers",
-        "teens",
-        "teenager"
-      ],
-      "comment_count": 6,
-      "occurrence_count": 6,
-      "modalities": {
-        "asserted": 4,
-        "questioned": 2
-      },
-      "speaker_context_count": 1
-    },
-    {
-      "canonical": "my_peers",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "group",
-      "surface_forms": [
-        "peers",
-        "my peers"
-      ],
-      "comment_count": 6,
-      "occurrence_count": 6,
-      "modalities": {
-        "asserted": 6
-      },
-      "speaker_context_count": 6
-    },
-    {
-      "canonical": "70_percent",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "70%"
-      ],
-      "comment_count": 6,
-      "occurrence_count": 6,
-      "modalities": {
-        "asserted": 6
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "30_percent",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "30%"
-      ],
-      "comment_count": 6,
-      "occurrence_count": 6,
-      "modalities": {
-        "asserted": 6
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "kids",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "group",
-      "surface_forms": [
-        "kids"
-      ],
-      "comment_count": 6,
-      "occurrence_count": 6,
-      "modalities": {
-        "questioned": 2,
-        "asserted": 4
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "home_town",
-      "type": "LOCATION",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "home",
-        "my home town"
-      ],
-      "comment_count": 4,
-      "occurrence_count": 6,
-      "modalities": {
-        "asserted": 6
-      },
-      "speaker_context_count": 4
     },
     {
       "canonical": "18",
@@ -912,15 +804,53 @@
       "var": null,
       "subtype": null,
       "surface_forms": [
-        "18"
+        "18",
+        "18-year-old"
       ],
-      "comment_count": 4,
-      "occurrence_count": 5,
+      "comment_count": 6,
+      "occurrence_count": 7,
       "modalities": {
-        "questioned": 1,
-        "asserted": 4
+        "questioned": 4,
+        "hypothetical": 1,
+        "asserted": 2
+      },
+      "speaker_context_count": 1
+    },
+    {
+      "canonical": "time_frame",
+      "type": "TIME_REFERENCE",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "time",
+        "timing",
+        "time frame",
+        "week"
+      ],
+      "comment_count": 5,
+      "occurrence_count": 7,
+      "modalities": {
+        "questioned": 5,
+        "asserted": 2
       },
       "speaker_context_count": 0
+    },
+    {
+      "canonical": "mother",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "person",
+      "surface_forms": [
+        "mom",
+        "mother",
+        "Mom"
+      ],
+      "comment_count": 6,
+      "occurrence_count": 7,
+      "modalities": {
+        "asserted": 7
+      },
+      "speaker_context_count": 5
     },
     {
       "canonical": "high_school",
@@ -930,23 +860,154 @@
       "surface_forms": [
         "high school"
       ],
-      "comment_count": 5,
-      "occurrence_count": 5,
+      "comment_count": 6,
+      "occurrence_count": 6,
       "modalities": {
-        "asserted": 4,
+        "asserted": 6
+      },
+      "speaker_context_count": 3
+    },
+    {
+      "canonical": "distance",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "concept",
+      "surface_forms": [
+        "distance",
+        "long distances"
+      ],
+      "comment_count": 6,
+      "occurrence_count": 6,
+      "modalities": {
+        "asserted": 5,
         "questioned": 1
       },
       "speaker_context_count": 3
     },
     {
-      "canonical": "digital_communication",
+      "canonical": "percentage_25",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "25%"
+      ],
+      "comment_count": 4,
+      "occurrence_count": 6,
+      "modalities": {
+        "asserted": 6
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "families",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "group",
+      "surface_forms": [
+        "families"
+      ],
+      "comment_count": 6,
+      "occurrence_count": 6,
+      "modalities": {
+        "asserted": 4,
+        "questioned": 2
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "percentage_26",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "25%",
+        "26%",
+        "30%"
+      ],
+      "comment_count": 4,
+      "occurrence_count": 5,
+      "modalities": {
+        "asserted": 5
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "generation",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "concept",
       "surface_forms": [
-        "digital communication",
-        "electronic communication",
-        "digital formats of communication"
+        "generation",
+        "generations"
+      ],
+      "comment_count": 5,
+      "occurrence_count": 5,
+      "modalities": {
+        "asserted": 5
+      },
+      "speaker_context_count": 2
+    },
+    {
+      "canonical": "family_oriented",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "concept",
+      "surface_forms": [
+        "family-oriented",
+        "family-orientated",
+        "family oriented"
+      ],
+      "comment_count": 5,
+      "occurrence_count": 5,
+      "modalities": {
+        "asserted": 2,
+        "questioned": 3
+      },
+      "speaker_context_count": 1
+    },
+    {
+      "canonical": "age_range",
+      "type": "TIME_REFERENCE",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "age range"
+      ],
+      "comment_count": 4,
+      "occurrence_count": 5,
+      "modalities": {
+        "questioned": 4,
+        "asserted": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "students",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "students",
+        "teacher and classmates"
+      ],
+      "comment_count": 5,
+      "occurrence_count": 5,
+      "modalities": {
+        "asserted": 5
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "young_adult_stage",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "concept",
+      "surface_forms": [
+        "young adult stage",
+        "young adult life",
+        "young adult",
+        "phase of independence"
       ],
       "comment_count": 3,
       "occurrence_count": 5,
@@ -954,24 +1015,7 @@
         "asserted": 4,
         "questioned": 1
       },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "mom",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "mom",
-        "Mom",
-        "mother"
-      ],
-      "comment_count": 4,
-      "occurrence_count": 5,
-      "modalities": {
-        "asserted": 5
-      },
-      "speaker_context_count": 5
+      "speaker_context_count": 2
     },
     {
       "canonical": "culture",
@@ -980,30 +1024,14 @@
       "subtype": "concept",
       "surface_forms": [
         "culture",
-        "cultural influences",
+        "cultures",
         "cultural norms"
       ],
       "comment_count": 4,
       "occurrence_count": 5,
       "modalities": {
-        "asserted": 2,
-        "questioned": 3
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "age",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "age",
-        "ages"
-      ],
-      "comment_count": 5,
-      "occurrence_count": 5,
-      "modalities": {
-        "questioned": 5
+        "asserted": 1,
+        "questioned": 4
       },
       "speaker_context_count": 0
     },
@@ -1015,28 +1043,13 @@
       "surface_forms": [
         "societal roles",
         "societal gender norms",
-        "societal expectations"
+        "societal norms"
       ],
       "comment_count": 4,
       "occurrence_count": 4,
       "modalities": {
         "questioned": 2,
         "asserted": 2
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "55_percent",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "55%"
-      ],
-      "comment_count": 4,
-      "occurrence_count": 4,
-      "modalities": {
-        "asserted": 4
       },
       "speaker_context_count": 0
     },
@@ -1046,17 +1059,35 @@
       "var": null,
       "subtype": null,
       "surface_forms": [
-        "16 year difference",
         "16 years",
-        "16-year disparity"
+        "16-year disparity",
+        "16  year difference",
+        "16 year difference"
       ],
       "comment_count": 4,
       "occurrence_count": 4,
       "modalities": {
-        "questioned": 2,
-        "asserted": 2
+        "questioned": 1,
+        "asserted": 3
       },
       "speaker_context_count": 0
+    },
+    {
+      "canonical": "out_of_state",
+      "type": "LOCATION",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "out of state",
+        "going out f state",
+        "state"
+      ],
+      "comment_count": 4,
+      "occurrence_count": 4,
+      "modalities": {
+        "asserted": 4
+      },
+      "speaker_context_count": 1
     },
     {
       "canonical": "social_media",
@@ -1075,12 +1106,14 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "students",
+      "canonical": "face_to_face_interaction",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "group",
+      "subtype": "other",
       "surface_forms": [
-        "students"
+        "face-to-face interaction",
+        "face to face",
+        "face-to-face conversations"
       ],
       "comment_count": 4,
       "occurrence_count": 4,
@@ -1091,32 +1124,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "gender_stereotypes",
+      "canonical": "teenagers",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "concept",
+      "subtype": "other",
       "surface_forms": [
-        "gender stereotypes",
-        "stereotypes"
-      ],
-      "comment_count": 3,
-      "occurrence_count": 4,
-      "modalities": {
-        "questioned": 2,
-        "asserted": 2
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "staying_connected_in_2024",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "Staying Connected in 2024",
-        "Staying in Touch",
-        "Staying in touch: Why do young women seem to do it more frequently?",
-        "Texts and Calls: The New Bridge Between Today's Young Adults and Their Parents"
+        "teenagers"
       ],
       "comment_count": 4,
       "occurrence_count": 4,
@@ -1124,6 +1137,54 @@
         "asserted": 4
       },
       "speaker_context_count": 0
+    },
+    {
+      "canonical": "friday",
+      "type": "TIME_REFERENCE",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "Friday",
+        "Sunday"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 4,
+      "modalities": {
+        "asserted": 4
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "this_study",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "study",
+        "data"
+      ],
+      "comment_count": 3,
+      "occurrence_count": 4,
+      "modalities": {
+        "asserted": 4
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "life",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "life",
+        "Life"
+      ],
+      "comment_count": 3,
+      "occurrence_count": 4,
+      "modalities": {
+        "asserted": 4
+      },
+      "speaker_context_count": 1
     },
     {
       "canonical": "34",
@@ -1136,25 +1197,25 @@
       "comment_count": 3,
       "occurrence_count": 3,
       "modalities": {
-        "questioned": 1,
-        "asserted": 2
+        "questioned": 2,
+        "asserted": 1
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "masculinity",
+      "canonical": "online_communication",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "concept",
+      "subtype": "other",
       "surface_forms": [
-        "masculinity",
-        "pride with men"
+        "online communication",
+        "Online communication",
+        "digital communication"
       ],
       "comment_count": 3,
       "occurrence_count": 3,
       "modalities": {
-        "questioned": 2,
-        "asserted": 1
+        "asserted": 3
       },
       "speaker_context_count": 0
     },
@@ -1165,8 +1226,8 @@
       "subtype": "concept",
       "surface_forms": [
         "Societal standards",
-        "societal standards",
-        "societal norms"
+        "societal expectations",
+        "societal standards"
       ],
       "comment_count": 3,
       "occurrence_count": 3,
@@ -1177,29 +1238,30 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "sons",
+      "canonical": "percentages",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "group",
+      "subtype": "other",
       "surface_forms": [
-        "sons"
+        "percentages"
       ],
       "comment_count": 3,
       "occurrence_count": 3,
       "modalities": {
-        "asserted": 2,
-        "questioned": 1
+        "questioned": 1,
+        "asserted": 2
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "out_of_state",
-      "type": "LOCATION",
+      "canonical": "3_times_a_week",
+      "type": "TIME_REFERENCE",
       "var": null,
       "subtype": null,
       "surface_forms": [
-        "out of state",
-        "out f state"
+        "few times a week",
+        "days a week",
+        "3 times a week"
       ],
       "comment_count": 3,
       "occurrence_count": 3,
@@ -1209,19 +1271,53 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "community",
+      "canonical": "friends",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "group",
       "surface_forms": [
-        "community"
+        "friends"
       ],
       "comment_count": 3,
       "occurrence_count": 3,
       "modalities": {
         "asserted": 3
       },
-      "speaker_context_count": 3
+      "speaker_context_count": 1
+    },
+    {
+      "canonical": "headline",
+      "type": "CHART_ELEMENT",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "Headline",
+        "headline",
+        "headlines"
+      ],
+      "comment_count": 3,
+      "occurrence_count": 3,
+      "modalities": {
+        "asserted": 3
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "college_students",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "group",
+      "surface_forms": [
+        "college students",
+        "Other college students"
+      ],
+      "comment_count": 3,
+      "occurrence_count": 3,
+      "modalities": {
+        "questioned": 1,
+        "asserted": 2
+      },
+      "speaker_context_count": 0
     },
     {
       "canonical": "online_survey",
@@ -1239,80 +1335,50 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "hours",
-      "type": "UNIT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "7 hours",
-        "hours"
-      ],
-      "comment_count": 2,
-      "occurrence_count": 3,
-      "modalities": {
-        "asserted": 3
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "messages",
+      "canonical": "mothers",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "messages",
-        "messaging"
-      ],
-      "comment_count": 2,
-      "occurrence_count": 3,
-      "modalities": {
-        "asserted": 3
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "phenomena",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "phenomena",
-        "phenomenon"
+        "mothers",
+        "moms"
       ],
       "comment_count": 3,
       "occurrence_count": 3,
       "modalities": {
-        "questioned": 3
+        "asserted": 1,
+        "questioned": 2
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "life",
+      "canonical": "decision_making",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "concept",
+      "surface_forms": [
+        "decision making",
+        "course we choose in life"
+      ],
+      "comment_count": 2,
+      "occurrence_count": 3,
+      "modalities": {
+        "hypothetical": 2,
+        "asserted": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "5_percentage_points",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "life",
-        "lives",
-        "Life"
+        "5% points",
+        "5%",
+        "5 percentage points"
       ],
       "comment_count": 3,
-      "occurrence_count": 3,
-      "modalities": {
-        "asserted": 2,
-        "questioned": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "boys",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "group",
-      "surface_forms": [
-        "boys"
-      ],
-      "comment_count": 2,
       "occurrence_count": 3,
       "modalities": {
         "asserted": 3
@@ -1320,13 +1386,14 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "age_range",
+      "canonical": "30s",
       "type": "TIME_REFERENCE",
       "var": null,
       "subtype": null,
       "surface_forms": [
-        "age range",
-        "age groups"
+        "older young adults in their thirties",
+        "twenties",
+        "30s"
       ],
       "comment_count": 3,
       "occurrence_count": 3,
@@ -1334,22 +1401,6 @@
         "questioned": 3
       },
       "speaker_context_count": 0
-    },
-    {
-      "canonical": "young_adult",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "young adult",
-        "young adult woman"
-      ],
-      "comment_count": 3,
-      "occurrence_count": 3,
-      "modalities": {
-        "asserted": 3
-      },
-      "speaker_context_count": 2
     },
     {
       "canonical": "13_years",
@@ -1362,64 +1413,96 @@
       "comment_count": 3,
       "occurrence_count": 3,
       "modalities": {
-        "questioned": 1,
-        "asserted": 2
+        "asserted": 3
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "online_communication",
+      "canonical": "kindergarten",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "online communication",
-        "Online communication"
+        "kindergarten"
       ],
-      "comment_count": 2,
-      "occurrence_count": 2,
+      "comment_count": 3,
+      "occurrence_count": 3,
       "modalities": {
-        "asserted": 2
+        "asserted": 3
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "1495",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "1,495"
-      ],
-      "comment_count": 2,
-      "occurrence_count": 2,
-      "modalities": {
-        "asserted": 2
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "26_percent",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "26%"
-      ],
-      "comment_count": 2,
-      "occurrence_count": 2,
-      "modalities": {
-        "asserted": 2
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "communication",
+      "canonical": "25_percent_more",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "communication"
+        "25% more"
+      ],
+      "comment_count": 3,
+      "occurrence_count": 3,
+      "modalities": {
+        "asserted": 3
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "country",
+      "type": "DATA_VAR",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "country",
+        "countries"
+      ],
+      "comment_count": 2,
+      "occurrence_count": 3,
+      "modalities": {
+        "questioned": 3
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "buzz_buzz",
+      "type": "CHART_ELEMENT",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "Buzz buzz",
+        "*buzz buzz*"
+      ],
+      "comment_count": 2,
+      "occurrence_count": 2,
+      "modalities": {
+        "asserted": 2
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "facetime",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "technology",
+      "surface_forms": [
+        "video calls",
+        "face time"
+      ],
+      "comment_count": 2,
+      "occurrence_count": 2,
+      "modalities": {
+        "asserted": 2
+      },
+      "speaker_context_count": 1
+    },
+    {
+      "canonical": "last_few_years",
+      "type": "TIME_REFERENCE",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "years",
+        "last few years"
       ],
       "comment_count": 2,
       "occurrence_count": 2,
@@ -1430,33 +1513,35 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "college_years",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "college years"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 2,
-      "modalities": {
-        "asserted": 2
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "daughters",
+      "canonical": "laziness",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "group",
+      "subtype": "concept",
       "surface_forms": [
-        "daughters"
+        "lazy",
+        "laziness"
       ],
       "comment_count": 2,
       "occurrence_count": 2,
       "modalities": {
         "asserted": 1,
         "questioned": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "young_male_adult",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "person",
+      "surface_forms": [
+        "young male adult",
+        "sons"
+      ],
+      "comment_count": 2,
+      "occurrence_count": 2,
+      "modalities": {
+        "asserted": 2
       },
       "speaker_context_count": 0
     },
@@ -1476,20 +1561,36 @@
       "speaker_context_count": 2
     },
     {
-      "canonical": "male_in_college",
-      "type": "OTHER_ENTITY",
+      "canonical": "20_percent",
+      "type": "TIME_REFERENCE",
       "var": null,
-      "subtype": "person",
+      "subtype": null,
       "surface_forms": [
-        "male in this age range",
-        "male in college"
+        "20 percentage points",
+        "20-25%"
       ],
       "comment_count": 2,
       "occurrence_count": 2,
       "modalities": {
         "asserted": 2
       },
-      "speaker_context_count": 2
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "18_to_34",
+      "type": "TIME_REFERENCE",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "18 to 34"
+      ],
+      "comment_count": 2,
+      "occurrence_count": 2,
+      "modalities": {
+        "questioned": 1,
+        "asserted": 1
+      },
+      "speaker_context_count": 0
     },
     {
       "canonical": "parenting_styles",
@@ -1509,46 +1610,13 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "what_s_your_form_of_communicating_with_your_parents_do_you_do_it_at_all",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "What’s Your Form of Communicating With Your Parents? Do You Do it at All?",
-        "How Often Do You Call Your Parents?"
-      ],
-      "comment_count": 2,
-      "occurrence_count": 2,
-      "modalities": {
-        "asserted": 2
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "distance_timing",
+      "canonical": "percentage_18",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "concept",
+      "subtype": "other",
       "surface_forms": [
-        "distance/timing",
-        "long distances"
-      ],
-      "comment_count": 2,
-      "occurrence_count": 2,
-      "modalities": {
-        "questioned": 1,
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "communication_with_my_parents_through_a_screen",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "Communication With My Parents Through A Screen",
-        "Has Technology Caused Communicating to Become Completely Digital?"
+        "18%",
+        "20%"
       ],
       "comment_count": 2,
       "occurrence_count": 2,
@@ -1558,13 +1626,13 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "united_states",
-      "type": "DATA_VAR_LEVEL",
-      "var": "country",
+      "canonical": "hometown",
+      "type": "LOCATION",
+      "var": null,
       "subtype": null,
       "surface_forms": [
-        "United States",
-        "America"
+        "home town",
+        "hometown"
       ],
       "comment_count": 2,
       "occurrence_count": 2,
@@ -1572,37 +1640,6 @@
         "asserted": 2
       },
       "speaker_context_count": 1
-    },
-    {
-      "canonical": "facetime",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "facetime",
-        "face time"
-      ],
-      "comment_count": 2,
-      "occurrence_count": 2,
-      "modalities": {
-        "asserted": 2
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "friday",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "Friday"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 2,
-      "modalities": {
-        "asserted": 2
-      },
-      "speaker_context_count": 0
     },
     {
       "canonical": "hotter_summers",
@@ -1620,12 +1657,13 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "school_year",
+      "canonical": "9_am",
       "type": "TIME_REFERENCE",
       "var": null,
       "subtype": null,
       "surface_forms": [
-        "school year"
+        "11 am",
+        "9 am"
       ],
       "comment_count": 2,
       "occurrence_count": 2,
@@ -1635,13 +1673,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "18_34",
-      "type": "TIME_REFERENCE",
+      "canonical": "gender_stereotypes",
+      "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": null,
+      "subtype": "concept",
       "surface_forms": [
-        "18-34 age group",
-        "18-34"
+        "gender stereotypes"
       ],
       "comment_count": 2,
       "occurrence_count": 2,
@@ -1649,6 +1686,68 @@
         "questioned": 2
       },
       "speaker_context_count": 0
+    },
+    {
+      "canonical": "young_person",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "person",
+      "surface_forms": [
+        "young person"
+      ],
+      "comment_count": 2,
+      "occurrence_count": 2,
+      "modalities": {
+        "questioned": 2
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "family_friends",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "group",
+      "surface_forms": [
+        "family friends"
+      ],
+      "comment_count": 2,
+      "occurrence_count": 2,
+      "modalities": {
+        "asserted": 2
+      },
+      "speaker_context_count": 2
+    },
+    {
+      "canonical": "moving_out_from_parents_home",
+      "type": "EVENT",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "in-person visits",
+        "moving out from their parents' home"
+      ],
+      "comment_count": 2,
+      "occurrence_count": 2,
+      "modalities": {
+        "questioned": 1,
+        "asserted": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "demographics",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "demographics"
+      ],
+      "comment_count": 2,
+      "occurrence_count": 2,
+      "modalities": {
+        "asserted": 2
+      },
+      "speaker_context_count": 1
     },
     {
       "canonical": "florida",
@@ -1666,49 +1765,36 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "decision_making",
+      "canonical": "my_grandparents",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "concept",
+      "subtype": "other",
       "surface_forms": [
-        "decision making"
+        "grandparents"
       ],
-      "comment_count": 1,
+      "comment_count": 2,
       "occurrence_count": 2,
       "modalities": {
         "asserted": 2
       },
-      "speaker_context_count": 0
+      "speaker_context_count": 1
     },
     {
-      "canonical": "educate_them",
+      "canonical": "young_adult",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "concept",
+      "subtype": "other",
       "surface_forms": [
-        "educate them"
+        "young adult category",
+        "young adult"
       ],
-      "comment_count": 1,
+      "comment_count": 2,
       "occurrence_count": 2,
       "modalities": {
-        "asserted": 2
+        "questioned": 1,
+        "asserted": 1
       },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "lead_them_on_the_right_path",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "concept",
-      "surface_forms": [
-        "lead them on the right path"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 2,
-      "modalities": {
-        "asserted": 2
-      },
-      "speaker_context_count": 0
+      "speaker_context_count": 1
     },
     {
       "canonical": "sister",
@@ -1726,48 +1812,19 @@
       "speaker_context_count": 2
     },
     {
-      "canonical": "5_percent",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "5%"
-      ],
-      "comment_count": 2,
-      "occurrence_count": 2,
-      "modalities": {
-        "asserted": 2
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "week",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "week"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 2,
-      "modalities": {
-        "asserted": 2
-      },
-      "speaker_context_count": 0
-    },
-    {
       "canonical": "college_aged_people",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "group",
       "surface_forms": [
-        "college aged",
+        "college aged young adults",
         "college aged people"
       ],
       "comment_count": 2,
       "occurrence_count": 2,
       "modalities": {
-        "questioned": 2
+        "questioned": 1,
+        "asserted": 1
       },
       "speaker_context_count": 0
     },
@@ -1775,46 +1832,14 @@
       "canonical": "wifi",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "technology",
+      "subtype": "other",
       "surface_forms": [
         "wifi"
       ],
       "comment_count": 2,
       "occurrence_count": 2,
       "modalities": {
-        "asserted": 1,
-        "questioned": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "two_dots",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "two dots"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 2,
-      "modalities": {
-        "questioned": 2
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "families",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "families"
-      ],
-      "comment_count": 2,
-      "occurrence_count": 2,
-      "modalities": {
-        "asserted": 1,
-        "questioned": 1
+        "asserted": 2
       },
       "speaker_context_count": 0
     },
@@ -1834,27 +1859,60 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "my_dad",
+      "canonical": "parent_child_relationship",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "person",
+      "subtype": "other",
       "surface_forms": [
-        "dad"
+        "parent-child relationships",
+        "parent-child relationship"
       ],
       "comment_count": 2,
       "occurrence_count": 2,
       "modalities": {
         "asserted": 2
       },
-      "speaker_context_count": 2
+      "speaker_context_count": 0
     },
     {
-      "canonical": "staying_connected_young_women_lead_in_family_communication",
-      "type": "CHART_ELEMENT",
+      "canonical": "location",
+      "type": "LOCATION",
       "var": null,
       "subtype": null,
       "surface_forms": [
-        "Staying Connected: Young Women Lead in Family Communication"
+        "location",
+        "place"
+      ],
+      "comment_count": 2,
+      "occurrence_count": 2,
+      "modalities": {
+        "asserted": 2
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "proximity",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "proximity"
+      ],
+      "comment_count": 2,
+      "occurrence_count": 2,
+      "modalities": {
+        "asserted": 1,
+        "questioned": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "18_22",
+      "type": "TIME_REFERENCE",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "18-22"
       ],
       "comment_count": 2,
       "occurrence_count": 2,
@@ -1867,9 +1925,9 @@
       "canonical": "gender_roles",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "concept",
+      "subtype": "other",
       "surface_forms": [
-        "gender norms",
+        "difference between how girls and boys are raised and socialized",
         "gender roles"
       ],
       "comment_count": 2,
@@ -1895,21 +1953,6 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "mothers",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "mothers"
-      ],
-      "comment_count": 2,
-      "occurrence_count": 2,
-      "modalities": {
-        "questioned": 2
-      },
-      "speaker_context_count": 0
-    },
-    {
       "canonical": "fathers",
       "type": "OTHER_ENTITY",
       "var": null,
@@ -1925,38 +1968,23 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "participants",
+      "canonical": "senior_class",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "participants",
-        "survey participants"
-      ],
-      "comment_count": 2,
-      "occurrence_count": 2,
-      "modalities": {
-        "questioned": 2
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "kindergarten",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "kindergarten"
+        "seniors",
+        "senior class"
       ],
       "comment_count": 2,
       "occurrence_count": 2,
       "modalities": {
         "asserted": 2
       },
-      "speaker_context_count": 0
+      "speaker_context_count": 1
     },
     {
-      "canonical": "10_minutes",
+      "canonical": "10-minute",
       "type": "TIME_REFERENCE",
       "var": null,
       "subtype": null,
@@ -1967,96 +1995,6 @@
       "occurrence_count": 2,
       "modalities": {
         "asserted": 2
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "15_25",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "15-25%"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "50_75",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "50-75%"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "newer_generations_are_barely_interacting_with_their_parents",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "Newer Generations Are Barely Interacting With Their Parents"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "calling",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "video calls"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "17_percent",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "17%"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "years",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "years"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "questioned": 1
       },
       "speaker_context_count": 0
     },
@@ -2077,9 +2015,9 @@
     },
     {
       "canonical": "family_events",
-      "type": "OTHER_ENTITY",
+      "type": "EVENT",
       "var": null,
-      "subtype": "other",
+      "subtype": null,
       "surface_forms": [
         "family events"
       ],
@@ -2091,19 +2029,34 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "friends",
-      "type": "OTHER_ENTITY",
+      "canonical": "gatherings",
+      "type": "EVENT",
       "var": null,
-      "subtype": "group",
+      "subtype": null,
       "surface_forms": [
-        "friends"
+        "gatherings"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
         "asserted": 1
       },
-      "speaker_context_count": 1
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "generational_influence",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "concept",
+      "surface_forms": [
+        "generational influence"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "questioned": 1
+      },
+      "speaker_context_count": 0
     },
     {
       "canonical": "21st_century",
@@ -2121,79 +2074,19 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "phone_call",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "phone call"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "questioned": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "texts",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "texts"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "questioned": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "3_5_times_a_day",
-      "type": "TIME_REFERENCE",
+      "canonical": "our_community",
+      "type": "LOCATION",
       "var": null,
       "subtype": null,
       "surface_forms": [
-        "3-5 times a day"
+        "our community"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
         "asserted": 1
       },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "phone",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "phone"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "text_message",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "text"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
+      "speaker_context_count": 1
     },
     {
       "canonical": "text",
@@ -2241,6 +2134,36 @@
       "speaker_context_count": 0
     },
     {
+      "canonical": "sons",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "sons"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "questioned": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "daughters",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "daughters"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "questioned": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
       "canonical": "young_adult_sons",
       "type": "OTHER_ENTITY",
       "var": null,
@@ -2277,6 +2200,21 @@
       "subtype": null,
       "surface_forms": [
         "a few years"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "asserted": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "digital_communication",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "concept",
+      "surface_forms": [
+        "electronic communication"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -2331,6 +2269,21 @@
       "speaker_context_count": 0
     },
     {
+      "canonical": "male_in_college",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "person",
+      "surface_forms": [
+        "male in this age range"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "asserted": 1
+      },
+      "speaker_context_count": 1
+    },
+    {
       "canonical": "young_guys",
       "type": "DATA_VAR_LEVEL",
       "var": "gender_group",
@@ -2361,6 +2314,21 @@
       "speaker_context_count": 0
     },
     {
+      "canonical": "personal_communication",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "personal communication"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "asserted": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
       "canonical": "humans",
       "type": "OTHER_ENTITY",
       "var": null,
@@ -2376,42 +2344,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "texting_vs_humanity",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "texting vs. humanity"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "being_in_contact_how_often_do_young_people_reach_out_to_their_parents",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "Being In Contact: How Often Do Young People Reach Out To Their Parents?"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "laziness_other_excuses",
+      "canonical": "woman",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "concept",
+      "subtype": "person",
       "surface_forms": [
-        "laziness/other excuses"
+        "woman"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -2421,12 +2359,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "contacting_the_other_communicating_with_your_parent",
-      "type": "CHART_ELEMENT",
+      "canonical": "percentage_point_difference",
+      "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": null,
+      "subtype": "concept",
       "surface_forms": [
-        "Contacting the Other- Communicating With Your Parent"
+        "percentage point difference"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -2436,42 +2374,42 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "18_percent",
+      "canonical": "pride",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "concept",
+      "surface_forms": [
+        "pride"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "questioned": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "other_excuses",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "18%"
+        "other excuses"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
-        "asserted": 1
+        "questioned": 1
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "woman_love_their_parents_more",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "WOMAN LOVE THEIR PARENTS MORE"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "adults",
+      "canonical": "parental_figure",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "adults"
+        "parental figure"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -2481,27 +2419,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "self_reference",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "self-care"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "sleep_revolution_more_americans_than_ever_finally_getting_enough_zzzs",
-      "type": "CHART_ELEMENT",
-      "var": null,
+      "canonical": "united_states",
+      "type": "DATA_VAR_LEVEL",
+      "var": "country",
       "subtype": null,
       "surface_forms": [
-        "Sleep Revolution: More Americans Than Ever Finally Getting Enough Zzzs!"
+        "United States"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -2541,21 +2464,6 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "entire_year",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "year"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
       "canonical": "summer",
       "type": "TIME_REFERENCE",
       "var": null,
@@ -2571,57 +2479,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "tatum",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "Tatum"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "andover_high_school",
-      "type": "LOCATION",
+      "canonical": "year",
+      "type": "TIME_REFERENCE",
       "var": null,
       "subtype": null,
       "surface_forms": [
-        "Andover High School"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "massachusetts",
-      "type": "LOCATION",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "Mass."
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "caroline",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "Caroline"
+        "year"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -2661,21 +2524,6 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "alea",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "Alea"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
       "canonical": "california",
       "type": "LOCATION",
       "var": null,
@@ -2706,67 +2554,7 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "miles",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "Miles"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "hailey",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "Hailey"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "aaron",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "Aaron"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "sharon_hessney",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "Sharon Hessney"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "boston",
+      "canonical": "boston_massachusetts",
       "type": "LOCATION",
       "var": null,
       "subtype": null,
@@ -2781,37 +2569,7 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "sunday_11_am",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "Sunday at 11 am"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "erica_heinzman",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "Erica Heinzman"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "san_diego",
+      "canonical": "san_diego_california",
       "type": "LOCATION",
       "var": null,
       "subtype": null,
@@ -2826,12 +2584,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "magic_voice_box",
-      "type": "OTHER_ENTITY",
+      "canonical": "andover_high_school",
+      "type": "LOCATION",
       "var": null,
-      "subtype": "technology",
+      "subtype": null,
       "surface_forms": [
-        "magic voice box"
+        "Andover High School"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -2841,12 +2599,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "children_s_father_and_mother",
-      "type": "OTHER_ENTITY",
+      "canonical": "massachusetts",
+      "type": "LOCATION",
       "var": null,
-      "subtype": "other",
+      "subtype": null,
       "surface_forms": [
-        "children's father and mother"
+        "Mass."
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -2856,27 +2614,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "keyboard",
+      "canonical": "father",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "other",
+      "subtype": "person",
       "surface_forms": [
-        "keyboard"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "ancestors",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "ancestors"
+        "father"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -2901,21 +2644,6 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "moms",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "moms"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
       "canonical": "love_life",
       "type": "OTHER_ENTITY",
       "var": null,
@@ -2931,12 +2659,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "male_figure",
+      "canonical": "male_figure_stereotype",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "male figure"
+        "stereotypes of the male figure"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -2946,42 +2674,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "female_figure",
+      "canonical": "female_figure_stereotype",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "female figure"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "pedro",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "person",
-      "surface_forms": [
-        "Pedro"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 1
-    },
-    {
-      "canonical": "school_project",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "school project"
+        "stereotypes of the female figure"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -3018,7 +2716,7 @@
       "modalities": {
         "asserted": 1
       },
-      "speaker_context_count": 1
+      "speaker_context_count": 0
     },
     {
       "canonical": "3000_miles_away",
@@ -3033,43 +2731,13 @@
       "modalities": {
         "asserted": 1
       },
-      "speaker_context_count": 1
-    },
-    {
-      "canonical": "parental_extinction_is_among_us_its_starting_with_cutting_communication",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "The Parental extinction is among us its starting with cutting communication"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
       "speaker_context_count": 0
     },
     {
-      "canonical": "grandparents",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "grandparents"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 1
-    },
-    {
       "canonical": "depression",
-      "type": "OTHER_ENTITY",
+      "type": "EVENT",
       "var": null,
-      "subtype": "other",
+      "subtype": null,
       "surface_forms": [
         "depression"
       ],
@@ -3081,12 +2749,102 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "my_brother",
+      "canonical": "convenience",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "concept",
+      "surface_forms": [
+        "convenience"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "asserted": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "complete_chaos",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "brother"
+        "complete chaos"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "hypothetical": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "future_generations",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "group",
+      "surface_forms": [
+        "future generations"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "questioned": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "communications_between_children_and_parents",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "communications between children and their parents"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "hypothetical": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "crimes",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "crimes"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "hypothetical": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "young_adults_and_their_attachment_level",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "young adults and their attachment level"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "asserted": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "polled_demographic",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "polled demographic"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -3096,19 +2854,19 @@
       "speaker_context_count": 1
     },
     {
-      "canonical": "peers",
+      "canonical": "lives_of_the_people_surveyed",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "group",
+      "subtype": "other",
       "surface_forms": [
-        "peers"
+        "lives of the people surveyed"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
-        "asserted": 1
+        "questioned": 1
       },
-      "speaker_context_count": 1
+      "speaker_context_count": 0
     },
     {
       "canonical": "mental_health_issues",
@@ -3126,17 +2884,17 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "time_frame",
-      "type": "TIME_REFERENCE",
+      "canonical": "electronics",
+      "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": null,
+      "subtype": "other",
       "surface_forms": [
-        "time frame"
+        "Electronics"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
-        "questioned": 1
+        "asserted": 1
       },
       "speaker_context_count": 0
     },
@@ -3171,17 +2929,17 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "73_percent",
-      "type": "TIME_REFERENCE",
+      "canonical": "women",
+      "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": null,
+      "subtype": "other",
       "surface_forms": [
-        "73 percent"
+        "women"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
-        "asserted": 1
+        "questioned": 1
       },
       "speaker_context_count": 0
     },
@@ -3231,47 +2989,17 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "3",
+      "canonical": "24",
       "type": "TIME_REFERENCE",
       "var": null,
       "subtype": null,
       "surface_forms": [
-        "3"
+        "24"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "18_year_old",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "18-year-old"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "24_year_old",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "24-year-old"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
+        "questioned": 1
       },
       "speaker_context_count": 0
     },
@@ -3291,6 +3019,21 @@
       "speaker_context_count": 1
     },
     {
+      "canonical": "average_distance",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "concept",
+      "surface_forms": [
+        "average distance"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "asserted": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
       "canonical": "new_york_city",
       "type": "LOCATION",
       "var": null,
@@ -3306,12 +3049,27 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "grey_bar",
-      "type": "CHART_ELEMENT",
+      "canonical": "gen_z",
+      "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": null,
+      "subtype": "group",
       "surface_forms": [
-        "grey bar"
+        "Gen Z"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "questioned": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "caregivers",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "group",
+      "surface_forms": [
+        "caregivers"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -3336,36 +3094,6 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "bar",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "bar"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "wednesday",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "Wednesday"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
       "canonical": "friday_may_3",
       "type": "TIME_REFERENCE",
       "var": null,
@@ -3381,12 +3109,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "9_am_2_pm_et",
+      "canonical": "2_pm",
       "type": "TIME_REFERENCE",
       "var": null,
       "subtype": null,
       "surface_forms": [
-        "9 am – 2 pm E.T."
+        "2 pm"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -3411,12 +3139,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "20-year-old_sister",
-      "type": "OTHER_ENTITY",
+      "canonical": "20",
+      "type": "TIME_REFERENCE",
       "var": null,
-      "subtype": "person",
+      "subtype": null,
       "surface_forms": [
-        "20-year-old sister"
+        "20-year-old"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -3426,19 +3154,19 @@
       "speaker_context_count": 1
     },
     {
-      "canonical": "18-year-old_brother",
+      "canonical": "masculinity",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "person",
+      "subtype": "concept",
       "surface_forms": [
-        "18-year-old brother"
+        "masculinity"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
         "asserted": 1
       },
-      "speaker_context_count": 1
+      "speaker_context_count": 0
     },
     {
       "canonical": "30_years_ago",
@@ -3456,27 +3184,27 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "gender_disparities_in_young_adult_child_communication_with_parents",
-      "type": "CHART_ELEMENT",
+      "canonical": "social",
+      "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": null,
+      "subtype": "concept",
       "surface_forms": [
-        "Gender Disparities In Young Adult Child Communication With Parents"
+        "social"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
-        "asserted": 1
+        "questioned": 1
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "my_grandparents",
-      "type": "OTHER_ENTITY",
+      "canonical": "america",
+      "type": "LOCATION",
       "var": null,
-      "subtype": "other",
+      "subtype": null,
       "surface_forms": [
-        "grandparents"
+        "America"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -3501,87 +3229,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "distance",
-      "type": "LOCATION",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "distance"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 1
-    },
-    {
-      "canonical": "how_often_do_young_adults_contact_their_parents",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "How often do Young Adults Contact their Parents?"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "cmon_they_deserve_a_call",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "C'mon, they deserve a call"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "location",
-      "type": "LOCATION",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "location"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "young_college_student",
+      "canonical": "cultural_influences",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "person",
+      "subtype": "concept",
       "surface_forms": [
-        "young college student"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 1
-    },
-    {
-      "canonical": "young_women_more_likely_to_call_mom_than_men",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "Young Women More Likely to Call Mom than Men"
+        "cultural influences"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -3591,62 +3244,107 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "most_kids_prefer_texting_their_parents_not_calling",
-      "type": "CHART_ELEMENT",
+      "canonical": "gender_norms",
+      "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": null,
+      "subtype": "concept",
       "surface_forms": [
-        "Most Kids Prefer Texting their Parents, Not Calling"
+        "gender norms"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
-        "asserted": 1
+        "questioned": 1
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "parents_home",
+      "canonical": "upbringings",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "parents' home"
+        "upbringings"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
-        "asserted": 1
+        "questioned": 1
       },
       "speaker_context_count": 0
     },
     {
-      "canonical": "keeping_in_touch_who_does_it_best",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "Keeping in Touch, Who Does It Best?"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "18_to_22",
+      "canonical": "early_twenties",
       "type": "TIME_REFERENCE",
       "var": null,
       "subtype": null,
       "surface_forms": [
-        "18-22"
+        "early twenties"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "questioned": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "busy_individuals",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "busy individuals"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
         "asserted": 1
+      },
+      "speaker_context_count": 1
+    },
+    {
+      "canonical": "work_schedules",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "work schedules"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "asserted": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "kids_in_college",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "kids in college"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "questioned": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "people_working",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "people working"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "questioned": 1
       },
       "speaker_context_count": 0
     },
@@ -3666,42 +3364,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "male",
+      "canonical": "my_age",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "males"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "difference_between_how_girls_and_boys_are_raised_and_socialized",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "concept",
-      "surface_forms": [
-        "difference between how girls and boys are raised and socialized"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "questioned": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "my_neighborhood",
-      "type": "LOCATION",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "neighborhood"
+        "my age"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -3709,6 +3377,36 @@
         "asserted": 1
       },
       "speaker_context_count": 1
+    },
+    {
+      "canonical": "my_neighborhood",
+      "type": "LOCATION",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "my neighborhood"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "asserted": 1
+      },
+      "speaker_context_count": 1
+    },
+    {
+      "canonical": "someone_who_is_leaving_home_rather_far_away",
+      "type": "LOCATION",
+      "var": null,
+      "subtype": null,
+      "surface_forms": [
+        "leaving home rather far away"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "asserted": 1
+      },
+      "speaker_context_count": 0
     },
     {
       "canonical": "female_and_male_persona",
@@ -3726,12 +3424,72 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "young_adult_stage",
+      "canonical": "their_waiting",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "young adult stage"
+        "waiting"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "asserted": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "their_careers",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "careers"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "asserted": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "earn_money",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "earn money"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "asserted": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "the_path_ahead_of_them",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "path ahead of them"
+      ],
+      "comment_count": 1,
+      "occurrence_count": 1,
+      "modalities": {
+        "asserted": 1
+      },
+      "speaker_context_count": 0
+    },
+    {
+      "canonical": "the_second_child",
+      "type": "OTHER_ENTITY",
+      "var": null,
+      "subtype": "other",
+      "surface_forms": [
+        "second child"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -3754,36 +3512,6 @@
         "asserted": 1
       },
       "speaker_context_count": 0
-    },
-    {
-      "canonical": "college_life",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "college life"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 1
-    },
-    {
-      "canonical": "second_child",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "second child"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 1
     },
     {
       "canonical": "modern_digital_world",
@@ -3811,30 +3539,15 @@
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
-        "questioned": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "18_22",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "18-22"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "questioned": 1
+        "asserted": 1
       },
       "speaker_context_count": 0
     },
     {
       "canonical": "third_year_in_college",
-      "type": "OTHER_ENTITY",
+      "type": "TIME_REFERENCE",
       "var": null,
-      "subtype": "person",
+      "subtype": null,
       "surface_forms": [
         "third-year in college"
       ],
@@ -3846,12 +3559,12 @@
       "speaker_context_count": 1
     },
     {
-      "canonical": "female_children",
+      "canonical": "relationship_between_parents_and_young_adults",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "group",
+      "subtype": "concept",
       "surface_forms": [
-        "female children"
+        "relationship between parents and young adults"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -3861,49 +3574,19 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "male_children",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "group",
-      "surface_forms": [
-        "male children"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "questioned": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "5",
-      "type": "TIME_REFERENCE",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "5"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "texting",
+      "canonical": "50_percent",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "other",
       "surface_forms": [
-        "text"
+        "50%"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
         "asserted": 1
       },
-      "speaker_context_count": 1
+      "speaker_context_count": 0
     },
     {
       "canonical": "y_axis",
@@ -3912,66 +3595,6 @@
       "subtype": null,
       "surface_forms": [
         "y-axis"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "country",
-      "type": "LOCATION",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "country"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "questioned": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "female_and_male_children",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "female and male children"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "questioned": 1
-      },
-      "speaker_context_count": 0
-    },
-    {
-      "canonical": "my_mom",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "mom"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 1
-    },
-    {
-      "canonical": "family_connections_in_the_digital_age",
-      "type": "CHART_ELEMENT",
-      "var": null,
-      "subtype": null,
-      "surface_forms": [
-        "Family Connections in the Digital Age"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -3996,12 +3619,12 @@
       "speaker_context_count": 0
     },
     {
-      "canonical": "my_high_school",
-      "type": "LOCATION",
+      "canonical": "young_adult_woman",
+      "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": null,
+      "subtype": "other",
       "surface_forms": [
-        "high school"
+        "young adult woman"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
@@ -4011,17 +3634,17 @@
       "speaker_context_count": 1
     },
     {
-      "canonical": "text_messages",
+      "canonical": "fathers_mothers",
       "type": "OTHER_ENTITY",
       "var": null,
-      "subtype": "other",
+      "subtype": "group",
       "surface_forms": [
-        "text messages"
+        "fathers/mothers"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
-        "asserted": 1
+        "questioned": 1
       },
       "speaker_context_count": 0
     },
@@ -4038,22 +3661,22 @@
       "modalities": {
         "asserted": 1
       },
-      "speaker_context_count": 1
+      "speaker_context_count": 0
     },
     {
-      "canonical": "people_around_my_age",
+      "canonical": "survey_participants",
       "type": "OTHER_ENTITY",
       "var": null,
       "subtype": "group",
       "surface_forms": [
-        "people around my age"
+        "survey participants"
       ],
       "comment_count": 1,
       "occurrence_count": 1,
       "modalities": {
-        "asserted": 1
+        "questioned": 1
       },
-      "speaker_context_count": 1
+      "speaker_context_count": 0
     },
     {
       "canonical": "senior_in_high_school",
@@ -4069,21 +3692,6 @@
         "asserted": 1
       },
       "speaker_context_count": 1
-    },
-    {
-      "canonical": "girls",
-      "type": "OTHER_ENTITY",
-      "var": null,
-      "subtype": "other",
-      "surface_forms": [
-        "girls"
-      ],
-      "comment_count": 1,
-      "occurrence_count": 1,
-      "modalities": {
-        "asserted": 1
-      },
-      "speaker_context_count": 0
     },
     {
       "canonical": "cal_poly",

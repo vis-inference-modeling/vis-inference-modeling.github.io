@@ -18,20 +18,6 @@
       "id": "e0"
     },
     {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 104,
-      "end": 111,
-      "id": "e1"
-    },
-    {
       "surface": "young men",
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_men",
@@ -43,7 +29,7 @@
       "occurrence_index": 0,
       "start": 122,
       "end": 131,
-      "id": "e2"
+      "id": "e1"
     },
     {
       "surface": "young woman",
@@ -57,13 +43,13 @@
       "occurrence_index": 0,
       "start": 295,
       "end": 306,
-      "id": "e3"
+      "id": "e2"
     },
     {
       "surface": "mom",
       "type": "OTHER_ENTITY",
-      "canonical": "mom",
-      "subtype": "other",
+      "canonical": "mother",
+      "subtype": "person",
       "section": "body",
       "modality": "asserted",
       "speaker_context": true,
@@ -71,7 +57,7 @@
       "occurrence_index": 0,
       "start": 331,
       "end": 334,
-      "id": "e4"
+      "id": "e3"
     },
     {
       "surface": "People",
@@ -80,15 +66,15 @@
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 358,
       "end": 364,
-      "id": "e5"
+      "id": "e4"
     },
     {
-      "surface": "community",
+      "surface": "my community",
       "type": "OTHER_ENTITY",
       "canonical": "my_community",
       "subtype": "other",
@@ -97,50 +83,40 @@
       "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 371,
+      "start": 368,
       "end": 380,
-      "id": "e6"
+      "id": "e5"
     },
     {
-      "surface": "communication",
+      "surface": "families",
       "type": "OTHER_ENTITY",
-      "canonical": "communication",
-      "subtype": "other",
+      "canonical": "families",
+      "subtype": "group",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 442,
-      "end": 455,
-      "id": "e7"
-    },
-    {
-      "surface": "Who’s mom’s favorite?",
-      "type": "CHART_ELEMENT",
-      "canonical": "title",
-      "section": "headline",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 493,
-      "end": 514,
-      "id": "e8"
+      "start": 407,
+      "end": 415,
+      "id": "e6"
     }
   ],
   "unresolved_mentions": [
     {
       "surface": "number calculations",
-      "reason": "Refers to unspecified calculations; not a chart entity or reference-list item."
+      "reason": "Could refer to chart values or computations, but no confirmed canonical entity."
+    },
+    {
+      "surface": "Who’s mom’s favorite?",
+      "reason": "Appears to be a headline/title, but not in the confirmed title list and no clear canonical mapping."
     }
   ],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
-      "text": "What do you notice? \n\nI notice that the young girls are higher up on the scale in reaching out to their parents, then the young men are. \n\n\nWhat do you wonder? \n\nI wonder what the number calculations would be. \n\n\nHow does this relate to you and your community? \n\n\nThis relate to me because as a young woman I always check up on my mom and she does the same. People in my community are very close with their families, I feel like they stay in communication with the one another. \n \nHeadline \n \nWho’s mom’s favorite?"
+      "text": "What do you notice? \n\nI notice that the young girls are higher up on the scale in reaching out to their parents, then the young men are. \n\n\nWhat do you wonder? \n\nI wonder what the number calculations would be. \n\n\nHow does this relate to you and your community?\n\n\nThis relate to me because as a young woman I always check up on my mom and she does the same. People in my community are very close with their families, I feel like they stay in communication with the one another. \n \nHeadline \n \nWho’s mom’s favorite?"
     }
   ],
-  "tagged_text": "What do you notice? \n\nI notice that the young girls are higher up on the scale in reaching out to their parents, then the young men are. \n\n\nWhat do you wonder? \n\nI wonder what the number calculations would be. \n\n\nHow does this relate to you and your community? \n\n\nThis relate to me because as a <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" speaker_context=\"true\">young woman</entity> I always check up on my <entity type=\"OTHER_ENTITY\" canonical=\"mom\" subtype=\"other\" speaker_context=\"true\">mom</entity> and she does the same. <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" speaker_context=\"true\">People</entity> in my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> are very close with their families, I feel like they stay in <entity type=\"OTHER_ENTITY\" canonical=\"communication\" subtype=\"other\">communication</entity> with the one another. \n \nHeadline \n \n<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Who’s mom’s favorite?</entity>"
+  "tagged_text": "What do you notice? \n\nI notice that the young girls are higher up on the scale in reaching out to their parents, then the young men are. \n\n\nWhat do you wonder? \n\nI wonder what the number calculations would be. \n\n\nHow does this relate to you and your community?\n\n\nThis relate to me because as a young woman I always check up on my mom and she does the same. <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\">People</entity> in my community are very close with their families, I feel like they stay in communication with the one another. \n \nHeadline \n \nWho’s mom’s favorite?"
 }

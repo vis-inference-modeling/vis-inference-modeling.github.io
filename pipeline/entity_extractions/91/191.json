@@ -1,0 +1,170 @@
+{
+  "article_id": "91",
+  "comment_index": 191,
+  "raw_comment": "What I notice that there is more colored players in basketball.\nWhat I wonder is why is there less colored players in MLB.\nWhat impact does it have on your community none because there is no major league sports in are state. \nWhat is going on in this graph is show the difference in color.\nHeadline: major league sports with colored players.",
+  "entities": [
+    {
+      "surface": "colored players",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 33,
+      "end": 48,
+      "id": "e0"
+    },
+    {
+      "surface": "colored players",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 99,
+      "end": 114,
+      "id": "e1"
+    },
+    {
+      "surface": "MLB",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 118,
+      "end": 121,
+      "id": "e2"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 156,
+      "end": 165,
+      "id": "e3"
+    },
+    {
+      "surface": "major league sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "major_league_sports",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 191,
+      "end": 210,
+      "id": "e4"
+    },
+    {
+      "surface": "state",
+      "type": "LOCATION",
+      "canonical": "speaker_state",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 218,
+      "end": 223,
+      "id": "e5"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 251,
+      "end": 256,
+      "id": "e6"
+    },
+    {
+      "surface": "color",
+      "type": "OTHER_ENTITY",
+      "canonical": "color",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 283,
+      "end": 288,
+      "id": "e7"
+    },
+    {
+      "surface": "Headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 290,
+      "end": 298,
+      "id": "e8"
+    },
+    {
+      "surface": "major league sports with colored players",
+      "type": "OTHER_ENTITY",
+      "canonical": "major_league_sports_with_colored_players",
+      "subtype": "other",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 300,
+      "end": 340,
+      "id": "e9"
+    },
+    {
+      "surface": "basketball",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e10"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "What I notice that there is more colored players in basketball.\nWhat I wonder is why is there less colored players in MLB.\nWhat impact does it have on your community none because there is no major league sports in are state. \nWhat is going on in this graph is show the difference in color."
+    },
+    {
+      "section": "headline",
+      "label": "Headline",
+      "text": "major league sports with colored players"
+    }
+  ],
+  "tagged_text": "What I notice that there is more <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">colored players</entity> in <entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\" section=\"body\">basketball</entity>.\nWhat I wonder is why is there less <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">colored players</entity> in <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\" section=\"body\">MLB</entity>.\nWhat impact does it have on your <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\">community</entity> none because there is no <entity type=\"OTHER_ENTITY\" canonical=\"major_league_sports\" subtype=\"other\" section=\"body\">major league sports</entity> in are <entity type=\"LOCATION\" canonical=\"speaker_state\" section=\"body\">state</entity>. \nWhat is going on in this <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"body\">graph</entity> is show the difference in <entity type=\"OTHER_ENTITY\" canonical=\"color\" subtype=\"other\" section=\"body\">color</entity>.\n<entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Headline</entity>: <entity type=\"OTHER_ENTITY\" canonical=\"major_league_sports_with_colored_players\" subtype=\"other\" section=\"headline\">major league sports with colored players</entity>."
+}

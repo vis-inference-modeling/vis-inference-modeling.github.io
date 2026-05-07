@@ -4,20 +4,6 @@
   "raw_comment": "In general more people like to just talk over the phone than actually go and talk face to face with their parents.",
   "entities": [
     {
-      "surface": "people",
-      "type": "OTHER_ENTITY",
-      "canonical": "people",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 16,
-      "end": 22,
-      "id": "e0"
-    },
-    {
       "surface": "phone",
       "type": "DATA_VAR_LEVEL",
       "canonical": "phone_or_video_chat",
@@ -29,6 +15,20 @@
       "occurrence_index": 0,
       "start": 50,
       "end": 55,
+      "id": "e0"
+    },
+    {
+      "surface": "face to face",
+      "type": "OTHER_ENTITY",
+      "canonical": "face_to_face_interaction",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 82,
+      "end": 94,
       "id": "e1"
     },
     {
@@ -50,9 +50,8 @@
   "section_segments": [
     {
       "section": "body",
-      "label": "",
       "text": "In general more people like to just talk over the phone than actually go and talk face to face with their parents."
     }
   ],
-  "tagged_text": "In general more <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">people</entity> like to just talk over the <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">phone</entity> than actually go and talk face to face with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" modality=\"asserted\" speaker_context=\"false\" terminology_drift=\"false\" occurrences=\"1\">parents</entity>."
+  "tagged_text": "In general more people like to just talk over the <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone</entity> than actually go and talk <entity type=\"OTHER_ENTITY\" canonical=\"face_to_face_interaction\" subtype=\"other\">face to face</entity> with their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>."
 }

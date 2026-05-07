@@ -46,17 +46,17 @@
       "id": "e2"
     },
     {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
+      "surface": "men",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_men",
+      "var": "gender_group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 57,
-      "end": 64,
+      "occurrence_index": 2,
+      "start": 345,
+      "end": 348,
       "id": "e3"
     },
     {
@@ -68,7 +68,7 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
+      "occurrence_index": 0,
       "start": 363,
       "end": 370,
       "id": "e4"
@@ -82,7 +82,7 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 2,
+      "occurrence_index": 1,
       "start": 610,
       "end": 617,
       "id": "e5"
@@ -116,10 +116,23 @@
       "id": "e7"
     },
     {
+      "surface": "home",
+      "type": "LOCATION",
+      "canonical": "home",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 723,
+      "end": 727,
+      "id": "e8"
+    },
+    {
       "surface": "Technology",
       "type": "OTHER_ENTITY",
       "canonical": "technology",
-      "subtype": "technology",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -127,7 +140,7 @@
       "occurrence_index": 0,
       "start": 767,
       "end": 777,
-      "id": "e8"
+      "id": "e9"
     },
     {
       "surface": "young women",
@@ -141,7 +154,21 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e9"
+      "id": "e10"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 2,
+      "start": null,
+      "end": null,
+      "id": "e11"
     },
     {
       "surface": "parents",
@@ -155,7 +182,7 @@
       "occurrence_index": 3,
       "start": null,
       "end": null,
-      "id": "e10"
+      "id": "e12"
     },
     {
       "surface": "difference",
@@ -168,7 +195,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e11"
+      "id": "e13"
     },
     {
       "surface": "difference",
@@ -181,7 +208,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e12"
+      "id": "e14"
     },
     {
       "surface": "difference",
@@ -194,7 +221,7 @@
       "occurrence_index": 2,
       "start": null,
       "end": null,
-      "id": "e13"
+      "id": "e15"
     },
     {
       "surface": "texting",
@@ -208,7 +235,7 @@
       "occurrence_index": 1,
       "start": null,
       "end": null,
-      "id": "e14"
+      "id": "e16"
     },
     {
       "surface": "phone calls",
@@ -222,12 +249,12 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e15"
+      "id": "e17"
     },
     {
-      "surface": "5%",
+      "surface": "5% points",
       "type": "OTHER_ENTITY",
-      "canonical": "5_percent",
+      "canonical": "5_percentage_points",
       "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
@@ -236,7 +263,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e16"
+      "id": "e18"
     },
     {
       "surface": "in-person visits",
@@ -250,43 +277,15 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e17"
+      "id": "e19"
     },
     {
       "surface": "people",
       "type": "OTHER_ENTITY",
       "canonical": "people",
-      "subtype": "group",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e18"
-    },
-    {
-      "surface": "women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e19"
-    },
-    {
-      "surface": "visit in person",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "visit_in_person",
-      "var": "communication_method",
-      "section": "numbered_point",
-      "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
@@ -295,10 +294,9 @@
       "id": "e20"
     },
     {
-      "surface": "college students",
-      "type": "OTHER_ENTITY",
-      "canonical": "college_students",
-      "subtype": "group",
+      "surface": "genders",
+      "type": "DATA_VAR",
+      "canonical": "gender_group",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
@@ -307,6 +305,62 @@
       "start": null,
       "end": null,
       "id": "e21"
+    },
+    {
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e22"
+    },
+    {
+      "surface": "college students",
+      "type": "OTHER_ENTITY",
+      "canonical": "college",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e23"
+    },
+    {
+      "surface": "friends",
+      "type": "OTHER_ENTITY",
+      "canonical": "friends",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e24"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e25"
     },
     {
       "surface": "texting",
@@ -320,7 +374,7 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e22"
+      "id": "e26"
     }
   ],
   "unresolved_mentions": [],
@@ -346,5 +400,5 @@
       "text": "Did Technology Change Our Relationships?"
     }
   ],
-  "tagged_text": "1. A higher amount of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> on a weekly basis for all kinds of contacts. In this <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">difference</entity> is greater when <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> and making <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone calls</entity>. The <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">difference</entity> is substantially smaller by <entity type=\"OTHER_ENTITY\" canonical=\"5_percent\" subtype=\"other\">5%</entity> points for <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">in-person visits</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">Texting</entity> is the most common way for <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"group\">people</entity> of both genders to communicate.\n\n2. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> much more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>, as well as why for the <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit in person</entity> the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">difference</entity> is not as big as the other categories.\n\n3. Many <entity type=\"OTHER_ENTITY\" canonical=\"college_students\" subtype=\"group\">college students</entity>, which forms a big part of my friends and also where I aim to be next year to live apart from their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>, so <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calling</entity> are our primary means of communication. It’s complicated to have time to go back home, if it’s in a different state.\n\n4. Did <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"technology\">Technology</entity> Change Our Relationships?"
+  "tagged_text": "1. A higher amount of <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> on a weekly basis for all kinds of contacts. In this <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">difference</entity> is greater when <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> and making <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">phone calls</entity>. The <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">difference</entity> is substantially smaller by <entity type=\"OTHER_ENTITY\" canonical=\"5_percentage_points\" subtype=\"other\">5% points</entity> for <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">in-person visits</entity>. <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">Texting</entity> is the most common way for <entity type=\"OTHER_ENTITY\" canonical=\"people\" subtype=\"other\">people</entity> of both <entity type=\"DATA_VAR\" canonical=\"gender_group\">genders</entity> to communicate.\n\n2. I wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> contact their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> much more than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity>, as well as why for the <entity type=\"DATA_VAR_LEVEL\" canonical=\"visit_in_person\" var=\"communication_method\">visit in person</entity> the <entity type=\"DATA_VAR\" canonical=\"difference_between_gender_groups_within_each_method\">difference</entity> is not as big as the other categories.\n\n3. Many <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college students</entity>, which forms a big part of my <entity type=\"OTHER_ENTITY\" canonical=\"friends\" subtype=\"other\">friends</entity> and also where I aim to be next year to live apart from their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>, so <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">texting</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"phone_or_video_chat\" var=\"communication_method\">calling</entity> are our primary means of communication. It’s complicated to have time to go back <entity type=\"LOCATION\" canonical=\"home\">home</entity>, if it’s in a different state.\n\n4. Did <entity type=\"OTHER_ENTITY\" canonical=\"technology\" subtype=\"other\">Technology</entity> Change Our Relationships?"
 }

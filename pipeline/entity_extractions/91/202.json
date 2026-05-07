@@ -1,0 +1,178 @@
+{
+  "article_id": "91",
+  "comment_index": 202,
+  "raw_comment": "What do you notice?\n I notice that the NBA and WNBA are the two highest in the players color.    \n\n\nWhat do you wonder?\n I wonder why the Soccer league is closely equal in its percentage.\n\nWhat impact does this have on you and your community?\nthis impacts the community because it shows a lack of equality between the Players and the coaches.\n\n\nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\nThe graph shows the lack of Diversity for every varsity sport. The Importance of Diversity in Varsity!!?",
+  "entities": [
+    {
+      "surface": "NBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "nba",
+      "var": "sports_league",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 39,
+      "end": 42,
+      "id": "e0"
+    },
+    {
+      "surface": "WNBA",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "wnba",
+      "var": "sports_league",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 47,
+      "end": 51,
+      "id": "e1"
+    },
+    {
+      "surface": "Soccer league",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mls",
+      "var": "sports_league",
+      "section": "numbered_point",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": true,
+      "occurrence_index": 0,
+      "start": 138,
+      "end": 151,
+      "id": "e2"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "community",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 232,
+      "end": 241,
+      "id": "e3"
+    },
+    {
+      "surface": "Players",
+      "type": "OTHER_ENTITY",
+      "canonical": "players",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 318,
+      "end": 325,
+      "id": "e4"
+    },
+    {
+      "surface": "coaches",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaches",
+      "subtype": "group",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 334,
+      "end": 341,
+      "id": "e5"
+    },
+    {
+      "surface": "graph",
+      "type": "CHART_ELEMENT",
+      "canonical": "graph",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 369,
+      "end": 374,
+      "id": "e6"
+    },
+    {
+      "surface": "Diversity",
+      "type": "OTHER_ENTITY",
+      "canonical": "diversity",
+      "subtype": "concept",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 465,
+      "end": 474,
+      "id": "e7"
+    },
+    {
+      "surface": "varsity sport",
+      "type": "OTHER_ENTITY",
+      "canonical": "varsity_sport",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 485,
+      "end": 498,
+      "id": "e8"
+    },
+    {
+      "surface": "Importance of Diversity in Varsity!!?",
+      "type": "CHART_ELEMENT",
+      "canonical": "headline",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 504,
+      "end": 541,
+      "id": "e9"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "surface": "players color",
+      "reason": "Likely means 'players of color' but surface is malformed and not exact; could be DATA_VAR_LEVEL players_of_color."
+    }
+  ],
+  "section_segments": [
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I notice that the NBA and WNBA are the two highest in the players color."
+    },
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "I wonder why the Soccer league is closely equal in its percentage."
+    },
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "this impacts the community because it shows a lack of equality between the Players and the coaches."
+    },
+    {
+      "section": "numbered_point",
+      "label": "1",
+      "text": "The graph shows the lack of Diversity for every varsity sport."
+    },
+    {
+      "section": "headline",
+      "label": "headline",
+      "text": "The Importance of Diversity in Varsity!!?"
+    }
+  ],
+  "tagged_text": "What do you notice?\n I notice that the <entity type=\"DATA_VAR_LEVEL\" canonical=\"nba\" var=\"sports_league\" section=\"numbered_point\">NBA</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"wnba\" var=\"sports_league\" section=\"numbered_point\">WNBA</entity> are the two highest in the players color.    \n\n\nWhat do you wonder?\n I wonder why the <entity type=\"DATA_VAR_LEVEL\" canonical=\"mls\" var=\"sports_league\" section=\"numbered_point\">Soccer league</entity> is closely equal in its percentage.\n\nWhat impact does this have on you and your community?\nthis impacts the <entity type=\"LOCATION\" canonical=\"community\" section=\"numbered_point\" speaker_context=\"true\">community</entity> because it shows a lack of equality between the <entity type=\"OTHER_ENTITY\" canonical=\"players\" subtype=\"group\" section=\"numbered_point\">Players</entity> and the <entity type=\"OTHER_ENTITY\" canonical=\"coaches\" subtype=\"group\" section=\"numbered_point\">coaches</entity>.\n\n\nWhat’s going on in this graph? Write a catchy headline that captures the graph’s main idea.\nThe <entity type=\"CHART_ELEMENT\" canonical=\"graph\" section=\"numbered_point\">graph</entity> shows the lack of <entity type=\"OTHER_ENTITY\" canonical=\"diversity\" subtype=\"concept\" section=\"numbered_point\">Diversity</entity> for every <entity type=\"OTHER_ENTITY\" canonical=\"varsity_sport\" subtype=\"other\" section=\"numbered_point\">varsity sport</entity>. The <entity type=\"CHART_ELEMENT\" canonical=\"headline\" section=\"headline\">Importance of Diversity in Varsity!!?</entity>"
+}

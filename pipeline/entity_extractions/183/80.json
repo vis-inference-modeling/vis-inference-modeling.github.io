@@ -17,17 +17,17 @@
       "id": "e0"
     },
     {
-      "surface": "men",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
+      "surface": "percentages",
+      "type": "OTHER_ENTITY",
+      "canonical": "percentages",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 169,
-      "end": 172,
+      "start": 70,
+      "end": 81,
       "id": "e1"
     },
     {
@@ -39,9 +39,9 @@
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": 179,
-      "end": 182,
+      "occurrence_index": 0,
+      "start": 169,
+      "end": 172,
       "id": "e2"
     },
     {
@@ -54,14 +54,28 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
+      "start": 177,
+      "end": 182,
+      "id": "e3"
+    },
+    {
+      "surface": "women",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "young_women",
+      "var": "gender_group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
       "start": 436,
       "end": 441,
-      "id": "e3"
+      "id": "e4"
     },
     {
       "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
+      "canonical": "parents",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -70,12 +84,12 @@
       "occurrence_index": 0,
       "start": 461,
       "end": 468,
-      "id": "e4"
+      "id": "e5"
     },
     {
       "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
+      "canonical": "parents",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -84,12 +98,12 @@
       "occurrence_index": 1,
       "start": 541,
       "end": 548,
-      "id": "e5"
+      "id": "e6"
     },
     {
       "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
+      "canonical": "parents",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -98,63 +112,35 @@
       "occurrence_index": 2,
       "start": 904,
       "end": 911,
-      "id": "e6"
-    },
-    {
-      "surface": "college student",
-      "type": "OTHER_ENTITY",
-      "canonical": "college_student",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1162,
-      "end": 1177,
       "id": "e7"
     },
     {
-      "surface": "me",
+      "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": true,
+      "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 1291,
-      "end": 1293,
+      "occurrence_index": 3,
+      "start": 1237,
+      "end": 1244,
       "id": "e8"
     },
     {
-      "surface": "women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
+      "surface": "parent",
+      "type": "OTHER_ENTITY",
+      "canonical": "parent",
+      "subtype": "other",
       "section": "body",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
+      "occurrence_index": 0,
+      "start": 1276,
+      "end": 1282,
       "id": "e9"
-    },
-    {
-      "surface": "women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 2,
-      "start": null,
-      "end": null,
-      "id": "e10"
     },
     {
       "surface": "young adults",
@@ -168,94 +154,26 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
+      "id": "e10"
+    },
+    {
+      "surface": "parent",
+      "type": "OTHER_ENTITY",
+      "canonical": "parent",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": null,
+      "end": null,
       "id": "e11"
     },
     {
-      "surface": "communication",
-      "type": "DATA_VAR",
-      "canonical": "communication_method",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e12"
-    },
-    {
-      "surface": "communication",
-      "type": "DATA_VAR",
-      "canonical": "communication_method",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e13"
-    },
-    {
-      "surface": "a parent",
+      "surface": "college student",
       "type": "OTHER_ENTITY",
-      "canonical": "parent",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e14"
-    },
-    {
-      "surface": "a parent",
-      "type": "OTHER_ENTITY",
-      "canonical": "parent",
-      "subtype": "other",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
-      "id": "e15"
-    },
-    {
-      "surface": "female children",
-      "type": "OTHER_ENTITY",
-      "canonical": "female_children",
-      "subtype": "group",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e16"
-    },
-    {
-      "surface": "male children",
-      "type": "OTHER_ENTITY",
-      "canonical": "male_children",
-      "subtype": "group",
-      "section": "body",
-      "modality": "questioned",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": null,
-      "end": null,
-      "id": "e17"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
+      "canonical": "college",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -264,21 +182,48 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e18"
+      "id": "e12"
+    },
+    {
+      "surface": "college",
+      "type": "OTHER_ENTITY",
+      "canonical": "college",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e13"
     },
     {
       "surface": "college students",
       "type": "OTHER_ENTITY",
-      "canonical": "college_students",
-      "subtype": "group",
+      "canonical": "college",
+      "subtype": "other",
       "section": "body",
-      "modality": "questioned",
+      "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e19"
+      "id": "e14"
+    },
+    {
+      "surface": "headline",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e15"
     },
     {
       "surface": "Parents Back Home: Are You Staying In Touch?",
@@ -291,21 +236,19 @@
       "occurrence_index": 0,
       "start": null,
       "end": null,
-      "id": "e20"
+      "id": "e16"
     }
   ],
   "unresolved_mentions": [],
   "section_segments": [
     {
       "section": "body",
-      "label": "",
       "text": "I noticed that the graph standardizes the scale of responses by using percentages instead of simply counting the number of responses. This allows for comparison between men and women, which I appreciate since it makes the graph more digestible for non-statisticians. I also noticed the ordering of the three methods of reaching out to convey the most common ways these young adults reach out to their parents. One thing I wonder is why women reach out to their parents at higher rates and how this potentially reflects the relationship that parents have with their female children versus their male children. I also wonder how we could incorporate other questions regarding communication with a parent into the survey as well, such as how qualitative the children believe their communication with their parent is. This relates to me as a college student because I struggle with making time to contact my parents (not on purpose) so I feel as though I cannot have the most interesting conversations with them, but I do believe it is nice to check in with them when I can. Furthermore, since I am away at college, I wonder how many of these survey respondents are college students and how that may affect how often they reach out to their parents as well."
     },
     {
       "section": "headline",
-      "label": "",
       "text": "Parents Back Home: Are You Staying In Touch?"
     }
   ],
-  "tagged_text": "I noticed that the graph standardizes the scale of responses by using percentages instead of simply counting the number of responses. This allows for comparison between men and women, which I appreciate since it makes the graph more digestible for non-statisticians. I also noticed the ordering of the three methods of reaching out to convey the most common ways these young adults reach out to their parents. One thing I wonder is why women reach out to their parents at higher rates and how this potentially reflects the relationship that parents have with their female children versus their male children. I also wonder how we could incorporate other questions regarding communication with a parent into the survey as well, such as how qualitative the children believe their communication with their parent is. This relates to me as a college student because I struggle with making time to contact my parents (not on purpose) so I feel as though I cannot have the most interesting conversations with them, but I do believe it is nice to check in with them when I can. Furthermore, since I am away at college, I wonder how many of these survey respondents are college students and how that may affect how often they reach out to their parents as well. A catchy headline is “Parents Back Home: Are You Staying In Touch?”"
+  "tagged_text": "I noticed that the <entity type=\"CHART_ELEMENT\" canonical=\"graph\">graph</entity> standardizes the scale of responses by using <entity type=\"OTHER_ENTITY\" canonical=\"percentages\" subtype=\"other\">percentages</entity> instead of simply counting the number of responses. This allows for comparison between <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> and <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>, which I appreciate since it makes the graph more digestible for non-statisticians. I also noticed the ordering of the three methods of reaching out to convey the most common ways these <entity type=\"OTHER_ENTITY\" canonical=\"young_adults\" subtype=\"group\">young adults</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>. One thing I wonder is why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity> reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> at higher rates and how this potentially reflects the relationship that <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> have with their female children versus their male children. I also wonder how we could incorporate other questions regarding communication with a <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\">parent</entity> into the survey as well, such as how qualitative the children believe their communication with their <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\">parent</entity> is. This relates to me as a <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college student</entity> because I struggle with making time to contact my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> (not on purpose) so I feel as though I cannot have the most interesting conversations with them, but I do believe it is nice to check in with them when I can. Furthermore, since I am away at <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\" speaker_context=\"true\">college</entity>, I wonder how many of these survey respondents are <entity type=\"OTHER_ENTITY\" canonical=\"college\" subtype=\"other\">college students</entity> and how that may affect how often they reach out to their <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> as well. A catchy <entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">headline</entity> is “<entity type=\"CHART_ELEMENT\" canonical=\"title\" section=\"headline\">Parents Back Home: Are You Staying In Touch?</entity>”"
 }

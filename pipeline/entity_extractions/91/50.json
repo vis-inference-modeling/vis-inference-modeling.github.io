@@ -1,0 +1,99 @@
+{
+  "article_id": "91",
+  "comment_index": 50,
+  "raw_comment": "I noticed there was a lower percentage of Major League Baseball for the people of color.\n\nI wonder why there are fewer athletes of color and coaches in Major League Baseball than the other leagues.",
+  "entities": [
+    {
+      "surface": "Major League Baseball",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 42,
+      "end": 63,
+      "id": "e0"
+    },
+    {
+      "surface": "Major League Baseball",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 152,
+      "end": 173,
+      "id": "e1"
+    },
+    {
+      "surface": "leagues",
+      "type": "OTHER_ENTITY",
+      "canonical": "sports_leagues",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 189,
+      "end": 196,
+      "id": "e2"
+    },
+    {
+      "surface": "people of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "people_of_color",
+      "subtype": "group",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e3"
+    },
+    {
+      "surface": "athletes of color",
+      "type": "OTHER_ENTITY",
+      "canonical": "athletes_of_color",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e4"
+    },
+    {
+      "surface": "coaches",
+      "type": "OTHER_ENTITY",
+      "canonical": "coaches",
+      "subtype": "group",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": null,
+      "end": null,
+      "id": "e5"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed there was a lower percentage of Major League Baseball for the people of color.\n\nI wonder why there are fewer athletes of color and coaches in Major League Baseball than the other leagues."
+    }
+  ],
+  "tagged_text": "I noticed there was a lower percentage of <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\">Major League Baseball</entity> for the <entity type=\"OTHER_ENTITY\" canonical=\"people_of_color\" subtype=\"group\">people of color</entity>.\n\nI wonder why there are fewer <entity type=\"OTHER_ENTITY\" canonical=\"athletes_of_color\" subtype=\"group\">athletes of color</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"coaches\" subtype=\"group\">coaches</entity> in <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\">Major League Baseball</entity> than the other <entity type=\"OTHER_ENTITY\" canonical=\"sports_leagues\" subtype=\"group\">leagues</entity>."
+}

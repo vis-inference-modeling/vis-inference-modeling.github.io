@@ -18,6 +18,20 @@
       "id": "e0"
     },
     {
+      "surface": "a parent",
+      "type": "OTHER_ENTITY",
+      "canonical": "parent",
+      "subtype": "other",
+      "section": "numbered_point",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 100,
+      "end": 108,
+      "id": "e1"
+    },
+    {
       "surface": "young women",
       "type": "DATA_VAR_LEVEL",
       "canonical": "young_women",
@@ -29,7 +43,7 @@
       "occurrence_index": 0,
       "start": 124,
       "end": 135,
-      "id": "e1"
+      "id": "e2"
     },
     {
       "surface": "men",
@@ -43,7 +57,7 @@
       "occurrence_index": 0,
       "start": 132,
       "end": 135,
-      "id": "e2"
+      "id": "e3"
     },
     {
       "surface": "women",
@@ -57,26 +71,25 @@
       "occurrence_index": 0,
       "start": 213,
       "end": 218,
-      "id": "e3"
+      "id": "e4"
     },
     {
-      "surface": "age range of respondents",
+      "surface": "age range",
       "type": "TIME_REFERENCE",
-      "canonical": "age_range_of_respondents",
+      "canonical": "age",
       "section": "numbered_point",
       "modality": "questioned",
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
       "start": 233,
-      "end": 257,
-      "id": "e4"
+      "end": 242,
+      "id": "e5"
     },
     {
       "surface": "community",
-      "type": "OTHER_ENTITY",
+      "type": "LOCATION",
       "canonical": "my_community",
-      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": true,
@@ -84,49 +97,27 @@
       "occurrence_index": 0,
       "start": 309,
       "end": 318,
-      "id": "e5"
-    },
-    {
-      "surface": "young men",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_men",
-      "var": "gender_group",
-      "section": "numbered_point",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
       "id": "e6"
     },
     {
-      "surface": "young women",
-      "type": "DATA_VAR_LEVEL",
-      "canonical": "young_women",
-      "var": "gender_group",
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
       "section": "numbered_point",
       "modality": "asserted",
       "speaker_context": false,
       "terminology_drift": false,
-      "occurrence_index": 1,
-      "start": null,
-      "end": null,
+      "occurrence_index": 0,
+      "start": 406,
+      "end": 413,
       "id": "e7"
     }
   ],
   "unresolved_mentions": [
     {
-      "surface": "parents",
-      "reason": "Generic reference; could be tagged as OTHER_ENTITY/parents, but the comment does not clearly introduce a specific parent entity beyond the chart topic."
-    },
-    {
-      "surface": "relationships with our parents",
-      "reason": "Abstract relational phrase; not a distinct entity in the reference list."
-    },
-    {
       "surface": "Got mail? Communicating with parents",
-      "reason": "Appears to be a headline/title, but it is not clearly separated from the body in the raw comment."
+      "reason": "Appears to be a title/headline, but no confirmed title canonical is provided in the reference list."
     }
   ],
   "section_segments": [
@@ -151,5 +142,5 @@
       "text": "What's going on in this graph? \n\nGot mail? Communicating with parents"
     }
   ],
-  "tagged_text": "1. What do you notice? \n\nI  notice that across the board, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> are less likely to reach out to a parent as compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity>.\n\n2. What do you wonder?\n\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">men</entity> are less likely to reach out than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">women</entity>, and what the <entity type=\"TIME_REFERENCE\" canonical=\"age_range_of_respondents\">age range of respondents</entity> is.\n\n3. What impact does this have on you and your community?\n\nThis has a great impact on me and my <entity type=\"OTHER_ENTITY\" canonical=\"my_community\" subtype=\"other\" speaker_context=\"true\">community</entity> as we all have relationships with our parents\n\n4. What's going on in this graph? \n\nGot mail? Communicating with parents"
+  "tagged_text": "1. What do you notice? \n\nI  notice that across the board, <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> are less likely to reach out to a <entity type=\"OTHER_ENTITY\" canonical=\"parent\" subtype=\"other\">parent</entity> as compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity>.\n\n2. What do you wonder?\n\nI wonder why <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" modality=\"questioned\">men</entity> are less likely to reach out than <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" modality=\"questioned\">women</entity>, and what the <entity type=\"TIME_REFERENCE\" canonical=\"age\" modality=\"questioned\">age range</entity> of respondents is.\n\n3. What impact does this have on you and your community?\n\nThis has a great impact on me and my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\">community</entity> as we all have relationships with our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity>\n\n4. What's going on in this graph? \n\nGot mail? Communicating with parents"
 }

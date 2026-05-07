@@ -45,23 +45,9 @@
       "id": "e2"
     },
     {
-      "surface": "me",
-      "type": "OTHER_ENTITY",
-      "canonical": "speaker",
-      "subtype": "person",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": true,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 341,
-      "end": 343,
-      "id": "e3"
-    },
-    {
       "surface": "parents",
       "type": "OTHER_ENTITY",
-      "canonical": "my_parents",
+      "canonical": "parents",
       "subtype": "other",
       "section": "body",
       "modality": "asserted",
@@ -70,7 +56,34 @@
       "occurrence_index": 0,
       "start": 375,
       "end": 382,
+      "id": "e3"
+    },
+    {
+      "surface": "parents",
+      "type": "OTHER_ENTITY",
+      "canonical": "parents",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 1,
+      "start": 508,
+      "end": 515,
       "id": "e4"
+    },
+    {
+      "surface": "Parental communication: disconnecting to connect",
+      "type": "CHART_ELEMENT",
+      "canonical": "title",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 545,
+      "end": 593,
+      "id": "e5"
     },
     {
       "surface": "text",
@@ -79,12 +92,12 @@
       "var": "communication_method",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 407,
-      "end": 411,
-      "id": "e5"
+      "start": null,
+      "end": null,
+      "id": "e6"
     },
     {
       "surface": "face time",
@@ -93,12 +106,12 @@
       "subtype": "technology",
       "section": "body",
       "modality": "asserted",
-      "speaker_context": false,
+      "speaker_context": true,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 416,
-      "end": 425,
-      "id": "e6"
+      "start": null,
+      "end": null,
+      "id": "e7"
     },
     {
       "surface": "college students",
@@ -110,9 +123,9 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 432,
-      "end": 448,
-      "id": "e7"
+      "start": null,
+      "end": null,
+      "id": "e8"
     },
     {
       "surface": "out of state",
@@ -123,22 +136,8 @@
       "speaker_context": false,
       "terminology_drift": false,
       "occurrence_index": 0,
-      "start": 453,
-      "end": 465,
-      "id": "e8"
-    },
-    {
-      "surface": "parents",
-      "type": "OTHER_ENTITY",
-      "canonical": "parents",
-      "subtype": "other",
-      "section": "body",
-      "modality": "asserted",
-      "speaker_context": false,
-      "terminology_drift": false,
-      "occurrence_index": 0,
-      "start": 508,
-      "end": 515,
+      "start": null,
+      "end": null,
       "id": "e9"
     }
   ],
@@ -154,5 +153,5 @@
       "text": "\"Parental communication: disconnecting to connect\""
     }
   ],
-  "tagged_text": "The first thing that I notice is that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\">young women</entity> tend to reach out more compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\">young men</entity> across all categories. I also noticed that as ease of communication increases (i.e less effort/time), the <entity type=\"DATA_VAR\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\">percentage of young people who reach out</entity> grows.\n\nOne thing I wonder is the why the disparities between the genders exist. \n\nThis relates to <entity type=\"OTHER_ENTITY\" canonical=\"speaker\" subtype=\"person\" speaker_context=\"true\">me</entity>, as I always try to contact my <entity type=\"OTHER_ENTITY\" canonical=\"my_parents\" subtype=\"other\" speaker_context=\"true\">parents</entity> on a frequent basis via <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\">text</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"facetime\" subtype=\"technology\">face time</entity>. Many <entity type=\"OTHER_ENTITY\" canonical=\"college_students\" subtype=\"group\">college students</entity> are <entity type=\"LOCATION\" canonical=\"out_of_state\">out of state</entity>, so it is likely we do not get to see our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\">parents</entity> that much\n\nA title could be \"Parental communication: disconnecting to connect\""
+  "tagged_text": "The first thing that I notice is that <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_women\" var=\"gender_group\" section=\"body\">young women</entity> tend to reach out more compared to <entity type=\"DATA_VAR_LEVEL\" canonical=\"young_men\" var=\"gender_group\" section=\"body\">young men</entity> across all categories. I also noticed that as ease of communication increases (i.e less effort/time), the <entity type=\"percentage_of_young_people_who_reach_out_to_a_parent\" canonical=\"percentage_of_young_people_who_reach_out_to_a_parent\" section=\"body\">percentage of young people who reach out</entity> grows.\n\nOne thing I wonder is the why the disparities between the genders exist. \n\nThis relates to me, as I always try to contact my <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\" speaker_context=\"true\">parents</entity> on a frequent basis via <entity type=\"DATA_VAR_LEVEL\" canonical=\"send_texts\" var=\"communication_method\" section=\"body\" speaker_context=\"true\">text</entity> and <entity type=\"OTHER_ENTITY\" canonical=\"facetime\" subtype=\"technology\" section=\"body\" speaker_context=\"true\">face time</entity>. Many <entity type=\"OTHER_ENTITY\" canonical=\"college_students\" subtype=\"group\" section=\"body\">college students</entity> are out of state, so it is likely we do not get to see our <entity type=\"OTHER_ENTITY\" canonical=\"parents\" subtype=\"other\" section=\"body\">parents</entity> that much\n\nA title could be \"Parental communication: disconnecting to connect\""
 }

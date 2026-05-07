@@ -1,0 +1,130 @@
+{
+  "article_id": "91",
+  "comment_index": 206,
+  "raw_comment": "I noticed that there are more players of color who play in professional sport leagues. I wonder if how this data compares to previous years, and if this is a consistent trend. The impact that this has on my community, is that it gives them more motivation as to why they want to go pro, or join a league. A catchy headline that captures the graph main idea could be \"Diversity in Professional sports\" .",
+  "entities": [
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 30,
+      "end": 46,
+      "id": "e0"
+    },
+    {
+      "surface": "previous years",
+      "type": "TIME_REFERENCE",
+      "canonical": "previous_years",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 125,
+      "end": 139,
+      "id": "e1"
+    },
+    {
+      "surface": "consistent trend",
+      "type": "OTHER_ENTITY",
+      "canonical": "consistent_trend",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 158,
+      "end": 174,
+      "id": "e2"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 207,
+      "end": 216,
+      "id": "e3"
+    },
+    {
+      "surface": "motivation",
+      "type": "OTHER_ENTITY",
+      "canonical": "motivation",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 245,
+      "end": 255,
+      "id": "e4"
+    },
+    {
+      "surface": "go pro",
+      "type": "OTHER_ENTITY",
+      "canonical": "go_pro",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 279,
+      "end": 285,
+      "id": "e5"
+    },
+    {
+      "surface": "join a league",
+      "type": "OTHER_ENTITY",
+      "canonical": "join_a_league",
+      "subtype": "other",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 290,
+      "end": 303,
+      "id": "e6"
+    },
+    {
+      "surface": "Diversity in Professional sports",
+      "type": "OTHER_ENTITY",
+      "canonical": "diversity_in_professional_sports",
+      "subtype": "concept",
+      "section": "headline",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 367,
+      "end": 399,
+      "id": "e7"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I noticed that there are more players of color who play in professional sport leagues. I wonder if how this data compares to previous years, and if this is a consistent trend. The impact that this has on my community, is that it gives them more motivation as to why they want to go pro, or join a league."
+    },
+    {
+      "section": "headline",
+      "label": "headline",
+      "text": "\"Diversity in Professional sports\""
+    }
+  ],
+  "tagged_text": "I noticed that there are more <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">players of color</entity> who play in professional sport leagues. I wonder if how this data compares to <entity type=\"TIME_REFERENCE\" canonical=\"previous_years\" section=\"body\" modality=\"questioned\">previous years</entity>, and if this is a <entity type=\"OTHER_ENTITY\" canonical=\"consistent_trend\" subtype=\"concept\" section=\"body\" modality=\"questioned\">consistent trend</entity>. The impact that this has on my <entity type=\"LOCATION\" canonical=\"my_community\" section=\"body\" speaker_context=\"true\">community</entity>, is that it gives them more <entity type=\"OTHER_ENTITY\" canonical=\"motivation\" subtype=\"concept\" section=\"body\">motivation</entity> as to why they want to <entity type=\"OTHER_ENTITY\" canonical=\"go_pro\" subtype=\"other\" section=\"body\">go pro</entity>, or <entity type=\"OTHER_ENTITY\" canonical=\"join_a_league\" subtype=\"other\" section=\"body\">join a league</entity>. A catchy headline that captures the graph main idea could be \"<entity type=\"OTHER_ENTITY\" canonical=\"diversity_in_professional_sports\" subtype=\"concept\" section=\"headline\">Diversity in Professional sports</entity>\" ."
+}

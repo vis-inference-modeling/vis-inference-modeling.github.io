@@ -1,0 +1,112 @@
+{
+  "article_id": "91",
+  "comment_index": 106,
+  "raw_comment": "I notice that there are a lot more players of color than coaches overall, and I wonder why there are the least amount of colored people in major league baseball. This impacts me and my community by showing the amount of representation colored people get in different sports.",
+  "entities": [
+    {
+      "surface": "players of color",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "players_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 35,
+      "end": 51,
+      "id": "e0"
+    },
+    {
+      "surface": "colored people",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "people_of_color",
+      "var": "group_type",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 121,
+      "end": 135,
+      "id": "e1"
+    },
+    {
+      "surface": "major league baseball",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "mlb",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "questioned",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 139,
+      "end": 160,
+      "id": "e2"
+    },
+    {
+      "surface": "me",
+      "type": "OTHER_ENTITY",
+      "canonical": "me",
+      "subtype": "person",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 175,
+      "end": 177,
+      "id": "e3"
+    },
+    {
+      "surface": "community",
+      "type": "LOCATION",
+      "canonical": "my_community",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": true,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 185,
+      "end": 194,
+      "id": "e4"
+    },
+    {
+      "surface": "representation",
+      "type": "OTHER_ENTITY",
+      "canonical": "representation",
+      "subtype": "concept",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 220,
+      "end": 234,
+      "id": "e5"
+    },
+    {
+      "surface": "sports",
+      "type": "DATA_VAR_LEVEL",
+      "canonical": "sports",
+      "var": "sports_league",
+      "section": "body",
+      "modality": "asserted",
+      "speaker_context": false,
+      "terminology_drift": false,
+      "occurrence_index": 0,
+      "start": 267,
+      "end": 273,
+      "id": "e6"
+    }
+  ],
+  "unresolved_mentions": [],
+  "section_segments": [
+    {
+      "section": "body",
+      "text": "I notice that there are a lot more players of color than coaches overall, and I wonder why there are the least amount of colored people in major league baseball. This impacts me and my community by showing the amount of representation colored people get in different sports."
+    }
+  ],
+  "tagged_text": "I notice that there are a lot more <entity type=\"DATA_VAR_LEVEL\" canonical=\"players_of_color\" var=\"group_type\" section=\"body\">players of color</entity> than coaches overall, and I wonder why there are the least amount of <entity type=\"DATA_VAR_LEVEL\" canonical=\"people_of_color\" var=\"group_type\" section=\"body\">colored people</entity> in <entity type=\"DATA_VAR_LEVEL\" canonical=\"mlb\" var=\"sports_league\" section=\"body\">major league baseball</entity>. This impacts <entity type=\"OTHER_ENTITY\" canonical=\"me\" subtype=\"person\" speaker_context=\"true\" section=\"body\">me</entity> and my <entity type=\"LOCATION\" canonical=\"my_community\" speaker_context=\"true\" section=\"body\">community</entity> by showing the amount of <entity type=\"OTHER_ENTITY\" canonical=\"representation\" subtype=\"concept\" section=\"body\">representation</entity> colored people get in different <entity type=\"DATA_VAR_LEVEL\" canonical=\"sports\" var=\"sports_league\" section=\"body\">sports</entity>."
+}
